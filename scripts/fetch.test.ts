@@ -47,6 +47,16 @@ describe("mergeJobs", () => {
     expect(reopened.added).toBe(0);
   });
 
+  test("with a capped fetch, jobs older than the window are dropped, newer missing ones are closed", () => {
+    const prev = [stored("old", { postedAt: day(1) }), stored("gone", { postedAt: day(5) })];
+    const { jobs, closed } = mergeJobs(prev, [{ ...fetched("new"), postedAt: day(4) }], day(6), day(4));
+    expect(closed).toBe(1);
+    expect(jobs.map((j) => [j.id, j.closedAt])).toEqual([
+      ["test:gone", day(6)],
+      ["test:new", undefined],
+    ]);
+  });
+
   test("closed jobs are kept for 14 days, then dropped", () => {
     const prev = [stored("1", { closedAt: day(2) })];
     expect(mergeJobs(prev, [], day(15)).jobs).toHaveLength(1);

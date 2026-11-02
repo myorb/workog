@@ -33,6 +33,11 @@ export const CompanyConfigSchema = z.object({
   source: z.string().min(1),
   /** Greenhouse board token; other sources add their own fields */
   boardToken: z.string().optional(),
+  /**
+   * Keep only this many of the newest jobs, for companies too big to list in
+   * full. Older jobs that fall out of the window are dropped, not closed.
+   */
+  maxJobs: z.number().int().positive().optional(),
 });
 
 export type CompanyConfig = z.infer<typeof CompanyConfigSchema>;

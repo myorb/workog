@@ -28,6 +28,9 @@ import {
   RunSchema,
   type SourceRun,
 } from "../src/lib/schema.ts";
+import { amazon } from "./fetchers/amazon.ts";
+import { apple } from "./fetchers/apple.ts";
+import { google } from "./fetchers/google.ts";
 import { greenhouse } from "./fetchers/greenhouse.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
@@ -42,6 +45,9 @@ const BROKEN_AFTER = 3;
 
 const fetchers: Record<string, Fetcher<any>> = {
   [greenhouse.name]: greenhouse,
+  [apple.name]: apple,
+  [google.name]: google,
+  [amazon.name]: amazon,
 };
 
 const NormalizedJobSchema = JobSchema.omit({
@@ -55,6 +61,11 @@ interface FetchResult {
   fetched: number;
   invalid: number;
   jobs: NormalizedJob[];
+  /**
+   * Set when the company's maxJobs cut the list short: the posted date of the
+   * oldest job kept. Jobs posted before it may still be open on the site.
+   */
+  windowStart?: string;
 }
 
 async function readJson<T>(path: string, fallback: T): Promise<T> {
@@ -87,6 +98,11 @@ async function fetchCompany(company: CompanyConfig): Promise<FetchResult> {
       console.warn(`[${company.key}] skipping invalid job:\n${issues}`);
     }
   }
+  if (company.maxJobs && raws.length >= company.maxJobs) {
+    jobs.sort((a, b) => (b.postedAt ?? "").localeCompare(a.postedAt ?? ""));
+    jobs.length = Math.min(jobs.length, company.maxJobs);
+    return { fetched: raws.length, invalid, jobs, windowStart: jobs.at(-1)?.postedAt };
+  }
   return { fetched: raws.length, invalid, jobs };
 }
 
@@ -105,9 +121,11 @@ export function sanityCheck(result: FetchResult, previousOpen: number): string |
 /**
  * Applies today's fetch to yesterday's jobs: new ids get firstSeenAt, missing
  * ids get closedAt, reappearing ids are reopened, and jobs closed for longer
- * than the retention window are dropped.
+ * than the retention window are dropped. With a `windowStart`, missing jobs
+ * posted before it only fell out of a capped fetch, so they are dropped
+ * rather than closed.
  */
-export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string) {
+export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, windowStart?: string) {
   const prevById = new Map(previous.map((j) => [j.id, j]));
   const seen = new Set<string>();
   const merged: Job[] = [];
@@ -130,6 +148,7 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
   const cutoff = Date.parse(now) - CLOSED_RETENTION_DAYS * 24 * 60 * 60 * 1000;
   for (const prev of previous) {
     if (seen.has(prev.id)) continue;
+    if (!prev.closedAt && windowStart && (prev.postedAt ?? prev.firstSeenAt) < windowStart) continue;
     if (!prev.closedAt) {
       closed++;
       merged.push({ ...prev, closedAt: now });
@@ -201,7 +220,7 @@ async function main() {
     const previous = await readJson<Job[]>(file, []);
     const previousOpen = previous.filter((j) => !j.closedAt).length;
     const prevSource = prevSources.get(company.key);
-    const counts = result.status === "fulfilled" ? result.value : { fetched: 0, invalid: 0, jobs: [] };
+    const counts: FetchResult = result.status === "fulfilled" ? result.value : { fetched: 0, invalid: 0, jobs: [] };
 
     const reason =
       result.status === "rejected"
@@ -227,7 +246,7 @@ async function main() {
       };
       console.error(`[${company.key}] FALLBACK (${fallbackStreak} in a row): ${reason}`);
     } else {
-      const { jobs, added, closed } = mergeJobs(previous, counts.jobs, startedAt);
+      const { jobs, added, closed } = mergeJobs(previous, counts.jobs, startedAt, counts.windowStart);
       await writeJson(file, jobs);
       if (jobsChanged(previous, jobs)) changed = true;
       source = {

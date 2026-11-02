@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "startedAt": "2026-11-03T05:02:35.566Z",
   "finishedAt": "2026-11-03T05:02:37.411Z",
+=======
+  "startedAt": "2026-11-02T18:53:03.468Z",
+  "finishedAt": "2026-11-02T18:53:28.282Z",
+>>>>>>> 90e1055 (Add Amazon, Apple and Google job sources)
   "sources": [
     {
       "company": "airbnb",
@@ -11,6 +16,30 @@
       "open": 212,
       "new": 12,
       "closed": 1,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "amazon",
+      "source": "amazon",
+      "status": "ok",
+      "fetched": 1000,
+      "invalid": 0,
+      "open": 1000,
+      "new": 1,
+      "closed": 1,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "apple",
+      "source": "apple",
+      "status": "ok",
+      "fetched": 1000,
+      "invalid": 0,
+      "open": 1000,
+      "new": 0,
+      "closed": 0,
       "fallbackStreak": 0,
       "broken": false
     },
@@ -119,6 +148,18 @@
       "open": 234,
       "new": 2,
       "closed": 4,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "google",
+      "source": "google",
+      "status": "ok",
+      "fetched": 1000,
+      "invalid": 0,
+      "open": 1000,
+      "new": 2,
+      "closed": 0,
       "fallbackStreak": 0,
       "broken": false
     },

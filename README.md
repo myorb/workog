@@ -60,7 +60,7 @@ To roll back, redeploy an earlier deployment in the Cloudflare dashboard, or `gi
 | `data/runs/latest.json` | Per-source counts and status of the last run |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
-| `scripts/fetchers/` | One module per source (`greenhouse.ts` so far) |
+| `scripts/fetchers/` | One module per source: `greenhouse.ts`, `amazon.ts` (JSON API), `apple.ts` and `google.ts` (read the JSON their search pages embed) |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de` |
@@ -71,6 +71,10 @@ To roll back, redeploy an earlier deployment in the Cloudflare dashboard, or `gi
 
 Add an entry to `data/companies.json` with the board token from `boards.greenhouse.io/<token>`, then run `bun run fetch <key>`.
 
+## Big companies
+
+Amazon, Apple and Google list far more jobs than the site can hold (Cloudflare Pages allows 20,000 files and job pages are one file each), so their entries set `maxJobs` to keep only the newest jobs. A job that falls out of that window is dropped from the data rather than marked closed, so it doesn't linger as a closed page for 14 days. With 1,000 each the build is about 18,500 files; lower `maxJobs` if it nears the limit.
+
 ## Status
 
-Milestones 1 (pipeline skeleton) and 2 (daily automation) are done. Next: Apple and Google fetchers, Lever and Ashby, location and category pages, `/new` and `/remote` (milestone 3).
+Milestones 1 (pipeline skeleton) and 2 (daily automation) are done. Amazon, Apple and Google fetchers are in. Next: Lever and Ashby, location and category pages, `/new` and `/remote` (milestone 3).

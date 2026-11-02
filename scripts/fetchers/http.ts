@@ -6,17 +6,17 @@ const MAX_RETRIES = 3;
 
 export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-/** GET a JSON document with a timeout and up to 3 retries with exponential backoff. */
-export async function getJson<T>(url: string): Promise<T> {
+/** GET a URL with a timeout and up to 3 retries with exponential backoff. */
+async function get(url: string, accept: string): Promise<Response> {
   let lastError: unknown;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     if (attempt > 0) await sleep(1000 * 2 ** (attempt - 1));
     try {
       const res = await fetch(url, {
-        headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+        headers: { "User-Agent": USER_AGENT, Accept: accept },
         signal: AbortSignal.timeout(TIMEOUT_MS),
       });
-      if (res.ok) return (await res.json()) as T;
+      if (res.ok) return res;
       lastError = new Error(`HTTP ${res.status} for ${url}`);
       // 4xx other than rate limiting will not get better with a retry
       if (res.status < 500 && res.status !== 429) break;
@@ -25,4 +25,13 @@ export async function getJson<T>(url: string): Promise<T> {
     }
   }
   throw lastError;
+}
+
+export async function getJson<T>(url: string): Promise<T> {
+  return (await (await get(url, "application/json")).json()) as T;
+}
+
+/** GET an HTML page, for career sites that embed their data in the page instead of offering an API. */
+export async function getText(url: string): Promise<string> {
+  return (await get(url, "text/html")).text();
 }
