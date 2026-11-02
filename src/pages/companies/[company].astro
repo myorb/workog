@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import JobList from "../../components/JobList.astro";
+import { getCompanies, getJobsByCompany } from "../../lib/jobs.ts";
+import { plural } from "../../lib/format.ts";
+import { LIST_PAGE_LIMIT } from "../../lib/constants.ts";
+
+export const getStaticPaths = (async () => {
+  const companies = await getCompanies();
+  return companies.map((company) => ({ params: { company: company.key }, props: { company } }));
+}) satisfies GetStaticPaths;
+
+const { company } = Astro.props;
+const jobs = await getJobsByCompany(company.key);
+const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sort();
+---
+
+<Base
+  title={`${company.name} jobs`}
+  description={`${plural(jobs.length, "open job")} at ${company.name}${categories.length ? ` in ${categories.slice(0, 4).join(", ")}` : ""} and more. Updated daily.`}
+>
+  <p class="muted"><a href="/companies">Companies</a> /</p>
+  <h1>{company.name} jobs</h1>
+  <p class="muted">
+    {plural(jobs.length, "open position")}
+    {jobs.length > LIST_PAGE_LIMIT && <>, showing the {LIST_PAGE_LIMIT} newest</>}
+  </p>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} showCompany={false} /> : <p>No open positions right now.</p>}
+</Base>

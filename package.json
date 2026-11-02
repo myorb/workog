@@ -1,0 +1,31 @@
+{
+  "name": "static-job",
+  "type": "module",
+  "private": true,
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "fetch": "bun scripts/fetch.ts",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check && tsc --noEmit -p tsconfig.json",
+    "deploy": "wrangler pages deploy dist --project-name static-job --branch main --commit-dirty=true",
+    "alert": "bun scripts/alert.ts"
+  },
+  "dependencies": {
+    "astro": "^7.4.4",
+    "sanitize-html": "^2.18.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/bun": "^1.4.4",
+    "@types/node": "^26.6.6",
+    "@types/sanitize-html": "^2.16.2",
+    "typescript": "^6",
+    "wrangler": "^4.156.1"
+  }
+}

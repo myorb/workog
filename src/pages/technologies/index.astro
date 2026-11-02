@@ -1,0 +1,14 @@
+---
+import Base from "../../layouts/Base.astro";
+import TagLinks from "../../components/TagLinks.astro";
+import { countTags } from "../../lib/jobs.ts";
+import { technologyLinks } from "../../lib/links.ts";
+
+const counts = await countTags();
+const techs = technologyLinks(counts.technologies);
+---
+
+<Base title="Jobs by technology" description={`Open developer jobs for ${techs.map((t) => t.label).slice(0, 6).join(", ")} and more, refreshed daily.`}>
+  <h1>Jobs by technology</h1>
+  <TagLinks links={techs} />
+</Base>

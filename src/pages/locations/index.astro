@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import TagLinks from "../../components/TagLinks.astro";
+import { countTags } from "../../lib/jobs.ts";
+import { cityLinks, countryLinks } from "../../lib/links.ts";
+
+const counts = await countTags();
+const countriesWithJobs = countryLinks(counts.countries);
+const topCities = cityLinks(counts.cities).slice(0, 24);
+---
+
+<Base title="Jobs by location" description={`Open tech jobs in ${countriesWithJobs.length} countries and ${counts.cities.size} cities, refreshed daily.`}>
+  <h1>Jobs by location</h1>
+  <h2>Countries</h2>
+  <TagLinks links={countriesWithJobs} />
+  <h2>Top cities</h2>
+  <TagLinks links={topCities} />
+</Base>

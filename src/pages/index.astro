@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+import JobList from "../components/JobList.astro";
+import TagLinks from "../components/TagLinks.astro";
+import { countTags, getCompanies, getOpenJobs } from "../lib/jobs.ts";
+import { countryLinks, technologyLinks } from "../lib/links.ts";
+import { plural } from "../lib/format.ts";
+import { LIST_PAGE_LIMIT } from "../lib/constants.ts";
+
+const jobs = await getOpenJobs();
+const companies = await getCompanies();
+const counts = new Map<string, number>();
+for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
+const topCompanies = companies
+  .map((c) => ({ ...c, count: counts.get(c.key) ?? 0 }))
+  .filter((c) => c.count > 0)
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 12);
+const tagCounts = await countTags(jobs);
+const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
+const topCountries = countryLinks(tagCounts.countries).slice(0, 12);
+---
+
+<Base
+  title="Static Job"
+  description={`${plural(jobs.length, "open job")} at ${plural(companies.length, "tech company")}, refreshed daily from official career sites.`}
+>
+  <h1>Open jobs at top tech companies</h1>
+  <p class="muted">{plural(jobs.length, "open position")} across {plural(companies.length, "company")}, refreshed daily.</p>
+
+  <h2>Top companies</h2>
+  <ul class="companies">
+    {
+      topCompanies.map((c) => (
+        <li>
+          <a href={`/companies/${c.key}`}>{c.name}</a> <span class="muted">{c.count}</span>
+        </li>
+      ))
+    }
+  </ul>
+  <p><a href="/companies">All companies →</a></p>
+
+  <h2>Technologies</h2>
+  <TagLinks links={topTechnologies} />
+  <p><a href="/technologies">All technologies →</a></p>
+
+  <h2>Locations</h2>
+  <TagLinks links={topCountries} />
+  <p><a href="/locations">All locations →</a></p>
+
+  <h2>Latest jobs</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>
+
+<style>
+  .companies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
+</style>

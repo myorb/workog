@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCompanies, getOpenJobs } from "../../lib/jobs.ts";
+import { plural } from "../../lib/format.ts";
+
+const jobs = await getOpenJobs();
+const counts = new Map<string, number>();
+for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
+const companies = (await getCompanies())
+  .map((c) => ({ ...c, count: counts.get(c.key) ?? 0 }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base title="Companies" description={`Open jobs at ${plural(companies.length, "tech company")}, with live job counts.`}>
+  <h1>Companies</h1>
+  <ul class="companies">
+    {
+      companies.map((c) => (
+        <li>
+          <a href={`/companies/${c.key}`}>{c.name}</a>
+          <span class="muted">{plural(c.count, "open job")}</span>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
+
+<style>
+  .companies { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--border); }
+  li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+</style>

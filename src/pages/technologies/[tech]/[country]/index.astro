@@ -1,0 +1,54 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import JobList from "../../../../components/JobList.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { countTags, getJobsWhere } from "../../../../lib/jobs.ts";
+import { countries } from "../../../../lib/places.ts";
+import { technologies } from "../../../../lib/technologies.ts";
+import { cityLinks, countryUrl, technologyUrl } from "../../../../lib/links.ts";
+import { plural } from "../../../../lib/format.ts";
+import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+
+// Every technology for every country with jobs, so each combination has a stable URL even on days it is empty
+export const getStaticPaths = (async () => {
+  const counts = await countTags();
+  return technologies.flatMap((tech) =>
+    countries
+      .filter((c) => counts.countries.has(c.slug))
+      .map((country) => ({ params: { tech: tech.slug, country: country.slug }, props: { tech, country } })),
+  );
+}) satisfies GetStaticPaths;
+
+const { tech, country } = Astro.props;
+const jobs = await getJobsWhere({ technology: tech.slug, country: country.slug });
+const cities = cityLinks((await countTags(jobs)).cities, (c, city) => technologyUrl(tech.slug, c, city), country.slug);
+const worldwide = jobs.length ? [] : (await getJobsWhere({ technology: tech.slug })).slice(0, LIST_PAGE_LIMIT);
+---
+
+<Base
+  title={`${tech.name} jobs in ${country.name}`}
+  description={`${plural(jobs.length, `open ${tech.name} job`)} in ${country.name}, including remote roles. Updated daily.`}
+  noindex={!jobs.length}
+>
+  <p class="muted">
+    <a href="/technologies">Technologies</a> / <a href={technologyUrl(tech.slug)}>{tech.name}</a> /
+  </p>
+  <h1>{tech.name} jobs in {country.name}</h1>
+  <p class="muted">
+    {plural(jobs.length, "open position")}
+    {jobs.length > LIST_PAGE_LIMIT && <>, showing the {LIST_PAGE_LIMIT} newest</>}
+  </p>
+  {cities.length > 0 && <><h2>Cities</h2><TagLinks links={cities} /></>}
+  {
+    jobs.length ? (
+      <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+    ) : (
+      <p>
+        No {tech.name} roles in {country.name} right now. Listings refresh daily; meanwhile see
+        <a href={countryUrl(country.slug)}>all jobs in {country.name}</a>.
+      </p>
+    )
+  }
+  {worldwide.length > 0 && <><h2>Latest {tech.name} jobs worldwide</h2><JobList jobs={worldwide} /></>}
+</Base>

@@ -1,0 +1,21 @@
+---
+interface Props {
+  links: { href: string; label: string; count: number }[];
+}
+
+const { links } = Astro.props;
+---
+
+<ul class="tag-links">
+  {
+    links.map((l) => (
+      <li>
+        <a href={l.href}>{l.label}</a> <span class="muted">{l.count}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .tag-links { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
+</style>

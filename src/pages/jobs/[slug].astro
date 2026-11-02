@@ -1,0 +1,51 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import { getAllJobs, getCompany } from "../../lib/jobs.ts";
+import { formatDate, formatLocations } from "../../lib/format.ts";
+
+export const getStaticPaths = (async () => {
+  const jobs = await getAllJobs();
+  return jobs.map((job) => ({ params: { slug: job.slug }, props: { job } }));
+}) satisfies GetStaticPaths;
+
+const { job } = Astro.props;
+const company = await getCompany(job.company);
+const companyName = company?.name ?? job.company;
+const closed = Boolean(job.closedAt);
+const where = formatLocations(job.locations, job.remote, 2);
+---
+
+<Base
+  title={`${job.title} at ${companyName}`}
+  description={`${job.title} at ${companyName} — ${where}${job.remote ? " (remote)" : ""}. Apply on ${companyName}'s official careers site.`}
+  noindex={closed}
+>
+  <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
+
+  {closed && <p class="closed">This position was closed on {formatDate(job.closedAt!)} and is no longer accepting applications.</p>}
+
+  <h1>{job.title}</h1>
+  <dl class="facts">
+    <dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd>
+    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <span class="tag">Remote</span></>}</dd>
+    {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
+    {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
+  </dl>
+
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {companyName}'s site →</a></p>}
+
+  <article class="description" set:html={job.descriptionHtml} />
+
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {companyName}'s site →</a></p>}
+</Base>
+
+<style>
+  .facts { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 16px 0 24px; }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .apply { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+  .closed { background: var(--tag); border-left: 4px solid var(--muted); padding: 12px 16px; }
+  .description { margin: 24px 0; overflow-wrap: anywhere; }
+  .description :global(table) { display: block; overflow-x: auto; }
+</style>
