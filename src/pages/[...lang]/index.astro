@@ -1,0 +1,60 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import JobList from "../../components/JobList.astro";
+import TagLinks from "../../components/TagLinks.astro";
+import { countTags, getCompanies, getOpenJobs } from "../../lib/jobs.ts";
+import { countryLinks, technologyLinks } from "../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../lib/constants.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const u = (path: string) => localizePath(path, lang);
+const jobs = await getOpenJobs();
+const companies = await getCompanies();
+const counts = new Map<string, number>();
+for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
+const topCompanies = companies
+  .map((c) => ({ ...c, count: counts.get(c.key) ?? 0 }))
+  .filter((c) => c.count > 0)
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 12);
+const tagCounts = await countTags(jobs);
+const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
+const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0, 12);
+---
+
+<Base title="Static Job" description={m.home.description(jobs.length, companies.length)}>
+  <h1>{m.home.heading}</h1>
+  <p class="muted">{m.home.summary(jobs.length, companies.length)}</p>
+
+  <h2>{m.home.topCompanies}</h2>
+  <ul class="companies">
+    {
+      topCompanies.map((c) => (
+        <li>
+          <a href={u(`/companies/${c.key}`)}>{c.name}</a> <span class="muted">{c.count}</span>
+        </li>
+      ))
+    }
+  </ul>
+  <p><a href={u("/companies")}>{m.allCompanies}</a></p>
+
+  <h2>{m.home.technologies}</h2>
+  <TagLinks links={topTechnologies} />
+  <p><a href={u("/technologies")}>{m.allTechnologies}</a></p>
+
+  <h2>{m.home.locations}</h2>
+  <TagLinks links={topCountries} />
+  <p><a href={u("/locations")}>{m.allLocations}</a></p>
+
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>
+
+<style>
+  .companies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
+</style>

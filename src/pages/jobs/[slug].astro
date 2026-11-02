@@ -20,6 +20,7 @@ const where = formatLocations(job.locations, job.remote, 2);
   title={`${job.title} at ${companyName}`}
   description={`${job.title} at ${companyName} — ${where}${job.remote ? " (remote)" : ""}. Apply on ${companyName}'s official careers site.`}
   noindex={closed}
+  translated={false}
 >
   <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
 

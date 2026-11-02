@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import JobList from "../../../../components/JobList.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { countTags, getJobsWhere } from "../../../../lib/jobs.ts";
+import { countries } from "../../../../lib/places.ts";
+import { cityLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+
+export const getStaticPaths = (async () => {
+  const counts = await countTags();
+  return withLangs(
+    countries.filter((c) => counts.countries.has(c.slug)).map((country) => ({ params: { country: country.slug }, props: { country } })),
+  );
+}) satisfies GetStaticPaths;
+
+const { country } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const name = countryName(country, lang);
+const jobs = await getJobsWhere({ country: country.slug });
+const counts = await countTags(jobs);
+const cities = cityLinks(counts.cities, undefined, country.slug);
+const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, country.slug));
+---
+
+<Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)}>
+  <p class="muted"><a href={localizePath("/locations", lang)}>{m.nav.locations}</a> /</p>
+  <h1>{m.place.title(name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
+  {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>

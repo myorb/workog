@@ -1,0 +1,67 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import { countTags, getJobsWhere, matches } from "../../../../../lib/jobs.ts";
+import { cities, getCountry } from "../../../../../lib/places.ts";
+import { technologies } from "../../../../../lib/technologies.ts";
+import { cityUrl, technologyUrl } from "../../../../../lib/links.ts";
+import { countryName, getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+// Every technology for every city with jobs, so each combination has a stable URL even on days it is empty
+export const getStaticPaths = (async () => {
+  const counts = await countTags();
+  return withLangs(
+    technologies.flatMap((tech) =>
+      cities
+        .filter((c) => counts.cities.has(c.slug))
+        .map((city) => ({
+          params: { tech: tech.slug, country: city.country, city: city.slug },
+          props: { tech, city, country: getCountry(city.country)! },
+        })),
+    ),
+  );
+}) satisfies GetStaticPaths;
+
+const { tech, city, country } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const u = (path: string) => localizePath(path, lang);
+const name = countryName(country, lang);
+const jobs = await getJobsWhere({ technology: tech.slug, city: city.slug });
+// Shown when the city has few matches, so the page is never a dead end
+const elsewhere =
+  jobs.length >= 10
+    ? []
+    : (await getJobsWhere({ technology: tech.slug, country: country.slug }))
+        .filter((j) => !matches(j, { city: city.slug }))
+        .slice(0, LIST_PAGE_LIMIT);
+const none = m.tech.noneIn(tech.name, city.name);
+---
+
+<Base
+  title={m.tech.titleIn(tech.name, `${city.name}, ${name}`)}
+  description={m.tech.cityDescription(jobs.length, tech.name, `${city.name}, ${name}`)}
+  noindex={!jobs.length}
+>
+  <p class="muted">
+    <a href={u("/technologies")}>{m.nav.technologies}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
+    <a href={u(technologyUrl(tech.slug, country.slug))}>{name}</a> /
+  </p>
+  <h1>{m.tech.titleIn(tech.name, city.name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {
+    jobs.length ? (
+      <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+    ) : (
+      <p>
+        {none.before}<a href={u(cityUrl(country.slug, city.slug))}>{none.link}</a>{none.after}
+      </p>
+    )
+  }
+  {elsewhere.length > 0 && <><h2>{m.tech.elsewhere(tech.name, name)}</h2><JobList jobs={elsewhere} /></>}
+</Base>

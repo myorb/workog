@@ -1,16 +1,19 @@
 ---
+import { getLang, localizePath } from "../lib/i18n.ts";
+
 interface Props {
   links: { href: string; label: string; count: number }[];
 }
 
 const { links } = Astro.props;
+const lang = getLang(Astro.params.lang);
 ---
 
 <ul class="tag-links">
   {
     links.map((l) => (
       <li>
-        <a href={l.href}>{l.label}</a> <span class="muted">{l.count}</span>
+        <a href={localizePath(l.href, lang)}>{l.label}</a> <span class="muted">{l.count}</span>
       </li>
     ))
   }

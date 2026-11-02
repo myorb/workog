@@ -1,15 +1,25 @@
 ---
-import Base from "../layouts/Base.astro";
-import BarList from "../components/BarList.astro";
-import ColumnChart from "../components/ColumnChart.astro";
-import LineChart from "../components/LineChart.astro";
-import { countTags, getCompanies, getHistory, getLatestRun, getOpenJobs } from "../lib/jobs.ts";
-import { cityLinks, countryLinks, technologyLinks } from "../lib/links.ts";
-import { categoryLabel, countBy, dailyTotals, medianAgeDays, postedByMonth, remoteShareBy, weeklyTotals } from "../lib/analytics.ts";
-import { formatDate, formatDateTime, plural } from "../lib/format.ts";
-import { TREND_MIN_DAYS } from "../lib/constants.ts";
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import BarList from "../../components/BarList.astro";
+import ColumnChart from "../../components/ColumnChart.astro";
+import LineChart from "../../components/LineChart.astro";
+import { countTags, getCompanies, getHistory, getLatestRun, getOpenJobs } from "../../lib/jobs.ts";
+import { cityLinks, countryLinks, technologyLinks } from "../../lib/links.ts";
+import { countBy, dailyTotals, medianAgeDays, postedByMonth, remoteShareBy, weeklyTotals } from "../../lib/analytics.ts";
+import { formatDate, formatDateTime, formatShortDate } from "../../lib/format.ts";
+import { categoryName, getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
+import { formatNumber, intlLocale } from "../../lib/locale.ts";
+import { TREND_MIN_DAYS } from "../../lib/constants.ts";
 
 const TOP = 10;
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const a = m.analytics;
+const date = (iso: string) => formatDate(iso, lang);
 
 const jobs = await getOpenJobs();
 const companies = await getCompanies();
@@ -21,7 +31,7 @@ const remoteCount = jobs.filter((j) => j.remote).length;
 const newInRun = run?.sources.reduce((sum, s) => sum + s.new, 0) ?? 0;
 const closedInRun = run?.sources.reduce((sum, s) => sum + s.closed, 0) ?? 0;
 
-const byCategory = countBy(jobs, (j) => categoryLabel(j.category));
+const byCategory = countBy(jobs, (j) => categoryName(j.category, lang));
 const byCompany = countBy(jobs, (j) => j.company).map((b) => ({
   ...b,
   label: companyNames.get(b.label) ?? b.label,
@@ -30,11 +40,11 @@ const byCompany = countBy(jobs, (j) => j.company).map((b) => ({
 const tags = await countTags(jobs);
 const toBars = (links: { href: string; label: string; count: number }[]) => links.slice(0, TOP);
 const topTechnologies = toBars(technologyLinks(tags.technologies));
-const topCountries = toBars(countryLinks(tags.countries));
+const topCountries = toBars(countryLinks(tags.countries, undefined, lang));
 const topCities = toBars(cityLinks(tags.cities));
-const remoteByCategory = remoteShareBy(jobs, (j) => categoryLabel(j.category));
+const remoteByCategory = remoteShareBy(jobs, (j) => categoryName(j.category, lang));
 
-const posted = postedByMonth(jobs, ref, 8);
+const posted = postedByMonth(jobs, ref, 8, intlLocale(lang));
 const medianAge = medianAgeDays(jobs, ref);
 
 const days = dailyTotals(await getHistory());
@@ -44,51 +54,47 @@ const showTrends = days.length >= TREND_MIN_DAYS;
 const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%`;
 ---
 
-<Base
-  title="Analytics"
-  description={`Hiring at a glance: ${plural(jobs.length, "open job")} by function, company, technology and location, refreshed daily.`}
->
-  <h1>Analytics</h1>
+<Base title={a.title} description={a.description(jobs.length)}>
+  <h1>{a.title}</h1>
   <p class="muted">
-    Snapshot of {plural(jobs.length, "open role")}
-    {run && <> · updated <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt)}</time></>}
+    {a.snapshot(jobs.length)}
+    {run && <> · {a.updated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></>}
   </p>
 
   <dl class="stats">
-    <div><dt>Open jobs</dt><dd>{jobs.length.toLocaleString("en-US")}</dd></div>
-    <div><dt>Companies hiring</dt><dd>{byCompany.length}</dd></div>
-    <div><dt>Remote</dt><dd>{pct(remoteCount)}</dd></div>
-    <div><dt>Latest run</dt><dd>+{newInRun} <span class="muted">/ −{closedInRun}</span></dd></div>
+    <div><dt>{a.openJobs}</dt><dd>{formatNumber(jobs.length, lang)}</dd></div>
+    <div><dt>{a.companiesHiring}</dt><dd>{byCompany.length}</dd></div>
+    <div><dt>{a.remote}</dt><dd>{pct(remoteCount)}</dd></div>
+    <div><dt>{a.latestRun}</dt><dd>+{newInRun} <span class="muted">/ −{closedInRun}</span></dd></div>
   </dl>
 
   <section>
-    <h2>Trends</h2>
+    <h2>{a.trends}</h2>
     {
       showTrends ? (
         <div class="grid">
           <div>
-            <h3>Open jobs over time</h3>
-            <LineChart points={days.map((d) => ({ date: d.date, value: d.open }))} unit="open jobs" />
+            <h3>{a.openOverTime}</h3>
+            <LineChart points={days.map((d) => ({ date: d.date, value: d.open }))} unit={a.openJobsUnit} />
           </div>
           <div>
-            <h3>New vs closed per week</h3>
+            <h3>{a.newVsClosed}</h3>
             <ColumnChart
               series={[
-                { name: "New", color: "var(--series-new)" },
-                { name: "Closed", color: "var(--series-closed)" },
+                { name: a.new, color: "var(--series-new)" },
+                { name: a.closed, color: "var(--series-closed)" },
               ]}
               columns={weeks.map((w) => ({
-                label: formatDate(w.week).replace(/, \d{4}$/, ""),
+                label: formatShortDate(w.week, lang),
                 values: [w.new, w.closed],
-                title: `Week of ${formatDate(w.week)}: ${w.new} new, ${w.closed} closed`,
+                title: a.weekTitle(date(w.week), w.new, w.closed),
               }))}
             />
           </div>
         </div>
       ) : (
         <p class="muted note">
-          Trend charts appear once there are {TREND_MIN_DAYS} days of history ({plural(days.length, "day")} so far
-          {days.length > 0 && <>, since {formatDate(days[0]!.date)}</>}).
+          {a.trendsPending(TREND_MIN_DAYS, days.length, days[0] && date(days[0].date))}
         </p>
       )
     }
@@ -96,42 +102,42 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
 
   <div class="grid">
     <section>
-      <h2>Jobs by function</h2>
+      <h2>{a.byFunction}</h2>
       <BarList bars={byCategory} />
     </section>
     <section>
-      <h2>Jobs by company</h2>
+      <h2>{a.byCompany}</h2>
       <BarList bars={byCompany} />
     </section>
     <section>
-      <h2>Top technologies</h2>
+      <h2>{a.topTechnologies}</h2>
       <BarList bars={topTechnologies} />
-      <p class="more"><a href="/technologies">All technologies →</a></p>
+      <p class="more"><a href={localizePath("/technologies", lang)}>{m.allTechnologies}</a></p>
     </section>
     <section>
-      <h2>Top countries</h2>
+      <h2>{a.topCountries}</h2>
       <BarList bars={topCountries} />
-      <h3>Top cities</h3>
+      <h3>{a.topCities}</h3>
       <BarList bars={topCities} />
-      <p class="more"><a href="/locations">All locations →</a></p>
+      <p class="more"><a href={localizePath("/locations", lang)}>{m.allLocations}</a></p>
     </section>
   </div>
 
   <section>
-    <h2>When open roles were posted</h2>
+    <h2>{a.postedHeading}</h2>
     <p class="muted">
-      {medianAge !== undefined && <>Median age {plural(medianAge, "day")}. </>}
-      {posted.earlier > 0 && <>{plural(posted.earlier, "role")} posted earlier. </>}
-      {posted.undated > 0 && <>{plural(posted.undated, "role")} without a posted date.</>}
+      {medianAge !== undefined && <>{a.medianAge(medianAge)} </>}
+      {posted.earlier > 0 && <>{a.postedEarlier(posted.earlier)} </>}
+      {posted.undated > 0 && a.undated(posted.undated)}
     </p>
     <ColumnChart
       showValues
-      columns={posted.bars.map((b) => ({ label: b.label, values: [b.count], title: `${b.label}: ${plural(b.count, "open role")} posted` }))}
+      columns={posted.bars.map((b) => ({ label: b.label, values: [b.count], title: a.postedTitle(b.label, b.count) }))}
     />
   </section>
 
   <section>
-    <h2>Remote share by function</h2>
+    <h2>{a.remoteByFunction}</h2>
     <BarList share bars={remoteByCategory} />
   </section>
 

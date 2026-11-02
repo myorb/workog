@@ -1,8 +1,13 @@
 ---
-import Base from "../../layouts/Base.astro";
-import { getCompanies, getOpenJobs } from "../../lib/jobs.ts";
-import { plural } from "../../lib/format.ts";
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import { getCompanies, getOpenJobs } from "../../../lib/jobs.ts";
+import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
 
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
 const jobs = await getOpenJobs();
 const counts = new Map<string, number>();
 for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
@@ -11,14 +16,14 @@ const companies = (await getCompanies())
   .sort((a, b) => a.name.localeCompare(b.name));
 ---
 
-<Base title="Companies" description={`Open jobs at ${plural(companies.length, "tech company")}, with live job counts.`}>
-  <h1>Companies</h1>
+<Base title={m.companies.title} description={m.companies.description(companies.length)}>
+  <h1>{m.companies.title}</h1>
   <ul class="companies">
     {
       companies.map((c) => (
         <li>
-          <a href={`/companies/${c.key}`}>{c.name}</a>
-          <span class="muted">{plural(c.count, "open job")}</span>
+          <a href={localizePath(`/companies/${c.key}`, lang)}>{c.name}</a>
+          <span class="muted">{m.openJobs(c.count)}</span>
         </li>
       ))
     }

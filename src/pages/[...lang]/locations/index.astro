@@ -1,0 +1,24 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import TagLinks from "../../../components/TagLinks.astro";
+import { countTags } from "../../../lib/jobs.ts";
+import { cityLinks, countryLinks } from "../../../lib/links.ts";
+import { getLang, t, withLangs } from "../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const counts = await countTags();
+const countriesWithJobs = countryLinks(counts.countries, undefined, lang);
+const topCities = cityLinks(counts.cities).slice(0, 24);
+---
+
+<Base title={m.locations.title} description={m.locations.description(countriesWithJobs.length, counts.cities.size)}>
+  <h1>{m.locations.title}</h1>
+  <h2>{m.locations.countries}</h2>
+  <TagLinks links={countriesWithJobs} />
+  <h2>{m.locations.topCities}</h2>
+  <TagLinks links={topCities} />
+</Base>

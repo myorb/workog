@@ -63,7 +63,9 @@ To roll back, redeploy an earlier deployment in the Cloudflare dashboard, or `gi
 | `scripts/fetchers/` | One module per source (`greenhouse.ts` so far) |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
-| `src/pages/` | `/`, `/jobs/[slug]`, `/companies`, `/companies/[company]`, `/404` |
+| `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de` |
+| `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would exceed Cloudflare Pages' 20,000-file limit) |
+| `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
 
 ## Adding a Greenhouse company
 

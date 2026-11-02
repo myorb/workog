@@ -1,0 +1,56 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import TagLinks from "../../../../../components/TagLinks.astro";
+import { countTags, getJobsWhere } from "../../../../../lib/jobs.ts";
+import { countries } from "../../../../../lib/places.ts";
+import { technologies } from "../../../../../lib/technologies.ts";
+import { cityLinks, countryUrl, technologyUrl } from "../../../../../lib/links.ts";
+import { countryName, getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+// Every technology for every country with jobs, so each combination has a stable URL even on days it is empty
+export const getStaticPaths = (async () => {
+  const counts = await countTags();
+  return withLangs(
+    technologies.flatMap((tech) =>
+      countries
+        .filter((c) => counts.countries.has(c.slug))
+        .map((country) => ({ params: { tech: tech.slug, country: country.slug }, props: { tech, country } })),
+    ),
+  );
+}) satisfies GetStaticPaths;
+
+const { tech, country } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const u = (path: string) => localizePath(path, lang);
+const name = countryName(country, lang);
+const jobs = await getJobsWhere({ technology: tech.slug, country: country.slug });
+const cities = cityLinks((await countTags(jobs)).cities, (c, city) => technologyUrl(tech.slug, c, city), country.slug);
+const worldwide = jobs.length ? [] : (await getJobsWhere({ technology: tech.slug })).slice(0, LIST_PAGE_LIMIT);
+const none = m.tech.noneIn(tech.name, name);
+---
+
+<Base title={m.tech.titleIn(tech.name, name)} description={m.tech.countryDescription(jobs.length, tech.name, name)} noindex={!jobs.length}>
+  <p class="muted">
+    <a href={u("/technologies")}>{m.nav.technologies}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
+  </p>
+  <h1>{m.tech.titleIn(tech.name, name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
+  {
+    jobs.length ? (
+      <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+    ) : (
+      <p>
+        {none.before}<a href={u(countryUrl(country.slug))}>{none.link}</a>{none.after}
+      </p>
+    )
+  }
+  {worldwide.length > 0 && <><h2>{m.tech.worldwide(tech.name)}</h2><JobList jobs={worldwide} /></>}
+</Base>

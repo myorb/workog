@@ -1,21 +1,31 @@
 ---
 import { getLatestRun } from "../lib/jobs.ts";
 import { formatDateTime } from "../lib/format.ts";
+import { getLang, languageNames, localizePath, locales, stripLang, t } from "../lib/i18n.ts";
 
 interface Props {
   title: string;
   description: string;
   noindex?: boolean;
+  /** false for pages that exist in English only */
+  translated?: boolean;
 }
 
-const { title, description, noindex = false } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const { title, description, noindex = false, translated = true } = Astro.props;
+const lang = translated ? getLang(Astro.params.lang) : "en";
+const m = t(lang);
+const u = (path: string) => localizePath(path, lang);
+// build.format "file" renders pathnames as "/index.html" or "/uk.html"; links use the extensionless URL
+const pathname = Astro.url.pathname.replace(/\.html$/, "").replace(/\/index$/, "") || "/";
+const canonical = new URL(pathname, Astro.site);
+const basePath = stripLang(pathname);
+const alternates = translated ? locales.map((l) => ({ lang: l, href: new URL(localizePath(basePath, l), Astro.site) })) : [];
 const run = await getLatestRun();
 const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,26 +37,39 @@ const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+    {alternates.length > 0 && <link rel="alternate" hreflang="x-default" href={alternates[0]!.href} />}
     <slot name="head" />
   </head>
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href="/">Static Job</a>
+        <a class="brand" href={u("/")}>Static Job</a>
         <nav>
-          <a href="/locations">Locations</a>
-          <a href="/technologies">Technologies</a>
-          <a href="/companies">Companies</a>
-          <a href="/analytics">Analytics</a>
+          <a href={u("/locations")}>{m.nav.locations}</a>
+          <a href={u("/technologies")}>{m.nav.technologies}</a>
+          <a href={u("/companies")}>{m.nav.companies}</a>
+          <a href={u("/analytics")}>{m.nav.analytics}</a>
         </nav>
+        {
+          translated && (
+            <nav class="langs" aria-label={m.language}>
+              {locales.map((l) => (
+                <a href={localizePath(basePath, l)} hreflang={l} lang={l} title={languageNames[l]} aria-current={l === lang ? "page" : undefined}>
+                  {l.toUpperCase()}
+                </a>
+              ))}
+            </nav>
+          )
+        }
       </div>
     </header>
     <main class="wrap">
       <slot />
     </main>
     <footer class="wrap site-footer">
-      {run && <p>Last updated <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt)}</time></p>}
-      <p>Listings link to each company's official posting. Apply on the company's site.</p>
+      {run && <p>{m.lastUpdated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></p>}
+      <p>{m.footerNote}</p>
     </footer>
   </body>
 </html>
@@ -90,6 +113,9 @@ const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
   .site-header nav { display: flex; gap: 20px; }
   .site-header a { color: var(--text); text-decoration: none; }
   .brand { font-weight: 700; white-space: nowrap; }
+  .site-header .langs { gap: 8px; font-size: 13px; }
+  .site-header .langs a { color: var(--muted); }
+  .site-header .langs a[aria-current] { color: var(--text); font-weight: 600; }
   @media (max-width: 480px) {
     .site-header .wrap { height: auto; flex-wrap: wrap; gap: 4px 12px; padding-top: 10px; padding-bottom: 10px; }
     .site-header nav { gap: 12px; font-size: 14px; }

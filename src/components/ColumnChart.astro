@@ -1,4 +1,7 @@
 ---
+import { getLang } from "../lib/i18n.ts";
+import { formatNumber } from "../lib/locale.ts";
+
 interface Props {
   /** one entry per column group; `values` line up with `series` */
   columns: { label: string; values: number[]; title: string }[];
@@ -9,6 +12,7 @@ interface Props {
 }
 
 const { columns, series = [{ name: "", color: "var(--accent)" }], showValues = false } = Astro.props;
+const lang = getLang(Astro.params.lang);
 const max = Math.max(1, ...columns.flatMap((c) => c.values));
 ---
 
@@ -31,7 +35,7 @@ const max = Math.max(1, ...columns.flatMap((c) => c.values));
         <div class="bars">
           {c.values.map((v, i) => (
             <div class="col">
-              {showValues && <span class="value">{v.toLocaleString("en-US")}</span>}
+              {showValues && <span class="value">{formatNumber(v, lang)}</span>}
               <span class="bar" style={`height: ${(v / max) * 100}%; background: ${series[i]!.color}`} />
             </div>
           ))}

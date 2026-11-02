@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import JobList from "../../../components/JobList.astro";
+import { getCompanies, getJobsByCompany } from "../../../lib/jobs.ts";
+import { categoryName, getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+
+export const getStaticPaths = (async () => {
+  const companies = await getCompanies();
+  return withLangs(companies.map((company) => ({ params: { company: company.key }, props: { company } })));
+}) satisfies GetStaticPaths;
+
+const { company } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const jobs = await getJobsByCompany(company.key);
+const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sort().map((c) => categoryName(c, lang));
+---
+
+<Base title={m.company.title(company.name)} description={m.company.description(jobs.length, company.name, categories.slice(0, 4))}>
+  <p class="muted"><a href={localizePath("/companies", lang)}>{m.nav.companies}</a> /</p>
+  <h1>{m.company.title(company.name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} showCompany={false} /> : <p>{m.company.none}</p>}
+</Base>

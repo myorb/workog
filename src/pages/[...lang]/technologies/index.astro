@@ -1,0 +1,19 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import TagLinks from "../../../components/TagLinks.astro";
+import { countTags } from "../../../lib/jobs.ts";
+import { technologyLinks } from "../../../lib/links.ts";
+import { getLang, t, withLangs } from "../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const m = t(getLang(Astro.params.lang));
+const counts = await countTags();
+const techs = technologyLinks(counts.technologies);
+---
+
+<Base title={m.technologies.title} description={m.technologies.description(techs.map((t) => t.label).slice(0, 6))}>
+  <h1>{m.technologies.title}</h1>
+  <TagLinks links={techs} />
+</Base>

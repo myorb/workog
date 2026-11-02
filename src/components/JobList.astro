@@ -2,6 +2,7 @@
 import type { Job } from "../lib/schema.ts";
 import { getCompanies } from "../lib/jobs.ts";
 import { formatDate, formatLocations } from "../lib/format.ts";
+import { getLang, t } from "../lib/i18n.ts";
 
 interface Props {
   jobs: Job[];
@@ -9,6 +10,8 @@ interface Props {
 }
 
 const { jobs, showCompany = true } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
 const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]));
 ---
 
@@ -19,9 +22,9 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
         <a class="title" href={`/jobs/${job.slug}`}>{job.title}</a>
         <div class="meta">
           {showCompany && <span class="company">{companyNames.get(job.company) ?? job.company}</span>}
-          <span>{formatLocations(job.locations, job.remote)}</span>
-          {job.remote && <span class="tag">Remote</span>}
-          <span class="muted">Seen {formatDate(job.firstSeenAt)}</span>
+          <span>{formatLocations(job.locations, job.remote, 3, lang)}</span>
+          {job.remote && <span class="tag">{m.remote}</span>}
+          <span class="muted">{m.seen(formatDate(job.firstSeenAt, lang))}</span>
         </div>
       </li>
     ))

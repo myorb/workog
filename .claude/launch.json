@@ -1,7 +1,40 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "preview", "runtimeExecutable": "bun", "runtimeArgs": ["run", "preview", "--port", "4321"], "port": 4321 },
-    { "name": "dist-static", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "4330", "-d", "dist"], "port": 4330 }
+    {
+      "name": "preview",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": [
+        "run",
+        "preview",
+        "--port",
+        "4321"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "dist-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4330",
+        "-d",
+        "dist"
+      ],
+      "port": 4330
+    },
+    {
+      "name": "dist-static-alt",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4340",
+        "-d",
+        "dist"
+      ],
+      "port": 4340
+    }
   ]
 }

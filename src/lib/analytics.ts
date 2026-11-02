@@ -16,9 +16,6 @@ export interface DayTotals {
   closed: number;
 }
 
-export const categoryLabel = (category: string | undefined) =>
-  category ? category[0]!.toUpperCase() + category.slice(1) : "Other";
-
 /** Jobs per value of `key`, most first. */
 export function countBy(jobs: Job[], key: (job: Job) => string): Bar[] {
   const counts = new Map<string, number>();
@@ -39,7 +36,7 @@ export function remoteShareBy(jobs: Job[], key: (job: Job) => string): (Bar & { 
  * Open jobs by month posted, for the `months` months up to `ref`. Older and
  * undated jobs are counted in `earlier` and `undated`.
  */
-export function postedByMonth(jobs: Job[], ref: Date, months: number) {
+export function postedByMonth(jobs: Job[], ref: Date, months: number, locale = "en-US") {
   const keys = Array.from({ length: months }, (_, i) =>
     new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth() - (months - 1 - i), 1)).toISOString().slice(0, 7),
   );
@@ -53,7 +50,7 @@ export function postedByMonth(jobs: Job[], ref: Date, months: number) {
     else if (key < keys[0]!) earlier++;
   }
   const bars = keys.map((k) => ({
-    label: new Date(`${k}-01T00:00:00Z`).toLocaleDateString("en-US", { month: "short", timeZone: "UTC" }),
+    label: new Date(`${k}-01T00:00:00Z`).toLocaleDateString(locale, { month: "short", timeZone: "UTC" }),
     month: k,
     count: counts.get(k)!,
   }));
