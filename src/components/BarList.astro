@@ -1,0 +1,40 @@
+---
+import type { Bar } from "../lib/analytics.ts";
+
+interface Props {
+  bars: (Bar & { share?: number })[];
+  /** draw each bar's `share` (0..1) as a percentage instead of its count */
+  share?: boolean;
+}
+
+const { bars, share = false } = Astro.props;
+const max = Math.max(1, ...bars.map((b) => b.count));
+const width = (b: Props["bars"][number]) => (share ? (b.share ?? 0) * 100 : (b.count / max) * 100);
+const value = (b: Props["bars"][number]) =>
+  share ? `${Math.round((b.share ?? 0) * 100)}%` : b.count.toLocaleString("en-US");
+---
+
+<ul class="bar-list">
+  {
+    bars.map((b) => (
+      <li title={share ? `${b.label}: ${value(b)} of ${b.count.toLocaleString("en-US")}` : undefined}>
+        <span class="label">{b.href ? <a href={b.href}>{b.label}</a> : b.label}</span>
+        <span class="track" class:list={{ "has-track": share }}>
+          <span class="bar" style={`width: ${width(b)}%`} />
+        </span>
+        <span class="value">{value(b)}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .bar-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: minmax(0, 9rem) 1fr auto; gap: 6px 10px; align-items: center; font-size: 14px; }
+  li { display: contents; }
+  .label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .track { display: block; height: 10px; border-radius: 4px; }
+  .track.has-track { background: var(--tag); }
+  .bar { display: block; height: 100%; min-width: 2px; border-radius: 4px; background: var(--accent); }
+  li:hover .bar { opacity: 0.8; }
+  .value { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+</style>

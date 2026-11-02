@@ -58,6 +58,7 @@ To roll back, redeploy an earlier deployment in the Cloudflare dashboard, or `gi
 | `data/companies.json` | Company list and source config |
 | `data/jobs/<company>.json` | Job[] per company, written by the pipeline |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
+| `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
 | `scripts/fetchers/` | One module per source (`greenhouse.ts` so far) |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |

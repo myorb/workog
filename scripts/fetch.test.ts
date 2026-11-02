@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import type { Job } from "../src/lib/schema.ts";
+import type { Job, SourceRun } from "../src/lib/schema.ts";
 import type { NormalizedJob } from "./fetchers/types.ts";
-import { jobsChanged, mergeJobs, sanityCheck } from "./fetch.ts";
+import { jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
 
@@ -98,4 +98,42 @@ test("jobsChanged ignores undefined fields that JSON drops", () => {
   const fresh = [stored("1", { department: undefined })];
   const fromDisk = JSON.parse(JSON.stringify(fresh)) as Job[];
   expect(jobsChanged(fromDisk, fresh)).toBe(false);
+});
+
+describe("recordHistory", () => {
+  const run = (company: string, open: number, added = 0, closed = 0): SourceRun => ({
+    company,
+    source: "test",
+    status: "ok",
+    fetched: open,
+    invalid: 0,
+    open,
+    new: added,
+    closed,
+    fallbackStreak: 0,
+    broken: false,
+  });
+
+  test("adds a sorted line per day", () => {
+    const first = recordHistory([], "2026-11-03", [run("acme", 10, 2)], new Set(["acme"]));
+    const history = recordHistory(first, "2026-11-02", [run("acme", 8)], new Set(["acme"]));
+    expect(history.map((d) => d.date)).toEqual(["2026-11-02", "2026-11-03"]);
+    expect(history[1]!.companies.acme).toEqual({ open: 10, new: 2, closed: 0 });
+  });
+
+  test("a rerun on the same day adds to the earlier counts", () => {
+    const first = recordHistory([], "2026-11-02", [run("acme", 10, 2, 1)], new Set(["acme"]));
+    const history = recordHistory(first, "2026-11-02", [run("acme", 11, 1)], new Set(["acme"]));
+    expect(history).toHaveLength(1);
+    expect(history[0]!.companies.acme).toEqual({ open: 11, new: 3, closed: 1 });
+  });
+
+  test("skipped companies keep the day's counts, not the carried-over run status", () => {
+    const first = recordHistory([], "2026-11-02", [run("acme", 10, 2), run("beta", 5, 5)], new Set(["acme", "beta"]));
+    // a partial run copies beta's previous status, including its new count, into latest.json
+    const history = recordHistory(first, "2026-11-02", [run("acme", 10), run("beta", 5, 5)], new Set(["acme"]));
+    expect(history[0]!.companies.beta).toEqual({ open: 5, new: 5, closed: 0 });
+    const nextDay = recordHistory(history, "2026-11-03", [run("acme", 10), run("beta", 5, 5)], new Set(["acme"]));
+    expect(nextDay[1]!.companies.beta).toEqual({ open: 5, new: 0, closed: 0 });
+  });
 });

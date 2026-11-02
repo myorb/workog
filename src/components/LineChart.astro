@@ -1,0 +1,61 @@
+---
+import { formatDate } from "../lib/format.ts";
+
+interface Props {
+  points: { date: string; value: number }[];
+  /** what one value counts, for the hover titles */
+  unit: string;
+}
+
+const { points, unit } = Astro.props;
+const W = 800;
+const H = 200;
+const values = points.map((p) => p.value);
+// a little headroom so the line never touches the top or bottom edge
+const lo = Math.min(...values);
+const hi = Math.max(...values);
+const pad = Math.max(1, (hi - lo) * 0.1);
+const yMin = Math.max(0, lo - pad);
+const yMax = hi + pad;
+const x = (i: number) => (points.length === 1 ? W / 2 : (i / (points.length - 1)) * W);
+const y = (v: number) => H - ((v - yMin) / (yMax - yMin)) * H;
+const line = points.map((p, i) => `${x(i).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
+const slot = W / points.length;
+const fmt = (n: number) => Math.round(n).toLocaleString("en-US");
+---
+
+<figure class="line-chart">
+  <div class="plot">
+    <span class="y top">{fmt(yMax)}</span>
+    <span class="y bottom">{fmt(yMin)}</span>
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" role="img" aria-label={`${unit} from ${formatDate(points[0]!.date)} to ${formatDate(points.at(-1)!.date)}`}>
+      <line class="grid" x1="0" x2={W} y1={H / 2} y2={H / 2} />
+      <polyline points={line} />
+      {
+        points.map((p, i) => (
+          <rect class="hit" x={x(i) - slot / 2} y="0" width={slot} height={H}>
+            <title>{`${formatDate(p.date)}: ${fmt(p.value)} ${unit}`}</title>
+          </rect>
+        ))
+      }
+    </svg>
+  </div>
+  <figcaption>
+    <span>{formatDate(points[0]!.date)}</span>
+    <span>{formatDate(points.at(-1)!.date)} · {fmt(points.at(-1)!.value)} {unit}</span>
+  </figcaption>
+</figure>
+
+<style>
+  .line-chart { margin: 0; }
+  .plot { position: relative; height: 200px; border-bottom: 1px solid var(--border); }
+  svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  polyline { fill: none; stroke: var(--accent); stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+  .grid { stroke: var(--border); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 4 4; }
+  .hit { fill: transparent; }
+  .hit:hover { fill: var(--tag); opacity: 0.5; }
+  .y { position: absolute; left: 0; font-size: 12px; color: var(--muted); background: var(--bg); padding-right: 4px; z-index: 1; }
+  .y.top { top: 0; }
+  .y.bottom { bottom: 2px; }
+  figcaption { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); padding-top: 4px; }
+</style>

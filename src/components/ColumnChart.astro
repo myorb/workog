@@ -1,0 +1,59 @@
+---
+interface Props {
+  /** one entry per column group; `values` line up with `series` */
+  columns: { label: string; values: number[]; title: string }[];
+  /** one series needs no legend; its color is the accent */
+  series?: { name: string; color: string }[];
+  /** print each value above its column; only sensible for one series */
+  showValues?: boolean;
+}
+
+const { columns, series = [{ name: "", color: "var(--accent)" }], showValues = false } = Astro.props;
+const max = Math.max(1, ...columns.flatMap((c) => c.values));
+---
+
+{
+  series.length > 1 && (
+    <ul class="legend">
+      {series.map((s) => (
+        <li>
+          <span class="swatch" style={`background: ${s.color}`} />
+          {s.name}
+        </li>
+      ))}
+    </ul>
+  )
+}
+<div class="columns" role="list">
+  {
+    columns.map((c) => (
+      <div class="group" role="listitem" title={c.title}>
+        <div class="bars">
+          {c.values.map((v, i) => (
+            <div class="col">
+              {showValues && <span class="value">{v.toLocaleString("en-US")}</span>}
+              <span class="bar" style={`height: ${(v / max) * 100}%; background: ${series[i]!.color}`} />
+            </div>
+          ))}
+        </div>
+        <span class="label">{c.label}</span>
+        <span class="sr-only">{c.title}</span>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .legend { list-style: none; padding: 0; margin: 0 0 8px; display: flex; gap: 16px; font-size: 13px; color: var(--muted); }
+  .legend li { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 2px; }
+  .columns { display: flex; gap: 4px; height: 200px; }
+  .group { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .bars { flex: 1; display: flex; gap: 2px; align-items: flex-end; padding: 0 2px; border-bottom: 1px solid var(--border); border-radius: 4px 4px 0 0; }
+  .group:hover .bars { background: var(--tag); }
+  .col { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
+  .bar { width: 100%; min-height: 2px; border-radius: 4px 4px 0 0; }
+  .value { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .label { font-size: 12px; color: var(--muted); text-align: center; padding-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+</style>

@@ -8,7 +8,7 @@ import { z } from "zod";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { technologiesOf } from "./technologies.ts";
-import { type CompanyConfig, CompanyConfigSchema, type Job, JobSchema, type Run, RunSchema } from "./schema.ts";
+import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, JobSchema, type Run, RunSchema } from "./schema.ts";
 
 const DATA_DIR = join(process.cwd(), "data");
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -16,6 +16,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 let jobsCache: Promise<Job[]> | undefined;
 let companiesCache: Promise<CompanyConfig[]> | undefined;
 let runCache: Promise<Run | undefined> | undefined;
+let historyCache: Promise<HistoryDay[]> | undefined;
 
 async function loadJobs(): Promise<Job[]> {
   const dir = join(DATA_DIR, "jobs");
@@ -129,4 +130,11 @@ export function getLatestRun(): Promise<Run | undefined> {
   return (runCache ??= readFile(join(DATA_DIR, "runs", "latest.json"), "utf8")
     .then((s) => RunSchema.parse(JSON.parse(s)))
     .catch(() => undefined));
+}
+
+/** Per-company counts by day, oldest first; days without a commit are missing. */
+export function getHistory(): Promise<HistoryDay[]> {
+  return (historyCache ??= readFile(join(DATA_DIR, "runs", "history.json"), "utf8")
+    .then((s) => z.array(HistoryDaySchema).parse(JSON.parse(s)))
+    .catch(() => []));
 }

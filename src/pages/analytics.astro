@@ -1,0 +1,163 @@
+---
+import Base from "../layouts/Base.astro";
+import BarList from "../components/BarList.astro";
+import ColumnChart from "../components/ColumnChart.astro";
+import LineChart from "../components/LineChart.astro";
+import { countTags, getCompanies, getHistory, getLatestRun, getOpenJobs } from "../lib/jobs.ts";
+import { cityLinks, countryLinks, technologyLinks } from "../lib/links.ts";
+import { categoryLabel, countBy, dailyTotals, medianAgeDays, postedByMonth, remoteShareBy, weeklyTotals } from "../lib/analytics.ts";
+import { formatDate, formatDateTime, plural } from "../lib/format.ts";
+import { TREND_MIN_DAYS } from "../lib/constants.ts";
+
+const TOP = 10;
+
+const jobs = await getOpenJobs();
+const companies = await getCompanies();
+const companyNames = new Map(companies.map((c) => [c.key, c.name]));
+const run = await getLatestRun();
+const ref = run ? new Date(run.startedAt) : new Date();
+
+const remoteCount = jobs.filter((j) => j.remote).length;
+const newInRun = run?.sources.reduce((sum, s) => sum + s.new, 0) ?? 0;
+const closedInRun = run?.sources.reduce((sum, s) => sum + s.closed, 0) ?? 0;
+
+const byCategory = countBy(jobs, (j) => categoryLabel(j.category));
+const byCompany = countBy(jobs, (j) => j.company).map((b) => ({
+  ...b,
+  label: companyNames.get(b.label) ?? b.label,
+  href: `/companies/${b.label}`,
+}));
+const tags = await countTags(jobs);
+const toBars = (links: { href: string; label: string; count: number }[]) => links.slice(0, TOP);
+const topTechnologies = toBars(technologyLinks(tags.technologies));
+const topCountries = toBars(countryLinks(tags.countries));
+const topCities = toBars(cityLinks(tags.cities));
+const remoteByCategory = remoteShareBy(jobs, (j) => categoryLabel(j.category));
+
+const posted = postedByMonth(jobs, ref, 8);
+const medianAge = medianAgeDays(jobs, ref);
+
+const days = dailyTotals(await getHistory());
+const weeks = weeklyTotals(days).slice(-12);
+const showTrends = days.length >= TREND_MIN_DAYS;
+
+const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%`;
+---
+
+<Base
+  title="Analytics"
+  description={`Hiring at a glance: ${plural(jobs.length, "open job")} by function, company, technology and location, refreshed daily.`}
+>
+  <h1>Analytics</h1>
+  <p class="muted">
+    Snapshot of {plural(jobs.length, "open role")}
+    {run && <> · updated <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt)}</time></>}
+  </p>
+
+  <dl class="stats">
+    <div><dt>Open jobs</dt><dd>{jobs.length.toLocaleString("en-US")}</dd></div>
+    <div><dt>Companies hiring</dt><dd>{byCompany.length}</dd></div>
+    <div><dt>Remote</dt><dd>{pct(remoteCount)}</dd></div>
+    <div><dt>Latest run</dt><dd>+{newInRun} <span class="muted">/ −{closedInRun}</span></dd></div>
+  </dl>
+
+  <section>
+    <h2>Trends</h2>
+    {
+      showTrends ? (
+        <div class="grid">
+          <div>
+            <h3>Open jobs over time</h3>
+            <LineChart points={days.map((d) => ({ date: d.date, value: d.open }))} unit="open jobs" />
+          </div>
+          <div>
+            <h3>New vs closed per week</h3>
+            <ColumnChart
+              series={[
+                { name: "New", color: "var(--series-new)" },
+                { name: "Closed", color: "var(--series-closed)" },
+              ]}
+              columns={weeks.map((w) => ({
+                label: formatDate(w.week).replace(/, \d{4}$/, ""),
+                values: [w.new, w.closed],
+                title: `Week of ${formatDate(w.week)}: ${w.new} new, ${w.closed} closed`,
+              }))}
+            />
+          </div>
+        </div>
+      ) : (
+        <p class="muted note">
+          Trend charts appear once there are {TREND_MIN_DAYS} days of history ({plural(days.length, "day")} so far
+          {days.length > 0 && <>, since {formatDate(days[0]!.date)}</>}).
+        </p>
+      )
+    }
+  </section>
+
+  <div class="grid">
+    <section>
+      <h2>Jobs by function</h2>
+      <BarList bars={byCategory} />
+    </section>
+    <section>
+      <h2>Jobs by company</h2>
+      <BarList bars={byCompany} />
+    </section>
+    <section>
+      <h2>Top technologies</h2>
+      <BarList bars={topTechnologies} />
+      <p class="more"><a href="/technologies">All technologies →</a></p>
+    </section>
+    <section>
+      <h2>Top countries</h2>
+      <BarList bars={topCountries} />
+      <h3>Top cities</h3>
+      <BarList bars={topCities} />
+      <p class="more"><a href="/locations">All locations →</a></p>
+    </section>
+  </div>
+
+  <section>
+    <h2>When open roles were posted</h2>
+    <p class="muted">
+      {medianAge !== undefined && <>Median age {plural(medianAge, "day")}. </>}
+      {posted.earlier > 0 && <>{plural(posted.earlier, "role")} posted earlier. </>}
+      {posted.undated > 0 && <>{plural(posted.undated, "role")} without a posted date.</>}
+    </p>
+    <ColumnChart
+      showValues
+      columns={posted.bars.map((b) => ({ label: b.label, values: [b.count], title: `${b.label}: ${plural(b.count, "open role")} posted` }))}
+    />
+  </section>
+
+  <section>
+    <h2>Remote share by function</h2>
+    <BarList share bars={remoteByCategory} />
+  </section>
+
+</Base>
+
+<style>
+  :root {
+    --series-new: #2a78d6;
+    --series-closed: #eb6834;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --series-new: #3987e5;
+      --series-closed: #d95926;
+    }
+  }
+  section { margin-top: 32px; }
+  h2 { margin-bottom: 12px; }
+  h3 { font-size: 15px; margin: 16px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 32px; }
+  .grid > section, .grid > div { min-width: 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0 0; }
+  .stats div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+  .stats dt { font-size: 13px; color: var(--muted); }
+  .stats dd { margin: 0; font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stats dd .muted { font-size: 18px; font-weight: 400; }
+  .note { background: var(--surface); border: 1px dashed var(--border); border-radius: 8px; padding: 12px 16px; }
+  .more { font-size: 14px; margin: 8px 0 0; }
+</style>
