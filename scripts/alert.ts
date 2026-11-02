@@ -19,7 +19,7 @@ export function formatRunAlert(run: Pick<Run, "startedAt" | "sources">): string 
     const streak = s.fallbackStreak > 1 ? `, ${s.fallbackStreak} runs in a row` : "";
     return `${label} (${s.source}): ${s.reason ?? "fallback"}. Fetched ${s.fetched}, invalid ${s.invalid}; kept ${s.open} open jobs from the previous run${streak}.`;
   });
-  return [`Static Job run ${run.startedAt}: ${fallbacks.length} source(s) fell back`, ...lines].join("\n");
+  return [`Workog run ${run.startedAt}: ${fallbacks.length} source(s) fell back`, ...lines].join("\n");
 }
 
 function runLink(): string | undefined {

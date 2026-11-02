@@ -16,7 +16,7 @@ export const GET: APIRoute = async ({ site }) => {
   const list = (links: { href: string; label: string; count: number }[]) =>
     links.map((l) => `- [${l.label}](${url(l.href)}): ${plural(l.count, "open job")}`).join("\n");
 
-  const body = `# Static Job
+  const body = `# Workog
 
 > ${plural(jobs.length, "open job")} at ${plural(companies.length, "tech company")}, fetched daily from each company's official careers site.${run ? ` Last updated ${run.finishedAt}.` : ""}
 

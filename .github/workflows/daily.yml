@@ -66,4 +66,4 @@ jobs:
 
       - name: Alert on workflow failure
         if: failure()
-        run: bun run alert "🚨 Static Job daily update failed; the site keeps serving the previous version."
+        run: bun run alert "🚨 Workog daily update failed; the site keeps serving the previous version."

@@ -1,4 +1,4 @@
-# Static Job
+# Workog
 
 A static job portal: a daily pipeline fetches open jobs from company career sites into `data/jobs/*.json`, and Astro pre-renders one page per job plus browse pages. See the technical spec for the full design.
 
@@ -46,7 +46,7 @@ The daily job deploys by itself because pushes made with `GITHUB_TOKEN` don't tr
    - `CLOUDFLARE_API_TOKEN`
    - `CLOUDFLARE_ACCOUNT_ID`
    - `ALERT_WEBHOOK_URL`: a Slack or Discord incoming webhook, or `https://api.telegram.org/bot<token>/sendMessage?chat_id=<id>`
-5. Set the `SITE_URL` env var for builds if the site isn't served at `https://static-job.pages.dev`.
+5. Set the `SITE_URL` env var for builds if the site isn't served at `https://workog.com`.
 6. Start the first run from Actions → Daily update → Run workflow.
 
 To roll back, redeploy an earlier deployment in the Cloudflare dashboard, or `git revert` the data commit, which triggers `deploy.yml`.

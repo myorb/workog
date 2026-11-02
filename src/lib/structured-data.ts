@@ -14,10 +14,10 @@ const employmentTypes: Record<EmploymentType, string> = {
 
 export const website = (site: URL, description: string): Thing => ({
   "@type": "WebSite",
-  name: "Static Job",
+  name: "Workog",
   url: site.href,
   description,
-  publisher: { "@type": "Organization", name: "Static Job", url: site.href, logo: new URL("/icon-512.png", site).href },
+  publisher: { "@type": "Organization", name: "Workog", url: site.href, logo: new URL("/icon-512.png", site).href },
 });
 
 export const breadcrumbs = (items: { name: string; url: URL }[]): Thing => ({

@@ -1,5 +1,5 @@
 const USER_AGENT =
-  process.env.FETCH_USER_AGENT ?? "static-job/0.1 (+https://static-job.pages.dev/about)";
+  process.env.FETCH_USER_AGENT ?? "workog/0.1 (+https://workog.com/about)";
 
 const TIMEOUT_MS = 30_000;
 const MAX_RETRIES = 3;

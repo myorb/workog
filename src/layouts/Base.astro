@@ -24,7 +24,7 @@ const canonical = new URL(pathname, Astro.site);
 const basePath = stripLang(pathname);
 const alternates = translated ? locales.map((l) => ({ lang: l, href: new URL(localizePath(basePath, l), Astro.site) })) : [];
 const run = await getLatestRun();
-const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
+const fullTitle = title === "Workog" ? title : `${title} · Workog`;
 const ogLocale = (l: string) => intlLocale(l as typeof lang).replace("-", "_");
 const ogImage = new URL("/og.png", Astro.site);
 // "</" inside JSON would close the script tag early
@@ -46,9 +46,9 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)" />
-    <meta name="application-name" content="Static Job" />
+    <meta name="application-name" content="Workog" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Static Job" />
+    <meta property="og:site_name" content="Workog" />
     <meta property="og:locale" content={ogLocale(lang)} />
     {alternates.filter((a) => a.lang !== lang).map((a) => <meta property="og:locale:alternate" content={ogLocale(a.lang)} />)}
     <meta property="og:title" content={fullTitle} />
@@ -57,7 +57,7 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Static Job — open jobs at top tech companies" />
+    <meta property="og:image:alt" content="Workog — open jobs at top tech companies" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
@@ -70,7 +70,7 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href={u("/")}>Static Job</a>
+        <a class="brand" href={u("/")}>Workog</a>
         <nav>
           <a href={u("/remote")}>{m.nav.remote}</a>
           <a href={u("/locations")}>{m.nav.locations}</a>

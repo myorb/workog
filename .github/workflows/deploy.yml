@@ -41,6 +41,6 @@ jobs:
 
       - name: Alert on failure
         if: failure()
-        run: bun run alert "🚨 Static Job deploy of ${GITHUB_SHA::7} failed; the site keeps serving the previous version."
+        run: bun run alert "🚨 Workog deploy of ${GITHUB_SHA::7} failed; the site keeps serving the previous version."
         env:
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
