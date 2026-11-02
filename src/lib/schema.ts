@@ -62,3 +62,17 @@ export const RunSchema = z.object({
 
 export type SourceRun = z.infer<typeof SourceRunSchema>;
 export type Run = z.infer<typeof RunSchema>;
+
+const DayCountsSchema = z.object({
+  open: z.number().int(),
+  new: z.number().int(),
+  closed: z.number().int(),
+});
+
+/** One line of runs/history.json: per-company counts for one UTC day */
+export const HistoryDaySchema = z.object({
+  date: z.iso.date(),
+  companies: z.record(z.string(), DayCountsSchema),
+});
+
+export type HistoryDay = z.infer<typeof HistoryDaySchema>;

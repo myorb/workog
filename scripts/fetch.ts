@@ -1,7 +1,7 @@
 /**
  * Daily pipeline: fetch every company, normalize and validate, run sanity
  * checks, merge with the previous data/jobs/<company>.json, then write the
- * files and runs/latest.json.
+ * files, runs/latest.json and the day's line in runs/history.json.
  *
  *   bun scripts/fetch.ts            # all companies
  *   bun scripts/fetch.ts figma      # only the listed company keys
@@ -10,6 +10,8 @@
  * reported as "fallback"; that never fails the process. In GitHub Actions the
  * script sets the step output `changed=true|false`, ignoring lastSeenAt, so the
  * workflow can stop before committing and deploying when nothing is new.
+ * History alone never counts as a change: a day with no commit had no new or
+ * closed jobs, so readers fill the gap from the day before.
  */
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -18,6 +20,8 @@ import { makeJobSlug } from "../src/lib/normalize.ts";
 import {
   CompanyConfigSchema,
   type CompanyConfig,
+  type HistoryDay,
+  HistoryDaySchema,
   type Job,
   JobSchema,
   type Run,
@@ -152,6 +156,26 @@ export function jobsChanged(before: Job[], after: Job[]): boolean {
   return key(before) !== key(after);
 }
 
+/**
+ * Puts this run's counts into the history line for `date`. A rerun on the same
+ * day adds its new and closed counts to the earlier run's; companies this run
+ * skipped keep what the day already had.
+ */
+export function recordHistory(history: HistoryDay[], date: string, sources: SourceRun[], ran: Set<string>): HistoryDay[] {
+  const today = history.find((d) => d.date === date)?.companies ?? {};
+  const companies: HistoryDay["companies"] = {};
+  for (const s of sources) {
+    const prev = today[s.company];
+    companies[s.company] = ran.has(s.company)
+      ? { open: s.open, new: (prev?.new ?? 0) + s.new, closed: (prev?.closed ?? 0) + s.closed }
+      : (prev ?? { open: s.open, new: 0, closed: 0 });
+  }
+  return [...history.filter((d) => d.date !== date), { date, companies }].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/** One day per line, so each daily commit is a one-line diff. */
+const historyJson = (history: HistoryDay[]) => `[\n${history.map((d) => JSON.stringify(d)).join(",\n")}\n]\n`;
+
 const statusKey = (s: SourceRun | undefined) => (s ? `${s.status}|${s.fallbackStreak}|${s.broken}` : "");
 
 async function main() {
@@ -238,6 +262,11 @@ async function main() {
 
   const run: Run = { startedAt, finishedAt: new Date().toISOString(), sources };
   await writeJson(runFile, run);
+
+  const historyFile = join(DATA_DIR, "runs", "history.json");
+  const history = z.array(HistoryDaySchema).parse(await readJson(historyFile, []));
+  const ran = new Set(companies.map((c) => c.key));
+  await writeFile(historyFile, historyJson(recordHistory(history, startedAt.slice(0, 10), sources, ran)));
 
   const fallbacks = sources.filter((s) => s.status === "fallback");
   if (fallbacks.length) console.error(`${fallbacks.length} source(s) fell back: ${fallbacks.map((s) => s.company).join(", ")}`);
