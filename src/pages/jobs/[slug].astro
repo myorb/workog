@@ -3,6 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import { getAllJobs, getCompany } from "../../lib/jobs.ts";
 import { formatDate, formatLocations } from "../../lib/format.ts";
+import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
+import { employmentTypeOf } from "../../lib/employment.ts";
+import { t } from "../../lib/i18n.ts";
 
 export const getStaticPaths = (async () => {
   const jobs = await getAllJobs();
@@ -14,6 +17,17 @@ const company = await getCompany(job.company);
 const companyName = company?.name ?? job.company;
 const closed = Boolean(job.closedAt);
 const where = formatLocations(job.locations, job.remote, 2);
+const employment = employmentTypeOf(job);
+const url = new URL(`/jobs/${job.slug}`, Astro.site);
+// closed jobs are noindexed, so they drop the posting markup too
+const jsonLd = [
+  breadcrumbs([
+    { name: "Companies", url: new URL("/companies", Astro.site) },
+    { name: companyName, url: new URL(`/companies/${job.company}`, Astro.site) },
+    { name: job.title, url },
+  ]),
+  ...(closed ? [] : [jobPosting(job, companyName, url)]),
+];
 ---
 
 <Base
@@ -21,6 +35,7 @@ const where = formatLocations(job.locations, job.remote, 2);
   description={`${job.title} at ${companyName} — ${where}${job.remote ? " (remote)" : ""}. Apply on ${companyName}'s official careers site.`}
   noindex={closed}
   translated={false}
+  jsonLd={jsonLd}
 >
   <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
 
@@ -29,7 +44,8 @@ const where = formatLocations(job.locations, job.remote, 2);
   <h1>{job.title}</h1>
   <dl class="facts">
     <dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd>
-    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <span class="tag">Remote</span></>}</dd>
+    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <a class="tag" href="/remote">Remote</a></>}</dd>
+    <dt>Employment type</dt><dd><a href={`/employment/${employment}`}>{t("en").employment.types[employment]}</a></dd>
     {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
   </dl>

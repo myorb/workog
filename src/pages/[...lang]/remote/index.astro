@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import JobList from "../../../components/JobList.astro";
+import TagLinks from "../../../components/TagLinks.astro";
+import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
+import { countryLinks, remoteUrl } from "../../../lib/links.ts";
+import { getLang, t, withLangs } from "../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const jobs = await getJobsWhere({ remote: true });
+const companies = new Set(jobs.map((j) => j.company)).size;
+const counts = await countTags(jobs);
+const countries = countryLinks(counts.countries, remoteUrl, lang);
+---
+
+<Base title={m.remoteJobs.title} description={m.remoteJobs.description(jobs.length, companies)} noindex={!jobs.length}>
+  <h1>{m.remoteJobs.title}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {countries.length > 0 && <><h2>{m.remoteJobs.byCountry}</h2><TagLinks links={countries} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>

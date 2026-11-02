@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import TagLinks from "../../../components/TagLinks.astro";
+import { countTags } from "../../../lib/jobs.ts";
+import { employmentLinks, remoteUrl } from "../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const counts = await countTags();
+const types = employmentLinks(counts.employment, lang);
+---
+
+<Base title={m.employment.title} description={m.employment.description(types.map((t) => t.label))}>
+  <h1>{m.employment.title}</h1>
+  <TagLinks links={types} />
+  <p><a href={localizePath(remoteUrl(), lang)}>{m.allRemote}</a></p>
+</Base>

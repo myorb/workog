@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import type { Job } from "./schema.ts";
 import { categorize } from "./normalize.ts";
+import { employmentTypeOf } from "./employment.ts";
 import { placesOf } from "./places.ts";
 import { technologiesOf } from "./technologies.ts";
 
@@ -94,5 +95,34 @@ describe("categorize", () => {
   test("team words still count when no role matches", () => {
     expect(categorize("Threat Intelligence Platform Engineer")).toBe("engineering");
     expect(categorize("Platform Lead, Security")).toBe("engineering");
+  });
+});
+
+describe("employmentTypeOf", () => {
+  const type = (title: string, descriptionHtml = "<p>Hi</p>") => employmentTypeOf({ title, descriptionHtml });
+
+  test("full time by default", () => {
+    expect(type("Software Engineer")).toBe("full-time");
+  });
+
+  test("reads titles", () => {
+    expect(type("Software Engineer, Intern (Summer 2027)")).toBe("internship");
+    expect(type("Operations Associate, Apprenticeship")).toBe("internship");
+    expect(type("Recruiting Coordinator (Fixed-Term Contract)")).toBe("contract");
+    expect(type("Infrastructure Engineer - FTC (6 months)")).toBe("contract");
+    expect(type("Contract Talent Acquisition Sourcer")).toBe("contract");
+    expect(type("Candidate Experience Specialist, Contractor")).toBe("contract");
+    expect(type("Support Specialist (Part-Time)")).toBe("part-time");
+  });
+
+  test("contract as a subject is not a contract role", () => {
+    expect(type("Monetization and Contract Success (MACS) Specialist")).toBe("full-time");
+  });
+
+  test("descriptions count only when they describe the role", () => {
+    expect(type("GTM Recruiter", "<p>This is an 11 month fixed-term contract.</p>")).toBe("contract");
+    expect(type("Data Analyst", "<p>3 years of full-time experience exclusive of internships</p>")).toBe("full-time");
+    expect(type("Marketing Manager", "<p>Experience leveraging agency and contractor resources</p>")).toBe("full-time");
+    expect(type("Engineer", "<p>We are not considering remote or part-time applicants.</p>")).toBe("full-time");
   });
 });

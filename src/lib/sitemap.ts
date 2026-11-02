@@ -1,5 +1,5 @@
 import { getCompanies, getOpenJobs, tagsOf } from "./jobs.ts";
-import { cityUrl, countryUrl, technologyUrl } from "./links.ts";
+import { cityUrl, countryUrl, employmentUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
 
 export interface SitemapEntry {
@@ -13,12 +13,17 @@ export interface SitemapEntry {
  */
 export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const jobs = await getOpenJobs();
-  const paths = new Set(["/", "/companies", "/locations", "/technologies", "/analytics"]);
+  const paths = new Set(["/", "/companies", "/locations", "/technologies", "/employment", "/analytics"]);
 
   for (const company of await getCompanies()) paths.add(`/companies/${company.key}`);
 
   for (const job of jobs) {
     const tags = tagsOf(job);
+    for (const type of tags.employment) paths.add(employmentUrl(type));
+    if (job.remote) {
+      paths.add(remoteUrl());
+      for (const country of tags.countries) paths.add(remoteUrl(country));
+    }
     for (const country of tags.countries) paths.add(countryUrl(country));
     for (const slug of tags.cities) {
       const city = getCity(slug);

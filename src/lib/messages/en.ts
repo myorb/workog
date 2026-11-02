@@ -15,7 +15,7 @@ const cities = { one: "city", other: "cities" };
 const days = { one: "day", other: "days" };
 
 export const en = {
-  nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics" },
+  nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics", remote: "Remote" },
   language: "Language",
   lastUpdated: "Last updated",
   footerNote: "Listings link to each company's official posting. Apply on the company's site.",
@@ -30,6 +30,7 @@ export const en = {
   allCompanies: "All companies →",
   allTechnologies: "All technologies →",
   allLocations: "All locations →",
+  allRemote: "All remote jobs →",
   categories: {
     data: "Data",
     design: "Design",
@@ -54,6 +55,8 @@ export const en = {
     topCompanies: "Top companies",
     technologies: "Technologies",
     locations: "Locations",
+    employment: "Employment type",
+    remote: "Remote jobs",
   },
   companies: {
     title: "Companies",
@@ -77,6 +80,23 @@ export const en = {
     cityDescription: (k: number, place: string) => `${p(k, openTechJobs)} in ${place}. Updated daily.`,
     cities: "Cities",
     technologies: "Technologies",
+  },
+  employment: {
+    label: "Employment type",
+    types: { "full-time": "Full time", "part-time": "Part time", contract: "Contract", internship: "Internship" },
+    title: "Jobs by employment type",
+    description: (names: string[]) => `Open tech jobs by employment type: ${names.join(", ")}. Refreshed daily.`,
+    typeTitle: (type: string) => `${type} jobs`,
+    typeDescription: (k: number, type: string, co: number) =>
+      `${p(k, { one: `open ${type.toLowerCase()} job`, other: `open ${type.toLowerCase()} jobs` })} at top tech companies, in ${p(co, countries)}. Updated daily.`,
+    none: (type: string) => `No open ${type.toLowerCase()} positions right now.`,
+  },
+  remoteJobs: {
+    title: "Remote jobs",
+    titleIn: (place: string) => `Remote jobs in ${place}`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "open remote job", other: "open remote jobs" })} in ${place} at top tech companies. Updated daily.`,
+    description: (k: number, c: number) => `${p(k, { one: "open remote job", other: "open remote jobs" })} at ${p(c, techCompanies)}, refreshed daily.`,
+    byCountry: "By country",
   },
   technologies: {
     title: "Jobs by technology",

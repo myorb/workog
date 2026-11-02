@@ -1,11 +1,14 @@
 import { cities, countries } from "./places.ts";
 import { technologies } from "./technologies.ts";
-import { countryName, defaultLang, type Lang } from "./i18n.ts";
+import { employmentTypes } from "./employment.ts";
+import { countryName, defaultLang, type Lang, t } from "./i18n.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
 export const technologyUrl = (tech: string, country?: string, city?: string) =>
   ["/technologies", tech, country, city].filter(Boolean).join("/");
+export const employmentUrl = (type: string) => `/employment/${type}`;
+export const remoteUrl = (country?: string) => ["/remote", country].filter(Boolean).join("/");
 
 type Link = { href: string; label: string; count: number };
 
@@ -30,3 +33,6 @@ export const cityLinks = (counts: Map<string, number>, href: (country: string, s
 
 export const technologyLinks = (counts: Map<string, number>, href: (slug: string) => string = technologyUrl) =>
   linksFor(technologies, counts, (t) => href(t.slug));
+
+export const employmentLinks = (counts: Map<string, number>, lang: Lang = defaultLang) =>
+  linksFor(employmentTypes.map((slug) => ({ slug, name: t(lang).employment.types[slug] })), counts, (e) => employmentUrl(e.slug));

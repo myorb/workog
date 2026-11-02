@@ -5,6 +5,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
+import { type EmploymentType, employmentTypeOf } from "./employment.ts";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { technologiesOf } from "./technologies.ts";
@@ -60,21 +61,25 @@ export interface JobFilter {
   country?: string;
   city?: string;
   technology?: string;
+  employment?: EmploymentType;
+  remote?: boolean;
 }
 
 interface JobTags {
   countries: Set<string>;
   cities: Set<string>;
   technologies: Set<string>;
+  /** always exactly one type */
+  employment: Set<EmploymentType>;
 }
 
 const tagsCache = new Map<string, JobTags>();
 
-/** Countries, cities and technologies a job matches, computed once per build. */
+/** Countries, cities, technologies and employment type a job matches, computed once per build. */
 export function tagsOf(job: Job): JobTags {
   let tags = tagsCache.get(job.id);
   if (!tags) {
-    tags = { ...placesOf(job.locations), technologies: technologiesOf(job) };
+    tags = { ...placesOf(job.locations), technologies: technologiesOf(job), employment: new Set([employmentTypeOf(job)]) };
     tagsCache.set(job.id, tags);
   }
   return tags;
@@ -85,7 +90,9 @@ export function matches(job: Job, filter: JobFilter): boolean {
   return (
     (!filter.country || tags.countries.has(filter.country)) &&
     (!filter.city || tags.cities.has(filter.city)) &&
-    (!filter.technology || tags.technologies.has(filter.technology))
+    (!filter.technology || tags.technologies.has(filter.technology)) &&
+    (!filter.employment || tags.employment.has(filter.employment)) &&
+    (filter.remote === undefined || job.remote === filter.remote)
   );
 }
 
@@ -93,12 +100,12 @@ export async function getJobsWhere(filter: JobFilter): Promise<Job[]> {
   return (await getOpenJobs()).filter((j) => matches(j, filter));
 }
 
-/** Open-job counts per country, city and technology, for linking only to pages that have jobs. */
+/** Open-job counts per tag, for linking only to pages that have jobs. */
 export async function countTags(jobs?: Job[]): Promise<Record<keyof JobTags, Map<string, number>>> {
-  const counts = { countries: new Map<string, number>(), cities: new Map<string, number>(), technologies: new Map<string, number>() };
+  const counts = { countries: new Map<string, number>(), cities: new Map<string, number>(), technologies: new Map<string, number>(), employment: new Map<string, number>() };
   for (const job of jobs ?? (await getOpenJobs())) {
     const tags = tagsOf(job);
-    for (const key of ["countries", "cities", "technologies"] as const) {
+    for (const key of ["countries", "cities", "technologies", "employment"] as const) {
       for (const slug of tags[key]) counts[key].set(slug, (counts[key].get(slug) ?? 0) + 1);
     }
   }

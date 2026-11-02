@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { countTags, getCompanies, getLatestRun, getOpenJobs } from "../lib/jobs.ts";
-import { countryLinks, technologyLinks } from "../lib/links.ts";
+import { countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../lib/links.ts";
 import { plural } from "../lib/format.ts";
 
 // https://llmstxt.org: a Markdown index of the site for language models
@@ -28,6 +28,8 @@ Each job page (\`/jobs/<slug>\`) has the title, company, locations, team, posted
 - [Companies](${url("/companies")}): every tracked company with its open job count
 - [Technologies](${url("/technologies")}): jobs by programming language and tool, also narrowed by country and city (\`/technologies/<tech>/<country>/<city>\`)
 - [Locations](${url("/locations")}): jobs by country and city
+- [Remote jobs](${url(remoteUrl())}): remote jobs, also by country (\`/remote/<country>\`)
+- [Employment types](${url("/employment")}): full time, part time, contract and internship jobs
 - [Analytics](${url("/analytics")}): daily history of open jobs per company
 - [Sitemap](${url("/sitemap.xml")}): every indexable page, including each open job
 
@@ -38,6 +40,10 @@ ${list(companies.map((c) => ({ href: `/companies/${c.key}`, label: c.name, count
 ## Technologies
 
 ${list(technologyLinks(tags.technologies))}
+
+## Employment types
+
+${list([{ href: remoteUrl(), label: "Remote", count: jobs.filter((j) => j.remote).length }, ...employmentLinks(tags.employment)])}
 
 ## Countries
 

@@ -2,6 +2,7 @@
 import { getLatestRun } from "../lib/jobs.ts";
 import { formatDateTime } from "../lib/format.ts";
 import { getLang, languageNames, localizePath, locales, stripLang, t } from "../lib/i18n.ts";
+import { intlLocale } from "../lib/locale.ts";
 
 interface Props {
   title: string;
@@ -9,9 +10,11 @@ interface Props {
   noindex?: boolean;
   /** false for pages that exist in English only */
   translated?: boolean;
+  /** schema.org objects, rendered as one JSON-LD script each */
+  jsonLd?: Record<string, unknown>[];
 }
 
-const { title, description, noindex = false, translated = true } = Astro.props;
+const { title, description, noindex = false, translated = true, jsonLd = [] } = Astro.props;
 const lang = translated ? getLang(Astro.params.lang) : "en";
 const m = t(lang);
 const u = (path: string) => localizePath(path, lang);
@@ -22,6 +25,10 @@ const basePath = stripLang(pathname);
 const alternates = translated ? locales.map((l) => ({ lang: l, href: new URL(localizePath(basePath, l), Astro.site) })) : [];
 const run = await getLatestRun();
 const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
+const ogLocale = (l: string) => intlLocale(l as typeof lang).replace("-", "_");
+const ogImage = new URL("/og.png", Astro.site);
+// "</" inside JSON would close the script tag early
+const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "https://schema.org", ...data }).replace(/</g, "\\u003c");
 ---
 
 <!doctype html>
@@ -32,13 +39,32 @@ const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1"} />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)" />
+    <meta name="application-name" content="Static Job" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Static Job" />
+    <meta property="og:locale" content={ogLocale(lang)} />
+    {alternates.filter((a) => a.lang !== lang).map((a) => <meta property="og:locale:alternate" content={ogLocale(a.lang)} />)}
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Static Job — open jobs at top tech companies" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     {alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
     {alternates.length > 0 && <link rel="alternate" hreflang="x-default" href={alternates[0]!.href} />}
+    {jsonLd.map((data) => <script type="application/ld+json" set:html={ldJson(data)} />)}
     <slot name="head" />
   </head>
   <body>
@@ -46,6 +72,7 @@ const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
       <div class="wrap">
         <a class="brand" href={u("/")}>Static Job</a>
         <nav>
+          <a href={u("/remote")}>{m.nav.remote}</a>
           <a href={u("/locations")}>{m.nav.locations}</a>
           <a href={u("/technologies")}>{m.nav.technologies}</a>
           <a href={u("/companies")}>{m.nav.companies}</a>
@@ -118,7 +145,7 @@ const fullTitle = title === "Static Job" ? title : `${title} · Static Job`;
   .site-header .langs a[aria-current] { color: var(--text); font-weight: 600; }
   @media (max-width: 480px) {
     .site-header .wrap { height: auto; flex-wrap: wrap; gap: 4px 12px; padding-top: 10px; padding-bottom: 10px; }
-    .site-header nav { gap: 12px; font-size: 14px; }
+    .site-header nav { flex-wrap: wrap; gap: 0 12px; font-size: 14px; }
   }
   main { padding-top: 24px; padding-bottom: 48px; }
   .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; padding-top: 16px; padding-bottom: 32px; }

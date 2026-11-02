@@ -49,6 +49,9 @@ const regionCodes: Record<string, string> = {
   australia: "AU", "new-zealand": "NZ",
 };
 
+/** ISO 3166-1 alpha-2 code for a country slug */
+export const countryCode = (slug: string): string | undefined => regionCodes[slug];
+
 const regionNames = new Map<Lang, Intl.DisplayNames>();
 
 export function countryName(country: Pick<Country, "slug" | "name">, lang: Lang): string {

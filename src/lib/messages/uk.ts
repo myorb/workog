@@ -15,7 +15,7 @@ const cities = { one: "місто", few: "міста", many: "міст", other: 
 const days = { one: "день", few: "дні", many: "днів", other: "дня" };
 
 export const uk = {
-  nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика" },
+  nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика", remote: "Віддалено" },
   language: "Мова",
   lastUpdated: "Оновлено",
   footerNote: "Оголошення ведуть на офіційні сторінки вакансій компаній. Подавайте заявку на сайті компанії.",
@@ -30,6 +30,7 @@ export const uk = {
   allCompanies: "Усі компанії →",
   allTechnologies: "Усі технології →",
   allLocations: "Усі локації →",
+  allRemote: "Усі віддалені вакансії →",
   categories: {
     data: "Дані",
     design: "Дизайн",
@@ -54,6 +55,8 @@ export const uk = {
     topCompanies: "Провідні компанії",
     technologies: "Технології",
     locations: "Локації",
+    employment: "Тип зайнятості",
+    remote: "Віддалена робота",
   },
   companies: {
     title: "Компанії",
@@ -77,6 +80,23 @@ export const uk = {
     cityDescription: (k: number, place: string) => `${place}: ${p(k, techJobs)}. Щоденне оновлення.`,
     cities: "Міста",
     technologies: "Технології",
+  },
+  employment: {
+    label: "Тип зайнятості",
+    types: { "full-time": "Повна зайнятість", "part-time": "Часткова зайнятість", contract: "Контракт", internship: "Стажування" },
+    title: "Вакансії за типом зайнятості",
+    description: (names: string[]) => `Відкриті ІТ-вакансії за типом зайнятості: ${names.join(", ")}. Щоденне оновлення.`,
+    typeTitle: (type: string) => `Вакансії: ${type.toLowerCase()}`,
+    typeDescription: (k: number, type: string, co: number) =>
+      `${type}: ${p(k, openJobs)} у провідних технологічних компаніях · ${p(co, countries)}. Щоденне оновлення.`,
+    none: (type: string) => `${type}: зараз немає відкритих вакансій.`,
+  },
+  remoteJobs: {
+    title: "Віддалена робота",
+    titleIn: (place: string) => `Віддалена робота: ${place}`,
+    countryDescription: (k: number, place: string) => `Віддалена робота, ${place}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
+    description: (k: number, c: number) => `Віддалена робота: ${p(k, openJobs)} · ${p(c, techCompanies)}. Щоденне оновлення.`,
+    byCountry: "За країною",
   },
   technologies: {
     title: "Вакансії за технологією",

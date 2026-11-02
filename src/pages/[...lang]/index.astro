@@ -4,9 +4,10 @@ import Base from "../../layouts/Base.astro";
 import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
 import { countTags, getCompanies, getOpenJobs } from "../../lib/jobs.ts";
-import { countryLinks, technologyLinks } from "../../lib/links.ts";
+import { countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../lib/constants.ts";
+import { website } from "../../lib/structured-data.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
@@ -25,9 +26,15 @@ const topCompanies = companies
 const tagCounts = await countTags(jobs);
 const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
 const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0, 12);
+const types = employmentLinks(tagCounts.employment, lang);
+const remoteCount = jobs.filter((j) => j.remote).length;
 ---
 
-<Base title="Static Job" description={m.home.description(jobs.length, companies.length)}>
+<Base
+  title="Static Job"
+  description={m.home.description(jobs.length, companies.length)}
+  jsonLd={[website(Astro.site!, m.home.description(jobs.length, companies.length))]}
+>
   <h1>{m.home.heading}</h1>
   <p class="muted">{m.home.summary(jobs.length, companies.length)}</p>
 
@@ -50,6 +57,9 @@ const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0,
   <h2>{m.home.locations}</h2>
   <TagLinks links={topCountries} />
   <p><a href={u("/locations")}>{m.allLocations}</a></p>
+
+  <h2>{m.home.employment}</h2>
+  <TagLinks links={[{ href: remoteUrl(), label: m.home.remote, count: remoteCount }, ...types]} />
 
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
