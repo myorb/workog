@@ -1,10 +1,13 @@
 import { describe, expect, test } from "bun:test";
 import type { CompanyConfig } from "../../src/lib/schema.ts";
+import { arbeitnow } from "./arbeitnow.ts";
 import { ashby } from "./ashby.ts";
 import { eightfold } from "./eightfold.ts";
 import { mapLimit } from "./http.ts";
 import { lever } from "./lever.ts";
+import { parseRss, weworkremotely } from "./weworkremotely.ts";
 import { apiBase, pickSlices, workday } from "./workday.ts";
+import { workingnomads } from "./workingnomads.ts";
 
 const company = (extra: Partial<CompanyConfig>): CompanyConfig => ({ key: "acme", name: "Acme", source: "test", ...extra });
 
@@ -119,5 +122,79 @@ describe("normalize", () => {
       company({}),
     );
     expect(job).toMatchObject({ id: "eightfold:79", locations: ["Berlin, Germany"], remote: false });
+  });
+});
+
+describe("job boards", () => {
+  test("arbeitnow keeps the employer and decodes the description", () => {
+    const job = arbeitnow.normalize(
+      {
+        slug: "dev-berlin-1",
+        company_name: "Acme GmbH ",
+        title: "Developer",
+        description: "&lt;p&gt;Hi&lt;/p&gt;",
+        remote: false,
+        url: "https://www.arbeitnow.com/jobs/companies/acme/dev-berlin-1",
+        tags: ["Engineering"],
+        job_types: [],
+        location: "Deutschland / Berlin",
+        created_at: Date.UTC(2026, 10, 1) / 1000,
+      },
+      company({ key: "arbeitnow" }),
+    );
+    expect(job).toMatchObject({
+      id: "arbeitnow:dev-berlin-1",
+      company: "arbeitnow",
+      employer: "Acme GmbH",
+      locations: ["Deutschland", "Berlin"],
+      descriptionHtml: "<p>Hi</p>",
+      postedAt: "2026-11-01T00:00:00.000Z",
+    });
+  });
+
+  test("weworkremotely splits the employer from the title and names a few countries", () => {
+    const [item] = parseRss(`<rss><channel><item>
+      <title>Acme: Senior Engineer</title>
+      <region>Anywhere in the World</region>
+      <country>🇬🇧 United Kingdom of Great Britain and Northern Ireland, 🇧🇦 Bosnia and Herzegovina and 🇩🇪 Germany</country>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>&lt;p&gt;Build &amp;amp; ship&lt;/p&gt;</description>
+      <pubDate>Tue, 03 Nov 2026 17:09:02 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/acme-senior-engineer</guid>
+      <link>https://weworkremotely.com/remote-jobs/acme-senior-engineer</link>
+    </item></channel></rss>`);
+    const job = weworkremotely.normalize(item!, company({ key: "weworkremotely" }));
+    expect(job).toMatchObject({
+      id: "weworkremotely:acme-senior-engineer",
+      employer: "Acme",
+      title: "Senior Engineer",
+      locations: ["United Kingdom", "Bosnia and Herzegovina", "Germany"],
+      remote: true,
+      descriptionHtml: "<p>Build &amp; ship</p>",
+      postedAt: "2026-11-03T17:09:02.000Z",
+    });
+  });
+
+  test("weworkremotely names the region for long country lists", () => {
+    const [item] = parseRss(
+      `<item><title>Acme: PM</title><region>USA Only</region><country>${"🇺🇸 A, ".repeat(6)}🇨🇦 B</country><guid>x/pm</guid><link>https://weworkremotely.com/remote-jobs/pm</link></item>`,
+    );
+    expect(weworkremotely.normalize(item!, company({})).locations).toEqual(["USA"]);
+  });
+
+  test("workingnomads drops time zones from locations", () => {
+    const base = {
+      url: "https://www.workingnomads.com/job/go/42/",
+      title: "Analyst",
+      description: "<p>x</p>",
+      company_name: "Acme",
+    };
+    expect(workingnomads.normalize({ ...base, location: "Time zone: CET (+/- 3 hours)" }, company({}))).toMatchObject({
+      id: "workingnomads:42",
+      locations: [],
+      remote: true,
+    });
+    expect(workingnomads.normalize({ ...base, location: "Canada" }, company({})).locations).toEqual(["Canada"]);
   });
 });

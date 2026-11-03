@@ -62,7 +62,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `data/history/<date>.json` | Snapshot of open jobs at the end of each day, by company, function, country, city, technology and employment type; feeds the movers, remote-share and per-function trends on `/analytics` and one permanent page per day under `/analytics/history` |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
-| `scripts/fetchers/` | One module per source: `greenhouse.ts`, `ashby.ts`, `lever.ts`, `smartrecruiters.ts`, `workday.ts`, `eightfold.ts` and `amazon.ts` (JSON APIs), `apple.ts` and `google.ts` (read the JSON their search pages embed); `http.ts` has the shared retrying client and `mapLimit` for bounded parallel requests |
+| `scripts/fetchers/` | One module per source: `greenhouse.ts`, `ashby.ts`, `lever.ts`, `smartrecruiters.ts`, `workday.ts`, `eightfold.ts`, `amazon.ts`, `arbeitnow.ts` and `workingnomads.ts` (JSON APIs), `weworkremotely.ts` (RSS), `apple.ts` and `google.ts` (read the JSON their search pages embed); `http.ts` has the shared retrying client and `mapLimit` for bounded parallel requests |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de` |
@@ -94,6 +94,14 @@ Add an entry to `data/companies.json`, then run `bun run fetch <key>`. Each sour
 | `smartrecruiters` | `boardToken` | `jobs.smartrecruiters.com/<CompanyIdentifier>`, case-sensitive |
 | `workday` | `careersUrl` | the public site, e.g. `https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite` |
 | `eightfold` | `careersUrl` | the public site with its domain, e.g. `https://explore.jobs.netflix.net/careers?domain=netflix.com` |
+
+| `arbeitnow`, `weworkremotely`, `workingnomads` | `"board": true` | none; see below |
+
+### Job boards
+
+Three open job boards are fetched as well: Arbeitnow (its free JSON API, about 4k jobs, mostly in Germany), We Work Remotely (its per-category RSS feeds, since the site-wide feed stops at 100) and Working Nomads (its public JSON feed). Each board is one entry in `data/companies.json` with `"board": true`. Its jobs keep the board as `company` and carry the hiring organization's name in `employer`. Job pages name the employer as the company, in the JobPosting markup too, and link to the board as "Listed on". The apply link goes to the board's own posting.
+
+Most other boards, such as Indeed, LinkedIn, StepStone and XING, have no public feed or forbid scraping. Adzuna, Jooble and Careerjet need an API key. Remotive's free API forbids passing its jobs on to Google Jobs, which the JobPosting markup does. A job a board lists may also be on a tracked company's own board; such duplicates aren't merged.
 
 SmartRecruiters, Workday and Eightfold leave descriptions out of their search results, so these fetchers make one request per job, a few at a time (`mapLimit`). Workday counts no more than 2,000 results per search, so a bigger site is fetched one value of a facet (job family, location) at a time, picking the facet that covers the most jobs with every value under 2,000.
 

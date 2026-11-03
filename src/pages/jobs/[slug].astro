@@ -21,6 +21,9 @@ export const getStaticPaths = (async () => {
 const { job } = Astro.props;
 const company = await getCompany(job.company);
 const companyName = company?.name ?? job.company;
+// a job board's job is hired for by its employer and applied to on the board
+const employer = job.employer ?? companyName;
+const applyName = job.employer ? companyName : `${companyName}'s site`;
 const closed = Boolean(job.closedAt);
 const where = formatLocations(job.locations, job.remote, 2);
 const employment = employmentTypeOf(job);
@@ -32,7 +35,7 @@ const jsonLd = [
     { name: companyName, url: new URL(`/companies/${job.company}`, Astro.site) },
     { name: job.title, url },
   ]),
-  ...(closed ? [] : [jobPosting(job, companyName, url)]),
+  ...(closed ? [] : [jobPosting(job, employer, url)]),
 ];
 
 // Crosslinks: neighbouring jobs, so every job is linked from other job pages, and the hubs this job belongs to
@@ -54,8 +57,8 @@ const browse = [
 ---
 
 <Base
-  title={`${job.title} at ${companyName}`}
-  description={`${job.title} at ${companyName} — ${where}${job.remote ? " (remote)" : ""}. Apply on ${companyName}'s official careers site.`}
+  title={`${job.title} at ${employer}`}
+  description={`${job.title} at ${employer} — ${where}${job.remote ? " (remote)" : ""}. ${job.employer ? `Apply via ${companyName}.` : `Apply on ${companyName}'s official careers site.`}`}
   noindex={closed}
   translated={false}
   jsonLd={jsonLd}
@@ -66,25 +69,27 @@ const browse = [
 
   <h1>{job.title}</h1>
   <dl class="facts">
-    <dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd>
+    {job.employer
+      ? <><dt>Company</dt><dd>{job.employer}</dd><dt>Listed on</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>
+      : <><dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>}
     <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <a class="tag" href="/remote">Remote</a></>}</dd>
     <dt>Employment type</dt><dd><a href={`/employment/${employment}`}>{t("en").employment.types[employment]}</a></dd>
     {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
   </dl>
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {companyName}'s site →</a></p>}
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {applyName} →</a></p>}
 
   <article class="description" set:html={job.descriptionHtml} />
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {companyName}'s site →</a></p>}
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {applyName} →</a></p>}
 
   {
     related.team.length > 0 && (
       <section>
-        <h2>More {job.category ? `${categoryName(job.category, "en")} jobs` : "jobs"} at {companyName}</h2>
+        <h2>More {job.category ? `${categoryName(job.category, "en")} jobs` : "jobs"} {job.employer ? "on" : "at"} {companyName}</h2>
         <JobList jobs={related.team} showCompany={false} />
-        {companyJobs > related.team.length + 1 && <p><a href={`/companies/${job.company}`}>All {formatNumber(companyJobs)} jobs at {companyName} →</a></p>}
+        {companyJobs > related.team.length + 1 && <p><a href={`/companies/${job.company}`}>All {formatNumber(companyJobs)} jobs {job.employer ? "on" : "at"} {companyName} →</a></p>}
       </section>
     )
   }

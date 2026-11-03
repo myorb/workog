@@ -18,7 +18,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const body = `# Workog
 
-> ${plural(jobs.length, "open job")} at ${plural(companies.length, "tech company")}, fetched daily from each company's official careers site.${run ? ` Last updated ${run.finishedAt}.` : ""}
+> ${plural(jobs.length, "open job")} at ${plural(companies.length, "tech company")}, fetched daily from each company's official careers site, plus a few open job boards that list many employers.${run ? ` Last updated ${run.finishedAt}.` : ""}
 
 Each job page (\`/jobs/<slug>\`) has the title, company, locations, team, posted date and full description, and links to the official posting to apply. Closed jobs stay online, marked as closed. Browse pages list up to 50 of the newest jobs.
 

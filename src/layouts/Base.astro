@@ -87,13 +87,27 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
         </nav>
         {
           translated && (
-            <nav class="langs" aria-label={m.language}>
-              {locales.map((l) => (
-                <a href={localizePath(basePath, l)} hreflang={l} lang={l} title={languageNames[l]} aria-current={l === lang ? "page" : undefined}>
-                  {l.toUpperCase()}
-                </a>
-              ))}
-            </nav>
+            <details class="langs">
+              <summary aria-label={m.language} title={languageNames[lang]}>{lang.toUpperCase()}</summary>
+              <div class="lang-menu" role="list">
+                {locales.map((l) => (
+                  <a role="listitem" href={localizePath(basePath, l)} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>
+                    <span>{l.toUpperCase()}</span> {languageNames[l]}
+                  </a>
+                ))}
+              </div>
+            </details>
+            <script is:inline>
+              // close the language menu on outside click or Escape
+              document.addEventListener("click", (e) => {
+                const d = document.querySelector(".site-header .langs");
+                if (d && d.open && !d.contains(e.target)) d.open = false;
+              });
+              document.addEventListener("keydown", (e) => {
+                const d = document.querySelector(".site-header .langs");
+                if (e.key === "Escape" && d && d.open) { d.open = false; d.querySelector("summary").focus(); }
+              });
+            </script>
           )
         }
       </div>
@@ -150,9 +164,25 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
   .site-header nav { display: flex; gap: 20px; }
   .site-header a { color: var(--text); text-decoration: none; }
   .brand { font-weight: 700; white-space: nowrap; }
-  .site-header .langs { gap: 8px; font-size: 13px; }
-  .site-header .langs a { color: var(--muted); }
-  .site-header .langs a[aria-current] { color: var(--text); font-weight: 600; }
+  .langs { position: relative; font-size: 13px; }
+  .langs summary {
+    display: flex; align-items: center; gap: 4px; padding: 4px 8px; border: 1px solid var(--border);
+    border-radius: 6px; cursor: pointer; font-weight: 600; list-style: none; user-select: none;
+  }
+  .langs summary::-webkit-details-marker { display: none; }
+  .langs summary::after {
+    content: ""; width: 6px; height: 6px; margin: -3px 2px 0 2px;
+    border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg);
+  }
+  .langs[open] summary::after { margin-top: 3px; transform: rotate(-135deg); }
+  .lang-menu {
+    position: absolute; right: 0; top: calc(100% + 6px); z-index: 10; min-width: 150px; padding: 4px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 6px 20px rgb(0 0 0 / 0.12);
+  }
+  .site-header .lang-menu a { display: flex; gap: 10px; padding: 6px 10px; border-radius: 4px; font-size: 14px; }
+  .lang-menu a span { width: 22px; color: var(--muted); font-size: 12px; font-weight: 600; line-height: 21px; }
+  .lang-menu a:hover { background: var(--tag); }
+  .lang-menu a[aria-current] { font-weight: 600; }
   @media (max-width: 640px) {
     /* brand and languages on the first row, nav as one swipeable row below */
     .site-header .wrap { height: auto; flex-wrap: wrap; padding-top: 8px; }
@@ -164,8 +194,7 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     .site-header nav:not(.langs)::-webkit-scrollbar { display: none; }
     .site-header nav:not(.langs) a { padding: 6px 12px; border-radius: 999px; background: var(--tag); }
     .site-header nav:not(.langs) a:first-child { margin-left: -4px; }
-    .site-header .langs { gap: 2px; }
-    .site-header .langs a { padding: 8px 6px; }
+    .lang-menu a { padding: 10px 12px; }
   }
   main { padding-top: 24px; padding-bottom: 48px; }
   @media (max-width: 640px) {

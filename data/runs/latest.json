@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-03T15:22:33.099Z",
-  "finishedAt": "2026-11-03T15:30:07.720Z",
+  "startedAt": "2026-11-03T17:28:52.966Z",
+  "finishedAt": "2026-11-03T17:29:46.233Z",
   "sources": [
     {
       "company": "adobe",
@@ -71,6 +71,18 @@
       "open": 4997,
       "new": 12,
       "closed": 9,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "arbeitnow",
+      "source": "arbeitnow",
+      "status": "ok",
+      "fetched": 4117,
+      "invalid": 0,
+      "open": 4117,
+      "new": 0,
+      "closed": 0,
       "fallbackStreak": 0,
       "broken": false
     },
@@ -694,6 +706,30 @@
       "invalid": 0,
       "open": 89,
       "new": 89,
+      "closed": 0,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "weworkremotely",
+      "source": "weworkremotely",
+      "status": "ok",
+      "fetched": 501,
+      "invalid": 0,
+      "open": 501,
+      "new": 0,
+      "closed": 0,
+      "fallbackStreak": 0,
+      "broken": false
+    },
+    {
+      "company": "workingnomads",
+      "source": "workingnomads",
+      "status": "ok",
+      "fetched": 35,
+      "invalid": 0,
+      "open": 35,
+      "new": 0,
       "closed": 0,
       "fallbackStreak": 0,
       "broken": false

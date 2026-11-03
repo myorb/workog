@@ -21,7 +21,9 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
       <li>
         <a class="title" href={`/jobs/${job.slug}`}>{job.title}</a>
         <div class="meta">
-          {showCompany && <span class="company">{companyNames.get(job.company) ?? job.company}</span>}
+          {/* a job board's jobs name their employer even on the board's own page */}
+          {(showCompany || job.employer) && <span class="company">{job.employer ?? companyNames.get(job.company) ?? job.company}</span>}
+          {showCompany && job.employer && <span>{m.via(companyNames.get(job.company) ?? job.company)}</span>}
           <span>{formatLocations(job.locations, job.remote, 3, lang)}</span>
           {job.remote && <span class="tag">{m.remote}</span>}
           {[...tagsOf(job).employment].filter((e) => e !== "full-time").map((e) => <span class="tag">{m.employment.types[e]}</span>)}

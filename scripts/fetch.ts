@@ -32,13 +32,16 @@ import {
 } from "../src/lib/schema.ts";
 import { amazon } from "./fetchers/amazon.ts";
 import { apple } from "./fetchers/apple.ts";
+import { arbeitnow } from "./fetchers/arbeitnow.ts";
 import { ashby } from "./fetchers/ashby.ts";
 import { eightfold } from "./fetchers/eightfold.ts";
 import { google } from "./fetchers/google.ts";
 import { greenhouse } from "./fetchers/greenhouse.ts";
 import { lever } from "./fetchers/lever.ts";
 import { smartrecruiters } from "./fetchers/smartrecruiters.ts";
+import { weworkremotely } from "./fetchers/weworkremotely.ts";
 import { workday } from "./fetchers/workday.ts";
+import { workingnomads } from "./fetchers/workingnomads.ts";
 import { readAllJobs, writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
@@ -63,6 +66,9 @@ const fetchers: Record<string, Fetcher<any>> = {
   [smartrecruiters.name]: smartrecruiters,
   [workday.name]: workday,
   [eightfold.name]: eightfold,
+  [arbeitnow.name]: arbeitnow,
+  [workingnomads.name]: workingnomads,
+  [weworkremotely.name]: weworkremotely,
 };
 
 const NormalizedJobSchema = JobSchema.omit({
@@ -186,7 +192,7 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
     if (seen.has(job.id)) continue;
     seen.add(job.id);
     const prev = prevById.get(job.id);
-    const slug = prev?.slug ?? makeJobSlug(job.company, job.title, originalId);
+    const slug = prev?.slug ?? makeJobSlug(job.employer ?? job.company, job.title, originalId);
     if (!prev) added++;
     if (!prev || prev.closedAt) changes.opened.push(slug);
     merged.push({

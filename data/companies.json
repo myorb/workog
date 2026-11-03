@@ -5,6 +5,7 @@
   { "key": "amazon", "name": "Amazon", "source": "amazon" },
   { "key": "anthropic", "name": "Anthropic", "source": "greenhouse", "boardToken": "anthropic" },
   { "key": "apple", "name": "Apple", "source": "apple" },
+  { "key": "arbeitnow", "name": "Arbeitnow", "source": "arbeitnow", "board": true },
   { "key": "asana", "name": "Asana", "source": "greenhouse", "boardToken": "asana" },
   { "key": "block", "name": "Block", "source": "greenhouse", "boardToken": "block" },
   { "key": "brex", "name": "Brex", "source": "greenhouse", "boardToken": "brex" },
@@ -57,6 +58,8 @@
   { "key": "twitch", "name": "Twitch", "source": "greenhouse", "boardToken": "twitch" },
   { "key": "vanta", "name": "Vanta", "source": "ashby", "boardToken": "vanta" },
   { "key": "vercel", "name": "Vercel", "source": "greenhouse", "boardToken": "vercel" },
+  { "key": "weworkremotely", "name": "We Work Remotely", "source": "weworkremotely", "board": true },
+  { "key": "workingnomads", "name": "Working Nomads", "source": "workingnomads", "board": true },
   { "key": "zoox", "name": "Zoox", "source": "lever", "boardToken": "zoox" },
   { "key": "zscaler", "name": "Zscaler", "source": "greenhouse", "boardToken": "zscaler" }
 ]

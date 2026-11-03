@@ -8,6 +8,8 @@ export const JobSchema = z.object({
   /** generated once on first sight, never changes */
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   company: z.string().min(1),
+  /** the hiring organization's name, for jobs from a job board, where `company` is the board */
+  employer: z.string().min(1).optional(),
   title: z.string().min(1),
   /** normalized "City, Country" style labels */
   locations: z.array(z.string().min(1)),
@@ -40,6 +42,8 @@ export const CompanyConfigSchema = z.object({
    * full. Older jobs that fall out of the window are dropped, not closed.
    */
   maxJobs: z.number().int().positive().optional(),
+  /** A job board listing many employers rather than one company's careers site; its jobs set `employer` */
+  board: z.boolean().optional(),
 });
 
 export type CompanyConfig = z.infer<typeof CompanyConfigSchema>;
