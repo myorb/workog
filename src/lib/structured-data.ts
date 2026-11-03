@@ -25,6 +25,18 @@ export const breadcrumbs = (items: { name: string; url: URL }[]): Thing => ({
   itemListElement: items.map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, item: item.url.href })),
 });
 
+/** Days a posting stays valid after the pipeline last saw it open */
+const VALID_DAYS = 30;
+
+/**
+ * When Google should drop the posting if no newer build says otherwise. Every
+ * run that sees the job moves lastSeenAt, so open jobs keep pushing it forward;
+ * if the pipeline stops, or a capped company's job is no longer checked, the
+ * posting expires instead of staying in Google for Jobs indefinitely.
+ */
+export const validThrough = (job: Pick<Job, "lastSeenAt">): string =>
+  new Date(Date.parse(job.lastSeenAt) + VALID_DAYS * 24 * 60 * 60 * 1000).toISOString();
+
 /** Google for Jobs markup: https://developers.google.com/search/docs/appearance/structured-data/job-posting */
 export function jobPosting(job: Job, companyName: string, url: URL): Thing {
   const places = placesOf(job.locations);
@@ -45,6 +57,7 @@ export function jobPosting(job: Job, companyName: string, url: URL): Thing {
     title: job.title,
     description: job.descriptionHtml,
     datePosted: job.postedAt ?? job.firstSeenAt,
+    validThrough: validThrough(job),
     employmentType: employmentTypes[employmentTypeOf(job)],
     hiringOrganization: { "@type": "Organization", name: companyName },
     identifier: { "@type": "PropertyValue", name: companyName, value: job.id },

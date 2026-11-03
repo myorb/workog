@@ -1,7 +1,7 @@
 /**
  * Daily pipeline: fetch every company, normalize and validate, run sanity
  * checks, merge with the previous data/jobs/<company>.json (or <company>.<n>.json
- * parts for big companies), then write the files, runs/latest.json, the day's line in runs/history.json
+ * parts for big companies), then write the files, runs/latest.json, runs/changes.json, the day's line in runs/history.json
  * and the day's snapshot in history/<date>.json.
  *
  *   bun scripts/fetch.ts            # all companies
@@ -162,6 +162,7 @@ export function sanityCheck(result: FetchResult, previousOpen: number): string |
  * ids get closedAt, reappearing ids are reopened, and jobs closed for longer
  * than the retention window are dropped. After a `capped` fetch, missing open
  * jobs are kept as they were until a full (`--all`) run checks them.
+ * `changes` lists the slugs whose pages changed state, for search-engine pings.
  */
 export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, capped = false) {
   const prevById = new Map(previous.map((j) => [j.id, j]));
@@ -169,15 +170,18 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
   const merged: Job[] = [];
   let added = 0;
   let closed = 0;
+  const changes: JobChanges = { opened: [], closed: [], dropped: [] };
 
   for (const { originalId, ...job } of fetched) {
     if (seen.has(job.id)) continue;
     seen.add(job.id);
     const prev = prevById.get(job.id);
+    const slug = prev?.slug ?? makeJobSlug(job.company, job.title, originalId);
     if (!prev) added++;
+    if (!prev || prev.closedAt) changes.opened.push(slug);
     merged.push({
       ...job,
-      slug: prev?.slug ?? makeJobSlug(job.company, job.title, originalId),
+      slug,
       firstSeenAt: prev?.firstSeenAt ?? now,
       lastSeenAt: now,
     });
@@ -190,15 +194,27 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
       merged.push(prev);
     } else if (!prev.closedAt) {
       closed++;
+      changes.closed.push(prev.slug);
       merged.push({ ...prev, closedAt: now });
     } else if (Date.parse(prev.closedAt) > cutoff) {
       merged.push(prev);
+    } else {
+      changes.dropped.push(prev.slug);
     }
   }
 
   merged.sort((a, b) => a.id.localeCompare(b.id, "en", { numeric: true }));
-  return { jobs: merged, added, closed };
+  return { jobs: merged, added, closed, changes };
 }
+
+/** Job pages whose state changed in a run: newly open (or reopened), closed (now noindex), dropped (now 404) */
+export const JobChangesSchema = z.object({
+  startedAt: z.string(),
+  opened: z.array(z.string()),
+  closed: z.array(z.string()),
+  dropped: z.array(z.string()),
+});
+export type JobChanges = Omit<z.infer<typeof JobChangesSchema>, "startedAt">;
 
 /** True if the jobs differ in anything other than lastSeenAt, which moves every run. */
 export function jobsChanged(before: Job[], after: Job[]): boolean {
@@ -255,6 +271,7 @@ async function main() {
     companies.map((c) => fetchCompany(all ? { ...c, maxJobs: undefined } : c)),
   );
   const sources: SourceRun[] = [];
+  const changes: JobChanges = { opened: [], closed: [], dropped: [] };
   let changed = false;
 
   for (const [i, result] of results.entries()) {
@@ -288,8 +305,10 @@ async function main() {
       };
       console.error(`[${company.key}] FALLBACK (${fallbackStreak} in a row): ${reason}`);
     } else {
-      const { jobs, added, closed } = mergeJobs(previous, counts.jobs, startedAt, counts.cap !== undefined);
+      const merge = mergeJobs(previous, counts.jobs, startedAt, counts.cap !== undefined);
+      const { jobs, added, closed } = merge;
       await writeJobs(company.key, jobs);
+      for (const kind of ["opened", "closed", "dropped"] as const) changes[kind].push(...merge.changes[kind]);
       if (jobsChanged(previous, jobs)) changed = true;
       source = {
         company: company.key,
@@ -323,6 +342,8 @@ async function main() {
 
   const run: Run = { startedAt, finishedAt: new Date().toISOString(), sources };
   await writeJson(runFile, run);
+  // read by scripts/ping.ts once this run is deployed
+  await writeJson(join(DATA_DIR, "runs", "changes.json"), { startedAt, ...changes });
 
   const historyFile = join(DATA_DIR, "runs", "history.json");
   const history = z.array(HistoryDaySchema).parse(await readJson(historyFile, []));

@@ -3,9 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
-import { countTags, getJobsWhere } from "../../../../lib/jobs.ts";
+import { countTags, getCompanies, getJobsWhere, getTagCounts } from "../../../../lib/jobs.ts";
 import { cities, getCountry } from "../../../../lib/places.ts";
-import { countryUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { cityLinks, cityUrl, companyCounts, companyLinks, countryUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
 
@@ -25,6 +25,11 @@ const name = countryName(country, lang);
 const jobs = await getJobsWhere({ city: city.slug });
 const counts = await countTags(jobs);
 const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, country.slug, city.slug));
+const companies = companyLinks(companyCounts(jobs), await getCompanies());
+// the country's other cities, so city pages link to each other and not only up to the country
+const nearby = cityLinks((await getTagCounts()).cities, undefined, country.slug)
+  .filter((l) => l.href !== cityUrl(country.slug, city.slug))
+  .slice(0, 12);
 ---
 
 <Base title={m.place.title(`${city.name}, ${name}`)} description={m.place.cityDescription(jobs.length, `${city.name}, ${name}`)}>
@@ -37,6 +42,8 @@ const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, count
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+  {nearby.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={nearby} /></>}
 </Base>

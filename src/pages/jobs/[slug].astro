@@ -1,11 +1,17 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
-import { getAllJobs, getCompany } from "../../lib/jobs.ts";
+import JobList from "../../components/JobList.astro";
+import TagLinks from "../../components/TagLinks.astro";
+import { getAllJobs, getCompany, getCompanyCounts, getRemoteCount, getTagCounts, tagsOf } from "../../lib/jobs.ts";
+import { relatedJobs } from "../../lib/related.ts";
+import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
+import { getCity, getCountry } from "../../lib/places.ts";
 import { formatDate, formatLocations } from "../../lib/format.ts";
 import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
 import { employmentTypeOf } from "../../lib/employment.ts";
-import { t } from "../../lib/i18n.ts";
+import { categoryName, t } from "../../lib/i18n.ts";
+import { formatNumber } from "../../lib/locale.ts";
 
 export const getStaticPaths = (async () => {
   const jobs = await getAllJobs();
@@ -27,6 +33,23 @@ const jsonLd = [
     { name: job.title, url },
   ]),
   ...(closed ? [] : [jobPosting(job, companyName, url)]),
+];
+
+// Crosslinks: neighbouring jobs, so every job is linked from other job pages, and the hubs this job belongs to
+const related = await relatedJobs(job);
+const companyJobs = (await getCompanyCounts()).get(job.company) ?? 0;
+const tags = tagsOf(job);
+const [city] = tags.cities;
+const [country] = tags.countries;
+const placeName = city ? getCity(city)?.name : country ? getCountry(country)?.name : "remote";
+const counts = await getTagCounts();
+const only = (slugs: Set<string>, all: Map<string, number>) => new Map([...all].filter(([slug]) => slugs.has(slug)));
+const browse = [
+  ...technologyLinks(only(tags.technologies, counts.technologies)),
+  ...cityLinks(only(tags.cities, counts.cities)),
+  ...countryLinks(only(tags.countries, counts.countries)),
+  ...(job.remote ? [{ href: remoteUrl(), label: "Remote", count: await getRemoteCount() }] : []),
+  ...employmentLinks(only(tags.employment, counts.employment)),
 ];
 ---
 
@@ -55,6 +78,25 @@ const jsonLd = [
   <article class="description" set:html={job.descriptionHtml} />
 
   {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {companyName}'s site →</a></p>}
+
+  {
+    related.team.length > 0 && (
+      <section>
+        <h2>More {job.category ? `${categoryName(job.category, "en")} jobs` : "jobs"} at {companyName}</h2>
+        <JobList jobs={related.team} showCompany={false} />
+        {companyJobs > related.team.length + 1 && <p><a href={`/companies/${job.company}`}>All {formatNumber(companyJobs)} jobs at {companyName} →</a></p>}
+      </section>
+    )
+  }
+  {
+    related.place.length > 0 && (
+      <section>
+        <h2>{placeName === "remote" ? "More remote jobs" : `More jobs in ${placeName}`}</h2>
+        <JobList jobs={related.place} />
+      </section>
+    )
+  }
+  {browse.length > 0 && <section><h2>Browse similar jobs</h2><TagLinks links={browse} /></section>}
 </Base>
 
 <style>

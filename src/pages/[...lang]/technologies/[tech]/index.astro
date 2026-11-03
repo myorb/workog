@@ -3,9 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
-import { countTags, getJobsWhere } from "../../../../lib/jobs.ts";
+import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
 import { technologies } from "../../../../lib/technologies.ts";
-import { cityLinks, countryLinks, technologyUrl } from "../../../../lib/links.ts";
+import { cityLinks, companyCounts, companyLinks, countryLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
 
@@ -19,6 +19,9 @@ const jobs = await getJobsWhere({ technology: tech.slug });
 const counts = await countTags(jobs);
 const countries = countryLinks(counts.countries, (c) => technologyUrl(tech.slug, c), lang);
 const cities = cityLinks(counts.cities, (country, city) => technologyUrl(tech.slug, country, city)).slice(0, 24);
+// technologies that appear in the same jobs
+const related = technologyLinks(new Map([...counts.technologies].filter(([slug]) => slug !== tech.slug))).slice(0, 12);
+const companies = companyLinks(companyCounts(jobs), await getCompanies());
 ---
 
 <Base title={m.tech.title(tech.name)} description={m.tech.description(jobs.length, tech.name, countries.length)} noindex={!jobs.length}>
@@ -30,6 +33,8 @@ const cities = cityLinks(counts.cities, (country, city) => technologyUrl(tech.sl
   </p>
   {countries.length > 0 && <><h2>{m.tech.byCountry}</h2><TagLinks links={countries} /></>}
   {cities.length > 0 && <><h2>{m.tech.topCities}</h2><TagLinks links={cities} /></>}
+  {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
+  {related.length > 0 && <><h2>{m.relatedTechnologies}</h2><TagLinks links={related} /></>}
   <h2>{m.latestJobs}</h2>
   {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{m.tech.none(tech.name)}</p>}
 </Base>

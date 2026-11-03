@@ -2,7 +2,9 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
 import JobList from "../../../components/JobList.astro";
-import { getCompanies, getJobsByCompany } from "../../../lib/jobs.ts";
+import TagLinks from "../../../components/TagLinks.astro";
+import { countTags, getCompanies, getJobsByCompany } from "../../../lib/jobs.ts";
+import { cityLinks, technologyLinks } from "../../../lib/links.ts";
 import { categoryName, getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
 
@@ -15,6 +17,9 @@ const { company } = Astro.props;
 const lang = getLang(Astro.params.lang);
 const m = t(lang);
 const jobs = await getJobsByCompany(company.key);
+const counts = await countTags(jobs);
+const cities = cityLinks(counts.cities).slice(0, 24);
+const techs = technologyLinks(counts.technologies);
 const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sort().map((c) => categoryName(c, lang));
 ---
 
@@ -25,5 +30,8 @@ const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sor
     {m.openPositions(jobs.length)}
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
+  {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
+  {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  {jobs.length > 0 && <h2>{m.latestJobs}</h2>}
   {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} showCompany={false} /> : <p>{m.company.none}</p>}
 </Base>

@@ -27,6 +27,8 @@ export const uk = {
   openPositions: (k: number) => p(k, openJobs),
   showingNewest: (k: number) => `, показано ${n(k)} найновіших`,
   latestJobs: "Останні вакансії",
+  companiesHiring: "Компанії, що наймають",
+  relatedTechnologies: "Схожі технології",
   allCompanies: "Усі компанії →",
   allTechnologies: "Усі технології →",
   allLocations: "Усі локації →",

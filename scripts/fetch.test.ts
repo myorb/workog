@@ -65,6 +65,26 @@ describe("mergeJobs", () => {
   });
 });
 
+describe("mergeJobs changes", () => {
+  test("lists opened, reopened, closed and dropped slugs", () => {
+    const prev = [
+      stored("kept"),
+      stored("gone"),
+      stored("back", { closedAt: day(2) }),
+      stored("old", { closedAt: day(1) }),
+    ];
+    const { changes } = mergeJobs(prev, [fetched("kept"), fetched("back"), fetched("new")], day(16));
+    expect(changes.opened.sort()).toEqual(["acme-engineer-back", "acme-engineer-new"]);
+    expect(changes.closed).toEqual(["acme-engineer-gone"]);
+    expect(changes.dropped).toEqual(["acme-engineer-old"]);
+  });
+
+  test("a capped fetch closes nothing", () => {
+    const { changes } = mergeJobs([stored("1")], [fetched("2")], day(2), true);
+    expect(changes.closed).toEqual([]);
+  });
+});
+
 describe("sanityCheck", () => {
   const result = (valid: number, invalid = 0) => ({
     fetched: valid + invalid,

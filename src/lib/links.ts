@@ -39,6 +39,16 @@ export const technologyLinks = (counts: Map<string, number>, href: (slug: string
 export const employmentLinks = (counts: Map<string, number>, lang: Lang = defaultLang) =>
   linksFor(employmentTypes.map((slug) => ({ slug, name: t(lang).employment.types[slug] })), counts, (e) => employmentUrl(e.slug));
 
+export const companyLinks = (counts: Map<string, number>, companies: { key: string; name: string }[]) =>
+  linksFor(companies.map((c) => ({ slug: c.key, name: c.name })), counts, (c) => `/companies/${c.slug}`);
+
+/** Open jobs per company among `jobs` */
+export function companyCounts(jobs: { company: string }[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
+  return counts;
+}
+
 const countryBySlug = new Map(countries.map((c) => [c.slug, c]));
 const cityBySlug = new Map(cities.map((c) => [c.slug, c]));
 const technologyBySlug = new Map(technologies.map((t) => [t.slug, t]));

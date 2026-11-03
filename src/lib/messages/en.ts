@@ -27,6 +27,8 @@ export const en = {
   openPositions: (k: number) => p(k, openPositions),
   showingNewest: (k: number) => `, showing the ${n(k)} newest`,
   latestJobs: "Latest jobs",
+  companiesHiring: "Companies hiring",
+  relatedTechnologies: "Related technologies",
   allCompanies: "All companies →",
   allTechnologies: "All technologies →",
   allLocations: "All locations →",

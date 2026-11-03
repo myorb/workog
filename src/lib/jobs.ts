@@ -113,6 +113,25 @@ export async function countTags(jobs?: Job[]): Promise<Record<keyof JobTags, Map
   return counts;
 }
 
+let tagCountsCache: ReturnType<typeof countTags> | undefined;
+
+/** countTags() over all open jobs, computed once per build for pages that link by count */
+export const getTagCounts = () => (tagCountsCache ??= countTags());
+
+let companyCountsCache: Promise<Map<string, number>> | undefined;
+
+/** Open jobs per company key */
+export const getCompanyCounts = () =>
+  (companyCountsCache ??= getOpenJobs().then((jobs) => {
+    const counts = new Map<string, number>();
+    for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
+    return counts;
+  }));
+
+let remoteCountCache: Promise<number> | undefined;
+
+export const getRemoteCount = () => (remoteCountCache ??= getOpenJobs().then((jobs) => jobs.filter((j) => j.remote).length));
+
 export async function getJobsByCategory(category: string): Promise<Job[]> {
   return (await getOpenJobs()).filter((j) => j.category === category);
 }

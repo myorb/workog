@@ -22,6 +22,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.fetch.outputs.changed }}
     env:
       ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
     steps:
@@ -60,3 +62,25 @@ jobs:
       - name: Alert on workflow failure
         if: failure()
         run: bun run alert "🚨 Workog daily update failed; the site keeps serving the previous version."
+
+  # Separate job so waiting for the deploy doesn't count against the fetch's timeout
+  ping:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+
+      - run: bun install --frozen-lockfile
+
+      - name: Notify search engines once the deploy is live
+        run: bun run ping

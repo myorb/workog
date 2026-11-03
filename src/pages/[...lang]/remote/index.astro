@@ -4,7 +4,7 @@ import Base from "../../../layouts/Base.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
-import { countryLinks, remoteUrl } from "../../../lib/links.ts";
+import { countryLinks, remoteUrl, technologyLinks } from "../../../lib/links.ts";
 import { getLang, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
 
@@ -16,6 +16,7 @@ const jobs = await getJobsWhere({ remote: true });
 const companies = new Set(jobs.map((j) => j.company)).size;
 const counts = await countTags(jobs);
 const countries = countryLinks(counts.countries, remoteUrl, lang);
+const techs = technologyLinks(counts.technologies);
 ---
 
 <Base title={m.remoteJobs.title} description={m.remoteJobs.description(jobs.length, companies)} noindex={!jobs.length}>
@@ -25,6 +26,7 @@ const countries = countryLinks(counts.countries, remoteUrl, lang);
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
   {countries.length > 0 && <><h2>{m.remoteJobs.byCountry}</h2><TagLinks links={countries} /></>}
+  {techs.length > 0 && <><h2>{m.nav.technologies}</h2><TagLinks links={techs} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
 </Base>

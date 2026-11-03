@@ -3,9 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
-import { countTags, getJobsWhere } from "../../../../lib/jobs.ts";
+import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
 import { countries } from "../../../../lib/places.ts";
-import { cityLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { cityLinks, companyCounts, companyLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
 
@@ -24,6 +24,7 @@ const jobs = await getJobsWhere({ country: country.slug });
 const counts = await countTags(jobs);
 const cities = cityLinks(counts.cities, undefined, country.slug);
 const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, country.slug));
+const companies = companyLinks(companyCounts(jobs), await getCompanies());
 ---
 
 <Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)}>
@@ -35,6 +36,7 @@ const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, count
   </p>
   {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
 </Base>

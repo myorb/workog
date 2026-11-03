@@ -28,6 +28,8 @@ export const es = {
   openPositions: (k: number) => p(k, openPositions),
   showingNewest: (k: number) => `, se muestran los ${n(k)} más recientes`,
   latestJobs: "Últimos empleos",
+  companiesHiring: "Empresas que contratan",
+  relatedTechnologies: "Tecnologías relacionadas",
   allCompanies: "Todas las empresas →",
   allTechnologies: "Todas las tecnologías →",
   allLocations: "Todas las ubicaciones →",
