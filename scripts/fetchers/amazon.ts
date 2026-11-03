@@ -25,24 +25,56 @@ interface AmazonLocation {
   type?: string;
 }
 
+const SEARCH_URL = "https://www.amazon.jobs/en/search.json";
 const PAGE_SIZE = 100;
-/** the search endpoint refuses offsets past 10,000 */
+/** the search endpoint refuses offsets past 10,000, so bigger result sets are fetched in slices */
 const MAX_OFFSET = 10_000;
+
+interface SearchResponse {
+  hits: number;
+  jobs: AmazonJob[];
+  facets: Record<string, Record<string, number>[]>;
+}
+
+/** Counts per value of `facet` among the jobs matching `filter`. */
+async function facetCounts(facet: string, filter: string): Promise<[string, number][]> {
+  const data = await getJson<SearchResponse>(`${SEARCH_URL}?result_limit=1${filter}&facets[]=${facet}`);
+  return (data.facets[`${facet}_facet`] ?? []).flatMap((entry) => Object.entries(entry));
+}
+
+/** Every job matching `filter`; throws if there are more than the endpoint can page through. */
+async function searchAll(filter: string): Promise<AmazonJob[]> {
+  const jobs: AmazonJob[] = [];
+  for (let offset = 0; ; offset += PAGE_SIZE) {
+    const data = await getJson<SearchResponse>(
+      `${SEARCH_URL}?sort=recent&result_limit=${PAGE_SIZE}&offset=${offset}${filter}`,
+    );
+    if (data.hits >= MAX_OFFSET) throw new Error(`slice "${filter}" has ${data.hits}+ jobs, more than one search can return`);
+    jobs.push(...data.jobs);
+    if (data.jobs.length < PAGE_SIZE || offset + PAGE_SIZE >= data.hits) return jobs;
+  }
+}
 
 export const amazon: Fetcher<AmazonJob> = {
   name: "amazon",
 
-  async fetch(company) {
-    const limit = Math.min(company.maxJobs ?? MAX_OFFSET, MAX_OFFSET);
-    const jobs: AmazonJob[] = [];
-    for (let offset = 0; offset < limit; offset += PAGE_SIZE) {
-      const data = await getJson<{ hits: number; jobs: AmazonJob[] }>(
-        `https://www.amazon.jobs/en/search.json?sort=recent&result_limit=${PAGE_SIZE}&offset=${offset}`,
-      );
-      jobs.push(...data.jobs);
-      if (data.jobs.length < PAGE_SIZE || offset + PAGE_SIZE >= data.hits) break;
+  /**
+   * One search per country; a country with too many jobs for one search
+   * (the US) is split further by business category.
+   */
+  async fetch() {
+    const jobs = new Map<string, AmazonJob>();
+    for (const [country, count] of await facetCounts("normalized_country_code", "")) {
+      const filter = `&normalized_country_code[]=${encodeURIComponent(country)}`;
+      const slices =
+        count < MAX_OFFSET
+          ? [filter]
+          : (await facetCounts("business_category", filter)).map(
+              ([category]) => `${filter}&business_category[]=${encodeURIComponent(category)}`,
+            );
+      for (const slice of slices) for (const job of await searchAll(slice)) jobs.set(job.id_icims, job);
     }
-    return jobs.slice(0, limit);
+    return [...jobs.values()];
   },
 
   normalize(raw, company) {

@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import type { Job, SourceRun } from "../src/lib/schema.ts";
 import type { NormalizedJob } from "./fetchers/types.ts";
-import { jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
+import { jobsChanged, mergeJobs, partOf, recordHistory, sanityCheck } from "./fetch.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
 
@@ -145,5 +145,14 @@ describe("recordHistory", () => {
     expect(history[0]!.companies.beta).toEqual({ open: 5, new: 5, closed: 0 });
     const nextDay = recordHistory(history, "2026-11-03", [run("acme", 10), run("beta", 5, 5)], new Set(["acme"]));
     expect(nextDay[1]!.companies.beta).toEqual({ open: 5, new: 0, closed: 0 });
+  });
+});
+
+describe("partOf", () => {
+  test("puts a job in the same part every time, spread across all parts", () => {
+    const ids = Array.from({ length: 1000 }, (_, i) => `amazon:${3_000_000 + i}`);
+    const parts = ids.map((id) => partOf(id, 4));
+    expect(ids.map((id) => partOf(id, 4))).toEqual(parts);
+    for (let n = 0; n < 4; n++) expect(parts.filter((p) => p === n).length).toBeGreaterThan(150);
   });
 });

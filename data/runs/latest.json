@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
-  "startedAt": "2026-11-03T05:02:35.566Z",
-  "finishedAt": "2026-11-03T05:02:37.411Z",
-=======
-  "startedAt": "2026-11-02T18:53:03.468Z",
-  "finishedAt": "2026-11-02T18:53:28.282Z",
->>>>>>> 90e1055 (Add Amazon, Apple and Google job sources)
+  "startedAt": "2026-11-03T09:27:31.661Z",
+  "finishedAt": "2026-11-03T09:30:15.530Z",
   "sources": [
     {
       "company": "airbnb",
@@ -23,11 +18,11 @@
       "company": "amazon",
       "source": "amazon",
       "status": "ok",
-      "fetched": 1000,
+      "fetched": 20928,
       "invalid": 0,
-      "open": 1000,
-      "new": 1,
-      "closed": 1,
+      "open": 20928,
+      "new": 19946,
+      "closed": 19,
       "fallbackStreak": 0,
       "broken": false
     },
@@ -35,11 +30,11 @@
       "company": "apple",
       "source": "apple",
       "status": "ok",
-      "fetched": 1000,
+      "fetched": 4993,
       "invalid": 0,
-      "open": 1000,
-      "new": 0,
-      "closed": 0,
+      "open": 4993,
+      "new": 4007,
+      "closed": 14,
       "fallbackStreak": 0,
       "broken": false
     },
@@ -155,11 +150,11 @@
       "company": "google",
       "source": "google",
       "status": "ok",
-      "fetched": 1000,
+      "fetched": 3132,
       "invalid": 0,
-      "open": 1000,
-      "new": 2,
-      "closed": 0,
+      "open": 3130,
+      "new": 2142,
+      "closed": 12,
       "fallbackStreak": 0,
       "broken": false
     },

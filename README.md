@@ -53,7 +53,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | Path | Purpose |
 | --- | --- |
 | `data/companies.json` | Company list and source config |
-| `data/jobs/<company>.json` | Job[] per company, written by the pipeline |
+| `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 5,000 jobs |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
@@ -70,7 +70,11 @@ Add an entry to `data/companies.json` with the board token from `boards.greenhou
 
 ## Big companies
 
-Amazon, Apple and Google list far more jobs than the site can hold (job pages are one file each, and the build should stay small), so their entries set `maxJobs` to keep only the newest jobs. A job that falls out of that window is dropped from the data rather than marked closed, so it doesn't linger as a closed page for 14 days. With 1,000 each the build is about 18,500 files; lower `maxJobs` if it nears the limit.
+Amazon, Apple and Google are fetched in full. Amazon's search endpoint stops at 10,000 results, so `scripts/fetchers/amazon.ts` searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
+
+A company with more than 5,000 jobs is written as `data/jobs/<company>.<n>.json` parts, because GitHub rejects files over 100 MB. Each job lands in a part by a hash of its id, so it stays put from day to day.
+
+A company entry can still set `maxJobs` to keep only its newest jobs. A job that falls out of that window is dropped from the data rather than marked closed.
 
 ## Status
 
