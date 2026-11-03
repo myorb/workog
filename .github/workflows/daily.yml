@@ -8,9 +8,8 @@ on:
 permissions:
   contents: write
 
-# shared with deploy.yml so a developer push and the daily run never deploy at once
 concurrency:
-  group: deploy
+  group: daily
   cancel-in-progress: false
 
 jobs:
@@ -37,8 +36,8 @@ jobs:
         id: fetch
         run: bun run fetch
 
-      # Pushes made with GITHUB_TOKEN do not trigger deploy.yml, so this job
-      # commits, builds and deploys by itself.
+      # DigitalOcean App Platform rebuilds and deploys the site on every push to
+      # main (see .do/app.yaml), so this job only commits the data.
       - name: Commit data
         if: steps.fetch.outputs.changed == 'true'
         run: |
@@ -48,17 +47,6 @@ jobs:
           git commit -m "data: daily update $(date -u +%F)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
-
-      - name: Build
-        if: steps.fetch.outputs.changed == 'true'
-        run: bun run build
-
-      - name: Deploy to Cloudflare Pages
-        if: steps.fetch.outputs.changed == 'true'
-        run: bun run deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Alert on source fallbacks
         if: always() && steps.fetch.outcome == 'success'

@@ -12,7 +12,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check && tsc --noEmit -p tsconfig.json",
-    "deploy": "wrangler pages deploy dist --project-name static-job --branch main --commit-dirty=true",
     "alert": "bun scripts/alert.ts"
   },
   "dependencies": {
@@ -25,7 +24,6 @@
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.6",
     "@types/sanitize-html": "^2.16.2",
-    "typescript": "^6",
-    "wrangler": "^4.156.1"
+    "typescript": "^6"
   }
 }

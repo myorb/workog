@@ -5,5 +5,5 @@ export default defineConfig({
   site: process.env.SITE_URL ?? "https://workog.com",
   output: "static",
   trailingSlash: "never",
-  build: { format: "file" },
+  build: { format: "directory" },
 });

@@ -23,8 +23,8 @@ export function withLangs<P extends { params: Record<string, string | undefined>
   );
 }
 
-// Job pages are English-only: their content comes from the career sites, and four copies would push
-// the deploy past Cloudflare Pages' file limit
+// Job pages are English-only: their content comes from the career sites, and four copies would
+// quadruple the build size
 const untranslated = /^\/jobs\//;
 
 export function localizePath(path: string, lang: Lang): string {
