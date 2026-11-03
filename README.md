@@ -36,7 +36,7 @@ App Platform watches `main` through its GitHub app, so the daily data commit dep
 ### One-time setup
 
 1. Push this repo to GitHub with `main` as the default branch.
-2. Install the DigitalOcean GitHub app on `myorb/static-job`, then create the App Platform static site:
+2. Install the DigitalOcean GitHub app on `myorb/workog`, then create the App Platform static site:
    ```bash
    doctl apps create --spec .do/app.yaml
    ```
@@ -70,11 +70,18 @@ Add an entry to `data/companies.json` with the board token from `boards.greenhou
 
 ## Big companies
 
-Amazon, Apple and Google are fetched in full. Amazon's search endpoint stops at 10,000 results, so `scripts/fetchers/amazon.ts` searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
+Amazon, Apple and Google set `maxJobs: 1000`, so the daily run fetches only their newest 1,000 jobs. A capped run adds and updates jobs but never closes any: a job missing from the newest 1,000 may just be older (Amazon doesn't even sort strictly by posting date), so it is kept as it was.
+
+To fetch every job, run Actions → Daily update → Run workflow with **Fetch every job** ticked, or locally:
+
+```bash
+bun run fetch --all                 # every company, ignoring maxJobs
+bun run fetch --all amazon          # just Amazon
+```
+
+Only a full run closes jobs. Between full runs, jobs that have closed on these three sites still show as open, so run one every week or two. Amazon's search endpoint stops at 10,000 results, so a full Amazon fetch searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
 
 A company with more than 5,000 jobs is written as `data/jobs/<company>.<n>.json` parts, because GitHub rejects files over 100 MB. Each job lands in a part by a hash of its id, so it stays put from day to day.
-
-A company entry can still set `maxJobs` to keep only its newest jobs. A job that falls out of that window is dropped from the data rather than marked closed.
 
 ## Status
 

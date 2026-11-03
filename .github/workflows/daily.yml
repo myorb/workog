@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 5 * * *" # 05:00 UTC; GitHub may start it 10-30 minutes late
   workflow_dispatch:
+    inputs:
+      all:
+        description: Fetch every job, ignoring maxJobs (slow; Amazon alone is about 20,000 jobs)
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
 
       - name: Fetch jobs
         id: fetch
-        run: bun run fetch
+        run: bun run fetch ${{ inputs.all && '--all' || '' }}
 
       # DigitalOcean App Platform rebuilds and deploys the site on every push to
       # main (see .do/app.yaml), so this job only commits the data.

@@ -59,10 +59,24 @@ export const amazon: Fetcher<AmazonJob> = {
   name: "amazon",
 
   /**
-   * One search per country; a country with too many jobs for one search
-   * (the US) is split further by business category.
+   * With maxJobs, the newest jobs from one search. Otherwise one search per
+   * country, with a country too big for one search (the US) split further by
+   * business category.
    */
-  async fetch() {
+  async fetch(company) {
+    if (company.maxJobs) {
+      const jobs: AmazonJob[] = [];
+      const limit = Math.min(company.maxJobs, MAX_OFFSET);
+      for (let offset = 0; offset < limit; offset += PAGE_SIZE) {
+        const data = await getJson<SearchResponse>(
+          `${SEARCH_URL}?sort=recent&result_limit=${PAGE_SIZE}&offset=${offset}`,
+        );
+        jobs.push(...data.jobs);
+        if (data.jobs.length < PAGE_SIZE || offset + PAGE_SIZE >= data.hits) break;
+      }
+      return jobs.slice(0, limit);
+    }
+
     const jobs = new Map<string, AmazonJob>();
     for (const [country, count] of await facetCounts("normalized_country_code", "")) {
       const filter = `&normalized_country_code[]=${encodeURIComponent(country)}`;

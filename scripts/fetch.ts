@@ -5,6 +5,7 @@
  *
  *   bun scripts/fetch.ts            # all companies
  *   bun scripts/fetch.ts figma      # only the listed company keys
+ *   bun scripts/fetch.ts --all      # ignore maxJobs and fetch every job
  *
  * A source that fails or fails a sanity check keeps yesterday's file and is
  * reported as "fallback"; that never fails the process. In GitHub Actions the
@@ -64,10 +65,11 @@ interface FetchResult {
   invalid: number;
   jobs: NormalizedJob[];
   /**
-   * Set when the company's maxJobs cut the list short: the posted date of the
-   * oldest job kept. Jobs posted before it may still be open on the site.
+   * Set to the company's maxJobs when it cut the list short. A missing job may
+   * then only have fallen outside the cap (sources don't sort strictly by
+   * posting date), so it can't be called closed.
    */
-  windowStart?: string;
+  cap?: number;
 }
 
 async function readJson<T>(path: string, fallback: T): Promise<T> {
@@ -136,7 +138,7 @@ async function fetchCompany(company: CompanyConfig): Promise<FetchResult> {
   if (company.maxJobs && raws.length >= company.maxJobs) {
     jobs.sort((a, b) => (b.postedAt ?? "").localeCompare(a.postedAt ?? ""));
     jobs.length = Math.min(jobs.length, company.maxJobs);
-    return { fetched: raws.length, invalid, jobs, windowStart: jobs.at(-1)?.postedAt };
+    return { fetched: raws.length, invalid, jobs, cap: company.maxJobs };
   }
   return { fetched: raws.length, invalid, jobs };
 }
@@ -156,11 +158,10 @@ export function sanityCheck(result: FetchResult, previousOpen: number): string |
 /**
  * Applies today's fetch to yesterday's jobs: new ids get firstSeenAt, missing
  * ids get closedAt, reappearing ids are reopened, and jobs closed for longer
- * than the retention window are dropped. With a `windowStart`, missing jobs
- * posted before it only fell out of a capped fetch, so they are dropped
- * rather than closed.
+ * than the retention window are dropped. After a `capped` fetch, missing open
+ * jobs are kept as they were until a full (`--all`) run checks them.
  */
-export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, windowStart?: string) {
+export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, capped = false) {
   const prevById = new Map(previous.map((j) => [j.id, j]));
   const seen = new Set<string>();
   const merged: Job[] = [];
@@ -183,8 +184,9 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
   const cutoff = Date.parse(now) - CLOSED_RETENTION_DAYS * 24 * 60 * 60 * 1000;
   for (const prev of previous) {
     if (seen.has(prev.id)) continue;
-    if (!prev.closedAt && windowStart && (prev.postedAt ?? prev.firstSeenAt) < windowStart) continue;
-    if (!prev.closedAt) {
+    if (!prev.closedAt && capped) {
+      merged.push(prev);
+    } else if (!prev.closedAt) {
       closed++;
       merged.push({ ...prev, closedAt: now });
     } else if (Date.parse(prev.closedAt) > cutoff) {
@@ -234,7 +236,9 @@ const statusKey = (s: SourceRun | undefined) => (s ? `${s.status}|${s.fallbackSt
 
 async function main() {
   const startedAt = new Date().toISOString();
-  const only = new Set(process.argv.slice(2));
+  const args = process.argv.slice(2);
+  const all = args.includes("--all");
+  const only = new Set(args.filter((a) => !a.startsWith("--")));
   const allCompanies = z.array(CompanyConfigSchema).parse(await readJson(join(DATA_DIR, "companies.json"), []));
   const companies = allCompanies.filter((c) => only.size === 0 || only.has(c.key));
 
@@ -245,7 +249,9 @@ async function main() {
   const prevRun = RunSchema.safeParse(await readJson(runFile, null)).data;
   const prevSources = new Map(prevRun?.sources.map((s) => [s.company, s]));
 
-  const results = await Promise.allSettled(companies.map(fetchCompany));
+  const results = await Promise.allSettled(
+    companies.map((c) => fetchCompany(all ? { ...c, maxJobs: undefined } : c)),
+  );
   const sources: SourceRun[] = [];
   let changed = false;
 
@@ -259,7 +265,7 @@ async function main() {
     const reason =
       result.status === "rejected"
         ? `fetch failed: ${result.reason instanceof Error ? result.reason.message : String(result.reason)}`
-        : sanityCheck(result.value, previousOpen);
+        : sanityCheck(result.value, Math.min(previousOpen, result.value.cap ?? Infinity));
 
     let source: SourceRun;
     if (reason) {
@@ -280,7 +286,7 @@ async function main() {
       };
       console.error(`[${company.key}] FALLBACK (${fallbackStreak} in a row): ${reason}`);
     } else {
-      const { jobs, added, closed } = mergeJobs(previous, counts.jobs, startedAt, counts.windowStart);
+      const { jobs, added, closed } = mergeJobs(previous, counts.jobs, startedAt, counts.cap !== undefined);
       await writeJobs(company.key, jobs);
       if (jobsChanged(previous, jobs)) changed = true;
       source = {

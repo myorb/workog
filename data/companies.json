@@ -1,7 +1,7 @@
 [
   { "key": "airbnb", "name": "Airbnb", "source": "greenhouse", "boardToken": "airbnb" },
-  { "key": "amazon", "name": "Amazon", "source": "amazon" },
-  { "key": "apple", "name": "Apple", "source": "apple" },
+  { "key": "amazon", "name": "Amazon", "source": "amazon", "maxJobs": 1000 },
+  { "key": "apple", "name": "Apple", "source": "apple", "maxJobs": 1000 },
   { "key": "asana", "name": "Asana", "source": "greenhouse", "boardToken": "asana" },
   { "key": "cloudflare", "name": "Cloudflare", "source": "greenhouse", "boardToken": "cloudflare" },
   { "key": "coinbase", "name": "Coinbase", "source": "greenhouse", "boardToken": "coinbase" },
@@ -11,7 +11,7 @@
   { "key": "duolingo", "name": "Duolingo", "source": "greenhouse", "boardToken": "duolingo" },
   { "key": "figma", "name": "Figma", "source": "greenhouse", "boardToken": "figma" },
   { "key": "gitlab", "name": "GitLab", "source": "greenhouse", "boardToken": "gitlab" },
-  { "key": "google", "name": "Google", "source": "google" },
+  { "key": "google", "name": "Google", "source": "google", "maxJobs": 1000 },
   { "key": "instacart", "name": "Instacart", "source": "greenhouse", "boardToken": "instacart" },
   { "key": "lyft", "name": "Lyft", "source": "greenhouse", "boardToken": "lyft" },
   { "key": "pinterest", "name": "Pinterest", "source": "greenhouse", "boardToken": "pinterest" },

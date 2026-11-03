@@ -47,13 +47,14 @@ describe("mergeJobs", () => {
     expect(reopened.added).toBe(0);
   });
 
-  test("with a capped fetch, jobs older than the window are dropped, newer missing ones are closed", () => {
-    const prev = [stored("old", { postedAt: day(1) }), stored("gone", { postedAt: day(5) })];
-    const { jobs, closed } = mergeJobs(prev, [{ ...fetched("new"), postedAt: day(4) }], day(6), day(4));
-    expect(closed).toBe(1);
-    expect(jobs.map((j) => [j.id, j.closedAt])).toEqual([
-      ["test:gone", day(6)],
-      ["test:new", undefined],
+  test("after a capped fetch, missing open jobs are kept as they were", () => {
+    const prev = [stored("old"), stored("closed", { closedAt: day(5) })];
+    const { jobs, closed } = mergeJobs(prev, [fetched("new")], day(6), true);
+    expect(closed).toBe(0);
+    expect(jobs.map((j) => [j.id, j.closedAt, j.lastSeenAt])).toEqual([
+      ["test:closed", day(5), day(1)],
+      ["test:new", undefined, day(6)],
+      ["test:old", undefined, day(1)],
     ]);
   });
 
