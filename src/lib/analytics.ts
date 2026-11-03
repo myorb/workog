@@ -1,5 +1,6 @@
-/** Aggregations for the analytics page. Pure functions over jobs and history. */
-import type { HistoryDay, Job } from "./schema.ts";
+/** Aggregations for the analytics pages. Pure functions over jobs, history and snapshots. */
+import { tagsOf } from "./jobs.ts";
+import type { HistoryDay, Job, Snapshot } from "./schema.ts";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -108,4 +109,83 @@ export function weeklyTotals(days: DayTotals[]): { week: string; new: number; cl
     weeks.set(monday, week);
   }
   return [...weeks.values()];
+}
+
+/** The dimensions a snapshot counts open jobs by. */
+export const SNAPSHOT_DIMENSIONS = ["companies", "categories", "countries", "cities", "technologies", "employment"] as const;
+export type SnapshotDimension = (typeof SNAPSHOT_DIMENSIONS)[number];
+
+/** The ISO date `days` after `date` (or before, if negative). */
+export function addDays(date: string, days: number): string {
+  return new Date(Date.parse(date) + days * DAY_MS).toISOString().slice(0, 10);
+}
+
+/** Whether a job was open at the end of UTC day `date`, judged by when it was first seen and closed. */
+export function openOn(job: Job, date: string): boolean {
+  const end = Date.parse(addDays(date, 1));
+  return Date.parse(job.firstSeenAt) < end && (!job.closedAt || Date.parse(job.closedAt) >= end);
+}
+
+/** Open-job counts at the end of `date`, from every job the store still holds. */
+export function snapshotOf(jobs: Job[], date: string): Snapshot {
+  const snapshot: Snapshot = { date, open: 0, remote: 0, companies: {}, categories: {}, countries: {}, cities: {}, technologies: {}, employment: {} };
+  const add = (counts: Record<string, number>, key: string) => (counts[key] = (counts[key] ?? 0) + 1);
+  for (const job of jobs) {
+    if (!openOn(job, date)) continue;
+    const tags = tagsOf(job);
+    snapshot.open++;
+    if (job.remote) snapshot.remote++;
+    add(snapshot.companies, job.company);
+    add(snapshot.categories, job.category ?? "other");
+    for (const key of ["countries", "cities", "technologies", "employment"] as const) {
+      for (const slug of tags[key]) add(snapshot[key], slug);
+    }
+  }
+  for (const key of SNAPSHOT_DIMENSIONS) {
+    snapshot[key] = Object.fromEntries(Object.entries(snapshot[key]).sort(([a], [b]) => a.localeCompare(b)));
+  }
+  return snapshot;
+}
+
+/**
+ * One snapshot per day from the first to the last. A day without one had no
+ * committed change, so it repeats the day before under its own date.
+ */
+export function dailySnapshots(snapshots: Snapshot[]): Snapshot[] {
+  if (!snapshots.length) return [];
+  const byDate = new Map(snapshots.map((s) => [s.date, s]));
+  const days: Snapshot[] = [];
+  for (let date = snapshots[0]!.date; date <= snapshots.at(-1)!.date; date = addDays(date, 1)) {
+    days.push(byDate.get(date) ?? { ...days.at(-1)!, date });
+  }
+  return days;
+}
+
+/** The snapshot in force at the end of `date`: that day's, or the last one before it. */
+export function snapshotOn(snapshots: Snapshot[], date: string): Snapshot | undefined {
+  return snapshots.findLast((s) => s.date <= date);
+}
+
+export interface Mover {
+  key: string;
+  from: number;
+  to: number;
+  delta: number;
+}
+
+/**
+ * Keys whose open count changed the most between two snapshots, biggest change
+ * first: `up` grew and `down` shrank. Keys that appear or vanish count from 0.
+ */
+export function movers(from: Record<string, number>, to: Record<string, number>, limit: number): { up: Mover[]; down: Mover[] } {
+  const all = [...new Set([...Object.keys(from), ...Object.keys(to)])].map((key) => {
+    const a = from[key] ?? 0;
+    const b = to[key] ?? 0;
+    return { key, from: a, to: b, delta: b - a };
+  });
+  const order = (x: Mover, y: Mover) => Math.abs(y.delta) - Math.abs(x.delta) || y.to - x.to || x.key.localeCompare(y.key);
+  return {
+    up: all.filter((m) => m.delta > 0).sort(order).slice(0, limit),
+    down: all.filter((m) => m.delta < 0).sort(order).slice(0, limit),
+  };
 }

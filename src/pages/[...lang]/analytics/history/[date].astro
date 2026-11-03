@@ -1,0 +1,162 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import BarList from "../../../../components/BarList.astro";
+import Movers from "../../../../components/Movers.astro";
+import { getCompanies, getHistory, getSnapshots } from "../../../../lib/jobs.ts";
+import { snapshotLabels } from "../../../../lib/links.ts";
+import { addDays, dailyTotals, movers, type SnapshotDimension, snapshotOn } from "../../../../lib/analytics.ts";
+import { formatDate } from "../../../../lib/format.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { formatNumber } from "../../../../lib/locale.ts";
+
+const TOP = 10;
+const MOVERS = 5;
+
+export const getStaticPaths = (async () => {
+  const snapshots = await getSnapshots();
+  return withLangs(
+    snapshots.map((snapshot, i) => ({
+      params: { date: snapshot.date },
+      props: {
+        snapshot,
+        prev: snapshots[i - 1],
+        next: snapshots[i + 1],
+        // the week before is only worth a second comparison when it isn't the day before
+        week: snapshotOn(snapshots.slice(0, Math.max(0, i - 1)), addDays(snapshot.date, -7)),
+      },
+    })),
+  );
+}) satisfies GetStaticPaths;
+
+const { snapshot, prev, next, week } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const a = m.analytics;
+const d = a.day;
+const date = (iso: string) => formatDate(iso, lang);
+const num = (k: number) => formatNumber(k, lang);
+const signed = (k: number) => (k === 0 ? "±0" : `${k > 0 ? "+" : "−"}${num(Math.abs(k))}`);
+
+const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]));
+const labels = snapshotLabels(lang, companyNames);
+const flow = dailyTotals(await getHistory()).find((f) => f.date === snapshot.date);
+
+const bars = (dim: SnapshotDimension, limit = Infinity) =>
+  Object.entries(snapshot[dim])
+    .sort(([ka, x], [kb, y]) => y - x || ka.localeCompare(kb))
+    .slice(0, limit)
+    .map(([key, count]) => ({ ...labels[dim](key), count }));
+
+const moverDims = ["technologies", "countries", "companies", "categories"] as const satisfies SnapshotDimension[];
+const headings: Record<(typeof moverDims)[number], string> = {
+  technologies: a.topTechnologies,
+  countries: a.topCountries,
+  companies: a.byCompany,
+  categories: a.byFunction,
+};
+const compare = (base: typeof snapshot) =>
+  moverDims.map((dim) => {
+    const { up, down } = movers(base[dim], snapshot[dim], MOVERS);
+    const label = (mv: (typeof up)[number]) => ({ ...mv, ...labels[dim](mv.key) });
+    return { dim, up: up.map(label), down: down.map(label) };
+  });
+const comparisons = [prev, week].filter((s) => s !== undefined).map((base) => ({ base, groups: compare(base) }));
+const remoteShare = (s: typeof snapshot) => Math.round((s.remote / Math.max(1, s.open)) * 100);
+---
+
+<Base title={d.title(date(snapshot.date))} description={d.description(snapshot.open, date(snapshot.date))}>
+  <p class="muted">
+    <a href={localizePath("/analytics", lang)}>{a.title}</a> /{" "}
+    <a href={localizePath("/analytics/history", lang)}>{a.history.title}</a> /
+  </p>
+  <h1>{d.title(date(snapshot.date))}</h1>
+  <p class="muted">{d.asOf(date(snapshot.date))}</p>
+
+  <dl class="stats">
+    <div>
+      <dt>{a.openJobs}</dt>
+      <dd>{num(snapshot.open)}</dd>
+      {prev && <dd class="sub">{signed(snapshot.open - prev.open)} {d.vsDayBefore}</dd>}
+      {week && <dd class="sub">{signed(snapshot.open - week.open)} {d.vsWeekBefore}</dd>}
+    </div>
+    <div>
+      <dt>{a.companiesHiring}</dt>
+      <dd>{Object.keys(snapshot.companies).length}</dd>
+    </div>
+    <div>
+      <dt>{a.remote}</dt>
+      <dd>{remoteShare(snapshot)}%</dd>
+      {prev && <dd class="sub">{num(snapshot.remote)} · {signed(snapshot.remote - prev.remote)}</dd>}
+    </div>
+    {
+      flow && (
+        <div>
+          <dt>{d.newClosed}</dt>
+          <dd>+{num(flow.new)} <span class="muted">/ −{num(flow.closed)}</span></dd>
+        </div>
+      )
+    }
+  </dl>
+
+  {
+    comparisons.map(({ base, groups }) => (
+      <section>
+        <h2>{a.changeSince(date(base.date))}</h2>
+        <div class="grid">
+          {groups.map((g) => (
+            <div>
+              <h3>{headings[g.dim]}</h3>
+              <Movers up={g.up} down={g.down} />
+            </div>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <div class="grid">
+    <section>
+      <h2>{a.byFunction}</h2>
+      <BarList bars={bars("categories")} />
+    </section>
+    <section>
+      <h2>{a.byCompany}</h2>
+      <BarList bars={bars("companies")} />
+    </section>
+    <section>
+      <h2>{a.topTechnologies}</h2>
+      <BarList bars={bars("technologies", TOP)} />
+    </section>
+    <section>
+      <h2>{a.topCountries}</h2>
+      <BarList bars={bars("countries", TOP)} />
+      <h3>{a.topCities}</h3>
+      <BarList bars={bars("cities", TOP)} />
+    </section>
+    <section>
+      <h2>{a.byEmployment}</h2>
+      <BarList bars={bars("employment")} />
+    </section>
+  </div>
+
+  <nav class="pager">
+    {prev ? <a href={localizePath(`/analytics/history/${prev.date}`, lang)}>{d.earlier}</a> : <span />}
+    {next && <a href={localizePath(`/analytics/history/${next.date}`, lang)}>{d.later}</a>}
+  </nav>
+</Base>
+
+<style>
+  section { margin-top: 32px; }
+  h2 { margin-bottom: 12px; }
+  h3 { font-size: 15px; margin: 16px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 32px; }
+  .grid > section, .grid > div { min-width: 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0 0; }
+  .stats div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+  .stats dt { font-size: 13px; color: var(--muted); }
+  .stats dd { margin: 0; font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stats dd .muted { font-size: 18px; font-weight: 400; }
+  .stats dd.sub { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .pager { display: flex; justify-content: space-between; margin-top: 40px; font-size: 15px; }
+</style>

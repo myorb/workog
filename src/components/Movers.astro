@@ -1,0 +1,67 @@
+---
+import { getLang, localizePath, t } from "../lib/i18n.ts";
+import { formatNumber } from "../lib/locale.ts";
+
+interface Item {
+  label: string;
+  href?: string;
+  from: number;
+  to: number;
+  delta: number;
+}
+
+interface Props {
+  up: Item[];
+  down: Item[];
+}
+
+const { up, down } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const a = t(lang).analytics;
+const signed = (k: number) => `${k > 0 ? "+" : "−"}${formatNumber(Math.abs(k), lang)}`;
+const groups = [
+  { name: a.growing, items: up, kind: "up" },
+  { name: a.shrinking, items: down, kind: "down" },
+];
+---
+
+<div class="movers">
+  {
+    groups.map((g) => (
+      <div>
+        <h4>{g.name}</h4>
+        {g.items.length ? (
+          <ul>
+            {g.items.map((m) => (
+              <li title={a.moverTitle(m.label, m.from, m.to)}>
+                <span class="label">{m.href ? <a href={localizePath(m.href, lang)}>{m.label}</a> : m.label}</span>
+                <span class:list={["delta", g.kind]}>{signed(m.delta)}</span>
+                <span class="to">{formatNumber(m.to, lang)}</span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">{a.noChange}</p>
+        )}
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .movers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 0 24px; }
+  h4 { font-size: 13px; font-weight: 600; color: var(--muted); margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  ul { list-style: none; padding: 0; margin: 0 0 12px; display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 4px 10px; font-size: 14px; }
+  li { display: contents; }
+  .label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .delta, .to { font-variant-numeric: tabular-nums; text-align: right; }
+  .delta { font-weight: 600; }
+  .delta.up { color: var(--series-up, #1a7f37); }
+  .delta.down { color: var(--series-down, #c4320a); }
+  .to { color: var(--muted); }
+  p { font-size: 14px; margin: 0 0 12px; }
+  @media (prefers-color-scheme: dark) {
+    .delta.up { color: var(--series-up, #4ac26b); }
+    .delta.down { color: var(--series-down, #f0703f); }
+  }
+</style>

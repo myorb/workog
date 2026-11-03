@@ -7,9 +7,13 @@ interface Props {
   points: { date: string; value: number }[];
   /** what one value counts, for the hover titles */
   unit: string;
+  /** plot height in pixels */
+  height?: number;
+  /** how values are printed; whole numbers by default */
+  format?: (value: number) => string;
 }
 
-const { points, unit } = Astro.props;
+const { points, unit, height = 200, format } = Astro.props;
 const lang = getLang(Astro.params.lang);
 const date = (iso: string) => formatDate(iso, lang);
 const W = 800;
@@ -25,11 +29,11 @@ const x = (i: number) => (points.length === 1 ? W / 2 : (i / (points.length - 1)
 const y = (v: number) => H - ((v - yMin) / (yMax - yMin)) * H;
 const line = points.map((p, i) => `${x(i).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
 const slot = W / points.length;
-const fmt = (n: number) => formatNumber(Math.round(n), lang);
+const fmt = format ?? ((n: number) => formatNumber(Math.round(n), lang));
 ---
 
 <figure class="line-chart">
-  <div class="plot">
+  <div class="plot" style={`height: ${height}px`}>
     <span class="y top">{fmt(yMax)}</span>
     <span class="y bottom">{fmt(yMin)}</span>
     <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" role="img" aria-label={t(lang).chartRange(unit, date(points[0]!.date), date(points.at(-1)!.date))}>
@@ -52,7 +56,7 @@ const fmt = (n: number) => formatNumber(Math.round(n), lang);
 
 <style>
   .line-chart { margin: 0; }
-  .plot { position: relative; height: 200px; border-bottom: 1px solid var(--border); }
+  .plot { position: relative; border-bottom: 1px solid var(--border); }
   svg { display: block; width: 100%; height: 100%; overflow: visible; }
   polyline { fill: none; stroke: var(--accent); stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
   .grid { stroke: var(--border); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 4 4; }

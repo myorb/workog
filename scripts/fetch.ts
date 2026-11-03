@@ -1,7 +1,8 @@
 /**
  * Daily pipeline: fetch every company, normalize and validate, run sanity
  * checks, merge with the previous data/jobs/<company>.json (or <company>.<n>.json
- * parts for big companies), then write the files, runs/latest.json and the day's line in runs/history.json.
+ * parts for big companies), then write the files, runs/latest.json, the day's line in runs/history.json
+ * and the day's snapshot in history/<date>.json.
  *
  *   bun scripts/fetch.ts            # all companies
  *   bun scripts/fetch.ts figma      # only the listed company keys
@@ -11,7 +12,7 @@
  * reported as "fallback"; that never fails the process. In GitHub Actions the
  * script sets the step output `changed=true|false`, ignoring lastSeenAt, so the
  * workflow can stop before committing and deploying when nothing is new.
- * History alone never counts as a change: a day with no commit had no new or
+ * History and snapshots alone never count as a change: a day with no commit had no new or
  * closed jobs, so readers fill the gap from the day before.
  */
 import { appendFile, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
@@ -33,6 +34,7 @@ import { amazon } from "./fetchers/amazon.ts";
 import { apple } from "./fetchers/apple.ts";
 import { google } from "./fetchers/google.ts";
 import { greenhouse } from "./fetchers/greenhouse.ts";
+import { readAllJobs, writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
 const DATA_DIR = join(import.meta.dirname, "..", "data");
@@ -326,6 +328,7 @@ async function main() {
   const history = z.array(HistoryDaySchema).parse(await readJson(historyFile, []));
   const ran = new Set(companies.map((c) => c.key));
   await writeFile(historyFile, historyJson(recordHistory(history, startedAt.slice(0, 10), sources, ran)));
+  await writeSnapshot(await readAllJobs(DATA_DIR), startedAt.slice(0, 10), DATA_DIR);
 
   const fallbacks = sources.filter((s) => s.status === "fallback");
   if (fallbacks.length) console.error(`${fallbacks.length} source(s) fell back: ${fallbacks.map((s) => s.company).join(", ")}`);

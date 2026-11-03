@@ -4,15 +4,33 @@ import Base from "../../layouts/Base.astro";
 import BarList from "../../components/BarList.astro";
 import ColumnChart from "../../components/ColumnChart.astro";
 import LineChart from "../../components/LineChart.astro";
-import { countTags, getCompanies, getHistory, getLatestRun, getOpenJobs } from "../../lib/jobs.ts";
-import { cityLinks, countryLinks, technologyLinks } from "../../lib/links.ts";
-import { countBy, dailyTotals, medianAgeDays, postedByMonth, remoteShareBy, weeklyTotals } from "../../lib/analytics.ts";
+import Movers from "../../components/Movers.astro";
+import { countTags, getCompanies, getHistory, getLatestRun, getOpenJobs, getSnapshots } from "../../lib/jobs.ts";
+import { cityLinks, countryLinks, snapshotLabels, technologyLinks } from "../../lib/links.ts";
+import {
+  addDays,
+  countBy,
+  dailySnapshots,
+  dailyTotals,
+  medianAgeDays,
+  movers,
+  postedByMonth,
+  remoteShareBy,
+  type SnapshotDimension,
+  snapshotOn,
+  weeklyTotals,
+} from "../../lib/analytics.ts";
 import { formatDate, formatDateTime, formatShortDate } from "../../lib/format.ts";
 import { categoryName, getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { formatNumber, intlLocale } from "../../lib/locale.ts";
 import { TREND_MIN_DAYS } from "../../lib/constants.ts";
 
 const TOP = 10;
+const MOVERS = 5;
+/** compare today with the snapshot this many days earlier, or the first one if history is shorter */
+const MOVERS_WINDOW = 7;
+/** functions drawn as small multiples */
+const TOP_FUNCTIONS = 6;
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
@@ -50,6 +68,30 @@ const medianAge = medianAgeDays(jobs, ref);
 const days = dailyTotals(await getHistory());
 const weeks = weeklyTotals(days).slice(-12);
 const showTrends = days.length >= TREND_MIN_DAYS;
+
+const snapshots = await getSnapshots();
+const snapshotDays = dailySnapshots(snapshots);
+const latest = snapshots.at(-1);
+const base = latest && (snapshotOn(snapshots, addDays(latest.date, -MOVERS_WINDOW)) ?? snapshots[0]);
+const labels = snapshotLabels(lang, companyNames);
+const showMovers = !!latest && !!base && base.date < latest.date;
+const moverDims = ["technologies", "countries", "companies", "categories"] as const satisfies SnapshotDimension[];
+const moverGroups = (showMovers ? moverDims : []).map((dim) => {
+  const { up, down } = movers(base![dim], latest![dim], MOVERS);
+  const label = (m: (typeof up)[number]) => ({ ...m, ...labels[dim](m.key) });
+  return { dim, up: up.map(label), down: down.map(label) };
+});
+const moverHeadings: Record<(typeof moverDims)[number], string> = {
+  technologies: a.topTechnologies,
+  countries: a.topCountries,
+  companies: a.byCompany,
+  categories: a.byFunction,
+};
+const showSnapshotTrends = snapshotDays.length >= TREND_MIN_DAYS;
+const topFunctions = latest
+  ? Object.entries(latest.categories).sort(([, x], [, y]) => y - x).slice(0, TOP_FUNCTIONS).map(([key]) => key)
+  : [];
+const percent = (v: number) => `${Math.round(v)}%`;
 
 const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%`;
 ---
@@ -98,7 +140,53 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
         </p>
       )
     }
+    {
+      showSnapshotTrends && (
+        <>
+          <div class="grid">
+            <div>
+              <h3>{a.remoteShareOverTime}</h3>
+              <LineChart
+                points={snapshotDays.map((s) => ({ date: s.date, value: (s.remote / Math.max(1, s.open)) * 100 }))}
+                unit={a.remoteShareUnit}
+                format={percent}
+              />
+            </div>
+          </div>
+          <h3>{a.functionsOverTime}</h3>
+          <div class="multiples">
+            {topFunctions.map((key) => (
+              <div>
+                <h4>{categoryName(key, lang)}</h4>
+                <LineChart
+                  height={90}
+                  points={snapshotDays.map((s) => ({ date: s.date, value: s.categories[key] ?? 0 }))}
+                  unit={a.openJobsUnit}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    }
+    {snapshots.length > 0 && <p class="more"><a href={localizePath("/analytics/history", lang)}>{a.historyLink}</a></p>}
   </section>
+
+  {
+    showMovers && (
+      <section>
+        <h2>{a.changeSince(date(base!.date))}</h2>
+        <div class="grid">
+          {moverGroups.map((g) => (
+            <div>
+              <h3>{moverHeadings[g.dim]}</h3>
+              <Movers up={g.up} down={g.down} />
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <div class="grid">
     <section>
@@ -166,4 +254,6 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
   .stats dd .muted { font-size: 18px; font-weight: 400; }
   .note { background: var(--surface); border: 1px dashed var(--border); border-radius: 8px; padding: 12px 16px; }
   .more { font-size: 14px; margin: 8px 0 0; }
+  .multiples { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px 24px; }
+  .multiples h4 { font-size: 13px; font-weight: 600; margin: 0 0 4px; }
 </style>

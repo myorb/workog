@@ -1,0 +1,89 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import { getHistory, getSnapshots } from "../../../../lib/jobs.ts";
+import { dailyTotals } from "../../../../lib/analytics.ts";
+import { formatDate } from "../../../../lib/format.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { formatNumber, intlLocale } from "../../../../lib/locale.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const a = m.analytics;
+const h = a.history;
+const date = (iso: string) => formatDate(iso, lang);
+const num = (k: number) => formatNumber(k, lang);
+const signed = (k: number) => (k === 0 ? "0" : `${k > 0 ? "+" : "−"}${num(Math.abs(k))}`);
+
+const snapshots = await getSnapshots();
+const flows = new Map(dailyTotals(await getHistory()).map((d) => [d.date, d]));
+
+// newest first, grouped by month
+const rows = snapshots
+  .map((s, i) => ({ ...s, change: i ? s.open - snapshots[i - 1]!.open : undefined, flow: flows.get(s.date) }))
+  .reverse();
+const months = Map.groupBy(rows, (r) => r.date.slice(0, 7));
+const monthName = (key: string) =>
+  new Date(`${key}-01T00:00:00Z`).toLocaleDateString(intlLocale(lang), { month: "long", year: "numeric", timeZone: "UTC" });
+---
+
+<Base
+  title={h.title}
+  description={snapshots.length ? h.description(snapshots.length, date(snapshots[0]!.date)) : h.intro}
+>
+  <p class="muted"><a href={localizePath("/analytics", lang)}>{a.title}</a> /</p>
+  <h1>{h.title}</h1>
+  <p class="muted">{h.intro}</p>
+
+  {
+    [...months].map(([month, days]) => (
+      <section>
+        <h2>{monthName(month)}</h2>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>{h.date}</th>
+                <th>{h.open}</th>
+                <th>{h.change}</th>
+                <th>{h.new}</th>
+                <th>{h.closed}</th>
+                <th>{h.remote}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {days.map((d) => (
+                <tr>
+                  <td><a href={localizePath(`/analytics/history/${d.date}`, lang)}>{date(d.date)}</a></td>
+                  <td>{num(d.open)}</td>
+                  <td class:list={{ up: (d.change ?? 0) > 0, down: (d.change ?? 0) < 0 }}>{d.change === undefined ? "—" : signed(d.change)}</td>
+                  <td>{d.flow ? num(d.flow.new) : "—"}</td>
+                  <td>{d.flow ? num(d.flow.closed) : "—"}</td>
+                  <td>{Math.round((d.remote / Math.max(1, d.open)) * 100)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  section { margin-top: 28px; }
+  h2 { margin-bottom: 8px; }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; padding-left: 0; }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; }
+  .up { color: #1a7f37; }
+  .down { color: #c4320a; }
+  @media (prefers-color-scheme: dark) {
+    .up { color: #4ac26b; }
+    .down { color: #f0703f; }
+  }
+</style>

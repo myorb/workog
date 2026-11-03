@@ -12,7 +12,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check && tsc --noEmit -p tsconfig.json",
-    "alert": "bun scripts/alert.ts"
+    "alert": "bun scripts/alert.ts",
+    "snapshot": "bun scripts/snapshot.ts"
   },
   "dependencies": {
     "astro": "^7.4.4",

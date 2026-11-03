@@ -12,6 +12,7 @@ bun run preview          # serve dist/ on localhost:4321
 bun test                 # pipeline unit tests
 bun run check            # type-check Astro pages and scripts
 bun run alert            # send a webhook alert for sources that fell back in the last run
+bun run snapshot         # rewrite today's data/history snapshot (or: bun run snapshot 2026-11-02)
 ```
 
 ## Automation
@@ -56,6 +57,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 5,000 jobs |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
+| `data/history/<date>.json` | Snapshot of open jobs at the end of each day, by company, function, country, city, technology and employment type; feeds the movers, remote-share and per-function trends on `/analytics` and one permanent page per day under `/analytics/history` |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
 | `scripts/fetchers/` | One module per source: `greenhouse.ts`, `amazon.ts` (JSON API), `apple.ts` and `google.ts` (read the JSON their search pages embed) |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
@@ -63,6 +65,12 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de` |
 | `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would quadruple the build) |
 | `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
+
+## Analytics history
+
+Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, unlike closed jobs, which are dropped after 14 days, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
+
+To rebuild a past day from the jobs still on file, run `bun run snapshot <date>`. It counts the jobs whose `firstSeenAt` and `closedAt` bracket the end of that day, so it is only accurate for the last 14 days, and big companies only for jobs in their newest 1,000.
 
 ## Adding a Greenhouse company
 

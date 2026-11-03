@@ -81,3 +81,26 @@ export const HistoryDaySchema = z.object({
 });
 
 export type HistoryDay = z.infer<typeof HistoryDaySchema>;
+
+const CountsSchema = z.record(z.string(), z.number().int());
+
+/**
+ * One data/history/<date>.json file: open jobs at the end of one UTC day,
+ * broken down by every dimension the site browses. Unlike runs/history.json it
+ * keeps the whole picture, so the day's analytics page can be rebuilt from it
+ * long after its jobs have closed and been dropped.
+ */
+export const SnapshotSchema = z.object({
+  date: z.iso.date(),
+  open: z.number().int(),
+  remote: z.number().int(),
+  companies: CountsSchema,
+  /** keyed by category, "other" for uncategorized jobs */
+  categories: CountsSchema,
+  countries: CountsSchema,
+  cities: CountsSchema,
+  technologies: CountsSchema,
+  employment: CountsSchema,
+});
+
+export type Snapshot = z.infer<typeof SnapshotSchema>;

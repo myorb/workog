@@ -9,7 +9,7 @@ import { type EmploymentType, employmentTypeOf } from "./employment.ts";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { technologiesOf } from "./technologies.ts";
-import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, JobSchema, type Run, RunSchema } from "./schema.ts";
+import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, JobSchema, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
 
 const DATA_DIR = join(process.cwd(), "data");
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -18,6 +18,7 @@ let jobsCache: Promise<Job[]> | undefined;
 let companiesCache: Promise<CompanyConfig[]> | undefined;
 let runCache: Promise<Run | undefined> | undefined;
 let historyCache: Promise<HistoryDay[]> | undefined;
+let snapshotsCache: Promise<Snapshot[]> | undefined;
 
 async function loadJobs(): Promise<Job[]> {
   const dir = join(DATA_DIR, "jobs");
@@ -144,4 +145,15 @@ export function getHistory(): Promise<HistoryDay[]> {
   return (historyCache ??= readFile(join(DATA_DIR, "runs", "history.json"), "utf8")
     .then((s) => z.array(HistoryDaySchema).parse(JSON.parse(s)))
     .catch(() => []));
+}
+
+async function loadSnapshots(): Promise<Snapshot[]> {
+  const dir = join(DATA_DIR, "history");
+  const files = (await readdir(dir).catch(() => [])).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
+  return Promise.all(files.map(async (f) => SnapshotSchema.parse(JSON.parse(await readFile(join(dir, f), "utf8")))));
+}
+
+/** Daily snapshots of open jobs, oldest first; days without a commit are missing. */
+export function getSnapshots(): Promise<Snapshot[]> {
+  return (snapshotsCache ??= loadSnapshots());
 }

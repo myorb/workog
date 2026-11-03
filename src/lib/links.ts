@@ -1,7 +1,9 @@
 import { cities, countries } from "./places.ts";
 import { technologies } from "./technologies.ts";
 import { employmentTypes } from "./employment.ts";
-import { countryName, defaultLang, type Lang, t } from "./i18n.ts";
+import { categoryName, countryName, defaultLang, type Lang, t } from "./i18n.ts";
+import type { SnapshotDimension } from "./analytics.ts";
+import type { Messages } from "./messages/en.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
@@ -36,3 +38,30 @@ export const technologyLinks = (counts: Map<string, number>, href: (slug: string
 
 export const employmentLinks = (counts: Map<string, number>, lang: Lang = defaultLang) =>
   linksFor(employmentTypes.map((slug) => ({ slug, name: t(lang).employment.types[slug] })), counts, (e) => employmentUrl(e.slug));
+
+const countryBySlug = new Map(countries.map((c) => [c.slug, c]));
+const cityBySlug = new Map(cities.map((c) => [c.slug, c]));
+const technologyBySlug = new Map(technologies.map((t) => [t.slug, t]));
+
+/**
+ * Label and link for a key of each snapshot dimension. Keys no longer known
+ * (a renamed technology, a removed company) fall back to the raw key, unlinked,
+ * so old snapshots still render.
+ */
+export function snapshotLabels(lang: Lang, companyNames: Map<string, string>) {
+  const known = (label: string | undefined, href: string, key: string) => (label ? { label, href } : { label: key });
+  return {
+    companies: (key: string) => known(companyNames.get(key), `/companies/${key}`, key),
+    categories: (key: string) => ({ label: categoryName(key, lang) }),
+    countries: (key: string) => {
+      const c = countryBySlug.get(key);
+      return known(c && countryName(c, lang), countryUrl(key), key);
+    },
+    cities: (key: string) => {
+      const c = cityBySlug.get(key);
+      return known(c?.name, c ? cityUrl(c.country, key) : "", key);
+    },
+    technologies: (key: string) => known(technologyBySlug.get(key)?.name, technologyUrl(key), key),
+    employment: (key: string) => known(t(lang).employment.types[key as keyof Messages["employment"]["types"]], employmentUrl(key), key),
+  } satisfies Record<SnapshotDimension, (key: string) => { label: string; href?: string }>;
+}
