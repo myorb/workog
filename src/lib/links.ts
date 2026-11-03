@@ -11,6 +11,7 @@ export const technologyUrl = (tech: string, country?: string, city?: string) =>
   ["/technologies", tech, country, city].filter(Boolean).join("/");
 export const employmentUrl = (type: string) => `/employment/${type}`;
 export const remoteUrl = (country?: string) => ["/remote", country].filter(Boolean).join("/");
+export const remoteTechnologyUrl = (tech: string) => `/technologies/${tech}/remote`;
 
 type Link = { href: string; label: string; count: number };
 

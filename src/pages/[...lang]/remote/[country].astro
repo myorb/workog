@@ -2,10 +2,9 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
 import JobList from "../../../components/JobList.astro";
-import TagLinks from "../../../components/TagLinks.astro";
 import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
 import { countries } from "../../../lib/places.ts";
-import { remoteUrl, technologyLinks, technologyUrl } from "../../../lib/links.ts";
+import { remoteUrl } from "../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
 
@@ -21,7 +20,6 @@ const lang = getLang(Astro.params.lang);
 const m = t(lang);
 const name = countryName(country, lang);
 const jobs = await getJobsWhere({ remote: true, country: country.slug });
-const techs = technologyLinks((await countTags(jobs)).technologies, (t) => technologyUrl(t, country.slug));
 ---
 
 <Base title={m.remoteJobs.titleIn(name)} description={m.remoteJobs.countryDescription(jobs.length, name)}>
@@ -32,7 +30,6 @@ const techs = technologyLinks((await countTags(jobs)).technologies, (t) => techn
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
   <p><a href={localizePath(`/locations/${country.slug}`, lang)}>{m.place.title(name)} →</a></p>
-  {techs.length > 0 && <><h2>{m.nav.technologies}</h2><TagLinks links={techs} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
 </Base>

@@ -102,6 +102,10 @@ export const es = {
     countryDescription: (k: number, place: string) => `${p(k, { one: "empleo remoto abierto", other: "empleos remotos abiertos" })} en ${place} en las principales empresas tecnológicas. Actualizados a diario.`,
     description: (k: number, c: number) => `${p(k, { one: "empleo remoto abierto", other: "empleos remotos abiertos" })} en ${p(c, techCompanies)}, actualizados a diario.`,
     byCountry: "Por país",
+    tech: (tech: string) => `Empleos remotos de ${tech}`,
+    techDescription: (k: number, tech: string) =>
+      `${p(k, { one: "empleo remoto abierto", other: "empleos remotos abiertos" })} de ${tech} en las principales empresas tecnológicas. Actualizados a diario.`,
+    techNone: (tech: string) => `No hay empleos remotos de ${tech} abiertos en este momento.`,
   },
   technologies: {
     title: "Empleos por tecnología",

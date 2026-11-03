@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import JobList from "../../../../components/JobList.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
+import { technologies } from "../../../../lib/technologies.ts";
+import { companyCounts, companyLinks, remoteTechnologyUrl, remoteUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+
+// Every technology, so each has a stable URL even on days it has no remote jobs
+export const getStaticPaths = (() =>
+  withLangs(technologies.map((tech) => ({ params: { tech: tech.slug }, props: { tech } })))) satisfies GetStaticPaths;
+
+const { tech } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const u = (path: string) => localizePath(path, lang);
+const jobs = await getJobsWhere({ technology: tech.slug, remote: true });
+const counts = await countTags(jobs);
+// other technologies in the same remote jobs
+const related = technologyLinks(new Map([...counts.technologies].filter(([slug]) => slug !== tech.slug)), remoteTechnologyUrl).slice(0, 12);
+const companies = companyLinks(companyCounts(jobs), await getCompanies());
+---
+
+<Base title={m.remoteJobs.tech(tech.name)} description={m.remoteJobs.techDescription(jobs.length, tech.name)} noindex={!jobs.length}>
+  <p class="muted">
+    <a href={u(remoteUrl())}>{m.remoteJobs.title}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
+  </p>
+  <h1>{m.remoteJobs.tech(tech.name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
+  {related.length > 0 && <><h2>{m.relatedTechnologies}</h2><TagLinks links={related} /></>}
+  <h2>{m.latestJobs}</h2>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{m.remoteJobs.techNone(tech.name)}</p>}
+</Base>

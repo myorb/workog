@@ -1,5 +1,5 @@
 import { getCompanies, getOpenJobs, getSnapshots, tagsOf } from "./jobs.ts";
-import { cityUrl, countryUrl, employmentUrl, remoteUrl, technologyUrl } from "./links.ts";
+import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
 import { locales, localizePath } from "./i18n.ts";
 
@@ -43,6 +43,7 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     }
     for (const tech of tags.technologies) {
       paths.add(technologyUrl(tech));
+      if (job.remote) paths.add(remoteTechnologyUrl(tech));
       for (const country of tags.countries) paths.add(technologyUrl(tech, country));
       for (const slug of tags.cities) {
         const city = getCity(slug);

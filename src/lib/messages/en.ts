@@ -99,6 +99,10 @@ export const en = {
     countryDescription: (k: number, place: string) => `${p(k, { one: "open remote job", other: "open remote jobs" })} in ${place} at top tech companies. Updated daily.`,
     description: (k: number, c: number) => `${p(k, { one: "open remote job", other: "open remote jobs" })} at ${p(c, techCompanies)}, refreshed daily.`,
     byCountry: "By country",
+    tech: (tech: string) => `Remote ${tech} jobs`,
+    techDescription: (k: number, tech: string) =>
+      `${p(k, { one: `open remote ${tech} job`, other: `open remote ${tech} jobs` })} at top tech companies. Updated daily.`,
+    techNone: (tech: string) => `No open remote ${tech} positions right now.`,
   },
   technologies: {
     title: "Jobs by technology",

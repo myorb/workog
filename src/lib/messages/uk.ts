@@ -99,6 +99,10 @@ export const uk = {
     countryDescription: (k: number, place: string) => `Віддалена робота, ${place}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
     description: (k: number, c: number) => `Віддалена робота: ${p(k, openJobs)} · ${p(c, techCompanies)}. Щоденне оновлення.`,
     byCountry: "За країною",
+    tech: (tech: string) => `Віддалена робота: ${tech}`,
+    techDescription: (k: number, tech: string) =>
+      `Віддалена робота, ${tech}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
+    techNone: (tech: string) => `Наразі немає відкритих віддалених вакансій ${tech}.`,
   },
   technologies: {
     title: "Вакансії за технологією",
