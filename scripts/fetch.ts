@@ -32,8 +32,13 @@ import {
 } from "../src/lib/schema.ts";
 import { amazon } from "./fetchers/amazon.ts";
 import { apple } from "./fetchers/apple.ts";
+import { ashby } from "./fetchers/ashby.ts";
+import { eightfold } from "./fetchers/eightfold.ts";
 import { google } from "./fetchers/google.ts";
 import { greenhouse } from "./fetchers/greenhouse.ts";
+import { lever } from "./fetchers/lever.ts";
+import { smartrecruiters } from "./fetchers/smartrecruiters.ts";
+import { workday } from "./fetchers/workday.ts";
 import { readAllJobs, writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
@@ -53,6 +58,11 @@ const fetchers: Record<string, Fetcher<any>> = {
   [apple.name]: apple,
   [google.name]: google,
   [amazon.name]: amazon,
+  [ashby.name]: ashby,
+  [lever.name]: lever,
+  [smartrecruiters.name]: smartrecruiters,
+  [workday.name]: workday,
+  [eightfold.name]: eightfold,
 };
 
 const NormalizedJobSchema = JobSchema.omit({

@@ -62,7 +62,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `data/history/<date>.json` | Snapshot of open jobs at the end of each day, by company, function, country, city, technology and employment type; feeds the movers, remote-share and per-function trends on `/analytics` and one permanent page per day under `/analytics/history` |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
-| `scripts/fetchers/` | One module per source: `greenhouse.ts`, `amazon.ts` (JSON API), `apple.ts` and `google.ts` (read the JSON their search pages embed) |
+| `scripts/fetchers/` | One module per source: `greenhouse.ts`, `ashby.ts`, `lever.ts`, `smartrecruiters.ts`, `workday.ts`, `eightfold.ts` and `amazon.ts` (JSON APIs), `apple.ts` and `google.ts` (read the JSON their search pages embed); `http.ts` has the shared retrying client and `mapLimit` for bounded parallel requests |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de` |
@@ -72,7 +72,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 ## Search engines
 
 - `/sitemap.xml` is a sitemap index. `/sitemap-pages-<n>.xml` lists the browse pages in every language, each with `hreflang` alternates; `/sitemap-jobs-<n>.xml` lists the open job pages. Each file holds at most 10,000 URLs.
-- Job pages carry JobPosting markup with `validThrough` set to 30 days after the job was last seen, so postings expire from Google for Jobs if the pipeline stops or stops checking a job (a capped company's job outside its newest 1,000).
+- Job pages carry JobPosting markup with `validThrough` set to 30 days after the job was last seen, so postings expire from Google for Jobs if the pipeline stops or stops checking a job (a capped company's job outside its newest `maxJobs`).
 - Crosslinks: hub pages list only the newest 50 jobs, so each job page links to the next 5 open jobs on its team (same company and category) and in its place (first city, else country, else remote), wrapping around (`src/lib/related.ts`). Every open job is then linked from at least one other page. Job pages also link to their technology, place and employment hubs; hub pages link to the companies hiring there, related technologies and the country's other cities.
 - `scripts/ping.ts` polls `/version.json` until the site serves the new run, then sends the changed job URLs to IndexNow (key file `public/bf6f1d24d876292da4961a3ae984ea98.txt`) and to the Google Indexing API. Google's default quota is 200 URLs a day: new jobs go first, then closed ones (`URL_UPDATED`, since the page is now `noindex`), then ones dropped after the 14-day retention (`URL_DELETED`). A failed ping is logged and doesn't fail the workflow.
 
@@ -80,24 +80,37 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 
 Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, unlike closed jobs, which are dropped after 14 days, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
 
-To rebuild a past day from the jobs still on file, run `bun run snapshot <date>`. It counts the jobs whose `firstSeenAt` and `closedAt` bracket the end of that day, so it is only accurate for the last 14 days, and big companies only for jobs in their newest 1,000.
+To rebuild a past day from the jobs still on file, run `bun run snapshot <date>`. It counts the jobs whose `firstSeenAt` and `closedAt` bracket the end of that day, so it is only accurate for the last 14 days, and a company with `maxJobs` only for jobs in its newest `maxJobs`.
 
-## Adding a Greenhouse company
+## Adding a company
 
-Add an entry to `data/companies.json` with the board token from `boards.greenhouse.io/<token>`, then run `bun run fetch <key>`.
+Add an entry to `data/companies.json`, then run `bun run fetch <key>`. Each source needs one field:
+
+| `source` | Field | Where to find it |
+| --- | --- | --- |
+| `greenhouse` | `boardToken` | `boards.greenhouse.io/<token>` |
+| `ashby` | `boardToken` | `jobs.ashbyhq.com/<token>` |
+| `lever` | `boardToken` | `jobs.lever.co/<token>` |
+| `smartrecruiters` | `boardToken` | `jobs.smartrecruiters.com/<CompanyIdentifier>`, case-sensitive |
+| `workday` | `careersUrl` | the public site, e.g. `https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite` |
+| `eightfold` | `careersUrl` | the public site with its domain, e.g. `https://explore.jobs.netflix.net/careers?domain=netflix.com` |
+
+SmartRecruiters, Workday and Eightfold leave descriptions out of their search results, so these fetchers make one request per job, a few at a time (`mapLimit`). Workday counts no more than 2,000 results per search, so a bigger site is fetched one value of a facet (job family, location) at a time, picking the facet that covers the most jobs with every value under 2,000.
+
+Microsoft and Meta aren't covered: their careers APIs refuse anonymous requests.
 
 ## Big companies
 
-Amazon, Apple and Google set `maxJobs: 1000`, so the daily run fetches only their newest 1,000 jobs. A capped run adds and updates jobs but never closes any: a job missing from the newest 1,000 may just be older (Amazon doesn't even sort strictly by posting date), so it is kept as it was.
+Amazon, Apple and Google are fetched in full every day, about 21k, 5k and 3k jobs, in under 3 minutes. Their fetchers page through results one request at a time, and companies are fetched in parallel.
 
-To fetch every job, run Actions → Daily update → Run workflow with **Fetch every job** ticked, or locally:
+A company can set `maxJobs` to fetch only its newest jobs, if a full fetch ever gets too slow. A capped run adds and updates jobs but never closes any: a job missing from the newest `maxJobs` may just be older (Amazon doesn't even sort strictly by posting date), so it is kept as it was. Run Actions → Daily update → Run workflow with **Fetch every job** ticked, or locally, to fetch capped companies in full and close their jobs:
 
 ```bash
 bun run fetch --all                 # every company, ignoring maxJobs
 bun run fetch --all amazon          # just Amazon
 ```
 
-Only a full run closes jobs. Between full runs, jobs that have closed on these three sites still show as open, so run one every week or two. Amazon's search endpoint stops at 10,000 results, so a full Amazon fetch searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
+Amazon's search endpoint stops at 10,000 results, so a full Amazon fetch searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
 
 A company with more than 5,000 jobs is written as `data/jobs/<company>.<n>.json` parts, because GitHub rejects files over 100 MB. Each job lands in a part by a hash of its id, so it stays put from day to day.
 

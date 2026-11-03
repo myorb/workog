@@ -56,7 +56,7 @@ export const greenhouse: Fetcher<GreenhouseJob> = {
   },
 };
 
-function requireToken(company: CompanyConfig): string {
-  if (!company.boardToken) throw new Error(`${company.key}: greenhouse source needs boardToken`);
+export function requireToken(company: CompanyConfig): string {
+  if (!company.boardToken) throw new Error(`${company.key}: ${company.source} source needs boardToken`);
   return company.boardToken;
 }

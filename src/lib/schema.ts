@@ -31,8 +31,10 @@ export const CompanyConfigSchema = z.object({
   name: z.string().min(1),
   logo: z.string().optional(),
   source: z.string().min(1),
-  /** Greenhouse board token; other sources add their own fields */
+  /** Board name for Greenhouse, Ashby and Lever, company identifier for SmartRecruiters */
   boardToken: z.string().optional(),
+  /** Public careers site for Workday and Eightfold, which the API URL is derived from */
+  careersUrl: z.url().optional(),
   /**
    * Keep only this many of the newest jobs, for companies too big to list in
    * full. Older jobs that fall out of the window are dropped, not closed.
