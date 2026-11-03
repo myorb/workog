@@ -29,7 +29,7 @@ export const technologies: Technology[] = [
   { slug: "python", name: "Python", pattern: /\bpython\b/i },
   { slug: "java", name: "Java", pattern: /\bjava\b(?!\s?script)/i },
   { slug: "kotlin", name: "Kotlin", pattern: /\bkotlin\b/i },
-  { slug: "go", name: "Go", pattern: goPattern, titlePattern: /\b(go|golang)\b(?![- ]to\b)/i },
+  { slug: "go", name: "Go (Golang)", pattern: goPattern, titlePattern: /\b(go|golang)\b(?![- ]to\b)/i },
   { slug: "rust", name: "Rust", pattern: /\bRust\b/ },
   { slug: "ruby", name: "Ruby", pattern: /\bRuby\b|\bRails\b/ },
   { slug: "php", name: "PHP", pattern: /\bphp\b/i },

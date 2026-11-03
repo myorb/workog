@@ -67,4 +67,9 @@ const remoteCount = jobs.filter((j) => j.remote).length;
 
 <style>
   .companies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
+  @media (max-width: 640px) {
+    .companies { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0 16px; }
+    .companies li { padding: 8px 0; line-height: 1.4; }
+    .companies a { padding: 8px 0; }
+  }
 </style>

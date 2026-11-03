@@ -133,6 +133,7 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
@@ -140,7 +141,9 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   a { color: var(--accent); }
-  h1, h2, h3 { line-height: 1.25; }
+  h1, h2, h3 { line-height: 1.25; overflow-wrap: break-word; }
+  h1 { font-size: clamp(1.6rem, 6vw, 2rem); }
+  h2 { font-size: clamp(1.3rem, 4.5vw, 1.5rem); }
   .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
   .site-header { border-bottom: 1px solid var(--border); background: var(--surface); }
   .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
@@ -150,11 +153,24 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
   .site-header .langs { gap: 8px; font-size: 13px; }
   .site-header .langs a { color: var(--muted); }
   .site-header .langs a[aria-current] { color: var(--text); font-weight: 600; }
-  @media (max-width: 480px) {
-    .site-header .wrap { height: auto; flex-wrap: wrap; gap: 4px 12px; padding-top: 10px; padding-bottom: 10px; }
-    .site-header nav { flex-wrap: wrap; gap: 0 12px; font-size: 14px; }
+  @media (max-width: 640px) {
+    /* brand and languages on the first row, nav as one swipeable row below */
+    .site-header .wrap { height: auto; flex-wrap: wrap; padding-top: 8px; }
+    .brand { padding: 8px 0; font-size: 18px; }
+    .site-header nav:not(.langs) {
+      order: 3; flex: 1 0 100%; gap: 4px; margin: 0 -16px; padding: 0 16px 8px;
+      overflow-x: auto; scrollbar-width: none; white-space: nowrap; font-size: 15px;
+    }
+    .site-header nav:not(.langs)::-webkit-scrollbar { display: none; }
+    .site-header nav:not(.langs) a { padding: 6px 12px; border-radius: 999px; background: var(--tag); }
+    .site-header nav:not(.langs) a:first-child { margin-left: -4px; }
+    .site-header .langs { gap: 2px; }
+    .site-header .langs a { padding: 8px 6px; }
   }
   main { padding-top: 24px; padding-bottom: 48px; }
+  @media (max-width: 640px) {
+    main { padding-top: 16px; }
+  }
   .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; padding-top: 16px; padding-bottom: 32px; }
   .site-footer p { margin: 4px 0; }
   .muted { color: var(--muted); }
