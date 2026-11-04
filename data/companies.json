@@ -6,6 +6,7 @@
   { "key": "anthropic", "name": "Anthropic", "source": "greenhouse", "boardToken": "anthropic" },
   { "key": "apple", "name": "Apple", "source": "apple" },
   { "key": "arbeitnow", "name": "Arbeitnow", "source": "arbeitnow", "board": true },
+  { "key": "arbeitsagentur", "name": "Bundesagentur für Arbeit", "source": "arbeitsagentur", "board": true, "sector": "medicine" },
   { "key": "asana", "name": "Asana", "source": "greenhouse", "boardToken": "asana" },
   { "key": "block", "name": "Block", "source": "greenhouse", "boardToken": "block" },
   { "key": "brex", "name": "Brex", "source": "greenhouse", "boardToken": "brex" },

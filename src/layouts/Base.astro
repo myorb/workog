@@ -12,9 +12,11 @@ interface Props {
   translated?: boolean;
   /** schema.org objects, rendered as one JSON-LD script each */
   jsonLd?: Record<string, unknown>[];
+  /** which section's header to show; the start page has the top bar only */
+  section?: "tech" | "medicine" | "start";
 }
 
-const { title, description, noindex = false, translated = true, jsonLd = [] } = Astro.props;
+const { title, description, noindex = false, translated = true, jsonLd = [], section = "tech" } = Astro.props;
 const lang = translated ? getLang(Astro.params.lang) : "en";
 const m = t(lang);
 const u = (path: string) => localizePath(path, lang);
@@ -75,15 +77,18 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <slot name="head" />
   </head>
   <body>
-    <header class="site-header">
+    <div class={`top-bar ${section}`}>
       <div class="wrap">
-        <a class="brand" href={u("/")}>Workog</a>
-        <nav>
-          <a href={u("/remote")}>{m.nav.remote}</a>
-          <a href={u("/locations")}>{m.nav.locations}</a>
-          <a href={u("/technologies")}>{m.nav.technologies}</a>
-          <a href={u("/companies")}>{m.nav.companies}</a>
-          <a href={u("/analytics")}>{m.nav.analytics}</a>
+        <nav aria-label={m.sections.label}>
+          <a class="brand" href={u("/")}>Workog</a>
+          <a class="tab" href={u("/tech")} aria-current={section === "tech" ? "true" : undefined}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
+            <span class="long">{m.sections.tech}</span><span class="short">{m.sections.techShort}</span>
+          </a>
+          <a class="tab" href={u("/medicine")} aria-current={section === "medicine" ? "true" : undefined}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            <span class="long">{m.sections.medicine}</span><span class="short">{m.sections.medicineShort}</span>
+          </a>
         </nav>
         {
           translated && (
@@ -100,19 +105,54 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
             <script is:inline>
               // close the language menu on outside click or Escape
               document.addEventListener("click", (e) => {
-                const d = document.querySelector(".site-header .langs");
+                const d = document.querySelector(".top-bar .langs");
                 if (d && d.open && !d.contains(e.target)) d.open = false;
               });
               document.addEventListener("keydown", (e) => {
-                const d = document.querySelector(".site-header .langs");
+                const d = document.querySelector(".top-bar .langs");
                 if (e.key === "Escape" && d && d.open) { d.open = false; d.querySelector("summary").focus(); }
               });
             </script>
           )
         }
       </div>
-    </header>
-    <main class="wrap">
+    </div>
+    {
+      section !== "start" && (
+        <header class={`site-header ${section}`}>
+          <div class="wrap">
+            {section === "medicine" ? (
+              <>
+                <a class="section-brand" href={u("/medicine")}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+                  {m.sections.medicine}
+                </a>
+                <nav>
+                  <a href={u("/medicine/specialties")}>{m.medicine.nav.specialties}</a>
+                  <a href={u("/medicine/locations")}>{m.medicine.nav.locations}</a>
+                  <a href={u("/medicine/levels")}>{m.medicine.nav.levels}</a>
+                </nav>
+              </>
+            ) : (
+              <>
+                <a class="section-brand" href={u("/tech")}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
+                  {m.sections.tech}
+                </a>
+                <nav>
+                  <a href={u("/remote")}>{m.nav.remote}</a>
+                  <a href={u("/locations")}>{m.nav.locations}</a>
+                  <a href={u("/technologies")}>{m.nav.technologies}</a>
+                  <a href={u("/companies")}>{m.nav.companies}</a>
+                  <a href={u("/analytics")}>{m.nav.analytics}</a>
+                </nav>
+              </>
+            )}
+          </div>
+        </header>
+      )
+    }
+    <main class={`wrap ${section === "start" ? "start" : ""}`}>
       <slot />
     </main>
     <footer class="wrap site-footer">
@@ -158,45 +198,75 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
   h1, h2, h3 { line-height: 1.25; overflow-wrap: break-word; }
   h1 { font-size: clamp(1.6rem, 6vw, 2rem); }
   h2 { font-size: clamp(1.3rem, 4.5vw, 1.5rem); }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
-  .site-header { border-bottom: 1px solid var(--border); background: var(--surface); }
-  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  @media (max-width: 640px) { .wrap { padding: 0 16px; } }
+
+  /* Top bar: which part of Workog you are in. Section colors live only here and in the header below */
+  .top-bar { background: #141a19; border-bottom: 1px solid #2a3331; color: #f5f5f4; font-size: 14px; }
+  .top-bar.tech { background: #070d19; border-color: #22345a; }
+  .top-bar.medicine { background: #061412; border-color: #1d4640; }
+  .top-bar .wrap { display: flex; align-items: stretch; justify-content: space-between; gap: 12px; min-height: 44px; }
+  .top-bar nav { display: flex; align-items: stretch; gap: 4px; }
+  .top-bar a { color: inherit; text-decoration: none; }
+  .brand { display: flex; align-items: center; padding-right: 10px; font-weight: 700; white-space: nowrap; }
+  .tab { display: flex; align-items: center; gap: 6px; padding: 0 12px; color: #a8b0ae; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .top-bar .tab { color: #a8b0ae; }
+  .top-bar .tab:hover { color: #f5f5f4; }
+  .top-bar.tech .tab[aria-current] { color: #f5f5f4; font-weight: 600; border-bottom-color: #60a5fa; }
+  .top-bar.tech .tab[aria-current] svg { color: #60a5fa; }
+  .top-bar.medicine .tab[aria-current] { color: #f5f5f4; font-weight: 600; border-bottom-color: #2dd4bf; }
+  .top-bar.medicine .tab[aria-current] svg { color: #2dd4bf; }
+  .tab .short { display: none; }
+  @media (max-width: 640px) {
+    .tab { padding: 0 9px; }
+    .tab .long { display: none; }
+    .tab .short { display: inline; }
+  }
+
+  .site-header { background: #13233f; border-bottom: 1px solid #22345a; color: #f5f5f4; }
+  .site-header.medicine { background: #0f2e2a; border-color: #1d4640; }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; }
   .site-header nav { display: flex; gap: 20px; }
-  .site-header a { color: var(--text); text-decoration: none; }
-  .brand { font-weight: 700; white-space: nowrap; }
-  .langs { position: relative; font-size: 13px; }
+  .site-header a { color: #e7ecf3; text-decoration: none; }
+  .site-header a:hover { color: #ffffff; }
+  .section-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; white-space: nowrap; }
+  .site-header.tech .section-brand svg { color: #60a5fa; }
+  .site-header.medicine .section-brand svg { color: #2dd4bf; }
+
+  .langs { position: relative; align-self: center; font-size: 13px; }
   .langs summary {
-    display: flex; align-items: center; gap: 4px; padding: 4px 8px; border: 1px solid var(--border);
+    display: flex; align-items: center; gap: 4px; padding: 4px 8px; border: 1px solid rgb(255 255 255 / 0.18);
     border-radius: 6px; cursor: pointer; font-weight: 600; list-style: none; user-select: none;
   }
   .langs summary::-webkit-details-marker { display: none; }
   .langs summary::after {
     content: ""; width: 6px; height: 6px; margin: -3px 2px 0 2px;
-    border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg);
+    border-right: 1.5px solid #a8b0ae; border-bottom: 1.5px solid #a8b0ae; transform: rotate(45deg);
   }
   .langs[open] summary::after { margin-top: 3px; transform: rotate(-135deg); }
   .lang-menu {
     position: absolute; right: 0; top: calc(100% + 6px); z-index: 10; min-width: 150px; padding: 4px;
     background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 6px 20px rgb(0 0 0 / 0.12);
   }
-  .site-header .lang-menu a { display: flex; gap: 10px; padding: 6px 10px; border-radius: 4px; font-size: 14px; }
+  .top-bar .lang-menu a { display: flex; gap: 10px; padding: 6px 10px; border-radius: 4px; font-size: 14px; color: var(--text); }
   .lang-menu a span { width: 22px; color: var(--muted); font-size: 12px; font-weight: 600; line-height: 21px; }
   .lang-menu a:hover { background: var(--tag); }
   .lang-menu a[aria-current] { font-weight: 600; }
   @media (max-width: 640px) {
-    /* brand and languages on the first row, nav as one swipeable row below */
-    .site-header .wrap { height: auto; flex-wrap: wrap; padding-top: 8px; }
-    .brand { padding: 8px 0; font-size: 18px; }
-    .site-header nav:not(.langs) {
-      order: 3; flex: 1 0 100%; gap: 4px; margin: 0 -16px; padding: 0 16px 8px;
+    /* section name on the first row, its nav as one swipeable row of pills below */
+    .site-header .wrap { flex-wrap: wrap; gap: 8px; padding-top: 10px; padding-bottom: 10px; }
+    .section-brand { font-size: 18px; }
+    .site-header nav {
+      flex: 1 0 100%; gap: 6px; margin: 0 -16px; padding: 0 16px;
       overflow-x: auto; scrollbar-width: none; white-space: nowrap; font-size: 15px;
     }
-    .site-header nav:not(.langs)::-webkit-scrollbar { display: none; }
-    .site-header nav:not(.langs) a { padding: 6px 12px; border-radius: 999px; background: var(--tag); }
-    .site-header nav:not(.langs) a:first-child { margin-left: -4px; }
+    .site-header nav::-webkit-scrollbar { display: none; }
+    .site-header nav a { padding: 7px 14px; border-radius: 999px; background: rgb(255 255 255 / 0.1); }
     .lang-menu a { padding: 10px 12px; }
   }
   main { padding-top: 24px; padding-bottom: 48px; }
+  /* the start page's two panels run edge to edge */
+  main.start { max-width: none; padding: 0; }
   @media (max-width: 640px) {
     main { padding-top: 16px; }
   }

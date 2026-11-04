@@ -1,4 +1,6 @@
-import { getCompanies, getOpenJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { getCompanies, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
+import { medicineCityLinks } from "./links.ts";
 import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
 import { locales, localizePath } from "./i18n.ts";
@@ -25,7 +27,7 @@ const URLS_PER_SITEMAP = 10_000;
  */
 export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const jobs = await getOpenJobs();
-  const paths = new Set(["/", "/companies", "/locations", "/technologies", "/employment", "/analytics"]);
+  const paths = new Set(["/", "/tech", "/companies", "/locations", "/technologies", "/employment", "/analytics"]);
 
   for (const company of await getCompanies()) paths.add(`/companies/${company.key}`);
 
@@ -52,13 +54,25 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     }
   }
 
+  // Doctor jobs: only pages with jobs, like the generated combination pages themselves
+  const doctorJobs = await getOpenMedicineJobs();
+  if (doctorJobs.length) {
+    const med = await getMedicineCounts();
+    for (const path of ["/medicine", "/medicine/specialties", "/medicine/levels", "/medicine/locations"]) paths.add(path);
+    for (const specialty of med.specialties.keys()) paths.add(specialtyUrl(specialty));
+    for (const key of med.specialtyStates.keys()) paths.add(`/medicine/specialties/${key}`);
+    for (const level of med.levels.keys()) paths.add(levelUrl(level));
+    for (const state of med.states.keys()) paths.add(medicineLocationUrl(state));
+    for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
+  }
+
   const snapshots = await getSnapshots();
   if (snapshots.length) paths.add("/analytics/history");
 
   return [
     ...[...paths].sort().map((path) => ({ path })),
     ...snapshots.map((s) => ({ path: `/analytics/history/${s.date}`, lastmod: s.date })),
-    ...jobs.map((job) => ({ path: `/jobs/${job.slug}`, lastmod: job.firstSeenAt })),
+    ...[...jobs, ...doctorJobs].map((job) => ({ path: `/jobs/${job.slug}`, lastmod: job.firstSeenAt })),
   ];
 }
 

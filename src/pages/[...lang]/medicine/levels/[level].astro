@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import JobList from "../../../../components/JobList.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineJobsWhere } from "../../../../lib/jobs.ts";
+import { levels } from "../../../../lib/medicine.ts";
+import { specialtyLinks, stateLinks } from "../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+
+export const getStaticPaths = (() => withLangs(levels.map((level) => ({ params: { level } })))) satisfies GetStaticPaths;
+
+const { level } = Astro.params;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const name = md.levels[level] ?? level;
+const jobs = await getMedicineJobsWhere({ level });
+const counts = countMedicine(jobs);
+const bySpecialty = specialtyLinks(counts.specialties, lang);
+const byState = stateLinks(counts.states, lang);
+---
+
+<Base title={md.levelTitle(name)} description={md.levelDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath("/medicine/levels", lang)}>{md.nav.levels}</a> /
+  </p>
+  <h1>{md.levelTitle(name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  <h2>{m.latestJobs}</h2>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+</Base>

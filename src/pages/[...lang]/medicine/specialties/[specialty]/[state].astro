@@ -1,0 +1,47 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import TagLinks from "../../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
+import { getState, stateName } from "../../../../../lib/medicine.ts";
+import { levelLinks } from "../../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+// Only combinations with jobs: an empty specialty-and-state page would be thin
+export const getStaticPaths = (async () => {
+  const counts = await getMedicineCounts();
+  return withLangs(
+    [...counts.specialtyStates.keys()].map((key) => {
+      const [specialty, state] = key.split("/") as [string, string];
+      return { params: { specialty, state } };
+    }),
+  );
+}) satisfies GetStaticPaths;
+
+const { specialty, state } = Astro.params as { specialty: string; state: string };
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const name = md.specialties[specialty] ?? specialty;
+const place = stateName(getState(state)!, lang);
+const jobs = await getMedicineJobsWhere({ specialty, state });
+const counts = countMedicine(jobs);
+const byLevel = levelLinks(counts.levels, lang);
+---
+
+<Base title={md.specialtyTitleIn(name, place)} description={md.specialtyDescriptionIn(jobs.length, name, place)} section="medicine">
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath(`/medicine/specialties/${specialty}`, lang)}>{name}</a> /
+  </p>
+  <h1>{md.specialtyTitleIn(name, place)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>

@@ -14,6 +14,7 @@ import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
 import { SNAPSHOT_DIMENSIONS, snapshotOf } from "../src/lib/analytics.ts";
+import { isMedicine } from "../src/lib/medicine.ts";
 import { type Job, JobSchema, type Snapshot } from "../src/lib/schema.ts";
 
 const DATA_DIR = join(import.meta.dirname, "..", "data");
@@ -36,8 +37,9 @@ export function snapshotJson(snapshot: Snapshot): string {
   return `{\n${lines.join(",\n")}\n}\n`;
 }
 
+/** The snapshot covers tech jobs only, like the analytics pages that read it. */
 export async function writeSnapshot(jobs: Job[], date: string, dataDir = DATA_DIR): Promise<Snapshot> {
-  const snapshot = snapshotOf(jobs, date);
+  const snapshot = snapshotOf(jobs.filter((j) => !isMedicine(j)), date);
   await mkdir(join(dataDir, "history"), { recursive: true });
   await writeFile(join(dataDir, "history", `${date}.json`), snapshotJson(snapshot));
   return snapshot;

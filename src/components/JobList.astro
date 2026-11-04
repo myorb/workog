@@ -1,6 +1,7 @@
 ---
 import type { Job } from "../lib/schema.ts";
 import { getCompanies, tagsOf } from "../lib/jobs.ts";
+import { isMedicine } from "../lib/medicine.ts";
 import { formatDate, formatLocations } from "../lib/format.ts";
 import { getLang, t } from "../lib/i18n.ts";
 
@@ -23,8 +24,10 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
         <div class="meta">
           {/* a job board's jobs name their employer even on the board's own page */}
           {(showCompany || job.employer) && <span class="company">{job.employer ?? companyNames.get(job.company) ?? job.company}</span>}
-          {showCompany && job.employer && <span>{m.via(companyNames.get(job.company) ?? job.company)}</span>}
+          {/* every doctor job comes from the same few boards, so naming the board adds nothing */}
+          {showCompany && job.employer && !isMedicine(job) && <span>{m.via(companyNames.get(job.company) ?? job.company)}</span>}
           <span>{formatLocations(job.locations, job.remote, 3, lang)}</span>
+          {job.specialty && <span class="tag">{m.medicine.specialties[job.specialty]}</span>}
           {job.remote && <span class="tag">{m.remote}</span>}
           {[...tagsOf(job).employment].filter((e) => e !== "full-time").map((e) => <span class="tag">{m.employment.types[e]}</span>)}
           <span class="muted">{m.seen(formatDate(job.firstSeenAt, lang))}</span>

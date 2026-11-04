@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import type { CompanyConfig } from "../../src/lib/schema.ts";
 import { arbeitnow } from "./arbeitnow.ts";
+import { arbeitsagentur, textToHtml } from "./arbeitsagentur.ts";
 import { ashby } from "./ashby.ts";
 import { eightfold } from "./eightfold.ts";
 import { mapLimit } from "./http.ts";
@@ -196,5 +197,45 @@ describe("job boards", () => {
       remote: true,
     });
     expect(workingnomads.normalize({ ...base, location: "Canada" }, company({})).locations).toEqual(["Canada"]);
+  });
+});
+
+describe("arbeitsagentur", () => {
+  const raw = {
+    referenznummer: "13884-349397-S",
+    stellenangebotsTitel: "Assistenzarzt/ Assistenzärztin (m/w/d) für das Zentrum ...",
+    hauptberuf: "Assistenzarzt/-ärztin",
+    firma: "Städtische Kliniken Mönchengladbach GmbH ",
+    stellenlokationen: [{ adresse: { ort: "Mönchengladbach", region: "NORDRHEIN_WESTFALEN", land: "DEUTSCHLAND" } }],
+    homeofficemoeglich: false,
+    datumErsteVeroeffentlichung: "2026-11-04",
+    externeURL: "https://jobboard.onapply.de/listing/349397?source=arbeitsagentur",
+    stellenangebotsBeschreibung: "Für unser Zentrum für Geriatrie suchen wir\neine Assistenzärztin.\n\n- Teilzeit oder Vollzeit\n- Weiterbildung",
+  };
+
+  test("normalize tags the job as medicine with specialty, level and a state", () => {
+    const job = arbeitsagentur.normalize(raw, company({ key: "arbeitsagentur" }));
+    expect(job).toMatchObject({
+      id: "arbeitsagentur:13884-349397-S",
+      employer: "Städtische Kliniken Mönchengladbach GmbH",
+      title: "Assistenzarzt/ Assistenzärztin (m/w/d) für das Zentrum…",
+      locations: ["Mönchengladbach, Nordrhein-Westfalen, Germany"],
+      category: "medicine",
+      level: "resident",
+      applyUrl: "https://jobboard.onapply.de/listing/349397?source=arbeitsagentur",
+      postedAt: "2026-11-04T00:00:00.000Z",
+    });
+    expect(job.descriptionHtml).toBe("<p>Für unser Zentrum für Geriatrie suchen wir<br />eine Assistenzärztin.</p><ul><li>Teilzeit oder Vollzeit</li><li>Weiterbildung</li></ul>");
+  });
+
+  test("normalize keeps last run's description and falls back to the job's own page", () => {
+    const { externeURL: _, stellenangebotsBeschreibung: __, ...bare } = raw;
+    const job = arbeitsagentur.normalize({ ...bare, descriptionHtml: "<p>Kept</p>" }, company({ key: "arbeitsagentur" }));
+    expect(job.descriptionHtml).toBe("<p>Kept</p>");
+    expect(job.applyUrl).toBe("https://www.arbeitsagentur.de/jobsuche/jobdetail/13884-349397-S");
+  });
+
+  test("textToHtml drops separator lines and escapes markup", () => {
+    expect(textToHtml("----------\nA <b> & B\n\n* one\n* two")).toBe("<p>A &lt;b&gt; &amp; B</p><ul><li>one</li><li>two</li></ul>");
   });
 });

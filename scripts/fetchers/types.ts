@@ -11,6 +11,7 @@ export type NormalizedJob = Omit<Job, "slug" | "firstSeenAt" | "lastSeenAt" | "c
 
 export interface Fetcher<RawJob = unknown> {
   name: string;
-  fetch(company: CompanyConfig): Promise<RawJob[]>;
+  /** `previous` is the company's jobs from the last run, for sources that fetch details only for new jobs */
+  fetch(company: CompanyConfig, previous: Job[]): Promise<RawJob[]>;
   normalize(raw: RawJob, company: CompanyConfig): NormalizedJob;
 }

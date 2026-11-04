@@ -1,0 +1,41 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import TagLinks from "../../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
+import { specialties, specialtyUrl } from "../../../../../lib/medicine.ts";
+import { levelLinks, medicineCityLinks, stateLinks } from "../../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+export const getStaticPaths = (() => withLangs(specialties.map((specialty) => ({ params: { specialty } })))) satisfies GetStaticPaths;
+
+const { specialty } = Astro.params;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const name = md.specialties[specialty] ?? specialty;
+const jobs = await getMedicineJobsWhere({ specialty });
+const counts = countMedicine(jobs);
+const byState = stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state));
+const cities = medicineCityLinks(counts.cities).slice(0, 24);
+const byLevel = levelLinks(counts.levels, lang);
+---
+
+<Base title={md.specialtyTitle(name)} description={md.specialtyDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath("/medicine/specialties", lang)}>{md.nav.specialties}</a> /
+  </p>
+  <h1>{md.specialtyTitle(name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}
+  {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <h2>{m.latestJobs}</h2>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+</Base>

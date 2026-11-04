@@ -1,0 +1,77 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import JobList from "../../../components/JobList.astro";
+import TagLinks from "../../../components/TagLinks.astro";
+import JobFilters from "../../../components/JobFilters.astro";
+import { getMedicineCounts, getOpenMedicineJobs } from "../../../lib/jobs.ts";
+import { levelLinks, medicineCityLinks, specialtyLinks, stateLinks } from "../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const u = (path: string) => localizePath(path, lang);
+const jobs = await getOpenMedicineJobs();
+const counts = await getMedicineCounts();
+const employers = new Set(jobs.map((j) => j.employer)).size;
+const bySpecialty = specialtyLinks(counts.specialties, lang);
+const byState = stateLinks(counts.states, lang);
+const byLevel = levelLinks(counts.levels, lang);
+const cities = medicineCityLinks(counts.cities).slice(0, 24);
+// Shortcuts under the filters: the biggest specialties, then the biggest cities
+const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
+---
+
+<Base title={md.title} description={md.description(jobs.length, employers)} section="medicine" noindex={!jobs.length}>
+  <h1>{md.heading}</h1>
+  <p class="muted">{md.summary(jobs.length, employers)}</p>
+
+  <div class="home-grid">
+    <aside class="sidebar">
+      <JobFilters kind="medicine" />
+      {
+        popular.length > 0 && (
+          <>
+            <p class="popular-title muted">{md.popular}</p>
+            <ul class="popular">
+              {popular.map((l) => (
+                <li>
+                  <a href={u(l.href)}>{l.label}</a> <span class="muted">{l.count}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+    </aside>
+    <section>
+      <h2 class="latest">{m.latestJobs}</h2>
+      {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+    </section>
+  </div>
+
+  {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}
+  {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <p class="muted source">{md.source}</p>
+</Base>
+
+<style>
+  .home-grid { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; align-items: start; margin-top: 24px; }
+  .sidebar { position: sticky; top: 16px; }
+  .latest { margin-top: 0; }
+  .popular-title { margin: 20px 0 4px; font-size: 13px; }
+  .popular { list-style: none; padding: 0; margin: 0; font-size: 15px; }
+  .popular li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; }
+  .source { margin-top: 32px; font-size: 14px; }
+  @media (max-width: 640px) {
+    .home-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 16px; }
+    .sidebar { position: static; }
+    .popular-title, .popular { display: none; }
+  }
+</style>

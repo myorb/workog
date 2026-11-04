@@ -1,9 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
+import type { Job } from "../../lib/schema.ts";
 import Base from "../../layouts/Base.astro";
 import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
-import { getAllJobs, getCompany, getCompanyCounts, getRemoteCount, getTagCounts, tagsOf } from "../../lib/jobs.ts";
+import { getAllJobs, getCompany, getCompanyCounts, getMedicineCounts, getOpenMedicineJobs, getRemoteCount, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
+import { getState, isMedicine, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialtyUrl } from "../../lib/medicine.ts";
 import { relatedJobs } from "../../lib/related.ts";
 import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
 import { getCity, getCountry } from "../../lib/places.ts";
@@ -25,21 +27,50 @@ const companyName = company?.name ?? job.company;
 const employer = job.employer ?? companyName;
 const applyName = job.employer ? companyName : `${companyName}'s site`;
 const closed = Boolean(job.closedAt);
+const medicine = isMedicine(job);
 const where = formatLocations(job.locations, job.remote, 2);
 const employment = employmentTypeOf(job);
 const url = new URL(`/jobs/${job.slug}`, Astro.site);
 // closed jobs are noindexed, so they drop the posting markup too
+const en = t("en");
+const specialtyName = job.specialty ? en.medicine.specialties[job.specialty] : undefined;
 const jsonLd = [
-  breadcrumbs([
-    { name: "Companies", url: new URL("/companies", Astro.site) },
-    { name: companyName, url: new URL(`/companies/${job.company}`, Astro.site) },
-    { name: job.title, url },
-  ]),
+  breadcrumbs(
+    medicine
+      ? [
+          { name: "Doctor jobs", url: new URL("/medicine", Astro.site) },
+          ...(job.specialty ? [{ name: specialtyName!, url: new URL(specialtyUrl(job.specialty), Astro.site) }] : []),
+          { name: job.title, url },
+        ]
+      : [
+          { name: "Companies", url: new URL("/companies", Astro.site) },
+          { name: companyName, url: new URL(`/companies/${job.company}`, Astro.site) },
+          { name: job.title, url },
+        ],
+  ),
   ...(closed ? [] : [jobPosting(job, employer, url)]),
 ];
 
+// Doctor jobs link to their own section: the newest jobs in the same specialty and state, and its hubs
+const place = medicine ? medicinePlace(job) : {};
+const state = place.state ? getState(place.state) : undefined;
+const medicineCities = medicine ? (await getMedicineCounts()).cities : new Map();
+const cityPage = state && place.city && place.city.slug !== state.slug && (medicineCities.get(`${state.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
+const doctorJobs = medicine ? (await getOpenMedicineJobs()).filter((j) => j.id !== job.id) : [];
+const sameSpecialty = job.specialty ? doctorJobs.filter((j) => j.specialty === job.specialty).slice(0, 5) : [];
+const sameState = state ? doctorJobs.filter((j) => medicinePlace(j).state === state.slug && !sameSpecialty.includes(j)).slice(0, 5) : [];
+const medicineBrowse = [
+  ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
+  ...(job.specialty && state ? [{ href: specialtyUrl(job.specialty, state.slug), label: en.medicine.specialtyTitleIn(specialtyName!, state.en) }] : []),
+  ...(cityPage ? [{ href: medicineLocationUrl(state!.slug, place.city!.slug), label: en.medicine.placeTitle(place.city!.name) }] : []),
+  ...(state ? [{ href: medicineLocationUrl(state.slug), label: en.medicine.placeTitle(state.en) }] : []),
+  ...(job.level ? [{ href: levelUrl(job.level), label: en.medicine.levelTitle(en.medicine.levels[job.level]!) }] : []),
+];
+// the posting's own page on the job board, or the employer's when it came in through a partner
+const onBoard = job.applyUrl.includes("arbeitsagentur.de");
+
 // Crosslinks: neighbouring jobs, so every job is linked from other job pages, and the hubs this job belongs to
-const related = await relatedJobs(job);
+const related = medicine ? { team: [] as Job[], place: [] as Job[] } : await relatedJobs(job);
 const companyJobs = (await getCompanyCounts()).get(job.company) ?? 0;
 const tags = tagsOf(job);
 const [city] = tags.cities;
@@ -62,12 +93,32 @@ const browse = [
   noindex={closed}
   translated={false}
   jsonLd={jsonLd}
+  section={medicine ? "medicine" : "tech"}
 >
-  <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
+  {
+    medicine ? (
+      <p class="muted">
+        <a href="/medicine">Doctor jobs</a> /{job.specialty && <> <a href={specialtyUrl(job.specialty)}>{specialtyName}</a> /</>}
+      </p>
+    ) : (
+      <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
+    )
+  }
 
   {closed && <p class="closed">This position was closed on {formatDate(job.closedAt!)} and is no longer accepting applications.</p>}
 
   <h1>{job.title}</h1>
+  {medicine ? (
+  <dl class="facts">
+    <dt>Hospital or practice</dt><dd>{employer}</dd>
+    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}</dd>
+    {job.specialty && <><dt>Specialty</dt><dd><a href={specialtyUrl(job.specialty)}>{specialtyName}</a></dd></>}
+    {job.level && <><dt>Career level</dt><dd><a href={levelUrl(job.level)}>{en.medicine.levels[job.level]}</a></dd></>}
+    {job.department && <><dt>Occupation</dt><dd>{job.department}</dd></>}
+    {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
+    <dt>Listed on</dt><dd>{companyName}</dd>
+  </dl>
+  ) : (
   <dl class="facts">
     {job.employer
       ? <><dt>Company</dt><dd>{job.employer}</dd><dt>Listed on</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>
@@ -77,12 +128,17 @@ const browse = [
     {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
   </dl>
+  )}
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {applyName} →</a></p>}
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
 
-  <article class="description" set:html={job.descriptionHtml} />
+  {job.descriptionHtml ? <article class="description" set:html={job.descriptionHtml} /> : <p class="muted">The full description is on the original posting.</p>}
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">Apply on {applyName} →</a></p>}
+  {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
+
+  {sameSpecialty.length > 0 && <section><h2>More {specialtyName!.toLowerCase()} jobs</h2><JobList jobs={sameSpecialty} /></section>}
+  {sameState.length > 0 && <section><h2>More doctor jobs in {state!.en}</h2><JobList jobs={sameState} /></section>}
+  {medicineBrowse.length > 0 && <section><h2>Browse similar jobs</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul></section>}
 
   {
     related.team.length > 0 && (
@@ -101,7 +157,7 @@ const browse = [
       </section>
     )
   }
-  {browse.length > 0 && <section><h2>Browse similar jobs</h2><TagLinks links={browse} /></section>}
+  {!medicine && browse.length > 0 && <section><h2>Browse similar jobs</h2><TagLinks links={browse} /></section>}
 </Base>
 
 <style>
@@ -110,7 +166,8 @@ const browse = [
   .facts dd { margin: 0; }
   .apply { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; }
   .closed { background: var(--tag); border-left: 4px solid var(--muted); padding: 12px 16px; }
-  .description { margin: 24px 0; overflow-wrap: anywhere; }
+  .description { max-width: 760px; margin: 24px 0; overflow-wrap: anywhere; }
+  .browse { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px 16px; }
   @media (max-width: 640px) {
     .facts { grid-template-columns: 1fr; gap: 0; }
     .facts dt { font-size: 13px; margin-top: 8px; }
