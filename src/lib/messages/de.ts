@@ -65,8 +65,7 @@ export const de = {
     popular: "Beliebt",
   },
   filters: {
-    title: "Jobs filtern",
-    toggle: "Filter",
+    title: "Filter",
     technology: "Technologie",
     location: "Standort",
     workMode: "Arbeitsmodell",
@@ -75,6 +74,7 @@ export const de = {
     anywhere: "Überall",
     allOf: (country: string) => `Alle in ${country}`,
     submit: "Jobs anzeigen",
+    clear: "Zurücksetzen",
     employmentAlone: "Die Anstellungsart lässt sich noch nicht mit anderen Filtern kombinieren.",
     remoteTechLocation: "Remote lässt sich noch nicht mit Technologie und Standort kombinieren.",
     remoteCity: "Remote-Jobs lassen sich nach Land filtern, nicht nach Stadt.",

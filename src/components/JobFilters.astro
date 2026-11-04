@@ -35,7 +35,7 @@ const base = localizePath("/", lang).replace(/\/$/, "");
 ---
 
 <details class="filters" open>
-  <summary>{f.toggle}</summary>
+  <summary>{f.title}</summary>
   <form
     id="job-filters"
     data-base={base}
@@ -45,36 +45,56 @@ const base = localizePath("/", lang).replace(/\/$/, "");
     data-remote-city={f.remoteCity}
     data-remote-none={f.remoteNone}
   >
-    <p class="filters-title">{f.title}</p>
-    <label for="filter-tech">{f.technology}</label>
-    <select id="filter-tech">
-      <option value="">{f.any}</option>
-      {techOptions.map((tech) => <option value={tech.slug}>{tech.name}</option>)}
-    </select>
-    <label for="filter-location">{f.location}</label>
-    <select id="filter-location">
-      <option value="">{f.anywhere}</option>
-      {
-        locationGroups.map((c) => (
-          <optgroup label={c.name}>
-            <option value={c.slug}>{f.allOf(c.name)}</option>
-            {c.cities.map((city) => <option value={`${c.slug}/${city.slug}`}>{city.name}</option>)}
-          </optgroup>
-        ))
-      }
-    </select>
-    <label for="filter-mode">{f.workMode}</label>
-    <select id="filter-mode">
-      <option value="">{f.any}</option>
-      <option value="remote">{m.remote}</option>
-    </select>
-    <label for="filter-employment">{f.employment}</label>
-    <select id="filter-employment">
-      <option value="">{f.any}</option>
-      {employmentOptions.map((type) => <option value={type}>{m.employment.types[type]}</option>)}
-    </select>
-    <button type="submit">{f.submit}</button>
-    <p class="filters-note" aria-live="polite"></p>
+    <div class="head">
+      <p class="title">{f.title}</p>
+      <button type="reset" class="clear" hidden>{f.clear}</button>
+    </div>
+
+    <label class="field-label" for="filter-tech">{f.technology}</label>
+    <div class="select">
+      <select id="filter-tech" name="tech">
+        <option value="">{f.any}</option>
+        {techOptions.map((tech) => <option value={tech.slug}>{tech.name}</option>)}
+      </select>
+    </div>
+
+    <label class="field-label" for="filter-location">{f.location}</label>
+    <div class="select">
+      <select id="filter-location" name="place">
+        <option value="">{f.anywhere}</option>
+        {
+          locationGroups.map((c) => (
+            <optgroup label={c.name}>
+              <option value={c.slug}>{f.allOf(c.name)}</option>
+              {c.cities.map((city) => <option value={`${c.slug}/${city.slug}`}>{city.name}</option>)}
+            </optgroup>
+          ))
+        }
+      </select>
+    </div>
+
+    <fieldset>
+      <legend class="field-label">{f.workMode}</legend>
+      <div class="segmented">
+        <label><input type="radio" name="mode" value="" checked /><span>{f.any}</span></label>
+        <label><input type="radio" name="mode" value="remote" /><span>{m.remote}</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="field-label">{f.employment}</legend>
+      <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
+      <div class="chips">
+        {
+          employmentOptions.map((type) => (
+            <label><input type="radio" name="employment" value={type} /><span>{m.employment.types[type]}</span></label>
+          ))
+        }
+      </div>
+    </fieldset>
+
+    <button type="submit" class="submit">{f.submit}</button>
+    <p class="note" aria-live="polite"></p>
   </form>
 </details>
 
@@ -84,15 +104,16 @@ const base = localizePath("/", lang).replace(/\/$/, "");
     const details = form.parentElement;
     const d = form.dataset;
     const remoteCountries = new Set(d.remoteCountries.split(" "));
-    const value = (id) => document.getElementById(id).value;
-    const note = form.querySelector(".filters-note");
+    const field = (name) => form.elements.namedItem(name).value;
+    const note = form.querySelector(".note");
+    const clear = form.querySelector(".clear");
 
     // The page for the chosen values, and a note when some of them had to be dropped
     function route() {
-      const tech = value("filter-tech");
-      const place = value("filter-location"); // "country" or "country/city"
-      const remote = value("filter-mode") === "remote";
-      const employment = value("filter-employment");
+      const tech = field("tech");
+      const place = field("place"); // "country" or "country/city"
+      const remote = field("mode") === "remote";
+      const employment = field("employment");
       const [country, city] = place.split("/");
       const others = tech || place || remote;
       const remoteCountry = country && remoteCountries.has(country);
@@ -108,15 +129,43 @@ const base = localizePath("/", lang).replace(/\/$/, "");
       else if (tech && remote && place) note = d.remoteTechLocation;
       else if (remote && country && !remoteCountry) note = d.remoteNone;
       else if (remote && city) note = d.remoteCity;
-      return { path, note };
+      return { path, note, empty: !others && !employment };
     }
 
-    form.addEventListener("change", () => (note.textContent = route().note));
+    function update() {
+      const r = route();
+      note.textContent = r.note;
+      clear.hidden = r.empty;
+    }
+
+    form.addEventListener("change", update);
+    // Radios can't be unchecked by clicking, so do it by hand for the employment chips
+    let employment = field("employment");
+    form.addEventListener("click", (e) => {
+      const input = e.target;
+      if (!(input instanceof HTMLInputElement) || input.name !== "employment") return;
+      if (input.value === employment) input.checked = false;
+      employment = field("employment");
+      update();
+    });
+    // reset fires before the fields change back
+    form.addEventListener("reset", () =>
+      setTimeout(() => {
+        employment = "";
+        update();
+      }),
+    );
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const { path } = route();
       if (path) location.href = d.base + path;
     });
+    // the browser may restore earlier choices on back navigation
+    addEventListener("pageshow", () => {
+      employment = field("employment");
+      update();
+    });
+    update();
 
     // Collapsed by default on phones so the jobs stay above the fold; always open on wider screens
     const narrow = matchMedia("(max-width: 640px)");
@@ -127,24 +176,104 @@ const base = localizePath("/", lang).replace(/\/$/, "");
 </script>
 
 <style>
-  .filters > summary { display: none; }
-  form { padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
-  .filters-title { margin: 0 0 10px; font-weight: 600; }
-  label { display: block; margin-bottom: 4px; font-size: 13px; color: var(--muted); }
+  form {
+    padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    --control-bg: var(--bg);
+    --control-border: var(--border);
+    --control-hover: color-mix(in srgb, var(--muted) 45%, var(--border));
+    --ring: color-mix(in srgb, var(--accent) 35%, transparent);
+    --segment-track: var(--tag);
+    --segment-on: var(--surface);
+  }
+  /* the selected segment sits lighter than its track in both themes */
+  @media (prefers-color-scheme: dark) {
+    form { --segment-track: var(--bg); --segment-on: #3a3532; }
+  }
+  .head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 14px; }
+  .title { margin: 0; font-weight: 600; }
+  .clear {
+    padding: 0; font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0; cursor: pointer;
+  }
+  .clear:hover { text-decoration: underline; }
+  .clear[hidden] { display: none; }
+
+  fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+  .field-label { display: block; margin: 0 0 6px; padding: 0; font-size: 13px; font-weight: 500; color: var(--muted); }
+
+  /* Selects: own chevron, same look as the language menu */
+  .select { position: relative; margin-bottom: 14px; }
+  .select::after {
+    content: ""; position: absolute; right: 13px; top: 50%; width: 6px; height: 6px; margin-top: -5px; pointer-events: none;
+    border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg);
+  }
   select {
-    display: block; width: 100%; margin-bottom: 12px; padding: 7px 8px; font: inherit; font-size: 15px;
-    color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    display: block; width: 100%; height: 38px; padding: 0 32px 0 11px; font: inherit; font-size: 15px;
+    color: var(--text); background: var(--control-bg); border: 1px solid var(--control-border); border-radius: 8px;
+    appearance: none; -webkit-appearance: none; cursor: pointer; text-overflow: ellipsis;
+    transition: border-color 0.15s, box-shadow 0.15s;
   }
-  button {
-    width: 100%; padding: 9px 12px; font: inherit; font-weight: 600; cursor: pointer;
-    color: var(--accent-text); background: var(--accent); border: 0; border-radius: 6px;
+  select:hover { border-color: var(--control-hover); }
+  select:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring); }
+
+  /* Chromium can style the open list too; others keep their native menu */
+  @supports (appearance: base-select) {
+    @media (pointer: fine) {
+      select, ::picker(select) { appearance: base-select; }
+      select { display: flex; align-items: center; }
+      select::picker-icon { display: none; }
+      ::picker(select) {
+        margin-top: 4px; padding: 4px; max-height: min(360px, 60vh); overflow-y: auto;
+        color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+        box-shadow: 0 12px 32px rgb(0 0 0 / 0.18);
+      }
+      option { min-block-size: 0; padding: 5px 10px; border-radius: 6px; font-size: 14px; line-height: 1.4; cursor: pointer; }
+      option::checkmark { display: none; }
+      option:hover, option:focus-visible { outline: none; background: var(--tag); }
+      option:checked { color: var(--accent); font-weight: 600; }
+      optgroup { padding: 6px 0 0; font-size: 12px; font-weight: 600; color: var(--muted); }
+      optgroup option { color: var(--text); font-weight: 400; }
+    }
   }
-  button:hover { filter: brightness(1.08); }
-  .filters-note { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
-  .filters-note:empty { display: none; }
+
+  /* Radio groups drawn as buttons; the inputs stay in the tab order */
+  input[type="radio"] { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+  .segmented, .chips { margin-bottom: 14px; }
+  .segmented { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 3px; background: var(--segment-track); border: 1px solid var(--border); border-radius: 9px; }
+  .segmented span {
+    display: block; padding: 6px 8px; text-align: center; font-size: 14px; color: var(--muted);
+    border-radius: 6px; cursor: pointer; transition: background 0.15s, color 0.15s;
+  }
+  .segmented label:hover span { color: var(--text); }
+  .segmented input:checked + span { color: var(--text); font-weight: 600; background: var(--segment-on); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
+
+  .segmented label, .chips label { position: relative; }
+  .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .chips span {
+    display: block; padding: 6px 8px; text-align: center; font-size: 14px; color: var(--muted);
+    background: var(--segment-track); border: 1px solid var(--border); border-radius: 8px;
+    cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+  }
+  .chips label:hover span { color: var(--text); border-color: var(--control-hover); }
+  .chips input:checked + span {
+    color: var(--accent); font-weight: 600; border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  input:focus-visible + span { box-shadow: 0 0 0 3px var(--ring); }
+
+  .submit {
+    width: 100%; height: 40px; margin-top: 4px; font: inherit; font-weight: 600; cursor: pointer;
+    color: var(--accent-text); background: var(--accent); border: 0; border-radius: 8px; transition: filter 0.15s;
+  }
+  .submit:hover { filter: brightness(1.08); }
+  .submit:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--ring); }
+  .note { margin: 10px 0 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
+  .note:empty { display: none; }
+
+  .filters > summary { display: none; }
   @media (max-width: 640px) {
     .filters > summary {
-      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid var(--border);
+      display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border: 1px solid var(--border);
       border-radius: 999px; background: var(--surface); font-weight: 600; cursor: pointer; list-style: none;
     }
     .filters > summary::-webkit-details-marker { display: none; }
@@ -153,7 +282,12 @@ const base = localizePath("/", lang).replace(/\/$/, "");
       border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg);
     }
     .filters[open] > summary { margin-bottom: 10px; }
+    /* the button above already says "Filters" */
+    .title { visibility: hidden; }
     .filters[open] > summary::after { margin-top: 3px; transform: rotate(-135deg); }
-    select { font-size: 16px; }
+    select { height: 44px; font-size: 16px; }
+    .segmented span { padding: 9px 8px; font-size: 15px; }
+    .chips span { padding: 9px 8px; font-size: 15px; }
+    .submit { height: 46px; }
   }
 </style>

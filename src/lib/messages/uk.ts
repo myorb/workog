@@ -63,8 +63,7 @@ export const uk = {
     popular: "Популярне",
   },
   filters: {
-    title: "Фільтр вакансій",
-    toggle: "Фільтри",
+    title: "Фільтри",
     technology: "Технологія",
     location: "Локація",
     workMode: "Формат роботи",
@@ -73,6 +72,7 @@ export const uk = {
     anywhere: "Будь-де",
     allOf: (country: string) => `${country}: усі міста`,
     submit: "Показати вакансії",
+    clear: "Скинути",
     employmentAlone: "Тип зайнятості поки не можна поєднувати з іншими фільтрами.",
     remoteTechLocation: "Віддалену роботу поки не можна поєднувати з технологією та локацією.",
     remoteCity: "Віддалені вакансії фільтруються за країною, а не за містом.",
