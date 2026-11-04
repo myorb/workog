@@ -1,4 +1,4 @@
-import type { CompanyConfig } from "../../src/lib/schema.ts";
+import type { CompanyConfig, Job } from "../../src/lib/schema.ts";
 import { categorize, isRemote, sanitizeDescription, toIso } from "../../src/lib/normalize.ts";
 import { getJson, mapLimit, postJson } from "./http.ts";
 import type { Fetcher } from "./types.ts";
@@ -51,15 +51,56 @@ export function apiBase(company: CompanyConfig): string {
   return `${url.origin}/wday/cxs/${tenant}/${site}`;
 }
 
+/** A job seen on an earlier run, kept as stored and given the search result's current title. */
+interface KnownJob {
+  previous: Job;
+  title: string;
+}
+
+type RawJob = WorkdayJob | KnownJob;
+
+/** "https://…/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineer_JR1" → "/job/US-CA-Santa-Clara/Engineer_JR1" */
+const pathOf = (url: string) => {
+  const i = url.indexOf("/job/");
+  return i < 0 ? undefined : url.slice(i);
+};
+
+/**
+ * Splits the search results into jobs stored on an earlier run, matched by
+ * their posting's path, and the paths whose details still have to be fetched.
+ */
+export function splitKnown(listings: Listing[], previous: Job[]): { known: KnownJob[]; missing: string[] } {
+  const byPath = new Map<string, Job>();
+  for (const job of previous) {
+    const path = pathOf(job.applyUrl);
+    if (path && job.descriptionHtml) byPath.set(path, job);
+  }
+  const known: KnownJob[] = [];
+  const missing: string[] = [];
+  const seen = new Set<string>();
+  for (const { title, externalPath } of listings) {
+    // under load Workday now and then returns a listing without its path; the sanity check catches a big loss
+    if (!externalPath || seen.has(externalPath)) continue;
+    seen.add(externalPath);
+    const previous = byPath.get(externalPath);
+    if (previous) known.push({ previous, title });
+    else missing.push(externalPath);
+  }
+  return { known, missing };
+}
+
 type Filter = Record<string, string[]>;
 
 const search = (base: string, appliedFacets: Filter, offset: number) =>
   postJson<SearchResponse>(`${base}/jobs`, { appliedFacets, limit: PAGE_SIZE, offset, searchText: "" });
 
-async function searchAll(base: string, filter: Filter, total: number): Promise<Listing[]> {
-  const offsets = Array.from({ length: Math.ceil(total / PAGE_SIZE) }, (_, i) => i * PAGE_SIZE);
-  const pages = await mapLimit(offsets, 4, async (offset) => (await search(base, filter, offset)).jobPostings);
-  return pages.flat();
+/** Every page of every search, in one queue so small searches don't run one at a time. */
+async function searchAll(base: string, searches: { filter: Filter; total: number }[]): Promise<Listing[]> {
+  const pages = searches.flatMap(({ filter, total }) =>
+    Array.from({ length: Math.ceil(total / PAGE_SIZE) }, (_, i) => ({ filter, offset: i * PAGE_SIZE })),
+  );
+  const results = await mapLimit(pages, 6, async ({ filter, offset }) => (await search(base, filter, offset)).jobPostings);
+  return results.flat();
 }
 
 /**
@@ -81,34 +122,39 @@ export function pickSlices(facets: Facet[]): { parameter: string; values: { id: 
   return best;
 }
 
-export const workday: Fetcher<WorkdayJob> = {
+export const workday: Fetcher<RawJob> = {
   name: "workday",
 
   /**
    * Every job in one search when the site has fewer than 2,000; otherwise one
    * search per value of the facet that splits them best. Then one request per
-   * job for its description.
+   * job not stored on an earlier run, for its description; a job's path, which
+   * holds its requisition id, is the same across runs.
    */
-  async fetch(company) {
+  async fetch(company, previous) {
     const base = apiBase(company);
     const first = await search(base, {}, 0);
     let listings: Listing[];
     if (first.total < CAP) {
-      listings = await searchAll(base, {}, first.total);
+      listings = await searchAll(base, [{ filter: {}, total: first.total }]);
     } else {
       const slices = pickSlices(first.facets);
       if (!slices) throw new Error(`${company.key}: ${CAP}+ jobs and no facet splits them under the cap`);
-      listings = [];
-      for (const { id, count } of slices.values) listings.push(...(await searchAll(base, { [slices.parameter]: [id] }, count)));
+      listings = await searchAll(base, slices.values.map(({ id, count }) => ({ filter: { [slices.parameter]: [id] }, total: count })));
     }
-    // under load Workday now and then returns a listing without its path; the sanity check catches a big loss
-    const paths = [...new Set(listings.map((l) => l.externalPath).filter(Boolean))];
-    const jobs = await mapLimit(paths, 6, async (path) => (await getJson<{ jobPostingInfo: WorkdayJob }>(`${base}${path}`)).jobPostingInfo);
+    const { known, missing } = splitKnown(listings, previous);
+    const fetched = await mapLimit(missing, 6, async (path) => (await getJson<{ jobPostingInfo: WorkdayJob }>(`${base}${path}`)).jobPostingInfo);
     // one requisition can be posted more than once
-    return [...new Map(jobs.map((j) => [j.jobReqId, j])).values()];
+    const jobs: RawJob[] = [...known, ...fetched];
+    return [...new Map(jobs.map((j) => ["previous" in j ? j.previous.id.split(":").at(-1) : j.jobReqId, j])).values()];
   },
 
   normalize(raw, company) {
+    if ("previous" in raw) {
+      const { slug: _s, firstSeenAt: _f, lastSeenAt: _l, closedAt: _c, ...job } = raw.previous;
+      const title = raw.title?.trim() || job.title;
+      return { ...job, originalId: job.id.split(":").at(-1)!, title, category: categorize(title) };
+    }
     const locations = [...new Set([raw.location, ...(raw.additionalLocations ?? [])].filter((l): l is string => !!l))];
     const tenant = new URL(company.careersUrl!).hostname.split(".")[0];
     return {

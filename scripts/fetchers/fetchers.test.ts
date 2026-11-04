@@ -16,7 +16,8 @@ import { lever } from "./lever.ts";
 import { oracle, oracleLocation, oracleSite } from "./oracle.ts";
 import { parseList, rexx } from "./rexx.ts";
 import { parseRss, weworkremotely } from "./weworkremotely.ts";
-import { apiBase, pickSlices, workday } from "./workday.ts";
+import { categorize } from "../../src/lib/normalize.ts";
+import { apiBase, pickSlices, splitKnown, workday } from "./workday.ts";
 import { workingnomads } from "./workingnomads.ts";
 
 const company = (extra: Partial<CompanyConfig>): CompanyConfig => ({ key: "acme", name: "Acme", source: "test", ...extra });
@@ -77,6 +78,56 @@ describe("workday", () => {
       title: "Engineer",
       locations: ["India, Bengaluru", "US, CA, Santa Clara"],
       postedAt: "2026-11-03T00:00:00.000Z",
+    });
+  });
+
+  const stored = (id: string, path: string) => ({
+    id: `workday:nvidia:${id}`,
+    slug: `engineer-${id.toLowerCase()}`,
+    company: "nvidia",
+    title: "Engineer",
+    locations: ["US, CA, Santa Clara"],
+    remote: false,
+    category: "engineering",
+    descriptionHtml: "<p>Hi</p>",
+    applyUrl: `https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite${path}`,
+    postedAt: "2026-11-01T00:00:00.000Z",
+    firstSeenAt: "2026-11-01T00:00:00.000Z",
+    lastSeenAt: "2026-11-03T00:00:00.000Z",
+    source: "workday",
+  });
+
+  test("splitKnown reuses stored jobs by path and fetches only new ones", () => {
+    const { known, missing } = splitKnown(
+      [
+        { title: "Senior Engineer", externalPath: "/job/US/Engineer_JR1" },
+        { title: "Engineer", externalPath: "/job/US/Engineer_JR2" },
+        { title: "Engineer", externalPath: "/job/US/Engineer_JR2" },
+        { title: "Lost", externalPath: "" },
+      ],
+      [stored("JR1", "/job/US/Engineer_JR1"), stored("JR3", "/job/US/Engineer_JR3")],
+    );
+    expect(known.map((k) => k.previous.id)).toEqual(["workday:nvidia:JR1"]);
+    expect(missing).toEqual(["/job/US/Engineer_JR2"]);
+  });
+
+  test("normalize keeps a reused job and takes the search result's title", () => {
+    const job = workday.normalize(
+      { previous: stored("JR1", "/job/US/Engineer_JR1"), title: " Data Scientist " },
+      company({ careersUrl: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite" }),
+    );
+    expect(job).toEqual({
+      id: "workday:nvidia:JR1",
+      originalId: "JR1",
+      company: "nvidia",
+      title: "Data Scientist",
+      locations: ["US, CA, Santa Clara"],
+      remote: false,
+      category: categorize("Data Scientist"),
+      descriptionHtml: "<p>Hi</p>",
+      applyUrl: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US/Engineer_JR1",
+      postedAt: "2026-11-01T00:00:00.000Z",
+      source: "workday",
     });
   });
 });
