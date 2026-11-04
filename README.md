@@ -25,7 +25,7 @@ bun run ping             # tell search engines about the last run's job changes 
 
 App Platform watches `main` through its GitHub app, so the daily data commit deploys the same way a developer push does. A failing `bun test` fails the App Platform build, and the previous deployment keeps serving.
 
-**Stopping early.** `scripts/fetch.ts` sets the step output `changed`, ignoring `lastSeenAt` because it moves on every run. When nothing else changed, the run stops before committing, so nothing is deployed. On those days the committed `lastSeenAt` and the site's "last updated" time stay at the last run that changed something.
+**Stopping early.** `scripts/fetch.ts` sets the step output `changed`, ignoring `lastSeenAt` because it moves on every run. When nothing else changed, the run stops before committing, so nothing is deployed. On those days the committed `data/runs/seen.json` and the site's "last updated" time stay at the last run that changed something.
 
 **Sanity checks.** A source falls back, keeping yesterday's file, if:
 - the fetch fails,
@@ -56,7 +56,8 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | Path | Purpose |
 | --- | --- |
 | `data/companies.json` | Company list and source config |
-| `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 5,000 jobs |
+| `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 1,000 jobs. Doctor-job sources (`sector: "medicine"`) are in `data/jobs/medicine/` |
+| `data/runs/seen.json` | Each company's last successful run time, which is the `lastSeenAt` of every job that run saw |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
 | `data/runs/changes.json` | Slugs of the jobs the last run opened, closed or dropped; read by `scripts/ping.ts` |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
@@ -65,6 +66,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `scripts/fetchers/` | One module per source: `greenhouse.ts`, `ashby.ts`, `lever.ts`, `smartrecruiters.ts`, `workday.ts`, `eightfold.ts`, `amazon.ts`, `arbeitnow.ts`, `arbeitsagentur.ts` and `workingnomads.ts` (JSON APIs), `weworkremotely.ts` (RSS), `apple.ts` and `google.ts` (read the JSON their search pages embed); `http.ts` has the shared retrying client and `mapLimit` for bounded parallel requests |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
+| `src/lib/job-files.ts` | Reads and writes `data/jobs` and `data/runs/seen.json`, for the pipeline and the site |
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de`. `/` is the start page; the tech home is `/tech` and the doctor-jobs section lives under `/medicine` |
 | `src/lib/medicine.ts` | Doctor-jobs taxonomy: specialties, career levels and German states, with the rules that read them from titles |
 | `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would quadruple the build) |
@@ -127,7 +129,11 @@ bun run fetch --all amazon          # just Amazon
 
 Amazon's search endpoint stops at 10,000 results, so a full Amazon fetch searches one country at a time and splits a country with more (the US) by business category; if a slice still hits the cap, the fetch fails and Amazon falls back to yesterday's data.
 
-A company with more than 5,000 jobs is written as `data/jobs/<company>.<n>.json` parts, because GitHub rejects files over 100 MB. Each job lands in a part by a hash of its id, so it stays put from day to day.
+The job files are laid out so a daily commit changes only the jobs that really changed (`src/lib/job-files.ts`):
+
+- **Parts.** A company with more than 1,000 jobs (about 7 MB) is written as `data/jobs/<company>.<n>.json` parts. Each job lands in a part by a hash of its id, so it stays put from day to day. The part count is a power of two that doubles when parts pass 1,000 jobs and halves only below 250, so a company near a boundary doesn't reshuffle its files.
+- **`lastSeenAt`.** It moves for every job on every run, so it isn't stored for the jobs a run saw: they take it from the company's time in `data/runs/seen.json`. Closed jobs, and a capped company's older jobs the run didn't reach, keep their own.
+- **Changing the layout.** After changing it, run `bun run repack` to rewrite `data/jobs` without fetching.
 
 ## Status
 

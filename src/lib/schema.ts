@@ -32,6 +32,11 @@ export const JobSchema = z.object({
 
 export type Job = z.infer<typeof JobSchema>;
 
+/** A job as written to data/jobs: `lastSeenAt` is left out when it is the company's time in data/runs/seen.json */
+export const StoredJobSchema = JobSchema.extend({ lastSeenAt: isoDate.optional() });
+
+export type StoredJob = z.infer<typeof StoredJobSchema>;
+
 export const CompanyConfigSchema = z.object({
   key: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),

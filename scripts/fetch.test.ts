@@ -1,7 +1,8 @@
 import { describe, expect, test } from "bun:test";
 import type { Job, SourceRun } from "../src/lib/schema.ts";
 import type { NormalizedJob } from "./fetchers/types.ts";
-import { jobsChanged, mergeJobs, partOf, recordHistory, sanityCheck } from "./fetch.ts";
+import { partOf } from "../src/lib/job-files.ts";
+import { jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
 

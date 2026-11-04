@@ -1,16 +1,17 @@
 /**
- * The only module that knows where job data lives. Pages read through these
- * functions, so moving from JSON files to a database changes only this file.
+ * The only module pages read job data through, so moving from JSON files to a
+ * database changes only this file and ./job-files.ts, which reads data/jobs.
  */
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
 import { type EmploymentType, employmentTypeOf } from "./employment.ts";
+import { readAllJobs } from "./job-files.ts";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { isMedicine, type MedicinePlace, medicinePlaceOf } from "./medicine.ts";
 import { technologiesOf } from "./technologies.ts";
-import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, JobSchema, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
+import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
 
 const DATA_DIR = join(process.cwd(), "data");
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -22,20 +23,16 @@ let historyCache: Promise<HistoryDay[]> | undefined;
 let snapshotsCache: Promise<Snapshot[]> | undefined;
 
 async function loadJobs(): Promise<Job[]> {
-  const dir = join(DATA_DIR, "jobs");
-  const files = (await readdir(dir).catch(() => [])).filter((f) => f.endsWith(".json")).sort();
-  const lists = await Promise.all(
-    files.map(async (f) => z.array(JobSchema).parse(JSON.parse(await readFile(join(dir, f), "utf8")))),
-  );
-  return lists.flat().sort(byNewest);
+  return (await readAllJobs(DATA_DIR)).sort(byNewest);
 }
 
-/** Newest first by first-seen date, then by posted date, then title. */
+/** Newest first by first-seen date, then by posted date, then title, then id so the order never depends on how files are split. */
 function byNewest(a: Job, b: Job): number {
   return (
     b.firstSeenAt.localeCompare(a.firstSeenAt) ||
     (b.postedAt ?? "").localeCompare(a.postedAt ?? "") ||
-    a.title.localeCompare(b.title)
+    a.title.localeCompare(b.title) ||
+    a.id.localeCompare(b.id, "en", { numeric: true })
   );
 }
 
