@@ -1,3 +1,11 @@
+import { AsyncLocalStorage } from "node:async_hooks";
+
+/**
+ * Counts the requests made inside `requestStats.run(stats, fn)`, so the fetch
+ * script can show how far a slow source has got while it runs.
+ */
+export const requestStats = new AsyncLocalStorage<{ requests: number }>();
+
 const USER_AGENT =
   process.env.FETCH_USER_AGENT ?? "workog/0.1 (+https://workog.com/about)";
 
@@ -23,6 +31,8 @@ async function request<T>(
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     // a rate limit takes longer to clear than a flaky response
     if (attempt > 0) await sleep((rateLimited ? 5000 : 1000) * 2 ** (attempt - 1));
+    const stats = requestStats.getStore();
+    if (stats) stats.requests++;
     try {
       const res = await fetch(url, {
         method: body === undefined ? "GET" : "POST",

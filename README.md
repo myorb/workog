@@ -118,7 +118,7 @@ Microsoft and Meta aren't covered: their careers APIs refuse anonymous requests.
 
 ## Big companies
 
-Amazon, Apple and Google are fetched in full every day, about 21k, 5k and 3k jobs, in under 3 minutes. Their fetchers page through results one request at a time, and companies are fetched in parallel.
+Amazon, Apple and Google are fetched in full every day, about 21k, 5k and 3k jobs, in under 3 minutes. Their fetchers page through results one request at a time. Companies are fetched 12 at a time, the ones with the most jobs last run first, so the slow ones aren't left waiting at the end.
 
 A company can set `maxJobs` to fetch only its newest jobs, if a full fetch ever gets too slow. A capped run adds and updates jobs but never closes any: a job missing from the newest `maxJobs` may just be older (Amazon doesn't even sort strictly by posting date), so it is kept as it was. Run Actions → Daily update → Run workflow with **Fetch every job** ticked, or locally, to fetch capped companies in full and close their jobs:
 
@@ -133,6 +133,7 @@ The job files are laid out so a daily commit changes only the jobs that really c
 
 - **Parts.** A company with more than 1,000 jobs (about 7 MB) is written as `data/jobs/<company>.<n>.json` parts. Each job lands in a part by a hash of its id, so it stays put from day to day. The part count is a power of two that doubles when parts pass 1,000 jobs and halves only below 250, so a company near a boundary doesn't reshuffle its files.
 - **`lastSeenAt`.** It moves for every job on every run, so it isn't stored for the jobs a run saw: they take it from the company's time in `data/runs/seen.json`. Closed jobs, and a capped company's older jobs the run didn't reach, keep their own.
+- **All or nothing.** A fetch run stages every file it writes as `<file>.staged` and renames them into place only once every company is done, so a run that crashes or is killed leaves `data/` as the last run left it. The next run removes the leftover `.staged` files, which git ignores.
 - **Changing the layout.** After changing it, run `bun run repack` to rewrite `data/jobs` without fetching.
 
 ## Status

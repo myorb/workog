@@ -110,8 +110,6 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/114438209/it-technical-specialist?team=APPST",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-04T05:02:43.218Z",
-    "closedAt": "2026-11-04T08:38:28.126Z",
     "source": "apple"
   },
   {
@@ -3329,6 +3327,8 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200666253/failure-analysis-engineer?team=HRDWR",
     "postedAt": "2026-06-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T08:38:28.126Z",
+    "closedAt": "2026-11-04T16:46:50.666Z",
     "source": "apple"
   },
   {
@@ -8351,15 +8351,15 @@
     "id": "apple:200687696",
     "slug": "apple-wireless-soc-design-verification-engineer-200687696",
     "company": "apple",
-    "title": "Wireless SoC Design Verification Engineer",
+    "title": "Senior Wireless SoC Design Verification Engineer",
     "locations": [
       "Israel"
     ],
     "remote": false,
     "department": "Hardware",
     "category": "design",
-    "descriptionHtml": "<p>Would you like to join Apple’s growing wireless silicon development team? Our wireless SOC organization is responsible various aspects of wireless silicon development with a particular emphasis on highly energy efficient design new technologies that impact the user experience at the product level, all of which is driven by a world-class vertically integrated engineering team.</p><p>As a Wireless Design Verification Engineer, you will be part of a team that is responsible for pre-silicon RTL verification of communication subsystems, SoC sub-systems and chip-level functionality. The activity may focus on block level, sub-system level or chip level, including end-to-end simulations of the entire data/control path. You will interact with DV methodologists, designers and communication systems engineers to develop reusable testbench and verification environment deploying the latest methodology with metric driven verification.</p>",
-    "applyUrl": "https://jobs.apple.com/en-us/details/200687696/wireless-soc-design-verification-engineer?team=HRDWR",
+    "descriptionHtml": "<p>Apple's wireless chip powers connectivity across every new iPhone — and its successor is already taking shape. Would you like to join Apple's growing wireless silicon development team?<br />Our Wireless SOC organization owns every aspect of wireless silicon development, with a particular emphasis on highly energy-efficient design and new technologies that transform the user experience at the product level. It is driven by a world-class, vertically integrated team spanning RF/Analog, Systems/PHY/MAC, VLSI/RTL design and integration, Emulation, Design Verification, Test and Validation, and FW/SW engineering.<br />As a Wireless SOC Design Verification Engineer, you'll be at the heart of the chip design effort — owning a meaningful verification scope and growing it project to project. <br />You'll work alongside DV methodologists, designers, architects, communication systems engineers, and firmware engineers to build reusable testbenches and verification environments using the latest metric-driven verification methodology.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200687696/senior-wireless-soc-design-verification-engineer?team=HRDWR",
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "source": "apple"
@@ -10467,6 +10467,23 @@
     "source": "apple"
   },
   {
+    "id": "apple:200692360",
+    "slug": "apple-manufacturing-process-engineer-display-200692360",
+    "company": "apple",
+    "title": "Manufacturing Process Engineer - Display",
+    "locations": [
+      "United States of America"
+    ],
+    "remote": false,
+    "department": "Hardware",
+    "category": "engineering",
+    "descriptionHtml": "<p>Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. Bring passion and dedication to your job and there's no telling what you could accomplish!</p><p>The people here at Apple don’t just create products — they create the kind of wonder that’s revolutionized entire industries. It’s the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it!</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200692360/manufacturing-process-engineer-display?team=HRDWR",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "apple"
+  },
+  {
     "id": "apple:200692368",
     "slug": "apple-sre-manager-apple-services-engineering-200692368",
     "company": "apple",
@@ -10719,6 +10736,23 @@
     "source": "apple"
   },
   {
+    "id": "apple:200692834",
+    "slug": "apple-product-manager-apo-bpr-200692834",
+    "company": "apple",
+    "title": "Product Manager - APO BPR",
+    "locations": [
+      "China"
+    ],
+    "remote": false,
+    "department": "Operations and Supply Chain",
+    "category": "product",
+    "descriptionHtml": "<p>Apple is where individual imaginations gather together, committing to the values that lead to great work. Every new product we build, service we create, or Apple Store experience we deliver is the result of us making each other’s ideas stronger. That happens because every one of us shares a belief that we can make something wonderful and share it with the world, changing lives for the better. It’s the diversity of our people and their thinking that inspires the innovation that runs through everything we do. When we bring everybody in, we can do the best work of our lives. Here, you’ll do more than join something — you’ll add something.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200692834/product-manager-apo-bpr?team=OPMFG",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "apple"
+  },
+  {
     "id": "apple:200692878",
     "slug": "apple-pd-sta-engineer-200692878",
     "company": "apple",
@@ -10733,6 +10767,23 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200692878/pd-sta-engineer?team=HRDWR",
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "source": "apple"
+  },
+  {
+    "id": "apple:200692926",
+    "slug": "apple-senior-legal-counsel-ip-litigation-200692926",
+    "company": "apple",
+    "title": "Senior Legal Counsel - IP Litigation",
+    "locations": [
+      "United States of America"
+    ],
+    "remote": false,
+    "department": "Corporate Functions",
+    "category": "legal",
+    "descriptionHtml": "<p>Imagine what you could do here! At Apple, new ideas have a way of becoming great products, services, and customer experiences very quickly! Bring passion and dedication to your job and there's no telling what you could accomplish. Do you love taking on big challenges without precedent? Do you possess a deep knowledge of the legal field and a passion for innovation? As a part of our Legal group, you’ll help uphold Apple’s high ethical and corporate standards, as well as defend our intellectual property. You’ll help provide legal support for all our products and businesses across the globe. Working for a company that invents entire categories and industries means you’ll be challenged to creatively apply your deep legal expertise to rare and often unexplored aspects of the law. Together with your team, you’ll provide the critical support needed worldwide for all Apple products and businesses. We are looking for a patent litigator with excellent judgment and communication skills, and a demonstrated ability to handle the day-to-day progress of patent cases. You will be a self-starter who can quickly learn Apple's patent litigation docket and practices, identify, and manage risks and exposures, and find strategic opportunities for resolution.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200692926/senior-legal-counsel-ip-litigation?team=CORSV",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T17:14:19.908Z",
     "source": "apple"
   },
   {

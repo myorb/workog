@@ -2,7 +2,20 @@ import { describe, expect, test } from "bun:test";
 import { mkdtemp, readdir, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { JOBS_PER_FILE, partCountFor, partOf, readAllJobs, readCompanyJobs, readSeen, writeCompanyJobs, writeSeen } from "./job-files.ts";
+import {
+  clearStaged,
+  JOBS_PER_FILE,
+  partCountFor,
+  partOf,
+  readAllJobs,
+  readCompanyJobs,
+  readSeen,
+  seenFile,
+  seenJson,
+  StagedWrites,
+  writeCompanyJobs,
+  writeSeen,
+} from "./job-files.ts";
 import type { Job } from "./schema.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
@@ -81,6 +94,43 @@ describe("writeCompanyJobs and readCompanyJobs", () => {
 
       await writeCompanyJobs(dir, { key: "big" }, many.slice(0, 10), day(3));
       expect(await readdir(join(dir, "jobs"))).toEqual(["big.json"]);
+    }));
+});
+
+describe("StagedWrites", () => {
+  test("changes nothing readers see until commit, then applies writes and removals together", () =>
+    withDir(async (dir) => {
+      const old = job("acme", 1);
+      await writeCompanyJobs(dir, { key: "acme" }, [old], day(3));
+      await writeSeen(dir, { acme: day(3) });
+
+      // the next run: acme grows into parts (so acme.json goes), a new company appears
+      const staged = new StagedWrites();
+      const many = Array.from({ length: JOBS_PER_FILE * 2 }, (_, i) => job("acme", i, { lastSeenAt: day(4) }));
+      await writeCompanyJobs(dir, { key: "acme" }, many, day(4), staged);
+      await writeCompanyJobs(dir, { key: "newco" }, [job("newco", 9, { lastSeenAt: day(4) })], day(4), staged);
+      await staged.write(seenFile(dir), seenJson({ acme: day(4), newco: day(4) }));
+
+      // a crash here leaves the last run whole: newco's jobs, which leave lastSeenAt out, aren't read without its seen.json entry
+      expect(await readAllJobs(dir)).toEqual([old]);
+      expect((await readdir(join(dir, "jobs"))).filter((f) => f.endsWith(".json"))).toEqual(["acme.json"]);
+
+      await staged.commit();
+      expect((await readdir(join(dir, "jobs"))).sort()).toEqual(["acme.1.json", "acme.2.json", "newco.json"]);
+      expect(await readSeen(dir)).toEqual({ acme: day(4), newco: day(4) });
+      expect(await readAllJobs(dir)).toHaveLength(many.length + 1);
+    }));
+
+  test("clearStaged removes what a crashed run left, in every folder", () =>
+    withDir(async (dir) => {
+      const staged = new StagedWrites();
+      await writeCompanyJobs(dir, { key: "clinic", sector: "medicine" }, [job("clinic", 1)], day(3), staged);
+      await staged.write(seenFile(dir), seenJson({ clinic: day(3) }));
+
+      expect((await clearStaged(dir)).length).toBe(2);
+      expect(await readdir(join(dir, "jobs", "medicine"))).toEqual([]);
+      expect(await readdir(join(dir, "runs"))).toEqual([]);
+      expect(await readAllJobs(dir)).toEqual([]);
     }));
 });
 

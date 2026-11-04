@@ -6,11 +6,12 @@ import type { Fetcher } from "./types.ts";
 /** Shape of a job in the Bundesagentur für Arbeit's Jobsuche search results. */
 interface BaJob {
   referenznummer: string;
-  /** cut to about 60 characters, ending in " ..." */
-  stellenangebotsTitel: string;
+  /** cut to about 60 characters, ending in " ..."; a few postings have none */
+  stellenangebotsTitel?: string;
   /** the occupation, e.g. "Facharzt/-ärztin - Innere Medizin" */
   hauptberuf: string;
-  firma: string;
+  /** missing on anonymous ("Chiffre") postings */
+  firma?: string;
   stellenlokationen?: { adresse?: { ort?: string; region?: string; land?: string } }[];
   homeofficemoeglich?: boolean;
   datumErsteVeroeffentlichung?: string;
@@ -101,7 +102,8 @@ export const arbeitsagentur: Fetcher<RawJob> = {
 
   normalize(raw, company) {
     const ref = raw.referenznummer;
-    const title = raw.stellenangebotsTitel.trim().replace(/\s*\.\.\.$/, "…");
+    // a posting without a title still names its occupation, which reads fine as one
+    const title = raw.stellenangebotsTitel?.trim().replace(/\s*\.\.\.$/, "…") || raw.hauptberuf.trim();
     const locations = [
       ...new Set(
         (raw.stellenlokationen ?? [])
@@ -114,7 +116,7 @@ export const arbeitsagentur: Fetcher<RawJob> = {
       id: `arbeitsagentur:${ref}`,
       originalId: ref,
       company: company.key,
-      employer: raw.firma.trim(),
+      employer: raw.firma?.trim() || undefined,
       title,
       locations,
       remote: Boolean(raw.homeofficemoeglich),

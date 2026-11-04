@@ -13,8 +13,8 @@
  *   Jobs the run didn't see (closed ones, and a capped company's older ones)
  *   keep their own `lastSeenAt`.
  */
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { mkdir, readdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
 import { z } from "zod";
 import { type CompanyConfig, type Job, JobSchema, type StoredJob, StoredJobSchema } from "./schema.ts";
 
@@ -27,7 +27,7 @@ export type Seen = Record<string, string>;
 const SeenSchema = z.record(z.string(), z.iso.datetime({ offset: true }));
 
 const jobsDir = (dataDir: string, sector?: string) => (sector ? join(dataDir, "jobs", sector) : join(dataDir, "jobs"));
-const seenFile = (dataDir: string) => join(dataDir, "runs", "seen.json");
+export const seenFile = (dataDir: string) => join(dataDir, "runs", "seen.json");
 /** Keys are `[a-z0-9-]+`, so the key is everything before the first dot. */
 const keyOf = (file: string) => file.slice(0, file.indexOf("."));
 
@@ -52,10 +52,78 @@ export async function readSeen(dataDir: string): Promise<Seen> {
 }
 
 /** Sorted, one company per line, so a daily commit changes only the companies that ran. */
-export async function writeSeen(dataDir: string, seen: Seen): Promise<void> {
+export function seenJson(seen: Seen): string {
   const sorted = Object.fromEntries(Object.entries(seen).sort(([a], [b]) => a.localeCompare(b)));
+  return JSON.stringify(sorted, null, 2) + "\n";
+}
+
+export async function writeSeen(dataDir: string, seen: Seen): Promise<void> {
   await mkdir(join(dataDir, "runs"), { recursive: true });
-  await writeFile(seenFile(dataDir), JSON.stringify(sorted, null, 2) + "\n");
+  await writeFile(seenFile(dataDir), seenJson(seen));
+}
+
+/** Suffix of a file written but not yet moved into place by StagedWrites.commit() */
+export const STAGED_SUFFIX = ".staged";
+
+/**
+ * A set of data/ writes that take effect together, so a run that crashes
+ * halfway leaves the previous run's files whole. Without it a crash could
+ * leave job files that leave lastSeenAt out for this run's time next to a
+ * seen.json that doesn't have that time yet: their jobs would read back with
+ * an old time, or, for a company new to seen.json, fail the build.
+ *
+ * `write` puts each file next to its target as `<file>.staged` right away, so
+ * a run needn't hold every company's jobs in memory. Readers only list
+ * `*.json`, so they don't see staged files. `commit` renames them into place
+ * and removes the files the run dropped. After a crash, clearStaged() removes
+ * what's left over.
+ */
+export class StagedWrites {
+  private readonly writes = new Set<string>();
+  private readonly removals = new Set<string>();
+
+  async write(path: string, content: string): Promise<void> {
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path + STAGED_SUFFIX, content);
+    this.writes.add(path);
+    this.removals.delete(path);
+  }
+
+  remove(path: string): void {
+    if (!this.writes.has(path)) this.removals.add(path);
+  }
+
+  /**
+   * Moves every staged file into place, then removes the dropped ones. Only
+   * renames are left by now, so the window for a crash is a few milliseconds;
+   * seen.json goes first so that a crash inside it gives a job a run time a
+   * moment early rather than none at all.
+   */
+  async commit(): Promise<void> {
+    const isSeen = (path: string) => Number(path.endsWith(join("runs", "seen.json")));
+    const order = [...this.writes].sort((a, b) => isSeen(b) - isSeen(a));
+    for (const path of order) await rename(path + STAGED_SUFFIX, path);
+    for (const path of this.removals) await rm(path, { force: true });
+    this.writes.clear();
+    this.removals.clear();
+  }
+}
+
+/** Removes staged files a crashed run left in data/, so they can't be committed by mistake. */
+export async function clearStaged(dataDir: string): Promise<string[]> {
+  const removed: string[] = [];
+  const visit = async (dir: string) => {
+    for (const entry of await readdir(dir, { withFileTypes: true }).catch(() => [])) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) await visit(path);
+      else if (entry.name.endsWith(STAGED_SUFFIX)) {
+        await rm(path, { force: true });
+        removed.push(path);
+      }
+    }
+  };
+  await visit(dataDir);
+  return removed;
 }
 
 /** A stored job with its `lastSeenAt` filled in from the company's last run. */
@@ -133,16 +201,17 @@ export function partOf(id: string, count: number): number {
  * job id so a job stays in the same part from day to day. `seenAt` is the
  * company's run time in seen.json; jobs with that `lastSeenAt` leave it out.
  * Files the company no longer uses, including any in another sector's folder,
- * are removed.
+ * are removed. With `staged`, nothing changes until `staged.commit()`.
  */
 export async function writeCompanyJobs(
   dataDir: string,
   company: Pick<CompanyConfig, "key" | "sector">,
   jobs: Job[],
   seenAt: string | undefined,
+  staged?: StagedWrites,
 ): Promise<void> {
+  const writes = staged ?? new StagedWrites();
   const dir = jobsDir(dataDir, company.sector);
-  await mkdir(dir, { recursive: true });
   const current = filesOf(await listJson(dir), company.key);
   const partCount = partCountFor(jobs.length, Math.max(current.length, 1));
 
@@ -155,11 +224,12 @@ export async function writeCompanyJobs(
     parts.get(file)!.push(dehydrate(job, seenAt));
   }
 
-  for (const f of current) if (!parts.has(f)) await rm(join(dir, f));
+  for (const f of current) if (!parts.has(f)) writes.remove(join(dir, f));
   for (const other of [undefined, ...(await sectorDirs(dataDir))]) {
     if (other === company.sector) continue;
     const otherDir = jobsDir(dataDir, other);
-    for (const f of filesOf(await listJson(otherDir), company.key)) await rm(join(otherDir, f));
+    for (const f of filesOf(await listJson(otherDir), company.key)) writes.remove(join(otherDir, f));
   }
-  for (const [f, list] of parts) await writeFile(join(dir, f), JSON.stringify(list, null, 2) + "\n");
+  for (const [f, list] of parts) await writes.write(join(dir, f), JSON.stringify(list, null, 2) + "\n");
+  if (!staged) await writes.commit();
 }

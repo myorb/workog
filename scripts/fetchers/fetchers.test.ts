@@ -235,6 +235,13 @@ describe("arbeitsagentur", () => {
     expect(job.applyUrl).toBe("https://www.arbeitsagentur.de/jobsuche/jobdetail/13884-349397-S");
   });
 
+  test("normalize falls back to the occupation for a missing title and leaves out an anonymous employer", () => {
+    const { stellenangebotsTitel: _, firma: __, ...anonymous } = raw;
+    const job = arbeitsagentur.normalize(anonymous, company({ key: "arbeitsagentur" }));
+    expect(job.title).toBe("Assistenzarzt/-ärztin");
+    expect(job.employer).toBeUndefined();
+  });
+
   test("textToHtml drops separator lines and escapes markup", () => {
     expect(textToHtml("----------\nA <b> & B\n\n* one\n* two")).toBe("<p>A &lt;b&gt; &amp; B</p><ul><li>one</li><li>two</li></ul>");
   });

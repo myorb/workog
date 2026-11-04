@@ -10,16 +10,28 @@
  *   bun scripts/fetch.ts --all      # ignore maxJobs and fetch every job
  *
  * A source that fails or fails a sanity check keeps yesterday's file and is
- * reported as "fallback"; that never fails the process. In GitHub Actions the
+ * reported as "fallback"; that never fails the process. Every write is staged
+ * and applied together at the end (StagedWrites), so a run that crashes leaves
+ * data/ as the last run left it. In GitHub Actions the
  * script sets the step output `changed=true|false`, ignoring lastSeenAt, so the
  * workflow can stop before committing and deploying when nothing is new.
  * History and snapshots alone never count as a change: a day with no commit had no new or
  * closed jobs, so readers fill the gap from the day before.
  */
-import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { appendFile, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
-import { readAllJobs, readCompanyJobs, readSeen, type Seen, writeCompanyJobs, writeSeen } from "../src/lib/job-files.ts";
+import {
+  clearStaged,
+  readAllJobs,
+  readCompanyJobs,
+  readSeen,
+  type Seen,
+  seenFile,
+  seenJson,
+  StagedWrites,
+  writeCompanyJobs,
+} from "../src/lib/job-files.ts";
 import { makeJobSlug } from "../src/lib/normalize.ts";
 import {
   CompanyConfigSchema,
@@ -45,6 +57,7 @@ import { smartrecruiters } from "./fetchers/smartrecruiters.ts";
 import { weworkremotely } from "./fetchers/weworkremotely.ts";
 import { workday } from "./fetchers/workday.ts";
 import { workingnomads } from "./fetchers/workingnomads.ts";
+import { mapLimit, requestStats } from "./fetchers/http.ts";
 import { writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
@@ -56,6 +69,12 @@ const MIN_KEEP_RATIO = 0.5;
 const MAX_INVALID_RATIO = 0.2;
 /** a source that falls back this many runs in a row is marked broken */
 const BROKEN_AFTER = 3;
+/**
+ * Most companies fetched at once. 37 of them share Greenhouse's API, and each
+ * source also limits its own parallel requests (mapLimit), so this bounds both
+ * the load on shared hosts and how many companies' jobs are in memory.
+ */
+const COMPANY_CONCURRENCY = 12;
 
 const fetchers: Record<string, Fetcher<any>> = {
   [greenhouse.name]: greenhouse,
@@ -101,16 +120,14 @@ async function readJson<T>(path: string, fallback: T): Promise<T> {
   }
 }
 
-async function writeJson(path: string, value: unknown): Promise<void> {
-  await writeFile(path, JSON.stringify(value, null, 2) + "\n");
-}
+const json = (value: unknown) => JSON.stringify(value, null, 2) + "\n";
 
 /** Fetches, normalizes and validates one company. Throws if the source fails. */
-async function fetchCompany(company: CompanyConfig, seen: Seen): Promise<FetchResult> {
+async function fetchCompany(company: CompanyConfig, previous: Job[]): Promise<FetchResult> {
   const fetcher = fetchers[company.source];
   if (!fetcher) throw new Error(`unknown source "${company.source}"`);
 
-  const raws = await fetcher.fetch(company, await readCompanyJobs(DATA_DIR, company, seen));
+  const raws = await fetcher.fetch(company, previous);
   const jobs: NormalizedJob[] = [];
   let invalid = 0;
   for (const raw of raws) {
@@ -235,6 +252,59 @@ export function recordHistory(history: HistoryDay[], date: string, sources: Sour
 /** One day per line, so each daily commit is a one-line diff. */
 const historyJson = (history: HistoryDay[]) => `[\n${history.map((d) => JSON.stringify(d)).join(",\n")}\n]\n`;
 
+/** how often to list the companies still fetching */
+const PROGRESS_EVERY_MS = 10_000;
+
+const seconds = (since: number) => `${((Date.now() - since) / 1000).toFixed(1)}s`;
+
+/**
+ * The order to start companies in: the most jobs last time first, so the
+ * slowest sources aren't left to start at the end behind the concurrency limit.
+ */
+export function fetchOrder(companies: CompanyConfig[], prevSources: Map<string, SourceRun>): CompanyConfig[] {
+  const size = (c: CompanyConfig) => prevSources.get(c.key)?.fetched ?? 0;
+  return [...companies].sort((a, b) => size(b) - size(a) || a.key.localeCompare(b.key));
+}
+
+/**
+ * Runs `processOne` for every company, at most COMPANY_CONCURRENCY at once,
+ * logging each one as it finishes and, every few seconds, the ones still
+ * running with how many requests they have made. Plain lines, so it reads the
+ * same in CI logs.
+ */
+async function fetchAllWithProgress(
+  companies: CompanyConfig[],
+  processOne: (company: CompanyConfig) => Promise<SourceRun>,
+): Promise<void> {
+  const start = Date.now();
+  const running = new Map<string, { requests: number }>();
+  let done = 0;
+  console.log(`Fetching ${companies.length} companies, ${COMPANY_CONCURRENCY} at a time…`);
+
+  const timer = setInterval(() => {
+    const waiting = [...running].map(([key, s]) => `${key} (${s.requests} req)`).join(", ");
+    console.log(`… ${done}/${companies.length} done after ${seconds(start)}, running: ${waiting}`);
+  }, PROGRESS_EVERY_MS);
+
+  try {
+    await mapLimit(companies, COMPANY_CONCURRENCY, async (company) => {
+      const stats = { requests: 0 };
+      running.set(company.key, stats);
+      try {
+        const source = await requestStats.run(stats, () => processOne(company));
+        done++;
+        const outcome = source.status === "ok" ? `${source.fetched} jobs` : "fell back";
+        console.log(`  [${done}/${companies.length}] ${company.key}: ${outcome}, ${stats.requests} req, ${seconds(start)}`);
+      } finally {
+        running.delete(company.key);
+      }
+    });
+  } finally {
+    clearInterval(timer);
+    console.log(`Fetched all in ${seconds(start)}`);
+  }
+}
+
 const statusKey = (s: SourceRun | undefined) => (s ? `${s.status}|${s.fallbackStreak}|${s.broken}` : "");
 
 async function main() {
@@ -245,8 +315,8 @@ async function main() {
   const allCompanies = z.array(CompanyConfigSchema).parse(await readJson(join(DATA_DIR, "companies.json"), []));
   const companies = allCompanies.filter((c) => only.size === 0 || only.has(c.key));
 
-  await mkdir(join(DATA_DIR, "jobs"), { recursive: true });
-  await mkdir(join(DATA_DIR, "runs"), { recursive: true });
+  const leftovers = await clearStaged(DATA_DIR);
+  if (leftovers.length) console.warn(`Removed ${leftovers.length} staged file(s) left by a run that didn't finish`);
 
   const runFile = join(DATA_DIR, "runs", "latest.json");
   const prevRun = RunSchema.safeParse(await readJson(runFile, null)).data;
@@ -254,28 +324,29 @@ async function main() {
   const seen = await readSeen(DATA_DIR);
   // companies that fall back or don't run keep their time, like their files
   const nextSeen: Seen = { ...seen };
+  const staged = new StagedWrites();
 
-  const results = await Promise.allSettled(
-    companies.map((c) => fetchCompany(all ? { ...c, maxJobs: undefined } : c, seen)),
-  );
   const sources: SourceRun[] = [];
   const changes: JobChanges = { opened: [], closed: [], dropped: [] };
   let changed = false;
 
-  for (const [i, result] of results.entries()) {
-    const company = companies[i]!;
+  /** Fetches one company and stages its files, so its jobs can leave memory before the run ends. */
+  async function processCompany(company: CompanyConfig): Promise<SourceRun> {
     const previous = await readCompanyJobs(DATA_DIR, company, seen);
     const previousOpen = previous.filter((j) => !j.closedAt).length;
     const prevSource = prevSources.get(company.key);
-    const counts: FetchResult = result.status === "fulfilled" ? result.value : { fetched: 0, invalid: 0, jobs: [] };
 
-    const reason =
-      result.status === "rejected"
-        ? `fetch failed: ${result.reason instanceof Error ? result.reason.message : String(result.reason)}`
-        : sanityCheck(result.value, Math.min(previousOpen, result.value.cap ?? Infinity));
+    let result: FetchResult | undefined;
+    let reason: string | undefined;
+    try {
+      result = await fetchCompany(all ? { ...company, maxJobs: undefined } : company, previous);
+      reason = sanityCheck(result, Math.min(previousOpen, result.cap ?? Infinity));
+    } catch (err) {
+      reason = `fetch failed: ${err instanceof Error ? err.message : String(err)}`;
+    }
 
     let source: SourceRun;
-    if (reason) {
+    if (reason || !result) {
       // keep yesterday's files untouched
       const fallbackStreak = (prevSource?.fallbackStreak ?? 0) + 1;
       source = {
@@ -283,8 +354,8 @@ async function main() {
         source: company.source,
         status: "fallback",
         reason,
-        fetched: counts.fetched,
-        invalid: counts.invalid,
+        fetched: result?.fetched ?? 0,
+        invalid: result?.invalid ?? 0,
         open: previousOpen,
         new: 0,
         closed: 0,
@@ -293,9 +364,9 @@ async function main() {
       };
       console.error(`[${company.key}] FALLBACK (${fallbackStreak} in a row): ${reason}`);
     } else {
-      const merge = mergeJobs(previous, counts.jobs, startedAt, counts.cap !== undefined);
+      const merge = mergeJobs(previous, result.jobs, startedAt, result.cap !== undefined);
       const { jobs, added, closed } = merge;
-      await writeCompanyJobs(DATA_DIR, company, jobs, startedAt);
+      await writeCompanyJobs(DATA_DIR, company, jobs, startedAt, staged);
       nextSeen[company.key] = startedAt;
       for (const kind of ["opened", "closed", "dropped"] as const) changes[kind].push(...merge.changes[kind]);
       if (jobsChanged(previous, jobs)) changed = true;
@@ -303,8 +374,8 @@ async function main() {
         company: company.key,
         source: company.source,
         status: "ok",
-        fetched: counts.fetched,
-        invalid: counts.invalid,
+        fetched: result.fetched,
+        invalid: result.invalid,
         open: jobs.filter((j) => !j.closedAt).length,
         new: added,
         closed,
@@ -320,7 +391,10 @@ async function main() {
     // a status change must be committed so fallback streaks survive to the next run
     if (statusKey(source) !== statusKey(prevSource)) changed = true;
     sources.push(source);
+    return source;
   }
+
+  await fetchAllWithProgress(fetchOrder(companies, prevSources), processCompany);
 
   // a partial run keeps the last known status of the companies it skipped
   for (const prev of prevRun?.sources ?? []) {
@@ -328,17 +402,22 @@ async function main() {
     if (skipped) sources.push(prev);
   }
   sources.sort((a, b) => a.company.localeCompare(b.company));
+  // companies finish in any order; sorted, the file doesn't change with timing
+  for (const kind of ["opened", "closed", "dropped"] as const) changes[kind].sort();
 
   const run: Run = { startedAt, finishedAt: new Date().toISOString(), sources };
-  await writeJson(runFile, run);
-  await writeSeen(DATA_DIR, nextSeen);
+  await staged.write(runFile, json(run));
+  await staged.write(seenFile(DATA_DIR), seenJson(nextSeen));
   // read by scripts/ping.ts once this run is deployed
-  await writeJson(join(DATA_DIR, "runs", "changes.json"), { startedAt, ...changes });
+  await staged.write(join(DATA_DIR, "runs", "changes.json"), json({ startedAt, ...changes }));
 
   const historyFile = join(DATA_DIR, "runs", "history.json");
   const history = z.array(HistoryDaySchema).parse(await readJson(historyFile, []));
   const ran = new Set(companies.map((c) => c.key));
-  await writeFile(historyFile, historyJson(recordHistory(history, startedAt.slice(0, 10), sources, ran)));
+  await staged.write(historyFile, historyJson(recordHistory(history, startedAt.slice(0, 10), sources, ran)));
+  await staged.commit();
+
+  // derived from the committed jobs; a crash here loses only today's snapshot, which a rerun writes
   await writeSnapshot(await readAllJobs(DATA_DIR), startedAt.slice(0, 10), DATA_DIR);
 
   const fallbacks = sources.filter((s) => s.status === "fallback");

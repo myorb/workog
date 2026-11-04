@@ -2,7 +2,7 @@ import { describe, expect, test } from "bun:test";
 import type { Job, SourceRun } from "../src/lib/schema.ts";
 import type { NormalizedJob } from "./fetchers/types.ts";
 import { partOf } from "../src/lib/job-files.ts";
-import { jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
+import { fetchOrder, jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
 
@@ -176,5 +176,20 @@ describe("partOf", () => {
     const parts = ids.map((id) => partOf(id, 4));
     expect(ids.map((id) => partOf(id, 4))).toEqual(parts);
     for (let n = 0; n < 4; n++) expect(parts.filter((p) => p === n).length).toBeGreaterThan(150);
+  });
+});
+
+describe("fetchOrder", () => {
+  test("starts the companies with the most jobs last run first, new ones last", () => {
+    const company = (key: string) => ({ key, name: key, source: "greenhouse" });
+    const prev = new Map(
+      [
+        ["small", 10],
+        ["amazon", 21_000],
+        ["mid", 500],
+      ].map(([key, fetched]) => [key as string, { company: key, fetched } as SourceRun]),
+    );
+    const order = fetchOrder(["small", "brand-new", "mid", "amazon", "another-new"].map(company), prev);
+    expect(order.map((c) => c.key)).toEqual(["amazon", "mid", "small", "another-new", "brand-new"]);
   });
 });

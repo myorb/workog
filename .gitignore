@@ -3,3 +3,6 @@ dist/
 .astro/
 .env
 .DS_Store
+
+# staged writes a crashed fetch left behind (src/lib/job-files.ts)
+*.staged
