@@ -195,7 +195,8 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
     </section>
     <section>
       <h2>{a.byCompany}</h2>
-      <BarList bars={byCompany} />
+      <BarList bars={byCompany.slice(0, TOP)} />
+      <p class="more"><a href={localizePath("/companies", lang)}>{m.allCompanies}</a></p>
     </section>
     <section>
       <h2>{a.topTechnologies}</h2>

@@ -1,0 +1,159 @@
+---
+/**
+ * Home page filters. There is no search backend, so the form doesn't filter
+ * anything itself: a small script turns the chosen values into the URL of the
+ * pre-rendered hub page for that combination and goes there. Combinations
+ * without a page fall back to the closest one and say so under the button.
+ */
+import { countTags, getJobsWhere, getTagCounts } from "../lib/jobs.ts";
+import { cities, countries } from "../lib/places.ts";
+import { technologies } from "../lib/technologies.ts";
+import { employmentTypes } from "../lib/employment.ts";
+import { countryName, getLang, localizePath, t } from "../lib/i18n.ts";
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const f = m.filters;
+const counts = await getTagCounts();
+const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name, lang);
+
+// Only values with jobs, since those are the only ones with pages
+const techOptions = technologies.filter((tech) => counts.technologies.has(tech.slug)).sort(byName);
+const locationGroups = countries
+  .filter((c) => counts.countries.has(c.slug))
+  .map((c) => ({
+    slug: c.slug,
+    name: countryName(c, lang),
+    cities: cities.filter((city) => city.country === c.slug && counts.cities.has(city.slug)).sort(byName),
+  }))
+  .sort(byName);
+const employmentOptions = employmentTypes.filter((type) => counts.employment.has(type));
+// /remote/<country> exists only for countries with remote jobs
+const remoteCountries = [...(await countTags(await getJobsWhere({ remote: true }))).countries.keys()];
+// "" for English, "/de" etc. otherwise
+const base = localizePath("/", lang).replace(/\/$/, "");
+---
+
+<details class="filters" open>
+  <summary>{f.toggle}</summary>
+  <form
+    id="job-filters"
+    data-base={base}
+    data-remote-countries={remoteCountries.join(" ")}
+    data-employment-alone={f.employmentAlone}
+    data-remote-tech-location={f.remoteTechLocation}
+    data-remote-city={f.remoteCity}
+    data-remote-none={f.remoteNone}
+  >
+    <p class="filters-title">{f.title}</p>
+    <label for="filter-tech">{f.technology}</label>
+    <select id="filter-tech">
+      <option value="">{f.any}</option>
+      {techOptions.map((tech) => <option value={tech.slug}>{tech.name}</option>)}
+    </select>
+    <label for="filter-location">{f.location}</label>
+    <select id="filter-location">
+      <option value="">{f.anywhere}</option>
+      {
+        locationGroups.map((c) => (
+          <optgroup label={c.name}>
+            <option value={c.slug}>{f.allOf(c.name)}</option>
+            {c.cities.map((city) => <option value={`${c.slug}/${city.slug}`}>{city.name}</option>)}
+          </optgroup>
+        ))
+      }
+    </select>
+    <label for="filter-mode">{f.workMode}</label>
+    <select id="filter-mode">
+      <option value="">{f.any}</option>
+      <option value="remote">{m.remote}</option>
+    </select>
+    <label for="filter-employment">{f.employment}</label>
+    <select id="filter-employment">
+      <option value="">{f.any}</option>
+      {employmentOptions.map((type) => <option value={type}>{m.employment.types[type]}</option>)}
+    </select>
+    <button type="submit">{f.submit}</button>
+    <p class="filters-note" aria-live="polite"></p>
+  </form>
+</details>
+
+<script is:inline>
+  (() => {
+    const form = document.getElementById("job-filters");
+    const details = form.parentElement;
+    const d = form.dataset;
+    const remoteCountries = new Set(d.remoteCountries.split(" "));
+    const value = (id) => document.getElementById(id).value;
+    const note = form.querySelector(".filters-note");
+
+    // The page for the chosen values, and a note when some of them had to be dropped
+    function route() {
+      const tech = value("filter-tech");
+      const place = value("filter-location"); // "country" or "country/city"
+      const remote = value("filter-mode") === "remote";
+      const employment = value("filter-employment");
+      const [country, city] = place.split("/");
+      const others = tech || place || remote;
+      const remoteCountry = country && remoteCountries.has(country);
+
+      let path = "";
+      if (employment && !others) path = `/employment/${employment}`;
+      else if (tech) path = place ? `/technologies/${tech}/${place}` : remote ? `/technologies/${tech}/remote` : `/technologies/${tech}`;
+      else if (remote) path = remoteCountry ? `/remote/${country}` : "/remote";
+      else if (place) path = `/locations/${place}`;
+
+      let note = "";
+      if (employment && others) note = d.employmentAlone;
+      else if (tech && remote && place) note = d.remoteTechLocation;
+      else if (remote && country && !remoteCountry) note = d.remoteNone;
+      else if (remote && city) note = d.remoteCity;
+      return { path, note };
+    }
+
+    form.addEventListener("change", () => (note.textContent = route().note));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const { path } = route();
+      if (path) location.href = d.base + path;
+    });
+
+    // Collapsed by default on phones so the jobs stay above the fold; always open on wider screens
+    const narrow = matchMedia("(max-width: 640px)");
+    const sync = () => (details.open = !narrow.matches);
+    sync();
+    narrow.addEventListener("change", sync);
+  })();
+</script>
+
+<style>
+  .filters > summary { display: none; }
+  form { padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+  .filters-title { margin: 0 0 10px; font-weight: 600; }
+  label { display: block; margin-bottom: 4px; font-size: 13px; color: var(--muted); }
+  select {
+    display: block; width: 100%; margin-bottom: 12px; padding: 7px 8px; font: inherit; font-size: 15px;
+    color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+  }
+  button {
+    width: 100%; padding: 9px 12px; font: inherit; font-weight: 600; cursor: pointer;
+    color: var(--accent-text); background: var(--accent); border: 0; border-radius: 6px;
+  }
+  button:hover { filter: brightness(1.08); }
+  .filters-note { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+  .filters-note:empty { display: none; }
+  @media (max-width: 640px) {
+    .filters > summary {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid var(--border);
+      border-radius: 999px; background: var(--surface); font-weight: 600; cursor: pointer; list-style: none;
+    }
+    .filters > summary::-webkit-details-marker { display: none; }
+    .filters > summary::after {
+      content: ""; width: 6px; height: 6px; margin: -3px 0 0 2px;
+      border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg);
+    }
+    .filters[open] > summary { margin-bottom: 10px; }
+    .filters[open] > summary::after { margin-top: 3px; transform: rotate(-135deg); }
+    select { font-size: 16px; }
+  }
+</style>
