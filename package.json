@@ -14,6 +14,7 @@
     "check": "astro check && tsc --noEmit -p tsconfig.json",
     "alert": "bun scripts/alert.ts",
     "snapshot": "bun scripts/snapshot.ts",
+    "repack": "bun scripts/repack.ts",
     "ping": "bun scripts/ping.ts"
   },
   "dependencies": {

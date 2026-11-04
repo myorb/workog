@@ -1,8 +1,9 @@
 /**
  * Daily pipeline: fetch every company, normalize and validate, run sanity
- * checks, merge with the previous data/jobs/<company>.json (or <company>.<n>.json
- * parts for big companies), then write the files, runs/latest.json, runs/changes.json, the day's line in runs/history.json
- * and the day's snapshot in history/<date>.json.
+ * checks, merge with the company's previous jobs in data/jobs (layout in
+ * src/lib/job-files.ts), then write the job files, runs/seen.json,
+ * runs/latest.json, runs/changes.json, the day's line in runs/history.json and
+ * the day's snapshot in history/<date>.json.
  *
  *   bun scripts/fetch.ts            # all companies
  *   bun scripts/fetch.ts figma      # only the listed company keys
@@ -15,9 +16,10 @@
  * History and snapshots alone never count as a change: a day with no commit had no new or
  * closed jobs, so readers fill the gap from the day before.
  */
-import { appendFile, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
+import { readAllJobs, readCompanyJobs, readSeen, type Seen, writeCompanyJobs, writeSeen } from "../src/lib/job-files.ts";
 import { makeJobSlug } from "../src/lib/normalize.ts";
 import {
   CompanyConfigSchema,
@@ -43,7 +45,7 @@ import { smartrecruiters } from "./fetchers/smartrecruiters.ts";
 import { weworkremotely } from "./fetchers/weworkremotely.ts";
 import { workday } from "./fetchers/workday.ts";
 import { workingnomads } from "./fetchers/workingnomads.ts";
-import { readAllJobs, writeSnapshot } from "./snapshot.ts";
+import { writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
 const DATA_DIR = join(import.meta.dirname, "..", "data");
@@ -54,8 +56,6 @@ const MIN_KEEP_RATIO = 0.5;
 const MAX_INVALID_RATIO = 0.2;
 /** a source that falls back this many runs in a row is marked broken */
 const BROKEN_AFTER = 3;
-/** jobs per data file; GitHub rejects files over 100 MB and an Amazon job is about 7 KB */
-const JOBS_PER_FILE = 5_000;
 
 const fetchers: Record<string, Fetcher<any>> = {
   [greenhouse.name]: greenhouse,
@@ -105,45 +105,12 @@ async function writeJson(path: string, value: unknown): Promise<void> {
   await writeFile(path, JSON.stringify(value, null, 2) + "\n");
 }
 
-/** The company's data files: `<key>.json`, or `<key>.<n>.json` parts once it outgrows one file. */
-async function jobFiles(key: string): Promise<string[]> {
-  const files = await readdir(join(DATA_DIR, "jobs")).catch(() => []);
-  return files.filter((f) => f === `${key}.json` || (f.startsWith(`${key}.`) && /^\d+\.json$/.test(f.slice(key.length + 1))));
-}
-
-async function readJobs(key: string): Promise<Job[]> {
-  const lists = await Promise.all((await jobFiles(key)).map((f) => readJson<Job[]>(join(DATA_DIR, "jobs", f), [])));
-  return lists.flat().sort((a, b) => a.id.localeCompare(b.id, "en", { numeric: true }));
-}
-
-/**
- * Writes the jobs as one file, or split into parts by a hash of the job id so a
- * job stays in the same part from day to day and daily diffs stay small.
- */
-async function writeJobs(key: string, jobs: Job[]): Promise<void> {
-  const partCount = Math.ceil(jobs.length / JOBS_PER_FILE);
-  const parts = new Map<string, Job[]>();
-  if (partCount <= 1) parts.set(`${key}.json`, jobs);
-  else for (let n = 1; n <= partCount; n++) parts.set(`${key}.${n}.json`, []);
-  if (partCount > 1) for (const job of jobs) parts.get(`${key}.${partOf(job.id, partCount) + 1}.json`)!.push(job);
-
-  for (const f of await jobFiles(key)) if (!parts.has(f)) await rm(join(DATA_DIR, "jobs", f));
-  for (const [f, list] of parts) await writeJson(join(DATA_DIR, "jobs", f), list);
-}
-
-/** FNV-1a hash of the id, mod `count`. */
-export function partOf(id: string, count: number): number {
-  let hash = 0x811c9dc5;
-  for (let i = 0; i < id.length; i++) hash = Math.imul(hash ^ id.charCodeAt(i), 0x01000193);
-  return (hash >>> 0) % count;
-}
-
 /** Fetches, normalizes and validates one company. Throws if the source fails. */
-async function fetchCompany(company: CompanyConfig): Promise<FetchResult> {
+async function fetchCompany(company: CompanyConfig, seen: Seen): Promise<FetchResult> {
   const fetcher = fetchers[company.source];
   if (!fetcher) throw new Error(`unknown source "${company.source}"`);
 
-  const raws = await fetcher.fetch(company, await readJobs(company.key));
+  const raws = await fetcher.fetch(company, await readCompanyJobs(DATA_DIR, company, seen));
   const jobs: NormalizedJob[] = [];
   let invalid = 0;
   for (const raw of raws) {
@@ -284,9 +251,12 @@ async function main() {
   const runFile = join(DATA_DIR, "runs", "latest.json");
   const prevRun = RunSchema.safeParse(await readJson(runFile, null)).data;
   const prevSources = new Map(prevRun?.sources.map((s) => [s.company, s]));
+  const seen = await readSeen(DATA_DIR);
+  // companies that fall back or don't run keep their time, like their files
+  const nextSeen: Seen = { ...seen };
 
   const results = await Promise.allSettled(
-    companies.map((c) => fetchCompany(all ? { ...c, maxJobs: undefined } : c)),
+    companies.map((c) => fetchCompany(all ? { ...c, maxJobs: undefined } : c, seen)),
   );
   const sources: SourceRun[] = [];
   const changes: JobChanges = { opened: [], closed: [], dropped: [] };
@@ -294,7 +264,7 @@ async function main() {
 
   for (const [i, result] of results.entries()) {
     const company = companies[i]!;
-    const previous = await readJobs(company.key);
+    const previous = await readCompanyJobs(DATA_DIR, company, seen);
     const previousOpen = previous.filter((j) => !j.closedAt).length;
     const prevSource = prevSources.get(company.key);
     const counts: FetchResult = result.status === "fulfilled" ? result.value : { fetched: 0, invalid: 0, jobs: [] };
@@ -325,7 +295,8 @@ async function main() {
     } else {
       const merge = mergeJobs(previous, counts.jobs, startedAt, counts.cap !== undefined);
       const { jobs, added, closed } = merge;
-      await writeJobs(company.key, jobs);
+      await writeCompanyJobs(DATA_DIR, company, jobs, startedAt);
+      nextSeen[company.key] = startedAt;
       for (const kind of ["opened", "closed", "dropped"] as const) changes[kind].push(...merge.changes[kind]);
       if (jobsChanged(previous, jobs)) changed = true;
       source = {
@@ -360,6 +331,7 @@ async function main() {
 
   const run: Run = { startedAt, finishedAt: new Date().toISOString(), sources };
   await writeJson(runFile, run);
+  await writeSeen(DATA_DIR, nextSeen);
   // read by scripts/ping.ts once this run is deployed
   await writeJson(join(DATA_DIR, "runs", "changes.json"), { startedAt, ...changes });
 
