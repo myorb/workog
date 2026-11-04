@@ -3,8 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
+import JobFilters from "../../components/JobFilters.astro";
 import { countTags, getCompanies, getOpenJobs } from "../../lib/jobs.ts";
-import { countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
+import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../lib/constants.ts";
 import { website } from "../../lib/structured-data.ts";
@@ -28,6 +29,12 @@ const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
 const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0, 12);
 const types = employmentLinks(tagCounts.employment, lang);
 const remoteCount = jobs.filter((j) => j.remote).length;
+// Shortcuts under the filters: the biggest technologies, remote, and the biggest cities
+const popular = [
+  ...topTechnologies.slice(0, 3),
+  { href: remoteUrl(), label: m.remote, count: remoteCount },
+  ...cityLinks(tagCounts.cities).slice(0, 2),
+];
 ---
 
 <Base
@@ -37,6 +44,26 @@ const remoteCount = jobs.filter((j) => j.remote).length;
 >
   <h1>{m.home.heading}</h1>
   <p class="muted">{m.home.summary(jobs.length, companies.length)}</p>
+
+  <div class="home-grid">
+    <aside class="sidebar">
+      <JobFilters />
+      <p class="popular-title muted">{m.home.popular}</p>
+      <ul class="popular">
+        {
+          popular.map((l) => (
+            <li>
+              <a href={u(l.href)}>{l.label}</a> <span class="muted">{l.count}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+    <section>
+      <h2 class="latest">{m.latestJobs}</h2>
+      <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+    </section>
+  </div>
 
   <h2>{m.home.topCompanies}</h2>
   <ul class="companies">
@@ -60,12 +87,20 @@ const remoteCount = jobs.filter((j) => j.remote).length;
 
   <h2>{m.home.employment}</h2>
   <TagLinks links={[{ href: remoteUrl(), label: m.home.remote, count: remoteCount }, ...types]} />
-
-  <h2>{m.latestJobs}</h2>
-  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
 </Base>
 
 <style>
+  .home-grid { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: start; margin-top: 24px; }
+  .sidebar { position: sticky; top: 16px; }
+  .latest { margin-top: 0; }
+  .popular-title { margin: 20px 0 4px; font-size: 13px; }
+  .popular { list-style: none; padding: 0; margin: 0; font-size: 15px; }
+  .popular li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; }
+  @media (max-width: 640px) {
+    .home-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 16px; }
+    .sidebar { position: static; }
+    .popular-title, .popular { display: none; }
+  }
   .companies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
   @media (max-width: 640px) {
     .companies { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0 16px; }
