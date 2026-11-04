@@ -1,4 +1,4 @@
-# Spec: Doctor jobs (Germany and EU)
+# Spec: Medical jobs (Germany and EU)
 
 Status: Phase 1 in progress · 2026-11-04. Built: the `medicine` category, specialties and career levels, the `arbeitsagentur` source (employers only), the start page, `/tech` and the `/medicine` section. Not yet: EURES, the recruitment-agency jobs with duplicate merging, and Phase 2.
 
@@ -12,7 +12,7 @@ Add open jobs for medical doctors in Germany and the rest of Europe, so the site
 
 These are live counts, taken on 2026-11-04.
 
-| Source | Doctor jobs |
+| Source | Medical jobs |
 | --- | --- |
 | Arbeitsagentur, field "Human- und Zahnmedizin" | 22,092 |
 | … of which dentists | 896 |
@@ -56,7 +56,7 @@ Once a country has its own national source, take it out of the `eures` countries
 
 ### Not planned
 
-- **Doctor job boards** (ärztestellen.de, praktischArzt, DocCheck): no public feed. Partnership only.
+- **Medical job boards** (ärztestellen.de, praktischArzt, DocCheck): no public feed. Partnership only.
 - **Hospital career sites** (softgarden and others): worth looking at later, for jobs that hospitals don't post on the Arbeitsagentur.
 
 ## Pipeline changes
@@ -109,8 +109,8 @@ Each source is one entry in `data/companies.json` with `board: true`, like `arbe
 
 ## Site changes
 
-- **Browse pages** for doctor jobs, like the existing technology and location pages:
-  - `/medicine/` — every doctor job, with links by specialty and by country.
+- **Browse pages** for medical jobs, like the existing technology and location pages:
+  - `/medicine/` — every medical job, with links by specialty and by country.
   - `/medicine/[specialty]/`
   - `/medicine/[specialty]/[country]/`
   - `/medicine/[country]/[city]/`
@@ -118,7 +118,7 @@ Each source is one entry in `data/companies.json` with `board: true`, like `arbe
 - **Home page filters:** add "Medicine" to the category filter, and a specialty filter that only shows when Medicine is picked.
 - **Job page:** show employer, specialty, contract type and the source ("via Bundesagentur für Arbeit" / "via EURES").
 - **Structured data:** JobPosting with `occupationalCategory` "221 Medical doctors" (ISCO-08), `hiringOrganization` = employer, and `validThrough` the same as today.
-- **Sitemaps:** the new pages go into the split sitemap. Doctor job pages are added to the indexing pings like any other job.
+- **Sitemaps:** the new pages go into the split sitemap. Medical job pages are added to the indexing pings like any other job.
 - **Analytics:** `medicine` shows up in the category counts by itself. Add a breakdown by specialty to the snapshot (`SnapshotSchema.specialties`).
 
 ## Data size
@@ -144,7 +144,7 @@ Each source is one entry in `data/companies.json` with `board: true`, like `arbe
 
 - The daily run finishes inside the 30-minute timeout with both sources on.
 - No German job appears twice (Arbeitsagentur and EURES).
-- At least 90% of doctor jobs have a full description and a valid `applyUrl`.
+- At least 90% of medical jobs have a full description and a valid `applyUrl`.
 - No employer has more than 200 open jobs per source.
 - `/medicine/` and the specialty pages render in all four languages, and their JobPosting data passes the existing structured-data tests.
 - `bun test` covers: both normalizers, the medicine category rule (including the "doctoral" false positive), the specialty mapping, the duplicate merge and the Germany exclusion.

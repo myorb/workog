@@ -54,9 +54,9 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     }
   }
 
-  // Doctor jobs: only pages with jobs, like the generated combination pages themselves
-  const doctorJobs = await getOpenMedicineJobs();
-  if (doctorJobs.length) {
+  // Medical jobs: only pages with jobs, like the generated combination pages themselves
+  const medicalJobs = await getOpenMedicineJobs();
+  if (medicalJobs.length) {
     const med = await getMedicineCounts();
     for (const path of ["/medicine", "/medicine/specialties", "/medicine/levels", "/medicine/locations"]) paths.add(path);
     for (const specialty of med.specialties.keys()) paths.add(specialtyUrl(specialty));
@@ -72,7 +72,7 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   return [
     ...[...paths].sort().map((path) => ({ path })),
     ...snapshots.map((s) => ({ path: `/analytics/history/${s.date}`, lastmod: s.date })),
-    ...[...jobs, ...doctorJobs].map((job) => ({ path: `/jobs/${job.slug}`, lastmod: job.firstSeenAt })),
+    ...[...jobs, ...medicalJobs].map((job) => ({ path: `/jobs/${job.slug}`, lastmod: job.firstSeenAt })),
   ];
 }
 

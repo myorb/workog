@@ -40,12 +40,12 @@ export function getAllJobs(): Promise<Job[]> {
   return (jobsCache ??= loadJobs());
 }
 
-/** Open tech jobs: every browse page outside /medicine reads these, so doctor jobs never show up there. */
+/** Open tech jobs: every browse page outside /medicine reads these, so medical jobs never show up there. */
 export async function getOpenJobs(): Promise<Job[]> {
   return (await getAllJobs()).filter((j) => !j.closedAt && !isMedicine(j));
 }
 
-/** Open doctor jobs, for the /medicine pages */
+/** Open medical jobs, for the /medicine pages */
 export async function getOpenMedicineJobs(): Promise<Job[]> {
   return (await getAllJobs()).filter((j) => !j.closedAt && isMedicine(j));
 }
@@ -59,7 +59,7 @@ export interface MedicineFilter {
 
 const medicinePlaces = new Map<string, MedicinePlace>();
 
-/** State and city of a doctor job, computed once per build. */
+/** State and city of a medical job, computed once per build. */
 export function medicinePlace(job: Job): MedicinePlace {
   let place = medicinePlaces.get(job.id);
   if (!place) medicinePlaces.set(job.id, (place = medicinePlaceOf(job)));
@@ -90,7 +90,7 @@ export interface MedicineCounts {
   specialtyStates: Map<string, number>;
 }
 
-/** Open doctor jobs per specialty, level, state and city, for linking only to pages that have jobs. */
+/** Open medical jobs per specialty, level, state and city, for linking only to pages that have jobs. */
 export function countMedicine(jobs: Job[]): MedicineCounts {
   const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), states: new Map(), cities: new Map(), specialtyStates: new Map() };
   const add = (map: Map<string, number>, key: string | undefined) => key && map.set(key, (map.get(key) ?? 0) + 1);
@@ -112,7 +112,7 @@ export function countMedicine(jobs: Job[]): MedicineCounts {
 
 let medicineCountsCache: Promise<MedicineCounts> | undefined;
 
-/** countMedicine() over all open doctor jobs, once per build */
+/** countMedicine() over all open medical jobs, once per build */
 export const getMedicineCounts = () => (medicineCountsCache ??= getOpenMedicineJobs().then(countMedicine));
 
 export async function getJobBySlug(slug: string): Promise<Job | undefined> {
@@ -218,7 +218,7 @@ function getAllCompanies(): Promise<CompanyConfig[]> {
   ));
 }
 
-/** Tech companies and boards; doctor-job sources have no company pages */
+/** Tech companies and boards; medical-job sources have no company pages */
 export async function getCompanies(): Promise<CompanyConfig[]> {
   return (await getAllCompanies()).filter((c) => !c.sector);
 }
@@ -227,7 +227,7 @@ export async function getCompany(key: string): Promise<CompanyConfig | undefined
   return (await getAllCompanies()).find((c) => c.key === key);
 }
 
-/** Keys of the doctor-job sources, which the tech analytics leave out */
+/** Keys of the medical-job sources, which the tech analytics leave out */
 const medicineCompanyKeys = async () => new Set((await getAllCompanies()).filter((c) => c.sector === "medicine").map((c) => c.key));
 
 export function getLatestRun(): Promise<Run | undefined> {

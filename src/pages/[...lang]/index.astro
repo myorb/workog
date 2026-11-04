@@ -29,7 +29,7 @@ const tech = [
   { href: "/locations", label: s.allLocations },
 ];
 
-const doctorJobs = await getOpenMedicineJobs();
+const medicalJobs = await getOpenMedicineJobs();
 const med = await getMedicineCounts();
 const medicine = [
   ...specialtyLinks(med.specialties, lang).slice(0, 4),
@@ -37,7 +37,7 @@ const medicine = [
   { href: "/medicine/specialties", label: s.allSpecialties },
   { href: "/medicine/locations", label: s.allLocations },
 ];
-const description = s.description(techJobs.length, doctorJobs.length);
+const description = s.description(techJobs.length, medicalJobs.length);
 ---
 
 <Base title="Workog" description={description} section="start" jsonLd={[website(Astro.site!, description)]}>
@@ -60,9 +60,9 @@ const description = s.description(techJobs.length, doctorJobs.length);
         {s.medicine}
       </p>
       <h2>{s.medicineHeading}</h2>
-      <p class="summary">{s.medicineSummary(doctorJobs.length)}</p>
+      <p class="summary">{s.medicineSummary(medicalJobs.length)}</p>
       {
-        doctorJobs.length > 0 && (
+        medicalJobs.length > 0 && (
           <nav aria-label={s.medicineHeading} class="chips">
             {medicine.map((l) => <a href={u(l.href)}>{l.label}{"count" in l && <span>{formatNumber(l.count, lang)}</span>}</a>)}
           </nav>

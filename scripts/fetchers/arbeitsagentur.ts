@@ -80,7 +80,7 @@ export function textToHtml(text: string): string {
   return sanitizeDescription(html.join(""));
 }
 
-/** Doctor jobs from the Bundesagentur für Arbeit's job board, employers only; one feed of many hospitals and practices. */
+/** Medical jobs (doctors only) from the Bundesagentur für Arbeit's job board, employers only; one feed of many hospitals and practices. */
 export const arbeitsagentur: Fetcher<RawJob> = {
   name: "arbeitsagentur",
 

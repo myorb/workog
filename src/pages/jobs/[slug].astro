@@ -38,7 +38,7 @@ const jsonLd = [
   breadcrumbs(
     medicine
       ? [
-          { name: "Doctor jobs", url: new URL("/medicine", Astro.site) },
+          { name: "Medical jobs", url: new URL("/medicine", Astro.site) },
           ...(job.specialty ? [{ name: specialtyName!, url: new URL(specialtyUrl(job.specialty), Astro.site) }] : []),
           { name: job.title, url },
         ]
@@ -51,14 +51,14 @@ const jsonLd = [
   ...(closed ? [] : [jobPosting(job, employer, url)]),
 ];
 
-// Doctor jobs link to their own section: the newest jobs in the same specialty and state, and its hubs
+// Medical jobs link to their own section: the newest jobs in the same specialty and state, and its hubs
 const place = medicine ? medicinePlace(job) : {};
 const state = place.state ? getState(place.state) : undefined;
 const medicineCities = medicine ? (await getMedicineCounts()).cities : new Map();
 const cityPage = state && place.city && place.city.slug !== state.slug && (medicineCities.get(`${state.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
-const doctorJobs = medicine ? (await getOpenMedicineJobs()).filter((j) => j.id !== job.id) : [];
-const sameSpecialty = job.specialty ? doctorJobs.filter((j) => j.specialty === job.specialty).slice(0, 5) : [];
-const sameState = state ? doctorJobs.filter((j) => medicinePlace(j).state === state.slug && !sameSpecialty.includes(j)).slice(0, 5) : [];
+const medicalJobs = medicine ? (await getOpenMedicineJobs()).filter((j) => j.id !== job.id) : [];
+const sameSpecialty = job.specialty ? medicalJobs.filter((j) => j.specialty === job.specialty).slice(0, 5) : [];
+const sameState = state ? medicalJobs.filter((j) => medicinePlace(j).state === state.slug && !sameSpecialty.includes(j)).slice(0, 5) : [];
 const medicineBrowse = [
   ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
   ...(job.specialty && state ? [{ href: specialtyUrl(job.specialty, state.slug), label: en.medicine.specialtyTitleIn(specialtyName!, state.en) }] : []),
@@ -98,7 +98,7 @@ const browse = [
   {
     medicine ? (
       <p class="muted">
-        <a href="/medicine">Doctor jobs</a> /{job.specialty && <> <a href={specialtyUrl(job.specialty)}>{specialtyName}</a> /</>}
+        <a href="/medicine">Medical jobs</a> /{job.specialty && <> <a href={specialtyUrl(job.specialty)}>{specialtyName}</a> /</>}
       </p>
     ) : (
       <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
@@ -137,7 +137,7 @@ const browse = [
   {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
 
   {sameSpecialty.length > 0 && <section><h2>More {specialtyName!.toLowerCase()} jobs</h2><JobList jobs={sameSpecialty} /></section>}
-  {sameState.length > 0 && <section><h2>More doctor jobs in {state!.en}</h2><JobList jobs={sameState} /></section>}
+  {sameState.length > 0 && <section><h2>More medical jobs in {state!.en}</h2><JobList jobs={sameState} /></section>}
   {medicineBrowse.length > 0 && <section><h2>Browse similar jobs</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul></section>}
 
   {

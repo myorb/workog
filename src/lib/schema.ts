@@ -53,7 +53,7 @@ export const CompanyConfigSchema = z.object({
   maxJobs: z.number().int().positive().optional(),
   /** A job board listing many employers rather than one company's careers site; its jobs set `employer` */
   board: z.boolean().optional(),
-  /** "medicine" for doctor-job sources, whose jobs live in the /medicine section instead of the tech pages */
+  /** "medicine" for medical-job sources, whose jobs live in the /medicine section instead of the tech pages */
   sector: z.enum(["medicine"]).optional(),
 });
 

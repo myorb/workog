@@ -5,7 +5,7 @@
  * Layout, chosen so a daily commit touches only jobs that really changed:
  *
  * - `data/jobs/<company>.json`, or `<company>.<n>.json` parts once a company
- *   outgrows one file. Companies with a `sector` (the doctor-job sources) live
+ *   outgrows one file. Companies with a `sector` (the medical-job sources) live
  *   in `data/jobs/<sector>/` instead, e.g. `data/jobs/medicine/`.
  * - `data/runs/seen.json` holds each company's last successful run time. A job
  *   that run saw leaves `lastSeenAt` out on disk and takes it from there, so

@@ -1,12 +1,12 @@
 /**
- * The doctor-jobs taxonomy: specialties, career levels and the German states
+ * The medical-jobs taxonomy: specialties, career levels and the German states
  * the /medicine pages browse by. Sources tag their jobs with these slugs; names
  * live in the message files under `medicine`.
  */
 import type { Job } from "./schema.ts";
 import { slugify } from "./normalize.ts";
 
-/** Category of every doctor job; tech pages leave these jobs out */
+/** Category of every medical job; tech pages leave these jobs out */
 export const MEDICINE = "medicine";
 
 export const isMedicine = (job: Pick<Job, "category">) => job.category === MEDICINE;

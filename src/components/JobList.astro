@@ -24,7 +24,7 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
         <div class="meta">
           {/* a job board's jobs name their employer even on the board's own page */}
           {(showCompany || job.employer) && <span class="company">{job.employer ?? companyNames.get(job.company) ?? job.company}</span>}
-          {/* every doctor job comes from the same few boards, so naming the board adds nothing */}
+          {/* every medical job comes from the same few boards, so naming the board adds nothing */}
           {showCompany && job.employer && !isMedicine(job) && <span>{m.via(companyNames.get(job.company) ?? job.company)}</span>}
           <span>{formatLocations(job.locations, job.remote, 3, lang)}</span>
           {job.specialty && <span class="tag">{m.medicine.specialties[job.specialty]}</span>}

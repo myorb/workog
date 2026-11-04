@@ -56,7 +56,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | Path | Purpose |
 | --- | --- |
 | `data/companies.json` | Company list and source config |
-| `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 1,000 jobs. Doctor-job sources (`sector: "medicine"`) are in `data/jobs/medicine/` |
+| `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 1,000 jobs. Medical-job sources (`sector: "medicine"`) are in `data/jobs/medicine/` |
 | `data/runs/seen.json` | Each company's last successful run time, which is the `lastSeenAt` of every job that run saw |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
 | `data/runs/changes.json` | Slugs of the jobs the last run opened, closed or dropped; read by `scripts/ping.ts` |
@@ -67,14 +67,14 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
 | `src/lib/jobs.ts` | The only data-access module pages use |
 | `src/lib/job-files.ts` | Reads and writes `data/jobs` and `data/runs/seen.json`, for the pipeline and the site |
-| `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de`. `/` is the start page; the tech home is `/tech` and the doctor-jobs section lives under `/medicine` |
-| `src/lib/medicine.ts` | Doctor-jobs taxonomy: specialties, career levels and German states, with the rules that read them from titles |
+| `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de`. `/` is the start page; the tech home is `/tech` and the medical-jobs section lives under `/medicine` |
+| `src/lib/medicine.ts` | Medical-jobs taxonomy: specialties, career levels and German states, with the rules that read them from titles |
 | `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would quadruple the build) |
 | `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
 
-## Doctor jobs
+## Medical jobs
 
-`data/companies.json` marks doctor-job sources with `"sector": "medicine"`; today that is `arbeitsagentur`, the Bundesagentur für Arbeit's job board, filtered to doctors and to employers only (no recruitment agencies). Its jobs carry `category: "medicine"` plus `specialty` and `level`, and stay out of every tech page, the analytics and the company list: `getOpenJobs()` returns tech jobs only, `getOpenMedicineJobs()` the doctor jobs.
+`data/companies.json` marks medical-job sources with `"sector": "medicine"`; today that is `arbeitsagentur`, the Bundesagentur für Arbeit's job board, filtered to doctors and to employers only (no recruitment agencies). Its jobs carry `category: "medicine"` plus `specialty` and `level`, and stay out of every tech page, the analytics and the company list: `getOpenJobs()` returns tech jobs only, `getOpenMedicineJobs()` the medical jobs.
 
 Search results have no description, so the fetcher reads each new job's details separately, at most 1,500 a run to stay inside the workflow timeout; the first run leaves the rest without text for the next runs to fill. The source sends the Jobsuche web app's own public client id, an undocumented API that may change.
 
