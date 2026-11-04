@@ -8,6 +8,7 @@ import { z } from "zod";
 import { type EmploymentType, employmentTypeOf } from "./employment.ts";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
+import { isMedicine, type MedicinePlace, medicinePlaceOf } from "./medicine.ts";
 import { technologiesOf } from "./technologies.ts";
 import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, JobSchema, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
 
@@ -42,9 +43,80 @@ export function getAllJobs(): Promise<Job[]> {
   return (jobsCache ??= loadJobs());
 }
 
+/** Open tech jobs: every browse page outside /medicine reads these, so doctor jobs never show up there. */
 export async function getOpenJobs(): Promise<Job[]> {
-  return (await getAllJobs()).filter((j) => !j.closedAt);
+  return (await getAllJobs()).filter((j) => !j.closedAt && !isMedicine(j));
 }
+
+/** Open doctor jobs, for the /medicine pages */
+export async function getOpenMedicineJobs(): Promise<Job[]> {
+  return (await getAllJobs()).filter((j) => !j.closedAt && isMedicine(j));
+}
+
+export interface MedicineFilter {
+  specialty?: string;
+  level?: string;
+  state?: string;
+  city?: string;
+}
+
+const medicinePlaces = new Map<string, MedicinePlace>();
+
+/** State and city of a doctor job, computed once per build. */
+export function medicinePlace(job: Job): MedicinePlace {
+  let place = medicinePlaces.get(job.id);
+  if (!place) medicinePlaces.set(job.id, (place = medicinePlaceOf(job)));
+  return place;
+}
+
+export function matchesMedicine(job: Job, filter: MedicineFilter): boolean {
+  const place = medicinePlace(job);
+  return (
+    (!filter.specialty || job.specialty === filter.specialty) &&
+    (!filter.level || job.level === filter.level) &&
+    (!filter.state || place.state === filter.state) &&
+    (!filter.city || place.city?.slug === filter.city)
+  );
+}
+
+export async function getMedicineJobsWhere(filter: MedicineFilter): Promise<Job[]> {
+  return (await getOpenMedicineJobs()).filter((j) => matchesMedicine(j, filter));
+}
+
+export interface MedicineCounts {
+  specialties: Map<string, number>;
+  levels: Map<string, number>;
+  states: Map<string, number>;
+  /** keyed by "state/city", with the city's display name */
+  cities: Map<string, { state: string; slug: string; name: string; count: number }>;
+  /** keyed by "specialty/state", for the specialty-in-state pages */
+  specialtyStates: Map<string, number>;
+}
+
+/** Open doctor jobs per specialty, level, state and city, for linking only to pages that have jobs. */
+export function countMedicine(jobs: Job[]): MedicineCounts {
+  const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), states: new Map(), cities: new Map(), specialtyStates: new Map() };
+  const add = (map: Map<string, number>, key: string | undefined) => key && map.set(key, (map.get(key) ?? 0) + 1);
+  for (const job of jobs) {
+    add(counts.specialties, job.specialty);
+    add(counts.levels, job.level);
+    const { state, city } = medicinePlace(job);
+    add(counts.states, state);
+    if (job.specialty && state) add(counts.specialtyStates, `${job.specialty}/${state}`);
+    if (state && city) {
+      const key = `${state}/${city.slug}`;
+      const entry = counts.cities.get(key) ?? { state, slug: city.slug, name: city.name, count: 0 };
+      entry.count++;
+      counts.cities.set(key, entry);
+    }
+  }
+  return counts;
+}
+
+let medicineCountsCache: Promise<MedicineCounts> | undefined;
+
+/** countMedicine() over all open doctor jobs, once per build */
+export const getMedicineCounts = () => (medicineCountsCache ??= getOpenMedicineJobs().then(countMedicine));
 
 export async function getJobBySlug(slug: string): Promise<Job | undefined> {
   return (await getAllJobs()).find((j) => j.slug === slug);
@@ -143,15 +215,23 @@ export async function getNewJobs(): Promise<Job[]> {
   return (await getOpenJobs()).filter((j) => ref - Date.parse(j.firstSeenAt) < DAY_MS);
 }
 
-export function getCompanies(): Promise<CompanyConfig[]> {
+function getAllCompanies(): Promise<CompanyConfig[]> {
   return (companiesCache ??= readFile(join(DATA_DIR, "companies.json"), "utf8").then((s) =>
     z.array(CompanyConfigSchema).parse(JSON.parse(s)),
   ));
 }
 
-export async function getCompany(key: string): Promise<CompanyConfig | undefined> {
-  return (await getCompanies()).find((c) => c.key === key);
+/** Tech companies and boards; doctor-job sources have no company pages */
+export async function getCompanies(): Promise<CompanyConfig[]> {
+  return (await getAllCompanies()).filter((c) => !c.sector);
 }
+
+export async function getCompany(key: string): Promise<CompanyConfig | undefined> {
+  return (await getAllCompanies()).find((c) => c.key === key);
+}
+
+/** Keys of the doctor-job sources, which the tech analytics leave out */
+const medicineCompanyKeys = async () => new Set((await getAllCompanies()).filter((c) => c.sector === "medicine").map((c) => c.key));
 
 export function getLatestRun(): Promise<Run | undefined> {
   return (runCache ??= readFile(join(DATA_DIR, "runs", "latest.json"), "utf8")
@@ -163,7 +243,11 @@ export function getLatestRun(): Promise<Run | undefined> {
 export function getHistory(): Promise<HistoryDay[]> {
   return (historyCache ??= readFile(join(DATA_DIR, "runs", "history.json"), "utf8")
     .then((s) => z.array(HistoryDaySchema).parse(JSON.parse(s)))
-    .catch(() => []));
+    .catch(() => [] as HistoryDay[])
+    .then(async (days) => {
+      const medicine = await medicineCompanyKeys();
+      return days.map((d) => ({ ...d, companies: Object.fromEntries(Object.entries(d.companies).filter(([key]) => !medicine.has(key))) }));
+    }));
 }
 
 async function loadSnapshots(): Promise<Snapshot[]> {

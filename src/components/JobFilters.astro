@@ -1,19 +1,28 @@
 ---
 /**
- * Home page filters. There is no search backend, so the form doesn't filter
- * anything itself: a small script turns the chosen values into the URL of the
+ * Home page filters, for the tech home or (kind="medicine") the doctor-jobs
+ * home. There is no search backend, so the form doesn't filter anything
+ * itself: a small script turns the chosen values into the URL of the
  * pre-rendered hub page for that combination and goes there. Combinations
  * without a page fall back to the closest one and say so under the button.
  */
-import { countTags, getJobsWhere, getTagCounts } from "../lib/jobs.ts";
+import { countTags, getJobsWhere, getMedicineCounts, getTagCounts } from "../lib/jobs.ts";
+import { levels, specialties, stateName, states } from "../lib/medicine.ts";
+import { medicineCityLinks } from "../lib/links.ts";
 import { cities, countries } from "../lib/places.ts";
 import { technologies } from "../lib/technologies.ts";
 import { employmentTypes } from "../lib/employment.ts";
 import { countryName, getLang, localizePath, t } from "../lib/i18n.ts";
 
+interface Props {
+  kind?: "tech" | "medicine";
+}
+
+const { kind = "tech" } = Astro.props;
 const lang = getLang(Astro.params.lang);
 const m = t(lang);
 const f = m.filters;
+const mf = m.medicine.filters;
 const counts = await getTagCounts();
 const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name, lang);
 
@@ -32,66 +41,124 @@ const employmentOptions = employmentTypes.filter((type) => counts.employment.has
 const remoteCountries = [...(await countTags(await getJobsWhere({ remote: true }))).countries.keys()];
 // "" for English, "/de" etc. otherwise
 const base = localizePath("/", lang).replace(/\/$/, "");
+
+const med = await getMedicineCounts();
+const byLabel = (a: { label: string }, b: { label: string }) => a.label.localeCompare(b.label, lang);
+const specialtyOptions = specialties
+  .filter((slug) => med.specialties.has(slug))
+  .map((slug) => ({ slug, label: m.medicine.specialties[slug] ?? slug }))
+  .sort(byLabel);
+const stateGroups = states
+  .filter((s) => med.states.has(s.slug))
+  .map((s) => ({ slug: s.slug, label: stateName(s, lang), cities: medicineCityLinks(med.cities, s.slug).sort(byLabel) }))
+  .sort(byLabel);
+const levelOptions = levels.filter((slug) => med.levels.has(slug));
+// specialty pages exist per state only where the specialty has jobs there
+const combos = [...med.specialtyStates.keys()];
 ---
 
 <details class="filters" open>
   <summary>{f.title}</summary>
   <form
     id="job-filters"
+    data-kind={kind}
     data-base={base}
     data-remote-countries={remoteCountries.join(" ")}
     data-employment-alone={f.employmentAlone}
     data-remote-tech-location={f.remoteTechLocation}
     data-remote-city={f.remoteCity}
     data-remote-none={f.remoteNone}
+    data-combos={combos.join(" ")}
+    data-level-alone={mf.levelAlone}
+    data-specialty-city={mf.specialtyCity}
+    data-combo-none={mf.comboNone}
   >
     <div class="head">
       <p class="title">{f.title}</p>
       <button type="reset" class="clear" hidden>{f.clear}</button>
     </div>
 
-    <label class="field-label" for="filter-tech">{f.technology}</label>
-    <div class="select">
-      <select id="filter-tech" name="tech">
-        <option value="">{f.any}</option>
-        {techOptions.map((tech) => <option value={tech.slug}>{tech.name}</option>)}
-      </select>
-    </div>
+    {
+      kind === "medicine" ? (
+        <>
+          <label class="field-label" for="filter-specialty">{mf.specialty}</label>
+          <div class="select">
+            <select id="filter-specialty" name="specialty">
+              <option value="">{f.any}</option>
+              {specialtyOptions.map((o) => <option value={o.slug}>{o.label}</option>)}
+            </select>
+          </div>
 
-    <label class="field-label" for="filter-location">{f.location}</label>
-    <div class="select">
-      <select id="filter-location" name="place">
-        <option value="">{f.anywhere}</option>
-        {
-          locationGroups.map((c) => (
-            <optgroup label={c.name}>
-              <option value={c.slug}>{f.allOf(c.name)}</option>
-              {c.cities.map((city) => <option value={`${c.slug}/${city.slug}`}>{city.name}</option>)}
-            </optgroup>
-          ))
-        }
-      </select>
-    </div>
+          <label class="field-label" for="filter-location">{mf.location}</label>
+          <div class="select">
+            <select id="filter-location" name="place">
+              <option value="">{f.anywhere}</option>
+              {stateGroups.map((g) => (
+                <optgroup label={g.label}>
+                  <option value={g.slug}>{mf.allOf(g.label)}</option>
+                  {g.cities.map((c) => <option value={`${g.slug}/${c.slug}`}>{c.label}</option>)}
+                </optgroup>
+              ))}
+            </select>
+          </div>
 
-    <fieldset>
-      <legend class="field-label">{f.workMode}</legend>
-      <div class="segmented">
-        <label><input type="radio" name="mode" value="" checked /><span>{f.any}</span></label>
-        <label><input type="radio" name="mode" value="remote" /><span>{m.remote}</span></label>
-      </div>
-    </fieldset>
+          <fieldset>
+            <legend class="field-label">{mf.level}</legend>
+            <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
+            <div class="chips">
+              {levelOptions.map((level) => (
+                <label><input type="radio" name="level" value={level} /><span>{m.medicine.levels[level]?.replace(/ \(.*\)$/, "")}</span></label>
+              ))}
+            </div>
+          </fieldset>
+        </>
+      ) : (
+        <>
+          <label class="field-label" for="filter-tech">{f.technology}</label>
+          <div class="select">
+            <select id="filter-tech" name="tech">
+              <option value="">{f.any}</option>
+              {techOptions.map((tech) => <option value={tech.slug}>{tech.name}</option>)}
+            </select>
+          </div>
 
-    <fieldset>
-      <legend class="field-label">{f.employment}</legend>
-      <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
-      <div class="chips">
-        {
-          employmentOptions.map((type) => (
-            <label><input type="radio" name="employment" value={type} /><span>{m.employment.types[type]}</span></label>
-          ))
-        }
-      </div>
-    </fieldset>
+          <label class="field-label" for="filter-location">{f.location}</label>
+          <div class="select">
+            <select id="filter-location" name="place">
+              <option value="">{f.anywhere}</option>
+              {
+                locationGroups.map((c) => (
+                  <optgroup label={c.name}>
+                    <option value={c.slug}>{f.allOf(c.name)}</option>
+                    {c.cities.map((city) => <option value={`${c.slug}/${city.slug}`}>{city.name}</option>)}
+                  </optgroup>
+                ))
+              }
+            </select>
+          </div>
+
+          <fieldset>
+            <legend class="field-label">{f.workMode}</legend>
+            <div class="segmented">
+              <label><input type="radio" name="mode" value="" checked /><span>{f.any}</span></label>
+              <label><input type="radio" name="mode" value="remote" /><span>{m.remote}</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="field-label">{f.employment}</legend>
+            <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
+            <div class="chips">
+              {
+                employmentOptions.map((type) => (
+                  <label><input type="radio" name="employment" value={type} /><span>{m.employment.types[type]}</span></label>
+                ))
+              }
+            </div>
+          </fieldset>
+        </>
+      )
+    }
 
     <button type="submit" class="submit">{f.submit}</button>
     <p class="note" aria-live="polite"></p>
@@ -104,12 +171,22 @@ const base = localizePath("/", lang).replace(/\/$/, "");
     const details = form.parentElement;
     const d = form.dataset;
     const remoteCountries = new Set(d.remoteCountries.split(" "));
-    const field = (name) => form.elements.namedItem(name).value;
+    // a group of one radio comes back as the input itself, whose value counts even when unchecked
+    const field = (name) => {
+      const el = form.elements.namedItem(name);
+      if (el instanceof HTMLInputElement && el.type === "radio") return el.checked ? el.value : "";
+      return el?.value ?? "";
+    };
     const note = form.querySelector(".note");
     const clear = form.querySelector(".clear");
 
+    const medicine = d.kind === "medicine";
+    const combos = new Set(d.combos.split(" "));
+    // the chip group that clears when its picked chip is clicked again
+    const chipName = medicine ? "level" : "employment";
+
     // The page for the chosen values, and a note when some of them had to be dropped
-    function route() {
+    function routeTech() {
       const tech = field("tech");
       const place = field("place"); // "country" or "country/city"
       const remote = field("mode") === "remote";
@@ -132,6 +209,28 @@ const base = localizePath("/", lang).replace(/\/$/, "");
       return { path, note, empty: !others && !employment };
     }
 
+    function routeMedicine() {
+      const specialty = field("specialty");
+      const place = field("place"); // "state" or "state/city"
+      const level = field("level");
+      const [state, city] = place.split("/");
+      const others = specialty || place;
+      const combo = specialty && state && combos.has(`${specialty}/${state}`);
+
+      let path = "";
+      if (level && !others) path = `/medicine/levels/${level}`;
+      else if (specialty) path = combo ? `/medicine/specialties/${specialty}/${state}` : `/medicine/specialties/${specialty}`;
+      else if (place) path = `/medicine/locations/${place}`;
+
+      let note = "";
+      if (level && others) note = d.levelAlone;
+      else if (specialty && state && !combo) note = d.comboNone;
+      else if (specialty && city) note = d.specialtyCity;
+      return { path, note, empty: !others && !level };
+    }
+
+    const route = medicine ? routeMedicine : routeTech;
+
     function update() {
       const r = route();
       note.textContent = r.note;
@@ -139,19 +238,19 @@ const base = localizePath("/", lang).replace(/\/$/, "");
     }
 
     form.addEventListener("change", update);
-    // Radios can't be unchecked by clicking, so do it by hand for the employment chips
-    let employment = field("employment");
+    // Radios can't be unchecked by clicking, so do it by hand for the chips
+    let picked = field(chipName);
     form.addEventListener("click", (e) => {
       const input = e.target;
-      if (!(input instanceof HTMLInputElement) || input.name !== "employment") return;
-      if (input.value === employment) input.checked = false;
-      employment = field("employment");
+      if (!(input instanceof HTMLInputElement) || input.name !== chipName) return;
+      if (input.value === picked) input.checked = false;
+      picked = field(chipName);
       update();
     });
     // reset fires before the fields change back
     form.addEventListener("reset", () =>
       setTimeout(() => {
-        employment = "";
+        picked = "";
         update();
       }),
     );
@@ -162,7 +261,7 @@ const base = localizePath("/", lang).replace(/\/$/, "");
     });
     // the browser may restore earlier choices on back navigation
     addEventListener("pageshow", () => {
-      employment = field("employment");
+      picked = field(chipName);
       update();
     });
     update();

@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import TagLinks from "../../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
+import { getState, stateName } from "../../../../../lib/medicine.ts";
+import { levelLinks, medicineCityLinks, specialtyLinks } from "../../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+// Only cities big enough for a page of their own; the rest are browsed by state
+export const getStaticPaths = (async () => {
+  const cities = medicineCityLinks((await getMedicineCounts()).cities);
+  return withLangs(cities.map((c) => ({ params: { state: c.state, city: c.slug }, props: { name: c.label } })));
+}) satisfies GetStaticPaths;
+
+const { state, city } = Astro.params as { state: string; city: string };
+const { name } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const stateLabel = stateName(getState(state)!, lang);
+const jobs = await getMedicineJobsWhere({ state, city });
+const counts = countMedicine(jobs);
+const bySpecialty = specialtyLinks(counts.specialties, lang);
+const byLevel = levelLinks(counts.levels, lang);
+---
+
+<Base title={md.placeTitle(name)} description={md.placeDescription(jobs.length, name)} section="medicine">
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath(`/medicine/locations/${state}`, lang)}>{stateLabel}</a> /
+  </p>
+  <h1>{md.placeTitle(name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>

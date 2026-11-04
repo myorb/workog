@@ -1,110 +1,102 @@
 ---
+/**
+ * The start page: one panel per section, each with its size and shortcuts to
+ * its biggest browse pages. There is no search, so the shortcuts do that job.
+ */
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
-import JobList from "../../components/JobList.astro";
-import TagLinks from "../../components/TagLinks.astro";
-import JobFilters from "../../components/JobFilters.astro";
-import { countTags, getCompanies, getOpenJobs } from "../../lib/jobs.ts";
-import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
+import { getCompanies, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
+import { cityLinks, remoteUrl, specialtyLinks, stateLinks, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../lib/constants.ts";
+import { formatNumber } from "../../lib/locale.ts";
 import { website } from "../../lib/structured-data.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
 const lang = getLang(Astro.params.lang);
 const m = t(lang);
+const s = m.start;
 const u = (path: string) => localizePath(path, lang);
-const jobs = await getOpenJobs();
-const companies = await getCompanies();
-const counts = new Map<string, number>();
-for (const job of jobs) counts.set(job.company, (counts.get(job.company) ?? 0) + 1);
-const topCompanies = companies
-  .map((c) => ({ ...c, count: counts.get(c.key) ?? 0 }))
-  .filter((c) => c.count > 0)
-  .sort((a, b) => b.count - a.count)
-  .slice(0, 12);
-const tagCounts = await countTags(jobs);
-const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
-const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0, 12);
-const types = employmentLinks(tagCounts.employment, lang);
-const remoteCount = jobs.filter((j) => j.remote).length;
-// Shortcuts under the filters: the biggest technologies, remote, and the biggest cities
-const popular = [
-  ...topTechnologies.slice(0, 3),
-  { href: remoteUrl(), label: m.remote, count: remoteCount },
-  ...cityLinks(tagCounts.cities).slice(0, 2),
+
+const techJobs = await getOpenJobs();
+const companies = (await getCompanies()).length;
+const tags = await getTagCounts();
+const tech = [
+  ...technologyLinks(tags.technologies).slice(0, 3),
+  { href: remoteUrl(), label: m.remote, count: await getRemoteCount() },
+  ...cityLinks(tags.cities).slice(0, 2),
+  { href: "/technologies", label: s.allTechnologies },
+  { href: "/locations", label: s.allLocations },
 ];
+
+const doctorJobs = await getOpenMedicineJobs();
+const med = await getMedicineCounts();
+const medicine = [
+  ...specialtyLinks(med.specialties, lang).slice(0, 4),
+  ...stateLinks(med.states, lang).slice(0, 2),
+  { href: "/medicine/specialties", label: s.allSpecialties },
+  { href: "/medicine/locations", label: s.allLocations },
+];
+const description = s.description(techJobs.length, doctorJobs.length);
 ---
 
-<Base
-  title="Workog"
-  description={m.home.description(jobs.length, companies.length)}
-  jsonLd={[website(Astro.site!, m.home.description(jobs.length, companies.length))]}
->
-  <h1>{m.home.heading}</h1>
-  <p class="muted">{m.home.summary(jobs.length, companies.length)}</p>
-
-  <div class="home-grid">
-    <aside class="sidebar">
-      <JobFilters />
-      <p class="popular-title muted">{m.home.popular}</p>
-      <ul class="popular">
-        {
-          popular.map((l) => (
-            <li>
-              <a href={u(l.href)}>{l.label}</a> <span class="muted">{l.count}</span>
-            </li>
-          ))
-        }
-      </ul>
-    </aside>
-    <section>
-      <h2 class="latest">{m.latestJobs}</h2>
-      <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+<Base title="Workog" description={description} section="start" jsonLd={[website(Astro.site!, description)]}>
+  <div class="panels">
+    <section class="panel tech">
+      <p class="label">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
+        {s.tech}
+      </p>
+      <h1>{s.techHeading}</h1>
+      <p class="summary">{s.techSummary(techJobs.length, companies)}</p>
+      <nav aria-label={s.techHeading} class="chips">
+        {tech.map((l) => <a href={u(l.href)}>{l.label}{"count" in l && <span>{formatNumber(l.count, lang)}</span>}</a>)}
+      </nav>
+      <a class="browse" href={u("/tech")}>{s.techBrowse}</a>
+    </section>
+    <section class="panel medicine">
+      <p class="label">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+        {s.medicine}
+      </p>
+      <h2>{s.medicineHeading}</h2>
+      <p class="summary">{s.medicineSummary(doctorJobs.length)}</p>
+      {
+        doctorJobs.length > 0 && (
+          <nav aria-label={s.medicineHeading} class="chips">
+            {medicine.map((l) => <a href={u(l.href)}>{l.label}{"count" in l && <span>{formatNumber(l.count, lang)}</span>}</a>)}
+          </nav>
+        )
+      }
+      <a class="browse" href={u("/medicine")}>{s.medicineBrowse}</a>
     </section>
   </div>
-
-  <h2>{m.home.topCompanies}</h2>
-  <ul class="companies">
-    {
-      topCompanies.map((c) => (
-        <li>
-          <a href={u(`/companies/${c.key}`)}>{c.name}</a> <span class="muted">{c.count}</span>
-        </li>
-      ))
-    }
-  </ul>
-  <p><a href={u("/companies")}>{m.allCompanies}</a></p>
-
-  <h2>{m.home.technologies}</h2>
-  <TagLinks links={topTechnologies} />
-  <p><a href={u("/technologies")}>{m.allTechnologies}</a></p>
-
-  <h2>{m.home.locations}</h2>
-  <TagLinks links={topCountries} />
-  <p><a href={u("/locations")}>{m.allLocations}</a></p>
-
-  <h2>{m.home.employment}</h2>
-  <TagLinks links={[{ href: remoteUrl(), label: m.home.remote, count: remoteCount }, ...types]} />
 </Base>
 
 <style>
-  .home-grid { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 32px; align-items: start; margin-top: 24px; }
-  .sidebar { position: sticky; top: 16px; }
-  .latest { margin-top: 0; }
-  .popular-title { margin: 20px 0 4px; font-size: 13px; }
-  .popular { list-style: none; padding: 0; margin: 0; font-size: 15px; }
-  .popular li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; }
-  @media (max-width: 640px) {
-    .home-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 16px; }
-    .sidebar { position: static; }
-    .popular-title, .popular { display: none; }
+  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); min-height: calc(100vh - 160px); }
+  .panel { display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 64px max(24px, 5vw); color: #e6edfb; }
+  .panel.tech { background: #13233f; }
+  .panel.medicine { background: #0f2e2a; color: #e6f2ef; }
+  .label { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .tech .label { color: #a9c1f2; }
+  .medicine .label { color: #99d5ca; }
+  h1, h2 { margin: 0; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.12; color: #ffffff; }
+  .summary { margin: 0; font-size: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; max-width: 560px; }
+  .chips a {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border-radius: 999px;
+    color: #ffffff; text-decoration: none; font-size: 14px;
   }
-  .companies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 16px; }
+  .tech .chips a { background: #23396a; }
+  .medicine .chips a { background: #1b4741; }
+  .chips a:hover { filter: brightness(1.15); }
+  .tech .chips span { color: #a9c1f2; }
+  .medicine .chips span { color: #99d5ca; }
+  .browse { color: #ffffff; font-weight: 600; text-decoration: none; }
+  .browse:hover { text-decoration: underline; }
   @media (max-width: 640px) {
-    .companies { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0 16px; }
-    .companies li { padding: 8px 0; line-height: 1.4; }
-    .companies a { padding: 8px 0; }
+    .panels { min-height: 0; }
+    .panel { padding: 32px 20px; gap: 14px; }
   }
 </style>

@@ -4,6 +4,7 @@ import { employmentTypes } from "./employment.ts";
 import { categoryName, countryName, defaultLang, type Lang, t } from "./i18n.ts";
 import type { SnapshotDimension } from "./analytics.ts";
 import type { Messages } from "./messages/en.ts";
+import { levels, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialties, specialtyUrl, stateName, states } from "./medicine.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
@@ -42,6 +43,26 @@ export const employmentLinks = (counts: Map<string, number>, lang: Lang = defaul
 
 export const companyLinks = (counts: Map<string, number>, companies: { key: string; name: string }[]) =>
   linksFor(companies.map((c) => ({ slug: c.key, name: c.name })), counts, (c) => `/companies/${c.slug}`);
+
+export const specialtyLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = specialtyUrl) =>
+  linksFor(specialties.map((slug) => ({ slug, name: t(lang).medicine.specialties[slug] ?? slug })), counts, (s) => href(s.slug));
+
+export const levelLinks = (counts: Map<string, number>, lang: Lang = defaultLang) =>
+  linksFor(levels.map((slug) => ({ slug, name: t(lang).medicine.levels[slug] ?? slug })), counts, (l) => levelUrl(l.slug));
+
+export const stateLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = medicineLocationUrl) =>
+  linksFor(states, counts, (s) => href(s.slug), (s) => stateName(s, lang));
+
+/**
+ * Cities with a page of their own: enough jobs, and not a city-state, whose
+ * state page already is the city's page.
+ */
+export function medicineCityLinks(cities: Map<string, { state: string; slug: string; name: string; count: number }>, state?: string) {
+  return [...cities.values()]
+    .filter((c) => c.count >= MIN_CITY_JOBS && c.slug !== c.state && (!state || c.state === state))
+    .map((c) => ({ href: medicineLocationUrl(c.state, c.slug), label: c.name, count: c.count, state: c.state, slug: c.slug }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
 
 /** Open jobs per company among `jobs` */
 export function companyCounts(jobs: { company: string }[]): Map<string, number> {

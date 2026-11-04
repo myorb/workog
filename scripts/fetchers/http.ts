@@ -11,7 +11,13 @@ export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve
  * retries with exponential backoff. A body `read` can't parse is retried too:
  * some sites answer a burst of requests with a 200 "try again later" page.
  */
-async function request<T>(url: string, accept: string, read: (res: Response) => Promise<T>, body?: unknown): Promise<T> {
+async function request<T>(
+  url: string,
+  accept: string,
+  read: (res: Response) => Promise<T>,
+  body?: unknown,
+  headers: Record<string, string> = {},
+): Promise<T> {
   let lastError: unknown;
   let rateLimited = false;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
@@ -24,6 +30,7 @@ async function request<T>(url: string, accept: string, read: (res: Response) => 
           "User-Agent": USER_AGENT,
           Accept: accept,
           ...(body === undefined ? {} : { "Content-Type": "application/json" }),
+          ...headers,
         },
         body: body === undefined ? undefined : JSON.stringify(body),
         signal: AbortSignal.timeout(TIMEOUT_MS),
@@ -40,8 +47,8 @@ async function request<T>(url: string, accept: string, read: (res: Response) => 
   throw lastError;
 }
 
-export async function getJson<T>(url: string): Promise<T> {
-  return request(url, "application/json", (res) => res.json() as Promise<T>);
+export async function getJson<T>(url: string, headers?: Record<string, string>): Promise<T> {
+  return request(url, "application/json", (res) => res.json() as Promise<T>, undefined, headers);
 }
 
 /** POST a JSON body and read a JSON response, for search endpoints that take their query as a body. */

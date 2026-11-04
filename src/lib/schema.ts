@@ -16,6 +16,10 @@ export const JobSchema = z.object({
   remote: z.boolean(),
   department: z.string().optional(),
   category: z.string().optional(),
+  /** medicine jobs only: a slug from src/lib/medicine.ts */
+  specialty: z.string().optional(),
+  /** medicine jobs only: career level, a slug from src/lib/medicine.ts */
+  level: z.string().optional(),
   /** sanitized */
   descriptionHtml: z.string(),
   applyUrl: z.url(),
@@ -44,6 +48,8 @@ export const CompanyConfigSchema = z.object({
   maxJobs: z.number().int().positive().optional(),
   /** A job board listing many employers rather than one company's careers site; its jobs set `employer` */
   board: z.boolean().optional(),
+  /** "medicine" for doctor-job sources, whose jobs live in the /medicine section instead of the tech pages */
+  sector: z.enum(["medicine"]).optional(),
 });
 
 export type CompanyConfig = z.infer<typeof CompanyConfigSchema>;

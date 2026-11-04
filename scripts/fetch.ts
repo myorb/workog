@@ -33,6 +33,7 @@ import {
 import { amazon } from "./fetchers/amazon.ts";
 import { apple } from "./fetchers/apple.ts";
 import { arbeitnow } from "./fetchers/arbeitnow.ts";
+import { arbeitsagentur } from "./fetchers/arbeitsagentur.ts";
 import { ashby } from "./fetchers/ashby.ts";
 import { eightfold } from "./fetchers/eightfold.ts";
 import { google } from "./fetchers/google.ts";
@@ -67,6 +68,7 @@ const fetchers: Record<string, Fetcher<any>> = {
   [workday.name]: workday,
   [eightfold.name]: eightfold,
   [arbeitnow.name]: arbeitnow,
+  [arbeitsagentur.name]: arbeitsagentur,
   [workingnomads.name]: workingnomads,
   [weworkremotely.name]: weworkremotely,
 };
@@ -141,7 +143,7 @@ async function fetchCompany(company: CompanyConfig): Promise<FetchResult> {
   const fetcher = fetchers[company.source];
   if (!fetcher) throw new Error(`unknown source "${company.source}"`);
 
-  const raws = await fetcher.fetch(company);
+  const raws = await fetcher.fetch(company, await readJobs(company.key));
   const jobs: NormalizedJob[] = [];
   let invalid = 0;
   for (const raw of raws) {
