@@ -3786,6 +3786,8 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200671978/l%C3%ADder-de-territorio-m%C3%A9xico?team=SLDEV",
     "postedAt": "2026-08-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "apple"
   },
   {
@@ -7273,6 +7275,8 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200686455/aiml-quality-engineering-manager-responsible-ai-and-safety?team=MLAI",
     "postedAt": "2026-10-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "apple"
   },
   {
@@ -9649,21 +9653,23 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200691684/infosec-development-program-isdp-full-time-opportunities?team=SFTWR",
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "apple"
   },
   {
     "id": "apple:200691851",
     "slug": "apple-human-factors-research-engineer-aiml-data-operations-200691851",
     "company": "apple",
-    "title": "Human Factors Research Engineer, AIML Data Operations",
+    "title": "Human Factors Engineer, AIML Data Operations",
     "locations": [
       "United States of America"
     ],
     "remote": false,
     "department": "Software and Services",
     "category": "data",
-    "descriptionHtml": "<p>Apple is where individual imaginations gather together, committing to the values that lead to great work. It's the diversity of our people and their thinking that inspires the innovation that runs through everything we do. Here, you'll do more than join something — you'll add something.</p><p>Imagine what human factors research can do at Apple. At Apple, great ideas quickly become extraordinary user experiences. Are you excited to take on big challenges that create a positive impact for billions of people? Are you passionate about engaging directly with people to research and design elegant Apple experiences?</p><p>We are looking for a talented, creative and technical user experience researcher to optimize the design of annotation workflows and analyst tools that contribute to Apple's most strategic AI initiatives.</p>",
-    "applyUrl": "https://jobs.apple.com/en-us/details/200691851/human-factors-research-engineer-aiml-data-operations?team=SFTWR",
+    "descriptionHtml": "<p>Apple is where individual imaginations gather together, committing to the values that lead to great work. It’s the diversity of our people and their thinking that inspires the innovation that runs through everything we do. Here, you’ll do more than join something — you’ll add something. Imagine what human factors research can do at Apple. At Apple, great ideas quickly become extraordinary user experiences. Are you excited to take on big challenges that create a positive impact for billions of people? Are you passionate about engaging directly with people to research and design elegant Apple experiences? We are looking for a talented, creative and technical user experience researcher to optimize the design of annotation workflows and analyst tools that contribute to Apple’s most strategic AI initiatives.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200691851/human-factors-engineer-aiml-data-operations?team=SFTWR",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "source": "apple"
@@ -10043,6 +10049,23 @@
     "source": "apple"
   },
   {
+    "id": "apple:200692542",
+    "slug": "apple-software-automation-engineer-test-platforms-media-graphics-and-compute-tech-200692542",
+    "company": "apple",
+    "title": "Software Automation Engineer, Test Platforms - Media, Graphics & Compute Tech",
+    "locations": [
+      "United States of America"
+    ],
+    "remote": false,
+    "department": "Software and Services",
+    "category": "engineering",
+    "descriptionHtml": "<p>The AirPlay software engineering organization is responsible for the technology that enables seamless wireless audio and video streaming across Apple's ecosystem within our Media, Graphics &amp; Compute Tech org — including iPhone, iPad, Mac, Apple TV, HomePod, and CarPlay. AirPlay powers some of Apple's most beloved experiences, from multi-room audio playback to screen mirroring, and continues to scale to meet the demands of an ever-growing range of devices and configurations.</p><p>This position is within the AirPlay Engineering Investigations function, an embedded team of engineers who serve as force multipliers for the broader AirPlay org. The team focuses on rapid prototyping, exploratory testing, and building the tools and test infrastructure that allow engineers to validate new features and performance improvements quickly and reliably. This role will specifically be focused on making sure new features have a rock-solid, fully automated testing platform to ensure they are thoroughly vetted before reaching customers.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200692542/software-automation-engineer-test-platforms-media-graphics-compute-tech?team=SFTWR",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "apple"
+  },
+  {
     "id": "apple:200692667",
     "slug": "apple-user-studies-operations-specialist-200692667",
     "company": "apple",
@@ -10191,6 +10214,23 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200693066/cv-ml-generalist-engineer?team=MLAI",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "source": "apple"
+  },
+  {
+    "id": "apple:200693101",
+    "slug": "apple-manager-engineering-project-management-sd-and-t-feature-epm-200693101",
+    "company": "apple",
+    "title": "Manager, Engineering Project Management - SD&T Feature EPM",
+    "locations": [
+      "United States of America"
+    ],
+    "remote": false,
+    "department": "Software and Services",
+    "category": "engineering",
+    "descriptionHtml": "<p>Are you passionate about turning ambitious software roadmaps into real, shipped capabilities? Does driving the planning and delivery of the work that powers how Apple builds and ships software excite you? Join the Build EPM organization as the leader of the SD&amp;T Feature EPM team. We are responsible for driving the end-to-end delivery of the feature work that enables Software Delivery &amp; Technologies (SD&amp;T) to deliver software and tooling internally at Apple today, enabling the organization to ship Apple's operating systems to customers. We're looking for someone with strong program management fundamentals, exceptional organizational skills, and a collaborative spirit who thrives in a fast-paced environment where your work directly shapes the capabilities that power Apple's internal software delivery ecosystem. We're seeking a leader who can develop talent, drive execution excellence, and foster a culture of ownership and innovation, someone who excels at building high-performing teams of Engineering Project Managers while ensuring the deliverables that make up SD&amp;T's roadmap are scoped, tracked, and delivered reliably at scale.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200693101/manager-engineering-project-management-sd-t-feature-epm?team=SFTWR",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "source": "apple"
   },
   {

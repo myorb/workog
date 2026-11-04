@@ -1,4 +1,5 @@
-import { getCompanies, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { getCompanies, getHospitalIndex, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
 import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
 import { medicineCityLinks } from "./links.ts";
 import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
@@ -64,6 +65,9 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     for (const level of med.levels.keys()) paths.add(levelUrl(level));
     for (const state of med.states.keys()) paths.add(medicineLocationUrl(state));
     for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
+    const hospitals = await getHospitalIndex();
+    paths.add(hospitalsUrl);
+    for (const h of [...hospitals.groups, ...hospitals.hospitals]) paths.add(hospitalUrl(h.slug));
   }
 
   const snapshots = await getSnapshots();

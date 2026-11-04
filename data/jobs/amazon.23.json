@@ -2722,6 +2722,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10481449/sde-ii-perception-and-slam-autonomous-mobility",
     "postedAt": "2026-07-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -2922,6 +2924,7 @@
     "title": "Sr. Mechanical Engineer, Data Center, Colocation Regional Engineering - AMER",
     "locations": [
       "Atlanta, GA, United States",
+      "COLUMBUS, OH, United States",
       "Herndon, VA, United States"
     ],
     "remote": false,
@@ -3539,6 +3542,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10496478/senior-software-engineer-prime-video-personalization-and-discovery",
     "postedAt": "2026-08-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -3920,6 +3925,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10505644/software-development-engineer-ec2-nitro-high-memory-and-hpc-team",
     "postedAt": "2026-08-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -4559,6 +4566,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10515999/prime-air-sr-maintenance-technician-corporate-operations-prime-air",
     "postedAt": "2026-08-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -4804,6 +4813,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10522687/sr-program-mgr-benchmarking-strategy-amxl-benchmarking",
     "postedAt": "2026-08-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -6897,6 +6908,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10558682/senior-cdr-network-planning-performance-manager-aws-infra-supply-chain",
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -7860,6 +7873,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10568861/it-support-associate-ii-ops-tech-solutions-ots",
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -10790,8 +10805,6 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10590466/sr-sustainability-specialist-low-carbon-fuels-worldwide-operations-sustainability",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-03T15:04:58.208Z",
-    "closedAt": "2026-11-04T05:02:43.218Z",
     "source": "amazon"
   },
   {
@@ -11471,6 +11484,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10594985",
+    "slug": "amazon-software-development-engineer-amazon-msk-managed-streaming-for-kafka-10594985",
+    "company": "amazon",
+    "title": "Software Development Engineer - Amazon MSK, Managed Streaming for Kafka",
+    "locations": [
+      "Seattle, WA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "engineering",
+    "descriptionHtml": "<p>Come build the future of data streaming with the Amazon Managed Streaming for Kafka (MSK) team!<br />  <br />We are seeking builders for our Amazon MSK service, a fully managed  service that makes it easy for customers to build and run applications  that use Apache Kafka to process streaming data. We are looking for  engineers who are enthusiastic about data streaming, and are as  passionate about contributing to open source as they are about solving  real customers' business needs, at AWS scale.<br />  <br />As a member of the Amazon MSK team, you will be making contributions to the entire core data plane stack that make up the MSK service, the core Kafka platform, and stand-alone tools that make it  easier for Kafka community to operate Kafka better. Upstream  compatibility is a core tenet of MSK. Your code changes to the Kafka  platform will be released back to open source. As a member of an AWS  service that builds on top of a popular open source technology, this is a  unique opportunity to work on a team that straddles both worlds – open  source and Amazon-internal software. You will design and build new  features, make performance improvements, identify and investigate new  technologies, prototype solutions, build scalable services, and test and  review changes, to deliver an exceptional customer experience.<br />  <br />The ideal candidate has experience designing large-scale systems  supporting millions of transactions per second, enjoys solving complex  software problems, and possesses analytical, design and problem-solving  skills. Ideally you have an in-depth understanding of streaming data  technologies like Amazon Kinesis or Apache Kafka, and experience with  open-source data processing frameworks like Apache Spark, Apache Flink,  or Apache Storm. Your responsibilities will include collaborating with  other engineers to build a large scale AWS service, and work with senior  leaders to define your team's roadmap, including identifying design and  code changes needed in the underlying open source platforms.<br /><br />Learn more about Amazon MSK: - <a href=\"https://www.youtube.com/watch?v=zhsVfsykBHc\">AWS re:Invent 2018: Amazon Managed Streaming for Kafka (Amazon MSK) Launch</a><br /><br />* <a href=\"https://www.youtube.com/watch?v=MGaLNSLK3hA\">AWS re:Invent 2020: How Goldman Sachs uses an Amazon MSK backbone for Transaction Banking Platform</a><br />* <a href=\"https://www.youtube.com/watch?v=Bod2yn16TXM\">AWS re:Invent 2020: How New Relic is migrating its Apache Kafka cluster to Amazon MSK</a><br />* <a href=\"https://www.youtube.com/watch?v=5yMzTwumD_g\"> AWS re:Invent 2021: How Coinbase uses Amazon MSK as an event store for applications</a><br />* <a href=\"https://www.youtube.com/watch?v=0Ki2CBbN5bA\"> MSK Tiered Storage: Optimize cost and improve Kafka scalability</a><br />* <a href=\"https://www.youtube.com/watch?v=io5w08-WKHI\"> AWS re:Invent 2023: How Rivian builds real-time analytics from electric vehicles</a><br /><br />  Utility Computing (UC)<br />AWS Utility Computing (UC) provides product innovations — from foundational services such as Amazon’s Simple Storage Service (S3) and Amazon Elastic Compute Cloud (EC2), to consistently released new product innovations that continue to set AWS’s services and features apart in the industry. As a member of the UC organization, you’ll support the development and management of Compute, Database, Storage, Internet of Things (Iot), Platform, and Productivity Apps services in AWS, including support for customers who require specialized security solutions for customers who require specialized security solutions for their cloud services.<br /><br />About the team<br />About AWS<br />Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform. We pioneered cloud computing and never stopped innovating — that’s why customers from the most successful startups to Global 500 companies trust our robust suite of products and services to power their businesses.<br /><br />Diverse Experiences<br />AWS values diverse experiences. Even if you do not meet all of the qualifications and skills listed in the job description, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying. <br /><br />Work/Life Balance<br />We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why we strive for flexibility as part of our working culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve in the cloud. <br /><br />Inclusive Team Culture<br />Here at AWS, it’s in our nature to learn and be curious. Our employee-led affinity groups foster a culture of inclusion that empower us to be proud of our differences. Ongoing events and learning experiences, including our Conversations on Race and Ethnicity (CORE) and AmazeCon (gender diversity) conferences, inspire us to never stop embracing our uniqueness.<br /><br />Mentorship &amp; Career Growth<br />We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, mentorship and other career-advancing resources here to help you develop into a better-rounded professional. </p><h3>Basic qualifications</h3><p>- 3+ years of non-internship professional software development experience<br />- 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience<br />- 1+ years of software development engineer or related occupational experience<br />- 1+ years of designing and developing large-scale, multi-tiered, multi-threaded, embedded or distributed software applications, tools, systems, and services using: C#, C++, Java, or Perl experience<br />- 1+ years of Object Oriented Design experience<br />- Bachelor's degree or foreign equivalent in Computer Science, Engineering, Mathematics, or a related field<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience<br />- Bachelor's degree in computer science or equivalent<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Seattle - 143,700.00 - 194,400.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10594985/software-development-engineer-amazon-msk-managed-streaming-for-kafka",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10595111",
     "slug": "amazon-ops-support-expert-nasc-global-solutions-and-risk-compliance-gsrc-10595111",
     "company": "amazon",
@@ -11744,6 +11774,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596554/software-dev-engineer-i-security-platform",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -11763,6 +11795,85 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596598/senior-ai-customer-engineer-pace-latam",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596675",
+    "slug": "amazon-environmental-compliance-manager-environmental-assurance-and-protection-10596675",
+    "company": "amazon",
+    "title": "Environmental Compliance Manager, Environmental Assurance and Protection",
+    "locations": [
+      "Wakefield, WAR, United Kingdom",
+      "Swindon, United Kingdom",
+      "Northampton, NBL, United Kingdom",
+      "Darlington, United Kingdom",
+      "Dunfermline, FIF, United Kingdom",
+      "Tilbury, United Kingdom",
+      "Liverpool, United Kingdom",
+      "Coventry, LEC, United Kingdom",
+      "Manchester, United Kingdom",
+      "Gateshead, POST-TWR, United Kingdom"
+    ],
+    "remote": false,
+    "department": "Project/Program/Product Management--Non-Tech",
+    "category": "legal",
+    "descriptionHtml": "<p>Our team is seeking an Environmental Compliance Manager who will support and drive environmental operational excellence across our Operations in the United Kingdom and Ireland. They will also provide technical support at our existing operations and future expansion across the UK. This role will report to the UK&amp;IE Environmental Leader through the Environmental Assurance and Protection (EAP) team.<br /><br />The Environmental Compliance Manager will partner with the operations leadership teams to execute company environmental procedures and ensure compliance with all applicable UK and Ireland national and local regulations. Utilizing risk assessments and compliance evaluations, this individual will lead site-specific and regional continuous improvement initiatives to minimize environmental aspects and impacts and communicate and implement best practices. They must be able to lead a team to ensure success for business support. This role entails up to 50% travel to multiple sites across the UK and Ireland.<br /><br />Key job responsibilities<br />- Multi-site Environmental Compliance &amp; Reporting — Manage and execute environmental compliance across multiple UK &amp; Ireland sites, covering air emissions, stormwater, waste, wastewater, and other regulated areas, including all required national, local, and internal reporting and data collection.<br />- Environmental Management Systems &amp; Regulatory Engagement — Drive the development, improvement, and application of environmental management control systems and procedures; measure site performance against policy requirements and drive corrective actions. Cooperate with UK &amp; Ireland environmental authorities on notification, permitting, and approval procedures across all environmental disciplines.<br />- Environmental Risk Programme Delivery: own and drive environmental risk programme(s) and projects end-to-end; managing schedules, overcoming barriers, controlling scope, and delivering regulation-based outcomes that bring risk within tolerance levels.<br />- Subject Matter Expertise &amp; Strategic Influence: serve as the environmental subject matter expert for your area, staying current on regulatory changes, industry trends, and risk mitigation innovations. Identify opportunities to standardise and scale environmental solutions across the UK &amp; Ireland network, influencing cross-functionally to embed best practice.<br />- Team Leadership &amp; Development — Line manage a team of waste coordinators based at UK operational sites, overseeing hazardous waste management and elements of environmental site management. Coach and develop the team to build environmental capability across the network.<br /><br />A day in the life<br />Every day will be different. You will be visiting multiple Operations locations, of which all have slight differences. You will be engaging with your senior stakeholders and ensuring the sites and the business as a whole are set up to deliver effective environmental compliance. You will work across multiple teams in Amazon that each play a part in ensuring environmental compliance. You will be comfortable with a dynamic organization, where agility to move focus and priorities based on business risk is essential in this role. <br /><br />About the team<br />The EU EAP team is responsible for all Environmental Compliance in Europe.  We have an exciting opportunity to own one of the most interesting and complex regions of our network, as you will cover two countries and variety of different sites. This is a chance to really make your mark and demonstrate how environmental compliance can make a positive impact to the business. As a team we are learning fast and always looking for ways to Simplify, Sustain and Scale Environmental Compliance in Europe.</p><h3>Basic qualifications</h3><p>- Experience with all Microsoft Office applications<br />- Experience in compliance, audit or risk management<br />- Experience developing and implementing environmental compliance programs including regulated waste, water, and air regulations in accordance with applicable laws<br />- Experience communicating with a wide range of stakeholders, including colleagues and leadership, or experience in an operational role<br />- Bachelor’s degree in the Environmental Sciences, Environmental Engineering, or related field of study, or equivalent level of qualification in line with the European Qualifications Framework (EQF)</p><h3>Preferred qualifications</h3><p>- Experience working in relevant industries such as law, customer service, investigations, risk, compliance or project management<br />- Experience implementing scalable compliance solutions (technology, procedures, processes, etc.) in a regulated environment<br />- Master's Degree in civil, chemical or environmental engineering or related field of engineering or science study.<br />- Project management certification such as PMP, Scrum, or other Agile certification<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596675/environmental-compliance-manager-environmental-assurance-and-protection",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596738",
+    "slug": "amazon-ehs-specialist-10596738",
+    "company": "amazon",
+    "title": "EHS Specialist",
+    "locations": [
+      "Euclid, OH, United States"
+    ],
+    "remote": false,
+    "department": "Medical, Health, & Safety",
+    "descriptionHtml": "<p>Join Amazon’s mission to become Earth’s safest place to work! At Amazon, we’ve set the ambitious goal to become the benchmark of safety excellence across all industries in which we operate. As a Workplace Health &amp; Safety Specialist (WHSS), you'll be at the forefront of transforming workplace safety culture at one of the world's most innovative companies. Your expertise and dedication will directly protect employees, ensuring they return home safely to their families every day. You'll facilitate new approaches to safety, combining technology with human-centered solutions to create an environment where safety and productivity thrive together. This isn't just about maintaining safety standards – it's about revolutionizing how we think about and implement workplace safety, making a lasting impact on our people and operations. As your building's designated safety champion, you'll have the unique opportunity to build relationships, influence positive change, and help write the next chapter in Amazon's commitment to becoming Earth's Safest Place to Work.<br /><br />Core Impact Areas:<br />Safety Program Excellence &amp; Implementation - Drive comprehensive safety programs through data-driven strategies. Lead daily safety audits, incident investigations, and risk assessments while implementing innovative solutions to prevent injuries. Deliver engaging safety training that resonates with associates and promotes a proactive safety culture. Champion continuous improvement initiatives that enhance workplace safety while maintaining operational efficiency.<br /><br />Associate Advocacy &amp; Cultural Leadership -  Serve as a trusted safety advisor and advocate for associate wellbeing, building strong partnerships across all levels of the organization. Foster a culture where safety is everyone's priority through effective communication, coaching, and positive reinforcement. Develop strong relationships with frontline associates and leadership to drive behavioral changes and ensure safety best practices become natural habits. Transform safety data into compelling narratives that influence positive change and drive engagement in safety initiatives.<br /><br />Additional Job Elements include: <br />- Lift up to 49 pounds and frequently push, pull, squat, bend, and reach<br />- Stand/walk for up to 12 hours during shifts<br />- Work in an environment where the noise level varies <br />- Work in an environment that is subject to variable temperatures and weather (delivery stations include outside loading departments)<br />- Continuously climb and descend stairs (applies to sites with stairs)<br />- Maintain effective care delivery in emergencies and assist emergency response at the site<br /><br />Must be available to work flexible shifts including days, nights and/or weekends. <br /><br />For those that do not have an adult First Aid, CPR, AED certification from the American Heart Association or American Red Cross, must obtain within 3 weeks of start date.</p><h3>Basic qualifications</h3><p>- High school or equivalent<br />- A minimum of 1 year in an Environmental Health &amp; Safety (EHS) related field OR; A Bachelor’s degree in EHS-relevant background OR; 6 months experience performing in a safety-related role within Amazon<br />- Knowledge of OSHA regulations specifically 29 CFR 1910<br />- Experience using Microsoft Word and Excel in a professional capacity<br />- Experience maintaining confidentiality in matter involving security and/or personnel issues in the workplace</p><h3>Preferred qualifications</h3><p>- Bachelor’s degree or higher, preferably in a safety related field<br />- Strong communication, teamwork, analysis, judgment, and customer focus skills<br />- Experience leading and managing a team, ability to analyze accident data, new processes, and machinery for potential safety concerns, and conduct job hazard and job safety analyses<br />- Experience in emergency response and currently holds First Aid and CPR certificates<br />- Experience in workers compensation case management<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, OH, Euclid - 28.94 - 33.41 USD hourly",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596738/ehs-specialist",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596914",
+    "slug": "amazon-sr-data-engineer-ww-pricing-data-and-insights-10596914",
+    "company": "amazon",
+    "title": "Sr. Data Engineer, WW Pricing Data and Insights",
+    "locations": [
+      "Vancouver, BC, Canada"
+    ],
+    "remote": false,
+    "department": "Data Science",
+    "category": "data",
+    "descriptionHtml": "<p>WW Pricing drives the success of Amazon Retail and 3P Pricing. We build software that makes billions of monthly pricing recommendations on our marketplaces. We earn our customers' trust by consistently delivering the lowest prices possible: we price and publish prices automatically for the millions of products bought worldwide every day by our customers.<br /><br />You will be joining WW Pricing Data &amp; Analytics team which consists of several Data Engineers and Business Intelligence Engineers. <br /><br />As a Senior Data Engineer, you will be a technical lead on the team, leading designs and mentoring engineerings on the team. you will create data models and ML data infrastructure that power our pricing algorithms and shape both customer and seller experiences. You'll develop essential data flows that keep our systems running smoothly while uncovering valuable insights that drive customer and seller success. You'll leverage GenAI to build next generation solutions for data and analytics as well as operations.<br /><br />This job is for you if you are passionate  about  working with the largest and most complex data to optimize service performance. You will own the models and processes for collecting and transforming data, and work within the Pricing software engineering teams to drive the resulting business initiatives. You will learn the customer's intentions, and support us in understanding them as we take our business to the next level.  <br /><br />Key job responsibilities<br />- Architecture design and implementation of next generation data pipelines and BI solutions<br />- Build next generation data and analytics solutions using GenAI<br />- Manage AWS resources including EC2, RDS, Redshift, Kinesis, EMR, Lambda etc.<br />- Build and deliver high quality data architecture and pipelines to support business analyst, data scientists, and customer reporting needs.<br />- Interface with other technology teams to extract, transform, and load data from a wide variety of data sources<br />- Continually improve ongoing reporting and analysis processes, automating or simplifying self-service support for customers</p><h3>Basic qualifications</h3><p>- 5+ years of data engineering experience<br />- Experience with data modeling, warehousing and building ETL pipelines<br />- Experience with SQL<br />- Experience in at least one modern scripting or programming language, such as Python, Java, Scala, or NodeJS<br />- Experience mentoring team members on best practices</p><h3>Preferred qualifications</h3><p>- Experience with big data technologies such as: Hadoop, Hive, Spark, EMR<br />- Experience operating large data warehouses<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. As a total compensation company, Amazon's package may include other elements such as sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon offers comprehensive benefits including health insurance (medical, dental, vision, prescription, basic life &amp; AD&amp;D insurance), Registered Retirement Savings Plan (RRSP), Deferred Profit Sharing Plan (DPSP), paid time off, and other resources to improve health and well-being. We thank all applicants for their interest, however only those interviewed will be advised as to hiring status.</p><br /><br />CAN, BC, Vancouver - 135,700.00 - 226,500.00 CAD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596914/sr-data-engineer-ww-pricing-data-and-insights",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10597153",
+    "slug": "amazon-senior-financial-analyst-nacf-amazon-robotics-10597153",
+    "company": "amazon",
+    "title": "Senior Financial Analyst, NACF, Amazon Robotics",
+    "locations": [
+      "Nashville, TN, United States",
+      "Bellevue, WA, United States",
+      "New York, NY, United States",
+      "Irving, TX, United States"
+    ],
+    "remote": false,
+    "department": "Finance & Accounting",
+    "category": "data",
+    "descriptionHtml": "<p>Amazon’s North American Customer Fulfillment (NACF) Finance is looking for a Senior Financial Analyst to be a trusted finance partner for operational and functional leaders within the US Amazon Robotics Sortable Network. Amazon operates the most complex retail networks in the world, delivering billions of packages to hundreds of millions of homes and businesses annually. Come be part of this tremendous growth and join a dedicated team committed to operational and financial excellence where you will focus on the inputs, think like an owner, and where every day is Day One.<br /><br />Success in Role:<br />You know your business and proactively identify opportunities to decrease cost and/or improve customer and employee experience. You leverage appropriate resources to deep dive and make recommendations that influence leaders. You formulate how to deliver improvements and execute across the entire network of fulfillment centers. You understand controllership and are working to increase your knowledge here.<br /><br />This role will partner closely with a broad range of Senior Leaders in Finance, Operations, Supply Chain, Engineering, Procurement, Accounting, HR and Technology. This position plays a critical role as a financial advocate and business partner. This role will design, develop, and maintain performance measurements and reporting on strategic input drivers to continuously improve the economics of the business.<br /><br /><br />Key job responsibilities<br />Business Finance Support:<br /><br />Use solid financial knowledge and business acumen to build financial models and analyze business problems with limited guidance.<br /><br />Draw conclusions and make recommendations that deliver results and drive improvements.<br /><br />Independently align financial and operational analyses with your business partners, challenging business partner assumptions when necessary.<br /><br />Proactively identify opportunities to resolve finance defects and improve, automate, standardize or simplify finance or business tools and processes across teams and organizations.<br /><br /><br />Controllership:<br /><br />Own the financial reporting for a business area and may supervise or teach others in areas of financial reporting.<br /><br />Identify and solve complex data integrity issues and collaborate with stakeholders on resolution, insisting on the highest standards.<br /><br />Develop and execute data analysis processes that are scalable and auditable.<br /><br />Communication:<br /><br />Intuitively utilize active listening skills to communicate data (both written and verbal) in a clear, concise, and unambiguous manner.<br /><br />Adjusting your style based on audience, to articulate complex finance issues.<br /><br />Create effective business partnership with Site Leaders, manage competing priorities, and provide guidance during unexpected events.<br /><br />About the team<br />Amazon Robotics Sortable (ARS): ARS Sites are highly-productive FCs where the items are stored in AR Pods moved by robots to the associate's position, hence the associate does not need to walk to pick the product. The primary functions of an ARS is to receive the items, stow and then pick them from the robotic floor where they are stored and pack them to ship. </p><h3>Basic qualifications</h3><p>- 3+ years of tax, finance or a related analytical field experience<br />- 3+ years of dissecting financial data and identifying patterns that support business strategy experience<br />- 3+ years of contributing to cross-functional initiatives that drive financial performance and strategy experience<br />- Bachelor's degree</p><h3>Preferred qualifications</h3><p>- 4+ years of participating in continuous improvement projects in your team to scale and improve controllership with measurable results experience<br />- MBA, or CPA<br />- Knowledge of Tableau<br />- Experience working with large-scale data mining and reporting tools (examples: SQL, MS Access, Essbase, Cognos) and other financial systems (examples: Oracle, SAP, Lawson, JD Edwards)<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, NY, New York - 73,600.00 - 128,800.00 USD annually<br />USA, TN, Nashville - 60,200.00 - 105,400.00 USD annually<br />USA, TX, Irving - 66,900.00 - 117,100.00 USD annually<br />USA, WA, Bellevue - 82,700.00 - 117,100.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10597153/senior-financial-analyst-nacf-amazon-robotics",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "source": "amazon"
   },
   {

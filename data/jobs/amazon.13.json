@@ -2642,6 +2642,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10480426/senior-financial-analyst-aws-supply-chain-operations-finance",
     "postedAt": "2026-07-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -2798,6 +2800,24 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10485375/area-manager-early-career-2027-nc-sc",
     "postedAt": "2026-07-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10485450",
+    "slug": "amazon-software-development-engineer-ads-ai-core-infra-aci-10485450",
+    "company": "amazon",
+    "title": "Software Development Engineer, Ads AI Core Infra (ACI)",
+    "locations": [
+      "Seattle, WA, United States",
+      "SEATTLE, WA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "engineering",
+    "descriptionHtml": "<p>Amazon Advertising is one of Amazon's fastest growing and most profitable businesses, responsible for defining and delivering AI-powered solutions that transform how advertisers make strategic decisions. We deliver billions of ad impressions and process massive volumes of advertiser data every single day. You'll work with us to pioneer breakthrough approaches in how AI agents access and reason over real-time advertiser data at scale.<br /><br />The Campaign Management team is responsible for capturing inputs for advertisers to control their advertising efforts. You can think of our team as the brain and nervous system of all the advertisements you see on amazon.com. We build large scale, high velocity distributed systems to service 100’s of millions of API requests per day, steam data at PB scale, process business logic on tight latency budgets, all while streaming and the data at high fidelity to 20+ other services to perform other critical advertising functions. We stand up world class CI/CD pipelines to deploy our service automating infrastructure provisioning, high volume load testing and first-rate monitoring so our engineers can keep their heads down inventing for our advertisers. Our problem space covers concurrent workflows across distributed systems (linearizability, eventual consistency), big data problems (propagation delay, ordering and hygiene) and performance (search optimization). Our team uses the latest AWS products and services to solve our problems including but not limited to: ECS, Fargate, EC2, EMR, Lambda, Kafka, Elastic Search, Dynamo DB, SQS, SNS, Cloud watch, CDK, Cloud Formation and many more.<br /><br />We are using generative AI and agentic systems to help advertising agents provide instant, strategic advice to millions of advertisers. You will need to invent new techniques for global ads experience, agent orchestration, and context optimization to ensure we're delivering accurate, trustworthy insights with minimal latency and token consumption. You'll create feedback loops to ensure our solutions are constantly evaluating themselves and improving.<br /><br />Key job responsibilities<br />- Design and implement scalable architectures for APIs serving millions of advertisers at thousands of transactions per second<br />- Build Model Context Protocol (MCP) server infrastructure—an emerging standard for AI agent-data interaction—that delivers advertiser context with sub-second latency and minimal token consumption<br />- Establish system design patterns and best practices for global ads experience at scale</p><h3>Basic qualifications</h3><p>- 3+ years of non-internship professional software development experience<br />- 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience<br />- Bachelor's degree in computer science or equivalent<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, SEATTLE - 143,700.00 - 194,400.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10485450/software-development-engineer-ads-ai-core-infra-aci",
+    "postedAt": "2026-07-28T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "source": "amazon"
   },
   {
@@ -3287,6 +3307,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10496865/data-center-technician",
     "postedAt": "2026-08-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -4841,6 +4863,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10528243/mech-robotics-tech",
     "postedAt": "2026-09-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -5663,6 +5687,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10537867/software-development-manager-amazon-security",
     "postedAt": "2026-09-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -6166,6 +6192,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10552299/senior-technical-program-manager-ww-amazon-stores-finance-asf-technology",
     "postedAt": "2026-09-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -7972,6 +8000,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10570354/applied-scientist-agi-ai-security",
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -8949,6 +8979,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10579238/food-safety-program-manager-ii-wwgs-retail-food-safety",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-04T17:14:19.908Z",
+    "closedAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {
@@ -10837,6 +10869,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10591755",
+    "slug": "amazon-executive-assistant-ii-amazon-ads-marketing-10591755",
+    "company": "amazon",
+    "title": "Executive Assistant II, Amazon Ads Marketing",
+    "locations": [
+      "New York, NY, United States"
+    ],
+    "remote": false,
+    "department": "Administrative Support",
+    "category": "marketing",
+    "descriptionHtml": "<p>Amazon Ads is seeking a self-driven, highly organized, customer obsessed Executive Assistant to support 2-3 Directors in the Amazon Ads Marketing organization. This high impact role functions as an essential info resource and POC for high profile industry events and C-level customer engagement. High-judgment planning and communication skills are required.  <br /> <br />The right candidate will have a strong bias for action and the ability to operate proactively and strategically, anticipating needs based on a thorough understanding of team priorities. Looking around corners, impeccable attention to detail, strong judgement, and the ability to meet tight deadlines while juggling multiple requests across global teams are all critical to success. A high level of integrity and discretion handling confidential information and professionalism dealing with senior executives inside and outside the company is essential.  <br /> <br />This role frequently coordinates with executive assistants and other partners across the broader Ads organization. A positive service-oriented approach is important, as is flexibility and a willingness to turn on a dime and take effective action as priorities shift. This is a NYC based role, five days a week in-office is required.  <br /> <br /><br />Key job responsibilities<br />- Complex calendar management and meeting prioritization for large scale meeting coordination<br />- Proactive project and events coordination and engagement with leadership<br />- Drive key team activities (staff meeting agendas, all-hands meetings, track and help drive completion of key deliverables and follow up onoutstanding items.<br />- Maintain organizational charts; partner with Finance, Recruiting and HR on headcount management<br />- Manage and develop another assistant within the Marketing team to further assist the office with: document coordination, meeting follow up and preparation, space planning and coordination, new hire onboarding, team social events, etc.<br />- Travel coordination, including creating detailed itineraries and briefing materials<br />- Coordinate and track expense reimbursements.<br />- Act as administrator over team SharePoint sites <br />- Act as administrator over Space Management for organization. </p><h3>Basic qualifications</h3><p>- 5+ years of executive assistant experience</p><h3>Preferred qualifications</h3><p>- Experience leading process improvements<br />- Experience in a fast-paced, high-tech company<br />- Experience designing processes to maximize efficiency<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, NY, New York - 81,600.00 - 142,800.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10591755/executive-assistant-ii-amazon-ads-marketing",
+    "postedAt": "2026-10-28T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10591786",
     "slug": "amazon-ccc-certified-pharm-tech-clinical-customer-care-amazon-pharmacy-10591786",
     "company": "amazon",
@@ -11676,6 +11725,41 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596567/mechanical-engineering-manager-design-engineering-quality",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596682",
+    "slug": "amazon-corporate-human-resources-partner-working-student-12-months-2027-10596682",
+    "company": "amazon",
+    "title": "Corporate Human Resources Partner Working Student (12 Months) - 2027",
+    "locations": [
+      "Berlin, BE, Germany"
+    ],
+    "remote": false,
+    "department": "Human Resources",
+    "category": "people",
+    "descriptionHtml": "<p>See your impact in motion | Discover careers at our Data Centers <br /><br />Amazon Web Services (AWS) Data Centers power the technology <br />people rely on every day, from streaming services and mobile apps to <br />cloud computing, generative AI, and online shopping. They’re the <br />foundation that enables hospitals, financial institutions, governments, <br />and businesses around the world to deliver the services people depend <br />on, when they need them.<br /><br />In these roles, you’ll work on the real-world infrastructure that keeps <br />technology running securely, reliably, and at global scale. You’ll solve <br />problems, collaborate across teams, and use advanced tools to support <br />systems that millions of people interact with every day.<br /><br />This is where your work connects to something bigger, moving beyond <br />theory into impact you can see, feel, and be part of, all while helping <br />build the future of Amazon Web Services.<br /><br />Key job responsibilities<br />- Manage an end-to-end project with one of Amazon's HR teams in EMEA over a 12-week period <br /><br />- Collaborate with senior management and business partners, as well as cross-functional HR support teams, to gain a 360-degree view of Amazon's approach to human resources <br /><br />- Learn and contribute to Amazon's approach to hiring and developing top talent <br /><br />- Support people operations and help preserve Amazon's peculiar culture in the way we attract, hire, and develop talented people <br /><br />- Work cross-functionally across areas such as compensation, onboarding, training and development, talent acquisition, and international HR <br /><br />- Identify opportunities for process improvement and implement creative solutions across HR teams worldwide <br /><br />- Deliver a continuously improving employee experience by thinking broadly and working cross-functionally in a fast-paced environment <br /><br />- Gain insight into managerial strategy and concepts, understanding everything that goes on behind the scenes to ensure teams have what they need to develop and retain a high-powered workforce <br /><br />A day in the life<br />No two days are the same as a Working Student at Amazon. Depending on your team, you could be diving into your project work — whether that involves analyzing compensation data, supporting an onboarding improvement initiative, or collaborating with the talent acquisition team on hiring strategies. You will participate in cross-functional meetings with HR colleagues, including international HR teams, working through process improvements that impact teams worldwide. You will also have the opportunity to network with other interns and attend learning sessions with senior HR leaders who share insights on Amazon's peculiar culture and leadership principles.  <br /><br />Throughout, you will balance project-focused deep dives with broad exposure to HR operations, from training and development programs to employee experience initiatives. Every day brings hands-on experience in a dynamic, fast-paced environment where your contributions directly support Amazon's ability to attract, develop, and retain exceptional talent. <br /><br />Note: You must have the right to work in the country of employment by the start date. </p><h3>Basic qualifications</h3><p>- Speak, write, and read fluently in German and English at C1 level or above<br />- Currently in your penultimate year and working towards a university bachelor’s or master’s in HR, HR Management, Organizational Development, Business Administration, Psychology, Social Sciences, Law or a related field (Humanities focused), or a similar discipline<br />- Eligible to complete a working student placement for up to 12 months</p><h3>Preferred qualifications</h3><p>- Strong problem-solving and analytical skills, with the ability to identify process improvements and innovative solutions.<br />- Excellent communication and teamwork skills, able to collaborate effectively with others.<br />- Demonstrated curiosity, proactivity, and willingness to take on challenges in an ambiguous, fast-paced environment.<br />- Effective interpersonal, written, and oral communication with a keen focus on delivering business results.<br />- Demonstrated track record in using data and metrics to make decisions and build scalable solutions.<br />- Ability to influence across all levels of an organization.<br />- Ability to act strategically and make decisions under ambiguity.<br />- Strong organizational and time management skills.<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />m/w/d<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596682/corporate-human-resources-partner-working-student-12-months-2027",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596871",
+    "slug": "amazon-slp-specialist-intl-security-and-loss-prevention-10596871",
+    "company": "amazon",
+    "title": "SLP Specialist, INTL, Security & Loss Prevention",
+    "locations": [
+      "Lerma, Mexico",
+      "LERMA, Mexico"
+    ],
+    "remote": false,
+    "department": "Investigation & Loss Prevention",
+    "category": "engineering",
+    "descriptionHtml": "<p>At Amazon, we're working to be the most customer-centric company on earth. To get there, we need exceptionally talented, bright, and driven people.  Amazon is one of the most recognizable brand names in the world and we distribute millions of products each year to our loyal customers.<br /><br />The Loss Prevention Specialist (LPS) is a key high level hourly associate position in the Amazon Fulfillment Centers (FCs). In this role, you will lead the effort to efficiently and effectively provide security services and asset (lives, buildings, equipment, inventory, data, &amp; intellectual property) protection in a designated FC. You will reports to the Loss Prevention Manager responsible for their facility, and aid them in supporting the FC Operational team, and the cross functional teams throughout the organization. <br /><br />Key job responsibilities<br />- Enhance, track, and report on metrics which are key performance indicators, allowing performance improvements so that the desired outcomes are achieved to plan and in a timely manner<br />- Ensure internal controls per Sarbanes Oxley (SOX) requirements related to area are fulfilled<br />- Assist with investigations of internal and external theft and fraud and conduct interviews when appropriate<br />- Inspire performance excellence on the part of all security services team members<br />- Ensure that you understand, align performance and actions with and can clearly articulate the vision and values of the organization and their department<br />- Meet or surpass your objectives that align with security service model<br />- Identify, promote and implement security best practices in a designated FC<br />- Serve as department’s liaison and security subject matter expert for facility management keeping them abreast of key issues, strategies and the department’s performance<br />- Utilize Lean and Six Sigma methods to drive process improvements and increase efficiency<br />- Effectively partner with internal customers in evaluating current and future security services, processes and initiatives<br />- Coordinate data collection, through database polling or data entry, from multiple FCs; and conduct analysis generating strategic and tactical interpretations<br /><br />About the team<br />Inclusive team culture <br /> <br />At Amazon we embrace our differences and we are committed to furthering our culture of inclusion. We host annual and ongoing learning experiences. Amazon’s culture of inclusion is reinforced within our 14 Leadership Principles, which remind team members to seek diverse perspectives, learn and be curious, and earn trust.   <br /> <br />Work Life Balance <br /> <br />We believe striking the right balance between your personal and professional life is critical to life-long happiness and fulfillment. We offer flexibility in working hours and encourage you to find your own balance between your work and personal lives.   <br /> <br />Mentorship &amp; Career Growth <br /> <br />Our team is dedicated to supporting new members. We have a broad mix of experience levels and tenures, and we’re building an environment that celebrates knowledge sharing and mentorship. We care about your career growth and strive to assign projects based on what will help each team member develop into a better-rounded professional.<br /></p><h3>Basic qualifications</h3><p>- 2+ year experience in security services, asset protection, audit, risk management, inventory control, quality assurance, or other related field<br />- Proficient with MS Office Professional Suite, including intermediate knowledge of Excel<br />- High school diploma or equivalent<br />- B1, Basic - Intermediate English Level<br />- Shift work will be required, potentially to include nights, weekends and Public Holidays</p><h3>Preferred qualifications</h3><p>- Familiarity with Lean Six Sigma concepts desired and certification<br /> - Strong familiarity with data bases (querying and analyzing) such as SQL, MYSQL, Access, Exception Based Reporting, etc.<br />- Interviewing and Interrogation experience desired and Wicklander and Zulawski certification is a plus<br />- Bachelor's degree or on track to obtaining a Bachelor’s degree in less than one year<br />- Experience with warehouse or distribution center services<br /> - Workplace Violence and/or Business Continuity experience<br />- Awareness and implementation of best practices related to the utilization of physical security systems, investigation techniques, effective oversight of contract security officers, and distribution center loss mitigation techniques<br />- Demonstrated ability to work independently with off-site supervision<br />- Strong oral and written communication skills<br />- Comfortable working in a fast-paced and multi-tasking environment<br />- Analytical experience in performance based, action and results oriented setting<br />- Proficiency in both Spanish and English <br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596871/slp-specialist-intl-security-loss-prevention",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "source": "amazon"
   },
   {

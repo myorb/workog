@@ -171,6 +171,23 @@
     "source": "lever"
   },
   {
+    "id": "lever:01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
+    "slug": "zoox-staff-senior-staff-software-engineer-collision-avoidance-system-01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
+    "company": "zoox",
+    "title": "Staff / Senior Staff Software Engineer - Collision Avoidance System",
+    "locations": [
+      "Foster City, CA"
+    ],
+    "remote": false,
+    "department": "Autonomy Software",
+    "category": "engineering",
+    "descriptionHtml": "The Collision Avoidance System (CAS) is Zoox's independent safety layer. It runs alongside our main autonomy stack, constantly watches for imminent collisions, and reacts within milliseconds to prevent or reduce them. By using different methods and data paths than the main stack, CAS gives our robotaxi a second, diverse line of defense in the most challenging dense urban environments.\n<br />As a Staff or Senior Staff engineer, you will be the technical lead for CAS algorithms, with a focus on CAS perception. You will shape how CAS sees the world, combining interpretable geometric methods with machine learning, and you will own the architecture and roadmap that take these capabilities from idea to safe, real-time deployment on our fleet. Your work will directly affect the safety of every rider and road user around our vehicles.<h3>In this role, you will: </h3><ul>\n<li>Serve as the technical lead and architect for CAS perception, defining how lidar, radar, and camera data become reliable obstacle detection, tracking, and collision-risk estimates under tight latency and compute budgets</li>\n<li>Design, implement, and ship both machine learning and classical perception algorithms (e.g., point-cloud geometry, ground estimation, clustering, state estimation and tracking, learned detection and segmentation, sensor fusion) in production-quality, safety-critical C++</li>\n<li>Own the end-to-end CAS algorithm architecture and multi-release technical roadmap, making clear trade-offs between safety, performance, latency, compute, and ML vs. non-ML approaches</li>\n<li>Partner across CAS perception, behavior and planning, and validation to define interfaces, requirements, metrics, and evaluation strategies that show the system is safe and ready to launch</li>\n<li>Work with sensor, system performance, safety strategy, and main autonomy teams to drive cross-team technical decisions, while mentoring engineers and raising the technical bar across CAS</li>\n</ul><h3>Qualifications</h3><ul>\n<li>\n<p>BS, MS, or PhD in Computer Science, Electrical Engineering, Robotics, or a related field, or equivalent experience</p>\n</li>\n<li>\n<p>At least 10 years of experience developing perception or related algorithms for robotics, autonomous vehicles, or other real-time systems</p>\n</li>\n<li>\n<p>Deep expertise in 3D perception from lidar, radar, and/or camera, with hands-on experience in both machine learning (detection, segmentation, fusion) and classical methods (geometry, state estimation, tracking)</p>\n</li>\n<li>\n<p>Strong C++ or Python skills and a track record of shipping efficient, reliable real-time software to production</p>\n</li>\n<li>\n<p>Experience leading the architecture and technical roadmap of a complex production system across multiple teams</p>\n</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Conference or Journal publications in Machine Learning or Robotics-related venues</p>\n</li>\n<li>\n<p>Experience with safety-critical systems or functional safety practices (e.g., ISO 26262, SOTIF), collision avoidance, emergency braking, prediction, or planning systems for autonomous vehicles</p>\n</li>\n<li>\n<p>Experience optimizing and deploying models or algorithms on onboard compute (e.g., GPU / CUDA, TensorRT)</p>\n</li>\n</ul>",
+    "applyUrl": "https://jobs.lever.co/zoox/01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
+    "postedAt": "2026-11-04T17:05:31.885Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "lever"
+  },
+  {
     "id": "lever:2a5ffe65-9b0a-4f0e-a2d4-d7875b5c6f24",
     "slug": "zoox-engineering-manager-software-core-connectivity-2a5ffe65-9b0a-4f0e-a2d4-d7875b5c6f24",
     "company": "zoox",
@@ -806,6 +823,25 @@
     "source": "lever"
   },
   {
+    "id": "lever:6f987774-9331-46fa-991a-0e01e0c69282",
+    "slug": "zoox-staff-software-engineer-gpu-system-software-onboard-execution-6f987774-9331-46fa-991a-0e01e0c69282",
+    "company": "zoox",
+    "title": "Staff Software Engineer - GPU System Software, Onboard Execution",
+    "locations": [
+      "Foster City, CA",
+      "Boston, MA",
+      "Seattle, WA"
+    ],
+    "remote": false,
+    "department": "Software Systems",
+    "category": "engineering",
+    "descriptionHtml": "<p>Zoox is building a purpose-built robotaxi from the ground up and running it on public roads today, with riders. Every perception, prediction, and planning decision runs on an onboard compute: a fixed-power, fixed-thermal, safety-critical, real-time system. </p>\n<p>That makes GPU execution one of the most consequential engineering problems in the company. Each new model generation wants more compute. Each new vehicle generation needs to cost less, use less power, and stay safe. Closing that gap is not a kernel-tuning exercise. It takes an end-to-end technical vision for how the whole onboard AI workload is scheduled, shared, isolated, and sized across GPUs, and the authority to drive that vision across ML, autonomy, middleware, and hardware organizations.</p>\n<p>You will join Zoox's Software Performance organization, which owns end-to-end performance of the onboard software stack: profiling and observability, GPU compute, and compute platform. You will work closely with Perception, Prediction, Planning, ML Infrastructure, and Hardware teams, and you will be a senior technical voice for onboard compute across the company.</p>\n<p>We are looking for the technical leader who sets that vision. You will define how Zoox runs AI on the vehicle, and you will own the strategy for doing more with less compute on every vehicle we build next.</p>\n\n\n\n \n\n\n\nThere are three major components to compensation for this position: salary, Amazon Restricted Stock Units (RSUs), and Zoox Stock Appreciation Rights. A sign-on bonus may be offered as part of the compensation package. The listed range applies only to the base salary. Compensation will vary based on geographic location and level. Leveling, as well as positioning within a level, is determined by a range of factors, including, but not limited to, a candidate's relevant years of experience, domain knowledge, and interview performance. The salary range listed in this posting is representative of the range of levels Zoox is considering for this position.\n \nZoox also offers a comprehensive package of benefits, including paid time off (e.g. sick leave, vacation, bereavement), unpaid time off, Zoox Stock Appreciation Rights, Amazon RSUs, health insurance, long-term care insurance, long-term and short-term disability insurance, and life insurance.\n\n\n<strong>About Zoox</strong>\nZoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.",
+    "applyUrl": "https://jobs.lever.co/zoox/6f987774-9331-46fa-991a-0e01e0c69282",
+    "postedAt": "2026-11-04T18:13:46.283Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "lever"
+  },
+  {
     "id": "lever:7bf2a9b3-8aa5-4950-b8b8-14306ef1069f",
     "slug": "zoox-program-tooling-and-analytics-developer-7bf2a9b3-8aa5-4950-b8b8-14306ef1069f",
     "company": "zoox",
@@ -1313,6 +1349,23 @@
     "applyUrl": "https://jobs.lever.co/zoox/51af47c0-7243-4f27-b13b-dbcde4c06781",
     "postedAt": "2026-10-13T23:10:19.594Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "source": "lever"
+  },
+  {
+    "id": "lever:62ba74a7-862e-4561-904b-075f3b4c8a7b",
+    "slug": "zoox-senior-data-scientist-62ba74a7-862e-4561-904b-075f3b4c8a7b",
+    "company": "zoox",
+    "title": "Senior Data Scientist",
+    "locations": [
+      "Boston, MA"
+    ],
+    "remote": false,
+    "department": "Data Science",
+    "category": "data",
+    "descriptionHtml": "<p>We are seeking a Senior Data Scientist to join our Perception Verification and Validation team. The team is responsible for verifying and validating the perception stack of our autonomous driving system by building the metrics, datasets, and analyses that tell us how perception performance translates into driving behavior. As a senior member of the team, you will own the evaluation strategy for major perception capabilities from start to finish, partnering with perception and ML engineers, systems and safety engineers, and autonomy leadership to decide what to measure, how to measure it with statistical rigor, and what the results mean for release decisions.</p>\n<p>Your work will directly shape how Zoox safely and efficiently ships perception improvements to our fleet, connecting model-level performance to end-to-end system behavior. You will also help raise the bar for the team by mentoring other data scientists and setting technical direction for how we validate perception.</p>\n\n\n<h2><strong>In this role, you will...</strong></h2>\n<ul>\n<li>\n<p>Lead the design of metrics and evaluation frameworks for new perception capabilities, partnering with perception engineers early in model development to define what \"ready to ship\" means and how it connects to end-to-end driving behavior.</p>\n</li>\n<li>\n<p>Drive cross-team validation projects, bringing together perception, systems, safety, and autonomy stakeholders to build consensus on metrics, evaluation datasets, and release criteria.</p>\n</li>\n<li>\n<p>Develop rigorous statistical methods for uncertainty quantification, error estimation, and error propagation (frequentist, bootstrap, and Bayesian) so teams know when changes in performance are real.</p>\n</li>\n<li>\n<p>Build evaluation datasets and analyze large-scale, highly geospatial fleet and simulation data to uncover perception failure modes, then turn findings into clear recommendations for engineering and executive leadership.</p>\n</li>\n<li>\n<p>Mentor and guide a small group of data scientists by defining tasks, reviewing their work, and raising the team's technical bar.</p>\n</li>\n</ul>\n<h3>Requirements:</h3><ul>\n<li>\n<p>Master's degree with 7+ years of experience, or PhD with 3+ years of experience, in data science, applied science, or a related quantitative role (Statistics, Mathematics, Computer Science, or a related field).</p>\n</li>\n<li>\n<p>Expert proficiency with SQL and/or Spark (PySpark or Scala) and Python, with a track record of building production-quality analyses and pipelines on large-scale (terabyte+) distributed data.</p>\n</li>\n<li>\n<p>Deep expertise in statistical modeling, inference, and decision making, including uncertainty quantification, and a history of connecting point and uncertainty estimates to high-stakes decisions.</p>\n</li>\n<li>\n<p>Experience designing metrics and validating ML models, such as computer vision, sensor-based, or perception models, including discovering and measuring failure modes.</p>\n</li>\n<li>\n<p>Demonstrated track record of leading technical projects across teams, mentoring other data scientists or engineers, and presenting results and recommendations to senior leadership.</p>\n</li>\n</ul><h3>Bonus Qualifications:</h3><ul>\n<li>\n<p>Experience with autonomous driving, robotics, or other safety-critical systems, including system-level verification and validation or simulation.</p>\n</li>\n<li>\n<p>Experience analyzing geospatial data and/or working with embeddings (e.g., similarity search, representation learning).</p>\n</li>\n<li>\n<p>Skilled at using AI tools to improve development efficiency and quality.</p>\n</li>\n\n </ul><strong>Compensation:</strong>\n\n<p>There are three major components to compensation for this position: salary, Amazon Restricted Stock Units (RSUs), and Zoox Stock Appreciation Rights. A sign-on bonus may be offered as part of the compensation package. The listed range applies only to the base salary. Compensation will vary based on geographic location and level. Leveling, as well as positioning within a level, is determined by a range of factors, including, but not limited to, a candidate's relevant years of experience, domain knowledge, and interview performance. The salary range listed in this posting is representative of the range of levels Zoox is considering for this position.</p>\n<p>Zoox also offers a comprehensive package of benefits, including paid time off (e.g. sick leave, vacation, bereavement), unpaid time off, Zoox Stock Appreciation Rights, Amazon RSUs, health insurance, long-term care insurance, long-term and short-term disability insurance, and life insurance.</p>\n<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/62ba74a7-862e-4561-904b-075f3b4c8a7b",
+    "postedAt": "2026-10-28T13:50:22.870Z",
+    "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "source": "lever"
   },
   {

@@ -66,9 +66,9 @@ export async function postJson<T>(url: string, body: unknown): Promise<T> {
   return request(url, "application/json", (res) => res.json() as Promise<T>, body);
 }
 
-/** GET an HTML page, for career sites that embed their data in the page instead of offering an API. */
-export async function getText(url: string): Promise<string> {
-  return request(url, "text/html", (res) => res.text());
+/** GET an HTML page, for career sites that embed their data in the page instead of offering an API; `accept` for XML feeds. */
+export async function getText(url: string, accept = "text/html"): Promise<string> {
+  return request(url, accept, (res) => res.text());
 }
 
 /**

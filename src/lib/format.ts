@@ -1,25 +1,42 @@
 import { defaultLang, intlLocale, type Lang } from "./locale.ts";
 import { t } from "./i18n.ts";
 
+/**
+ * One Intl.DateTimeFormat per language and style: toLocaleDateString() builds a
+ * new formatter on every call, which added up to seconds over a build's pages.
+ */
+function cachedFormat(options: Intl.DateTimeFormatOptions): (iso: string, lang: Lang) => string {
+  const formats = new Map<Lang, Intl.DateTimeFormat>();
+  return (iso, lang) => {
+    let format = formats.get(lang);
+    if (!format) formats.set(lang, (format = new Intl.DateTimeFormat(intlLocale(lang), options)));
+    return format.format(new Date(iso));
+  };
+}
+
+const dateFormat = cachedFormat({ year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+const shortDateFormat = cachedFormat({ month: "short", day: "numeric", timeZone: "UTC" });
+const dateTimeFormat = cachedFormat({
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  timeZone: "UTC",
+  timeZoneName: "short",
+});
+
 export function formatDate(iso: string, lang: Lang = defaultLang): string {
-  return new Date(iso).toLocaleDateString(intlLocale(lang), { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+  return dateFormat(iso, lang);
 }
 
 /** Month and day only, for chart labels */
 export function formatShortDate(iso: string, lang: Lang = defaultLang): string {
-  return new Date(iso).toLocaleDateString(intlLocale(lang), { month: "short", day: "numeric", timeZone: "UTC" });
+  return shortDateFormat(iso, lang);
 }
 
 export function formatDateTime(iso: string, lang: Lang = defaultLang): string {
-  return new Date(iso).toLocaleString(intlLocale(lang), {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    timeZone: "UTC",
-    timeZoneName: "short",
-  });
+  return dateTimeFormat(iso, lang);
 }
 
 export function formatLocations(locations: string[], remote: boolean, max = 3, lang: Lang = defaultLang): string {

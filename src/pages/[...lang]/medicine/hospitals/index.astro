@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { getHospitalIndex } from "../../../../lib/jobs.ts";
+import { hospitalUrl, MIN_HOSPITAL_JOBS } from "../../../../lib/hospitals.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const { groups, hospitals } = await getHospitalIndex();
+const groupLinks = groups.map((g) => ({ href: hospitalUrl(g.slug), label: g.name, count: g.count }));
+const hospitalLinks = hospitals.map((h) => ({ href: hospitalUrl(h.slug), label: h.name, count: h.count }));
+---
+
+<Base title={md.hospitalsTitle} description={md.hospitalsDescription(hospitals.length)} section="medicine" noindex={!hospitals.length}>
+  <p class="muted"><a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /</p>
+  <h1>{md.hospitalsTitle}</h1>
+  {groupLinks.length > 0 && <><h2>{md.hospitalGroups}</h2><TagLinks links={groupLinks} /></>}
+  <h2>{md.hospitalsList}</h2>
+  {hospitalLinks.length ? <TagLinks links={hospitalLinks} /> : <p>{md.none}</p>}
+  <p class="muted note">{md.hospitalsNote(MIN_HOSPITAL_JOBS)}</p>
+</Base>
+
+<style>
+  .note { margin-top: 32px; font-size: 14px; }
+</style>

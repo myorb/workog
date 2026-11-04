@@ -1,0 +1,53 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import JobList from "../../../../components/JobList.astro";
+import TagLinks from "../../../../components/TagLinks.astro";
+import { countMedicine, getHospitalIndex, getHospitalJobs } from "../../../../lib/jobs.ts";
+import { hospitalsUrl, hospitalUrl } from "../../../../lib/hospitals.ts";
+import { levelLinks, specialtyLinks, stateLinks } from "../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+
+export const getStaticPaths = (async () => {
+  const { groups, hospitals } = await getHospitalIndex();
+  return withLangs([...groups, ...hospitals].map((h) => ({ params: { hospital: h.slug } })));
+}) satisfies GetStaticPaths;
+
+const { hospital } = Astro.params;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const u = (path: string) => localizePath(path, lang);
+const index = await getHospitalIndex();
+const group = index.groups.find((g) => g.slug === hospital);
+const entry = index.hospitals.find((h) => h.slug === hospital);
+const name = group?.name ?? entry?.name ?? hospital;
+const parent = entry?.group ? index.groups.find((g) => g.slug === entry.group) : undefined;
+const jobs = await getHospitalJobs(hospital);
+const counts = countMedicine(jobs);
+const members = (group?.hospitals ?? []).map((h) => ({ href: hospitalUrl(h.slug), label: h.name, count: h.count }));
+const bySpecialty = specialtyLinks(counts.specialties, lang);
+const byState = stateLinks(counts.states, lang);
+const byLevel = levelLinks(counts.levels, lang);
+---
+
+<Base title={md.hospitalTitle(name)} description={md.hospitalDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
+  <p class="muted">
+    <a href={u("/medicine")}>{m.sections.medicine}</a> /
+    <a href={u(hospitalsUrl)}>{md.nav.hospitals}</a> /
+    {parent && <><a href={u(hospitalUrl(parent.slug))}>{parent.name}</a> /</>}
+  </p>
+  <h1>{md.hospitalTitle(name)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+    {parent && <> · {md.partOf} <a href={u(hospitalUrl(parent.slug))}>{parent.name}</a></>}
+  </p>
+  {members.length > 0 && <><h2>{md.groupHospitals(name)}</h2><TagLinks links={members} /></>}
+  {bySpecialty.length > 1 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byState.length > 1 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  {byLevel.length > 1 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <h2>{m.latestJobs}</h2>
+  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+</Base>

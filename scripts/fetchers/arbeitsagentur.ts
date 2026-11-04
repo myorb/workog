@@ -1,5 +1,5 @@
 import { sanitizeDescription } from "../../src/lib/normalize.ts";
-import { germanLocation, levelOf, MEDICINE, specialtyOf, stateForCode } from "../../src/lib/medicine.ts";
+import { germanLocation, isDoctorTitle, levelOf, MEDICINE, specialtyOf, stateForCode } from "../../src/lib/medicine.ts";
 import { getJson, mapLimit } from "./http.ts";
 import type { Fetcher } from "./types.ts";
 
@@ -41,8 +41,16 @@ const MAX_PAGES = 100;
 const MAX_DETAILS_PER_RUN = 1500;
 
 // Doctors only: the occupation field also holds dentists, and some medical assistants slip in
-const isDoctor = (job: BaJob) =>
-  /arzt|ärzt/i.test(job.hauptberuf) && !/zahn|helfer|sekret|fachangestellt|physician assistant|arztassistent/i.test(job.hauptberuf);
+const isDoctor = (job: BaJob) => isDoctorTitle(job.hauptberuf);
+
+/**
+ * Hospital groups we fetch from their own careers sites (helios, asklepios,
+ * sana, and the rexx portals of Schön Klinik, the Alexianer and ISAR
+ * Klinikum). They copy many of their jobs to the Arbeitsagentur, so their
+ * postings here would list the same job twice.
+ */
+const OWN_SITE_EMPLOYERS = /\bhelios\b|\basklepios\b|\bsana\b|\bsch[öo]n klinik|\balexianer\b|\bisar klinik(um|en)\b/i;
+export const hasOwnSource = (job: Pick<BaJob, "firma">) => OWN_SITE_EMPLOYERS.test(job.firma ?? "");
 
 async function search(): Promise<BaJob[]> {
   const jobs: BaJob[] = [];
@@ -86,7 +94,7 @@ export const arbeitsagentur: Fetcher<RawJob> = {
 
   async fetch(_company, previous) {
     const known = new Map(previous.filter((j) => j.descriptionHtml).map((j) => [j.id, j.descriptionHtml]));
-    const jobs: RawJob[] = (await search()).filter(isDoctor).map((job) => ({ ...job, descriptionHtml: known.get(`arbeitsagentur:${job.referenznummer}`) }));
+    const jobs: RawJob[] = (await search()).filter((j) => isDoctor(j) && !hasOwnSource(j)).map((job) => ({ ...job, descriptionHtml: known.get(`arbeitsagentur:${job.referenznummer}`) }));
     const missing = jobs.filter((j) => !j.descriptionHtml).slice(0, MAX_DETAILS_PER_RUN);
     await mapLimit(missing, 4, async (job) => {
       try {

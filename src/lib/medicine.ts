@@ -5,11 +5,20 @@
  */
 import type { Job } from "./schema.ts";
 import { slugify } from "./normalize.ts";
+import { postalRuns } from "./postal-states.ts";
 
 /** Category of every medical job; tech pages leave these jobs out */
 export const MEDICINE = "medicine";
 
 export const isMedicine = (job: Pick<Job, "category">) => job.category === MEDICINE;
+
+/**
+ * Whether a German job title or occupation names a doctor's post. Hospital
+ * sites and the Arbeitsagentur also list dentists, medical assistants and
+ * secretaries under "Arzt", so those are left out.
+ */
+export const isDoctorTitle = (text: string) =>
+  /arzt|ärzt/i.test(text) && !/zahn|helfer|sekret|fachangestellt|physician assistant|arztassistent|schreib|mfa\b/i.test(text);
 
 // Checked in order, so the narrower names come before the broad ones they contain
 // ("Kinder- und Jugendpsychiatrie" before "Psychiatrie", "Radioonkologie" before "Onkologie",
@@ -20,13 +29,13 @@ const specialtyRules = [
   ["psychiatry", /psychiatr/i],
   ["radiology", /radiolog|nuklearmedizin|nuclear medicine|radioonkolog|strahlenther/i],
   ["cardiology", /kardiolog|cardiolog/i],
-  ["oncology", /onkolog|oncolog|h[äa]matolog/i],
+  ["oncology", /onkolog|oncolog|h[äa]matolog|ha?ematolog|h[ée]matolog/i],
   ["gastroenterology", /gastroenterolog/i],
-  ["emergency-medicine", /notfallmedizin|notarzt|not[äa]rzt|notaufnahme|emergency/i],
+  ["emergency-medicine", /notfallmedizin|notarzt|not[äa]rzt|notaufnahme|emergency|urgentiste|urgences|akutmedicin|akuttmedisin/i],
   ["orthopaedics", /orthop[äa]d|unfallchirurg|orthop(a)?edic/i],
   ["surgery", /chirurg|surgeon|surgery/i],
-  ["gynaecology", /frauenheilkunde|gyn[äa]kolog|geburtshilfe|gyn(a)?ecolog|obstetric/i],
-  ["paediatrics", /kinder- und jugendmedizin|kinderheilkunde|p[äa]diatr|kinderarzt|kinder[äa]rzt|pa?ediatric|neonatolog/i],
+  ["gynaecology", /frauenheilkunde|gyn[äa]kolog|geburtshilfe|gyn(a)?ecolog|gyn[ée]colog|obstetric|obst[ée]tri/i],
+  ["paediatrics", /kinder- und jugendmedizin|kinderheilkunde|p[äa]diatr|kinderarzt|kinder[äa]rzt|pa?ediatric|p[ée]diatr|neonatolog|barnmedicin|barnelege/i],
   ["neurology", /neurolog/i],
   ["dermatology", /haut- und geschlecht|dermatolog/i],
   ["ophthalmology", /augenheilkunde|augenarzt|augen[äa]rzt|ophthalmolog/i],
@@ -36,9 +45,9 @@ const specialtyRules = [
   ["public-health", /[öo]ffentliche[ns]? gesundheitswesen|gesundheitsamt|public health/i],
   ["laboratory-medicine", /laboratoriumsmedizin|mikrobiolog|microbiolog|patholog|transfusionsmedizin|hygiene/i],
   ["rehabilitation", /rehabilit|physikalische/i],
-  ["anaesthesiology", /an[äa]sthesi|anaesthesi|anesthesi/i],
-  ["general-practice", /allgemeinmedizin|hausarzt|haus[äa]rzt|general practi|weiterbildungsassistent/i],
-  ["internal-medicine", /innere medizin|internist|internal medicine|nephrolog|pneumolog|endokrinolog|diabetolog|rheumatolog|geriatr|angiolog/i],
+  ["anaesthesiology", /an[äa]sthesi|anaesthe|anesthe|anesth[ée]si|an[ae]stesi/i],
+  ["general-practice", /allgemeinmedizin|hausarzt|haus[äa]rzt|general practi|\bGP\b|weiterbildungsassistent|g[ée]n[ée]raliste|allm[äa]nmedicin|allmennlege|allmennmedisin|fastlege|huisarts/i],
+  ["internal-medicine", /innere medizin|internist|internal medicine|nephrolog|pneumolog|endokrinolog|endocrinolog|diabetolog|rheumatolog|geriatr|g[ée]riatr|angiolog|respiratory|interne medizin|internmedicin|indremedisin/i],
 ] as const satisfies readonly (readonly [string, RegExp])[];
 
 export const specialties = specialtyRules.map(([slug]) => slug);
@@ -47,10 +56,10 @@ export type Specialty = (typeof specialties)[number];
 // Head before senior before resident before specialist: "Leitender Oberarzt" is a senior
 // post, and "Assistenzarzt/Facharzt" adverts are mostly for residents
 const levelRules = [
-  ["head", /chefarzt|chef[äa]rzt|chief physician|[äa]rztliche[rn]? (direktor|leiter)/i],
-  ["senior", /oberarzt|ober[äa]rzt|leitende[rn]? arzt|leitende ärztin|senior physician|consultant/i],
-  ["resident", /assistenzarzt|assistenz[äa]rzt|weiterbildungsassistent|in weiterbildung|resident/i],
-  ["specialist", /facharzt|fach[äa]rzt|specialist/i],
+  ["head", /chefarzt|chef[äa]rzt|chief physician|[äa]rztliche[rn]? (direktor|leiter)|clinical director|medical director|chef de service|m[ée]decin[- ]chef(fe)?(?! de clinique)|primario|verksamhetschef/i],
+  ["senior", /oberarzt|ober[äa]rzt|leitende[rn]? arzt|leitende ärztin|senior physician|consultant|m[ée]decin adjoint|chef(fe)?\W{0,3}(ou cheffe )?de clinique|caposervizio|[öo]verl[äa]kare|overlege/i],
+  ["resident", /assistenzarzt|assistenz[äa]rzt|weiterbildungsassistent|in weiterbildung|resident|registrar|clinical fellow|foundation (year|doctor)|trainee|\b(st|at)-l[äa]kare|underl[äa]kare|m[ée]decin[- ]assistant|medico assistente|lege i spesialisering|\bLIS\b|arts in opleiding|\baios\b|basisarts/i],
+  ["specialist", /facharzt|fach[äa]rzt|specialist|specialty doctor|speciality doctor|associate specialist|sp[ée]cialiste|spesialist/i],
 ] as const satisfies readonly (readonly [string, RegExp])[];
 
 export const levels = levelRules.map(([slug]) => slug);
@@ -107,6 +116,26 @@ const stateBySlug = new Map(states.map((s) => [s.slug, s]));
 
 export const getState = (slug: string) => stateBySlug.get(slug);
 export const stateForCode = (code: string | undefined) => (code ? stateByCode.get(code) : undefined);
+/** The state by its German name ("Nordrhein-Westfalen"), as hospital sites write it */
+export const stateForName = (name: string | undefined) => (name ? stateByName.get(name.trim()) : undefined);
+
+/** The state a five-digit German postal code is in, from the OpenPLZ table in postal-states.ts. */
+export function stateForPostalCode(code: string | undefined): State | undefined {
+  if (!code || !/^\d{5}$/.test(code.trim())) return undefined;
+  const n = Number(code);
+  let lo = 0;
+  let hi = postalRuns.length - 1;
+  let found = -1;
+  // the last run starting at or before the code
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (postalRuns[mid]![0] <= n) {
+      found = mid;
+      lo = mid + 1;
+    } else hi = mid - 1;
+  }
+  return found < 0 ? undefined : states[postalRuns[found]![1]];
+}
 /** English name, except on German pages */
 export const stateName = (state: State, lang: string) => (lang === "de" ? state.name : state.en);
 

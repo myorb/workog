@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { levelOf, medicinePlaceOf, specialtyOf } from "./medicine.ts";
+import { isDoctorTitle, levelOf, medicinePlaceOf, specialtyOf, stateForPostalCode } from "./medicine.ts";
 
 describe("specialtyOf", () => {
   test("reads the occupation's specialty", () => {
@@ -34,5 +34,51 @@ describe("medicinePlaceOf", () => {
       city: { slug: "halle-saale", name: "Halle (Saale)" },
     });
     expect(medicinePlaceOf({ locations: ["Berlin, Germany"] })).toEqual({});
+  });
+});
+
+describe("stateForPostalCode", () => {
+  test("finds the state of codes on both sides of a border", () => {
+    expect(stateForPostalCode("38518")?.slug).toBe("lower-saxony");
+    expect(stateForPostalCode("61462")?.slug).toBe("hesse");
+    expect(stateForPostalCode("01067")?.slug).toBe("saxony");
+    expect(stateForPostalCode("68159")?.slug).toBe("baden-wuerttemberg");
+    expect(stateForPostalCode("67059")?.slug).toBe("rhineland-palatinate");
+    expect(stateForPostalCode("27568")?.slug).toBe("bremen");
+  });
+
+  test("ignores anything that isn't a five-digit code", () => {
+    expect(stateForPostalCode(undefined)).toBeUndefined();
+    expect(stateForPostalCode("1234")).toBeUndefined();
+    expect(stateForPostalCode("Berlin")).toBeUndefined();
+  });
+});
+
+describe("isDoctorTitle", () => {
+  test("keeps doctors and leaves out dentists and the people working for doctors", () => {
+    expect(isDoctorTitle("Oberärztin / Oberarzt Neurologie (w/m/d)")).toBe(true);
+    expect(isDoctorTitle("Assistenzarzt (m/w/d) für Radiologie")).toBe(true);
+    expect(isDoctorTitle("Chefarztsekretär (m/w/d)")).toBe(false);
+    expect(isDoctorTitle("Zahnarzt (m/w/d)")).toBe(false);
+    expect(isDoctorTitle("Medizinische Fachangestellte (m/w/d)")).toBe(false);
+    expect(isDoctorTitle("Medizinische Schreibkraft für den Chefarzt")).toBe(false);
+  });
+});
+
+describe("titles from other countries", () => {
+  test("UK, French and Nordic titles get a specialty and level", () => {
+    expect([specialtyOf("Consultant Anaesthetist"), levelOf("Consultant Anaesthetist")]).toEqual(["anaesthesiology", "senior"]);
+    expect([specialtyOf("Specialty Doctor in Haematology"), levelOf("Specialty Doctor in Haematology")]).toEqual(["oncology", "specialist"]);
+    expect([specialtyOf("Salaried GP"), levelOf("Paediatric Registrar")]).toEqual(["general-practice", "resident"]);
+    expect([specialtyOf("Médecin généraliste (H/F)"), specialtyOf("Pédiatre (H/F)"), specialtyOf("Anesthésiste réanimateur")]).toEqual([
+      "general-practice",
+      "paediatrics",
+      "anaesthesiology",
+    ]);
+    expect([levelOf("Överläkare inom psykiatri"), levelOf("ST-läkare i allmänmedicin"), levelOf("Overlege, indremedisin")]).toEqual([
+      "senior",
+      "resident",
+      "senior",
+    ]);
   });
 });

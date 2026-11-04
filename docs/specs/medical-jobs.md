@@ -1,6 +1,6 @@
 # Spec: Medical jobs (Germany and EU)
 
-Status: Phase 1 in progress · 2026-11-04. Built: the `medicine` category, specialties and career levels, the `arbeitsagentur` source (employers only), the start page, `/tech` and the `/medicine` section. Not yet: EURES, the recruitment-agency jobs with duplicate merging, and Phase 2.
+Status: Phase 1 in progress · 2026-11-04. Built: the `medicine` category, specialties and career levels, the `arbeitsagentur` source (employers only), the `helios`, `asklepios` and `sana` hospital sources, the `rexx` source (Schön Klinik, Alexianer, ISAR Klinikum), `eures`, `nhs`, `jobtech`, `jobroom`, the start page, `/tech`, the `/medicine` section and `/medicine/hospitals`. Not yet: EURES, the recruitment-agency jobs with duplicate merging, and Phase 2.
 
 ## Goal
 
@@ -57,7 +57,34 @@ Once a country has its own national source, take it out of the `eures` countries
 ### Not planned
 
 - **Medical job boards** (ärztestellen.de, praktischArzt, DocCheck): no public feed. Partnership only.
-- **Hospital career sites** (softgarden and others): worth looking at later, for jobs that hospitals don't post on the Arbeitsagentur.
+- **Smaller hospital career sites** (softgarden and others): see "Hospital groups" below for the big ones.
+
+### Hospital groups (built)
+
+The three largest private hospital groups post far more doctor jobs on their own sites than on the Arbeitsagentur, where they mostly use agencies or skip it. Counts are from 2026-11-04.
+
+| Key | Source | Doctor jobs, own site | … on the Arbeitsagentur | Access |
+| --- | --- | --- | --- | --- |
+| `helios` | Fresenius careers API (`api.careers.fresenius.com`), segment `FRESENIUS_HELIOS_HOSPITALS` | 737 | 113 | Open JSON API behind karriere.fresenius.de. Needs `Accept-Language: de-DE`. One details call per new job. |
+| `asklepios` | Search API behind asklepios.com/karriere (`/api/search`), work area "Ärztlicher Dienst" | 253 | 164 | Open; 60 per page. Text and address come from the JSON-LD JobPosting on each rexx job page. |
+| `sana` | Oracle Recruiting Cloud (`oracle` source, site `CX_4025`) | 233 | 31 | Oracle's public candidate API, usable for any Oracle careers site. |
+
+- **Doctors only:** all three filter titles with `isDoctorTitle` (src/lib/medicine.ts), which leaves out secretaries, assistants and dentists.
+- **No duplicates:** the `arbeitsagentur` source drops postings whose employer is a Helios, Asklepios or Sana company (`hasOwnSource`). Most of those were copies of jobs on the groups' own sites.
+- **State:** Helios and Asklepios give a postal code rather than a state. `stateForPostalCode` looks it up in src/lib/postal-states.ts, which `bun scripts/postal-states.ts` generates from OpenPLZ API open data.
+- **rexx portals (built):** Schön Klinik, the Alexianer and ISAR Klinikum run rexx job portals: a list page linking `…-de-j<id>.html` job pages, each with a JobPosting in JSON-LD. One `rexx` source reads any of them from `careersUrl`.
+- **Not built:** Agaplesion (softgarden; its API needs the widget's client ID as a login, which we don't reuse), Ameos (own site, 823 jobs, JSON-LD), Vivantes (Haufe umantis), Johanniter, Charité, MEDIAN (blocks automated requests). TUM and LMU Klinikum post only 7 and 3 doctor jobs, nearly all on the Arbeitsagentur too.
+
+### Europe (built)
+
+| Key | Source | Countries | Notes |
+| --- | --- | --- | --- |
+| `eures` | EURES search, ISCO C221 | EU/EEA except DE, SE, CH | One query per country (the search stops at 10,000). The text, city and apply link need a details call per job, capped at 2,000 a run (`EURES_MAX_DETAILS`); the rest show without text until a later run. Regions without a city are named from NUTS codes (src/lib/nuts-names.ts). Skips copies of Arbeitsagentur postings (`source` "DE…"). |
+| `nhs` | NHS Jobs XML feed, staff group `MEDICAL_AND_DENTAL` | UK | Dentists left out by title. Text from the job page's sections. |
+| `jobtech` | Arbetsförmedlingen JobSearch, SSYK 2211–2219 | Sweden | Open API, text included. |
+| `jobroom` | job-room.ch search | Switzerland | Health occupation codes plus keyword searches, filtered by title in German, French and Italian. |
+
+Location pages still cover German states only; jobs elsewhere appear in /medicine, the specialty, level and hospital pages.
 
 ## Pipeline changes
 

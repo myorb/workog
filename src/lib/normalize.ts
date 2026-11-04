@@ -32,7 +32,7 @@ export function sanitizeDescription(html: string): string {
       a: sanitizeHtml.simpleTransform("a", { rel: "nofollow noopener", target: "_blank" }),
     },
     exclusiveFilter: (frame) =>
-      ["p", "li", "strong", "b", "em"].includes(frame.tag) && !frame.text.trim() && !frame.mediaChildren.length,
+      ["p", "li", "strong", "b", "em", "h2", "h3", "h4"].includes(frame.tag) && !frame.text.trim() && !frame.mediaChildren.length,
   }).trim();
 }
 

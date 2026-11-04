@@ -14,6 +14,9 @@ bun run check            # type-check Astro pages and scripts
 bun run alert            # send a webhook alert for sources that fell back in the last run
 bun run snapshot         # rewrite today's data/history snapshot (or: bun run snapshot 2026-11-02)
 bun run ping             # tell search engines about the last run's job changes once it's live (or: --no-wait)
+bun scripts/postal-states.ts  # regenerate the postal code → German state table (rarely needed)
+bun scripts/nuts-names.ts     # regenerate the EU region names EURES locations use (rarely needed)
+EURES_MAX_DETAILS=20000 bun run fetch eures  # one-off backfill of EURES job texts past the daily cap
 ```
 
 ## Automation
@@ -69,12 +72,15 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `src/lib/job-files.ts` | Reads and writes `data/jobs` and `data/runs/seen.json`, for the pipeline and the site |
 | `src/pages/[...lang]/` | Browse pages, built once per language: English at `/`, others under `/uk`, `/es`, `/de`. `/` is the start page; the tech home is `/tech` and the medical-jobs section lives under `/medicine` |
 | `src/lib/medicine.ts` | Medical-jobs taxonomy: specialties, career levels and German states, with the rules that read them from titles |
+| `src/lib/hospitals.ts` | Hospitals and hospital groups for `/medicine/hospitals`: employers merged across legal-form spellings, a page from 5 open jobs; groups are companies marked `"group": true` |
+| `src/lib/nuts-names.ts` | Generated NUTS code → EU region name table, for EURES jobs that name a region but no city |
+| `src/lib/postal-states.ts` | Generated postal code → German state table, for hospital sites that give a postal code but no state |
 | `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would quadruple the build) |
 | `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
 
 ## Medical jobs
 
-`data/companies.json` marks medical-job sources with `"sector": "medicine"`; today that is `arbeitsagentur`, the Bundesagentur für Arbeit's job board, filtered to doctors and to employers only (no recruitment agencies). Its jobs carry `category: "medicine"` plus `specialty` and `level`, and stay out of every tech page, the analytics and the company list: `getOpenJobs()` returns tech jobs only, `getOpenMedicineJobs()` the medical jobs.
+`data/companies.json` marks medical-job sources with `"sector": "medicine"`; today that is `arbeitsagentur`, the Bundesagentur für Arbeit's job board, filtered to doctors and to employers only (no recruitment agencies), plus Europe's public job services (`eures` for the EU/EEA outside Germany, Sweden and Switzerland; `nhs` for the UK; `jobtech` for Sweden; `jobroom` for Switzerland) and the careers sites of hospital groups: `helios`, `asklepios`, `sana` (an `oracle` source) and the `rexx` portals of Schön Klinik, the Alexianer and ISAR Klinikum. The Arbeitsagentur source skips those groups' postings, which copy jobs from their own sites, and EURES skips its copies of Arbeitsagentur postings. Its jobs carry `category: "medicine"` plus `specialty` and `level`, and stay out of every tech page, the analytics and the company list: `getOpenJobs()` returns tech jobs only, `getOpenMedicineJobs()` the medical jobs.
 
 Search results have no description, so the fetcher reads each new job's details separately, at most 1,500 a run to stay inside the workflow timeout; the first run leaves the rest without text for the next runs to fill. The source sends the Jobsuche web app's own public client id, an undocumented API that may change.
 

@@ -49,10 +49,18 @@ import { apple } from "./fetchers/apple.ts";
 import { arbeitnow } from "./fetchers/arbeitnow.ts";
 import { arbeitsagentur } from "./fetchers/arbeitsagentur.ts";
 import { ashby } from "./fetchers/ashby.ts";
+import { asklepios } from "./fetchers/asklepios.ts";
 import { eightfold } from "./fetchers/eightfold.ts";
+import { eures } from "./fetchers/eures.ts";
 import { google } from "./fetchers/google.ts";
 import { greenhouse } from "./fetchers/greenhouse.ts";
+import { helios } from "./fetchers/helios.ts";
+import { jobroom } from "./fetchers/jobroom.ts";
+import { jobtech } from "./fetchers/jobtech.ts";
 import { lever } from "./fetchers/lever.ts";
+import { nhs } from "./fetchers/nhs.ts";
+import { oracle } from "./fetchers/oracle.ts";
+import { rexx } from "./fetchers/rexx.ts";
 import { smartrecruiters } from "./fetchers/smartrecruiters.ts";
 import { weworkremotely } from "./fetchers/weworkremotely.ts";
 import { workday } from "./fetchers/workday.ts";
@@ -88,6 +96,14 @@ const fetchers: Record<string, Fetcher<any>> = {
   [eightfold.name]: eightfold,
   [arbeitnow.name]: arbeitnow,
   [arbeitsagentur.name]: arbeitsagentur,
+  [helios.name]: helios,
+  [asklepios.name]: asklepios,
+  [oracle.name]: oracle,
+  [eures.name]: eures,
+  [nhs.name]: nhs,
+  [jobtech.name]: jobtech,
+  [jobroom.name]: jobroom,
+  [rexx.name]: rexx,
   [workingnomads.name]: workingnomads,
   [weworkremotely.name]: weworkremotely,
 };

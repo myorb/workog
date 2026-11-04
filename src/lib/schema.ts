@@ -44,7 +44,7 @@ export const CompanyConfigSchema = z.object({
   source: z.string().min(1),
   /** Board name for Greenhouse, Ashby and Lever, company identifier for SmartRecruiters */
   boardToken: z.string().optional(),
-  /** Public careers site for Workday and Eightfold, which the API URL is derived from */
+  /** Public careers site for Workday, Eightfold and Oracle Recruiting, which the API URL is derived from */
   careersUrl: z.url().optional(),
   /**
    * Keep only this many of the newest jobs, for companies too big to list in
@@ -55,6 +55,8 @@ export const CompanyConfigSchema = z.object({
   board: z.boolean().optional(),
   /** "medicine" for medical-job sources, whose jobs live in the /medicine section instead of the tech pages */
   sector: z.enum(["medicine"]).optional(),
+  /** A hospital group's own careers site; /medicine/hospitals lists it as a group of the hospitals it names as employers */
+  group: z.boolean().optional(),
 });
 
 export type CompanyConfig = z.infer<typeof CompanyConfigSchema>;

@@ -4,7 +4,8 @@ import Base from "../../../layouts/Base.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import JobFilters from "../../../components/JobFilters.astro";
-import { getMedicineCounts, getOpenMedicineJobs } from "../../../lib/jobs.ts";
+import { getHospitalIndex, getMedicineCounts, getOpenMedicineJobs } from "../../../lib/jobs.ts";
+import { hospitalsUrl, hospitalUrl } from "../../../lib/hospitals.ts";
 import { levelLinks, medicineCityLinks, specialtyLinks, stateLinks } from "../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
@@ -22,6 +23,8 @@ const bySpecialty = specialtyLinks(counts.specialties, lang);
 const byState = stateLinks(counts.states, lang);
 const byLevel = levelLinks(counts.levels, lang);
 const cities = medicineCityLinks(counts.cities).slice(0, 24);
+const hospitalIndex = await getHospitalIndex();
+const topHospitals = hospitalIndex.hospitals.slice(0, 24).map((h) => ({ href: hospitalUrl(h.slug), label: h.name, count: h.count }));
 // Shortcuts under the filters: the biggest specialties, then the biggest cities
 const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
 ---
@@ -58,6 +61,7 @@ const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
   {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
   {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}
   {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  {topHospitals.length > 0 && <><h2>{md.employers}</h2><TagLinks links={topHospitals} /><p><a href={u(hospitalsUrl)}>{md.allHospitals}</a></p></>}
   <p class="muted source">{md.source}</p>
 </Base>
 

@@ -10,6 +10,7 @@ import { readAllJobs } from "./job-files.ts";
 import { slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { isMedicine, type MedicinePlace, medicinePlaceOf } from "./medicine.ts";
+import { type HospitalIndex, hospitalSlugOf, indexHospitals } from "./hospitals.ts";
 import { technologiesOf } from "./technologies.ts";
 import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
 
@@ -40,15 +41,53 @@ export function getAllJobs(): Promise<Job[]> {
   return (jobsCache ??= loadJobs());
 }
 
-/** Open tech jobs: every browse page outside /medicine reads these, so medical jobs never show up there. */
-export async function getOpenJobs(): Promise<Job[]> {
-  return (await getAllJobs()).filter((j) => !j.closedAt && !isMedicine(j));
+let openJobsCache: Promise<Job[]> | undefined;
+let openMedicineJobsCache: Promise<Job[]> | undefined;
+
+/**
+ * Open tech jobs: every browse page outside /medicine reads these, so medical jobs never show up there.
+ * Computed once per build and shared by every page, so callers must not sort or splice it in place.
+ */
+export function getOpenJobs(): Promise<Job[]> {
+  return (openJobsCache ??= getAllJobs().then((jobs) => jobs.filter((j) => !j.closedAt && !isMedicine(j))));
 }
 
-/** Open medical jobs, for the /medicine pages */
-export async function getOpenMedicineJobs(): Promise<Job[]> {
-  return (await getAllJobs()).filter((j) => !j.closedAt && isMedicine(j));
+/** Open medical jobs, for the /medicine pages; shared like getOpenJobs(), so don't mutate it. */
+export function getOpenMedicineJobs(): Promise<Job[]> {
+  return (openMedicineJobsCache ??= getAllJobs().then((jobs) => jobs.filter((j) => !j.closedAt && isMedicine(j))));
 }
+
+/** Lists of jobs keyed by "<field>:<value>", each in the order of the list it was built from */
+type JobIndex = Map<string, Job[]>;
+
+function indexJobs(jobs: Job[], keysOf: (job: Job) => Iterable<string>): JobIndex {
+  const index: JobIndex = new Map();
+  for (const job of jobs) {
+    for (const key of keysOf(job)) {
+      const list = index.get(key);
+      if (list) list.push(job);
+      else index.set(key, [job]);
+    }
+  }
+  return index;
+}
+
+/**
+ * The shortest list a filter's fields pick from the index, so a hub page scans
+ * only the jobs that can match instead of every open job; undefined when the
+ * filter sets no field.
+ */
+function candidates(index: JobIndex, keys: (string | undefined)[]): Job[] | undefined {
+  let best: Job[] | undefined;
+  for (const key of keys) {
+    if (key === undefined) continue;
+    const list = index.get(key) ?? [];
+    if (!best || list.length < best.length) best = list;
+  }
+  return best;
+}
+
+const key = (field: string, value: string | boolean | undefined) => (value === undefined || value === "" ? undefined : `${field}:${value}`);
 
 export interface MedicineFilter {
   specialty?: string;
@@ -76,8 +115,22 @@ export function matchesMedicine(job: Job, filter: MedicineFilter): boolean {
   );
 }
 
+let medicineIndexCache: Promise<JobIndex> | undefined;
+
+const getMedicineIndex = () =>
+  (medicineIndexCache ??= getOpenMedicineJobs().then((jobs) =>
+    indexJobs(jobs, (job) => {
+      const { state, city } = medicinePlace(job);
+      return [key("specialty", job.specialty), key("level", job.level), key("state", state), key("city", city?.slug)].filter((k) => k !== undefined);
+    }),
+  ));
+
+/** Open medical jobs matching the filter, newest first */
 export async function getMedicineJobsWhere(filter: MedicineFilter): Promise<Job[]> {
-  return (await getOpenMedicineJobs()).filter((j) => matchesMedicine(j, filter));
+  const pool =
+    candidates(await getMedicineIndex(), [key("specialty", filter.specialty), key("level", filter.level), key("state", filter.state), key("city", filter.city)]) ??
+    (await getOpenMedicineJobs());
+  return pool.filter((j) => matchesMedicine(j, filter));
 }
 
 export interface MedicineCounts {
@@ -119,8 +172,11 @@ export async function getJobBySlug(slug: string): Promise<Job | undefined> {
   return (await getAllJobs()).find((j) => j.slug === slug);
 }
 
+let companyJobsCache: Promise<JobIndex> | undefined;
+
 export async function getJobsByCompany(company: string): Promise<Job[]> {
-  return (await getOpenJobs()).filter((j) => j.company === company);
+  const index = await (companyJobsCache ??= getOpenJobs().then((jobs) => indexJobs(jobs, (job) => [job.company])));
+  return [...(index.get(company) ?? [])];
 }
 
 export async function getJobsByLocation(location: string): Promise<Job[]> {
@@ -166,8 +222,33 @@ export function matches(job: Job, filter: JobFilter): boolean {
   );
 }
 
+let tagIndexCache: Promise<JobIndex> | undefined;
+
+const getTagIndex = () =>
+  (tagIndexCache ??= getOpenJobs().then((jobs) =>
+    indexJobs(jobs, (job) => {
+      const tags = tagsOf(job);
+      return [
+        ...[...tags.countries].map((s) => `country:${s}`),
+        ...[...tags.cities].map((s) => `city:${s}`),
+        ...[...tags.technologies].map((s) => `technology:${s}`),
+        ...[...tags.employment].map((s) => `employment:${s}`),
+        `remote:${job.remote}`,
+      ];
+    }),
+  ));
+
+/** Open tech jobs matching the filter, newest first */
 export async function getJobsWhere(filter: JobFilter): Promise<Job[]> {
-  return (await getOpenJobs()).filter((j) => matches(j, filter));
+  const pool =
+    candidates(await getTagIndex(), [
+      key("country", filter.country),
+      key("city", filter.city),
+      key("technology", filter.technology),
+      key("employment", filter.employment),
+      key("remote", filter.remote),
+    ]) ?? (await getOpenJobs());
+  return pool.filter((j) => matches(j, filter));
 }
 
 /** Open-job counts per tag, for linking only to pages that have jobs. */
@@ -225,6 +306,21 @@ export async function getCompanies(): Promise<CompanyConfig[]> {
 
 export async function getCompany(key: string): Promise<CompanyConfig | undefined> {
   return (await getAllCompanies()).find((c) => c.key === key);
+}
+
+let hospitalIndexCache: Promise<HospitalIndex> | undefined;
+
+/** Employers and hospital groups of the open medical jobs, once per build */
+export const getHospitalIndex = () =>
+  (hospitalIndexCache ??= Promise.all([getOpenMedicineJobs(), getAllCompanies()]).then(([jobs, companies]) =>
+    indexHospitals(jobs, new Map(companies.filter((c) => c.group).map((c) => [c.key, c.name]))),
+  ));
+
+/** Open medical jobs of one hospital's page: a group's whole feed, or one employer's jobs. */
+export async function getHospitalJobs(slug: string): Promise<Job[]> {
+  const [jobs, index] = await Promise.all([getOpenMedicineJobs(), getHospitalIndex()]);
+  if (index.groups.some((g) => g.slug === slug)) return jobs.filter((j) => j.company === slug);
+  return jobs.filter((j) => hospitalSlugOf(index, j.employer) === slug);
 }
 
 /** Keys of the medical-job sources, which the tech analytics leave out */

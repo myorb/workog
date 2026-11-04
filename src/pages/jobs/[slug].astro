@@ -4,7 +4,8 @@ import type { Job } from "../../lib/schema.ts";
 import Base from "../../layouts/Base.astro";
 import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
-import { getAllJobs, getCompany, getCompanyCounts, getMedicineCounts, getOpenMedicineJobs, getRemoteCount, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
+import { getAllJobs, getCompany, getCompanyCounts, getHospitalIndex, getMedicineCounts, getMedicineJobsWhere, getRemoteCount, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
+import { hospitalSlugOf, hospitalUrl } from "../../lib/hospitals.ts";
 import { getState, isMedicine, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialtyUrl } from "../../lib/medicine.ts";
 import { relatedJobs } from "../../lib/related.ts";
 import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
@@ -28,6 +29,10 @@ const employer = job.employer ?? companyName;
 const applyName = job.employer ? companyName : `${companyName}'s site`;
 const closed = Boolean(job.closedAt);
 const medicine = isMedicine(job);
+// pages for the job's hospital and its hospital group, when they have one
+const hospitalIndex = medicine ? await getHospitalIndex() : undefined;
+const hospitalSlug = hospitalIndex && hospitalSlugOf(hospitalIndex, job.employer);
+const groupPage = hospitalIndex?.groups.some((g) => g.slug === job.company);
 const where = formatLocations(job.locations, job.remote, 2);
 const employment = employmentTypeOf(job);
 const url = new URL(`/jobs/${job.slug}`, Astro.site);
@@ -56,9 +61,8 @@ const place = medicine ? medicinePlace(job) : {};
 const state = place.state ? getState(place.state) : undefined;
 const medicineCities = medicine ? (await getMedicineCounts()).cities : new Map();
 const cityPage = state && place.city && place.city.slug !== state.slug && (medicineCities.get(`${state.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
-const medicalJobs = medicine ? (await getOpenMedicineJobs()).filter((j) => j.id !== job.id) : [];
-const sameSpecialty = job.specialty ? medicalJobs.filter((j) => j.specialty === job.specialty).slice(0, 5) : [];
-const sameState = state ? medicalJobs.filter((j) => medicinePlace(j).state === state.slug && !sameSpecialty.includes(j)).slice(0, 5) : [];
+const sameSpecialty = medicine && job.specialty ? (await getMedicineJobsWhere({ specialty: job.specialty })).filter((j) => j.id !== job.id).slice(0, 5) : [];
+const sameState = medicine && state ? (await getMedicineJobsWhere({ state: state.slug })).filter((j) => j.id !== job.id && !sameSpecialty.includes(j)).slice(0, 5) : [];
 const medicineBrowse = [
   ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
   ...(job.specialty && state ? [{ href: specialtyUrl(job.specialty, state.slug), label: en.medicine.specialtyTitleIn(specialtyName!, state.en) }] : []),
@@ -110,13 +114,13 @@ const browse = [
   <h1>{job.title}</h1>
   {medicine ? (
   <dl class="facts">
-    <dt>Hospital or practice</dt><dd>{employer}</dd>
+    <dt>Hospital or practice</dt><dd>{hospitalSlug ? <a href={hospitalUrl(hospitalSlug)}>{employer}</a> : employer}</dd>
     <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}</dd>
     {job.specialty && <><dt>Specialty</dt><dd><a href={specialtyUrl(job.specialty)}>{specialtyName}</a></dd></>}
     {job.level && <><dt>Career level</dt><dd><a href={levelUrl(job.level)}>{en.medicine.levels[job.level]}</a></dd></>}
     {job.department && <><dt>Occupation</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
-    <dt>Listed on</dt><dd>{companyName}</dd>
+    <dt>Listed on</dt><dd>{groupPage ? <a href={hospitalUrl(job.company)}>{companyName}</a> : companyName}</dd>
   </dl>
   ) : (
   <dl class="facts">
