@@ -152,6 +152,8 @@ export interface MedicineCounts {
   cities: Map<string, MedicineCity>;
   /** keyed by "specialty/area", where the area is a state or any country (Germany too), for the specialty-in-place pages */
   specialtyAreas: Map<string, number>;
+  /** keyed by "specialty/area/city"; only cities with a page of their own get a specialty page (see specialtyCityKeys) */
+  specialtyCities: Map<string, number>;
 }
 
 export interface MedicineCity {
@@ -164,7 +166,7 @@ export interface MedicineCity {
 
 /** Open medical jobs per specialty, level, country, state and city, for linking only to pages that have jobs. */
 export function countMedicine(jobs: Job[]): MedicineCounts {
-  const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), countries: new Map(), states: new Map(), cities: new Map(), specialtyAreas: new Map() };
+  const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), countries: new Map(), states: new Map(), cities: new Map(), specialtyAreas: new Map(), specialtyCities: new Map() };
   const add = (map: Map<string, number>, key: string | undefined) => key && map.set(key, (map.get(key) ?? 0) + 1);
   for (const job of jobs) {
     add(counts.specialties, job.specialty);
@@ -181,6 +183,7 @@ export function countMedicine(jobs: Job[]): MedicineCounts {
       const entry = counts.cities.get(key) ?? { area, slug: city.slug, name: city.name, count: 0 };
       entry.count++;
       counts.cities.set(key, entry);
+      if (job.specialty) add(counts.specialtyCities, `${job.specialty}/${key}`);
     }
   }
   return counts;

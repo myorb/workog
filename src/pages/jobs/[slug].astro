@@ -67,6 +67,7 @@ const sameState = medicine && area ? (await getMedicineJobsWhere(areaFilter(area
 const medicineBrowse = [
   ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
   ...(job.specialty && area ? [{ href: specialtyUrl(job.specialty, area.slug), label: en.medicine.specialtyTitleIn(specialtyName!, areaLabel!) }] : []),
+  ...(job.specialty && cityPage ? [{ href: specialtyUrl(job.specialty, area!.slug, place.city!.slug), label: en.medicine.specialtyTitleIn(specialtyName!, place.city!.name) }] : []),
   ...(cityPage ? [{ href: medicineLocationUrl(area!.slug, place.city!.slug), label: en.medicine.placeTitle(place.city!.name) }] : []),
   ...(area ? [{ href: medicineLocationUrl(area.slug), label: en.medicine.placeTitle(areaLabel!) }] : []),
   ...(area?.kind === "state" ? [{ href: medicineLocationUrl(GERMANY), label: en.medicine.placeTitle("Germany") }] : []),

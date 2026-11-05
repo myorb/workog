@@ -218,7 +218,8 @@ export const MIN_CITY_JOBS = 10;
 
 export const medicineUrl = "/medicine";
 export const specialtiesUrl = "/medicine/specialties";
-export const specialtyUrl = (specialty: string, state?: string) => ["/medicine/specialties", specialty, state].filter(Boolean).join("/");
+/** A specialty's page, in a state or country (`area`), or in one of its cities */
+export const specialtyUrl = (specialty: string, area?: string, city?: string) => ["/medicine/specialties", specialty, area, city].filter(Boolean).join("/");
 export const levelUrl = (level: string) => `/medicine/levels/${level}`;
 export const medicineLocationsUrl = "/medicine/locations";
 export const medicineLocationUrl = (state: string, city?: string) => ["/medicine/locations", state, city].filter(Boolean).join("/");

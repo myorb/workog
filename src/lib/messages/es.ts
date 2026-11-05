@@ -102,7 +102,7 @@ export const es = {
       level: "Nivel",
       allOf: (state: string) => `Todo ${state}`,
       levelAlone: "El nivel aún no se puede combinar con otros filtros.",
-      specialtyCity: "Las especialidades se filtran por país o estado federado, no por ciudad.",
+      specialtyCity: "Ahora no hay empleos de esa especialidad en esta ciudad, así que se muestra todo el estado federado o país.",
       comboNone: "Ahora no hay empleos de esa especialidad en ese lugar, así que se muestra toda la especialidad.",
     },
     specialties: {

@@ -3,9 +3,9 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
-import { countMedicine, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
+import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
 import { specialties, specialtyUrl } from "../../../../../lib/medicine.ts";
-import { levelLinks, medicineCityLinks, medicineCountryLinks, stateLinks } from "../../../../../lib/links.ts";
+import { levelLinks, medicineCountryLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
 
@@ -20,7 +20,7 @@ const jobs = await getMedicineJobsWhere({ specialty });
 const counts = countMedicine(jobs);
 const byCountry = medicineCountryLinks(counts.countries, lang, (country) => specialtyUrl(specialty, country));
 const byState = stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state));
-const cities = medicineCityLinks(counts.cities).slice(0, 24);
+const cities = specialtyCityLinks(specialty, counts.cities, (await getMedicineCounts()).cities).slice(0, 24);
 const byLevel = levelLinks(counts.levels, lang);
 ---
 

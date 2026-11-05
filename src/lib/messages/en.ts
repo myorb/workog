@@ -100,7 +100,7 @@ export const en = {
       level: "Career level",
       allOf: (state: string) => `All of ${state}`,
       levelAlone: "Career level can't be combined with other filters yet.",
-      specialtyCity: "Specialties can be filtered by country or state, not city.",
+      specialtyCity: "No jobs in that specialty in this city right now, so this goes to the whole state or country.",
       comboNone: "No jobs in that specialty and place right now, so this goes to the whole specialty.",
     },
     specialties: {

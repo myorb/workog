@@ -4,8 +4,8 @@ import Base from "../../../../../layouts/Base.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
-import { areaFilter, areaName, getArea } from "../../../../../lib/medicine.ts";
-import { levelLinks } from "../../../../../lib/links.ts";
+import { areaFilter, areaName, GERMANY, getArea, specialtyUrl, states } from "../../../../../lib/medicine.ts";
+import { levelLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
 
@@ -30,6 +30,10 @@ const place = areaName(area, lang);
 const jobs = await getMedicineJobsWhere({ specialty, ...areaFilter(area) });
 const counts = countMedicine(jobs);
 const byLevel = levelLinks(counts.levels, lang);
+// Germany's cities sit below its states
+const germany = area.slug === GERMANY;
+const byState = germany ? stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state)) : [];
+const cities = specialtyCityLinks(specialty, counts.cities, (await getMedicineCounts()).cities, germany ? new Set(states.map((s) => s.slug)) : area.slug);
 ---
 
 <Base title={md.specialtyTitleIn(name, place)} description={md.specialtyDescriptionIn(jobs.length, name, place)} section="medicine">
@@ -42,6 +46,8 @@ const byLevel = levelLinks(counts.levels, lang);
     {m.openPositions(jobs.length)}
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
+  {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  {cities.length > 0 && <><h2>{md.cities}</h2><TagLinks links={cities} /></>}
   {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />

@@ -8,7 +8,7 @@
  */
 import { countTags, getJobsWhere, getMedicineCounts, getTagCounts } from "../lib/jobs.ts";
 import { GERMANY, levels, medicineCountries, specialties, stateName, states } from "../lib/medicine.ts";
-import { medicineCityLinks } from "../lib/links.ts";
+import { medicineCityLinks, specialtyCityKeys } from "../lib/links.ts";
 import { cities, countries } from "../lib/places.ts";
 import { technologies } from "../lib/technologies.ts";
 import { employmentTypes } from "../lib/employment.ts";
@@ -60,8 +60,8 @@ const stateGroups = states
 const germanyAt = countryGroups.findIndex((g) => g.slug === GERMANY);
 const placeGroups = germanyAt < 0 ? [...countryGroups, ...stateGroups] : [...countryGroups.slice(0, germanyAt + 1), ...stateGroups, ...countryGroups.slice(germanyAt + 1)];
 const levelOptions = levels.filter((slug) => med.levels.has(slug));
-// specialty pages exist per state or country only where the specialty has jobs there
-const combos = [...med.specialtyAreas.keys()];
+// specialty pages exist per state, country or city only where the specialty has jobs there
+const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
 ---
 
 <details class="filters" open>
@@ -223,16 +223,17 @@ const combos = [...med.specialtyAreas.keys()];
       const [area, city] = place.split("/");
       const others = specialty || place;
       const combo = specialty && area && combos.has(`${specialty}/${area}`);
+      const cityCombo = combo && city && combos.has(`${specialty}/${place}`);
 
       let path = "";
       if (level && !others) path = `/medicine/levels/${level}`;
-      else if (specialty) path = combo ? `/medicine/specialties/${specialty}/${area}` : `/medicine/specialties/${specialty}`;
+      else if (specialty) path = cityCombo ? `/medicine/specialties/${specialty}/${place}` : combo ? `/medicine/specialties/${specialty}/${area}` : `/medicine/specialties/${specialty}`;
       else if (place) path = `/medicine/locations/${place}`;
 
       let note = "";
       if (level && others) note = d.levelAlone;
       else if (specialty && area && !combo) note = d.comboNone;
-      else if (specialty && city) note = d.specialtyCity;
+      else if (specialty && city && !cityCombo) note = d.specialtyCity;
       return { path, note, empty: !others && !level };
     }
 

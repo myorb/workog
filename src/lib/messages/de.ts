@@ -102,7 +102,7 @@ export const de = {
       level: "Karrierestufe",
       allOf: (state: string) => `Ganz ${state}`,
       levelAlone: "Die Karrierestufe lässt sich noch nicht mit anderen Filtern kombinieren.",
-      specialtyCity: "Fachgebiete lassen sich nach Land oder Bundesland filtern, nicht nach Stadt.",
+      specialtyCity: "Derzeit keine Stellen in diesem Fachgebiet in dieser Stadt, daher geht es zum ganzen Bundesland oder Land.",
       comboNone: "Derzeit keine Stellen in diesem Fachgebiet an diesem Ort, daher geht es zum ganzen Fachgebiet.",
     },
     specialties: {

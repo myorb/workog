@@ -5,7 +5,7 @@ import { categoryName, countryName, defaultLang, type Lang, t } from "./i18n.ts"
 import type { SnapshotDimension } from "./analytics.ts";
 import type { Messages } from "./messages/en.ts";
 import { levels, levelUrl, medicineCountries, medicineLocationUrl, MIN_CITY_JOBS, specialties, specialtyUrl, stateName, states } from "./medicine.ts";
-import type { MedicineCity } from "./jobs.ts";
+import type { MedicineCity, MedicineCounts } from "./jobs.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
@@ -68,6 +68,30 @@ export function medicineCityLinks(cities: Map<string, MedicineCity>, areas?: str
   return [...cities.values()]
     .filter((c) => c.count >= MIN_CITY_JOBS && c.slug !== c.area && inArea(c.area))
     .map((c) => ({ href: medicineLocationUrl(c.area, c.slug), label: c.name, count: c.count, area: c.area, slug: c.slug }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+
+const cityKey = (c: { area: string; slug: string }) => `${c.area}/${c.slug}`;
+
+/**
+ * Keys ("specialty/area/city") of the specialty-in-city pages: a specialty's
+ * jobs in a city with a page of its own. `med` counts all open medical jobs.
+ */
+export function specialtyCityKeys(med: MedicineCounts): string[] {
+  const pages = new Set(medicineCityLinks(med.cities).map(cityKey));
+  return [...med.specialtyCities.keys()].filter((key) => pages.has(key.slice(key.indexOf("/") + 1)));
+}
+
+/**
+ * A specialty's cities, linking to its page in each. `cities` counts the
+ * specialty's jobs; `all` counts every medical job, since a city has a
+ * specialty page only when it has a page of its own. `areas` as in medicineCityLinks.
+ */
+export function specialtyCityLinks(specialty: string, cities: Map<string, MedicineCity>, all: Map<string, MedicineCity>, areas?: string | ReadonlySet<string>) {
+  const pages = new Set(medicineCityLinks(all, areas).map(cityKey));
+  return [...cities.values()]
+    .filter((c) => pages.has(cityKey(c)))
+    .map((c) => ({ href: specialtyUrl(specialty, c.area, c.slug), label: c.name, count: c.count }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 

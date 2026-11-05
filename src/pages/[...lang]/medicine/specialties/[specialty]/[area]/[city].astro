@@ -1,0 +1,51 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../../layouts/Base.astro";
+import JobList from "../../../../../../components/JobList.astro";
+import TagLinks from "../../../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../../lib/jobs.ts";
+import { areaFilter, areaName, getArea, medicineLocationUrl, specialtyUrl } from "../../../../../../lib/medicine.ts";
+import { levelLinks, specialtyCityKeys } from "../../../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../../lib/constants.ts";
+
+// A specialty in a city with a page of its own, only where it has jobs
+export const getStaticPaths = (async () => {
+  const med = await getMedicineCounts();
+  return withLangs(
+    specialtyCityKeys(med).map((key) => {
+      const [specialty, area, city] = key.split("/") as [string, string, string];
+      return { params: { specialty, area, city }, props: { name: med.cities.get(`${area}/${city}`)!.name } };
+    }),
+  );
+}) satisfies GetStaticPaths;
+
+const { specialty, area: areaSlug, city } = Astro.params as { specialty: string; area: string; city: string };
+const { name: cityName } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const name = md.specialties[specialty] ?? specialty;
+const area = getArea(areaSlug)!;
+const areaLabel = areaName(area, lang);
+const jobs = await getMedicineJobsWhere({ specialty, ...areaFilter(area), city });
+const counts = countMedicine(jobs);
+const byLevel = levelLinks(counts.levels, lang);
+---
+
+<Base title={md.specialtyTitleIn(name, cityName)} description={md.specialtyDescriptionIn(jobs.length, name, cityName)} section="medicine">
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath(specialtyUrl(specialty), lang)}>{name}</a> /
+    <a href={localizePath(specialtyUrl(specialty, areaSlug), lang)}>{areaLabel}</a> /
+  </p>
+  <h1>{md.specialtyTitleIn(name, cityName)}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  <p><a href={localizePath(medicineLocationUrl(areaSlug, city), lang)}>{md.placeTitle(cityName)} →</a></p>
+  {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>
