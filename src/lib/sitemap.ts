@@ -61,9 +61,9 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     const med = await getMedicineCounts();
     for (const path of ["/medicine", "/medicine/specialties", "/medicine/levels", "/medicine/locations"]) paths.add(path);
     for (const specialty of med.specialties.keys()) paths.add(specialtyUrl(specialty));
-    for (const key of med.specialtyStates.keys()) paths.add(`/medicine/specialties/${key}`);
+    for (const key of med.specialtyAreas.keys()) paths.add(`/medicine/specialties/${key}`);
     for (const level of med.levels.keys()) paths.add(levelUrl(level));
-    for (const state of med.states.keys()) paths.add(medicineLocationUrl(state));
+    for (const area of [...med.countries.keys(), ...med.states.keys()]) paths.add(medicineLocationUrl(area));
     for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
     const hospitals = await getHospitalIndex();
     paths.add(hospitalsUrl);

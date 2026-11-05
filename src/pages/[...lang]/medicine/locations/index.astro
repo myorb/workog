@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { getMedicineCounts } from "../../../../lib/jobs.ts";
-import { medicineCityLinks, stateLinks } from "../../../../lib/links.ts";
+import { medicineCityLinks, medicineCountryLinks, stateLinks } from "../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
@@ -12,13 +12,16 @@ const lang = getLang(Astro.params.lang);
 const m = t(lang);
 const md = m.medicine;
 const counts = await getMedicineCounts();
+const byCountry = medicineCountryLinks(counts.countries, lang);
 const byState = stateLinks(counts.states, lang);
-const cities = medicineCityLinks(counts.cities);
+// the biggest only: across Europe that's hundreds; the rest are on their country's or state's page
+const cities = medicineCityLinks(counts.cities).slice(0, 48);
 ---
 
-<Base title={md.locationsTitle} description={md.locationsDescription(byState.length)} section="medicine" noindex={!byState.length}>
+<Base title={md.locationsTitle} description={md.locationsDescription(byCountry.length)} section="medicine" noindex={!byCountry.length}>
   <p class="muted"><a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /</p>
   <h1>{md.locationsTitle}</h1>
-  {byState.length ? <><h2>{md.states}</h2><TagLinks links={byState} /></> : <p>{md.none}</p>}
-  {cities.length > 0 && <><h2>{md.cities}</h2><TagLinks links={cities} /></>}
+  {byCountry.length ? <><h2>{md.countries}</h2><TagLinks links={byCountry} /></> : <p>{md.none}</p>}
+  {byState.length > 0 && <><h2>{md.germanStates}</h2><TagLinks links={byState} /></>}
+  {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}
 </Base>

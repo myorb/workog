@@ -7,7 +7,7 @@
  * without a page fall back to the closest one and say so under the button.
  */
 import { countTags, getJobsWhere, getMedicineCounts, getTagCounts } from "../lib/jobs.ts";
-import { levels, specialties, stateName, states } from "../lib/medicine.ts";
+import { GERMANY, levels, medicineCountries, specialties, stateName, states } from "../lib/medicine.ts";
 import { medicineCityLinks } from "../lib/links.ts";
 import { cities, countries } from "../lib/places.ts";
 import { technologies } from "../lib/technologies.ts";
@@ -48,13 +48,20 @@ const specialtyOptions = specialties
   .filter((slug) => med.specialties.has(slug))
   .map((slug) => ({ slug, label: m.medicine.specialties[slug] ?? slug }))
   .sort(byLabel);
+// One group per country, then Germany's states, each with its cities
+const countryGroups = medicineCountries
+  .filter((c) => med.countries.has(c.slug))
+  .map((c) => ({ slug: c.slug, label: countryName(c, lang), cities: medicineCityLinks(med.cities, c.slug).sort(byLabel) }))
+  .sort(byLabel);
 const stateGroups = states
   .filter((s) => med.states.has(s.slug))
   .map((s) => ({ slug: s.slug, label: stateName(s, lang), cities: medicineCityLinks(med.cities, s.slug).sort(byLabel) }))
   .sort(byLabel);
+const germanyAt = countryGroups.findIndex((g) => g.slug === GERMANY);
+const placeGroups = germanyAt < 0 ? [...countryGroups, ...stateGroups] : [...countryGroups.slice(0, germanyAt + 1), ...stateGroups, ...countryGroups.slice(germanyAt + 1)];
 const levelOptions = levels.filter((slug) => med.levels.has(slug));
-// specialty pages exist per state only where the specialty has jobs there
-const combos = [...med.specialtyStates.keys()];
+// specialty pages exist per state or country only where the specialty has jobs there
+const combos = [...med.specialtyAreas.keys()];
 ---
 
 <details class="filters" open>
@@ -93,7 +100,7 @@ const combos = [...med.specialtyStates.keys()];
           <div class="select">
             <select id="filter-location" name="place">
               <option value="">{f.anywhere}</option>
-              {stateGroups.map((g) => (
+              {placeGroups.map((g) => (
                 <optgroup label={g.label}>
                   <option value={g.slug}>{mf.allOf(g.label)}</option>
                   {g.cities.map((c) => <option value={`${g.slug}/${c.slug}`}>{c.label}</option>)}
@@ -211,20 +218,20 @@ const combos = [...med.specialtyStates.keys()];
 
     function routeMedicine() {
       const specialty = field("specialty");
-      const place = field("place"); // "state" or "state/city"
+      const place = field("place"); // "area" or "area/city": a German state or a country
       const level = field("level");
-      const [state, city] = place.split("/");
+      const [area, city] = place.split("/");
       const others = specialty || place;
-      const combo = specialty && state && combos.has(`${specialty}/${state}`);
+      const combo = specialty && area && combos.has(`${specialty}/${area}`);
 
       let path = "";
       if (level && !others) path = `/medicine/levels/${level}`;
-      else if (specialty) path = combo ? `/medicine/specialties/${specialty}/${state}` : `/medicine/specialties/${specialty}`;
+      else if (specialty) path = combo ? `/medicine/specialties/${specialty}/${area}` : `/medicine/specialties/${specialty}`;
       else if (place) path = `/medicine/locations/${place}`;
 
       let note = "";
       if (level && others) note = d.levelAlone;
-      else if (specialty && state && !combo) note = d.comboNone;
+      else if (specialty && area && !combo) note = d.comboNone;
       else if (specialty && city) note = d.specialtyCity;
       return { path, note, empty: !others && !level };
     }

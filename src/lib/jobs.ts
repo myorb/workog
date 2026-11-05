@@ -92,13 +92,14 @@ const key = (field: string, value: string | boolean | undefined) => (value === u
 export interface MedicineFilter {
   specialty?: string;
   level?: string;
+  country?: string;
   state?: string;
   city?: string;
 }
 
 const medicinePlaces = new Map<string, MedicinePlace>();
 
-/** State and city of a medical job, computed once per build. */
+/** Country, state and city of a medical job, computed once per build. */
 export function medicinePlace(job: Job): MedicinePlace {
   let place = medicinePlaces.get(job.id);
   if (!place) medicinePlaces.set(job.id, (place = medicinePlaceOf(job)));
@@ -110,6 +111,7 @@ export function matchesMedicine(job: Job, filter: MedicineFilter): boolean {
   return (
     (!filter.specialty || job.specialty === filter.specialty) &&
     (!filter.level || job.level === filter.level) &&
+    (!filter.country || place.country === filter.country) &&
     (!filter.state || place.state === filter.state) &&
     (!filter.city || place.city?.slug === filter.city)
   );
@@ -120,15 +122,23 @@ let medicineIndexCache: Promise<JobIndex> | undefined;
 const getMedicineIndex = () =>
   (medicineIndexCache ??= getOpenMedicineJobs().then((jobs) =>
     indexJobs(jobs, (job) => {
-      const { state, city } = medicinePlace(job);
-      return [key("specialty", job.specialty), key("level", job.level), key("state", state), key("city", city?.slug)].filter((k) => k !== undefined);
+      const { country, state, city } = medicinePlace(job);
+      return [key("specialty", job.specialty), key("level", job.level), key("country", country), key("state", state), key("city", city?.slug)].filter(
+        (k) => k !== undefined,
+      );
     }),
   ));
 
 /** Open medical jobs matching the filter, newest first */
 export async function getMedicineJobsWhere(filter: MedicineFilter): Promise<Job[]> {
   const pool =
-    candidates(await getMedicineIndex(), [key("specialty", filter.specialty), key("level", filter.level), key("state", filter.state), key("city", filter.city)]) ??
+    candidates(await getMedicineIndex(), [
+      key("specialty", filter.specialty),
+      key("level", filter.level),
+      key("country", filter.country),
+      key("state", filter.state),
+      key("city", filter.city),
+    ]) ??
     (await getOpenMedicineJobs());
   return pool.filter((j) => matchesMedicine(j, filter));
 }
@@ -136,26 +146,39 @@ export async function getMedicineJobsWhere(filter: MedicineFilter): Promise<Job[
 export interface MedicineCounts {
   specialties: Map<string, number>;
   levels: Map<string, number>;
+  countries: Map<string, number>;
   states: Map<string, number>;
-  /** keyed by "state/city", with the city's display name */
-  cities: Map<string, { state: string; slug: string; name: string; count: number }>;
-  /** keyed by "specialty/state", for the specialty-in-state pages */
-  specialtyStates: Map<string, number>;
+  /** keyed by "area/city" (see Area), with the city's display name */
+  cities: Map<string, MedicineCity>;
+  /** keyed by "specialty/area", where the area is a state or any country (Germany too), for the specialty-in-place pages */
+  specialtyAreas: Map<string, number>;
 }
 
-/** Open medical jobs per specialty, level, state and city, for linking only to pages that have jobs. */
+export interface MedicineCity {
+  /** the state, or the country outside Germany */
+  area: string;
+  slug: string;
+  name: string;
+  count: number;
+}
+
+/** Open medical jobs per specialty, level, country, state and city, for linking only to pages that have jobs. */
 export function countMedicine(jobs: Job[]): MedicineCounts {
-  const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), states: new Map(), cities: new Map(), specialtyStates: new Map() };
+  const counts: MedicineCounts = { specialties: new Map(), levels: new Map(), countries: new Map(), states: new Map(), cities: new Map(), specialtyAreas: new Map() };
   const add = (map: Map<string, number>, key: string | undefined) => key && map.set(key, (map.get(key) ?? 0) + 1);
   for (const job of jobs) {
     add(counts.specialties, job.specialty);
     add(counts.levels, job.level);
-    const { state, city } = medicinePlace(job);
+    const { country, state, area, city } = medicinePlace(job);
+    add(counts.countries, country);
     add(counts.states, state);
-    if (job.specialty && state) add(counts.specialtyStates, `${job.specialty}/${state}`);
-    if (state && city) {
-      const key = `${state}/${city.slug}`;
-      const entry = counts.cities.get(key) ?? { state, slug: city.slug, name: city.name, count: 0 };
+    if (job.specialty) {
+      if (country) add(counts.specialtyAreas, `${job.specialty}/${country}`);
+      if (state) add(counts.specialtyAreas, `${job.specialty}/${state}`);
+    }
+    if (area && city) {
+      const key = `${area}/${city.slug}`;
+      const entry = counts.cities.get(key) ?? { area, slug: city.slug, name: city.name, count: 0 };
       entry.count++;
       counts.cities.set(key, entry);
     }

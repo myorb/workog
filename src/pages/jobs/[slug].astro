@@ -6,7 +6,7 @@ import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
 import { getAllJobs, getCompany, getCompanyCounts, getHospitalIndex, getMedicineCounts, getMedicineJobsWhere, getRemoteCount, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
 import { hospitalSlugOf, hospitalUrl } from "../../lib/hospitals.ts";
-import { getState, isMedicine, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialtyUrl } from "../../lib/medicine.ts";
+import { areaFilter, areaName, GERMANY, getArea, isMedicine, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialtyUrl } from "../../lib/medicine.ts";
 import { relatedJobs } from "../../lib/related.ts";
 import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
 import { getCity, getCountry } from "../../lib/places.ts";
@@ -56,18 +56,20 @@ const jsonLd = [
   ...(closed ? [] : [jobPosting(job, employer, url)]),
 ];
 
-// Medical jobs link to their own section: the newest jobs in the same specialty and state, and its hubs
+// Medical jobs link to their own section: the newest jobs in the same specialty and state (or country), and its hubs
 const place = medicine ? medicinePlace(job) : {};
-const state = place.state ? getState(place.state) : undefined;
+const area = place.area ? getArea(place.area) : undefined;
+const areaLabel = area ? areaName(area, "en") : undefined;
 const medicineCities = medicine ? (await getMedicineCounts()).cities : new Map();
-const cityPage = state && place.city && place.city.slug !== state.slug && (medicineCities.get(`${state.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
+const cityPage = area && place.city && place.city.slug !== area.slug && (medicineCities.get(`${area.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
 const sameSpecialty = medicine && job.specialty ? (await getMedicineJobsWhere({ specialty: job.specialty })).filter((j) => j.id !== job.id).slice(0, 5) : [];
-const sameState = medicine && state ? (await getMedicineJobsWhere({ state: state.slug })).filter((j) => j.id !== job.id && !sameSpecialty.includes(j)).slice(0, 5) : [];
+const sameState = medicine && area ? (await getMedicineJobsWhere(areaFilter(area))).filter((j) => j.id !== job.id && !sameSpecialty.includes(j)).slice(0, 5) : [];
 const medicineBrowse = [
   ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
-  ...(job.specialty && state ? [{ href: specialtyUrl(job.specialty, state.slug), label: en.medicine.specialtyTitleIn(specialtyName!, state.en) }] : []),
-  ...(cityPage ? [{ href: medicineLocationUrl(state!.slug, place.city!.slug), label: en.medicine.placeTitle(place.city!.name) }] : []),
-  ...(state ? [{ href: medicineLocationUrl(state.slug), label: en.medicine.placeTitle(state.en) }] : []),
+  ...(job.specialty && area ? [{ href: specialtyUrl(job.specialty, area.slug), label: en.medicine.specialtyTitleIn(specialtyName!, areaLabel!) }] : []),
+  ...(cityPage ? [{ href: medicineLocationUrl(area!.slug, place.city!.slug), label: en.medicine.placeTitle(place.city!.name) }] : []),
+  ...(area ? [{ href: medicineLocationUrl(area.slug), label: en.medicine.placeTitle(areaLabel!) }] : []),
+  ...(area?.kind === "state" ? [{ href: medicineLocationUrl(GERMANY), label: en.medicine.placeTitle("Germany") }] : []),
   ...(job.level ? [{ href: levelUrl(job.level), label: en.medicine.levelTitle(en.medicine.levels[job.level]!) }] : []),
 ];
 // the posting's own page on the job board, or the employer's when it came in through a partner
@@ -141,7 +143,7 @@ const browse = [
   {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
 
   {sameSpecialty.length > 0 && <section><h2>More {specialtyName!.toLowerCase()} jobs</h2><JobList jobs={sameSpecialty} /></section>}
-  {sameState.length > 0 && <section><h2>More medical jobs in {state!.en}</h2><JobList jobs={sameState} /></section>}
+  {sameState.length > 0 && <section><h2>More medical jobs in {areaLabel}</h2><JobList jobs={sameState} /></section>}
   {medicineBrowse.length > 0 && <section><h2>Browse similar jobs</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul></section>}
 
   {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { isDoctorTitle, levelOf, medicinePlaceOf, specialtyOf, stateForPostalCode } from "./medicine.ts";
+import { getArea, isDoctorTitle, levelOf, medicineCountries, medicinePlaceOf, specialtyOf, stateForPostalCode, states } from "./medicine.ts";
 
 describe("specialtyOf", () => {
   test("reads the occupation's specialty", () => {
@@ -30,10 +30,44 @@ describe("levelOf", () => {
 describe("medicinePlaceOf", () => {
   test("reads state and city from a German label", () => {
     expect(medicinePlaceOf({ locations: ["Halle (Saale), Sachsen-Anhalt, Germany"] })).toEqual({
+      country: "germany",
       state: "saxony-anhalt",
+      area: "saxony-anhalt",
       city: { slug: "halle-saale", name: "Halle (Saale)" },
     });
-    expect(medicinePlaceOf({ locations: ["Berlin, Germany"] })).toEqual({});
+    // a German label without a state names no city page
+    expect(medicinePlaceOf({ locations: ["Berlin, Germany"] })).toEqual({ country: "germany" });
+  });
+
+  test("reads the state from labels with a region before it", () => {
+    expect(medicinePlaceOf({ locations: ["Essen, Ruhr, Nordrhein-Westfalen, Germany"] })).toMatchObject({
+      state: "north-rhine-westphalia",
+      city: { slug: "essen", name: "Essen" },
+    });
+  });
+
+  test("puts cities outside Germany below their country", () => {
+    expect(medicinePlaceOf({ locations: ["Lyon, France"] })).toEqual({ country: "france", area: "france", city: { slug: "lyon", name: "Lyon" } });
+    expect(medicinePlaceOf({ locations: ["United Kingdom"] })).toEqual({ country: "united-kingdom", area: "united-kingdom" });
+  });
+
+  test("takes the first label in a known country", () => {
+    expect(medicinePlaceOf({ locations: ["Remote", "Bern, Switzerland"] }).country).toBe("switzerland");
+    expect(medicinePlaceOf({ locations: ["Somewhere, Atlantis"] })).toEqual({});
+  });
+});
+
+describe("getArea", () => {
+  test("knows German states and countries", () => {
+    expect(getArea("bavaria")?.kind).toBe("state");
+    expect(getArea("france")?.kind).toBe("country");
+    expect(getArea("germany")?.kind).toBe("country");
+    expect(getArea("atlantis")).toBeUndefined();
+  });
+
+  test("state and country slugs don't overlap", () => {
+    const countrySlugs = new Set(medicineCountries.map((c) => c.slug));
+    expect(states.filter((s) => countrySlugs.has(s.slug))).toEqual([]);
   });
 });
 

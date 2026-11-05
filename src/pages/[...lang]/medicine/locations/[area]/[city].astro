@@ -4,38 +4,42 @@ import Base from "../../../../../layouts/Base.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
-import { specialtyUrl, stateName, states } from "../../../../../lib/medicine.ts";
+import { areaFilter, areaName, getArea } from "../../../../../lib/medicine.ts";
 import { levelLinks, medicineCityLinks, specialtyLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
 
-export const getStaticPaths = (() => withLangs(states.map((state) => ({ params: { state: state.slug }, props: { state } })))) satisfies GetStaticPaths;
+// Only cities big enough for a page of their own; the rest are browsed by state or country
+export const getStaticPaths = (async () => {
+  const cities = medicineCityLinks((await getMedicineCounts()).cities);
+  return withLangs(cities.map((c) => ({ params: { area: c.area, city: c.slug }, props: { name: c.label } })));
+}) satisfies GetStaticPaths;
 
-const { state } = Astro.props;
+const { area: areaSlug, city } = Astro.params as { area: string; city: string };
+const { name } = Astro.props;
 const lang = getLang(Astro.params.lang);
 const m = t(lang);
 const md = m.medicine;
-const place = stateName(state, lang);
-const jobs = await getMedicineJobsWhere({ state: state.slug });
+const area = getArea(areaSlug)!;
+const areaLabel = areaName(area, lang);
+const jobs = await getMedicineJobsWhere({ ...areaFilter(area), city });
 const counts = countMedicine(jobs);
-const bySpecialty = specialtyLinks(counts.specialties, lang, (s) => specialtyUrl(s, state.slug));
-const cities = medicineCityLinks((await getMedicineCounts()).cities, state.slug);
+const bySpecialty = specialtyLinks(counts.specialties, lang);
 const byLevel = levelLinks(counts.levels, lang);
 ---
 
-<Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={!jobs.length}>
+<Base title={md.placeTitle(name)} description={md.placeDescription(jobs.length, name)} section="medicine">
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
-    <a href={localizePath("/medicine/locations", lang)}>{md.nav.locations}</a> /
+    <a href={localizePath(`/medicine/locations/${areaSlug}`, lang)}>{areaLabel}</a> /
   </p>
-  <h1>{md.placeTitle(place)}</h1>
+  <h1>{md.placeTitle(name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
-  {cities.length > 0 && <><h2>{md.cities}</h2><TagLinks links={cities} /></>}
   {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
   {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
   <h2>{m.latestJobs}</h2>
-  {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
 </Base>

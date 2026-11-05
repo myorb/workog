@@ -47,6 +47,9 @@ const regionCodes: Record<string, string> = {
   "united-arab-emirates": "AE", "saudi-arabia": "SA", india: "IN", singapore: "SG", japan: "JP", "south-korea": "KR",
   china: "CN", taiwan: "TW", thailand: "TH", vietnam: "VN", malaysia: "MY", indonesia: "ID", philippines: "PH",
   australia: "AU", "new-zealand": "NZ",
+  // medicine-only countries
+  norway: "NO", finland: "FI", estonia: "EE", latvia: "LV", czechia: "CZ", slovakia: "SK", hungary: "HU", croatia: "HR",
+  bulgaria: "BG", greece: "GR", malta: "MT", liechtenstein: "LI",
 };
 
 /** ISO 3166-1 alpha-2 code for a country slug */
