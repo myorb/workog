@@ -36,6 +36,10 @@ App Platform watches `main` through its GitHub app, so the daily data commit dep
 - it returns fewer than 50% of its previous open count, or
 - more than 20% of its jobs fail validation.
 
+**Closing jobs.** A job missing from a run stays open and counts the miss in `missedRuns`; it closes only when `CLOSE_AFTER_MISSES` (2) successful runs in a row missed it, and seeing it again resets the count. The paginated boards (Arbeitnow, NHS, EURES) skip some jobs at random on each run, and before this most of the jobs they "closed" came back the next run. A fallback or a capped run doesn't count as a miss.
+
+**Archive.** A job closed for 14 days loses its page (404) and moves from `data/jobs` to `data/archive/<company>/<YYYY-MM>.jsonl` (by month of `closedAt`), where it stays for good (`src/lib/archive.ts`). Archive records are slim: no description, but with the technologies and employment type it gave, about 0.7 KB instead of 6 KB. If an archived job comes back, it leaves the archive and gets its old slug and `firstSeenAt` back, so it counts as reopened, not new. The site never reads the archive; the pipeline and `bun run snapshot` do.
+
 `data/runs/latest.json` records `fallbackStreak` for each source and marks it `broken` after 3 fallbacks in a row. A fallback never fails the workflow; it triggers an alert. Broken sources are flagged 🚨 in the alert.
 
 ### One-time setup
@@ -60,9 +64,10 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | --- | --- |
 | `data/companies.json` | Company list and source config |
 | `data/jobs/<company>.json` | Job[] per company, written by the pipeline; split into `<company>.<n>.json` parts past 1,000 jobs. Medical-job sources (`sector: "medicine"`) are in `data/jobs/medicine/` |
+| `data/archive/<company>/<YYYY-MM>.jsonl` | Jobs closed for more than 14 days, one slim JSON line each, kept for good; see Archive above |
 | `data/runs/seen.json` | Each company's last successful run time, which is the `lastSeenAt` of every job that run saw |
 | `data/runs/latest.json` | Per-source counts and status of the last run |
-| `data/runs/changes.json` | Slugs of the jobs the last run opened, closed or dropped; read by `scripts/ping.ts` |
+| `data/runs/changes.json` | Slugs of the jobs the last run opened, closed or dropped (moved to the archive); read by `scripts/ping.ts` |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `data/history/<date>.json` | Snapshot of open jobs at the end of each day, by company, function, country, city, technology and employment type; feeds the movers, remote-share and per-function trends on `/analytics` and one permanent page per day under `/analytics/history` |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
@@ -89,13 +94,13 @@ Search results have no description, so the fetcher reads each new job's details 
 - `/sitemap.xml` is a sitemap index. `/sitemap-pages-<n>.xml` lists the browse pages in every language, each with `hreflang` alternates; `/sitemap-jobs-<n>.xml` lists the open job pages. Each file holds at most 10,000 URLs.
 - Job pages carry JobPosting markup with `validThrough` set to 30 days after the job was last seen, so postings expire from Google for Jobs if the pipeline stops or stops checking a job (a capped company's job outside its newest `maxJobs`).
 - Crosslinks: hub pages list only the newest 50 jobs, so each job page links to the next 5 open jobs on its team (same company and category) and in its place (first city, else country, else remote), wrapping around (`src/lib/related.ts`). Every open job is then linked from at least one other page. Job pages also link to their technology, place and employment hubs; hub pages link to the companies hiring there, related technologies and the country's other cities.
-- `scripts/ping.ts` polls `/version.json` until the site serves the new run, then sends the changed job URLs to IndexNow (key file `public/bf6f1d24d876292da4961a3ae984ea98.txt`) and to the Google Indexing API. Google's default quota is 200 URLs a day: new jobs go first, then closed ones (`URL_UPDATED`, since the page is now `noindex`), then ones dropped after the 14-day retention (`URL_DELETED`). A failed ping is logged and doesn't fail the workflow.
+- `scripts/ping.ts` polls `/version.json` until the site serves the new run, then sends the changed job URLs to IndexNow (key file `public/bf6f1d24d876292da4961a3ae984ea98.txt`) and to the Google Indexing API. Google's default quota is 200 URLs a day: new jobs go first, then closed ones (`URL_UPDATED`, since the page is now `noindex`), then ones dropped after the 14-day retention, whose pages are gone and whose records are in the archive (`URL_DELETED`). A failed ping is logged and doesn't fail the workflow.
 
 ## Analytics history
 
-Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, unlike closed jobs, which are dropped after 14 days, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
+Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
 
-To rebuild a past day from the jobs still on file, run `bun run snapshot <date>`. It counts the jobs whose `firstSeenAt` and `closedAt` bracket the end of that day, so it is only accurate for the last 14 days, and a company with `maxJobs` only for jobs in its newest `maxJobs`.
+To rebuild a past day, run `bun run snapshot <date>`. It counts the jobs in `data/jobs` and `data/archive` whose `firstSeenAt` and `closedAt` bracket the end of that day. It is accurate from 2026-11-03, when the archive began keeping closed jobs; for a company with `maxJobs`, only for jobs in its newest `maxJobs`.
 
 ## Adding a company
 

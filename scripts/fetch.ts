@@ -1,7 +1,8 @@
 /**
  * Daily pipeline: fetch every company, normalize and validate, run sanity
  * checks, merge with the company's previous jobs in data/jobs (layout in
- * src/lib/job-files.ts), then write the job files, runs/seen.json,
+ * src/lib/job-files.ts), move jobs closed past the retention window to
+ * data/archive (src/lib/archive.ts), then write the job files, runs/seen.json,
  * runs/latest.json, runs/changes.json, the day's line in runs/history.json and
  * the day's snapshot in history/<date>.json.
  *
@@ -32,9 +33,11 @@ import {
   StagedWrites,
   writeCompanyJobs,
 } from "../src/lib/job-files.ts";
+import { readCompanyArchive, toArchived, updateArchive } from "../src/lib/archive.ts";
 import { makeJobSlug } from "../src/lib/normalize.ts";
 import {
   CompanyConfigSchema,
+  type ArchivedJob,
   type CompanyConfig,
   type HistoryDay,
   HistoryDaySchema,
@@ -70,7 +73,14 @@ import { writeSnapshot } from "./snapshot.ts";
 import type { Fetcher, NormalizedJob } from "./fetchers/types.ts";
 
 const DATA_DIR = join(import.meta.dirname, "..", "data");
+/** closed jobs keep their page this long, then move to data/archive */
 const CLOSED_RETENTION_DAYS = 14;
+/**
+ * An open job closes once this many successful runs in a row missed it. The
+ * paginated boards (arbeitnow, nhs, eures) skip some jobs at random in each
+ * run, and most of those come back in the next one.
+ */
+export const CLOSE_AFTER_MISSES = 2;
 /** fall back if a source returns fewer than this share of its previous open jobs */
 const MIN_KEEP_RATIO = 0.5;
 /** fall back if more than this share of a source's jobs fail validation */
@@ -113,6 +123,7 @@ const NormalizedJobSchema = JobSchema.omit({
   firstSeenAt: true,
   lastSeenAt: true,
   closedAt: true,
+  missedRuns: true,
 }).extend({ originalId: z.string().min(1) });
 
 interface FetchResult {
@@ -175,17 +186,33 @@ export function sanityCheck(result: FetchResult, previousOpen: number): string |
   return undefined;
 }
 
+export interface MergeOptions {
+  /** the fetch stopped at maxJobs, so a missing job may only be older, not gone */
+  capped?: boolean;
+  /** the company's archived jobs, so one that comes back keeps its slug and firstSeenAt */
+  archived?: ReadonlyMap<string, Pick<ArchivedJob, "slug" | "firstSeenAt">>;
+}
+
 /**
- * Applies today's fetch to yesterday's jobs: new ids get firstSeenAt, missing
- * ids get closedAt, reappearing ids are reopened, and jobs closed for longer
- * than the retention window are dropped. After a `capped` fetch, missing open
- * jobs are kept as they were until a full (`--all`) run checks them.
- * `changes` lists the slugs whose pages changed state, for search-engine pings.
+ * Applies today's fetch to yesterday's jobs:
+ * - new ids get firstSeenAt and a slug; ids found in the archive come back
+ *   with their old slug and firstSeenAt and are listed in `restored`;
+ * - missing open jobs count a miss (`missedRuns`) and close only after
+ *   CLOSE_AFTER_MISSES misses in a row; a job seen again starts over;
+ * - reappearing closed jobs are reopened;
+ * - jobs closed for longer than the retention window leave data/jobs and are
+ *   returned in `archived`, for the caller to write to data/archive.
+ * After a `capped` fetch, missing open jobs are kept as they were until a full
+ * (`--all`) run checks them. `changes` lists the slugs whose pages changed
+ * state, for search-engine pings.
  */
-export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, capped = false) {
+export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string, options: MergeOptions = {}) {
+  const { capped = false, archived = new Map() } = options;
   const prevById = new Map(previous.map((j) => [j.id, j]));
   const seen = new Set<string>();
   const merged: Job[] = [];
+  const toArchive: Job[] = [];
+  const restored: string[] = [];
   let added = 0;
   let closed = 0;
   const changes: JobChanges = { opened: [], closed: [], dropped: [] };
@@ -194,13 +221,15 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
     if (seen.has(job.id)) continue;
     seen.add(job.id);
     const prev = prevById.get(job.id);
-    const slug = prev?.slug ?? makeJobSlug(job.employer ?? job.company, job.title, originalId);
-    if (!prev) added++;
+    const old = prev ?? archived.get(job.id);
+    const slug = old?.slug ?? makeJobSlug(job.employer ?? job.company, job.title, originalId);
+    if (!old) added++;
+    if (!prev && old) restored.push(job.id);
     if (!prev || prev.closedAt) changes.opened.push(slug);
     merged.push({
       ...job,
       slug,
-      firstSeenAt: prev?.firstSeenAt ?? now,
+      firstSeenAt: old?.firstSeenAt ?? now,
       lastSeenAt: now,
     });
   }
@@ -211,21 +240,29 @@ export function mergeJobs(previous: Job[], fetched: NormalizedJob[], now: string
     if (!prev.closedAt && capped) {
       merged.push(prev);
     } else if (!prev.closedAt) {
-      closed++;
-      changes.closed.push(prev.slug);
-      merged.push({ ...prev, closedAt: now });
+      const missedRuns = (prev.missedRuns ?? 0) + 1;
+      if (missedRuns < CLOSE_AFTER_MISSES) {
+        merged.push({ ...prev, missedRuns });
+      } else {
+        closed++;
+        changes.closed.push(prev.slug);
+        const { missedRuns: _, ...job } = prev;
+        merged.push({ ...job, closedAt: now });
+      }
     } else if (Date.parse(prev.closedAt) > cutoff) {
       merged.push(prev);
     } else {
+      // the page goes (404), the record moves to data/archive
       changes.dropped.push(prev.slug);
+      toArchive.push(prev);
     }
   }
 
   merged.sort((a, b) => a.id.localeCompare(b.id, "en", { numeric: true }));
-  return { jobs: merged, added, closed, changes };
+  return { jobs: merged, added, closed, changes, archived: toArchive, restored };
 }
 
-/** Job pages whose state changed in a run: newly open (or reopened), closed (now noindex), dropped (now 404) */
+/** Job pages whose state changed in a run: newly open (or reopened), closed (now noindex), dropped (now 404, moved to data/archive) */
 export const JobChangesSchema = z.object({
   startedAt: z.string(),
   opened: z.array(z.string()),
@@ -380,9 +417,12 @@ async function main() {
       };
       console.error(`[${company.key}] FALLBACK (${fallbackStreak} in a row): ${reason}`);
     } else {
-      const merge = mergeJobs(previous, result.jobs, startedAt, result.cap !== undefined);
+      const archived = new Map((await readCompanyArchive(DATA_DIR, company.key)).map((j) => [j.id, j]));
+      const merge = mergeJobs(previous, result.jobs, startedAt, { capped: result.cap !== undefined, archived });
       const { jobs, added, closed } = merge;
       await writeCompanyJobs(DATA_DIR, company, jobs, startedAt, staged);
+      const toArchive = merge.archived.map((j) => toArchived(j, startedAt));
+      await updateArchive(DATA_DIR, company.key, toArchive, merge.restored, staged);
       nextSeen[company.key] = startedAt;
       for (const kind of ["opened", "closed", "dropped"] as const) changes[kind].push(...merge.changes[kind]);
       if (jobsChanged(previous, jobs)) changed = true;

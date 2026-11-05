@@ -27,10 +27,33 @@ export const JobSchema = z.object({
   firstSeenAt: isoDate,
   lastSeenAt: isoDate,
   closedAt: isoDate.optional(),
+  /**
+   * Successful runs in a row that didn't list this open job. Paginated boards
+   * skip some jobs at random, so a job closes only after CLOSE_AFTER_MISSES
+   * misses (scripts/fetch.ts); until then it stays open with its old lastSeenAt.
+   */
+  missedRuns: z.number().int().positive().optional(),
   source: z.string().min(1),
 });
 
 export type Job = z.infer<typeof JobSchema>;
+
+/**
+ * A job closed for longer than the retention window, moved out of data/jobs
+ * into data/archive (src/lib/archive.ts). It has no page any more, so it drops
+ * the description and keeps what analytics need, with the tags the description
+ * gave already worked out.
+ */
+export const ArchivedJobSchema = JobSchema.omit({ descriptionHtml: true, missedRuns: true }).extend({
+  closedAt: isoDate,
+  archivedAt: isoDate,
+  /** technology slugs, from src/lib/technologies.ts */
+  technologies: z.array(z.string()),
+  /** employment type, from src/lib/employment.ts */
+  employment: z.string(),
+});
+
+export type ArchivedJob = z.infer<typeof ArchivedJobSchema>;
 
 /** A job as written to data/jobs: `lastSeenAt` is left out when it is the company's time in data/runs/seen.json */
 export const StoredJobSchema = JobSchema.extend({ lastSeenAt: isoDate.optional() });

@@ -2,7 +2,7 @@ import { describe, expect, test } from "bun:test";
 import type { Job, SourceRun } from "../src/lib/schema.ts";
 import type { NormalizedJob } from "./fetchers/types.ts";
 import { partOf } from "../src/lib/job-files.ts";
-import { fetchOrder, jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
+import { CLOSE_AFTER_MISSES, fetchOrder, jobsChanged, mergeJobs, recordHistory, sanityCheck } from "./fetch.ts";
 
 const day = (n: number) => new Date(Date.UTC(2026, 10, n)).toISOString();
 
@@ -38,19 +38,38 @@ describe("mergeJobs", () => {
     expect(jobs[0]).toMatchObject({ title: "Renamed", slug: "acme-engineer-1", firstSeenAt: day(1), lastSeenAt: day(2) });
   });
 
-  test("missing jobs are closed, reappearing jobs are reopened", () => {
-    const closedRun = mergeJobs([stored("1")], [], day(2));
-    expect(closedRun.closed).toBe(1);
-    expect(closedRun.jobs[0]!.closedAt).toBe(day(2));
+  test("a job missing from one run stays open and counts the miss", () => {
+    expect(CLOSE_AFTER_MISSES).toBe(2);
+    const { jobs, closed, changes } = mergeJobs([stored("1")], [], day(2));
+    expect(closed).toBe(0);
+    expect(changes.closed).toEqual([]);
+    expect(jobs[0]).toMatchObject({ missedRuns: 1, lastSeenAt: day(1) });
+    expect(jobs[0]!.closedAt).toBeUndefined();
+  });
 
-    const reopened = mergeJobs(closedRun.jobs, [fetched("1")], day(3));
+  test("a job seen again after a miss starts over", () => {
+    const missed = mergeJobs([stored("1")], [], day(2));
+    const back = mergeJobs(missed.jobs, [fetched("1")], day(3));
+    expect(back.jobs[0]!.missedRuns).toBeUndefined();
+    expect(back.changes.opened).toEqual([]);
+    expect(mergeJobs(back.jobs, [], day(4)).jobs[0]!.missedRuns).toBe(1);
+  });
+
+  test("missing jobs close after CLOSE_AFTER_MISSES runs, reappearing jobs are reopened", () => {
+    const missed = mergeJobs([stored("1")], [], day(2));
+    const closedRun = mergeJobs(missed.jobs, [], day(3));
+    expect(closedRun.closed).toBe(1);
+    expect(closedRun.jobs[0]!.closedAt).toBe(day(3));
+    expect(closedRun.jobs[0]!.missedRuns).toBeUndefined();
+
+    const reopened = mergeJobs(closedRun.jobs, [fetched("1")], day(4));
     expect(reopened.jobs[0]!.closedAt).toBeUndefined();
     expect(reopened.added).toBe(0);
   });
 
   test("after a capped fetch, missing open jobs are kept as they were", () => {
     const prev = [stored("old"), stored("closed", { closedAt: day(5) })];
-    const { jobs, closed } = mergeJobs(prev, [fetched("new")], day(6), true);
+    const { jobs, closed } = mergeJobs(prev, [fetched("new")], day(6), { capped: true });
     expect(closed).toBe(0);
     expect(jobs.map((j) => [j.id, j.closedAt, j.lastSeenAt])).toEqual([
       ["test:closed", day(5), day(1)],
@@ -59,10 +78,23 @@ describe("mergeJobs", () => {
     ]);
   });
 
-  test("closed jobs are kept for 14 days, then dropped", () => {
+  test("closed jobs are kept for 14 days, then handed over for the archive", () => {
     const prev = [stored("1", { closedAt: day(2) })];
-    expect(mergeJobs(prev, [], day(15)).jobs).toHaveLength(1);
-    expect(mergeJobs(prev, [], day(17)).jobs).toHaveLength(0);
+    const kept = mergeJobs(prev, [], day(15));
+    expect(kept.jobs).toHaveLength(1);
+    expect(kept.archived).toEqual([]);
+    const moved = mergeJobs(prev, [], day(17));
+    expect(moved.jobs).toHaveLength(0);
+    expect(moved.archived).toEqual(prev);
+  });
+
+  test("an archived job that comes back keeps its slug and firstSeenAt", () => {
+    const archived = new Map([["test:1", { slug: "acme-old-title-1", firstSeenAt: day(1) }]]);
+    const { jobs, added, restored, changes } = mergeJobs([], [fetched("1", "New Title")], day(20), { archived });
+    expect(added).toBe(0);
+    expect(restored).toEqual(["test:1"]);
+    expect(changes.opened).toEqual(["acme-old-title-1"]);
+    expect(jobs[0]).toMatchObject({ slug: "acme-old-title-1", firstSeenAt: day(1), lastSeenAt: day(20) });
   });
 });
 
@@ -70,7 +102,7 @@ describe("mergeJobs changes", () => {
   test("lists opened, reopened, closed and dropped slugs", () => {
     const prev = [
       stored("kept"),
-      stored("gone"),
+      stored("gone", { missedRuns: 1 }),
       stored("back", { closedAt: day(2) }),
       stored("old", { closedAt: day(1) }),
     ];
@@ -81,7 +113,7 @@ describe("mergeJobs changes", () => {
   });
 
   test("a capped fetch closes nothing", () => {
-    const { changes } = mergeJobs([stored("1")], [fetched("2")], day(2), true);
+    const { changes } = mergeJobs([stored("1", { missedRuns: 1 })], [fetched("2")], day(2), { capped: true });
     expect(changes.closed).toEqual([]);
   });
 });
