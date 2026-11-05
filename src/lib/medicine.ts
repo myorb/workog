@@ -220,6 +220,7 @@ export const medicineUrl = "/medicine";
 export const specialtiesUrl = "/medicine/specialties";
 /** A specialty's page, in a state or country (`area`), or in one of its cities */
 export const specialtyUrl = (specialty: string, area?: string, city?: string) => ["/medicine/specialties", specialty, area, city].filter(Boolean).join("/");
-export const levelUrl = (level: string) => `/medicine/levels/${level}`;
+/** A career level's page, optionally narrowed to a specialty, a state or country (`area`), and one of its cities */
+export const levelUrl = (level: string, specialty?: string, area?: string, city?: string) => ["/medicine/levels", level, specialty, area, city].filter(Boolean).join("/");
 export const medicineLocationsUrl = "/medicine/locations";
 export const medicineLocationUrl = (state: string, city?: string) => ["/medicine/locations", state, city].filter(Boolean).join("/");

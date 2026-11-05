@@ -4,7 +4,7 @@ import Base from "../../../../../layouts/Base.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
-import { areaFilter, areaName, GERMANY, getArea, specialtyUrl, states } from "../../../../../lib/medicine.ts";
+import { areaFilter, areaName, GERMANY, getArea, levelUrl, specialtyUrl, states } from "../../../../../lib/medicine.ts";
 import { levelLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
@@ -29,7 +29,7 @@ const area = getArea(areaSlug)!;
 const place = areaName(area, lang);
 const jobs = await getMedicineJobsWhere({ specialty, ...areaFilter(area) });
 const counts = countMedicine(jobs);
-const byLevel = levelLinks(counts.levels, lang);
+const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty, areaSlug));
 // Germany's cities sit below its states
 const germany = area.slug === GERMANY;
 const byState = germany ? stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state)) : [];

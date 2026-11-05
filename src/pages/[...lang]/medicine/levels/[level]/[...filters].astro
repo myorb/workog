@@ -1,0 +1,86 @@
+---
+/**
+ * A career level narrowed by specialty, place or both:
+ * /medicine/levels/senior/cardiology, /medicine/levels/senior/bavaria/munich,
+ * /medicine/levels/senior/cardiology/bavaria/munich. Specialty and area slugs
+ * don't overlap, so the first segment says which it is. Only combinations
+ * with jobs get a page (getMedicineComboKeys).
+ */
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import JobList from "../../../../../components/JobList.astro";
+import TagLinks from "../../../../../components/TagLinks.astro";
+import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
+import { areaFilter, areaName, GERMANY, getArea, levelUrl, medicineLocationUrl, specialtyUrl, states } from "../../../../../lib/medicine.ts";
+import { getMedicineComboKeys, levelLinks, medicineCountryLinks, comboCityLinks, specialtyLinks, stateLinks } from "../../../../../lib/links.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+
+export const getStaticPaths = (async () => {
+  const med = await getMedicineCounts();
+  const paths = [];
+  for (const key of await getMedicineComboKeys()) {
+    const [specialty, level, area, city] = key.split("/").map((v) => v || undefined);
+    if (!level || (!specialty && !area)) continue;
+    paths.push({
+      params: { level, filters: [specialty, area, city].filter(Boolean).join("/") },
+      props: { specialty, area, city, cityName: city ? med.cities.get(`${area}/${city}`)!.name : undefined },
+    });
+  }
+  return withLangs(paths);
+}) satisfies GetStaticPaths;
+
+const { level } = Astro.params as { level: string };
+const { specialty, area: areaSlug, city, cityName } = Astro.props as { specialty?: string; area?: string; city?: string; cityName?: string };
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const levelName = md.levels[level] ?? level;
+const specialtyName = specialty ? (md.specialties[specialty] ?? specialty) : undefined;
+const area = areaSlug ? getArea(areaSlug)! : undefined;
+const place = cityName ?? (area && areaName(area, lang));
+
+const where = { specialty, ...(area && areaFilter(area)), city };
+const jobs = await getMedicineJobsWhere({ ...where, level });
+const counts = countMedicine(jobs);
+// the same page for every level, to switch level without losing the rest
+const anyLevel = countMedicine(await getMedicineJobsWhere(where));
+const allMed = await getMedicineCounts();
+
+const germany = areaSlug === GERMANY;
+const bySpecialty = specialty ? [] : specialtyLinks(counts.specialties, lang, (s) => levelUrl(level, s, areaSlug, city));
+const byCountry = area ? [] : medicineCountryLinks(counts.countries, lang, (c) => levelUrl(level, specialty, c));
+const byState = (area && !germany) || city ? [] : stateLinks(counts.states, lang, (s) => levelUrl(level, specialty, s));
+const cities =
+  area && !city
+    ? comboCityLinks(counts.cities, allMed.cities, germany ? new Set(states.map((s) => s.slug)) : areaSlug, (a, c) => levelUrl(level, specialty, a, c)).slice(0, 24)
+    : [];
+const otherLevels = levelLinks(anyLevel.levels, lang, (l) => levelUrl(l, specialty, areaSlug, city)).filter((l) => l.href !== levelUrl(level, specialty, areaSlug, city));
+// the page without the level: the specialty's page, else the place's
+const allLevelsUrl = specialty ? specialtyUrl(specialty, areaSlug, city) : medicineLocationUrl(areaSlug!, city);
+
+const title = md.levelTitleIn(levelName, specialtyName, place);
+---
+
+<Base title={title} description={md.levelDescriptionIn(jobs.length, levelName, specialtyName, place)} section="medicine">
+  <p class="muted">
+    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
+    <a href={localizePath("/medicine/levels", lang)}>{md.nav.levels}</a> /
+    <a href={localizePath(levelUrl(level), lang)}>{levelName}</a> /
+    {specialty && area && <><a href={localizePath(levelUrl(level, specialty), lang)}>{specialtyName}</a> /</>}
+    {city && <><a href={localizePath(levelUrl(level, specialty, areaSlug), lang)}>{areaName(area!, lang)}</a> /</>}
+  </p>
+  <h1>{title}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+  </p>
+  <p><a href={localizePath(allLevelsUrl, lang)}>{md.allLevels}</a></p>
+  {otherLevels.length > 0 && <><h2>{md.otherLevels}</h2><TagLinks links={otherLevels} /></>}
+  {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byCountry.length > 1 && <><h2>{md.byCountry}</h2><TagLinks links={byCountry} /></>}
+  {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
+  {cities.length > 0 && <><h2>{germany ? md.topCities : md.cities}</h2><TagLinks links={cities} /></>}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>

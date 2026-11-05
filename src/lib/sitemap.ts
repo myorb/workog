@@ -1,7 +1,7 @@
 import { getCompanies, getHospitalIndex, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
 import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
 import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
-import { medicineCityLinks, specialtyCityKeys } from "./links.ts";
+import { getMedicineComboKeys, medicineCityLinks, specialtyCityKeys } from "./links.ts";
 import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
 import { locales, localizePath } from "./i18n.ts";
@@ -64,6 +64,10 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     for (const key of med.specialtyAreas.keys()) paths.add(`/medicine/specialties/${key}`);
     for (const key of specialtyCityKeys(med)) paths.add(`/medicine/specialties/${key}`);
     for (const level of med.levels.keys()) paths.add(levelUrl(level));
+    for (const key of await getMedicineComboKeys()) {
+      const [specialty, level, area, city] = key.split("/");
+      if (level && (specialty || area)) paths.add(levelUrl(level, specialty, area, city));
+    }
     for (const area of [...med.countries.keys(), ...med.states.keys()]) paths.add(medicineLocationUrl(area));
     for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
     const hospitals = await getHospitalIndex();

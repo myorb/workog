@@ -5,7 +5,7 @@ import { categoryName, countryName, defaultLang, type Lang, t } from "./i18n.ts"
 import type { SnapshotDimension } from "./analytics.ts";
 import type { Messages } from "./messages/en.ts";
 import { levels, levelUrl, medicineCountries, medicineLocationUrl, MIN_CITY_JOBS, specialties, specialtyUrl, stateName, states } from "./medicine.ts";
-import type { MedicineCity, MedicineCounts } from "./jobs.ts";
+import { getMedicineCounts, getOpenMedicineJobs, medicinePlace, type MedicineCity, type MedicineCounts } from "./jobs.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
@@ -48,8 +48,8 @@ export const companyLinks = (counts: Map<string, number>, companies: { key: stri
 export const specialtyLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = specialtyUrl) =>
   linksFor(specialties.map((slug) => ({ slug, name: t(lang).medicine.specialties[slug] ?? slug })), counts, (s) => href(s.slug));
 
-export const levelLinks = (counts: Map<string, number>, lang: Lang = defaultLang) =>
-  linksFor(levels.map((slug) => ({ slug, name: t(lang).medicine.levels[slug] ?? slug })), counts, (l) => levelUrl(l.slug));
+export const levelLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = levelUrl) =>
+  linksFor(levels.map((slug) => ({ slug, name: t(lang).medicine.levels[slug] ?? slug })), counts, (l) => href(l.slug));
 
 export const stateLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = medicineLocationUrl) =>
   linksFor(states, counts, (s) => href(s.slug), (s) => stateName(s, lang));
@@ -83,17 +83,61 @@ export function specialtyCityKeys(med: MedicineCounts): string[] {
 }
 
 /**
- * A specialty's cities, linking to its page in each. `cities` counts the
- * specialty's jobs; `all` counts every medical job, since a city has a
- * specialty page only when it has a page of its own. `areas` as in medicineCityLinks.
+ * Cities among `cities` with a page of their own, each linking to `href`.
+ * `cities` counts a narrower set of jobs (a specialty's, say); `all` counts
+ * every medical job, since a city has narrower pages only when it has a page
+ * of its own. `areas` as in medicineCityLinks.
  */
-export function specialtyCityLinks(specialty: string, cities: Map<string, MedicineCity>, all: Map<string, MedicineCity>, areas?: string | ReadonlySet<string>) {
+export function comboCityLinks(
+  cities: Map<string, MedicineCity>,
+  all: Map<string, MedicineCity>,
+  areas: string | ReadonlySet<string> | undefined,
+  href: (area: string, city: string) => string,
+) {
   const pages = new Set(medicineCityLinks(all, areas).map(cityKey));
   return [...cities.values()]
     .filter((c) => pages.has(cityKey(c)))
-    .map((c) => ({ href: specialtyUrl(specialty, c.area, c.slug), label: c.name, count: c.count }))
+    .map((c) => ({ href: href(c.area, c.slug), label: c.name, count: c.count }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
+
+/** A specialty's cities, linking to its page in each; as comboCityLinks */
+export const specialtyCityLinks = (specialty: string, cities: Map<string, MedicineCity>, all: Map<string, MedicineCity>, areas?: string | ReadonlySet<string>) =>
+  comboCityLinks(cities, all, areas, (area, city) => specialtyUrl(specialty, area, city));
+
+/** A filter combination of the medical jobs; a city needs its area (a German state or a country) */
+export interface MedicineCombo {
+  specialty?: string;
+  level?: string;
+  area?: string;
+  city?: string;
+}
+
+/** "specialty/level/area/city", empty where a filter isn't set: how the filter form looks combinations up */
+export const medicineComboKey = (c: MedicineCombo) => [c.specialty, c.level, c.area, c.city].map((v) => v ?? "").join("/");
+
+let medicineCombosCache: Promise<Set<string>> | undefined;
+
+/**
+ * Keys (medicineComboKey) of every combination of specialty, level and place
+ * with open jobs, the empty one aside. A city counts only where it has a page
+ * of its own, and Germany counts as an area besides its states, as on the pages.
+ */
+export const getMedicineComboKeys = () =>
+  (medicineCombosCache ??= Promise.all([getOpenMedicineJobs(), getMedicineCounts()]).then(([jobs, med]) => {
+    const cityPages = new Set(medicineCityLinks(med.cities).map(cityKey));
+    const keys = new Set<string>();
+    for (const job of jobs) {
+      const { country, state, area, city } = medicinePlace(job);
+      const places: MedicineCombo[] = [{}];
+      for (const a of new Set([country, state])) if (a) places.push({ area: a });
+      if (area && city && cityPages.has(`${area}/${city.slug}`)) places.push({ area, city: city.slug });
+      for (const specialty of [undefined, job.specialty])
+        for (const level of [undefined, job.level]) for (const place of places) keys.add(medicineComboKey({ specialty, level, ...place }));
+    }
+    keys.delete(medicineComboKey({}));
+    return keys;
+  }));
 
 /** Open jobs per company among `jobs` */
 export function companyCounts(jobs: { company: string }[]): Map<string, number> {

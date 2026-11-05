@@ -4,7 +4,7 @@ import Base from "../../../../../../layouts/Base.astro";
 import JobList from "../../../../../../components/JobList.astro";
 import TagLinks from "../../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../../lib/jobs.ts";
-import { areaFilter, areaName, getArea, medicineLocationUrl, specialtyUrl } from "../../../../../../lib/medicine.ts";
+import { areaFilter, areaName, getArea, levelUrl, medicineLocationUrl, specialtyUrl } from "../../../../../../lib/medicine.ts";
 import { levelLinks, specialtyCityKeys } from "../../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../../lib/constants.ts";
@@ -30,7 +30,7 @@ const area = getArea(areaSlug)!;
 const areaLabel = areaName(area, lang);
 const jobs = await getMedicineJobsWhere({ specialty, ...areaFilter(area), city });
 const counts = countMedicine(jobs);
-const byLevel = levelLinks(counts.levels, lang);
+const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty, areaSlug, city));
 ---
 
 <Base title={md.specialtyTitleIn(name, cityName)} description={md.specialtyDescriptionIn(jobs.length, name, cityName)} section="medicine">

@@ -5,10 +5,12 @@
  * itself: a small script turns the chosen values into the URL of the
  * pre-rendered hub page for that combination and goes there. Combinations
  * without a page fall back to the closest one and say so under the button.
+ * The medical form looks combinations up in /medicine/filters.json, fetched
+ * once the form is used, since there are too many to inline.
  */
 import { countTags, getJobsWhere, getMedicineCounts, getTagCounts } from "../lib/jobs.ts";
 import { GERMANY, levels, medicineCountries, specialties, stateName, states } from "../lib/medicine.ts";
-import { medicineCityLinks, specialtyCityKeys } from "../lib/links.ts";
+import { medicineCityLinks } from "../lib/links.ts";
 import { cities, countries } from "../lib/places.ts";
 import { technologies } from "../lib/technologies.ts";
 import { employmentTypes } from "../lib/employment.ts";
@@ -60,8 +62,6 @@ const stateGroups = states
 const germanyAt = countryGroups.findIndex((g) => g.slug === GERMANY);
 const placeGroups = germanyAt < 0 ? [...countryGroups, ...stateGroups] : [...countryGroups.slice(0, germanyAt + 1), ...stateGroups, ...countryGroups.slice(germanyAt + 1)];
 const levelOptions = levels.filter((slug) => med.levels.has(slug));
-// specialty pages exist per state, country or city only where the specialty has jobs there
-const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
 ---
 
 <details class="filters" open>
@@ -75,10 +75,10 @@ const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
     data-remote-tech-location={f.remoteTechLocation}
     data-remote-city={f.remoteCity}
     data-remote-none={f.remoteNone}
-    data-combos={combos.join(" ")}
-    data-level-alone={mf.levelAlone}
-    data-specialty-city={mf.specialtyCity}
-    data-combo-none={mf.comboNone}
+    data-fewer={mf.fewer("%s")}
+    data-field-level={mf.fields.level}
+    data-field-city={mf.fields.city}
+    data-field-location={mf.fields.location}
   >
     <div class="head">
       <p class="title">{f.title}</p>
@@ -188,7 +188,15 @@ const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
     const clear = form.querySelector(".clear");
 
     const medicine = d.kind === "medicine";
-    const combos = new Set(d.combos.split(" "));
+    // the medical combinations with a page, as "specialty/level/area/city"; null if they couldn't be fetched
+    let combos;
+    let loading;
+    const loadCombos = () =>
+      (loading ??= fetch("/medicine/filters.json")
+        .then((r) => (r.ok ? r.json() : Promise.reject()))
+        .then((keys) => (combos = new Set(keys)))
+        .catch(() => (combos = null))
+        .then(update));
     // the chip group that clears when its picked chip is clicked again
     const chipName = medicine ? "level" : "employment";
 
@@ -216,25 +224,32 @@ const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
       return { path, note, empty: !others && !employment };
     }
 
+    // Without a page for every chosen value, fewer until there is one: first the level,
+    // then the city, then the whole place. A chosen specialty always stays.
     function routeMedicine() {
       const specialty = field("specialty");
-      const place = field("place"); // "area" or "area/city": a German state or a country
       const level = field("level");
-      const [area, city] = place.split("/");
-      const others = specialty || place;
-      const combo = specialty && area && combos.has(`${specialty}/${area}`);
-      const cityCombo = combo && city && combos.has(`${specialty}/${place}`);
+      const [area = "", city = ""] = field("place").split("/"); // a German state or a country, and maybe a city
+      const tries = [
+        [specialty, level, area, city],
+        [specialty, "", area, city],
+        [specialty, level, area, ""],
+        [specialty, "", area, ""],
+        [specialty, level, "", ""],
+        [specialty, "", "", ""],
+      ].filter((c) => c.some(Boolean));
+      if (!tries.length) return { path: "", note: "", empty: true };
+      // until the combinations are in (or if they never come), assume the page exists
+      const found = tries.find((c) => !combos || combos.has(c.join("/"))) ?? tries[0];
+      const [s, l, a, c] = found;
+      const rest = [s, a, c].filter(Boolean);
+      const path = l ? ["/medicine/levels", l, ...rest].join("/") : s ? ["/medicine/specialties", ...rest].join("/") : ["/medicine/locations", a, c].filter(Boolean).join("/");
 
-      let path = "";
-      if (level && !others) path = `/medicine/levels/${level}`;
-      else if (specialty) path = cityCombo ? `/medicine/specialties/${specialty}/${place}` : combo ? `/medicine/specialties/${specialty}/${area}` : `/medicine/specialties/${specialty}`;
-      else if (place) path = `/medicine/locations/${place}`;
-
-      let note = "";
-      if (level && others) note = d.levelAlone;
-      else if (specialty && area && !combo) note = d.comboNone;
-      else if (specialty && city && !cityCombo) note = d.specialtyCity;
-      return { path, note, empty: !others && !level };
+      const left = [];
+      if (level && !l) left.push(d.fieldLevel);
+      if (area && !a) left.push(d.fieldLocation);
+      else if (city && !c) left.push(d.fieldCity);
+      return { path, note: left.length ? d.fewer.replace("%s", left.join(", ")) : "", empty: false };
     }
 
     const route = medicine ? routeMedicine : routeTech;
@@ -243,6 +258,7 @@ const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
       const r = route();
       note.textContent = r.note;
       clear.hidden = r.empty;
+      if (medicine && !r.empty) loadCombos();
     }
 
     form.addEventListener("change", update);
@@ -262,8 +278,9 @@ const combos = [...med.specialtyAreas.keys(), ...specialtyCityKeys(med)];
         update();
       }),
     );
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      if (medicine) await loadCombos();
       const { path } = route();
       if (path) location.href = d.base + path;
     });

@@ -101,9 +101,8 @@ export const de = {
       location: "Standort",
       level: "Karrierestufe",
       allOf: (state: string) => `Ganz ${state}`,
-      levelAlone: "Die Karrierestufe lässt sich noch nicht mit anderen Filtern kombinieren.",
-      specialtyCity: "Derzeit keine Stellen in diesem Fachgebiet in dieser Stadt, daher geht es zum ganzen Bundesland oder Land.",
-      comboNone: "Derzeit keine Stellen in diesem Fachgebiet an diesem Ort, daher geht es zum ganzen Fachgebiet.",
+      fewer: (left: string) => `Derzeit passt keine Stelle zu allen Filtern, daher fällt weg: ${left}.`,
+      fields: { level: "Karrierestufe", city: "Stadt", location: "Ort" },
     },
     specialties: {
       "internal-medicine": "Innere Medizin",
@@ -147,6 +146,11 @@ export const de = {
     levelsDescription: "Offene Stellen für Assistenz-, Fach-, Ober- und Chefärztinnen und -ärzte. Täglich aktualisiert.",
     levelTitle: (l: string) => `Stellen: ${l}`,
     levelDescription: (k: number, l: string) => `${p(k, openJobs)} als ${l} in Deutschland und Europa. Täglich aktualisiert.`,
+    levelTitleIn: (l: string, s: string | undefined, place: string | undefined) => `Stellen: ${l}${s ? `, ${s}` : ""}${place ? ` in ${place}` : ""}`,
+    levelDescriptionIn: (k: number, l: string, s: string | undefined, place: string | undefined) =>
+      `${p(k, openJobs)} als ${l}${s ? ` (${s})` : ""} in ${place ?? "Deutschland und Europa"}. Täglich aktualisiert.`,
+    allLevels: "Alle Karrierestufen →",
+    otherLevels: "Andere Karrierestufen",
     locationsTitle: "Medizin-Jobs nach Standort",
     locationsDescription: (c: number) => `Offene Medizin-Jobs in ${p(c, { one: "Land", other: "Ländern" })} Europas, nach Bundesland und Stadt. Täglich aktualisiert.`,
     placeTitle: (place: string) => `Medizin-Jobs in ${place}`,

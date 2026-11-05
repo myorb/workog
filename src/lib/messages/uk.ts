@@ -99,9 +99,8 @@ export const uk = {
       location: "Локація",
       level: "Рівень",
       allOf: (state: string) => `${state}: усі`,
-      levelAlone: "Рівень поки не можна поєднувати з іншими фільтрами.",
-      specialtyCity: "Зараз немає вакансій цієї спеціальності в цьому місті, тож відкриється вся земля або країна.",
-      comboNone: "Зараз немає вакансій цієї спеціальності в цьому місці, тож відкриється вся спеціальність.",
+      fewer: (left: string) => `Зараз немає вакансій за всіма фільтрами, тож не враховано: ${left}.`,
+      fields: { level: "рівень", city: "місто", location: "локацію" },
     },
     specialties: {
       "internal-medicine": "Внутрішня медицина",
@@ -145,6 +144,11 @@ export const uk = {
     levelsDescription: "Вакансії для резидентів, спеціалістів, старших лікарів і завідувачів відділень. Щоденне оновлення.",
     levelTitle: (l: string) => `Вакансії: ${l}`,
     levelDescription: (k: number, l: string) => `${l}, Німеччина та Європа: ${p(k, openJobs)}. Щоденне оновлення.`,
+    levelTitleIn: (l: string, s: string | undefined, place: string | undefined) => `Вакансії: ${l}${s ? `, ${s}` : ""}${place ? ` — ${place}` : ""}`,
+    levelDescriptionIn: (k: number, l: string, s: string | undefined, place: string | undefined) =>
+      `${[l, s, place ?? "Німеччина та Європа"].filter(Boolean).join(", ")}: ${p(k, openJobs)}. Щоденне оновлення.`,
+    allLevels: "Усі рівні →",
+    otherLevels: "Інші рівні",
     locationsTitle: "Медичні вакансії за локацією",
     locationsDescription: (c: number) => `Медичні вакансії в країнах Європи (${n(c)}), за федеральними землями Німеччини та містами. Щоденне оновлення.`,
     placeTitle: (place: string) => `Медичні вакансії — ${place}`,
