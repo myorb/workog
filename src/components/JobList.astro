@@ -42,6 +42,8 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
   li { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .title { font-weight: 600; text-decoration: none; }
   .title:hover { text-decoration: underline; }
+  /* browsers only let :visited change colour, so a seen job reads purple instead of blue */
+  .title:visited { color: var(--visited); }
   .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 14px; color: var(--muted); margin-top: 2px; }
   .company { color: var(--text); font-weight: 500; }
 </style>

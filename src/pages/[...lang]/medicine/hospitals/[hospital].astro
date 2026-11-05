@@ -5,7 +5,7 @@ import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countMedicine, getHospitalIndex, getHospitalJobs } from "../../../../lib/jobs.ts";
 import { hospitalsUrl, hospitalUrl } from "../../../../lib/hospitals.ts";
-import { levelLinks, specialtyLinks, stateLinks } from "../../../../lib/links.ts";
+import { levelLinks, specialtyLinks, medicineCountryLinks, stateLinks } from "../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
 
@@ -28,6 +28,7 @@ const jobs = await getHospitalJobs(hospital);
 const counts = countMedicine(jobs);
 const members = (group?.hospitals ?? []).map((h) => ({ href: hospitalUrl(h.slug), label: h.name, count: h.count }));
 const bySpecialty = specialtyLinks(counts.specialties, lang);
+const byCountry = medicineCountryLinks(counts.countries, lang);
 const byState = stateLinks(counts.states, lang);
 const byLevel = levelLinks(counts.levels, lang);
 ---
@@ -46,6 +47,7 @@ const byLevel = levelLinks(counts.levels, lang);
   </p>
   {members.length > 0 && <><h2>{md.groupHospitals(name)}</h2><TagLinks links={members} /></>}
   {bySpecialty.length > 1 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}
+  {byCountry.length > 1 && <><h2>{md.byCountry}</h2><TagLinks links={byCountry} /></>}
   {byState.length > 1 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
   {byLevel.length > 1 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
   <h2>{m.latestJobs}</h2>

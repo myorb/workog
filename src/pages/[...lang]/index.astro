@@ -6,7 +6,7 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import { getCompanies, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
-import { cityLinks, remoteUrl, specialtyLinks, stateLinks, technologyLinks } from "../../lib/links.ts";
+import { cityLinks, remoteUrl, medicineCountryLinks, specialtyLinks, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { formatNumber } from "../../lib/locale.ts";
 import { website } from "../../lib/structured-data.ts";
@@ -33,7 +33,7 @@ const medicalJobs = await getOpenMedicineJobs();
 const med = await getMedicineCounts();
 const medicine = [
   ...specialtyLinks(med.specialties, lang).slice(0, 4),
-  ...stateLinks(med.states, lang).slice(0, 2),
+  ...medicineCountryLinks(med.countries, lang).slice(0, 2),
   { href: "/medicine/specialties", label: s.allSpecialties },
   { href: "/medicine/locations", label: s.allLocations },
 ];

@@ -5,7 +5,7 @@ import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
 import { specialties, specialtyUrl } from "../../../../../lib/medicine.ts";
-import { levelLinks, medicineCityLinks, stateLinks } from "../../../../../lib/links.ts";
+import { levelLinks, medicineCityLinks, medicineCountryLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
 
@@ -18,6 +18,7 @@ const md = m.medicine;
 const name = md.specialties[specialty] ?? specialty;
 const jobs = await getMedicineJobsWhere({ specialty });
 const counts = countMedicine(jobs);
+const byCountry = medicineCountryLinks(counts.countries, lang, (country) => specialtyUrl(specialty, country));
 const byState = stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state));
 const cities = medicineCityLinks(counts.cities).slice(0, 24);
 const byLevel = levelLinks(counts.levels, lang);
@@ -33,6 +34,7 @@ const byLevel = levelLinks(counts.levels, lang);
     {m.openPositions(jobs.length)}
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
+  {byCountry.length > 1 && <><h2>{md.byCountry}</h2><TagLinks links={byCountry} /></>}
   {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
   {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}
   {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}

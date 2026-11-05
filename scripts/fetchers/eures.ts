@@ -73,11 +73,21 @@ export const EURES_COUNTRIES = Object.keys(COUNTRY_NAMES).filter((c) => !["de", 
 
 const countryName = (code: string) => COUNTRY_NAMES[code.toLowerCase()] ?? code.toUpperCase();
 
-const search = (country: string, page: number) =>
+/**
+ * The search orders vacancies that share a creation time differently on each
+ * page request, so paging through one order returns some vacancies twice and
+ * never returns others, the same ones run after run. A second pass in another
+ * order finds nearly all of those.
+ */
+const SORTS = ["MOST_RECENT", "BEST_MATCH"] as const;
+type Sort = (typeof SORTS)[number];
+export type Search = (country: string, page: number, sort: Sort) => Promise<SearchPage>;
+
+const searchPage: Search = (country, page, sort) =>
   postJson<SearchPage>(`${API}/jv-search/search`, {
     resultsPerPage: PAGE_SIZE,
     page,
-    sortSearch: "MOST_RECENT",
+    sortSearch: sort,
     keywords: [],
     publicationPeriod: null,
     occupationUris: [DOCTORS],
@@ -95,14 +105,26 @@ const search = (country: string, page: number) =>
     sessionId: "workog",
   });
 
-async function searchCountry(country: string): Promise<RawJob[]> {
-  const jobs: RawJob[] = [];
+/** Every page of one sort order, and the number of vacancies the search reported. */
+async function allPages(country: string, sort: Sort, search: Search): Promise<{ listings: Listing[]; total: number }> {
+  const listings: Listing[] = [];
   for (let page = 1; page <= MAX_PAGES; page++) {
-    const data = await search(country, page);
-    jobs.push(...data.jvs.map((j) => ({ ...j, country })));
-    if (!data.jvs.length || page * PAGE_SIZE >= data.numberRecords) return jobs;
+    const data = await search(country, page, sort);
+    listings.push(...data.jvs);
+    if (!data.jvs.length || page * PAGE_SIZE >= data.numberRecords) return { listings, total: data.numberRecords };
   }
   throw new Error(`eures: ${country} has more than ${MAX_PAGES * PAGE_SIZE} vacancies; split the query`);
+}
+
+/** A country's vacancies, each once, newest first; the second sort order runs only when the first missed some. */
+export async function searchCountry(country: string, search: Search = searchPage): Promise<RawJob[]> {
+  const byId = new Map<string, RawJob>();
+  for (const sort of SORTS) {
+    const { listings, total } = await allPages(country, sort, search);
+    for (const j of listings) if (!byId.has(j.id)) byId.set(j.id, { ...j, country });
+    if (byId.size >= total) break;
+  }
+  return [...byId.values()];
 }
 
 /** "ARVIKA" → "Arvika"; names already in mixed case stay as they are */

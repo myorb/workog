@@ -4,7 +4,8 @@ import { employmentTypes } from "./employment.ts";
 import { categoryName, countryName, defaultLang, type Lang, t } from "./i18n.ts";
 import type { SnapshotDimension } from "./analytics.ts";
 import type { Messages } from "./messages/en.ts";
-import { levels, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialties, specialtyUrl, stateName, states } from "./medicine.ts";
+import { levels, levelUrl, medicineCountries, medicineLocationUrl, MIN_CITY_JOBS, specialties, specialtyUrl, stateName, states } from "./medicine.ts";
+import type { MedicineCity } from "./jobs.ts";
 
 export const countryUrl = (country: string) => `/locations/${country}`;
 export const cityUrl = (country: string, city: string) => `/locations/${country}/${city}`;
@@ -53,14 +54,20 @@ export const levelLinks = (counts: Map<string, number>, lang: Lang = defaultLang
 export const stateLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = medicineLocationUrl) =>
   linksFor(states, counts, (s) => href(s.slug), (s) => stateName(s, lang));
 
+/** Countries of the medical jobs, Germany included */
+export const medicineCountryLinks = (counts: Map<string, number>, lang: Lang = defaultLang, href: (slug: string) => string = medicineLocationUrl) =>
+  linksFor(medicineCountries, counts, (c) => href(c.slug), (c) => countryName(c, lang));
+
 /**
  * Cities with a page of their own: enough jobs, and not a city-state, whose
- * state page already is the city's page.
+ * state (or country) page already is the city's page. `areas` keeps the cities
+ * of those states or countries only.
  */
-export function medicineCityLinks(cities: Map<string, { state: string; slug: string; name: string; count: number }>, state?: string) {
+export function medicineCityLinks(cities: Map<string, MedicineCity>, areas?: string | ReadonlySet<string>) {
+  const inArea = (area: string) => !areas || (typeof areas === "string" ? area === areas : areas.has(area));
   return [...cities.values()]
-    .filter((c) => c.count >= MIN_CITY_JOBS && c.slug !== c.state && (!state || c.state === state))
-    .map((c) => ({ href: medicineLocationUrl(c.state, c.slug), label: c.name, count: c.count, state: c.state, slug: c.slug }))
+    .filter((c) => c.count >= MIN_CITY_JOBS && c.slug !== c.area && inArea(c.area))
+    .map((c) => ({ href: medicineLocationUrl(c.area, c.slug), label: c.name, count: c.count, area: c.area, slug: c.slug }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 

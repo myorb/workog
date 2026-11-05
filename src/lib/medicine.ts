@@ -6,6 +6,9 @@
 import type { Job } from "./schema.ts";
 import { slugify } from "./normalize.ts";
 import { postalRuns } from "./postal-states.ts";
+import type { Country } from "./places.ts";
+import { countryName } from "./i18n.ts";
+import type { Lang } from "./locale.ts";
 
 /** Category of every medical job; tech pages leave these jobs out */
 export const MEDICINE = "medicine";
@@ -142,20 +145,70 @@ export const stateName = (state: State, lang: string) => (lang === "de" ? state.
 /** "City, State, Germany", the label medicine sources write for a German workplace */
 export const germanLocation = (city: string, state: State | undefined) => [city, state?.name, "Germany"].filter(Boolean).join(", ");
 
+export const GERMANY = "germany";
+
+/**
+ * Countries the medicine sources post from, by the English name ending their
+ * location labels ("Lyon, France"). Germany is browsed by state below it; every
+ * other country is browsed by city directly.
+ */
+export const medicineCountries: Country[] = [
+  "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Denmark", "Estonia", "Finland", "France", "Germany",
+  "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta",
+  "Netherlands", "Norway", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland",
+  "United Kingdom",
+].map((name) => ({ slug: slugify(name), name, pattern: new RegExp(`\\b${name}$`) }));
+
+const countryByName = new Map(medicineCountries.map((c) => [c.name, c]));
+const countryBySlug = new Map(medicineCountries.map((c) => [c.slug, c]));
+
+export const getMedicineCountry = (slug: string) => countryBySlug.get(slug);
+
+/**
+ * A place with its own location page: a German state or a country other than
+ * Germany. Cities sit below one ("/medicine/locations/bavaria/munich",
+ * "/medicine/locations/france/lyon"); state and country slugs don't overlap.
+ */
+export type Area = { kind: "state"; slug: string; state: State } | { kind: "country"; slug: string; country: Country };
+
+export function getArea(slug: string): Area | undefined {
+  const state = stateBySlug.get(slug);
+  if (state) return { kind: "state", slug, state };
+  const country = countryBySlug.get(slug);
+  return country ? { kind: "country", slug, country } : undefined;
+}
+
+export const areaName = (area: Area, lang: Lang) => (area.kind === "state" ? stateName(area.state, lang) : countryName(area.country, lang));
+
+/** The jobs filter of an area's pages */
+export const areaFilter = (area: Area) => (area.kind === "state" ? { state: area.slug } : { country: area.slug });
+
 export interface MedicinePlace {
+  /** slug of the country */
+  country?: string;
+  /** slug of the German state */
   state?: string;
+  /** the state, or the country outside Germany: what the city's page sits below */
+  area?: string;
   /** slug and display name of the city */
   city?: { slug: string; name: string };
 }
 
-/** The state and city of a job's first German location. */
+/**
+ * The country, state and city of a job's first location in a known country.
+ * Labels are "City, Country", or "City, State, Germany" (some sources add a
+ * region: "Essen, Ruhr, Nordrhein-Westfalen, Germany").
+ */
 export function medicinePlaceOf(job: Pick<Job, "locations">): MedicinePlace {
   for (const label of job.locations) {
     const parts = label.split(", ");
-    if (parts.at(-1) !== "Germany" || parts.length !== 3) continue;
-    const state = stateByName.get(parts[1]!);
-    const name = parts[0]!;
-    return { state: state?.slug, city: { slug: slugify(name), name } };
+    const country = countryByName.get(parts.at(-1)!);
+    if (!country) continue;
+    const name = parts.length > 1 ? parts[0]! : undefined;
+    if (country.slug !== GERMANY) return { country: country.slug, area: country.slug, ...(name && { city: { slug: slugify(name), name } }) };
+    const state = parts.length > 2 ? stateByName.get(parts.at(-2)!) : undefined;
+    if (!state) return { country: GERMANY };
+    return { country: GERMANY, state: state.slug, area: state.slug, city: { slug: slugify(name!), name: name! } };
   }
   return {};
 }
