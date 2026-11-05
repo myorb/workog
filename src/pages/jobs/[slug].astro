@@ -15,6 +15,7 @@ import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
 import { employmentTypeOf } from "../../lib/employment.ts";
 import { categoryName, t } from "../../lib/i18n.ts";
 import { formatNumber } from "../../lib/locale.ts";
+import { jobLanguage } from "../../lib/language.ts";
 
 export const getStaticPaths = (async () => {
   const jobs = await getAllJobs();
@@ -36,6 +37,9 @@ const groupPage = hospitalIndex?.groups.some((g) => g.slug === job.company);
 const where = formatLocations(job.locations, job.remote, 2);
 const employment = employmentTypeOf(job);
 const url = new URL(`/jobs/${job.slug}`, Astro.site);
+// The page's own labels are English; the posting keeps its language, so its title and text say which
+const postingLang = jobLanguage(job);
+const contentLang = postingLang === "en" ? undefined : postingLang;
 // closed jobs are noindexed, so they drop the posting markup too
 const en = t("en");
 const specialtyName = job.specialty ? en.medicine.specialties[job.specialty] : undefined;
@@ -114,7 +118,7 @@ const browse = [
 
   {closed && <p class="closed">This position was closed on {formatDate(job.closedAt!)} and is no longer accepting applications.</p>}
 
-  <h1>{job.title}</h1>
+  <h1 lang={contentLang}>{job.title}</h1>
   {medicine ? (
   <dl class="facts">
     <dt>Hospital or practice</dt><dd>{hospitalSlug ? <a href={hospitalUrl(hospitalSlug)}>{employer}</a> : employer}</dd>
@@ -139,7 +143,7 @@ const browse = [
 
   {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
 
-  {job.descriptionHtml ? <article class="description" set:html={job.descriptionHtml} /> : <p class="muted">The full description is on the original posting.</p>}
+  {job.descriptionHtml ? <article class="description" lang={contentLang} set:html={job.descriptionHtml} /> : <p class="muted">The full description is on the original posting.</p>}
 
   {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
 
