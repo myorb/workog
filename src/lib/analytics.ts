@@ -1,6 +1,7 @@
 /** Aggregations for the analytics pages. Pure functions over jobs, history and snapshots. */
 import { tagsOf } from "./jobs.ts";
-import type { HistoryDay, Job, Snapshot } from "./schema.ts";
+import { placesOf } from "./places.ts";
+import type { ArchivedJob, HistoryDay, Job, Snapshot } from "./schema.ts";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -121,18 +122,27 @@ export function addDays(date: string, days: number): string {
 }
 
 /** Whether a job was open at the end of UTC day `date`, judged by when it was first seen and closed. */
-export function openOn(job: Job, date: string): boolean {
+export function openOn(job: Pick<Job, "firstSeenAt" | "closedAt">, date: string): boolean {
   const end = Date.parse(addDays(date, 1));
   return Date.parse(job.firstSeenAt) < end && (!job.closedAt || Date.parse(job.closedAt) >= end);
 }
 
-/** Open-job counts at the end of `date`, from every job the store still holds. */
-export function snapshotOf(jobs: Job[], date: string): Snapshot {
+/** The tags of an archived job, which carries the ones its description gave. */
+const archivedTags = (job: ArchivedJob) => ({
+  ...placesOf(job.locations),
+  technologies: job.technologies,
+  employment: [job.employment],
+});
+
+/**
+ * Open-job counts at the end of `date`, from every job the store still holds:
+ * data/jobs, plus the archive (src/lib/archive.ts) for days past the retention
+ * window.
+ */
+export function snapshotOf(jobs: Job[], date: string, archived: ArchivedJob[] = []): Snapshot {
   const snapshot: Snapshot = { date, open: 0, remote: 0, companies: {}, categories: {}, countries: {}, cities: {}, technologies: {}, employment: {} };
   const add = (counts: Record<string, number>, key: string) => (counts[key] = (counts[key] ?? 0) + 1);
-  for (const job of jobs) {
-    if (!openOn(job, date)) continue;
-    const tags = tagsOf(job);
+  const count = (job: Job | ArchivedJob, tags: Record<"countries" | "cities" | "technologies" | "employment", Iterable<string>>) => {
     snapshot.open++;
     if (job.remote) snapshot.remote++;
     add(snapshot.companies, job.company);
@@ -140,7 +150,9 @@ export function snapshotOf(jobs: Job[], date: string): Snapshot {
     for (const key of ["countries", "cities", "technologies", "employment"] as const) {
       for (const slug of tags[key]) add(snapshot[key], slug);
     }
-  }
+  };
+  for (const job of jobs) if (openOn(job, date)) count(job, tagsOf(job));
+  for (const job of archived) if (openOn(job, date)) count(job, archivedTags(job));
   for (const key of SNAPSHOT_DIMENSIONS) {
     snapshot[key] = Object.fromEntries(Object.entries(snapshot[key]).sort(([a], [b]) => a.localeCompare(b)));
   }

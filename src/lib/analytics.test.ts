@@ -100,6 +100,22 @@ describe("snapshots", () => {
     expect(s.countries.germany).toBe(2);
   });
 
+  test("snapshotOf counts archived jobs on the days they were open, with their stored tags", () => {
+    const { descriptionHtml: _, ...rest } = job({ id: "t:9", company: "old", locations: ["Berlin, Germany"] });
+    const archived = {
+      ...rest,
+      firstSeenAt: "2026-10-01T00:00:00Z",
+      closedAt: "2026-10-10T00:00:00Z",
+      archivedAt: "2026-10-25T00:00:00Z",
+      technologies: ["typescript"],
+      employment: "contract",
+    };
+    const open = snapshotOf([], "2026-10-05", [archived]);
+    expect(open).toMatchObject({ open: 1, companies: { old: 1 }, technologies: { typescript: 1 }, employment: { contract: 1 } });
+    expect(open.countries.germany).toBe(1);
+    expect(snapshotOf([], "2026-10-10", [archived]).open).toBe(0);
+  });
+
   const snap = (date: string, open: number): Snapshot => ({
     date, open, remote: 0, companies: {}, categories: {}, countries: {}, cities: {}, technologies: {}, employment: {},
   });
