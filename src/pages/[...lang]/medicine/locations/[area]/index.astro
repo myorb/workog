@@ -7,7 +7,7 @@ import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../..
 import { type Area, areaFilter, areaName, GERMANY, getArea, levelUrl, medicineCountries, medicineLocationUrl, specialtyUrl, states } from "../../../../../lib/medicine.ts";
 import { levelLinks, medicineCityLinks, specialtyLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 // Every German state and every country, Germany included; empty ones aren't indexed
 export const getStaticPaths = (() =>
@@ -29,7 +29,7 @@ const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, undefined, ar
 const germanyName = areaName(getArea(GERMANY)!, lang);
 ---
 
-<Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={!jobs.length}>
+<Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
     <a href={localizePath("/medicine/locations", lang)}>{md.nav.locations}</a> /

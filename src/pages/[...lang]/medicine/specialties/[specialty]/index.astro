@@ -7,7 +7,7 @@ import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../..
 import { levelUrl, specialties, specialtyUrl } from "../../../../../lib/medicine.ts";
 import { levelLinks, medicineCountryLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 export const getStaticPaths = (() => withLangs(specialties.map((specialty) => ({ params: { specialty } })))) satisfies GetStaticPaths;
 
@@ -24,7 +24,7 @@ const cities = specialtyCityLinks(specialty, counts.cities, (await getMedicineCo
 const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty));
 ---
 
-<Base title={md.specialtyTitle(name)} description={md.specialtyDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
+<Base title={md.specialtyTitle(name)} description={md.specialtyDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
     <a href={localizePath("/medicine/specialties", lang)}>{md.nav.specialties}</a> /

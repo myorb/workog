@@ -7,7 +7,7 @@ import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
 import { countries } from "../../../../lib/places.ts";
 import { cityLinks, companyCounts, companyLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 export const getStaticPaths = (async () => {
   const counts = await countTags();
@@ -27,7 +27,7 @@ const techs = technologyLinks(counts.technologies, (t) => technologyUrl(t, count
 const companies = companyLinks(companyCounts(jobs), await getCompanies());
 ---
 
-<Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)}>
+<Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)} noindex={isThin(jobs.length)}>
   <p class="muted"><a href={localizePath("/locations", lang)}>{m.nav.locations}</a> /</p>
   <h1>{m.place.title(name)}</h1>
   <p class="muted">

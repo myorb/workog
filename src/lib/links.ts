@@ -116,28 +116,35 @@ export interface MedicineCombo {
 /** "specialty/level/area/city", empty where a filter isn't set: how the filter form looks combinations up */
 export const medicineComboKey = (c: MedicineCombo) => [c.specialty, c.level, c.area, c.city].map((v) => v ?? "").join("/");
 
-let medicineCombosCache: Promise<Set<string>> | undefined;
+let medicineCombosCache: Promise<Map<string, number>> | undefined;
 
 /**
- * Keys (medicineComboKey) of every combination of specialty, level and place
- * with open jobs, the empty one aside. A city counts only where it has a page
- * of its own, and Germany counts as an area besides its states, as on the pages.
+ * Open jobs per combination of specialty, level and place, keyed by
+ * medicineComboKey, the empty combination aside. A city counts only where it
+ * has a page of its own, and Germany counts as an area besides its states, as
+ * on the pages.
  */
-export const getMedicineComboKeys = () =>
+export const getMedicineComboCounts = () =>
   (medicineCombosCache ??= Promise.all([getOpenMedicineJobs(), getMedicineCounts()]).then(([jobs, med]) => {
     const cityPages = new Set(medicineCityLinks(med.cities).map(cityKey));
-    const keys = new Set<string>();
+    const counts = new Map<string, number>();
     for (const job of jobs) {
       const { country, state, area, city } = medicinePlace(job);
       const places: MedicineCombo[] = [{}];
       for (const a of new Set([country, state])) if (a) places.push({ area: a });
       if (area && city && cityPages.has(`${area}/${city.slug}`)) places.push({ area, city: city.slug });
+      // a job without a specialty or level would otherwise count twice for the same key
+      const keys = new Set<string>();
       for (const specialty of [undefined, job.specialty])
         for (const level of [undefined, job.level]) for (const place of places) keys.add(medicineComboKey({ specialty, level, ...place }));
+      for (const key of keys) counts.set(key, (counts.get(key) ?? 0) + 1);
     }
-    keys.delete(medicineComboKey({}));
-    return keys;
+    counts.delete(medicineComboKey({}));
+    return counts;
   }));
+
+/** Keys (medicineComboKey) of every combination with open jobs; see getMedicineComboCounts */
+export const getMedicineComboKeys = async () => new Set((await getMedicineComboCounts()).keys());
 
 /** Open jobs per company among `jobs` */
 export function companyCounts(jobs: { company: string }[]): Map<string, number> {

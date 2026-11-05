@@ -7,7 +7,7 @@ import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../..
 import { areaFilter, areaName, getArea, levelUrl, medicineLocationUrl, specialtyUrl } from "../../../../../../lib/medicine.ts";
 import { levelLinks, specialtyCityKeys } from "../../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../../../lib/constants.ts";
 
 // A specialty in a city with a page of its own, only where it has jobs
 export const getStaticPaths = (async () => {
@@ -33,7 +33,7 @@ const counts = countMedicine(jobs);
 const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty, areaSlug, city));
 ---
 
-<Base title={md.specialtyTitleIn(name, cityName)} description={md.specialtyDescriptionIn(jobs.length, name, cityName)} section="medicine">
+<Base title={md.specialtyTitleIn(name, cityName)} description={md.specialtyDescriptionIn(jobs.length, name, cityName)} section="medicine" noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
     <a href={localizePath(specialtyUrl(specialty), lang)}>{name}</a> /

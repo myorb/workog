@@ -7,7 +7,7 @@ import { countTags, getCompanies, getJobsWhere, getTagCounts } from "../../../..
 import { cities, getCountry } from "../../../../lib/places.ts";
 import { cityLinks, cityUrl, companyCounts, companyLinks, countryUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 export const getStaticPaths = (async () => {
   const counts = await countTags();
@@ -32,7 +32,7 @@ const nearby = cityLinks((await getTagCounts()).cities, undefined, country.slug)
   .slice(0, 12);
 ---
 
-<Base title={m.place.title(`${city.name}, ${name}`)} description={m.place.cityDescription(jobs.length, `${city.name}, ${name}`)}>
+<Base title={m.place.title(`${city.name}, ${name}`)} description={m.place.cityDescription(jobs.length, `${city.name}, ${name}`)} noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/locations", lang)}>{m.nav.locations}</a> / <a href={localizePath(countryUrl(country.slug), lang)}>{name}</a> /
   </p>

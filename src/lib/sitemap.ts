@@ -1,10 +1,11 @@
 import { getCompanies, getHospitalIndex, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
 import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
 import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
-import { getMedicineComboKeys, medicineCityLinks, specialtyCityKeys } from "./links.ts";
+import { getMedicineComboCounts, medicineCityLinks, specialtyCityKeys } from "./links.ts";
 import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
 import { locales, localizePath } from "./i18n.ts";
+import { isThin } from "./constants.ts";
 
 export interface SitemapEntry {
   path: string;
@@ -24,7 +25,7 @@ const URLS_PER_SITEMAP = 10_000;
 
 /**
  * Every page search engines should index. Pages rendered with `noindex`
- * (closed jobs, empty technology combinations, 404) are left out.
+ * (closed jobs, browse pages with fewer than MIN_INDEX_JOBS jobs, 404) are left out.
  */
 export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const jobs = await getOpenJobs();
@@ -32,43 +33,49 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
 
   for (const company of await getCompanies()) paths.add(`/companies/${company.key}`);
 
+  // Browse pages count their jobs, each job once per page, and only pages that aren't thin are listed
+  const hubs = new Map<string, number>();
   for (const job of jobs) {
     const tags = tagsOf(job);
-    for (const type of tags.employment) paths.add(employmentUrl(type));
+    const own = new Set<string>();
+    for (const type of tags.employment) own.add(employmentUrl(type));
     if (job.remote) {
       paths.add(remoteUrl());
-      for (const country of tags.countries) paths.add(remoteUrl(country));
+      for (const country of tags.countries) own.add(remoteUrl(country));
     }
-    for (const country of tags.countries) paths.add(countryUrl(country));
+    for (const country of tags.countries) own.add(countryUrl(country));
     for (const slug of tags.cities) {
       const city = getCity(slug);
-      if (city) paths.add(cityUrl(city.country, slug));
+      if (city) own.add(cityUrl(city.country, slug));
     }
     for (const tech of tags.technologies) {
-      paths.add(technologyUrl(tech));
-      if (job.remote) paths.add(remoteTechnologyUrl(tech));
-      for (const country of tags.countries) paths.add(technologyUrl(tech, country));
+      own.add(technologyUrl(tech));
+      if (job.remote) own.add(remoteTechnologyUrl(tech));
+      for (const country of tags.countries) own.add(technologyUrl(tech, country));
       for (const slug of tags.cities) {
         const city = getCity(slug);
-        if (city) paths.add(technologyUrl(tech, city.country, slug));
+        if (city) own.add(technologyUrl(tech, city.country, slug));
       }
     }
+    for (const path of own) hubs.set(path, (hubs.get(path) ?? 0) + 1);
   }
+  for (const [path, count] of hubs) if (!isThin(count)) paths.add(path);
 
-  // Medical jobs: only pages with jobs, like the generated combination pages themselves
+  // Medical jobs: section pages always, browse pages only when they are not thin
   const medicalJobs = await getOpenMedicineJobs();
   if (medicalJobs.length) {
     const med = await getMedicineCounts();
     for (const path of ["/medicine", "/medicine/specialties", "/medicine/levels", "/medicine/locations"]) paths.add(path);
-    for (const specialty of med.specialties.keys()) paths.add(specialtyUrl(specialty));
-    for (const key of med.specialtyAreas.keys()) paths.add(`/medicine/specialties/${key}`);
-    for (const key of specialtyCityKeys(med)) paths.add(`/medicine/specialties/${key}`);
-    for (const level of med.levels.keys()) paths.add(levelUrl(level));
-    for (const key of await getMedicineComboKeys()) {
+    const listed = (counts: Map<string, number>) => [...counts].filter(([, count]) => !isThin(count)).map(([key]) => key);
+    for (const specialty of listed(med.specialties)) paths.add(specialtyUrl(specialty));
+    for (const key of listed(med.specialtyAreas)) paths.add(`/medicine/specialties/${key}`);
+    for (const key of specialtyCityKeys(med)) if (!isThin(med.specialtyCities.get(key)!)) paths.add(`/medicine/specialties/${key}`);
+    for (const level of listed(med.levels)) paths.add(levelUrl(level));
+    for (const key of listed(await getMedicineComboCounts())) {
       const [specialty, level, area, city] = key.split("/");
       if (level && (specialty || area)) paths.add(levelUrl(level, specialty, area, city));
     }
-    for (const area of [...med.countries.keys(), ...med.states.keys()]) paths.add(medicineLocationUrl(area));
+    for (const area of [...listed(med.countries), ...listed(med.states)]) paths.add(medicineLocationUrl(area));
     for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
     const hospitals = await getHospitalIndex();
     paths.add(hospitalsUrl);

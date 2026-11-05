@@ -7,7 +7,7 @@ import { countMedicine, getMedicineJobsWhere } from "../../../../lib/jobs.ts";
 import { levels, levelUrl } from "../../../../lib/medicine.ts";
 import { specialtyLinks, medicineCountryLinks, stateLinks } from "../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 export const getStaticPaths = (() => withLangs(levels.map((level) => ({ params: { level } })))) satisfies GetStaticPaths;
 
@@ -23,7 +23,7 @@ const byCountry = medicineCountryLinks(counts.countries, lang, (c) => levelUrl(l
 const byState = stateLinks(counts.states, lang, (s) => levelUrl(level, undefined, s));
 ---
 
-<Base title={md.levelTitle(name)} description={md.levelDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
+<Base title={md.levelTitle(name)} description={md.levelDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
     <a href={localizePath("/medicine/levels", lang)}>{md.nav.levels}</a> /

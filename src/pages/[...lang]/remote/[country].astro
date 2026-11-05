@@ -6,7 +6,7 @@ import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
 import { countries } from "../../../lib/places.ts";
 import { remoteUrl } from "../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../lib/constants.ts";
 
 export const getStaticPaths = (async () => {
   const counts = await countTags(await getJobsWhere({ remote: true }));
@@ -22,7 +22,7 @@ const name = countryName(country, lang);
 const jobs = await getJobsWhere({ remote: true, country: country.slug });
 ---
 
-<Base title={m.remoteJobs.titleIn(name)} description={m.remoteJobs.countryDescription(jobs.length, name)}>
+<Base title={m.remoteJobs.titleIn(name)} description={m.remoteJobs.countryDescription(jobs.length, name)} noindex={isThin(jobs.length)}>
   <p class="muted"><a href={localizePath(remoteUrl(), lang)}>{m.remoteJobs.title}</a> /</p>
   <h1>{m.remoteJobs.titleIn(name)}</h1>
   <p class="muted">

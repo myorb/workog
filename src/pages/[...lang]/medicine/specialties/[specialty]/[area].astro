@@ -7,7 +7,7 @@ import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../..
 import { areaFilter, areaName, GERMANY, getArea, levelUrl, specialtyUrl, states } from "../../../../../lib/medicine.ts";
 import { levelLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 // Only combinations with jobs: an empty specialty-and-place page would be thin
 export const getStaticPaths = (async () => {
@@ -36,7 +36,7 @@ const byState = germany ? stateLinks(counts.states, lang, (state) => specialtyUr
 const cities = specialtyCityLinks(specialty, counts.cities, (await getMedicineCounts()).cities, germany ? new Set(states.map((s) => s.slug)) : area.slug);
 ---
 
-<Base title={md.specialtyTitleIn(name, place)} description={md.specialtyDescriptionIn(jobs.length, name, place)} section="medicine">
+<Base title={md.specialtyTitleIn(name, place)} description={md.specialtyDescriptionIn(jobs.length, name, place)} section="medicine" noindex={isThin(jobs.length)}>
   <p class="muted">
     <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
     <a href={localizePath(`/medicine/specialties/${specialty}`, lang)}>{name}</a> /

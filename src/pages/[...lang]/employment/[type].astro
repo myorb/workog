@@ -5,7 +5,7 @@ import JobList from "../../../components/JobList.astro";
 import { getJobsWhere, tagsOf } from "../../../lib/jobs.ts";
 import { employmentTypes } from "../../../lib/employment.ts";
 import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../lib/constants.ts";
 
 export const getStaticPaths = (() =>
   withLangs(employmentTypes.map((type) => ({ params: { type }, props: { type } })))) satisfies GetStaticPaths;
@@ -19,7 +19,7 @@ const countries = new Set(jobs.flatMap((j) => [...tagsOf(j).countries])).size;
 const remote = jobs.filter((j) => j.remote).length;
 ---
 
-<Base title={m.employment.typeTitle(name)} description={m.employment.typeDescription(jobs.length, name, countries)} noindex={!jobs.length}>
+<Base title={m.employment.typeTitle(name)} description={m.employment.typeDescription(jobs.length, name, countries)} noindex={isThin(jobs.length)}>
   <p class="muted"><a href={localizePath("/employment", lang)}>{m.employment.label}</a> /</p>
   <h1>{m.employment.typeTitle(name)}</h1>
   <p class="muted">

@@ -7,7 +7,7 @@ import { cities, getCountry } from "../../../../../lib/places.ts";
 import { technologies } from "../../../../../lib/technologies.ts";
 import { cityUrl, technologyUrl } from "../../../../../lib/links.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 // Every technology for every city with jobs, so each combination has a stable URL even on days it is empty
 export const getStaticPaths = (async () => {
@@ -43,7 +43,7 @@ const none = m.tech.noneIn(tech.name, city.name);
 <Base
   title={m.tech.titleIn(tech.name, `${city.name}, ${name}`)}
   description={m.tech.cityDescription(jobs.length, tech.name, `${city.name}, ${name}`)}
-  noindex={!jobs.length}
+  noindex={isThin(jobs.length)}
 >
   <p class="muted">
     <a href={u("/technologies")}>{m.nav.technologies}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /

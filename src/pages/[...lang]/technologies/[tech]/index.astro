@@ -7,7 +7,7 @@ import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
 import { technologies } from "../../../../lib/technologies.ts";
 import { cityLinks, companyCounts, companyLinks, countryLinks, remoteTechnologyUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
-import { LIST_PAGE_LIMIT } from "../../../../lib/constants.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 export const getStaticPaths = (() =>
   withLangs(technologies.map((tech) => ({ params: { tech: tech.slug }, props: { tech } })))) satisfies GetStaticPaths;
@@ -25,7 +25,7 @@ const companies = companyLinks(companyCounts(jobs), await getCompanies());
 const remote = jobs.filter((j) => j.remote).length;
 ---
 
-<Base title={m.tech.title(tech.name)} description={m.tech.description(jobs.length, tech.name, countries.length)} noindex={!jobs.length}>
+<Base title={m.tech.title(tech.name)} description={m.tech.description(jobs.length, tech.name, countries.length)} noindex={isThin(jobs.length)}>
   <p class="muted"><a href={localizePath("/technologies", lang)}>{m.nav.technologies}</a> /</p>
   <h1>{m.tech.title(tech.name)}</h1>
   <p class="muted">
