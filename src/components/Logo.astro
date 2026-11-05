@@ -1,0 +1,13 @@
+---
+import { logoMarkup, type LogoVariant } from "../lib/logo.ts";
+
+interface Props {
+  size?: number;
+  variant?: LogoVariant;
+  class?: string;
+}
+
+const { size = 24, variant = "start", class: className } = Astro.props;
+---
+
+<svg class={className} width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" set:html={logoMarkup({ variant })} />

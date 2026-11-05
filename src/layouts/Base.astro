@@ -3,6 +3,8 @@ import { getLatestRun } from "../lib/jobs.ts";
 import { formatDateTime } from "../lib/format.ts";
 import { getLang, languageNames, localizePath, locales, stripLang, t } from "../lib/i18n.ts";
 import { intlLocale } from "../lib/locale.ts";
+import Logo from "../components/Logo.astro";
+import { faviconPaths } from "../lib/logo.ts";
 
 interface Props {
   title: string;
@@ -28,7 +30,16 @@ const alternates = translated ? locales.map((l) => ({ lang: l, href: new URL(loc
 const run = await getLatestRun();
 const fullTitle = title === "Workog" ? title : `${title} · Workog`;
 const ogLocale = (l: string) => intlLocale(l as typeof lang).replace("-", "_");
-const ogImage = new URL("/og.png", Astro.site);
+// one share image per section; its alt text repeats the image's own (English) text
+const shareImages = {
+  tech: { path: "/og.png", alt: "Workog — open jobs at top tech companies, refreshed daily from official career sites" },
+  medicine: { path: "/og-medicine.png", alt: "Workog — jobs for doctors at hospitals and practices across Europe, refreshed daily" },
+  start: { path: "/og-start.png", alt: "Workog — tech jobs and jobs for doctors, refreshed daily from the employers" },
+};
+const shareImage = shareImages[section];
+// the favicon takes the section's color, like the logo in the top bar
+const favicon = faviconPaths(section);
+const ogImage = new URL(shareImage.path, Astro.site);
 // "</" inside JSON would close the script tag early
 const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "https://schema.org", ...data }).replace(/</g, "\\u003c");
 ---
@@ -49,8 +60,8 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1"} />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={favicon.ico} sizes="32x32" />
+    <link rel="icon" href={favicon.svg} type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
@@ -66,7 +77,8 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Workog — open jobs at top tech companies" />
+    <meta property="og:image:alt" content={shareImage.alt} />
+    <meta name="twitter:image:alt" content={shareImage.alt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
@@ -80,7 +92,7 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
     <div class={`top-bar ${section}`}>
       <div class="wrap">
         <nav aria-label={m.sections.label}>
-          <a class="brand" href={u("/")}>Workog</a>
+          <a class="brand" href={u("/")}><Logo size={22} variant={section} />Workog</a>
           <a class="tab" href={u("/tech")} aria-current={section === "tech" ? "true" : undefined}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
             <span class="long">{m.sections.tech}</span><span class="short">{m.sections.techShort}</span>
@@ -211,7 +223,8 @@ const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "
   .top-bar .wrap { display: flex; align-items: stretch; justify-content: space-between; gap: 12px; min-height: 44px; }
   .top-bar nav { display: flex; align-items: stretch; gap: 4px; }
   .top-bar a { color: inherit; text-decoration: none; }
-  .brand { display: flex; align-items: center; padding-right: 10px; font-weight: 700; white-space: nowrap; }
+  .brand { display: flex; align-items: center; gap: 8px; padding-right: 10px; font-weight: 700; white-space: nowrap; }
+  .brand svg { flex: none; }
   .tab { display: flex; align-items: center; gap: 6px; padding: 0 12px; color: #a8b0ae; border-bottom: 2px solid transparent; white-space: nowrap; }
   .top-bar .tab { color: #a8b0ae; }
   .top-bar .tab:hover { color: #f5f5f4; }
