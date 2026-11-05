@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { dailySnapshots, dailyTotals, medianAgeDays, movers, openOn, postedByMonth, remoteShareBy, snapshotOf, snapshotOn, weeklyTotals } from "./analytics.ts";
+import { dailySnapshots, dailyTotals, medianAgeDays, medicineSnapshotOf, movers, openOn, postedByMonth, remoteShareBy, snapshotOf, snapshotOn, weeklyTotals } from "./analytics.ts";
 import type { HistoryDay, Job, Snapshot } from "./schema.ts";
 
 function job(overrides: Partial<Job>): Job {
@@ -135,5 +135,24 @@ describe("snapshots", () => {
     const { up, down } = movers({ a: 10, b: 5, c: 3 }, { a: 12, b: 1, d: 4 }, 5);
     expect(up.map((m) => [m.key, m.delta])).toEqual([["d", 4], ["a", 2]]);
     expect(down.map((m) => [m.key, m.delta])).toEqual([["b", -4], ["c", -3]]);
+  });
+});
+
+describe("medicineSnapshotOf", () => {
+  test("counts open medical jobs by specialty, level, place and hospital", () => {
+    const doctor = (id: string, overrides: Partial<Job>) =>
+      job({ id, company: "board", category: "medicine", locations: ["München, Bayern, Germany"], employer: "Klinikum Nord GmbH", ...overrides });
+    const jobs = [
+      ...["1", "2", "3", "4", "5"].map((id) => doctor(`m:${id}`, { specialty: "cardiology", level: "specialist" })),
+      doctor("m:6", { specialty: "radiology", employer: undefined, locations: ["Wien, Austria"] }),
+      doctor("m:7", { closedAt: "2026-11-01T12:00:00Z" }),
+    ];
+    const s = medicineSnapshotOf(jobs, "2026-11-02");
+    expect(s.open).toBe(6);
+    expect(s.specialties).toEqual({ cardiology: 5, radiology: 1 });
+    expect(s.levels).toEqual({ specialist: 5 });
+    expect(s.countries).toMatchObject({ germany: 5, austria: 1 });
+    expect(s.states).toEqual({ bavaria: 5 });
+    expect(s.hospitals).toEqual({ "klinikum-nord": 5 });
   });
 });

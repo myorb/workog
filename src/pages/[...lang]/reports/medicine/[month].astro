@@ -1,0 +1,131 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import ReportTable from "../../../../components/ReportTable.astro";
+import { getHospitalIndex, getMedicineSnapshots } from "../../../../lib/jobs.ts";
+import { hospitalUrl } from "../../../../lib/hospitals.ts";
+import { GERMANY, getMedicineCountry, getState, levelUrl, medicineLocationUrl, specialtyUrl, stateName } from "../../../../lib/medicine.ts";
+import type { MedicineSnapshotDimension } from "../../../../lib/analytics.ts";
+import { biggestMoves, reportMonths, reportRows, reportUrl, reportsUrl, sharePct } from "../../../../lib/reports.ts";
+import { roundPct } from "../../../../lib/trend.ts";
+import { formatDate, formatMonth } from "../../../../lib/format.ts";
+import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { report } from "../../../../lib/structured-data.ts";
+
+export const getStaticPaths = (async () => {
+  const months = reportMonths(await getMedicineSnapshots(), new Date().toISOString().slice(0, 10));
+  return withLangs(months.map((r, i) => ({ params: { month: r.month }, props: { report: r, prev: months[i - 1]?.month, next: months[i + 1]?.month } })));
+}) satisfies GetStaticPaths;
+
+const { report: r, prev, next } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const md = m.medicine;
+const rp = m.reports;
+const date = (iso: string) => formatDate(iso, lang);
+const month = formatMonth(r.month, lang);
+const title = rp.medicineTitle(month);
+const { end, base } = r;
+
+// hospitals are named as today's index names them; one that has no page any more keeps its slug
+const index = await getHospitalIndex();
+const hospitalNames = new Map([...index.groups, ...index.hospitals].map((h) => [h.slug, h.name]));
+const labels: Record<MedicineSnapshotDimension, (key: string) => { label: string; href?: string }> = {
+  specialties: (key) => ({ label: md.specialties[key] ?? key, href: specialtyUrl(key) }),
+  levels: (key) => ({ label: md.levels[key] ?? key, href: levelUrl(key) }),
+  countries: (key) => {
+    const c = getMedicineCountry(key);
+    return c ? { label: countryName(c, lang), href: medicineLocationUrl(key) } : { label: key };
+  },
+  states: (key) => {
+    const s = getState(key);
+    return s ? { label: stateName(s, lang), href: medicineLocationUrl(key) } : { label: key };
+  },
+  hospitals: (key) => {
+    const name = hospitalNames.get(key);
+    return name ? { label: name, href: hospitalUrl(key) } : { label: key };
+  },
+};
+const rows = (dim: MedicineSnapshotDimension) => reportRows(end[dim], base?.[dim], labels[dim]);
+const specialties = rows("specialties");
+const levels = rows("levels");
+const countries = rows("countries");
+const states = rows("states");
+const hospitals = rows("hospitals");
+const groupSlugs = new Set(index.groups.map((g) => g.slug));
+
+const findings: string[] = [];
+findings.push(
+  rp.medicineTotal(end.open, countries.length, date(end.date)) +
+    (base ? rp.changeFrom(roundPct(((end.open - base.open) / base.open) * 100), base.open, date(base.date)) : "."),
+
+);
+const germany = end.countries[GERMANY];
+if (germany && states[0]) findings.push(rp.germany(germany, sharePct(germany, end.open), states[0].label, states[0].to));
+if (specialties.length) findings.push(rp.leaders(specialties.slice(0, 3).map((s) => ({ label: s.label, count: s.to }))));
+const leveled = levels.reduce((sum, l) => sum + l.to, 0);
+if (leveled) findings.push(rp.levelShares(levels.map((l) => ({ label: l.label, pct: sharePct(l.to, leveled) }))));
+const topGroup = hospitals.find((h) => groupSlugs.has(h.key));
+if (topGroup) findings.push(rp.topGroup(topGroup.label, topGroup.to));
+if (base) {
+  const { up, down } = biggestMoves(specialties);
+  if (up) findings.push(rp.grew(up.label, up.to - up.from!));
+  if (down) findings.push(rp.shrank(down.label, down.from! - down.to));
+}
+
+const since = base && date(base.date);
+const url = new URL(localizePath(reportUrl("medicine", r.month), lang), Astro.site);
+const description = rp.medicineDescription(end.open, month);
+const jsonLd = [
+  report({ title, description, url, site: Astro.site!, lang, published: r.first.date, modified: end.date, about: "Job openings for doctors in Germany and Europe" }),
+];
+---
+
+<Base title={title} description={description} section="medicine" jsonLd={jsonLd}>
+  <p class="muted">
+    <a href={localizePath(reportsUrl, lang)}>{rp.title}</a> /
+  </p>
+  <h1>{title}</h1>
+  <p class="muted">
+    {rp.period(date(r.first.date), date(end.date), r.complete)}
+    {r.clipped && base && <> {rp.clipped(date(base.date))}</>}
+  </p>
+
+  <section>
+    <h2>{rp.findings}</h2>
+    <ul class="findings">
+      {findings.map((f) => <li>{f.replace(/\.\.$/, ".")}</li>)}
+    </ul>
+  </section>
+
+  <div class="grid">
+    <ReportTable heading={md.bySpecialty} rows={specialties} since={since} />
+    <ReportTable heading={md.byState} rows={states} since={since} />
+    <ReportTable heading={md.byCountry} rows={countries.slice(0, 15)} since={since} />
+    <ReportTable heading={md.byLevel} rows={levels} since={since} />
+    <ReportTable heading={rp.hospitals} rows={hospitals.slice(0, 20)} since={since} />
+  </div>
+
+  <section>
+    <h2>{rp.method}</h2>
+    <p>{rp.medicineMethod}</p>
+    <h2>{rp.cite}</h2>
+    <p class="cite">{rp.citeAs(title, url.href, date(end.date))}</p>
+  </section>
+
+  <nav class="pager">
+    {prev ? <a href={localizePath(reportUrl("medicine", prev), lang)}>{rp.earlier}</a> : <span />}
+    {next && <a href={localizePath(reportUrl("medicine", next), lang)}>{rp.later}</a>}
+  </nav>
+</Base>
+
+<style>
+  section { margin-top: 32px; }
+  h2 { margin-bottom: 12px; }
+  .findings { padding-left: 20px; line-height: 1.6; }
+  .findings li { margin-bottom: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 32px; }
+  .grid > * { min-width: 0; }
+  .cite { font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+  .pager { display: flex; justify-content: space-between; margin-top: 40px; font-size: 15px; }
+</style>

@@ -1,4 +1,5 @@
-import { getCompanies, getHospitalIndex, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { getCompanies, getHospitalIndex, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { reportMonths, reportsUrl, reportUrl } from "./reports.ts";
 import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
 import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
 import { getMedicineComboCounts, medicineCityLinks, specialtyCityKeys } from "./links.ts";
@@ -85,9 +86,17 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const snapshots = await getSnapshots();
   if (snapshots.length) paths.add("/analytics/history");
 
+  const today = new Date().toISOString().slice(0, 10);
+  const reports = [
+    ...reportMonths(snapshots, today).map((r) => ({ path: reportUrl("tech", r.month), lastmod: r.end.date })),
+    ...reportMonths(await getMedicineSnapshots(), today).map((r) => ({ path: reportUrl("medicine", r.month), lastmod: r.end.date })),
+  ];
+  if (reports.length) paths.add(reportsUrl);
+
   return [
     ...[...paths].sort().map((path) => ({ path })),
     ...snapshots.map((s) => ({ path: `/analytics/history/${s.date}`, lastmod: s.date })),
+    ...reports,
     ...[...jobs, ...medicalJobs].map((job) => ({ path: `/jobs/${job.slug}`, lastmod: job.firstSeenAt })),
   ];
 }

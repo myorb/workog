@@ -16,6 +16,7 @@ function cachedFormat(options: Intl.DateTimeFormatOptions): (iso: string, lang: 
 }
 
 const dateFormat = cachedFormat({ year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+const monthFormat = cachedFormat({ year: "numeric", month: "long", timeZone: "UTC" });
 const shortDateFormat = cachedFormat({ month: "short", day: "numeric", timeZone: "UTC" });
 const dateTimeFormat = cachedFormat({
   year: "numeric",
@@ -29,6 +30,11 @@ const dateTimeFormat = cachedFormat({
 
 export function formatDate(iso: string, lang: Lang = defaultLang): string {
   return dateFormat(iso, lang);
+}
+
+/** "November 2026" for a "2026-11" month */
+export function formatMonth(month: string, lang: Lang = defaultLang): string {
+  return monthFormat(`${month}-01`, lang);
 }
 
 /** Month and day only, for chart labels */

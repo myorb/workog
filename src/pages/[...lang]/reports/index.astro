@@ -1,0 +1,49 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../layouts/Base.astro";
+import { getMedicineSnapshots, getSnapshots } from "../../../lib/jobs.ts";
+import { reportMonths, type ReportSection, reportUrl } from "../../../lib/reports.ts";
+import { formatMonth } from "../../../lib/format.ts";
+import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const rp = m.reports;
+const today = new Date().toISOString().slice(0, 10);
+const sections: { section: ReportSection; heading: string; title: (month: string) => string; months: ReturnType<typeof reportMonths>; unit: (k: number) => string }[] = [
+  { section: "medicine", heading: rp.medicine, title: rp.medicineTitle, months: reportMonths(await getMedicineSnapshots(), today), unit: m.openJobs },
+  { section: "tech", heading: rp.tech, title: rp.techTitle, months: reportMonths(await getSnapshots(), today), unit: m.openJobs },
+];
+---
+
+<Base title={rp.title} description={rp.description} section="start">
+  <h1>{rp.title}</h1>
+  <p class="muted">{rp.intro}</p>
+  {
+    sections
+      .filter((s) => s.months.length)
+      .map((s) => (
+        <section>
+          <h2>{s.heading}</h2>
+          <ul>
+            {[...s.months].reverse().map((r) => (
+              <li>
+                <a href={localizePath(reportUrl(s.section, r.month), lang)}>{s.title(formatMonth(r.month, lang))}</a>{" "}
+                <span class="muted">
+                  {s.unit(r.end.open)}
+                  {!r.complete && <> · {rp.inProgress}</>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+  }
+</Base>
+
+<style>
+  section { margin-top: 32px; }
+  ul { padding-left: 20px; line-height: 1.8; }
+</style>

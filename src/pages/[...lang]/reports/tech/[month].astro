@@ -1,0 +1,111 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../layouts/Base.astro";
+import ReportTable from "../../../../components/ReportTable.astro";
+import { getCompanies, getSnapshots } from "../../../../lib/jobs.ts";
+import { snapshotLabels } from "../../../../lib/links.ts";
+import { type SnapshotDimension } from "../../../../lib/analytics.ts";
+import { biggestMoves, reportMonths, reportRows, reportUrl, reportsUrl, sharePct } from "../../../../lib/reports.ts";
+import { roundPct } from "../../../../lib/trend.ts";
+import { formatDate, formatMonth } from "../../../../lib/format.ts";
+import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { report } from "../../../../lib/structured-data.ts";
+
+export const getStaticPaths = (async () => {
+  const months = reportMonths(await getSnapshots(), new Date().toISOString().slice(0, 10));
+  return withLangs(months.map((r, i) => ({ params: { month: r.month }, props: { report: r, prev: months[i - 1]?.month, next: months[i + 1]?.month } })));
+}) satisfies GetStaticPaths;
+
+const { report: r, prev, next } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const rp = m.reports;
+const a = m.analytics;
+const date = (iso: string) => formatDate(iso, lang);
+const month = formatMonth(r.month, lang);
+const title = rp.techTitle(month);
+const { end, base } = r;
+
+const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]));
+const labels = snapshotLabels(lang, companyNames);
+const rows = (dim: SnapshotDimension) => reportRows(end[dim], base?.[dim], labels[dim]);
+const companies = rows("companies");
+const functions = rows("categories");
+const techs = rows("technologies");
+const countries = rows("countries");
+const companyCount = companies.length;
+
+const findings: string[] = [];
+findings.push(
+  rp.techTotal(end.open, companyCount, date(end.date)) +
+    (base ? rp.changeFrom(roundPct(((end.open - base.open) / base.open) * 100), base.open, date(base.date)) : "."),
+
+);
+if (companies.length) findings.push(rp.leaders(companies.slice(0, 3).map((c) => ({ label: c.label, count: c.to }))));
+const topFunction = functions.find((f) => f.key !== "other");
+if (topFunction) findings.push(rp.largestFunction(topFunction.label, sharePct(topFunction.to, end.open)));
+if (techs.length) findings.push(rp.topTechnologies(techs.slice(0, 3).map((x) => ({ label: x.label, count: x.to }))));
+if (countries[0]) findings.push(rp.topCountry(countries[0].label, sharePct(countries[0].to, end.open)));
+findings.push(rp.remoteShare(sharePct(end.remote, end.open)));
+if (base) {
+  const { up, down } = biggestMoves(companies);
+  if (up) findings.push(rp.grew(up.label, up.to - up.from!));
+  if (down) findings.push(rp.shrank(down.label, down.from! - down.to));
+}
+
+const since = base && date(base.date);
+const url = new URL(localizePath(reportUrl("tech", r.month), lang), Astro.site);
+const description = rp.techDescription(end.open, companyCount, month);
+const jsonLd = [
+  report({ title, description, url, site: Astro.site!, lang, published: r.first.date, modified: end.date, about: "Open jobs at technology companies" }),
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <p class="muted">
+    <a href={localizePath(reportsUrl, lang)}>{rp.title}</a> /
+  </p>
+  <h1>{title}</h1>
+  <p class="muted">
+    {rp.period(date(r.first.date), date(end.date), r.complete)}
+    {r.clipped && base && <> {rp.clipped(date(base.date))}</>}
+  </p>
+
+  <section>
+    <h2>{rp.findings}</h2>
+    <ul class="findings">
+      {findings.map((f) => <li>{f.replace(/\.\.$/, ".")}</li>)}
+    </ul>
+  </section>
+
+  <div class="grid">
+    <ReportTable heading={a.byCompany} rows={companies.slice(0, 20)} since={since} />
+    <ReportTable heading={a.byFunction} rows={functions} since={since} />
+    <ReportTable heading={a.topTechnologies} rows={techs.slice(0, 15)} since={since} />
+    <ReportTable heading={a.topCountries} rows={countries.slice(0, 15)} since={since} />
+  </div>
+
+  <section>
+    <h2>{rp.method}</h2>
+    <p>{rp.techMethod}</p>
+    <p><a href={localizePath(`/analytics/history/${end.date}`, lang)}>{rp.dailyHistory}</a></p>
+    <h2>{rp.cite}</h2>
+    <p class="cite">{rp.citeAs(title, url.href, date(end.date))}</p>
+  </section>
+
+  <nav class="pager">
+    {prev ? <a href={localizePath(reportUrl("tech", prev), lang)}>{rp.earlier}</a> : <span />}
+    {next && <a href={localizePath(reportUrl("tech", next), lang)}>{rp.later}</a>}
+  </nav>
+</Base>
+
+<style>
+  section { margin-top: 32px; }
+  h2 { margin-bottom: 12px; }
+  .findings { padding-left: 20px; line-height: 1.6; }
+  .findings li { margin-bottom: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 32px; }
+  .grid > * { min-width: 0; }
+  .cite { font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+  .pager { display: flex; justify-content: space-between; margin-top: 40px; font-size: 15px; }
+</style>

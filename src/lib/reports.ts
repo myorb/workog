@@ -3,7 +3,7 @@
  * /reports. Pure functions over the daily snapshots: a month's numbers come
  * from its last snapshot, compared with the last one before the month began.
  */
-import { comparable } from "./trend.ts";
+import { comparable, daysBetween, TREND_MIN_DAYS } from "./trend.ts";
 
 export type ReportSection = "tech" | "medicine";
 
@@ -18,7 +18,8 @@ export interface ReportMonth<S> {
   /**
    * What `end` is compared with: the last snapshot before the month, or its
    * first one if there is none. Never before a coverage jump (see trend.ts),
-   * and undefined when that leaves nothing earlier than `end`.
+   * and undefined when that leaves under TREND_MIN_DAYS before `end`, which
+   * would show the boards' day-to-day noise as a trend.
    */
   base?: S;
   /** the month's first snapshot */
@@ -42,7 +43,7 @@ export function reportMonths<S extends { date: string; open: number }>(snapshots
     return {
       month,
       end,
-      base: base && base.date < end.date ? base : undefined,
+      base: base && daysBetween(base.date, end.date) >= TREND_MIN_DAYS ? base : undefined,
       first: inMonth[0]!,
       complete: today.slice(0, 7) > month,
       clipped: !!base && base.date !== natural.date,

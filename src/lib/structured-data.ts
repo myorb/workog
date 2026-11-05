@@ -81,3 +81,19 @@ export function jobPosting(job: Job, companyName: string, url: URL): Thing {
     }),
   };
 }
+
+/** A monthly report as a schema.org Report, dated by the snapshots it covers. */
+export const report = (r: { title: string; description: string; url: URL; site: URL; lang: string; published: string; modified: string; about: string }): Thing => ({
+  "@type": "Report",
+  headline: r.title,
+  name: r.title,
+  description: r.description,
+  url: r.url.href,
+  inLanguage: r.lang,
+  datePublished: r.published,
+  dateModified: r.modified,
+  about: r.about,
+  isAccessibleForFree: true,
+  author: { "@type": "Organization", name: "Workog", url: r.site.href },
+  publisher: { "@type": "Organization", name: "Workog", url: r.site.href, logo: new URL("/icon-512.png", r.site).href },
+});

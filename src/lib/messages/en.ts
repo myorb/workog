@@ -2,6 +2,8 @@ import { formatNumber, pluralizer } from "../locale.ts";
 
 const p = pluralizer("en");
 const n = (x: number) => formatNumber(x, "en");
+const listFormat = new Intl.ListFormat("en-US", { type: "conjunction" });
+const list = (items: string[]) => listFormat.format(items);
 
 const openJobs = { one: "open job", other: "open jobs" };
 const openPositions = { one: "open position", other: "open positions" };
@@ -260,6 +262,58 @@ export const en = {
     }),
     worldwide: (tech: string) => `Latest ${tech} jobs worldwide`,
     elsewhere: (tech: string, country: string) => `${tech} jobs elsewhere in ${country}`,
+  },
+  reports: {
+    nav: "Reports",
+    title: "Hiring reports",
+    description: "Monthly reports on open jobs at top tech companies and for doctors across Europe, built from a daily count of every open job.",
+    intro: "Each month gets one permanent page per section. The numbers come from a count of every open job at the end of each UTC day. A month in progress updates daily; once it ends, its page no longer changes.",
+    tech: "Tech hiring",
+    medicine: "Doctor job market",
+    inProgress: "in progress",
+    techTitle: (month: string) => `Tech hiring: ${month}`,
+    techDescription: (k: number, c: number, month: string) =>
+      `${p(k, openJobs)} at ${p(c, techCompanies)} in ${month}, by company, function, technology and country, with the change over the month.`,
+    medicineTitle: (month: string) => `Doctor job market: ${month}`,
+    medicineDescription: (k: number, month: string) =>
+      `${p(k, openJobs)} for doctors in ${month}, by specialty, career level, country, German state and hospital, with the change over the month.`,
+    period: (from: string, to: string, complete: boolean) =>
+      complete ? `Covers ${from} to ${to}.` : `Month to date: ${from} to ${to}. Updated daily until the month ends.`,
+    clipped: (date: string) => `Sources were added or removed before ${date}, so changes are measured from that day.`,
+    findings: "Key findings",
+    techTotal: (k: number, c: number, date: string) => `At the end of ${date}, the ${p(c, techCompanies)} Workog tracks had ${p(k, openJobs)}`,
+    medicineTotal: (k: number, c: number, date: string) => `At the end of ${date}, Workog listed ${p(k, openJobs)} for doctors in ${p(c, countries)}`,
+    changeFrom: (pct: number, from: number, date: string) =>
+      pct > 0 ? `, up ${n(pct)}% from ${n(from)} on ${date}.` : pct < 0 ? `, down ${n(-pct)}% from ${n(from)} on ${date}.` : `, unchanged since ${date}.`,
+    leaders: (items: { label: string; count: number }[]) =>
+      `${items[0]!.label} had the most open jobs (${n(items[0]!.count)})${items.length > 1 ? `, followed by ${list(items.slice(1).map((i) => `${i.label} (${n(i.count)})`))}` : ""}.`,
+    largestFunction: (label: string, pct: number) => `${label} was the largest function, with ${n(pct)}% of open jobs.`,
+    topTechnologies: (items: { label: string; count: number }[]) =>
+      `The most requested technologies were ${list(items.map((i) => `${i.label} (${n(i.count)})`))}.`,
+    remoteShare: (pct: number) => `${n(pct)}% of open jobs were remote.`,
+    topCountry: (label: string, pct: number) => `${label} had ${n(pct)}% of open jobs.`,
+    germany: (k: number, pct: number, state: string, sk: number) =>
+      `Germany had ${n(k)} of them (${n(pct)}%); ${state} had the most of any German state (${n(sk)}).`,
+    levelShares: (items: { label: string; pct: number }[]) =>
+      `Of the jobs that state a career level: ${list(items.map((i) => `${i.label} ${n(i.pct)}%`))}.`,
+    topGroup: (label: string, k: number) => `${label} had the most open jobs of any hospital group (${n(k)}).`,
+    grew: (label: string, k: number) => `${label} grew the most: +${n(k)} open jobs.`,
+    shrank: (label: string, k: number) => `${label} shrank the most: −${n(k)} open jobs.`,
+    open: "Open jobs",
+    change: (date: string) => `Change since ${date}`,
+    hospitals: "Hospitals and hospital groups with the most open jobs",
+    method: "How this is measured",
+    techMethod:
+      "Workog fetches every open job from each tracked company's official careers site once a day and counts the jobs open at the end of the UTC day. A job counts in every technology its description names and every country it lists. Changes compare the month's last day with the last day before the month began.",
+    medicineMethod:
+      "Workog fetches jobs for doctors from public job services (Bundesagentur für Arbeit, EURES, NHS Jobs, Arbetsförmedlingen, job-room.ch) and hospital groups' own careers sites once a day, and counts the jobs open at the end of the UTC day. Specialty and career level are read from the job title; jobs that name neither are counted in the total only. Changes compare the month's last day with the last day before the month began.",
+    dailyHistory: "Day-by-day numbers →",
+    cite: "Cite this report",
+    citeAs: (title: string, url: string, date: string) => `Workog, “${title}”, ${url}, data as of ${date}.`,
+    earlier: "← Previous month",
+    later: "Next month →",
+    all: "All reports →",
+    latest: "Monthly report →",
   },
   analytics: {
     title: "Analytics",

@@ -3,6 +3,8 @@ import type { Messages } from "./en.ts";
 
 const p = pluralizer("de");
 const n = (x: number) => formatNumber(x, "de");
+const listFormat = new Intl.ListFormat("de-DE", { type: "conjunction" });
+const list = (items: string[]) => listFormat.format(items);
 
 const openJobs = { one: "offene Stelle", other: "offene Stellen" };
 const openTechJobs = { one: "offener Tech-Job", other: "offene Tech-Jobs" };
@@ -263,6 +265,58 @@ export const de = {
     }),
     worldwide: (tech: string) => `Neueste ${tech}-Jobs weltweit`,
     elsewhere: (tech: string, country: string) => `${tech}-Jobs anderswo in ${country}`,
+  },
+  reports: {
+    nav: "Berichte",
+    title: "Arbeitsmarktberichte",
+    description: "Monatliche Berichte über offene Stellen bei Top-Tech-Unternehmen und für Ärztinnen und Ärzte in Europa, aus einer täglichen Zählung aller offenen Stellen.",
+    intro: "Jeder Monat bekommt pro Bereich eine feste Seite. Die Zahlen stammen aus einer Zählung aller offenen Stellen am Ende jedes UTC-Tages. Ein laufender Monat wird täglich aktualisiert; ist er vorbei, ändert sich seine Seite nicht mehr.",
+    tech: "Tech-Arbeitsmarkt",
+    medicine: "Ärzte-Arbeitsmarkt",
+    inProgress: "läuft",
+    techTitle: (month: string) => `Tech-Arbeitsmarkt: ${month}`,
+    techDescription: (k: number, c: number, month: string) =>
+      `${p(k, openJobs)} bei ${p(c, techCompanies)} im ${month}, nach Unternehmen, Bereich, Technologie und Land, mit der Veränderung im Monat.`,
+    medicineTitle: (month: string) => `Arbeitsmarkt für Ärzte: ${month}`,
+    medicineDescription: (k: number, month: string) =>
+      `${p(k, openJobs)} für Ärztinnen und Ärzte im ${month}, nach Fachgebiet, Karrierestufe, Land, Bundesland und Klinik, mit der Veränderung im Monat.`,
+    period: (from: string, to: string, complete: boolean) =>
+      complete ? `Zeitraum: ${from} bis ${to}.` : `Laufender Monat: ${from} bis ${to}. Wird bis Monatsende täglich aktualisiert.`,
+    clipped: (date: string) => `Vor dem ${date} kamen Quellen hinzu oder fielen weg, daher werden Veränderungen ab diesem Tag gemessen.`,
+    findings: "Die wichtigsten Zahlen",
+    techTotal: (k: number, c: number, date: string) => `Am Ende des ${date} hatten die ${p(c, techCompanies)}, die Workog verfolgt, ${p(k, openJobs)}`,
+    medicineTotal: (k: number, c: number, date: string) => `Am Ende des ${date} listete Workog ${p(k, openJobs)} für Ärztinnen und Ärzte in ${p(c, countries)}`,
+    changeFrom: (pct: number, from: number, date: string) =>
+      pct > 0 ? `, ${n(pct)} % mehr als am ${date} (${n(from)}).` : pct < 0 ? `, ${n(-pct)} % weniger als am ${date} (${n(from)}).` : `, unverändert seit dem ${date}.`,
+    leaders: (items: { label: string; count: number }[]) =>
+      `${items[0]!.label} hatte die meisten offenen Stellen (${n(items[0]!.count)})${items.length > 1 ? `, gefolgt von ${list(items.slice(1).map((i) => `${i.label} (${n(i.count)})`))}` : ""}.`,
+    largestFunction: (label: string, pct: number) => `${label} war der größte Bereich, mit ${n(pct)} % der offenen Stellen.`,
+    topTechnologies: (items: { label: string; count: number }[]) =>
+      `Am häufigsten gefragt waren ${list(items.map((i) => `${i.label} (${n(i.count)})`))}.`,
+    remoteShare: (pct: number) => `${n(pct)} % der offenen Stellen waren remote.`,
+    topCountry: (label: string, pct: number) => `Auf ${label} entfielen ${n(pct)} % der offenen Stellen.`,
+    germany: (k: number, pct: number, state: string, sk: number) =>
+      `Davon ${n(k)} in Deutschland (${n(pct)} %); die meisten aller Bundesländer hatte ${state} (${n(sk)}).`,
+    levelShares: (items: { label: string; pct: number }[]) =>
+      `Von den Stellen mit angegebener Karrierestufe: ${list(items.map((i) => `${i.label} ${n(i.pct)} %`))}.`,
+    topGroup: (label: string, k: number) => `${label} hatte die meisten offenen Stellen aller Klinikgruppen (${n(k)}).`,
+    grew: (label: string, k: number) => `Am stärksten gewachsen: ${label}, +${n(k)} offene Stellen.`,
+    shrank: (label: string, k: number) => `Am stärksten geschrumpft: ${label}, −${n(k)} offene Stellen.`,
+    open: "Offene Stellen",
+    change: (date: string) => `Veränderung seit ${date}`,
+    hospitals: "Kliniken und Klinikgruppen mit den meisten offenen Stellen",
+    method: "So wird gemessen",
+    techMethod:
+      "Workog ruft einmal täglich alle offenen Stellen von den offiziellen Karriereseiten der verfolgten Unternehmen ab und zählt die Stellen, die am Ende des UTC-Tages offen sind. Eine Stelle zählt bei jeder Technologie, die ihre Beschreibung nennt, und in jedem Land, das sie angibt. Veränderungen vergleichen den letzten Tag des Monats mit dem letzten Tag vor Monatsbeginn.",
+    medicineMethod:
+      "Workog ruft einmal täglich Stellen für Ärztinnen und Ärzte von öffentlichen Jobbörsen (Bundesagentur für Arbeit, EURES, NHS Jobs, Arbetsförmedlingen, job-room.ch) und den Karriereseiten von Klinikgruppen ab und zählt die Stellen, die am Ende des UTC-Tages offen sind. Fachgebiet und Karrierestufe werden aus dem Stellentitel gelesen; Stellen ohne beides zählen nur in der Gesamtzahl. Veränderungen vergleichen den letzten Tag des Monats mit dem letzten Tag vor Monatsbeginn.",
+    dailyHistory: "Zahlen Tag für Tag →",
+    cite: "Diesen Bericht zitieren",
+    citeAs: (title: string, url: string, date: string) => `Workog, „${title}“, ${url}, Datenstand ${date}.`,
+    earlier: "← Vormonat",
+    later: "Folgemonat →",
+    all: "Alle Berichte →",
+    latest: "Monatsbericht →",
   },
   analytics: {
     title: "Analysen",

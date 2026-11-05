@@ -1,0 +1,71 @@
+---
+/** One dimension of a monthly report: open jobs at the month's end and the change since its base day. */
+import type { ReportRow } from "../lib/reports.ts";
+import { getLang, localizePath, t } from "../lib/i18n.ts";
+import { formatNumber } from "../lib/locale.ts";
+import { roundPct } from "../lib/trend.ts";
+
+interface Props {
+  heading: string;
+  rows: ReportRow[];
+  /** the base day's formatted date, when there is one */
+  since?: string;
+}
+
+const { heading, rows, since } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const r = t(lang).reports;
+const num = (k: number) => formatNumber(k, lang);
+const change = (row: ReportRow) => {
+  if (row.from === undefined) return "";
+  const delta = row.to - row.from;
+  if (delta === 0) return "±0";
+  const pct = roundPct((delta / row.from) * 100);
+  const sign = delta > 0 ? "+" : "−";
+  return `${sign}${num(Math.abs(delta))} (${sign}${formatNumber(Math.abs(pct), lang)}%)`;
+};
+---
+
+<section>
+  <h2>{heading}</h2>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"><span class="visually-hidden">{heading}</span></th>
+          <th scope="col" class="num">{r.open}</th>
+          {since && <th scope="col" class="num">{r.change(since)}</th>}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr>
+              <th scope="row">{row.href ? <a href={localizePath(row.href, lang)}>{row.label}</a> : row.label}</th>
+              <td class="num">{num(row.to)}</td>
+              {since && <td class={`num ${row.from === undefined ? "" : row.to > row.from ? "up" : row.to < row.from ? "down" : ""}`}>{change(row)}</td>}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  section { margin-top: 32px; min-width: 0; }
+  h2 { margin-bottom: 8px; }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+  th[scope="row"] { font-weight: 400; }
+  thead th { font-size: 13px; font-weight: 600; color: var(--muted); }
+  .num { text-align: right; white-space: nowrap; }
+  .up { color: var(--series-up, #15803d); }
+  .down { color: var(--series-down, #b91c1c); }
+  @media (prefers-color-scheme: dark) {
+    .up { color: #4ade80; }
+    .down { color: #f87171; }
+  }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>

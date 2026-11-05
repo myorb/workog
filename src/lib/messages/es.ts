@@ -3,6 +3,8 @@ import type { Messages } from "./en.ts";
 
 const p = pluralizer("es");
 const n = (x: number) => formatNumber(x, "es");
+const listFormat = new Intl.ListFormat("es-ES", { type: "conjunction" });
+const list = (items: string[]) => listFormat.format(items);
 
 const openJobs = { one: "empleo abierto", other: "empleos abiertos" };
 const openPositions = { one: "puesto abierto", other: "puestos abiertos" };
@@ -262,6 +264,58 @@ export const es = {
     }),
     worldwide: (tech: string) => `Últimos empleos de ${tech} en todo el mundo`,
     elsewhere: (tech: string, country: string) => `Empleos de ${tech} en otras partes de ${country}`,
+  },
+  reports: {
+    nav: "Informes",
+    title: "Informes de empleo",
+    description: "Informes mensuales sobre empleos abiertos en grandes empresas tecnológicas y para médicos en Europa, a partir de un recuento diario de cada empleo abierto.",
+    intro: "Cada mes tiene una página permanente por sección. Las cifras salen de un recuento de todos los empleos abiertos al final de cada día UTC. Un mes en curso se actualiza a diario; cuando termina, su página ya no cambia.",
+    tech: "Empleo tecnológico",
+    medicine: "Mercado laboral médico",
+    inProgress: "en curso",
+    techTitle: (month: string) => `Empleo tecnológico: ${month}`,
+    techDescription: (k: number, c: number, month: string) =>
+      `${p(k, openJobs)} en ${p(c, techCompanies)} en ${month}, por empresa, área, tecnología y país, con la variación del mes.`,
+    medicineTitle: (month: string) => `Mercado laboral médico: ${month}`,
+    medicineDescription: (k: number, month: string) =>
+      `${p(k, openJobs)} para médicos en ${month}, por especialidad, nivel, país, estado alemán y hospital, con la variación del mes.`,
+    period: (from: string, to: string, complete: boolean) =>
+      complete ? `Periodo: del ${from} al ${to}.` : `Mes en curso: del ${from} al ${to}. Se actualiza a diario hasta fin de mes.`,
+    clipped: (date: string) => `Antes del ${date} se añadieron o retiraron fuentes, así que las variaciones se miden desde ese día.`,
+    findings: "Datos clave",
+    techTotal: (k: number, c: number, date: string) => `Al final del ${date}, las ${p(c, techCompanies)} que sigue Workog tenían ${p(k, openJobs)}`,
+    medicineTotal: (k: number, c: number, date: string) => `Al final del ${date}, Workog listaba ${p(k, openJobs)} para médicos en ${p(c, countries)}`,
+    changeFrom: (pct: number, from: number, date: string) =>
+      pct > 0 ? `, un ${n(pct)} % más que el ${date} (${n(from)}).` : pct < 0 ? `, un ${n(-pct)} % menos que el ${date} (${n(from)}).` : `, sin cambios desde el ${date}.`,
+    leaders: (items: { label: string; count: number }[]) =>
+      `${items[0]!.label} tenía más empleos abiertos (${n(items[0]!.count)})${items.length > 1 ? `, seguido de ${list(items.slice(1).map((i) => `${i.label} (${n(i.count)})`))}` : ""}.`,
+    largestFunction: (label: string, pct: number) => `${label} era el área más grande, con el ${n(pct)} % de los empleos abiertos.`,
+    topTechnologies: (items: { label: string; count: number }[]) =>
+      `Las tecnologías más pedidas fueron ${list(items.map((i) => `${i.label} (${n(i.count)})`))}.`,
+    remoteShare: (pct: number) => `El ${n(pct)} % de los empleos abiertos eran remotos.`,
+    topCountry: (label: string, pct: number) => `${label} concentraba el ${n(pct)} % de los empleos abiertos.`,
+    germany: (k: number, pct: number, state: string, sk: number) =>
+      `Alemania tenía ${n(k)} (${n(pct)} %); ${state} era el estado alemán con más (${n(sk)}).`,
+    levelShares: (items: { label: string; pct: number }[]) =>
+      `De los empleos que indican nivel: ${list(items.map((i) => `${i.label} ${n(i.pct)} %`))}.`,
+    topGroup: (label: string, k: number) => `${label} era el grupo hospitalario con más empleos abiertos (${n(k)}).`,
+    grew: (label: string, k: number) => `Mayor crecimiento: ${label}, +${n(k)} empleos abiertos.`,
+    shrank: (label: string, k: number) => `Mayor caída: ${label}, −${n(k)} empleos abiertos.`,
+    open: "Empleos abiertos",
+    change: (date: string) => `Variación desde el ${date}`,
+    hospitals: "Hospitales y grupos hospitalarios con más empleos abiertos",
+    method: "Cómo se mide",
+    techMethod:
+      "Workog descarga una vez al día todos los empleos abiertos de la web de empleo oficial de cada empresa que sigue y cuenta los que siguen abiertos al final del día UTC. Un empleo cuenta en cada tecnología que nombra su descripción y en cada país que indica. Las variaciones comparan el último día del mes con el último día antes de que empezara.",
+    medicineMethod:
+      "Workog descarga una vez al día empleos para médicos de servicios públicos de empleo (Bundesagentur für Arbeit, EURES, NHS Jobs, Arbetsförmedlingen, job-room.ch) y de las webs de empleo de grupos hospitalarios, y cuenta los que siguen abiertos al final del día UTC. La especialidad y el nivel se leen del título; los empleos que no indican ninguno solo cuentan en el total. Las variaciones comparan el último día del mes con el último día antes de que empezara.",
+    dailyHistory: "Cifras día a día →",
+    cite: "Cómo citar este informe",
+    citeAs: (title: string, url: string, date: string) => `Workog, «${title}», ${url}, datos a ${date}.`,
+    earlier: "← Mes anterior",
+    later: "Mes siguiente →",
+    all: "Todos los informes →",
+    latest: "Informe mensual →",
   },
   analytics: {
     title: "Analítica",

@@ -25,6 +25,7 @@ import { formatDate, formatDateTime, formatShortDate } from "../../lib/format.ts
 import { categoryName, getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { formatNumber, intlLocale } from "../../lib/locale.ts";
 import { TREND_MIN_DAYS } from "../../lib/constants.ts";
+import { reportUrl } from "../../lib/reports.ts";
 
 const TOP = 10;
 const MOVERS = 5;
@@ -168,7 +169,14 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
         </>
       )
     }
-    {snapshots.length > 0 && <p class="more"><a href={localizePath("/analytics/history", lang)}>{a.historyLink}</a></p>}
+    {
+      latest && (
+        <p class="more">
+          <a href={localizePath("/analytics/history", lang)}>{a.historyLink}</a> ·{" "}
+          <a href={localizePath(reportUrl("tech", latest.date.slice(0, 7)), lang)}>{m.reports.latest}</a>
+        </p>
+      )
+    }
   </section>
 
   {

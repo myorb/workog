@@ -38,9 +38,11 @@ const value = (s: (typeof snapshots)[number]): number | undefined => {
 };
 const change = changeOver(snapshots, value, count);
 const date = run?.finishedAt ?? snapshots.at(-1)?.date;
+// Ukrainian dates end in "р.", which already closes the sentence
+const end = (text: string) => (text.endsWith(".") ? text : `${text}.`);
 const sentence = date
-  ? `${m.trend.asOf(title, count, formatDate(date, lang))}${change ? `, ${m.trend.change(roundPct(change.pct), change.days)}` : ""}.`
-  : `${m.openPositions(count)}.`;
+  ? end(`${m.trend.asOf(title, count, formatDate(date, lang))}${change ? `, ${m.trend.change(roundPct(change.pct), change.days)}` : ""}`)
+  : end(m.openPositions(count));
 ---
 
 <p class="muted as-of">

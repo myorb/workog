@@ -70,6 +70,7 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `data/runs/changes.json` | Slugs of the jobs the last run opened, closed or dropped (moved to the archive); read by `scripts/ping.ts` |
 | `data/runs/history.json` | Per-company open/new/closed counts, one line per day; feeds the `/analytics` trend charts |
 | `data/history/<date>.json` | Snapshot of open jobs at the end of each day, by company, function, country, city, technology and employment type; feeds the movers, remote-share and per-function trends on `/analytics` and one permanent page per day under `/analytics/history` |
+| `data/history/medicine/<date>.json` | The same for medical jobs, by specialty, career level, country, German state and hospital; feeds the 30-day changes on the `/medicine` pages and the medical reports |
 | `scripts/fetch.ts` | Pipeline: fetch → normalize → validate → merge → write |
 | `scripts/fetchers/` | One module per source: `greenhouse.ts`, `ashby.ts`, `lever.ts`, `smartrecruiters.ts`, `workday.ts`, `eightfold.ts`, `amazon.ts`, `arbeitnow.ts`, `arbeitsagentur.ts` and `workingnomads.ts` (JSON APIs), `weworkremotely.ts` (RSS), `apple.ts` and `google.ts` (read the JSON their search pages embed); `http.ts` has the shared retrying client and `mapLimit` for bounded parallel requests |
 | `src/lib/schema.ts` | zod schemas for Job, CompanyConfig and runs |
@@ -99,6 +100,12 @@ Search results have no description, so the fetcher reads each new job's details 
 ## Analytics history
 
 Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
+
+Every fetch also writes `data/history/medicine/<today>.json` for the medical jobs; it starts on 2026-11-04, the first day medical jobs were on file.
+
+**Dated summary lines.** Each browse page (section home, company, technology, country, remote, specialty, career level, medical location, hospital, `/analytics`) opens with a line such as "Cardiology jobs: 609 open positions as of Nov 5, 2026, up 6% in 30 days" (`src/components/AsOf.astro`). The change compares the live count with the snapshot 30 days earlier, or the oldest one if history is shorter, and is left out under 7 days (`src/lib/trend.ts`). A day-over-day change of more than 25% in a section's total means sources were added or lost, not hiring, so comparisons never reach back past one: on 2026-11-02 the tech total was 6,449 against 52,402 the next day.
+
+**Monthly reports.** `/reports/tech/<YYYY-MM>` and `/reports/medicine/<YYYY-MM>` compare the month's last snapshot with the last one before the month began, under the same coverage rule (`src/lib/reports.ts`). A month in progress updates daily; once it is over its numbers never change, so its URL is safe to cite. `/llms-full.txt` gives today's headline numbers with their 30-day changes in one plain-text file.
 
 To rebuild a past day, run `bun run snapshot <date>`. It counts the jobs in `data/jobs` and `data/archive` whose `firstSeenAt` and `closedAt` bracket the end of that day. It is accurate from 2026-11-03, when the archive began keeping closed jobs; for a company with `maxJobs`, only for jobs in its newest `maxJobs`.
 

@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
-import { countTags, getCompanies, getHospitalIndex, getLatestRun, getMedicineCounts, getOpenJobs, getOpenMedicineJobs } from "../lib/jobs.ts";
+import { countTags, getCompanies, getHospitalIndex, getLatestRun, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots } from "../lib/jobs.ts";
+import { reportMonths, reportsUrl, reportUrl } from "../lib/reports.ts";
+import { formatMonth } from "../lib/format.ts";
 import { countryLinks, employmentLinks, levelLinks, medicineCountryLinks, remoteUrl, specialtyLinks, stateLinks, technologyLinks } from "../lib/links.ts";
 import { hospitalsUrl, hospitalUrl } from "../lib/hospitals.ts";
 import { plural } from "../lib/format.ts";
@@ -20,6 +22,13 @@ export const GET: APIRoute = async ({ site }) => {
   const med = await getMedicineCounts();
   const hospitals = await getHospitalIndex();
   const employers = new Set(medicalJobs.map((j) => j.employer ?? j.company)).size;
+  const today = new Date().toISOString().slice(0, 10);
+  const techReports = reportMonths(await getSnapshots(), today).reverse();
+  const medicineReports = reportMonths(await getMedicineSnapshots(), today).reverse();
+  const reportList = [
+    ...medicineReports.map((r) => `- [Doctor job market: ${formatMonth(r.month)}](${url(reportUrl("medicine", r.month))}): ${plural(r.end.open, "open job")} for doctors at the end of ${r.end.date}${r.complete ? "" : " (month in progress, updated daily)"}`),
+    ...techReports.map((r) => `- [Tech hiring: ${formatMonth(r.month)}](${url(reportUrl("tech", r.month))}): ${plural(r.end.open, "open job")} at the end of ${r.end.date}${r.complete ? "" : " (month in progress, updated daily)"}`),
+  ].join("\n");
 
   const list = (links: { href: string; label: string; count: number }[]) =>
     links.map((l) => `- [${l.label}](${url(l.href)}): ${plural(l.count, "open job")}`).join("\n");
@@ -40,7 +49,15 @@ Each job page (\`/jobs/<slug>\`) has the title, employer, locations, posted date
 - [Tech jobs](${url("/tech")}): latest tech jobs, top companies, technologies and locations
 - [Medical jobs](${url("/medicine")}): latest jobs for doctors, by specialty, career level, place and hospital
 - [Analytics](${url("/analytics")}): daily history of open tech jobs per company, technology and country, with a permanent page per day (\`/analytics/history/<date>\`)
+- [Hiring reports](${url(reportsUrl)}): a monthly report per section with a permanent URL (\`/reports/medicine/<YYYY-MM>\`, \`/reports/tech/<YYYY-MM>\`)
+- [Headline numbers](${url("/llms-full.txt")}): today's open-job counts by company, technology, country, specialty, career level, German state and hospital, with 30-day changes, in one plain-text file
 - [Sitemap](${url("/sitemap.xml")}): every indexable page, including each open job
+
+## Data and reports
+
+Every browse page opens with a dated line, such as "Cardiology jobs: 609 open positions as of Nov 5, 2026, up 6% in 30 days". The counts come from a snapshot of every open job taken at the end of each UTC day; changes leave out days when sources were added or removed. When citing a number, cite the page and its date.
+
+${reportList}
 
 ## Medical jobs
 
@@ -48,6 +65,8 @@ Each job page (\`/jobs/<slug>\`) has the title, employer, locations, posted date
 - [By career level](${url("/medicine/levels")}): resident (Assistenzarzt), specialist (Facharzt), senior physician (Oberarzt), head of department (Chefarzt); also narrowed by specialty and place (\`/medicine/levels/<level>/<specialty>/<state-or-country>/<city>\`)
 - [By location](${url("/medicine/locations")}): German states, other countries and their cities
 - [Hospitals](${url(hospitalsUrl)}): hospital groups and hospitals with at least 5 open jobs
+- Salaries: job pages show the pay when the posting states it (most NHS Jobs postings in the UK do), also as \`baseSalary\` in their JobPosting markup
+- [Monthly report](${url(medicineReports[0] ? reportUrl("medicine", medicineReports[0].month) : reportsUrl)}): open jobs for doctors by specialty, career level, country, German state and hospital, with the change over the month
 
 ### Specialties
 

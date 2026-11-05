@@ -3,6 +3,8 @@ import type { Messages } from "./en.ts";
 
 const p = pluralizer("uk");
 const n = (x: number) => formatNumber(x, "uk");
+const listFormat = new Intl.ListFormat("uk-UA", { type: "conjunction" });
+const list = (items: string[]) => listFormat.format(items);
 
 // Phrasing leans on colons and dashes so place and company names can stay in the nominative case
 const openJobs = { one: "відкрита вакансія", few: "відкриті вакансії", many: "відкритих вакансій", other: "відкритої вакансії" };
@@ -259,6 +261,58 @@ export const uk = {
     }),
     worldwide: (tech: string) => `Останні вакансії з ${tech} у світі`,
     elsewhere: (tech: string, country: string) => `Інші вакансії з ${tech}: ${country}`,
+  },
+  reports: {
+    nav: "Звіти",
+    title: "Звіти про ринок праці",
+    description: "Щомісячні звіти про відкриті вакансії в провідних технологічних компаніях і для лікарів у Європі на основі щоденного підрахунку всіх відкритих вакансій.",
+    intro: "Кожен місяць має одну постійну сторінку для кожного розділу. Цифри — це підрахунок усіх відкритих вакансій наприкінці кожного дня за UTC. Поточний місяць оновлюється щодня; коли він закінчується, сторінка більше не змінюється.",
+    tech: "Ринок ІТ-вакансій",
+    medicine: "Ринок праці для лікарів",
+    inProgress: "триває",
+    techTitle: (month: string) => `Ринок ІТ-вакансій: ${month}`,
+    techDescription: (k: number, c: number, month: string) =>
+      `${p(k, openJobs)} · ${p(c, techCompanies)} · ${month}: за компаніями, напрямами, технологіями й країнами, зі зміною за місяць.`,
+    medicineTitle: (month: string) => `Ринок праці для лікарів: ${month}`,
+    medicineDescription: (k: number, month: string) =>
+      `${p(k, openJobs)} для лікарів · ${month}: за спеціальностями, рівнями, країнами, землями Німеччини й лікарнями, зі зміною за місяць.`,
+    period: (from: string, to: string, complete: boolean) =>
+      complete ? `Період: ${from} – ${to}.` : `Поточний місяць: ${from} – ${to}. Оновлюється щодня до кінця місяця.`,
+    clipped: (date: string) => `До ${date} джерела додавалися або вилучалися, тому зміни рахуються від цього дня.`,
+    findings: "Головне",
+    techTotal: (k: number, c: number, date: string) => `Станом на кінець ${date}: ${p(k, openJobs)} у компаніях, які відстежує Workog (${p(c, techCompanies)})`,
+    medicineTotal: (k: number, c: number, date: string) => `Станом на кінець ${date}: ${p(k, openJobs)} для лікарів у Workog, країн — ${n(c)}`,
+    changeFrom: (pct: number, from: number, date: string) =>
+      pct > 0 ? `; це на ${n(pct)}% більше, ніж ${date} (${n(from)}).` : pct < 0 ? `; це на ${n(-pct)}% менше, ніж ${date} (${n(from)}).` : `; без змін від ${date}.`,
+    leaders: (items: { label: string; count: number }[]) =>
+      `Найбільше відкритих вакансій: ${items[0]!.label} (${n(items[0]!.count)})${items.length > 1 ? `, далі ${list(items.slice(1).map((i) => `${i.label} (${n(i.count)})`))}` : ""}.`,
+    largestFunction: (label: string, pct: number) => `Найбільший напрям — ${label}: ${n(pct)}% відкритих вакансій.`,
+    topTechnologies: (items: { label: string; count: number }[]) =>
+      `Найзатребуваніші технології: ${list(items.map((i) => `${i.label} (${n(i.count)})`))}.`,
+    remoteShare: (pct: number) => `Віддалених — ${n(pct)}% відкритих вакансій.`,
+    topCountry: (label: string, pct: number) => `${label}: ${n(pct)}% відкритих вакансій.`,
+    germany: (k: number, pct: number, state: string, sk: number) =>
+      `Німеччина: ${n(k)} (${n(pct)}%); найбільше серед земель — ${state} (${n(sk)}).`,
+    levelShares: (items: { label: string; pct: number }[]) =>
+      `Серед вакансій із зазначеним рівнем: ${list(items.map((i) => `${i.label} ${n(i.pct)}%`))}.`,
+    topGroup: (label: string, k: number) => `Найбільше відкритих вакансій серед мереж лікарень: ${label} (${n(k)}).`,
+    grew: (label: string, k: number) => `Найбільше зростання: ${label}, +${n(k)} відкритих вакансій.`,
+    shrank: (label: string, k: number) => `Найбільше падіння: ${label}, −${n(k)} відкритих вакансій.`,
+    open: "Відкриті вакансії",
+    change: (date: string) => `Зміна від ${date}`,
+    hospitals: "Лікарні та мережі лікарень із найбільшою кількістю вакансій",
+    method: "Як рахуємо",
+    techMethod:
+      "Workog щодня завантажує всі відкриті вакансії з офіційних кар'єрних сайтів компаній, які відстежує, і рахує вакансії, відкриті наприкінці дня за UTC. Вакансія зараховується до кожної технології, яку згадує опис, і до кожної країни, яку вказує. Зміни порівнюють останній день місяця з останнім днем перед його початком.",
+    medicineMethod:
+      "Workog щодня завантажує вакансії для лікарів із державних служб зайнятості (Bundesagentur für Arbeit, EURES, NHS Jobs, Arbetsförmedlingen, job-room.ch) і кар'єрних сайтів мереж лікарень та рахує вакансії, відкриті наприкінці дня за UTC. Спеціальність і рівень визначаються з назви вакансії; вакансії без них рахуються лише в загальній кількості. Зміни порівнюють останній день місяця з останнім днем перед його початком.",
+    dailyHistory: "Цифри за кожен день →",
+    cite: "Як цитувати звіт",
+    citeAs: (title: string, url: string, date: string) => `Workog, «${title}», ${url}, дані станом на ${date}`,
+    earlier: "← Попередній місяць",
+    later: "Наступний місяць →",
+    all: "Усі звіти →",
+    latest: "Щомісячний звіт →",
   },
   analytics: {
     title: "Аналітика",
