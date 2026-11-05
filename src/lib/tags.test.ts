@@ -83,6 +83,12 @@ describe("technologiesOf", () => {
     expect(techs({ title: "Head of AI Startups", category: "sales" })).toEqual([]);
     expect(techs({ title: "Senior AI Engineer", category: "engineering" })).toEqual(["machine-learning"]);
   });
+
+  test("technical leaders are read like engineers, other leaders are not", () => {
+    const descriptionHtml = "<p>Our stack is Python and Kubernetes.</p>";
+    expect(techs({ title: "Engineering Manager, Payments", category: "management", descriptionHtml })).toEqual(["kubernetes", "python"]);
+    expect(techs({ title: "Head of Sales", category: "management", descriptionHtml })).toEqual([]);
+  });
 });
 
 describe("categorize", () => {
@@ -95,6 +101,47 @@ describe("categorize", () => {
   test("team words still count when no role matches", () => {
     expect(categorize("Threat Intelligence Platform Engineer")).toBe("engineering");
     expect(categorize("Platform Lead, Security")).toBe("engineering");
+  });
+
+  test("C-level titles", () => {
+    expect(categorize("Chief Technology Officer (CTO)")).toBe("executive");
+    expect(categorize("Chief Financial Officer (m/f/d)", "Finance")).toBe("executive");
+    expect(categorize("Chief Product & Technology Officer")).toBe("executive");
+    expect(categorize("CTO - CDI Paris - Theodo Data & IA")).toBe("executive");
+    expect(categorize("Technical Cofounder / CTO | AI & ML PreSeed Startup")).toBe("executive");
+    expect(categorize("Interim CFO")).toBe("executive");
+    expect(categorize("Managing Director North / UKI")).toBe("executive");
+    expect(categorize("Geschäftsführer*in Finanzen & Organisation (m/w/d)")).toBe("executive");
+  });
+
+  test("roles near a leader are not C-level", () => {
+    expect(categorize("Chief of Staff to the CMO", "Marketing")).toBe("marketing");
+    expect(categorize("Executive Assistant to the CEO")).toBeUndefined();
+    expect(categorize("Forward Deployed Engineer, Finance [Office of the CTO]")).toBe("engineering");
+    expect(categorize("Field CTO, Data and AI")).toBe("data");
+    expect(categorize("Data Center Chief Engineer")).toBe("data");
+    expect(categorize("Website Growth & CRO Manager (German-Speaking)")).toBe("marketing");
+    expect(categorize("Founder's Associate – Praktikum / Intern (m/w/d)")).toBeUndefined();
+  });
+
+  test("management titles", () => {
+    expect(categorize("Engineering Manager, Cloud Infrastructure")).toBe("management");
+    expect(categorize("Software Development Manager, EC2 Nitro")).toBe("management");
+    expect(categorize("Manager II, Software Engineering, Infrastructure")).toBe("management");
+    expect(categorize("Applied Science Manager, Personalization")).toBe("management");
+    expect(categorize("Head of Sales, Amazon Business Mexico")).toBe("management");
+    expect(categorize("Director of Product Management, Observability")).toBe("management");
+    expect(categorize("Area Vice President, Global Sales")).toBe("management");
+    expect(categorize("Teamleiter:in (80-100%)")).toBe("management");
+  });
+
+  test("managers of work, not of people, keep their function", () => {
+    expect(categorize("Senior Product Manager, Search Infrastructure")).toBe("product");
+    expect(categorize("Sr Account Manager, Large Enterprise Commercial")).toBe("sales");
+    expect(categorize("Business Development Manager, Enterprise Support")).toBe("sales");
+    expect(categorize("Key Account Director - CRM - TMT")).toBe("sales");
+    expect(categorize("Art Director")).toBe("design");
+    expect(categorize("Slack VP, Product Design (Individual Contributor; Principal Architect)")).toBe("design");
   });
 });
 

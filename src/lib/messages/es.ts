@@ -36,6 +36,8 @@ export const es = {
   allLocations: "Todas las ubicaciones →",
   allRemote: "Todos los empleos remotos →",
   categories: {
+    executive: "Alta dirección",
+    management: "Gestión",
     data: "Datos",
     design: "Diseño",
     engineering: "Ingeniería",

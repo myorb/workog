@@ -35,6 +35,8 @@ export const uk = {
   allLocations: "Усі локації →",
   allRemote: "Усі віддалені вакансії →",
   categories: {
+    executive: "Топменеджмент",
+    management: "Менеджмент",
     data: "Дані",
     design: "Дизайн",
     engineering: "Розробка",

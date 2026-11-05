@@ -64,11 +64,11 @@ export function splitLocations(raw: string | undefined): string[] {
 }
 
 const categoryRules: [category: string, pattern: RegExp][] = [
-  ["design", /\b(design(er)?|ux|ui|user experience|brand|creative|illustrat)/i],
+  ["design", /\b(design(er)?|ux|ui|user experience|brand|creative|art direct|illustrat)/i],
   ["data", /\b(data|analytics|analyst|machine learning|ml|ai research|scientist|statistic)/i],
   ["engineering", /\b(engineer(ing)?|developer|software|sre|devops|architect|technical lead|firmware)/i],
   ["product", /\b(product manager|product management|product lead|program manager|tpm)\b/i],
-  ["sales", /\b(sales|account executive|account manager|business development|bdr|sdr|partnerships?|solutions consultant)/i],
+  ["sales", /\b(sales|account executive|account manager|account director|business development|bdr|sdr|partnerships?|solutions consultant)/i],
   ["marketing", /\b(marketing|growth|seo|content|communications|pr\b|social media|community)/i],
   ["support", /\b(support|customer success|customer experience|onboarding|implementation)/i],
   ["finance", /\b(finance|accounting|accountant|tax|treasury|controller|fp&a|payroll)/i],
@@ -79,8 +79,42 @@ const categoryRules: [category: string, pattern: RegExp][] = [
   ["engineering", /\b(platforms?|infrastructure|security)\b/i],
 ];
 
-/** Maps a job to our own taxonomy, checking the title first, then the department. */
+// Roles that only sit near a leader ("Chief of Staff", "Executive Assistant to the CEO",
+// "Engineer, Office of the CTO", "Founder's Associate") or train under one
+const notLeadership = /\b(chief of staff|office of|assistant|assistenz|intern(ship)?|praktik|stagiaire|werkstudent|trainee|graduate|individual contributor)\b|\bassociate\b(?! (director|vice president|vp)\b)/i;
+
+/**
+ * Leadership roles, read from the title only and checked before the functions:
+ * "Head of Sales" is management and "Chief Financial Officer" is C-level, not
+ * sales or finance. C-level titles must lead the title, so "Field CTO" and
+ * "Data Center Chief Engineer" fall through to their function.
+ */
+const leadershipRules: [category: string, pattern: RegExp][] = [
+  [
+    "executive",
+    // "CRO Manager" is conversion-rate work, so an acronym followed by a role noun isn't the officer
+    /^(?:(?:interim|acting|fractional|group|global|technical|co-?)[\s-]*)*(?:chief\b[\w\s&,/-]{2,50}?\bofficer\b|(?:ceo|cto|cfo|coo|cio|cmo|cpo|cdo|cso|cro|chro|ciso|caio)\b(?!\s+(?:manager|analyst|specialist|engineer|lead|consultant))|president\b|managing director\b|geschäftsführ|vorstand|(?:co-?)?founder\b(?!'s))/i,
+  ],
+  [
+    "management",
+    /\b(head of|vice president|s?vp\b|evp\b|(?<!\b(?:account|art|creative|client|casting)\s)director|general manager|(?:engineering|software development|science|research) manager|(?<!\b(?:product|program|project|account|marketing)\s)manager\b(?:\s+[IV]+)?,?\s+(?:of\s+)?(?:software\s+|hardware\s+|data\s+)?(?:engineering|development|applied science|data science)(?!\s+program)|team ?lead\b|(?:team|abteilungs|bereichs|gruppen)leit|\bleiter(?:in)?\b|\bleitung\b)/i,
+  ],
+];
+
+export const LEADERSHIP_CATEGORIES = new Set(leadershipRules.map(([category]) => category));
+
+/** Maps a job to our own taxonomy: leadership from the title, else its function. */
 export function categorize(title: string, department?: string): string | undefined {
+  if (!notLeadership.test(title)) {
+    for (const [category, pattern] of leadershipRules) {
+      if (pattern.test(title)) return category;
+    }
+  }
+  return functionOf(title, department);
+}
+
+/** The function a job works in ("engineering", "sales"), checking the title first, then the department. */
+export function functionOf(title: string, department?: string): string | undefined {
   for (const text of [title, department]) {
     if (!text) continue;
     for (const [category, pattern] of categoryRules) {

@@ -1,4 +1,5 @@
 import type { Job } from "./schema.ts";
+import { functionOf, LEADERSHIP_CATEGORIES } from "./normalize.ts";
 
 export interface Technology {
   slug: string;
@@ -51,7 +52,9 @@ const descriptionCategories = new Set(["engineering", "data"]);
 
 /** Slugs of the technologies a job asks for. */
 export function technologiesOf(job: Job): Set<string> {
-  const technical = descriptionCategories.has(job.category ?? "");
+  // An Engineering Manager or a CTO is filed under leadership but still works in engineering
+  const category = LEADERSHIP_CATEGORIES.has(job.category ?? "") ? functionOf(job.title, job.department) : job.category;
+  const technical = descriptionCategories.has(category ?? "");
   const text = technical ? job.descriptionHtml.replace(/<[^>]+>/g, " ") : "";
   const found = new Set<string>();
   for (const t of technologies) {
