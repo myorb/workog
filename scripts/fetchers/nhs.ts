@@ -1,4 +1,4 @@
-import type { Job } from "../../src/lib/schema.ts";
+import type { Job, Salary } from "../../src/lib/schema.ts";
 import { decodeEntities, sanitizeDescription } from "../../src/lib/normalize.ts";
 import { levelOf, MEDICINE, specialtyOf } from "../../src/lib/medicine.ts";
 import { getText, mapLimit } from "./http.ts";
@@ -16,6 +16,8 @@ export interface Vacancy {
   url: string;
   /** "Sheffield, S5 7JT" */
   locations: string[];
+  /** "£113565.00 to £150569.00", "£13.15" or "Negotiable", with no unit */
+  salary?: string;
 }
 
 type RawJob = Vacancy & { descriptionHtml?: string; previous?: Job };
@@ -43,6 +45,7 @@ export function parseFeed(xml: string): { vacancies: Vacancy[]; totalPages: numb
     title: tag(v!, "title") ?? "",
     employer: tag(v!, "employer"),
     postDate: tag(v!, "postDate"),
+    salary: tag(v!, "salary"),
     url: tag(v!, "url") ?? "",
     locations: [...v!.matchAll(/<location>([\s\S]*?)<\/location>/g)].map(([, l]) => decodeEntities(l!).trim()),
   }));
@@ -70,6 +73,25 @@ export function nhsLocation(label: string): string {
   // drop a trailing UK postcode
   if (parts.length > 1 && /^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/i.test(parts.at(-1)!)) parts.pop();
   return parts.length ? `${parts[0]}, United Kingdom` : "United Kingdom";
+}
+
+/** Below this a yearly figure may be part-time or a few sessions, so its unit isn't certain */
+const MIN_YEARLY = 20_000;
+/** An hourly rate lies in this range; a figure between it and MIN_YEARLY may be per day, week or session */
+const HOURLY = { min: 10, max: 300 };
+
+/**
+ * The feed's salary, which gives no unit: a figure of MIN_YEARLY or more is
+ * yearly, one in the HOURLY range hourly; anything else (a locum's day rate,
+ * a sessional fee, "Negotiable") is left out rather than guessed.
+ */
+export function nhsSalary(text: string | undefined): Salary | undefined {
+  const figures = [...(text ?? "").matchAll(/£\s*([\d,]+(?:\.\d+)?)/g)].map(([, n]) => Number(n!.replace(/,/g, "")));
+  if (!figures.length || figures.length > 2 || figures.some((n) => !(n > 0))) return undefined;
+  const [min, max = min] = figures as [number, number?];
+  if (max < min) return undefined;
+  const unit = min >= MIN_YEARLY ? "YEAR" : min >= HOURLY.min && max <= HOURLY.max ? "HOUR" : undefined;
+  return unit && { currency: "GBP", min, max, unit };
 }
 
 /** Doctor jobs across the UK from NHS Jobs, the NHS's own job board. */
@@ -119,6 +141,7 @@ export const nhs: Fetcher<RawJob> = {
       category: MEDICINE,
       specialty: specialtyOf(title),
       level: levelOf(title),
+      salary: nhsSalary(raw.salary),
       descriptionHtml: raw.descriptionHtml ?? raw.previous?.descriptionHtml ?? "",
       applyUrl: raw.url,
       postedAt: raw.postDate ? new Date(`${raw.postDate.slice(0, 19)}Z`).toISOString() : undefined,

@@ -1,5 +1,6 @@
 import { defaultLang, intlLocale, type Lang } from "./locale.ts";
 import { t } from "./i18n.ts";
+import type { Salary } from "./schema.ts";
 
 /**
  * One Intl.DateTimeFormat per language and style: toLocaleDateString() builds a
@@ -51,4 +52,14 @@ export function formatLocations(locations: string[], remote: boolean, max = 3, l
 export function plural(n: number, word: string): string {
   const plural = /[^aeiou]y$/.test(word) ? `${word.slice(0, -1)}ies` : `${word}s`;
   return `${n.toLocaleString("en-US")} ${n === 1 ? word : plural}`;
+}
+
+const salaryUnits: Record<Salary["unit"], string> = { HOUR: "an hour", DAY: "a day", WEEK: "a week", MONTH: "a month", YEAR: "a year" };
+
+/** "£113,565–£150,569 a year", in English like the job pages it is shown on */
+export function formatSalary(s: Salary): string {
+  const whole = Number.isInteger(s.min) && Number.isInteger(s.max);
+  const money = new Intl.NumberFormat("en-GB", { style: "currency", currency: s.currency, minimumFractionDigits: whole ? 0 : 2, maximumFractionDigits: whole ? 0 : 2 });
+  const amount = s.min === s.max ? money.format(s.min) : `${money.format(s.min)}–${money.format(s.max)}`;
+  return `${amount} ${salaryUnits[s.unit]}`;
 }

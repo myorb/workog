@@ -2,6 +2,20 @@ import { z } from "zod";
 
 const isoDate = z.iso.datetime({ offset: true });
 
+/** Pay as the posting states it, kept only when its unit is clear; becomes the JobPosting's baseSalary */
+export const SalarySchema = z
+  .object({
+    /** ISO 4217, e.g. "GBP" */
+    currency: z.string().regex(/^[A-Z]{3}$/),
+    min: z.number().positive(),
+    /** the same as min for a single figure */
+    max: z.number().positive(),
+    unit: z.enum(["HOUR", "DAY", "WEEK", "MONTH", "YEAR"]),
+  })
+  .refine((s) => s.max >= s.min, { message: "max is below min" });
+
+export type Salary = z.infer<typeof SalarySchema>;
+
 export const JobSchema = z.object({
   /** `${source}:${originalId}`, stable across runs */
   id: z.string().min(1),
@@ -20,6 +34,7 @@ export const JobSchema = z.object({
   specialty: z.string().optional(),
   /** medicine jobs only: career level, a slug from src/lib/medicine.ts */
   level: z.string().optional(),
+  salary: SalarySchema.optional(),
   /** sanitized */
   descriptionHtml: z.string(),
   applyUrl: z.url(),

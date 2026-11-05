@@ -10,7 +10,7 @@ import { applyLinkOf, euresLocations, searchCountry, type Search } from "./eures
 import { helios, parseAddress } from "./helios.ts";
 import { isSwissDoctor, markdownToHtml } from "./jobroom.ts";
 import { jobtechLocations } from "./jobtech.ts";
-import { innerHtmlById, nhsLocation, parseFeed } from "./nhs.ts";
+import { innerHtmlById, nhsLocation, nhsSalary, parseFeed } from "./nhs.ts";
 import { mapLimit } from "./http.ts";
 import { lever } from "./lever.ts";
 import { oracle, oracleLocation, oracleSite } from "./oracle.ts";
@@ -508,7 +508,7 @@ describe("nhs", () => {
   test("parseFeed reads vacancies and the page count", () => {
     const { vacancies, totalPages } = parseFeed(
       "<nhsJobs><vacancyDetails><id>1</id><reference>C1-26</reference><title>Specialty Doctor &amp; Lead</title><employer>Trust</employer>" +
-        "<postDate>2026-10-26T16:06:40.2</postDate><url>https://beta.jobs.nhs.uk/candidate/jobadvert/C1-26</url>" +
+        "<salary>£113565.00 to £150569.00</salary><postDate>2026-10-26T16:06:40.2</postDate><url>https://beta.jobs.nhs.uk/candidate/jobadvert/C1-26</url>" +
         "<locations><location>Sheffield, S5 7JT</location></locations></vacancyDetails><totalPages>140</totalPages></nhsJobs>",
     );
     expect(totalPages).toBe(140);
@@ -519,10 +519,25 @@ describe("nhs", () => {
         title: "Specialty Doctor & Lead",
         employer: "Trust",
         postDate: "2026-10-26T16:06:40.2",
+        salary: "£113565.00 to £150569.00",
         url: "https://beta.jobs.nhs.uk/candidate/jobadvert/C1-26",
         locations: ["Sheffield, S5 7JT"],
       },
     ]);
+  });
+
+  test("nhsSalary keeps yearly and hourly pay, and only those", () => {
+    expect(nhsSalary("£113565.00 to £150569.00")).toEqual({ currency: "GBP", min: 113565, max: 150569, unit: "YEAR" });
+    expect(nhsSalary("£90000.00")).toEqual({ currency: "GBP", min: 90000, max: 90000, unit: "YEAR" });
+    expect(nhsSalary("£12.75 to £13.00")).toEqual({ currency: "GBP", min: 12.75, max: 13, unit: "HOUR" });
+    expect(nhsSalary("£80.00 to £95.00")).toEqual({ currency: "GBP", min: 80, max: 95, unit: "HOUR" });
+    // a locum day rate, a part-time or sessional figure, a placeholder and no figure at all have no clear unit
+    expect(nhsSalary("£1500.00")).toBeUndefined();
+    expect(nhsSalary("£10500.00 to £12500.00")).toBeUndefined();
+    expect(nhsSalary("£1.00")).toBeUndefined();
+    expect(nhsSalary("Negotiable")).toBeUndefined();
+    expect(nhsSalary(undefined)).toBeUndefined();
+    expect(nhsSalary("£150569.00 to £113565.00")).toBeUndefined();
   });
 
   test("nhsLocation drops the postcode", () => {

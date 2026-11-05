@@ -10,7 +10,7 @@ import { areaFilter, areaName, GERMANY, getArea, isMedicine, levelUrl, medicineL
 import { relatedJobs } from "../../lib/related.ts";
 import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../lib/links.ts";
 import { getCity, getCountry } from "../../lib/places.ts";
-import { formatDate, formatLocations } from "../../lib/format.ts";
+import { formatDate, formatLocations, formatSalary } from "../../lib/format.ts";
 import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
 import { employmentTypeOf } from "../../lib/employment.ts";
 import { categoryName, t } from "../../lib/i18n.ts";
@@ -125,6 +125,7 @@ const browse = [
     <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}</dd>
     {job.specialty && <><dt>Specialty</dt><dd><a href={specialtyUrl(job.specialty)}>{specialtyName}</a></dd></>}
     {job.level && <><dt>Career level</dt><dd><a href={levelUrl(job.level)}>{en.medicine.levels[job.level]}</a></dd></>}
+    {job.salary && <><dt>Salary</dt><dd>{formatSalary(job.salary)}</dd></>}
     {job.department && <><dt>Occupation</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
     <dt>Listed on</dt><dd>{groupPage ? <a href={hospitalUrl(job.company)}>{companyName}</a> : companyName}</dd>
@@ -136,6 +137,7 @@ const browse = [
       : <><dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>}
     <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <a class="tag" href="/remote">Remote</a></>}</dd>
     <dt>Employment type</dt><dd><a href={`/employment/${employment}`}>{t("en").employment.types[employment]}</a></dd>
+    {job.salary && <><dt>Salary</dt><dd>{formatSalary(job.salary)}</dd></>}
     {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
     {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
   </dl>

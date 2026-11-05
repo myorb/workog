@@ -1,7 +1,7 @@
 import { employmentTypeOf, type EmploymentType } from "./employment.ts";
 import { countryCode } from "./i18n.ts";
 import { getCity, placesOf } from "./places.ts";
-import type { Job } from "./schema.ts";
+import type { Job, Salary } from "./schema.ts";
 
 type Thing = Record<string, unknown>;
 
@@ -37,6 +37,13 @@ const VALID_DAYS = 30;
 export const validThrough = (job: Pick<Job, "lastSeenAt">): string =>
   new Date(Date.parse(job.lastSeenAt) + VALID_DAYS * 24 * 60 * 60 * 1000).toISOString();
 
+/** A posting's stated pay as schema.org MonetaryAmount: a single value, or a range */
+export const baseSalary = (s: Salary): Thing => ({
+  "@type": "MonetaryAmount",
+  currency: s.currency,
+  value: { "@type": "QuantitativeValue", ...(s.min === s.max ? { value: s.min } : { minValue: s.min, maxValue: s.max }), unitText: s.unit },
+});
+
 /** Google for Jobs markup: https://developers.google.com/search/docs/appearance/structured-data/job-posting */
 export function jobPosting(job: Job, companyName: string, url: URL): Thing {
   const places = placesOf(job.locations);
@@ -64,6 +71,7 @@ export function jobPosting(job: Job, companyName: string, url: URL): Thing {
     url: url.href,
     directApply: false,
     ...(job.department && { occupationalCategory: job.department }),
+    ...(job.salary && { baseSalary: baseSalary(job.salary) }),
     ...(jobLocation.length > 0 && { jobLocation }),
     ...(job.remote && {
       jobLocationType: "TELECOMMUTE",
