@@ -6,7 +6,7 @@ import { ashby } from "./ashby.ts";
 import { asklepios, asklepiosLocations } from "./asklepios.ts";
 import { parsePosting } from "./jobposting.ts";
 import { eightfold } from "./eightfold.ts";
-import { applyLinkOf, euresLocations } from "./eures.ts";
+import { applyLinkOf, euresLocations, searchCountry, type Search } from "./eures.ts";
 import { helios, parseAddress } from "./helios.ts";
 import { isSwissDoctor, markdownToHtml } from "./jobroom.ts";
 import { jobtechLocations } from "./jobtech.ts";
@@ -476,6 +476,31 @@ describe("eures", () => {
     );
     expect(applyLinkOf(["Internetadresse: https://jobs.example.de/job-1.html."])).toBe("https://jobs.example.de/job-1.html");
     expect(applyLinkOf(["CV with attached letter, Telephone"])).toBeUndefined();
+  });
+
+  test("searchCountry adds a second sort order when the first returns some vacancies twice", async () => {
+    const ids = Array.from({ length: 60 }, (_, i) => `v${i}`);
+    const calls: string[] = [];
+    // MOST_RECENT repeats v49 on page 2 in place of v50, as tied creation times do
+    const order = { MOST_RECENT: ids.map((id) => (id === "v50" ? "v49" : id)), BEST_MATCH: [...ids].reverse() };
+    const search: Search = async (_country, page, sort) => {
+      calls.push(`${sort}:${page}`);
+      return { numberRecords: 60, jvs: order[sort].slice((page - 1) * 50, page * 50).map((id) => ({ id, title: id })) };
+    };
+    const jobs = await searchCountry("fr", search);
+    expect(jobs.map((j) => j.id).sort()).toEqual([...ids].sort());
+    expect(jobs[0]).toEqual({ id: "v0", title: "v0", country: "fr" });
+    expect(calls).toEqual(["MOST_RECENT:1", "MOST_RECENT:2", "BEST_MATCH:1", "BEST_MATCH:2"]);
+  });
+
+  test("searchCountry stops after one sort order when it found every vacancy", async () => {
+    const calls: string[] = [];
+    const search: Search = async (_country, page, sort) => {
+      calls.push(`${sort}:${page}`);
+      return { numberRecords: 2, jvs: [{ id: "a", title: "A" }, { id: "b", title: "B" }] };
+    };
+    expect((await searchCountry("at", search)).map((j) => j.id)).toEqual(["a", "b"]);
+    expect(calls).toEqual(["MOST_RECENT:1"]);
   });
 });
 
