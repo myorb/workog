@@ -1,6 +1,7 @@
 /**
- * Renders the 1200×630 share images in public/: og.png for the tech section,
- * og-medicine.png for the medical section and og-start.png for the start page.
+ * Renders the 1200×630 share images in public/: og.png for the start page
+ * (and any page without a section), og-tech.png for the tech section and
+ * og-medicine.png for the medical section.
  * Base.astro picks one by the page's section. Run after changing the copy:
  *
  *   bun scripts/og-images.ts
@@ -20,9 +21,9 @@ interface Image {
 }
 
 export const images: Image[] = [
-  { file: "og.png", variant: "tech", glow: "#1e3a8a", lines: ["Open jobs at top tech companies, refreshed daily", "from official career sites."] },
-  { file: "og-medicine.png", variant: "medicine", glow: "#115e59", lines: ["Jobs for doctors at hospitals and practices", "across Europe, refreshed daily."] },
-  { file: "og-start.png", variant: "start", glow: "#1e3a8a", lines: ["Tech jobs and jobs for doctors, refreshed daily", "from the employers."] },
+  { file: "og-tech.png", variant: "tech", glow: "#1e3a8a", lines: ["Top tech jobs. Every company that matters."] },
+  { file: "og-medicine.png", variant: "medicine", glow: "#115e59", lines: ["Top doctor jobs. Every hospital that matters."] },
+  { file: "og.png", variant: "start", glow: "#1e3a8a", lines: ["Top tech jobs. Top doctor jobs."] },
 ];
 
 const svg = ({ variant, glow, lines }: Image) => `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">

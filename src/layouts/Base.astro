@@ -32,9 +32,9 @@ const fullTitle = title === "Workog" ? title : `${title} · Workog`;
 const ogLocale = (l: string) => intlLocale(l as typeof lang).replace("-", "_");
 // one share image per section; its alt text repeats the image's own (English) text
 const shareImages = {
-  tech: { path: "/og.png", alt: "Workog — open jobs at top tech companies, refreshed daily from official career sites" },
-  medicine: { path: "/og-medicine.png", alt: "Workog — jobs for doctors at hospitals and practices across Europe, refreshed daily" },
-  start: { path: "/og-start.png", alt: "Workog — tech jobs and jobs for doctors, refreshed daily from the employers" },
+  tech: { path: "/og-tech.png", alt: "Workog — top tech jobs, every company that matters" },
+  medicine: { path: "/og-medicine.png", alt: "Workog — top doctor jobs, every hospital that matters" },
+  start: { path: "/og.png", alt: "Workog — top tech jobs, top doctor jobs" },
 };
 const shareImage = shareImages[section];
 // the favicon takes the section's color, like the logo in the top bar
