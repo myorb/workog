@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
+import AsOf from "../../components/AsOf.astro";
 import BarList from "../../components/BarList.astro";
 import ColumnChart from "../../components/ColumnChart.astro";
 import LineChart from "../../components/LineChart.astro";
@@ -98,10 +99,8 @@ const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%
 
 <Base title={a.title} description={a.description(jobs.length)}>
   <h1>{a.title}</h1>
-  <p class="muted">
-    {a.snapshot(jobs.length)}
-    {run && <> · {a.updated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></>}
-  </p>
+  <AsOf title={m.sections.tech} count={jobs.length} series={{ section: "tech" }} />
+  {run && <p class="muted">{m.lastUpdated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></p>}
 
   <dl class="stats">
     <div><dt>{a.openJobs}</dt><dd>{formatNumber(jobs.length, lang)}</dd></div>

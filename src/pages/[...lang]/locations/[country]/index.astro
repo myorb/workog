@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import AsOf from "../../../../components/AsOf.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
@@ -30,10 +31,7 @@ const companies = companyLinks(companyCounts(jobs), await getCompanies());
 <Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)} noindex={isThin(jobs.length)}>
   <p class="muted"><a href={localizePath("/locations", lang)}>{m.nav.locations}</a> /</p>
   <h1>{m.place.title(name)}</h1>
-  <p class="muted">
-    {m.openPositions(jobs.length)}
-    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
-  </p>
+  <AsOf title={m.place.title(name)} count={jobs.length} series={{ section: "tech", dim: "countries", key: country.slug }} limit={LIST_PAGE_LIMIT} />
   {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
   {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}

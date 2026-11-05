@@ -1,7 +1,9 @@
 /** Aggregations for the analytics pages. Pure functions over jobs, history and snapshots. */
 import { tagsOf } from "./jobs.ts";
 import { placesOf } from "./places.ts";
-import type { ArchivedJob, HistoryDay, Job, Snapshot } from "./schema.ts";
+import { indexHospitals } from "./hospitals.ts";
+import { medicinePlaceOf } from "./medicine.ts";
+import type { ArchivedJob, HistoryDay, Job, MedicineSnapshot, Snapshot } from "./schema.ts";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -154,6 +156,37 @@ export function snapshotOf(jobs: Job[], date: string, archived: ArchivedJob[] = 
   for (const job of jobs) if (openOn(job, date)) count(job, tagsOf(job));
   for (const job of archived) if (openOn(job, date)) count(job, archivedTags(job));
   for (const key of SNAPSHOT_DIMENSIONS) {
+    snapshot[key] = Object.fromEntries(Object.entries(snapshot[key]).sort(([a], [b]) => a.localeCompare(b)));
+  }
+  return snapshot;
+}
+
+/** The dimensions a medical snapshot counts open jobs by. */
+export const MEDICINE_SNAPSHOT_DIMENSIONS = ["specialties", "levels", "countries", "states", "hospitals"] as const;
+export type MedicineSnapshotDimension = (typeof MEDICINE_SNAPSHOT_DIMENSIONS)[number];
+
+/**
+ * Open medical-job counts at the end of `date`, like snapshotOf. `groups` maps
+ * the company keys of hospital groups to their names (see indexHospitals).
+ */
+export function medicineSnapshotOf(
+  jobs: (Job | ArchivedJob)[],
+  date: string,
+  groups: Map<string, string> = new Map(),
+): MedicineSnapshot {
+  const open = jobs.filter((j) => openOn(j, date));
+  const snapshot: MedicineSnapshot = { date, open: open.length, specialties: {}, levels: {}, countries: {}, states: {}, hospitals: {} };
+  const add = (counts: Record<string, number>, key: string | undefined) => key && (counts[key] = (counts[key] ?? 0) + 1);
+  for (const job of open) {
+    add(snapshot.specialties, job.specialty);
+    add(snapshot.levels, job.level);
+    const { country, state } = medicinePlaceOf(job);
+    add(snapshot.countries, country);
+    add(snapshot.states, state);
+  }
+  const hospitals = indexHospitals(open, groups);
+  for (const h of [...hospitals.groups, ...hospitals.hospitals]) snapshot.hospitals[h.slug] = h.count;
+  for (const key of MEDICINE_SNAPSHOT_DIMENSIONS) {
     snapshot[key] = Object.fromEntries(Object.entries(snapshot[key]).sort(([a], [b]) => a.localeCompare(b)));
   }
   return snapshot;

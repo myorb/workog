@@ -27,6 +27,12 @@ export const uk = {
   openJobs: (k: number) => p(k, openJobs),
   openPositions: (k: number) => p(k, openJobs),
   showingNewest: (k: number) => `, показано ${n(k)} найновіших`,
+  trend: {
+    asOf: (title: string, k: number, date: string) => `${title}: ${p(k, openJobs)} станом на ${date}`,
+    change: (pct: number, d: number) =>
+      pct > 0 ? `+${n(pct)}% за ${p(d, days)}` : pct < 0 ? `−${n(-pct)}% за ${p(d, days)}` : `без змін за ${p(d, days)}`,
+    newestShown: (k: number) => `Показано ${n(k)} найновіших.`,
+  },
   latestJobs: "Останні вакансії",
   companiesHiring: "Компанії, що наймають",
   relatedTechnologies: "Схожі технології",

@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
+import AsOf from "../../../components/AsOf.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
@@ -21,10 +22,7 @@ const techs = technologyLinks(counts.technologies, remoteTechnologyUrl);
 
 <Base title={m.remoteJobs.title} description={m.remoteJobs.description(jobs.length, companies)} noindex={!jobs.length}>
   <h1>{m.remoteJobs.title}</h1>
-  <p class="muted">
-    {m.openPositions(jobs.length)}
-    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
-  </p>
+  <AsOf title={m.remoteJobs.title} count={jobs.length} series={{ section: "tech", dim: "remote" }} limit={LIST_PAGE_LIMIT} />
   {countries.length > 0 && <><h2>{m.remoteJobs.byCountry}</h2><TagLinks links={countries} /></>}
   {techs.length > 0 && <><h2>{m.nav.technologies}</h2><TagLinks links={techs} /></>}
   <h2>{m.latestJobs}</h2>

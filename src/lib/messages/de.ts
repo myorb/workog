@@ -13,6 +13,7 @@ const companies = { one: "Unternehmen", other: "Unternehmen" };
 const countries = { one: "Land", other: "Ländern" };
 const cities = { one: "Stadt", other: "Städten" };
 const days = { one: "Tag", other: "Tage" };
+const daysDative = { one: "Tag", other: "Tagen" };
 const techJobs = (tech: string) => ({ one: `offener ${tech}-Job`, other: `offene ${tech}-Jobs` });
 
 export const de = {
@@ -28,6 +29,12 @@ export const de = {
   openJobs: (k: number) => p(k, openJobs),
   openPositions: (k: number) => p(k, openJobs),
   showingNewest: (k: number) => `, die ${n(k)} neuesten werden angezeigt`,
+  trend: {
+    asOf: (title: string, k: number, date: string) => `${title}: ${p(k, openJobs)}, Stand ${date}`,
+    change: (pct: number, d: number) =>
+      pct > 0 ? `+${n(pct)} % in ${p(d, daysDative)}` : pct < 0 ? `−${n(-pct)} % in ${p(d, daysDative)}` : `unverändert in ${p(d, daysDative)}`,
+    newestShown: (k: number) => `Die ${n(k)} neuesten werden angezeigt.`,
+  },
   latestJobs: "Neueste Stellen",
   companiesHiring: "Unternehmen mit offenen Stellen",
   relatedTechnologies: "Verwandte Technologien",

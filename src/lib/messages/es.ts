@@ -28,6 +28,12 @@ export const es = {
   openJobs: (k: number) => p(k, openJobs),
   openPositions: (k: number) => p(k, openPositions),
   showingNewest: (k: number) => `, se muestran los ${n(k)} más recientes`,
+  trend: {
+    asOf: (title: string, k: number, date: string) => `${title}: ${p(k, openPositions)} a fecha de ${date}`,
+    change: (pct: number, d: number) =>
+      pct > 0 ? `un ${n(pct)} % más en ${p(d, days)}` : pct < 0 ? `un ${n(-pct)} % menos en ${p(d, days)}` : `sin cambios en ${p(d, days)}`,
+    newestShown: (k: number) => `Se muestran los ${n(k)} más recientes.`,
+  },
   latestJobs: "Últimos empleos",
   companiesHiring: "Empresas que contratan",
   relatedTechnologies: "Tecnologías relacionadas",

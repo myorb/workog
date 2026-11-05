@@ -27,6 +27,12 @@ export const en = {
   openJobs: (k: number) => p(k, openJobs),
   openPositions: (k: number) => p(k, openPositions),
   showingNewest: (k: number) => `, showing the ${n(k)} newest`,
+  trend: {
+    asOf: (title: string, k: number, date: string) => `${title}: ${p(k, openPositions)} as of ${date}`,
+    change: (pct: number, d: number) =>
+      pct > 0 ? `up ${n(pct)}% in ${p(d, days)}` : pct < 0 ? `down ${n(-pct)}% in ${p(d, days)}` : `unchanged in ${p(d, days)}`,
+    newestShown: (k: number) => `Showing the ${n(k)} newest.`,
+  },
   latestJobs: "Latest jobs",
   companiesHiring: "Companies hiring",
   relatedTechnologies: "Related technologies",

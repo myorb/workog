@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
+import AsOf from "../../../components/AsOf.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import JobFilters from "../../../components/JobFilters.astro";
@@ -32,7 +33,7 @@ const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
 
 <Base title={md.title} description={md.description(jobs.length, employers)} section="medicine" noindex={!jobs.length}>
   <h1>{md.heading}</h1>
-  <p class="muted">{md.summary(jobs.length, employers)}</p>
+  <AsOf title={md.title} count={jobs.length} series={{ section: "medicine" }} />
 
   <div class="home-grid">
     <aside class="sidebar">

@@ -161,3 +161,21 @@ export const SnapshotSchema = z.object({
 });
 
 export type Snapshot = z.infer<typeof SnapshotSchema>;
+
+/**
+ * One data/history/medicine/<date>.json file: open medical jobs at the end of
+ * one UTC day, by the dimensions the /medicine pages browse.
+ */
+export const MedicineSnapshotSchema = z.object({
+  date: z.iso.date(),
+  open: z.number().int(),
+  specialties: CountsSchema,
+  levels: CountsSchema,
+  countries: CountsSchema,
+  /** German states */
+  states: CountsSchema,
+  /** keyed by hospital page slug: hospital groups, and employers with a page of their own that day */
+  hospitals: CountsSchema,
+});
+
+export type MedicineSnapshot = z.infer<typeof MedicineSnapshotSchema>;

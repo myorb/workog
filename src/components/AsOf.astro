@@ -1,0 +1,49 @@
+---
+/**
+ * The dated summary line under a data page's heading: "Cardiology jobs: 609
+ * open positions as of Nov 5, 2026, up 6% in 30 days." One self-contained,
+ * dated fact, the kind search engines and AI assistants quote.
+ */
+import type { MedicineSnapshotDimension, SnapshotDimension } from "../lib/analytics.ts";
+import { getLatestRun, getMedicineSnapshots, getSnapshots } from "../lib/jobs.ts";
+import { formatDate } from "../lib/format.ts";
+import { getLang, t } from "../lib/i18n.ts";
+import { changeOver, roundPct } from "../lib/trend.ts";
+
+type Series =
+  | { section: "tech"; dim?: SnapshotDimension | "remote"; key?: string }
+  | { section: "medicine"; dim?: MedicineSnapshotDimension; key?: string };
+
+interface Props {
+  /** the subject, usually the page heading */
+  title: string;
+  count: number;
+  /** the snapshot count to compare with: a dimension's key, or the section total without one */
+  series: Series;
+  /** how many jobs the page lists, when it lists fewer than `count` */
+  limit?: number;
+}
+
+const { title, count, series, limit } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+
+const run = await getLatestRun();
+const snapshots: { date: string; open: number; remote?: number; [dim: string]: unknown }[] =
+  series.section === "tech" ? await getSnapshots() : await getMedicineSnapshots();
+const value = (s: (typeof snapshots)[number]): number | undefined => {
+  if (!series.dim) return s.open;
+  if (series.dim === "remote") return s.remote;
+  return (s[series.dim] as Record<string, number>)[series.key ?? ""];
+};
+const change = changeOver(snapshots, value, count);
+const date = run?.finishedAt ?? snapshots.at(-1)?.date;
+const sentence = date
+  ? `${m.trend.asOf(title, count, formatDate(date, lang))}${change ? `, ${m.trend.change(roundPct(change.pct), change.days)}` : ""}.`
+  : `${m.openPositions(count)}.`;
+---
+
+<p class="muted as-of">
+  {sentence}
+  {limit !== undefined && count > limit && <> {m.trend.newestShown(limit)}</>}
+</p>
