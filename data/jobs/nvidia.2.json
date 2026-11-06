@@ -1887,6 +1887,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2014047",
+    "slug": "nvidia-senior-performance-engineer-deep-learning-jr2014047",
+    "company": "nvidia",
+    "title": "Senior Performance Engineer - Deep Learning",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Our Deep Learning models performance engineering team at NVIDIA is hiring software engineers at all experience levels to build and optimize the libraries and tools that enable Deep Learning Researchers and Engineers to design, develop, and deploy efficient AI applications. We are an ambitious and diverse team that builds optimizations directly into mainstream open source Deep Learning frameworks - PyTorch and JAX, which boost the performance at all levels of NVIDIA's AI stack. Our team has a wide collaborative footprint, working not only with multiple teams across NVIDIA but also with the broader open-source community to deliver SOTA Deep Learning performance on the best AI platform in the world!</p><p><b>What you will be doing:</b></p><ul><li><p>Build and support Transformer Engine, the open-source library for accelerating the training of Large Language Models.</p></li><li><p>Collaborate on systems research that improves Deep Learning model performance, such as training using extremely low precision, parallelism methods, etc.</p></li><li><p>Implement, benchmark, and optimize new Deep Learning models such as LLMs straight out of groundbreaking research to scale efficiently on NVIDIA GPUs and systems.</p></li><li><p>Build and contribute to NVIDIA submissions on community benchmarks such as MLPerf.</p></li><li><p>Engage with the open-source community as well as support enterprise customers and partners by delivering the benefits of NVIDIA’s latest hardware and software innovations.</p></li><li><p>Influence the design of new hardware generations and core platform software components for NVIDIA hardware and systems.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>BS or equivalent experience in Computer Science, Electrical Engineering, or a related field.</p></li><li><p>3+ years of experience in C++ and Python programming.</p></li><li><p>Strong background, experience, or coursework in parallel systems programming, preferably on GPUs.</p></li><li><p>Knowledge of Computer Architecture, Code Optimization, and/or Operating Systems.</p></li><li><p>Proven experience in developing large software projects.</p></li><li><p>Excellent verbal and written communication skills.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Experience in PyTorch, JAX, or any other DL framework.</p></li><li><p>Experience with performance analysis, profiling, and code optimization techniques, especially with multi-GPU or multi-node systems.</p></li><li><p>Knowledge of modern LLM architectures, attention mechanisms, and/or low-level DL libraries such as cuBLAS, cuDNN, and cuSOLVER.</p></li><li><p>Experience in writing GPU kernels using any of - CUDA, OpenAI Triton, CuTeDSL, Pallas, or other similar libraries.</p></li><li><p>Any past contributions to the open source community and/or experience working with multidisciplinary teams also showcase readiness for the team's responsibilities. </p></li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />152,000 USD – 241,500 USD for Level 3; and 184,000 USD – 287,500 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Performance-Engineer---Deep-Learning_JR2014047",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2014087",
     "slug": "nvidia-senior-sonic-software-engineer-python-jr2014087",
     "company": "nvidia",
@@ -1921,6 +1937,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Lead-Safety-Architect---Autonomous-Vehicles_JR2014137",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2014177",
+    "slug": "nvidia-senior-software-engineer-cuda-and-unified-memory-jr2014177",
+    "company": "nvidia",
+    "title": "Senior Software Engineer - CUDA and Unified Memory",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, TX, Austin"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are hiring software engineers to work on the CUDA driver, a core component of our platform for accelerating general purpose computation on the GPU. Our team delivers features and improvements to better realize the potential of NVIDIA hardware for a growing range of computational workloads, ranging from deep learning, scientific computation, and self-driving cars to video games and virtual reality!  </p><p>CUDA defines a unified programming model across a range of system configurations and hardware capabilities. To accomplish this, the CUDA driver interacts with GPU hardware, kernel mode drivers, and the operating system. Unified Memory kernel driver provides kernel memory management that enables these advanced features.  </p><p><b>What you'll be doing:</b>  </p><p>As a member of our team, you will apply your design, coding expertise,<u> and</u> creativity, and <u>to </u>collaborate with peers across NVIDIA to deliver upon the best compute platform in the world. You will craft sophisticated solutions to exciting problems shaping the future direction of CUDA!  </p><ul><li><p>Architect, and implement new features for new chips and new kernel features  </p></li><li><p>Coordinate with other teams to accomplish your work daily  </p></li><li><p>Help define forward-looking improvements to the CUDA APIs and programming model  </p></li><li><p>Write effective, maintainable, and well-tested <u>kernel and userspace </u>code  </p></li><li><p>Develop code for multiple <u>Linux </u>operating systems  </p></li></ul><p><b>What we need to see:</b>  </p><ul><li><p>BS or MS degree in Computer Science, Electrical Engineering or related field (or equivalent experience)  </p></li><li><p>Strong C programming skills</p></li><li><p>Minimum of 10+ years of related development experience  </p></li><li><p>Experience working with large codebases  </p></li><li><p>Background with operating system interfaces for threads, process control, and virtual memory  </p></li><li><p>Experience writing and debugging multithreaded programs  </p></li><li><p>Good written communication </p></li></ul><p><b>Ways to stand out from the crowd:  </b></p><ul><li><p>Understanding of system level architecture, such as interconnects, memory hierarchy, interrupts, and memory-mapped IO </p></li><li><p>Knowledge of memory coherence and consistency models  </p></li><li><p>Experience with kernel mode development  </p></li><li><p>Experience with Windows, Linux, or macOS driver development  </p></li><li><p>Some familiarity w C++​</p></li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />184,000 USD – 287,500 USD for Level 4; and 224,000 USD – 356,500 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---CUDA-and-Unified-Memory_JR2014177",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -2036,6 +2069,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Silicon-Validation-Engineer_JR2014991",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -3313,6 +3348,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Marketing-Engineer---Physical-AI-for-Healthcare_JR2018605",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4039,6 +4076,27 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2020101",
+    "slug": "nvidia-senior-network-solution-engineer-weekend-coverage-jr2020101",
+    "company": "nvidia",
+    "title": "Senior Network Solution Engineer (Weekend Coverage)",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, MA, Westford",
+      "US, TX, Austin",
+      "US, NC, Durham",
+      "US, WA, Redmond",
+      "US, NY, New York"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>The NVIDIA Experience (NVEX) Solutions Engineering team is looking for a senior Computer or Software Engineer who is ready to become an authority in ground-breaking network technology used in AI clusters. Our team of software engineers bridge the gap between the customer support teams and R&amp;D, focusing on resolution of tough problems from the front lines and providing the highest level of support for InfiniBand, NVLink, and Spectrum-X network systems that interconnect GPUs and AI compute infrastructure.</p><br /><p>The level of work we do requires a software engineering background for deep code and logic analysis. It is also essential to have a proven grasp of in-field, production network operations and a history of collaborating closely with both customer engineering teams and internal R&amp;D to triage and resolve major issues. Candidates must be very comfortable interacting with and relaying technical information to various groups ranging from R&amp;D engineers, support groups, account teams, and executive-level management.  The individual will interact daily with both internal and external customers, so superb interpersonal and communication skills are essential. SE team members also get to spend time working within R&amp;D groups taking on feature development and bug fixes to directly enhance the products we support. </p><br /><p><b><u>The standard work schedule for this role is Wednesday through Sunday.</u></b></p><br /><p><b>What you will be doing:</b></p><ul><li>Assist various network and AI cluster support teams in reproducing, resolving, and root causing sophisticated customer issues</li><li>Work with NVIDIA R&amp;D teams to rapidly develop bug fixes, workarounds, and solutions for customers using NVIDIA’s network technologies</li><li>Work directly with customer engineers on live triage of critical and high-profile issues</li><li>Become an authority in NVIDIA Spectrum-X networking used in AI clusters</li><li>Develop support and analysis tools to help analyze and root cause field issues</li><li>Daily use of ground breaking AI tools for software development, log and trace analysis, and source code debugging</li><li>Spend a portion of time working directly within an R&amp;D team developing core software</li><li>Occasional work on holidays to support critical customers</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Candidates <i>must</i> have software development experience in the networking industry either for a network hardware manufacturer or software integrator</li><li>Candidates <i>must</i> have experience working directly with customers and support groups to triage and resolve critical in-field, in-production networking problems</li><li>Bachelor's degree in software engineering, computer engineering or related (or equivalent experience)</li><li>8+ years of experience developing software (C, C++, Python, or Go)</li><li>8+ years of experience directly supporting end-customers, partners, or integrators for network equipment and infrastructures</li><li>Experience analyzing, developing, and debugging at least 2 of the following: Linux NIC drivers, switch ASICs and SDKs, embedded network device firmware, Linux based network equipment (routers, switches, gateways, etc), network operating systems</li><li>Expert knowledge of Ethernet and IP routing down to the protocol’s byte level</li><li>Ability to analyze and learn evolving end-to-end systems flow, quickly learn how unfamiliar software layers are integrated, and be able to find logic bugs within an increasingly complex environment</li><li>Passion and motivation to isolate, root cause, and resolve high impact issues with executive visibility</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />168,000 USD – 270,250 USD for Level 4; and 200,000 USD – 322,000 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Network-Solution-Engineer--Weekend-Coverage-_JR2020101",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2020123",
     "slug": "nvidia-senior-product-marketing-manager-desktop-ai-products-jr2020123",
     "company": "nvidia",
@@ -4317,6 +4375,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Solutions-Architect--NVIDIA-Cloud-Partners---Telco_JR2020710",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4608,6 +4668,26 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Vietnam-Hanoi/Director--Engineering---Software-Engineering_JR2021061",
     "postedAt": "2026-07-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2021069",
+    "slug": "nvidia-senior-product-manager-ai-physics-jr2021069",
+    "company": "nvidia",
+    "title": "Senior Product Manager, AI Physics",
+    "locations": [
+      "US, CA, Remote",
+      "US, TX, Remote",
+      "US, VA, Remote",
+      "US, MA, Remote",
+      "US, MD, Remote"
+    ],
+    "remote": true,
+    "category": "product",
+    "descriptionHtml": "<p>At NVIDIA, we’re solving the world’s most challenging problems with our unique approach to accelerated computing. We’re looking for a technical and passionate product manager to join the NVIDIA team building our AI physics models, libraries, and frameworks. This role is responsible for leading some of our newest AI physics products, which are at the forefront of engineering acceleration and experiencing massive adoption and interest across CAE and EDA workloads..Come join our team in this highly visible and central opportunity to impact NVIDIA’s continued leadership in accelerated computing.</p><p>NVIDIA's AI physics products are essential, visible and growing both inside and outside of NVIDIA. We are looking for a self-starting product manager to continue growing these impactful models, libraries, and frameworks. Do you have the unique blend of technical, positioning and communication skills? Are you excited about groundbreaking technology? If so, we would love to learn more about you!</p><p><b>What You’ll Be Doing</b>:</p><ul><li><p>Leading: Take a leadership role in defining and positioning AI physics products, and building strategic go-to-market plans for AI physics across key industries.</p></li><li><p>Building: Bring ideas to life through product definition execution in collaboration with engineering, developer relations, and business development.</p></li><li><p>Presenting: Engage external and internal audiences, delivering ideas clearly with confidence using creative approaches, translating technology capabilities to messages that resonate. Collaborate with marketing, sales, and PR teams on content creation for partner enablement assets such as presentation decks, blogs, whitepapers, webinars, demos, and more.</p></li><li><p>Collaborating: Team up with product managers from other departments, product marketing teams, campaign marketing, developer relations, business development, and field teams, to ensure alignment and execution of GTM and strategic business plans.</p></li></ul><p><b>What We Need To See:</b></p><ul><li><p>Graduate degree or equivalent experience in AI, physics, mathematics, mechanical engineering, electrical engineering, computer engineering, or relevant technical field.</p></li><li><p>8+ years of combined experience in a product management or technical role at a technology company working with AI, libraries, SDKs, frameworks, and/or toolkits.</p></li><li><p>Familiarity with AI frameworks and AI architecture for physical simulation.</p></li><li><p>Strong technical foundation in GPU computing, CUDA, or parallel programming models.</p></li><li><p>Excellent communication and presentation skills, with the ability to work across engineering, marketing, and business teams.</p></li><li><p>Proven ability to translate technical capabilities into developer and customer value.</p></li><li><p>Ability to prioritize multiple projects and work independently with minimal direction.</p></li></ul><p><b>Ways To Stand Out From The Crowd:</b></p><ul><li><p>Experience with computer-aided engineering or high performance computing.</p></li><li><p>Prior experience managing AI-enhanced simulation products.</p></li><li><p>Experience driving go-to-market strategy and customer engagements for technical products.</p></li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />168,000 USD – 258,750 USD for Level 4; and 208,000 USD – 327,750 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Product-Manager--AI-Physics_JR2021069",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -7049,6 +7129,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-High-Performance-Storage-Architect---NVIS_JR2024079-1",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8687,6 +8769,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2025890",
+    "slug": "nvidia-senior-technical-program-manager-cloud-infrastructure-jr2025890",
+    "company": "nvidia",
+    "title": "Senior Technical Program Manager, Cloud Infrastructure",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, WA, Seattle"
+    ],
+    "remote": false,
+    "category": "product",
+    "descriptionHtml": "<p>NVIDIA's deep learning platforms are at the forefront of innovation, profoundly impacting various fields and widely adopted by leading academic institutions, startups, and major Internet companies globally. We're seeking an accomplished and highly skilled Technical Program Manager (TPM) to join our NVIDIA DGX Cloud team. This is a great opportunity for a passionate, motivated, and creative individual to deliver outstanding value to our DGX Cloud customers!</p><p>We are specifically looking for a TPM with extensive experience in CSP/NCP cloud environments, on-prem infrastructure bring-up, and hardware automation.</p><p><b>What you'll be doing:</b></p><p>As an Infrastructure Technical Program Manager, you'll be a key partner to our external NCP partners as well as key internal teams (Software Engineering, Production Engineering/SRE, and Data Center Operations) and their leadership, driving critical programs related to on-prem infrastructure engineering, bare-metal bring-up, and automation. You'll play a pivotal role in developing and maturing foundational capabilities and processes, spanning critical areas such as hardware validation, remote fleet bootstrapping, operational workflows, and cluster/capacity bring-up. This is a dynamic, fast-paced environment where TPMs are motivated to apply versatile abilities to a range of high-impact programs across the infrastructure lifecycle.</p><ul><li><p>Fleet Bring-Up, Automation: Coordinate the end-to-end remote bootstrapping, active bring-up, and validation of large server fleets to take clusters from physical rack-and-stack to a customer-ready state. Drive the adoption of automation tooling for fleet maintenance, node security, and burn-in, while establishing formalized workflows to rapidly triage and resolve day-one deployment issues.</p></li><li><p>NVIDIA Software Integration &amp; Capacity Operations: Partner closely with internal NVIDIA SW teams to integrate and deploy DSX and other core software stacks within on-prem environments. Lead day-to-day capacity operations with a focus on availability, maintenance, and multi-tiered infrastructure workflows. This role includes the potential to scale scope by driving end-to-end capacity onboarding and operations with NCP partners as part of internal DGX Cloud (DGXC) capacity.</p></li><li><p>Cross-Team Roadmap Interception: Work across diverse NVIDIA engineering teams to understand, map, and intercept incoming technology roadmaps against physical data center readiness timelines.</p></li><li><p>Program Governance: Gather detailed requirements, build comprehensive roadmaps, and manage risks under the Product Lifecycle (PLC) framework for bare-metal capacity deployment. Leverage Jira and program management tools to instill structured execution across engineering and data center work.</p></li><li><p>Metrics, Visibility &amp; Communication: Establish clear critical metrics to quantitatively track program velocity, infrastructure availability, and overall cluster health. Develop robust communication strategies—including turning weekly operations reviews into highly collaborative sessions.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>8+ years of technical program management experience, specifically driving the planning and execution of cloud infrastructure programs, with a strong focus on hardware/software integration across many engineering teams.</p></li><li><p>Infrastructure Expertise: Extensive hands-on experience in cloud or on-prem enterprise infrastructure, data center bring-up, bare-metal deployments, and a deep understanding of hardware infrastructure.</p></li><li><p>Tooling Proficiency: Expert-level proficiency with Jira, Smartsheet, or similar program management tools, with the ability to confidently design ticket queues and guide engineering teams within an Agile/Scrum framework.</p></li><li><p>Strategic Leadership: Exceptional strategic and tactical thinking abilities, coupled with a strong capacity to build consensus, establish operational workflows, and drive program success through uncertainty.</p></li><li><p>Communication Skills: Outstanding communication, collaboration, and technical presentation skills, with a proven ability to increase meeting engagement, gather feedback, and align senior multi-functional collaborators.</p></li><li><p>BS or MS in Electrical Engineering or Computer Science, or equivalent experience.</p></li></ul><h2><b>Ways to stand out from the crowd:</b></h2><ul><li><p>In-depth knowledge of NVIDIA GPU products, cluster deployment, validation testing, and high-performance computing (HPC) infrastructure bring-up. Direct experience managing dependencies between pioneering AI software stacks and foundational physical infrastructure.</p></li><li><p>Experience working with accelerated deployment schedules (e.g., rapid 30-day data center rollouts) and asset-backed operational models.</p></li><li><p>Prior background establishing automated server benchmarking, burn-in execution, and infrastructure health validation workflows.</p></li><li><p>Familiarity with cloud-native architectures, managed-Kubernetes platform layers, and distributed systems.</p></li><li><p>Significant experience with productivity tools, process automation, and establishing standard operating guidelines across many technical domains.</p></li></ul><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family <a href=\"http://www.nvidiabenefits.com/\">www.nvidiabenefits.com/</a> </p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />168,000 USD – 258,750 USD for Level 4; and 200,000 USD – 322,000 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager--Cloud-Infrastructure_JR2025890",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2025906",
     "slug": "nvidia-senior-manager-material-planning-jr2025906",
     "company": "nvidia",
@@ -9864,7 +9963,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -10839,6 +10938,24 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028260",
+    "slug": "nvidia-research-and-engineering-intern-agentic-systems-intelligence-summer-2027-jr2028260",
+    "company": "nvidia",
+    "title": "Research and Engineering Intern, Agentic Systems Intelligence – Summer 2027",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, TX, Austin",
+      "US, WA, Redmond"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 30 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>We are looking for an outstanding Research &amp; Engineering Intern to join NVIDIA’s Agentic Systems Intelligence (ASI) team, a frontier research and engineering team advancing high-performance AI. Our team builds the next generation of agentic AI systems for the CUDA ecosystem, working across the full stack—from training and improving models, to designing agent architectures and multi-agent systems, to building the systems, runtimes, and evaluation frameworks that make them effective at scale. You will investigate open-ended research questions and turn promising ideas into working systems that can reason about, generate, optimize, and operate across NVIDIA’s accelerated computing stack. Depending on your strengths and interests, your work may focus on advancing model and agent capabilities, building scalable agent systems and runtimes, or developing high-fidelity training and evaluation environments. You will collaborate closely with NVIDIA software, model, and hardware teams, with opportunities to bring new capabilities into NVIDIA products.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Research, build, and optimize agentic AI systems for the CUDA ecosystem, including agent architectures, multi-agent workflows, tool use, memory, and orchestration.</li><li>Develop data pipelines, environments, verification tools, reward mechanisms, and evaluation frameworks to improve model and agent capabilities through rigorous experimentation.</li><li>Co-design and optimize agentic systems across NVIDIA’s software and hardware stack, connecting advances in models and agents with compilers, runtimes, libraries, kernels, and GPUs. Demonstrate measurable improvements in correctness, performance, or developer productivity.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>You are pursuing a Master’s, or PhD in Computer Science, Electrical Engineering, or a similar field.</li><li>Strong foundations in one or more of the following: AI systems, agentic AI, machine learning, reinforcement learning, high-performance computing, or computer architecture.</li><li>Hands-on research or development experience in agent systems, coding agents, model training, reinforcement learning, or modern AI inference systems.</li><li>Strong Python programming skills and proficiency in C/C++ or Rust, with solid software engineering fundamentals.</li><li>Experience with GPU computing and an interest in performance optimization and working across system boundaries.</li></ul><br /><p><b>Ways To Stand Out From The Crowd:</b></p><ul><li>PhD research in a relevant area, with demonstrated ability to formulate research questions, build working implementations, and evaluate them rigorously.</li><li>Experience building coding agents, autonomous software-engineering systems, or agent training and evaluation environments.</li><li>Hands-on experience with GPU programming and performance optimization, or with systems such as TRT-LLM, SGLang, or vLLM.</li><li>Evidence of technical depth and ownership through impactful research prototypes, deployed systems, or substantial open-source contributions. Relevant publications are welcome; we especially value strong engineering and measurable real-world impact.</li></ul><br /><p>With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous researcher/engineer with a real passion for technology, we want to hear from you.</p>Our internship hourly rates are a standard pay based on the position, your location, year in school, degree, and experience. The expected hourly rate for this position is 20 USD – 94 USD.<p>You will also be eligible for Intern <a href=\"https://www.nvidia.com/en-us/benefits/interns/\">benefits</a>. ​</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-and-Engineering-Intern--Agentic-Systems-Intelligence---Summer-2027_JR2028260",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028264",
     "slug": "nvidia-senior-verification-engineer-high-speed-coherent-interconnect-hub-jr2028264",
     "company": "nvidia",
@@ -10901,6 +11018,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Performance-Engineering-Intern--Deep-Learning-and-HPC---2027_JR2028299",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028318",
+    "slug": "nvidia-ai-research-scientist-jr2028318",
+    "company": "nvidia",
+    "title": "AI Research Scientist",
+    "locations": [
+      "Korea, Seoul"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>NVIDIA is searching for outstanding AI researchers to join the NVIDIA Research Korea team. Our mission is to advance the frontiers of foundation models and agentic AI through data-centric research. We focus on developing more capable, efficient, and self-improving AI systems by improving how models learn from data, spanning pre-training, post-training, and inference-time scaling. Our research explores synthetic data generation, data selection and curation, data-efficient learning, agentic reasoning, and iterative self-improvement.</p><br /><p>A broader goal of our research is to advance Sovereign AI by developing generalizable methods and reproducible recipes that enable countries and language communities to build advanced AI systems without relying on massive amounts of human-annotated data. Building on NVIDIA Nemotron open models, we aim to make cutting-edge foundation models and agentic AI capabilities more accessible across languages, regions, and applications.</p><p>You will join a highly collaborative research team tackling fundamental challenges in foundation models and agentic AI. Our team aims to conduct groundbreaking research, contribute to the open-source AI ecosystem, and translate research innovations into NVIDIA technologies and products.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Conduct cutting-edge research in foundation models and agentic AI, including reasoning, planning, tool use, and autonomous problem-solving.</li><li>Develop novel methods for data-efficient learning, data curation, and scalable model training for both pre-training and post-training.</li><li>Explore self-improvement techniques, including RL, distillation, self-training, and learning from model-generated feedback.</li><li>Advance the capabilities and efficiency of foundation models and agentic systems through innovative pre-training, post-training, and inference-time methods.</li><li>Develop advanced Korean-language foundation models and agentic systems, establishing methods and training recipes that generalize to other languages and regions.</li><li>Publish original research at leading conferences and contribute to open-source research.</li><li>Collaborate with researchers across NVIDIA and external academic institutions.</li><li>Mentor research interns from the NVIDIA-KAIST Joint AI Research Lab and contribute to a collaborative research environment with KAIST.</li><li>Present research findings at conferences, workshops, and other scientific events.</li><li>Transfer research innovations to NVIDIA product teams.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>PhD in AI, Computer Science, Electrical Engineering, or a related field (or equivalent experience).</li><li>At least 4 years of relevant research experience.</li><li>Strong expertise in one or more of the following areas: LLMs, pre-training, agentic AI, reasoning, reinforcement learning, efficient model training, synthetic data generation, data-efficient learning, distillation, or self-improving AI.</li><li>Publications at leading conferences such as NeurIPS, ICML, ICLR, COLM, ACL, EMNLP, or CVPR.</li><li>Strong understanding of modern deep learning methods and foundation models.</li><li>Excellent programming skills in Python and experience with deep learning frameworks such as PyTorch.</li><li>Ability to identify important research problems, develop novel approaches, and conduct rigorous empirical evaluations.</li><li>Excellent communication skills and ability to collaborate effectively across research teams.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Research contributions to state-of-the-art foundation models, agentic systems, reasoning models, or autonomous AI.</li><li>Experience with large-scale distributed pre-training, efficient post-training, or inference-time scaling.</li><li>Impactful contributions to Korean-language AI, multilingual foundation models, or cross-lingual transfer.</li><li>Significant open-source contributions to foundation models, datasets, or agentic AI frameworks.</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and productive people in the world working for us. Looking forward to hear from you!</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Korea-Seoul/AI-Research-Scientist_JR2028318",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -11186,6 +11319,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028530",
+    "slug": "nvidia-strategic-partnerships-mba-intern-enterprise-gtm-summer-2027-jr2028530",
+    "company": "nvidia",
+    "title": "Strategic Partnerships MBA Intern, Enterprise GTM - Summer 2027",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "<p>NVIDIA's accelerated computing platform has transformed data center computing. It's the engine fueling the modern artificial intelligence revolution and is broadly deployed in enterprise, cloud and the largest supercomputers in the world. The NVIDIA Strategic Product Partnership team is looking for a Strategic Partnership Intern to join the team! </p><br /><p>As an intern in this role, you will partner with NVIDIA product teams to bring new AI software and cloud services to market, focused on accelerated computing, AI, machine learning, and other areas. You will work closely with product, engineering, sales, marketing and partner teams across NVIDIA to build and customize solution offerings, define and implement pricing and GTM plans. It is a both challenging and rewarding role in that you will be working on a number of different initiatives, often in parallel, with many different teams within NVIDIA. You likely have a product management background in cloud services, enterprise software and/or data center technologies, an understanding of AI and machine learning and experience working with sales and marketing teams to bring new services and products to market. If you want to drive the adoption of cutting-edge technologies, help us define product go-to-market plans and make a difference in a fun, dynamic work environment, we want you to join our team!<br /></p><p><b>What you’ll be doing:</b></p><ul><li>Identify potential mutually beneficial strategic partnerships driving NVIDIA software, hardware, and services offerings.</li><li>Work closely with our strategic partners to build a GTM plan for the partnership to drive mutual success including revenue.</li><li>Find opportunities to integrate NVIDIA offerings with strategic partners to craft differentiated software solutions, unique value propositions and effective co-selling motion for our joint customers.</li><li>Work closely with NVIDIAs Sales and Channel teams to incubate and drive early mutual success with the partnership.</li><li>Provide insight in segment and channel to help core Product Managers build product strategy.</li><li>Work with sales, product manager, marketing and other teams to build insight into specific channels and market segments for leading partnerships.</li><li>Build relationships with channel and OEM partners. Build a solid understanding of their ecosystem and technical solution. Learn the value NVIDIA enterprise software products add to their business and solution. Understand challenges in growing business with them.</li><li>Articulate the end to end ecosystem in specific segments and/or partners, the problem our customer and partners need to solve and their challenges, and the role and value of our products.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Pursuing an MBA or possessing equivalent experience (graduating in winter 2027/summer 2028)</li><li>5+ years of work experience, including 2+ years in product management, software development, business development, sales, sales engineering, or customer support</li><li>Experience building and managing partnerships including the case, partnership agreements, solution definition, value proposition, sales enablement, and joint marketing.</li><li>Strong analytical, marketing and project management skills - a drive for results and a history of successful execution on projects.</li><li>Strategic problem solver, capable of articulating considerations in foundational technical and business decisions.</li><li>Experience in product management, pricing, market intelligence, product marketing, business development, and or related areas</li><li>Cloud and Biz Dev experience a strong plus</li><li>Enterprise software industry knowledge and proficiency in IT infrastructure technologies.</li><li>Demonstrated record of defining GTM strategy and projects to drive revenue and growth</li><li>Awareness of technology trends and their potential influence.</li><li>Self-starter that enjoys working in a fast-paced environment.</li><li>Strong cross functional collaboration</li><li>High attention to detail, action oriented, ability to work within stringent deadlines.</li><li>Strong problem solving skills - take initiative to identify current and potential problems and determine the best solution.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Computer Science or Engineering undergrad degree</li><li>Experience with Amazon Web Services (AWS), Google Cloud (GCP), or Microsoft Azure</li><li>Experience as an sw developer, product manager, sales engineer, or customer support/eng</li><li>Working knowledge of machine learning, deep learning, high-performance computing</li><li>Understand and can explain the key differences and benefits of popular LLMs and AI/ML frameworks</li><li>Proven ability to lead and drive cross-organization teams, both to gather and present information to diverse groups</li><li>Ability to drive influence in matrixed organizations</li><li>Exceptional communication and presentation abilities</li></ul><br /><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family www.nvidiabenefits.com/</p>Our internship hourly rates are a standard pay based on the position, your location, year in school, degree, and experience. The expected hourly rate for this position is 38 USD – 94 USD.<p>You will also be eligible for Intern <a href=\"https://www.nvidia.com/en-us/benefits/interns/\">benefits</a>. ​</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Strategic-Partnerships-MBA-Intern--Enterprise-GTM---Summer-2027_JR2028530",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028545",
     "slug": "nvidia-senior-devops-and-infrastructure-engineer-jr2028545",
     "company": "nvidia",
@@ -11402,7 +11551,7 @@
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -11868,6 +12017,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029007",
+    "slug": "nvidia-senior-software-developer-jr2029007",
+    "company": "nvidia",
+    "title": "Senior Software Developer",
+    "locations": [
+      "Israel, Tel Hai",
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is looking for a Senior Software Engineer to join NSV tools (Network Solutions Validation) group. Our group builds the data and analytics platform behind NVIDIA’s networking validation, processing large-scale test results, telemetry and cluster health data from some of the world’s largest AI and HPC data centers. As a senior team member, you will be developing services that turn this data into insights, accelerating the velocity and reliability of the validation process. You will work with NIC, OS, Switch, HCA, CPU and GPU compute as well as architects, network engineers, and developers. With dedicated engineers around the globe, the work environment is dynamic, impactful, and fast-paced. Are you ready for the challenge?<br /></p><p><b>What you’ll be doing:</b></p><ul><li>Owning features end to end, from problem definition through design, delivery and production.</li><li>Collaborating closely with networking, data and performance architects, validation engineers, DevOps and data teams to understand requirements and deliver robust solutions.</li><li>Leading the development of scalable services that analyze large-scale validation test results and improve visibility into cluster health KPIs across HPC data centers.</li><li>Leading the development of AI-driven and agent-based features that improve usability, observability, and debuggability.</li><li>Leading the deployment and operation of services on Kubernetes (K8s) with Docker and containerized environments.</li><li>Troubleshooting issues in distributed environments and improving HPC data center health observability.</li><li>Taking an active part in leading the team’s development process and driving its continuous improvement.</li><li>Mentoring engineers and rapidly growing the group’s knowledge across technical areas.<br /></li></ul><p><b>What we need to see:</b></p><ul><li>B.Sc. in Computer Science or a related field (or equivalent experience).</li><li>5+ years of hands-on software development experience with strong Python proficiency.</li><li>Strong understanding of software design patterns and architecture in large-scale networked systems.</li><li>Hands-on experience with Docker, containers, Kubernetes and microservices architectures.</li><li>Strong debugging and problem solving capabilities in distributed systems or multi-node environments.</li><li>Hands-on experience with agentic AI development tools and using agentic workflows to solve real-world problems.</li><li>Proven track record of turning loosely defined problems into well-scoped, delivered solutions.</li><li>Ability to work independently and drive measurable impact, with excellent communication skills and a strong sense of ownership.</li></ul><p><b><br />Ways to stand out from the crowd:</b></p><ul><li>Experience with big data and large-scale systems, including leading the architecture and design of complex distributed systems.</li><li>Experience with data engineering, data analysis and streaming data collection (e.g., SQL, pandas, ETL pipelines, Kafka, gRPC, gNMI).</li><li>Proven track record of technically leading engineers on large features, mentoring others and leveling up team capabilities.</li><li>Proven ability to innovate and solve real user problems in large, complex systems.</li></ul><p><br />NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people on the planet working for us. If you’re creative and autonomous, we want to hear from you!</p><br /><p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Hai/Senior-Software-Developer_JR2029007",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029043",
     "slug": "nvidia-senior-power-and-thermal-architect-jr2029043",
     "company": "nvidia",
@@ -12098,6 +12264,24 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029252",
+    "slug": "nvidia-director-software-technical-program-management-jr2029252",
+    "company": "nvidia",
+    "title": "Director, Software Technical Program Management",
+    "locations": [
+      "Israel, Yokneam",
+      "Israel, Raanana",
+      "Israel, Tel Aviv"
+    ],
+    "remote": false,
+    "category": "management",
+    "descriptionHtml": "<p>NVIDIA Networking is looking for an experienced technical program leader to join our Software Networking TPM organization. You will drive complex software and firmware programs powering NVIDIA’s next-generation AI data centers, from early technology initiation and pathfinding through Plan of Record (POR), detailed planning, and execution.</p><br /><p>This role combines technical depth, cross-functional leadership, and program ownership. You will partner with Product, Architecture, and R&amp;D leaders and coordinate across TPMs to facilitate decisions, establish executable plans and commitments, and drive delivery. The role may expand to include direct or matrix leadership of a small TPM team.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Drive large, complex software and firmware programs from technology initiation and pathfinding through POR, planning, and delivery.</li><li>Engage with Product, Architecture, and R&amp;D on requirements, technical tradeoffs, and dependencies, driving clarity on scope, priorities, and decisions.</li><li>Translate evolving technical inputs into executable plans with clear ownership, milestones, resource commitments, and success criteria.</li><li>Drive alignment and execution across teams, anticipate risks, resolve gaps, and hold stakeholders accountable for commitments.</li><li>Communicate program status, risks, tradeoffs, and required decisions clearly to technical teams and executives.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc. or M.Sc. in Computer Science, Electrical Engineering, or a related field.</li><li>15+ years of relevant experience in software technical program management, software engineering, or technical leadership with at least 5 years of direct management experience</li><li>Strong software engineering understanding, with the ability to effectively engage in technical discussions about architecture, development, integration, and system dependencies.</li><li>A proven record of driving large, complex, multidisciplinary software programs from early definition through execution and delivery.</li><li>Demonstrated ability to bring focus and clarity to ambiguous problems, exercise sound judgment, manage risks, and secure commitments across organizational boundaries.</li><li>Clear, concise verbal and written communication in English, with the ability to align engineers, architects, and executives around decisions and actions.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>People management experience, particularly leading and developing TPMs or technical teams.</li><li>Expertise in storage or networking technologies.</li><li>Experience coordinating strategic programs across global engineering organizations and multiple product generations.</li></ul><p>If you're creative and autonomous, we want to hear from you! NVIDIA is committed to fostering a diverse work environment and is proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Director--Software-Technical-Program-Management_JR2029252",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029256",
     "slug": "nvidia-senior-software-engineer-sonic-jr2029256",
     "company": "nvidia",
@@ -12128,6 +12312,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-AI-Agent-Test-Developer--SDET_JR2029313",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029366",
+    "slug": "nvidia-senior-software-engineer-autonomous-vehicles-jr2029366",
+    "company": "nvidia",
+    "title": "Senior Software Engineer - Autonomous Vehicles",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Self-driving cars need to detect the road’s course instantly, without relying on prior maps. We build an online mapping system that transforms raw sensor data into an accurate, live 3D model. This model shows lanes, boundaries, crosswalks, intersection structure, and traffic control semantics that the driving stack depends on. This is a software engineering role is central to that system. The algorithms are only as good as the software that runs them, so we need an engineer who obsesses over quality, performance, and architecture, and who can turn algorithmic ideas into safe, fast, maintainable code that runs in production vehicles on NVIDIA DRIVE Orin and Thor. The software you write will meet ASIL-B/D requirements and ship across L2++, L3, and L4 programs. You won’t be developing the algorithms from scratch, but you’ll need a strong grasp of them. You’ll work closely alongside algorithm engineers, and you need to understand what the code is doing to implement, optimize, and test it well.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Build and own core online mapping software operating in the car, from architecture through implementation to deployment.</li><li>Write production C++ for real-time embedded systems, with a focus on correctness, determinism, and maintainability.</li><li>Build software architecture and frameworks that promote code reuse, clean interfaces, and long-term maintainability across vehicle programs.</li><li>Improve performance of C++ and CUDA code running on NVIDIA DRIVE Orin and Thor, employing profilers to detect and address bottlenecks and to meet real-time budgets.</li><li>Use GPU parallelism (CUDA) to make compute-heavy mapping components fast and efficient.</li><li>Implement and incorporate algorithmic solutions from the mapping team into the core of NVIDIA’s AV stack, collaborating with algorithm engineers to understand and improve them.</li><li>Develop according to automotive safety standards (ASIL-B/D). Employ thorough static analysis and adhere to coding guidelines committed to safety. Reach 100% line and branch coverage through detailed unit and integration tests.</li><li>Handle real-time system signals from vehicles operating around the world, building software that is robust to varied conditions and failure modes.</li><li>Collaborate with perception, localization, planning, and infrastructure groups to incorporate online mapping into the complete AV stack across L2++, L3, and L4 programs.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>BS or MS in Computer Science, Electrical Engineering, or a related field, or equivalent experience.</li><li>5+ years of validated experience building robust, production-quality software.</li><li>3+ years of professional C++ development experience, including modern C++ and a strong grasp of memory management, concurrency, and performance.</li><li>Experience designing software architecture and APIs for large, long-lived codebases.</li><li>A quality-first mentality: comfortable with static analysis, unit testing, and high-coverage test strategies.</li><li>Solid understanding of algorithms and data structures, and the ability to work with algorithm developers and understand their work.</li><li>Strong communication and analytical skills, and the ability to work optimally across multiple teams.</li><li>Autonomous and responsible, demonstrating outstanding teamwork while enjoying solving hard problems.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Software development on embedded, real-time, or automotive platforms, including experience with real-time operating systems (e.g., QNX, Linux RT).</li><li>Experience with functional safety standards and processes (ISO 26262, ASIL-B/D), MISRA or AUTOSAR C++ coding guidelines, and safety-qualified toolchains.</li><li>Experience achieving high or full structural coverage (line and branch, ideally MC/DC) on production code.</li><li>Experience with GPGPU programming (CUDA) and GPU performance tuning.</li><li>Strong skills in runtime profiling and optimization of CPU and GPU code.</li></ul><br /><p>#AutonomousVehicles</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />152,000 USD – 241,500 USD for Level 3; and 184,000 USD – 287,500 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---Autonomous-Vehicles_JR2029366",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {

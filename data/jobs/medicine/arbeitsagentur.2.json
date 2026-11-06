@@ -519,7 +519,7 @@
     "postedAt": "2025-09-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2091,8 +2091,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1000451662-S",
     "postedAt": "2025-02-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4193,6 +4191,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003506860-S",
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4213,6 +4213,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003509289-S",
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4943,7 +4945,7 @@
     "id": "arbeitsagentur:10001-1003761814-S",
     "slug": "universitatsklinikum-der-technischen-universitat-munchen-aor-assistenzarzt-m-w-d-klinische-toxikologie-10001-1003761814-s",
     "company": "arbeitsagentur",
-    "employer": "Universitätsklinikum der Technischen Universität München AöR",
+    "employer": "Klinikum der Technischen Universität München (TUM Klinikum) AöR",
     "title": "Assistenzarzt (m/w/d) – Klinische Toxikologie",
     "locations": [
       "München, Bayern, Germany"
@@ -5860,8 +5862,10 @@
       "Singen (Hohentwiel), Baden-Württemberg, Germany"
     ],
     "remote": false,
-    "department": "Arzt/Ärztin",
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
     "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
     "descriptionHtml": "<p>Die **Stadt Singen** sucht für den **Eigenbetrieb MVZ** zum nächstmöglichen Zeitpunkt in **Voll- oder Teilzeit** einen</p><p># Arzt (m/w/d) für das Medizinische Versorgungszentrum</p><p>### Was es bei uns zu tun gibt:</p><ul><li>Patientenbetreuung in der Praxis inkl. Notfallsprechstunde und Teilnahme an Haus- und Heimbesuchen</li><li>Telemedizin</li><li>Patientenbetreuung im Rahmen der Disease Management Programme (DMP)</li><li>Durchführung und Beurteilung diagnostischer Maßnahmen wie EKG, Belastungs-EKG, Langzeit-EKG, Langzeitblutdruckmessung, Sonografie Abdomen, Sonografie Schilddrüse, Labordiagnostik</li><li>KV-Notfalldienst</li><li>Mitwirkung an der Weiterentwicklung unseres medizinischen Versorgungszentrums</li></ul><p>### Was wir uns von Ihnen wünschen:</p><ul><li>Facharzt für Allgemeinmedizin oder Facharzt für Innere Medizin</li><li>Sie verfügen über die Berechtigung zur Teilnahme an der Hausarztzentrierten Versorgung (HZV) und zur Abrechnung der entsprechenden Leistungen oder erfüllen die Voraussetzungen, um diese Berechtigung zu erlangen</li><li>Persönliches Engagement und Leistungsbereitschaft</li><li>Deutsche Approbation und Eintrag ins Arztregister</li><li>Bereitschaft zur Fortbildung und Mitwirkung an Qualitätsprozessen</li><li>Weiterbildungsermächtigung/Bereitschaft zum Erwerb der Weiterbildungsermächtigung</li><li>Erfahrung mit Praxissoftware und digitalen Anwendungen von Vorteil</li><li>Teamfähigkeit</li><li>Zuverlässigkeit</li></ul><p>### Sie haben noch Fragen?</p><p>Dann kontaktieren Sie uns gerne:</p><p>Anna Hirschle<br />Medizinisches Versorgungszentrum Singen<br />Tel.: 07731 85-119<br />E-Mail: Anna.Hirschle@singen.de</p><p>Wir freuen uns auf Ihre aussagekräftige Bewerbung bis zum **31.12.2027**.</p>",
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003963605-S",
     "postedAt": "2026-11-04T00:00:00.000Z",
@@ -5926,6 +5930,67 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003968738-S",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1003971497-S",
+    "slug": "mvz-pneumologie-munchen-ost-gmbh-facharzt-facharztin-fur-innere-medizin-und-pneumologie-m-w-d-10001-1003971497-s",
+    "company": "arbeitsagentur",
+    "employer": "MVZ Pneumologie München Ost GmbH",
+    "title": "Facharzt/Fachärztin für Innere Medizin und Pneumologie (m/w/d)",
+    "locations": [
+      "München, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Wer wir sind:</p><p>Das MVZ Pneumologie München Ost ist eine moderne und renommierte Facharztpraxis, die sich auf die Behandlung von Atemwegs- und Lungenerkrankungen spezialisiert hat. Unsere Praxis steht für patientenzentrierte Medizin, innovative Diagnostik und eine interdisziplinäre Zusammenarbeit in einem hochqualifizierten Team.</p><p>**Zur Verstärkung unseres Teams suchen wir ab April 2027 eine/n engagierte/n und kompetente/n Facharzt/Fachärztin für Innere Medizin und Pneumologie (m/w/d)**</p><p>Ihre Aufgaben:</p><ul><li>Betreuung und Therapie von Patient\\*innen mit akuten und chronischen Atemwegserkrankungen wie COPD, Asthma, interstitiellen Lungenerkrankungen</li><li>Durchführung von EKGs, Laboruntersuchungen und spezifischen Therapien wie Pleurapunktionen, Infusionen und Hypo- sensibilisierungen</li><li>Allergietests, Inhalationstherapien und Patientenschulungen</li><li>Diagnostik und Betreuung bei schlafbezogenen Atmungsstörungen</li><li>Beteiligung an der Weiterentwicklung und Optimierung von diagnostischen und therapeutischen Standards</li></ul><p>Das bringen Sie mit:</p><ul><li>Facharztanerkennung für Innere Medizin und Pneumologie</li><li>Ausgeprägtes Interesse an der Diagnostik und Therapie von pneumologischen Erkrankungen</li><li>Freude an der Arbeit im Team und eine hohe Sozialkompetenz im Umgang mit Patient\\*innen</li><li>Engagement, Organisationstalent und die Bereitschaft, sich in ein etabliertes Team einzubringen</li><li>Idealerweise Erfahrung in der Schlafmedizin</li></ul><p>Ihre Vorteile:</p><ul><li>Attraktive Arbeitsbedingungen: Flexible Arbeitszeiten und eine leistungsgerechte Vergütung</li><li>Moderne Ausstattung: Hochmoderne Geräte und Räumlichkeiten auf dem neuesten Stand der Technik</li><li>Teamarbeit: Ein hochqualifiziertes, kollegiales Team, das sich auf Ihre Unterstützung freut</li><li>Standortvorteile: Zentral in München gelegen mit exzellenter Anbindung an öffentliche Verkehrsmittel</li></ul><p>**Ihr nächster Karriereschritt – Werden Sie Teil unseres Expertenteams!**</p><p>Wenn Sie eine neue Herausforderung in einem dynamischen Umfeld suchen und die Arbeit mit Patient\\*innen Ihre Leidenschaft ist, freuen wir uns darauf, Sie kennenzulernen!</p><p>**Haben wir Ihr Interesse geweckt?**</p><p>Dann senden Sie uns gerne Ihre aussagekräftige Bewerbung. Für Rückfragen stehen wir Ihnen zur Verfügung: MVZ Pneumologie München Ost Leuchtenbergring 3 81677 München Ihre Ansprechpartnerin: Ulrike Titzl Tel.: + 49 173 - 5167351 Email: bewerbung@lungenaerzte.net</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003971497-S",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1003971686-S",
+    "slug": "dr-stephan-bartmann-allgemeinarzt-arztin-arzt-m-w-d-auf-minijob-oder-teilzeitbasis-gesucht-freitags-und-als-urlaub-10001-1003971686-s",
+    "company": "arbeitsagentur",
+    "employer": "Dr. Stephan Bartmann Allgemeinarzt",
+    "title": "Ärztin / Arzt (m/w/d) auf Minijob- oder Teilzeitbasis gesucht – freitags und als Urlaubsvertretung",
+    "locations": [
+      "Aschaffenburg, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Für unsere Praxis suchen wir eine engagierte und zuverlässige Ärztin oder einen Arzt (m/w/d), die/der uns regelmäßig einmal wöchentlich, vorzugsweise freitags, sowie bei Bedarf als Urlaubsvertretung unterstützt.</p><p>Die Arbeitszeiten sind freitags von ca. 07:30/08:00 Uhr bis 12:00/13:00 Uhr.</p><p>Der Tätigkeitsumfang ist überschaubar, da Ihnen eine PCM unterstützend zur Seite steht und Sie im Praxisalltag tatkräftig entlastet. So können Sie sich auf Ihre ärztlichen Aufgaben konzentrieren.</p><p>Wir freuen uns ausdrücklich auch über Ärztinnen und Ärzte im Ruhestand, die weiterhin Freude an ihrem Beruf haben und sich gerne für einige Stunden pro Woche in einer Praxis einbringen möchten.</p><p>Wenn Sie Interesse an einer unkomplizierten und angenehmen Tätigkeit in unserem Praxisteam haben, freuen wir uns auf Ihre Kontaktaufnahme!</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003971686-S",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1003972647-S",
+    "slug": "klinikum-nordfriesland-ggmbh-oberarzt-m-w-d-mvz-und-klinik-radiologie-10001-1003972647-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Nordfriesland gGmbH",
+    "title": "Oberarzt (m/w/d) MVZ und Klinik Radiologie",
+    "locations": [
+      "Niebüll, Schleswig-Holstein, Germany",
+      "Husum, Nordsee, Schleswig-Holstein, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "radiology",
+    "level": "senior",
+    "descriptionHtml": "<p># Oberarzt (m/w/d) MVZ und Klinik Radiologie Keine Vordergrunddienste (externe teleradiologische Unterstützung) Teils mobiles Arbeiten von zu Hause möglich</p><p>Arbeitsort:<br />Klinik Husum und Niebüll</p><p>Arbeitszeit:<br />Voll- oder Teilzeit</p><p>Start:<br />ab sofort</p><p>## Ihre Aufgaben:</p><ul><li>Sie sind verantwortlich für die Versorgung ambulanter und stationärer Patienten im gesamten Spektrum der radiologischen Diagnostik.</li><li>Sie arbeiten interdisziplinär mit den anderen Fachabteilungen und Standorten des Klinikverbundes zusammen.</li><li>In Niebüll sind Sie federführend für die MRT Bildgebung zuständig.</li><li>Sie arbeiten an beiden Standorten in Husum und Niebüll zu etwas jeweils 50% der Zeit</li></ul><p>## Ihr Profil:</p><ul><li>Facharzt (m/w/d) für Radiologie.</li><li>Erfahrungen im CT, MRT und konventionellen Röntgen.</li><li>Interesse an Interventionen (diagnostischen Punktionen, Drainagen, ggf. Gefäßinterventionen) wünschenswert, aber nicht zwingend erforderlich.</li><li>Die Bereitschaft am Back-up-Hintergrund (Rufbereitschaft) für die von extern gestellte teleradiologische Versorgung teilzunehmen.</li><li>Ein hohes Maß an Engagement, Fachkompetenz, Durchsetzungs-vermögen, Kommunikationsstärke und Teamfähigkeit.</li><li>Sie suchen eine Stelle mit einer guten Vereinbarkeit von Beruf und Familie.</li></ul><p>## Ihre Vorteile:</p><ul><li>Zielgerichtete und strukturierte Personalentwicklung</li><li>Vielfältige Fort- und Weiterbildungsangebote</li><li>Führungskräfteentwicklung mit Coaching- &amp; Workshop-Angeboten</li><li>Eingruppierung in die Entgeltgruppe EG III TV Ärzte VKA bei Erfüllung der tariflichen Voraussetzungen.</li><li>Ein betriebliches Gesundheitsmanagement</li><li>Eine familienfreundliche Arbeitgeberkultur</li><li>Betriebsnahe Kindertagesstätten und flexbile Arbeitszeitmodelle</li><li>Das Nah.SH-Jobticket für günstige Mobilität</li><li>E-Bike-Leasing mit Arbeitgeberzuschuss</li><li>Firmenfitness mit dem EGYM-Wellpass</li></ul><p>Die Radiologen im MVZ sowie den Kliniken in Husum und Niebüll stellen die Versorgung sämtlicher Abteilungen und Ambulanzen der Kliniken auf dem gesamten Gebiet der diagnostischen und interventionellen Radiologie sicher. Hierfür stehen ein Angiographie-Arbeitsplatz, 64 Zeilen Spiral-CT in Husum, 16 Zeilen-CT in Niebüll, drei 1,5T MRT (davon zwei neue aus 2026), digitalisierte konventionelle Röntgendiagnostik mit DL-Arbeitsplatz und die digitale Vollfeldmammographie – inkl. Tomosynthese-Einheit zur Verfügung. Die radiologischen Abteilungen sind klinikübergreifend über ein PACS verbunden. Das Untersuchungsspektrum umfasst dabei alle orthopädisch-unfallchirurgischen Fragestellungen, Viszeral- und Gefäßchirurgie, Innere Medizin mit Onkologie und Kardiologie, Gynäkologie, Geriatrie, Neurologie und Urologie.</p><p>Neben einer abteilungsinternen Fortbildungsreihe und der Möglichkeit zur Teilnahme an interdisziplinären Boards erhalten Sie einen Zugang zur Akademie Online der Deutschen Röntgen-Gesellschaft.</p><p>Teils mobiles Arbeiten von zu Hause aus möglich.</p><p>**Für Rückfragen steht Ihnen gerne unsere Chefärztin der Radiologie, Frau PD Dr. Caroline Jung, unter der Tel. 04841 660-1257, zur Verfügung. Wir freuen uns auf den ersten Kontakt mit Ihnen.**</p><p>Sie haben Fragen?<br />Wir sind für Sie da.</p><p>[karriere@klinikum-nf.de](https://mailto:karriere@klinikum-nf.de)</p><p>Klinikum Nordfriesland gGmbH</p><p>Gabriele Drescher</p><p>Personalabteilung</p><p>## Unsere Social-Media-Kanäle:</p><p>[www.instagram.com/klinikum\\_nf](https://www.instagram.com/klinikum_nf/)[www.facebook.com/klnikumnordfriesland](https://www.facebook.com/klinikumnordfriesland)</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003972647-S",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6845,6 +6910,24 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12288-4991506055-S",
+    "slug": "landkreis-hameln-pyrmont-arztin-arzt-m-w-d-fur-das-team-gutachten-empfang-labor-bestattungswesen-12288-4991506055-s",
+    "company": "arbeitsagentur",
+    "employer": "Landkreis Hameln-Pyrmont",
+    "title": "Ärztin/Arzt (m/w/d) für das Team Gutachten/Empfang/Labor/ Bestattungswesen",
+    "locations": [
+      "Hameln, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Über uns Der Landkreis Hameln-Pyrmont sucht für sein Gesundheitsamt<br />zum nächstmöglichen Zeitpunkt eine/n Ärztin/Arzt. Die<br />Stellenbesetzung erfolgt unbefristet und in Teilzeit mit einer<br />wöchentlichen Arbeitszeit von 24 Stunden. Ihre wesentlichen Aufgaben:<br />Erstellung beamtenrechtlicher Gutachten Erstellung von Stellungnahmen<br />im Rahmen der Bedarfsermittlung nach SGB IX Plausibilitätsprüfung<br />von Todesbescheinigungen im Vertretungsfall Abschließende Prüfung<br />und Unterzeichnung von Leichenpässen sowie<br />Betäubungsmittelbescheinigungen (BtM-Bescheinigungen) für das<br />Ausland im Vertretungsfall Prüfung von Gesundheitsfragebögen im<br />Rahmen der Fahrerlaubnis-Verordnung (FeV) Durchführung der<br />Impfsprechstunde und des Impfangebots Erstellung ärztlicher<br />Stellungnahmen nach dem SGB II Ihre Kompetenzen: Sie bringen mit<br />Approbation als Ärztin/Arzt eine kommunikative und kooperative<br />Persönlichkeit Idealerweise haben Sie bereits mehrjährige berufliche<br />Erfahrung im Bereich Psychiatrie, Rehabilitationsmedizin,<br />Allgemeinmedizin, Innere Medizin, Chirurgie oder Orthopädie Eine<br />fachärztliche Anerkennung möglichst im Bereich Allgemeinmedizin, der<br />Inneren Medizin, der Orthopädie oder der Psychiatrie ist<br />wünschenswert. In diesem Fall besteht die Möglichkeit einer<br />Eingruppierung in die Entgeltgruppe 15 TVöD. Für Tätigkeiten im<br />Außendienst ist der Besitz des Führerscheins der Klasse B<br />erforderlich. Die Bereitschaft zur Bereitstellung des privateigenen<br />Fahrzeuges für dienstliche Zwecke wird erwartet. Entstehende Kosten<br />werden im Rahmen des Reisekostenrechts erstattet. Wir bieten Ihnen ein<br />teamorientiertes Arbeiten mit modernen Arbeitsplätzen in den<br />Räumlichkeiten des Gesundheitsamtes in Hameln eine fortschrittliche<br />Integration von neuen Mitarbeitenden im Rahmen unseres Onboardings<br />eine Förderung des Dialogs über Mitarbeiterjahresgespräche eine<br />betriebliche Gesundheitsförderung Instrumente zur Vereinbarkeit von<br />Familie und Beruf sowie Fortbildungsmöglichkeiten zur<br />Weiterentwicklung Ihrer fachlichen und persönlichen Kompetenzen die<br />Möglichkeit des Fahrradleasings attraktive Rabatte über unser<br />Corporate-Benefits-Portal eine Mitgliedschaft bei EGYM Wellpass:<br />Trainieren in über 16.000 Sport- und Gesundheitseinrichtungen sowie<br />Zugang zu einem vielfältigen Online-Angebot (Zuschuss in Höhe von<br />30,00 € pro Monat) sowie eine unbefristete Teilzeitstelle vergütet<br />nach Entgeltgruppe 15 TVöD, inkl. tariflicher Zulage in Höhe von 300<br />€ (hierfür fachärztliche Qualifikation erforderlich) Für weitere<br />Informationen über den Landkreis Hameln-Pyrmont als Arbeitgeber und<br />Ihre Vorteile bei uns schauen Sie gerne auf unsere Homepage. Die<br />Arbeitsbedingungen richten sich nach dem Tarifvertrag für den<br />öffentlichen Dienst (TVöD). Die zusätzliche Altersvorsorge erfolgt<br />über die Versorgungsanstalt des Bundes und der Länder (VBL).<br />Informationen zu den Kriterien für die Festlegung des Entgelts, der<br />Entgelthöhe und der Entgeltentwicklung sowie zur Jahressonderzahlung<br />und der leistungsorientierten Bezahlung finden Sie auf der<br />Internetseite der Vereinigung der kommunalen Arbeitgeber (VKA). Zur<br />Bewerbung Der Landkreis Hameln-Pyrmont ist ein familienfreundlicher<br />Arbeitgeber mit einer zukunftsfähigen Unternehmenskultur (INQA). Wir<br />fördern die berufliche Gleichstellung aller Mitarbeitenden sowie die<br />Vielfalt der Beschäftigten. Es gehört zu unserem Selbstverständnis,<br />dass Bewerber/-innen mit Schwerbehinderung und ihnen gleichgestellte<br />Personen bei gleicher Eignung besonders berücksichtigt werden.<br />Sollten Sie an einer Mitarbeit bei uns interessiert sein, freuen wir<br />uns über Ihre Bewerbung bis zum 22.11.2026 mit den üblichen<br />Unterlagen. Für Ihre Bewerbung nutzen Sie bitte unsere<br />Online-Bewerbung. Sie finden die Stellenanzeige über unsere<br />Arbeitgeberhomepage unter offene Stellen. Für telefonische Auskünfte<br />zum Bewerbungsverfahren steht Ihnen Frau Brechelt vom Amt für<br />Personalmanagement unter der Telefonnummer 05151 903-1154 zur<br />Verfügung. Fragen zum Aufgabengebiet beantwortet Ihnen die Leiterin<br />des Teams Gutachten/Empfang/Labor/Bestattungen Frau Dr. Behnke, unter<br />der Telefonnummer 05151 903-5227.</p>",
+    "applyUrl": "https://www.persy.jobs/persy/l/job-ju5f4-b",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12336-a26f615j0455887-S",
     "slug": "verbund-katholischer-kliniken-dusseldorf-ggmbh-oberarzt-viszeralchirurgie-und-endokrine-chirurgie-m-w-d-12336-a26f615j0455887-s",
     "company": "arbeitsagentur",
@@ -7681,7 +7764,7 @@
     "postedAt": "2026-04-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8755,6 +8838,8 @@
     "applyUrl": "https://www.jobware.de/job/064585133?jw_chl_seg=ARBEITSAGENTUR",
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9499,6 +9584,8 @@
     "applyUrl": "https://www.jobexport.de/job/5266748.html?exp=81&cid=7d87f228-eb97-48fe-9bef-06bf0f8c521d",
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10321,6 +10408,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:14795-71184_125166-S",
+    "slug": "bezirksamt-spandau-von-berlin-abt-persfinwifo-ps-ii-abr-leitung-des-fachbereichs-infektionsschutz-krankenhaus-hygiene-umweltbezogener-ge-14795-71184-125166-s",
+    "company": "arbeitsagentur",
+    "employer": "Bezirksamt Spandau von Berlin Abt. PersFinWiFö - PS II Abr.-",
+    "title": "Leitung des Fachbereichs Infektionsschutz, (Krankenhaus-)Hygiene, umweltbezogener Gesundheitsschutz",
+    "locations": [
+      "Berlin, Berlin, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Öffentliches Gesundheitswesen",
+    "category": "medicine",
+    "specialty": "laboratory-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p># Leitung des Fachbereichs Infektionsschutz, (Krankenhaus-)Hygiene, umweltbezogener Gesundheitsschutz mit den Bereichen der Impfberatungsstelle und der Ordnungsbehördlichen Bestattungen<br />Unser **Gesundheitsamt** besteht aus drei Fachbereichen und der allgemeinen Verwaltung und ist zentraler Ansprechpartner rund um das Thema Gesundheit. Denn die Gesundheit unseres Bezirks mit über 257.000 Spandauerinnen und Spandauern liegt uns am Herzen. Von Prävention über Förderung bis hin zu Beratung und Hilfsangeboten sind wir an vielen wichtigen Lebensthemen der Menschen im Bezirk beteiligt und bieten in den Bereichen verschiedene Dienstleistungen an.</p><p>**Wenn auch Sie zu einem gesunden Spandau beitragen möchten, dann kommen Sie in unser Team!**</p><p>## Ihre Aufgaben<br />**Leitungsaufgaben:**<br />-  Leitung des Bereichs Infektionsschutz, Hygiene und umweltbezogener Gesundheitsschutz mit Weisungs- und Aufsichtsbefugnis gegenüber allen Dienstkräften sowie die fachliche Kontrolle der Mitarbeitenden<br />-  Dienstliche und fachliche Verantwortung für den Fachbereich (Gesundheitsaufsicht, Impfberatungsstelle sowie Ordnungsbehördliche Bestattungen)<br />-  Stellvertretung der Amtsleitung (z.B. im medizinischen Katastrophenschutz)</p><p>**Fachliche Aufgaben:**<br />-  Schutz der Bevölkerung vor Infektionskrankheiten, Epidemien, Pandemien<br />-  Erkennung, Verhütung und Bekämpfung von Infektionskrankheiten und Sicherstellung seuchenhygienischer oder prophylaktischer Maßnahmen nach dem Infektionsschutzgesetz (IfSG)</p><p>**Eine zusätzliche Beschreibung können Sie dem Anforderungsprofil unter \"weitere Informationen\" entnehmen.**<br />**BESETZBAR AB**<br />01.02.2027<br />**BESETZUNGSART**<br />unbefristet<br />**BEWERBUNGSFRIST**<br />19.11.2026<br />**ARBEITSZEIT**<br />Besoldung: Vollzeit mit 40 WoStd., Teilzeit möglich<br />Tarif: Vollzeit mit 39,4 bzw. 42 WoStd., Teilzeit möglich<br />**BESOLDUNG/ ENTGELT**<br />Brutto bei Vollzeit: 5.658 - 7.854 (E 15), 6.446 - 8.042 (A 15), 7.426 - 9.302 (Ä 2)\\*<br />\\*je nach persönlicher Voraussetzung</p><p>Unter bestimmten persönlichen Voraussetzungen und in Abhängigkeit der Bewerberlage besteht zur Personalgewinnung die Möglichkeit auf ein höheres Entgelt:<br />-  durch Zahlung einer Fachkräftezulage von bis zu 1.000€<br />-  durch Anerkennung förderlicher Zeiten (§ 16 Abs. 2 TV-L)<br />-  durch die Vorweggewährung von Stufen (§ 16 Abs. 5 TV-L)</p><p>**EINSATZORT**<br />Carl-Schurz-Str. 2/6, 13597 Berlin</p><p>## Ihr Profil<br />**Bitte beachten Sie, dass Ihr Profil bzw. die formalen Voraussetzungen zwingend erforderlich sind.**</p><p>Für Beamtinnen/Beamte (m/w/d):<br />-  Erfüllung der laufbahnrechtlichen Voraussetzungen für das zweite Einstiegsamt der Laufbahngruppe zwei (ehemals höherer Dienst) der Laufbahnrichtung Gesundheit und Soziales – Gesundheitswesen – Ärztlicher Dienst</p><p>Für Tarifbeschäftigte (m/w/d):<br />-  Abgeschlossenes Studium der Humanmedizin **sowie** eine Approbation als Arzt/Ärztin<br />und<br />-  Abgeschlossene Weiterbildung zum Facharzt / zur Fachärztin im Öffentlichen Gesundheitswesen</p><p>Wünschenswert sind:<br />-  mehrjährige Erfahrung im Öffentlichen Gesundheitsdienst<br />-  Erfahrungen in der Führung von Mitarbeitenden</p><p>Für die stellvertretende Wahrnehmung der Aufgaben der Amtsärztin/des Amtsarztes ist gemäß § 3 Abs. 2 GDG die abgeschlossene Facharztweiterbildung für Öffentliches Gesundheitswesen **unabdingbar**.<br />-  verhandlungssichere Kenntnisse der deutschen Sprache entsprechend der Stufe C1 des gemeinsamen europäischen Referenzrahmens für Sprachen</p><p>## Das bieten wir</p><p>Arbeiten für das Gemeinwohl<br />Mit unserer Arbeit gestalten wir das Leben der Menschen in Spandau und stärken das Miteinander.</p><p>Gute Verkehrsanbindung<br />Mit bester Anbindung an den Nah- und Fernverkehr bequem, schnell und umweltfreundlich ans Ziel.</p><p>Gesundheitsmanagement<br />Mit vielfältigen Sport- und Präventionsangeboten für mehr Wohlbefinden und eine starke Gesundheit.</p><p>Vereinbarkeit von Beruf und Privatleben<br />Mit flexiblen und individuellen Arbeitszeiten, Homeoffice und mobiler Arbeit für mehr Lebensqualität und Balance im Alltag.</p><p>Finanzielle Anreize<br />Mit Firmenticketzuschuss, Hauptstadtzulage und Sonderzahlungen bleibt mehr übrig.</p><p>Weiterbildung<br />Mit Fort- und Weiterbildungen die persönliche Entwicklung stärken und neue Perspektiven eröffnen.</p><p>## Hinweise zum Bewerbungsverfahren und Ansprechpersonen<br />ANSPRECHPERSON(EN)<br />Zum Bewerbungsverfahren<br />Frau Franke ◼ Personalsachbearbeitung im Gesundheitsamt ◼ (030) 90279 - 4021<br />Frau Weinhold ◼ Personalmanagement ◼ (030) 90279 - 3107<br />Zum Aufgabengebiet<br />Frau Feustel ◼ Leitung des Gesundheitsamtes ◼ (030) 90279 - 4010<br />ERFORDERLICHE UNTERLAGEN<br />-  Anschreiben (inkl. Kontaktdaten)<br />-  Lebenslauf (tabellarisch)<br />-  Nachweis über geforderte Qualifikation<br />-  aktuelle Beurteilung oder ggf. Arbeitszeugnis<br />-  ggf. unterschriebene Einverständniserklärung zur Personalakteneinsicht</p><p>BITTE BEACHTEN<br />-  Unterlagen werden nach Ablauf der Bewerbungsfrist geprüft<br />-  nur vollständige Unterlagen in deutscher Sprache werden berücksichtigt<br />-  bei ausländischen Abschlüssen sind Nachweise zur Gleichwertigkeit mit deutschem Abschluss erforderlich<br />-  mehrstufiges Auswahlverfahren möglich<br />-  Kommunikation per E-Mail über das rexx System bzw. telefonisch<br />-  Kosten (Porto, Fahrtkosten o.ä.) werden nicht erstattet<br />-  Bewerbungsfoto nicht erforderlich</p><p>HINWEISE<br />Wir schätzen und fördern die Vielfalt und Chancengleichheit und heißen daher Bewerbungen unabhängig von Geschlecht, Lebensalter, Behinderungen, dem ethnischen Hintergrund, der Religion und Weltanschauung oder der sexuellen Orientierung willkommen. Insbesondere Bewerbungen von Menschen mit Behinderungen sowie Menschen mit Migrationsgeschichte sind ausdrücklich erwünscht. Bei gleichwertiger Qualifikation werden schwerbehinderte und diesen gleichgestellten Menschen bevorzugt eingestellt sowie Menschen mit Migrationshintergrund in besonderem Maße berücksichtigt.<br />UNSERE KARRIERESEITE -&gt; https://www.berlin.de/ba-spandau/karriere/</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14795-71184_125166-S",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:14837-80A80E2D4230AFA4BC4-S",
     "slug": "ilm-kreis-kliniken-arnstadt-ilmenau-ggmbh-klinik-arnstadt-facharzt-zur-weiterbildung-im-teilgebiet-kinderkardiologie-m-w-d-14837-80a80e2d4230afa4bc4-s",
     "company": "arbeitsagentur",
@@ -10339,7 +10446,7 @@
     "postedAt": "2025-05-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11539,7 +11646,7 @@
     "postedAt": "2025-12-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11840,6 +11947,46 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:16990-20261104-261839-S",
+    "slug": "kliniken-landkreis-heidenheim-ggmbh-chefarzt-m-w-d-viszeral-thorax-und-gefa-chirurgie-16990-20261104-261839-s",
+    "company": "arbeitsagentur",
+    "employer": "Kliniken Landkreis Heidenheim gGmbH",
+    "title": "Chefarzt (m/w/d) Viszeral-, Thorax- und Gefäßchirurgie",
+    "locations": [
+      "Heidenheim an der Brenz, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Viszeralchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "head",
+    "descriptionHtml": "<p>Rund 2.000 Beschäftigte in etwa 80 Berufen sind in der Klinik-Gesellschaft beschäftigt. Sie besteht aus dem Klinikum Heidenheim, einem Medizinischen Versorgungszentrum sowie der Servizio Heidenheim GmbH. Ausgezeichnet als akademisches Lehrkrankenhaus der Universität Ulm mit 15 Fachkliniken, 2 Instituten, 10 Organ- und Behandlungszentren sowie 6 MVZ-Fachbereichen sichert die Klinik-Gesellschaft die ambulante und stationäre Gesundheitsversorgung. Sie zählt zu den größten Arbeitgebern und Dienstleistungsunternehmen in der Region Ostwürttemberg.Unsere Klinik für Viszeral-, Thorax- und Gefäßchirurgie befasst sich mit unterschiedlichen Schwerpunkten, wie beispielsweise der minimalinvasiven und roboterassistierten Chirurgie (Da-Vinci) der Bauch- und Brusthöhle, der Chirurgie des oberen Gastrointestinaltraktes, des Pankreas, die kolorektale Chirurgie inkl. Proktologie sowie der Bariatrischen Chirurgie. Hinzu kommen die zertifizierten Zentren, bestehend aus Darmkrebszentrum und Gefäßzentrum. Die Besetzung des Teams der Klinik für Viszeral-, Thorax- und Gefäßchirurgie ist 1-8-10.Für unser Team der Klinik für Viszeral-, Thorax- und Gefäßchirurgie suchen wir Sie zum nächstmöglichen Zeitpunkt. Unsere Stelle ist unbefristet in Vollzeit zu besetzen.Was Sie erwartetStrategische und fachliche Weiterentwicklung sowie verantwortliche Leitung der Abteilung inkl. Mitwirkung an der PatientenbehandlungSicherstellung einer qualitativ hochwertigen Aus- und Weiterbildung von Studierenden im praktischen Jahr (PJ), Assistenz-, Fach- und Oberärztinnen und -ärztenSchärfung des Leistungsprofils unter Berücksichtigung medizinischer, ökonomischer und organisatorischer Aspekte in enger Zusammenarbeit mit der Klinikgeschäftsführung, sowie Überprüfung der Prozesse und BehandlungspfadeWeiterentwicklung des ambulanten und stationären Leistungsangebots unter besonderer Berücksichtigung der WahlleistungsmedizinWeiterentwicklung und Stärkung der regionalen VersorgungsstrukturenRepräsentation des Fachgebiets nach innen und außen und Zusammenarbeit mit den Kooperationspartnern Was Sie mitbringenFacharzt (m/w/d) für Allgemein- und Viszeralchirurgie, Zusatzweiterbildung spezielle Viszeralchirurgie, optional Zusatzweiterbildung GefäßchirurgieEine Habilitation ist wünschenswertFundierte Fachkompetenz im Bereich der Viszeral- und Allgemeinchirurgie sowie Versiertheit in der Durchführung minimalinvasiver und roboterassistierter EingriffeUmfangreiche Erfahrung in der qualifizierten ärztlichen Aus- und Weiterbildung sowie der Besitz/zeitnahe Erwerb einer entsprechenden WeiterbildungsermächtigungMehrjährige Management- und Führungskompetenz in verantwortungsvoller/leitender PositionTeamfähigkeit sowie Einfühlungsvermögen für die Anliegen der PatientenWas wir Ihnen bietenFachlich anspruchsvolle und verantwortungsvolle Führungsaufgabe mit GestaltungspotenzialMöglichkeit zur innovativen Weiterentwicklung des Fachbereichs durch Einbringen eigener/neuer SchwerpunkteEtablierter Schwerpunktversorger und akademisches LehrkrankenhausFörderung Ihrer persönlichen und beruflichen WeiterbildungFahrrad-Leasing – nachhaltig mobil mit dem Fahrrad zur ArbeitEGYM Wellpass – deutschlandweit flexibel trainieren und entspannenCorporate Benefits – Mitarbeitervorteile und RabattaktionenVergünstigungen in unserer hauseigenen Apotheke und KantineMitarbeiter-Apartments zu vergünstigten KonditionenIhre VergütungNach AbspracheIhr KontaktDr. Dennis Göbel I Geschäftsführer I Tel. +49 7321 33 2001Karola Schulze I Bereichsleitung Personalmanagement I Tel. +49 7321 33 2030</p>",
+    "applyUrl": "https://www.deutsche-pflegejobs.de/job/alle-anderen/chefarzt-m-w-d-viszeral-thorax-und-gefaesschirurgie-261839?utm_source=aa",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:16990-20261105-177463-S",
+    "slug": "klinikum-lippe-assistenzarzt-m-w-d-gastroenterologie-16990-20261105-177463-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Lippe",
+    "title": "Assistenzarzt (m/w/d) Gastroenterologie",
+    "locations": [
+      "Detmold, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin und Gastroenterologie",
+    "category": "medicine",
+    "specialty": "gastroenterology",
+    "level": "resident",
+    "descriptionHtml": "<p>Für die Klinik für Gastroenterologie und Infektiologie (Chefarzt Univ.-Prof. Dr. med. Johannes J. Tebbe) des Klinikums Lippe suchen wir zum nächstmöglichen Termin einen Assistenzarzt (m/w/d). Die Klinik mit den Schwerpunkten Gastroenterologie/Hepatologie, Infektiologie, Diabetologie und Neurogastroenterologie verfügt über 90 Betten einschließlich Infektionsabteilung und Intensivstation, die derzeit von 20 Ärzten (1-5-14) betreut werden. Jährlich werden in der Abteilung ca. 4500 Patienten stationär versorgt. Die interdisziplinäre Endoskopie erfüllt in allen Bereichen den höchsten Standard einer modernen, leistungsfähigen Endoskopie. Aktuell werden jährlich ca. 8000 diagnostische und therapeutische endoskopische Eingriffe durchgeführt. Die interventionelle Endoskopie stellt hierbei neben der Endosonographie einen besonderen Schwerpunkt der Abteilung dar. Zur Abteilung zählt auch das interdisziplinäre Ultraschallzentrum in dem jährlich mehr als 12000 sonographische Prozeduren inkl. Interventionen und kontrastmittelverstärkter Sonographie durchgeführt werden. Abgerundet wird die diagnostische Kompetenz der Klinik durch ein leistungsfähiges gastroenterologisches und neurogastroenterologisches Funktionslabor. Ihre Aufgaben:Ärztliche Betreuung und Versorgung stationärer und ambulanter Patienten mit gastroenterologischen ErkrankungenDurchführung diagnostischer und therapeutischer Maßnahmen unter fachärztlicher AnleitungMitwirkung bei endoskopischen Untersuchungen und Eingriffen sowie schrittweise Übernahme eigenständiger TätigkeitenTeilnahme an Visiten sowie Erstellung und Umsetzung individueller BehandlungskonzepteIhr Profil:Approbation als Arzt (m/w/d)Interesse an Facharztweiterbildung für Innere Medizin und GastroenterologieIdealerweise erste klinische Erfahrungen im Bereich der Inneren Medizin oder GastroenterologieVerantwortungsbewusste, selbstständige und patientenorientierte Arbeitsweise Die Vergütung erfolgt nach TV-Ärzte EG 1 mit allen sonst üblichen Leistungen des öffentlichen Dienstes. Schwerbehinderte Bewerber werden bei gleicher Eignung und Befähigung bevorzugt berücksichtigt. Es besteht grundsätzlich die Möglichkeit der Teilzeitbeschäftigung. Sie haben Fragen? Für telefonische Auskünfte steht Ihnen Herr Univ.-Prof. Dr. med. Johannes J. Tebbe unter Tel. 05231 72-1171 gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.deutsche-pflegejobs.de/job/alle-anderen/assistenzarzt-m-w-d-gastroenterologie-177463?utm_source=aa",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:17018-44549408-113-S",
     "slug": "klinikum-saarbrucken-ggmbh-chefarzt-urologie-m-w-d-17018-44549408-113-s",
     "company": "arbeitsagentur",
@@ -11998,7 +12145,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13538,7 +13685,7 @@
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   }
 ]

@@ -747,7 +747,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -2370,7 +2370,7 @@
     "postedAt": "2026-10-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -3203,6 +3203,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2018812",
+    "slug": "nvidia-senior-software-engineer-ai-networking-jr2018812",
+    "company": "nvidia",
+    "title": "Senior Software Engineer, AI Networking",
+    "locations": [
+      "US, TX, Austin",
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>We are seeking an outstanding Software Engineer to join our US-based networking software team. As a technical leader, you will lead the transformation of AI networking systems. You will apply your deep expertise to manage complex customer engagements and help develop our product and architecture direction. This role offers an outstanding opportunity to influence NVIDIA's networking technologies and make a significant impact on the industry.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Establish yourself as a technical specialist in AI networking products, specifically the BlueField DPU and ConnectX product lines. Architect, design, and develop innovative, scalable, and high-performance hardware-accelerated software solutions.</li><li>Lead deep technical engagements with hyperscalers, involving design-in, coding, bring-up, performance tuning, failure analysis, and production hardening.</li><li>Partner with internal engineering, product, and architecture teams to transform customer needs into product features, reference architectures, tooling, and guidelines.</li><li>Drive performance, reliability, and debuggability improvements across customer stacks and translate findings into actionable product, firmware, and software roadmap items.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>A Bachelor’s, Master’s or PhD in Software Engineering, Computer Science, Computer Engineering, Electrical Engineering or a related science degree (or equivalent experience)</li><li>12+ years of relevant industry experience, including technical leadership across complex systems.</li><li>Deep knowledge of networking protocols and distributed systems, with a strong understanding of RoCE/InfiniBand, L1–L4 fundamentals, and performance/latency tradeoffs.</li><li>Proven low-level software expertise with proficiency in C/C++ and comfort debugging across firmware, driver, OS, and application.</li><li>Demonstrated experience in high-performance networking and system-level debugging, including packet drops, retransmissions, congestion, QoS, ordering, and buffer management.</li><li>Excellent interpersonal skills, with the ability to clearly explain complex topics to engineers, PMs, and customer collaborators, and align cross-organizational teams toward a decision.</li><li>Result driven and comfortable multitasking in a dynamic environment with shifting priorities and changing requirements</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Prior experience in customer-facing technical leadership at hyperscalers/CSPs.</li><li>Hands-on expertise with RDMA verbs, DPDK, DOCA, NCCL, CUDA-aware networking, congestion control, and performance tuning at scale.</li><li>Experience building internal tools, telemetry, and automation that improve triage speed and operational excellence.</li><li>Experience leading multi-team initiatives across geo/time zones, with clear examples of influence without authority as well as eager and proactive in bringing to bear AI-powered tools to accelerate debugging, documentation, and day-to-day engineering efficiency while maintaining strong engineering judgment.</li></ul><br /><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you.</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />224,000 USD – 356,500 USD for Level 5; and 272,000 USD – 431,250 USD for Level 6.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-TX-Austin/Senior-Software-Engineer--AI-Networking_JR2018812",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2018931",
     "slug": "nvidia-release-manager-jr2018931",
     "company": "nvidia",
@@ -3217,7 +3234,7 @@
     "postedAt": "2026-10-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -4962,6 +4979,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-CPO-System-Hardware-Engineer_JR2021711",
     "postedAt": "2026-07-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5148,6 +5167,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Scientist--Multimodal-Agentic-RL_JR2022039",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5896,6 +5917,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--C---and-CUDA---Analytics-and-Data-Intelligence_JR2023072-1",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -7696,6 +7719,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2025038",
+    "slug": "nvidia-senior-integration-engineer-end-to-end-model-autonomous-vehicles-jr2025038",
+    "company": "nvidia",
+    "title": "Senior Integration Engineer, End-to-End Model - Autonomous Vehicles",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Intelligent machines powered by artificial intelligence are transforming transportation. NVIDIA is building the computing platforms, software, and AI systems that enable autonomous vehicles to perceive, reason, and act in complex environments. Our team develops NVIDIA’s end-to-end autonomous driving application. We are looking for a Senior Integration Engineer to accelerate the development, integration, evaluation, and deployment of end-to-end driving models across large-scale training infrastructure, simulation environments, and production vehicle platforms. In this role, you will work across model development, data, simulation, systems software, and vehicle engineering. You will help turn rapidly evolving AI models into reliable, high-performance autonomous driving functionality running on NVIDIA’s heterogeneous computing platforms.</p><p><b><b>What you’ll be doing:</b></b></p><ul><li><p>Integrate learned driving models with vehicle interfaces, sensor inputs, localization, mapping, safety systems, and other autonomous driving components.</p></li><li><p>Establish clear model input, output, timing, state-management, and runtime interface contracts.</p></li><li><p>Partner with model developers to improve model quality, debuggability, runtime behavior, and readiness for deployment.</p></li><li><p>Investigate discrepancies between model behavior in development environments and on target vehicle platforms.</p></li><li><p>Optimize model inference and surrounding software to meet latency, throughput, memory, determinism, and power requirements.</p></li><li><p>Develop tools and metrics for evaluating driving quality, safety, robustness, and regression performance at scale.</p></li><li><p>Perform in-vehicle testing, collect and analyze driving data, and complete autonomous driving missions.</p></li><li><p>Develop high-quality production code in C++ and Python using CUDA and other GPU-accelerated technologies.<br /> </p></li></ul><p><b><b>What we need to see:</b></b></p><ul><li><p>PhD with 1+ year, MS with 3+ years, or BS (or equivalent experience) with 5+ years of relevant experience in Computer Science, Computer Engineering, Robotics, Machine Learning, or a related field.</p></li><li><p>Strong C++ programming, software architecture, debugging, and performance-analysis skills, and model inference technologies such as CUDA and TensorRT.</p></li><li><p>Proficiency in Python and experience working with modern machine-learning frameworks such as PyTorch.</p></li><li><p>Experience developing software on Linux and embedded or real-time operating systems such as QNX.</p></li><li><p>Experience integrating machine-learning models into complex, performance-sensitive production systems.</p></li><li><p>Ability to diagnose issues across model behavior, application software, middleware, operating systems, and hardware.</p></li><li><p>Experience with autonomous driving, robotics, ADAS, or another real-time intelligent system.<br /> </p></li></ul><p><b><b>Ways to stand out from the crowd:</b></b></p><ul><li><p>Experience deploying end-to-end driving, robotics, or embodied-AI models on production hardware.</p></li><li><p>Familiarity with model optimization, quantization, compilation, profiling, and hardware-aware neural-network design.</p></li><li><p>A track record of turning research models into robust, measurable, and maintainable product functionality.</p></li><li><p>Self-motivation, sound engineering judgment, and a passion for solving cross-functional integration challenges.</p></li></ul><p>#AutonomousVehicles</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />152,000 USD – 241,500 USD for Level 3; and 184,000 USD – 287,500 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Integration-Engineer--End-to-End-Model---Autonomous-Vehicles_JR2025038",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2025052",
     "slug": "nvidia-post-silicon-validation-intern-2027-jr2025052",
     "company": "nvidia",
@@ -8741,7 +8780,7 @@
     "postedAt": "2026-09-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -9487,6 +9526,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--ML-Loop_JR2026750",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10394,6 +10435,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager---Nemotron_JR2027696",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10935,6 +10978,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Software-Verification-Engineer_JR2028309",
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11034,6 +11079,39 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Germany-Remote/Senior-Software-Engineer---Parking-for-Autonomous-Vehicles_JR2028385-1",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028396",
+    "slug": "nvidia-software-qa-engineer-ai-data-centers-jr2028396",
+    "company": "nvidia",
+    "title": "Software QA Engineer - AI Data Centers",
+    "locations": [
+      "Israel, Yokneam",
+      "Israel, Tel Hai"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>We are seeking a motivated QA Engineer to join NVIDIA’s Data Center Networking. In this role, you will help validate next-generation data center platforms that power AI, cloud, and high-performance computing. You will be part of a team ensuring our firmware, drivers, and networking solutions meet industry-leading standards of efficiency and quality. This is a hands-on opportunity to work with advanced hardware, large-scale environments, and cutting-edge technologies, while gaining real-world QA and automation experience.</p><p><b>What you'll be doing:</b></p><ul><li><p>Design, develop, and execute test plans for firmware and driver releases.</p></li><li><p>Perform manual and automated testing across regression, performance, scalability, and security domains.</p></li><li><p>Build and maintain test topologies in large-scale data center and AI-driven environments.</p></li><li><p>Develop and extend Python-based automation frameworks to improve coverage and efficiency.</p></li><li><p>Identify, reproduce, and track issues; collaborate with R&amp;D to drive analysis and validate fixes.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>B.Sc. degree in Computer Science, Electrical/Computer Engineering</p></li><li><p>1+ years of Knowledge at Networking protocols and Linux systems.</p></li><li><p>Programming / scripting skills (Python preferred).</p></li><li><p>Good communication skills and the ability to work effectively in a team.</p></li><li><p>Strong motivation to learn and grow in firmware, networking, data center, and AI-related QA.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Previous or hands-on experience in QA or networking validation.</p></li><li><p>Experience with data center networking, AI workloads, virtualization, or cloud platforms.</p></li><li><p>Proactive, curious, and eager to take ownership of technical challenges.</p></li></ul><p>At NVIDIA, you will work side-by-side with some of the best engineers in the industry, gaining mentorship, training, and hands-on experience that will accelerate your career. You’ll be exposed to state-of-the-art data center and AI technologies that drive the world’s most advanced applications. This role offers the chance to contribute to real product validation while building the skills, network, and knowledge to grow into a future leader in QA, firmware, networking, and AI-driven data center engineering.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-QA-Engineer---AI-Data-Centers_JR2028396",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028411",
+    "slug": "nvidia-hardware-validation-engineer-jr2028411",
+    "company": "nvidia",
+    "title": "Hardware Validation Engineer",
+    "locations": [
+      "US, OR, Hillsboro"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is leading the way in groundbreaking developments in Artificial Intelligence, High-Performance Computing, and Visualization. The GPU, our invention, serves as the visual cortex of modern computers and is at the heart of our products and services. Our work opens up new universes to explore, enables outstanding creativity and discovery, and powers what were once science fiction inventions from artificial intelligence to autonomous cars.</p><br /><p>We seek a HW Validation Engineer to join our System Products Team. This role offers you the ability to assist in building NVIDIA’s next generation of high-performance computing products. You will work with HW and SW engineers to prepare and carry out intricate test plans for GPU accelerated computing products. Along the way, you will confront exciting technical problems. The ideal candidate has a background in electrical engineering and understands software, firmware, and embedded systems. Do you enjoy working in a lab and want to take on new technology challenges? If yes, we encourage you to apply.</p><br /><p><b>What you will be doing:</b></p><ul><li>Debug and validate groundbreaking hardware.</li><li>Work with hardware and software engineers, program and technical leads, silicon engineers, and thermal/mechanical engineers for product development, validation, and debugging, to ensure quality products are brought to market.</li><li>Be among the first internal ‘customers’ for early prototypes of a new product. Help clear the path for release to our external customers by solving tough system and board level issues.</li><li>Perform PHY layer electrical testing and debugging using oscilloscopes, logic analyzers, and other lab equipment.</li><li>Validation will include CPU, GPU, AC and DC power solutions, NVLink, PCIe, I2C, I3C, JTAG, UART, USB, SPI, and many others.</li><li>Conduct system level performance testing using industry leading Deep Learning/AI applications.</li></ul><br /><p><b>What We Need to See:</b></p><ul><li>A Bachelor's degree or equivalent experience in the field of Electrical engineering or Electrical and Computer Science.</li><li>2+ years of relevant work experience </li><li>Hardware/software debug experience.</li><li>Ability to communicate clearly and effectively in both spoken and written forms.</li><li>Deep understanding of computing architectures.</li><li>Some exposure to Linux command line operation and Python.</li><li>Ability to adapt and thrive in a fast-paced environment where every day is a new challenge.</li><li>A passion for learning and working on the cutting edge of technology.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Understanding of DC/DC power supply operation and all sensor feedback control.</li><li>Proficiency in waveform analysis and PHY layer debug.</li><li>Background with system level validation, IO interconnect, PCI-Express high-speed data switches.</li><li>Experience with BMC, server management processors.</li></ul><br /><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family <a href=\"http://www.nvidiabenefits.com/\">www.nvidiabenefits.com/</a></p><p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-OR-Hillsboro/Hardware-Validation-Engineer_JR2028411",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -11437,6 +11515,24 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Firmware-Engineer--Ethernet-Switching_JR2028815-1",
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028819",
+    "slug": "nvidia-senior-software-engineer-doca-jr2028819",
+    "company": "nvidia",
+    "title": "Senior Software Engineer, DOCA",
+    "locations": [
+      "Israel, Yokneam",
+      "Israel, Raanana",
+      "Israel, Tel Aviv"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in an inclusive, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>Join NVIDIA's DOCA Security team and become a pivotal player in transforming the AI landscape! As a Senior Software Engineer, you will be at the forefront of developing NVIDIA Sentry, a groundbreaking security software framework. Our work encompasses DOCA Argus for host-memory introspection without agents and DOCA Tower, Sentry’s AI security gateway. This role provides a chance to define, implement, and test security features that protect AI agents at runtime, ensuring a flawless and secure computing environment.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Build and develop innovative runtime-security services on the BlueField DPU using C/C++ and Rust.</li><li>Develop agentless host-memory introspection tools to uncover Linux process and container activity, allowing runtime threat detection.</li><li>Develop gateway capabilities to inspect AI-agent requests and enforce access policies for models, tools, and data.</li><li>Connect workload context with network controls to support AI-agent containment outside the host.</li><li>Maintain host introspection accuracy across various Linux kernel versions, distributions, and host architectures, treating the observed host state as untrusted input.</li><li>Test and optimize runtime monitoring and traffic enforcement for performance and reliability under load.</li><li>Collaborate with security researchers and architects to transform threat models into effective runtime detections and enforcement features.</li><li>Work closely with the DOCA SDK, drivers, Linux kernel, firmware, and hardware teams to deliver coordinated security features.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc. or M.Sc. in Computer Science, Software Engineering, or equivalent experience in a related field.</li><li>8+ years of systems software development experience in C/C++ on Linux, with a willingness to work in Rust.</li><li>Strong understanding of Linux internals, including memory management, processes, and the networking stack.</li><li>Solid networking fundamentals, including TCP/IP, HTTP, and TLS.</li><li>Hands-on experience with Linux containers and Kubernetes.</li><li>Proven experience in debugging, profiling, and building automated tests for Linux software.</li><li>Strong analytical and communication skills, capable of explaining technical decisions across teams.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Background in runtime security, memory forensics, or virtual-machine introspection.</li><li>Experience with proxies, policy engines, or workload identity systems.</li><li>Knowledge of IPsec/IKEv2 with strongSwan or a similar IKE daemon.</li><li>Familiarity with NVIDIA OpenShell or similar sandbox runtimes for AI agents.</li><li>Contributions to upstream open-source projects through code, reviews, testing, or maintenance.</li></ul><br /><p>NVIDIA is well known as one of the technology industry's most attractive places to work. We have some of the most creative and committed professionals globally on our team. If you have a passion for developing systems that secure AI workloads, we want to hear from you. Join us and make a lasting impact on the world! Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Software-Engineer--DOCA_JR2028819",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   },
   {
@@ -11881,6 +11977,59 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Manager--Network-Delivery-and-Security_JR2029290",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029355",
+    "slug": "nvidia-senior-soc-architect-ras-jr2029355",
+    "company": "nvidia",
+    "title": "Senior SoC Architect, RAS",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, TX, Austin",
+      "US, OR, Hillsboro"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are now looking for a Senior Hardware Architect for our Tegra System-on-Chips (SoC) focused on Reliability, Availability, and Serviceability (RAS). Do you want to be part of the Artificial Intelligence (AI) revolution?  Interested in defining resilient computing platforms for datacenters, autonomous vehicles, edge systems, and other high-reliability applications? We are looking for an exceptional SoC architect to help define, drive, and deliver RAS hardware architecture across advanced CPUs and SoCs, from early architectural concepts through design implementation, verification, validation, and production readiness.</p><p><br />This position offers the opportunity to have real impact in a dynamic, technology-focused company developing innovative processor and system architectures at the forefront of machine learning, autonomous vehicles, high-performance computing, and edge computing. Work with world-class systems architects, RAS experts, design teams, verification teams, validation teams, firmware teams, and software partners to define end-to-end hardware RAS features that improve system resiliency, observability, debuggability, error containment, recovery, and serviceability. Space and radiation-aware design are important areas of interest for this role, including understanding how radiation effects can influence SoC reliability, but the primary focus is broad SoC RAS architecture and driving features successfully through the product development flow.</p><br /><p><b>What you’ll be doing:  </b></p><ul><li>Define and drive SoC-level RAS hardware architecture across CPUs, interconnects, memory systems, IOs, safety islands, firmware interfaces, and platform-level components.</li><li>Own RAS features from concept through architecture specification, micro-architecture alignment, RTL implementation support, design verification, silicon validation, debug, and production readiness.</li><li>Develop architectural requirements for fault detection, correction, containment, isolation, telemetry, error reporting, recovery, graceful degradation, serviceability, and diagnostic observability.</li><li>Work closely with design, verification, validation, firmware, software, and platform teams to ensure RAS features are implementable, verifiable, debuggable, and aligned with system-level requirements.</li><li>Understand the broader SoC architecture and identify how RAS mechanisms interact with performance, power, reset flows, clocks, memory hierarchy, interconnect behavior, firmware-visible controls, and platform software.</li><li>Create hardware specifications, architectural requirements, error-handling flows, design guidance, test plans, and architectural models in SystemC, C/C++, Python, or other relevant modeling environments where applicable.</li><li>Plan and review verification and validation strategies for RAS mechanisms, including error injection, recovery validation, coverage analysis, resiliency modeling, and architecture reviews.</li><li>Assist in failure analysis and silicon debug for lab, post-silicon, production, and field findings; develop diagnostic screens and localization methods for latent, intermittent, and environment-sensitive failures.</li><li>Apply RAS architecture principles to high-reliability deployment environments. This includes space-aware and radiation-aware use cases where single-event effects, memory corruption, logic corruption, or cumulative radiation exposure may impact system reliability.</li><li>Follow industry standards and research related to RAS, functional safety, semiconductor reliability, debuggability, verification, validation, and silicon testing.</li><li>Patent novel hardware architecture techniques that improve system resiliency, observability, serviceability, and recovery.</li></ul><br /><p><b>What we need to see:  </b></p><ul><li>MS or PhD degree in computer engineering, electrical engineering, or equivalent experience.</li><li>At least 8+ years of SoC architecture, design, verification, reliability, silicon validation, or related hardware development experience.</li><li>Strong understanding of Reliability, Availability, and Serviceability (RAS) in the SoC context, including fault detection, correction, containment, telemetry, recovery, degradation modes, debug visibility, and serviceability mechanisms.</li><li>Experience defining and driving hardware architecture features through the full development lifecycle, including architecture definition, design implementation, verification planning, validation, debug, and production readiness.</li><li>Strong understanding of overall SoC architecture and the ability to reason across micro-architecture, full-chip integration, firmware interfaces, software-visible behavior, platform flows, and customer use cases.</li><li>Meaningful industry expertise in one or more SoC architecture areas such as RAS, safety, debug, clocks, resets, interconnects, memory controllers, IO technologies, platform integration, firmware-visible error handling, or diagnostic infrastructure.</li><li>Hands-on experience with design verification, silicon validation, fault injection, coverage analysis, resiliency modeling, diagnostic development, or reliability validation methodology.</li><li>Familiarity with radiation effects, space operation, or other high-reliability deployment environments is strongly valued, including understanding how hardware architecture can mitigate single-event effects and related reliability risks.</li><li>Excellent analytical, written, and verbal interpersonal skills with the ability to work effectively across architecture, design, verification, firmware, software, validation, and customer-facing teams.</li></ul><br /><p><b>Ways to stand out from the crowd:  </b></p><ul><li>Demonstrated history of architecting and delivering complex SoC RAS features across design, verification, validation, and production phases.</li><li>Deep familiarity with architectural resiliency techniques such as ECC, parity, redundancy, replay, checkpoint/restart, scrubbing, isolation, containment, telemetry, error logging, recovery flows, and graceful degradation.</li><li>Experience with debug of hardware failures in simulation, emulation, post-silicon validation, production, customer deployments, or other high-reliability systems.</li><li>Familiarity with Design for Debug, Design for Test, Design for Reliability, silicon observability, fault-injection methodology, and coverage driven validation flows.</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you are creative, autonomous, and motivated to define and deliver resilient SoC architectures that improve reliability, debuggability, and serviceability across demanding applications, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />184,000 USD – 287,500 USD for Level 4; and 224,000 USD – 356,500 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-SoC-Architect--RAS_JR2029355",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029416",
+    "slug": "nvidia-senior-machine-learning-engineer-ai-safety-evaluations-jr2029416",
+    "company": "nvidia",
+    "title": "Senior Machine Learning Engineer, AI Safety Evaluations",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, Remote"
+    ],
+    "remote": true,
+    "category": "data",
+    "descriptionHtml": "<p>NVIDIA has helped redefine what computers can do. Now, generative AI is opening new possibilities for how people learn, create, and tackle problems. Realizing that potential means answering some of the hardest questions in AI: Where do models fall short? Which risks are we missing? How do we know our safeguards are working? As an expert in machine learning for Evaluations, you’ll help establish the evidence that guides the next generation of safer AI.   Your curiosity and scientific judgment can shape what we test, what we learn, and what we build next.</p><br /><p>We are looking for a Machine Learning Engineer / AI Researcher / Data Scientist to join our AI Safety and Responsibility efforts within Enterprise Risk Management. Engaging directly in engineering tasks, you will apply your data science and statistics skills.  You will turn open research questions into rigorous benchmarks, inventive experiments, and tools that reveal how multimodal large language models behave under pressure. Working with researchers and platform engineers, you’ll connect those discoveries to better training methods and safeguards, with reproducible results that inform technical reviews and executive decisions. If you love asking the question no one has thought to test, and building a convincing way to answer it, come help us define what progress in AI safety looks like.</p><br /><p><b>What You Will Be Doing:</b></p><ul><li>Safety Benchmarking: Design and maintain safety benchmarks for large language and multimodal models, translating risk scenarios into test cases, datasets, and scoring rubrics.</li><li>Evaluation Methodology: Define metrics and protocols that assess safety alongside model usefulness, using baselines, uncertainty estimates, and failure analysis to distinguish meaningful improvements from noise.</li><li>Reproducible Evaluation: Build reusable Python pipelines with versioned datasets, model configurations, and experiment tracking to reproduce results and compare performance across model releases.</li><li>Automated Red-Teaming: Develop tools to discover failure modes and expand evaluation coverage, incorporating human review to validate automated scoring and provide additional judgment.</li><li>Failure Analysis: Investigate model failures with researchers, document actionable findings, and develop regression tests to assess whether model changes resolve identified issues.</li><li>Results and Communication: Partner with platform engineers to store and aggregate evaluation results, and clearly communicate findings, limitations, and emerging risks to researchers and decision-makers.</li></ul><br /><h2>What We Need To See:</h2><ul><li>Education and Experience: Bachelor’s degree or equivalent experience, with 6+ years in the field of machine learning engineering or evaluation.  </li><li>Evaluation Design: Experience developing benchmarks, metrics, and statistically sound comparisons for ML systems, including selecting baselines and interpreting uncertainty.  Ability to translate ambiguous evaluation questions into testable experiments.</li><li>Engineering: Strong Python skills and experience building maintainable shared tools, data pipelines, and experiment-tracking workflows.</li><li>Analytical Rigor: Ability to assess dataset quality, identify limitations in metrics and scoring methods, and support conclusions with reproducible evidence.</li><li>Communication: Clearly explain findings and tradeoffs to researchers, engineering partners, and executives.</li></ul><br /><h2>Ways to Stand Out from the Crowd:</h2><ul><li>Evaluation: Experience evaluating LLMs, multimodal models, or agentic systems through adversarial testing or automated red-teaming.</li><li>Community Contributions: Contributions to public benchmarks or evaluation frameworks.</li><li>Research Publications: A publication track record and interest in continuing to publish at top tier venues.</li><li>Human-Aligned Evaluation: Experience validating model-based evaluators against human judgments or designing human-in-the-loop evaluation workflows.</li><li>Statistical Rigor: Strong model evaluation skills and a commitment to sound statistical practices, including confidence intervals.</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />184,000 USD – 287,500 USD for Level 4; and 224,000 USD – 356,500 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--AI-Safety-Evaluations_JR2029416",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029449",
+    "slug": "nvidia-senior-software-developer-ai-networking-jr2029449",
+    "company": "nvidia",
+    "title": "Senior Software Developer, AI Networking",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, TX, Remote",
+      "US, WA, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is changing the world of AI Networking with groundbreaking technology. We are excited to be adding an AI Networking Software Developer to our AI Networking SW development and codesign team. We are working with the latest NVIDIA hardware and technologies. We do full stack benchmarking for Data Center scale systems for AI training/inference and lower level benchmarks. We strive for automation and develop many tools in-house yet adopt community accepted practices and frameworks. Moreover we give back to community developing our own tools in public GitHub repositories. Our goal is to ensure that large-scale systems deliver expected performance in practice, not just on paper, by uncovering bottlenecks and driving continuous improvements.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Developing AI networking communication frameworks and applications running in production on the world’s largest supercomputers and data centers.</li><li>Develop production tools and benchmarks used by multiple teams inside and outside NVIDIA.</li><li>Enable new AI models within our benchmarking infrastructure and deliver insights through end-to-end analysis of large-scale workloads across hardware and software stacks.</li><li>Design and implement automation systems, including large-scale parameter search to identify optimal configurations across complex systems.</li><li>Collaborate closely with networking and hardware teams to co-design new features and software interfaces in a fast-paced, evolving environment.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc., M.Sc degree in Computer Science / Software engineering or equivalent experience.</li><li>5+ years of experience.</li><li>Professional Python development experience. We seek individuals who build maintainable, long-lived tools that do not impose a heavy burden on the team in terms of maintenance.</li><li>Solid Linux expertise and passion for working extensively in command-line environments.</li><li>Ability to work across a broad and evolving stack, with a strong drive to learn—from hardware and networking up to large-scale AI systems running across entire clusters</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Knowledge and/or experience with modern AI ecosystem: PyTorch, LLMs, inference and training.</li><li>Familiarity with cluster orchestration systems such as Slurm or Kubernetes.</li><li>Knowledge in MPI and HPC, InfiniBand, Ethernet and Networking.</li><li>Experience in performance optimizations</li></ul><br /><p>For two decades, we have pioneered visual computing, and the art and science of computer graphics. With our invention of the GPU - the engine of modern visual computing - the field has expanded to encompass video games, movie production, product design, medical diagnosis and scientific research. Today, we stand at the beginning of the next era, the AI computing era, ignited by a new computing model, GPU deep learning. This new model - where deep neural networks are trained to recognize patterns from massive amounts of data - has shown to be deeply effective at solving some of the most complex problems in everyday life. NVIDIA is widely considered to be one of the technology world's most desirable companies to work for. Are you creative and driven? Do you love a challenge? If so, we want to hear from you.</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />152,000 USD – 241,500 USD for Level 3; and 184,000 USD – 287,500 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 9, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Developer--AI-Networking_JR2029449",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "workday"
   }
 ]

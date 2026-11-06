@@ -415,7 +415,7 @@
     "postedAt": "2025-11-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -1605,6 +1605,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1207256617-S",
     "postedAt": "2026-07-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1663,6 +1665,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1207336195-S",
     "postedAt": "2026-07-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1684,7 +1688,7 @@
     "postedAt": "2026-07-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2084,6 +2088,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208227935-S",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -2651,7 +2657,7 @@
     "postedAt": "2025-05-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3137,6 +3143,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002474039-S",
     "postedAt": "2026-01-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3299,8 +3307,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002670442-S",
     "postedAt": "2026-03-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4399,7 +4405,7 @@
     "postedAt": "2026-07-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4522,8 +4528,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003495372-S",
     "postedAt": "2026-08-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5552,7 +5556,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6117,6 +6121,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10001-1003971351-S",
+    "slug": "mvz-hannover-mitte-gmbh-facharzt-facharztin-fur-hals-nasen-ohrenheilkunde-hno-hannover-mitte-10001-1003971351-s",
+    "company": "arbeitsagentur",
+    "employer": "MVZ Hannover Mitte GmbH",
+    "title": "Facharzt / Fachärztin für Hals-Nasen-Ohrenheilkunde (HNO) Hannover Mitte",
+    "locations": [
+      "Hannover, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "ent",
+    "level": "specialist",
+    "descriptionHtml": "<p>Für unsere HNO-Praxis in zentraler Lage in Hannover-Mitte suchen wir zum nächstmöglichen Zeitpunkt eine/n engagierte/n und freundliche/n **Facharzt / Fachärztin für Hals-Nasen-Ohrenheilkunde** zur Verstärkung unseres Teams.</p><p>### Das erwartet Sie:</p><ul><li>Eine attraktive Tätigkeit in einer modernen HNO-Praxis in zentraler Innenstadtlage</li><li>Flexible Arbeitszeitmodelle in Vollzeit oder Teilzeit</li><li>Ein angenehmes und kollegiales Arbeitsumfeld</li><li>Eigenverantwortliches und abwechslungsreiches Arbeiten</li></ul><p>### Das bringen Sie mit:</p><ul><li>Anerkennung als Facharzt/Fachärztin für Hals-Nasen-Ohrenheilkunde</li><li>Freude am Umgang mit Patientinnen und Patienten</li><li>Selbstständige, sorgfältige und verantwortungsbewusste Arbeitsweise</li><li>Teamfähigkeit und Engagement</li></ul><p>### Interesse geweckt?</p><p>Wir freuen uns auf Ihre Bewerbung!</p><p>Bitte senden Sie Ihre aussagekräftigen Bewerbungsunterlagen gerne per E-Mail an:</p><p>\\*\\*jan-ahmadi@gmx.de\\*\\*</p><p>Wir freuen uns darauf, Sie kennenzulernen!</p><p>**Ihr HNO-Praxisteam in Hannover-Mitte**</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003971351-S",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11949-16834231-S",
     "slug": "kardinal-schwarzenberg-klinikum-gmbh-facharzt-arztin-psychiatrie-und-psychotherapie-11949-16834231-s",
     "company": "arbeitsagentur",
@@ -6232,6 +6256,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/66690485-09e8-30d6-aef7-cd9455f482ac",
     "postedAt": "2026-07-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6526,6 +6552,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/bb0fed50-5ffa-39f6-97e7-6bc06a834c5c",
     "postedAt": "2026-09-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6830,7 +6858,7 @@
     "postedAt": "2026-10-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8306,6 +8334,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Belegarzt-D-Dermatologie-Allergologie-1278870?cp=BA",
     "postedAt": "2026-06-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8407,7 +8437,7 @@
     "postedAt": "2026-08-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9154,6 +9184,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12811-2371691-S",
+    "slug": "mediclin-albert-schweitzer-klinik-mediclin-baar-klinik-oberarzt-kardiologie-w-m-d-mediclin-albert-schweitzer-baar-klinik-12811-2371691-s",
+    "company": "arbeitsagentur",
+    "employer": "MediClin Albert Schweitzer Klinik / MediClin Baar Klinik",
+    "title": "Oberarzt Kardiologie (w/m/d), MediClin Albert Schweitzer / Baar Klinik",
+    "locations": [
+      "Königsfeld im Schwarzwald, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Oberarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "cardiology",
+    "level": "senior",
+    "descriptionHtml": "<p>Über die MEDICLIN Albert Schweitzer Klinik und MEDICLIN Baar Klinik Die MEDICLIN Albert Schweitzer Klinik / MEDICLIN Baar Klinik vereint drei Fachdisziplinen unter einem Dach: die Fachklinik für Herz-, Kreislauf- und Gefäßerkrankungen, die Fachklinik für Atemwegserkrankungen, Allergien und Schlafmedizin und die Fachklinik für Psychosomatik und Verhaltensmedizin. Die Schwerpunkte liegen in der Behandlung von Schlafstörungen und Mukoviszidose. Außerdem bietet die Klinik eine interdisziplinäre Post-Covid-Rehabilitation zur Behandlung von Patient*innen mit Langzeitfolgen von Covid-19 an. Die Klinik verfügt über 290 Betten und beschäftigt rund 170 Mitarbeiter*innen. Zum MEDICLIN-Standort Königsfeld gehört auch die MEDICLIN Seniorenresidenz Hermann- Schall-Haus. Wir suchen zum schnellstmöglichen Zeitpunkt in Vollzeit (40,0 h/W) einen Oberarzt Kardiologie (w/m/d) Wir über uns: Die Klinik verfügt über die AHB-Zulassung und nimmt Patienten aller Kostenträger auf. Sie verfügt über umfangreiche diagnostische Möglichkeiten wie Echokardiographie, Sonographie, Gefäßdoppler, Spiroergometrie, Lungenfunktions-und Allergielabor, standardisierte kardiopulmonale Belastungsmethoden, Röntgen und ein angegliedertes Schlaflabor. Das sind Ihre Aufgaben: Vertretung des Chefarztes bei Abwesenheit Oberärztliche Betreuung von Patientinnen und Patienten fachärztliche Supervision der in Ihrem Bereich tätigen Assistenzärzte bei der Betreuung kardiologischer und angiologischer Rehabilitanden Teilnahme an regelmäßigen Rufbereitschaftsdienste Mit diesem Profil ergänzen Sie unser Team: Sie sind Facharzt (w/m/d) für Innere Medizin und Kardiolgie oder Facharzt (w/m/d) mit Schwerpunkt Kardiologie Sie haben Interesse an präventiver und rehabilitativer Medizin und an sozialmedizinischen Fragestellungen Sie verfügen über einen kooperativen Führungsstil mit hohem Verantwortungsbewusstsein Sie bevorzugen eine patientenorientierte Arbeitsweise und verfügten über ausgeprägte kommunikative Fähigkeiten Sie sind einen Teamplayer und ein Persönlichkeit mit hoher menschlicher, medizinischer und sozialer Kompetenz Und so überzeugen wir Sie: Wir bieten Ihnen eine unbefristete Festanstellung Ein sehr angenehmes und kollegiales Betriebsklima Vielseitige und herausfordernde Aufgaben innerhalb der Teamarbeit Möglichkeit zur persönlichen und fachlichen Weiterentwicklung Geregelte Arbeitszeiten mit Überstundenerfassung und Freizeitausgleich Betriebliche Altersversorgung Jobrad-Leasing MediClin Benefits MediCare - kostenfreies und vertrauliches Mental Health Coaching durch einen externen Anbieter kostenfreie Nutzung des hausinternen Schwimmbades und des Trainingraumes   Die vorliegende Stelle ist für schwerbehinderte Bewerber (w/m/d) geeignet. Ihre Ansprechpartner: Für Fragen zur Ausschreibung steht Ihnen sehr gerne unser Chefarzt Herr Dr. Franz van Erckelens unter Telefon 07725 - 96 3240 zur Verfügung.   Allgemeine Fragen zur Bewerbung beantwortet Ihnen gerne Frau Gabriele Neininger (Personalreferentin) unter 07725 - 96 2236.   Wir freuen uns auf Ihre Bewerbung!</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Kardiologie-D-1334711?cp=BA",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12811-2371930-S",
     "slug": "niels-stensen-kliniken-gmbh-oberarzt-oberarztin-bzw-facharzt-facharztin-m-w-d-fur-die-klinik-fur-franziskus-12811-2371930-s",
     "company": "arbeitsagentur",
@@ -9171,6 +9221,24 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Oberaerztin-Bzw-Facharzt-Fachaerztin-D-Fu-1201845?cp=BA",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12811-2372100-S",
+    "slug": "urologie-im-medicum-partg-facharzt-fur-urologie-m-w-d-in-voll-oder-teilzeit-urologie-im-medicum-partg-12811-2372100-s",
+    "company": "arbeitsagentur",
+    "employer": "Urologie im Medicum PartG",
+    "title": "Facharzt für Urologie (m/w/d) in Voll- oder Teilzeit, Urologie im Medicum PartG",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Urologie",
+    "category": "medicine",
+    "specialty": "urology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Einleitung Bei uns finden Sie die optimale Mischung aus einem kollegialen Team, in dem gegenseitige Unterstützung selbstverständlich ist. Wir legen großen Wert auf eine positive Arbeitsatmosphäre, in der sich jeder wohl und geschätzt fühlt. Regelmäßige monatliche Meetings bieten uns die Möglichkeit, gemeinsam Verbesserungsvorschläge einzubringen und an der Weiterentwicklung unserer Praxis mitzuwirken. Bei uns steht Teamwork im Fokus, um das Beste für unsere Patienten und Mitarbeiter zu erreichen. Ihre Aufgaben Selbstständige Diagnose, Beratung und leitliniengerechte Behandlung urologischer Krankheitsbilder in der ambulanten Versorgung Durchführung urologischer Funktions- und Ultraschalldiagnostik sowie kleinerer ambulanter Eingriffe Durchführung von Krebsfrüherkennungsuntersuchungen und Nachsorge urologischer Patienten Sorgfältige und qualitätsgesicherte Patienten- und Befunddokumentation Konstruktive und vertrauensvolle Zusammenarbeit im Praxisteam sowie Kooperation mit zuweisenden Ärzten und Kliniken Ihr Profil Abgeschlossene Facharztausbildung im Fachgebiet Urologie sowie eine gültige deutsche Approbation Erfahren in der ambulanten Diagnostik und Therapie urologischer Patienten Selbstständige, strukturierte und patientenorientierte Handlungsweise Einfühlungsvermögen im Umgang mit Patienten sowie hohe Kommunikations- und Teamfähigkeit Zuverlässigkeit, Verantwortungsbewusstsein und Freude an der Weiterentwicklung der Praxis Wir bieten Attraktive Bezahlung Literatur Bonus Wertgutscheine Weihnachtsgeld Fitnessstudiomitgliedschaft Jobticket, Fahrtkostenzuschüsse oder Tankgutscheine Vermögenswirksame Leistungen inkl. Arbeitgeberzuschuss Betriebliche Altersvorsorge inkl. Arbeitgeberzuschuss E-Bike Leasing Wasser &amp; Kaffee sind selbstverständlich Monatliches Teamfrühstück Teammeetings alle 4 Wochen Einarbeitungsplan Berufseinsteiger, Wiedereinsteiger, Vollzeit sowie Teilzeitkräfte sind willkommen Kita Zuschuss Mitarbeiterevents Pate / Mentor / Buddy - Programm Ergonomischer Arbeitsplatz Ladestation für E-Bikes / E-Autos Gute Verkehrsanbindung Überstunden werden mit Freizeit ausgeglichen</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fuer-Urologie-D-In-Voll-Oder-Teilzeit-1335085?cp=BA",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9366,7 +9434,7 @@
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10198,6 +10266,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:13916-44555065-115-S",
+    "slug": "v-bodelschwinghsche-stiftungen-bethel-kinderarztin-kinderarzt-m-w-d-mvz-bielefeld-am-evkb-ggmbh-13916-44555065-115-s",
+    "company": "arbeitsagentur",
+    "employer": "v. Bodelschwinghsche Stiftungen Bethel",
+    "title": "Kinderärztin/Kinderarzt (m/w/d) - MVZ Bielefeld am EvKB gGmbH",
+    "locations": [
+      "Bielefeld, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendmedizin",
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "level": "specialist",
+    "descriptionHtml": "<p>Das Evangelische Klinikum Bethel (EvKB) und das Krankenhaus Mara in Bielefeld verbinden menschliche Zuwendung und christliches Werteverständnis mit einer jungen und modernen Universitätsmedizin. Human Touch und High Tech verknüpfen sich in Klinik, studentischer Lehre und Forschung. Als Universitätsklinikum mit 1.755 Betten, einer hochmodernen Ausstattung sowie einem exzellenten Maß an medizinischer Fachkompetenz in unterschiedlichen Bereichen zählt das Evangelische Klinikum Bethel (EvKB) gemeinsam mit dem Krankenhaus Mara zu den größten, wichtigsten und interessantesten Gesundheitseinrichtungen in ganz Nordrhein-Westfalen. Rund 5.700 engagierte Mitarbeitende aus Medizin, Pflege, Therapie, Verwaltung und Service arbeiten bei uns auf Grundlage christlicher Werte daran, für unsere Patientinnen und Patienten höchste Versorgungsqualität sicherzustellen.</p><p>Für unsere Tochtergesellschaft, das MVZ Bielefeld am EvKB gGmbH, suchen wir zum 01.07.2026 eine KINDERÄRZTIN / einen KINDERARZT (m/w/d) in Teilzeit (15 bis 20h/Woche).</p><p>IHRE AUFGABEN<br />*  Sie arbeiten angestellt in unserem MVZ und übernehmen die fachärztliche Patientenversorgung in allen Bereichen der Kinder- und Jugendmedizin (Vorsorgen und Impfungen, akute Erkrankungen, Notfälle).<br />*  Sie entwickeln das MVZ stetig weiter.</p><p>IHR PROFIL<br />*  Sie verfügen über die Approbation als Ärztin oder Arzt (m/w/d) sowie die Facharztanerkennung Kinder- und Jugendmedizin.<br />*  Sie zeichnen sich durch eine hohe Fachkompetenz aus und haben ein großes Interesse, kontinuierlich die besten Behandlungswege für unsere Patientinnen und Patienten zu finden.</p><p>IHRE VORTEILE<br />*  Die Stelle ist grundsätzlich auch als Teilzeitstelle konzipiert und gut mit den familiären oder privaten Lebenszielen vereinbar; eine Teilnahme an den Bereitschaftsdiensten ist nicht vorgesehen.<br />*  In einem multiprofessionellen Team erfahren Sie eine vertrauensvolle Zusammenarbeit in einer kollegialen, wertschätzenden Arbeitsatmosphäre und einer freundlichen, modernen Arbeitsumgebung.<br />*  Durch die Anbindung zum Evangelischen Klinikum Bethel bietet sich die Möglichkeit weiterer Karrierechancen.</p><p>Wir freuen uns über Ihre christliche Werteorientierung und die Bereitschaft, die diakonische Ausrichtung unserer Arbeit aktiv zu unterstützen.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13916-44555065-115-S",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:14089-01504798-S",
     "slug": "stadt-kassel-facharztin-facharzt-fur-kinder-und-jugendmedizin-oder-arztin-arzt-mit-erfahrung-14089-01504798-s",
     "company": "arbeitsagentur",
@@ -10812,7 +10900,7 @@
     "postedAt": "2026-10-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10894,7 +10982,7 @@
     "postedAt": "2026-02-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11712,8 +11800,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15245-20252pn6egen-000-S",
     "postedAt": "2026-06-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -11991,6 +12077,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15718-k43631.10971-S",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-05T14:04:53.510Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12412,6 +12500,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16898-3910-1800149-0-S",
     "postedAt": "2026-10-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:16990-20261105-177466-S",
+    "slug": "klinikum-lippe-oberarzt-m-w-d-neurologie-16990-20261105-177466-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Lippe",
+    "title": "Oberarzt (m/w/d) Neurologie",
+    "locations": [
+      "Detmold, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Neurologie",
+    "category": "medicine",
+    "specialty": "neurology",
+    "level": "senior",
+    "descriptionHtml": "<p>Die Universitätslinik für Neurologie und Neurogeriatrie (Direktor Univ.-Prof. Dr. med. Christoph Redecker) des Klinikum Lippe, Standort Lemgo, sucht zum nächstmöglichen Termin einen Oberarzt (m/w/d) für die Weiterentwicklung der neurologischen Tagesklinik (Schwerpunkt Multiple Sklerose). Die Klinik für Neurologie und Neurogeriatrie (Stellenschlüssel: 1-6-13) versorgt mit 66 Betten das gesamte Spektrum neurologischer Erkrankungen im stationären Bereich. Sie ist konsiliarisch für alle Kliniken der Klinikum Lippe GmbH tätig und hält verschiedene Spezialambulanzen vor. Neben einer zertifizierten Stroke Unit mit 10 Betten verfügt sie über einen neurogeriatrischen Arbeitsbereich und aktuell 10 Betten zur neurologischen Frührehabilitation (Phase B). Alle üblichen apparativen Ultraschall- und elektrophysiologischen Diagnoseverfahren sowie umfangreiche bildgebende Verfahren (DSA, 3T-MRT, PET-CT, SPECT) werden am Standort angeboten. Als Teil des Universitätsklinikums OWL besteht die Möglichkeit, sich in wissenschaftlichen Projekten weiter zu entwickeln und in studentische Lehre einzubringen. Die Klinik ist darüber hinaus Mitglied in verschiedenen transsektoralen Netzwerken und bietet umfangreiche Möglichkeiten zur Weiterbildung und persönlichen Weiterentwicklung. Mit den Nachbardisziplinen besteht eine intensive kollegiale Zusammenarbeit. Ihre AufgabenKlinische und organisatorische Supervision im Stations- und AmbulanzbereichAbleistung des HintergrunddienstesKonsiliartätigkeit (auch im Bereich des Klinikums Detmold)Durchführung technischer UntersuchungenWeiterbildungs- und FührungsaufgabenIhr ProfilFacharzt für NeurologieErfahrungen in der Neuroimmunologie und Akutneurologie und Kenntnisse der Elektrophysiologie und der fachspezifischen DRG-Systematik von VorteilSpezialweiterbildungen, die sich für einen persönlichen Schwerpunkt einsetzen lassen, sind willkommen Die Vergütung erfolgt nach TV-Ärzte/VKA mit allen sonst üblichen Leistungen des öffentlichen Dienstes. Schwerbehinderte Bewerber werden bei gleicher Eignung und Befähigung bevorzugt berücksichtigt. Es besteht grundsätzlich die Möglichkeit der Teilzeitbeschäftigung. Sie haben Fragen? Für telefonische Auskünfte steht Ihnen Herr Univ.- Prof. Dr. Redecker unter Tel. 05261 26-6331 gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.deutsche-pflegejobs.de/job/alle-anderen/oberarzt-m-w-d-neurologie-177466?utm_source=aa",
+    "postedAt": "2026-11-05T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
