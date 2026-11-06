@@ -25,12 +25,12 @@ This spec lives in the site repo until `myorb/workog-alerts` exists. Then the pa
 
 ```
 myorb/workog                                                      myorb/workog-alerts
-GitHub Actions (05:00 UTC)        DigitalOcean App Platform       DigitalOcean Droplet (fra1)
+GitHub Actions (05:00 UTC)        DigitalOcean App Platform       DigitalOcean App Platform, second app (fra)
 fetch → commit data/  ──push──▶   build → workog.com              alerts.workog.com
-                                   ├─ /version.json ◀── poll hourly ── Bun app (systemd timer)
+                                   ├─ /version.json ◀── poll hourly ── scheduled job `send` (cron 0 * * * *)
                                    ├─ /feeds/v1/new-jobs.json ◀────────┤
-                                   ├─ /feeds/v1/vocab.json ◀── on subscribe
-                                   └─ "🔔 Get alerts" link ──────────▶ /new?…   ├─ SQLite ──Litestream──▶ Spaces (fra1)
+                                   ├─ /feeds/v1/vocab.json ◀── on subscribe ── web service `web`
+                                   └─ "🔔 Get alerts" link ──────────▶ /new?…   ├─ Managed Postgres (fra1)
                                                                                ├─ outbox → email provider
                                                                                ├─ /c/… click redirect → workog.com/jobs/<slug>
                                                      Paddle checkout ──webhook──┘
@@ -176,17 +176,23 @@ Repo `myorb/workog-alerts`.
 
 ### Stack
 
-**One DigitalOcean Droplet** (Basic, 1 GB, $6/mo, region `fra1`) running a single **Bun** app (Hono for routes, `bun:sqlite` for data), in TypeScript. It's the same stack as the site's pipeline and the same provider as the site.
+**A second DigitalOcean App Platform app**, separate from the site's, in region `fra`, built from the new repo's `Dockerfile` and `.do/app.yaml`. Everything is **Bun** and TypeScript, like the site's pipeline. It has three components:
 
-- **Why a Droplet:** App Platform has no persistent disk, so it can't keep SQLite, and Managed Postgres alone would cost $15/mo. One small server is cheaper and simpler at this size. SQLite on one disk handles far more than 10k subscribers and a daily batch.
-- **In the EU:** the Droplet and the backup bucket are both in Frankfurt, so subscriber emails stay in the EU.
-- **Processes:** `systemd` runs the web app, plus a timer every hour for the daily check (see Flows). Caddy in front does HTTPS (Let's Encrypt) automatically.
-- **Backups:** Litestream streams every SQLite change to a DigitalOcean Spaces bucket ($5/mo), so a lost Droplet costs seconds of data, not a day. A restore is one command, tested before launch and then once a month. Paddle stays the record of who paid, so subscriptions can also be rebuilt from its API.
-- **Upkeep:** unattended security updates, SSH keys only, a firewall open only for 80/443 (and 22 from GitHub Actions and your IP). DigitalOcean's uptime check on `/health` sends alerts to the same webhook the pipeline uses.
-- **No queue service:** sends go through an `outbox` table. The daily run writes one row per email, and a sender loop works through it at the provider's rate limit, retrying failures with backoff. A crash halfway through just resumes.
+| Component | Does | Size | Cost |
+| --- | --- | --- | --- |
+| `web` (service) | subscribe page, Paddle and email-provider webhooks, manage and cancel pages, click redirect, `/health` | smallest shared instance | $5/mo |
+| `send` (scheduled job, `0 * * * *`) | the hourly check and the daily send (see Flows), then works through the `outbox` | smallest instance, billed only while it runs | well under $1/mo |
+| `db` (Managed Postgres, `fra1`) | all data, through Bun's built-in Postgres client | smallest single node | about $15/mo |
+
+- **Why App Platform:** there's no server to look after: no HTTPS setup, OS updates, firewall or backup scripts. It deploys on push to `main` the same way the site does, keeps the previous deployment if the build or health check fails, and rolls back from the dashboard.
+- **Why Postgres:** App Platform has no persistent disk, so SQLite is out. Managed Postgres comes with daily backups and 7 days of point-in-time restore. Only the app is let in (trusted sources). Paddle stays the record of who paid, so subscriptions can also be rebuilt from its API.
+- **In the EU:** the app and the database are both in Frankfurt, so subscriber emails stay in the EU.
+- **No queue service:** sends go through an `outbox` table. The daily run writes one row per email, then the same job works through it at the provider's rate limit, retrying failures with backoff. Whatever is left when a run ends goes out on the next run.
+- **Job limits:** check how long a scheduled job may run before building. A community post says 30 minutes, which isn't confirmed. Even so, it's plenty: a daily send for 1,000 subscribers takes a few minutes with the provider's batch API.
+- **Shaped so it can move later:** matching, building emails and sending are plain functions that the job calls. If the timed follow-ups (trial ending, "nothing new this week") grow, these can move into a workflow tool such as Inngest by wrapping them, without a rewrite.
 - **Email:** Resend (EU region) to start, which is free up to 3k emails a month and then $20 for 50k. Move to Amazon SES (about $0.10 per 1,000) once volume passes about 50k a month. Mail is sent from `alerts@mail.workog.com`, a subdomain, so a deliverability problem never touches the main domain. SPF, DKIM and DMARC are set up before the first send.
 - **Payments: Paddle, as merchant of record.** Paddle is the seller in law: it charges, collects and pays EU VAT in every country (no OSS filings for us), sends invoices, handles refunds and chargebacks, and gives a hosted page to cancel. We get a payout and one webhook. It costs 5% + $0.50 per payment, more than Stripe's ~1.5% + €0.25, but Stripe would leave VAT registration, invoicing and the German cancellation rules to us. That's not worth it for a one-person business at this size. The fixed $0.50 is why the yearly plan is pushed (see Plans).
-- **Its own CI:** tests, then deploy on push to `main` (GitHub Actions copies the build over SSH and restarts the service; `systemd` keeps the old one if the new one fails its health check), plus the nightly contract check. The Paddle and Resend secrets live only in this repo and on the Droplet; the site repo never sees them.
+- **Its own CI:** GitHub Actions runs the tests on every push and the nightly contract check; App Platform builds and deploys `main` itself. The Paddle and Resend secrets live only in the alerts app's encrypted environment variables; the site repo never sees them.
 
 ### Data
 
@@ -221,7 +227,7 @@ Nothing else is stored: no names, no CVs, no IPs, no card details (Paddle holds 
 - **Subscribe:** `GET /new?…` checks the tags against `vocab.json` (cached until the next run) and shows the filter spelled out ("Cardiology · Senior · Bayern") in the page's language, and **what it would have sent**: "23 new jobs matched this in the last 7 days", with the 5 newest listed. The feed already covers 7 days, so this costs nothing and is the strongest reason to pay. Below that: the plan choice and a "Start 7-day free trial" button that opens Paddle checkout (overlay), which collects email and card. The path and language travel in Paddle's `custom_data`.
 - **Paid (webhook `subscription.created` / `transaction.completed`):** create the subscriber and its first alert with the cursor set to now, `status = trialing`. Send the welcome email: the 5 newest matching jobs, the manage link and the trial end date. The checkout already proves the address is real and that the person asked for the emails, so there is no separate opt-in confirmation.
 - **Billing changes (webhooks `subscription.updated` / `canceled` / `past_due`):** update `status` and `paid_until`. A canceled subscriber keeps getting emails until `paid_until`, then stops. `past_due` keeps sending while Paddle retries the card (its dunning emails do the reminding), and stops if it ends canceled. Webhooks are verified by signature and are idempotent on Paddle's event id.
-- **Daily send (systemd timer, every hour):**
+- **Daily send (scheduled job `send`, every hour):**
   1. Fetch `/version.json`. If `run` is the same as last time, stop.
   2. Fetch `new-jobs.json` and index its jobs by tag string: `specialty:cardiology` → job ids, and so on.
   3. For each alert of a subscriber with `status` trialing, active or past_due and `paid_until` in the future, intersect the index sets of its tags and keep the jobs with `firstSeenAt > cursor`.
@@ -268,7 +274,7 @@ Selling a subscription to consumers in Germany and the EU adds duties. Paddle co
 - Emails sent, clicks per email, emails paused, and complaints per send (keep complaints under 0.1%)
 - Visits to job pages from `utm_source=alerts`
 
-The site has no analytics yet. Add a privacy-friendly one (Plausible, or Umami self-hosted on the alerts Droplet; no cookies) in the same PR, so the funnel's first step is counted.
+The site has no analytics yet. Add a privacy-friendly one (Plausible, EU-hosted; no cookies) in the same PR, so the funnel's first step is counted.
 
 ## Cost
 
@@ -276,11 +282,11 @@ Running costs are small; Paddle's fee is the biggest cost.
 
 | Item | 100 paying | 1,000 paying |
 | --- | --- | --- |
-| Droplet + Spaces for backups | $11 | $11–17 (2 GB Droplet if needed) |
+| App Platform service + job, Managed Postgres | $21 | $21–35 (bigger instance if needed) |
 | Email (one a day each) | $0 (Resend free) | $20 (Resend) |
 | Paddle fees (half monthly, half yearly) | ~€45 | ~€450 |
 | **Revenue, gross incl. VAT** | **~€410/mo** | **~€4,100/mo** |
-| **Left after VAT (~19%), fees and running costs** | **~€290/mo** | **~€2,950/mo** |
+| **Left after VAT (~19%), fees and running costs** | **~€280/mo** | **~€2,950/mo** |
 
 Revenue counts a yearly subscriber as €3.25 a month. Income tax on what's left is on top.
 
@@ -288,7 +294,7 @@ Revenue counts a yearly subscriber as €3.25 a month. Income tax on what's left
 
 1. **Site PR in `myorb/workog`:** `src/lib/alerts.ts` with tests, the two feeds, `robots.txt`, and analytics. The feeds go live straight away; they're harmless, and the service is then built against real data. The header link and the footer cancel link stay behind a `PUBLIC_ALERTS` build flag until the service is live.
 2. **New repo `myorb/workog-alerts`:** the contract schema and its nightly check first, then the subscribe page with the 7-day preview, Paddle checkout and webhooks, manage, cancel, stop emails, daily send, click redirect and bounce webhook. Tested against the live v1 feeds and Paddle's sandbox.
-3. **Launch:** Paddle account approval (they review the website and terms first, which takes a few days, so apply early), the Droplet and Spaces bucket with a tested Litestream restore, DNS (`alerts.`, and `mail.` with SPF/DKIM/DMARC), Impressum, terms and privacy pages, turn on the flag, then a week watching the numbers above with the alert webhook already in use for the pipeline.
+3. **Launch:** Paddle account approval (they review the website and terms first, which takes a few days, so apply early), the alerts app and database, with a test restore from a backup, DNS (`alerts.`, and `mail.` with SPF/DKIM/DMARC), Impressum, terms and privacy pages, turn on the flag, then a week watching the numbers above with the alert webhook already in use for the pipeline.
 4. **Phase 2:** Telegram bot and the sponsored slot.
 
 ## Open questions

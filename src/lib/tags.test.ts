@@ -135,6 +135,31 @@ describe("categorize", () => {
     expect(categorize("Teamleiter:in (80-100%)")).toBe("management");
   });
 
+  test("tech managers named by their team", () => {
+    expect(categorize("Software Dev Manager, Device Troubleshooting, Logs")).toBe("management");
+    expect(categorize("Software Manager, DOCA Services")).toBe("management");
+    expect(categorize("Systems Software Manager, Display Driver")).toBe("management");
+    expect(categorize("Hardware Development Manager, AWS MainStream Compute")).toBe("management");
+    expect(categorize("Data Services SRE Manager - ASE Databases")).toBe("management");
+    expect(categorize("ASIC Design Manager")).toBe("management");
+    expect(categorize("IT Manager")).toBe("management");
+    expect(categorize("Tech Lead Manager, Full-Stack, Display and Video 360 Connected TV Team")).toBe("management");
+    expect(categorize("Manager, Systems Software")).toBe("management");
+    expect(categorize("Senior Manager, ASIC Chip Engineering")).toBe("management");
+    expect(categorize("Manager, Customer Identity, Security Engineering")).toBe("management");
+    expect(categorize("Manager/Sr. Manager, AI Forward Deployed Engineering")).toBe("management");
+    expect(categorize("Senior Manager, Technical Program Management (Search & AI Foundations)")).toBe("management");
+  });
+
+  test("tech words alone don't make a tech manager", () => {
+    expect(categorize("Software Project Manager (Warehouse Management)")).toBe("engineering");
+    expect(categorize("IT Support Manager")).toBe("support");
+    expect(categorize("Finance Manager, Worldwide Design Engineering")).not.toBe("management");
+    expect(categorize("Group Manager, Silicon Sourcing, CPU")).toBeUndefined();
+    expect(categorize("Manager, Strategic Hardware Partnerships, Business Development")).toBe("sales");
+    expect(categorize("Senior Manager, Infrastructure Lease Accounting")).toBe("finance");
+  });
+
   test("managers of work, not of people, keep their function", () => {
     expect(categorize("Senior Product Manager, Search Infrastructure")).toBe("product");
     expect(categorize("Sr Account Manager, Large Enterprise Commercial")).toBe("sales");

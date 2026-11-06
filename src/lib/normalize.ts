@@ -99,6 +99,23 @@ const leadershipRules: [category: string, pattern: RegExp][] = [
     "management",
     /\b(head of|vice president|s?vp\b|evp\b|(?<!\b(?:account|art|creative|client|casting)\s)director|general manager|(?:engineering|software development|science|research) manager|(?<!\b(?:product|program|project|account|marketing)\s)manager\b(?:\s+[IV]+)?,?\s+(?:of\s+)?(?:software\s+|hardware\s+|data\s+)?(?:engineering|development|applied science|data science)(?!\s+program)|team ?lead\b|(?:team|abteilungs|bereichs|gruppen)leit|\bleiter(?:in)?\b|\bleitung\b)/i,
   ],
+  // Tech managers named by what their team builds: "Software Dev Manager", "SRE Manager",
+  // "IT Manager", "Tech Lead Manager". A word between the two ("Software Project Manager",
+  // "IT Support Manager") makes it a manager of work or another function, so it doesn't count.
+  [
+    "management",
+    /\b(?:software|firmware|hardware|silicon|asic|sre|devops|it)(?:\s+(?:dev|development|engineering|design|verification|validation))?\s+manager\b|\btech(?:nical)? lead manager\b/i,
+  ],
+  // A bare "Manager" leading the title, with the tech team after it: "Manager, Systems
+  // Software", "Senior Manager, ASIC Chip Engineering", "Manager/Sr. Manager, AI Forward
+  // Deployed Engineering". "Finance Manager, Design Engineering" names its function first,
+  // so it keeps that function. Parentheses hold notes like "(m/w/d)", not the team.
+  // Business work on a tech product ("Manager, Silicon Sourcing", "Manager, Strategic
+  // Hardware Partnerships") isn't a tech team.
+  [
+    "management",
+    /^(?!.*\b(?:sourcing|procurement|supply chain|commodity|partnerships?|monetization|pr|planning)\b)(?:(?:senior|sr\.?|snr|principal|group)\s+)*manager(?:\s*\/\s*(?:senior|sr\.?)\s+manager)?(?:\s+[IV]+)?\b[^(]*?\b(?:engineering|software|firmware|hardware|silicon|asic|sre|site reliability|devops|technical program management)\b/i,
+  ],
 ];
 
 export const LEADERSHIP_CATEGORIES = new Set(leadershipRules.map(([category]) => category));
