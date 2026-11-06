@@ -672,8 +672,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1205211487-S",
     "postedAt": "2026-01-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-04T22:47:21.746Z",
-    "closedAt": "2026-11-05T05:03:16.544Z",
     "source": "arbeitsagentur"
   },
   {
@@ -1434,7 +1432,7 @@
     "postedAt": "2026-08-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2259,7 +2257,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2613,6 +2611,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208559753-S",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10000-1208571610-S",
+    "slug": "zentrum-fur-urologie-andrologie-mvz-gmbh-assistenzarzt-fur-urologie-m-w-d-in-lebach-und-st-wendel-gesucht-10000-1208571610-s",
+    "company": "arbeitsagentur",
+    "employer": "Zentrum für Urologie, Andrologie MVZ GmbH",
+    "title": "Assistenzarzt für Urologie (m/w/d) in Lebach und St. Wendel gesucht",
+    "locations": [
+      "Lebach, Saarland, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "urology",
+    "level": "resident",
+    "descriptionHtml": "<p>**Stellenangebot**</p><p>**Assistenzarzt (m/w/d) für Urologie**</p><p>**Zentrum für Urologie, Andrologie und Urologische Onkologie MVZ GmbH**</p><p>**Arbeitszeit:** Vollzeit – 31 Wochenstunden</p><p>**Wir suchen Verstärkung für unser Team!**</p><p>Für unser Zentrum für Urologie, Andrologie und Urologische Onkologie MVZ GmbH mit Standort in Lebach und St. Wendel suchen wir zum nächstmöglichen Zeitpunkt einen engagierten und motivierten</p><p>**Assistenzarzt (m/w/d) im Fachgebiet Urologie.**</p><p>Wir verfügen über eine **Weiterbildungsermächtigung für 18 Monate** und bieten Ihnen damit die Möglichkeit, Ihre Weiterbildung im Fachgebiet Urologie in einem modernen ambulanten Umfeld fortzusetzen.</p><p>**Ihr Profil**</p><ul><li>Kenntnisse im Fachgebiet Urologie</li><li>Engagement, Zuverlässigkeit und Verantwortungsbewusstsein</li><li>Freude am Umgang mit Patienten</li><li>Teamfähigkeit und eine selbstständige Arbeitsweise</li><li>Motivation zur fachlichen und persönlichen Weiterentwicklung</li></ul><p>**Wir bieten Ihnen**</p><ul><li>Eine strukturierte Weiterbildung im Fachgebiet Urologie</li><li>18 Monate Weiterbildungsmöglichkeit im Rahmen unserer Weiterbildungsermächtigung</li><li>Ein kollegiales und freundliches Arbeitsumfeld</li><li>Ein abwechslungsreiches urologisches Tätigkeitsspektrum</li><li>Eine enge Zusammenarbeit in einem erfahrenen Praxisteam</li></ul><p>**Interesse geweckt?**</p><p>Dann freuen wir uns auf Ihre Bewerbung!</p><p>**Zentrum für Urologie, Andrologie und Urologische Onkologie MVZ GmbH**<br />St. Annenstraße 10a<br />66606 St. Wendel</p><p>Email: [lebach@urologie-saar.de](mailto:lebach@urologie-saar.de)</p><p>Wir freuen uns darauf, Sie kennenzulernen!</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208571610-S",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3930,7 +3948,7 @@
     "postedAt": "2026-03-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4108,16 +4126,16 @@
     "employer": "DOCWISE - das Medizinernetzwerk",
     "title": "Facharzt (m/w/d) - Innere Medizin mit mit der Zusatzbezeichnung Geriatrie",
     "locations": [
-      "Köln, Nordrhein-Westfalen, Germany",
-      "Leipzig, Sachsen, Germany",
-      "Dortmund, Nordrhein-Westfalen, Germany",
-      "Göttingen, Niedersachsen, Niedersachsen, Germany",
-      "Berlin, Berlin, Germany",
-      "Bielefeld, Nordrhein-Westfalen, Germany",
-      "Bremen, Bremen, Germany",
+      "Hannover, Niedersachsen, Germany",
       "Hamburg, Hamburg, Germany",
+      "Bremen, Bremen, Germany",
+      "Köln, Nordrhein-Westfalen, Germany",
+      "Berlin, Berlin, Germany",
+      "Leipzig, Sachsen, Germany",
+      "Bielefeld, Nordrhein-Westfalen, Germany",
+      "Dortmund, Nordrhein-Westfalen, Germany",
       "Erfurt, Thüringen, Germany",
-      "Hannover, Niedersachsen, Germany"
+      "Göttingen, Niedersachsen, Niedersachsen, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Innere Medizin",
@@ -4148,6 +4166,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003066866-S",
     "postedAt": "2026-05-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6273,6 +6293,24 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10001-1003973401-S",
+    "slug": "stadtisches-krankenhaus-kiel-gmbh-stellvertretende-leitung-m-w-d-medizinisches-leistungsmanagement-10001-1003973401-s",
+    "company": "arbeitsagentur",
+    "employer": "Städtisches Krankenhaus Kiel GmbH",
+    "title": "Stellvertretende Leitung (m/w/d) Medizinisches Leistungsmanagement",
+    "locations": [
+      "Kiel, Schleswig-Holstein, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Die Städtische Krankenhaus Kiel GmbH sucht zum nächstmöglichen Zeitpunkt eine</p><p># Stellvertretende Leitung (m/w/d) Medizinisches Leistungsmanagement</p><p>Die Städtische Krankenhaus Kiel GmbH versorgt als Schwerpunktversorger mit 605 Planbetten jährlich rund 25.000 Patient\\*innen stationär sowie über 78.000 Patient\\*innen ambulant. Das Haus verfügt über zehn medizinische Fachabteilungen, weitere Funktionsabteilungen, eine Serviceabteilung und ein medizinisches Versorgungszentrum. Wir beschäftigen rund 2.000 Mitarbeitende und setzen jährlich über Euro 190 Mio. um.</p><p>### **Wir möchten Sie in unserem Team des Städtischen!**</p><p>Das Medizinische Leistungsmanagement führt u. a. die Erlösabrechnung im stationären Bereich für vier internistische Kliniken mit den Schwerpunkten Kardiologie, Onkologie, Pneumologie und Gastroenterologie, für die Chirurgie, Pädiatrie, Frauenklinik, Urologie, Akut- und Notfallmedizin, Intensivmedizin und Geriatrie mit angeschlossener Tagesklinik durch. Zusätzlich wird die Medizinische Dokumentation und die Qualitätssicherung durch das Medizinische Leistungsmanagement gesteuert.</p><p>### Abwechslungsreich und herausfordernd – Ihr Verantwortungsbereich ist vielfältig.</p><ul><li>Durchführung des Prüfverfahrens des Medizinischen Dienstes nach § 275c SGB V inkl. MD-Management</li><li>Vorbereitung und Durchführung der Strukturprüfungen nach § 275a SGB V</li><li>Bewertung des Leistungsspektrums und Mitwirkung an strategischen Konzepten der Leistungssteuerung</li><li>Vorbereitung und Unterstützung bei den Entgeltverhandlungen</li><li>Vorbereitung und Unterstützung bei den Zielvereinbarungsgesprächen</li><li>Betreuung von Klageverfahren</li><li>Schulungen von Kodierassistenten und anderen medizinischen Berufsgruppen</li><li>Medizinische Beratung der Kodierassistenten</li></ul><p>### Leistungsstark und perspektivisch - Ihre Zukunft im SKK.</p><ul><li>Eine Vergütung nach TV-Ärzte/TVöD</li><li>Flexible Arbeitszeiten sowohl in Vollzeit- als auch in Teilzeittätigkeit möglich</li><li>Einen sicheren Arbeitsplatz mit einem unbefristeten Arbeitsverhältnis</li><li>Eine gründliche und strukturierte Einarbeitung</li><li>Möglichkeiten zur Weiterbildung für Leitungspositionen im Krankenhausmanagement</li><li>Neue Kindertagesstätte der Stadt Kiel auf dem Klinikgelände</li><li>Nachhaltige Mobilität: E-Bike-Leasing</li><li>Attraktive Mitarbeiterangebote bei verschiedenen Unternehmen</li><li>Firmenfitness zum SKK Tarif, Betriebliches Gesundheitsmanagement</li><li>Eine Region, die einen hohen Freizeitwert und eine hohe Lebensqualität bietet</li></ul><p>### Sie wissen worauf es ankommt – Ihr Profil zeigt es.</p><ul><li>Approbation als Arzt/Ärztin oder eine andere Qualifikation im Gesundheitswesen</li><li>Eine praktische Tätigkeit von mindestens drei Jahren in einem Krankenhaus wird vorausgesetzt</li><li>Ein sicherer Umgang mit gängigen Softwaresystemen</li><li>Kenntnisse des Fallpauschalensystems sind wünschenswert</li><li>Ein hohes Maß an Verantwortungsbewusstsein, Flexibilität und Engagement</li><li>Eigeninitiative und Eigenverantwortung</li><li>Kommunikationsstärke, Souveränität und Konfliktfähigkeit</li><li>Gutes Organisationsvermögen</li></ul><p>### Kontakt</p><p>Sie möchten Teil unseres Teams werden, das auf Augenhöhe konstruktiv zusammenarbeitet? Dann bewerben Sie sich bis zum 30.11.2026 per Email an [bewerbung@krankenhaus-kiel.de](https://mailto:bewerbung@krankenhaus-kiel.de)</p><p>Für Rückfragen steht Ihnen die Leitung des Medizinischen Leistungsmanagements, Frau Annika Robert, unter der Telefonnummer 0431/1697-4260 gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003973401-S",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11289-205846088-S",
     "slug": "hausarztpraxis-kling-facharzt-allgemeinmedizin-hausarzt-m-w-d-11289-205846088-s",
     "company": "arbeitsagentur",
@@ -6890,7 +6928,7 @@
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7201,6 +7239,28 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/253788",
     "postedAt": "2026-10-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11956-2760901793919601-S",
+    "slug": "fachkrankenhaus-hubertusburg-ggmbh-klinikum-st-georg-ggmbh-arzte-in-weiterbildung-d-m-w-klinik-fur-psychiatrie-und-11956-2760901793919601-s",
+    "company": "arbeitsagentur",
+    "employer": "Fachkrankenhaus Hubertusburg gGmbH",
+    "title": "Klinikum St. Georg gGmbH: Ärzte in Weiterbildung (d/m/w) - Klinik für Psychiatrie und Psychotherapie",
+    "locations": [
+      "Wermsdorf, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Weiterbildungsassistent/in (Arzt/Ärztin)",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "resident",
+    "descriptionHtml": "<p>**ab sofort | befristet im Rahmen der Facharzt-Weiterbildung | Vollzeit oder Teilzeit**</p><p>**&amp;nbsp;**</p><p>**Ihre Perspektiven – unsere Angebote**</p><ul><li>ein interessantes und vielfältiges Aufgabengebiet</li><li>Mitarbeit in einem kollegialen und professionellen Team mit strukturierter Einarbeitung</li><li>hervorragende technische Ausstattung der Arbeitsbereiche</li><li>betriebliche Gesundheitsfürsorge, betriebliche Altersvorsorge und Vermögenswirksame Leistungen</li><li>attraktive, leistungsgerechte Vergütung inkl. Sonderzahlung nach unserem Haustarif&amp;nbsp;</li></ul><p>**&amp;nbsp;**</p><p>**Ihr Profil**</p><ul><li>Sie verfügen über ein abgeschlossenes Studium der Humanmedizin und möchten Ihre Weiterbildung als Fachärztin/ Facharzt (d/m/w) für Psychiatrie und Psychotherapie (Schwerpunkt „Forensische Psychiatrie“) fortsetzen oder beginnen und abschließen</li><li>im Arbeitsalltag überzeugen Sie mit fachlicher Kompetenz und Teamgeist</li><li>Sie verfügen über ein hohes Maß an Engagement und ausgeprägte soziale Kompetenz</li><li>ein empathischer und wertschätzender Umgang mit Patienten und Kollegen rundet Ihr Profil ab</li></ul><p>&amp;nbsp;</p><p>**Ihre Aufgaben**</p><ul><li>Diagnostik, Indikationsstellung und Behandlung der Ihnen anvertrauen Patienten</li><li>Erstellung von individualisierten Behandlungsplänen</li><li>einzeltherapeutische Arbeit einschließlich Krisenintervention</li><li>Konzeption und Durchführung von gruppentherapeutischen Angeboten</li><li>Teilnahme am Bereitschaftsdienst</li></ul><p>&amp;nbsp;</p><p>**Kontakt**</p><p>Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Sie! Für Fragen steht Ihnen gern der Chefarzt der Klinik für Psychiatrie und Psychotherapie, Herr Dr. med. Grampp, telefonisch unter 034364 622 61 zur Verfügung.&amp;nbsp;</p><p>Wir weisen darauf hin, dass anfallende Bewerbungskosten im Zusammenhang mit Ihrer Bewerbung durch uns leider nicht übernommen werden können.</p><p>Schlagworte: Arzt, Ärztin, Arzt in Weiterbildung, Ärztin in Weiterbildung, Klinik für Psychiatrie und Psychotherapie, Psychiatrie und Psychotherapie, Facharztausbildung, Krankenhaus, Empfehlungsbund<br />Quelle/Bewerbung via: [https://www.empfehlungsbund.de/jobs/276090/aerzte-in-weiterbildung-d-strich-m-strich-w-klinik-fuer-psychiatrie-und-psychotherapie](https://www.empfehlungsbund.de/jobs/276090/aerzte-in-weiterbildung-d-strich-m-strich-w-klinik-fuer-psychiatrie-und-psychotherapie#apply_form)</p><p>#### Kurzinfo zum Unternehmen</p><p>Die Klinikum St. Georg gGmbH einschließlich der Tochtergesellschaften ist mit über 4.000 Mitarbeitern (St. Georg Unternehmensgruppe) an verschiedenen Standorten in und um Leipzig das zweitgrößte Krankenhaus der Stadt. Als leistungsstarker Schwerpunktversorger sind wir regional und überregional für viele Menschen das Krankenhaus der Wahl, wenn es darum geht, sich einer Behandlung zu unterziehen. Auch das Wohl der eigenen Mitarbeiterinnen und Mitarbeiter liegt dem Klinikum St. Georg in Leipzig am Herzen. Das St. Georg sorgt mit vielfältigen Angeboten und Leistungen für ein attraktives Arbeitsumfeld und ein positives Arbeitsklima.</p>",
+    "applyUrl": "https://www.empfehlungsbund.de/job/276090",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7221,6 +7281,8 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/276110",
     "postedAt": "2026-10-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -7241,6 +7303,68 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/276118",
     "postedAt": "2026-10-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11956-2761281793919601-S",
+    "slug": "fachkrankenhaus-hubertusburg-ggmbh-klinikum-st-georg-ggmbh-arzte-in-weiterbildung-d-m-w-klinik-fur-kinder-und-jugen-11956-2761281793919601-s",
+    "company": "arbeitsagentur",
+    "employer": "Fachkrankenhaus Hubertusburg gGmbH",
+    "title": "Klinikum St. Georg gGmbH: Ärzte in Weiterbildung (d/m/w) - Klinik für Kinder- und Jugendpsychiatrie",
+    "locations": [
+      "Wermsdorf, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendpsychiatrie und -psychotherapie",
+    "category": "medicine",
+    "specialty": "child-psychiatry",
+    "level": "resident",
+    "descriptionHtml": "<p>**ab sofort | befristet im Rahmen der Facharzt-Weiterbildung | Vollzeit oder Teilzeit**</p><p>**&amp;nbsp;**</p><p>**Ihre Perspektiven – unsere Angebote**</p><ul><li>ein interessantes und vielfältiges Aufgabengebiet</li><li>Mitarbeit in einem kollegialen und professionellen Team mit strukturierter Einarbeitung</li><li>hervorragende technische Ausstattung der Arbeitsbereiche</li><li>betriebliche Gesundheitsfürsorge, betriebliche Altersvorsorge und Vermögenswirksame Leistungen</li><li>attraktive, leistungsgerechte tarifliche Vergütung inkl. Sonderzahlung nach unserem Haustarif&amp;nbsp;</li></ul><p>**&amp;nbsp;**</p><p>**Ihr Profil**</p><ul><li>Sie verfügen über ein abgeschlossenes Studium der Humanmedizin und möchten Ihre Weiterbildung als Fachärztin/Facharzt (d/m/w) für Kinder- und Jugendpsychiatrie und Psychotherapie fortsetzen oder beginnen und abschließen</li><li>im Arbeitsalltag überzeugen Sie mit fachlicher Kompetenz und Teamgeist</li><li>Sie verfügen über ein hohes Maß an Engagement und ausgeprägte soziale Kompetenz</li><li>ein empathischer und wertschätzender Umgang mit Patienten und Kollegen rundet Ihr Profil ab</li></ul><p>**&amp;nbsp;**</p><p>**Ihre Aufgaben**</p><ul><li>ärztlich-psychiatrische Mitversorgung der psychiatrischen Patienten</li><li>Erstellung von individualisierten Behandlungsplänen</li><li>einzeltherapeutische Arbeit einschließlich Krisenintervention</li><li>Konzeption und Durchführung von gruppentherapeutischen Angeboten</li><li>Teilnahme am Bereitschaftsdienst</li><li>integrative mulitmodale Diagnostik und Therapie von Kindern und Jugendlichen</li></ul><p>**&amp;nbsp;**</p><p>**Kontakt**</p><p>Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Sie! Für Fragen und nähere Informationen steht Ihnen gern unsere Leitende Oberärztin, Frau Jasmin Süß, telefonisch unter 034364-6-2902, zur Verfügung.&amp;nbsp;</p><p>Wir weisen darauf hin, dass anfallende Bewerbungskosten im Zusammenhang mit Ihrer Bewerbung durch uns leider nicht übernommen werden können.</p><p>Schlagworte: Arzt, Ärztin, Arzt in Weiterbildung, Ärztin in Weiterbildung, Facharzt-Ausbildung, Kinder- und Jugendpsychiatrie, Klinik für Kinder- und Jugendpsychiatrie, Jugendpsychiatrie, Klinik, Krankenhaus, Kinderpsychiatrie, Empfehlungsbund<br />Quelle/Bewerbung via: [https://www.empfehlungsbund.de/jobs/276128/aerzte-in-weiterbildung-d-strich-m-strich-w-klinik-fuer-kinder-und-jugendpsychiatrie](https://www.empfehlungsbund.de/jobs/276128/aerzte-in-weiterbildung-d-strich-m-strich-w-klinik-fuer-kinder-und-jugendpsychiatrie#apply_form)</p><p>#### Kurzinfo zum Unternehmen</p><p>Die Klinikum St. Georg gGmbH einschließlich der Tochtergesellschaften ist mit über 4.000 Mitarbeitern (St. Georg Unternehmensgruppe) an verschiedenen Standorten in und um Leipzig das zweitgrößte Krankenhaus der Stadt. Als leistungsstarker Schwerpunktversorger sind wir regional und überregional für viele Menschen das Krankenhaus der Wahl, wenn es darum geht, sich einer Behandlung zu unterziehen. Auch das Wohl der eigenen Mitarbeiterinnen und Mitarbeiter liegt dem Klinikum St. Georg in Leipzig am Herzen. Das St. Georg sorgt mit vielfältigen Angeboten und Leistungen für ein attraktives Arbeitsumfeld und ein positives Arbeitsklima.</p>",
+    "applyUrl": "https://www.empfehlungsbund.de/job/276128",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11956-2761731793919601-S",
+    "slug": "st-georg-mvz-ggmbh-klinikum-st-georg-ggmbh-facharzt-facharztin-fur-psychiatrie-und-psychotherapie-d-11956-2761731793919601-s",
+    "company": "arbeitsagentur",
+    "employer": "St. Georg MVZ gGmbH",
+    "title": "Klinikum St. Georg gGmbH: Facharzt / Fachärztin für Psychiatrie und Psychotherapie (d/m/w) - St. Geo",
+    "locations": [
+      "Wermsdorf, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "specialist",
+    "descriptionHtml": "<p>**ab sofort | unbefristet | Vollzeit oder Teilzeit**</p><p>**&amp;nbsp;**</p><p>**Ihre Perspektiven – unsere Angebote**</p><ul><li>ein interessantes und vielfältiges Aufgabengebiet</li><li>ein von hoher Interdisziplinarität geprägtes Arbeitsumfeld</li><li>Arbeitszeitflexibilität</li><li>ein freundliches und kollegiales Arbeitsumfeld</li><li>attraktive, leistungsgerechte Vergütung</li></ul><p>**&amp;nbsp;**</p><p>**Ihr Profil**</p><ul><li>Sie verfügen über ein erfolgreich abgeschlossene Facharztausbildung im Gebiet Psychiatrie</li><li>Sie besitzen bereits Kenntnisse in der Behandlung psychiatrisch erkrankter Personen und können ggf. schon Berufserfahrung in der Betreuung ambulanter Patienten nachweisen</li><li>anwendungssichere EDV-Kenntnisse der gängigen MS-Office-Produkte und Abrechnungssysteme</li><li>Sie agieren und arbeiten selbstständig sowie zuverlässig und zeigen dabei ein hohes Maß an Einsatzbereitschaft und Verantwortungsbewusstsein</li><li>Sie sind sensibel und emphatisch im Umgang mit Patienten und deren Angehörigen</li></ul><p>&amp;nbsp;</p><p>**Ihre Aufgaben**</p><ul><li>ambulante Versorgung der Patienten</li><li>Abrechnung nach EBM/ GOÄ</li><li>vollständige Dokumentation in unseren EDV-Programmen</li><li>administrative Tätigkeiten</li></ul><p>&amp;nbsp;</p><p>**Kontakt**</p><p>Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Sie! Für Fragen steht Ihnen gern Frau Backmann, unter 0341 / 909 4119, zur Verfügung.</p><p>Wir weisen darauf hin, dass anfallende Bewerbungskosten im Zusammenhang mit Ihrer Bewerbung durch uns leider nicht übernommen werden können.</p><p>Schlagworte: Psychotherapie, Psychiatrie, Facharztausbildung, Facharzt, Fachärztin, Facharzt für Psychiatrie und Psychotherapie, Fachärztin für Psychiatrie und Psychotherapie, MVZ, Medizinisches Versorgungszentrum, Empfehlungsbund<br />Quelle/Bewerbung via: [https://www.empfehlungsbund.de/jobs/276173/facharzt-strich-fachaerztin-fuer-psychiatrie-und-psychotherapie-d-strich-m-strich-w-st-georg-mvz-standort-altes-jagdschloss-6a-04779-wermsdorf](https://www.empfehlungsbund.de/jobs/276173/facharzt-strich-fachaerztin-fuer-psychiatrie-und-psychotherapie-d-strich-m-strich-w-st-georg-mvz-standort-altes-jagdschloss-6a-04779-wermsdorf#apply_form)</p><p>#### Kurzinfo zum Unternehmen</p><p>Die Klinikum St. Georg gGmbH einschließlich der Tochtergesellschaften ist mit über 4.000 Mitarbeitern (St. Georg Unternehmensgruppe) an verschiedenen Standorten in und um Leipzig das zweitgrößte Krankenhaus der Stadt. Als leistungsstarker Schwerpunktversorger sind wir regional und überregional für viele Menschen das Krankenhaus der Wahl, wenn es darum geht, sich einer Behandlung zu unterziehen. Auch das Wohl der eigenen Mitarbeiterinnen und Mitarbeiter liegt dem Klinikum St. Georg in Leipzig am Herzen. Das St. Georg sorgt mit vielfältigen Angeboten und Leistungen für ein attraktives Arbeitsumfeld und ein positives Arbeitsklima.</p>",
+    "applyUrl": "https://www.empfehlungsbund.de/job/276173",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11956-2808061793919601-S",
+    "slug": "stadtisches-klinikum-dresden-stadtisches-klinikum-dresden-oberarzt-m-w-d-fur-gefa-chirurgie-klinik-fur-gefa-c-11956-2808061793919601-s",
+    "company": "arbeitsagentur",
+    "employer": "Städtisches Klinikum Dresden",
+    "title": "Städtisches Klinikum Dresden: Oberarzt (m/w/d) für Gefäßchirurgie, Klinik für Gefäßchirurgie, vaskul",
+    "locations": [
+      "Dresden, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Gefäßchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "descriptionHtml": "<p>**Vertrag:** Unbefristet, Vollzeit (40h/Woche), zum nächstmöglichen Zeitpunkt, EG III</p><p>Die Klinik besteht seit fast 30 Jahren am Städtischen Klinikum Dresden (Schwerpunktversorger, \\&gt;1000 Betten an 4 Standorten) und zählt in der Region zu einer der traditionell innovativsten gefäßchirurgischen Kliniken. Es werden jährlich ca. 700 Patienten stationär behandelt. Die Klinik verfügt insgesamt über 24 Betten. Intensiv- und IMC-Kapazitäten stehen in der Klinik für Anästhesie bzw. der 2. Medizinischen Klinik zur Verfügung. Behandlungs­schwer­punkte sind die Aorten-, Halsschlagader- und komplexe periphere und viszerale Gefäßchirurgie sowie Dialyseshunteingriffe. Die Klinik ist interdisziplinär am zertifizierten Gefäßzentrum führend eingebunden und ist vornehmlich im interdisziplinär genutzten hochmodernen Hybrid-OP tätig. Es kann das gesamte Spektrum der interventionellen und offen-chirurgischen Gefäßchirurgie abgebildet werden. Damit bieten wir unseren Patient\\*innen ein Höchstmaß an Fach- und Interdisziplinärer Kompetenz.</p><p>**Ihre neue Herausforderung**</p><p>Es erwartet Sie eine anspruchsvolle, abwechslungsreiche sowie leitende Tätigkeit an einem Haus der gehobenen Schwerpunktversorgung (am Standort u.a. vorhanden: Kardiologie, Interventionelle Neuro- und /Radiologie, Angiologie, Viszeral-/Thoraxchirurgie, Neurologie inkl. Stroke-Unit, Neurochirurgie, Abteilung für Nephrologie). Optional und perspektivisch ist eine Anstellung als leitender Oberarzt möglich. Zu Ihren Hauptaufgaben gehören:</p><ul><li>klinische Tätigkeiten im OP (endovaskulär und offen-chirurgisch), auf Station, in der gefäßchirurgischen Ambulanz und im Notfallmanagement einschließlich des fachspezifischen, gefäßchirurgischen Rufbereitschaftsdienstes</li><li>Weiterbildung der auszubildenden ärztlichen Kolleginnen und Kollegen</li><li>Förderung der interdisziplinären und interprofessionellen Zusammenarbeit mit internen und externen klinischen Partnern</li><li>Sie bringen Impulse und Ideen zur Weiterentwicklung unserer Klinik sowie des Interdisziplinären Gefäßzentrums ein</li><li>Optimierung und Standardisierung von Prozessen innerhalb der Klinik und in Kooperation mit den im Gefäßzentrum assoziierten Kliniken, Begleitung von internen und externen Auditierungs- und Zertifizierungsprozessen</li><li>Entwicklung und Umsetzung innovativer Strukturen zur optimalen Verbindung von ambulantem und stationären Sektor für Patienten der Gefäßchirurgie</li><li>Umsetzung von Qualitätssicherungsmaßnahmen in der Gefäßchirurgie</li><li>Einführung digitaler Prozesse in den Klinikalltag</li><li>Ressourcen-bewusstes Arbeiten und DRG-Kodierung</li></ul><p>**Ihr überzeugendes Profil**</p><ul><li>Facharzt/in für Gefäßchirurgie mit bereits mehrjähriger Tätigkeit als Gefäßchirurg/in, idealerweise als Oberarzt/Funktionsoberarzt in universitärem Umfeld und Qualifikation im Wundmanagement</li><li>umfangreiche klinische Erfahrungen im Bereich der endovaskulären und konventionellen Gefäßchirurgie im Hybrid-OP und in der offenen Aorten- und peripheren sowie viszeralen Gefäßchirurgie</li><li>Erfahrung im interdisziplinären Arbeiten an einem Gefäßzentrum</li><li>Flexibilität, Umsetzungsstärke und Leistungsbereitschaft sowie gewissenhafte, selbstständige Arbeitsweise</li><li>Ressourcen-schonendes Arbeiten</li><li>Kollegialität und Teamgeist im internationalen Team, Offenheit, Gestaltungswillen Empathie</li><li>Zuverlässigkeit und Hilfsbereitschaft runden Ihr Profil ab</li></ul><p>**Ihre Vorteile bei uns**</p><ul><li>Hier erfahren Sie, was das Arbeiten bei uns so attraktiv macht: hier</li><li>Ein täglich interessantes und erfüllendes Arbeitsumfeld in einem kollegialen Team</li><li>Leistungsgerechte Vergütung nach TV-Ärzte/VKA mit den für den Öffentlichen Dienst üblichen Leistungen. finden Sie alle Informationen zum Gehalt und Tarifvertrag.</li><li>Bereitschaft zur kontinuierlichen Fort- und Weiterbildung</li><li>In der Landeshauptstadt Dresden finden Sie vielfältige kulturelle Angebote und eine hohe Lebensqualität vor</li></ul><p>Wir begrüßen ausdrücklich Bewerbungen von schwerbehinderten Menschen; hinsichtlich der Erfüllung der Ausschreibungsvoraussetzungen erfolgt eine individuelle Betrachtung.</p><p>Wir freuen uns selbstverständlich auch über Kolleginnen und Kollegen mit Migrationshintergrund. Gute Kenntnisse der deutschen Sprache, mindestens C1 – Niveau, setzen wir voraus.</p><p>Wenn Sie diese Aufgabenstellung anspricht und Sie die Anforderungen erfüllen, dann senden Sie uns Ihre vollständigen und aussagekräftigen Bewerbungsunterlagen mit **Angabe der Position und der**  **Referenznummer 25-50039758, bevorzugt** über unser Bewerberportal.</p><p>Für Ihre Rückfragen stehen Ihnen<br />**Dr. med. Stefan Ludwig**<br />Chefarzt der Klinik für Gefäßchirurgie, vaskuläre/endovaskuläre Chirurgie, Phlebologie<br />Tel.: 0351 480-1101</p><p>und</p><p>**Christin Hausch**<br />Ressort Personal<br />Tel.:&amp;nbsp; 0351 856-1166<br />gern zur Verfügung.</p><p>Schlagworte: Oberarzt, Gefäßchirurg, Gefäßchirurgie, Hybrid-OP, Radiologe, Chirurgie, Anästhesiologie, Neurologie, Anästhesie, Kardiologe, Krankenhaus, Krankenpflege, surgery, Heilerziehungspfleger, nursing, Nephrologie, Headphysician, radiologist, Neurochirurgie, Angiologie, Empfehlungsbund<br />Quelle/Bewerbung via: [https://www.empfehlungsbund.de/jobs/280806/oberarzt-m-strich-w-strich-d-fuer-gefaesschirurgie-klinik-fuer-gefaesschirurgie-vaskulaere-strich-endovaskulaere-chirurgie-phlebologie](https://www.empfehlungsbund.de/jobs/280806/oberarzt-m-strich-w-strich-d-fuer-gefaesschirurgie-klinik-fuer-gefaesschirurgie-vaskulaere-strich-endovaskulaere-chirurgie-phlebologie#apply_form)</p><p>#### Kurzinfo zum Unternehmen<br />Das Städtische Klinikum Dresden bietet mit seinen vier Standorten und der Medizinischen Berufsfachschule eine umfassende medizinische Versorgung für die Menschen in der Landeshauptstadt Dresden und der Region. Mehr als 3600 Mitarbeiter versorgen wohnortnah jährlich 62 500 Patienten stationär und 109 000 ambulant. Als Akademisches Lehrkrankenhaus der Technischen Universität Dresden bildet das Klinikum Medizinstudenten aus und hat direkten Zugang zu den neuesten wissenschaftlichen Erkenntnissen und Methoden in Diagnostik und Therapie. Über 45 Kliniken und Institute ermöglichen eine hohe Spezialisierung und ein umfassendes Leistungsspektrum in nahezu allen medizinischen Fachdisziplinen. Von herausragender Bedeutung ist die interdisziplinäre Zusammenarbeit, die in den zertifizierten Kompetenzzentren praktiziert wird. Zugleich steht unser Haus für eine professionelle Pflege mit Respekt und menschlicher Anteilnahme, mit Rücksicht auf die Bedürfnisse und Wünsche unserer Patientinnen und Patienten. Basis für die gute Behandlungsqualität sind qualifizierte und engagierte Arbeitskräfte. Modernste Medizin und ein sicherer Platz, um wieder gesund zu werden – dafür steht das Städtische Klinikum Dresden.</p>",
+    "applyUrl": "https://www.empfehlungsbund.de/job/280806",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7281,6 +7405,8 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/294374",
     "postedAt": "2026-10-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -7321,6 +7447,8 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/298103",
     "postedAt": "2026-10-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -7771,6 +7899,24 @@
     "applyUrl": "https://www.wuerzburger-jobanzeiger.de/job/detail/REG-45513/?utm_source=bundesagentur&utm_medium=unpaid-partner&utm_campaign=000",
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12688-REG-46721-RJA-S",
+    "slug": "hochtaunuskreis-arzt-m-w-d-im-bereich-kinder-und-jugendgesundheitsdienst-12688-reg-46721-rja-s",
+    "company": "arbeitsagentur",
+    "employer": "Hochtaunuskreis",
+    "title": "Arzt (m/w/d) im Bereich Kinder- und Jugendgesundheitsdienst",
+    "locations": [
+      "Bad Homburg vor der Höhe, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Der Kreisausschuss des Hochtaunuskreises sucht zum nächst möglichen Zeitpunkt einen</p><p>Arzt (m/w/d) im Bereich Kinder- und Jugendgesundheitsdienst</p><p>im Fachbereich 60.50 - Gesundheitsdienste, Veterinärwesen und Verbraucherschutz.</p><p>Die Vergütung erfolgt nach Entgeltgruppe 14 TVöD, bei Fachärzten mit entsprechender Tätigkeit nach Entgeltgruppe 15 TVöD. Menschen mit einer Schwerbehinderung werden bei gleicher Eignung bevorzugt berücksichtigt.</p><p>Aufgaben</p><ul><li>Durchführung der Schuleingangs- und Schuluntersuchungen im Gesundheitsamt und Schulen des Hochtaunuskreises</li><li>Schulärztliche Beteiligung bei der Vorbereitung von Inklusion/sonderpädagogischer Förderung betriebsärztliche Aufgaben in Kindergemeinschaftseinrichtungen und Tätigkeiten im Rahmen des Infektionsschutzgesetzes</li><li>Beratung und Begutachtung von Maßnahmen der Eingliederungshilfe</li><li>Mitwirkung bei der Öffentlichkeitsarbeit des Kinder- und Jugendärztlichen Dienstes</li><li>Teilnahme an der ärztlichen Rufbereitschaft.</li><li>Beteiligung an der Impfberatung und Durchführung von Impfungen</li></ul><p>Wir erwarten<br />* Approbation als Arzt (m/w/d)<br />* Berufserfahrung in der Kinder- und Jugendmedizin oder eine abgeschlossene Weiterbildung zum Facharzt (m/w/d) für Kinderheilkunde und Jugendmedizin ist wünschenswert<br />* eine selbständige, engagierte und strukturierte Arbeitsweise<br />* Kommunikationsgeschick und die Freude am Umgang mit Menschen, sowie sicheres Auftreten, Konfliktfähigkeit, Teamfähigkeit und Flexibilität<br />* Bereitschaft zur Fortbildung<br />* Fahrerlaubnis Klasse B und die Bereitschaft den privaten PKW dienstlich einzusetzen</p><p>Wir bieten<br />* Ein unbefristetes Arbeitsverhältnis<br />* Ein interessantes, abwechslungsreiches und verantwortungsvolles Aufgabengebiet in einem aufgeschlossenen und innovativen Team<br />* Fundierte Einarbeitung mit schrittweiser Übernahme der zugewiesenen Aufgaben<br />* Wir fördern Sie mit umfangreichen Fortbildungsmöglichkeiten bei Ihrer fachlichen und persönlichen Weiterentwicklung<br />* Flexible Arbeitszeitmodelle mit festen familienfreundlichen Arbeitszeiten<br />* 30 Urlaubstage (bei einer 5-Tage Woche)<br />* Hausinterne Kinderbetreuung für Kinder unter 3 Jahren bis hin zum Schuleintritt<br />* Eine Jahressonderzahlung<br />* Ein zusätzliches regelmäßiges Leistungsentgelt<br />* Betriebliche Altersvorsorge<br />* Vermögenswirksame Leistungen<br />* Ein kostenfreies Jobticket für das gesamte Gebiet des Rhein-Main-Verkehrsverbundes<br />* Betriebssportangebot<br />* Benefits auf verschiedenen Portalen namhafter Anbieter<br />* Dienstradleasing</p><p>Sie sind auf der Suche nach einer neuen beruflichen Herausforderung und wünschen sich gleichzeitig einen sicheren Arbeitsplatz mit spannenden Aufgabenfeldern, dann freuen wir uns auf Ihre Bewerbung.</p><p>Für nähere Auskünfte steht Ihnen die Leitung des Fachbereichs 60.50 - Gesundheitsdienste, Veterinärwesen und Verbraucherschutz (Fr. Dr. Friebertshäuser, 06172 999 6500) sowie die stellv. Fachbereichsleitung (Herr Dr. Sapoutzis, 06172 999 5820) gerne zur Verfügung.</p><p>Für das Bewerbungsverfahren ist Ihre Ansprechperson Frau Mehnert, Telefon 06172 999 1112.</p>",
+    "applyUrl": "https://www.frankfurter-jobanzeiger.de/job/detail/REG-46721/?utm_source=bundesagentur&utm_medium=unpaid-partner&utm_campaign=000",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8827,6 +8973,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Oder-Facharzt-D-Fuer-Die-Klinik-Fuer-Anae-1061214?cp=BA",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8951,6 +9099,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Oberaerztin-D-Fuer-Die-Innere-Medizin-1290138?cp=BA",
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9155,6 +9305,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fachaerztin-Oder-Oberarzt-Oberaerztin-D-F-1246128?cp=BA",
     "postedAt": "2026-11-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9766,6 +9918,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12951-cbd7d706-3d73-4da2--S",
+    "slug": "marienhaus-klinikum-eifel-oberarzt-gynakologie-and-geburtshilfe-m-w-d-12951-cbd7d706-3d73-4da2-s",
+    "company": "arbeitsagentur",
+    "employer": "Marienhaus Klinikum Eifel",
+    "title": "Oberarzt Gynäkologie & Geburtshilfe (m/w/d)",
+    "locations": [
+      "Bitburg, Rheinland-Pfalz, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Haut- und Geschlechtskrankheiten",
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "level": "senior",
+    "descriptionHtml": "<p>Oberarzt Gynäkologie und Geburtshilfe (m/w/d)<br />✓ ab sofort<br />✓ unbefristet<br />✓ Teilzeit / Vollzeit<br />✓ Bitburg</p><p>Wir bei Marienhaus verstehen uns als zukunftsorientiertes Unternehmen im Gesundheits- und Sozialwesen. In einer starken werteorientierten Gemeinschaft begegnen sich tagtäglich rund 14.000 Mitarbeitende für den ganzheitlichen Dienst am Menschen.</p><p>Unser Team ist auf der Suche nach engagierten Mitarbeitenden, die unsere Vision teilen und gemeinsam mit uns einen Unterschied machen!<br />✓ ab sofort<br />✓ unbefristet<br />✓ Teilzeit / Vollzeit<br />✓ Bitburg</p><p>Wir bei Marienhaus verstehen uns als zukunftsorientiertes Unternehmen im Gesundheits- und Sozialwesen. In einer starken werteorientierten Gemeinschaft begegnen sich tagtäglich rund 14.000 Mitarbeitende für den ganzheitlichen Dienst am Menschen.</p><p>Unser Team ist auf der Suche nach engagierten Mitarbeitenden, die unsere Vision teilen und gemeinsam mit uns einen Unterschied machen!<br />Rund 800 Mitarbeitende engagieren sich im Marienhaus Klinikum Eifel an den Standorten Bitburg und<br />Gerolstein für Menschen, die medizinische Hilfe benötigen.<br />Am Standort Bitburg stehen 256 vollstationäre Planbetten in sieben Hauptfachabteilungen zur Verfügung. Die<br />Belegabteilungen für Neurochirurgie und Urologie sowie die psychiatrische Tagesklinik runden unser Leistungsangebot<br />ab.<br />Am Standort Gerolstein stehen 96 vollstationäre Planbetten für die Psychiatrie, Psychosomatik und Psychotherapie<br />zur Verfügung sowie eine psychiatrische Tagesklinik.</p><p>Unsere familiär geprägte Hauptfachabteilung für Gynäkologie und Geburtshilfe bietet ein breites Spektrum der modernen Frauenheilkunde. Schwerpunkte sind die operative Gynäkologie mit minimal-invasiven, vaginalen und abdominalen Verfahren sowie die gynäkologische Onkologie, Senologie, Urogynäkologie und Endometriosebehandlung. Als Kooperationspartner des Brustzentrums Trier gewährleisten wir eine qualifizierte interdisziplinäre Versorgung.</p><p>In unserer familienorientierten Geburtshilfe begleiten wir jährlich rund 400 Geburten mit besonderem Augenmerk auf eine individuelle Betreuung.</p><p>Wir suchen eine engagierte oberärztliche Persönlichkeit, die Verantwortung übernimmt und die Weiterentwicklung unserer Abteilung aktiv mitgestalten möchte.<br />JETZT BEWERBEN!<br />Ihre Vorteile<br />✓ Gestaltung und Verantwortung: Viel Raum für eigenverantwortliches Arbeiten, eigene Ideen und die aktive Weiterentwicklung unserer gynäkologisch-geburtshilflichen Abteilung<br />✓ Breites medizinisches Spektrum: Vielseitige oberärztliche Tätigkeit mit abwechslungsreichen operativen, konservativen und geburtshilflichen Aufgaben<br />✓ Kollegiales Arbeitsumfeld: Engagiertes, familiär geprägtes Team mit kurzen Entscheidungswegen und einer vertrauensvollen interdisziplinären Zusammenarbeit<br />✓ Fort- und Weiterbildung: Individuelle fachliche Entwicklungsmöglichkeiten mit gezielter Förderung Ihrer Interessen und einem persönlichen Fortbildungsbudget<br />✓ Vergütung und Zusatzleistungen: Attraktive Vergütung nach AVR Caritas inklusive betrieblicher Altersversorgung sowie zusätzliche Mitarbeitervorteile wie Dienstradleasing und attraktive Rabatte</p><p>Ihr Arbeitsumfeld<br />✓ Eigenverantwortliche oberärztliche Betreuung unserer gynäkologischen und geburtshilflichen Patientinnen<br />✓ Durchführung und Supervision gynäkologischer Operationen im breiten operativen Spektrum unserer Abteilung<br />✓ Oberärztliche Betreuung des Kreißsaals und Mitwirkung an der geburtshilflichen Versorgung<br />✓ Fachliche Anleitung und Weiterbildung unserer Assistenzärztinnen und Assistenzärzte<br />✓ Enge interdisziplinäre Zusammenarbeit mit den beteiligten Fachabteilungen und Kooperationspartnern<br />✓ Aktive Mitgestaltung der medizinischen und organisatorischen Weiterentwicklung unserer Abteilung einschließlich der ambulanten Versorgung</p><p>Ihre Expertise<br />✓ Abgeschlossene Facharztausbildung (m/w/d) für Gynäkologie und Geb...(Lesen Sie die vollständige Jobbeschreibung auf der Seite des Partners)</p>",
+    "applyUrl": "https://www.heyjobs.co/de-de/jobs/cbd7d706-3d73-4da2-812e-55d419323c26?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12951-ce1e63c8-9d06-4066--S",
     "slug": "ukrb-universitatsklinikum-ruppin-brandenburg-facharzt-m-w-d-orthopadie-unfallchirurgie-fur-ambulante-rehabilitation-12951-ce1e63c8-9d06-4066-s",
     "company": "arbeitsagentur",
@@ -10196,7 +10368,7 @@
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11974,7 +12146,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12055,6 +12227,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16477-0066664928-S",
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12491,6 +12665,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17296-0005816%3A01-S",
     "postedAt": "2026-07-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12569,6 +12745,8 @@
     "applyUrl": "https://helixjobs.com/_/jobad?prj=2259p5575&source=ba",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {

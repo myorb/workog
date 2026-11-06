@@ -970,7 +970,7 @@
     "postedAt": "2026-05-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -1693,7 +1693,7 @@
     "postedAt": "2026-06-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -2163,6 +2163,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10467590/solutions-architect-enterprise-greenfield-germany",
     "postedAt": "2026-07-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2376,7 +2378,7 @@
     "postedAt": "2026-07-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -2854,7 +2856,7 @@
     "postedAt": "2026-07-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -3117,7 +3119,7 @@
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -3484,7 +3486,7 @@
     "postedAt": "2026-08-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -4134,6 +4136,23 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10516126/senior-product-manager-technical-amazon-leo-plans-pricing",
     "postedAt": "2026-08-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10516157",
+    "slug": "amazon-business-intelligence-engineer-extended-producer-responsibility-10516157",
+    "company": "amazon",
+    "title": "Business Intelligence Engineer, Extended Producer Responsibility",
+    "locations": [
+      "Bengaluru, KA, India"
+    ],
+    "remote": false,
+    "department": "Business Intelligence",
+    "category": "engineering",
+    "descriptionHtml": "<p>Are you energized by turning complex data into actionable insights that drive compliance and cost optimization at Amazon scale? If so, we'd like to talk to you.<br /><br />As a Business Intelligence Engineer II on the WW EPR team, you will design, build, and maintain the data pipelines, reports, and analytics solutions that power our Worldwide EPR compliance and circularity programs. You will work with large, multi-regional datasets — delivering efficient, testable BI solutions that enable cross-functional teams to make data-driven decisions on regulatory obligations, recycling fees, and operational performance across global markets. You will collaborate directly with stakeholders and partner closely with senior BIEs to solve ambiguous problems, automate manual workflows, and continuously improve data quality and reporting standards.<br /><br /><br />Key job responsibilities<br />•\tCreate mechanisms for non-technical stakeholders to self-serve data including during urgent issue management<br />•\tScope and deliver strategic projects to accelerate the success of the safety programs supported<br />•\tLook for opportunities to simplify and automate redundant processes<br />•\tTake the problems of stakeholders and help them understand technical solutions which can be delivered<br />•\tLeverage a combination of AWS services, internal data services, and AI-based tooling and solutions to deliver data products and simplification<br />•\tPartner with technical teams on end to end data solutions, focusing on data pipelines that power core reporting and dashboarding solutions<br /><br />About the team<br />Our Worldwide EPR team owns Amazon's global compliance strategy for Extended Producer Responsibility — ensuring adherence to post-consumer waste regulations across packaging, electronics, batteries, and textiles in all operating regions. We enable circular economy value for Selling Partners, Vendors, and customers by connecting every product sold to verified recovery outcomes with auditable results. We work cross-functionally with Legal, Business, Product, and Data Science/Engineering teams across NA, EU, APAC, and emerging markets to deliver compliance programs at scale. EPR shifts post-consumer waste management costs from municipalities to producers — requiring all Selling Partners on Amazon's marketplace to register, report product data, pay recycling fees to PROs, and establish take-back systems. This incentivizes environmentally friendly product and packaging design.<br />EPR is part of the Regulatory Intelligence, Safety and Compliance (RISC) organization, dedicated to protecting Amazon customers from products that are illegal, unsafe, or otherwise prohibited</p><h3>Basic qualifications</h3><p>- Bachelor's degree or above in BI, finance, engineering, statistics, computer science, mathematics or equivalent quantitative field<br />- 3+ years of analyzing and interpreting data with Redshift, Oracle, NoSQL etc. experience<br />- Experience with data visualization using Tableau, Quicksight, or similar tools<br />- Experience with data modeling, warehousing and building ETL pipelines<br />- Experience using SQL to pull data from a database or data warehouse and scripting experience (Python) to process data for modeling</p><h3>Preferred qualifications</h3><p>- Experience with AWS solutions such as EC2, DynamoDB, S3, and Redshift<br />- Experience in data mining, ETL, etc. and using databases in a business environment with large-scale, complex datasets<br />- Experience developing and presenting recommendations of new metrics allowing better understanding of the performance of the business<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10516157/business-intelligence-engineer-extended-producer-responsibility",
+    "postedAt": "2026-08-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -5100,6 +5119,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10532883/data-center-infrastructure-engineer-internship-2027",
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6246,7 +6267,7 @@
     "postedAt": "2026-09-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -7336,7 +7357,7 @@
     "postedAt": "2026-10-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -8076,7 +8097,7 @@
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -9267,7 +9288,7 @@
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -9819,7 +9840,7 @@
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   },
   {
@@ -10721,6 +10742,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10588572/deployment-support-engineer-i-apac-ots-deployment-jp-team",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -11509,8 +11532,6 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10593301/program-manager-ii-amazon-now-launch",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-03T09:43:47.270Z",
-    "closedAt": "2026-11-03T15:04:58.208Z",
     "source": "amazon"
   },
   {
@@ -12115,6 +12136,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596683/sr-associate-gco",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-06T05:03:01.973Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -12357,6 +12380,57 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10598436/application-security-engineer-amazon-application-security",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10598494",
+    "slug": "amazon-sr-packaging-designer-amazon-robotics-global-packaging-design-and-engineering-10598494",
+    "company": "amazon",
+    "title": "Sr. Packaging Designer, Amazon Robotics - Global Packaging Design & Engineering",
+    "locations": [
+      "Hamme, Belgium"
+    ],
+    "remote": false,
+    "department": "Design",
+    "category": "design",
+    "descriptionHtml": "<p>The Senior Packaging Designer is, above all, customer obsessed. That means giving our customers right-sized packaging without compromising order protection, and delighting them with an unboxing experience that is easy and sustainable to recycle at home. In practice, you will develop and scale fiber-based packaging designs that right-size to the product, protect the order flawlessly through the supply chain, give customers an experience that is easy to recycle, and deliver the lowest total cost at the highest level of sustainability.<br /><br />Our mission has sharpened around eliminating plastic packaging at scale. You will lead the structural design for fiber-based programs within our portfolio, spanning automated paper bagging, paper-based consolidation wrap for multi-item orders, right-sized corrugated packaging, and curbside-recyclable mailers. The goal is simple to say and hard to do: get a durable, recyclable paper package onto the broadest possible range of products without adding cost, complexity so that it can be deployed at scale.<br /><br />You will work hand in hand with program managers, automation and machinery development engineers, our customer experience teams, and fellow experts in fiber-based packaging. Co-located with materials scientists and machinery and automation designers, you are the packaging technical authority in the room, shaping the material and format so the machine and the package are designed together rather than in sequence. As part of the Amazon Robotics Packaging team, you make optimized packaging a core tenet of every future investment in automation, not an afterthought once the equipment is built.<br /><br />Key job responsibilities<br />- Directly develop prototype and test new packaging designs using ArtiosCAD and SolidWorks<br />- Create visual renderings to communicate design intent to stakeholders<br />- Create detailed packaging specific cations<br />- Produce reports on packaging performance<br />- Participate in or lead meetings to ensure developments meet benchmarks for customer experience, supply chain, and sustainability<br />- Travel to engage with customers, supply chain, labs, and vendors<br /><br />A day in the life<br />No two days look quite the same, but a typical one blends design work, data review, and a lot of time with the people who turn your designs into reality. You might start at the bench or in CAD, refining a bag or mailer geometry so it right-sizes to a tricky product without adding material. Mid-morning you dig into the latest testing data, reading how recent samples performed and drawing conclusions about where to focus your time and energy next, then sit with an automation engineer to adjust the format so it runs cleanly on the machine rather than fighting it. After lunch you are on a call with a supplier to pressure-test whether a new structural modification can be produced at quality and at the volumes we need, and you capture the decision and its rationale so the reasoning is there for whoever picks it up next. You close the day reviewing customer feedback from a recent pilot, where the question is always the same: did we protect the order, right-size it, and make it easy to recycle at home? When the answer is not yet yes, that becomes tomorrow's design problem.<br /><br />About the team<br />We are the packaging design and engineering group inside Amazon Robotics. Our charter is to eliminate plastic packaging at scale and replace it with fiber-based designs that are right-sized to the product, protect the order all the way to the customer's door, and are easy to recycle at home. We sit shoulder to shoulder with materials scientists, automation engineers, and program teams, which means our packaging and the machines that make it are designed together rather than in sequence. It is hands-on, fast-moving work with real customer impact, and we care as much about getting the details right as we do about the big bets.</p><h3>Basic qualifications</h3><p>- Experience in packaging design &amp; innovation work<br />- Experience using business and/or technical software tools like MS Excel, ArtiosCAD, SolidWorks, Adobe CS<br />- ASTM/ISTA Packaging Testing first hand experience<br />- Experience leading packaging related R&amp;D cross-functional projects<br />- Experience with packaging designs linked to automation systems</p><h3>Preferred qualifications</h3><p>- Specialty packaging experience designing with paper materials (linerboard, folding cartons, corrugated)<br />- Experience with complex automated material handling equipment, packaging technologies and high-speed manufacturing<br />- Operational experience with packaging converting equipment including Printers, Die Cutters, and Folder Gluers.<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10598494/sr-packaging-designer-amazon-robotics-global-packaging-design-engineering",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10598519",
+    "slug": "amazon-automation-engineer-10598519",
+    "company": "amazon",
+    "title": "Automation Engineer",
+    "locations": [
+      "Leeds, LEC, United Kingdom"
+    ],
+    "remote": false,
+    "department": "Facilities, Maintenance, & Real Estate",
+    "category": "engineering",
+    "descriptionHtml": "<p>Operations is at the heart of everything Amazon does, and automation is one of the ways we optimise our processes. As an Automation Engineer, you’ll make sure that our automated systems are working at their best so that our customers get their orders on time. By exploring data on everything from control systems to sensors, you’ll maximise the availability of equipment at your sites. This role puts you at the forefront of Amazon’s emerging technology to solve complex productivity challenges.  <br /><br />Key job responsibilities<br />Monitor, troubleshoot and repair issues with key systems <br />Work with the EU Controls network to monitor Material Handling Equipment (MHE) metrics <br />Provide data visualisations of troubleshooting to internal stakeholders <br />Own or actively participate in continuous improvement projects run by the EU Controls network <br />Work with different departments to ensure all systems are correctly documented and that accurate backup libraries are maintained <br />Work with global colleagues to install and commission new equipment <br />Support other sites in the EU Controls network as needed <br />Interpret mechanical and electrical drawings, and develop improvement strategies for code conforming to IEC 61131-3 <br /><br />A day in the life<br />As an Automation Engineer, you’ll be the site expert when it comes to keeping key automated systems running smoothly. You’ll be working with our automation machinery, from conveyors to sortation systems, and ensuring they’re working efficiently. If something has gone wrong or can be done better, you’ll take the lead in coming up with and implementing a solution.  <br /><br />You’ll also share your expertise with your close colleagues. You’ll be keeping your Engineering Technicians up to date with device troubleshooting and preventative maintenance control training, so that your team can keep our automation systems in order.     <br /><br />About the team<br />Our Reliability Maintenance Engineering or RME team keep our equipment performing at its best. We're a technically minded team, made up of excellent team players and guided by experienced leaders. We work together to maintain, troubleshoot and repair equipment across our global network of fulfilment centres. Some of our people are leaders, who oversee the team as they work on exciting technology – some of which only exists at Amazon.<br /><br />From installing automated packaging systems to overseeing the general maintenance of a site to repairing key distribution equipment, our team handles most aspects of Amazon’s technical side. This includes keeping buildings legally compliant, so everyone is safe, and our sites are operating at maximum efficiency. There are lots of opportunities for progression, both within the RME team and more widely across Amazon.<br /><br />Everything we do focuses on reducing downtime in Amazon’s crucial operations sites, so customers get their orders on time. We often work during early or late hours to carry out maintenance with minimal disruption, including night shifts. If we spot a better way to do something, we have the skills and the opportunity to develop and introduce completely new processes or advanced tech like Amazon Robotics and our Complex Item Sorter.</p><h3>Basic qualifications</h3><p>- Experience with PLC controlled automation and issue diagnosis in a continuous process or production environment<br />- Experience supporting a wide range of different conveyors and sortation systems<br />- Experience dealing with material handling, flow and capacity visualization and monitoring<br />- Experience working with computer and web based tools<br />- Experience using MS Project, MS Office, and MS SharePoint<br />- Experience with Ladder Logic and structure programming from Siemens, Allen-Bradley, or Codesys PLCs<br />- Experience with Ignition SCADA or a similar platform and Human Machine Interface (HMI)<br />- Experience with HMI systems, Industrial Networks, VFDs, Servo Controllers, etc.<br />- Experience in English-language communication skills, both written and verbal<br />- EthernetIP, Profinet, Profibus and AS-i or other fieldbus networks</p><h3>Preferred qualifications</h3><p>- Bachelor's degree or above in computer science, electrical engineering, or related field<br />- Experience leading change in a multiple site environments<br />- Experience working with Agile project management methodologies<br />- Experience with Six Sigma, or analytical and process improvement techniques<br />- Experience working within ISO 13849 and ISO 62061 frameworks<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10598519/automation-engineer",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10598520",
+    "slug": "amazon-whs-officer-whs-10598520",
+    "company": "amazon",
+    "title": "WHS Officer, WHS",
+    "locations": [
+      "Jeddah, 02, Saudi Arabia"
+    ],
+    "remote": false,
+    "department": "Administrative Support",
+    "category": "support",
+    "descriptionHtml": "<p>Amazon is looking for a Workplace, Health and Safety (WHS) Officer to add to the team: <br />  <br />The WHS Officer will be responsible for partnering with the Site Operations team to execute company safety policies and ensure compliance to all applicable local and regional regulations. By leveraging lean principles and kaizens, you will lead continuous improvement initiatives to reduce conditional and ergonomic risk in our processes to ensure a safe and healthy working environment for our associates. A successful WHS Officer will demonstrate the ability to build trust and confidence with the Operations team and inspire change through providing comprehensive risk assessments and safety data analysis.<br />The WHS Officer must be an effective communicator and send clear, concise and consistent messages, both verbally and in writing. You will instruct and train Operations leaders in Amazon WHS policies and assist key site stakeholders in incorporating our safety standards at their site. You will work to identify best practices and incorporate these standard methodologies into our standards to continuously improve our strive towards safety excellence.<br /><br />WHS Officer will possess excellent safety program knowledge as well as environmental and ergonomic understanding and be able demonstrate this expertise when working with Operations.<br />The WHS Officer will be a part of WHS team and reporting to site WHS manager. The WHS Officer should be flexible to work in shifts including days and nights. They should also possess a thorough understanding of local/regional regulations and company policy.<br /><br />Key job responsibilities<br />Provide guidance and oversight to ensure compliance to all applicable Amazon WHS Standards/Policies.<br /><br />Measure site performance against published requirements in safety policies. For all deficiencies, identify a plan for the site to implement and fix all identified deficiencies.<br /><br />Deliver on-time and quality projects to Operations.<br /><br />Analyze safety metrics and review weekly and monthly incident trends to rationalize the allocation of appropriate resources to areas where the safety risk is highest.<br /><br />Ensure proper Incident Investigation and closure of corrective and preventive actions.<br /><br />Perform frequent site safety audits to identify all non-compliant equipment and/or processes at the site.<br /><br />Implement solutions to eliminate exposure to these risks and prevent injury.<br /><br />Audit record-keeping practices and ensure Austin entries to be aligned with global WHS standards and local regulations.<br /><br />Audit the workplace organization and associate behaviors to ensure that training, auditing and scoring methods are accurate and consistent.<br /><br />Lead and mentor safety associates in your assigned facilities.<br /><br />Ensure site leadership and associates are trained and knowledgeable of their responsibilities under each policy. <br /><br />Audit the quality, delivery (including qualifications of the trainer), and effectiveness of all required safety training.<br /><br />Ensure the PPE inventory at site and coordinate with procurement teams while ensuring PPE compliance.<br /><br />Work along with facility teams and ensure preventive maintenance of all Fire protection and emergency equipment. <br /><br />Ensure basic Fire Fighting training and first aid training requirements.</p><h3>Basic qualifications</h3><p>- Experience in Electrical/Mechanical/Electronics and Communication/Instrumentation and Controls<br />- NEBOSH or IOSH certified.</p><h3>Preferred qualifications</h3><p>- Speak, write, and read fluently in English<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10598520/whs-officer-whs",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "amazon"
   }
 ]

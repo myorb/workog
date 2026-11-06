@@ -323,7 +323,7 @@
     "postedAt": "2026-06-26T00:48:37.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {
@@ -1184,7 +1184,7 @@
     "postedAt": "2026-08-06T15:29:14.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {
@@ -1356,7 +1356,7 @@
     "postedAt": "2026-08-19T16:29:00.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {
@@ -2666,7 +2666,7 @@
     "postedAt": "2026-10-09T21:28:25.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {
@@ -3178,7 +3178,7 @@
     "postedAt": "2026-10-20T18:53:29.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-05T14:04:53.510Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {
@@ -3451,6 +3451,23 @@
     "applyUrl": "https://job-boards.greenhouse.io/affirm/jobs/8034827003",
     "postedAt": "2026-10-27T12:05:13.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8035736003",
+    "slug": "affirm-senior-product-security-engineer-8035736003",
+    "company": "affirm",
+    "title": "Senior Product Security Engineer",
+    "locations": [
+      "Remote Canada"
+    ],
+    "remote": true,
+    "department": "Information Security",
+    "category": "engineering",
+    "descriptionHtml": "<p>At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.</p><p><strong>About the InfoSec team </strong></p>\n<p>The InfoSec team protects Affirm’s systems and data from evolving threats. We manage security risk, monitor vulnerabilities, and enforce protective controls across the company. The team leads incident response, compliance, identity and access management, and employee training. Our goal is to ensure that security is built into every system and decision at Affirm. We maintain a secure, trustworthy environment so the business can operate and grow with confidence.</p>\n<p><strong>About the role</strong></p>\n<p>In this role, you'll help mature Affirm's insider threat program. You'll build out the controls, detection use cases, and investigative practices that make it work day to day, support insider risk investigations, and partner with Legal, HR, Privacy, and Compliance to keep the program effective, proportionate, and trusted by Affirmers.</p>\n<p><strong>What you’ll do</strong></p>\n<ul>\n<li>Lead the build-out of key insider threat workstreams, from initial design through to day-to-day operation </li>\n<li>Build out the program's operating mechanics, including investigative standards, playbooks, and the metrics and reporting that show whether the program is working</li>\n<li>Support insider risk investigations alongside SIRT, bringing insider threat expertise, telemetry and evidence analysis, and written findings and risk recommendations</li>\n<li>Partner with Legal, HR/Employee Relations, Privacy, and Compliance on case handling and escalation criteria, helping ensure the program respects employee privacy and meets legal and regulatory obligations</li>\n<li>Threat model Affirm's highest-risk data and systems for insider risk, and partner with detection engineers to turn the results into production detections</li>\n<li>Own and improve the controls that reduce insider risk, including data loss prevention, endpoint monitoring, secure browser and contractor access controls, SaaS posture management, and access governance, working with system owners to close gap</li>\n<li>Automate the program's operational load with workflow automation platforms and Python, covering evidence collection, case routing, and reporting</li>\n<li>Build and expand agentic automations that assist with insider risk triage and investigation, and define which decisions stay with a human</li>\n</ul>\n<p><strong>What we look for</strong></p>\n<ul>\n<li>Deep expertise in security engineering, security operations, insider risk, or digital forensics </li>\n<li>Track record of standing up new security capabilities where little existed before</li>\n<li>Experience running investigations end to end, including evidence handling, log and endpoint forensics, timeline reconstruction, and written findings suitable for Legal and HR audiences Ability to write and evaluate detection logic against endpoint, identity, cloud, and SaaS telemetry in a SIEM (Splunk, Elastic, Panther, Chronicle, or similar)</li>\n<li>Hands-on experience with insider risk tooling such as DLP, UEBA, endpoint detection and response, CASB, and access governance, with a practical sense of their strengths and limits</li>\n<li>Working knowledge of Python for security tooling and automation</li>\n<li>Experience building and maintaining production workflows in automation platforms such as Tines, Torq, or similar</li>\n<li>Experience building and running agentic automations in production that assist with alert triage and investigation, such as LLM-driven enrichment, summarization, or first-pass analysis, with a clear view of where human review stays in the loop</li>\n<li>Discretion and sound judgment handling sensitive investigations, and comfort navigating the privacy, legal, and employee-relations considerations that insider work carries</li>\n<li>Clear written and verbal communication skills, with the ability to work across Security, Engineering, Legal, HR, Privacy, and Compliance</li>\n<li>Experience in regulated or financial services environments (SOC 2, PCI DSS, GLBA) is a plus</li>\n</ul>\n<p>Base Pay Grade - N<br />Equity Grade - Canada 6</p>\n<p>Employees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.</p>\n<p>Base pay is part of a total compensation package that may include monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents). In addition, the employees may be eligible for equity rewards offered by Affirm Holdings, Inc. (parent company).</p>\n<p>CAN base pay range per year: $153,000 - $213,000 $CAD.</p>\n<p>This remote role is open only to candidates residing in Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, or Saskatchewan.</p>\n\n<strong>#LI-Remote</strong>\n\n<p><strong>Remote-first with flexibility built in</strong>Affirm is proud to be a remote-first company. Most roles can be done from almost anywhere within the country of employment. Some positions may occasionally require in-person work at an Affirm office, and a few are office-based due to the nature of the work. All new hires will be invited to attend an in-person onboarding experience.</p>\n<p><strong>Benefits designed for you</strong>Our benefits reflect our commitment to care, transparency, and flexibility. Here are a few highlights:</p>\n<ul>\n<li>Health coverage at no cost: We cover 100% of premiums for employees and their dependents.</li>\n<li>Spending stipends: Monthly stipends support your tech setup, and the ability to choose health and wellness options that are right for you.</li>\n<li>Time off to recharge: Flexible time off and generous holiday calendars help you rest when you need to.</li>\n<li>Own a piece of what you build: Our employee stock purchase plan (ESPP) lets you buy Affirm stock at a discount.</li>\n</ul>\n<p>We’re committed to providing an inclusive interview process, including accommodations for candidates with disabilities. If you need support, we’re happy to help.</p>\n<p>For positions based in San Francisco or Los Angeles: Affirm considers qualified applicants with arrest and conviction records, as required by law.</p>\n\n\n<p>By clicking \"Submit Application,\" you acknowledge that you have read Affirm's <a href=\"https://www.affirm.com/global-candidate-privacy-notice\">Global Candidate Privacy Notice</a> and consent to the use of your personal information as described.</p>",
+    "applyUrl": "https://job-boards.greenhouse.io/affirm/jobs/8035736003",
+    "postedAt": "2026-11-06T06:51:23.000Z",
+    "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "source": "greenhouse"
   },
   {

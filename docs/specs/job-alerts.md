@@ -25,13 +25,13 @@ This spec lives in the site repo until `myorb/workog-alerts` exists. Then the pa
 
 ```
 myorb/workog                                                      myorb/workog-alerts
-GitHub Actions (05:00 UTC)        DigitalOcean App Platform       Cloudflare
+GitHub Actions (05:00 UTC)        DigitalOcean App Platform       DigitalOcean Droplet (fra1)
 fetch → commit data/  ──push──▶   build → workog.com              alerts.workog.com
-                                   ├─ /version.json ◀── poll hourly ── Worker (cron)
+                                   ├─ /version.json ◀── poll hourly ── Bun app (systemd timer)
                                    ├─ /feeds/v1/new-jobs.json ◀────────┤
                                    ├─ /feeds/v1/vocab.json ◀── on subscribe
-                                   └─ "🔔 Get alerts" link ──────────▶ /new?…   ├─ D1: subscribers, alerts
-                                                                               ├─ Queue → email provider
+                                   └─ "🔔 Get alerts" link ──────────▶ /new?…   ├─ SQLite ──Litestream──▶ Spaces (fra1)
+                                                                               ├─ outbox → email provider
                                                                                ├─ /c/… click redirect → workog.com/jobs/<slug>
                                                      Paddle checkout ──webhook──┘
 ```
@@ -176,14 +176,17 @@ Repo `myorb/workog-alerts`.
 
 ### Stack
 
-**Cloudflare Workers (paid plan, $5/mo) + D1 + Cron Triggers + Queues**, in TypeScript.
+**One DigitalOcean Droplet** (Basic, 1 GB, $6/mo, region `fra1`) running a single **Bun** app (Hono for routes, `bun:sqlite` for data), in TypeScript. It's the same stack as the site's pipeline and the same provider as the site.
 
-- No server to patch and no TLS or backups to run. Cron and queue retries come built in.
-- D1 is created with `jurisdiction: "eu"`, so subscriber emails are stored in the EU.
+- **Why a Droplet:** App Platform has no persistent disk, so it can't keep SQLite, and Managed Postgres alone would cost $15/mo. One small server is cheaper and simpler at this size. SQLite on one disk handles far more than 10k subscribers and a daily batch.
+- **In the EU:** the Droplet and the backup bucket are both in Frankfurt, so subscriber emails stay in the EU.
+- **Processes:** `systemd` runs the web app, plus a timer every hour for the daily check (see Flows). Caddy in front does HTTPS (Let's Encrypt) automatically.
+- **Backups:** Litestream streams every SQLite change to a DigitalOcean Spaces bucket ($5/mo), so a lost Droplet costs seconds of data, not a day. A restore is one command, tested before launch and then once a month. Paddle stays the record of who paid, so subscriptions can also be rebuilt from its API.
+- **Upkeep:** unattended security updates, SSH keys only, a firewall open only for 80/443 (and 22 from GitHub Actions and your IP). DigitalOcean's uptime check on `/health` sends alerts to the same webhook the pipeline uses.
+- **No queue service:** sends go through an `outbox` table. The daily run writes one row per email, and a sender loop works through it at the provider's rate limit, retrying failures with backoff. A crash halfway through just resumes.
 - **Email:** Resend (EU region) to start, which is free up to 3k emails a month and then $20 for 50k. Move to Amazon SES (about $0.10 per 1,000) once volume passes about 50k a month. Mail is sent from `alerts@mail.workog.com`, a subdomain, so a deliverability problem never touches the main domain. SPF, DKIM and DMARC are set up before the first send.
-- **Why not App Platform:** it has no persistent disk and no cron for services. Managed Postgres alone would cost $15/mo, three times the whole Worker.
 - **Payments: Paddle, as merchant of record.** Paddle is the seller in law: it charges, collects and pays EU VAT in every country (no OSS filings for us), sends invoices, handles refunds and chargebacks, and gives a hosted page to cancel. We get a payout and one webhook. It costs 5% + $0.50 per payment, more than Stripe's ~1.5% + €0.25, but Stripe would leave VAT registration, invoicing and the German cancellation rules to us. That's not worth it for a one-person business at this size. The fixed $0.50 is why the yearly plan is pushed (see Plans).
-- **Its own CI:** tests and then `wrangler deploy` on push to `main`, plus the nightly contract check. The Paddle, Resend and Cloudflare secrets live only in this repo; the site repo never sees them.
+- **Its own CI:** tests, then deploy on push to `main` (GitHub Actions copies the build over SSH and restarts the service; `systemd` keeps the old one if the new one fails its health check), plus the nightly contract check. The Paddle and Resend secrets live only in this repo and on the Droplet; the site repo never sees them.
 
 ### Data
 
@@ -195,6 +198,7 @@ subscriber (id, email UNIQUE, lang, token, created_at, bounced_at,
 alert      (id, subscriber_id, tags, path, label, cursor, created_at, paused_at)
            -- tags: the filter; label: copied from vocab.json; cursor: last firstSeenAt sent
 send       (id, subscriber_id, run, jobs, sent_at, provider_id)       -- one row per email, for stats and dedup
+outbox     (id, subscriber_id, run, payload, attempts, next_try_at)   -- emails waiting to go out
 click      (send_id, slug, at)
 ```
 
@@ -217,12 +221,12 @@ Nothing else is stored: no names, no CVs, no IPs, no card details (Paddle holds 
 - **Subscribe:** `GET /new?…` checks the tags against `vocab.json` (cached until the next run) and shows the filter spelled out ("Cardiology · Senior · Bayern") in the page's language, and **what it would have sent**: "23 new jobs matched this in the last 7 days", with the 5 newest listed. The feed already covers 7 days, so this costs nothing and is the strongest reason to pay. Below that: the plan choice and a "Start 7-day free trial" button that opens Paddle checkout (overlay), which collects email and card. The path and language travel in Paddle's `custom_data`.
 - **Paid (webhook `subscription.created` / `transaction.completed`):** create the subscriber and its first alert with the cursor set to now, `status = trialing`. Send the welcome email: the 5 newest matching jobs, the manage link and the trial end date. The checkout already proves the address is real and that the person asked for the emails, so there is no separate opt-in confirmation.
 - **Billing changes (webhooks `subscription.updated` / `canceled` / `past_due`):** update `status` and `paid_until`. A canceled subscriber keeps getting emails until `paid_until`, then stops. `past_due` keeps sending while Paddle retries the card (its dunning emails do the reminding), and stops if it ends canceled. Webhooks are verified by signature and are idempotent on Paddle's event id.
-- **Daily send (cron every hour):**
+- **Daily send (systemd timer, every hour):**
   1. Fetch `/version.json`. If `run` is the same as last time, stop.
   2. Fetch `new-jobs.json` and index its jobs by tag string: `specialty:cardiology` → job ids, and so on.
   3. For each alert of a subscriber with `status` trialing, active or past_due and `paid_until` in the future, intersect the index sets of its tags and keep the jobs with `firstSeenAt > cursor`.
   4. Group by subscriber, so each person gets **one email a day** with a section per alert. Show at most 20 jobs per alert, then "and N more on the page →".
-  5. Put one message per subscriber in a Queue. The consumer sends through the provider, writes `send` and moves the cursors. Retries come from the Queue.
+  5. Write one `outbox` row per subscriber, in the same transaction that moves the cursors, so no job is sent twice or skipped. The sender loop sends each row through the provider, writes `send` and deletes the row, retrying failures with backoff.
 - **Click:** every job link is `alerts.workog.com/c/<send>/<slug>`. It records the click and redirects to `workog.com/jobs/<slug>?utm_source=alerts`, the job page on Workog, not the employer's site. That keeps the visit on Workog, where the employer gets the credit later.
 - **More alerts:** every alert link on the site, for someone already subscribed, goes through the same page. It recognises them by the manage token in a cookie set only on `alerts.workog.com`, or asks for their email and sends a magic link. Then it adds the alert with one click, up to the plan's 10.
 - **Manage:** `/m/<token>` lists your alerts and lets you pause or delete each one. It also has the cancel button (see Legal) and a link to Paddle's portal for card, invoices and plan changes. "Delete my data" cancels the subscription and removes the rows; it doesn't just flag them.
@@ -244,8 +248,8 @@ Selling a subscription to consumers in Germany and the EU adds duties. Paddle co
 - **Paddle (as merchant of record) covers:** VAT in every EU country, invoices, the payment terms in its checkout, refunds and chargebacks.
 - **Cancel button (§312k BGB):** every online consumer subscription in Germany needs a clearly labelled "Verträge hier kündigen" button, reachable without logging in, leading to a confirmation page. It goes in the site footer (on all pages, linking to `alerts.workog.com/cancel`) and on the manage page. The confirmation page asks only for the email and has one "Jetzt kündigen" button. Pressing it cancels via Paddle's API right away (no emailed link to click, which the law treats as an extra hurdle), shows the end date, and sends a confirmation email with the date and time. This is the one piece of the site footer that's legally required, not optional.
 - **Right of withdrawal (14 days, digital service):** the checkout asks the subscriber to agree that the service starts now and that they lose the withdrawal right for the part already used. The free trial makes this mostly theoretical, but the checkbox and the withdrawal notice have to be there. Paddle's checkout has the consent built in; our terms repeat it.
-- **Terms (AGB) and the Impressum and privacy policy:** three static pages on workog.com, in all languages. The terms describe the service: daily emails of new jobs matching your alerts, from public sources, with no guarantee of completeness. The privacy policy names Paddle, Cloudflare and the email provider as processors (Paddle as an independent controller for payments), says what is stored and how to delete it, and gives the legal basis: the contract, Art. 6(1)(b) GDPR.
-- **Data processing agreements:** sign them with Cloudflare and the email provider.
+- **Terms (AGB) and the Impressum and privacy policy:** three static pages on workog.com, in all languages. The terms describe the service: daily emails of new jobs matching your alerts, from public sources, with no guarantee of completeness. The privacy policy names Paddle, DigitalOcean and the email provider as processors (Paddle as an independent controller for payments), says what is stored and how to delete it, and gives the legal basis: the contract, Art. 6(1)(b) GDPR.
+- **Data processing agreements:** accept DigitalOcean's and the email provider's.
 - **What we sell is the emails, not the jobs.** The job data stays free on the site. The terms must not imply that subscribers get jobs nobody else sees.
 
 ## Making money from it
@@ -264,7 +268,7 @@ Selling a subscription to consumers in Germany and the EU adds duties. Paddle co
 - Emails sent, clicks per email, emails paused, and complaints per send (keep complaints under 0.1%)
 - Visits to job pages from `utm_source=alerts`
 
-The site has no analytics yet. Add a privacy-friendly one (Plausible or Cloudflare Web Analytics, no cookies) in the same PR, so the funnel's first step is counted.
+The site has no analytics yet. Add a privacy-friendly one (Plausible, or Umami self-hosted on the alerts Droplet; no cookies) in the same PR, so the funnel's first step is counted.
 
 ## Cost
 
@@ -272,7 +276,7 @@ Running costs are small; Paddle's fee is the biggest cost.
 
 | Item | 100 paying | 1,000 paying |
 | --- | --- | --- |
-| Workers paid (D1 and Queues included) | $5 | $5–10 |
+| Droplet + Spaces for backups | $11 | $11–17 (2 GB Droplet if needed) |
 | Email (one a day each) | $0 (Resend free) | $20 (Resend) |
 | Paddle fees (half monthly, half yearly) | ~€45 | ~€450 |
 | **Revenue, gross incl. VAT** | **~€410/mo** | **~€4,100/mo** |
@@ -284,12 +288,11 @@ Revenue counts a yearly subscriber as €3.25 a month. Income tax on what's left
 
 1. **Site PR in `myorb/workog`:** `src/lib/alerts.ts` with tests, the two feeds, `robots.txt`, and analytics. The feeds go live straight away; they're harmless, and the service is then built against real data. The header link and the footer cancel link stay behind a `PUBLIC_ALERTS` build flag until the service is live.
 2. **New repo `myorb/workog-alerts`:** the contract schema and its nightly check first, then the subscribe page with the 7-day preview, Paddle checkout and webhooks, manage, cancel, stop emails, daily send, click redirect and bounce webhook. Tested against the live v1 feeds and Paddle's sandbox.
-3. **Launch:** Paddle account approval (they review the website and terms first, which takes a few days, so apply early), DNS (`alerts.`, and `mail.` with SPF/DKIM/DMARC), Impressum, terms and privacy pages, turn on the flag, then a week watching the numbers above with the alert webhook already in use for the pipeline.
+3. **Launch:** Paddle account approval (they review the website and terms first, which takes a few days, so apply early), the Droplet and Spaces bucket with a tested Litestream restore, DNS (`alerts.`, and `mail.` with SPF/DKIM/DMARC), Impressum, terms and privacy pages, turn on the flag, then a week watching the numbers above with the alert webhook already in use for the pipeline.
 4. **Phase 2:** Telegram bot and the sponsored slot.
 
 ## Open questions
 
 - Who is the legal entity and address for the Impressum, the terms and the Paddle account? Paddle pays out to a business or a sole trader; in Germany that means at least a registered Gewerbe.
 - Are €4.99/mo and €39/yr right, with one price for tech and medicine? A higher medical price is the first experiment worth running.
-- Is Cloudflare acceptable as a second provider, or should everything stay on DigitalOcean? If it stays, use a $6 droplet with Bun and SQLite instead, plus backups.
 - Should alerts go only to job pages on Workog (better for building the business), or straight to the employer's apply link (one click less for the seeker)? This spec picks Workog. For paying subscribers, straight to the apply link may feel like better value.
