@@ -5123,7 +5123,7 @@
     "postedAt": "2026-07-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -8376,6 +8376,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Program-Manager---LPU-Software_JR2025461",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8789,6 +8791,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager--Cloud-Infrastructure_JR2025890",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2025894",
+    "slug": "nvidia-research-scientist-ai-and-systems-security-phd-new-college-grad-2026-jr2025894",
+    "company": "nvidia",
+    "title": "Research Scientist, AI and Systems Security - PhD New College Grad 2026",
+    "locations": [
+      "US, MA, Westford",
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>We are looking for a Research Scientist to advance security, safety, and privacy across three complementary research areas: (1) security of AI models and systems; (2) AI-enabled design and verification of secure computer systems; and (3) AI for cybersecurity. The first area includes making AI models, agents, data pipelines, runtimes, and accelerated computing platforms secure, safe, private, and resilient to attack, misuse, data leakage, and other failures. AI-enabled design and verification includes using AI, together with systems and formal techniques, to design, analyze, implement, and verify secure hardware and software systems. AI for cybersecurity includes applying AI to vulnerability discovery, secure systems development, threat detection, incident analysis, and automated defense.</p><p>Across these three areas, we aim to build secure, safe, and private systems from first principles by co-designing hardware, software, AI models, algorithms, and operational controls. Our goal is to provide strong, measurable, and where possible verifiable protection while preserving performance, energy efficiency, and usability. We welcome researchers with depth in one area and interest in contributing across the broader agenda.</p><p>NVIDIA is a leader in accelerated computing and AI systems. This role offers the opportunity to shape the security and safety foundations of emerging AI platforms, develop new approaches for AI-enabled secure system design and verification, and advance AI-powered cybersecurity in collaboration with research, product, and engineering teams.<br /> </p><p><b>What you'll be doing:</b></p><ul><li><p>Advance the security, safety, and privacy of AI models and systems across the full lifecycle, including data collection, training, model and agent behavior, inference, deployment, and platform operations.</p></li><li><p>Develop AI-enabled methods to design, analyze, implement, and verify computer systems, including hardware architectures, system software, runtimes, compilers, and applications; rigorously evaluate security, safety, privacy, performance, and efficiency tradeoffs.</p></li><li><p>Advance AI for cybersecurity by developing techniques for vulnerability discovery, secure code generation and review, threat detection, incident analysis, security validation, and automated defense.</p></li><li><p>Collaborate across hardware, software, research, and product teams; publish original research; and help translate research advances into practical systems and developer capabilities.<br /> </p></li></ul><p><b>What we need to see:</b></p><ul><li><p>A Ph.D. in Computer Science, Computer Engineering, Electrical Engineering, or a related field, with a strong research background in security, AI/ML, computer architecture, operating systems, formal methods, programming languages and compilers, software systems, or other related areas.</p></li><li><p>A record of research excellence demonstrated through publications, open-source systems, patents, technology transfer, or substantial research collaborations.</p></li><li><p>Deep expertise in at least one of the three research areas—security of AI models and systems, AI-enabled design and verification of secure computer systems, or AI for cybersecurity—with the ability to connect that depth to challenges across the hardware/software stack.</p></li><li><p>Strong experimental research and prototyping skills, including the ability to build systems, define threat models, design meaningful evaluations, and analyze security and performance tradeoffs.</p></li><li><p>Strong programming skills in C, C++, Python, and/or relevant systems and machine-learning frameworks, along with clear written and verbal communication skills.<br /> </p></li></ul><p>We are looking for creative, collaborative, and self-directed researchers who want to secure AI models and systems, use AI to help design and verify secure computer systems, and expand what AI can do for cybersecurity. Candidates do not need to be experts in all three areas, but should be excited to work across disciplines and help turn new ideas into high-impact research and technology.<br /> </p><p>NVIDIA has continuously reinvented itself over two decades. This is our life’s work — to amplify human imagination and intelligence. With highly competitive salaries and a comprehensive benefits package, NVIDIA is widely considered to be one of the technology world’s most desirable employers! We have some of the most hardworking, resourceful and dedicated people in the world working for us. Are you a security researcher who loves the challenge of exploring and crafting techniques that will impact our future products? If so, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary range for this position is 168,000 USD – 264,500 USD.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-MA-Westford/Research-Scientist--AI-and-Systems-Security---PhD-New-College-Grad-2026_JR2025894",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -9857,7 +9876,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -10763,6 +10782,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028075",
+    "slug": "nvidia-senior-digital-design-verification-engineer-hardware-jr2028075",
+    "company": "nvidia",
+    "title": "Senior Digital Design Verification Engineer - Hardware",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>We're now looking for a Senior Digital Design Verification Engineer! NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can tackle, and that matter to the world. This is our life’s work, to amplify human imagination and intelligence. Make the choice to join our diverse team today!</p><br /><p>As a Senior Digital Design Verification Engineer at NVIDIA, you'll verify the design and implementation of our cutting edge SerDes IPs. This ground breaking technology will enable and accelerate gaming, artificial intelligence, deep learning, and autonomous driving. We have put together a best-in-class team that delivers IPs that will be consumed by standard as well as industry-leading proprietary high-speed protocols!</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Develop and execute verification plans for SerDes digital designs, golden models, and microarchitecture using SystemVerilog/UVM, simulation, and hardware emulation.</li><li>Develop, bring up, and debug SerDes verification environments on Cadence Palladium, including preparing designs and testbenches for emulation and running long-duration system scenarios. Run regressions, debug and triage failures, and reproduce issues in simulation when needed to support root-cause analysis and resolution.</li><li>Write and maintain C/C++ reference models, stimulus generators, checkers, and test code to support simulation and emulation.</li><li>Investigate failures across RTL, verification infrastructure, C/C++ models, and RNM models, and collaborate with designers to resolve issues.</li><li>Work with architects, digital and analog designers, and pre- and post-silicon verification teams to define verification scope, close coverage, and deliver high-quality IP on schedule.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Bachelor’s or Master’s degree in Electrical Engineering, Computer Science, or Computer Engineering, or equivalent experience.</li><li>At least 5 years of relevant design verification experience at the unit, subsystem, or SoC level.</li><li>Hands-on experience with Cadence Palladium or a comparable hardware emulation platform, including environment bring-up, regression execution, failure triage, and debug.</li><li>Strong C/C++ programming skills, with experience developing verification models, test infrastructure, or hardware validation tests.</li><li>Strong SystemVerilog skills and experience building verification environments using UVM.</li><li>Experience with constrained-random stimulus, functional coverage, assertions, and coverage closure.</li><li>Strong debugging and analytical skills, including isolating emulation failures and reproducing issues in simulation.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Direct experience bringing up and debugging SerDes IP or subsystems on Cadence Palladium.</li><li>Experience adapting UVM testbenches, C/C++ models, and mixed-signal behavioral models for efficient emulation.</li><li>Experience developing SerDes RNM models and correlating their behavior with analog simulation results or silicon measurements.</li><li>Understanding of SerDes architectures, mixed-signal interfaces, calibration, adaptation, and link training.</li><li>Expertise in high-speed protocols such as PCI Express, USB, or SATA.</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />136,000 USD – 218,500 USD for Level 3; and 168,000 USD – 264,500 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Digital-Design-Verification-Engineer---Hardware_JR2028075",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028088",
     "slug": "nvidia-senior-architect-data-processing-systems-analytics-and-data-intelligence-jr2028088",
     "company": "nvidia",
@@ -11013,6 +11048,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028295",
+    "slug": "nvidia-senior-mask-layout-design-engineer-jr2028295",
+    "company": "nvidia",
+    "title": "Senior Mask Layout Design Engineer",
+    "locations": [
+      "Taiwan, Hsinchu",
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to take on, that only we can pursue, and that matter to the world. This is our life’s work, to amplify human creativity and intelligence. We are looking for a Senior Mask Layout Design Engineer, someone who is excited to join a growing and dynamic group of diverse individuals responsible for handling meaningful high-speed mixed-signal circuit designs.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Performing physical layout for mixed-signal functions like PLL's, high speed SerDes, Analog to Digital converters, ESD structures designs in groundbreaking sub-micron CMOS technologies using Cadence tools.</li><li>You'll work multi-functional with ASIC and mixed-signal engineers to customize designs for integration in VLSI products.</li><li>Take part in floor planning, custom layout and verifying against design rules and schematics.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Have a BSEE or equivalent experience. Minimum of 5+ years validated experience in Mask and Layout Design.</li><li>Deep understanding of analog circuit layout concepts in submicron CMOS technologies.</li><li>You are an authority with Cadence custom circuit design tools - particularly virtuoso.</li><li>Experience running and debugging with verification tools such as Dracula, Hercules, Calibre, and Primeyield.</li><li>You are able to work successfully in a team, good interpersonal skills, passion and positive energy.</li><li>Proficient in scripting languages like perl, python, skill etc.</li><li>Should have knowledge of DRC and LVS checking flows, ability to customize decks.</li></ul><br /><p>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Mask-Layout-Design-Engineer_JR2028295",
+    "postedAt": "2026-11-07T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028299",
     "slug": "nvidia-performance-engineering-intern-deep-learning-and-hpc-2027-jr2028299",
     "company": "nvidia",
@@ -11091,6 +11143,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Silicon-Product-Engineer---Manufacturing_JR2028336",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11834,7 +11888,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -12341,6 +12395,43 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029384",
+    "slug": "nvidia-system-application-engineer-jr2029384",
+    "company": "nvidia",
+    "title": "System Application Engineer",
+    "locations": [
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU &amp; SOC acts as the brains of computers, robots, and self-driving cars that can understand the world.</p><p>We're Application Engineering team and searching for System Engineer to engage for partner development in ARM-based CPU with NVIDIA solutions. NVIDIA is creating the future of computing and looking for passionate, dedicated, and forward-thinking individuals to help make that happen.</p><p><b>What you’ll be doing:</b></p><ul><li><p>Develop and implement NVIDIA product with SOC design and provide technical support during development, testing and production.</p></li><li><p>System-level tool development/debug from the product segment needed.</p></li><li><p>Drive the partner design review through system architecture, schematics, and layout, thermal, mechanical and validation plan.</p></li><li><p>Coordinate with multiple engineer teams to perform partners design on GPU or NV-required products in design cycle till production.</p></li><li><p>Work with partners for issue analysis, root cause and drive with partner's design quality.</p></li><li><p>Provide tech training to partners.</p></li><li><p>Overseas travel will be mission-based and may be required a couple of times per year.</p></li><li>Flexible to jump in NVIDIA different system level products as work required.</li></ul><p><b>What we need to see:</b></p><ul><li><p>Excellent skills in ARM System Architecture for SOC system solutions.</p></li><li><p>Solid Solid understanding in hardware system design concept.</p></li><li><p>Master degree in Electrical Engineering, Computer Science , a related field, or equivalent practical experience.</p></li><li><p>5+ years of experience in hardware or circuit design. Laptop or PC or server design work experience.</p></li><li><p>High-speed signal design and strong knowledge of consumer or server system architecture. Experience with motherboard design, laptops, and ARM-based systems is a strong plus.</p></li><li><p>Experience with high-speed design, signal integrity, and power distribution techniques.</p></li><li><p>Excellent communication skills, flexibility in task assignments, Innovative, Independent, results-oriented problem solver.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Strong oral &amp; written communication skill (both English and Chinese).</p></li><li><p>Development experiences in ARM based SOC system.</p></li><li><p>Self-motivated and aggressive to learn.</p></li><li><p>Can work under high pressure and dynamic environments.</p></li></ul><p>NVIDIA has some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our elite engineering teams are growing fast. If you're a creative and autonomous practical engineer with real passion for technology, we want to hear from you.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/System-Application-Engineer_JR2029384-1",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029414",
+    "slug": "nvidia-senior-system-software-engineer-factory-bringup-jr2029414",
+    "company": "nvidia",
+    "title": "Senior System Software Engineer - Factory Bringup",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, NC, Remote",
+      "US, TX, Remote",
+      "US, CO, Remote",
+      "US, CA, Remote",
+      "US, MA, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p> NVIDIA’s invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern deep learning - the next era of computing - with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as “The AI Computing Company.” We're looking to grow our company and establish teams with the most thoughtful people in the world.</p><br /><p>NVIDIA HGX, MGX and DGX systems deliver the world's leading solutions for enterprise AI infrastructure at scale.  With their end-to-end performance and flexibility, these systems enable researchers and scientists to combine simulation, data analytics, and AI to drive scientific progress on the most powerful end-to-end AI supercomputing platforms.</p><p>Are you ready to change the next generation of computing?</p><p>Join us at the forefront of technological advancement.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Own bring-up of new platforms in the factory across every level: board, tray, rack, and cluster. You will be the software owner from the first power-on, working alongside hardware, firmware, diagnostics, and test engineering.</li><li>Design the flows that run in the factory: firmware flashing across BMC, HMC, SBIOS, VBIOS, NIC and other components, version validation, security provisioning, and power-cycle recovery and retry handling. Your goal is a high first-pass yield at scale.</li><li>Take our tools into partner factories. Work with ODMs, CMs, OEMs, and CSPs to define requirements, integrate NVIDIA tools into their infrastructure, and validate them.</li><li>Make AI part of how the team builds. Use AI coding agents to speed up development, testing, code review, log triage and bug filing. We want you to find new places to use them, and to build the pipelines that make them reliable.</li><li>Be the one who unblocks the line. When a station is down, trace the failure across hardware and software stacks to find and fix the root cause.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>10+ years of experience in data center firmware, platform software or factory/manufacturing test software, with a BS, MS or PhD in EE, CS or a related field (or equivalent experience).</li><li>A proven track record building factory or data center automation (firmware flashing, diagnostics orchestration, provisioning, or log collection) and out-of-band management for large-scale server deployments.</li><li>Strong Python skills for building production tools and orchestration frameworks, plus working knowledge of C/C++, shell and Linux systems.</li><li>Solid knowledge of hardware interfaces (PCIe, USB, SMBus/I2C) and of debugging servers during early bringup.</li><li>Experience working directly with ODMs, CMs, or CSPs during NPI, bring-up, and volume production.</li><li>A strong communicator and collaborator who does well with ambiguity, owns problems end to end and works well across time zones.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Experience with rack-scale or multi-node GPU systems (NVLink switch trays, rack-level diagnostics, compute/switch tray bringup).</li><li>Familiarity with manufacturing diagnostic frameworks and factory test stations.</li><li>Experience designing resilient factory flows that improve first-pass yield and reduce line downtime.</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people on the planet working for us. If you're creative and autonomous, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary range for this position is 184,000 USD – 287,500 USD.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---Factory-Bringup_JR2029414-1",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029432",
     "slug": "nvidia-manager-software-engineering-jr2029432",
     "company": "nvidia",
@@ -12377,6 +12468,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deployment-Manager---Datacenter-and-Network-Infrastructure_JR2029533",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T05:03:16.544Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029577",
+    "slug": "nvidia-senior-compiler-engineer-rust-gpu-jr2029577",
+    "company": "nvidia",
+    "title": "Senior Compiler Engineer – Rust GPU",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is dedicated to reinvent accelerated computing. Reinvention requires great technology and amazing people. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><p>NVIDIA is hiring a Senior Compiler Engineer to join our team driving the next generation of GPU systems programming. We are redefining how developers write high-performance GPU software by bringing the safety, expressiveness, and modern tooling of Rust to native GPU and CUDA development. On this team, you will build cutting-edge compiler pipelines, custom intermediate representation (IR) frameworks, and JIT compilation systems that bridge host and device execution—allowing developers to write memory-safe, high-performance GPU kernels in idiomatic Rust.</p><p><b>What you’ll be doing:</b></p><ul><li><p>Develop Rust-to-GPU Compiler Pipelines: Design, implement, and maintain custom compiler backends (such as rustc codegen backends and proc-macros) and Rust-native intermediate representation (IR) frameworks to compile standard Rust directly to high-performance CUDA PTX and machine code.</p></li><li><p>Build compiler IRs and Optimizers: Work with modern compiler architectures to lower Rust AST and MIR into IRs including MLIR, PTX, and LLVM, including GPU-specific optimizations.</p></li><li><p>Support complex ahead-of-time, just-in-time, and link time optimization workflows: Build state-of-the-art tooling to support users targeting a broad family of NVIDIA GPUs, host platforms, and feature sets.</p></li><li><p>Define Safe Parallel Abstractions: Architect innovative compiler-enforced safety models that extend Rust's ownership, borrowing, and lifetime disciplines across the GPU launch boundary—preventing data races and enforcing memory safety during asynchronous GPU execution.</p></li><li><p>Expose Next-Gen Hardware Features: Implement type-safe, ergonomic device-side abstractions in Rust for low-level GPU hardware primitives, including shared memory, barriers, scoped atomics, Tensor Memory Accelerator (TMA), and warp/cluster-level operations.</p></li><li><p>Build the future: Supporting today’s accelerated computing applications is not sufficient. We have to build composable building blocks for others around us to build the applications of tomorrow.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>Bachelor's, Master's, or Ph.D. in Computer Science, Computer Engineering, a related field, or equivalent experience.</p></li><li><p>5+ years of relevant work or research experience in compiler development, language design, or GPU code generation.</p></li><li><p>Deep expertise in the Rust programming language, including a strong grasp of compiler internals (rustc), Rust MIR, procedural macros, and Rust's borrow-checker/lifetime model.</p></li><li><p>Hands-on experience with compiler infrastructures, intermediate representations (IRs), and code generation (such as LLVM IR, MLIR, or custom IR systems).</p></li><li><p>Solid understanding of parallel programming models, GPU architectures, and CUDA programming.</p></li><li><p>Strong software design skills, including debugging, profiling, and benchmarking compilers and GPU kernels.</p></li><li><p>Ability to orchestrate agents for product requirement design, architecture, code development, testing, code review, and issue triage.</p></li><li><p>Ability to work independently, define project goals and scope, and drive complex compiler-engineering efforts from research to production.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>A track record of contributing to the Rust compiler (rustc), Cargo tooling, or open-source Rust-to-GPU projects.</p></li><li><p>Experience building custom compiler front-ends, AST translators, or JIT engines.</p></li><li><p>Familiarity with MLIR or other extensible compiler frameworks.</p></li><li><p>Deep proficiency in low-level GPU programming, including the use of modern hardware features (e.g., Tensor Cores, warp-level shuffles, or asynchronous transfer pipelines).</p></li><li><p>Experience designing Domain-Specific Languages (DSLs) or tile-based programming abstractions for tensor processing.</p></li></ul><p>With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for programming languages and systems technology, we want to hear from you.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Compiler-Engineer---Rust-GPU_JR2029577",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   }
 ]

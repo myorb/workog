@@ -1377,6 +1377,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Pune/Senior-Tools-Development-Engineer_JR2012641",
     "postedAt": "2026-02-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5203,6 +5205,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Italy-Remote/Senior-Developer-Relations-Manager---EMEA-AI-Natives_JR2022093",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -6036,6 +6040,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Software-Engineer---Trusted-Firmware_JR2023340",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8202,6 +8208,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Architect---GPU-Performance_JR2025445",
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8663,6 +8671,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/France-Courbevoie/Senior-Cloud-Infrastructure-and-Reliability-Solutions-Architect_JR2025838",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -9495,6 +9505,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Account-Manager---AI-Natives_JR2026699",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10420,6 +10432,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Product-Manager--Infrastructure-Resilience_JR2027685",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10652,6 +10666,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2027872",
+    "slug": "nvidia-senior-deep-learning-software-infrastructure-engineer-jr2027872",
+    "company": "nvidia",
+    "title": "Senior Deep Learning Software Infrastructure Engineer",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people.</p><br /><p>Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world. We are in search of a Deep Learning Software Infrastructure Engineer to propel NVIDIA’s Autonomous Vehicles project forward. In this role, you will build and scale training libraries and infrastructure that make end-to-end autonomous driving models possible. By enabling training on thousands of GPUs and massive datasets, you will accelerate iteration speed and improve safety, working closely with research and platform teams across NVIDIA.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Crafting, scaling, and hardening deep learning infrastructure libraries and frameworks for training on multi-thousand GPU clusters.</li><li>Improving efficiency throughout the training stack: data loaders, distributed training, scheduling, and performance monitoring.</li><li>Building robust training pipelines and libraries to handle massive video datasets and enable rapid experimentation.</li><li>Collaborating with researchers, model engineers, and internal platform teams to enhance efficiency, minimize stalls, and improve training availability.</li><li>Owning core infrastructure components such as orchestration libraries, distributed training frameworks, and fault-resilient training systems.</li><li>Partnering with leadership to ensure infrastructure scales with growing GPU capacity and dataset size while maintaining developer efficiency and stability.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>BS, MS, or PhD in Computer Science, Electrical/Computer Engineering, or a related field, or equivalent experience.</li><li>12+ years of professional experience building and scaling high-performance distributed systems, ideally in ML, HPC, or large-scale data infrastructure.</li><li>Extensive knowledge in deep learning frameworks (PyTorch is preferred), large scale training (DDP/FSDP, NCCL, tensor/pipeline parallelism), and performance profiling.</li><li>Strong systems background: datacenter networking (RoCE, IB), parallel filesystems (Lustre), storage systems, schedulers (Slurm, Kubernetes, etc.).</li><li>Proficiency in Python with experience writing production-grade libraries, orchestration layers, and automation tools.</li><li>Ability to work closely with multi-functional teams (ML researchers, infra engineers, product leads) and translate requirements into robust systems.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Shown experience scaling large GPU training clusters with &gt;1,000 GPUs.</li><li>Expertise in fault resilience and high availability, including elastic training and large-scale observability.</li><li>Tried leadership skills as a hands-on technical authority, encouraging others and establishing guidelines for ML systems engineering.</li></ul><br /><p>#AutonomousVehicles</p><p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Software-Infrastructure-Engineer_JR2027872",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2027887",
     "slug": "nvidia-senior-architect-model-performance-and-post-training-jr2027887",
     "company": "nvidia",
@@ -10862,6 +10892,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Staff-Software-Engineer---Agentic-Automation_JR2028169",
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028172",
+    "slug": "nvidia-system-software-engineer-intern-autonomous-vehicles-2027-jr2028172",
+    "company": "nvidia",
+    "title": "System Software Engineer Intern, Autonomous Vehicles - 2027",
+    "locations": [
+      "China, Shenzhen",
+      "China, Shanghai"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is the engine of the AI era. We invented the GPU, and the accelerated computing it made possible now powers the world's most advanced AI, from the data center to the car. Today, NVIDIA DRIVE brings that intelligence to the road: a full-stack platform that lets vehicles perceive, reason and act in the real world. We are looking to grow our teams with the smartest people in the world, and there has never been a more exciting time to join us.</p><br /><p>The Autonomous Vehicles team develops and ships NVIDIA's DRIVE software platform. Our AV Stability group owns the reliability of the full stack on real vehicles: every issue found on a test drive flows through us before it reaches the owning team. You will reproduce, investigate and help fix the problems that stand between a prototype and a product, working with sensor, perception, planning and platform teams across the globe. As AI reshapes how engineering itself is done, our team is also where that change meets the vehicle: we increasingly build intelligent tooling on top of the same expertise we use to debug the car. We have real customers and real competition, and the work is exciting, fun, and very meaningful.</p><br /><p><b>What you'll be doing:</b></p><br /><ul><li>Use in-house data playback, simulation, and visualization tools to re-animate and reproduce performance issues experienced during test drives.</li><li>Collaborate with software and algorithm experts to investigate, deduce, and isolate root causes of test drive issues, and to develop fixes and improvements.</li><li>Design and implement Autonomous Vehicles software, including system integration, application design, performance/power optimization, and stress/stability/compliance testing.</li><li>Drive the reliability of the whole software system, including time sync, vehicle network, RADAR, LiDAR, and camera sensor processing, and fusion.</li><li>Help turn hard-won debugging expertise into tooling and automation, including AI-assisted analysis of logs and vehicle data, so that problems are found faster and recur less.</li><li>Develop a strong technical understanding of the stack, and proactively identify new opportunities and creative ways to solve or mitigate technical challenges.</li></ul><br /><p><b>What we need to see:</b></p><br /><ul><li>Pursuing a BS or MS in CS/CE/EE/Robotics or a related field.</li><li>Demonstrated proficiency in both C/C++ and Python: C/C++ to understand and debug the vehicle software stack, Python to build the tooling around it.</li><li>Strong debugging instincts: you can read logs and traces, form a hypothesis, and prove or disprove it with evidence.</li><li>Ability of using modern AI coding assistants as part of your everyday workflow, while verifying what they produce.</li><li>Familiar with git or other version control tooling.</li><li>Ability and flexibility to work and communicate effectively in a multinational, multi-time-zone environment.</li><li>Self-motivated and a good teammate.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><br /><ul><li>Good knowledge of key Autonomous Driving technologies and the typical challenges of key components; prior experience in the AV field.</li><li>Worked with CAN and related tools, RADAR, LiDAR.</li><li>Hands-on experience with LLM-based tooling: prompt and context design, tool calling, agent workflows, or evaluation of model output on a real task.</li><li>Experience with large-scale log analysis and cloud-based workflows.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shenzhen/System-Software-Engineer-Intern--Autonomous-Vehicles---2027_JR2028172",
+    "postedAt": "2026-11-07T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -11080,6 +11127,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Germany-Remote/Senior-Software-Engineer---Parking-for-Autonomous-Vehicles_JR2028385-1",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11598,6 +11647,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Customer-Success-Operations-Manager_JR2028873",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11835,6 +11886,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029067",
+    "slug": "nvidia-circuit-validation-engineer-new-college-graduate-2027-jr2029067",
+    "company": "nvidia",
+    "title": "Circuit Validation Engineer - New College Graduate 2027",
+    "locations": [
+      "China, Shanghai"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p> Silicon Co-Design Group (SCG) is a wide-ranging, multi-functional, integral team at NVIDIA. We sit at the crossroads of design, architecture, marketing, operations, and productization. Our contributions span from the arch stage and extend to defining final products. We architect innovative solutions for Datacenter, Server, Gaming, Robotics, Automotive, and Embedded markets. We are fast-paced, dynamic, share a sense of humor, and collaborate extensively to push the boundaries of what is possible. We do all of this with an eye on making groundbreaking, impactful market disruptions! We are looking for a Circuit Validation Engineer(NCG) to define and validate circuit methodologies across GPUs and SoCs, validate circuit behavior, performance, quality, and product readiness. This is a highly visible, multi-functional role focused on building methodologies that help products meet SOL(Speed Of Light) milestones and achieve the high NVIDIA quality bar our customers expect.</p><p><b>What you will be doing:</b></p><ul><li>Standing up silicon co-design prototypes and measurement setups that expose power-rail noise, circuit enablement and tuning, performance, and volume behavior — from first bring-up through repeatable experiments that others can rerun.</li><li>Planning and executing design of experiments (DOE): choosing factors and ranges (voltage, frequency, workload, temperature, process), defining sample plans and success criteria, and analyzing main effects and interactions so results are usable, not just collected.</li><li>Building Python pipelines and analyses that turn prototype, DOE, simulation, and characterization data (power, noise, Vmin/Fmax, binning yield) into traces, summaries, and inputs for firmware tuning, product specs, and manufacturing limits — with checks for schema, units, corners, and SKU mapping.</li><li>Partnering with architecture, design, validation, and firmware to add debug hooks, iterate the prototype, and document what the experiment proved versus what still needs silicon char</li><li>Using secure, traceable, validated AI-assisted workflows for experiment planning, analysis, and documentation, with human oversight on any conclusion that could affect limits, bins, or specs.</li></ul><p><b>What we need to see:</b></p><ul><li>MS in Electrical Engineering, Computer Engineering, Computer Science, or a related field.</li><li>Background in a related silicon, validation, characterization, productization (SoC, GPU, CPU, or similar).</li><li>Working knowledge of silicon circuit/clock/power/noise concepts — for example DVFS, Vmin/Fmax, shmoo, PDN/noise, Driver, or margins — and comfort with learning DOE and prototype bring-up in a co-design setting.</li><li>Hands-on experience with at least one of: lab or post-silicon bring-up, experiment or characterization campaigns or manufacturing test/limits that consume chip data.</li><li>Proficiency in Python (or similar) for data analysis, automation, and validation; comfort with Git and structured test/regression. SQL or lightweight dashboards are a plus.</li><li>Ability to turn an ambiguous silicon question into a measurable experiment, communicate clearly across teams, and write notes others can execute from.</li><li>Strong AI-enabled skills and thinking — use AI to accelerate analysis, exploration, and documentation while maintaining rigor, originality, and judgment that do not come from AI.</li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li>You have run a test-chip, prototype vehicle, or characterization DOE and can explain what you would change in the next matrix.</li><li>Direct experience on GPU/SoC/CPU circuits, power, performance, PDN/noise, or sim-to-silicon correlation.</li><li>You have shipped an internal tool, dashboard, or data pipeline (Python, databases, web apps) that other people actually use.</li><li>Hands-on LLMs in an engineering workflow — agents, RAG, or evaluation — including a time you had to debug a incorrect or unsafe answer.</li><li>Exposure to firmware/BIOS parameters, eFuse/limits, or ATE/SLT screening, and how they connect to product SKUs.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Circuit-Validation-Engineer---New-College-Graduate-2027_JR2029067",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029074",
     "slug": "nvidia-senior-software-engineer-ai-developer-tools-jr2029074",
     "company": "nvidia",
@@ -11917,6 +11984,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029153",
+    "slug": "nvidia-system-software-intern-embedded-power-management-2027-jr2029153",
+    "company": "nvidia",
+    "title": "System Software Intern, Embedded Power Management - 2027",
+    "locations": [
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA's invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing — with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as “the AI computing company”. We are looking to grow our company, and grow our teams with the smartest people in the world.</p><p><b>What you’ll be doing:</b></p><ul><li><p>You will work with ground breaking technologies for the Tegra SoC and various NVIDIA embedded platforms</p></li><li><p>Implement power and thermal management software features in Linux Kernel and user space</p></li><li><p>Collaborate with power architects, hardware and software engineers on usecase power estimation, power and performance optimization</p></li></ul><p><br /><b>What we need to see:</b></p><ul><li><p>Pursuing a Bachelor, Master or PhD degree in CS, CE, EE, Systems Engineering or related software/hardware engineering major</p></li><li><p>Software development experience with a significant focus on Linux</p></li><li><p>Excellent C programming/debugging skills within Linux kernel and user space software</p></li><li><p>Background with working on embedded systems and ARM processor specific</p></li><li><p>System-level debugging experience and problem-solving skills</p></li><li><p>Excellent communication skills</p></li></ul><p><br /><b>Ways to stand out from the crowd:</b></p><ul><li><p>Experience in working with the Linux and open-source software communities</p></li><li><p>Understanding of the Linux power management features (scheduler, dynamic frequency scaling, runtime power management, suspend to RAM), factors influencing power efficiency at chip and platform.</p></li></ul><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We have some of the most brilliant and talented people in the world working for us. If you are creative, autonomous and love a challenge, we want to hear from you. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/System-Software-Intern--Embedded-Power-Management---2027_JR2029153",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029162",
     "slug": "nvidia-senior-silicon-product-architect-performance-and-power-jr2029162",
     "company": "nvidia",
@@ -11949,6 +12032,39 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029188",
+    "slug": "nvidia-senior-mask-design-engineer-hardware-jr2029188",
+    "company": "nvidia",
+    "title": "Senior Mask Design Engineer - Hardware",
+    "locations": [
+      "Canada, Toronto"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to take on, that only we can pursue, and that matter to the world. This is our life’s work, to amplify human creativity and intelligence. We would love to hear from you!</p><br /><p>We are looking for a Senior Mask Layout Design Engineer, someone who is excited to join a growing and dynamic group of diverse individuals responsible for handling meaningful high-speed mixed-signal circuit designs.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Performing physical layout for mixed-signal functions like PLL's, high speed SerDes, Analog to Digital converters, ESD structures designs in state-of-the-art sub-micron CMOS technologies using Cadence tools.</li><li>You'll work cross functionally with ASIC and mixed-signal engineers to customize designs for integration in VLSI products.</li><li>Take part in floor planning, custom layout and verifying against design rules and schematics.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Have a BSEE or equivalent experience.</li><li>Minimum of 7+ years industry experience in Mask and Layout Design.</li><li>Deep understanding of analog circuit layout concepts in submicron CMOS technologies.</li><li>You are an authority with Cadence custom circuit design tools - particularly virtuoso.</li><li>Experience running and debugging with verification tools such as Dracula, Hercules, Calibre, and Primeyield.</li><li>You are able to work effectively in a team, good interpersonal skills, enthusiasm and positive energy.</li><li>You'll be proficient in scripting languages like perl, python, skill etc.</li><li>Should have knowledge of DRC and LVS checking flows, ability to customize decks.</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />105,000 CAD – 155,000 CAD for Level 4; and 140,000 CAD – 190,000 CAD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Canada-Toronto/Senior-Mask-Design-Engineer---Hardware_JR2029188",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029243",
+    "slug": "nvidia-reinforcement-learning-intern-2027-jr2029243",
+    "company": "nvidia",
+    "title": "Reinforcement Learning Intern - 2027",
+    "locations": [
+      "China, Shanghai",
+      "China, Beijing",
+      "China, Shenzhen"
+    ],
+    "remote": false,
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><p>At NVIDIA, we are pushing the boundaries of what’s possible within self-driving vehicle technology by bringing to bear the power of Deep Reinforcement Learning (RL). As a world leader in AI and high-performance computing, NVIDIA provides an outstanding platform where innovative research meets real-world production. We are looking for a Reinforcement Learning Intern to join our mission in building intelligent, safe, and efficient self-driving technology that will redefine transportation on a global scale.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Research, prototype, and implement state-of-the-art Reinforcement Learning (RL) algorithms for autonomous vehicle decision-making and trajectory planning.</li><li>Assist in developing and scaling training pipelines and simulation environments for complex RL experiments.</li><li>Collaborate closely with senior researchers and engineers across perception and planning teams to integrate RL models into the autonomous driving stack.</li><li>Analyze and benchmark RL model performance against imitation learning and traditional baselines in complex urban simulation scenarios.</li><li>Explore techniques to optimize and lightweight RL policies for real-time deployment on automotive hardware.</li></ul><p><b>What we need to see:</b></p><ul><li>Currently pursuing an MS or PhD in Computer Science, Robotics, Electrical Engineering, or a related quantitative field with a strong academic background.</li><li>Solid theoretical foundation in Reinforcement Learning, including policy gradients (e.g., PPO, GRPO), actor-critic methods, and model-based RL.</li><li>Hands-on project or academic research experience developing and training deep RL algorithms using PyTorch or TensorFlow.</li><li>Strong programming skills in Python and foundational familiarity with C++.</li><li>Great eagerness to learn, strong problem-solving abilities, and excellent communication skills for collaborative team research.</li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li>Publication record at top-tier AI/Robotics conferences (e.g., NeurIPS, ICML, IROS, ICRA, CoRL) or relevant open-source contributions in RL or autonomous driving.</li><li>Research exposure to generative modeling (e.g., Flow Matching, Diffusion, AR decoders) applied to trajectory prediction or world models.</li><li>Experience addressing compounding errors, distribution shift, or safety constraints in robotic control and autonomous navigation simulation environments.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Reinforcement-Learning-Intern---2027_JR2029243-1",
+    "postedAt": "2026-11-07T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029254",
     "slug": "nvidia-senior-product-manager-run-ai-dsx-os-jr2029254",
     "company": "nvidia",
@@ -11978,6 +12094,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-CPU-Architect_JR2029269",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029272",
+    "slug": "nvidia-senior-ai-engineer-ai-safety-jr2029272",
+    "company": "nvidia",
+    "title": "Senior AI Engineer, AI Safety",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, CA, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in an inclusive, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>Serving as an AI Engineer on our AI Safety Engineering team, you will have a key and adaptable role in scaling methods to secure and align advanced AI systems. Your early work will center on architecting and developing the fundamental elements of our safety infrastructure, emphasizing autonomous automation cycles. To operationalize these automated workflows, you will partner with Research and Model Development teams thereby delivering novel models for harm detection, content moderation, dynamic guardrails, post-training, and groundbreaking automated research pipelines that push the limits. This role is built for a tenacious builder and an inquisitive problem solver. We want an engineer who thrives in ambiguity. They must have the grit to overcome complex technical challenges and transform innovative safety concepts from raw ideas to scalable implementations.</p><br /><p><b>What You’ll Be Doing:</b></p><ul><li>Architect Agentic Automation: Compose, build, and deploy foundational agentic automation loops that streamline workflows spanning safety evaluations, red-teaming, model testing, model post-training and ablations.</li><li>Develop Safety Models: Move from infrastructure automation towards training and implementing specialized systems for identifying harmful content, coordinating content quality, and run-time guard-railing.</li><li>Pioneer Auto-Research: Build and guide automated research frameworks. These frameworks use LLMs and autonomous agents to discover new vulnerabilities. They also generate or augment safety datasets for benchmarking or training and propose novel alignment techniques.</li><li>Scale Innovations: Take proof-of-concept safety interventions and research ideas and engineer them into robust, highly scalable solutions that integrate seamlessly into our production pipelines.</li><li>Cross-Functional Execution: Partner closely with researchers, platform engineers, and data scientists to bridge the gap between theoretical AI safety research and practical, technically focused automated systems.</li></ul><br /><p><b>What We Need To See:</b></p><ul><li>Education: Bachelor’s degree or Master’s degree with equivalent experience in Computer Science, Machine Learning, Software Engineering, or a related field. </li><li>Experience: Candidates should have a strong track record in ML engineering or software engineering with 8+ years of experience.</li><li>Agentic Systems &amp; Automation: Proven experience building complex, automated workflows using LLMs, including multi-turn tool-calling, orchestration, and autonomous agent loops.</li><li>Strong engineering fundamentals include deep proficiency in one or more languages such as Rust or Python. Experience with machine learning frameworks like PyTorch is also required. The focus is on writing scalable, maintainable, and highly optimized code.</li><li>Inquisitive Problem-Solving &amp; Tenacity: A demonstrated ability to tackle open-ended, ambiguous problems. You must be willing to experiment, fail, iterate, and relentlessly pursue solutions.</li><li>End-to-End Execution: The ability to own a project from the initial white-boarding of a research idea to the final deployment of a scalable production system.</li></ul><br /><p><b>Ways to Stand Out from the Crowd:</b></p><ul><li>Safety &amp; Security Background: Prior domain experience in Trust &amp; Safety, cybersecurity, threat intelligence, adversarial machine learning, or content moderation.</li><li>Guardrails &amp; Moderation: Hands-on experience developing, fine-tuning, or deploying models specifically built for harm detection, content safety (violence, hate, harassment, CBRNE, etc.) filtering, or run-time AI guardrails.</li><li>Auto-Research Experience: Contributions to projects that use LLMs to automate coding, data synthesis, or scientific research tasks.</li><li>Community &amp; Collaboration: Active contributions to publicly available agent frameworks (e.g., LangChain, AutoGPT, Semantic Kernel) or AI safety benchmarking tools.</li></ul><br /><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family <a href=\"http://www.nvidiabenefits.com/\"><u>www.nvidiabenefits.com/</u></a></p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />184,000 USD – 287,500 USD for Level 4; and 224,000 USD – 356,500 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 10, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-AI-Engineer--AI-Safety_JR2029272-1",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
@@ -12045,6 +12178,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--AI-Safety-Evaluations_JR2029416",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029434",
+    "slug": "nvidia-staff-business-systems-analyst-beeline-vendor-management-system-jr2029434",
+    "company": "nvidia",
+    "title": "Staff Business Systems Analyst, Beeline Vendor Management System",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>NVIDIA IT is seeking a Staff Business Systems Analyst specializing in Beeline Vendor Management System (VMS) to join our team in Bengaluru, India. You will partner with global business and technology teams to design, configure, and deliver solutions supporting NVIDIA’s contingent workforce program. This hands-on role requires strong functional expertise, independent ownership, and the ability to translate complex business needs into scalable system solutions. </p><br /><p><b>What you'll be doing: </b> </p><ul><li>Work closely with business leaders and users to fully understand requirements and challenges to help provide an effective system solution.  </li></ul><ul><li>Lead functional solution design and Beeline configuration, define integration requirements, and partner with engineering teams to deliver end-to-end solutions.  </li></ul><ul><li>Complete projects as a lead or team member to implement new VMS solutions and improved functions to support the growing business needs.  </li></ul><ul><li>Interface on a day-to-day basis with internal teams and external partners to lead system change to support business operations.  </li></ul><ul><li>Build test scenarios and test cases, perform testing and training as part of the transition process.  </li></ul><ul><li>Constantly mentor the project and support team on the best industry practices solutions and methodologies.  </li></ul><ul><li>Actively collaborate with the global teams to prioritize, coordinate and execute small to medium-size projects  </li></ul><ul><li>Document user stories with detailed acceptance criteria in our ticketing system.  </li></ul><ul><li>Manage day-to-day support requests within established SLAs and track ongoing system changes and enhancements in Jira.  </li></ul><ul><li>Design clear business processes and visual workflows and explain requirements and proposed solutions in plain language to users with varying levels of technical knowledge.  </li></ul><ul><li>Develop and maintain standard operating procedures (SOPs) for new solutions and process changes to support consistent execution, user adoption, and ongoing support.  </li></ul><br /><p><b>What we need to see: </b> </p><ul><li>MBA or MS degree (or equivalent experience)  </li></ul><ul><li>8+ years of overall experience with core focus on VMS or Contingent work force management system solutions.  </li></ul><ul><li>Strong working knowledge of India’s labor, statutory compliance, finance, and tax requirements relevant to contingent workforce management, with demonstrated experience translating those requirements into VMS processes, configurations, and controls.  </li></ul><ul><li>Strong functional knowledge and proven track record with all functionalities and capabilities of a VMS process and solutions  </li></ul><ul><li>Hands-on implementation experience with Beeline is required; experience with other leading VMS platforms such as SAP Fieldglass or Workday VNDLY is a plus.  </li></ul><ul><li>Working experience in building reporting solutions in Tableau, Power BI, etc.  </li></ul><ul><li>Creative problem-solving ability in multifaceted business environment  </li></ul><ul><li>Good communication, negotiation, and collaborator management skills, with the ability to resolve disagreements and drive decisions.  </li></ul><ul><li>Good social and excellent teammate skills, able to mediate disagreement, recognize options, propose and implement solutions.  </li></ul><ul><li>Demonstrable ability to navigate the technology environment and work optimally with multiple groups.  </li></ul><br /><p><b>Ways to stand out from the crowd: </b> </p><ul><li>Worked as lead in implementation various VMS solutions  </li></ul><ul><li>You can show attested project management experience and skills  </li></ul><ul><li>Demonstrate excellent leadership and interpersonal skills, with the ability to explain complex solutions in simple terms.  </li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and passionate people on the planet working for us. If you're creative and autonomous, we want to hear from you! </p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Staff-Business-Systems-Analyst--Beeline-Vendor-Management-System_JR2029434",
+    "postedAt": "2026-11-06T00:00:00.000Z",
+    "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "source": "workday"
   },
   {
