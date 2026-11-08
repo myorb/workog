@@ -783,7 +783,7 @@
     "postedAt": "2026-02-10T19:46:44.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -975,7 +975,7 @@
     "postedAt": "2026-02-20T18:00:18.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -1340,7 +1340,7 @@
     "postedAt": "2026-04-02T14:32:31.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -1837,7 +1837,7 @@
     "postedAt": "2026-05-14T21:12:40.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -4842,7 +4842,7 @@
     "postedAt": "2026-09-16T15:30:45.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -5617,7 +5617,7 @@
     "postedAt": "2026-09-03T15:28:38.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -5704,7 +5704,7 @@
     "postedAt": "2026-08-28T17:29:15.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -5723,7 +5723,7 @@
     "postedAt": "2026-08-28T17:29:00.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -5761,7 +5761,7 @@
     "postedAt": "2026-09-01T15:26:22.000Z",
     "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -7161,7 +7161,7 @@
     "postedAt": "2026-09-08T22:43:55.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -7822,7 +7822,7 @@
     "postedAt": "2026-09-15T13:25:23.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -8492,7 +8492,7 @@
     "postedAt": "2026-09-23T14:08:28.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -8649,7 +8649,7 @@
     "postedAt": "2026-09-22T18:54:10.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -10623,6 +10623,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8250475",
+    "slug": "stripe-account-executive-smb-grower-french-speaking-8250475",
+    "company": "stripe",
+    "title": "Account Executive, SMB Grower (French speaking)",
+    "locations": [
+      "Toronto, Canada"
+    ],
+    "remote": false,
+    "department": "1175 Enterprise - Account Executives (NA)",
+    "category": "sales",
+    "descriptionHtml": "<h2><strong>Who we are</strong></h2>\n<h3><strong>About Stripe</strong></h3>\n<p>Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.</p>\n<h3><strong>About the team</strong></h3>\n<p>The Account Executive, SMB Grower team is a highly consultative sales team that is responsible for the growth and retention of Stripe’s largest and fastest growing SMB customers. As an Account Executive, SMB Grower team member, you’ll identify new opportunities for our clients to get the most out of Stripe by quickly understanding our clients’ needs, execute scaled sales strategies to close upsell and renewals with existing Stripe customers, and drive end-to-end campaigns to increase adoption of Stripe’s offerings. This role requires a fluency in both French and English and can be either in-office (Toronto) or remote. </p>\n<h2><strong>What you’ll do</strong></h2>\n<h3><strong>Responsibilities</strong></h3>\n<ul>\n<li>Own contract renewals and lead negotiations to increase and retain existing customer revenue and Stripe market share</li>\n<li>Develop and implement full sales cycle strategies for driving product adoption, net new product sales, and client retention at scale among existing Stripe customers</li>\n<li>Solve complex client needs and work across product, sales, risk, and operations teams to improve our product</li>\n<li>Own the full sales cycle from lead to close for startups and small/medium businesses</li>\n<li>Generate your own leads through cold calling, blitzing, research, networking, and driving your territory.</li>\n<li>Make every potential Stripe user happy with every interaction, regardless of deal size</li>\n<li>Identify and understand users’ pain points to propose Stripe solutions</li>\n<li>Make sure that internal teams are set up for users’ success by coordinating with other Stripe teams<br /><br /></li>\n</ul>\n<h3><strong>Who you are</strong></h3>\n<p>We’re looking for a well-rounded strategic seller who can build strong relationships with Stripe’s users and manage high velocity deal cycles. If you’re hungry, smart, persistent, and a great teammate, we want to hear from you!<br /><br /></p>\n<h3><strong>Minimum requirements</strong></h3>\n<ul>\n<li>5+ years of experience in a client-facing/sales role</li>\n<li>Ability to understand complex technical ecosystems and build great relationships with technical users</li>\n<li>Ability to drive and close upsell opportunities for additional Stripe products in long-term, consultative engagements</li>\n<li>Analytical ability to manage complex pricing and cost considerations</li>\n<li>Experience managing projects with input from cross-functional teams</li>\n<li>A knack for working well with a wide range of stakeholders, both internally and externally</li>\n<li>Ability and motivation to operate in a highly ambiguous and fast-paced environment</li>\n<li>Superior verbal and written communication skills in English and French</li>\n</ul>\n<h3><strong>Preferred qualifications</strong></h3>\n<ul>\n<li>Prior experience in a sales and/or customer-facing role at a high growth technology company</li>\n<li>Experience with Excel and SQL, or a willingness to learn</li>\n</ul>",
+    "applyUrl": "https://stripe.com/jobs/search?gh_jid=8250475",
+    "postedAt": "2026-11-07T17:49:05.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8250483",
     "slug": "stripe-marketing-operations-manager-amer-events-8250483",
     "company": "stripe",
@@ -12298,7 +12315,7 @@
     "postedAt": "2026-10-20T20:18:32.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {

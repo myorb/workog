@@ -3736,6 +3736,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003508495-S",
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4403,6 +4405,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003826070-S",
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4446,7 +4450,7 @@
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5561,7 +5565,7 @@
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7623,7 +7627,7 @@
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7725,7 +7729,7 @@
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7765,7 +7769,7 @@
     "postedAt": "2026-09-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8467,6 +8471,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Oder-Facharzt-D-Fuer-Die-Klinik-Fuer-Anae-1061214?cp=BA",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8883,7 +8889,7 @@
     "postedAt": "2026-08-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10750,7 +10756,7 @@
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10911,7 +10917,7 @@
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12325,6 +12331,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17825-0009f30012e002-S",
     "postedAt": "2025-09-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:18024-100PJ000WaO0N-S",
+    "slug": "clemens-august-klinik-oberarzt-oberarztin-m-w-d-fur-fachklinik-psychiatrie-und-psychosomatische-medizi-18024-100pj000wao0n-s",
+    "company": "arbeitsagentur",
+    "employer": "Clemens-August-Klinik",
+    "title": "Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit",
+    "locations": [
+      "Neuenkirchen-Vörden, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychosomatic-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>Die Clemens-August-Klinik als Einrichtung der Clemens-August-Stiftung ist ein Fachkrankenhaus für Psychiatrie, Psychotherapie und Psychosomatik mit 132 stationären und 16 teilstationären Behandlungsplätzen sowie einer angeschlossenen Institutsambulanz. Die Indikationsschwerpunkte liegen in den Bereichen Depressionen, Angst- und Zwangsstörungen, posttraumatische Belastungsstörungen, dissoziative Störungen, somatoforme Störungen, Essstörungen und Persönlichkeitsstörungen. Neben Einzel- und Gruppenpsychotherapien werden vielfältige Behandlungsmethoden angeboten wie Kunst-, Tanz-, Körper-, Musik-, Entspannungs-, Physio- und Ergotherapie.</p><p>Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit<br />Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit</p><p>Ihre Aufgaben:</p><ul><li>Oberärztliche Leitung</li><li>Konzeptionelle Weiterentwicklung der Behandlungs- und Therapiekonzepte</li><li>Fachliche Aus- und Weiterbildung sowie Supervision der Assistenzärzte (m/w/d) und Psychologen (m/w/d)</li><li>Zusammenarbeit mit einem multiprofessionellen Team</li><li>Teilnahme am ärztlichen Hintergrunddienst</li></ul><p>Sie bringen mit:</p><ul><li>Facharzt (m/w/d) für Psychiatrie und Psychotherapie oder Psychosomatische Medizin und Psychotherapie</li><li>Erfahrung in psychotherapeutischer Arbeit ist wünschenswert</li><li>Engagierte und aufgeschlossene Persönlichkeit</li><li>Selbstständige und zugleich teamorientierte Arbeitsweise</li><li>Freundlicher und wertschätzender Umgang mit unseren Patientinnen und Patienten</li></ul><p>Wir bieten Ihnen:</p><ul><li>Ein interessantes und abwechslungsreiches Aufgabengebiet mit einem hohen Maß an Selbstständigkeit und Verantwortung</li><li>Gründlich Einarbeitung und kontinuierliche Begleitung</li><li>Zusammenarbeit in einem interdisziplinären Team</li><li>Vergütung nach den Arbeitsvertragsrichtlinien der Caritas (AVR-C)</li><li>Übernahme der betrieblichen Altersvorsorge (KZVK)</li><li>Firmenfitness</li><li>Dienstradleasing</li><li>Berufsunfähigkeitsversicherung</li><li>Mitarbeiterrabatte über corporate benefits Portal</li><li>Vermögenswirksame Leistungen</li><li>Möglichkeit der privaten Entgeltumwandlung zur Altersvorsorge</li><li>31 Urlaubstage (bei einer 5-Tage-Woche)</li><li>Regelmäßige Arbeitszeiten</li></ul><p>Haben wir Ihr Interesse geweckt?</p><p>Dann freuen wir uns auf Ihre aussagekräftige Bewerbung</p>",
+    "applyUrl": "https://helixjobs.com/_/jobad?prj=1569p125264&source=ba",
+    "postedAt": "2026-11-07T00:00:00.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "source": "arbeitsagentur"
   },
   {

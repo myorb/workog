@@ -350,6 +350,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/215KJSM",
     "postedAt": "2026-10-19T11:12:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -542,6 +544,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/Mjg3NTI2MSAxOQ?lang=en",
     "postedAt": "2026-07-07T20:46:07.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -699,7 +703,7 @@
     "postedAt": "2026-10-21T20:45:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -717,6 +721,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MjkyOTkyMCAxOQ?lang=en",
     "postedAt": "2026-10-29T22:45:54.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -735,6 +741,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MjkzMDI1NyAxOQ?lang=en",
     "postedAt": "2026-10-30T22:45:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1985,6 +1993,23 @@
     "source": "eures"
   },
   {
+    "id": "eures:MTY2ODIzMiA4",
+    "slug": "pihlakodu-as-arst-mty2odizmia4",
+    "company": "eures",
+    "employer": "Pihlakodu AS",
+    "title": "Arst",
+    "locations": [
+      "Estonia"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Tabasalu Pihlakodu </p>\n<p>Tööülesanded: Klientide terviseseisundi hindamine;esmatasandi arstiabi osutamine; \nhaiguste diagnoosimine ja ravimine;\nmeditsiini infosüsteemi sissekannete tegemine.</p>\n<p>Omalt poolt pakume: Stabiilset töökohta ja osalist koormust;kaasaegset töökeskkonda;\ntoetavat ja uuendusmeelset meeskonda;\nsoodsat toitlustust.</p>\n<p>Muud nõuded: Nõutav pere- või üldarsti kvalifikatsioon.Hea arvuti kasutamise oskus.</p>\n<p>Kodus töötamise võimalus: Ei</p>",
+    "applyUrl": "https://www.tootukassa.ee/et/toopakkumised/arst-843260",
+    "postedAt": "2026-11-06T21:15:25.103Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:MTY5NjU0NzAgNDM",
     "slug": "siehe-beschreibung-oberarzt-m-w-d-fur-psychiatrie-und-psychotherapeutische-medizin-mty5nju0nzagndm",
     "company": "eures",
@@ -2531,8 +2556,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4NzgyNSAxNA?lang=en",
     "postedAt": "2026-10-01T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2552,8 +2575,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4ODE2NSAxNA?lang=en",
     "postedAt": "2026-10-04T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2589,8 +2610,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ5MDU2MiAxNA?lang=en",
     "postedAt": "2026-10-07T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3726,7 +3745,7 @@
     "postedAt": "2026-08-10T23:20:03.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -3833,7 +3852,7 @@
     "postedAt": "2026-08-14T05:04:57.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -4255,7 +4274,7 @@
     "postedAt": "2026-09-09T01:13:53.026Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -4669,6 +4688,24 @@
     "source": "eures"
   },
   {
+    "id": "eures:NWNhMzE0MTUtNjAxYi00Zjk3LWFiYjAtYmJkMTZmOGVkNTNkIDI2MQ",
+    "slug": "eures-spesialist-i-allmennmedisin-100-nwnhmze0mtutnjaxyi00zjk3lwfiyjatymjkmtzmogvkntnkidi2mq",
+    "company": "eures",
+    "title": "Spesialist i allmennmedisin 100 %",
+    "locations": [
+      "Voss, Norway"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p><strong>Voss herad søkjer fastlege: Spesialist i allmennmedisin 100 % </strong><strong>Er du spesialist i allmennmedisin og på utkikk etter nye moglegheiter?</strong></p><p>Me søkjer etter ein engasjert og fagleg dyktig lege som ynskjer å bli ein del av eit moderne og framtidsretta legekontor. Tenesta er inne i ein spennande fase med reorganisering og vidareutvikling av kontoret. Det er stort fokus på kvalitet, effektiv drift og at pasienten er i sentrum.</p><p><strong>Om arbeidsstaden:</strong></p><p>Voss legekontor er eit kommunalt fastlegekontor med 7 fastlegeheimlar, 1 LIS1 lege, 5 sjukepleiarar, 1 helsesekretær og 1 sekretær ved legekontoret. Fastlegane ved legekontoret deltek i rotasjon på daglegevakt, som er lokalisert i akuttmottak ved Voss sjukehus. Dette gjev eit godt tverrfagleg fagmiljø. Voss herad er godkjent som utdanningsverksemd, Voss legekontor har fleire legar i ALIS stillingar.Voss herad er vertskommune for eit interkommunalt samarbeid om legevakt i distriktet (Voss IKL). Legevakta held til i same lokale som daglegevakta og er eit samarbeid mellom Voss, Ulvik, Eidfjord, Vaksdal og Kvam.Journalsystemet WebMed er nytta både på legekontoret og på legevakta.</p><p><strong>Kva går jobben ut på?</strong></p><ul><li>Utgreiing, diagnostisering og behandling av pasientar</li><li>Delta i vaktordning for legar.</li><li>Bidra fagleg gjennom rettleiing, undervisning og teamarbeid.</li><li>Deltaking i opplysnings- og folkehelsearbeid</li><li>Kvalitetsforbetring og utviklingsarbeid</li><li>Deltaking i kommunale oppgåver og interkommunal legevakt.</li></ul><p><strong>Me tilbyr:</strong></p><ul><li>Listelengde etter avtale</li><li>Tilpassa arbeidskvardag ut i frå kommunale oppgåver</li><li>Økonomiske vilkår: Konkurransedyktige vilkår (fastløn og insentiv).</li><li>Gode forsikrings- og pensjonsordningar, og elles tilsetjing på vanlege kommunale vilkår</li></ul><p><strong>Kvalifikasjonar:</strong></p><p>Spesialist i allmennmedisin</p><ul><li>Norsk autorisasjon som lege</li><li>Har gode norskkunnskapar både skriftleg og munnleg</li><li>Førarkort klasse B</li><li>Du må ha rett til å mota trygderefusjon</li><li>Er sjølvstendig og løysningsorientert</li><li>Er fagleg engasjert og opptatt av pasientbehandling av høg kvalitet</li></ul><p>Godkjend politiattest må leggjast fram før tiltreding i stillinga.</p><p>Me ynskjer eit arbeidsmiljø prega av mangfald, og at våre tilsette skal gje eit bilete av folkesetnaden generelt. Me oppmodar alle som er kvalifisert til å søkja jobb hjå oss uansett alder, funksjonsevne, kjønn, eller kulturell bakgrunn. Etter søknadsfristen vert det sett opp ei offentleg søkjarliste som inneheld namn, alder, stilling eller yrkestittel og bustadseller arbeidskommune for kvar søkjar. I fylgje offentlegheitslova § 25 2. ledd kan opplysningar om søkjaren verta offentleggjort sjølv om søkjaren har bede om ikkje å verta oppført på søkjarlista. Søkjaren vert varsla dersom førespurnaden ikkje vert teken til fylgje. Ver venleg og last opp vitnemål og attestar som vedlegg til søknaden</p>  Link til søknadsskjema: <a href=\"https://voss.easycruit.com/vacancy/application/3677021/213047?channel=NavRest&amp;iso=nn\">Søk her</a><p><b>Om arbeidsgiveren:</b></p>Livet er meir enn arbeid. På Voss kan du gå på ski om vinteren eller på fjelltur om sommaren, nokon et smalahove, høyrer på jazz eller driv med ekstremsport. \nVossevangen er regionsenteret vårt. Me har eit godt utbygt næringsliv, er eit senter for utdanning i regionen og me er eit knutepunkt mellom aust og vest. Bergensbanen går gjennom Vossevangen, og me har godt togsamband til både Bergen og Oslo.\nVoss herad har om lag 16.000 innbyggjarar og er den største arbeidsgjevaren i bygda, med om lag 1350 tilsette. Nynorsk er administrasjonsmålet i Voss herad.\n\nVerdiane våre er profesjonell - påliteleg - skapande - inkluderande",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/5ca31415-601b-4f97-abb0-bbd16f8ed53d",
+    "postedAt": "2026-11-06T13:22:49.550Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:NWNhYjg1ZGYtNjQzZi0zMzMwLWUwNjMtNjg5M2IyMGFkOWU4IDQy",
     "slug": "eures-basisarts-bedrijfsgeneeskunde-nwnhyjg1zgytnjqzzi0zmzmwlwuwnjmtnjg5m2iymgfkowu4idqy",
     "company": "eures",
@@ -4864,7 +4901,7 @@
     "postedAt": "2026-10-08T01:13:01.246Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -4903,7 +4940,7 @@
     "postedAt": "2026-10-08T01:13:06.223Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -5168,6 +5205,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWRiMTA5Y2QtMTUzMC02Yzk4LWUwNjMtNjg5M2IyMGE1MzhkIDQy?lang=en",
     "postedAt": "2026-10-13T01:13:27.074Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6105,6 +6144,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY1ODUzMGItYjg2NC02NzcyLWUwNjMtNjg5M2IyMGE0MjNhIDQy?lang=en",
     "postedAt": "2026-11-03T03:16:21.064Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6270,7 +6311,7 @@
     "postedAt": "2026-11-05T03:13:57.813Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -6453,7 +6494,7 @@
     "postedAt": "2026-11-05T03:15:30.773Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -6556,7 +6597,7 @@
     "postedAt": "2026-10-30T03:14:00.998Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -6643,6 +6684,55 @@
     "source": "eures"
   },
   {
+    "id": "eures:NWZhOGNhNjgtZTg3OS04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy",
+    "slug": "eures-revalidatiearts-orthopedie-nwzhognhnjgtztg3os04yzlhlwuwnjmtnjg5m2iymge1nwzmidqy",
+    "company": "eures",
+    "title": "Revalidatiearts Orthopedie",
+    "locations": [
+      "Leiden, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<ul><li>Het revalidatietraject - Soorten revalidatie - Waar kan ik revalideren? - Revalidatiearts in de spotlight - Revalidatie Magazine  Leiden  36 uur  Basalt  WO Geneeskunde  Revalidatiearts Leiden - 36 uur - Per direct Ben jij revalidatiearts of AIOS in het laatste jaar van je opleiding en wil je graag werken in hét expertisecentrum voor complexe medisch specialistische revalidatiezorg in Zuid-Holland? Heb je affiniteit met de diagnosegroepen orthopedie, multitrauma en amputatie? En heb je een warm hart voor het opleiden van AIOS en coassistenten? Lees dan snel verder! Wat ga je doen als revalidatiearts bij Basalt? Als revalidatiearts betreffen je werkzaamheden klinische en poliklinische revalidatie van volwassenen in het ortho-team op onze locatie Leiden. In het ortho-team geef je leiding aan de interdisciplinaire behandeling van patiënten met o.a. amputatie, multitrauma (klinisch en poliklinisch), dwarslaesie en perifeer zenuwletsel (alleen poliklinisch). Hieronder vallen ook een technisch spreekuur met instrumentmaker en schoenmaker. Naast jouw werkzaamheden voor bovengenoemde diagnosegroepen, krijg je een rol in het opleiden van AIOS en coassistenten. Tevens zijn er binnen de organisatie mogelijkheden om je te ontwikkelen in wetenschappelijk onderzoek, onderwijs of medisch leiderschap. Als staf verdelen we graag het takenpakket naar ieders affiniteit. De werkzaamheden worden afgestemd met de 3 huidige revalidatieartsen in het team. Als revalidatiearts ben je aanjager en kartrekker van de strategische projecten van Basalt. Je onderschrijft de principes van waardegedreven zorg en je werkt graag intensief samen met het interdisciplinaire team op de locatie en het netwerk in de regio. Tot slot maak je deel uit van de grote dienstenpoule voor de achterwacht van de kliniek Leiden. Waar kom je te werken? Van onze 13 locaties kom je te werken op locatie Leiden, (Zorgeenheid 2). Je bereikt deze locatie gemakkelijk per trein, bus ...</li></ul>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWZhOGNhNjgtZTg3OS04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy?lang=en",
+    "postedAt": "2026-11-07T03:13:53.076Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NWZhOGNhNjktMDEwZS04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy",
+    "slug": "eures-dermatoloog-flexibele-samenwerking-nwzhognhnjktmdewzs04yzlhlwuwnjmtnjg5m2iymge1nwzmidqy",
+    "company": "eures",
+    "title": "Dermatoloog – flexibele samenwerking",
+    "locations": [
+      "Zoetermeer, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Dermatoloog – flexibele samenwerking in ZoetermeerBen jij dermatoloog en heb je affiniteit met dermato-oncologie? Zoek je een inhoudelijk interessante werkomgeving met planbare zorg, korte lijnen en de mogelijkheid om je werkzaamheden flexibel in te richten?Voor onze locatie in Zoetermeer komen wij graag in contact met dermatologen die het interessant vinden om één of meerdere dagen per week binnen ons expertisecentrum werkzaam te zijn. Dit kan zowel als aanvulling op je huidige werkzaamheden als in een meer structurele rol.Over het ExpertisecentrumDe Dr. Brinkmann Kliniek is al meer dan 20 jaar een toonaangevend medisch centrum, gespecialiseerd in de diagnostiek en behandeling van huidkanker. Met een sterke focus op dermato-oncologie leveren wij hoogwaardige, planbare zorg aan patiënten uit het hele land, in nauwe samenwerking met huisartsen en medisch specialisten.Binnen het Expertisecentrum werken wij intensief samen met het Chirurgisch Expertisecentrum. Deze samenwerking stelt ons in staat om zorg continu te blijven vernieuwen en te versterken met innovatieve, minder invasieve behandelmethoden en moderne faciliteiten.Het Chirurgisch Expertisecentrum is een snelgroeiende organisatie met expertise in onder andere proctologische zorg en aanvullende chirurgische behandelingen. Door deze combinatie van kennis en specialismen bieden wij zorg op hoog niveau, waarbij kwaliteit, veiligheid en persoonlijke aandacht centraal staan, voor zowel patiënten als medewerkers.Jouw rolAls dermatoloog richt je je voornamelijk op de diagnostiek en behandeling van premaligne en maligne huidaandoeningen.Afhankelijk van je ervaring, interesses en voorkeuren kunnen we samen bekijken hoe je werkzaamheden het beste worden ingericht.Je werkzaamheden kunnen onder andere bestaan uit:&amp;nbsp;&amp;nbsp;- dermatologische consulten en diagnostiek;&amp;nbsp;&amp;nbsp;- beoordeling en behandeling van (pre)maligne huidaandoeningen;&amp;nbsp;&amp;nbsp;- poliklinische chirurgische ingrepen onder lokale anesthesie;&amp;nbsp;&amp;nbsp;-</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWZhOGNhNjktMDEwZS04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy?lang=en",
+    "postedAt": "2026-11-07T03:14:23.564Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NWZhOGNhNjktMTU0OC04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy",
+    "slug": "eures-huisarts-nwzhognhnjktmtu0oc04yzlhlwuwnjmtnjg5m2iymge1nwzmidqy",
+    "company": "eures",
+    "title": "Huisarts",
+    "locations": [
+      "Hoorn Nh, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Huisarts (Gezondheidscentrum Kersenboogerd) Omring Zorg Jobid: 534435243457578982 (0.0511) Ben jij een bevlogen huisarts(of bijna afgestudeerd) en op zoek naar een uitdagende functie in Hoorn (30 treinminuten vanaf Amsterdam CS)? Dan is deze vacature bij het Gezondheidscentrum Kersenboogerd misschien wel jouw volgende stap! Bekijk onze video om een beter beeld te krijgen wie wij zijn. Gezondheidscentrum Kersenboogerd in Hoorn is een inspirerende omgeving waar toegewijde professionals samenwerken om de beste zorg te bieden aan de inwoners van de wijk. In ons centrum vind je diverse zorgverleners, waaronder onder andere huisartsen, apothekers, fysiotherapeuten en wijkverpleegkundigen. Als onderdeel van Omring, een toonaangevende grote zorgorganisatie in West-Friesland, streven wij naar een breed scala aan zorgdiensten en innoveren wij voortdurend op het gebied van zorg. Onze focus ligt bij het bieden van zorg op maat, gericht op het bevorderen van de zelfredzaamheid thuis en in de buurt. In onze goed georganiseerde praktijk werk je samen met een fijn team van huisartsen, waarnemers, een verpleegkundig specialist, praktijkondersteuners en doktersassistenten. Wat ons onderscheid is onze nauwe samenwerking met de Specialist Ouderengeneeskunde. Bovendien zijn wij een opleidingspraktijk, wat betekent dat er regelmatig AIOS (Artsen in opleiding tot specialist) werkzaam zijn. Met een reistijd van slechts 30 minuten vanaf het station Amsterdam CS naar het NS station Hoorn Kersenboogerd, zijn wij goed bereikbaar en kan je visite op de fiets doen. Wat zoeken wij ? Momenteel hebben wij ruimte voor 2 parttime huisartsen of 1 fulltime huisarts voor één van onze vier4 duo praktijken. Daarnaast zijn wij op zoek naar een parttime huisarts voor elk van de overige twee praktijken. Ook huisartsen die voor wat langere tijd als waarnemer willen werken zijn van harte welkom. Wat breng je mee? - Een afgeronde opleiding huisartsengeneeskunde. - Enthou...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWZhOGNhNjktMTU0OC04YzlhLWUwNjMtNjg5M2IyMGE1NWZmIDQy?lang=en",
+    "postedAt": "2026-11-07T03:14:46.978Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:NzA1MzU1MCA5",
     "slug": "clinique-bonnefon-gastro-enterologue-et-hepatologue-h-f-nza1mzu1mca5",
     "company": "eures",
@@ -6710,7 +6800,7 @@
     "postedAt": "2026-10-07T23:20:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -6781,6 +6871,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7774389",
     "postedAt": "2026-10-08T08:17:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7367,7 +7459,7 @@
     "postedAt": "2026-10-15T09:51:06.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -7528,7 +7620,7 @@
     "postedAt": "2026-10-16T01:01:40.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -7600,6 +7692,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7931968",
     "postedAt": "2026-10-15T00:54:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8955,6 +9049,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025616",
     "postedAt": "2026-10-18T10:33:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8990,6 +9086,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8035818",
     "postedAt": "2026-10-18T23:29:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9008,6 +9106,22 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8039023",
     "postedAt": "2026-10-18T23:35:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODczNzgwODctMzc0Ni00ZGMwLWFkMzQtNjI2YTQyZGNmMmVkIDI2MQ",
+    "slug": "eures-vi-s-ker-odcznzgwodctmzc0ni00zgmwlwfkmzqtnji2ytqyzgnmmmvkidi2mq",
+    "company": "eures",
+    "title": "Vi søker",
+    "locations": [
+      "Brumunddal, Norway"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p><strong>Sykehjemslege 100 % fast stilling</strong></p><p><strong>Kommunal medisinsk senter, Ringsaker kommune</strong></p><p>Vil du jobbe nær pasientene – og samtidig være med å utvikle fremtidens sykehjemsmedisin?</p><p>Vi søker en engasjert lege til en 100 % fast stilling ved Kommunal medisinsk senter på Tømmerli Hos oss får du en sentral rolle i et faglig sterkt og utviklingsorientert miljø, der du virkelig får brukt bredden i din medisinske kompetanse.</p><p>Tømmerli har 3,2 legeårsverk. Vi jobber målrettet med pasientsentrert behandling – med spørsmålet <em>«hva er viktig for deg?»</em> som utgangspunkt. Her får du mulighet til å arbeide tett på pasienter med sammensatte behov, og bidra til gode, helhetlige pasientforløp.</p><p>Vi er i kontinuerlig utvikling, og hos oss vil du få en aktiv rolle i å forme tjenestene videre.</p><p><strong>Dette får du hos oss</strong></p><ul><li>En variert og faglig spennende arbeidshverdag</li><li>Tett samarbeid med sykepleiere, terapeuter og øvrig fagpersonell</li><li>Gode muligheter for faglig utvikling og påvirkning</li><li>Et inkluderende og kompetent arbeidsmiljø</li><li>Lønn etter avtale og gode pensjonsordninger</li></ul><p><strong>Om rollen</strong></p><p>Som sykehjemslege vil du ha ansvar for medisinsk oppfølging av pasientene, og være en viktig bidragsyter i det tverrfaglige arbeidet. Du deltar aktivt i fagutvikling og internundervisning, og er med på å sikre gode og trygge tjenester.</p><p><strong>Kvalifikasjoner</strong></p><ul><li>Norsk autorisasjon som lege</li><li>Gjerne spesialist i allmennmedisin, indremedisin, fysikalsk medisin eller annen relevant spesialitet</li><li>God skriftlig og muntlig fremstillingsevne</li></ul><p><strong>Hvem er du?</strong></p><ul><li>Du trives med klinisk arbeid tett på pasientene</li><li>Du er faglig engasjert og nysgjerrig</li><li>Du samarbeider godt med andre og bidrar positivt i team</li><li>Du ønsker å være med å utvikle tjenestene våre</li></ul><p>Personlig egnethet vil bli tillagt stor vekt.</p><p><strong>Praktisk informasjon</strong></p><p>Lønn etter KS.</p><p>Politiattest av nyere dato må fremvises før tiltredelse (ikke eldre enn 3 måneder). </p><p>Elektronisk søknad og CV registreres via våre nettsider. Attester og vitnemål lastes inn som vedlegg til søknaden. </p><p>I henhold til offentleglova § 25, kan opplysninger om søker unntas i offentlig søkerliste dersom søkeren selv ber om det. Det gjøres oppmerksom på at en søknad kan bli gjort offentlig selv om søkeren har bedt om å ikke bli ført opp søkerlista. Søkeren vil i tilfellet bli varslet om dette. </p><p><strong>Hvorfor velge oss?</strong></p><p>Hos oss får du ikke bare en legejobb – du får en meningsfull rolle der du kan påvirke, utvikle og gjøre en forskjell hver dag!</p>  Link til søknadsskjema: <a href=\"https://ringsaker.easycruit.com/vacancy/application/3670743/210953?channel=NavRest&amp;iso=no\">Søk her</a><p><b>Om arbeidsgiveren:</b></p>Ringsaker kommune er med sine om lag 36.000 innbyggere den klart største kommunen i Innlandet. Kommunen har vekst i folketall og arbeidsplasser og et offensivt næringsliv som satser og ønsker utvikling. Ringsaker er Norges største hyttekommune, og Sjusjøen er kjent for å ha Norges beste skiløyper. Småbyene Brumunddal og Moelv har urbane kvaliteter, og det er et mangfoldig botilbud i hele kommunen. Det er gode oppvekstmiljøer, god barnehagedekning og en satsing på økt læringsutbytte i skolen. Mjøsa og det vakre kulturlandskapet gir fantastiske muligheter for rekreasjon og opplevelser. Vil du jobbe i en av Norges mest offensive kommuner? Som arbeidstaker i Ringsaker, blir du en del av et stort og sammensatt fagmiljø med gode kollegaer.\n\nTilgjengelighetserklæring for EasyCruit: https://uustatus.no/nb/erklaringer/publisert/acadd65a-0831-4f3b-8c77-387e208b2312",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/87378087-3746-4dc0-ad34-626a42dcf2ed",
+    "postedAt": "2026-11-06T13:00:20.923Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -9204,6 +9318,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8165611",
     "postedAt": "2026-10-22T10:34:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9222,6 +9338,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8165624",
     "postedAt": "2026-10-22T10:34:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9294,7 +9412,7 @@
     "postedAt": "2026-10-22T23:25:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -9332,7 +9450,7 @@
     "postedAt": "2026-10-22T23:24:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -9369,7 +9487,7 @@
     "postedAt": "2026-10-22T23:25:22.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -9498,6 +9616,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8199369",
     "postedAt": "2026-10-23T09:08:22.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10128,7 +10248,7 @@
     "postedAt": "2026-10-23T09:47:43.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -10216,6 +10336,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8218922",
     "postedAt": "2026-10-23T10:35:56.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10234,6 +10356,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8219145",
     "postedAt": "2026-10-23T10:36:09.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10252,6 +10376,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8219109",
     "postedAt": "2026-10-23T10:36:07.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10832,8 +10958,6 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8222439",
     "postedAt": "2026-10-23T15:07:19.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10906,6 +11030,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8222680",
     "postedAt": "2026-10-23T15:07:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -11692,7 +11818,7 @@
     "postedAt": "2026-10-24T03:17:09.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -11712,7 +11838,7 @@
     "postedAt": "2026-10-24T03:17:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -11946,7 +12072,7 @@
     "postedAt": "2026-10-29T01:25:56.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -12533,7 +12659,7 @@
     "postedAt": "2026-10-28T01:48:50.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -12552,7 +12678,7 @@
     "postedAt": "2026-10-28T01:48:50.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -12752,7 +12878,7 @@
     "postedAt": "2026-10-28T02:14:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -12772,7 +12898,7 @@
     "postedAt": "2026-10-28T02:14:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -12792,7 +12918,7 @@
     "postedAt": "2026-10-28T02:14:01.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -13626,6 +13752,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8487510",
     "postedAt": "2026-11-03T01:27:27.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -14286,6 +14414,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8428106",
     "postedAt": "2026-10-31T01:24:21.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -14304,6 +14434,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8428138",
     "postedAt": "2026-10-31T01:24:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -14357,6 +14489,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8428533",
     "postedAt": "2026-10-31T01:24:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -14624,7 +14758,7 @@
     "postedAt": "2026-11-04T10:44:20.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -14981,7 +15115,7 @@
     "postedAt": "2026-11-05T06:05:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -15019,7 +15153,7 @@
     "postedAt": "2026-11-05T09:22:01.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -15057,7 +15191,7 @@
     "postedAt": "2026-11-05T10:50:52.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -15288,6 +15422,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8577664",
     "postedAt": "2026-11-05T17:06:56.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15306,6 +15442,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8577665",
     "postedAt": "2026-11-05T17:06:59.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15342,6 +15480,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8577671",
     "postedAt": "2026-11-05T17:06:59.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15377,6 +15517,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8577693",
     "postedAt": "2026-11-05T17:07:01.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15396,7 +15538,7 @@
     "postedAt": "2026-11-05T17:07:01.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -15415,6 +15557,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8577699",
     "postedAt": "2026-11-05T17:07:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15521,6 +15665,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8583672",
     "postedAt": "2026-11-06T01:26:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15557,6 +15703,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8583678",
     "postedAt": "2026-11-06T01:26:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -15610,6 +15758,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8584707",
     "postedAt": "2026-11-06T01:42:07.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-06T10:50:31.526Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -16325,6 +16475,363 @@
     "source": "eures"
   },
   {
+    "id": "eures:ODYxNDExOSA5",
+    "slug": "non-renseigne-medecin-specialiste-h-f-odyxndexosa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin spécialiste (H/F)",
+    "locations": [
+      "Morbihan, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Le Centre de Kerpape recherche un Médecin MPR en CDD de 1 an, voici les missions:-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Assurer la prise en charge et le suivi des patients en MPR neurologique-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Contribuer à l'activité d'avis MPR auprès d'autres établissements du territoire-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Assurer une activité d'actes techniques, notamment toxine et BUD-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Travailler en collaboration avec une équipe pluridisciplinaire (kinésithérapeutes, ergothérapeutes, orthophonistes, psychologues, assistantes sociales etc.)-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Contribuer à la démarche qualité et à l'amélioration continue des soins-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Salaire selon la grille conventionnelle CCN 51 (FEHAP)-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Travail en journée, RTT-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Participation à l'astreinte MPR-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Restauration d'entreprise, association sportive interne-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Environnement de travail agréable en front de mer</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8614119",
+    "postedAt": "2026-11-06T09:02:55.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYxNDY3NSA5",
+    "slug": "les-colettes-sourcing-chirurgien-vasculaire-installation-liberale-somme-80-h-f-odyxndy3nsa5",
+    "company": "eures",
+    "employer": "Les Colettes Sourcing",
+    "title": "CHIRURGIEN VASCULAIRE - INSTALLATION LIBÉRALE - SOMME (80) (H/F)",
+    "locations": [
+      "Somme, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "descriptionHtml": "<p>Une clinique médico-chirurgicale de 310 lits et places, dans la Somme, cherche son chirurgien vasculaire en installation libérale. Le terrain est prêt : une salle hybride au coeur d'un bloc de 19 salles, une imagerie complète sur site avec IRM et scanner, des soins intensifs, et des urgences médico-chirurgicales. À côté de vous, des cardiologues, des néphrologues et des médecins vasculaires avec qui les parcours se construisent naturellement.Rejoindre ce projet, c'est choisir un exercice libéral en chirurgie vasculaire dans une grande clinique de la Somme, avec un plateau technique adapté, salle hybride et imagerie.Le poste : Pourquoi ce poste va vous plaire :- Une salle hybride pensée pour l'endovasculaire, au sein d'un bloc de 19 salles,- L'imagerie sur site, IRM, scanner pour décider vite et bien,- Des urgences médico-chirurgicales qui alimentent une activité variée,- Des échanges quotidiens avec la cardiologie, la néphrologie et la médecine vasculaire,- Un poste à structurer à votre image, en libéral, dans un établissement qui attend votre spécialité.Votre mission, si vous l'acceptez :- Consulter en chirurgie vasculaire et poser vos indications,- Opérer en chirurgie ouverte comme en endovasculaire,- Suivre vos patients avant et après l'intervention,- Vous appuyer sur l'anesthésie, les soins intensifs et l'imagerie, et leur apporter votre expertise en retour,- Prendre part aux urgences, selon l'organisation du service.Profil recherché : - Docteur en médecine, diplôme d'études spécialisées en chirurgie vasculaire,- Inscription à l'Ordre des médecins,- Vous êtes à l'aise aussi bien en chirurgie ouverte qu'en endovasculaire, et vous aimez le travail d'équipe.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8614675",
+    "postedAt": "2026-11-06T09:22:04.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYxNDY4OSA5",
+    "slug": "les-colettes-sourcing-cardiologue-installation-liberale-pas-de-calais-62-h-f-odyxndy4osa5",
+    "company": "eures",
+    "employer": "Les Colettes Sourcing",
+    "title": "CARDIOLOGUE - INSTALLATION LIBÉRALE - PAS DE CALAIS (62) (H/F)",
+    "locations": [
+      "Pas-de-Calais, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "cardiology",
+    "descriptionHtml": "<p>Dans le Pas-de-Calais, les patients attendent un cardiologue : les délais de rendez-vous s'allongent et les médecins traitants cherchent des confrères à qui adresser leurs patients. La clinique qui vous ouvre ses portes est une structure chirurgicale ambulatoire de 15 places, entourée d'une vingtaine de praticiens et adossée à un pôle de santé avec un hôpital, une maison de santé, un centre d'imagerie, un laboratoire, qui vous donnera une visibilité immédiate.Rejoindre ce projet, c'est choisir de répondre à un vrai besoin du territoire, en libéral, dans une clinique ambulatoire où votre expertise sera attendue dès le premier jour.Le poste : Pourquoi ce poste va vous plaire :- Une patientèle à constituer vite, tant la demande de cardiologie est forte sur le territoire,- Des avis cardiologiques à donner aux chirurgiens de la clinique avant leurs interventions,- Un centre d'imagerie sur le pôle, pour compléter vos bilans sans faire voyager les patients,- Une équipe de praticiens qui se connaît et se recommande des patients.Vos missions :- Consulter et suivre vos patients, du bilan initial au suivi au long cours,- Donner des avis cardiologiques aux services et aux chirurgiens de la clinique,- Coordonner les parcours avec la médecine vasculaire et les médecins traitants,- Développer l'activité de cardiologie de la clinique, à votre rythme et à votre image.Profil recherché : - Docteur en médecine, diplôme d'études spécialisées en cardiologie,- Inscription à l'Ordre des médecins,- Envie de construire et de porter un projet médical.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8614689",
+    "postedAt": "2026-11-06T09:22:06.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYxODc1MyA5",
+    "slug": "non-renseigne-educateur-specialise-h-f-secteur-pedopsychiatrie-odyxodc1mya5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Éducateur Spécialisé H/F - Secteur pédopsychiatrie",
+    "locations": [
+      "Hauts-de-Seine, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>Vitalis Médical, spécialiste du recrutement dans les secteurs sanitaire, social et médico-social, recherche un(e) Éducateur(trice) Spécialisé(e) diplômé(e) d'État pour une mission au sein d'un hôpital de jour accueillant des enfants, à Sèvres (92).Vous avez à cœur d'accompagner les jeunes dans leur développement et souhaitez intégrer une équipe engagée dans la prise en charge de troubles psychiques ? Nous recherchons votre profil !Vos missionsEn collaboration avec les professionnels de la structure, vous contribuerez à l'accompagnement individualisé des enfants accueillis.Vous serez amené(e) à :Participer à l'élaboration et à la mise en œuvre des projets personnalisés ;Proposer des activités adaptées aux capacités et aux besoins des enfants ;Encourager l'expression, la communication et les interactions sociales ;Accompagner les enfants dans les différents temps de la journée ;Observer les comportements et transmettre vos observations à l'équipe ;Participer aux réunions de synthèse et aux échanges pluridisciplinaires ;Maintenir un cadre sécurisant, bienveillant et adapté au public accompagné.Pré-requis? Sèvres (92)? Hôpital de jour - Public enfant? DEES obligatoire? Mission en intérim / vacation? Rémunération selon profil et conditions de la missionVous êtes disponible et souhaitez découvrir une nouvelle structure ou diversifier votre expérience ? Envoyez-nous votre candidature !Chez Vitalis Médical, nous prenons le temps d'échanger avec vous afin de vous proposer des missions correspondant à votre parcours et à vos attentes professionnelles.Profil recherchéLe Diplôme d'État d'Éducateur Spécialisé (DEES) est indispensable pour ce poste.Une expérience auprès d'un public enfant ou adolescent, notamment en pédopsychiatrie, psychiatrie, médico-social ou établissement spécialisé, constitue un véritable atout.Nous recherchons une personne :À l'écoute et dotée d'un bon relationnel ;Patiente et capable de prendre du recul face aux situations rencontrées ;À l'aise dans le travail en équipe ;Investie dans l'accompagnement des jeunes ;Capable de proposer et d'adapter des activités éducatives.Informations complémentairesType de contrat : IntérimTemps de travail : Temps pleinSalaire : 13 € par heure</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8618753",
+    "postedAt": "2026-11-06T11:45:09.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMDg2MiA5",
+    "slug": "la-solution-medicale-ophtalmologue-f-h-avignon-84000-odyymdg2mia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Ophtalmologue F/H - Avignon 84000",
+    "locations": [
+      "Vaucluse, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi ophtalmologue Avignon 84000 I La Solution MédicaleCentre Ophtalmologique à Avignon 84000, recherche activement un Ophtalmologue (F/H).Modalités d'exercice- Remplacements occasionnels possibles (ex. : 1 semaine par mois)- Ouvert au temps partiel- Contrat salarié ou libéral- Dispositif fiscal spécifique avantageux pour les candidats européens (accompagnement possible)À propos du centre- Centre d'environ 400 m², conçu par un architecte spécialisé dans les établissements de santé- Entièrement dédié à l'ophtalmologie- Plateau technique régulièrement renouvelé pour un confort optimal et une pratique de qualitéÉquipements :- Matériel de consultation Nidek- OCT Maestro Topcon- Champ visuel Humphrey - Zeiss- Laser YAG / SLT et Laser Argon- Salle dédiée aux IVTMissions- Consultations d'ophtalmologie- Travail en collaboration avec une équipe paramédicale qualifiée :- Orthoptistes- Assistantes médicales- Secrétaires médicalesRémunération- Rémunération attractive, selon le statut et le temps de présenceAvantages- Aucun frais d'intermédiation- Pas de gardes ni d'astreintes- Centre fermé le week-end- Planning rempli garanti, y compris pour les remplacements- Environnement moderne avec technologie de pointe- Équipe dynamique, expérimentée et bien organiséeCe poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.Status&amp;nbsp;&amp;nbsp; Inscrit à l'Ordre des médecins en France.DES Ophtalmologie obtenu en Union Européenne.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8620862",
+    "postedAt": "2026-11-06T12:34:34.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMDI0OSA5",
+    "slug": "harry-hope-medecin-generaliste-service-diabetologie-h-f-odyymdi0osa5",
+    "company": "eures",
+    "employer": "Harry Hope",
+    "title": "Médecin généraliste - service diabétologie (H/F)",
+    "locations": [
+      "Ardennes, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Au sein d'un service de diabétologie-endocrinologie, vous intégrez une équipe médicale et paramédicale soudée, composée de praticiens hospitaliers, internes, IPA, infirmiers et aides-soignants formés à l'éducation thérapeutique.Le service accueille des patients dans le cadre d'une activité diversifiée comprenant hospitalisation de semaine, hôpital de jour et consultations spécialisées en diabétologie, endocrinologie et obésité.Vous participez notamment aux missions suivantes :Assurer la prise en charge médicale des patients hospitalisés en semaine ;Participer au suivi des patients relevant de la spécialité ;Répondre aux avis médicaux sollicités par les différents services de l'établissement ;Assurer des consultations de médecine et participer à la télésurveillance des patients ;Participer aux programmes d'éducation thérapeutique ;Contribuer à la prise en charge des patients diabétiques, notamment dans le cadre des complications et des plaies diabétiques ;Participer à l'accompagnement des patients pris en charge par le centre de pompes à insuline ;Contribuer à la formation et à l'encadrement des internes ;Participer à la dynamique de formation continue, notamment autour de l'obésité, du diabète et des plaies diabétiques.Le service dispose notamment d'une expertise reconnue dans la prise en charge du diabète, avec un centre de pompes à insuline, une activité de boucle fermée, une structure dédiée au pied diabétique et des programmes d'insulinothérapie fonctionnelle.Le poste s'inscrit dans une volonté d'intégration durable au sein de l'équipe et peut permettre au praticien de construire progressivement une carrière hospitalière.Conditions : Contrat initial de praticien contractuel ;Possibilité d'évolution vers un poste de praticien hospitalier sous réserve de réussite au concours national ;Possibilité de souscrire un contrat d'engagement dans la carrière hospitalière (PECH) ;Conditions de rémunération à définir selon le profil et l'expérience ;Pas de permanence des soins au sein du service ;Permanences médicales assurées sur place selon l'organisation de l'établissement.&amp;nbsp;&amp;nbsp; Diplôme d'État de Docteur en médecine ;Qualification ordinale impérative et inscription à l'Ordre des Médecins ;Maîtrise parfaite de la langue française ;Intérêt pour la diabétologie, l'endocrinologie et la prise en charge de l'obésité ;Implication, dynamisme et bonnes qualités relationnelles ;Goût pour le travail en équipe pluridisciplinaire ;Intérêt pour la formation et la transmission des connaissances ;Volonté de s'inscrire dans une carrière hospitalière, avec possibilité de présentation au concours national de praticien hospitalier.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8620249",
+    "postedAt": "2026-11-06T12:33:55.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMDY0OSA5",
+    "slug": "la-solution-medicale-dermatologue-f-h-plaisir-78370-odyymdy0osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue F/H - Plaisir 78370",
+    "locations": [
+      "Yvelines, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi Dermatologue Plaisir 78370 / La Solution MédicaleCentre de santé à Plaisir 78370, recherche activement un Dermatologue (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Horaires flexibles à convenance- Rémunération 44 et 50% des actes facturés- Planning rempli garanti Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Voiture de fonction si temps plein- Emplacement à proximité des transports en commun et parking  Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Médecin Spécialiste et Qualifié en Dermatologie.Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8620649",
+    "postedAt": "2026-11-06T12:34:22.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMjAwNiA5",
+    "slug": "app-ines-praticien-ne-hospitalier-en-cardiologie-et-maladies-vasculaires-h-f-odyymjawnia5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Praticien(ne) Hospitalier en cardiologie et maladies vasculaires (H/F)",
+    "locations": [
+      "Hautes-Alpes, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "cardiology",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Gap est à la recherche d'un(e) « Praticien(ne) Hospitalier en cardiologie et maladies vasculaires », en contrat de Praticien Hospitalier.Secteur : publicMissionsTu assureras notamment :- la prise en charge des patients hospitalisés en cardiologie conventionnelle et UDT ;- les consultations de cardiologie ;- les avis spécialisés intra-hospitaliers ;- l'activité d'hôpital de jour ;- la télésurveillance de l'insuffisance cardiaque ;- les échocardiographies transthoraciques, épreuves d'effort, Holter ECG et MAPA ;- la participation à la permanence des soins sous forme d'astreintes ;- l'encadrement des internes et FFI et la formation des équipes.Tu participeras également aux réunions médicales, à la démarche qualité et aux projets territoriaux.Conditions / modalités administrativesQuotité : 100 %. Poste avec exercice territorial polyvalent et permanence des soins avec astreintes.AvantagesPlateau technique comprenant notamment cinq appareils d'échographie cardiaque, une salle d'épreuve d'effort et une salle dédiée à l'échographie d'effort. Collaboration avec les urgences, la réanimation et les centres de recours régionaux.&amp;nbsp;&amp;nbsp; Profil recherchéTu es titulaire du DES de Cardiologie et maladies vasculaires. La maîtrise de l'échocardiographie transthoracique, une expérience en soins continus cardiologiques et un intérêt pour l'insuffisance cardiaque, la télésurveillance ou la cardiogériatrie sont appréciés. Autonomie, organisation, qualités relationnelles et pédagogiques sont attendues.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8622006",
+    "postedAt": "2026-11-06T12:36:01.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMjAwNyA5",
+    "slug": "app-ines-medecin-generaliste-ou-psychiatre-h-f-odyymjawnya5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Médecin Généraliste ou Psychiatre (H/F)",
+    "locations": [
+      "Hauts-de-Seine, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Nanterre est à la recherche d'un(e) Médecin généraliste ou Psychiatre, en CDI à temps partiel.À propos du posteTu rejoins un service intervenant dans l'évaluation des dossiers de la Maison départementale des personnes handicapées des Hauts-de-Seine. Au sein d'une équipe pluridisciplinaire, tu participes à l'analyse médicale des primo-demandes afin de qualifier la nature du handicap, d'évaluer les besoins et de contribuer à l'identification des droits et orientations adaptées.Tes missionsEn lien avec les professionnels de l'équipe pluridisciplinaire, tu apportes ton expertise médicale pour garantir une évaluation rigoureuse, globale et conforme au cadre réglementaire.Tes principales missions :* Analyser les certificats médicaux, bilans spécialisés et pièces justificatives afin d'évaluer la nature, la sévérité et l'impact du handicap* Examiner les informations médicales et fonctionnelles pour apprécier les limitations d'activité et les restrictions de participation* Rédiger des avis médicaux structurés afin d'éclairer les décisions d'orientation et, si besoin, proposer une réorientation adaptée* Collaborer avec les psychologues, travailleurs sociaux et infirmiers pour garantir une évaluation cohérente des situations* Participer à l'identification des droits et des réponses les plus adaptées aux besoins des personnes* Assurer une veille médicale et réglementaire sur les pathologies, les critères d'éligibilité et les recommandations nationalesConditions / modalités administratives* Contrat : CDI* Temps de travail : temps partiel* Durée hebdomadaire : 7 heures par semaine* Rémunération : selon expérience et suivant les critères de la CCN du 15 mars 1966Avantages* Prise en charge de la mutuelle à 60 % par l'employeur* Prévoyance* Avantages sociaux et culturels du CSE* Compte Épargne Temps* Prise en charge à 60 % des transports en commun* Indemnités Ségur : 238 EUR&amp;nbsp;&amp;nbsp; Profil recherchéTu es titulaire du Diplôme d'État de docteur en médecine. Le poste est ouvert aux médecins généralistes ou psychiatres.Une première expérience dans l'accompagnement de personnes présentant un handicap psychique et intellectuel est appréciée.Tu apprécies le travail en équipe et fais preuve d'écoute, d'adaptation, d'initiative et d'autonomie dans l'organisation de ton travail.Le poste est ouvert aux personnes en situation de handicap/RQTH.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8622007",
+    "postedAt": "2026-11-06T12:36:02.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMjAzMiA5",
+    "slug": "app-ines-psychiatre-h-f-odyymjazmia5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Psychiatre (H/F)",
+    "locations": [
+      "Gironde, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Bordeaux est à la recherche d'un(e) Psychiatre, en CDI / CDD / Mutation.Tes missionsTu rejoindras une unité spécialisée dans la prise en charge du psychotraumatisme, accueillant des adultes, des enfants et des adolescents confrontés à un ou plusieurs événements traumatiques. Au sein d'une équipe pluridisciplinaire, tu contribueras à l'évaluation, au suivi et à la coordination des parcours de soins afin de prévenir l'installation de troubles psychiques liés au traumatisme.Au quotidien, tu seras amené(e) à :- Réaliser les consultations des patients et, si nécessaire, de leurs proches.- Assurer le suivi médical des patients et renseigner le Dossier Patient Informatisé (DPI).- Coordonner les prises en charge et animer les réunions théorico-cliniques hebdomadaires.- Prescrire et, si besoin, participer aux activités thérapeutiques.- Garantir le cadre de soins.- Demander ou renouveler les dossiers MDPH.- Développer le travail en réseau avec les partenaires.- Participer aux protocoles de recherche.Conditions / Modalités administratives- Contrat : CDI / CDD / Mutation.- Temps de travail : Temps plein ou temps partiel.- Prise de poste : Dès que possible.- Salaire brut annuel : de 55 000 EUR à 124 000 EUR, selon expérience.- Diplôme requis : Diplôme d'Études Spécialisées (DES) en Psychiatrie.Avantages- Participation à des protocoles de recherche.- Travail au sein d'une équipe pluridisciplinaire spécialisée dans le psychotraumatisme.&amp;nbsp;&amp;nbsp; Profil recherchéTu es Psychiatre ou en passe de le devenir, quel que soit ton statut. Tu souhaites développer ton expertise dans la prise en charge du psychotraumatisme et évoluer au sein d'une équipe pluridisciplinaire engagée dans un environnement clinique stimulant.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8622032",
+    "postedAt": "2026-11-06T12:36:01.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMjAzOCA5",
+    "slug": "app-ines-psychiatre-equipe-liaison-h-f-odyymjazoca5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Psychiatre équipe liaison (H/F)",
+    "locations": [
+      "Gironde, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Bordeaux est à la recherche d'un(e) Psychiatre Liaison, en CDI / CDD / Mutation.Tes missionsTu rejoindras une équipe de psychiatrie de liaison intervenant au sein des services d'urgences, de médecine, chirurgie, soins de suite et réadaptation de plusieurs établissements de santé. Tu travailleras en étroite collaboration avec les équipes médicales afin d'assurer une prise en charge adaptée des patients nécessitant une évaluation psychiatrique.Au quotidien, tu seras amené(e) à :- Réaliser des évaluations psychiatriques auprès des patients hospitalisés ou accueillis aux urgences.- Déterminer, lorsque nécessaire, l'orientation psychiatrique la plus adaptée.- Collaborer avec les équipes médicales et soignantes autour du projet de prise en charge.- Assurer la transmission des informations aux professionnels concernés.- Participer à la permanence des soins en assurant des gardes (1 à 2 par mois).Conditions / Modalités administratives- Contrat : CDI / CDD / Mutation.- Temps de travail : Temps partiel.- Prise de poste : Dès que possible.- Salaire brut annuel : de 55 000 EUR à 124 000 EUR, selon expérience.- Diplôme requis : Diplôme d'Études Spécialisées (DES) en Psychiatrie.Avantages- Poste à pourvoir à hauteur de 5,5 journées.- Mixité d'exercice possible.- Parking et restauration sur place.&amp;nbsp;&amp;nbsp; Profil recherchéTu es Psychiatre ou en passe de le devenir, quel que soit ton statut. Tu souhaites rejoindre une équipe pluridisciplinaire engagée et exercer dans un environnement stimulant offrant une diversité de prises en charge cliniques.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8622038",
+    "postedAt": "2026-11-06T12:36:01.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMTcxMSA5",
+    "slug": "app-ines-medecin-du-travail-h-f-odyymtcxmsa5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Médecin du travail (H/F)",
+    "locations": [
+      "Calvados, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Honfleur est à la recherche d'un(e) Médecin du travail en CDI.Présentation de l'établissementRejoins un service de prévention et de santé au travail privé, à taille humaine, dynamique et structuré, intervenant dans le Calvados et l'Orne.Tu évolueras dans un environnement bienveillant, favorisant le travail en équipe pluridisciplinaire, le partage d'expertise et l'innovation, au service de la santé des salariés.Tes missionsEn tant que Médecin du travail, tu coordonnes une équipe pluridisciplinaire et participes activement à la prévention des risques professionnels.- Assurer le suivi médical des salariés et réaliser les examens médicaux.- Conseiller les employeurs sur la prévention des risques professionnels.- Prévenir la désinsertion professionnelle et accompagner le maintien dans l'emploi.- Analyser les conditions de travail et proposer des actions de prévention adaptées.- Coordonner l'équipe pluridisciplinaire et participer aux projets du service.Conditions et modalités- Contrat : CDI, secteur privé.- Localisation : proximité de Honfleur.- Prise de poste : dès que possible.- Rémunération : entre 95 000 EUR et 105 000 EUR brut annuel.- Temps de travail modulable :&amp;nbsp;&amp;nbsp;- 39 h/semaine avec 23,5 jours de RTT par an, sur 5 ou 4,5 jours.&amp;nbsp;&amp;nbsp;- 35 h/semaine avec organisation possible sur 5, 4,5 ou 4 jours, avec ou sans RTT.- Télétravail possible.Avantages- Tickets restaurant.- Véhicule de service et prise en charge des frais professionnels.- Aide possible à l'installation dans la région.- Accueil et accompagnement personnalisés.- Après un an : 4 jours d'ancienneté supplémentaires et une prime de 1 000 EUR brut.- Organisation du travail souple et adaptable.&amp;nbsp;&amp;nbsp; Profil recherché- Tu es titulaire d'un diplôme de spécialisation en médecine du travail (CES ou DES).- Tu es inscrit(e) au Conseil de l'Ordre des Médecins.- Tu possèdes une expérience en médecine du travail, idéalement avec coordination d'équipe pluridisciplinaire.- Tu apprécies le travail collaboratif et souhaites t'investir dans des projets de prévention et de santé au travail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8621711",
+    "postedAt": "2026-11-06T12:35:39.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMTcyNSA5",
+    "slug": "app-ines-medecin-geriatre-en-chirurgie-h-f-odyymtcynsa5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Médecin gériatre en chirurgie  (H/F)",
+    "locations": [
+      "Manche, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Saint-Lô est à la recherche d'un(e) Médecin Gériatre en Chirurgie en CDD ou par voie de mutation, à temps plein ou à temps partiel.À propos de l'établissementTu rejoindras un établissement public de référence du Centre Manche regroupant de nombreuses spécialités médicales et chirurgicales. Intégré(e) à l'Unité Post Opératoire Gériatrique, tu contribueras à la prise en charge des patients âgés hospitalisés en chirurgie, au sein d'un environnement pluridisciplinaire dynamique.Tes missions- Assurer le suivi médical des patients âgés hospitalisés dans les services de chirurgie.- Veiller au bien-être médical et à la qualité de la prise en charge globale des patients.- Identifier, évaluer et prendre en charge les problématiques somatiques associées.- Apporter une expertise gériatrique auprès des équipes chirurgicales.- Participer à l'optimisation des parcours de soins des patients âgés.- Collaborer étroitement avec les équipes médicales, chirurgicales et paramédicales.Organisation du poste- Exercice au sein de l'Unité Post Opératoire Gériatrique.- Activité transversale auprès des services de chirurgie.- Travail en collaboration avec les différentes spécialités médicales et chirurgicales de l'établissement.- Poste évolutif offrant des perspectives de développement professionnel.Conditions et modalités administratives- Contrat : CDD ou mutation.- Statut : Praticien Hospitalier ou Praticien contractuel.- Secteur : Public.- Temps de travail : Temps plein ou temps partiel.- Poste à temps plein privilégié.- Inscription au Conseil National de l'Ordre des Médecins en France obligatoire.Rémunération- Rémunération selon la grille statutaire de la Fonction Publique Hospitalière et l'expérience du praticien.Avantages- Activité clinique diversifiée au contact de nombreuses spécialités chirurgicales.- Travail au sein d'un établissement de référence du territoire.- Collaboration avec des équipes pluridisciplinaires expérimentées.- Poste évolutif permettant le développement de nouvelles compétences.- Cadre de vie attractif entre mer et campagne, au coeur de la Normandie.&amp;nbsp;&amp;nbsp; - Docteur en médecine inscrit au Conseil National de l'Ordre des Médecins en France.- Médecin Gériatre ou Médecin Généraliste titulaire d'un DU de Gériatrie.- Une expérience hospitalière en médecine générale, médecine interne ou gériatrie est appréciée.- Intérêt marqué pour la pratique clinique et la prise en charge des patients âgés.- Aisance relationnelle et goût du travail en équipe.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8621725",
+    "postedAt": "2026-11-06T12:35:43.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMTk0MCA5",
+    "slug": "app-ines-psychiatre-empp-h-f-odyymtk0mca5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Psychiatre EMPP (H/F)",
+    "locations": [
+      "Gironde, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Bordeaux est à la recherche d'un(e) Psychiatre, en CDI / CDD / Mutation.Tes missionsTu rejoindras deux équipes mobiles intervenant auprès de personnes en situation de précarité ou confrontées à une crise psychiatrique. Tu travailleras au sein d'une équipe pluridisciplinaire afin de proposer une prise en charge de proximité, favorisant les alternatives à l'hospitalisation et le maintien du lien avec les dispositifs de soins.Au quotidien, tu seras amené(e) à :- Réaliser des évaluations psychiatriques auprès des patients sur leur lieu de vie.- Participer à l'évaluation psychologique et sociale en lien avec l'équipe pluridisciplinaire.- Assurer le suivi et l'orientation des patients vers les dispositifs adaptés.- Développer le travail en réseau avec les partenaires sanitaires, sociaux et médico-sociaux.- Accompagner les acteurs de première ligne dans la prise en charge des situations complexes.- Contribuer à la prévention et à la gestion des situations de crise en privilégiant les alternatives à l'hospitalisation.Conditions / Modalités administratives- Contrat : CDI / CDD / Mutation.- Temps de travail : Temps plein ou temps partiel.- Télétravail partiel possible.- Prise de poste : Dès que possible.- Salaire brut annuel : de 55 000 EUR à 124 000 EUR, selon expérience.- Diplôme requis : Diplôme d'Études Spécialisées (DES) en Psychiatrie.Avantages- Activité sur 7,5 journées avec possibilité de télétravail partiel.- Possibilité d'articuler ce poste avec une activité en CMP ou en unité d'hospitalisation selon tes souhaits.- Tout statut accepté.- Accompagnement de proximité par la Direction des Affaires Médicales.&amp;nbsp;&amp;nbsp; Profil recherchéTu es Psychiatre ou en passe de le devenir, quel que soit ton statut. Tu souhaites rejoindre une équipe pluridisciplinaire engagée et exercer dans un environnement stimulant offrant une diversité de prises en charge cliniques.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8621940",
+    "postedAt": "2026-11-06T12:35:54.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMTk1NCA5",
+    "slug": "app-ines-oncologue-h-f-odyymtk1nca5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Oncologue  (H/F)",
+    "locations": [
+      "Hautes-Alpes, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "descriptionHtml": "<p>L'un de nos établissements partenaires basé à proximité de Gap est à la recherche d'un(e) « Oncologue », en contrat de Praticien Contractuel, avec évolution possible vers un poste de Praticien Hospitalier.SECTEURPublicMISSIONSAu sein de l'HDJ d'oncologie, tu participeras à la prise en charge des patients en oncologie ambulatoire et aux consultations externes. L'activité concerne notamment les filières digestives, gynécologiques, urologiques, hématologiques et thoraciques.Tu participeras également aux e-RCP, au développement des filières oncologiques et aux projets de coopération avec le centre expert régional. L'établissement souhaite notamment renforcer les parcours de soins conjoints, l'accès aux essais cliniques et aux thérapies innovantes ainsi que le développement du soin oncologique intégratif et ambulatoire.CONDITIONS / MODALITÉS ADMINISTRATIVES- À pourvoir dès que possible- Inscription à l'Ordre des médecins obligatoire avec RPPS- Activité d'HDJ de 8h30 à 18h- Pas d'astreinte ni de garde actuellementAVANTAGES- Environ 40 patients pris en charge quotidiennement en HDJ- 2 e-RCP par filière chaque mois- Équipe paramédicale dédiée et pluridisciplinaire- Collaboration avec un centre expert régional- Développement de filières et de projets innovants- Possibilité de participer au développement du soin oncologique intégratifSALAIRERémunération réglementaire selon statut.&amp;nbsp;&amp;nbsp; PROFIL RECHERCHÉTu es titulaire d'un DES d'oncologie et d'un diplôme ou d'une capacité en lien avec la spécialité. Tu fais preuve de rigueur, d'autonomie et d'adaptabilité et tu apprécies le travail collectif.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8621954",
+    "postedAt": "2026-11-06T12:35:55.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMzQzMiA5",
+    "slug": "non-renseigne-cardiologue-h-f-odyymzqzmia5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Cardiologue (H/F)",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "cardiology",
+    "descriptionHtml": "<p>Je suis Laura, j'interviens sur la division santé au sein du Cabinet Harry Hope d'Aix en Provence. Mon rôle est d'accompagner les entreprises qui sont en recherche de profils dans le secteur du médical, paramédical et social. Ancienne aide-soignante durant plus de 9 ans, j'ai acquis une vision globale et complète dans le domaine médical. Dans le recrutement depuis plus de 4 ans je serais ravie de vous accompagner. J'accompagne une clinique qui est en recherche d'un médecin cardiologue pour un CDI en hôpital de jour, vous assurez la prise en charge médicale des patients de votre secteur en veillant à leur confort, leur sécurité et au respect de leur intimité, tout en respectant le code de déontologie médicale et les procédures internes. Vous participez à la coordination des soins et à la permanence médicale, contribuez à la continuité des soins, intervenez en situations d'urgence, et participez à l'élaboration et à la mise en oeuvre du projet médical et des projets individuels de soins. Missions principales : Suivi médical des patients et tenue des dossiers médicaux. Prise en charge patients HDJ cardiologique majoritaire (20 places), interventions HC en complémentConsultations d'entrée. Ateliers thérapeutiques. Avis sur les admissions et coordination avec l'équipe médicale et soignante. Rédaction des comptes rendus et courriers aux prescripteurs. Application des bonnes pratiques, recommandations et protocoles médicaux. Formation et accompagnement des professionnels de santé. Contribution à la démarche qualité, audits, certification et instances médicales. Maintien des relations avec les réseaux de soins pour assurer la continuité des prises en charge. Accompagnement des patients et de leurs familles tout au long du parcours de soins.Docteur en Médecine, inscrit au Conseil de l'Ordre des médecins et enregistré(e) à l'ARS (numéro ADELI et PPRS à fournir). Diplômes et qualifications certifiés conformes aux originaux. Expérience souhaitée en cardiologie, avec capacité à gérer des situations complexes et urgentes. Rigueur, autonomie et esprit d'équipe. Respect des valeurs éthiques et déontologiques, sens de la bientraitance et de la qualité des soins. Un temps plein idéalement mais un temps partiel est également envisageable Pas d'astreintes ni gardes rémunération entre 600 et 700EUR net/ jour</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8623432",
+    "postedAt": "2026-11-06T17:05:57.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMzQzMyA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-odyymzqzmya5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Je suis Laura, consultante en recrutement dans le secteur de la santé au sein du Cabinet Harry Hope à Aix-en-Provence. Ancienne aide-soignante avec plus de 9 ans d'expérience dans le domaine médical et spécialisée depuis plus de 5 ans dans le recrutement de profils médicaux, paramédicaux et sociaux, je vous accompagne dans votre évolution professionnelle. Je recherche actuellement pour l'un de mes partenaires un médecin généraliste en CDI au sein d'une clinique psychiatrique.Dans le cadre de vos fonctions de médecin généraliste , vous assurez le suivi médical somatique des patients hospitalisés, en étroite collaboration avec les psychiatres. Vous intervenez dès l'admission en réalisant les consultations initiales, puis assurez le suivi clinique des pathologies somatiques associées tout au long de l'hospitalisation.Vous participez activement à la coordination du parcours de soins en contribuant aux staffs pluridisciplinaires et en favorisant une prise en charge globale et cohérente des patients. Votre rôle inclut également la prévention, le dépistage et la prise en charge des comorbidités somatiques, dans une logique d'amélioration continue de la qualité des soins.Vous travaillez en collaboration étroite avec les équipes psychiatriques ainsi qu'avec la pharmacie afin d'assurer la pertinence et la sécurité des traitements.Enfin en tant que médecin généraliste êtes garant de la traçabilité des actes et des informations médicales dans le dossier patient, dans le respect des exigences de qualité et de sécurité des soins.Numéro RPPS OBLIGATOIRE Titulaire du Diplôme d'Etat Docteur en médecine, vous souhaitez intégrer une structure à taille humaine. Une expérience en psychiatrie est appréciable mais pas obligatoire. Sur une base d'un temps plein, la rémunération en CDI 7500EUR brut + 500EUR brut de ségur / par mois, s'ajoute à cela une prime de participation + une prime dîtes de 13ème mois.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8623433",
+    "postedAt": "2026-11-06T17:05:58.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyMzQzOSA5",
+    "slug": "non-renseigne-chirurgien-vasculaire-h-f-odyymzqzosa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Chirurgien vasculaire (H/F)",
+    "locations": [
+      "Gironde, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "descriptionHtml": "<p>Nous recherchons un Phlébologue/Angiologue/Médecin Vasculaire H/F pour une collaboration libérale, salariée ou en remplacement à temps plein ou partiel, au sein d'un cabinet pluridisciplinaire avec une aile dédiée à la médecine générale. Cet établissement à fort potentiel offre une prise en charge globale de chaque patient avec d'autres médecins spécialistes: gynécologues, ophtalmologues, cardiologues, endocrinologues mais également avec une équipe de paramédicaux. Vous bénéficierez d'un confort de pratique optimal. Cette opportunité offre les garanties d'un bel épanouissement professionnel. Le secrétariat est présent en permanence: aucune charge administrative, pas d'encaissement ni d'accueil des patients.Les avantages du poste: - Libéral, salarié ou remplaçant à temps plein ou partiel - Conditions d'exercice optimales pensées par des médecins pour des médecins - Possibilité d'exercer en secteur 1 ou secteur 2 - Secrétariat présent 7j/7 - 100% de votre temps dédié à la pratique de la médecine (pas d'encaissement ni d'accueil des patients) - Gestion des tâches administratives totalement déléguée - Logiciel médical et prise de rendez-vous Doctolib - Possibilité d'exercer en TC - Possibilité de formation et d'échanges avec les autres spécialités. - Formation continue et travail en équipe - Locaux neufs, modernes et complétement équipés. - Prise en charge globale des patients avec l'équipe de spécialistes paramédicaux à votre disposition (psychologue, ostéopathe, sophrologue, diététicien) - Flexibilité du temps de travail - Rémunération attractive avec salaire minimum garanti- Rémunération attractive avec salaire minimum garanti - Vous êtes titulaire d'un DES Angiologie - Vous êtes inscrit ou inscriptible au conseil national du conseil de l'ordre des médecins en France - Vous avez une appétence pour le travail en équipe - Possibilité d'effectuer des remplacements</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8623439",
+    "postedAt": "2026-11-06T17:06:13.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyNzI2NyA5",
+    "slug": "domino-rh-medecin-psychiatre-h-f-odyynzi2nya5",
+    "company": "eures",
+    "employer": "Domino RH",
+    "title": "Médecin psychiatre (H/F)",
+    "locations": [
+      "Marne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>Description du poste :Le cabinet DOMINO MEDICARE recrute pour un établissement de santé privé à but non lucratif situé à Vitry-le-François, un Médecin Psychiatre ou Pédopsychiatre dans le cadre d'un CDI.L'établissement appartient à une Fondation reconnue d'utilité publique, spécialisée dans la prise en charge des adolescents et jeunes adultes (12 à 25 ans).La structure est une clinique soins-études récente, disposant de 80 lits et 5 places d'hôpital de jour, permettant d'associer prise en charge psychiatrique et poursuite de la scolarité en lien étroit avec l'Éducation Nationale.Le poste :Vous serez médecin référent d'une unité de 28 patients-élèves, adolescents et jeunes adultes stabilisés, avec une forte dimension médico-pédagogique.Vous intégrerez une équipe médicale collégiale, sous la responsabilité d'un coordinateur médical, et travaillerez en lien étroit avec le cadre de santé de l'unité.Organisation :Temps plein - 38h/semaine1,5 RTT/mois1 à 2 semaines d'astreinte par moisPossibilité d'aménagement du temps de travailLogement possible pendant les 3 premiers moisVos missions :Activité clinique :Assurer le suivi psychiatrique des patients-élèvesParticiper à la construction et au suivi des projets de soins individualisésIntervenir dans le cadre du parcours de préadmissionTravail en équipe, Collaboration étroite avec :Cadre de santéÉquipe soignante (infirmiers, éducateurs, aides-soignants)Équipe pluridisciplinaire (psychologues, ergothérapeutes, assistante sociale Participation aux staffs quotidiens et réunions institutionnellesDimension médico-pédagogiqueTravail en lien avec l'équipe pédagogique (Éducation Nationale)Participation aux :Réunions médico-pédagogiquesConseils de classeSuivi du projet scolaire des patientsImplication institutionnelleParticipation aux instances (CME, groupes qualité)Contribution au projet médical de l'établissementParticipation aux démarches qualitéTravail en réseauCoordination avec les structures adresseuses et d'avalLien avec les services de santé scolaire et universitaireEngagement académiqueEncadrement d'internesParticipation aux séminaires cliniques et réunions médicalesDescription du profil :Formation :Doctorat en MédecineSpécialisation en psychiatrie ou DESC de pédopsychiatrieInscription obligatoire à l'Ordre des Médecins en FranceCompétences :Connaissance de la psychopathologie de l'adolescent et du jeune adulteExpérience ou appétence pour le travail institutionnelCapacité à travailler en équipe pluridisciplinaireIntérêt pour la dimension soins-étudesQualités relationnelles, écoute et engagementConditions et avantagesCDI - Convention CCN 51 / FEHAPRémunération selon expériencePossibilité de détachement de la Fonction Publique HospitalièreLogement temporaire à l'arrivéeEnvironnement de travail innovant (soins + scolarité)Équipe médicale stable et collaborative</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8627267",
+    "postedAt": "2026-11-07T01:27:02.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODYyNzIxNSA5",
+    "slug": "app-ines-medecin-de-mpr-h-f-odyynzixnsa5",
+    "company": "eures",
+    "employer": "App'Ines",
+    "title": "Médecin de MPR (H/F)",
+    "locations": [
+      "Sarthe, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Description du poste :L'un de nos établissements partenaires, situé près du Mans, recherche un Médecin MPR (H/F) en CDI, à temps plein ou partiel.La structure :Rejoins un SMR moderne et reconnu.Le poste concerne un service locomoteur/neurologie doté d'un plateau technique complet (balnéothérapie, Arméo, VR, échographie Tu travailleras aux côtés de 10 médecins et d'équipes pluridisciplinaires (IDE, AS, kinés, APA, ergo, psychologues Tes missions :Prise en charge d'un service de 26 litsBilans, consultations, continuité des soinsAdmissions / sortiesConsultations externesGestes techniques selon compétencesProjet thérapeutique en équipeQualité des dossiers médicauxParticipation aux projets institutionnels (CME, COMEX Permanence des soins (équipe de 11 médecins)Collaboration avec les spécialistes du territoireConditions :CDI, temps plein ou partielAstreintes partagées (3-4/mois)Horaires flexiblesDéplacements possiblesAvantages :Salaire selon Convention + reprise d'ancienneté18 RTT/anAide au logementRestauration collectiveAvantages CSE (chèques vacances, billetterie Projets innovants &amp;amp; excellente qualité de vie au travailDescription du profil :Profil recherché :Médecin MPR ou Généraliste avec DU rééducation/réadaptationInscription à l'OrdreEsprit d'équipe, adaptabilité, intérêt pour l'innovation</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8627215",
+    "postedAt": "2026-11-07T01:26:58.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:ODZiY2ViMGYtZDE0OS00YzJkLTg1OGMtNWQ4YmI4MTlmMGNmIDI2MQ",
     "slug": "kletor-as-tre-maneders-fastlegevikariat-i-innlandet-fra-januar-odziy2vimgytzde0os00yzjkltg1ogmtnwq4ymi4mtlmmgnmidi2mq",
     "company": "eures",
@@ -16676,6 +17183,23 @@
     "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/f81e11a0-b380-4a4a-b9e2-5f12b46703d2/fi",
     "postedAt": "2026-10-28T10:24:45.455Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ZjhhYjFjMWMtZTA2OC00ZjY0LTllNzUtODkzZDI3YjZhYzAwIDgx",
+    "slug": "varsinais-suomen-hyvinvointialue-osastonylilaakari-tyks-mielialahairiot-turku-zjhhyjfjmwmtzta2oc00zjy0ltllnzutodkzzdi3yjzhyzawidgx",
+    "company": "eures",
+    "employer": "Varsinais-Suomen hyvinvointialue",
+    "title": "Osastonylilääkäri, Tyks mielialahäiriöt, Turku",
+    "locations": [
+      "Finland"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Haemme osastonylilääkäriä Tyks psykiatrian erikoissairaanhoidon mielialahäiriöiden avohoidon vastuualueelle. Työskentelypaikka sijaitsee Turussa ja vastuualueena on kuntarajojen mukainen Turun väestöpohja. Virka täytetään 4.1.2027 alkaen tai sopimuksen mukaan.TehtäväsiOsastonylilääkärinä koordinoit Turun mielialatyöryhmän päivittäistä tiimityöskentelyä ja olet keskeisessä roolissa työryhmän toiminnan uudistamisen toimeenpanossa. Vastaat työryhmän hoitoon pääsyä ja hoidon vaikuttavuutta koskevista tavoitteista sekä toimeenpanet aikuisten mielialahäiriöiden arviointiin, hoitoon ja palveluprosesseihin liittyviä yhtenäistyviä toimintamalleja. Työskentelet tiiviissä yhteistyössä muiden mielialahäiriöiden avohoidon vastuualueen esihenkilöiden sekä perustason esihenkilöiden kanssa koko Varhan alueella.Tehtävässäsi vahvistat näyttöön perustuvia hoitokäytäntöjä ja edistät tietoperusteisen johtamisen työkalujen käyttöönottoa. Koordinoit lisäksi erikoistuvien lääkäreiden lähiohjausta ja toimit Turun mielialatyöryhmän sekä mielialahäiriöiden tehostetun avohoidon erikoislääkäreiden ja erikoistumisohjelman ulkopuolisten lääkäreiden lähiesihenkilönä. Rakennat yhteistyötä paikallisten perustason palveluiden kanssa sekä osallistut konsultatiiviseen toimintaan ja lähetekäsittelyyn.Miksi Tyks Psykiatria?Mielialahäiriöiden vastuualueella työskentelee noin 190 ammattilaista, ja käytössämme on kattava palveluverkosto Varsinais-Suomessa. Kokonaisuuteen kuuluvat mielialahäiriöiden avo- ja osastohoito, ja työtä tukevat vahvat erityisyksiköt, kuten neuromodulaatioyksikkö, neuropsykiatrian asiantuntijapalvelut, syömishäiriöyksikkö ja tehostetut avohoito. Teemme aktiivista yhteistyötä perusterveydenhuollon, sosiaalihuollon ja muiden hyvinvointialueiden kanssa sujuvien hoitopolkujen rakentamiseksi.Kehitämme palveluja määrätietoisesti ja hyödynnämme digitaalisia ratkaisuja hoidon jatkuvuuden ja potilaiden osallisuuden tukena. Vastuualueen yhteisenä tavoitteena on lisätä hoitojen tuottamaa terveyshyötyä, vahvistaa hoidon laatua ja tietoperustaa sekä yhdenmukaistaa toimintamalleja eri paikkakunnilla. Varha-sovelluksen digipolut, uusi tietojärjestelmä ja tekoälyn soveltaminen vahvistavat toiminnan tehokkuutta ja vapauttavat aikaa potilastyöhön. Muutosten onnistuminen rakennetaan yhdessä henkilöstön kanssa.Mitä tarjoamme sinulleTarjoamme sinulle mahdollisuuden olla keskeisessä roolissa kehittämässä mielialahäiriöiden hoitoa ja tulevaisuuden mielenterveyspalveluja. Pääset vaikuttamaan hoitokäytäntöjen, palveluprosessien ja tietoperusteisen johtamisen kehittämiseen sekä tekemään tiivistä yhteistyötä laajan asiantuntijaverkoston kanssa. Työnantajan mahdollistamat koulutukset tukevat osaamisesi kehittämistä, ja tehtävässä sinulla on mahdollisuus vaikuttaa oman työsi ja toiminnan uudistamiseen.Virkasuhde alkaa 4.1.2027 tai sopimuksen mukaan. Työaika on 38,25 tuntia viikossa, ja noudatamme enintään kuuden kuukauden koeaikaa.Mitä odotamme sinulta?Tehtävässä tarvitset vahvaa psykiatrian osaamista sekä erinomaisia yhteistyö- ja vuorovaikutustaitoja. Odotamme sinulta kokemusta hallinnollisista tehtävistä ja valmiuksia toimia tehtävässä, jossa yhdistyvät lääketieteellinen asiantuntemus, johtaminen ja palvelujen kehittäminen.Arvostamme erityisesti näyttöä onnistuneista kehittämisprojekteista sekä kokemusta palveluiden sujuvuuteen ja tehokkuuteen tähtäävästä työskentelystä. Tehtävässä on hyötyä osaamisesta mielialahäiriöiden ja niihin komorbidina liittyvien ahdistuneisuus-, päihde-, riippuvuus-, syömis- ja persoonallisuushäiriöiden psykososiaalisen, biologisen ja neuromodulaatiohoidon suunnittelussa ja arvioinnissa. Arvostamme myös kokemusta perustason mielenterveyspalveluista, esimerkiksi terveyskeskuksesta, opiskelijahuollosta tai työterveyshuollosta, sekä kiinnostusta palvelujen kehittämiseen ja vaikuttavuuden parantamiseen.Eduksi luemme:- johtamiskoulutuksen- päihdelääketieteen pätevyyden- unilääketieteen pätevyyden- psykoterapiakoulutuksen- tieteellisen pätevöitymisenKelpoisuusvaatimuksena on terveydenhuollon ammattihenkilöistä annetussa laissa säädetty laillistus tai lupa toimia lääkärin tehtävissä ja erikoislääkärin pätevyys virkaan soveltuvalla erikoisalalla ja kokemusta erikoislääkärin pätevyyttä edellyttävistä tehtävistä sekä soveltuva johtamiskoulutus tai kokemusta hallinnollisista tehtävistä. Lisäksi edellytämme näyttöä erinomaisista yhteistyö- ja vuorovaikutustaidoista.Kielitaitovaatimuksena on hyvä suullinen ja kirjallinen suomen kielen taito ja tyydyttävä suullinen ja kirjallinen ruotsin kielen taito. Ruotsi toimii osittain työkielenä, sillä Länsi-Suomen yhteistyöalue on vahvasti kaksikielinen ja Tyks Psykiatria koordinoi valtakunnallisesti ruotsinkielisiä psykiatrian palveluja.Tule mukaan rakentamaan tulevaisuuden mielenterveyspalveluja ja parantamaan vaikeista mielialahäiriöistä kärsivien potilaiden hoitoa.</p>",
+    "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/f8ab1c1c-e068-4f64-9e75-893d27b6ac00/fi",
+    "postedAt": "2026-11-06T09:51:07.318Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {

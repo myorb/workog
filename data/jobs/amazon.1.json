@@ -49,6 +49,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/3112437/principal-corp-bd-corporate-business-development",
     "postedAt": "2025-10-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -66,6 +68,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/3123248/infrastructure-delivery-manager-infrastructure-delivery",
     "postedAt": "2025-11-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -218,7 +222,7 @@
     "postedAt": "2026-02-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -945,7 +949,7 @@
     "postedAt": "2026-05-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -1191,7 +1195,7 @@
     "postedAt": "2026-05-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -2050,6 +2054,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10455253/senior-software-development-engineer-aws-compliance-security-assurance",
     "postedAt": "2026-06-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2827,7 +2833,7 @@
     "postedAt": "2026-07-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -3057,7 +3063,7 @@
     "postedAt": "2026-07-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -4825,7 +4831,7 @@
     "postedAt": "2026-08-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -5137,6 +5143,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10526793",
+    "slug": "amazon-software-development-engineer-sde-sdn-amazon-leo-10526793",
+    "company": "amazon",
+    "title": "Software Development Engineer (SDE), SDN, Amazon LEO",
+    "locations": [
+      "Redmond, WA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "engineering",
+    "descriptionHtml": "<p>Amazon LEO is an inititative to launch a constellation of Low Earth Orbit satellites that will provide low-latency, high speed broadband connectivity to unserved and underserved communities around the world. <br /><br />Export Control Requirement:<br />Due to applicable export control laws and regulations, candidates must be a U.S. citizen or national, U.S. permanent resident (i.e., current Green Card holder), or lawfully admitted into the U.S. as a refugee or granted asylum.<br /><br />Key job responsibilities<br />Do you want to put code in space? Have you wanted an opportunity to develop the core wireless and networking for an advanced global telecom service spanning both space and terrestrial networks? Have you wondered what it takes to solve a multi-dimentional resource allocation problem at global scale?<br /><br />For this role, you will:<br />- Take responsibility for designing and delivering a modern, flexible, scalable, high throughput, low latency network architecture<br />- Implement workflows to orchestrate on orbit payload activities<br />- Implement highly-available software that will drive networking control plane operation on physical and virtual nodes<br />- Define and automate processes used for software development, implementation, testing, and maintenance<br />- Provide operational excellence for control plane services, to including enabling toolsand definition/refinement of operational processes<br />- Diagnose routing and forwarding issues across the control plane, data plane, and physical topology.<br />- Integrate telemetry, topology, link-state, and network-condition data into route computation and control systems.<br />- Develop routing behavior for topology transitions, link changes, node movement, degraded links, and failures.<br /><br />A day in the life<br />This is an opportunity to be at the heart of the design, building and operation of a massive satellite constellation and terrestrial network. We interact with the satellite ground control services, the customer engagement systems and monitoring services to constantly fine-tune our network and deliver a high quality service to our customers. You will be responsible to build the best network for our customers.<br /><br />About the team<br />The Software Defined Network (SDN) Controller team is building the brain that drives the LEO Network. Our mission is clear: we own network planning for the entire LEO ecosystem. Every plan that coordinates Customer Terminals, Satellites, Gateways, and the rest of the network flows through our team. And the scale is significant — we generate plans for millions of Customer Terminals and deliver them reliably and on time. When we get it right, millions of people around the globe stay connected to the internet. That is the kind of impact our work delivers.<br /><br />What makes this team distinctive is where we sit: at the intersection of space and software. We work closely with other LEO teams — network data plane, hardware, satellites, and more — close enough to shape how the physical network behaves, while remaining firmly grounded in the software engineering discipline we are passionate about. You get the excitement of building for orbit without ever stepping away from your craft.<br /><br />Simply put, we are a team that cares deeply about both space and software. If that combination excites you, we would love to have you build the future of connectivity with us.</p><h3>Basic qualifications</h3><p>- 3+ years of non-internship professional software development experience<br />- 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience<br />- Bachelor's degree in computer science or equivalent<br />- Knowledge of professional software engineering &amp; best practices for full software development life cycle, including coding standards, software architectures, code reviews, source control management, continuous deployments, testing, and operational excellence<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Redmond - 143,700.00 - 194,400.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10526793/software-development-engineer-sde-sdn-amazon-leo",
+    "postedAt": "2026-09-02T00:00:00.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10526876",
     "slug": "amazon-construction-manager-specialty-programs-design-and-construction-10526876",
     "company": "amazon",
@@ -5315,7 +5338,7 @@
     "postedAt": "2026-09-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -5853,7 +5876,7 @@
     "postedAt": "2026-09-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -8497,6 +8520,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10570192/learning-experience-designer-data-center-learning",
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -8620,7 +8645,7 @@
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -9667,7 +9692,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {
@@ -12178,6 +12203,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10593278/sr-specialist-forecasting-amazon-logistics-last-mile-delivery",
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13278,6 +13305,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10599148/senior-mechatronics-robotics-technician",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13311,6 +13340,45 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10599287/certified-pharmacy-technician-amazon-pharmacy",
     "postedAt": "2026-11-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10599416",
+    "slug": "amazon-engineering-operation-technician-10599416",
+    "company": "amazon",
+    "title": "Engineering Operation Technician",
+    "locations": [
+      "Wharton, TX, United States"
+    ],
+    "remote": false,
+    "department": "Operations, IT, & Support Engineering",
+    "category": "engineering",
+    "descriptionHtml": "<p>Join our dynamic team and become a critical guardian of technological infrastructure! As a Data Center Engineering Technician, you'll play a pivotal role in maintaining the heartbeat of mission-critical technology infrastructure, ensuring seamless operations that power global digital experiences. Your expertise will directly contribute to maintaining an extraordinary 99.999% uptime, keeping the digital world running smoothly and efficiently. <br /> <br />Engineering Technicians are Amazon’s front line when it comes to hands-on electrical and mechanical equipment troubleshooting. They will maintain, operate, and troubleshoot, Data Center Operation’s Mission Critical Facilities, which includes stand-by diesel generators and related fuel systems, as well as three phase electrical systems such as: switch gear, UPSs, PDUs, wet cell batteries and associated systems, CRAC, centrifugal chillers, cooling towers/water chemical system, air handlers and associated systems, pumps, &amp; motors. <br />AWS Infrastructure Services owns the design, planning, delivery, and operation of all AWS global infrastructure. In other words, we’re the people who keep the cloud running. We support all AWS data centers and all of the servers, storage, networking, power, and cooling equipment that ensure our customers have continual access to the innovation they rely on. We work on the most challenging problems, with thousands of variables impacting the supply chain — and we’re looking for talented people who want to help. <br />You’ll join a diverse team of software, hardware, and network engineers, supply chain specialists, security experts, operations managers, and other vital roles. You’ll collaborate with people across AWS to help us deliver the highest standards for safety and security while providing seemingly infinite capacity at the lowest possible cost for our customers. And you’ll experience an inclusive culture that welcomes bold ideas and empowers you to own them to completion. <br />NOTE: Amazon does not sponsor for immigration, including for H-1B, TN, and other non-immigrant visas, for this role. <br />NOTE: Lump sum stipend will be provided to eligible candidates who relocate for this position. <br /><br /><br />Key job responsibilities<br /><br />•\tDaily building rounds to monitor and record information from electrical, mechanical, and fire/life safety equipment to ensure 24/7 reliability and availability <br />•\tMonitor Building Management Systems (BMS) and Electrical Power Management System (EPMS) <br />•\tAssist in troubleshooting of facility and rack-level events within internal Service Level Agreements (SLA) <br />•\tPerform rack installs and rack decommissioning within internal SLA <br />•\tPerform PM, troubleshooting, root cause analysis, and repair of electrical and mechanical equipment <br />•\tTechnical writing to support change management program <br />•\tMonitor daily work requests and manage to resolution, and execute projects from conception to completion <br />•\tOn-site support of contractors, sub-contractors and vendors, ensuring that all work performed is in accordance with established practices, procedures &amp; local legislation <br />•\tWork schedule changes depending on specific site needs. Shifts can be up to 12 hours and may rotate on a predefined schedule. Some locations have on-call rotations. <br />•\tRole may support more than one location/site. <br />Physical Requirements: <br />•\tWillingness and demonstrated ability to work in the following physical conditions with reasonable accommodations: <br />•\tRegularly lift and/or move up to 39 pounds independently <br />•\tParticipate in group lifts for 40+ pounds <br />•\tMaintain balance and perform construction tasks while on a ladder <br />•\tRegularly walk, use hands and fingers, handle or feel, reach with hands and arms, stoop, kneel, crouch or crawl, climb stairs, twist, bend, work above shoulders, grasp, carry, push and pull objects into position <br />•\tWork in an environment requiring provided ear protection <br />This role supports data centers in various operational stages. The position may be assigned to a facility still under development, which could require travel to established locations for training until your designated site becomes fully operational. <br />Essential Requirements:  <br />•\tAbility to travel to or commute between data center locations as needed  <br />•\tWillingness to temporarily work at alternative sites during training periods or until assigned facility is operational  <br />•\tTravel frequency will vary based on business needs and operational status of assigned facility <br />Candidates must be able to travel (over 50 miles) or commute (less than 50 miles) to active data center sites as required by business needs. <br /><br /><br />A day in the life<br />This role acts as Amazon’s front line when it comes to hands-on electrical and mechanical equipment preventative maintenance (PM) and troubleshooting, reporting to a site’s Data Center Facility Manager (FM). They will maintain, operate, and troubleshoot mission-critical data center facility equipment including stand-by diesel generators and related fuel systems, 3 phase electrical systems such as switchgear, UPS units, PDUs, and wet cell batteries and associated systems. Mechanical equipment includes CRAHU units, centrifugal chillers, cooling towers, water systems, air handlers and associated systems, pumps, and motors. Additional support equipment is included in the scope of the role which includes fire/life safety equipment, building automation systems, and general facilities equipment. </p><h3>Basic qualifications</h3><p>- 1+ years of Microsoft Office products and applications experience<br />- 1+ years of electrical/mechanical/industrial water experience<br />- Ability to work on a flexible schedule including days, nights, and/or weekends.</p><h3>Preferred qualifications</h3><p>- 2+ years of data center engineering experience<br />- Industrial-scale chiller plant operation<br />- Associate or higher education in related field<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The starting pay for this position is listed below. Final starting pay will be based on factors including experience, qualifications, and location. Starting Day 1 of employment, Amazon offers EAP, Mental Health Support, Medical Advice Line, 401(k) matching. Learn more about our benefits at <a href=\"https://hiring.amazon.com/why-amazon/benefits\">https://hiring.amazon.com/why-amazon/benefits</a>.</p><br /><br />USA, TX, Wharton - 32.88 - 57.50 USD hourly",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10599416/engineering-operation-technician",
+    "postedAt": "2026-11-07T00:00:00.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10599430",
+    "slug": "amazon-regional-environmental-manager-environmental-assurance-and-protection-eap-10599430",
+    "company": "amazon",
+    "title": "Regional Environmental Manager, Environmental Assurance and Protection (EAP)",
+    "locations": [
+      "Bolton, ON, Canada",
+      "Ajax, ON, Canada",
+      "Brampton, ON, Canada",
+      "Hamilton, ON, Canada",
+      "Scarborough, ON, Canada",
+      "Mississauga, ON, Canada"
+    ],
+    "remote": false,
+    "department": "Corporate Operations",
+    "category": "operations",
+    "descriptionHtml": "<p>Our team is seeking a Regional Environmental Manager (REM) who will lead and drive environmental operational excellence across Amazon sites in the Ontario area. The REM is an individual contributor who will be responsible for executing the environmental strategy and operational tactics by providing technical support for existing operations and future expansion across the region with future potential for leading a team. This role is onsite (5 days/week - Monday-Friday) and will be based in the ON area. The REM will travel up to 50%.<br /><br />Key job responsibilities<br />- Utilize risk assessments and compliance evaluations to drive continuous improvement initiatives that minimize environmental impacts. Communicate and implement best practices to sustain those gains.<br />- Manage and execute multi-site responsibilities to comply with air emissions, stormwater, waste, wastewater and other environmental-related laws, regulations and permits, which includes required Federal, Provincial and Municipal reporting such as NPRI, ECA,  RPRA, EASR, spill reporting, and other required reporting as needed.<br />- Develop and maintain relationships with business partners to support their success in environmental compliance, performance and sustainability initiatives<br />- Drive an environmentally responsible culture within the organization<br />- Manage and execute business conformance with Amazon Environmental policies through effective execution of Amazon Operational Environmental Procedures<br />- Develop relevant environmental procedures as dictated by business and regulatory needs<br />- Provide strategic environmental support and regulatory review for future business growth and expansion<br />- Partner with operations, special projects and support teams in supporting the change management process<br />- With continual scaling of organization, will grow to manage a team to successfully support business needs<br />- Facilitate root cause analyses for all environmental incidents and recommend appropriate corrective actions for network implementation.<br />- Conduct risk assessments and audits as necessary.<br />- Measure and analyze sites’ performance against requirements and policies. <br />- Future potential for managing a team.<br /><br />A day in the life<br />This role will be based in Canada and will report to the Business Environmental Leader. Travel to Amazon sites within the region is expected up to 50% of the time and 5 days/week in office. The REM will partner with the operations leadership teams to execute company environmental procedures and ensure compliance with all applicable specific Federal, Provincial and Municipal regulations. The REM will deliver a strategy for execution, supported by the EAP leadership team.<br /><br />About the team<br />The Environmental Assurance and Protection (EAP) team protects Amazon businesses and supports the needs of our customers by proactively mitigating environmental regulatory risks and protecting the environment.</p><h3>Basic qualifications</h3><p>- 6+ years of compliance, audit or risk management experience<br />- Knowledge of Microsoft Office products and applications at an advanced level<br />- 5+ years of program or project Management experience<br />- Bachelor's degree in Environmental Health and Safety or a related field</p><h3>Preferred qualifications</h3><p>- Experience leveraging technology and implementing lean principles / Six Sigma methodologies to drive process improvements or equivalent<br />- Project Management Professional (PMP) or equivalent certification<br />- Master's degree in Environmental Health &amp; Safety (EHS) or a related field<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. As a total compensation company, Amazon's package may include other elements such as sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon offers comprehensive benefits including health insurance (medical, dental, vision, prescription, basic life &amp; AD&amp;D insurance), Registered Retirement Savings Plan (RRSP), Deferred Profit Sharing Plan (DPSP), paid time off, and other resources to improve health and well-being. We thank all applicants for their interest, however only those interviewed will be advised as to hiring status.</p><br /><br />CAN, ON, Ajax - 84,400.00 - 141,000.00 CAD annually<br />CAN, ON, Bolton - 84,400.00 - 141,000.00 CAD annually<br />CAN, ON, Brampton - 84,400.00 - 141,000.00 CAD annually<br />CAN, ON, Hamilton - 84,400.00 - 141,000.00 CAD annually<br />CAN, ON, Mississauga - 84,400.00 - 141,000.00 CAD annually<br />CAN, ON, Scarborough - 84,400.00 - 141,000.00 CAD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10599430/regional-environmental-manager-environmental-assurance-and-protection-eap",
+    "postedAt": "2026-11-08T00:00:00.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "source": "amazon"
   },
   {

@@ -1296,6 +1296,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:7647294002",
+    "slug": "databricks-senior-software-engineer-backend-infrastructure-7647294002",
+    "company": "databricks",
+    "title": "Senior Software Engineer - Backend Infrastructure",
+    "locations": [
+      "Bengaluru, India"
+    ],
+    "remote": false,
+    "department": "Engineering - Pipeline",
+    "category": "engineering",
+    "descriptionHtml": "<p>P-1346</p>\n<p>At Databricks, we are passionate about enabling data teams to solve the world's toughest problems — from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform so our customers can use deep data insights to improve their business. </p>\n<p><strong>Networking Infrastructure</strong> is a core part of the platform that powers all our data and AI products. The platform also powers key enterprise security features used by customers across all our products to build connectivity solutions to cloud resources and prevent data exfiltration. And we're setting up the team from scratch in <strong>Bengaluru , India.</strong></p>\n<p>We are seeking an experienced <strong>Senior Software Engineers with a networking background</strong> to join the Networking Infrastructure team. As one of the seed members of the Bangalore site, you will be focussing on building new backend connectivity services that powers millions of VMs running on Databricks. You will also be leading the design and development of new services that powers the connectivity between our control plane and compute plane. This new platform enables Databricks to increase scalability of our compute plane while also efficiently use cloud resources. You will work closely with cross-functional teams, including product management, operations, and other engineering teams, to ensure the delivery of robust, scalable, and efficient networking systems. This is an excellent opportunity for a hands-on leader who thrives in a fast-paced environment and is passionate about solving novel multi-cloud and distributed systems challenges.</p>\n<p><strong>What we look for:</strong></p>\n<ul>\n<li><strong>8+ years</strong> of production level experience in one of: Python, Java, Scala, C++, or similar language</li>\n<li><strong>4+ years of experience</strong> developing <strong>large-scale distributed system</strong>s from scratch</li>\n<li>Experience working on a SaaS platform or with Service-Oriented Architectures.</li>\n</ul><p><strong>About Databricks</strong></p>\n<p>Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br /><br /><strong>Benefits<br /><br /></strong>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br /><br /></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong>If access to export-controlled technology or source code is required for performance of job duties, it is within Employer's discretion whether to apply for a U.S. government license for such positions, and Employer may decline to proceed with an applicant on this basis alone.</strong></p>",
+    "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=7647294002",
+    "postedAt": "2026-11-07T08:50:11.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:7647353002",
     "slug": "databricks-senior-software-engineer-networking-7647353002",
     "company": "databricks",
@@ -1361,6 +1378,8 @@
     "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=7648674002",
     "postedAt": "2024-09-20T11:28:50.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -1980,7 +1999,7 @@
     "remote": false,
     "department": "Engineering - Pipeline",
     "category": "engineering",
-    "descriptionHtml": "<p>P-1408</p>\n<p>The Applied AI team at Databricks sits at the forefront of advancing AI/ML-powered products. Databricks’ customers are continuously creating new assets (tables, notebooks, dashboards, datarooms, pipelines, sql queries, ml models etc.) on the platform. Some of them can have hundreds of millions of assets. Finding an asset is a critical user journey for Databricks’ customers which helps them accomplish their tasks. </p>\n<p>As our Search product continues to evolve, we are seeking a <strong>Staff Engineer </strong>to lead enhancements to our Search Quality. In 2026, we will focus on <strong>enhancing search ranking, improving query understanding, building robust evals</strong> and growing the coverage of assets to enable seamless search at scale.</p>\n\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Drive the <strong>development and deployment of ML based search and discovery relevance models</strong> and systems integrated with Databricks' products and services. </li>\n<li>Design and implement automated ML and NLP pipelines for data preprocessing, query understanding and rewrite, ranking and retrieval, and model evaluation, enabling rapid experimentation and iteration. </li>\n<li>Collaborate with product managers and cross-functional teams to drive technology-first initiatives that enable novel business strategies and product roadmaps for the search and discovery experience. </li>\n<li>Contribute to building a robust framework for evaluating search ranking improvements - both offline and online.</li>\n</ul>\n\n<p><strong>What We’re Looking For</strong></p>\n<ul>\n<li>BS+ (M.S. or PhD preferred) in Computer Science, or a related field.</li>\n<li>10+ years experience developing search relevance systems at scale in production or in high-impact research environments.</li>\n<li>Experience applying LLM to search relevance</li>\n<li>Experience in one or more of the following:  </li>\n<ul>\n<li>Query understanding</li>\n<li>NLP</li>\n<li>Text mining</li>\n<li>Recommendations</li>\n<li>Personalization</li>\n<li>Discovery</li>\n<li>Conversational AI </li>\n</ul>\n<li>Strong understanding of computer science fundamentals.</li>\n<li>Contributions to well-used open-source projects. </li>\n</ul>\n\n<p><strong>Why Join Us?</strong>At Databricks, we are building state-of-the-art AI solutions that redefine how users interact with data and our products. You’ll have the opportunity to shape the future of AI-driven products at Databricks, work with cutting-edge models, and collaborate with a world-class team of AI and ML experts.</p>\n<p>If you're excited about pushing the boundaries of AI in real-world applications, we’d love to hear from you!</p><p><strong>About Databricks</strong></p>\n<p>Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br /><br /><strong>Benefits<br /><br /></strong>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br /><br /></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong>If access to export-controlled technology or source code is required for performance of job duties, it is within Employer's discretion whether to apply for a U.S. government license for such positions, and Employer may decline to proceed with an applicant on this basis alone.</strong></p>",
+    "descriptionHtml": "<p>P-1408</p>\n<p>The Applied AI team at Databricks sits at the forefront of advancing AI/ML-powered products. Databricks’ customers are continuously creating new assets (tables, notebooks, dashboards, datarooms, pipelines, sql queries, ml models etc.) on the platform. Some of them can have hundreds of millions of assets. Finding an asset is a critical user journey for Databricks’ customers which helps them accomplish their tasks. </p>\n<p>As our Search product continues to evolve, we are seeking a <strong>Staff Engineer </strong>to lead enhancements to our Search Quality. In 2026, we will focus on <strong>enhancing search ranking, improving query understanding, building robust evals</strong> and growing the coverage of assets to enable seamless search at scale.</p>\n\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Drive the <strong>development and deployment of ML based search and discovery relevance models</strong> and systems integrated with Databricks' products and services. </li>\n<li>Design and implement automated ML and NLP pipelines for data preprocessing, query understanding and rewrite, ranking and retrieval, and model evaluation, enabling rapid experimentation and iteration. </li>\n<li>Collaborate with product managers and cross-functional teams to drive technology-first initiatives that enable novel business strategies and product roadmaps for the search and discovery experience. </li>\n<li>Contribute to building a robust framework for evaluating search ranking improvements - both offline and online.</li>\n</ul>\n\n<p><strong>What We’re Looking For</strong></p>\n<ul>\n<li>BS+ (M.S. or PhD preferred) in Computer Science, or a related field.</li>\n<li>10+ years experience developing search relevance systems at scale in production or in high-impact research environments.</li>\n<li>Experience applying LLM to search relevance</li>\n<li>Experience in one or more of the following:  </li>\n<ul>\n<li>Query understanding</li>\n<li>NLP</li>\n<li>Text mining</li>\n<li>Recommendations</li>\n<li>Personalization</li>\n<li>Discovery</li>\n<li>Conversational AI </li>\n</ul>\n<li>Strong understanding of computer science fundamentals.</li>\n<li>Contributions to well-used open-source projects. </li>\n</ul><p><strong>About Databricks</strong></p>\n<p>Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br /><br /><strong>Benefits<br /><br /></strong>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br /><br /></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong>If access to export-controlled technology or source code is required for performance of job duties, it is within Employer's discretion whether to apply for a U.S. government license for such positions, and Employer may decline to proceed with an applicant on this basis alone.</strong></p>",
     "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=7958688002",
     "postedAt": "2025-04-15T17:15:54.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
@@ -3616,7 +3635,7 @@
     "postedAt": "2026-03-31T04:29:24.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -5656,6 +5675,8 @@
     "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8502991002",
     "postedAt": "2026-05-07T16:16:16.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -7340,7 +7361,7 @@
     "postedAt": "2026-06-04T05:54:45.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -8281,7 +8302,7 @@
     "postedAt": "2026-08-13T18:32:41.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -11475,7 +11496,7 @@
     "postedAt": "2026-09-01T17:03:23.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -11494,7 +11515,7 @@
     "postedAt": "2026-09-01T17:03:26.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -11513,7 +11534,7 @@
     "postedAt": "2026-09-01T17:10:13.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -12216,7 +12237,7 @@
     "postedAt": "2026-10-27T13:25:11.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -12353,6 +12374,23 @@
     "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8808527002",
     "postedAt": "2026-09-16T04:53:42.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8811059002",
+    "slug": "databricks-tech-sourcer-contract-8811059002",
+    "company": "databricks",
+    "title": "Tech Sourcer (Contract)",
+    "locations": [
+      "Bengaluru, India"
+    ],
+    "remote": false,
+    "department": "Recruiting",
+    "category": "people",
+    "descriptionHtml": "<p>P-1596</p>\n<p>We are looking for a <strong>Sourcer (Tech) </strong>to help us grow our office in Bangalore. You will be the driving force behind finding and engaging with some of the finest Engineering talent in the industry as we scale our team from the ground up. This is an exciting time to be part of the rocketship and the Databricks expansion in India. This is a 6 month contract, with an opportunity to get the same extended. </p>\n<p>Sourcers at Databricks are subject matter experts when it comes to talent attraction and are given full autonomy to bring new ideas and creative approaches to life.</p>\n<p>You will work with hiring managers as a strategic partner advising on things such as sourcing strategies, passive engagement strategies, competitive intelligence, DEI, and talent insights. You will have an opportunity to work on multiple positions across Engineering / Tech Solutions / IT / Security and many more !<br /><br />If you're someone who's passionate about recruiting , sourcing, enjoys using alternative techniques to find diverse talent pools, and relishes having the creative freedom to try new things, then apply below!</p>\n<p><strong>The impact you will have:</strong></p>\n<ul>\n<li>Drive talent acquisition efforts by extensively sourcing and engaging with highly skilled professionals in Bangalore.</li>\n<li>Contribute to the growth and success of Databricks in India by building a strong pipeline of top-tier candidates.</li>\n<li>Collaborate with the APJ recruiting team and hiring managers to understand the hiring needs and develop effective sourcing strategies.</li>\n<li>Ensure a positive candidate experience throughout the sourcing and evaluation process, acting as a brand ambassador for Databricks.</li>\n<li>Play a key role in building a diverse and inclusive workforce, promoting equal opportunity and representation in technical roles.</li>\n</ul>\n\n<p><strong>What we look for:</strong></p>\n<ul>\n<li>Proven experience as a Sourcer or similar role in the technology industry</li>\n<li>Having experience in leadership hiring is a plus</li>\n<li>Strong understanding of technical / non tech roles, and the ability to effectively assess candidates' technical skills across all experience levels (Entry to Senior)</li>\n<li>Extremely hands on with sourcing, leveraging different tools &amp; platforms to source &amp; recruit strong Tech &amp; Non Tech talent</li>\n<li>Expertise in hiring Software Engineers across domains like Big Data, ML, Infrastructure, Databases , Storage etc is a plus</li>\n<li>Excellent communication and interpersonal skills, with the ability to engage candidates, build relationships, and effectively represent Databricks' values and culture.</li>\n<li>Familiarity with applicant tracking systems (ATS) and other recruitment software for efficient candidate management and tracking.</li>\n<li>Someone who thinks beyond the usual tools and creates innovative solutions to finding, engaging &amp; hiring the very best people.</li>\n</ul><p><strong>About Databricks</strong></p>\n<p>Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br /><br /><strong>Benefits<br /><br /></strong>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br /><br /></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong>If access to export-controlled technology or source code is required for performance of job duties, it is within Employer's discretion whether to apply for a U.S. government license for such positions, and Employer may decline to proceed with an applicant on this basis alone.</strong></p>",
+    "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8811059002",
+    "postedAt": "2026-11-07T07:00:25.000Z",
+    "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "source": "greenhouse"
   },
   {
@@ -14932,6 +14970,8 @@
     "applyUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8893599002",
     "postedAt": "2026-10-28T18:44:57.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "lastSeenAt": "2026-11-07T05:03:05.315Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
