@@ -61,6 +61,8 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/114438218/uae-expert?team=APPST",
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-09T05:03:23.512Z",
+    "missedRuns": 1,
     "source": "apple"
   },
   {
@@ -6551,7 +6553,7 @@
     "postedAt": "2026-09-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "apple"
   },
   {
@@ -11225,6 +11227,40 @@
     "applyUrl": "https://jobs.apple.com/en-us/details/200693967/engineering-program-manager-responsible-ai-safety?team=SFTWR",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "apple"
+  },
+  {
+    "id": "apple:200694030",
+    "slug": "apple-sales-process-and-ai-enablement-specialist-200694030",
+    "company": "apple",
+    "title": "Sales Process & AI Enablement Specialist",
+    "locations": [
+      "China"
+    ],
+    "remote": false,
+    "department": "Sales and Business Development",
+    "category": "sales",
+    "descriptionHtml": "<p>Imagine what you could do here! The people here at Apple don’t just create products — they build the kind of wonder that’s revolutionized industries. It’s the diversity of those people and their ideas that encourages the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. At Apple, inclusion is a shared responsibility, and we work together to develop a culture where everyone belongs and is inspired to do their best work.</p><p>People here at Apple don't just build products; we craft the kind of wonder that's revolutionized entire industries. It's the diversity of those people and their ideas that inspire the innovation that runs through everything we do, from extraordinary technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it.</p><p>In this role, you will be the frontline architect and execution engine driving our transition to an AI-native sales organization. Working closely with the Organizational Design Lead, you will bridge strategic blueprints with daily commercial reality—translating human-AI collaboration frameworks into standardized, repeatable sales operations. You will spend time on the ground with sales teams, running agile pilots, designing practical SOPs, and enabling sales to become truly empowered, full-cycle experts.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200694030/sales-process-ai-enablement-specialist?team=SLDEV",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "source": "apple"
+  },
+  {
+    "id": "apple:200694038",
+    "slug": "apple-data-platform-infra-site-reliability-engineer-200694038",
+    "company": "apple",
+    "title": "Data Platform Infra Site Reliability Engineer",
+    "locations": [
+      "United Kingdom"
+    ],
+    "remote": false,
+    "department": "Software and Services",
+    "category": "data",
+    "descriptionHtml": "<p>At Apple, we believe that innovation flourishes in an environment where ideas are challenged, collaboration is encouraged, and technology is pushed to its limits. This environment is only possible when diverse minds come together, bringing unique perspectives and experiences. Our people and their ideas inspire innovation in everything we do. Imagine what you could accomplish here! Join Apple and help us make the world a better place.</p><p>As an SRE on our team, you'll own the reliability, performance, and scale of the distributed storage and data platform systems that power Apple's services. You'll debug replication and consensus failures, tune systems at petabyte scale, and write production code that operates the platform. We firmly believe in ownership, with software engineers accountable for the code they write.</p>",
+    "applyUrl": "https://jobs.apple.com/en-us/details/200694038/data-platform-infra-site-reliability-engineer?team=SFTWR",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "source": "apple"
   }
 ]

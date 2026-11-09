@@ -481,7 +481,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -2651,7 +2651,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -4625,6 +4625,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-Accelerated-Computing-Architect_JR2021003",
     "postedAt": "2026-07-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-09T05:03:23.512Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4674,6 +4676,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Manager--Software-Verification---Bluefield-BMC_JR2021058",
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-09T05:03:23.512Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5566,7 +5570,7 @@
     "postedAt": "2026-07-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -10068,6 +10072,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2027412",
+    "slug": "nvidia-vlsi-design-automation-software-engineer-jr2027412",
+    "company": "nvidia",
+    "title": "VLSI Design Automation Software Engineer",
+    "locations": [
+      "Israel, Yokneam",
+      "Israel, Tel Aviv"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA is looking for a Software Engineer to build the next-gen infrastructure software behind our VLSI organization. You'll join a CAD team that develops the systems running NVIDIA's chip design flows at large scale on our compute farm, and infra. We support design teams in multiple geographies, all the way to tape-out. In this role, you'll design and write production software that makes this infrastructure more efficient and reliable. You'll also use AI agents to automate the work that slows engineers down. We want an engineer who takes ownership, makes decisions based on data and communicates clearly.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Architect and build the software platform behind our compute infrastructure, giving design teams worldwide reliable, efficient, self-service access at scale.</li><li>Build data pipelines, analytics and applications that show how our infrastructure is used and how it's performing. Use that data to drive capacity planning, efficiency and decisions across the organization.</li><li>Develop AI agents that diagnose failed jobs, analyze logs and handle routine engineering requests.</li><li>Work closely with physical design engineers in multiple geographies (about 50% of the role). debug job, storage and license issues, then turn recurring problems into software: automated checks, self-service tools and permanent fixes.</li><li>Own your software from start to finish: architecture, data storage, UI, testing, CI/CD, deployment and maintenance, with code review and reproducible builds as standard practice.</li><li>Work across time zones with teammates and with Design Automation (DA) teams at NVIDIA sites worldwide to roll out new infrastructure software, and help mentor newer team members.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>A B.Sc. or M.Sc. in Computer Science, Computer Engineering, Electrical Engineering or a related field, or equivalent experience.</li><li>Hands-on experience with AI agents, such as building agentic workflows, using LLM APIs, tool calling or MCP, or getting real productivity gains from AI coding assistants.</li><li>2–6 years of experience building and running production software, ideally infrastructure, backend services or developer tools.</li><li>Strong Python skills and solid software engineering fundamentals: design, testing, code review and debugging.</li><li>Strong Linux skills, including shell scripting and debugging problems across many users and hosts.</li><li>You're self-motivated and proactive, see problems through to resolution, and communicate clearly with engineers across sites and time zones, especially under deadline pressure.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>HPC and DevOps experience, such as job schedulers like IBM LSF or Slurm (including their APIs), NFS or parallel file systems, performance tuning at scale, CI/CD pipelines (GitLab CI, Jenkins), containers (Docker, Kubernetes), Ansible, and monitoring with Prometheus and Grafana.</li><li>Experience with build and source control systems, such as Bazel (writing build rules, managing dependencies, and speeding up large builds with remote caching and remote execution), Perforce (depots, streams, workspaces, triggers, and P4Python), and Git.</li><li>A strong grasp of data structures and algorithms, especially graph theory, plus experience with SQL, data modeling, and turning data into dashboards and decisions.</li><li>Experience with C++, Tcl or Perl, and exposure to EDA tools or chip design flows (synthesis, place and route, timing analysis).</li></ul><br /><p>At NVIDIA, we are committed to fostering a diverse and inclusive work environment. We believe that diverse perspectives drive innovation and enable us to compete in the global market. We strictly adhere to equal opportunity employment principles and offer reasonable accommodations/adjustments to qualified individuals with disabilities. Join our team and be a part of our journey to shape the future of technology.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/VLSI-Design-Automation-Software-Engineer_JR2027412",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2027427",
     "slug": "nvidia-manager-solutions-architecture-oracle-ai-software-jr2027427",
     "company": "nvidia",
@@ -11881,7 +11902,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -12512,7 +12533,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T05:03:16.544Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {

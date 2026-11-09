@@ -146,7 +146,7 @@
     "postedAt": "2025-05-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -6101,7 +6101,7 @@
     "postedAt": "2026-09-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -9609,8 +9609,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Program-Manager_JR2027527",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T08:38:28.126Z",
-    "lastSeenAt": "2026-11-06T10:50:31.526Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "workday"
   },
   {
@@ -9920,6 +9918,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Prediction---Autonomous-Driving_JR2027783",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2027804",
+    "slug": "nvidia-senior-physical-design-engineer-jr2027804",
+    "company": "nvidia",
+    "title": "Senior Physical Design Engineer",
+    "locations": [
+      "Israel, Tel Aviv"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA is looking for best-in-class Physical Design Engineers to join our outstanding Networking Silicon engineering team, developing the industry's best high-speed communication devices, delivering the highest throughput and lowest latency! Come and take a part in designing our groundbreaking and innovating chips, enjoy working in a meaningful, growing and highly professional environment where you make a significant impact in a technology-focused company.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Physical design of blocks according to specifications under challenging constraints targeting for the best power, area, and performance.</li><li>Be exposed and work on a variety of challenging designs. Resolving complex timing and congestion problems.</li><li>Daily work involves all aspects of physical design chip development (RTL2GDS) - synthesis, power and clock distribution, place and route, timing closure, power and noise analysis, and physical verification.</li><li>Taking part inflows development.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc./ M.Sc. in Electrical Engineering/Computer Engineering or equivalent experience</li><li>5+ years of relevant experience</li><li>Knowledge in physical design flows and methodologies (PNR, STA, physical verification)</li><li>Deep understanding of all aspects of Physical construction and Integration</li><li>Knowledge in Physical Design Verification methodology LVS/DRC</li><li>Familiarity with physical design EDA tools (such as Synopsys, Cadence, etc.)</li><li>Great teammate</li></ul><br /><p>NVIDIA has some of the most forward-thinking people in the world working for us. Are you a creative and autonomous engineer who loves a challenge? Are you ready to become the engineer you always wanted to be? Come and be part of the best physical design team in the industry!</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Physical-Design-Engineer_JR2027804",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -11618,6 +11632,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029288",
+    "slug": "nvidia-director-product-marketing-dsx-jr2029288",
+    "company": "nvidia",
+    "title": "Director, Product Marketing DSX",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, CA, Remote"
+    ],
+    "remote": true,
+    "category": "management",
+    "descriptionHtml": "<p>NVIDIA is seeking a Director of Product Marketing to guide the strategy, positioning, and market launch activities for the infrastructure layer of NVIDIA DSX OS. AI cloud providers face a critical challenge: turning increasingly complex accelerated computing systems into reliable, secure, and commercially usable capacity. This role will build how NVIDIA addresses that challenge through infrastructure software spanning provisioning, lifecycle management, virtualization, infrastructure networking and storage, fleet operations, and integration with power and cooling systems.</p><br /><p>You will lead an established product marketing team passionate about the infrastructure foundation supporting Kubernetes and higher-level AI platforms. Your primary audiences will include NVIDIA Cloud Partners, hyperscalers, and independent software vendors building cloud infrastructure solutions. Working closely with product, engineering, sales, and ecosystem leaders, we will connect deep technical capabilities to operator priorities: faster deployment, greater infrastructure availability, operational efficiency, and time to revenue.</p><br /><p><b>What You’ll Be Doing:</b></p><ul><li>Craft the infrastructure marketing roadmap. Specify primary audiences, use cases, positioning, and go-to-market investments for the DSX OS infrastructure portfolio. Outline distinct adoption paths for cloud operators and software partners.</li><li>Lead and develop the team. Manage a team of product marketers. Set priorities, develop technical and strategic depth, mentor talent, and build accountability for customer adoption and business impact.</li><li>Own the infrastructure narrative. Explain how infrastructure software links accelerated computing, networking, storage, power, and cooling to reliable cloud operations. Build a clear message architecture that connects individual technologies to the broader DSX OS platform.</li><li>Translate technical depth into operator value. Develop messaging across bare-metal provisioning, firmware and operating system lifecycle, GPU virtualization, multi-tenant infrastructure, security, telemetry, health management, and resiliency. Connect these capabilities to deployment speed, usable capacity, service availability, and operating cost.</li><li>Build strategy through customer and market insight. Develop relationships with infrastructure leaders at NVIDIA Cloud Partners, hyperscalers, and software companies. Translate their architectures, operating challenges, buying criteria, and build-versus-integrate decisions into positioning, roadmap recommendations, and go-to-market priorities.</li><li>Promote ecosystem adoption. Collaborate with business development, product, and partner groups to outline integration stories, joint value propositions, and support for infrastructure software vendors, systems manufacturers, and technology partners.</li><li>Lead launches and field readiness. Guide coordinated launches, technical content, demonstrations, executive presentations, sales plays, and partner enablement. Equip sales and solution architects to explain architectural fit, differentiation, deployment considerations, and customer value.</li><li>Build credible differentiation and proof. Develop competitive positioning and customer evidence grounded in validated technical capabilities and operating results. Define measures of adoption, partner engagement, and field efficiency, and use those insights to refine investment.</li></ul><br /><p><b>What We Need to See:</b></p><ul><li>Bachelor’s degree in engineering, computer science, business, a related field, or equivalent experience.</li><li>Over 15 years of product marketing experience in B2B technology, with significant expertise directing infrastructure software, cloud infrastructure, or data center platform market entry strategy.</li><li>6+ years of people management experience, with demonstrated success hiring, developing, and leading strong product marketing teams.</li><li>Comprehensive knowledge of data center and cloud infrastructure, covering accelerated computing, bare-metal provisioning, Linux, firmware and system lifecycle management, virtualization, networking, storage, and infrastructure automation.</li><li>Knowledge of how power and cooling limitations impact deployment density, infrastructure availability, capacity planning, and operating costs—and how infrastructure software can assist operators in managing those constraints.</li><li>Experience marketing to cloud providers, hyperscalers, or infrastructure software vendors. Ability to interact credibly with infrastructure engineering leaders, cloud architects, operations teams, and senior business decision makers.</li><li>A record of turning complex technical portfolios into clear positioning, differentiated narratives, coordinated launches, and adoption programs.</li><li>Strong executive communication and cross-functional leadership skills, with experience influencing product strategy and investment decisions across engineering, product management, sales, and partner organizations.</li></ul><br /><p><b>Ways to Stand Out From the Crowd:</b></p><ul><li>An advanced technical degree or MBA or equivalent experience. Experience building or marketing infrastructure platforms used to provision and operate large GPU fleets or multi-tenant clouds.</li><li>A foundation in engineering, systems architecture, technical product management, or data center operations that supports product marketing leadership.</li><li>Experience with infrastructure controllers, hypervisors, software-defined networking, data processing units, infrastructure security, or fleet health and automated remediation.</li><li>Familiarity with data center telemetry, power management, liquid cooling, the integration of computing and facility operations. Success driving adoption of open-source infrastructure SW and developing commercial and technical ecosystems around modular platforms</li><li>Knowledge of NVIDIA accelerated computing, networking, and infrastructure software, including how these technologies connect with Kubernetes-based platforms.</li></ul><br /><p>NVIDIA is widely considered one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. With competitive salaries and a comprehensive benefits package, we are committed to building an environment where you can do your life’s best work. If you are creative, autonomous, and ready to make a lasting impact, we want to hear from you!</p><p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 13, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--Product-Marketing-DSX_JR2029288",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029293",
     "slug": "nvidia-bluefield-platform-technical-lead-jr2029293",
     "company": "nvidia",
@@ -11648,6 +11679,25 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Lead-User-Experience-Researcher---IT-and-Employee-Productivity_JR2029309",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029338",
+    "slug": "nvidia-senior-systems-software-engineer-hpc-and-ai-storage-jr2029338",
+    "company": "nvidia",
+    "title": "Senior Systems Software Engineer - HPC and AI Storage",
+    "locations": [
+      "Poland, Remote",
+      "Poland, Warsaw",
+      "Germany, Remote",
+      "France, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>We are hiring a Senior Systems Software Engineer to join our Applied Systems Engineering team and improve storage development in AI systems. This opportunity involves software development, practical experimentation, and systems integration to refine storage on next-generation NVIDIA platforms. You will lead technical analyses, transform workload insights into engineering fixes, and guide the formulation and implementation of storage policies. You will handle storage integration, testing, and rollout while coordinating with engineering groups on hardware and software projects. This role supports the efficiency and dependability encouraged at datacenter scale.</p><br /><h2>What you'll be doing:</h2><ul><li>Engineer and integrate storage systems for large-scale HPC and AI clusters, including Lustre, NFS, and their interaction with compute nodes, networks, and storage hardware.</li><li>Examine performance and reliability issues throughout the I/O stack, supervising application behavior across filesystem clients, Linux kernel paths, network protocols, servers, and storage devices.</li><li>Develop software fixes and performance improvements, working with NVIDIA engineering teams, storage partners, and open-source maintainers to bring changes through review, testing, and deployment.</li><li>Characterize real application I/O, including training-data access, checkpoint and restart, metadata-intensive operations, and concurrent workloads. Translate findings into improvements to software, and system configuration and design.</li><li>Build reproducible benchmarks, diagnostic tools, and regression tests that measure efficiency, latency, metadata performance, scalability, and behavior under contention.</li><li>Lead storage qualification and commissioning, validating functionality, data integrity, failure recovery, and sustained performance at cluster scale.</li><li>Define and implement storage placement, caching, and data lifecycle policies informed by workload requirements, capacity, and operational evidence.</li></ul><br /><h2>What we need to see:</h2><ul><li>Deep engineering experience with Lustre, NFS, or comparable shared storage systems, including implementation-level debugging in at least one stack and experience integrating storage into Linux clusters.</li><li>Strong C programming and Linux debugging skills, with experience reading, modifying, and diagnosing kernel or user-space storage software.</li><li>Understanding of filesystem and distributed-system behavior, including metadata operations, caching and consistency, locking, concurrency, client/server communication, and recovery.</li><li>Experience analyzing application access patterns and tuning filesystem or storage-stack behavior to deliver performance improvements.</li><li>Ability to take a complex performance or correctness problem from initial symptoms through reproduction, root-cause analysis, implementation, and validation.</li><li>Proficiency in Python and shell scripting to build maintainable diagnostic, test automation, and analysis tools.</li><li>Ability to independently lead technical efforts, influence design decisions across teams, and communicate findings and tradeoffs clearly.</li><li>BS or MS in Computer Science, Engineering, Mathematics, Physics, or equivalent practical experience, with 12+ years of relevant experience.</li></ul><br /><h2>Ways to stand out from the crowd:</h2><ul><li>Contributions to Lustre, Linux filesystems, NFS implementations, or other storage projects, including features, performance improvements, bug fixes, or technical reviews.</li><li>Expertise in Lustre metadata and client I/O, Linux VFS and page cache, NFS protocol and client/server internals, or distributed locking and recovery.</li><li>Experience with hierarchical storage management, policy engines, or migration between filesystems and object storage, including data recall and recovery from interrupted transfers.</li><li>Experience with RDMA storage transports, GPUDirect Storage, or optimizing data loading and checkpointing for GPU workloads.</li><li>Experience with storage security and multi-tenancy, including authentication, identity mapping, permissions, and encryption.</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />Poland: 375,000 PLN – 650,000 PLN for Level 5; and 483,750 PLN – 838,500 PLN for Level 6.<br />France: 114,000 EUR – 197,600 EUR for Level 5; and 150,000 EUR – 260,000 EUR for Level 6.<br />Germany: 141,900 EUR – 245,960 EUR for Level 5; and 165,825 EUR – 287,430 EUR for Level 6.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Poland-Remote/Senior-Systems-Software-Engineer---HPC-and-AI-Storage_JR2029338",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
