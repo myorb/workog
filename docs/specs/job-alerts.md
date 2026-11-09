@@ -51,26 +51,26 @@ A filter is a list of tags, plain strings in the form `key:value`. **A job match
 | --- | --- | --- |
 | `section` | `tech`, `medicine` | all |
 | `technology` | technology slug | tech |
-| `country` | country slug | tech |
-| `city` | city slug | both (medical cities always come with an `area`) |
+| `country` | country slug | all |
+| `city` | city slug | all (a medical city always comes with its `country`, and in Germany its `state`) |
 | `remote` | `true` (left out when not remote) | tech |
 | `employment` | employment type | tech |
 | `company` | company key | all |
 | `specialty`, `level` | slugs from `src/lib/medicine.ts` | medicine |
-| `area` | a German state or a country; a German job has both `area:germany` and its state | medicine |
+| `state` | German state slug; a German medical job has both `country:germany` and its state | medicine |
 | `hospital` | hospital slug (if `getHospitalIndex` can tag jobs cheaply; otherwise Phase 2) | medicine |
 
 A job's tags come from the same functions the pages filter with (`tagsOf`, `medicinePlace`), so an alert gets exactly the jobs its page lists.
 
-**Why tags, not page lists.** A city only has a page while it has `MIN_CITY_JOBS` open jobs. If an alert were "the jobs on page X", it would silently stop working whenever the page went away. An alert on `specialty:cardiology area:bayern city:munchen` keeps matching whether or not the page exists today.
+**Why tags, not page lists.** A city only has a page while it has `MIN_CITY_JOBS` open jobs. If an alert were "the jobs on page X", it would silently stop working whenever the page went away. An alert on `specialty:cardiology state:bavaria city:munich` keeps matching whether or not the page exists today.
 
 ### The alert link
 
 Every page with a filter links to:
 
 ```
-https://alerts.workog.com/new?v=1&lang=de&path=/de/medicine/levels/senior/cardiology/bayern
-                             &tags=section:medicine,specialty:cardiology,level:senior,area:bayern
+https://alerts.workog.com/new?v=1&lang=de&path=/de/medicine/levels/senior/cardiology/bavaria
+                             &tags=section:medicine,specialty:cardiology,level:senior,state:bavaria
 ```
 
 - `tags` is the filter. The service never parses `path`; it only stores it, for the "and N more on the page →" link.
@@ -92,7 +92,7 @@ Every open job first seen in the 7 days before the latest run, newest first:
       "where": "Münster",                       // formatLocations(…, 1)
       "firstSeenAt": "2026-11-05T05:03:16.544Z",
       "tags": ["section:medicine", "company:alexianer", "specialty:radiology", "level:senior",
-               "area:germany", "area:nordrhein-westfalen", "city:munster"]
+               "country:germany", "state:north-rhine-westphalia", "city:munster"]
     }
   ]
 }
@@ -111,7 +111,7 @@ The label of every tag that open jobs have, in each language, so the service can
   "run": "2026-11-05T05:03:16.544Z",
   "labels": {
     "specialty:cardiology": { "en": "Cardiology", "de": "Kardiologie", "es": "Cardiología", "uk": "Кардіологія" },
-    "area:bayern": { "en": "Bavaria", "de": "Bayern", "es": "Baviera", "uk": "Баварія" }
+    "state:bavaria": { "en": "Bavaria", "de": "Bayern", "es": "Baviera", "uk": "Баварія" }
   },
   "aliases": { "technology:golang": "technology:go" }   // renamed slugs, old → new
 }
@@ -163,10 +163,12 @@ This lives only in the site repo. Paths are read without their language prefix (
 | `/employment/<type>` | employment |
 | `/companies/<key>` | company |
 | `/medicine` | `section:medicine` only: every medical job |
-| `/medicine/specialties/<specialty>[/<area>[/<city>]]` | specialty, area, city |
-| `/medicine/levels/<level>[/<specialty>][/<area>[/<city>]]` | level, specialty, area, city (the second segment is a specialty if it's in `specialties`, otherwise an area) |
-| `/medicine/locations/<area>[/<city>]` | area, city |
+| `/medicine/specialties/<specialty>[/<area>[/<city>]]` | specialty, country or state, city |
+| `/medicine/levels/<level>[/<specialty>][/<area>[/<city>]]` | level, specialty, country or state, city (the second segment is a specialty if it's in `specialties`, otherwise an area) |
+| `/medicine/locations/<area>[/<city>]` | country or state, city |
 | `/medicine/hospitals/<hospital>` | hospital |
+
+An `<area>` segment becomes `country:<slug>` or `state:<slug>` (plus `country:germany`), whichever the medical taxonomy says it is; the contract has no `area` key, so tech and medical jobs share one place vocabulary and match the medical index the pages already filter on.
 
 Index pages (`/locations`, `/technologies` and so on), job pages and analytics don't get the link.
 
@@ -252,7 +254,7 @@ Nothing else is stored: no names, no CVs, no IPs, no card details (Paddle holds 
 Selling a subscription to consumers in Germany and the EU adds duties. Paddle covers the payment and tax parts; the rest is on us.
 
 - **Paddle (as merchant of record) covers:** VAT in every EU country, invoices, the payment terms in its checkout, refunds and chargebacks.
-- **Cancel button (§312k BGB):** every online consumer subscription in Germany needs a clearly labelled "Verträge hier kündigen" button, reachable without logging in, leading to a confirmation page. It goes in the site footer (on all pages, linking to `alerts.workog.com/cancel`) and on the manage page. The confirmation page asks only for the email and has one "Jetzt kündigen" button. Pressing it cancels via Paddle's API right away (no emailed link to click, which the law treats as an extra hurdle), shows the end date, and sends a confirmation email with the date and time. This is the one piece of the site footer that's legally required, not optional.
+- **Cancel button (§312k BGB):** every online consumer subscription in Germany needs a clearly labelled "Verträge hier kündigen" button, reachable without logging in, leading to a confirmation page. It goes in the site footer (on all pages, linking to `alerts.workog.com/cancel`) and on the manage page. The confirmation page asks for what §312k(3) lists, and nothing more: the type of cancellation (ordinary, or extraordinary with a reason), the email the subscription was taken with (which identifies both the person and the contract, and is where the confirmation goes), and when it should end (the earliest date, or a chosen one). Then one "Jetzt kündigen" button. An email that matches no subscription gets the same receipt page, so the form can't be used to look up who subscribes. Pressing it cancels via Paddle's API right away (no emailed link to click, which the law treats as an extra hurdle), shows the end date, and sends a confirmation email with the date and time. This is the one piece of the site footer that's legally required, not optional.
 - **Right of withdrawal (14 days, digital service):** the checkout asks the subscriber to agree that the service starts now and that they lose the withdrawal right for the part already used. The free trial makes this mostly theoretical, but the checkbox and the withdrawal notice have to be there. Paddle's checkout has the consent built in; our terms repeat it.
 - **Terms (AGB) and the Impressum and privacy policy:** three static pages on workog.com, in all languages. The terms describe the service: daily emails of new jobs matching your alerts, from public sources, with no guarantee of completeness. The privacy policy names Paddle, DigitalOcean and the email provider as processors (Paddle as an independent controller for payments), says what is stored and how to delete it, and gives the legal basis: the contract, Art. 6(1)(b) GDPR.
 - **Data processing agreements:** accept DigitalOcean's and the email provider's.
