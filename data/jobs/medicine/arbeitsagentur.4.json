@@ -2105,6 +2105,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208256587-S",
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -2957,8 +2959,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1001555734-S",
     "postedAt": "2025-07-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3419,6 +3419,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002456003-S",
     "postedAt": "2026-01-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4627,7 +4629,7 @@
     "postedAt": "2026-07-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6166,6 +6168,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/6d543b6f-0072-3274-ad28-ac44d20c9192",
     "postedAt": "2026-08-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6322,6 +6326,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/905a7447-74fe-3da7-a9fa-d62d1fc96ef1",
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6571,7 +6577,7 @@
     "postedAt": "2026-10-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7470,8 +7476,6 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Allgemeinmedizin-Innere-Medizin-D-Mannhei-1208039?cp=BA",
     "postedAt": "2025-12-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8295,6 +8299,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fuer-Allgemeinmedizin-Innere-Medizin-D-1319357?cp=BA",
     "postedAt": "2026-09-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8313,6 +8319,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fuer-Allgemeinmedizin-D-1319358?cp=BA",
     "postedAt": "2026-09-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8786,6 +8794,62 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Oberaerztin-D-Fuer-Die-Innere-Medizin-1290138?cp=BA",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12811-2374062-S",
+    "slug": "medizinisches-versorgungszentrum-hersfeld-rotenburg-gmbh-facharzt-anasthesie-mvz-klinikum-m-w-d-klinikum-bad-hersfeld-12811-2374062-s",
+    "company": "arbeitsagentur",
+    "employer": "Medizinisches Versorgungszentrum Hersfeld-Rotenburg GmbH",
+    "title": "Facharzt Anästhesie MVZ Klinikum (m/w/d), Klinikum Bad Hersfeld",
+    "locations": [
+      "Bad Hersfeld, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Anästhesiologie",
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Zur Verstärkung unseres Teams suchen wir zum nächstmöglichen Zeitpunkt in Voll-/ oder Teilzeit einen   Facharzt Anästhesiologie (m/w/d) für unser Medizinisches Versorgungszentrum (MVZ)                    gerne auch mit Zusatzbezeichnung ,,spezielle Schmerztherapie\"   Die Medizinische Versorgungszentrum Hersfeld-Rotenburg GmbH erbringt an drei Standorten ambulante fachärztliche Leistungen für sowohl gesetzlich als auch privat versicherte Patientinnen und Patienten in den Fachbereichen Anästhesie, Angiologie, Augenheilkunde, Chirurgie, Gastroenterologie, Gynäkologie, Hals-Nasen-Ohrenheilkunde, Kardiologie, Kinder- und Jugendmedizin, Onkologie, Orthopädie, Neurochirurgie, Neurologie, Nuklearmedizin und Psychotherapie. Wir suchen Sie... wenn Sie Fachärztin/Facharzt für Anästhesiologie mit mehrjähriger Berufserfahrung sind und optional ggf. sogar über die Zusatzbezeichnung ,,spezielle Schmerztherapie\" verfügen wenn Sie motiviert sind Ihre Fachkenntnisse und Ideen in unser MVZ einzubringen wenn Sie Begeisterung an der Patientenversorgung in einem modernen MVZ mit breiter fachlicher Aufstellung haben Sie verfügen über... eine Facharztanerkennung Anästhesiologie optional über die Zusatzbezeichnung ,,spezielle Schmerztherapie\" Empathie und Kommunikationsstärke sowie eine sehr gute Teamorientierung Wir bieten Ihnen... Interdisziplinäre Zusammenarbeit und kollegiales Arbeitsklima Attraktive Vergütung entsprechend der verantwortungsvollen Tätigkeit Optionale zusätzliche Tätigkeit in der Klinik für Anästhesie oder unserem Ambulanten OP-Zentrum Flexible, familienfreundliche Arbeitszeiten ohne Bereitschafts- und Wochenenddienste Förderung beim Erwerb und der Aktualisierung erforderlicher Qualifikationen Unterstützung bei der Wohnungssuche Mitarbeiterrabatte \"Corporate Benefits\" VERTRAGSBEDINGUNGEN Eine Tätigkeit mit einem Zeitumfang von 21-30 Wochenstunden, entsprechend einem Stellenanteil von 50-75% Eine zusätzliche Anstellung mit dem zur Tätigkeit von 100% fehlenden Stellenanteil kann in der Klinik für Anästhesie oder dem Ambulanten OP-Zentrum am Klinikum Bad Hersfeld erfolgen Durch separate vertragliche Regelungen ist eine notärztliche Tätigkeit an den Standorten unseres NEF-Systems in Bad Hersfeld und Hönebach nach Absprache möglich Leistungsgerechte Vergütung Beginn zum nächstmöglichen Zeitpunkt Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Ihre vollständige Online-Bewerbung!   Für weitere Informationen steht Ihnen unser Kaufmännischer Direktor gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Anaesthesie-Mvz-Klinikum-D-872950?cp=BA",
+    "postedAt": "2026-11-08T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12811-2374185-S",
+    "slug": "fidelius-mvz-gmbh-facharzt-fur-allgemeinmedizin-m-w-d-fidelius-mvz-gmbh-12811-2374185-s",
+    "company": "arbeitsagentur",
+    "employer": "Fidelius MVZ GmbH",
+    "title": "Facharzt für Allgemeinmedizin (m/w/d), Fidelius MVZ GmbH",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Einleitung Unser Team zeichnet sich durch eine dynamische und aufgeschlossene Atmosphäre aus, in der neue Ideen und Impulse stets willkommen sind. Bei uns gibt es keine festgefahrenen Strukturen, was bedeutet, dass ihr die Möglichkeit habt, eure kreativen Gedanken und Visionen einzubringen. Wir sind zukunftsorientiert in unserer Entwicklung und legen großen Wert auf kurze Entscheidungswege. Das bedeutet, dass eure Ideen schnell Gehör finden und in die Praxis umgesetzt werden können. Unsere offene Sprachkultur fördert den offenen Austausch von Gedanken und Ideen, und wir sind fest davon überzeugt, dass dies der Schlüssel zu unserem Erfolg ist. Ihre Aufgaben Abwechslungsreiche Tätigkeiten sowohl in der Versorgung von Patienten in Pflegeheimen als auch im Praxisbetrieb Ambulante hausärztliche und geriatrische Betreuung der Patienten Interdisziplinäre Zusammenarbeit innerhalb des MVZ Ihr Profil Deutsche Approbation Beurkundeter Nachweis der Landesärztekammer für Geriatrie wünschenswert Beurkundeter Nachweis der Landesärztekammer für Palliativmedizin wünschenswert Empathie im Umgang mit Patienten sowie Kollegen Teamfähigkeit und eine strukturierte Arbeitsweise Wir bieten 30 Tage Urlaub iPhone &amp; MacBook steht Dir zur Verfügung Attraktive Bezahlung Firmenwagen mit Privatnutzung Regelmäßige Weiterbildungen Egal ob Sommerparty oder Weihnachtsfeier - wir feiern unsere Erfolge zusammen Wir-Gefühl Betriebliche Weiterbildung Betriebsarzt Betriebsfeiern Flexible Arbeitszeiten Kostenlose Getränke Kostenloser Parkplatz Literatur Bonus Bonus für das Anwerben von Mitarbeiter Vermögenswirksame Leistungen (inkl. Arbeitgeberzuschuss) Betriebliche Altersvorsorge (inkl. Arbeitgeberzuschuss) Job-Rad Klimatisierter Arbeitsbereich Gute Verkehrsanbindung</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fuer-Allgemeinmedizin-D-1335908?cp=BA",
+    "postedAt": "2026-11-08T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12811-2374215-S",
+    "slug": "mvz-borde-gmbh-facharzt-fur-innere-und-allgemeinmedizin-m-w-d-hadmersleben-mvz-borde-gmbh-12811-2374215-s",
+    "company": "arbeitsagentur",
+    "employer": "MVZ Börde GmbH",
+    "title": "Facharzt für Innere- und Allgemeinmedizin (m/w/d) - Hadmersleben, MVZ Börde GmbH",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Einleitung MVZ Börde ist ein inhabergeführtes und traditionsreiches medizinisches Versorgungszentrum mit mehreren Standorten rund um Magdeburg. Wir sind stolz darauf, unseren Patienten umfassende ärztliche Leistungen in verschiedenen Fachbereichen anbieten zu können. Unsere Expertise umfasst die Allgemeinmedizin, Radiologie, Diabetologie, Gastroenterologie, Gynäkologie, Kardiologie und Kinderheilkunde. Unsere zentralen Standorte sind optimal erreichbar, sodass man schnell und unkompliziert ins Stadtzentrum oder an die Elbe gelangt. Bei uns können Sie auf eine langjährige Erfahrung und ein engagiertes Team bauen. Ihre Aufgaben Verantwortlichkeit für die individuelle, diagnostische und therapeutische Patientenbehandlung aller Altersstufen der Region Führung der allgemeinmedizinischen Sprechstunde in geregelten Arbeitszeiten Versorgung von Notfällen Übernahme von Hausbesuchen Kontinuierlicher Weiterausbau des Patientenstammes und zukunftsorientierte Entwicklung des MVZ und somit die Sicherstellung der wirtschaftlichen Führung Ihr Profil Sie haben ein abgeschlossenes medizinisches Hochschulstudium der Medizin und eine Facharztanerkennung &amp;bdquo;Allgemeinmedizin&amp;ldquo; bzw. &amp;bdquo;Innere Medizin&amp;ldquo; Sie besitzen eine gültige deutsche Approbation und sehr gute Deutschkenntnisse (C1-Niveau) Sie verfügen über gute kommunikative Fähigkeiten, Empathie und ein hohes Maß an Verantwortungsbewusstsein Eine selbstständige und eigenverantwortliche Arbeitsweise zeichnet Sie aus Wir bieten Überdurchschnittliche Bezahlung Sonderzahlungen Quartalsweise Berufskleidung wird gestellt Individuelle Hardwareauswahl Wert- oder Einkaufsgutscheine Rabattierung auf Hausleistungen Firmenkreditkarte (50&amp;euro; Sachzuwendung) Literatur Bonus (Beteiligung an Fachliteratur) Teamfrühstück Regelmäßige Teambesprechungen Mitarbeiterevents / After Work Pate / Mentor / Buddy-Programm Beteiligung an Fitnessstudio Mitgliedschaft Geschäftshandy mit privater Nutzung Geschäftslaptop mit privater Nutzung Firmenwagen mit privater Nutzung Firmenfahrzeug für Kundenreisen Tankkarte mit privater Nutzung Jobticket oder Fahrtkostenzuschüsse Betriebliche Altersvorsorge Kita Zuschuss Bike-Leasing Wasser, Kaffee, Obst und Süßigkeiten Einarbeitungsplan 30 Tage Urlaub Karriere- und Weiterbildungsmöglichkeiten Flexible Arbeitszeiten Berufs- und Wiedereinsteiger Teilzeit Möglichkeiten Ergonomischer Arbeitsplatz Ladestation für E-Autos Eigene Parkplätze Klimatisierter Arbeitsbereich</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fuer-Innere-Und-Allgemeinmedizin-D-Hadmer-1335934?cp=BA",
+    "postedAt": "2026-11-08T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T05:03:23.512Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12380,7 +12444,7 @@
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12401,6 +12465,8 @@
     "applyUrl": "https://helixjobs.com/_/jobad?prj=2259p5580&source=ba",
     "postedAt": "2026-11-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12422,7 +12488,7 @@
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "arbeitsagentur"
   },
   {

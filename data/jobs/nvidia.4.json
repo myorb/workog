@@ -7854,6 +7854,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-Software-Engineer--Networking_JR2025135",
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8605,6 +8607,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Networking-QA-and-Automation-Engineer--Network-Systems_JR2025751",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10271,6 +10275,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2027533",
+    "slug": "nvidia-ic-post-silicon-test-engineer-jr2027533",
+    "company": "nvidia",
+    "title": "IC Post-Silicon Test Engineer",
+    "locations": [
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA’s Networking unit is looking for a creative and independent Test Engineer to join our Post-Silicon Validation organization. You will play a pivotal role in bringing cutting-edge networking products (Switches, NICs, SmartNICs) from early design to production readiness. In this role, you will take full ownership of a product from its definition phase, working closely with Design and Architecture teams. You will define and execute Pre-Silicon validation plans using advanced emulation platforms such as Palladium and VTPsim. Post-silicon, you will be responsible for planning and managing bring-up, validation and product stabilization, leading the product towards Bring up and up to P-Rel stage.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Own the product lifecycle from definition to pre-launch.</li><li>Collaborate with Architecture, Design and Verification teams to define product validation strategies.</li><li>Execute Pre-Silicon tests using emulation tools (Palladium, VTPsim).</li><li>Define post-silicon validation plans and lead execution.</li><li>Write Test program code including new infrastructures and methodologies.</li><li>Drive product bring-up and stabilization toward Prel and production readiness.</li><li>Develop automated infrastructure to support program execution.</li><li>Coordinate cross-functional activities with DFT, Production, and Software teams.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc. in Electrical Engineering or related field.</li><li>2+ years of experience in test or validation engineering, preferably in Post-Silicon.</li><li>Hands-on coding experience (Java, VBA, Python, C/C++, or similar).</li><li>Strong ownership, execution and problem-solving skills.</li><li>Excellent communication and collaboration abilities.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Familiarity with pre-silicon emulation platforms – advantage.</li><li>Experience with SMT8/UltraFlex – advantage.</li></ul><br /><p>NVIDIA has some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our world-class engineering teams are growing fast. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you.</p><p>We are committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/IC-Post-Silicon-Test-Engineer_JR2027533",
+    "postedAt": "2026-11-08T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2027551",
     "slug": "nvidia-research-scientist-autonomous-systems-and-physical-ai-research-phd-new-college-g-jr2027551",
     "company": "nvidia",
@@ -11146,6 +11166,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-QA-Engineer---AI-Data-Centers_JR2028396",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-08T05:02:55.071Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -12161,6 +12183,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-SoC-Architect--RAS_JR2029355",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029386",
+    "slug": "nvidia-senior-firmware-application-engineer-system-software-jr2029386",
+    "company": "nvidia",
+    "title": "Senior Firmware Application Engineer - System Software",
+    "locations": [
+      "Taiwan, Taipei",
+      "Taiwan, Hsinchu"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Join NVIDIA as a Senior System Software Application Engineer. NVIDIA leads the way in high-growth fields such as High-Performance Computing (HPC), Artificial Intelligence (AI), cloud data centers, and gaming.</p><p>In this role, you will leverage your deep expertise in system software, firmware, and Linux platforms to help bring next-generation data center products from development to production. You will collaborate across engineering, manufacturing, customers, and ecosystem partners to drive platform enablement, improve system manageability, and accelerate the adoption of OpenBMC-based solutions. This is a highly cross-functional role that offers opportunities to solve complex technical challenges, influence platform architecture, and contribute to the growth of NVIDIA's data center ecosystem.</p><p><b>What you'll be doing:</b></p><ul><li><p>Develop OpenBMC firmware and core features to support next-generation GPU server platforms.</p></li><li><p>Participate in and upstream OpenBMC code, working with the open-source community to drive feature development and influence project direction.</p></li><li><p>Build and implement manageability and monitoring solutions for enterprise components such as CPUs, GPUs, DIMMs, SSDs, NICs, PSUs, FPGAs, and CPLDs.</p></li><li><p>Collaborate with manufacturing teams to support data center product production and provide on-site factory support as required.</p></li><li><p>Adapt to evolving business priorities and demonstrate flexibility in taking on a broad range of technical responsibilities.</p></li><li><p>Travel domestically and internationally as needed to support customer engagements, manufacturing activities, and product deployments.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>Bachelor's degree or higher in Electrical Engineering, Computer Science, or equivalent practical experience.</p></li><li><p>5+ years of relevant experience, with a proven track record of delivering large-scale projects and collaborating across cross-functional teams.</p></li><li><p>Deep knowledge of Linux, including command-line usage, driver architecture, and Linux kernel internals.</p></li><li><p>Hands-on experience with board bring-up, device drivers (I2C/I3C, SPI, PCIe, SMBus, Mailbox, etc.), and device tree development for U-Boot and the Linux kernel.</p></li><li><p>Proficiency in C/C++ programming, along with scripting experience in Python and/or Bash.</p></li><li><p>Strong communication and collaboration skills, with the ability to work effectively in dynamic environments and translate technical requirements and challenges into actionable solutions.</p></li><li><p>Ability to work independently, manage multiple priorities, and adapt to changing business needs.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Deep expertise in system software, with strong debugging and problem-solving skills, and the ability to quickly learn and apply new technologies.</p></li><li><p>Strong understanding of server architecture, platform management, and data center technologies.</p></li><li><p>Passion for building ecosystems and bridging the gap between engineering teams, customers, partners, and the open-source community.</p></li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Senior-Firmware-Application-Engineer---System-Software_JR2029386",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-09T05:03:23.512Z",
     "source": "workday"
   },
   {
