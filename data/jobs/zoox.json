@@ -171,6 +171,24 @@
     "source": "lever"
   },
   {
+    "id": "lever:1dc3a72e-1461-4c66-b424-252f057809ed",
+    "slug": "zoox-senior-staff-machine-learning-engineer-3d-simulation-1dc3a72e-1461-4c66-b424-252f057809ed",
+    "company": "zoox",
+    "title": "Senior/Staff Machine Learning Engineer, 3D Simulation",
+    "locations": [
+      "Foster City, CA",
+      "Seattle, WA"
+    ],
+    "remote": false,
+    "department": "Software Systems",
+    "category": "data",
+    "descriptionHtml": "<p>The 3D Simulation group at Zoox is looking for machine learning engineers to bring the latest research in 3D vision to accelerate autonomy by blurring the line between simulation and reality. Our ML group is working on generating rich and diverse 3D environments, humans, and environmental conditions using reconstruction and generative models. You will have access to the best sensor data in the world and an incredible infrastructure for testing and validation to bring new algorithms into our robotics stack. </p>\n <h3>In this role, you will: </h3><ul>\n<li>Research, implement, and optimize state of the art machine learning approaches to improve 3D simulation variation and fidelity</li>\n<li>Collaborate with ML Researchers, Technical Artists and Simulation engineers to bring new ML techniques to our production simulator</li>\n<li>Train 4D generative and world models for simulating rare scenarios</li>\n<li>Build scalable, useable cloud pipelines for machine learning solutions in 3D simulation</li>\n<li>Improve rendering and tooling for generating realistic data at scale</li>\n</ul><h3>Qualifications:</h3><ul>\n\n<li>7+ years of experience with Python/C++ programming and algorithm design</li>\n<li>Experience building and extending radiance field ML models</li>\n<li>Experience with generative models for 3D or video content</li>\n<li>Publications or production experience in human-centric 3D vision, 3D reconstruction, or style transfer</li>\n<li>Strong mathematical skills and understanding of probabilistic techniques</li>\n\n</ul><h3>Bonus Qualifications:</h3><ul>\n<li>Experience automating 3D content pipelines using applications like Houdini, Maya, or Blender</li>\n<li>Experience in distributed systems and cloud computing platforms</li>\n<li>Experience in generative camera, lidar, radar, or LWIR</li>\n</ul><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/1dc3a72e-1461-4c66-b424-252f057809ed",
+    "postedAt": "2024-06-10T22:30:41.686Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "lever"
+  },
+  {
     "id": "lever:1de7207d-2d77-44c8-b875-06b78b98e69c",
     "slug": "zoox-senior-software-engineer-continuous-deployment-1de7207d-2d77-44c8-b875-06b78b98e69c",
     "company": "zoox",
@@ -225,13 +243,13 @@
     "id": "lever:01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
     "slug": "zoox-staff-senior-staff-software-engineer-collision-avoidance-system-01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
     "company": "zoox",
-    "title": "Staff / Senior Staff Software Engineer - Collision Avoidance System",
+    "title": "Staff / Senior Staff Machine Learning Engineer - Collision Avoidance System",
     "locations": [
       "Foster City, CA"
     ],
     "remote": false,
     "department": "Autonomy Software",
-    "category": "engineering",
+    "category": "data",
     "descriptionHtml": "The Collision Avoidance System (CAS) is Zoox's independent safety layer. It runs alongside our main autonomy stack, constantly watches for imminent collisions, and reacts within milliseconds to prevent or reduce them. By using different methods and data paths than the main stack, CAS gives our robotaxi a second, diverse line of defense in the most challenging dense urban environments.\n<br />As a Staff or Senior Staff engineer, you will be the technical lead for CAS algorithms, with a focus on CAS perception. You will shape how CAS sees the world, combining interpretable geometric methods with machine learning, and you will own the architecture and roadmap that take these capabilities from idea to safe, real-time deployment on our fleet. Your work will directly affect the safety of every rider and road user around our vehicles.<h3>In this role, you will: </h3><ul>\n<li>Serve as the technical lead and architect for CAS perception, defining how lidar, radar, and camera data become reliable obstacle detection, tracking, and collision-risk estimates under tight latency and compute budgets</li>\n<li>Design, implement, and ship both machine learning and classical perception algorithms (e.g., point-cloud geometry, ground estimation, clustering, state estimation and tracking, learned detection and segmentation, sensor fusion) in production-quality, safety-critical C++</li>\n<li>Own the end-to-end CAS algorithm architecture and multi-release technical roadmap, making clear trade-offs between safety, performance, latency, compute, and ML vs. non-ML approaches</li>\n<li>Partner across CAS perception, behavior and planning, and validation to define interfaces, requirements, metrics, and evaluation strategies that show the system is safe and ready to launch</li>\n<li>Work with sensor, system performance, safety strategy, and main autonomy teams to drive cross-team technical decisions, while mentoring engineers and raising the technical bar across CAS</li>\n</ul><h3>Qualifications</h3><ul>\n<li>\n<p>BS, MS, or PhD in Computer Science, Electrical Engineering, Robotics, or a related field, or equivalent experience</p>\n</li>\n<li>\n<p>At least 10 years of experience developing perception or related algorithms for robotics, autonomous vehicles, or other real-time systems</p>\n</li>\n<li>\n<p>Deep expertise in 3D perception from lidar, radar, and/or camera, with hands-on experience in both machine learning (detection, segmentation, fusion) and classical methods (geometry, state estimation, tracking)</p>\n</li>\n<li>\n<p>Strong C++ or Python skills and a track record of shipping efficient, reliable real-time software to production</p>\n</li>\n<li>\n<p>Experience leading the architecture and technical roadmap of a complex production system across multiple teams</p>\n</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Conference or Journal publications in Machine Learning or Robotics-related venues</p>\n</li>\n<li>\n<p>Experience with safety-critical systems or functional safety practices (e.g., ISO 26262, SOTIF), collision avoidance, emergency braking, prediction, or planning systems for autonomous vehicles</p>\n</li>\n<li>\n<p>Experience optimizing and deploying models or algorithms on onboard compute (e.g., GPU / CUDA, TensorRT)</p>\n</li>\n</ul>",
     "applyUrl": "https://jobs.lever.co/zoox/01ff8f1c-eda8-4c45-9cca-b4461d8757d5",
     "postedAt": "2026-11-04T17:05:31.885Z",
@@ -321,6 +339,24 @@
     "applyUrl": "https://jobs.lever.co/zoox/2d23cf58-a117-4f40-ac98-7c6a691eb273",
     "postedAt": "2024-07-15T17:37:05.691Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "source": "lever"
+  },
+  {
+    "id": "lever:2d73563c-8039-4d1b-844c-3953259ba6b1",
+    "slug": "zoox-machine-learning-engineer-3d-simulation-2d73563c-8039-4d1b-844c-3953259ba6b1",
+    "company": "zoox",
+    "title": "Machine Learning Engineer, 3D Simulation",
+    "locations": [
+      "Foster City, CA",
+      "Seattle, WA"
+    ],
+    "remote": false,
+    "department": "Software Systems",
+    "category": "data",
+    "descriptionHtml": "The 3D Simulation group at Zoox is looking for machine learning engineers to bring the latest research in 3D vision to accelerate autonomy by blurring the line between simulation and reality. Our ML group is working on generating rich and diverse 3D environments, humans, and environmental conditions using reconstruction and generative models. You will have access to the best sensor data in the world and an incredible infrastructure for testing and validation to bring new algorithms into our robotics stack. <h3>In this role, you will: </h3><ul>\n<li>Research, implement, and optimize state of the art machine learning approaches to improve 3D simulation variation and fidelity</li>\n<li>Collaborate with ML Researchers, Technical Artists and Simulation engineers to bring new ML techniques to our production simulator</li>\n<li>Train 4D generative and world models for simulating rare scenarios</li>\n<li>Build scalable, useable cloud pipelines for machine learning solutions in 3D simulation</li>\n<li>Improve rendering and tooling for generating realistic data at scale</li>\n</ul><h3>Qualifications</h3><ul>\n\n<li>3+ years of experience with Python/C++ programming and algorithm design</li>\n<li>Experience building and extending radiance field ML models</li>\n<li>Experience with generative models for 3D or video content</li>\n<li>Publications or production experience in human-centric 3D vision, 3D reconstruction, or style transfer</li>\n<li>Strong mathematical skills and understanding of probabilistic techniques</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>Experience automating 3D content pipelines using applications like Houdini, Maya, or Blender</li>\n<li>Experience in distributed systems and cloud computing platforms</li>\n<li>Experience in generative camera, lidar, radar, or LWIR</li>\n</ul><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/2d73563c-8039-4d1b-844c-3953259ba6b1",
+    "postedAt": "2024-06-10T23:00:33.720Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "lever"
   },
   {
@@ -459,6 +495,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/3e74f14a-667a-4381-9f8e-2e8b9f1b92d3",
     "postedAt": "2026-08-04T16:19:05.679Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -530,6 +568,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/4cf378f6-fab9-4bdb-a349-4ae70c099b8e",
     "postedAt": "2026-06-16T19:07:59.457Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -823,6 +863,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/6e58a614-0388-4916-bb8f-de12c19be758",
     "postedAt": "2026-04-20T23:36:45.626Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -1253,6 +1295,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/28a74ce9-92f3-4280-b6a7-730e7ffee5b2",
     "postedAt": "2026-02-12T00:35:23.545Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -1767,6 +1811,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/90ee9fbc-f0e4-4b47-a337-09493ecf4902",
     "postedAt": "2026-06-03T16:35:09.781Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -1824,7 +1870,7 @@
     "id": "lever:0168ad29-2fd8-4c91-865c-b9fff8aa30c1",
     "slug": "zoox-ai-workflows-and-safety-decision-making-intern-2027-0168ad29-2fd8-4c91-865c-b9fff8aa30c1",
     "company": "zoox",
-    "title": "AI Workflows & Safety Decision Making Intern [2027]",
+    "title": "AI Workflows Intern [2027]",
     "locations": [
       "Foster City, CA"
     ],
@@ -1893,7 +1939,7 @@
     "id": "lever:614f35d6-a415-4f44-be38-cb38877df1db",
     "slug": "zoox-safety-reporting-and-benchmarking-intern-summer-2027-614f35d6-a415-4f44-be38-cb38877df1db",
     "company": "zoox",
-    "title": "Safety Reporting & Benchmarking Intern [Summer 2027]",
+    "title": "Safety Reporting Intern [Summer 2027]",
     "locations": [
       "Foster City, CA"
     ],
@@ -2143,6 +2189,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/7206fd97-14e4-43a0-b903-ba65dfeee53e",
     "postedAt": "2026-08-07T19:04:41.809Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -2643,6 +2691,23 @@
     "source": "lever"
   },
   {
+    "id": "lever:587518db-01e7-4408-8a1f-683846567483",
+    "slug": "zoox-senior-exterior-designer-robot-industrial-design-587518db-01e7-4408-8a1f-683846567483",
+    "company": "zoox",
+    "title": "Senior Exterior Designer, Robot Industrial Design",
+    "locations": [
+      "Foster City, CA"
+    ],
+    "remote": false,
+    "department": "Robot Industrial Design",
+    "category": "design",
+    "descriptionHtml": "<p>At Zoox, Robot Industrial Design defines how autonomous mobility is experienced through form, function, and interaction. We believe the future of mobility demands more than a new vehicle; it requires a fundamentally new product philosophy built around people, technology, and seamless integration. Our design team works from first principles to create products that are human-centered, technically sophisticated, and uncompromising in their purpose.</p>\n<p>As a Senior Exterior Designer, Robot Industrial Design, you will play a key role in the creative development of Zoox’s robotaxi platforms and connected hardware ecosystem. You will contribute to a holistic design vision across vehicle design, CMF, and product integration, ensuring every element reflects clarity, precision, and intent. This role requires a designer who can operate equally at the conceptual and production levels, translating ambitious ideas into thoughtful, well-resolved design solutions from early vision through engineering execution, manufacturing realization, and real-world deployment.</p>\n<p>You will work closely with other designers and cross-functional partners across engineering, software, product, brand, and manufacturing to deliver deeply integrated mobility experiences. The ideal candidate brings exceptional design judgment, a systems-minded approach, and a relentless focus on craftsmanship, innovation, and simplicity. Your work will directly shape the physical expression of the Zoox brand and help define the future relationship between people, autonomy, and everyday transportation.</p>\n<h3>In this role, you will:</h3><ul>\n<li>\n<p>Support the development of design concepts, form language, and detailed solutions for Zoox’s robotaxi platforms and connected hardware.</p>\n</li>\n<li>\n<p>Translate the broader pool design vision into compelling, cohesive design solutions across vehicle design.</p>\n</li>\n<li>\n<p>Create compelling digital and physical deliverables, including sketches, renderings, CAD, models, and presentations, to clearly communicate design concepts and decisions.</p>\n</li>\n<li>\n<p>Drive design projects from early concept through production, maintaining design intent and quality throughout development.</p>\n</li>\n<li>\n<p>Challenge assumptions and explore innovative solutions unconstrained by traditional automotive norms to deliver a unique Zoox experience.</p>\n</li>\n<li>\n<p>Balance creative ambition with technical feasibility, ensuring design quality, craftsmanship, and attention to detail through engineering and manufacturing integration.</p>\n</li>\n</ul><h3>Qualifications</h3><ul>\n<li>\n<p>8+ years of experience in automotive or relevant industrial design environments.</p>\n</li>\n<li>\n<p>Proven track record delivering production vehicles and/or complex hardware products from concept through launch. </p>\n</li>\n<li>\n<p>Exceptional design skills, with a strong foundation in form development, proportion, surface quality, and design detailing.</p>\n</li>\n<li>\n<p>Experience working across multiple phases of product development, from conceptual exploration through engineering integration and production.</p>\n</li>\n<li>\n<p>Strong understanding of materials, manufacturing processes, and engineering constraints, with the ability to translate them into thoughtful design solutions.</p>\n</li>\n<li>\n<p>Experience collaborating with multidisciplinary teams and navigating complex cross-functional development environments.</p>\n</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Exceptional visual communication, presentation, and storytelling skills, with the ability to clearly articulate design intent and rationale.</p>\n</li>\n<li>\n<p>A deep passion for design craft, innovation, and creating meaningful, future-forward products.</p>\n</li>\n</ul>\n<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/587518db-01e7-4408-8a1f-683846567483",
+    "postedAt": "2026-11-09T20:51:05.774Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "lever"
+  },
+  {
     "id": "lever:714021f6-b6fe-48c6-bd0c-cc579ee938b9",
     "slug": "zoox-team-lead-ground-operations-3rd-shift-714021f6-b6fe-48c6-bd0c-cc579ee938b9",
     "company": "zoox",
@@ -2968,6 +3033,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/a76e2e49-4f41-40d6-9bda-b15c24d7590b",
     "postedAt": "2025-12-17T00:58:39.878Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3123,6 +3190,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/ae2785ae-dfee-484b-8add-3cf32ca2d10e",
     "postedAt": "2026-09-09T22:44:08.556Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3146,14 +3215,14 @@
     "id": "lever:affbfa7d-30c5-4639-aa56-2ba138200bd8",
     "slug": "zoox-program-manager-infrastructure-operations-intern-summer-2027-affbfa7d-30c5-4639-aa56-2ba138200bd8",
     "company": "zoox",
-    "title": "Program Manager, Infrastructure Operations Intern [Summer 2027]",
+    "title": "Program Manager Intern [Summer 2027]",
     "locations": [
       "Foster City, CA"
     ],
     "remote": false,
     "department": "Fleet Operations",
     "category": "product",
-    "descriptionHtml": "<strong>About Our Internship Program</strong>\nZoox's internship program offers hands-on experience with cutting-edge technology, mentorship from some of the industry's brightest minds, and the opportunity to make meaningful contributions to real projects. We seek interns who demonstrate strong academic performance, engagement beyond the classroom, intellectual curiosity, and a genuine interest in Zoox's mission.\n \n<strong>Job Description</strong>\nAs an intern in the Infrastructure Operations team within Fleet Operations, you will support the critical infrastructure that keeps Zoox’s autonomous robotaxi fleet charged, serviced, and operating seamlessly. You will bridge operations, facilities, and engineering to tackle complex infrastructure readiness challenges across multiple depot sites and multi-generation vehicle platforms.\n \n<h3>In this Role, You Will…</h3><ul>\n<ul>\n<li>\n<p>Improve Vehicle-to-Storage Ratios: Investigate and prototype a partner \"flex-capacity\" parking program to optimize parking ratios—surveying partner APIs for overflow-space booking, scoping commercial/retail partners for overnight capacity, and aligning with security and legal on access controls.</p>\n</li>\n<li>\n<p>Assess Multi-Platform Depot Readiness: Map charging, service-bay, and diagnostic requirements across Zoox’s vehicle platforms (VH6, VH6+, VH6W, VH7, VT1, VL3) against national site capacity to produce site-by-site gap analyses.</p>\n</li>\n<li>\n<p>Build Adverse-Weather Return-to-Base (RTB) Plans: Design infrastructure planning for severe weather and contingency recalls, prototyping tools (such as an Overwatch-integrated dashboard) to monitor safe-parking capacity in real time during mass RTB events.</p>\n</li>\n<li>\n<p>Future-Proof Depot Infrastructure: Evaluate corrosion-resistant cabling standards, evaluate alternate charging connectors (e.g., NACS), scope automated vehicle inspection system integrations, and contribute to the long-term site build roadmap.</p>\n</li>\n\n</ul></ul><h3>Internship Requirements</h3><ul>\n<ul>\n<li>\n<p>Currently working towards an MBA, Master’s in Industrial Engineering, Operations Research, Engineering Management, or related field.</p>\n</li>\n<li>\n<p>Good academic standing and enrolled at an accredited college or university throughout the internship.</p>\n</li>\n<li>\n<p>Expected graduation date between Fall 2027 and Summer 2028.</p>\n</li>\n<li>\n<p>Able to commit to a full-time, 12-week internship.</p>\n</li>\n<li>\n<p>Ability to relocate to the San Francisco Bay Area, California, for the duration of the internship.</p>\n</li>\n<li>\n<p>Interns at Zoox may not use proprietary information for thesis or publication outside of Zoox.</p>\n</li>\n\n</ul></ul><h3>Technical Qualifications </h3><ul>\n<ul>\n<li>\n<p>Proven track record of managing complex projects with diverse cross-functional stakeholders.</p>\n</li>\n<li>\n<p>Advanced proficiency in data organization, manipulation, and modeling in Microsoft Excel or Google Sheets.</p>\n</li>\n<li>\n<p>Strong structured problem-solving, operational planning, and analytical capabilities.</p>\n</li>\n<li>\n<p>Exceptional written and verbal communication skills with the ability to summarize findings for executive leadership.</p>\n</li>\n<li>\n<p>Comfort working in a fast-paced, high-growth, and collaborative environment.</p>\n</li>\n\n</ul></ul><h3>Bonus Qualifications</h3><ul>\n<ul>\n<li>\n<p>Prior professional experience in the transportation, mobility, logistics, or automotive sectors.</p>\n</li>\n<li>\n<p>Experience building complex financial, cost, or capacity models.</p>\n</li>\n<li>\n<p>Background in operational strategy, program management, or supply chain infrastructure.</p>\n</li>\n\n</ul></ul><strong>Compensation</strong>\nThe monthly salary range for this position is $5,500 to $9,500. Compensation will vary based on geographic location and level of education. Additional benefits may include medical insurance and a housing stipend (relocation assistance offered based on eligibility).<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "descriptionHtml": "<strong>About Our Internship Program</strong>\nZoox's internship program offers hands-on experience with cutting-edge technology, mentorship from some of the industry's brightest minds, and the opportunity to make meaningful contributions to real projects. We seek interns who demonstrate strong academic performance, engagement beyond the classroom, intellectual curiosity, and a genuine interest in Zoox's mission.\n \n<strong>Job Description</strong>\nAs an intern in the Infrastructure Operations team within Fleet Operations, you will support the critical infrastructure that keeps Zoox’s autonomous robotaxi fleet charged, serviced, and operating seamlessly. You will bridge operations, facilities, and engineering to tackle complex infrastructure readiness challenges across multiple depot sites and multi-generation vehicle platforms.\n \n<h3>In this Role, You Will…</h3><ul><p>• Optimize Parking Capacity: Develop and prototype approaches to expand fleet parking capacity, including identifying external locations with available space and working with internal teams on access and security requirements..<br />• Assess Site Readiness: Map infrastructure requirements for multiple vehicle types against current site capacity, and produce a site-by-site gap analysis..<br />• Plan for Contingencies: Design infrastructure plans for severe weather and other large-scale fleet recall scenarios, and prototype tools to track capacity in real time..<br />• Future-Proof Our Sites: Evaluate emerging technologies and standards for site infrastructure, and contribute to a long-term site build roadmap..</p></ul><h3>Internship Requirements</h3><ul>\n<ul>\n<li>\n<p>Currently working towards an MBA, Master’s in Industrial Engineering, Operations Research, Engineering Management, or related field.</p>\n</li>\n<li>\n<p>Good academic standing and enrolled at an accredited college or university throughout the internship.</p>\n</li>\n<li>\n<p>Expected graduation date between Fall 2027 and Summer 2028.</p>\n</li>\n<li>\n<p>Able to commit to a full-time, 12-week internship.</p>\n</li>\n<li>\n<p>Ability to relocate to the San Francisco Bay Area, California, for the duration of the internship.</p>\n</li>\n<li>\n<p>Interns at Zoox may not use proprietary information for thesis or publication outside of Zoox.</p>\n</li>\n\n</ul></ul><h3>Technical Qualifications </h3><ul>\n<ul>\n<li>\n<p>Proven track record of managing complex projects with diverse cross-functional stakeholders.</p>\n</li>\n<li>\n<p>Advanced proficiency in data organization, manipulation, and modeling in Microsoft Excel or Google Sheets.</p>\n</li>\n<li>\n<p>Strong structured problem-solving, operational planning, and analytical capabilities.</p>\n</li>\n<li>\n<p>Exceptional written and verbal communication skills with the ability to summarize findings for executive leadership.</p>\n</li>\n<li>\n<p>Comfort working in a fast-paced, high-growth, and collaborative environment.</p>\n</li>\n\n</ul></ul><h3>Bonus Qualifications</h3><ul>\n<ul>\n<li>\n<p>Prior professional experience in the transportation, mobility, logistics, or automotive sectors.</p>\n</li>\n<li>\n<p>Experience building complex financial, cost, or capacity models.</p>\n</li>\n<li>\n<p>Background in operational strategy, program management, or supply chain infrastructure.</p>\n</li>\n\n</ul></ul><strong>Compensation</strong>\nThe monthly salary range for this position is $5,500 to $9,500. Compensation will vary based on geographic location and level of education. Additional benefits may include medical insurance and a housing stipend (relocation assistance offered based on eligibility).<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
     "applyUrl": "https://jobs.lever.co/zoox/affbfa7d-30c5-4639-aa56-2ba138200bd8",
     "postedAt": "2026-11-06T23:11:55.589Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
@@ -3311,6 +3380,24 @@
     "applyUrl": "https://jobs.lever.co/zoox/bea6c1d0-09dc-47db-9fff-ed2f33151763",
     "postedAt": "2026-08-31T20:13:10.748Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "source": "lever"
+  },
+  {
+    "id": "lever:beeb6f55-0d41-4481-a5d8-18b1f9b6657b",
+    "slug": "zoox-senior-staff-software-engineer-core-connectivity-beeb6f55-0d41-4481-a5d8-18b1f9b6657b",
+    "company": "zoox",
+    "title": "Senior/Staff Software Engineer, Core Connectivity",
+    "locations": [
+      "Foster City, CA",
+      "Seattle, WA"
+    ],
+    "remote": false,
+    "department": "Software Systems",
+    "category": "engineering",
+    "descriptionHtml": "<p>Zoox is building the world's most advanced self-driving hardware and software solution. Inside the vehicle, dozens of processes across several compute hosts exchange sensor data, perception output, planner decisions, and control commands many times a second. Every millisecond spent moving that data is a millisecond the vehicle doesn't have to react, so the transport has to be fast and predictable, and keep working when a process restarts or a host comes up late.</p>\n<p>The Core Connectivity team owns how that data moves, and how fast: shared-memory IPC between processes, transport between hosts, serialization, the RPC and messaging patterns application teams build on, and time synchronization across hosts. Nearly every software team at Zoox builds on this layer, so you'll work closely with the teams that use it, and your work shows up directly in how the vehicle drives.</p><h3>In this role, you will:</h3><ul>\n\n<li>\n<p>Design and build low-latency inter-process and inter-host transport in C++: zero-copy data paths, shared-memory buffers, and lock-free queues. Measure and drive down end-to-end latency and jitter as message volume grows.</p>\n</li>\n<li>\n<p>Make the transport hold up when processes crash or restart, hosts start out of order, and networks drop or delay packets. Chase fleet and simulation issues to root cause and fix them in the design.</p>\n</li>\n<li>\n<p>Build the pub/sub and RPC messaging APIs application teams build on, so they get the delivery, ordering, and latency guarantees they need without having to understand the transport underneath.</p>\n</li>\n<li>\n<p>Evolve message schemas and the Protocol Buffers based serialization layer: schema evolution, compact encodings, and moving existing users onto new formats without breaking anyone.</p>\n</li>\n<li>\n<p>Set technical direction for a part of the stack and lead designs that span several teams.</p>\n</li>\n\n</ul><h3>Qualifications</h3><ul>\n<li>\n<p>Bachelor's or Master's degree in computer science, electrical / computer engineering, or equivalent experience, and 7+ years of experience in software development.</p>\n</li>\n<li>\n<p>Strong modern C++ on Linux, in large codebases with performance-critical paths.</p>\n</li>\n<li>\n<p>A background in transport or networking software, such as messaging systems, network protocols, or communication between distributed systems.</p>\n</li>\n<li>\n<p>Experience building low-latency systems, and a track record of measuring and reducing tail latency, using techniques such as zero-copy, shared memory, lock-free data structures, and cache-aware data layout.</p>\n</li>\n<li>\n<p>Solid systems fundamentals: concurrency, memory management, process lifecycle, sockets and the Linux networking stack.</p>\n</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Hands-on experience with shared-memory IPC, pub/sub or RPC middleware such as DDS, ROS 2, or iceoryx, or serialization frameworks such as Protocol Buffers, nanopb, or FlatBuffers.</p>\n</li>\n<li>\n<p>Experience with PTP (IEEE 1588) or other time synchronization across machines, or with UDP multicast, MTU and fragmentation behavior, or time-sensitive networking.</p>\n</li>\n<li>\n<p>Robotics, automotive, aerospace, or another real-time or safety-relevant domain.</p>\n</li>\n</ul><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/beeb6f55-0d41-4481-a5d8-18b1f9b6657b",
+    "postedAt": "2026-11-09T21:58:53.139Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "lever"
   },
   {
@@ -3550,6 +3637,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/cfb9dff3-844f-443e-9be8-46133eb9e656",
     "postedAt": "2026-09-10T16:59:12.595Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3673,6 +3762,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/d856c631-446c-452f-81f5-0359b50403c9",
     "postedAt": "2026-03-27T03:12:46.946Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3848,20 +3939,22 @@
     "applyUrl": "https://jobs.lever.co/zoox/e725749e-88f7-48e0-8e4c-8a4a3289b905",
     "postedAt": "2026-05-12T00:51:40.926Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
     "id": "lever:ea3fbfaf-588b-434a-9a5a-c61edc731a40",
     "slug": "zoox-embedded-software-engineer-drive-systems-ea3fbfaf-588b-434a-9a5a-c61edc731a40",
     "company": "zoox",
-    "title": "Embedded Software Engineer - Drive Systems",
+    "title": "Embedded Software Engineer",
     "locations": [
       "Foster City, CA"
     ],
     "remote": false,
     "department": "Software Platforms and Product",
     "category": "engineering",
-    "descriptionHtml": "<p>Zoox is looking for an embedded software engineer to join our Firmware Drive Systems team. Drive Systems owns the critical path from autonomous trajectory to vehicle motion — taking a trajectory from our AI stack and translating it into drive control actuator commands (motor torques, brake torques, steering angles, and more), arbitrating between control sources (our nominal AI stack, in-house remote controller, and test sources like drive-by-wire and trajectory spoofing), and continuously monitoring the safety of trajectory execution and drive control ECUs. We are looking for people who are passionate about working with hardware and developing production-quality, safety-critical code for complex dynamic systems.</p>\n<p>Drive Systems engineers literally make the robot move. Whether a Zoox robot is in service carrying riders, staging at a depot, undergoing critical testing on test tracks, or freshly off the assembly line, this team ensures it drives safely and reliably.</p>\n<h3>In this role, you will: </h3><ul>\n<ul>\n<li>\n<p>Build and contribute to simulation, emulation, SIL, and HIL infrastructure to validate drive control software</p>\n</li>\n<li>\n<p>Design, develop, and test embedded software for autonomous trajectory execution, translating planned trajectories into drive control actuator commands (motor torque, brake torque, steering angle, and more)</p>\n</li>\n<li>\n<p>Contribute to control source arbitration and safety monitoring across trajectory execution and drive control ECUs</p>\n</li>\n<li>\n<p>Integrate supplier sub-systems (steering, motoring, braking, active suspension, and more) into the Zoox software stack</p>\n</li>\n<li>\n<p>Work cross-functionally with Motion &amp; Controls, Vehicle Dynamics, Safety Systems, Validation, and other partner teams to deliver a seamless, highly-automated driving experience</p>\n</li>\n\n</ul></ul><h3>Qualifications</h3><ul>\n<ul>\n<li>\n<p>Bachelor's or Master's degree in Electrical/Computer Engineering, Robotics, or equivalent experience</p>\n</li>\n<li>\n<p>1-3 years of experience developing real-time embedded software for distributed electro-mechanical systems and the simulation and test infrastructure for such systems</p>\n</li>\n<li>\n<p>Strong embedded C/C++ programming experience and experience with Python for test</p>\n</li>\n<li>\n<p>Experience with QNX, SafeRTOS, FreeRTOS, or similar embedded operating systems</p>\n</li>\n<li>\n<p>Understanding of automotive communication protocols (CAN, LIN) and sensor/actuator integration</p>\n</li>\n\n</ul></ul><h3>Bonus Qualifications</h3><ul>\n<ul>\n<li>\n<p>Experience with CAN/LIN analysis and debugging tools (PCAN, CANalyzer, CANape, etc.)</p>\n</li>\n<li>\n<p>Familiarity with high-assurance development practices and tools (Polarion, ISO-26262, MISRA C/C++, etc.)</p>\n</li>\n<li>\n<p>Hands-on experience with hardware bring-up, system debugging, or SIL/HIL test infrastructure</p>\n</li>\n\n</ul></ul>\n<strong>Compensation</strong>\nThere are three major components to compensation for this position: salary, Amazon Restricted Stock Units (RSUs), and Zoox Stock Appreciation Rights. A sign-on bonus may be offered as part of the compensation package. Compensation will vary based on geographic location and level. Leveling, as well as positioning within a level, is determined by a range of factors, including, but not limited to, a candidate's relevant years of experience, domain knowledge, and interview performance. The salary range listed in this posting is representative of the range of levels Zoox is considering for this position.\n \nZoox also offers a comprehensive package of benefits including paid time off (e.g. sick leave, vacation, bereavement), unpaid time off, Zoox Stock Appreciation Rights, Amazon RSUs, health insurance, long-term care insurance, long-term and short-term disability insurance, and life insurance.",
+    "descriptionHtml": "<p>Zoox is looking for an embedded software engineer to build out simulation infrastructure for our firmware. Our firmware runs on many ECUs across the robot, including the components that drive, brake, steer, and monitor the vehicle's health. Today, most of that firmware depends on hardware-in-the-loop (HIL) benches, which are expensive, hard to scale, and slow to iterate on. You will build the simulation capabilities that let firmware run in virtualized, software-in-the-loop (SIL), and hybrid SIL/HIL environments, integrated with Zoox's core simulation platform and the pipelines the rest of the autonomy stack already uses.</p>\n<p>You'll be one of the first engineers on a new embedded-focused simulation team within the Firmware organization: simulation infrastructure engineering, built by and for firmware. The work you do here will lay the groundwork for Firmware's adoption of Zoox's simulation and more advanced test platform infrastructure. It spans much of the embedded stack, from low-level BSPs, through middleware such as messaging, HALs, and OSALs, up to the application layer. You'll need to understand what embedded software optimizes for (determinism, timing, resource limits, hardware interfaces) and turn that into simulation infrastructure that firmware teams trust and adopt.<br /><br /></p><h3>In this role, you will: </h3><ul>\n\n<li>\n<p>Build out simulation infrastructure for Zoox's embedded platforms, filling the gaps in Zoox's simulation stack that keep firmware from adopting it</p>\n</li>\n<li>\n<p>Virtualize embedded platforms across the stack, from BSPs and HAL/OSAL layers to messaging middleware and peripherals, so firmware can run without target hardware</p>\n</li>\n<li>\n<p>Develop and extend SIL environments that integrate firmware with Zoox's core simulation platform and pipelines</p>\n</li>\n<li>\n<p>Support and evolve hybrid SIL/HIL test platforms that combine real hardware with simulated components</p>\n</li>\n<li>\n<p>Partner with Zoox's simulation, HIL, and firmware feature teams to adapt existing firmware for simulation and reduce the Firmware org's reliance on HIL</p>\n</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>\n<p>Bachelor's or Master's degree in Electrical/Computer Engineering, Computer Science, Robotics, or equivalent experience</p>\n</li>\n<li>\n<p>1–3 years of experience developing simulation infrastructure or embedded software for real-time systems</p>\n</li>\n<li>\n<p>Strong C/C++ and Python programming skills</p>\n</li>\n<li>\n<p>Understanding of embedded fundamentals: RTOS concepts, interrupts and timing, memory-constrained systems, and hardware/peripheral interfaces</p>\n</li>\n<li>\n<p>Experience building simulation, emulation, or virtualization environments for embedded systems (e.g., SIL, QEMU, Renode, hardware/peripheral models)</p>\n</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n\n<li>\n<p>Experience with QNX, SafeRTOS, FreeRTOS, or similar embedded operating systems</p>\n</li>\n<li>\n<p>Familiarity with automotive communication protocols (CAN, LIN, Ethernet) and how to model or bridge them in simulation</p>\n</li>\n<li>\n<p>Hands-on experience with HIL systems or hybrid SIL/HIL test setups</p>\n</li>\n\n</ul>\n<strong>Compensation</strong>\nThere are three major components to compensation for this position: salary, Amazon Restricted Stock Units (RSUs), and Zoox Stock Appreciation Rights. A sign-on bonus may be offered as part of the compensation package. Compensation will vary based on geographic location and level. Leveling, as well as positioning within a level, is determined by a range of factors, including, but not limited to, a candidate's relevant years of experience, domain knowledge, and interview performance. The salary range listed in this posting is representative of the range of levels Zoox is considering for this position.\n \nZoox also offers a comprehensive package of benefits including paid time off (e.g. sick leave, vacation, bereavement), unpaid time off, Zoox Stock Appreciation Rights, Amazon RSUs, health insurance, long-term care insurance, long-term and short-term disability insurance, and life insurance.",
     "applyUrl": "https://jobs.lever.co/zoox/ea3fbfaf-588b-434a-9a5a-c61edc731a40",
     "postedAt": "2026-08-31T20:41:39.879Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
@@ -3878,7 +3971,7 @@
     "remote": false,
     "department": "Finance",
     "category": "data",
-    "descriptionHtml": "<p>The FP&amp;A team at Zoox drives financial analysis of key strategic investments, maintains short and long term financial models, and develops reporting for both internal and external stakeholders.</p>\n\n<p>As a Senior Financial Analyst supporting Marketing and Commercial, you will partner with key stakeholders across Marketing, Commercial Market Management, Product, Data Science, and Accounting. Together you will manage planning, forecasting, and performance reporting for Zoox’s marketing and customer promotions investments. You will own the financial models that connect campaigns, discounts, and rider incentives to rider growth, gross bookings, and profitability as Zoox launches its Robotaxi service in new markets.</p>\n\n<p>This will require a deep understanding of Zoox’s rider funnel and ridehail economics. It will also require strong working relationships with leaders and individual contributors across multiple departments, and the use of enterprise systems and tools to build robust financial models and dashboards. The goal for this role is to ensure every marketing and promotional dollar is invested with discipline, through timely and actionable financial insights.</p>\n<h3>In this role you will:</h3><ul>\n<ul>\n<li>\n<p>Own and maintain long-range, annual, and monthly forecasts for marketing and customer promotions spend, and manage close activities for your business partners, including accruals and variance analysis.</p>\n</li>\n<li>\n<p>Partner with Marketing teams to develop driver-based models and ROI frameworks that measure the return on marketing and promotions across rider acquisition, activation, engagement, and retention (e.g., CAC, LTV, payback, incrementality).</p>\n</li>\n<li>\n<p>Partner with Central Market Management and Data Science to size, monitor, and read out pricing and promotional experiments, and translate the results into gross bookings, contribution margin, and P&amp;L impact.</p>\n</li>\n<li>\n<p>Integrate rider funnel and promotion drivers into Zoox’s revenue and city-level models to inform market launch plans and spend allocation across geographies and channels.</p>\n</li>\n<li>\n<p>Analyze large datasets from Anaplan, SAP S4, Databricks, and other internal systems to build recurring reporting and dashboards that give Finance and Commercial leadership decision-ready insights.</p>\n</li>\n\n</ul></ul><h3>Qualifications</h3><ul>\n<li>\n<p>BA/BS degree, preferably in Finance, Economics, Accounting, Data Science, or a quantitative field</p>\n</li>\n<li>\n<p>6+ years experience in FP&amp;A, marketing finance, commercial or strategic finance, or a similarly analytical role such as consulting</p>\n</li>\n<li>\n<p>2+ years of direct experience building driver-based models, ROI or unit-economics analyses (e.g., CAC, LTV, promo efficiency), and dashboards</p>\n</li>\n<li>\n<p>Proficiency in SQL and advanced Excel/Sheets, plus experience with planning and reporting tools (Anaplan, Looker, Tableau, etc.)</p>\n</li>\n<li>\n<p>Experience partnering with non-finance teams such as Marketing, Growth, or Product and presenting recommendations to senior leadership</p>\n</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<ul>\n<li>\n<p>Experience supporting marketing, promotions, or rider incentives in the TNC, transportation, marketplace, or other mobility industries</p>\n</li>\n<li>\n<p>Familiarity with marketing measurement methods such as A/B testing, incrementality testing, or marketing mix modeling</p>\n</li>\n<li>\n<p>Experience with data visualization tools (eg. Looker, Tableau) and/or advanced analytics tooling (eg. Python, R, Databricks).</p>\n</li>\n\n</ul></ul>",
+    "descriptionHtml": "<p>The FP&amp;A team at Zoox drives financial analysis of key strategic investments, maintains short and long term financial models, and develops reporting for both internal and external stakeholders.</p>\n<p>As a Financial Analyst supporting Marketing and Commercial, you will partner with key stakeholders across Marketing, Commercial Market Management, Product, Data Science, and Accounting. Together you will manage planning, forecasting, and performance reporting for Zoox’s marketing and customer promotions investments. You will own the financial models that connect campaigns, discounts, and rider incentives to rider growth, gross bookings, and profitability as Zoox launches its Robotaxi service in new markets.</p>\n<p>This will require a deep understanding of Zoox’s rider funnel and ridehail economics. It will also require strong working relationships with leaders and individual contributors across multiple departments, and the use of enterprise systems and tools to build robust financial models and dashboards. The goal for this role is to ensure every marketing and promotional dollar is invested with discipline, through timely and actionable financial insights.</p>\n<h3>In this role you will:</h3><ul>\n\n<li>Own and maintain long-range, annual, and monthly forecasts for marketing and customer promotions spend, and manage close activities for your business partners, including accruals and variance analysis.</li>\n<li>Partner with Marketing teams to develop driver-based models and ROI frameworks that measure the return on marketing and promotions across rider acquisition, activation, engagement, and retention (e.g., CAC, LTV, payback, incrementality).</li>\n<li>Partner with Central Market Management and Data Science to size, monitor, and read out pricing and promotional experiments, and translate the results into gross bookings, contribution margin, and P&amp;L impact.</li>\n<li>Integrate rider funnel and promotion drivers into Zoox’s revenue and city-level models to inform market launch plans and spend allocation across geographies and channels.</li>\n<li>Analyze large datasets from Anaplan, SAP S4, Databricks, and other internal systems to build recurring reporting and dashboards that give Finance and Commercial leadership decision-ready insights.</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>BA/BS degree, preferably in Finance, Economics, Accounting, Data Science, or a quantitative field</li>\n<li>6+ years experience in FP&amp;A, marketing finance, commercial or strategic finance, or a similarly analytical role such as consulting</li>\n<li>2+ years of direct experience building driver-based models, ROI or unit-economics analyses (e.g., CAC, LTV, promo efficiency), and dashboards</li>\n<li>Proficiency in SQL and advanced Excel/Sheets, plus experience with planning and reporting tools (Anaplan, Looker, Tableau, etc.)</li>\n<li>Experience partnering with non-finance teams such as Marketing, Growth, or Product and presenting recommendations to senior leadership</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n\n<li>Experience supporting marketing, promotions, or rider incentives in the TNC, transportation, marketplace, or other mobility industries</li>\n<li>Familiarity with marketing measurement methods such as A/B testing, incrementality testing, or marketing mix modeling</li>\n<li>Experience with data visualization tools (eg. Looker, Tableau) and/or advanced analytics tooling (eg. Python, R, Databricks).</li>\n\n</ul>",
     "applyUrl": "https://jobs.lever.co/zoox/eacbb34f-e823-4827-90bf-bc8044b660b1",
     "postedAt": "2026-11-04T22:36:45.129Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",

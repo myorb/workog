@@ -768,8 +768,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1206391904-S",
     "postedAt": "2026-05-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -870,8 +868,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1206686671-S",
     "postedAt": "2026-06-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1251,6 +1247,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1207670688-S",
     "postedAt": "2026-08-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1453,6 +1451,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208182074-S",
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1796,6 +1796,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10000-1208596615-S",
+    "slug": "drs-dieter-erath-lutz-lochmann-facharztpraxis-fach-arztliches-personal-m-w-d-10000-1208596615-s",
+    "company": "arbeitsagentur",
+    "employer": "Drs. Dieter Erath + Lutz Lochmann Facharztpraxis",
+    "title": "(Fach)Ärztliches Personal (m/w/d)",
+    "locations": [
+      "Rottweil, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>**Ärztliches Personal (m/w/d) gesucht – komm in unser Praxisteam!**</p><p>Wir sind eine moderne Arztpraxis mit den Schwerpunkten **Gastroenterologie, Diabetologie und hausärztliche Versorgung** und suchen ab sofort **(Fach)Ärztliches Personal (m/w/d)** in Voll- oder Teilzeit. Gerne auch mit Erfahrung in der Endoskopie.</p><p>Bei uns erwartet dich ein abwechslungsreicher Praxisalltag, ein wertschätzendes Miteinander und ein Team, das zusammenhält. Wir legen großen Wert auf eine freundliche Atmosphäre – für unsere Patientinnen und Patienten sowie im Team.</p><p>**Das bringst du mit:**</p><ul><li>Abgeschlossenes Studium</li><li>Freude am Umgang mit Menschen</li><li>eine selbstständige, strukturierte Arbeitsweise</li><li>Teamgeist, Zuverlässigkeit und Organisationstalent</li></ul><p>**Das erwartet dich:**</p><ul><li>Abwechslungsreiche Tätigkeiten in einem breit aufgestellten Fachbereich</li><li>Moderne Praxisräume und strukturierte Abläufe</li><li>Geregelte Arbeitszeiten</li><li>Angenehmes Arbeitsklima und gute Einarbeitung</li></ul><p>Wir freuen uns auf deine Bewerbung an [**info@internistenpraxis-rottweil.de**](mailto:info@internistenpraxis-rottweil.de)</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208596615-S",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:10001-1000014017-S",
     "slug": "medizinisches-versorgungszentrum-mittweida-g-facharzt-arztin-psychiatrie-und-psychotherapie-m-w-d-10001-1000014017-s",
     "company": "arbeitsagentur",
@@ -2070,6 +2090,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1001363532-S",
     "postedAt": "2025-04-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -2657,6 +2679,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002698303-S",
     "postedAt": "2026-03-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3036,7 +3060,7 @@
     "postedAt": "2026-05-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4895,6 +4919,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003840587-S",
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5352,6 +5378,24 @@
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-05T05:03:16.544Z",
     "closedAt": "2026-11-06T05:03:01.973Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11858-SDE-132445-STA-S",
+    "slug": "hochtaunuskreis-der-kreisausschuss-der-landrat-arzt-m-w-d-im-bereich-kinder-und-jugendgesundheitsdienst-11858-sde-132445-sta-s",
+    "company": "arbeitsagentur",
+    "employer": "Hochtaunuskreis Der Kreisausschuss Der Landrat",
+    "title": "Arzt (m/w/d) im Bereich Kinder- und Jugendgesundheitsdienst",
+    "locations": [
+      "Bad Homburg vor der Höhe, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Der Kreisausschuss des Hochtaunuskreises sucht zum nächstmöglichen Zeitpunkt einen</p><p>Arzt (m/w/d) im Bereich Kinder- und Jugendgesundheitsdienst</p><p>im Fachbereich 60.50 – Gesundheitsdienste, Veterinärwesen und Verbraucherschutz.</p><p>Die Vergütung erfolgt nach Entgeltgruppe 14 TVöD, bei Fachärzten mit entsprechender Tätigkeit nach Entgeltgruppe 15 TVöD. Menschen mit einer Schwerbehinderung werden bei gleicher Eignung bevorzugt berücksichtigt.</p><p>Ihre Aufgaben</p><ul><li>Durchführung von Schuleingangsuntersuchungen und schulärztlichen Untersuchungen im Gesundheitsamt sowie an Schulen des Hochtaunuskreises</li><li>Schulärztliche Begutachtung im Rahmen der Inklusion und sonderpädagogischen Förderung</li><li>Ärztliche Betreuung von Kindergemeinschaftseinrichtungen sowie Aufgaben nach dem Infektionsschutzgesetz (IfSG)</li><li>Medizinische Beratung und Begutachtung im Bereich der Eingliederungshilfe</li><li>Mitwirkung an der Öffentlichkeitsarbeit des Kinder- und Jugendärztlichen Dienstes</li><li>Durchführung von Impfberatungen und Schutzimpfungen</li><li>Teilnahme an der ärztlichen Rufbereitschaft</li></ul><p>Ihr Profil – das bringen Sie mit</p><ul><li>Abgeschlossenes Medizinstudium und gültige ärztliche Approbation in Deutschland</li><li>Berufserfahrung in der Kinder- und Jugendmedizin (Pädiatrie) oder eine abgeschlossene Facharztweiterbildung für Kinder- und Jugendmedizin ist wünschenswert</li><li>Selbstständige, strukturierte und verantwortungsbewusste Arbeitsweise</li><li>Kommunikationsstärke, Einfühlungsvermögen und Freude am Umgang mit Kindern, Jugendlichen und Eltern</li><li>Teamfähigkeit, sicheres Auftreten und Konfliktfähigkeit</li><li>Bereitschaft zur fachlichen Fortbildung</li><li>Führerschein Klasse B und Bereitschaft, den privaten Pkw dienstlich einzusetzen</li></ul><p>Wir bieten Ihnen<br />* Unbefristete Anstellung im öffentlichen Dienst<br />* Abwechslungsreiche ärztliche Tätigkeit im Kinder- und Jugendgesundheitsdienst<br />* Strukturierte Einarbeitung in einem aufgeschlossenen Team<br />* Umfangreiche Fortbildungs- und Entwicklungsmöglichkeiten<br />* Flexible, familienfreundliche Arbeitszeiten<br />* 30 Urlaubstage bei einer 5-Tage -Woche<br />* Hauseigene Kinderbetreuung für Kinder unter 3 Jahren bis zum Schuleintritt<br />* Jahressonderzahlung und regelmäßiges Leistungsentgelt<br />* Betriebliche Altersvorsorge und vermögenswirksame Leistungen<br />* Kostenfreies Jobticket im gesamten Rhein-Main-Verkehrsverbund (RMV)<br />* Betriebssport und Mitarbeitervorteile bei namhaften Anbietern<br />* Dienstradleasing</p><p>Wir freuen uns auf Ihre Bewerbung!</p><p>Sie suchen eine verantwortungsvolle ärztliche Tätigkeit im öffentlichen Gesundheitsdienst und möchten die Gesundheit von Kindern und Jugendlichen aktiv fördern? Dann freuen wir uns auf Ihre Bewerbung!</p><p>Ihre aussagefähige Bewerbung reichen Sie bitte bevorzugt in elektronischer Form unter https://www.hochtaunuskreis.de/Verwaltung/Jobs-Karriere/Stellenmarkt/ ein oder alternativ in schriftlicher Form an:</p><p>Kreisausschuss des Hochtaunuskreises<br />-Personalservice-<br />Ludwig-Erhard-Anlage 1-5<br />61352 Bad Homburg v . d . Höhe</p><p>Fachliche Fragen:</p><p>Frau Dr. Friebertshäuser, Fachbereichsleitung, Telefon 06172 999 6500<br />Herr Dr. Sapoutzis, stellvertretende Fachbereichsleitung, Telefon 06172 999 5820</p><p>Fragen zum Bewerbungsverfahren:</p><p>Frau Mehnert, Telefon 06172 999 1112</p><p>www.hochtaunuskreis.de</p><p>Online-Bewerbung</p>",
+    "applyUrl": "https://www.stellenanzeigen.de/job/detail/SDE-132445/?utm_source=bundesagentur&utm_medium=unpaid-partner&utm_campaign=000",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6704,7 +6748,7 @@
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8036,7 +8080,7 @@
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9178,7 +9222,13 @@
     "company": "arbeitsagentur",
     "employer": "Bundesamt für das Personalmanagement der Bundeswehr",
     "title": "Weiterbildungsassistent/-in in der Chirurgie als Sanitätsoffizierin /-offizier (m/w/d)",
-    "locations": [],
+    "locations": [
+      "Westerstede, Niedersachsen, Germany",
+      "Berlin, Berlin, Germany",
+      "Ulm, Donau, Baden-Württemberg, Germany",
+      "Hamburg, Hamburg, Germany",
+      "Koblenz am Rhein, Rheinland-Pfalz, Germany"
+    ],
     "remote": false,
     "department": "Arzt/Ärztin",
     "category": "medicine",
@@ -9186,7 +9236,7 @@
     "level": "resident",
     "descriptionHtml": "<p>Unternehmen:</p><p>Bundeswehr - Mach, was wirklich zählt.</p><p>Die Einstellung erfolgt ganzjährig und bedarfsorientiert zu Monatsbeginn.<br />Beschäftigungsorte: Berlin, Hamburg, Koblenz, Ulm, Westerstede</p><p>Stellenbeschreibung:</p><p>* Starte deine medizinische Karriere unter außergewöhnlichen Bedingungen # als Arzt bei der Bundeswehr. Hier behandelst du nicht nur Patienten, sondern wirst Teil eines Teams, das Kameradschaft, Verantwortung und medizinische Exzellenz lebt.<br />* Profitiere von einer strukturierten Weiterbildung, modernster Ausstattung und der Möglichkeit vielfältige medizinische Fachbereiche kennen zu lernen.<br />* Erlebe, wie Medizin und Sinnstiftung zusammenfinden: Deine Arbeit dient nicht nur dem Einzelnen, sondern der Sicherheit und Gesundheit einer ganzen Gemeinschaft.<br />* Werde Teil des Teams:<br />https://youtu.be/sdUxFoEMRwc?si=-10Bjb3oFqmJF3kn</p><p>VIELE VORTEILE</p><p>Geld &amp; Finanzen</p><p>* Ein attraktives Einstiegsgehalt zwischen 4.400 und 4.890 Euro (netto, nach Abzügen)<br />* Familien-/Kinderzuschläge sowie Zuschläge bei Auslandseinsätzen<br />* Kostenloses Bahnfahren in Uniform für private Fahrten<br />Work-Life-Balance</p><p>* Gesicherter und familienfreundlicher Arbeitgeber<br />* 30 Tage Urlaub im Jahr<br />* Teilzeit grundsätzlich möglich<br />Lernen &amp; Aufsteigen</p><p>* Einstellung als Soldatin bzw. Soldat auf Zeit (SaZ). Weiterverpflichtung oder Übernahme in den Status Berufssoldat (BS) im Verlauf möglich<br />* Gezielte Personalentwicklung und ein umfangreiches Aus- und Fortbildungsbildungsangebot.<br />* Vielfältige Verwendungsmöglichkeiten und attraktive Karriereentwicklung.<br />Sport &amp; Gesundheit</p><ul><li>Unentgeltliche truppenärztliche Versorgung (keine Kosten für Krankenversicherung) und Nachversicherung in der Rentenversicherung/ im Versorgungswerk durch die Bundeswehr bei Dienstzeitende.</li><li>Ein umfangreiches Angebot des betrieblichen Gesundheitsmanagements und Dienstsport.</li></ul><p>Qualifikationserfordernisse:</p><ul><li>Deutsche Approbation bzw. in Deutschland als gleichwertig anerkannter Abschluss gem. BÄO i.V.m. ÄApprO.</li><li>Deutsche Staatsbürgerschaft.</li><li>Für Menschenwürde, Demokratie und Rechtsstaatlichkeit eintreten</li><li>Teilnahme an einer Eignungsfeststellung und einer Sicherheitsüberprüfung</li><li>Grundsätzliche Bereitschaft, an künftigen Auslandeinsätzen der Bundeswehr mit entsprechendem Mandat teilzunehmen</li><li>Eintragsfreie Auskunft aus dem Bundeszentralregister</li></ul><p>sonstige Informationen:</p><p>Wir suchen Verstärkung unabhängig von Religion, Geschlecht, sexueller Orientierung und Herkunft. Für die gezielte Gleichstellung begrüßen wir Bewerbungen von Frauen besonders.</p><p>Für ungediente Bewerberinnen und Bewerber:<br />Allgemeine streitkräftegemeinsame soldatische Ausbildung Modul 1 und Modul 2 an der Sanitätsakademie der Bundeswehr.</p><p>Ergänzende Informationen:</p><p>Fragen zur Bewerbung:<br />+ 49 2203 105 2654 Frau Stabsbootsmann Wenzel<br />+ 49 2203 105 2577 Frau Regierungsobersekretärin van Duiven<br />E-Mail: AC-Bewerbung-ResOffzSE@bundeswehr.org</p><p>Fragen zur Tätigkeit:<br />+49 (0) 2203 105 1405, Personalreferent Seiteneinstieg für Approbation Humanmedizin<br />E-Mail: BAPersBwIII4Seiteneinsteiger@bundeswehr.org</p><p>Fragen zum Bewerbungsportal:<br />E-Mail: e-recruiting@bundeswehr.org</p><p>Klicken Sie auf \"Karriere starten\" &amp; Profil erstellen und laden Sie Ihre Bewerbungsunterlagen als gedruckte PDF (PDF-Druckversion) hoch.</p><p>Ihre Bewerbung umfasst:</p><p>* Anschreiben<br />* Lebenslauf (tabellarisch)<br />* Bewerbungsbogen Bundeswehr (diesen finden Sie bei den ANLAGEN zur Ausschreibung)<br />* Alle Qualifikationsnachweise gemäß dieser Ausschreibung<br />* Arbeits- und Dienstzeugnisse<br />* Kopie Personalausweis (nicht beglaubigt)<br />Bei fremdsprachigen Bewerbungsunterlagen muss eine beglaubigte deutsche Übersetzung beigefügt werden.<br />Bei ausländischen Bildungsabschlüssen ist ein Nachweis der Anerkennung in Deutschland beizufügen.<br />Die hierzu entstehenden Kosten werden durch den Bund nicht getragen.</p>",
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13270-P00525056-1-S",
-    "postedAt": "2026-01-16T00:00:00.000Z",
+    "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "source": "arbeitsagentur"
   },
@@ -9233,7 +9283,7 @@
     "postedAt": "2026-04-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9842,6 +9892,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14177-44456899-921-S",
     "postedAt": "2026-09-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9862,6 +9914,46 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14177-44532417-1026-S",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14225-5e81bd2f76fd9cf4-S",
+    "slug": "meliva-gmbh-facharzt-fur-allgemeinchirurgie-m-w-d-14225-5e81bd2f76fd9cf4-s",
+    "company": "arbeitsagentur",
+    "employer": "Meliva GmbH",
+    "title": "Facharzt für Allgemeinchirurgie (m/w/d)",
+    "locations": [
+      "Landstuhl, Rheinland-Pfalz, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>Über Meliva GmbH Gesundheit mit Herz: Das ist bei Meliva Deutschland mehr als ein Leitsatz. Es ist die Haltung, mit der wir Patientinnen und Patienten begegnen und miteinander arbeiten. Wir sind das deutsche Tochterunternehmen der Mehiläinen Group, die vor 117 Jahren in Finnland gegründet wurde und heute mit rund 70.000 Mitarbeitenden zu den führenden Gesundheitsunternehmen Nordeuropas zählt. Seit 2021 sind wir mit Meliva in Deutschland am Start. Bei uns trifft die Stabilität eines traditionsreichen Konzerns auf die Kultur eines Teams, in dem jede und jeder auf Augenhöhe zählt. Ob Ärztin, Arzt, MFA, Pflege- oder Fachkraft, ob Praxisteam oder Verwaltung: Bei Meliva arbeitest du ohne starre Hierarchien, mit kurzen Wegen und echter Mitsprache. Deine Erfahrung zählt, nicht dein Titel. Wir wollen, dass du gern zur Arbeit kommst und danach gern nach Hause gehst. Deshalb gestalten wir Dienstpläne und Arbeitszeitmodelle so, dass sie zu deinem Leben passen, nicht umgekehrt. Familie, Kinder, Pflege von Angehörigen oder persönliche Ziele haben bei uns ihren festen Platz. Und wir machen den Alltag leichter: Als digitaler Vorreiter im ambulanten Bereich setzen wir auf moderne Systeme und schlanke Prozesse. Weniger Papierkram, mehr Zeit für Menschen. Du willst Teil davon werden? Dann lerne uns kennen. Wir freuen uns auf dich.<br />Sie betreuen Patient:innen in der Allgemeinchirurgie sowohl konservativ als auch operativ<br />Sie führen diagnostische und therapeutische Maßnahmen nach den neuesten Standards durch<br />Sie arbeiten interdisziplinär mit anderen Fachabteilungen zusammen<br />Sie entwickeln unser therapeutisches Angebot inhaltlich weiter</p><p>Sie sind Facharzt (m/w/d) für Allgemeinchirurgie<br />Sie stellen die Patientenorientierung an erste Stelle<br />Sie verfügen über ausgeprägte Teamfähigkeit und Führungskompetenz<br />Sie denken und handeln unternehmerisch<br />Sie haben Interesse an der kontinuierlichen Weiterentwicklung unserer internen Prozesse</p><p>Attraktive Vergütung: Sie erhalten ein faires Gehalt mit zusätzlichen Leistungen<br />Sichere Arbeitsstelle: Sie profitieren von unbefristeten Arbeitsverträgen<br />Umfassende Vorsorge: Wir bieten Ihnen eine betriebliche Altersversorgung und eine betriebliche Krankenzusatzversicherung<br />Persönliche Weiterentwicklung: Sie haben Zugang zu Fort- und Weiterbildungen sowie Karriere-Entwicklung und Aufstiegsmöglichkeiten<br />Gesundheitsförderung: Sie erhalten eine HANSEFIT-Mitgliedschaft und die Möglichkeit, ein Jobrad zu nutzen<br />Umfangreiches Benefit-Programm: Sie profitieren von zahlreichen Corporate Benefits</p>",
+    "applyUrl": "https://www.jobvector.de/job/facharzt-fuer-allgemeinchirurgie-5e81bd2f76fd9cf4/?utm_source=arbeitsagentur&utm_medium=partner&utm_campaign=tmcfdae_job_jid276751&utm_content=b2c&utm_term=tmf8eca_uic6d28a4a",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14225-52d6572790d51fe8-S",
+    "slug": "medac-gmbh-medical-scientist-m-w-d-14225-52d6572790d51fe8-s",
+    "company": "arbeitsagentur",
+    "employer": "medac GmbH",
+    "title": "Medical Scientist (m/w/d)",
+    "locations": [
+      "Wedel, Schleswig-Holstein, Germany"
+    ],
+    "remote": true,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>About medac</p><p>We are a strong community: with more than 2,000 employees worldwide, we are committed to improving human health. Our work is more than just a job. With a career at medac, you can make a real difference in the industry. Look into this job opportunity and become part of an exceptional workforce.</p><p>At our location in Wedel near Hamburg, we are looking for a Medical Expert - Clinical Science (m/f/d).</p><p>About the role</p><p>Hands-on medical expert responsible for clinical-scientific and regulatory activities across the product lifecycle, with a strong focus on the preparation of high-quality regulatory documentation, scientific data interpretation, support of global submissions and lifecycle management activities. Acts as a cross-functional scientific partner, translating clinical and scientific data into clear medical and regulatory conclusions. Contributes to benefit-risk assessments, evidence-based decision-making and health authority interactions in close collaboration with Clinical Development, Regulatory Affairs and Pharmacovigilance. Supports clinical trials through medical monitoring activities and serves as a medical advisor to clinical development teams. Provides medical-scientific oversight of Managed Access Programs (MAP) and Named Patient Use (NPU) requests, including medical assessment of individual requests and benefit-risk evaluations to support approval decisions. Participates in scientific evaluations and due diligence activities for new product opportunities, including assessment of clinical data, unmet medical need and benefit-risk profiles.</p><p>Author, review and lead high-quality clinical and regulatory documents (CTD), including Clinical Overviews and Clinical Summaries, Clinical Expert Statements, Risk Management Plans (RMPs), SmPCs, CCDS, PILs, PSURs / DSURs and other lifecycle management documents<br />Interpret and integrate clinical and scientific data into robust medical-scientific and regulatory positions<br />Ensure medical and scientific consistency, quality and compliance across submission and lifecycle documentation<br />Support benefit-risk evaluations and medical-scientific assessments across the product portfolio<br />Evaluate Managed Access Program (MAP) and Named Patient Use (NPU) requests and provide evidence-based medical recommendations to support approval decisions<br />Provide medical monitoring support for assigned clinical trials<br />Serve as a medical advisor to clinical development teams and contribute medical expertise to clinical development documents and activities<br />Support clinical development programmes through scientific input into study design, development plans and evidence-generation activities<br />Participate in scientific evaluations and due diligence activities for new product opportunities, including assessment of clinical data, unmet medical need and benefit-risk profiles</p><p>Medical Doctor<br />Several years of experience in clinical development, clinical science, medical affairs, medical monitoring, regulatory affairs or a comparable role within the pharmaceutical industry<br />Strong scientific writing and communication skills, including experience in authoring CTD Module 2.5 and 2.7 documents<br />Know-how in benefit-risk assessments and regulatory interactions<br />Solid understanding of global drug development, clinical research, regulatory requirements and lifecycle management<br />Experience as a medical monitor and/or scientific supporter of clinical trials desirable<br />Practice in the scientific evaluation of licensing opportunities and/or due diligence activities preferred<br />Ability to provide medical guidance and translate complex scientific information into clear and actionable recommendations<br />Proactive, collaborative and hands-on working style with strong cross-functional communication skills<br />Fluent English; German advantageous<br />Our employees are our greatest asset. And to show our appreciation, we offer attractive benefits:</p><p>Your work-life balance is important to us. We offer flexible worki...</p>",
+    "applyUrl": "https://www.jobvector.de/job/medical-scientist-52d6572790d51fe8/?utm_source=arbeitsagentur&utm_medium=partner&utm_campaign=tmcfdae_job_jid276768&utm_content=b2c&utm_term=tmf8eca_uic9dda95e",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9996,6 +10088,25 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14246-k24007.8609-5-S",
     "postedAt": "2026-08-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14271-1651947-1-S",
+    "slug": "johanniter-unfall-hilfe-e-v-landesverband-niedersachsen-bremen-facharzt-m-w-d-fur-die-operative-telemedizin-otm-14271-1651947-1-s",
+    "company": "arbeitsagentur",
+    "employer": "Johanniter-Unfall-Hilfe e.V. Landesverband Niedersachsen/Bremen",
+    "title": "Facharzt (m/w/d) für die operative Telemedizin (OTM)",
+    "locations": [
+      "Lüneburg, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Facharzt (m/w/d) für die operative Telemedizin (OTM)</p><p>Ohne Zweifel verbinden Sie in der Praxis die Menschlichkeit mit der Medizin und agieren täglich mit klarem Verstand und echtem Mitgefühl. Bei uns zählt neben Ihrer Besonnenheit vor allem auch die Empathie. Schließlich sind es genau Ihre Gewissenhaftigkeit und Ihr gewinnendes Wesen, die den Menschen um Sie herum Orientierung und Sicherheit schenken. In einem starken Team geben wir Ihnen den Raum, Ihre Stärken und Ihr Fachwissen voll zu entfalten und zusammen echte Spuren zu hinterlassen.</p><p>Einsatzort: Lüneburg<br />Art der Anstellung: Vollzeit oder Teilzeit<br />Stundenumfang: nach Vereinbarung<br />Befristung: unbefristet<br />Stellen-ID: J000035419</p><p>Das bieten wir Ihnen</p><ul><li>30 Urlaubstage bei einer 5-Tage-Woche</li><li>Fort- und Weiterbildungen</li><li>attraktive Vergütung</li><li>Vermögenswirksame Leistungen</li><li>persönliche Zulage für jedes Kind bei Vorlage der Kindergeldberechtigung</li><li>betriebliche Altersvorsorge</li><li>Möglichkeit der Entgeltumwandlung</li><li>Rabatte in regionalen Sportstudios</li><li>Mitarbeitendenvorteilsprogramm</li><li>betriebliches Gesundheitsmanagement</li><li>Freistellung bei verschiedenen Anlässen</li><li>Vergütungserhöhung aufgrund von Betriebszugehörigkeit</li></ul><p>Das erwartet Sie</p><p>In der operativen Telemedizin (OTM) im ärztlichen Bereitschaftsdienst der Kassenärztlichen Vereinigung Niedersachsen (KVN) sind Sie die Schnittstelle zum medizinischen Fahrdienst. Sie arbeiten am Standort im multidisziplinären Team des aufsuchenden Fahrdienstes. Von Ihrem Büro aus prüfen Sie eingehende Aufträge und entscheiden über den Einsatz speziell ausgebildeter Gesundheitsfachkräfte oder von Ärztinnen und Ärzten für Hausbesuche. Darüber hinaus unterstützen Sie die Versorgung per Telemedizin (Bild und Ton, Echtzeit‑Vitaldaten, EKG). Zudem können Sie eRezepte und eAU ausstellen. Sie arbeiten in wechselnden Schichten (Mo, Di, Do ab 19:00; Mi/Fr ab 15:00; Sa/So/Feiertage ab 08:00; jeweils bis 07:00 Uhr des Folgetages). Eine regelmäßige Teilnahme am Fahrdienst ist vorgesehen. Für diese Tätigkeit erhalten Sie einen fairen, tarifgebundenen Arbeitsvertrag.</p><p>Das zeichnet Sie aus</p><ul><li>Abgeschlossene Facharztweiterbildung in einem Fach der direkten Patientenversorgung (idealerweise Allgemeinmedizin, Innere Medizin oder Anästhesiologie)</li><li>Umfangreiche praktische Erfahrung im direkten Patientenkontakt sowie in der Betreuung und Behandlung älterer und chronisch erkrankter Patientinnen und Patienten</li><li>Wünschenswert: Kenntnisse und Erfahrungen im Bereitschaftsdienst sowie in der Notfallmedizin</li><li>Bereitschaft zu Einsätzen an Wochenenden und nachts</li><li>Bereitschaft zur tätigkeitsbezogenen Fortbildung, z. B. zur Durchführung telemedizinischer Aufgaben und zu den SOPs im ärztlichen Bereitschaftsdienst über die Johanniter‑Akademie Niedersachsen/Bremen</li><li>Sicherer Umgang mit moderner IT‑Ausstattung</li></ul><p>Ihr Einsatzort<br />Im ärztlichen Bereitschaftsdienst der Kassenärztlichen Vereinigung Niedersachsen (KVN) arbeiten Ärztinnen und Ärzte mit Mitarbeitenden aus Gesundheitsfachberufen eng zusammen. Gemeinsam gewährleisten sie einen leistungsstarken Notdienst: Sie betreuen Patientinnen und Patienten, die nach standardisierter Ersteinschätzung als dringend, aber nicht lebensbedrohlich eingestuft wurden und nach telemedizinischer Erstberatung eine weiterführende Behandlung vor Ort benötigen. Die Johanniter sind verantwortlich für die Bereitstellung qualifizierter ärztlicher und nichtärztlicher Teams im Fahrdienst am Standort Lüneburg.</p><p>Das sollten Sie noch wissen</p><p>Im Sinne der Gleichstellung und Chancengleichheit aller Mitarbeitenden begrüßen wir alle Bewerbungen von Interessierten, unabhängig von deren kultureller, religiöser und sozialer Herkunft, Geschlecht, Alter, Behinderung oder sexueller Identität.</p><p>Ansprechperson<br />Jens Engel<br />015258384950</p><p>Wer wir sind</p><p>Wir sind eine große Hilfsorganisation mit Hauptsitz in Berlin. Zu unseren Aufgaben zählen u. a. Rettungs- und Sanitätsdienst, Pflegeangebote, Katastrophenschutz, soziale Dienste sowie die Arbeit mit Kindern und Jugendlichen. Weitere Informationen zu Einstiegsmöglichkeiten, Perspektiven und wie wir arbeiten: johanniter.de/karriere</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14271-1651947-1-S",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12744,7 +12855,7 @@
     "postedAt": "2026-09-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12905,6 +13016,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20263-2332856-S",
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13604,6 +13717,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/21001-0067000010-S",
     "postedAt": "2026-08-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {

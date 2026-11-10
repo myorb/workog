@@ -2654,6 +2654,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10485470/cluster-project-design-mechanical-engineer-fleet-remediation-engineering",
     "postedAt": "2026-07-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -4094,6 +4096,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10516950/senior-technical-account-manager-amazon-smart-vehicles",
     "postedAt": "2026-08-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6188,6 +6192,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10555249/mechatronics-robotics-tech",
     "postedAt": "2026-09-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6631,6 +6637,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10559058/talent-intelligence-lead-eu-operations-leadership-development",
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6666,6 +6674,23 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10559520/sr-security-engineer-proactive-security",
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10559739",
+    "slug": "amazon-software-development-engineer-automated-reasoning-group-10559739",
+    "company": "amazon",
+    "title": "Software Development Engineer, Automated Reasoning Group",
+    "locations": [
+      "Seattle, WA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "engineering",
+    "descriptionHtml": "<p>We are building the next generation of formally verified AI infrastructure in the Amazon Web Services (AWS), Neuron Automated Reasoning group. <br />  <br />We are seeking a talented and passionate Software Development Engineer who wants to work at the intersection of programming language theory, formal verification, and cloud-scale service architecture.<br />  <br />As a Software Engineer on this team you will work on a leading open-source functional programming language and interactive theorem prover. You will help build a production AWS service that makes this service accessible to customers who need mathematical guarantees but cannot afford the operational burden of managing theorem proving infrastructure themselves.<br />  <br />Delivering a reliable, well-characterized, and scalable service is foundational to our mission. This includes building the service infrastructure, integrating it into the Amazon build ecosystem, building orchestration intelligence and extending functionality for internal and external AWS customers. The engineering team will be fluent in this language, its ecosystem, and its application to code correctness and proof automation.<br />  <br />What does it take to thrive as a developer at Amazon? You are creative, responsible, and curious. You work with others to move quickly in turning ideas into customer solutions. You are excited about building systems that provide mathematical certainty in a world of probabilistic AI. You want the opportunity to grow your technical and professional skills while helping define a new category of cloud service. You relish the opportunity to dig into challenging problems at the boundary of programming languages, formal methods, and distributed systems.<br />  <br />This role offers the opportunity to work alongside world-class technical and scientific leaders in automated reasoning, and to shape how formal verification becomes accessible at AWS scale.</p><h3>Basic qualifications</h3><p>- 3+ years of non-internship professional software development experience<br />- 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience<br />- Bachelor's degree in computer science or equivalent<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Seattle - 143,700.00 - 194,400.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10559739/software-development-engineer-automated-reasoning-group",
+    "postedAt": "2026-09-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "amazon"
   },
   {
@@ -7439,7 +7464,8 @@
     "company": "amazon",
     "title": "Operations Analyst, RI Operations",
     "locations": [
-      "Seattle, WA, United States"
+      "Seattle, WA, United States",
+      "Arlington, VA, United States"
     ],
     "remote": false,
     "department": "Corporate Operations",
@@ -7589,7 +7615,7 @@
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "amazon"
   },
   {
@@ -7779,6 +7805,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10569923/embedded-software-development-engineer-flight-computer-software",
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -8259,6 +8287,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10574428",
+    "slug": "amazon-operations-supervisor-10574428",
+    "company": "amazon",
+    "title": "Operations Supervisor",
+    "locations": [
+      "Antwerp, VAN, Belgium"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>Operations is the heart and soul of everything Amazon does. It is thanks to effective operations that items are processed and dispatched to our customers on time. Being an Operations Lead/Supervisor gives you the chance to see how all the different parts of operations work and play a role in making sure everything runs smoothly.  <br /><br />You’ll be the first point of contact for team members during their shift and help them follow the processes that your managers have put in place. This is a hands-on role, which will give you experience in using the tools and systems that make our operations successful.  <br /><br />This role covers afternoon shifts.<br /><br />Key job responsibilities<br />-    Measure and monitor workflows, track onsite performance, and provide important shift information to frontline management to ensure operational excellence across shifts <br />-    Support and train employees to deliver great service and supervise them in their daily tasks <br />-    Support the Shift/Area Manager with projects to improve processes, cultivate a safe working environment, and increase workforce engagement  <br />-    Work with other departments to find solutions to address common issues or support needs in areas of key performance <br />-    Use data analysis to identify ways to optimise safety, quality and productivity  <br /><br />A day in the life<br />As an Operations Lead/Supervisor, you’ll be based in one of our operational sites. You’ll support your Shift/Area Manager to carry out the plan for the shift. That will involve helping with pre-shift meetings with your team and monitoring procedures to make sure everyone is following safety rules, quality processes, and the priority plan for the day.  <br /><br />You’ll escalate any issues you spot to your manager, but sometimes you’ll be the most senior person on shift and will give people the direction they need to complete their tasks. At other times, you’ll support your Shift/Area Manager in planning shifts to make sure you have enough team members working during peak times.  </p><h3>Basic qualifications</h3><p>- Advanced proficiency in Dutch and English in both written and verbal communication (C1 Common European Framework of Reference, CEFR)<br />- Relevant experience working with data analytics and using these metrics to identify problems<br />- Relevant experience working with the MS Office suite (Word, Excel, Outlook) in a professional environment</p><h3>Preferred qualifications</h3><p>- Experience of stakeholder management including building and maintaining professional relationships<br />- Experience in an operational environment, such as logistics, retail, hospitality, or customer service<br />- Upper intermediate proficiency in English<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10574428/operations-supervisor",
+    "postedAt": "2026-10-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10574473",
     "slug": "amazon-ausbildung-mechatronik-10574473",
     "company": "amazon",
@@ -8290,6 +8335,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10574622/software-development-engineer-ii-elastic-load-balancing-elb",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -9052,8 +9099,8 @@
     "locations": [
       "Boston, MA, United States",
       "Arlington, VA, United States",
-      "Atlanta, GA, United States",
       "New York, NY, United States",
+      "Atlanta, GA, United States",
       "Denver, CO, United States",
       "East Palo Alto, CA, United States"
     ],
@@ -9098,6 +9145,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10581705/arquiteto-a-de-solucoes-brazil-solutions-architecture-enterprise-cross-industry",
     "postedAt": "2026-10-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -10509,7 +10558,8 @@
     "company": "amazon",
     "title": "Sr. Program Manager, Amazon Relay Marketing, Relay Product and Tech, Relay Marketing",
     "locations": [
-      "Bellevue, WA, United States"
+      "Bellevue, WA, United States",
+      "Atlanta, GA, United States"
     ],
     "remote": false,
     "department": "Project/Program/Product Management--Non-Tech",
@@ -11318,7 +11368,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "amazon"
   },
   {
@@ -11546,6 +11596,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596518/rfid-store-design-operations-engineer-rfid-program-management",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -11563,6 +11615,23 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10596640/front-end-engineer-ii-amazon-connect-contact-control-panel",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:49:43.736Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10596903",
+    "slug": "amazon-operations-manager-10596903",
+    "company": "amazon",
+    "title": "Operations Manager",
+    "locations": [
+      "Fargo, ND, United States"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>Job summary<br />Our WW Operations network delivers millions of packages and smiles to Amazon customers every day. We are looking for motivated, customer-focused individuals who want to join our team as an Operations Manager. In this role, you will lead and develop a team of salaried and hourly talent. You will be responsible for engaging your team during their shifts to maintain the highest levels of safety, quality, attendance, and performance. To achieve this, managers are expected to provide their team with the tools needed for success while driving improvements in productivity and efficiency through data-driven decisions and analytical problem-solving. You will also play a key role in maintaining our customer expectations to ensure customer orders are delivered at the right time, to the right location.<br />   <br />  Our Operation’s workflow has three major components:  First mile - where the product is housed and ready for order; Middle mile - where the order is hauled to your area; and Last mile - when the product is delivered to the customer’s door. Please note that all workflows have slight building variations, but one thing is constant: our vision and dedication to the customer.<br /> <br /> Key Responsibilities and Job Elements:<br /> - Support, mentor, and motivate your salaried and hourly workforce<br /> - Lead large-scope projects with site and regional impact<br /> - Build and execute productivity plans through forecast reviews, determining productivity requirements, and partnering with other Leaders to load balance <br /> - Manage safety, quality, productivity, and customer delivery promises <br /> - Collaborate with all support teams including Safety, Engineering, Loss Prevention, Quality Assurance, Human Resources to develop plans to meet business objectives<br /> - Lift up to 49 pounds and frequently push, pull, squat, bend, and reach<br /> - Stand/walk for up to 12 hours during shifts <br /> - Work in an environment where the noise level varies and can be loud<br /> - Work in an environment that is subject to variable temperatures and weather (delivery stations include outside loading departments)<br /> - Continuously climb and descend stairs (applies to sites with stairs)<br />   Our fulfillment network launches new Operations sites every year, providing various opportunities for your professional growth. We hire Operations Managers based on location preference and the business’ current openings.  </p><h3>Basic qualifications</h3><p>- 3+ years of employee and performance management experience<br />- Bachelor's degree or equivalent, or 2+ years of Amazon (blue badge/FTE) experience<br />- Work a flexible schedule/shift/work area, including weekends, nights, and/or holidays</p><h3>Preferred qualifications</h3><p>- Experience managing a team of 2+ salaried employees and 70+ indirect employees<br />- Experience scoping, leading, and implementing process improvements through: Lean process, Kaizen, and/or Six Sigma.<br />- Demonstrated problem solving skills and analytical skills<br />- Excellent customer service skills, communication skills and interpersonal skills<br />- Track record of meeting or exceeding department performance goals<br />- A Bachelor’s or Master’s degree in Engineering, Operations, Supply Chain/Logistics, or a related field.<br />- Experience in: military, manufacturing, automotive, biotech, electronics, energy, instrumentation, machinery, defense/aerospace, medical, cosmetics, production, or distribution environments.<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, ND, Fargo - 81,900.00 - 122,800.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10596903/operations-manager",
+    "postedAt": "2026-11-04T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "amazon"
   },
   {
@@ -11650,6 +11719,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10597283/area-manager-sub-same-day-operations",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T05:03:16.544Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -12001,6 +12072,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10599137/infra-delivery-technician",
     "postedAt": "2026-11-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-09T11:42:23.458Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -12035,6 +12108,97 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10599263/engineering-operation-technician",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10599735",
+    "slug": "amazon-software-development-manager-agentic-ai-alexa-for-shopping-rufus-10599735",
+    "company": "amazon",
+    "title": "Software Development Manager - Agentic AI, Alexa for Shopping (Rufus)",
+    "locations": [
+      "London, United Kingdom"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "management",
+    "descriptionHtml": "<p>We are seeking a Software Development Manager to build agentic shopping experiences on Amazon. Alexa for Shopping (AFS), formerly Rufus, is Amazon's Shopping AI, a high-visibility generative AI investment within the Stores business built on large language models (LLMs). Our vision is for AFS to be an always-on personal shopping agent that learns what matters to each customer, anticipates their needs, and acts on their behalf. Beyond responding to requests, AFS will proactively recognize opportunities to help, suggest timely next steps, and follow through on goals that unfold over days, weeks, or months.<br /><br />More specifically, this role is in a team building new software systems and customer experiences that will greatly expand AFS's availability to new cohorts of customers. The team is building agentic AI systems powered by LLMs, working at the intersection of frontier AI technology and one of the world's largest e-commerce platforms. This team is strategic and has visibility with leadership at the highest levels.<br /><br />The role offers a chance to build and launch AI-powered customer experiences from the ground up, and to work closely with an exceptional group of product, engineering, and science leaders to shape the future of shopping at Amazon.<br /><br />If you are passionate about reinventing e-commerce, helping customers offload tedious shopping tasks to smart, autonomous AI, and building a team that does the same, this is a rare opportunity to define the future of agentic commerce at Amazon.<br /><br />Key job responsibilities<br />- Shape the strategic direction and vision for agentic shopping experiences by connecting customer and business needs with emerging technical opportunities.<br />- Provide technical leadership, vision and career guidance to help your team grow and do their best work.<br />- Build an engineering culture of ownership, pride and operational excellence that delivers high-performing solutions, and drive best practices within your team and across the organization.<br />- Work closely with engineering, science, design, and product and program management in an agile environment to deliver the best technical designs and approaches.<br />- Anticipate bottlenecks, manage escalations and make smart trade-offs that balance business needs with technical constraints.<br /><br /><br />A day in the life<br />As a Software Development Manager on the AFS Agentic team, you will:<br /><br />- Lead a highly talented team of SDEs building scalable software systems and customer experiences powered by AI and LLMs.<br />- Partner with product, program, engineering and science teams across AFS and the wider Amazon organization to clarify requirements and build execution plans.<br />- Unblock your team day to day while setting a strategic quarter- to year-long vision that improves how the team works and delivers better AI-powered experiences for Amazon's customers.</p><h3>Basic qualifications</h3><p>- Experience managing a team of high calibre Software Engineers developing complex, world class, scalable software systems that have been successfully delivered to customers<br />- Experience designing or architecting (design patterns, reliability and scaling) of new and existing systems<br />- Experience delivering products against plan in a fast-paced, multi-disciplined, distributed-responsibility and often ambiguous environment<br />- Knowledge of engineering practices and patterns for the full software/hardware/networks development life cycle, including coding standards, code reviews, source control management, build processes, testing, certification, and livesite operations<br />- Experience in leading the definition and development of multi tier web services<br />- Experience partnering with product and program management teams</p><h3>Preferred qualifications</h3><p>- Experience in communicating with users, other technical teams, and senior leadership to collect requirements, describe software product features, technical designs, and product strategy<br />- Experience in recruiting, hiring, mentoring/coaching and managing teams of Software Engineers to improve their skills, and make them more effective, product software engineers<br />- Experience building products leveraging large language models, generative AI, or agentic AI systems<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10599735/software-development-manager-agentic-ai-alexa-for-shopping-rufus",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10599779",
+    "slug": "amazon-responsable-d-equipe-logistique-fulfilment-center-h-f-10599779",
+    "company": "amazon",
+    "title": "Responsable d'Equipe Logistique (Fulfilment Center) H/F",
+    "locations": [
+      "Saran, France"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>Devenez Responsable d'Équipe Logistique chez Amazon et mettez votre expérience au service de notre mission: garantir le traitement efficace et rapide des commandes de millions de clients. Dans ce rôle stimulant où chaque décision compte, vous vivrez l'excitation quotidienne de piloter des opérations à grande échelle dans nos centres logistiques ultramodernes. Vous serez un véritable moteur de transformation, contribuant à repousser toujours plus loin les limites de notre performance opérationnelle au sein du réseau européen. <br /><br />Key job responsibilities<br />• Promouvoir une culture de sécurité exemplaire, en faisant de la santé et la sécurité des équipes notre priorité absolue  <br /><br />• Fédérer et faire grandir une équipe de 100 à 200 collaborateurs, en créant un environnement où l'innovation et le développement des talents sont au cœur de votre management  <br /><br />• Piloter la performance de votre périmètre avec une vision stratégique, en optimisant les processus de réception, stockage, préparation ou expédition des commandes  <br /><br />• Concevoir et déployer des initiatives d'amélioration continue à grande échelle, en vous appuyant sur votre expertise et l'analyse approfondie des données  <br /><br />• Collaborer avec le réseau international d'Amazon pour partager les meilleures pratiques et porter des projets stratégiques <br /><br />A day in the life<br />Rejoindre Amazon aujourd'hui, c'est donner un véritable coup d'accélérateur à votre carrière. Dès votre arrivée, vous bénéficierez d'un parcours d'intégration complet, en France et à l'international, et serez accompagné(e) par des mentors expérimentés. Nos programmes de développement et l'exposition à des défis complexes dans un environnement en forte croissance vous permettront d'acquérir rapidement de nouvelles compétences. Ce rôle est un véritable tremplin au sein d'Amazon. <br /><br />Selon vos aspirations, vous pourrez évoluer vers des responsabilités plus importantes dans nos opérations, saisir des opportunités dans d'autres pays de notre réseau international, ou encore vous orienter vers des fonctions transverses - voire combiner ces différentes possibilités. Cette liberté de construire votre parcours, couplée à notre vitesse d'apprentissage et notre échelle d'impact, sont particulièrement valorisées, tant pour progresser au sein d'Amazon que pour saisir à l'avenir des opportunités prestigieuses en externe. <br /><br />About the team<br />Les centres de distribution (Fulfillment Centers) sont au cœur de notre promesse client. Grâce à des technologies de pointe et des processus innovants, nos équipes assurent la réception, le stockage, la préparation et l'expédition de millions de produits chaque jour. Nous développons un réseau logistique à la pointe de l'innovation, alliant automatisation, algorithmes et expertise humaine pour garantir une efficacité maximale.  <br /><br />https://www.youtube.com/embed/9kcye8-0CoE <br /><br />Le poste à pourvoir suit le rythme des équipes opérationnelles, avec des horaires en rotation.</p><h3>Basic qualifications</h3><p>- • Un diplôme universitaire<br />- • Une expérience significative dans la gestion des ressources humaines<br />- • Une expérience dans la communication avec un large éventail de parties prenantes, y compris avec vos pairs et la direction<br />- • Une expérience significative dans l’utilisation de données ou de témoignages pour influencer la prise de décisions de l’entreprise<br />- • Parfaite maîtrise de l’anglais et du français, à l’oral et à l’écrit</p><h3>Preferred qualifications</h3><p>- • Connaissance des techniques Lean, Six Sigma et Kaizen<br />- • Connaissance d’un autre environnement logistique<br />- • Bonne maîtrise de la suite MS Office (Word, Excel, Outlook) dans un environnement professionnel<br /><br />Amazon est un employeur engagé pour l'égalité des chances. Nous sommes convaincus qu'une main d'oeuvre diversifée est essentielle à notre réussite. Nous prenons nos décisions de recrutement en fonction de votre expérience et de vos compétences. Nous apprécions votre envie de découvrir, d'inventer, de simplifier et de construire. La protection de votre vie privée et la sécurité de vos données constituent depuis longtemps une priorité absolue pour Amazon. Veuillez consulter notre Politique de Confidentialité pour en savoir plus sur la façon dont nous collectons, utilisons et traitons les données personnelles de nos candidats.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10599779/responsable-d-equipe-logistique-fulfilment-center-h-f",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10599959",
+    "slug": "amazon-support-engineer-iv-amazon-pharmacy-operations-10599959",
+    "company": "amazon",
+    "title": "Support Engineer IV , Amazon Pharmacy Operations",
+    "locations": [
+      "Bengaluru, KA, India"
+    ],
+    "remote": false,
+    "department": "Operations, IT, & Support Engineering",
+    "category": "engineering",
+    "descriptionHtml": "<p>Amazon Pharmacy delivers prescriptions safely, accurately, and fast. The business is defined by four things: cost, speed, scale, and patient safety. Our fulfillment network spans central and regional fill, small-format sites, kiosks, and growing automation, and every order is a patient’s prescription.<br />The team is the first line of technical support for that network, 24x7 across multiple shifts. We triage fulfillment issues, work with vendors on robotics and automation hardware problems, and route genuine defects to the right engineering team. The goal goes beyond fixing tickets. By finding the patterns behind recurring issues and the friction on the floor, you will turn manual work into automation and help move the operational metrics: faster order flow, higher throughput, lower cost per unit, and fewer escalations, with no compromise on patient safety.<br /><br /><br />Key job responsibilities<br />•\tTriage and resolve fulfillment issues from SIM and Trouble Ticket queues within defined SLAs, as part of a 24x7 multi-shift rotation.<br />•\tDiagnose problems across Pharmacy fulfillment systems using logs, metrics, dashboards, and data queries, and restore service quickly.<br />•\tWork with third-party vendors on robotics and automation hardware incidents: open and track escalations, share diagnostic data, and confirm fixes on site.<br />•\tResolve network issues that affect fulfillment, mainly orders routed to the wrong fulfillment center and inventory out-of-stock scenarios.<br />•\tRoute genuine defects to the right engineering team with clear reproduction steps, impact, and root-cause data, and follow them through to resolution.<br />•\tAnalyze ticket trends to find recurring issues, then write scripts, automated remediation, and self-healing workflows that eliminate them.<br />•\tHelp automate site launch readiness and configuration checks for new pharmacy sites and formats.<br />•\tBuild and tune monitoring, dashboards, and alarms that catch issues before sites or patients feel them.<br />•\tWrite and maintain runbooks, and contribute to Correction of Error (COE) reviews for high-severity incidents.<br /><br />About the team<br />Join as one of the first engineers on Amazon Pharmacy’s new Support Engineering team in Bengaluru. You will help shape how the team works from day one: the runbooks we write, the tools we build, and the issues we automate away first. Early members of a new team have an outsized say in its direction, and the work you do here will show up directly in how Pharmacy fulfillment runs worldwide.<br /></p><h3>Basic qualifications</h3><p>- 4+ years of software development, or 4+ years of technical support experience<br />- Experience scripting in modern program languages<br />- Experience troubleshooting and debugging technical systems<br />- Experience in agile/scrum or related collaborative workflow<br />- Experience troubleshooting and documenting findings</p><h3>Preferred qualifications</h3><p>- Knowledge of UNIX/Linux operating system<br />- Experience analyzing and troubleshooting RESTful web API calls<br />- Knowledge of distributed applications/enterprise applications<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10599959/support-engineer-iv-amazon-pharmacy-operations",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10600286",
+    "slug": "amazon-sr-delivery-consultant-wwps-proserve-10600286",
+    "company": "amazon",
+    "title": "Sr. Delivery Consultant, WWPS ProServe",
+    "locations": [
+      "Arlington, VA, United States",
+      "Seattle, WA, United States",
+      "Denver, CO, United States",
+      "Herndon, VA, United States",
+      "San Francisco, CA, United States",
+      "Dallas, TX, United States",
+      "Hayward, CA, United States"
+    ],
+    "remote": false,
+    "department": "Project/Program/Product Management--Technical",
+    "category": "product",
+    "descriptionHtml": "<p>Application deadline: Applications will be accepted on an ongoing basis<br /><br />This position requires that the candidate selected be a US Citizen.<br /><br />The Amazon Web Services Professional Services (ProServe) team is seeking a skilled Delivery Consultant to join our team at Amazon Web Services (AWS). In this role, you'll work closely with customers to design, implement, and manage AWS solutions that meet their technical requirements and business objectives. You'll be a key player in driving customer success through their cloud journey, providing technical expertise and best practices throughout the project lifecycle. Possessing a deep understanding of AWS products and services, as a Delivery Consultant you will be proficient in architecting complex, scalable, and secure solutions tailored to meet the specific needs of each customer. You’ll work closely with stakeholders to gather requirements, assess current infrastructure, and propose effective migration strategies to AWS. As trusted advisors to our customers, providing guidance on industry trends, emerging technologies, and innovative solutions, you will be responsible for leading the implementation process, ensuring adherence to best practices, optimizing performance, and managing risks throughout the project. <br /> <br />The AWS Professional Services organization is a global team of experts that help customers realize their desired business outcomes when using the AWS Cloud. We work together with customer teams and the AWS Partner Network (APN) to execute enterprise cloud computing initiatives. Our team provides assistance through a collection of offerings which help customers achieve specific outcomes related to enterprise cloud adoption. We also deliver focused guidance through our global specialty practices, which cover a variety of solutions, technologies, and industries.<br /><br /><br /><br />Key job responsibilities<br />As an experienced technology professional, you will be responsible for: <br />- Designing and implementing complex, scalable, and secure AWS solutions tailored to customer needs<br />- Providing technical guidance and troubleshooting support throughout project delivery<br />- Collaborating with stakeholders to gather requirements and propose effective migration strategies<br />- Acting as a trusted advisor to customers on industry trends and emerging technologies<br />- Sharing knowledge within the organization through mentoring, training, and creating reusable artifacts<br /><br />About the team<br />Diverse Experiences: AWS values diverse experiences. Even if you do not meet all of the preferred qualifications and skills listed in the job below, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying.<br /><br />Why AWS? Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform. We pioneered cloud computing and never stopped innovating — that’s why customers from the most successful startups to Global 500 companies trust our robust suite of products and services to power their businesses.<br /><br />Inclusive Team Culture - Here at AWS, it’s in our nature to learn and be curious. Our employee-led affinity groups foster a culture of inclusion that empower us to be proud of our differences. Ongoing events and learning experiences, including our Conversations on Race and Ethnicity (CORE) and AmazeCon (diversity) conferences, inspire us to never stop embracing our uniqueness.<br /><br />Mentorship &amp; Career Growth - We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, mentorship and other career-advancing resources here to help you develop into a better-rounded professional.<br /><br />Work/Life Balance - We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why we strive for flexibility as part of our working culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve in the cloud. </p><h3>Basic qualifications</h3><p>- 7+ years of technical specialist, design and architecture experience<br />- 5+ years of database (eg. SQL, NoSQL, Hadoop, Spark, Kafka, Kinesis) experience<br />- 7+ years of consulting, design and implementation of serverless distributed solutions experience<br />- 5+ years of software development with object oriented language experience<br />- 3+ years of cloud based solution (AWS or equivalent), system, network and operating system experience</p><h3>Preferred qualifications</h3><p>- degree in advanced technology, or AWS Professional level certification<br />- Knowledge of AWS services including compute, storage, networking, security, databases, machine learning, and serverless technologies<br />- Knowledge of security and compliance standards including HIPAA and GDPR<br />- Experience in performance optimization and cost management for cloud environments<br />- Experience communicating technical concepts to diverse audiences in pre-sales environments<br />- Experience in database (eg. SQL, NoSQL, Hadoop, Spark, Kafka, Kinesis)<br />- Experience with AWS data/file transfer solutions including AWS Application Migration Service (MGN), AWS Database Migration Service (DMS), and/or AWS DataSync<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Los Angeles County applicants: Job duties for this position include: work safely and cooperatively with other employees, supervisors, and staff; adhere to standards of excellence despite stressful conditions; communicate effectively and respectfully with employees, supervisors, and staff to ensure exceptional customer service; and follow all federal, state, and local laws and Company policies. Criminal history may have a direct, adverse, and negative relationship with some of the material job duties of this position. These include the duties and responsibilities listed above, as well as the abilities to adhere to company policies, exercise sound judgment, effectively manage stress and work safely and respectfully with others, exhibit trustworthiness and professionalism, and safeguard business operations and the Company’s reputation. Pursuant to the Los Angeles County Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.<br /><br />Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, CA, HAYWARD - 176,600.00 - 239,000.00 USD annually<br />USA, CA, San Francisco - 176,600.00 - 239,000.00 USD annually<br />USA, CO, Denver - 153,600.00 - 207,800.00 USD annually<br />USA, TX, Dallas - 153,600.00 - 207,800.00 USD annually<br />USA, VA, Arlington - 153,600.00 - 207,800.00 USD annually<br />USA, VA, Herndon - 153,600.00 - 207,800.00 USD annually<br />USA, WA, Seattle - 153,600.00 - 207,800.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10600286/sr-delivery-consultant-wwps-proserve",
+    "postedAt": "2026-11-09T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10600794",
+    "slug": "amazon-sr-seller-support-associate-10600794",
+    "company": "amazon",
+    "title": "Sr. Seller Support Associate",
+    "locations": [
+      "Philippines - Virtual, Philippines"
+    ],
+    "remote": true,
+    "department": "Corporate Operations",
+    "category": "support",
+    "descriptionHtml": "<p>The Seller Support Associate acts as the primary interface between Amazon and our business partners. The Seller Support Associate will be responsible for providing timely and accurate operational support to Merchants selling on the Amazon platform. The successful candidate has an immediate, distinct effect on the experience of customers of Amazon, making a strong record of customer focus a high standard for the role. A Seller Support Associate is expected to address chronic system issues, provide process improvements, develop internal documentation, and contribute to a team environment, all while adhering to service level agreements for phone and/or email cases.<br /> <br />Roles and Responsibilities:<br />This includes, but is not limited to:<br />· The Seller Support Associate demonstrates end to end ownership of every seller interaction coupled with proactive problem solving and provides exceptional support to sellers.<br /> · Demonstrates effective, clear and professional written and oral communication.<br /> · Provides prompt and efficient service to Amazon Sellers and Merchants including the appropriate escalation of Sellers' issues.<br /> · Maintains a positive and professional demeanor always portraying the company in a positive light and effectively managing sensitive issues.<br /> · Demonstrates excellent time-management skills and the ability to work independently while using departmental resources, policies and procedures.<br /> · Contributes to a positive team environment and proactively aids team members with difficult contacts as needed.<br /> · Maintains acceptable performance metrics such as quality, productivity, first contact resolution, and attendance.<br /> · Actively seeks solutions through logical reasoning and data interpretation skills and identifies trends to appropriate channel including improvement suggestions.<br /> · Liaise with other departments such as Customer Service, Merchant Investigations, or Payments teams as required to resolve Seller's issues and questions.<br />   <br /></p><h3>Basic qualifications</h3><p>- Candidate must be physically based in Metro Manila, Cavite, Bulacan, Laguna or Rizal.<br />- During the first four months (Training &amp; Transition) no leaves are allowed<br />- High School/College graduate with minimum 3 years of BPO experience supporting voice, chat, and email.<br />- Willing to report onsite for training &amp; onsite activities.<br />- Excellent written/spoken English skills with an ability to compose grammatically correct, concise and accurate written responses<br />- Excellent interpersonal skills, with the ability to communicate complex issues correctly and clearly to both internal and external customers<br />- Demonstrated ability to work independently and make complex decisions with little to no guidance · Excellent organizational and problem solving skills<br />- Exceptionally strong customer handling and conflict resolution skills with a keen focus on quality and customer experience. · Demonstrated ability to analyze problems logically<br />- Self-disciplined, diligent, proactive and detail oriented<br />- Effective prioritization of work time to ensure productivity, fulfill department standards for time spent and individually prioritize multiple tasks of competing urgency<br />- Strong ability to exceed expectations with regard to performance and individual contribution<br />- Ability to maintain high levels of confidentiality and data security standards · Passionate commitment to Amazon's emergence as the world's most customer-centric company<br />- Shifts: The job involves working in a 24/7 environment including night shifts and the shifts are decided based on the business requirement.<br />- Weekly Off: Rotational two- consecutive day off (it is a 5-day working week with 2 consecutive days off.<br />- During the first four months (Training &amp; Transition) no unplanned leaves are allowed. · Ability to have and provide proof of infrastructure to support WFH when necessary: a. Home environment free from background noise where you can connect to the internet and work on your deliverables. b. Should have a postpaid (wired) fiber internet connection with a minimum speed of 200 MBPS or better and should have at least 100 GB data from a reliable provider. c. Should have access to mobile phone at all times from a reliable provider. d. Should have internet and power back up in case of connectivity/power outages.<br />- Should be willing interact with Seller over calls / email / chat depending on the business need.</p><h3>Preferred qualifications</h3><p>- Technical (Computers &amp; Internet) savvy is required. Business acumen in areas of e-commerce and retail.<br />- Desired skill-sets include MS Office Application (Excel, Outlook, Word) and Internet Explorer / Mozilla Firefox.<br />- Ability to have infrastructure to support WFH when necessary: a. Home environment free from background noise where you can connect to the internet and work on your deliverables. b. Should have a postpaid (wired) fiber internet connection with a minimum speed of 200 MBPS or better and should have at least 100 GB data from a reliable provider. c. Should have access to mobile phone at all times from a reliable provider. d. Should have internet and power back up in case of connectivity/power outages.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10600794/sr-seller-support-associate",
+    "postedAt": "2026-11-10T00:00:00.000Z",
+    "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "source": "amazon"
   },
   {
