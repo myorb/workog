@@ -1,5 +1,7 @@
 node_modules/
 dist/
+# except the MCP server bundle, which plugins and apps download and run as is
+!plugins/workog/server/dist/
 .astro/
 .env
 .DS_Store

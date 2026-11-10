@@ -1,10 +1,131 @@
 # Workog
 
-A static job portal: a daily pipeline fetches open jobs from company career sites into `data/jobs/*.json`, and Astro pre-renders one page per job plus browse pages. See the technical spec for the full design.
+[Workog](https://workog.com) lists about 80,000 open jobs and checks every one of them each morning:
 
-To search Workog's jobs from Claude or another AI app, see [Use Workog from Claude](#use-workog-from-claude-mcp).
+- **Tech jobs** from tech companies' own careers sites and from tech job boards. Browse them by company, technology, country, city or remote.
+- **Jobs for doctors** across Europe, from public job services and hospital groups. Browse them by specialty, career level (Assistenzarzt to Chefarzt), country, German state or hospital, under [/medicine](https://workog.com/medicine).
 
-## Commands
+Every job links straight to the employer's own posting to apply. A job that closes is marked closed and stays readable for 14 days. [/analytics](https://workog.com/analytics) and the monthly reports show who is hiring more or less. The site is in English, Ukrainian, Spanish and German.
+
+## Search Workog from your AI assistant
+
+Connect Workog to Claude, ChatGPT, Codex or Cursor, then ask for jobs in plain words. The assistant searches every open job, reads the full postings and gives you the links to apply.
+
+**What you need:** [Node.js](https://nodejs.org) 18 or later. Check with `node --version`.
+
+### Claude Code
+
+```bash
+claude plugin marketplace add https://workog.com/claude/marketplace.json
+```
+
+```bash
+claude plugin install workog@workog
+```
+
+Then ask, or start with the skill:
+
+```
+/workog:find-jobs senior Rust jobs in Berlin, remote is fine
+```
+
+### Claude Desktop, Cursor and other MCP apps
+
+1. Download the server. It is one file with nothing to install:
+   ```bash
+   curl -o ~/workog-mcp.mjs https://raw.githubusercontent.com/myorb/workog/main/plugins/workog/server/dist/workog-mcp.mjs
+   ```
+2. Add it to the app's MCP config. In Claude Desktop that is Settings → Developer → Edit Config. Use your own home folder in the path:
+   ```json
+   {
+     "mcpServers": {
+       "workog": { "command": "node", "args": ["/Users/you/workog-mcp.mjs"] }
+     }
+   }
+   ```
+3. Restart the app.
+
+### ChatGPT
+
+ChatGPT can't start a program on your computer. It reaches MCP servers only through a web address. So you run the server in web mode and open a tunnel that gives it a public `https://` address.
+
+1. Download the server, as for Claude Desktop above.
+2. Start it in web mode. Leave this terminal open:
+   ```bash
+   node ~/workog-mcp.mjs --http
+   ```
+   It listens on `http://127.0.0.1:8787/mcp`.
+3. In a second terminal, open a tunnel to it with [ngrok](https://ngrok.com/download) (free account) or [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/) (no account). Copy the `https://…` address it prints.
+   ```bash
+   ngrok http 127.0.0.1:8787
+   ```
+   ```bash
+   cloudflared tunnel --url http://127.0.0.1:8787
+   ```
+4. On [chatgpt.com/plugins](https://chatgpt.com/plugins), select **+**, then **Add custom MCP server**:
+   - Name: `Workog`
+   - Connection: the tunnel address with `/mcp` on the end, e.g. `https://abc123.trycloudflare.com/mcp`
+   - Authentication: **No authentication**
+   - Confirm the warning, then select **Create as a plugin**.
+5. Start a new chat, type `@` and pick **Workog**.
+
+Notes:
+
+- ChatGPT reaches Workog only while both terminals are running.
+- A free tunnel gets a new address each time it starts. When it changes, update the address in ChatGPT.
+- The address is public, but all the server can do is read Workog's public jobs.
+- If you don't see **Add custom MCP server**, your ChatGPT plan or workspace doesn't allow custom MCP servers. In a Business or Enterprise workspace, ask the admin.
+- If your workspace uses OpenAI's [Secure MCP Tunnel](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels), you don't need web mode or a public address. Give `tunnel-client` the plain command, `--mcp-command "node /Users/you/workog-mcp.mjs"`, and under Connection choose **Tunnel**.
+
+### Codex
+
+1. Download the server, as for Claude Desktop above.
+2. Add it:
+   ```bash
+   codex mcp add workog -- node ~/workog-mcp.mjs
+   ```
+   Or add it to `~/.codex/config.toml` yourself:
+   ```toml
+   [mcp_servers.workog]
+   command = "node"
+   args = ["/Users/you/workog-mcp.mjs"]
+   tool_timeout_sec = 120
+   ```
+   The longer timeout covers the first search on a slow connection.
+3. Check with `codex mcp list`, or `/mcp` inside Codex. The Codex CLI, IDE extension and desktop app share this config.
+
+### Things to ask
+
+- "Find senior Rust jobs in Berlin and tell me which three fit me best."
+- "Which companies are hiring the most Kubernetes engineers right now?"
+- "Show me Oberarzt jobs in cardiology in Bavaria posted this week."
+- "Remote data engineering jobs in Europe, full-time, newer than 3 days."
+- "Read this job and tell me what they really want: workog.com/jobs/…"
+- "How has the number of open tech jobs changed this month?"
+
+The assistant answers with each job's Workog link and the employer's link to apply. It never applies for you.
+
+### What the assistant can do
+
+| Tool | What it does |
+| --- | --- |
+| `search_jobs` | Finds open jobs by words in the title, company, employer, country, city, German state, remote, technology, job function, employment type, medical specialty, career level and how new they are |
+| `get_job` | Reads one job in full: description, employer, salary, dates and the link to apply |
+| `count_jobs` | Counts open jobs by company, city, technology, specialty and more, e.g. "where are the Rust jobs" |
+| `market_summary` | Today's headline numbers with 30-day changes |
+
+### Privacy and updates
+
+- The server runs on your computer. It downloads Workog's public job list once a day, about 5 MB, and keeps it in `~/.cache/workog-mcp`.
+- Your questions stay between you and your assistant. Workog sees only what any browser visit shows: which files are downloaded and which job pages are opened.
+- The first search takes a few seconds while the job list downloads. Later searches are instant, and the server still works offline with the last copy.
+- To update in Claude Code, run `claude plugin update workog@workog`. Elsewhere, run the `curl` command again and restart the app.
+
+## Running Workog yourself
+
+The rest of this file is for developers. A daily pipeline fetches open jobs from career sites into `data/jobs/*.json`, and Astro pre-renders one page per job plus the browse pages. See the technical spec for the full design.
+
+### Commands
 
 ```bash
 bun install
@@ -22,7 +143,7 @@ bun scripts/nuts-names.ts     # regenerate the EU region names EURES locations u
 EURES_MAX_DETAILS=20000 bun run fetch eures  # one-off backfill of EURES job texts past the daily cap
 ```
 
-## Automation
+### Automation
 
 | Workflow | Trigger | Does |
 | --- | --- | --- |
@@ -45,7 +166,7 @@ App Platform watches `main` through its GitHub app, so the daily data commit dep
 
 `data/runs/latest.json` records `fallbackStreak` for each source and marks it `broken` after 3 fallbacks in a row. A fallback never fails the workflow; it triggers an alert. Broken sources are flagged 🚨 in the alert.
 
-### One-time setup
+#### One-time setup
 
 1. Push this repo to GitHub with `main` as the default branch.
 2. Install the DigitalOcean GitHub app on `myorb/workog`, then create the App Platform static site:
@@ -61,7 +182,7 @@ App Platform watches `main` through its GitHub app, so the daily data commit dep
 
 To roll back, roll back to an earlier deployment in the App Platform dashboard, or `git revert` the data commit, which triggers a new deployment.
 
-## Layout
+### Layout
 
 | Path | Purpose |
 | --- | --- |
@@ -89,105 +210,34 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `plugins/workog/` | Claude Code plugin: the MCP server, its bundle and the `find-jobs` skill |
 | `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
 
-## Medical jobs
+### Medical jobs
 
 `data/companies.json` marks medical-job sources with `"sector": "medicine"`; today that is `arbeitsagentur`, the Bundesagentur für Arbeit's job board, filtered to doctors and to employers only (no recruitment agencies), plus Europe's public job services (`eures` for the EU/EEA outside Germany, Sweden and Switzerland; `nhs` for the UK; `jobtech` for Sweden; `jobroom` for Switzerland) and the careers sites of hospital groups: `helios`, `asklepios`, `sana` (an `oracle` source) and the `rexx` portals of Schön Klinik, the Alexianer and ISAR Klinikum. The Arbeitsagentur source skips those groups' postings, which copy jobs from their own sites, and EURES skips its copies of Arbeitsagentur postings. Its jobs carry `category: "medicine"` plus `specialty` and `level`, and stay out of every tech page, the analytics and the company list: `getOpenJobs()` returns tech jobs only, `getOpenMedicineJobs()` the medical jobs.
 
 Search results have no description, so the fetcher reads each new job's details separately, at most 1,500 a run to stay inside the workflow timeout; the first run leaves the rest without text for the next runs to fill. The source sends the Jobsuche web app's own public client id, an undocumented API that may change.
 
-## Search engines
+### Search engines
 
 - `/sitemap.xml` is a sitemap index. `/sitemap-pages-<n>.xml` lists the browse pages in every language, each with `hreflang` alternates; `/sitemap-jobs-<n>.xml` lists the open job pages. Each file holds at most 10,000 URLs.
 - Job pages carry JobPosting markup with `validThrough` set to 30 days after the job was last seen, so postings expire from Google for Jobs if the pipeline stops or stops checking a job (a capped company's job outside its newest `maxJobs`).
 - Crosslinks: hub pages list only the newest 50 jobs, so each job page links to the next 5 open jobs on its team (same company and category) and in its place (first city, else country, else remote), wrapping around (`src/lib/related.ts`). Every open job is then linked from at least one other page. Job pages also link to their technology, place and employment hubs; hub pages link to the companies hiring there, related technologies and the country's other cities.
 - `scripts/ping.ts` polls `/version.json` until the site serves the new run, then sends the changed job URLs to IndexNow (key file `public/bf6f1d24d876292da4961a3ae984ea98.txt`) and to the Google Indexing API. Google's default quota is 200 URLs a day: new jobs go first, then closed ones (`URL_UPDATED`, since the page is now `noindex`), then ones dropped after the 14-day retention, whose pages are gone and whose records are in the archive (`URL_DELETED`). A failed ping is logged and doesn't fail the workflow.
 
-## Use Workog from Claude (MCP)
+### MCP server
 
-Ask Claude for jobs in plain words, and it searches every open job on Workog and reads the full postings. You need [Node.js](https://nodejs.org) 18 or later.
+The site stays static. Each build writes every open job as a slim JSON row to `/api/v1/` (`src/lib/job-index.ts`):
 
-### Claude Code
+- `index.json` lists the files and every filter's values.
+- `tech-<n>.json` and `medicine-<n>.json` hold 10,000 jobs each, without descriptions. Together they are about 30 MB, or 4–5 MB compressed.
 
-```bash
-claude plugin marketplace add https://workog.com/claude/marketplace.json
-```
+The server (`plugins/workog/server/`) downloads these files on the first search and keeps them on disk. It downloads them again only after the next daily run, and offline it uses the last copy. A job's full text and apply link come from the JobPosting markup on its page. Renaming or removing a row field breaks installed servers, so do that only under `/api/v2`.
 
-```bash
-claude plugin install workog@workog
-```
+- **Rebuild after editing.** Run `bun run mcp:build` after editing `plugins/workog/server/`. Plugins and apps run the committed bundle `server/dist/workog-mcp.mjs`, which `.gitignore` lets through, and a test fails while it is stale. Bump `version` in `plugins/workog/.claude-plugin/plugin.json` so installed copies update.
+- **Transports.** Without arguments the server speaks stdio. With `--http [port]` it serves stateless streamable HTTP at `/mcp` on `HOST` (default `127.0.0.1`) and port 8787; ChatGPT needs this mode. The same mode could serve a hosted endpoint, such as `mcp.workog.com`, so ChatGPT users only paste a URL.
+- **Trying a change.** Use `claude --plugin-dir plugins/workog`. `WORKOG_URL` points the server at another copy of the site, e.g. `WORKOG_URL=http://localhost:4321` with `bun run preview`.
+- **Marketplace.** The marketplace is `.claude-plugin/marketplace.json`. The site serves a copy at `/claude/marketplace.json`, so adding it doesn't clone this repo and its data. Its `git-subdir` source installs only `plugins/workog`.
 
-Then just ask, or start with `/workog:find-jobs`:
-
-```
-/workog:find-jobs senior Rust jobs in Berlin, remote is fine
-```
-
-### Claude Desktop, Cursor and other MCP apps
-
-1. Download the server (one file, nothing to install):
-   ```bash
-   curl -o ~/workog-mcp.mjs https://raw.githubusercontent.com/myorb/workog/main/plugins/workog/server/dist/workog-mcp.mjs
-   ```
-2. Add it to the app's MCP config (in Claude Desktop: Settings → Developer → Edit Config), with your own home folder in the path:
-   ```json
-   {
-     "mcpServers": {
-       "workog": { "command": "node", "args": ["/Users/you/workog-mcp.mjs"] }
-     }
-   }
-   ```
-3. Restart the app.
-
-### Codex
-
-1. Download the server, as above:
-   ```bash
-   curl -o ~/workog-mcp.mjs https://raw.githubusercontent.com/myorb/workog/main/plugins/workog/server/dist/workog-mcp.mjs
-   ```
-2. Add it:
-   ```bash
-   codex mcp add workog -- node ~/workog-mcp.mjs
-   ```
-   Or put it in `~/.codex/config.toml` yourself. The longer tool timeout covers the first search on a slow connection, which downloads about 5 MB of jobs:
-   ```toml
-   [mcp_servers.workog]
-   command = "node"
-   args = ["/Users/you/workog-mcp.mjs"]
-   tool_timeout_sec = 120
-   ```
-3. Check with `codex mcp list`, or `/mcp` inside Codex. The Codex CLI, IDE extension and desktop app share this config.
-
-### Things to ask
-
-- "Find senior Rust jobs in Berlin and tell me which three fit me best."
-- "Which companies are hiring the most Kubernetes engineers right now?"
-- "Show me Oberarzt jobs in cardiology in Bavaria posted this week."
-- "Remote data engineering jobs in Europe, full-time, newer than 3 days."
-- "Read this job and tell me what they really want: workog.com/jobs/…"
-- "How has the number of open tech jobs changed this month?"
-
-Claude answers with each job's Workog link and the employer's apply link. It doesn't apply for you.
-
-### Tools
-
-| Tool | What it does |
-| --- | --- |
-| `search_jobs` | Finds open jobs by words in the title, company, employer, country, city, German state, remote, technology, job function, employment type, medical specialty, career level and how new they are |
-| `get_job` | Reads one job in full: description, employer, salary, dates and apply link |
-| `count_jobs` | Counts open jobs by company, city, technology, specialty …, e.g. "where are the Rust jobs" |
-| `market_summary` | Today's headline numbers with 30-day changes |
-
-### How it works
-
-The site stays static. Each build writes every open job as a slim JSON row to `/api/v1/` (`src/lib/job-index.ts`): `index.json` lists the files and every filter's values, and `tech-<n>.json` and `medicine-<n>.json` hold 10,000 jobs each, without descriptions (about 30 MB, 4–5 MB compressed). The server (`plugins/workog/server/`) downloads them on the first search, keeps them on disk, and downloads them again only after the next daily run; offline, it uses the last copy. A job's full text and apply link come from its page's JobPosting markup. Renaming or removing a row field breaks installed servers, so do that only under `/api/v2`.
-
-### Changing the server
-
-- Run `bun run mcp:build` after editing `plugins/workog/server/`: plugins and apps run the committed bundle `server/dist/workog-mcp.mjs`, and a test fails while it is stale. Bump `version` in `plugins/workog/.claude-plugin/plugin.json` so installed copies update.
-- Try a change with `claude --plugin-dir plugins/workog`. `WORKOG_URL` points the server at another copy of the site, e.g. `WORKOG_URL=http://localhost:4321` with `bun run preview`.
-- The marketplace is `.claude-plugin/marketplace.json`. The site serves a copy at `/claude/marketplace.json` so adding it doesn't clone this repo and its data, and its `git-subdir` source installs only `plugins/workog`.
-
-## Analytics history
+### Analytics history
 
 Every fetch writes `data/history/<today>.json` (`scripts/snapshot.ts`) alongside the jobs, and it is committed with them. Snapshots are never pruned, so `/analytics/history/<date>` keeps rendering the same numbers forever. A day without a commit has no file; trend charts repeat the day before.
 
@@ -199,7 +249,7 @@ Every fetch also writes `data/history/medicine/<today>.json` for the medical job
 
 To rebuild a past day, run `bun run snapshot <date>`. It counts the jobs in `data/jobs` and `data/archive` whose `firstSeenAt` and `closedAt` bracket the end of that day. It is accurate from 2026-11-03, when the archive began keeping closed jobs; for a company with `maxJobs`, only for jobs in its newest `maxJobs`.
 
-## Adding a company
+### Adding a company
 
 Add an entry to `data/companies.json`, then run `bun run fetch <key>`. Each source needs one field:
 
@@ -214,7 +264,7 @@ Add an entry to `data/companies.json`, then run `bun run fetch <key>`. Each sour
 
 | `arbeitnow`, `weworkremotely`, `workingnomads` | `"board": true` | none; see below |
 
-### Job boards
+#### Job boards
 
 Three open job boards are fetched as well: Arbeitnow (its free JSON API, about 4k jobs, mostly in Germany), We Work Remotely (its per-category RSS feeds, since the site-wide feed stops at 100) and Working Nomads (its public JSON feed). Each board is one entry in `data/companies.json` with `"board": true`. Its jobs keep the board as `company` and carry the hiring organization's name in `employer`. Job pages name the employer as the company, in the JobPosting markup too, and link to the board as "Listed on". The apply link goes to the board's own posting.
 
@@ -224,7 +274,7 @@ SmartRecruiters, Workday and Eightfold leave descriptions out of their search re
 
 Microsoft and Meta aren't covered: their careers APIs refuse anonymous requests.
 
-## Big companies
+### Big companies
 
 Amazon, Apple and Google are fetched in full every day, about 21k, 5k and 3k jobs, in under 3 minutes. Their fetchers page through results one request at a time. Companies are fetched 12 at a time, the ones with the most jobs last run first, so the slow ones aren't left waiting at the end.
 
@@ -244,6 +294,6 @@ The job files are laid out so a daily commit changes only the jobs that really c
 - **All or nothing.** A fetch run stages every file it writes as `<file>.staged` and renames them into place only once every company is done, so a run that crashes or is killed leaves `data/` as the last run left it. The next run removes the leftover `.staged` files, which git ignores.
 - **Changing the layout.** After changing it, run `bun run repack` to rewrite `data/jobs` without fetching.
 
-## Status
+### Status
 
 Milestones 1 (pipeline skeleton) and 2 (daily automation) are done. Amazon, Apple and Google fetchers are in. Next: Lever and Ashby, location and category pages, `/new` and `/remote` (milestone 3).
