@@ -15,7 +15,8 @@
     "alert": "bun scripts/alert.ts",
     "snapshot": "bun scripts/snapshot.ts",
     "repack": "bun scripts/repack.ts",
-    "ping": "bun scripts/ping.ts"
+    "ping": "bun scripts/ping.ts",
+    "mcp:build": "bun build plugins/workog/server/main.ts --target=node --format=esm --minify --outfile plugins/workog/server/dist/workog-mcp.mjs"
   },
   "dependencies": {
     "astro": "^7.4.4",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.6",
     "@types/sanitize-html": "^2.16.2",

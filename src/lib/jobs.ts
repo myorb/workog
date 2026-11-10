@@ -320,7 +320,8 @@ export async function getNewJobs(): Promise<Job[]> {
   return (await getOpenJobs()).filter((j) => ref - Date.parse(j.firstSeenAt) < DAY_MS);
 }
 
-function getAllCompanies(): Promise<CompanyConfig[]> {
+/** Every source in data/companies.json, medical ones included */
+export function getAllCompanies(): Promise<CompanyConfig[]> {
   return (companiesCache ??= readFile(join(DATA_DIR, "companies.json"), "utf8").then((s) =>
     z.array(CompanyConfigSchema).parse(JSON.parse(s)),
   ));

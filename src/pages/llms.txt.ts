@@ -52,6 +52,11 @@ Each job page (\`/jobs/<slug>\`) has the title, employer, locations, posted date
 - [Hiring reports](${url(reportsUrl)}): a monthly report per section with a permanent URL (\`/reports/medicine/<YYYY-MM>\`, \`/reports/tech/<YYYY-MM>\`)
 - [Headline numbers](${url("/llms-full.txt")}): today's open-job counts by company, technology, country, specialty, career level, German state and hospital, with 30-day changes, in one plain-text file
 - [Sitemap](${url("/sitemap.xml")}): every indexable page, including each open job
+- [Open-job index](${url("/api/v1/index.json")}): every open job as JSON, one slim row each (title, employer, places, tags, dates, no description), split into files listed in index.json; updated with each daily run
+
+## For AI assistants
+
+Workog has an MCP server that searches every open job and reads full postings. In Claude Code: \`claude plugin marketplace add ${url("/claude/marketplace.json")}\`, then \`claude plugin install workog@workog\`. Other MCP clients can run its server from \`plugins/workog\` in https://github.com/myorb/workog.
 
 ## Data and reports
 

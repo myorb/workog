@@ -14,6 +14,7 @@ bun run check            # type-check Astro pages and scripts
 bun run alert            # send a webhook alert for sources that fell back in the last run
 bun run snapshot         # rewrite today's data/history snapshot (or: bun run snapshot 2026-11-02)
 bun run ping             # tell search engines about the last run's job changes once it's live (or: --no-wait)
+bun run mcp:build        # rebuild the MCP server bundle after changing plugins/workog/server
 bun scripts/postal-states.ts  # regenerate the postal code → German state table (rarely needed)
 bun scripts/nuts-names.ts     # regenerate the EU region names EURES locations use (rarely needed)
 EURES_MAX_DETAILS=20000 bun run fetch eures  # one-off backfill of EURES job texts past the daily cap
@@ -82,6 +83,8 @@ To roll back, roll back to an earlier deployment in the App Platform dashboard, 
 | `src/lib/nuts-names.ts` | Generated NUTS code → EU region name table, for EURES jobs that name a region but no city |
 | `src/lib/postal-states.ts` | Generated postal code → German state table, for hospital sites that give a postal code but no state |
 | `src/pages/jobs/[slug].astro` | Job pages, English only (content comes from the career sites, and per-language copies would quadruple the build) |
+| `src/lib/job-index.ts` | The open-job index under `/api/v1` that the MCP server reads |
+| `plugins/workog/` | Claude Code plugin: the MCP server, its bundle and the `find-jobs` skill |
 | `src/lib/messages/` | UI strings per language; `src/lib/i18n.ts` has the routing and lookup helpers |
 
 ## Medical jobs
@@ -96,6 +99,32 @@ Search results have no description, so the fetcher reads each new job's details 
 - Job pages carry JobPosting markup with `validThrough` set to 30 days after the job was last seen, so postings expire from Google for Jobs if the pipeline stops or stops checking a job (a capped company's job outside its newest `maxJobs`).
 - Crosslinks: hub pages list only the newest 50 jobs, so each job page links to the next 5 open jobs on its team (same company and category) and in its place (first city, else country, else remote), wrapping around (`src/lib/related.ts`). Every open job is then linked from at least one other page. Job pages also link to their technology, place and employment hubs; hub pages link to the companies hiring there, related technologies and the country's other cities.
 - `scripts/ping.ts` polls `/version.json` until the site serves the new run, then sends the changed job URLs to IndexNow (key file `public/bf6f1d24d876292da4961a3ae984ea98.txt`) and to the Google Indexing API. Google's default quota is 200 URLs a day: new jobs go first, then closed ones (`URL_UPDATED`, since the page is now `noindex`), then ones dropped after the 14-day retention, whose pages are gone and whose records are in the archive (`URL_DELETED`). A failed ping is logged and doesn't fail the workflow.
+
+## MCP server and Claude Code plugin
+
+`plugins/workog` is a Claude Code plugin that lets Claude search Workog's open jobs. It holds an MCP server (`server/`), a `find-jobs` skill, and `.mcp.json`, which starts the server with `node`. Install it with:
+
+```bash
+claude plugin marketplace add https://workog.com/claude/marketplace.json
+claude plugin install workog@workog
+```
+
+The marketplace file is `.claude-plugin/marketplace.json`; the site serves a copy at `/claude/marketplace.json` so adding it doesn't clone this repo and its data. Its plugin entry is a `git-subdir` source, so installing fetches only `plugins/workog`. `claude plugin marketplace add myorb/workog --sparse .claude-plugin plugins` works too.
+
+**The site stays static.** The build writes the open-job index to `/api/v1/` (`src/lib/job-index.ts`): `index.json` names the run, the files and every filter's slugs and names, and `tech-<n>.json` and `medicine-<n>.json` hold the open jobs as slim rows of 10,000 each, without descriptions (about 30 MB, 4–5 MB compressed). The server downloads them on its first search, keeps them in the plugin's data directory, and downloads them again only after a new pipeline run; offline, it serves the last copy. It reads a job's full text and apply link from its page's JobPosting markup. Renaming or removing a row field breaks installed servers, so do that only under `/api/v2`.
+
+| Tool | Does |
+| --- | --- |
+| `search_jobs` | Filters by text, company, employer, country, city, German state, location text, remote, technology, job function, employment type, specialty, career level and days since first seen; newest first, or best title match for a text query |
+| `get_job` | The full posting: description, employer, salary, dates and apply link |
+| `count_jobs` | Open jobs grouped by one field, for "where are the Rust jobs" questions and for listing valid filter values |
+| `market_summary` | `/llms-full.txt`: today's headline numbers with 30-day changes |
+
+The plugin runs the committed bundle `server/dist/workog-mcp.mjs`, so it needs no `npm install`; after changing the server, run `bun run mcp:build` (a test fails while the bundle is stale) and bump `version` in `plugins/workog/.claude-plugin/plugin.json` so installed copies update. To try a change, run `claude --plugin-dir plugins/workog`; `WORKOG_URL` points the server at another copy of the site, such as `bun run preview`. Other MCP clients can run the bundle directly:
+
+```json
+{ "mcpServers": { "workog": { "command": "node", "args": ["/path/to/workog/plugins/workog/server/dist/workog-mcp.mjs"] } } }
+```
 
 ## Analytics history
 
