@@ -174,7 +174,7 @@ Index pages (`/locations`, `/technologies` and so on), job pages and analytics d
 
 ## The service
 
-Repo `myorb/workog-alerts`.
+Repo `myorb/workog-alerts`. How it's built (code layout, full schema, failure handling) is in [job-alerts-architecture.md](job-alerts-architecture.md), which overrides this section where they differ.
 
 ### Stack
 
