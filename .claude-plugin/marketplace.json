@@ -1,0 +1,14 @@
+{
+  "name": "workog",
+  "owner": { "name": "Workog", "url": "https://workog.com" },
+  "description": "Claude Code plugins from Workog, the job site.",
+  "plugins": [
+    {
+      "name": "workog",
+      "description": "Search open jobs on Workog from Claude: tech jobs from companies' own careers sites, and jobs for doctors across Europe. Updated daily.",
+      "category": "productivity",
+      "tags": ["jobs", "job-search", "careers"],
+      "source": { "source": "git-subdir", "url": "https://github.com/myorb/workog.git", "path": "plugins/workog" }
+    }
+  ]
+}
