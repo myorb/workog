@@ -496,7 +496,7 @@
     "postedAt": "2026-08-04T16:19:05.679Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -569,7 +569,7 @@
     "postedAt": "2026-06-16T19:07:59.457Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -864,7 +864,7 @@
     "postedAt": "2026-04-20T23:36:45.626Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -1142,6 +1142,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/8ed069c6-78b3-403f-9bb7-6fc9237b2973",
     "postedAt": "2026-10-05T22:22:13.019Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -1182,7 +1184,7 @@
     "id": "lever:9f30b1a9-9637-431b-ad46-83ba696108bd",
     "slug": "zoox-staff-logistics-engineer-9f30b1a9-9637-431b-ad46-83ba696108bd",
     "company": "zoox",
-    "title": "Staff Logistics Engineer",
+    "title": "Staff Industrial Engineer",
     "locations": [
       "Hayward, CA"
     ],
@@ -1296,7 +1298,7 @@
     "postedAt": "2026-02-12T00:35:23.545Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -1812,7 +1814,7 @@
     "postedAt": "2026-06-03T16:35:09.781Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -1973,14 +1975,14 @@
     "id": "lever:896f37b9-80b7-4077-a937-e499151ce5f2",
     "slug": "zoox-software-systems-engineer-security-896f37b9-80b7-4077-a937-e499151ce5f2",
     "company": "zoox",
-    "title": "Software Systems Engineer - Security",
+    "title": "Systems Security Engineer - Quantitative Risk Assessment",
     "locations": [
       "Foster City, CA"
     ],
     "remote": false,
     "department": "Software Systems",
     "category": "engineering",
-    "descriptionHtml": "The Product Security team is responsible for conducting structured security analyses of Zoox products and applying security standards judiciously throughout the System Development Life Cycle at Zoox. The ideal candidate for this team will have a robust background in systems engineering, coupled with a demonstrated passion and expertise in cybersecurity. \n\n<h3>In this role, you will: </h3><ul>\n<li>\n<p>Perform Risk Assessment by quantifying security related safety risks, collaborating with cross functional teams particularly safety teams to ensure alignment with safety and security objectives while supporting risk-informed engineering decisions.</p>\n</li>\n<li>\n<p>Drive verification of quantified risks by fuzzing real world scenarios in simulator environments.</p>\n</li>\n<li>\n<p>Write design proposals and drive execution while proactively communicating risks to partner teams.</p>\n</li>\n<li>\n<p>Proactively identify opportunities to roll up risk metrics into various company wide frameworks.</p>\n</li>\n<li>\n<p>Interface with a multitude of engineering teams within Product Security as well as across software and hardware engineering. Build and maintain a strong understanding of the underlying engineering constraints and factor that understanding into the analysis and recommendations.</p>\n</li>\n\n </ul><h3>Qualifications</h3><ul>\n<ul>\n<li>\n<p>Master’s degree in CS or related engineering field (software, hardware, systems) and 3+ years of experience</p>\n</li>\n<li>\n<p>A strong general systems engineering background along with a demonstrated passion and concrete expertise in cybersecurity</p>\n</li>\n<li>\n<p>Prior experience with quantitative risk assessment frameworks (eg: EPSS, Attack trees/graph quantification, Monte Carlo simulations, Bayesian networks) </p>\n</li>\n<li>\n<p>Prior experience with the risk analysis of complex embedded systems and a demonstrated skill in turning the analysis into high-quality written deliverables</p>\n</li>\n<li>\n<p>Pragmatic adoption of AI/LLM toolchains for security analysis and authoring high quality regulatory work products</p>\n</li>\n\n</ul></ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Experience with autonomous vehicle software stack (e.g., Perception, Prediction, Planning)</p>\n</li>\n<li>\n<p>Experience implementing large-scale evaluation pipelines</p>\n</li>\n<li>\n<p>Familiarity with common cloud deployment architecture and frameworks</p>\n</li>\n</ul><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "descriptionHtml": "The Product Security team is responsible for conducting structured security analyses of Zoox products and applying security standards judiciously throughout the System Development Life Cycle at Zoox. The ideal candidate for this team will have a robust background in cybersecurity, coupled with an ability to model and quantify cybersecurity risk.<h3>In this role, you will: </h3><ul>\n\n<li>\n<p>Perform Risk Assessment by quantifying security related safety risks, collaborating with cross functional teams particularly safety teams to ensure alignment with safety and security objectives while supporting risk-informed engineering decisions.</p>\n</li>\n<li>\n<p>Drive the validation and verification of quantified risk models by designing and executing automated fuzzing pipelines and edge-case scenario testing within high-fidelity simulator environments.</p>\n</li>\n<li>\n<p>Proactively identify opportunities to aggregate and integrate cybersecurity risk metrics into governance, safety, and risk management frameworks to drive strategic decision-making across the organization.</p>\n</li>\n<li>\n<p>Interface with a multitude of engineering teams within Product Security as well as across software and hardware engineering. Build and maintain a strong understanding of the underlying engineering constraints and factor that understanding into the analysis and recommendations.</p>\n</li>\n<li>\n<p>Research state of the art techniques to identify, analyze and defend against cybersecurity risks for autonomous vehicles and ride hailing service.</p>\n</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>\n<p>PhD in Cybersecurity/CS or related engineering field (software, hardware, systems)</p>\n</li>\n<li>\n<p>Strong mathematical background with strong understanding of probabilistic risk modeling and frameworks</p>\n</li>\n<li>\n<p>Pragmatic adoption of AI/LLM toolchains for security analysis and authoring high quality regulatory work products</p>\n</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n\n<li>\n<p>Prior experience with quantitative risk assessment frameworks (eg: EPSS, Attack trees/graph quantification, Monte Carlo simulations, Bayesian networks)</p>\n</li>\n<li>\n<p>Prior experience with the risk analysis of complex embedded systems and a demonstrated skill in turning the analysis into high-quality written deliverables</p>\n</li>\n<li>\n<p>Familiarity with common cloud deployment architecture and frameworks</p>\n</li>\n\n</ul><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
     "applyUrl": "https://jobs.lever.co/zoox/896f37b9-80b7-4077-a937-e499151ce5f2",
     "postedAt": "2026-08-05T19:44:25.186Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
@@ -2190,7 +2192,7 @@
     "postedAt": "2026-08-07T19:04:41.809Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -2311,6 +2313,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/09438fb7-2428-4adb-acaf-9a58d1d3fa8e",
     "postedAt": "2026-06-09T17:00:14.299Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -2450,6 +2454,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/67982bee-811b-453b-8596-b53c13f7a78d",
     "postedAt": "2026-10-28T15:38:30.332Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -2518,6 +2524,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/83967e5c-bfb4-4b3d-974a-fd0fefe4a168",
     "postedAt": "2026-09-08T20:18:25.166Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3034,7 +3042,7 @@
     "postedAt": "2025-12-17T00:58:39.878Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -3191,7 +3199,7 @@
     "postedAt": "2026-09-09T22:44:08.556Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -3616,7 +3624,7 @@
     "remote": false,
     "department": "Powertrain, Thermal, & Electrical Engineering",
     "category": "engineering",
-    "descriptionHtml": "As a Senior Electrical Low Voltage Design Engineer at Zoox, you will own the design and integration of wire harnesses that connect the controllers, sensors, and subsystems of our autonomous vehicles. Working within the Electrical Systems Team, you will take harnesses from concept through prototype builds and production launch, defining routing and 3D packaging, releasing 2D manufacturing drawings, and working directly with suppliers and the assembly plant. This is a hands-on role for an engineer who owns outcomes, works independently with suppliers, troubleshoots on the shop floor and inside prototype vehicles, and drives continuous improvement in how our harness team works.<h3>In this role, you will: </h3><ul>\n\n<li>\n<p>Own assigned harness families end to end, from concept through drawing release, prototype builds, and production launch.</p>\n</li>\n<li>\n<p>Define and own harness routing and 3D packaging in CATIA V5/V6, optimizing for mass, cost, packaging space, serviceability, and assembly.</p>\n</li>\n<li>\n<p>Create and release 2D harness manufacturing drawings and wire lists in Capital Harness (Siemens); read and understand electrical schematics and provide feedback to the electrical architecture team.</p>\n</li>\n<li>\n<p>Select clips, connectors, terminals, seals, and wire; size circuits for power consumption, voltage drop, and fuse protection; define electrical interfaces and endpoints with connected devices.</p>\n</li>\n<li>\n<p>Resolve technical issues including EMI, thermal protection, chafe/abrasion, mechanical strain, and environmental sealing; define protection, retention, and clipping strategies.</p>\n</li>\n<li>\n<p>Lead packaging and design reviews, develop and execute Design Verification, DFM, and contribute to DFMEA.</p>\n</li>\n<li>\n<p>Work directly and independently with harness suppliers from prototype development through design reviews, production readiness, and change implementation.</p>\n</li>\n<li>\n<p>Support early prototype and pilot builds at the assembly plant, troubleshooting build and vehicle issues and driving manufacturing integration fixes.</p>\n</li>\n<li>\n<p>Collaborate with electrical architecture, mechanical/packaging, manufacturing, and quality teams to align harness design with vehicle requirements.</p>\n</li>\n<li>\n<p>Develop and improve engineering processes for device transmittals, schematics, and 3D harness routing, along with design guidelines, best practices, and component libraries.</p>\n</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>\n<p>Masters’s degree in Electrical, Mechanical, Mechatronics, or Electromechanical Engineering,</p>\n</li>\n<li>\n<p>8+ years of wire harness / EDS design experience, preferably in the automotive industry (aerospace, heavy truck, or similar also considered), with a demonstrable work history</p>\n</li>\n<li>\n<p>Proficiency in 3D CAD for harness routing and packaging, preferably CATIA V5 or V6 (3DEXPERIENCE)</p>\n</li>\n<li>\n<p>Experience with 2D harness design software, preferably Siemens Capital Harness</p>\n</li>\n<li>\n<p>Ability to translate electrical schematics into 2D manufacturing drawings and 3D harness routing, including connector and terminal selection, wire sizing, power consumption, and electrical interfaces</p>\n</li>\n<li>\n<p>Experience with selection and validation of the harness components (clips, wires, terminals, seal, etc.)</p>\n</li>\n<li>\n<p>Working knowledge of automotive EE communication (CAN, LIN) and low-voltage power distribution architectures</p>\n</li>\n<li>\n<p>Hands-on experience supporting vehicle development and industrialization, from prototype through production launch</p>\n</li>\n<li>\n<p>Experience working directly with harness suppliers on design reviews and production readiness</p>\n</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>\n<p>Experience launching a mass-production vehicle program through Start of Production</p>\n</li>\n<li>\n<p>Familiarity with LV and HV connection systems, seals, and terminal retention mechanisms for electric vehicles</p>\n</li>\n<li>\n<p>Design of harness brackets, clips, and protection hardware in plastic and sheet metal, with DFM knowledge (injection molding, stamping)</p>\n</li>\n<li>\n<p>Experience with DFMEA, and cost/reliability trade-off analysis</p>\n</li>\n<li>\n<p>Understanding of signal integrity (SI), EMC/EMI, grounding, and shielding principles</p>\n</li>\n<li>\n<p>Experience with high-speed automotive communication harnesses (Automotive Ethernet, GMSL, A2B, CAN)</p>\n</li>\n<li>\n<p>Experience with Capital/Mentor Graphics Topology and HarnessXC bridging</p>\n</li>\n<li>\n<p>Hands-on use of harness test equipment (continuity testers, multimeters, oscilloscopes) and prototype vehicle instrumentation</p>\n</li>\n<li>\n<p>Familiarity with Jira and Confluence in an iterative development environment</p>\n</li>\n\n\n</ul>",
+    "descriptionHtml": "As a Senior Electrical Low Voltage Design Engineer at Zoox, you will own the design and integration of wire harnesses that connect the controllers, sensors, and subsystems of our autonomous vehicles. Working within the Electrical Systems Team, you will take harnesses from concept through prototype builds and production launch, defining routing and 3D packaging, releasing 2D manufacturing drawings, and working directly with suppliers and the assembly plant. This is a hands-on role for an engineer who owns outcomes, works independently with suppliers, troubleshoots on the shop floor and inside prototype vehicles, and drives continuous improvement in how our harness team works.<h3>In this role, you will: </h3><ul>\n\n<li>\n<p>Own assigned harness families end to end, from concept through drawing release, prototype builds, and production launch.</p>\n</li>\n<li>\n<p>Define and own harness routing and 3D packaging in CATIA V5/V6, optimizing for mass, cost, packaging space, serviceability, and assembly.</p>\n</li>\n<li>\n<p>Create and release 2D harness manufacturing drawings and wire lists in Capital Harness (Siemens); read and understand electrical schematics and provide feedback to the electrical architecture team.</p>\n</li>\n<li>\n<p>Select clips, connectors, terminals, seals, and wire; size circuits for power consumption, voltage drop, and fuse protection; define electrical interfaces and endpoints with connected devices.</p>\n</li>\n<li>\n<p>Resolve technical issues including EMI, thermal protection, chafe/abrasion, mechanical strain, and environmental sealing; define protection, retention, and clipping strategies.</p>\n</li>\n<li>\n<p>Lead packaging and design reviews, develop and execute Design Verification, DFM, and contribute to DFMEA.</p>\n</li>\n<li>\n<p>Work directly and independently with harness suppliers from prototype development through design reviews, production readiness, and change implementation.</p>\n</li>\n<li>\n<p>Support early prototype and pilot builds at the assembly plant, troubleshooting build and vehicle issues and driving manufacturing integration fixes.</p>\n</li>\n<li>\n<p>Collaborate with electrical architecture, mechanical/packaging, manufacturing, and quality teams to align harness design with vehicle requirements.</p>\n</li>\n<li>\n<p>Develop and improve engineering processes for device transmittals, schematics, and 3D harness routing, along with design guidelines, best practices, and component libraries.</p>\n</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>\n<p>Masters’s degree in Electrical, Mechanical, Mechatronics, or Electromechanical Engineering,</p>\n</li>\n<li>\n<p>8+ years of wire harness / EDS design experience, preferably in the automotive industry (aerospace, heavy truck, or similar also considered), with a demonstrable work history</p>\n</li>\n<li>\n<p>Proficiency in 3D CAD for harness routing and packaging, preferably CATIA V5 or V6 (3DEXPERIENCE)</p>\n</li>\n<li>\n<p>Experience with 2D harness design software, preferably Siemens Capital Harness</p>\n</li>\n<li>\n<p>Ability to translate electrical schematics into 2D manufacturing drawings and 3D harness routing, including connector and terminal selection, wire sizing, power consumption, and electrical interfaces</p>\n</li>\n<li>\n<p>Experience with selection and validation of the harness components (clips, wires, terminals, seal, etc.)</p>\n</li>\n<li>\n<p>Working knowledge of automotive EE communication (CAN, LIN) and low-voltage power distribution architectures</p>\n</li>\n<li>\n<p>Hands-on experience supporting vehicle development and industrialization, from prototype through production launch</p>\n</li>\n<li>\n<p>Experience working directly with harness suppliers on design reviews and production readiness</p>\n</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n\n<li>\n<p>Experience launching a mass-production vehicle program through Start of Production</p>\n</li>\n<li>\n<p>Familiarity with LV and HV connection systems, seals, and terminal retention mechanisms for electric vehicles</p>\n</li>\n<li>\n<p>Design of harness brackets, clips, and protection hardware in plastic and sheet metal, with DFM knowledge (injection molding, stamping)</p>\n</li>\n<li>\n<p>Experience with DFMEA, and cost/reliability trade-off analysis</p>\n</li>\n<li>\n<p>Understanding of signal integrity (SI), EMC/EMI, grounding, and shielding principles</p>\n</li>\n<li>\n<p>Experience with high-speed automotive communication harnesses (Automotive Ethernet, GMSL, A2B, CAN)</p>\n</li>\n<li>\n<p>Experience with Capital/Mentor Graphics Topology and HarnessXC bridging</p>\n</li>\n<li>\n<p>Hands-on use of harness test equipment (continuity testers, multimeters, oscilloscopes) and prototype vehicle instrumentation</p>\n</li>\n<li>\n<p>Familiarity with Jira and Confluence in an iterative development environment</p>\n</li>\n\n</ul>",
     "applyUrl": "https://jobs.lever.co/zoox/cf38cf65-d821-402d-819b-cb9c89194513",
     "postedAt": "2026-11-06T18:32:05.852Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
@@ -3638,7 +3646,7 @@
     "postedAt": "2026-09-10T16:59:12.595Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -3763,7 +3771,7 @@
     "postedAt": "2026-03-27T03:12:46.946Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {
@@ -3904,6 +3912,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/e8a190f0-7a89-4c11-a6a0-452ff6234749",
     "postedAt": "2026-10-06T17:27:44.932Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3940,7 +3950,7 @@
     "postedAt": "2026-05-12T00:51:40.926Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "lever"
   },
   {

@@ -146,6 +146,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1227-26-0003",
     "postedAt": "2026-11-02T08:39:32.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -369,6 +371,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3629-26-0014",
     "postedAt": "2026-09-03T08:45:22.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -405,6 +409,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5428-26-0005",
     "postedAt": "2026-09-03T10:57:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -466,6 +472,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0824",
     "postedAt": "2026-09-03T14:26:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -485,7 +493,7 @@
     "postedAt": "2026-09-08T08:47:34.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -504,7 +512,7 @@
     "postedAt": "2026-09-08T08:49:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -646,7 +654,7 @@
     "postedAt": "2026-09-17T11:26:33.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -745,8 +753,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5927-26-0012",
     "postedAt": "2026-09-18T09:42:47.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -818,6 +824,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9223-26-0927",
     "postedAt": "2026-09-22T08:09:53.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -913,8 +921,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9381-26-0400",
     "postedAt": "2026-09-23T13:34:58.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1015,8 +1021,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9437-26-0865",
     "postedAt": "2026-09-25T13:01:48.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1042,8 +1046,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9331-26-0750",
     "postedAt": "2026-09-28T09:19:54.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1213,8 +1215,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0484-26-0015",
     "postedAt": "2026-10-01T09:50:39.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1298,7 +1298,7 @@
     "postedAt": "2026-10-02T15:23:01.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -1660,6 +1660,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/L0087-26-0772",
     "postedAt": "2026-10-06T12:03:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2065,6 +2067,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9327-26-0852",
     "postedAt": "2026-10-09T09:44:33.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2401,8 +2405,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3216-26-0002",
     "postedAt": "2026-10-12T07:49:18.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2473,7 +2475,7 @@
     "postedAt": "2026-10-12T08:46:59.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -2492,8 +2494,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1952-26-0005",
     "postedAt": "2026-10-12T10:31:05.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -2559,6 +2559,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/Q0004-42818-1",
     "postedAt": "2026-10-12T13:38:41.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2577,7 +2579,7 @@
     "postedAt": "2026-10-12T15:20:48.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -2614,7 +2616,7 @@
     "postedAt": "2026-10-13T09:08:33.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -2633,6 +2635,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0302-26-1228",
     "postedAt": "2026-10-13T14:02:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2738,8 +2742,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9351-26-1172",
     "postedAt": "2026-10-14T09:51:14.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2831,8 +2833,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9426-26-0367",
     "postedAt": "2026-10-15T09:45:45.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2857,6 +2857,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3432-26-0007",
     "postedAt": "2026-10-14T13:47:16.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3306,8 +3308,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A2004-26-0002",
     "postedAt": "2026-10-16T07:01:40.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3332,6 +3332,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9179-26-0681",
     "postedAt": "2026-11-02T11:49:55.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3429,8 +3431,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A6000-26-0004",
     "postedAt": "2026-10-23T10:43:17.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -3475,6 +3475,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9430-26-0575",
     "postedAt": "2026-10-16T12:58:56.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3588,8 +3590,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9363-26-1200",
     "postedAt": "2026-10-16T14:08:43.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3778,6 +3778,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9155-CMMD-1026-34",
     "postedAt": "2026-10-19T08:41:29.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3796,8 +3798,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0994",
     "postedAt": "2026-10-19T16:18:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3861,8 +3861,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5922-26-0002",
     "postedAt": "2026-10-19T17:43:30.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3985,8 +3983,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0267-26-0006",
     "postedAt": "2026-10-19T15:13:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4086,7 +4082,7 @@
     "postedAt": "2026-10-20T09:11:43.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -4124,8 +4120,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0893",
     "postedAt": "2026-10-19T18:49:01.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4144,6 +4138,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3627-26-0014",
     "postedAt": "2026-10-20T08:13:06.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4169,7 +4165,7 @@
     "postedAt": "2026-10-20T08:16:47.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -4230,6 +4226,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1633-26-0007",
     "postedAt": "2026-10-20T08:45:21.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4253,8 +4251,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2238",
     "postedAt": "2026-10-20T08:52:23.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4296,6 +4292,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4277-26-0000",
     "postedAt": "2026-10-20T10:23:15.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4350,6 +4348,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0554-26-0112",
     "postedAt": "2026-10-20T11:29:14.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4439,6 +4439,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/L0087-26-0784",
     "postedAt": "2026-10-20T12:16:18.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4456,6 +4458,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0503",
     "postedAt": "2026-10-20T13:01:54.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4491,6 +4495,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0506",
     "postedAt": "2026-10-20T13:08:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4581,6 +4587,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9331-26-0828",
     "postedAt": "2026-10-20T15:51:42.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4828,6 +4836,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9378-CK2573",
     "postedAt": "2026-10-23T10:46:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4918,8 +4928,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9294-26-0461",
     "postedAt": "2026-11-06T13:31:14.000Z",
     "firstSeenAt": "2026-11-08T05:02:55.071Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4970,6 +4978,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9249-26-0648",
     "postedAt": "2026-10-23T08:10:02.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5061,6 +5071,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A2616-26-0008",
     "postedAt": "2026-10-23T07:55:17.000Z",
     "firstSeenAt": "2026-11-05T05:03:16.544Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5185,8 +5197,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9216-26-1582",
     "postedAt": "2026-10-23T09:15:09.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -5279,6 +5289,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1483-26-0008",
     "postedAt": "2026-10-23T09:18:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5343,7 +5355,7 @@
     "postedAt": "2026-10-23T12:35:09.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5664,6 +5676,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9294-26-0467",
     "postedAt": "2026-11-06T13:29:57.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5688,6 +5702,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0219-26-0055",
     "postedAt": "2026-10-26T09:21:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5731,6 +5747,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9439-2627-1132-1",
     "postedAt": "2026-10-26T10:19:11.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5756,7 +5774,7 @@
     "postedAt": "2026-10-28T11:55:40.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5783,7 +5801,7 @@
     "postedAt": "2026-10-26T10:41:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5808,7 +5826,7 @@
     "postedAt": "2026-10-26T11:32:19.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5826,6 +5844,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1764-26-1111",
     "postedAt": "2026-10-26T14:21:35.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5914,7 +5934,7 @@
     "postedAt": "2026-10-26T15:19:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5934,7 +5954,7 @@
     "postedAt": "2026-10-26T11:36:58.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -5988,6 +6008,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0957-26-0001",
     "postedAt": "2026-10-26T15:18:11.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6101,6 +6123,31 @@
     "source": "nhs"
   },
   {
+    "id": "nhs:5687033",
+    "slug": "hertfordshire-partnership-university-nhs-foundation-trust-consultant-psychiatrist-community-learning-disability-c9367-26-1011",
+    "company": "nhs",
+    "employer": "Hertfordshire Partnership University NHS Foundation Trust",
+    "title": "Consultant Psychiatrist - Community Learning Disability",
+    "locations": [
+      "St Albans, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The Trust is seeking a dynamic and innovative locum consultant psychiatrist to join the community learning disability services in West Hertfordshire and to provide cover to Elm ward.</p>\n<p>Contract: Permanent, Full Time</p>\n<p>Base: Department: Department of Psychiatry, St Albans and Potters Bar  Community LD services (West SLDS) (3 and  1/2  days) &amp; Elm inpatient ward (1 and 1/2 days)</p>\n<p>Responsible to: Dr Haninder Magon, Clinical Director (LD&amp;F)</p>\n<p>Title: Consultant Psychiatrist - Community Learning Disability</p>\n<p>Base: Department: Department of Psychiatry, St Albans and Potters Bar  Community LD services (West SLDS) (3 and  1/2  days) &amp; Elm inpatient ward (1 and 1/2 days)</p>\n<p>Responsible to: Dr Haninder Magon, Clinical Director (LD&amp;F)</p><p>Hertfordshire Partnership University NHS Foundation Trust (HPFT) is rated by the Care Quality Commission as an Outstanding provider of mental health and learning disability services. Feedback from our staff about working for the Trust is very positive and, in the NHS national staff survey, we regularly see a high percentage of staff saying their role makes a difference to our service users and that they would recommend the Trust as a place to work.  Our people tell us they feel supported though a great development, wellbeing and work-life balance offer and a highly compassionate, values-driven culture. We are equally proud of our staff, who live our values of being welcoming, kind, positive, respectful and professional so that together we provide great care and great outcomes for our service users and carers.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9367-26-1011",
+    "postedAt": "2026-11-10T15:53:26.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
     "id": "nhs:5687190",
     "slug": "university-hospitals-of-leicester-nhs-trust-locum-consultant-knee-c9358-26-0732",
     "company": "nhs",
@@ -6117,7 +6164,7 @@
     "postedAt": "2026-10-26T14:57:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -6186,8 +6233,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5104-26-0002",
     "postedAt": "2026-11-04T16:05:03.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6250,8 +6295,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-1002",
     "postedAt": "2026-10-28T16:36:13.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "nhs"
   },
   {
@@ -6297,6 +6340,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9287-26-1810",
     "postedAt": "2026-10-28T09:44:15.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6366,7 +6411,7 @@
     "postedAt": "2026-10-26T16:49:45.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -6386,7 +6431,7 @@
     "postedAt": "2026-10-26T16:42:00.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -6410,6 +6455,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0299",
     "postedAt": "2026-10-26T17:27:55.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6462,7 +6509,7 @@
     "postedAt": "2026-10-27T10:36:11.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -6550,6 +6597,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0846-26-0002",
     "postedAt": "2026-10-27T12:53:02.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6574,6 +6623,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9259-26-1851",
     "postedAt": "2026-11-03T10:13:10.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6621,6 +6672,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0421-26-0032",
     "postedAt": "2026-10-27T12:24:58.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6639,6 +6692,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4675-26-0000",
     "postedAt": "2026-10-27T14:27:06.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6663,6 +6718,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9413-26-0812",
     "postedAt": "2026-10-29T16:31:46.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6763,6 +6820,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9267-26-1271",
     "postedAt": "2026-10-27T13:31:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6829,6 +6888,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4637-26-0008",
     "postedAt": "2026-10-27T13:52:20.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6924,6 +6985,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5963-26-0003",
     "postedAt": "2026-10-27T15:05:29.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6947,6 +7010,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0038-26-0021",
     "postedAt": "2026-11-02T15:58:22.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6972,6 +7037,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2580",
     "postedAt": "2026-10-27T17:48:19.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7071,8 +7138,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0165-26-0006",
     "postedAt": "2026-10-28T14:16:39.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7091,6 +7156,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4653-26-0000",
     "postedAt": "2026-10-30T12:05:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7165,6 +7232,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9361-26-0650",
     "postedAt": "2026-10-28T10:06:43.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7287,8 +7356,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9470-26-0613",
     "postedAt": "2026-10-28T11:53:40.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7307,8 +7374,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0484-26-0001",
     "postedAt": "2026-10-28T11:00:35.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7335,7 +7400,7 @@
     "postedAt": "2026-10-28T11:14:45.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -7361,6 +7426,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1268",
     "postedAt": "2026-10-28T12:28:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7431,6 +7498,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9208-26-0635",
     "postedAt": "2026-10-29T10:45:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7456,6 +7525,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9196-26-1229",
     "postedAt": "2026-10-28T15:30:06.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7524,8 +7595,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9381-26-0448",
     "postedAt": "2026-10-28T14:47:01.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -7550,8 +7619,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9209-26-0472",
     "postedAt": "2026-10-28T14:53:10.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7575,6 +7642,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9262-26-1692",
     "postedAt": "2026-10-29T14:58:42.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7624,8 +7693,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9317-26-0893",
     "postedAt": "2026-10-28T16:03:19.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7766,8 +7833,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9190-26-0682",
     "postedAt": "2026-11-03T10:14:45.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7811,6 +7876,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1326-26-0004",
     "postedAt": "2026-10-29T12:11:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7854,8 +7921,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9363-26-1248",
     "postedAt": "2026-10-29T10:31:11.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8015,6 +8080,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5315-26-0004",
     "postedAt": "2026-11-05T10:06:55.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8034,7 +8101,7 @@
     "postedAt": "2026-10-29T15:28:36.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -8054,7 +8121,7 @@
     "postedAt": "2026-11-02T11:29:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -8476,8 +8543,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2670",
     "postedAt": "2026-10-30T09:26:35.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8526,8 +8591,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2673",
     "postedAt": "2026-10-30T09:27:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8577,6 +8640,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9270-26-0882",
     "postedAt": "2026-11-02T15:45:37.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8627,8 +8692,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0158-26-0138",
     "postedAt": "2026-10-30T11:22:30.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "nhs"
   },
   {
@@ -8654,6 +8717,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9236-26-1438",
     "postedAt": "2026-10-30T15:29:55.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8775,7 +8840,7 @@
     "postedAt": "2026-11-02T16:47:28.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -8844,6 +8909,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3449-26-0012",
     "postedAt": "2026-10-30T14:34:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8968,8 +9035,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2688",
     "postedAt": "2026-11-02T15:32:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9061,7 +9126,7 @@
     "postedAt": "2026-10-31T13:49:51.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -9115,7 +9180,7 @@
     "postedAt": "2026-11-02T08:25:32.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -9157,6 +9222,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1899-26-0003",
     "postedAt": "2026-11-02T10:07:58.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9181,6 +9248,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9213-26-0955",
     "postedAt": "2026-11-05T17:19:26.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9242,8 +9311,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0325-26-0039",
     "postedAt": "2026-11-02T17:37:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9322,7 +9389,7 @@
     "postedAt": "2026-11-02T11:11:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -9342,8 +9409,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0103-26-0084",
     "postedAt": "2026-11-02T11:46:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9569,8 +9634,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9318-26-0927",
     "postedAt": "2026-11-02T14:11:39.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9633,8 +9696,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3053-26-0002",
     "postedAt": "2026-11-02T14:42:07.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9710,6 +9771,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9298-26-1222",
     "postedAt": "2026-11-02T14:46:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9787,7 +9850,7 @@
     "postedAt": "2026-11-02T16:47:29.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -9838,8 +9901,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9409-26-1116",
     "postedAt": "2026-11-02T15:42:33.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -9951,8 +10012,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A2539-26-0008",
     "postedAt": "2026-11-02T17:36:41.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10082,6 +10141,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9271-26-0457",
     "postedAt": "2026-11-03T09:31:27.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10106,8 +10167,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C8192-26-0598",
     "postedAt": "2026-11-03T09:36:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "nhs"
   },
   {
@@ -10158,6 +10217,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9289-SC-490",
     "postedAt": "2026-11-03T10:07:13.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10176,6 +10237,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3904-26-0003",
     "postedAt": "2026-11-03T11:13:07.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10195,6 +10258,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9205-26-2061",
     "postedAt": "2026-11-06T13:57:21.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10219,8 +10284,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/Q0004-42441-1",
     "postedAt": "2026-11-03T11:10:39.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "nhs"
   },
   {
@@ -10245,8 +10308,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9298-26-1226",
     "postedAt": "2026-11-03T11:14:32.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10297,8 +10358,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9346-AMH-329M9",
     "postedAt": "2026-11-03T12:24:24.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10324,8 +10383,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1281",
     "postedAt": "2026-11-03T14:05:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10376,8 +10433,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1284",
     "postedAt": "2026-11-03T14:07:03.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10427,8 +10482,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9387-26-2249",
     "postedAt": "2026-11-03T13:12:34.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10448,6 +10501,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0132-26-2636",
     "postedAt": "2026-11-06T08:58:09.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10573,6 +10628,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9362-26-0830",
     "postedAt": "2026-11-03T15:30:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10764,6 +10821,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9162-26-0306",
     "postedAt": "2026-11-04T09:25:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10783,6 +10842,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9290-26-1298",
     "postedAt": "2026-11-03T22:14:11.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10808,6 +10869,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9310-26-0680",
     "postedAt": "2026-11-04T09:03:48.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10856,6 +10919,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9162-26-0307",
     "postedAt": "2026-11-04T15:42:33.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10881,8 +10946,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9321-26-2014",
     "postedAt": "2026-11-04T10:02:58.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10901,6 +10964,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1187-26-0005",
     "postedAt": "2026-11-04T09:50:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10925,8 +10990,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9284-26-0505",
     "postedAt": "2026-11-04T09:50:49.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11008,6 +11071,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9275-26-0238",
     "postedAt": "2026-11-04T10:59:30.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11032,8 +11097,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9349-26-3330",
     "postedAt": "2026-11-04T12:33:36.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -11060,7 +11123,7 @@
     "postedAt": "2026-11-04T11:59:20.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -11085,6 +11148,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9430-26-0609",
     "postedAt": "2026-11-04T12:21:12.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11103,6 +11168,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0469-26-0015",
     "postedAt": "2026-11-04T12:02:28.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11153,8 +11220,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9387-26-2269",
     "postedAt": "2026-11-04T12:54:14.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11223,8 +11288,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9391-26-1958",
     "postedAt": "2026-11-05T09:41:58.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11261,6 +11324,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3675-26-0002",
     "postedAt": "2026-11-04T16:28:34.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11286,6 +11351,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9267-26-1308",
     "postedAt": "2026-11-04T15:38:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11348,6 +11415,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0902-26-0015",
     "postedAt": "2026-11-04T21:30:38.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11422,8 +11491,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9351-26-1277",
     "postedAt": "2026-11-05T11:53:38.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11468,8 +11535,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0354-JF000258STAHES",
     "postedAt": "2026-11-05T11:10:27.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11495,8 +11560,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9213-26-0963",
     "postedAt": "2026-11-05T11:19:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11589,6 +11652,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9387-26-2282",
     "postedAt": "2026-11-05T11:38:52.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11771,8 +11836,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9175-26-0331",
     "postedAt": "2026-11-05T14:25:02.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11798,6 +11861,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9349-26-3339",
     "postedAt": "2026-11-05T16:32:45.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11840,6 +11905,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9370-MEDSDDMOP-2555",
     "postedAt": "2026-11-05T15:57:06.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11859,6 +11926,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0132-26-2671",
     "postedAt": "2026-11-06T08:53:56.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11883,8 +11952,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9289-EI-209",
     "postedAt": "2026-11-05T16:48:25.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11908,8 +11975,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0093-26-0072",
     "postedAt": "2026-11-05T17:14:49.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11927,8 +11992,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9290-26-1316",
     "postedAt": "2026-11-06T14:03:26.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "nhs"
   },
   {
@@ -11981,6 +12044,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9164-26-1050",
     "postedAt": "2026-11-06T08:47:29.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12102,7 +12167,7 @@
     "postedAt": "2026-11-06T10:18:16.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -12129,7 +12194,7 @@
     "postedAt": "2026-11-06T10:49:54.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -12430,7 +12495,7 @@
     "postedAt": "2026-11-06T13:53:07.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -12529,6 +12594,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3389-26-0017",
     "postedAt": "2026-11-06T15:59:13.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12643,6 +12710,31 @@
     "source": "nhs"
   },
   {
+    "id": "nhs:5714562",
+    "slug": "central-and-north-west-london-nhs-foundation-trust-consultant-psychiatrist-in-camhs-ld-attracts-rrb-20k-c9333-26-1463",
+    "company": "nhs",
+    "employer": "Central and North West London NHS Foundation Trust",
+    "title": "Consultant Psychiatrist in CAMHS LD - attracts RRB £20k",
+    "locations": [
+      "Hayes, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are advertising for a part time Locum Consultant Child and Adolescent Psychiatrist to work within the Hillingdon CAMHS Learning Disabilities</p> <p>This is an exciting opportunity for an energetic, innovative and dedicated child and adolescent psychiatrist with creative ideas for service development, keen to work with dynamic and passionate consultant colleagues and MDT clinicians and to collaborate with paediatricians, schools, children's services and allied health professionals.</p> <p>There are opportunities for teaching and training, for example as part of the higher training scheme and strong links with Imperial College London to develop research interests. </p> <p>This posts attracts a £20,000 golden hello, paid in 3 installments (subject to discussion) and there is also an option for additional 2 additional PA's joining the Hillingdon Early Intervention in Psychosis team for patients under 18yrs, based at Mill House.</p> <p>This post has been expanded to reflect the development of LD services in Hillingdon. The focus of this post will be to provide psychiatric consultation, assessment and treatment in the Hillingdon LD team. The post holder will be expected to contribute clinical leadership in the development and management of the Learning Disability and neuro developmental disorder pathway within the Service Line.</p> <p>There are senior psychologists and behaviour analysts within the team, contributing to the expertise available for the local population. Close working relationships exist with the Educational and Children with Disability Teams and with the Child Development/Paediatric Services. In Hillingdon, the team work closely with the Child Development Centre (CDC) and the local pathway agreement is that CDC carry out ASD assessments and prescribe for young people with LD who also have ADHD.</p> <p>The postholder will contribute to the CAMHS OOH consultant rota for CNWL NHS FT.</p><p>Central and North West London (CNWL) specialises in caring for people with a wide range of mental and physical health needs and is one of the largest mental health trusts in England.</p>\n<p>Each CAMHS service has its own local management structure: Hillingdon CAMHS has a Lead Psychiatrist, Therapies lead and team manager who work closely with the outer boroughs service manager. Each sub-team has a psychiatry and therapy lead and they, together with the team and service manager form the local senior management team which meets monthly.</p>\n<p>The postholder will be part of the SMT. The Hillingdon CAMHS team is well established and staffed by a strong multi-disciplinary team of clinicians. We aim to provide an accessible, flexible and responsive local service for patients and professionals working with children in the area using a range of therapeutic interventions including behaviour, systemic, CBT, IPT-A, DBT, psycho-dynamic and group therapies as well as psychopharmacological approaches. Hillingdon CAMHS is a Tier 3 service, accepting referrals from GPs, paediatrics, schools and Children's Services. The service has active service user groups for young people and parents. The team has a monthly CPD session and business meeting, a weekly local consultants meeting and a monthly senior management meeting which the postholder will be part of.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9333-26-1463",
+    "postedAt": "2026-11-09T14:45:45.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
     "id": "nhs:5714610",
     "slug": "manchester-university-nhs-foundation-trust-foundation-locally-employed-doctor-in-general-surgery-urology-c9349-26-3372",
     "company": "nhs",
@@ -12664,8 +12756,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9349-26-3372",
     "postedAt": "2026-11-09T10:32:44.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12684,6 +12774,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3613-26-0001",
     "postedAt": "2026-11-09T11:16:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12751,6 +12843,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0702-26-0004",
     "postedAt": "2026-11-09T10:02:50.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12793,8 +12887,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3302-26-0004",
     "postedAt": "2026-11-09T11:13:56.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12820,6 +12912,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9176-26-0659",
     "postedAt": "2026-11-09T11:19:19.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12845,6 +12939,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9263-26-1111",
     "postedAt": "2026-11-09T11:50:04.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12870,6 +12966,31 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9190-26-0718",
     "postedAt": "2026-11-09T13:45:08.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5716159",
+    "slug": "the-queen-elizabeth-hospital-king-s-lynn-nhsft-consultant-ophthalmologist-glaucoma-c9426-26-0387",
+    "company": "nhs",
+    "employer": "The Queen Elizabeth Hospital King's Lynn NHSFT",
+    "title": "Consultant Ophthalmologist Glaucoma",
+    "locations": [
+      "King's Lynn, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "ophthalmology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>An exciting opportunity has arisen for aConsultant Ophthalmologist with a specialist interest in Glaucoma to join the Ophthalmology Department at The Queen Elizabeth Hospital King's Lynn.</p> <p>This substantive post offers the opportunity to play a key role in the development of the Trust's glaucoma service while delivering high-quality care for patients with glaucoma and other ophthalmic conditions, contributing to service development, innovation and waiting list recovery</p> The department is based within the dedicated West Norfolk Eye Centre and benefits from modern diagnostic and surgical facilities, including dedicated ophthalmic theatres, advanced retinal imaging and an exciting programme of digital transformation through the implementation of a dedicated ophthalmology Electronic Patient Record system.   <p>As a senior member of the Trust, the post-holder will work in partnership with clinical, professional and managerial colleagues to uphold the highest standards of patient care. Core responsibilities include:</p> <ul>  <li>Ensuring the provision of a first-class clinical glaucoma service</li>  <li>Providing effective leadership within the specialty</li>  <li>Supporting and developing teaching and research activities</li>  <li>Working in accordance with Trust procedures and operating policies</li>  <li>Delivering clinical practice aligned with contractual requirements and the Trust's service plans</li> </ul>    <p>The post holder will be required to have completed senior subspecialty fellowship training in glaucoma, providing the knowledge, clinical expertise and surgical skill necessary to practise independently within the glaucoma service. They must have experience managing the full spectrum of complex glaucoma conditions.</p>\n<p>The post holder should demonstrate expertise in interpreting glaucoma diagnostics--including OCT, visual fields, optic nerve imaging and anterior segment imaging--and have the ability to formulate and deliver safe, evidence-based management plans. Surgical competence is desirable but not essential.</p><p>There's never been a more exciting time to join TeamQEH. We're working on a once in a generation opportunity to build a new state-of-the-art hospital and we are also carrying out on one of the biggest pieces of digital transformation work we've ever undertaken.</p>\n<p>Our new electronic patient record (EPR) will replace paper-based patient records and will lead to better, safer, joined-up care at The Queen Elizabeth Hospital and beyond.</p>\n<p>At The QEH we provide a comprehensive range of specialist, acute, obstetrics and community-based services to around 331,000 people across west and north Norfolk, North Cambs and South Lincs.</p>\n<p>We recognise and reward our 4,000 staff and volunteers, priding ourselves on a community atmosphere and positive team spirit. We have approx. 530 beds across 33 wards and have newly built education and training facilities, a range of modern award-winning centres alongside a talented team of people ready to give you a warm welcome.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9426-26-0387",
+    "postedAt": "2026-11-10T16:27:09.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   },
   {
@@ -13012,6 +13133,31 @@
     "source": "nhs"
   },
   {
+    "id": "nhs:5716762",
+    "slug": "south-tees-hospitals-nhs-foundation-trust-consultant-gastroenterologist-c9328-26-0629",
+    "company": "nhs",
+    "employer": "South Tees Hospitals NHS Foundation Trust",
+    "title": "Consultant Gastroenterologist",
+    "locations": [
+      "Middlesbrough, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "gastroenterology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>South Tees Hospitals NHS Foundation Trust is seeking an enthusiastic and motivated <strong>Consultant Gastroenterologist</strong> to join our established and progressive Gastroenterology Directorate.</p> <p>This is an excellent opportunity to become part of a highly regarded consultant team delivering comprehensive acute and elective gastroenterology services across the Tees Valley. The successful candidate will contribute to the ongoing development of specialist gastroenterology services, helping to deliver high-quality, patient-centred care within a modern and ambitious organisation.</p> <p>Based primarily at <strong>The James Cook University Hospital</strong>, the post holder will also contribute to cross-site working at <strong>The Friarage Hospital, Northallerton</strong>, and other Trust locations as required.</p> <p>We welcome applications from suitably qualified candidates from both within and outside the organisation.</p><p>You will join a team of <strong>14 Consultant Gastroenterologists</strong> providing a comprehensive range of inpatient and outpatient gastroenterology services, including:</p> <ul>  <li>Consultant-led acute gastroenterology care.</li>  <li>A 24/7 emergency gastrointestinal bleeding service.</li>  <li>Diagnostic and therapeutic endoscopy.</li>  <li>Specialist hepatology and nutrition services.</li>  <li>Gastrointestinal cancer pathways.</li>  <li>Multidisciplinary specialist care.</li> </ul>  <p>The successful candidate will:</p> <ul>  <li>Provide high-quality inpatient and outpatient gastroenterology care.</li>  <li>Participate in the Consultant Gastroenterology on-call rota, including emergency gastrointestinal bleeding services.</li>  <li>Deliver diagnostic and therapeutic endoscopy.</li>  <li>Contribute to service development and quality improvement initiatives.</li>  <li>Participate in multidisciplinary team meetings and clinical governance activities.</li>  <li>Support and supervise junior medical staff, Clinical Fellows and Nurse Endoscopists.</li>  <li>Contribute to teaching, training, audit and research activities within the Directorate.</li> </ul><p>The successful candidate will be appointed under the current terms and conditions of service for NHS Consultants. Full consideration will be given to applicants who wish to apply for a reduced/part time contract.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9328-26-0629",
+    "postedAt": "2026-11-10T14:48:57.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
     "id": "nhs:5716829",
     "slug": "east-suffolk-and-north-essex-nhs-foundation-trust-specialty-doctor-in-ent-c9432-26-0861",
     "company": "nhs",
@@ -13033,6 +13179,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9432-26-0861",
     "postedAt": "2026-11-09T16:03:45.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13057,6 +13205,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0135-26-0185",
     "postedAt": "2026-11-09T16:31:42.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13082,6 +13232,739 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9311-26-0754",
     "postedAt": "2026-11-09T16:11:52.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5716977",
+    "slug": "devon-partnership-nhs-trust-consultant-psychiatrist-liaison-psychiatry-c9369-26-0897",
+    "company": "nhs",
+    "employer": "Devon Partnership NHS Trust",
+    "title": "Consultant Psychiatrist Liaison Psychiatry",
+    "locations": [
+      "Barnstaple, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p><strong>North Devon Liaison Psychiatry Consultant Post 8PA \r\nDevon Partnership NHS Trust.</strong></p><p>North Devon offers outstanding beaches, surfing, kitesurfing, outdoor swimming and excellent opportunities for riding and running. Dartmoor is close by, providing a stunning environment and a great place to raise children away from big city pressures.</p><p>The team is friendly, supportive and well regarded for staff retention and high quality clinical work. The hospital is small and easy to navigate, enabling strong relationships across clinical and managerial teams, with a caring and relaxed culture.</p><p>The post is well supported by local Psychiatric Consultants, regular team supervision, links with Liaison Teams across the county and close collaboration within the team. The service works a Core 15 model, with the medical component providing care 9am to 5pm to people admitted to inpatient wards or attending the Emergency Department.</p><p>The team also contributes to the Integrated Psychological Medicine Service with Talkworks (IAPT), Health Psychology and Medical and Surgical Specialties, developing pathways for people with functional and chronic conditions.</p><p>The multidisciplinary team includes Nurses, Occupational Therapists, Social Workers, Liaison Psychologists, Consultant Psychiatrists and Junior Doctors. We work in a selfcontained unit that supports excellent communication while remaining closely connected to the general and psychiatric hospital on the same site. Strong administrative support is in place.</p><p>The role is to provide\r\nConsultant leadership to a multidisciplinary Liaison Psychiatry service, with\r\nopportunities for development and clinical leadership in the Integrated\r\nPsychological Medicine Service. </p><p>The clinical work is\r\nhighly variable which makes it challenging at times but very interesting. This\r\nservice is currently for patients age 18+ and would fit with either General\r\nAdult, Older Adult or Liaison training experience. </p><p>Teaching, as with all\r\nliaison teams, is an essential part of the role both locally, regionally,\r\nwithin the hospital, within the team and with medical students and is a\r\nrewarding part of the post. </p><p>The post holder will be\r\nexpected to engage in the service governance programme and service improvement\r\nprojects. There is an active and supportive QI team in the Trust.</p><p>On calls are part of the\r\npost and whilst relatively frequent (1:7) they are not intense and\r\nmostly constitute telephone advice and infrequent MHA assessments. </p><p>The role is well\r\nsupported by all levels of trainee medical staff and the post provides\r\nsupervision to these trainees. </p><p>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nResearch interests are very encouraged and the\r\nTrust R&amp;D team has links with the University of Exeter and a well-regarded\r\nreputation for participation in both regional and multi centre national trials.\r\nDevelopment of consultant roles such as a research principle investigator are\r\nwell established and supported.</p><p><strong>About Devon Partnership Trust</strong></p><p>We provide mental health, learning disability and neurodiversity services, as well as a range of specialist &amp; secure services for the wider south west region &amp; nationally. We are passionate about promoting good mental health &amp; wellbeing. We strive to use the expertise &amp; resources within our organisation, and through our partnerships, to deliver high quality services that are safe &amp; focused on people's recovery.</p><p>We are committed to developing a culture of coproduction, involving patients, families &amp; carers in everything we do</p><p><strong>Our values</strong></p><p>We not only recruit based on qualifications &amp; experience - we recruit individuals who possess &amp; demonstrate the behaviours which underpin our Trusts core values. These include such attributes as showing a commitment to quality of care, improving lives of others, giving respect, dignity &amp; compassion. We can bring those values to life in our everyday tasks by giving a smile; making time for people; challenging ourselves &amp; others, &amp; being open to new ideas.</p><p>We are committed to being an inclusive employer &amp; applications are encouraged &amp; welcomed from all sections of the community, regardless of any protected characteristics as governed by the Equality Act 2010. Part time &amp; flexible working applications will be considered &amp; supported, where possible. We particularly encourage applicants with lived experience of mental health conditions, neurodiversity or learning disabilities. We are a Disability Confident Leader.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9369-26-0897",
+    "postedAt": "2026-11-10T09:29:56.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717053",
+    "slug": "oxford-university-hospitals-nhs-foundation-trust-locum-consultant-colorectal-surgeon-interest-in-cancer-c9321-26-2125",
+    "company": "nhs",
+    "employer": "Oxford University Hospitals NHS Foundation Trust",
+    "title": "Locum Consultant Colorectal Surgeon (Interest in Cancer)",
+    "locations": [
+      "Oxford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>A whole-time Locum post as a Consultant in Colorectal Surgery is available now at Oxford University HospitalsNHS Foundation Trust.</p>   <p>This isa fixed term contract for the period of one year.</p>  <p>The Colorectal Department currently has a vacancy for a Consultant Colorectal Surgeon to join tencurrentConsultant colleagues and a SpecialistDoctor.</p>   <p>Applications are invited to apply for the postbased atthe Department of Colorectal Surgery,Churchill Hospital, Oxford.</p>   <p>The department'sexpertise covers the full range of colorectal surgery with high volumes of colorectal cancer, inflammatory bowel disease, pelvic floordisordersand proctology. The newConsultant will have a broad training in colorectal surgery and able to integrate and help develop the above services.</p><p>Surgical management of elective and emergency Colorectal Surgery with a primary interest in cancer. The candidate will work within a department of ten other Consultant, and one Specialist, Colorectal Surgeons and participatein the wider emergency on call rota.</p>   <p>Theprimary focusof the post will beLGI Cancer and general Colorectal Surgery, working closely with the existing surgeons andmulti-disciplinary teamsin providingtheseservices. Activitywill also includeLower GI endoscopy lists.</p>   <p>The post holder willparticipatein the on-call rota for Emergency General Surgery services based at the John Radcliffe Hospital site.</p>   <p>The postholder's duties will be primarily at The Churchill Hospital and John Radcliffe Hospital but it is a condition of the appointment that the postholder will be willing to work in any of the Trust's locationswithin Oxfordshire,includingtheHorton General Hospitalin Banbury.</p><p><strong>Oxford University Hospitals NHS Foundation Trust</strong> is one of the largest NHS teaching trusts in the country. It provides a wide range of general and specialist clinical services and is a base for medical education, training and research. The Trust comprises four hospitals - the John Radcliffe Hospital, Churchill Hospital and Nuffield Orthopaedic Centre in Headington and the Horton General Hospital in Banbury.</p> <p>Our values, standards and behaviours define the quality of clinical care we offer and the professional relationships we make with our patients, colleagues and the wider community.</p> <p>We call this Delivering Compassionate Excellence, and its focus is on our values of compassion, respect, learning, delivery, improvement and excellence.</p> <p>These values put patients at the heart of what we do and underpin the quality healthcare we would like for ourselves or a member of our family. Watch how we set out to deliver compassionate excellence via the<strong> OUH YouTube channel.</strong></p> <p>In 2023NHS England launched its first sexual safety charter, and our Trust proudly signed it. We pledge zero tolerance for inappropriate sexual behaviour and commit to the ten core principles</p> <p>Oxford University Hospitals promotes a safe, respectful hiring environment.</p> <p>If you want to make a difference with us, come and join our team. Together, we will uphold the highest standards of care and professionalism.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9321-26-2125",
+    "postedAt": "2026-11-10T12:43:50.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717354",
+    "slug": "cygnet-health-care-support-worker-e0233-26-2405",
+    "company": "nhs",
+    "employer": "Cygnet Health Care",
+    "title": "Support Worker",
+    "locations": [
+      "Crewe, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 13.15,
+      "max": 13.7,
+      "unit": "HOUR"
+    },
+    "descriptionHtml": "<p><strong>Support Worker</strong></p><p>Cygnet Nield House, Crewe, Cheshire</p><p>Location: Cygnet Nield House, Barrows Green, Bradfield Road, Crewe, Cheshire, CW1 4QW</p><p>Salary: £13.15 per hour rising to £13.70 after 3 months</p><p>Hours: 42 hours per week across a mixed shift pattern (12 hour day and night shifts)</p><p>Ideal for: Candidates with care experience or transferable skills from people-focused roles.\r\n</p><p>Excited to grow your career?</p><p>Are you looking for a rewarding Support Worker job in Crewe where you can use your experience, people skills and compassion to make a real difference?</p><p>At Cygnet, our people make all the difference. We value talented, committed colleagues and, wherever possible, support our teams to grow professionally and develop their careers.\r\n\r\nWe are looking for confident,compassionateand resilient Support Workers with a passion for delivering outstanding care to join our team at Cygnet Nield House in Crewe.</p><p>Youllbe working42 hoursper week across a mixed 12-hour shift pattern, helping to make a positive difference to the lives of the women in our care.\r\n\r\nWhether you have experience in care, mental health, healthcare, support work or residential services, or you bring transferable skills from roles such as customer service, hospitality, retail, education, security, community work or family caring responsibilities, this could be the next step in your career.</p><p><strong>About Cygnet Nield House</strong></p><p>Cygnet Nield House is a specialist mental health hospital for women in Crewe, Cheshire. The service supports women aged 18 and over and is split into two distinct wards, each offering specialist mental health care.</p><p><strong>Clarion Ward</strong></p><p>Clarion Ward is a 14-bed complex personality disorder service for women with a dual diagnosis of personality disorder, with or without co-morbid disorderedeating.</p><p><strong>Compton Ward</strong></p><p>Compton Ward is a 15-bed acute service for women. The ward provides a safe andstabilisingenvironment for women experiencing an acute episode of mental illness who require an emergency admission.</p><p>At Nield House,youllbe part of a supportive, multidisciplinary team helping women feel safe,respectedand empowered as they work towards recovery,independenceand improved wellbeing.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2405",
+    "postedAt": "2026-11-10T08:14:18.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717408",
+    "slug": "nhs-england-gp-associate-dean-for-expansion-m9990-26-0841",
+    "company": "nhs",
+    "employer": "NHS England",
+    "title": "GP Associate Dean for Expansion",
+    "locations": [
+      "Southampton, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "salary": {
+      "currency": "GBP",
+      "min": 131827,
+      "max": 131827,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>This role involves working across the Wessex Deanery enabling the Expansion of GP training programmes and supporting GP trainees. There is a total of 3 sessions divided as below.</p>  <p>This is an Associate Dean role for 2 sessions in the Wessex patch covering new innovative programmes such as Structured Learning, recruitment issues, including wider placements and capacity, ITPs in your patch, trainer and trainee queries, line management of your TPDs, strategy, and leadership activities within the GP school.</p>  <p>This is also an Associate Dean role for 1 session covering ARCP and chairing panels. You will line manage any TPDs in ARCP roles and oversee the ARCP panels.</p><p>As an Associate Dean you will be part of the extended Senior educator team and will also be expected to be part of the approval process for Trainers and Practices in Wessex. It involves working in conjunction with the Head of School and Training Programme Directors.</p>  <p>It will involve delivery and organisation of projects to support trainees, including induction, one-one support, and small group support.</p>  <p>This role will also work with our Educational and Clinical Supervisors to support and help them provide good quality supervision for trainees.</p>  <p>The role will include doing strategy work in the Wessex region with the Primary Care Dean, Head and Deputy Head of School</p><p>NHS England has a wide range of statutory functions, responsibilities and regulatory powers. These are focused on supporting the wider NHS to deliver high quality care, as well as doing those things that are best done once for the whole NHS.</p> <p>Our staff bring expertise across clinical, operational, commissioning, technology, data science, cyber security, software engineering, education, and commercial specialisms -- enabling us to design and deliver high-quality NHS services.</p> <p>In March 2025, the Government announced that NHS England and the Department of Health and Social Care will increasingly merge functions, ultimately leading to NHS England being fully integrated into the department.</p> <p>If you currently work within the NHS and if successful at interview, we will initiate an Inter Authority Transfer (IAT) via the Electronic Staff Record (ESR).This retrieves key data from your current or previous NHS employer to support onboarding, including competency status, Continuous Service Dates (CSD), and annual leave entitlement. You may opt out at any stage of the process.</p> <p>Colleagues with a contractual office base are expected to spend, on average, at least 40% of their time working in our offices.</p> <p>We cannot offer visa sponsorship for external candidates.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M9990-26-0841",
+    "postedAt": "2026-11-10T12:43:38.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717927",
+    "slug": "nuffield-health-theatre-practitioner-endoscopy-bank-e0302-26-1346",
+    "company": "nhs",
+    "employer": "Nuffield Health",
+    "title": "Theatre Practitioner Endoscopy - (Bank)",
+    "locations": [
+      "Bristol, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 30,
+      "max": 30,
+      "unit": "HOUR"
+    },
+    "descriptionHtml": "Job Description\r\nTheatre Practitioner (Bank)\r\n\r\nBristol Hospital | Endoscopy | Ad hoc | Part time\r\n\r\nUp to £30.00 per hour depending on experience As an Endoscopy Scrub Practitioner or Theatre Practitioner (ODP),you will: \r\n\r\nWork in a multi disciplinary team covering a varied patient caseload  \r\n\r\nUse state-of-the-art technology, equipment and facilities \r\n\r\nSupervise, support and develop junior members of the team \r\n\r\nProvide high-quality perioperative care in a multidisciplinary team setting\r\n\r\nCreate high-quality care and patient experiences that are clinically effective and evidence based\r\n\r\nHave ample opportunities for continuous growth and personal development, which can include Surgical First Assist training.\r\n\r\n\r\n\r\nHelping you feel good. \r\n\r\n\r\n\r\nWe want you to love coming to work, feeling healthy, happy and valued. That's why we've developed a benefits package with you in mind. This includes holiday in line with the working time directive, access to our pension scheme and discounted gym membership at £35.00 a month. \r\n\r\n \r\n\r\nWorking on the bank means you are not contracted to a set number of hours per week but instead work on an ad-hoc basis to suit the needs of the business and your availability.  Bristol Hospital \n\n \n\nSituated in the beautiful village of Clifton, Nuffield Health Bristol Hospital - The Chesterfield, has a long and distinguished history of looking after the people of Bristol. With the latest equipment, and designed to meet the needs of all of our patients, we are constantly developing our services to ensure our patients receive the finest quality treatment. A 30 private bed hospital which houses 3 digital theatres and combines leading-edge clinical facilities with an outstanding customer experience.\n\n \n\nJoin Nuffield Health and create the future you want, today. \n\n \n\nIf you like what you see, why not start your application now? We consider applications as we receive them and reserve the right to close adverts early (for example, where we have received an unprecedented high volume of applications). So, it's a good idea to apply right away to ensure you're considered for this role. \n\n \n\nIt starts with you.",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0302-26-1346",
+    "postedAt": "2026-11-10T12:18:21.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717963",
+    "slug": "norfolk-and-suffolk-foundation-nhs-trust-specialty-doctor-forensic-north-community-team-c9246-26-1273",
+    "company": "nhs",
+    "employer": "Norfolk & Suffolk Foundation NHS Trust",
+    "title": "Specialty Doctor Forensic North Community Team",
+    "locations": [
+      "Norwich, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "salary": {
+      "currency": "GBP",
+      "min": 63696,
+      "max": 102689,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<ul>  <li><strong>This role will be supported by a £12,000 relocation allowance</strong></li>  <li><strong>'Holiday of a lifetime scheme': Consultants and SAS doctors can bank/accrue annual leave over a period of up to 5 years, to facilitate an extended period of leave. The scheme enables the opportunity for planning a 'holiday of a lifetime' or extended paid break</strong></li> </ul> <p>The Trust is seeking a specialty doctor to join our Forensic Community Team service based in Norwich. The role offers the opportunity To provide specialised psychiatric care to patients with mental disorders who have offended to pose a high risk of harm.Secure and Forensic Services for NSFT are rated as Good by the CQC. We provide a wide and growing body of clinical services operating in a variety of settings linked to criminal justice services.</p><p> Assisting with discharge of patients from secure and in-patient care. Facilitating step-down care from medium or low secure units, supporting patients with severe mental illnesses living in the community, and preventing hospital readmission. The specialty doctor is expected to provide critical psychiatric care to mentally disordered offenders. They lead risk assessments, manage caseloads, prevent relapses, and coordinate with multi-agency teams, including probation and police, to safely integrate patients into society and prevent reoffending.</p>  <p>Norfolk and Suffolk NHS Foundation Trust provides child and adult mental health services, learning disability, wellbeing and eating disorder services across Norfolk and Suffolk.</p>\n<p>We are also offering:</p>\n<ul>\n<li>Up to £12k relocation expenses</li>\n<li>Dedicated SPA time of up to 25% of working hours</li>\n<li>£2000 annual paid study leave (on application and approval) in addition to CPD</li>\n<li>NHS benefits package including contributory pension, redundancy. Including paid annual leave, sick leave and maternity leave.</li>\n<li>Appraisals and revalidation completed by the Trust</li>\n<li>Friendly Colleagues</li>\n<li>Encouragement and support for areas of special interest</li>\n<li>Subsidised gyms and free physio service</li>\n<li>We have a strong education reputation and close ties with both The University of Cambridge and The University of East Anglia</li>\n<li>Well established county wide teaching program</li>\n<li>Access and encouragement to partake in research and a well-established research network within the Trust</li>\n<li>Support for Quality Improvement, Audit and Service development</li>\n<li>Forward thinking, clinically lead and innovative trust</li>\n<li>Flexibility can be considered for a degree of remote working</li>\n</ul>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9246-26-1273",
+    "postedAt": "2026-11-10T10:33:17.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5717970",
+    "slug": "south-durham-health-cic-social-prescribing-link-worker-b0611-26-0029",
+    "company": "nhs",
+    "employer": "South Durham Health CIC",
+    "title": "Social Prescribing Link Worker",
+    "locations": [
+      "Newton Aycliffe, United Kingdom",
+      "Shildon, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Job Title: Social Prescribing Link Worker</p><p>Responsible to: Team Lead and PCN Clinical Director</p><p>Location: Practices within Sedgefield 1 Primary Care Network</p><p>Contract Type: Permanent</p><p>Hours: Part time 18.5 hours per week</p><p>An exciting opportunity has arisen for a Social Prescribing\r\nLink Worker to join our growing multi-disciplinary team.</p><p>Teamwork, flexibility, enthusiasm and the ability to\r\nprioritise tasks effectively are essential skills.</p><p>To support\r\npatients in our local community to take control of their health and wellbeing\r\nby:</p><p> Promoting prevention &amp;\r\nlifestyle changes.</p><p>Engaging patients and\r\nconnecting them with the wide range of groups and services.</p><p> Working with the wider\r\nhealth, social care and voluntary network.</p><p> Encouraging a holistic\r\napproach for patients with chronic diseases.</p><p> Building a relationship in\r\nthe journey of patients towards mental health services.</p><p> Bereavement support \r\nsupporting patient's family's and signposting them to an appropriate\r\nbereavement service where necessary.</p><p> Supporting the practices in\r\nattaining their referral targets.</p><p> Promoting and raising\r\nawareness of the social prescribing service within the practices and partner\r\nagencies.</p><p>Sedgefield 1 Primary Care Network is an innovative, dynamic\r\nPCN combining 4 local GP Practices based in Sedgefield area, with a population\r\nof over 42,000 patients. We are\r\ncontinually seeking new ways to support and improve local healthcare\r\nservices to our patient population. </p><p>We are committed to the ongoing development of our team, which\r\nincludes mandatory and developmental training for all our staff. Team members\r\nare encouraged to highlight any training they feel would benefit them in the\r\nachievement of their role.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0611-26-0029",
+    "postedAt": "2026-11-10T11:13:39.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718049",
+    "slug": "northampton-general-hospital-locum-consultant-in-neurology-c9265-26-0760",
+    "company": "nhs",
+    "employer": "Northampton General Hospital",
+    "title": "Locum Consultant in Neurology",
+    "locations": [
+      "Northampton, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "neurology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are seeking an enthusiastic and skilled Locum Consultant Neurologist to join our well-established and supportive NHS neurology service. This is an exciting opportunity to deliver high-quality neurological care within a collaborative, multidisciplinary environment, while contributing to education, service development, and innovation.</p>\n<p>The post holder will deliver a balanced programme of outpatient neurology clinics, inpatient ward referrals, and MDT working, managing both urgent and routine neurological presentations. The role includes active participation in multidisciplinary and radiology meetings to support safe, effective, and patient-centred care.</p>\n<p>You will contribute to the supervision, teaching, and development of trainees and junior medical staff, alongside involvement in audit, governance, and administrative activities that underpin high-quality clinical practice. Dedicated Supporting Professional Activities (SPA) time is included, with opportunities to engage in research, quality improvement, and service development in collaboration with the Trust's Research and Development team.</p><ul>  <li> Main duties of the job </li>  <li> Conducting urgent and routine neurology clinics, ward referrals, and radiology meetings. </li>  <li> Contributing to multidisciplinary meetings, trainee supervision, and teaching. </li>  <li> Undertaking administrative duties to support clinical practice. </li>  <li> Participating in academic, study, and supporting professional activities (SPA), with opportunities for research and service development in collaboration with the local Research and Development team. </li>  <li> Engaging in educational supervision, appraisal, management, and leadership roles where appropriate.   <p>The post holder will deliver high-quality care through a balanced programme of outpatient clinics, ward referrals, multidisciplinary team (MDT) work, and supporting professional activities. The role includes:</p>    </li> </ul><p><strong>Please submit your application as soon as possible, as we reserve the right to close adverts once sufficient applications have been received.</strong></p>\n<p><strong>We recognise that AI tools can be helpful when drafting job applications; however, we ask candidates to keep their use to a minimum. Your responses should reflect your own experiences, skills and knowledge. Over-reliance on AI-generated content may result in responses that are generic or do not accurately represent your abilities.</strong></p>\n<p>University Hospitals of Northamptonshire (UHN) was formed through the grouping of Kettering General Hospital NHS Foundation Trust and Northampton General Hospital NHS Trust. As one group, we are on a journey to improve services for our communities by working collaboratively, modernising the way we deliver care and continually striving for excellence.</p>\n<p>Working together allows us to share expertise, strengthen services and create greater opportunities . There may be a requirement to work across our hospital sites depending on service needs.</p>\n<p>Our Excellence Values: Compassion, Accountability, Respect, Integrity and Courage.</p>\n<p>UHN welcomes applications from people from all protected groups and is committed to creating an inclusive working environment. We are proud signatories of the Armed Forces Covenant and have achieved the Gold Award under the Armed Forces Employer Recognition Scheme. Our active staff networks support colleagues from all backgrounds and help ensure everyone feels valued here at UHN</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9265-26-0760",
+    "postedAt": "2026-11-10T10:46:13.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718089",
+    "slug": "nelft-north-east-london-foundation-trust-community-adult-consultant-psych-mhwt-east-c9395-26-0667",
+    "company": "nhs",
+    "employer": "NELFT North East London Foundation Trust",
+    "title": "COMMUNITY ADULT CONSULTANT PSYCH (MHWT – EAST)",
+    "locations": [
+      "Rainham, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Community Adult Consultant Psychiatrist</p><p>This post is for an Adult Consultant Psychiatrist position in the East Mental Health &amp; Wellness Team (MHWT-E), based at Beam Park Health Centre, 2 Halewood Way, Rainham, RM13 8QZ.</p><p>This is a replacement, substantive, full-time post - 10 Programmed Activities (PAs) post with 7.5 Direct Clinical Contact activities (DCC) and 2.5 Supporting Professional Activities (SPAs).</p><p>On-call responsibility:\r\n\r\nThe postholder will be part of the Senior Psychiatrist on-call rota covering out of hours and weekends for Mental Health Services in NELFT. The on call will cover service delivery for Adults and Older Adults presenting with mental health problems. This is currently a 1:50 rota with a 3% Category A salary supplement. The trust has also a daytime (9am - 5pm) Section 136 rota, with an approximate frequency of one day every three months.</p>The successful candidate will work as part of a multidisciplinary team providing care to adults with mental health needs who are registered with a GP Practice located in the eastern part of the London Borough of Barking &amp; Dagenham (plus a small number of patients who reside in that part of the Borough but whose GP is elsewhere).\r\n\r\nThe successful candidate will provide senior medical support to the team, and direct input on clinical cases. The consultant will be expected to provide guidance and supervision to the team, work directly with adult patients (and their families), and liaise as appropriate with other external mental health providers, and acute hospitals. You will join another full-time Adult Consultant Psychiatrists (Dr Louis Nel) in the East Team. The team also has a full-time Core Trainee, a full-time GPvTS, and 0.5wte Senior Trainee, for whom the consultants have supervision responsibilities.NELFT NHS Foundation Trust provides mental health and community services for over 4.9 million people living in the London Boroughs of Waltham Forest, Redbridge, Barking and Dagenham, Havering, and across Essex.\r\n\r\nWe work to ensure our patients, their friends and family, feel confident that their health needs are well met. With an excellent reputation for research and development, our skilled health professionals are at the cutting edge of evidence-based innovation, opening up the possibilities for better ways of working and delivery of care.",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9395-26-0667",
+    "postedAt": "2026-11-10T13:19:15.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718148",
+    "slug": "kingston-and-richmond-nhs-foundation-trust-specialty-doctor-in-ent-c9396-26-0467",
+    "company": "nhs",
+    "employer": "Kingston and Richmond NHS Foundation Trust",
+    "title": "Specialty Doctor in ENT",
+    "locations": [
+      "Kingston Upon Thames, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>The post holder will provide specialist clinical expertise in the diagnosis and management of ear, nose and throat disorders. The role involves delivering outpatient and surgical services for routine and intermediate conditions, working within a multidisciplinary team. The post holder will also support the trust planned tracheostomy surgery lists for ITU patients.</p><p>The job plan will be reviewed regularly. The specific makeup of the job plan will be agreed following appointment. Clinical duties will include outpatient clinics, some regular theatre sessions.</p> <p>The successful candidate will be expected to organise their workload and operate an appointment system in a manner that is consistent with good practice as laid out in the Trust's Policy for Management of Waiting Lists and Times.</p><p><strong>Development and staff wellbeing</strong></p> <p>Your growth and happiness matters to us. After all, we can't expect the best from you if we don't invest in your development and nurture your wellbeing. From the moment you join us, we're committed to fostering your professional and personal development within a supportive, empowering environment. Whether you're just starting your career or looking to advance further, we provide you with the tools and opportunities you need to succeed. We actively support colleagues to take part in research, quality improvement and innovation, whatever their role or level in the organisation.</p> <p>To support your wellbeing, we offer an extensive range of resources, including an on-site staff nursery at Kingston Hospital, wellbeing practitioners, wellbeing classes, dedicated staff physiotherapist, comprehensive occupational health services, 24/7 employee assistance programme, and a range of other support and activities.</p> <p>We also take every opportunity to thank and recognise the work our teams do, through weekly 'shoutouts' and patient feedback, monthly and annual awards.</p> <p>Wherever you work across our organisation, we look forward to welcoming you.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9396-26-0467",
+    "postedAt": "2026-11-10T13:32:05.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718180",
+    "slug": "manchester-university-nhs-foundation-trust-consultant-in-respiratory-medicine-c9349-26-3405",
+    "company": "nhs",
+    "employer": "Manchester University NHS Foundation Trust",
+    "title": "Consultant in Respiratory Medicine",
+    "locations": [
+      "Manchester, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The successful candidate will join the existing team of 13 consultants (11.3 WTE) and 5 Advanced Nurse Practitioners in providing in- and out-patient Respiratory care. This 10 PA post - For suitable candidates, there may be the opportunity to train/participate in specialty clinical activity across MFT.</p> <p>We are expanding our research activity, and the successful candidate will be encouraged to take an active research interest. Candidates must be eligible for their own GMC registration - MFT cannot support GMC Sponsorship for candidates who are offered permanent vacancies.</p> <ul>  <li>   <ul>    <li>To provide clinical leadership in In-patient Respiratory and General Medicine and supervising junior medical staff and multi-professional trainees as required</li>    <li>Contribute to education and will work towards accreditation as a Clinical and Educational Supervisor</li>    <li>Contribute to departmental audit and clinical governance</li>    <li>The consultant will be expected to provide cross-cover for annual/study leave and short-term sickness for other consultants in the department as agreed within the teams</li>    <li>Perform any other duties that are considered necessary for the efficient working of the service, and which are mutually agreed to be relevant to the post as the pattern of service evolves.</li>    <li>The appointee will participate in administrative and management roles of the department in conjunction with other consultants</li>    <li>An indicative job plan is shown in the Job Description</li>   </ul> </li> </ul><p>Manchester University NHS Foundation Trust (MFT) is a leading centre of clinical excellence, renowned for pioneering patient care, advanced medical research, and a collaborative multi-speciality environment. We are the largest provider of specialist services, and our Oxford Road Campus in Manchester is the largest health academic campus in Europe - a great place to progress your career.</p> <p>With over 30,000 employees, a turnover exceeding £3 billion, and 10 hospital and community services, join our team to help us deliver outstanding healthcare to our diverse communities.We offer an engaging and supportive environment, with access to state-of-the-art facilities and cutting-edge technology. Research and Innovation are at the heart of our work, offering opportunities to lead research that shapes the future of medicine, working alongside experts, advancing clinical practice, and improving patient outcomes.At MFT, we foster a culture where every colleague is valued and empowered to thrive. Your expertise is recognised, your ambitions are supported, and your impact is felt at every level. Whether you want to develop your clinical skills, pursue research interests, or seek leadership opportunities, MFT provides the ideal environment to achieve your medical or professional aspirations.If you are dedicated to driving clinical innovation and delivering compassionate patient care, join us to shape tomorrow's healthcare; where clinical excellence, innovation, and your career will thrive.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9349-26-3405",
+    "postedAt": "2026-11-10T12:30:49.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718258",
+    "slug": "nuffield-health-orthopedic-scrub-sfa-bank-e0302-26-1348",
+    "company": "nhs",
+    "employer": "Nuffield Health",
+    "title": "Orthopedic scrub/SFA bank",
+    "locations": [
+      "Shrewsbury, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "orthopaedics",
+    "descriptionHtml": "Bank Orthopedic Scrub SFA (RGN / ODP) \r\n\r\nShrewsbury Hospital | Nursing | Bank | Includes weekend work |\r\n\r\nUp to £30 per hour depending on experience\r\n\r\nAs the UK's largest Healthcare Charity, we offer a fantastic home for your career. And we'll give you the freedom to work autonomously, making full use of your expertise. Here's where you bring your drive, passion and high standards to help shape the health of the nation.As a Bank Theatre Scrub Nurse / SFA ;\r\n\r\nBe part of our close-knit multidisciplinary team\r\nWork with leading consultants and like-minded professionals who respect and value what you bring\r\nEnjoy a varied caseload with state-of-the-art technology, equipment and facilities\r\nSupervise, support and develop junior members of staff\r\nCreate high-quality care and patient experiences that are clinically effective and evidence based\r\nInteract well with colleagues on the ward, understanding that continuity in patient care is keyAbout Nuffield Health Shrewsbury Hospital\n\nWe provide a comprehensive range surgical services at our facilities. Our highly skilled and caring staff create a relaxed environment to support patients' wellbeing and recovery. Set in beautiful Shropshire County within easy reach of all major roads and bus routes. We offer a wind range of surgery these include orthopedics, ophthalmology, General surgery, bariatrics, gynecological and more.\n\nYou'll be part of a close-knit team led by our Matron. With our consultant-led service, you'll be working directly with some of the best clinical talent around, gaining experience with new practices, equipment and facilities. These are maintained to a high standard - we take great pride in our low infection rates and high CQC scores at Nuffield Health.\n\nLike us, you believe in putting people first. So, you'll appreciate having the time to care - to fully understand each patient's needs and provide individual attention that can mean so much when they're at their most vulnerable. You'll be an excellent communicator and team worker - flexible and motivated. As part of the hospital team, you'll interact with practitioners from other departments because you understand the importance of continuity in patient care.",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0302-26-1348",
+    "postedAt": "2026-11-10T12:19:00.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718311",
+    "slug": "sheffield-teaching-hospitals-nhs-foundation-trust-las-st3-haematology-c9190-26-0720",
+    "company": "nhs",
+    "employer": "Sheffield Teaching Hospitals NHS Foundation Trust",
+    "title": "LAS ST3 Haematology",
+    "locations": [
+      "Sheffield, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "salary": {
+      "currency": "GBP",
+      "min": 67325,
+      "max": 67325,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The post will be based at the Royal Hallamshire Hospital in Clinical Haematology.</p> <p>All the Haematology inpatient and outpatient facilities for adults (over 16 years of age) in Sheffield are based at the Royal Hallamshire Hospital (RHH), with a population served by the laboratory in Sheffield of around 600,000 and North Trent of close to 2 million.</p> <p>The inpatient facilities comprise of 3 inpatient wards, including 29 side rooms, 11 of which are HEPA filtered for all levels of Haemopoietic Stem Cell Transplantation and Leukaemic induction therapy. Nearby are extensive dedicated day-case facilities, an Apheresis Unit (managed by the NHSBT) and the Centre for Haemophilia and Thrombosis. </p> <p>Chemotherapy of all intensities is administered to out-patients on the Day Ward, as are the majority of blood transfusions, venesections, and early follow-up of BMT patients is conducted. Ambulatory care (based either at home or from a dedicated patient flat) is offered to clinically eligible patients undergoing myeloma and lymphoma autografts, lymphoma salvage chemotherapy and AML consolidation chemotherapy. </p><p>The successful candidate will join a team of up to 7 specialist haematology trainees covering haematology inpatients on wards O1, O2, P3 and P4 and the haematology day unit. On the Day Unit the postholder's role will include assessment of patients with haematological disorders attending unwell, pre-chemo therapy checks, bone marrow lists, hickman line removal. Duties may also include counselling /medical cover of stem cell donors. </p> <p>The postholder will assess patients with bleeding and thrombotic disorders presenting at the haemophilia centre as appropriate. Training for all of these roles will be provided in house and the appointee will undergo local induction.</p> <p>The postholder will participate in the Haematology resident registrar rota.</p> <p>The postholder will also be expected to attend clinics (supervised by a consultant).</p><p><strong>PROUD VALUES AND BEHAVIOURS</strong></p> <p>These are the values that all staff at Sheffield Teaching Hospitals NHS Foundation Trust are expected to demonstrate in all that they do.</p> <p><strong>P</strong>atients First - Ensure that the people we serve are at the heart of what we do</p> <p><strong>R</strong>espectful - Be kind, respectful, fair and value diversity</p> <p><strong>O</strong>wnership - Celebrate our successes, learn continuously and ensure we improve</p> <p><strong>U</strong>nity - Work in partnership with others</p> <p><strong>D</strong>eliver - Be efficient, effective and accountable for our actions</p> <p>The Trust have developed a PROUD Behaviours framework which details specific behaviours we expect to see and do not expect to see, aligned to each of the five PROUD Values.</p> <p>For further details of our services and organisational structure, including our Board of Directors, and our future plans please visit www.sth.nhs.uk/about-us</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9190-26-0720",
+    "postedAt": "2026-11-10T14:07:10.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718481",
+    "slug": "hc-one-senior-care-assistant-l0087-26-0818",
+    "company": "nhs",
+    "employer": "HC-One",
+    "title": "Senior Care Assistant",
+    "locations": [
+      "Port Talbot, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 14.35,
+      "max": 14.95,
+      "unit": "HOUR"
+    },
+    "descriptionHtml": "As a Senior Care Assistant at HC One, Kindness will be at the core of everything you do. It touches upon every aspect of our Dementia, Nursing, Residential and Specialist care homes. Every single person who works here understands that our residents are people just like them with their own stories to tell. And, by joining us, youll have a wonderful opportunity to give something back to those people.For you, that will mean planning and implementing the kind of care that will give our residents a real sense of security, dignity and independence. You will get to know our residents and their families  helping to ensure we deliver truly personalised care plans. Leading a team of Care Assistants, you will be responsible for maintaining the highest standards of care and youll be a real influence on the rest of the team. Whether you are showing someone how to use a walking frame, helping someone at the end of their life to eat a meal or talking to a residents family on the phone, youll do so with a sense of kindness, above anything else. Assisting the Registered Nurse and Care Manager, you will be involved in providing essential physical and mental stimulation through a range of social and recreational activities, as well as administering medication.At HC-One, our purpose is to support those in our care to lead their best lives. As the Kind Care Company, it is our mission to provide the kindest support and care to Residents living in our care homes, as we strive to be the first-choice care provider for Families, our Colleagues and Commissioners in each of the communities that we serve.",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/L0087-26-0818",
+    "postedAt": "2026-11-10T11:50:50.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718632",
+    "slug": "the-christie-nhs-ft-general-practitioner-lung-oncology-c9413-26-0846",
+    "company": "nhs",
+    "employer": "The Christie NHS FT",
+    "title": "General Practitioner - Lung Oncology",
+    "locations": [
+      "Manchester, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "salary": {
+      "currency": "GBP",
+      "min": 78699,
+      "max": 118759,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>This is a 1 pa position The role will suit a GP with a keen interest in gaining further experience in Lung Cancer through attendance at a once-weekly outpatient clinic on Tuesday morning.</p>\n<p>There are around 80 new patient referrals received per year for consideration of treatment (Radiotherapy, targeted therapies, chemotherapy etc) in this clinic. The post holder will acquire experience in the oncological management of patients diagnosed with Lung malignancies.</p><p>The appointee will be based at The Christie within Macclesfield General Hospital and will provide input within the Lung outpatient clinics, to supervise patients receiving treatment</p>\n<p>The successful applicant should have a basic understanding of Oncology with a specific interest in Lung.</p><p>The postholder will contribute to the delivery of high-quality consultant-led care across 7 days. This includes participation in planned weekend and weekday clinical activity to support safe, timely decision-making and continuity of care for patients.</p> <p>The Christie is one of Europe's leading cancer centres, looking after more than 64,000 patients a year. We are based in Manchester and serve a population of 3.2 million across Greater Manchester &amp; Cheshire, but as a national specialist around 25% patients are referred to us from other parts of the country.We are the largest radiotherapy provider in the NHS with one in 20 treatments delivered at The Christie. We have up to 15 linear accelerators operating across our network of sites. We operate the largest chemotherapy unit in the UK on our main site and treatments are also provided at 13 other networked sites, and in patients homes. And as a specialist tertiary surgical centre, we focus on rare cancers, complex procedures, and multidisciplinary approaches to cancer surgery, specialising in colorectal, peritoneal, gynaecological, urological and plastic surgery.We are also an international leader in research, with world first breakthroughs for over 100 years. We have been named by the UK's National Institute for Health Research (NIHR), as one of the best hospitals providing opportunities for patients to participate in clinical research studies, with more than 800 studies open at any time, caring for over 3,000 patients.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9413-26-0846",
+    "postedAt": "2026-11-10T12:20:04.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718733",
+    "slug": "royal-surrey-nhs-foundation-trust-gp-champion-hcv-elimination-c9384-26-0997",
+    "company": "nhs",
+    "employer": "Royal Surrey NHS Foundation Trust",
+    "title": "GP Champion - HCV Elimination",
+    "locations": [
+      "Guildford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>The Viral Hepatitis Elimination Programme is seeking applications for GP Champions across the Surrey Operational Delivery Network. This is initially a six month fixed term contract with the potential to extend pending NHS commissioning.</p>\n<p>NHS England has committed to the WHO goal of eliminating Hepatitis C by 2030. The Viral Hepatitis Elimination Programme gives hope that within the next few years we will be able to make history and declare the end of Hepatitis C in England as a major public health concern. Primary Care represents a key work area for the success of the programme.</p>\n<p>The programme is now being expanded to include Hepatitis B Virus.This role offers a flexible 4 sessions per month and is an exciting opportunity to contribute to the success of a major public health intervention. It would suit any GP who is passionate about a making a definitive improvement to patient outcomes whilst also diversifying their clinical role.</p><p>Royal Surrey is a compassionate and collaborative acute and community Trust. Recognising that our 5,000 colleagues are our greatest strength, we offer a comprehensive health and wellbeing programme alongside a strong commitment to developing your career. Our diverse and welcoming Royal Surrey family ensures you feel valued from your initial interview and throughout your time with us.</p> <p>We are clinically led and provide joined-up care by bridging hospital and community services, alongside delivering regional specialist cancer care. Our main acute hospital site is in Guildford, with community sites at Milford, Haslemere and Cranleigh, and services delivered in patients' homes across Guildford and Waverley.</p> <p>We work in partnership with Ashford &amp; St Peter's Hospitals NHS Foundation Trust through a collaborative Group Model, supporting joined-up services, workforce flexibility and development opportunities.</p> <p>The Care Quality Commission (CQC) has rated us as Outstanding. We are proud of our achievements and continue to invest in our people and infrastructure.</p> <p>To learn more about life at Royal Surrey, please watch our short video: https://www.youtube.com/watch?v=R96pMboIYdo</p> <p>Adverts may close early, so you are encouraged to apply as soon as possible.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9384-26-0997",
+    "postedAt": "2026-11-10T13:19:24.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718746",
+    "slug": "royal-devon-university-healthcare-nhs-foundation-trust-specialty-doctor-in-anaesthetics-c0023-26-1387",
+    "company": "nhs",
+    "employer": "Royal Devon University Healthcare NHS Foundation Trust",
+    "title": "Specialty Doctor in Anaesthetics",
+    "locations": [
+      "Exeter, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "level": "specialist",
+    "salary": {
+      "currency": "GBP",
+      "min": 63696,
+      "max": 102689,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Applications are invited for Specialty Doctor post in the Royal Devon &amp; Exeter Hospital Anaesthetic department. </p><p>With approximately 950 beds, and over 30,000 Anaesthetics administered per annum, the Royal Devon and Exeter Hospital offers broad clinical experience. Experience is available in virtually all Anaesthetic specialities with the exception of Cardiothoracic, Neuro and Neonatal surgery. The department is staffed by 61 consultants, 11 SAS doctors, approximately 16 ST3-7s and 15 Core level Trainees, 4 Anaesthetic Associates (plus 4 trainee AAs) and 7 Critical Care Nurse Specialists. </p><p>For more detail about the main duties of this role, please see the job description section below. As a key member of the Royal Devon University Healthcare NHS Foundation Trust, you will be joining an exceptional team working together to help our patients to stay healthy, when they need it most.</p><p>Stretching across Northern, Eastern and Mid Devon, we have a workforce of over 15,000 staff, making us the largest employer in Devon. Our core services, which we provide to more than 615,000 people, cover more than 2,000 square miles across Devon, while some of our specialist services cover the whole of the peninsula, extending our reach as far as Cornwall and the Isles of Scilly.</p><p>We deliver a wide range of emergency, specialist and general medical services through North Devon District Hospital and the Royal Devon and Exeter Hospital (Wonford).</p><p>Alongside our two acute hospitals, we provide integrated health and social care services across a variety of settings, including community inpatient hospitals, outpatient clinics, and within peoples own homes. We also offer primary care services, a range of specialist community services, and Sexual Assault Referral Centres (SARC).</p><p>Our state-of-the-art equipment, leading technologies and strong links to local universities put us at the forefront of research and innovations, enabling us to provide world-class care to our local communities.</p><p>Its never been a more exciting time to join the Royal Devon, as youll help to shape our services as we continue along our integration journey.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C0023-26-1387",
+    "postedAt": "2026-11-10T13:47:00.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718773",
+    "slug": "sheffield-health-partnership-university-nhs-foundation-trust-band-6-pharmacist-c9457-26-0347",
+    "company": "nhs",
+    "employer": "Sheffield Health Partnership University NHS Foundation Trust",
+    "title": "Band 6 Pharmacist",
+    "locations": [
+      "Sheffield, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 38682,
+      "max": 46580,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are seeking an enthusiastic Pharmacist with a keen interest in mental health to join our team. Our pharmacists provide clinical services across a range of teams, including inpatient wards and community teams to provide safe, service user centred care.</p> <p>Our pharmacists are vital members of the multidisciplinary team, and you will be an active member in meetings for your team, providing clinical support, developing individualised care plans, medicines reconciliation and service user counselling services.</p> <p>You will also develop your skills through the department's activities including medicines information, dispensary services and providing teaching for professionals and service users. As a team we are committed to developing our staff and service and have a history of internal promotion.</p> <p>We are located in the city of Sheffield, with a wide range social and recreational activities including bars, restaurants, theatres an arena and two football stadiums. We are on the edge of the Peak District providing stunning scenery and a host of outdoor pursuits.</p> <p>The possibility of part-time working can be discussed at interview.</p> <p>This role is open to Trainee foundation pharmacists or qualified pharmacists. </p><p>o To support the use of medicines across the Trust to achieve best outcomes for service users in accordance with best practice.o Working under the supervision of senior pharmacists, use clinical skills and expertise in the management of medicines in mental health in accordance with best practice.o To prevent and reduce medicines related harm.o Participation in continuous professional development.o Participation in systems of clinical supervision and peer support within the pharmacy service.o To work flexibly and travel to various locations across the city.</p><p>We are passionate about providing the very best care to the people we support, and we're looking for amazing people who share this passion to join us.</p> <p>What is it that makes our Trust such a special place to work? Well, it's all about the people. Our staff, service users, carers and families all come from such diverse backgrounds and all have expertise and stories to share.</p> <p>It's important that you feel supported in your role, that the people who you work with are as passionate as you are and that your health and wellbeing is taken care of</p> <p>If you're interested in developing your career, you'll have access to a range of training and education opportunities, including apprenticeships, work experience and placements, as well as the chance to get involved in research.</p> <p>We are very proud of the difference we make to people's lives each and every day and if that's something that you'd like to be part of we'd love to have you with us.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9457-26-0347",
+    "postedAt": "2026-11-10T14:43:59.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718870",
+    "slug": "birmingham-and-solihull-mental-health-nhs-foundation-trust-specialty-doctor-in-psychosis-service-16-35-years-c9436-26-0758",
+    "company": "nhs",
+    "employer": "Birmingham and Solihull Mental Health NHS Foundation Trust",
+    "title": "Specialty Doctor in Psychosis Service (16-35 years)",
+    "locations": [
+      "Birmingham, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "salary": {
+      "currency": "GBP",
+      "min": 63696,
+      "max": 102689,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are seeking to recruit a Specialty Doctor to join our South Early Intervention in Psychosis Service. This service forms part of the overall Community Mental Health provision in the City of Birmingham and works closely with other specialty teams, providers and services to deliver a high quality service.</p> <p>The clinical base is The Touchbase Centre, 750 Bristol Road, Birmingham, B29 6NA</p> <p>The service comprises specialist and dedicated mental health professionals including psychiatrists, senior mental health practitioners, clinical psychologist, occupational therapist and psychotherapists. The post older will work under the supervision of the Consultant Psychiatrist and will have a close working relationship with members of the MDT and liaison with other doctors in primary and secondary care.</p> <p>The successful postholder should hold full registration with the GMC and have completed at least two years experience or training in psychiatry.</p> <p>The Specialty Doctor will be a member of the EIP MDT at The Touchbase Centre and support the South EIP MDT Team. They will be involved in the assessment and management of young people (16-35 years) with mental ill health and neurodevelopmental conditions. The post holder will also contribute to providing psychiatric and medical risk management and co-work with multi-agency professionals such as social services. </p><p>Welcome to Birmingham and Solihull Mental Health NHS Foundation Trust. We provide a comprehensive health care service to those people living in Birmingham and Solihull who are experiencing mental health problems. We serve a culturally and socially diverse population of over a million, spread over 172 square miles, have an annual budget of £760 million and a dedicated workforce of more than 6,000 staff - making us one of the largest and most complex mental health foundation trusts in the country.</p>\n<p>Our catchment population is ethnically diverse and characterised in places by high levels of deprivation, low earnings and unemployment. These factors create a higher requirement for access to health services and a greater need for innovative ways of engaging people from the most affected areas. We are a team of compassionate, inclusive and committed people working together to provide excellent care to support our community. If you are looking for a place to belong, where you can make a real difference to people's lives, join our team where our warm welcome is waiting for you.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9436-26-0758",
+    "postedAt": "2026-11-10T15:38:10.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718908",
+    "slug": "cygnet-health-care-support-worker-e0233-26-2415",
+    "company": "nhs",
+    "employer": "Cygnet Health Care",
+    "title": "Support Worker",
+    "locations": [
+      "Lowry, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 13.15,
+      "max": 13.15,
+      "unit": "HOUR"
+    },
+    "descriptionHtml": "<p>We are looking for a confident <strong>Care &amp; Support Worker </strong>with a passion for delivering outstanding healthcare.</p><p>You'll be working full time 42 hours a week, 12 hour shifts, including alternate weekends (four shifts week one, three shifts week two, on a two week rolling rota), days only, making a positive difference to the lives of the people in our care at<strong> Lowry House.</strong></p><p><strong>Lowry House</strong> is a specialist residential service, supporting people with learning disabilities, complex needs and behaviours that may challenge, including those with mental health needs.</p><p>We provide specialist care and support that is tailored to individual needs, promoting independence and community integration. We encourage and enable the people we support to lead a full and happy life and work with them to find out their strengths, abilities and preferences so that their care can be as person-centred as possible.</p><p>At Cygnet, our perks go way beyond pension schemes and excellent professional development - you'll also enjoy discounts with our free NHS blue light card, rewards gateway with vouchers for everyday purchases and shopping, private health cash plans, free confidential mental health support and much more, to support your wellbeing in and out of work.</p><p>Apply now to enjoy excellent career prospects while reaping the rewards of making a difference to others - every day.</p><p><strong>Your day-to-day...</strong></p><ul><li>Offer enhanced care with a flexible learning approach for all the people in our care</li><li>Provide guidance &amp; encouragement through physical &amp; emotional support</li><li>Learn about individuals specific needs &amp; provide help in the most appropriate way</li><li>Assist with and report on medical &amp; welfare needs</li><li>Safeguard</li><li>Maintain a safe, clean environment for all</li><li>Supporting service users to access the community, to attend things like work, college, hobbies &amp; activities, days out &amp; holidays</li><li>Supporting the service users to grow, develop &amp; learn through engaging them in tasks such as cooking &amp; cleaning</li></ul><p><strong>Cygnet</strong> has been providing a national network of high-quality specialist mental health services for more than 30 years. In this role you'll have the chance to make a real impact on patients, service users &amp; their families.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2415",
+    "postedAt": "2026-11-10T13:05:00.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5718962",
+    "slug": "hampshire-and-isle-of-wight-healthcare-nhs-foundation-trust-consultant-in-child-and-adolescent-mental-health-c9348-26-2497",
+    "company": "nhs",
+    "employer": "Hampshire and Isle of Wight Healthcare NHS Foundation Trust",
+    "title": "Consultant in Child & Adolescent Mental Health",
+    "locations": [
+      "Cosham, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Consultant in CAMHS Liaison Queen Alexandra Hospital</p><p>Want to use your expertise where clinical leadership can make an immediate difference to children and young people at a point of real need.</p><p>Our CAMHS Liaison Team at Queen Alexandra Hospital QAH supports young people under 18 presenting with mental health crisis, co-occurring physical and mental health needs, eating disorders or complex emotional needs. The seven-day multidisciplinary service works across paediatric wards, A&amp;E and adult wards caring for 16- and 17-year-olds.</p><p>Working Monday to Friday, you will provide clinical leadership and medical oversight, connecting acute paediatrics and emergency care with community CAMHS, Crisis and Home Treatment, social care and safeguarding. You will also hold Responsible Clinician responsibility for young people detained at QAH under the Mental Health Act and oversee those who are medically optimised but awaiting a mental health bed.</p><p>You will join a collaborative service with strong links across Hampshire CAMHS and consultant colleagues who value thoughtful decision-making, shared learning and high-quality care.</p><p>Join Us and Receive a 30,000 Golden Hello</p><p>As part of our commitment to attracting outstanding talent, we are delighted to offer a 30,000 Golden Hello to successful eligible candidates appointed to this Consultant post. This is a unique opportunity to take the next step in your career while receiving a generous financial incentive as a welcome to our Trust.</p><ul><li>Provide timely, specialist mental health assessment and intervention in acute hospitals.</li><li>Work holistically, addressing biological, psychological, and social factors.</li><li>Deliver biopsychosocial formulations, therapeutic support, and co-produced safety plans.</li><li>Ensure safeguarding is considered at every stage.</li><li>Ensure a 72-hour and/or 7-day follow-up for all crisis presentations is arranged.</li><li>Support staff across acute settings with advice, education, and joint working.</li><li>Interface with community CAMHS and Tier 4 for continuity of care.</li><li>Support for families and carers.</li></ul><p>Escalate all safeguarding concerns in line with trust policy.</p><p>Hampshire and Isle of Wight Healthcare NHS Foundation Trust provides joined-up mental and physical healthcare for around two million people across our communities. With over 13,000 staff working in the community and local hospitals, we deliver care at every stage of life, helping people live their best and healthiest lives.</p><p>Our mental health services include community-based support and early intervention in psychosis (EIP) for both adults and young people, alongside a network of specialist inpatient wards covering forensic, learning disability, eating disorder and older person's care.</p><p>We deliver extensive physical health services too, from urgent community response teams helping frail and older patients remain safely at home, to hospitals at home teams providing acute-level care in familiar surroundings. Our neurological services offer rehabilitation and treatment for conditions including Multiple Sclerosis, Parkinson's Disease, Motor Neurone Disease, Head Injury, Cerebral Palsy and Stroke. Across Hampshire, our community hospitals provide inpatient rehabilitation as a step down from acute care, and our dedicated teams also staff Treetops Sexual Assault Referral Centre in Portsmouth, offering expert, compassionate support.</p><p>Everything we do is underpinned by our CARE values of compassion, accountability, respect and excellence</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9348-26-2497",
+    "postedAt": "2026-11-10T13:29:32.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719284",
+    "slug": "barking-havering-and-redbridge-university-hospitals-nhs-trust-locum-consultant-radiologist-with-interest-in-urology-and-gynae-imaging-c9162-26-0322",
+    "company": "nhs",
+    "employer": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+    "title": "Locum Consultant Radiologist with interest in Urology & Gynae. Imaging",
+    "locations": [
+      "Romford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "radiology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>An exciting opportunity has arisen for a candidate interested in a consultant radiologist post to join our team at Barking Havering, and Redbridge University Hospital Trust. </p> <p>We are looking for an enthusiastic consultant to join our well established, dedicated and supportive radiology team to serve a population of 750,000. </p> <p>This is a twelve-month fixed term post to cover radiology with an interest in urology and gynaecology.</p><p>Locum Consultant Radiologist with Interest in Urology &amp; Gynaecology Imaging</p> <p>We are seeking a dedicated and skilled radiologist with a subspecialty interest in Urology and Gynaecology to join our dynamic team.</p> <p>The successful candidate is expected to report a range of general cross-sectional imaging and will play a key role in the imaging and reporting of MRI prostate scans using the Likert scoring system, ensuring high-quality and standardized assessment for patients undergoing prostate cancer evaluation. </p> <p>Proficiency in MRI gynaecology imaging, including the assessment of pelvic malignancies, endometriosis, and fibroids, is essential. It is desirable that the candidate has experience in performing transvaginal/ transanal ultrasound. We have a dedicated interventional radiology team to which provides urology and gynaecological interventions.</p> <p>This is an exciting opportunity to work in a supportive and innovative environment, contributing to the advancement of imaging services in Urology and Gynaecology.</p> <p>We perform approximately 2200 MRI Prostate and 2600 MRI pelvis for gynaecology, about 8800 CT scans for urology, 8600 urinary tract ultrasound and 12000 ultrasound pelvis per year. The ultrasound service is predominantly sonographer laden and radiologists have a few ultrasound sessions. These numbers prove the importance of radiology services we provide to our patients for urology and gynaecology imaging.</p><p>We're an organisation that is getting better and better and our improvements are driven by a determination to deliver care we're proud of and our patients are happy with.</p>\n<p>They are benefitting from a new electronic patient record (we were the last acute trust in London to introduce one) and our maternity services have been rated good by the Care Quality Commission.</p>\n<p>We operate from two main sites - KGH in Goodmayes and Queen's Hospital in Romford. We have two busy emergency departments with more than 346,000 people visiting them last year. We're campaigning to secure the £35m we need to transform the A&amp;E at Queen's and get rid of corridor care.</p>\n<p>We're proud of our regional Neurosciences Centre, Radiotherapy Centre and Hyper Acute Stroke Unit. We're also part of the North East London Cancer Alliance.</p>\n<p>We run a Women's Health Hub in Ilford; an Ageing Well Centre in Hornchurch; and Community Diagnostic Centres (CDC) at Barking Community Hospital and at St George's Health and Wellbeing Hub. These CDCs are open 12 hours a day, 7 days a week. </p>\n<p>The majority of our 8,400 staff - who come from 146 different countries - live in the three diverse London boroughs we serve and are from black, Asian and minority ethnic groups. Many can work flexibly and more than 400 of them are on our Ofsted accredited apprenticeship programmes. We're proud to be a London Living Wage employer.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9162-26-0322",
+    "postedAt": "2026-11-10T14:50:39.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719288",
+    "slug": "coventry-and-warwickshire-partnership-trust-speciality-doctor-in-learning-disability-c9444-26-0679",
+    "company": "nhs",
+    "employer": "Coventry and Warwickshire Partnership Trust",
+    "title": "Speciality Doctor in Learning Disability",
+    "locations": [
+      "Birmingham, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "salary": {
+      "currency": "GBP",
+      "min": 63696,
+      "max": 102689,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>This is a new post as a specialty doctor within Brooklands primarily working in the Autism ward (Onyx) and the Child and adolescent ward (Jade). Onyx ward is a newly commissioned service, and both these services have a key role in delivering the Transforming Care Programme.</p>\n<p>The Trust provides mental health services across the age range from children to older adults. The structure of the current service includes Age Independent Mental Health Directorate, Age Independent Autism and Intellectual Disability Services and a Community Health Directorate including Paediatrics, Sexual Health and Palliative Care Services. The larger inpatient services are based at the Caludon Centre, Coventry and St Michaels Hospital, Warwick for mental health and Brooklands Hospital, Marston Green Birmingham for Learning Disability.</p><p>o The post holder will be responsible for the overall psychiatric and physical care for a 7 bed Autism low secure ward 6 bed Child and Adolescent Intellectual Disability unit under supervision of the Consultants. o To provide assessment, diagnosis, and management of patients with a range of psychiatric conditions who have, or are suspected of having, autism and advice for patients with a learning disability.o To participate in ward rounds and multidisciplinary reviews.</p> <p> Ward Governance meetings for the service and attend any relevant team meetings such as team business meeting or meetings regarding outcomes, serious incidents and other such matters.</p> <p> Monthly audit/safety and quality forum meetings.</p> <p> Service development / Quality improvement / Data and outcomes meetings.</p> <p> Job planning meetings with Medical lead and Service manager.</p> <p>Any other Trust meetings where your attendance is required</p><p>At Coventry and Warwickshire Partnership NHS Trust (CWPT), we deliver a wide range of physical, mental health, learning disability and autism services, and are proud to serve communities across Coventry, Warwickshire and beyond.</p>\n<p>We put 'people at our heart'; this ethos is at the centre of everything we do and how we do it. We care for our staff and colleagues as much as they care for others and offer a wide range of benefits and development opportunities.</p>\n<p>These include:</p>\n<ul>\n<li>generous annual leave entitlement which increases during your time with us</li>\n<li>excellent learning and development opportunities, including apprenticeship frameworks, distance learning, internal training, coaching and mentoring, and much more</li>\n<li>salary sacrifice schemes for lease car/ vehicle, Cycle to Work, home and electronics, gym membership and more</li>\n<li>discounts with a range of retailers, restaurants and entertainment venues through our Employee Assistance Programme and NHS discount schemes</li>\n<li>wellbeing support, including an in-house counselling service, external helpline and more</li>\n<li>staff networks and support group</li>\n</ul>\n<p>We're always on the lookout for people who share our passion for improving the lives and wellbeing of people in our community, as well as our values of compassion, collaboration, excellence, integrity and respect.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9444-26-0679",
+    "postedAt": "2026-11-10T14:06:25.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719565",
+    "slug": "east-sussex-healthcare-nhs-trust-trust-locum-consultant-histopathology-gynaecological-histology-c9374-26-0968",
+    "company": "nhs",
+    "employer": "East Sussex Healthcare NHS Trust",
+    "title": "Trust Locum Consultant Histopathology - Gynaecological Histology",
+    "locations": [
+      "Hastings, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The post holder will play an active role in the general workload of the department, with an interest in reporting gynaecological Histology. The successful candidate will join an impressive team dedicated to providing a first-class service. The post would suit someone with recent NHS experience.</p> <p>The Cellular Pathology Department at ESHT undertakes histopathology, cytopathology, immunohistochemistry and autopsy pathology. Consultants share the work in each of the following main specialties: breast pathology, dermatopathology, gastrointestinal pathology, uropathology, and diagnostic cytopathology. Gynaecological pathology is currently outsourced. There is no cervical cytology requirement. Participation in the coronial autopsy service is optional. The department has recently gone live with Digital Pathology, using the Sectra PACS reporting system, in combination with the Hamamatsu NanoZoomer scanners. Clinical validation of digital reporting in now under way, with the plan to be fully digitised in the next two years. Part of our vision is to allow the opportunity of remote reporting to the right candidate.ESHT forms part of the Sussex Pathology Network. This collaboration is in its infancy and along with ESHT the network incorporates University Hospitals Sussex and Queen Victoria Hospital. We are working together with our network colleagues with a commitment to fulfilling the Network's maximum potential.</p> <p>PREVIOUS APPLICANTS NEED NOT RE APPLY</p><p>The post will be based at the Conquest site. As a senior employee of the Trust, you will work in close co-operation with, and support other clinical medical, professional, and managerial colleagues in providing high quality healthcare to the Trust's patients.</p>\n<p>Integral to these responsibilities is the following:</p>\n<ul>\n<li>The provision of a first-class service.</li>\n<li>Effective leadership to all staff engaged in the speciality.</li>\n<li>Sustaining and developing teaching at ESHT.</li>\n<li>Undertaking all work in accordance with the Trust's procedures and operating policies.</li>\n<li>Conducting clinical practice in accordance with contractual requirements and within the parameters of the Trusts service plans.</li>\n</ul>\n<p> The primary role of the lead histopathologist for Cervical Screening Histology is to ensure that the Cellular Pathology department at ESHT adheres to National guidance and meets the programme standards in cervical histology reporting. More detailed information is provided in the Job Description.</p><p><strong>We are proud to provide 'Outstanding' care and be a great place to work</strong></p>\n<p>We provide safe, compassionate and high quality care to half a million people living or visiting East Sussex. We are one of the largest organisations in East Sussex, the only integrated provider of acute and community care in Sussex. Our extensive services are provided by 7000 + members of staff working from acute hospitals in Hastings and Eastbourne, three community hospitals in Bexhill, Rye and Uckfield, over 100 community sites and in people's own homes.</p>\n<p>In 2020 the Care Quality Commission (CQC), rated us as 'Good' overall, and 'Outstanding' for being caring and effective. The Conquest Hospital and our Community Services are rated 'Outstanding'. Eastbourne DGH rated 'Good'.</p>\n<p>In 2020, the Trust launched its ambitious 'Building for our Future' programme. This once in a lifetime programme aims to repair, redevelop and expand our hospitals, transforming the environment in which we provide care for generations to come.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9374-26-0968",
+    "postedAt": "2026-11-10T15:05:22.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719622",
+    "slug": "saxonbrook-medical-salaried-gp-a3035-26-0003",
+    "company": "nhs",
+    "employer": "Saxonbrook Medical",
+    "title": "Salaried GP",
+    "locations": [
+      "Crawley, United Kingdom",
+      "CRAWLEY, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p><strong> Join\r\nSaxonbrook Medical: A Forward-Thinking Practice Designed for Modern GPs</strong>At\r\n<strong>Saxonbrook Medical</strong>, were reimagining what it means to be a GP.</p><p><strong>Why Join Saxonbrook?</strong></p><p> <strong>Top-tier pay</strong>\r\nto reflect your skills and experience\r\n <strong>Minimal\r\nadmin</strong> supported by triage-trained, multi-skilled teams\r\n <strong>Training\r\npractice</strong> become a GP trainer with protected, paid tutorial time\r\n <strong>Paid medical\r\nstudent teaching sessions</strong> bring variety to your week\r\n <strong>15-minute\r\nappointments</strong> for better patient care and manageable pace\r\n <strong>Low to no\r\nhome visits</strong>\r\n <strong>Modern,\r\npurpose-built premises</strong>\r\n <strong>Free staff\r\nparking</strong>\r\n <strong>Onsite\r\npharmacy, minor surgery, ultrasound, ENT, and more</strong>\r\n <strong>Clinical\r\ncontinuity with job security and a progressive team culture.</strong></p><ul>\r\n</ul>\r\n\r\n<p><strong> What Were Looking For</strong></p><ul>\r\n <li>GMC-registered GPs (UK)</li>\r\n <li>Excellent spoken and written English</li>\r\n <li>Committed team players who thrive in a forward-thinking\r\n practice</li>\r\n <li>An understanding of NHS frameworks and clinical\r\n governance</li>\r\n</ul>\r\n\r\n<p> <strong>Apply Now</strong></p><p>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nSend your CV and a covering\r\nletter with your availability and salary expectations to:\r\n<strong>Sarah Harris, HR Manager</strong></p><p>The\r\npost-holder will be required to provide high quality primary care medical\r\nservices. These medical services will\r\ninclude face to face and telephone consultations with patients at any of the\r\nSaxonbrook Medical premises, and at patients homes. At times, your advice or clinical opinion may\r\nbe required by a Nurse, a Physician Associate, Paramedic or another Doctor.</p><p>Who We Are</p><ul><li>A GMS practice with 30,000 patients across three contrasting sites and growing</li> <li>3 Partners, 5 Salaried GPs, Physician Associates, Pharmacists, First Contact Practitioners, and more</li> <li>Long-established teaching and training culture</li> <li>High QOF achievers and innovators in care delivery</li> <li>Supportive environment where your voice is heard and your role is valued</li></ul><p>At <strong>Saxonbrook Medical</strong>, were reimagining what it means to be a GP.</p><p>Weve built a practice that lets GPs focus on what they trained for<strong>clinical care</strong>, not admin. Our <strong>advanced admin and digital support systems</strong> mean <strong>virtually zero paperwork</strong> for GPs. Triage, results, letters, signposting, and more are expertly handled by our highly trained administrative and clinical support teams.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3035-26-0003",
+    "postedAt": "2026-11-10T15:03:48.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719767",
+    "slug": "inhealth-group-mri-radiographer-12-month-contract-m0035-26-0556",
+    "company": "nhs",
+    "employer": "InHealth Group",
+    "title": "MRI Radiographer- 12 Month Contract",
+    "locations": [
+      "Kingston Upon Thames, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "Job Title- MRI Radiographer\nHours: Monday-Sunday 3 x 12 hour shifts between 7am and 9pm typically\nLocation- Kingston\nContract- 12 Month FTC\n\nInHealth sees more than 5 million patients each year and diagnostic imaging is one of the busiest services that we provide. We are looking for a MRI Radiographer to join our Radiography Department in Kingston\n\nAs a MRI Radiographer you will be responsible for ensuring our patients receive the best standard of care while generating high-quality images to support their healthcare pathway. You will deliver an effective and professional service, working alongside your colleagues in a dynamic and fast paced environmentProviding a great experience for patients attending MRI scanning, supporting them through the process from referral to results\nRunning quality assurance checks on equipment and action as appropriate\nRespecting and working within patient's and service users' customs, values and spiritual beliefs, making sure their views are sought and taken into account\nPerforming triage functions of referrals, as required\nSupporting patient bookings and making sure patient information systems are maintained with accurate and up-to-date information\nCompleting competency assessments\nAdhering to all operational procedures\nMaintaining a clean and safe working environment\nSharing knowledge and clinical experience with the wider team to support each others growth and development.<p>InHealth is the UKs largest specialist provider of diagnostic and healthcare solutions. Our aim is to make healthcare better for patients by working collaboratively with the NHS to deliver a range of high-quality tests, scans, assessments and procedures. In the last year, we have supported more than 5 million people in their healthcare journeys, the majority of these are NHS patients and service users.</p> <p>As a people-focused organisation, our teams are integral in how we deliver our services and our values of Trust, Passion, Care and Fresh Thinking underpin everything we do, influencing the way we interact with patients, customers, and colleagues.</p> <p>Our mission is to provide high-quality services within local communities to over 7 million patients by 2030. We are committed to ensuring that patients receive a positive experience, maintaining a 97% patient satisfaction rate.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0556",
+    "postedAt": "2026-11-10T15:22:38.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719774",
+    "slug": "dorset-county-hospital-nhs-foundation-trust-trust-grade-f2-st1-in-acute-and-general-medicine-c9405-26-0531",
+    "company": "nhs",
+    "employer": "Dorset County Hospital NHS Foundation Trust",
+    "title": "Trust Grade F2 - ST1 in Acute & General Medicine",
+    "locations": [
+      "Dorchester, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "salary": {
+      "currency": "GBP",
+      "min": 47610,
+      "max": 55355,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The post will be a part of the acute/general medical core trainee tier at Dorset County Hospital, taking a share of the on-call duties and gaining exposure to a wide range of medical conditions while being fully supported by an appropriate junior and senior team. This includes full and equal access to educational supervision, as well as internal educational and training opportunities and funded study leave. Access to an ePortfolio will be offered. The successful applicant will be offered the opportunity to gain experience in specialilties, on an inpatient, outpatient or procedure basis (subject to specific choices, practicalities and availability)</p><p>The post will be a part of the acute/general medical core tier (F2-ST2) at Dorset County Hospital, taking a share of the on call duties and gaining exposure to a wide range of medical conditions while being fully supported by a full junior and senior team.</p>\n<p>This will include full and equal access to educational &amp; clinical supervision as well as internal educational and training opportunities and study leave. Access to an ePortfolio will be offered.</p>\n<p>The term of the post can be flexible, but will be for a minimum of 4 months and maximum of 8 months from appointment.</p>\n<p>Previous applicants need not apply.</p><p>Services core to our operation as a provider of acute care are:</p>\n<ul>\n<li>Full accident and emergency services for major and minor illnesses and injuries including a fracture clinic. This is one of the best performing units in the country.</li>\n<li>Emergency assessment and treatment services, including critical care (the hospital is a trauma unit).</li>\n<li>Elective (planned) surgery and medical treatments, including day surgery.</li>\n<li>A wide range of medical and outpatient services.</li>\n<li>Maternity services, including midwife-led birthing unit, community midwifery support, antenatal care, postnatal care and home births. There is a Special Care Baby Unit.</li>\n<li>Children's services, including emergency assessment, inpatient and outpatient services.</li>\n<li>Diagnostic services, including fully accredited pathology, liquid-based cytology, CT scanning, MRI scanning, ultrasound, cardiac angiography and interventional radiology.</li>\n<li>Renal services to all of Dorset and parts of Somerset.</li>\n<li>A wide range of therapy services, including physiotherapy, occupational therapy and dietetics.</li>\n<li>Service for older people, including an acute stroke unit.</li>\n<li>A newly built radiotherapy unit, delivering enhanced oncology services to the West Dorset population.</li>\n<li>Teaching, training and research.</li>\n</ul>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9405-26-0531",
+    "postedAt": "2026-11-10T15:21:23.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719842",
+    "slug": "inhealth-group-mri-radiographer-m0035-26-0557",
+    "company": "nhs",
+    "employer": "InHealth Group",
+    "title": "MRI Radiographer",
+    "locations": [
+      "Kingston Upon Thames, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "Job Title- MRI Radiographer\nHours: Monday-Sunday 3 x 12 hour shifts between 7am and 9pm typically\nLocation- Kingston\n\nInHealth sees more than 5 million patients each year and diagnostic imaging is one of the busiest services that we provide. We are looking for a MRI Radiographer to join our Radiography Department in Kingston.\n\nAs a MRI Radiographer you will be responsible for ensuring our patients receive the best standard of care while generating high-quality images to support their healthcare pathway. You will deliver an effective and professional service, working alongside your colleagues in a dynamic and fast paced environmentProviding a great experience for patients attending MRI scanning, supporting them through the process from referral to results\nRunning quality assurance checks on equipment and action as appropriate\nRespecting and working within patient's and service users' customs, values and spiritual beliefs, making sure their views are sought and taken into account\nPerforming triage functions of referrals, as required\nSupporting patient bookings and making sure patient information systems are maintained with accurate and up-to-date information\nCompleting competency assessments\nAdhering to all operational procedures\nMaintaining a clean and safe working environment\nSharing knowledge and clinical experience with the wider team to support each others growth and development.<p>InHealth is the UKs largest specialist provider of diagnostic and healthcare solutions. Our aim is to make healthcare better for patients by working collaboratively with the NHS to deliver a range of high-quality tests, scans, assessments and procedures. In the last year, we have supported more than 5 million people in their healthcare journeys, the majority of these are NHS patients and service users.</p> <p>As a people-focused organisation, our teams are integral in how we deliver our services and our values of Trust, Passion, Care and Fresh Thinking underpin everything we do, influencing the way we interact with patients, customers, and colleagues.</p> <p>Our mission is to provide high-quality services within local communities to over 7 million patients by 2030. We are committed to ensuring that patients receive a positive experience, maintaining a 97% patient satisfaction rate.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0557",
+    "postedAt": "2026-11-10T15:41:27.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5719972",
+    "slug": "hook-surgery-practice-nurse-a5041-26-0004",
+    "company": "nhs",
+    "employer": "Hook Surgery",
+    "title": "Practice Nurse",
+    "locations": [
+      "CHESSINGTON, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Hook Surgery is looking for an enthusiastic, motivated and experienced <strong>Practice Nurse</strong> to join our friendly and supportive team on a part-time basis.</p><p>The successful candidate will work as an autonomous practitioner within the multidisciplinary GP practice team, providing high-quality nursing care to our patient population. The role will involve delivering a broad range of general practice nursing services, health promotion, preventative care and chronic disease management.</p><p>We are looking for someone who is committed to providing excellent patient-centred care, works well as part of a team and is confident working independently within their professional scope of practice.</p><p>As a Practice Nurse, you will provide a wide range of nursing services to patients of all ages, helping to promote health, prevent illness, and support the management of long-term conditions.</p><ul> <li>Deliver high-quality nursing care within a busy GP practice.</li> <li>Carry out health assessments, routine examinations, and chronic disease reviews.</li> <li>Administer immunisations, vaccinations, injections, and medications in line with current guidelines.</li> <li>Provide cervical screening, wound care, dressings, and other treatment room services.</li> <li>Support health promotion by educating patients on healthy lifestyles, medication, and self-management of long-term conditions.</li> <li>Maintain accurate and confidential patient records using the practice's clinical system.</li> <li>Work collaboratively with GPs and the wider multidisciplinary team to provide coordinated patient care.</li> <li>Help maintain clinical standards, infection control procedures, and stock management within the treatment room</li></ul><p>Hook Surgery is a friendly, forward-thinking GP training practice in Chessington, providing high-quality NHS primary care to a diverse patient population of over 7,500 patients.</p><p>We are a busy but supportive practice with a strong emphasis on <strong>teamwork, patient-centred care and continuous improvement</strong>. Our multidisciplinary team includes GP Partners, Salaried GPs, Practice Nurses, Healthcare Assistants, Clinical Pharmacists, First Contact Physiotherapy and an experienced administrative and reception team. We work closely together to provide safe, effective and compassionate care to our patients.</p><p>Our practice has a positive and welcoming atmosphere, where staff are encouraged to support one another, share knowledge and contribute ideas. We recognise the pressures faced by primary care and place importance on maintaining a <strong>supportive working environment, good communication and staff wellbeing</strong>.</p><p>As a GP training practice, we are committed to <strong>learning, development and clinical excellence</strong>. We encourage our staff to develop their skills and knowledge and provide opportunities for continuing professional development.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5041-26-0004",
+    "postedAt": "2026-11-10T15:56:05.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5720077",
+    "slug": "weavers-medical-salaried-gp-a2970-26-0039",
+    "company": "nhs",
+    "employer": "Weavers Medical",
+    "title": "Salaried GP",
+    "locations": [
+      "Kettering, United Kingdom",
+      "KETTERING, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>**Part Time Salaried GP\r\nPositions available @ Weavers Medical**</p><ul><li>We can accommodate up to 6 sessions per week</li><li> \r\nJoin our GP team (currently 4 partners and 18 salaried GPs)</li><li> \r\nPart time hours. On call optional,</li><li>Dual Location in Kettering and Mawsley</li><li>Flexible start and finish times, we are family friendly</li><li> \r\n12 patients per session plus share of admin\r\nwork</li><li> \r\nSessions are a mix of telephone/video and f2f</li><li> \r\nOption to work some sessions from home</li><li>Must include working Monday and Friday</li><li> \r\nLong established training practice</li><li> \r\nStrong nursing team</li><li> \r\nTeam approach to workload,\r\nforward-thinking, friendly, inclusive, supportive</li><li>Pay per session per annum\r\ndependent on skills and experience. Range of £11,000-£12,500 per session p.a. Premium paid for experianced GP with 4 years experiance post CCT.</li></ul><p> \r\nTo provide primary medical services to patients\r\nof the practice by way of surgeries and relevant administration work together\r\nwith other duties as may be required by the practice in providing such services\r\nto its patients. </p><p> \r\nSpecifically: organising patient referrals to\r\nsecondary care, initiating investigations, reading and classifying the results\r\nand communicating with patients, reading and taking appropriate action in\r\nrespect of letters from secondary care, authorising and preparing repeat\r\nprescriptions all on a daily basis.</p><p> \r\nLiaising with other members of the Primary Care\r\nHealth Team and other agencies as appropriate, to ensure good relationships are\r\nmaintained at all times with patients, colleagues and other agencies.</p><p>Weavers medical is a town centre practice serving a population of 19,900 patients from purpose built premises. The practice currently has a team of 18 GPs and a nursing/HCA team of 10.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A2970-26-0039",
+    "postedAt": "2026-11-10T16:20:28.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5720129",
+    "slug": "barts-health-nhs-trust-locum-consultant-in-clinical-pathology-c9259-26-1942",
+    "company": "nhs",
+    "employer": "Barts Health NHS Trust",
+    "title": "Locum Consultant In Clinical Pathology",
+    "locations": [
+      "London, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "laboratory-medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Applications are invited for two locum Consultant Cellular Pathologist / Histopathologist post in the Department of Cellular Pathology at Barts Health NHS Trust. These posts will become substantive in due course. One of the jobs is to provide histopathology reporting within the Gastrointestinal and Endocrine Pathology teams along with non gynaecological cytology reporting. The second post is to provide histopathology reporting within the Breast and Gynaecological Pathology teams along with non gynaecological cytology reporting. Barts Health is one of the UK's leading healthcare providers and the largest Trust in the NHS. Together, our hospitals - Newham University Hospital, St Bartholomew's, The Royal London and Whipps Cross - deliver high quality clinical care to the people of East London and further afield. The hospitals offer a full portfolio of services to the local community and are home to some of the UK's leading specialist centres. The upheaval of COVID-19 has provided our consultant team with the opportunity to implement flexible working, both geographic and temporal, enabling us to deliver an efficient service in spite of the restrictions of lockdown.</p><p>An exciting opportunity has arisen to join our experienced and dedicated Cellular Pathology team at Barts Health NHS Trust. There are two locum whole-time (10PA) consultant pathologist posts to support the provision of a comprehensive, high quality pathology service for Barts Health NHS Trust and for other Trusts for which the Department undertakes service provision. One role covers GI pathology, Endocrine Pathology and non-gynaecological cytology. The second post comprises Breast Pathology, non- oncological Gynaecological pathology and non-gynaecological cytology. The roles are expected to become substantive in the future.</p>  <p>Barts Health is one of the largest NHS trusts in the country, and one of Britain's leading healthcare providers.</p>\n<p>Our vision is to be a high-performing group of NHS hospitals, renowned for excellence and innovation, and providing safe and compassionate care to our patients in east London and beyond. That means being a provider of excellent patient safety, known for delivering consistently high standards of harm-free care and always caring for patients in the right place at the right time. It also means being an outstanding place to work, in which our WeCare values and behaviours are visible to all and guide us in how we work together.</p>\n<p>We strive to live by our WeCare values and are committed to promoting inclusion, where every staff member has a sense of belonging. We value our differences and fully advocate, cultivate and support an inclusive working environment.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9259-26-1942",
+    "postedAt": "2026-11-10T16:31:34.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5720367",
+    "slug": "inhealth-group-mri-radiographer-m0035-26-0558",
+    "company": "nhs",
+    "employer": "InHealth Group",
+    "title": "MRI Radiographer",
+    "locations": [
+      "WALSALL, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "Job Title- MRI Radiographer\nHours: Monday-Sunday 3 x 12 hour shifts between 7am and 9pm typically\nLocation- Walsall\n\nInHealth sees more than 5 million patients each year and diagnostic imaging is one of the busiest services that we provide. We are looking for a MRI Radiographer to join our Radiography Department in Walsall\n\nAs a MRI Radiographer you will be responsible for ensuring our patients receive the best standard of care while generating high-quality images to support their healthcare pathway. You will deliver an effective and professional service, working alongside your colleagues in a dynamic and fast paced environmentProviding a great experience for patients attending MRI scanning, supporting them through the process from referral to results\nRunning quality assurance checks on equipment and action as appropriate\nRespecting and working within patient's and service users' customs, values and spiritual beliefs, making sure their views are sought and taken into account\nPerforming triage functions of referrals, as required\nSupporting patient bookings and making sure patient information systems are maintained with accurate and up-to-date information\nCompleting competency assessments\nAdhering to all operational procedures\nMaintaining a clean and safe working environment\nSharing knowledge and clinical experience with the wider team to support each others growth and development.<p>InHealth is the UKs largest specialist provider of diagnostic and healthcare solutions. Our aim is to make healthcare better for patients by working collaboratively with the NHS to deliver a range of high-quality tests, scans, assessments and procedures. In the last year, we have supported more than 5 million people in their healthcare journeys, the majority of these are NHS patients and service users.</p> <p>As a people-focused organisation, our teams are integral in how we deliver our services and our values of Trust, Passion, Care and Fresh Thinking underpin everything we do, influencing the way we interact with patients, customers, and colleagues.</p> <p>Our mission is to provide high-quality services within local communities to over 7 million patients by 2030. We are committed to ensuring that patients receive a positive experience, maintaining a 97% patient satisfaction rate.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0558",
+    "postedAt": "2026-11-10T22:28:09.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5720389",
+    "slug": "hampshire-and-isle-of-wight-healthcare-nhs-foundation-trust-specialty-doctor-in-child-and-adolescent-psychiatry-iow-c9348-26-2507",
+    "company": "nhs",
+    "employer": "Hampshire and Isle of Wight Healthcare NHS Foundation Trust",
+    "title": "Specialty Doctor in Child and Adolescent Psychiatry IOW",
+    "locations": [
+      "Newport, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "child-psychiatry",
+    "level": "specialist",
+    "salary": {
+      "currency": "GBP",
+      "min": 63696,
+      "max": 102689,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Hampshire and Isle of Wight Healthcare NHS Foundation Trust is the main provider of children's community services to the county of Hampshire. HIOW CAMHS operates within the Child &amp; Family Division of the Trust, clinically led by a Clinical Director and supported by a Senior Leadership Team. It is commissioned to provide a comprehensive service for children and young people up to the age of 18 years in line with the National Service Framework and the Government white paper for people with Learning difficulties 'Valuing People' and works in an increasingly integrated way with the other Trust providers of children's and mental health services as well as partner agencies.</p><p>This appointment will be under the terms of the SAS Contract 2021 and salary will be dependent on previous experience according to the pay scales of that contract.</p><p>The post holder will be professionally accountable to the Chief Medical Officer of Hampshire and Isle of Wight Healthcare Foundation NHS Trust via professional leads and the Clinical Director and will be organisationally accountable to the Chief Executive via the service managers of the Children's Service Line.</p><p>The post-holder will undertake programmed activities, according to an agreed job-plan, and will be expected to participate in on call and cross cover arrangements as required in the future.</p><p>*To provide mental health assessment, treatment and case management both directly and through colleague consultation to referred children and young people aged 0 - 18 years and to their families, according to criteria agreed with local commissioners.</p><p>*To record and communicate such activity as appropriate according to best practice and Trust requirements.</p><p>*To balance demand for both scheduled and unscheduled clinical care in collaboration with colleagues and service managers.</p><p>*To participate in team and peer clinical supervision and co-working arrangements.</p><p>*To join the local Child and Adolescent Psychiatrists' Peer Supervision and Continuing Professional Development Group.</p><p>*To respond flexibly to the reasonable requests of the service for exceptional unplanned activity such as may be required and for gradual change in the Consultant role as part of the evolution of children's services.</p><p>Hampshire and Isle of Wight Healthcare NHS Foundation Trust is a newly established organisation, bringing together expertise from across mental health, learning disabilities, community, and physical health services. We are dedicated to delivering compassionate, high-quality, and accessible care to the diverse communities of Hampshire and the Isle of Wight.</p><p>With over 13,000 dedicated staff working across more than 300 sites, we place patients and staff at the centre of everything we do. Our goal is to create an integrated healthcare system that improves accessibility and ensures more consistent care for patients. By working together, we aim to improve patient outcomes, drive innovation, and meet the unique needs of the populations we serve.</p><p>Our Trust unites services from Southern Health, Solent NHS Trust, Isle of Wight NHS Trusts community and mental health teams, as well as Hampshire CAMHS, originally part of Sussex Partnership NHS Foundation Trust. This transformation enables us to deliver more seamless care across the region, ensuring that patients receive the right support, in the right place, at the right time.</p><p>Join us as we embark on this exciting journey to shape the future of healthcare across Hampshire and the Isle of Wight. We are deeply committed to our CARE values of compassion, accountability, respect, and excellence, and offer outstanding opportunities for career development, training, and collaborative working.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9348-26-2507",
+    "postedAt": "2026-11-11T04:12:32.000Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "source": "nhs"
   }
 ]

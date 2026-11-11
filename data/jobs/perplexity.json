@@ -54,6 +54,8 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/1a3df802-9238-4827-ab1f-12a9d1e4b81c",
     "postedAt": "2026-09-23T10:22:32.773Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "ashby"
   },
   {
@@ -1464,6 +1466,8 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/5930b6bf-b4b1-4134-a183-832d69dd085f",
     "postedAt": "2026-11-06T22:59:09.141Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-10T05:03:14.257Z",
+    "missedRuns": 1,
     "source": "ashby"
   },
   {
@@ -1653,7 +1657,7 @@
     "company": "perplexity",
     "title": "Go-to-Market Recruiter",
     "locations": [
-      "San Francisco"
+      "New York City"
     ],
     "remote": false,
     "department": "Recruiting",
@@ -1886,6 +1890,23 @@
     "source": "ashby"
   },
   {
+    "id": "ashby:b85c4547-fa75-41a8-bd36-6f2c70117764",
+    "slug": "perplexity-member-of-technical-staff-tpm-compute-b85c4547-fa75-41a8-bd36-6f2c70117764",
+    "company": "perplexity",
+    "title": "Member of Technical Staff (TPM, Compute)",
+    "locations": [
+      "San Francisco"
+    ],
+    "remote": false,
+    "department": "Platform & Infrastructure",
+    "category": "product",
+    "descriptionHtml": "<p><strong>Perplexity is looking for a technical program manager to own how we plan, bring online and run the GPU compute behind every product.</strong></p><p>Perplexity serves Ask, Computer and API traffic on GPU capacity across multiple cloud and neocloud providers, and demand shifts with every new customer, product launch and model release. Working across engineering, research, Finance and providers, you’ll forecast how much compute we need and when, bring new capacity into production, and own how the fleet performs today, driving fixes when reliability, utilization or cost fall short. The ideal candidate knows GPU fleets, handles technical and commercial details, and is energized by building a function with little precedent.</p><h2>Our Mission</h2><p>Perplexity’s mission is to power curiosity. Curious people are the people who drive change in the world. Driving change is a continuous cycle of learning, building, and integrating.</p><p>Learn: curious people constantly learn new things by asking more. They question the status quo in their own expertise and they constantly learn outside of it. Research is essential to them and never ending.</p><p>Build: curious people make and create things, to show the world their new answers to problems no one else ever questioned. They take action on what they’ve learned. Makers need tools to create their products, their companies, their reality.</p><p>Integrate: they must interact with the world as it is to drive change and adoption. True leaders do not simply build something and hope. They must have armies of agents and workers who can constantly work in millions of small ways.</p><h2>What You’ll Do</h2><ul><li><p><strong>Partner with Finance on the compute demand forecast</strong>, 3–12 months out, driven by customer growth, model releases, and post-training and evaluation plans rather than trend lines</p></li><li><p><strong>Turn the forecast into decisions</strong> with Finance and engineering leadership on commitments and budget, checking that new capacity fits the plan before we commit</p></li><li><p><strong>Bring new capacity online and lead transitions</strong>, from contract to production, including provider onboarding, acceptance criteria, migration and decommissioning</p></li><li><p><strong>Build a single, trusted view of the fleet</strong>: capacity, cost, allocation, and uptime, reliability and utilization by provider and workload</p></li><li><p><strong>Drive daily utilization, reliability and cost-efficiency</strong> as core metrics, reclaiming idle capacity and surfacing trade-offs rather than letting them become side effects</p></li><li><p><strong>Own inference and compute requests end to end</strong>: triage and resolve GPU, deployment and quota requests from teams across Perplexity, and build self-serve paths so routine requests no longer need a person in the loop</p></li><li><p><strong>Manage compute provider relationships</strong>, with scorecards and regular reviews of reliability, support and delivery, and use that data to shape how we work with providers over time</p></li><li><p><strong>Partner with engineering, research, and finance teams</strong> on capacity decisions that match the different needs of training, batch inference and real-time production inference</p></li><li><p><strong>Build the operating system for compute</strong>: the processes and tooling to request, plan, allocate and track compute, with clear owners</p></li></ul><h2>Qualifications</h2><ul><li><p>6+ years of technical program management, capacity planning or infrastructure operations in cloud environments, leading programs across teams and vendors</p></li><li><p>Direct experience with GPU or accelerator fleets across training and inference workloads</p></li><li><p>Experience working directly with cloud or neocloud providers on reserved capacity, capacity commitments, onboarding or vendor performance management</p></li><li><p>Experience with infrastructure cost modeling, unit economics or cost attribution in partnership with Finance</p></li><li><p>Technical depth in cluster management, scheduling and orchestration, and the data skills to build forecasts and dashboards yourself</p></li><li><p>The judgment to surface hard trade-offs and communicate them clearly from engineers to executives</p></li><li><p>Thrives in a small, agile team; has initiative and desire for ownership without much precedent to lean on</p></li></ul>",
+    "applyUrl": "https://jobs.ashbyhq.com/Perplexity/b85c4547-fa75-41a8-bd36-6f2c70117764",
+    "postedAt": "2026-11-10T15:57:14.510Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "ashby"
+  },
+  {
     "id": "ashby:b349ec0e-be02-47b0-8595-8de0dbb074c5",
     "slug": "perplexity-growth-manager-enterprise-lifecycle-b349ec0e-be02-47b0-8595-8de0dbb074c5",
     "company": "perplexity",
@@ -1917,6 +1938,25 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/ba95ea8c-9aad-4152-925c-df08d6a90c0f",
     "postedAt": "2026-10-31T00:03:21.937Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "source": "ashby"
+  },
+  {
+    "id": "ashby:be6ffac6-5d72-4768-9f88-d1231a710ec9",
+    "slug": "perplexity-deal-desk-lead-be6ffac6-5d72-4768-9f88-d1231a710ec9",
+    "company": "perplexity",
+    "title": "Deal Desk Lead",
+    "locations": [
+      "San Francisco",
+      "Austin",
+      "New York City"
+    ],
+    "remote": false,
+    "department": "Revenue Operations",
+    "category": "operations",
+    "descriptionHtml": "<p>We’re looking for a Deal Desk Lead to help our GTM teams structure and close deals that support durable revenue growth. You’ll partner with the field, the Head of Revenue Operations, and Finance and Legal leadership to balance customer needs with company priorities.<br /><br />You’ll own Deal Desk end to end and build the team as we grow. This is a hands-on role for someone who moves with urgency and finds workable solutions, not simply obstacles or approval paths.</p><h2><br /><strong>What you’ll do</strong></h2><ul><li><p><strong>Partner with the field: </strong>Engage early on complex opportunities, understand customer needs, and remove obstacles to close. Bring Sales, Finance, and Legal together to resolve issues quickly.</p></li><li><p><strong>Structure deals and balance trade-offs: </strong>Shape pricing, discounts, commitments, and payment terms. Weigh customer value, revenue, profitability, and risk, offering practical alternatives rather than a simple yes or no.</p></li><li><p><strong>Own review and approvals: </strong>Run a responsive process for nonstandard deals and exceptions. Apply policies consistently and escalate decisions beyond your authority with clear options and a recommendation.</p></li><li><p><strong>Ensure accurate execution: </strong>Ensure quotes, order forms, approvals, and CRM records reflect agreed terms. Resolve discrepancies before signature and enable clean handoffs to billing and post-sale teams.</p></li><li><p><strong>Own quote-to-order requirements and delivery: </strong>Define business requirements, priorities, and acceptance criteria for quote-to-order workflows. Hold Systems accountable for building and delivering against them, owning business acceptance testing and sign-off.</p></li><li><p><strong>Scale the function: </strong>Build playbooks, approval frameworks, and field enablement that reduce recurring friction. Use deal and exception patterns to recommend improvements to pricing and commercial policy. Hire, coach, and develop the Deal Desk team as the business grows.</p></li></ul><h2><strong>What you bring</strong></h2><ul><li><p><strong>Relevant experience: </strong>4+ years in Deal Desk, commercial operations, or a related function in SaaS or another high-growth industry, including complex deal structuring and approvals.</p></li><li><p><strong>Exceptional business partnership: </strong>A track record of earning Sales’ trust through responsiveness, practical solutions, and sound commercial judgment that protects the business.</p></li><li><p><strong>Autonomy and extreme ownership: </strong>The ability to prioritize independently, surface risks early, and drive issues to resolution without close supervision.</p></li><li><p><strong>Commercial judgment and precision: </strong>Strong analytical skills and exceptional attention to detail across deal economics, terms, and documentation, even under tight deadlines. You distinguish material risks from issues that should not hold up a deal.</p></li><li><p><strong>Tact and communication: </strong>The ability to handle Sales exception and clarification requests tactfully, influence stakeholders, and escalate to senior leadership appropriately.</p></li><li><p><strong>Hands-on systems expertise: </strong>Experience with CRM, quoting or CPQ tools, and approval workflows, plus the ability to translate field needs into actionable business requirements.</p></li><li><p><strong>AI perspective and drive: </strong>A strong perspective on how AI is changing traditional quote-to-order workflows, and a passion for putting that perspective into practice across the business.</p></li><li><p><strong>People management: </strong>Experience managing and developing direct reports, with the ability to build a team while remaining hands-on.</p></li></ul><h2><strong>Nice to have</strong></h2><ul><li><p><strong>Evolving business models: </strong>Experience with consumption-based, usage-based, or hybrid subscription models.</p></li><li><p><strong>Enterprise complexity: </strong>Experience with enterprise procurement and multiyear agreements.</p></li></ul>",
+    "applyUrl": "https://jobs.ashbyhq.com/Perplexity/be6ffac6-5d72-4768-9f88-d1231a710ec9",
+    "postedAt": "2026-11-11T04:56:15.911Z",
+    "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "source": "ashby"
   },
   {
@@ -2073,10 +2113,8 @@
     "category": "data",
     "descriptionHtml": "<p>Perplexity is AI for people who expect more. This role brings that same standard to how our data team works, with AI at the center of everything we do.</p><p>We're looking for someone who's been a great data scientist, analytics engineer, or data engineer: the kind of person who knows which metric actually matters, can design an A/B test that answers the real question, has gone deep on a data model because something didn't add up, and has decided that the highest-leverage thing they can do next is <strong>build AI systems that fundamentally change how data science gets done</strong>.</p><p>You'll build AI agents and internal systems that can increasingly handle end-to-end analysis workflows: forming hypotheses, writing and running queries, interpreting results, and drafting recommendations with the right evaluation, review, and guardrails. You'll build the retrieval infrastructure and evaluation loops that let AI systems query the warehouse reliably. You'll create workflows that detect, diagnose, and help fix data issues before they become company-wide problems. You'll build the infrastructure that multiplies what a small data team can ship.</p><p>You'll join a data team that's already using AI across its work. The next step is turning those individual workflows into scalable systems, shared tools, and an AI-native operating model that becomes a benchmark for how modern data teams work.</p> <h2><strong>What You'll Do</strong></h2><ul><li><p><strong>Build AI agents that do data science</strong> - not just SQL copilots, but systems that can safely explore data, form hypotheses, run queries, interpret results, and generate actionable recommendations with clear evaluation and human review loops.</p></li><li><p><strong>Make AI systems query the warehouse reliably</strong> - build the retrieval infrastructure and evaluation loops that let agents use our semantic context and metadata accurately.</p></li><li><p><strong>Accelerate the AI-native data workflow</strong> - turn the best existing AI-assisted workflows into repeatable systems, reusable tools, and patterns the whole data team can adopt.</p></li><li><p><strong>Automate the data lifecycle</strong> - build self-healing pipelines, automated dbt model generation and validation, data quality agents, and diagnosis workflows that reduce manual firefighting.</p></li><li><p><strong>Ship AI-powered experiment analysis</strong> - build agents that interpret A/B test results, flag statistical issues, identify likely drivers, and draft ship/no-ship recommendations.</p></li><li><p><strong>Turn the data team into a product team</strong> - build internal data products that stakeholders use every day, replacing ad hoc requests with self-serve AI interfaces.</p></li><li><p><strong>Own the full lifecycle</strong> - identify high-leverage problems, prototype with LLMs, evaluate accuracy, design the UX, ship to production, and monitor quality over time.</p></li></ul><h2><strong>What We're Looking For</strong></h2><ul><li><p><strong>6+ years</strong> in data science, analytics engineering, data engineering, or a related role. You've been close enough to real data work to know what should and should not be automated.</p></li><li><p><strong>Deep SQL and analytics judgment</strong> - you can reason through metrics, experiments, data models, and messy warehouse reality without relying on a tool to think for you.</p></li><li><p><strong>Strong product sense</strong> - you understand what stakeholders actually need, what makes a workflow adoptable, and how to turn a prototype into a product people use.</p></li><li><p><strong>Hands-on LLM experience</strong> - you've built with frontier models, agents, RAG systems, evals, or AI-powered workflows and have opinions about where they work and where they fail.</p></li><li><p><strong>Pipeline and modeling fluency</strong> - you've worked with dbt, warehouse schemas, data quality issues, and the practical tradeoffs behind durable data systems.</p></li><li><p><strong>Builder mentality</strong> - you see a manual process and immediately think about how to systematize it. You ship fast, measure quality, and iterate.</p></li><li><p><strong>Autonomy</strong> - this is a new function. You'll help define the roadmap as much as execute it.</p></li></ul><h2><strong>Bonus</strong></h2><ul><li><p>Experience building production AI agents or agent evaluation systems.</p></li><li><p>Experience with Snowflake, semantic layers, or metadata systems.</p></li><li><p>Experience building internal tools, Slack bots, CLIs, or developer productivity products that people actually used.</p></li><li><p>Strong experimentation background, including metric design and statistical interpretation.</p></li><li><p>Experience with BI tools and the judgment to know what should be automated versus kept human-reviewed.</p></li><li><p>Early-stage startup experience.</p></li></ul><h2><strong>Why This Role</strong></h2><ul><li><p><strong>Set the standard for the industry</strong> - Perplexity's data team is already using AI across its work. You'll turn that into something other data teams look to as the benchmark.</p></li><li><p><strong>Build AI with AI</strong> - Perplexity builds AI for people who expect more. You'll bring that same level of ambition to how the company works with data.</p></li><li><p><strong>Frontier models, day one</strong> - you're at an AI company with access to frontier infrastructure and people who deeply understand what's possible.</p></li><li><p><strong>Massive leverage</strong> - the systems you build will multiply the output of every data team member and every stakeholder who needs data.</p></li><li><p><strong>Direct impact</strong> - small team, no layers of approval. Idea to shipped system in days, not quarters.</p></li></ul>",
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/d89a3cad-50d5-47fd-8f87-be55285ee2b1",
-    "postedAt": "2026-10-22T22:51:54.586Z",
+    "postedAt": "2026-11-11T01:47:44.480Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "missedRuns": 1,
     "source": "ashby"
   },
   {
