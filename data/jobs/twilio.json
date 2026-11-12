@@ -209,6 +209,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/twilio/jobs/7987837",
     "postedAt": "2026-06-16T22:20:26.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -438,6 +440,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/twilio/jobs/8056267",
     "postedAt": "2026-09-03T13:29:17.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -749,7 +753,7 @@
     "postedAt": "2026-09-04T15:25:32.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -1016,7 +1020,7 @@
     "postedAt": "2026-09-25T19:47:35.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -1052,7 +1056,7 @@
     "postedAt": "2026-09-14T18:04:32.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -1795,7 +1799,7 @@
     "postedAt": "2026-10-14T04:17:15.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -1884,7 +1888,7 @@
     "postedAt": "2026-10-13T05:16:45.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -2038,7 +2042,7 @@
     "postedAt": "2026-10-19T14:51:52.000Z",
     "firstSeenAt": "2026-11-03T14:59:32.992Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -2195,6 +2199,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8316035",
+    "slug": "twilio-architect-8316035",
+    "company": "twilio",
+    "title": "Architect",
+    "locations": [
+      "Remote - US"
+    ],
+    "remote": true,
+    "department": "Engineering",
+    "category": "engineering",
+    "descriptionHtml": "<p><strong>Who we are </strong></p>\n<p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a href=\"https://customers.twilio.com/\"> hundreds of thousands of businesses </a>and empower millions of developers worldwide to craft personalized customer experiences.</p>\n<p>Our dedication to <a href=\"https://www.twilio.com/en-us/blog/open-work\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br />.</p>\n<p><strong>Hiring and how we work</strong></p>\n<p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! </p>\n<p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.<br />.</p><p><strong>See yourself at Twilio</strong></p>\n<p>Join the team as Twilio’s next Architect on our Data Substrate team</p>\n\n<p><strong>About the job</strong></p>\n<p>Twilio runs on data, and the platform underneath it is entering a major shift. Open table formats, the convergence of lakes and warehouses, tightening privacy regulation, and AI workloads are all changing what a data platform has to do. We’re hiring an Architect to set our direction through that shift and to make sure the systems we build over the next 3-5 years are the right ones.</p>\n\n<p>You’ll own the technical strategy for our data platform, spanning storage, lake and lakehouse architecture, catalog and governance, and privacy-by-design. You’ll work across org boundaries, setting standards that dozens of teams build on and raising the technical bar for the engineers around you.</p>\n\n<p><strong>Responsibilities</strong></p>\n<p>In this role, you’ll:</p>\n<ul>\n<li>Own the architecture and multi-year technical strategy for the data platform, including the lake/lakehouse, ClickHouse, Elasticsearch, and governance, and keep them coherent as one platform rather than separate systems. Define where each engine fits (for example, ClickHouse versus open table formats on object storage) and the migration path between them.</li>\n<li>Make and document the major design decisions (ADRs, RFCs) on storage and open table formats, catalog strategy, compute engines, tenancy, data placement, and build-versus-adopt tradeoffs, with cost and performance at petabyte scale as explicit design constraints.</li>\n<li>Set the reference architectures for how our core storage and query engines (ClickHouse, Elasticsearch, and lake engines) are deployed, tuned, scaled and operated as shared platforms, including capacity, cost, tenant isolation, and upgrade strategy.</li>\n<li>Define the reliability model for the platform: availability targets, failure domains, disaster recovery, observability, and incident response patterns that teams can adopt.</li>\n<li>Build privacy and compliance into the architecture, not onto it. Design deletion and right-to-erasure, retention, data residency, and PII classification so they work across the platform’s storage layers, backups, and derived datasets, including data that arrives from upstream streaming systems.</li>\n<li>Drive data governance: classification, catalog and metadata, lineage, access control integrated with our authentication and authorization systems, data contracts, quality and integrity standards, and a catalog teams actually use.</li>\n<li>Review designs and technical direction across the org, and act as the escalation point on hard distributed-systems and performance problems.</li>\n<li>Mentor principal and senior engineers, and grow architectural judgment across the org, not only within one squad.</li>\n<li>Partner with product, security, infrastructure and consuming teams to turn business needs into platform roadmaps, and say no or re-sequence when the tradeoffs require it.</li>\n<li>Track emerging data technologies (such as streaming-first architectures, federated query, and AI-ready data layers) and bring forward the ones worth adopting, with evidence from prototypes or benchmarks.</li>\n</ul>\n\n<p><strong>Qualifications </strong></p>\n<p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p>\n\n<p><strong>Required:</strong></p>\n<ul>\n<li>Bachelor’s or Master’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.</li>\n<li>15+ years of experience in software development or a related field, with at least 8 years in an architecture or senior technical leadership role.</li>\n<li>Proven track record of architecting and delivering large-scale data platforms and setting their technical strategy, on cloud infrastructure such as AWS, deployed with Kubernetes, Terraform and Helm.</li>\n<li>Deep expertise in storage and compute for analytical data: columnar and open table formats, lake and lakehouse architecture, partitioning, indexing, query planning, and how the choices affect cost and performance at petabyte scale.</li>\n<li>Breadth across data storage and retrieval technologies, with hands-on depth in at least two of: analytical/OLAP engines (e.g., ClickHouse), search engines (e.g., ElasticSearch/OpenSearch), and lake or distributed processing engines (e.g., Spark, Trino, Flink). You can reason about when to use each, how they interoperate, and how to migrate between them.</li>\n<li>Working knowledge of streaming systems (e.g., Kafka) and how they interact with downstream storage.</li>\n<li>Practical experience designing data governance at scale: data classification, catalog and metadata management, lineage, and access control integrated with authentication and authorization systems.</li>\n<li>Practical experience implementing privacy and compliance requirements (deletion, retention, residency) across a large, heterogeneous data estate.</li>\n<li>Proficiency in one or more of Python, Java, and Go.</li>\n<li>Track record of writing and driving architecture decisions across multiple teams, and of changing the direction of an organization’s technical roadmap through influence rather than authority.</li>\n<li>Experience elevating engineering standards and mentoring senior engineers across teams.</li>\n<li>Demonstrated commitment to operational excellence: architecting for high availability, observability and incident response in distributed systems, and being credible when a platform is failing in production.</li>\n<li>Strong written and verbal communication, including making a complex tradeoff clear to engineers and to senior leadership.</li>\n</ul>\n\n<p><strong>Desired:</strong></p>\n<ul>\n<li>Experience operating one of these engines (e.g., ClickHouse, ElasticSearch) at scale, including replication, sharding, ingestion behavior, and multi-tenant isolation.</li>\n<li>Experience with catalog and metadata systems (e.g., Unity Catalog, Glue, Polaris, DataHub) and open table format catalog strategy.</li>\n<li>Experience with a platform migration across domains or ownership models, such as moving from central to domain-owned data.</li>\n<li>A track record of measurable cost optimization on large data platforms.</li>\n<li>Networking and network security knowledge.</li>\n</ul>\n\n<p><strong>Location</strong></p>\n<p>This role will be remote, and based in the United States. </p>\n\n<p><strong>Travel </strong></p>\n<p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, you may be required to travel occasionally to participate in project or team in-person meetings.</p>\n\n<p><strong>What We Offer</strong></p>\n<p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location</p>\n<p><strong>Compensation</strong></p>\n<p><em>*Please note this role is open to candidates outside of California, Colorado, Hawaii, Illinois, Maryland, Massachusetts, Minnesota, New Jersey, New York, Vermont, Washington D.C., and Washington State. The information below is provided for candidates hired in those locations only.</em></p>\n\n<p>The estimated pay ranges for this role are as follows:</p>\n<ul>\n<li>Based in Colorado, Hawaii, Illinois, Maryland, Massachusetts, Minnesota, Vermont or Washington D.C. : $207,200 - $233,100. </li>\n<li>Based in New York, New Jersey, Washington State, or California (outside of the San Francisco Bay area): $219,360 - $246,780.</li>\n<li>Based in the San Francisco Bay area, California: $243,680 - $274,140.</li>\n</ul>\n\n<p>This role may be eligible to participate in Twilio’s equity plan and corporate bonus plan. All roles are generally eligible for the following benefits: health care insurance, 401(k) retirement account, paid sick time, paid personal time off, paid parental leave.</p>\n<p>The successful candidate’s starting salary will be determined based on permissible, non-discriminatory factors such as skills, experience, and geographic location.</p>\n\n<p><strong>Application deadline information</strong></p>\n<p>Applications for this role are intended to be accepted until 1/4/2027 but may change based on business needs. </p><p><strong>Twilio thinks big. Do you?</strong></p>\n<p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p>\n<p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p>\n<p><strong>.</strong></p>\n<p><strong>Stay alert to recruitment fraud</strong></p>\n<p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br /><br />.</p>\n<p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p>",
+    "applyUrl": "https://job-boards.greenhouse.io/twilio/jobs/8316035",
+    "postedAt": "2026-11-12T00:45:13.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8319160",
     "slug": "twilio-staff-product-manager-identity-8319160",
     "company": "twilio",
@@ -2227,7 +2248,7 @@
     "postedAt": "2026-11-02T09:49:58.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -2602,6 +2623,23 @@
     "applyUrl": "https://job-boards.greenhouse.io/twilio/jobs/8356548",
     "postedAt": "2026-11-05T18:58:15.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8360564",
+    "slug": "twilio-technical-account-manager-8360564",
+    "company": "twilio",
+    "title": "Technical Account Manager",
+    "locations": [
+      "Remote - Colombia"
+    ],
+    "remote": true,
+    "department": "Customer Support",
+    "category": "sales",
+    "descriptionHtml": "<p><strong>Who we are </strong></p>\n<p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a href=\"https://customers.twilio.com/\"> hundreds of thousands of businesses </a>and empower millions of developers worldwide to craft personalized customer experiences.</p>\n<p>Our dedication to <a href=\"https://www.twilio.com/en-us/blog/open-work\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br />.</p>\n<p><strong>Hiring and how we work</strong></p>\n<p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! </p>\n<p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.<br />.</p><p><strong>See yourself at Twilio</strong></p>\n<p>Join the team as Twilio’s next Technical Account Manager </p>\n<p><strong>About the job</strong></p>\n<p>Twilio is looking for an experienced Technical Account Manager who is going to be the designated technical support engineering contact for our strategic customers.  As a designated TAM you will be supporting customers during <strong>Central hours (9am to 6pm CT)</strong> and working on the cases created by customers and resolving complex technical problems with potentially very costly and far-reaching consequences. You should have an interest in digging deep as well as be able to zoom out and look at the larger picture. The TAM delivers proactive guidance to the customer to provide added value through the use of Twilio technologies and deliver recommendations to make the customer’s environment less susceptible to business impacting downtime. You are able to remain calm and effective at higher workloads as well as excelling at prioritization and evaluation of situational urgency. There will also be the potential need to volunteer for holiday coverage on a stipend basis.</p>\n<p><strong>Responsibilities</strong></p>\n<p>In this role, you’ll:</p>\n<ul>\n<li>Use your strong technical and diplomatic skills to address customer issues and provide customer feedback to Twilio’s Product and Engineering teams.</li>\n<li>Work with our customers' and partners' developers, architects, and support personnel to resolve complex problems with potentially very costly and far-reaching consequences.</li>\n<li>Collaborate with your teammates and the Twilio Product and Engineering teams via Slack as well as filing JIRAs to report reproducible bugs.</li>\n<li>Understanding customer trends, analyzing patterns, driving betterments and reporting what you observe to the management team in order to better improve our support process is a key part of the role.</li>\n</ul>\n<p><strong>Qualifications </strong></p>\n<p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p>\n<p><strong>*Required:</strong></p>\n<ul>\n<li>4+ years of relevant experience</li>\n<li>Good knowledge of RESTful technology, previous work with APIs and ability to understand and troubleshoot issues with cloud solutions.</li>\n<li>Broad capabilities to troubleshoot server-side code (Java, Node.js, PHP, C#, Python) and client-side JavaScript, with a good understanding of React and Redux</li>\n<li>Skilled in troubleshooting network connectivity issues, with an understanding of TCP/UDP, and basics of SSL/TLS.</li>\n<li>High competency in communicating complex technical issues to both technical and non-technical audiences via phone or email mediums</li>\n<li>Comfortable in working with customers’ developers to troubleshoot use of the Twilio helper libraries. </li>\n<li>Have an inquisitive mind to understand how things work</li>\n<li>Advanced time management skills, ability to work well under pressure, and proficiency at developing workflows to increase troubleshooting efficiency while still following standard processes and procedures.</li>\n<li>Excellence in task prioritization and evaluation of situational urgency.</li>\n<li>Interest in utilizing customer feedback to identify and drive improvements in our products.</li>\n<li>Enthusiasm for interacting and collaborating with other departments within Twilio in your search for the solutions our customers need.</li>\n<li>Ability to stand in the customer’s shoes and demonstrated dedication to the customer experience.</li>\n<li>Experience in managing dedicated customer accounts. </li>\n</ul>\n<p><strong>Desired:</strong></p>\n<ul>\n<li>Understanding of Telecoms and VOIP including WebRTC and SIP </li>\n</ul>\n<p><strong>Location</strong></p>\n<p>This role will be remote and based in Colombia.</p>\n<p><strong>Travel </strong></p>\n<p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, you may be required to travel occasionally to participate in project or team in-person meetings.</p>\n<p><strong>What We Offer</strong></p>\n<p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.</p><p><strong>Twilio thinks big. Do you?</strong></p>\n<p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p>\n<p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p>\n<p><strong>.</strong></p>\n<p><strong>Stay alert to recruitment fraud</strong></p>\n<p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br /><br />.</p>\n<p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p>",
+    "applyUrl": "https://job-boards.greenhouse.io/twilio/jobs/8360564",
+    "postedAt": "2026-11-11T13:57:47.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {

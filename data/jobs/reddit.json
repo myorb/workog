@@ -116,6 +116,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/7131932",
     "postedAt": "2025-08-14T18:51:26.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -133,6 +135,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/7131934",
     "postedAt": "2025-08-14T18:51:26.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -184,6 +188,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/7511679",
     "postedAt": "2026-01-06T17:21:15.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -764,6 +770,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8029641",
     "postedAt": "2026-06-25T23:17:41.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -921,7 +929,7 @@
     "postedAt": "2026-07-20T16:29:13.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -940,7 +948,7 @@
     "postedAt": "2026-07-20T16:30:15.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   },
   {
@@ -1065,6 +1073,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8100220",
     "postedAt": "2026-08-25T19:25:49.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -2449,7 +2459,9 @@
     "title": "Technical Solutions Manager, App Ads",
     "locations": [
       "Chicago, IL",
-      "New York City, NY"
+      "Los Angeles, CA",
+      "New York City, NY",
+      "San Francisco, CA"
     ],
     "remote": false,
     "department": "Sales",
@@ -2543,6 +2555,8 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8288965",
     "postedAt": "2026-10-19T15:28:05.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -3024,6 +3038,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8350761",
+    "slug": "reddit-principal-software-engineer-infrastructure-8350761",
+    "company": "reddit",
+    "title": "Principal Software Engineer, Infrastructure",
+    "locations": [
+      "Remote - United States"
+    ],
+    "remote": true,
+    "department": "Infrastructure",
+    "category": "engineering",
+    "descriptionHtml": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit <a href=\"http://www.redditinc.com/\">www.redditinc.com</a>.\n\n\n\n\n<p>The Infrastructure organization has the mission of building and delivering the compute orchestration environment, storage and data systems, and essential platform services behind all of Reddit. </p>\n<p>The Infrastructure organization is looking to hire a backend software engineer to work collaboratively on a team dedicated to building out Reddit’s multi-cloud compute infrastructure. This is a high impact role where you will contribute to design, implementation, and operations for one of the largest sites in the world. The Infrastructure team’s mission is to provide a platform for teams to independently and effectively run their compute workloads in a performant, reliable, and secure way.</p>\n<p>The position is a mix of software engineering and devops; a lot of the time, we are writing software to improve our compute infrastructure. But there is a substantial amount of troubleshooting and analysis to understand the real problems we face as we scale, and our customer’s workloads change.</p>\n<p><strong>What you’ll do:</strong></p>\n<ul>\n<li>Work collaboratively with a team of software engineers and systems engineers to create and maintain the foundational platform for running Reddit’s infrastructure.</li>\n<li>Design, write, and deliver software to improve the availability, scalability, latency, and efficiency of Reddit’s products in Go and sometimes Python.</li>\n<li>Guide and contribute feedback to the technical and strategic direction of the compute platform</li>\n<li>Automate critical aspects of the development process such as service creation and management, as well as critical infrastructure operations.</li>\n<li>Mentor backend developers across the company.</li>\n<li>Be the go-to person for developers on complex problems</li>\n</ul>\n<p><strong>Who you might be:</strong></p>\n<ul>\n<li>\n<ul>\n<li>10+ years of experience developing internet-scale software, preferably in infrastructure roles.</li>\n<li>8+ years experience with cloud infrastructure systems is a plus (Kubernetes, AWS / GCE ecosystems).</li>\n<li>Experience in influencing larger (500+ engineers) organizations on technical direction/best practices.</li>\n<li>Experience working with cross-functional teams such as design, product, data teams to deliver great user experiences.</li>\n<li>Strong focus on user experience, usability, scalability, and quality. You are an undying advocate for the user, and you have a deep intuition for how people think and how they interact with software at scale.</li>\n<li>Software development experience in one or more general purpose programming languages; Python, Go, Rust, Java, C++.</li>\n<li>Excellent communication skills to collaborate with a service-oriented team and company.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Benefits:</strong></p>\n<ul>\n<li>Comprehensive Healthcare Benefits and Income Replacement Programs</li>\n<li>401k with Employer Match</li>\n<li>Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support</li>\n<li>Family Planning Support</li>\n<li>Gender-Affirming Care</li>\n<li>Mental Health &amp; Coaching Benefits</li>\n<li>Flexible Vacation &amp; Paid Volunteer Time Off</li>\n<li>Generous Paid Parental Leave </li>\n</ul>\n\n<p><strong>Pay Transparency:</strong></p>\n<p>This job posting may span more than one career level.</p>\n<p>In addition to base salary, this job is eligible to receive equity in the form of restricted stock units, and depending on the position offered, it may also be eligible to receive a commission. Additionally, Reddit offers a wide range of benefits to U.S.-based employees, including medical, dental, and vision insurance, 401(k) program with employer match, generous time off for vacation, and parental leave. To learn more, please visit <a href=\"https://www.redditinc.com/careers/\">https://www.redditinc.com/careers/</a>.</p>\n<p>To provide greater transparency to candidates, we share base salary ranges for all US-based job postings regardless of state. We set standard base pay ranges for all roles based on function, level, and country location, benchmarked against similar stage growth companies. Final offer amounts are determined by multiple factors including, skills, depth of work experience and relevant licenses/credentials, and may vary from the amounts listed below.</p>The base salary range for this position is:$286,700—$401,400 USD<p>In select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.</p>\n<p>During the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable.  We will not sell your personal information or disclose it to any third party for their marketing purposes.  We will delete any recording of your interview promptly after making a hiring decision.  For more information about how we will handle your personal information, including our retention of it, please refer to our <a href=\"https://redditinc.com/policies/candidate-privacy-policy\">Candidate Privacy Policy for Potential Employees and Contractors</a>.</p>\n<p><em>Reddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve.  Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.</em></p>",
+    "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8350761",
+    "postedAt": "2026-11-11T16:07:20.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8355688",
     "slug": "reddit-senior-data-scientist-8355688",
     "company": "reddit",
@@ -3123,6 +3154,23 @@
     "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8372525",
     "postedAt": "2026-11-10T20:51:54.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8379092",
+    "slug": "reddit-engineering-manager-ranking-platform-8379092",
+    "company": "reddit",
+    "title": "Engineering Manager, Ranking Platform",
+    "locations": [
+      "Remote - United States"
+    ],
+    "remote": true,
+    "department": "Infrastructure",
+    "category": "management",
+    "descriptionHtml": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit <a href=\"http://www.redditinc.com/\">www.redditinc.com</a>.\n\n\n\n\n<p>The Ranking Platform team builds and runs the services that coordinate contextualized and personalized ranking on Reddit. We build infrastructure, including a scatter-gather ranking coordination service, feature indexes, and scalable data pipelines that power personalized feeds, search, and other Reddit products. We partner closely with machine learning engineers who develop and productionize models, and with ML Platform teams that build inference and training services and feature stores.</p>\n<p>Our team mantra is “Intention over Attention.” We help users fulfill their intention for visiting Reddit by connecting them with relevant content and communities. We are a team of builders who value impact, personal growth, openness, and kindness.</p>\n<h2>How You’ll Have Impact</h2>\n<p>As Engineering Manager for Ranking Platform, you will lead the team building a robust, scalable, reliable, and performant ranking and indexing platform. You will partner with senior engineers, backend architects, product managers, and ML leaders to translate product needs into a clear platform strategy and deliver it from ideation through production.</p>\n<p>You will be accountable for the team’s health, growth, execution, and operational excellence. Working with technical leaders, you will guide architecture and investment decisions, improve the experience of teams building on the platform, and balance new capabilities with reliability, latency, and infrastructure cost.</p>\n<h2>What You’ll Do</h2>\n<ul>\n<li>Lead: Set the team’s direction and roadmap with senior engineers and partner teams. Select, scope, and deliver high-impact initiatives that evolve the ranking coordination services, ML indexes, and data pipelines supporting Reddit’s feeds and discovery experiences.</li>\n<li>Build: Hire, onboard, and develop a high-performing engineering team. Set clear expectations, provide actionable feedback, manage performance, and create growth opportunities for engineers at different career stages. Maintain direct feedback loops with engineers using the platform, and use their feedback and adoption patterns to guide investment.</li>\n<li>Amplify: Coach engineers and technical leaders, delegate meaningful ownership, and build a culture of technical excellence, inclusion, and knowledge sharing. Protect engineers’ focus time by removing blockers, reducing unnecessary interruptions and keeping processes lightweight.</li>\n<li>Deliver: Turn multi-quarter platform investments into achievable milestones. Manage dependencies and risks, communicate tradeoffs and progress, and adapt priorities as partner and business needs evolve.</li>\n<li>Operate: Drive operational excellence through incident response, blameless postmortems, observability, safe rollouts, and proactive system hardening. Establish clear reliability and performance goals and use them to guide investment. Plan realistically for on-call work and unexpected requests, make reprioritization explicit and address unsustainable operational load.</li>\n<li>Collaborate: Build strong partnerships with Feed, Search, Ads, ML Platform, and infrastructure teams. Align roadmaps, resolve competing requirements, and make platform capabilities easier to adopt and operate.</li>\n<li>Evolve: Guide architectural improvements and engineering best practices that make ranking systems more efficient, maintainable, and scalable. Create space for experimentation and continuous learning while holding a high bar for production readiness, spotting unnecessary complexity and recognizing where simplification or consolidation would improve maintainability and help teams work more effectively.</li>\n</ul>\n<h2>What We’re Looking For</h2>\n<ul>\n<li>\n<ul>\n<li>5+ years of people management experience leading high-performing engineering teams, including hiring, coaching, career development, and performance management.</li>\n<li>7+ years of experience building large-scale backend distributed systems, including substantial experience developing and shipping production software.</li>\n<li>Experience leading teams or major initiatives in ML infrastructure, recommendation or ranking systems, indexing, or streaming and batch data pipelines.</li>\n<li>Strong technical judgment in high-throughput platform services and APIs, with the ability to guide tradeoffs among reliability, latency, scalability, data freshness, and cost alongside senior engineers.</li>\n<li>A track record of defining technical direction and delivering platform initiatives across multiple quarters and teams, with clear prioritization and measurable outcomes.</li>\n<li>Experience improving production operations through deployment automation, monitoring, system diagnosis, incident management, and reliability engineering.</li>\n<li>High empathy, excellent organizational and communication skills, and the ability to build consensus across engineering and product teams. You can explain complex technical decisions to technical and non-technical audiences and lead effectively in a distributed environment.</li>\n<li>Experience with Go or Python; Kubernetes, Docker, AWS, or GCP; data systems such as Redis, Postgres, Memcached, Solr, or Milvus; and streaming frameworks such as Apache Beam or Flink is a plus.</li>\n<li>BS degree in Computer Science, a similar technical field, or equivalent practical experience.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Benefits:</strong></p>\n<ul>\n<li>Comprehensive Healthcare Benefits and Income Replacement Programs</li>\n<li>401k with Employer Match</li>\n<li>Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support</li>\n<li>Family Planning Support</li>\n<li>Gender-Affirming Care</li>\n<li>Mental Health &amp; Coaching Benefits</li>\n<li>Flexible Vacation &amp; Paid Volunteer Time Off</li>\n<li>Generous Paid Parental Leave </li>\n</ul>\n\n<p><strong>Pay Transparency:</strong></p>\n<p>This job posting may span more than one career level.</p>\n<p>In addition to base salary, this job is eligible to receive equity in the form of restricted stock units, and depending on the position offered, it may also be eligible to receive a commission. Additionally, Reddit offers a wide range of benefits to U.S.-based employees, including medical, dental, and vision insurance, 401(k) program with employer match, generous time off for vacation, and parental leave. To learn more, please visit <a href=\"https://www.redditinc.com/careers/\">https://www.redditinc.com/careers/</a>.</p>\n<p>To provide greater transparency to candidates, we share base salary ranges for all US-based job postings regardless of state. We set standard base pay ranges for all roles based on function, level, and country location, benchmarked against similar stage growth companies. Final offer amounts are determined by multiple factors including, skills, depth of work experience and relevant licenses/credentials, and may vary from the amounts listed below.</p>The base salary range for this position is:$230,000—$322,000 USD<p>In select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.</p>\n<p>During the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable.  We will not sell your personal information or disclose it to any third party for their marketing purposes.  We will delete any recording of your interview promptly after making a hiring decision.  For more information about how we will handle your personal information, including our retention of it, please refer to our <a href=\"https://redditinc.com/policies/candidate-privacy-policy\">Candidate Privacy Policy for Potential Employees and Contractors</a>.</p>\n<p><em>Reddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve.  Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.</em></p>",
+    "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8379092",
+    "postedAt": "2026-11-11T16:03:16.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "greenhouse"
   }
 ]

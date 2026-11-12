@@ -1070,7 +1070,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -1851,7 +1851,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -2949,7 +2949,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -3555,7 +3555,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -4121,7 +4121,7 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -4740,7 +4740,24 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2021072",
+    "slug": "nvidia-senior-customer-program-manager-oems-jr2021072",
+    "company": "nvidia",
+    "title": "Senior Customer Program Manager - OEMs",
+    "locations": [
+      "Israel, Tel Aviv",
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "product",
+    "descriptionHtml": "<p>We are seeking a Senior Customer Program Manager to support the planning and execution of technical and operational programs for key partners and maintain strong customer relationships. As a key member of the Customer Program Management Team, this role will drive collaboration with major enterprise customers, cloud service providers, Tier-1 partners, and OEMs. The ideal candidate will bring strong technical program management expertise, a solid engineering background, and the ability to thrive in fast-paced environments while ensuring successful outcomes for both internal teams and external collaborators.</p><p><b>What you will be doing:</b></p><ul><li><p>Define and manage program schedules, deliverables, and turning points aligned with customer/partners/or customers and partners</p></li><li><p>Translate customer requirements into actionable tasks for all functional teams, driving timely issue resolution across engineering, quality, logistics, and sales.</p></li><li><p>Provide horizontal leadership to drive cross-functional program execution, managing high priority issues/concerns, and coordinating globally dispersed teams to ensure clear alignment on objectives.</p></li><li><p>Act as the primary customer interface, facilitating program kick-offs, technical discussions, design reviews, issues/bug tracking and resolution, customer qualification/validation efforts, and status updates throughout the product lifecycle.</p></li><li><p>Drive program execution from design through production deployment, ensuring on-time delivery, quality, and customer acceptance.</p></li><li><p>Provide ongoing post-deployment sustaining support, serving as case manager</p></li><li><p>Monitor factory production schedules, yields, and blockers, collaborating with ODM/contract manufacturers to resolve issues and meet operational targets.</p></li><li><p>Proactively communicate program health, risks, and key issues to both customers, internal partners, and leadership (Hardware, Software, Operations, Business, Quality, Sales, and Product Teams), ensuring transparency and alignment.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>Bachelor’s or Master’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.</p></li><li><p>8-10+ years of program/project management experience in the technology industry</p></li><li><p>Strong technical background in hardware and/or software product development with experience working closely with OEMs and ODMs.</p></li><li><p>Consistent track record of leading complex, global programs through full development lifecycles into deployment and production.</p></li><li><p>Excellent program management, communication, and organizational skills with the ability to prioritize issues and drive cross-functional alignment.</p></li><li><p>Consistent track record to coordinate with global teams and navigate multi-cultural, multinational business environments.</p></li><li><p>Excellent interpersonal skills with the ability to distill complex technical concepts for diverse technical and non-technical audiences, from engineers to executives.</p></li><li><p>Willingness to travel as required (up to 5%), and thrive in fast-paced, dynamic environments</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Track record running end-to-end hardware and software product development in datacenters/servers.</p></li><li><p>Prior experience in large-scale enterprise/server platforms.</p></li><li><p>Strong leadership in matrixed collaboration, conflict resolution, and consensus-building.</p></li><li><p>Proven expertise in leading all aspects of production schedules, optimizing line yields, and resolving sophisticated field quality challenges.</p></li><li><p>Strong background thriving in dynamic, high-growth environments, with proven adaptability to obscurity, rapid change, and matrixed team structures.</p></li></ul><p>With competitive salaries and a generous benefits package, we are widely considered to be one of the world’s most desirable employers! We have some of the most forward-thinking and hardworking people in the world working for us and, due to outstanding growth, our best-in-class engineering teams are rapidly growing. If you're a creative and autonomous person with a real passion for technology, we want to hear from you.</p><p>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, sex, gender, gender expression, sexual orientation, age, marital status, veteran status, or disability status. We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Customer-Program-Manager---OEMs_JR2021072",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -4806,7 +4823,7 @@
     "postedAt": "2026-08-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -5229,7 +5246,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -5433,7 +5450,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -5756,7 +5773,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -5894,7 +5911,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -6111,7 +6128,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -6363,7 +6380,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -6467,7 +6484,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -6601,6 +6618,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Mechanical-Design-Engineer_JR2023377",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -7799,7 +7818,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -7903,6 +7922,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Germany-Munich/Senior-Solutions-Architect--Higher-Education-and-Research--Multimodal-and-Physical-AI_JR2024875",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8017,7 +8038,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -8139,6 +8160,27 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Object-Storage---DGX-Cloud_JR2025155",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2025164",
+    "slug": "nvidia-senior-high-performance-ai-engineer-agentic-ai-jr2025164",
+    "company": "nvidia",
+    "title": "Senior High Performance AI Engineer, Agentic AI",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, GA, Remote",
+      "US, TX, Austin",
+      "US, TX, Remote",
+      "US, CA, Remote",
+      "US, WA, Redmond"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are looking for outstanding Senior High Performance AI Engineers to build the next generation of agentic AI systems for the CUDA ecosystem. Our team works across the full agentic AI stack—from training and improving models, to designing agent architectures and multi-agent systems, to building the systems, runtimes, and evaluation frameworks that make them effective at scale.</p><br /><p>You will help develop intelligent agentic systems that can reason about, generate, optimize, and operate across NVIDIA's accelerated computing stack. This includes advancing model and agent capabilities, building scalable agent systems and runtimes, developing high-fidelity training and evaluation environments, and co-designing with NVIDIA's libraries, runtimes, compilers, and hardware. You will collaborate closely with internal NVIDIA software, model, and hardware teams to bring new capabilities into NVIDIA products.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Design, build, and optimize agentic AI systems for the CUDA ecosystem, including agent architectures, multi-agent workflows, tool use, memory, and orchestration.</li><li>Build the data, environments, verification, reward, and evaluation systems needed to continuously improve model and agent capabilities.</li><li>Co-design and optimize agentic systems across NVIDIA's software and hardware stack, from models and inference through compilers, runtimes, libraries, kernels, and GPUs.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Bachelor's degree in Computer Science, Electrical Engineering, or a related field, or equivalent experience; MS or PhD preferred.</li><li>4+ years of relevant industry or academic experience in AI systems, machine learning, compilers, high-performance computing, or related areas.</li><li>Hands-on experience in one or more of the following: agent systems, coding agents, reinforcement learning, or modern AI inference systems.</li><li>Strong C/C++, Rust, and Python programming skills, with solid software engineering fundamentals.</li><li>Experience with GPU programming and performance optimization using CUDA or comparable accelerator platforms, and the ability to work effectively across system boundaries.</li></ul><br /><p><b>Ways To Stand Out From The Crowd:</b></p><ul><li>Track record of building high-impact coding agents, autonomous software-engineering systems, or developer tools.</li><li>Hands-on experience optimizing and deploying with TRT-LLM, SGLang, vLLM, or Transformer Engine.</li><li>Deep expertise in GPU systems and performance optimization, demonstrated through benchmark results, deployed systems, publications, or widely used software.</li><li>Publications or open-source leadership in deep learning, agentic AI, reinforcement learning, compilers, high-performance computing, or AI systems.</li></ul><br /><p>With highly competitive salaries and a comprehensive benefits package, NVIDIA is widely considered to be one of the technology industry's most desirable employers. We have some of the most brilliant and hardworking people in the world working with us and our product lines are growing fast in some of the hottest state of the art fields such as Virtual Reality, Artificial Intelligence, Deep Learning and Autonomous Vehicles.</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary range for this position is 152,000 USD – 241,500 USD.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 14, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-High-Performance-AI-Engineer--Agentic-AI_JR2025164",
+    "postedAt": "2026-11-10T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -8453,6 +8495,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/NVTHERM-SoC-Verification-Intern--Tegra---2027_JR2025425",
     "postedAt": "2026-09-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8469,6 +8513,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/DevOps-and-Automation-Engineer---ICPE_JR2025436-1",
     "postedAt": "2026-11-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8540,7 +8586,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -8722,7 +8768,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -8857,7 +8903,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -9291,7 +9337,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -10240,7 +10286,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -10506,7 +10552,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -10621,7 +10667,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -10660,7 +10706,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -11120,7 +11166,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -11321,8 +11367,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Korea-Seoul/AI-Research-Scientist_JR2028318",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "workday"
   },
   {
@@ -11357,7 +11401,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -11775,7 +11819,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -11934,7 +11978,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -11969,7 +12013,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -12159,6 +12203,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Software-Engineer--AI-Infrastructure_JR2028826",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -12283,7 +12329,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -12349,6 +12395,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Package-Layout-Engineer---Hardware_JR2028970",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -12514,7 +12562,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -12823,7 +12871,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -12901,6 +12949,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029595",
+    "slug": "nvidia-technical-program-manager-deep-learning-enterprise-server-software-rdss-intern-jr2029595",
+    "company": "nvidia",
+    "title": "Technical Program Manager, Deep Learning Enterprise Server Software (RDSS Intern)",
+    "locations": [
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p><i><b>By submitting your resume, you’re expressing interest in our 2027 RDSS (Research and Development Substitute Services) program. Please confirm your eligibility with the local district office before applying for the role.</b></i></p><br /><p>We are seeking a motivated professional to join our team as a Technical Program Manager for Deep Learning Enterprise Server Software.   You will partner with engineering and product leaders to plan and implement programs that support software development and delivery. Our software has made a significant impact across diverse fields and is used by leading academic institutions, startups, and industry organizations, including the world’s largest internet companies. We are looking for a passionate, dedicated, and creative individual to help achieve our engineering goals. You will collaborate with teams across the company to establish and advance software objectives. In this role, you will gather requirements, help set priorities, and coordinate planning and scheduling throughout all phases of program execution. You will develop and maintain integrated schedules to manage dependencies and keep multiple workstreams progressing in parallel. You will also lead improvements to existing product development and software release processes, partnering with engineering management to streamline development workflows and enhance engineering efficiency. This position offers the opportunity to work closely with diverse technical teams and stakeholders across all organizational levels.<br /><br /><b>What you'll be doing:</b></p><ul><li>Define critical metrics and develop program schedules to track release health, delivery predictability, and progress toward program objectives.</li><li>Demonstrate technical leadership by collaborating closely with engineers on architectural discussions and constructively challenging design decisions.</li><li>Establish best practices and drive adoption across business units by clearly communicating their benefits. Proactively identify risks and develop appropriate mitigation strategies.</li><li>Define and monitor key performance indicators (important metrics) to track execution and implement process improvements that enhance operational efficiency.</li><li>Identify failures, lead retrospective analyses, and help develop actionable improvement plans.</li><li>Collaborate closely with customer program managers to address software issues and technical feedback from OEMs, CSPs, and partners. Drive the continuous improvement, automation, and maintenance of enterprise support processes.</li><li>Partner with development teams on planning, execution, reviews, and failure analysis to assess overall software quality and risk.</li><li>Regularly communicate program status and key issues to senior management, while coordinating efforts across development teams, product managers, and solution architects.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Master or other advanced degree or equivalent experience in Computer Science, Computer Engineering, Electrical Engineering, or a related field.</li><li>Experience in software development, with a focus on system software and associated development processes.</li><li>Experience influencing decisions and leading multi-functional teams in a matrix organization.</li><li>An enthusiastic, responsive, and proactive approach to finding opportunities for process improvement.</li><li>Excellent communication and technical presentation skills.</li><li>Ability to think strategically and tactically, build consensus, and drive program success.</li><li>Strong problem-solving skills, with a shown ability to implement effective, systematic solutions.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Understanding of software engineering principles and enterprise system architecture.</li><li>Strong professional communication and documentation skills.</li><li>Familiarity with Agile methodologies, schedule management, and Jira.</li><li>Experience with productivity tools and process automation is a strong plus.</li></ul><br /><p>Our technology has no boundaries! NVIDIA is building some of the most groundbreaking and innovative compute platforms for global use.   It’s because of our work that scientists, researchers and engineers can advance their ideas. At its core, our visual computing technology not only enables an amazing computing experience, it is energy efficient! We pioneered a supercharged form of computing loved by the most demanding computer users in the world - scientists, designers, artists, and gamers. It’s not just technology though! It is our people, some of the brightest in the world, and our company culture make NVIDIA one of the most fun, innovative and dynamic places to work in the world! At the center of NVIDIA's culture are our core values like innovation, excellence and determination and team, that guide us to be the best we can be.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Technical-Program-Manager--Deep-Learning-Enterprise-Server-Software--RDSS-Intern-_JR2029595",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029674",
     "slug": "nvidia-principal-product-manager-dsx-os-infrastructure-developer-tooling-jr2029674",
     "company": "nvidia",
@@ -12931,6 +12995,54 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Mechanical-Hardware-Design-Engineer--IC-Product_JR2029722",
     "postedAt": "2026-11-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029748",
+    "slug": "nvidia-senior-chip-design-hardware-emulation-engineer-jr2029748",
+    "company": "nvidia",
+    "title": "Senior Chip Design Hardware Emulation Engineer",
+    "locations": [
+      "Israel, Tel Aviv",
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA is looking for a best-in-class Chip Design – HW Emulation Senior Engineer to join our outstanding Networking Silicon engineering team, developing the industry's best high-speed communication devices, delivering the highest throughput and lowest latency! Come and take a significant part in emulating our groundbreaking and innovating chips, enjoy working in a meaningful, growing and highly professional environment where you make a huge impact in a technology-focused company. Join NVIDIA's world-class emulation team in Israel. Our focused team takes Switches/NICs/SoCs designs and program the emulators to behave like our silicon. Are you ready to take on interesting problems and craft solutions? Come check out our team.</p><p><b>What you will be doing:</b></p><ul><li><p>The main responsibility is emulation and prototyping of complex chip designs. This includes defining the methodology and crafting the infrastructure needed to quickly take large chips into hardware emulation platforms.</p></li><li><p>The job also requires close collaboration with design, verification, and software engineers to enable embedded software and application software development.</p></li><li><p>Connecting emulator/FPGA based solutions to real external H/W or virtual targets, taking care of complex testbench and different protocols.</p></li><li><p>This is a role for a versatile engineer that includes RTL design, verification, FPGA partitioning and implementation, scripting, and lab-based bring up of the design.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>BSC or MSC in Electrical Engineering or Computer Science or equivalent experience</p></li><li><p>4+ years working in the semiconductor industry.</p></li><li><p>Hands-on pre-silicon verification or design experience.</p></li><li><p>Experience in building test-benches and debugging simulation failures.</p></li><li><p>Experience in scripting with Python/TCL/C/Perl/Unix Shell</p></li><li><p>Strong interpersonal skills and ability &amp; desire to innovate.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Experience with HW emulation platforms.</p></li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Chip-Design-Hardware-Emulation-Engineer_JR2029748",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029779",
+    "slug": "nvidia-gpu-compiler-intern-jr2029779",
+    "company": "nvidia",
+    "title": "GPU Compiler Intern",
+    "locations": [
+      "Switzerland, Zurich"
+    ],
+    "remote": false,
+    "descriptionHtml": "<p>As GPU Compiler Intern, you will develop compiler infrastructure for Python-based GPU programming, including CUTLASS CuTeDSL. You will work on DSL design, MLIR IR design, and compiler optimizations that translate expressive Python programs into high-performance NVIDIA GPU kernels.</p><br /><p><b>What you will be doing:</b></p><ul><li>Design and implement Python DSL features for GPU kernel authoring, including metaprogramming and IR generation.</li><li>Develop MLIR dialects, transformation passes, and lowering pipelines that preserve the information needed for effective GPU optimization.</li><li>Design and optimize GPU kernels, exploring how IR design and compiler transformations affect generated code and performance.</li><li>Profile, benchmark, and validate compiler and kernel improvements across representative workloads.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Currently pursuing or holding a Bachelor’s, Master’s, or Ph.D. degree in Computer Science, Computer Engineering, or a related technical discipline, or equivalent practical experience.</li><li>Proficiency in Python and C++, with strong debugging and software development skills.</li><li>Understanding of how Python DSLs work, including metaprogramming, staged execution, and translation into compiler IR.</li><li>Experience with MLIR, including IR construction, transformation passes, or lowering.</li><li>Practical experience with GPU programming, preferably CUDA, and knowledge of GPU execution and memory models.</li><li>Familiarity with performance analysis and optimization, including profiling, memory access patterns, and parallel execution.</li><li>Experience with CUTLASS, CuTeDSL, Triton, LLVM, or other GPU compiler and kernel development tools is a plus.</li></ul><br />",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/GPU-Compiler-Intern_JR2029779",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029780",
+    "slug": "nvidia-system-software-engineering-intern-2027-jr2029780",
+    "company": "nvidia",
+    "title": "System Software Engineering Intern - 2027",
+    "locations": [
+      "Finland, Helsinki"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA develops system software that brings complex silicon to life. Our system control and power management firmware team builds the low-level capabilities that manage power, clocks, performance, system initialization, and thermal behavior across NVIDIA System-on-Chips (SoCs). As a System Software Engineering Intern, you’ll collaborate with experienced software, hardware, and architecture engineers to solve problems at the boundary between hardware and software. The role offers opportunities to contribute from pre-silicon development through silicon bring-up, with a focus on reliable firmware for demanding applications.</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Develop and test system control and power management firmware for NVIDIA SoCs with guidance from experienced engineers.</li><li>Contribute to firmware features that manage power, clocks, performance, system initialization, and thermal behavior.</li><li>Design test cases and build automation to verify functionality and identify regressions.</li><li>Investigate hardware and software issues using debugging tools, test results, and system documentation.</li><li>Support pre-silicon software development.</li><li>Collaborate with architecture, hardware, and software teams on firmware design and implementation, including reliability and functional safety requirements.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Currently pursuing a bachelor’s or master’s degree in Electrical Engineering, Computer Science, Computer Engineering, or a related technical field.</li><li>Strong C or C++ programming skills demonstrated through coursework, projects, or prior experience.</li><li>Familiarity with computer architecture and microprocessor or microcontroller fundamentals, such as caches, buses, memory controllers, and DMA.</li><li>Ability to debug software, analyze technical problems, and learn unfamiliar hardware and software systems.</li><li>Interest in low-level firmware development and engineering practices that support reliability and functional safety.</li><li>Clear written and verbal communication skills in english, with the ability to collaborate, seek feedback, and follow through on assigned work.</li><li>Experience applying generative AI tools to software development, testing, or debugging, with careful validation of their output.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Coursework or project experience with Arm or RISC-V architectures, embedded firmware, or real-time systems.</li><li>Experience with Linux or QNX internals, device drivers, or contributions to open-source software.</li><li>Familiarity with Automotive SPICE, ISO 26262, or other structured software development and verification processes.</li><li>Experience programming in Rust.</li></ul>Our internship pay is based on the position, your location, year in school, degree, and experience. Pay is pro-rated for the duration of the internship. The expected annual rate for this position is 39,000 EUR – 67,600 EUR.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Finland-Helsinki/System-Software-Engineering-Intern---2027_JR2029780",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {

@@ -1909,6 +1909,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208046874-S",
     "postedAt": "2026-09-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1966,7 +1968,7 @@
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3383,6 +3385,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002391090-S",
     "postedAt": "2026-01-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3667,8 +3671,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002698296-S",
     "postedAt": "2026-03-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3688,8 +3690,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002698335-S",
     "postedAt": "2026-03-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-09T11:42:23.458Z",
-    "closedAt": "2026-11-11T05:03:15.561Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4390,6 +4390,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003230970-S",
     "postedAt": "2026-06-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5945,6 +5947,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10001-1004000792-S",
+    "slug": "grafschafter-gemeinschaftspraxis-arzt-m-w-d-in-weiterbildung-fur-allgemeinmedizin-gesucht-10001-1004000792-s",
+    "company": "arbeitsagentur",
+    "employer": "Grafschafter Gemeinschaftspraxis",
+    "title": "Arzt (m/w/d) in Weiterbildung für Allgemeinmedizin gesucht",
+    "locations": [
+      "Grafschaft b. Bad Neuenahr-Ahrweiler, Rheinland-Pfalz, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "resident",
+    "descriptionHtml": "<p>Die Grafschafter Gemeinschaftspraxis in Ringen sucht zum nächstmöglichen Zeitpunkt</p><ul><li>**einen Arzt in Weiterbildung (m/w/d) für Allgemeinmedizin.**</li></ul><p>Wir sind eine große, internistische Praxis mit hausärztlicher Versorgung. Die Weiterbildungsermächtigung über 36 Monate liegt vor. Wir bieten neben einer fundierten Ausbildung ein attraktives, übertarifliches Gehalt sowie eine familiäre Praxisatmosphäre mit einer abwechslungsreichen Tätigkeit.</p><p>Wir freuen uns über Ihre aussagekräftigen Bewerbungsunterlagen.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004000792-S",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11790-1524465-S",
     "slug": "evangelische-stiftung-alsterdorf-evangelisches-krankenhaus-alsterdorf-ggmbh-oberarzt-oberarztin-fur-psychiatrie-und-psychotherapie-11790-1524465-s",
     "company": "arbeitsagentur",
@@ -6921,6 +6943,8 @@
     "applyUrl": "https://www.persy.jobs/persy/l/job-jokhd-b",
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6941,6 +6965,8 @@
     "applyUrl": "https://www.persy.jobs/persy/l/job-ju5dh-b",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -7201,8 +7227,8 @@
     "employer": "LUP-Klinikum Helene von Bülow gGmbH",
     "title": "Fachärztin / Facharzt für Anästhesie und Intensivmedizin (m/w/d)",
     "locations": [
-      "Ludwigslust, Mecklenburg, Mecklenburg-Vorpommern, Germany",
-      "Hagenow, Mecklenburg-Vorpommern, Germany"
+      "Hagenow, Mecklenburg-Vorpommern, Germany",
+      "Ludwigslust, Mecklenburg, Mecklenburg-Vorpommern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Anästhesiologie",
@@ -10334,6 +10360,8 @@
     "applyUrl": "https://www.jobvector.de/job/facharzt-fuer-arbeitsmedizin-555711dca58fc458/?utm_source=arbeitsagentur&utm_medium=partner&utm_campaign=tmcfdae_job_jid273772&utm_content=b2c&utm_term=tmf8eca_uice5be689",
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10551,6 +10579,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14537-000666055f8001-S",
     "postedAt": "2026-05-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10570,6 +10600,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14537-0006660552d001-S",
     "postedAt": "2026-05-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -11508,8 +11540,29 @@
     "level": "specialist",
     "descriptionHtml": "<p>Facharzt (m/w/d) für Anästhesiologie und Intensivmedizin</p><p>Vollzeit / Teilzeit</p><p>Wernigerode</p><p>Anästhesie mit Verantwortung-Verstärken Sie unser Team!</p><p>Sie möchten Ihre Erfahrung in der Anästhesiologie und Intensivmedizin gezielt einbringen und weiterentwickeln? Bei uns erwarten Sie ein breites klinisches Spektrum, moderne Strukturen und ein kollegiales Umfeld mit kurzen Entscheidungswegen. Gestalten Sie aktiv die Patientenversorgung mit-als Facharzt mit Perspektive.</p><p>Die Klinik verfügt über die Weiterbildungsbefugnisse in folgenden Bereichen:<br />• Facharzt für Anästhesiologie [60 Monate, inkl. 12 Monate Intensivmedizin]<br />• Zusatzbezeichnung Anästhesiologische Intensivmedizin [18 Monate]<br />• Zusatzbezeichnung Notfallmedizin [6 Monate]</p><p>Wir bieten Ihnen</p><p>Lebensqualität - Ein modernes Arbeitsumfeld in einer touristisch beliebten Region mit hohem Lebenswert, sehr guten Kinderbetreuungsmöglichkeiten und urbaner Nähe im Herzen Deutschlands<br />Erholung - 31 Tage Urlaub im Jahr zuzüglich Zusatzurlaub<br />Attraktive Vergütung - Haustarifvertrag in Anlehnung Tarifvertrag Marburger Bund<br />Gemeinschaft - Wir arbeiten in interprofessionellen Teams, auf ein gutes Miteinander legen wir viel Wert<br />Gesundheit - Zahlreiche Angebote unseres betrieblichen Gesundheitsmanagements sowie betriebliche psychosoziale Krisenhilfe<br />Jobrad - Für eine vitale Lebensweise<br />Frische Küche - Mitarbeiterrabatte in der hauseigenen Kantine<br />Sparangebote - Verschiedene Mitarbeitervergünstigungen (z.B. Apotheke, Parkmöglichkeiten, physiotherapeutische Leistungen, Corporate Benefits)</p><p>Die Stelle im Überblick</p><p>Sie überehmen die fachliche Verantwortung der stationären Patienten unserer Klinik<br />Professionelle Patientenbehandlung in einem multiprofessionellem Team<br />Die Möglichkeit zur ambulanten und stationären Patientenversorgung<br />Eine abwechslungsreiche Tätigkeit mit großem Handlungsspielraum und die Möglichkeit Ihren Arbeitsplatz aktiv mitzugestalten</p><p>Das bringen Sie mit</p><p>Die deutsche Approbation als Arzt<br />Abgeschlossene Facharztweiterbildung im Bereich Anästhesiologie mit der Zusatzbezeichnung „Notfallmedizin\"<br />Mehrjährige Berufserfahrung in der Anästhesiologie und Intensivmedizin als Assistenz- oder Facharzt<br />Engagierte, teamfähige und motivierte Persönlichkeit<br />Organisation und Umsetzung betriebswirtschaftlicher Aspekte<br />Bereitschaft zum interdisziplinären Arbeiten und zur Teilnahme am Bereitschaftsdienstsystem<br />Feines Gespür für situations- und personenbezogene angemessene Umgangsweise</p><p>Der beste Zeitpunkt ist jetzt-Wir freuen uns auf Ihre Bewerbung!</p><p>Sie haben noch Fragen?</p><p>Ansprechpartner im Fachbereich:<br />Chefarzt Dr. med. Stephan Schwitalla<br />03943 61 - 3880 oder 03946 909 - 7250</p><p>Ansprechpartner rund um den Bewerbungsprozess:<br />KarriereTeam<br />03946 909 1951</p><p>Über uns - Das Harzklinikum stellt sich vor<br />Das Harzklinikum Dorothea Christiane Erxleben ist ein leistungsstarkes kommunales Krankenhaus an den Standorten Quedlinburg, Wernigerode und Blankenburg im Landkreis Harz. Jährlich versorgen wir rund 100.000 Patientinnen und Patienten stationär und ambulant.<br />Als größter Gesundheitsversorger der Region stehen wir für medizinische Qualität, sichere Arbeitsplätze und verlässliche Strukturen. Über 2.400 Mitarbeiter arbeiten bei uns interprofessionell und in modern ausgestatteten Arbeitsumgebungen, mit hoher fachlicher Kompetenz - nah am Menschen und fest in der Region verankert.<br />Hinweis: Bitte beachten Sie, dass die Kosten, die im Zusammenhang mit dem Vorstellungsgespräch enstehen, von uns nicht übernommen werden.</p>",
     "applyUrl": "https://jobs4us.de/jobad/facharzt-anaesthesiologie-intensivmedizin_1c23gcpu3lu",
-    "postedAt": "2026-11-01T00:00:00.000Z",
+    "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14927-1g7m9idnlmc-S",
+    "slug": "harzklinikum-dorothea-christiane-erxleben-gmbh-notarzt-m-w-d-retten-entscheiden-gemeinsam-handeln-14927-1g7m9idnlmc-s",
+    "company": "arbeitsagentur",
+    "employer": "Harzklinikum Dorothea Christiane Erxleben GmbH",
+    "title": "Notarzt (m/w/d) - Retten. Entscheiden. Gemeinsam handeln.",
+    "locations": [
+      "Quedlinburg, Sachsen-Anhalt, Germany",
+      "Blankenburg (Harz), Sachsen-Anhalt, Germany",
+      "Wernigerode, Sachsen-Anhalt, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "emergency-medicine",
+    "descriptionHtml": "<p>Notarzt (m/w/d) für den Notarztdienst</p><p>Vollzeit / Teilzeit</p>",
+    "applyUrl": "https://jobs4us.de/jobad/notarzt-retten-entscheiden-gemeinsam-handeln_1g7m9idnlmc",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11528,7 +11581,7 @@
     "level": "specialist",
     "descriptionHtml": "<p>Facharzt (m/w/d) für Neurologie - Schwerpunkt Schlafmedizin</p><p>Vollzeit/Teilzeit</p><p>Wernigerode</p><p>Bringen Sie Menschen wieder zur Ruhe-mit Ihrer Kompetenz in Neurologie und Schlafmedizin.</p><p>Sie möchten moderne Neurologie mit spezialisierter Schlafmedizin verbinden und Patientinnen und Patienten nachhaltig zu mehr Lebensqualität verhelfen? Dann werden Sie Teil unseres engagierten neurologischen Praxisteams im Medizinischen Zentrum Harz.</p><p>Wir bieten Ihnen</p><p>Lebensqualität - Ein modernes Arbeitsumfeld in einer touristisch beliebten Region mit hohem Lebenswert, sehr guten Kinderbetreuungsmöglichkeiten und urbaner Nähe im Herzen Deutschlands<br />Erholung - 31 Tage Urlaub im Jahr zuzüglich Zusatzurlaub<br />Gemeinschaft - Wir arbeiten in interprofessionellen Teams, auf ein gutes Miteinander legen wir viel Wert<br />Gesundheit - Zahlreiche Angebote unseres betrieblichen Gesundheitsmanagements sowie betriebliche psychosoziale Krisenhilfe<br />Jobrad - Für eine vitale Lebensweise<br />Sparangebote - Verschiedene Mitarbeitervergünstigungen (z.B. Apotheke, Parkmöglichkeiten, physiotherapeutische Leistungen, Corporate Benefits)</p><p>Ihre Aufgaben - klar und übersichtlich</p><ul><li>Eigenverantwortliche Patientenversorgung in der neurologischen Sprechstunde</li><li>Diagnostik und Therapie neurologischer Erkrankungen im ambulanten Setting</li><li>Durchführung und Befundung schlafmedizinischer Untersuchungen (Polysomnographie, Polygraphie, MSLT/MWT, Aktigraphie)</li><li>Diagnostik und Therapie neurologischer Schlafstörungen, insbesondere:</li></ul><ul><li>Insomnien</li><li>Hypersomnien (z. B. Narkolepsie)</li><li>Parasomnien (z. B. REM-Schlaf-Verhaltensstörung, Schlafwandeln)</li><li>Schlafbezogene Bewegungsstörungen (z. B. Restless-Legs-Syndrom, periodische Beinbewegungen)</li><li>Schlaf-Wach-Rhythmusstörungen</li><li>Schlafstörungen bei neurologischen Grunderkrankungen (z. B. Epilepsie, M. Parkinson, MS)</li></ul><p>·<br />· Interdisziplinäre Zusammenarbeit mit Hausärzten, Psychiatern, Pneumologen und weiteren Fachrichtungen<br />·<br />Teilnahme an Bereitschaftsdiensten im Schlaflabor nach Absprache<br />·<br />Dokumentation und Qualitätssicherung</p><p>Das bringen Sie mit</p><p>Sie verfügen über die deutsche Approbation und sind Facharzt (m/w/d) für Neurologie, wünschenswert ist die abgeschlossene Zusatzbezeichnung Schlafmedizin<br />Sie bringen bereits Erfahrung in der ambulanten Diagnostik und Behandlung neurologischer Krankheitsbilder mit<br />Ein offenes und souveränes Auftreten, Teamorientierung und Begeisterungsfähigkeit zeichnen Sie aus<br />Sie besitzen eine hohe Sozialkompetenz, v. a. eine dem Patienten &amp;amp; Kollegen zugewandte Art</p><p>Der beste Zeitpunkt ist jetzt-Wir freuen uns auf Ihre Bewerbung!</p><p>Sie haben noch Fragen?</p><p>Ansprechpartner im Fachbereich:<br />Nina Feldmann<br />03946 909 7459</p><p>Ansprechpartner rund um den Bewerbungsprozess:<br />KarriereTeam<br />03946 909 1951</p><p>Über das Medizinische Zentrum Harz</p><p>Das Medizinische Zentrum Harz befindet sich im wundervollen Harz, gelegen in einer touristisch attraktiven Region mit großem Freizeitwert, hoher Lebensqualität mit vielfältigen kulturellen Möglichkeiten und sehr guten Kinderbetreuungsangeboten. Zahlreiche Bildungseinrichtungen in unmittelbarer Nähe der Klinikstandorte wie Gymnasien, Berufsfachschulen sowie eine Hochschule runden das Angebot ab.</p><p>Wir planen die Integration eines Schlaflabors mit 16 Schlafplätzen am Harzklinikum in Wernigerode. Für den Aufbau und die fachärztliche Leitung dieses neuen Bereichs suchen wir zum nächstmöglichen Zeitpunkt einen engagierten Facharzt (m/w/d) für Neurologie mit Interesse an der Schlafmedizin.</p><p>Bitte beachten Sie, dass wir sämtliche Kosten, die in Verbindung mit dem Vorstellungsgespräch stehen, nicht übernehmen werden.</p>",
     "applyUrl": "https://jobs4us.de/jobad/facharzt-neurologie-schwerpunkt-schlafmedizin-medizinisches-zentrum-harz_2m1umtjjy1t",
-    "postedAt": "2026-11-01T00:00:00.000Z",
+    "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "source": "arbeitsagentur"
   },
@@ -12070,6 +12123,24 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16315-ba9079709a5e7edb-S",
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:16324-0068676943-S",
+    "slug": "universitatsklinikum-augsburg-ador-studienarzt-m-w-d-institut-fur-umweltmedizin-und-integrative-gesundheit-16324-0068676943-s",
+    "company": "arbeitsagentur",
+    "employer": "Universitätsklinikum Augsburg AdöR",
+    "title": "Studienarzt (m/w/d) Institut für Umweltmedizin und Integrative Gesundheit",
+    "locations": [
+      "Augsburg, Bayern, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Für das **Institut für Umweltmedizin und Integrative Gesundheit ** suchen wir zum 01.01.2027 in Teilzeit (21 Std./Woche), für 6 Monate befristet, einen Studienarzt (m/w/d) / Physician Scientist (m/w/d) zur Unterstützung unseres Teams im vom BMFTR geförderten Level 3-Projektes NAKO-PAIS. Die Stelle umfasst die wissenschaftliche geleitete Identifikation von Bioproben.</p><p>Das Institut für Umweltmedizin und Integrative Gesundheit verfolgt ein interdisziplinäres Forschungsprogramm, das die komplexen Wechselwirkungen zwischen Umwelt und Mensch untersucht.Ein besonderer Schwerpunkt liegt auf atopischen Erkrankungen, insbesondere im Rahmen der Zusammenarbeit mit dem Christine Kühne Center for Allergy Research and Education - CK-CARE, einem führenden, internationalen und multizentrischen Konsortium für chronisch entzündliche Hauterkrankungen.</p><p>Ziel unserer Forschungsarbeit ist es, präventive Ansätze zur Verringerung chronischer umweltbedingter Erkrankungen zu entwickeln, die Diagnostik zu verbessern und ganzheitliche sowie wirksame Therapien zu gestalten.</p><p>**Ihre Aufgaben**<br />* Selbstständige Identifikation von humanen DNA-Proben aus der NAKO Gesundheitsstudie zur Ganzgenomsequenzierung<br />* Betreuung des Level 3-Forschungsprojektes NAKO-PAIS, auch in administrativen und organisatorischen Belangen<br />* Kommunikation und Korrespondenz den wissenschaftlichen Projektpartnern<br />* Unterstützung der Projektleitungen bei der Einhaltung von Förderbedingungen, regulatorischen Anforderungen und Fristen<br />* Erstellung von Zwischen-, Jahres- und Abschlussberichten sowie weiterer projektrelevanter Dokumentationen<br />* Vorbereitung und Begleitung von Verwendungsnachweisen<br />* Koordination von projektbezogenen Terminen, Abstimmungsprozessen und standortübergreifenden Arbeitsabläufen zwischen Augsburg und Neuherberg<br />* Pflege, Dokumentation und Auswertung projektbezogener Daten und Unterlagen</p><p>**Ihr Profil**<br />* Abgeschlossenes Medizinstudium, eine Promotion oder eine Weiterbildung zum Physician Scientist (m/w/d)ist von Vorteil<br />* Erfahrung im wissenschaftlichen Projektmanagement und in der Forschungsadministration<br />* Strukturierte, selbstständige und lösungsorientierte Arbeitsweise<br />* Ausgeprägte Kommunikationsfähigkeit<br />* Nachweisbare praktische Erfahrung in Zusammenarbeit mit unterschiedlichen Stakeholdern aus Medizin und Wissenschaft<br />* Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift<br />* Sicherer Umgang mit den gängigen MS-Office-Anwendungen</p><p>**Unser Angebot**<br />* Eine Tätigkeit an einer führenden medizinischen Einrichtung im Bereich Umwelt und Gesundheit und an einem der größten Neurodermitis-Register weltweit<br />* Ein dynamisches Team mit freundlicher Arbeitsatmosphäre und respektvollem Umgang<br />* Planbare und flexible Arbeitszeiten<br />* Ein strukturiertes Einarbeitungskonzept und eine angemessene Einarbeitungszeit<br />* Individuelle Entwicklungs- und Fortbildungsmöglichkeiten über die hauseigene Akademie<br />* Vergütung gemäß dem TV-Ärzte Ä1 an Universitätskliniken je nach Qualifizierung und Berufserfahrung einschließlich der im öffentlichen Dienst üblichen Sozialleistungen<br />* Beratungs- und Informationsangebot im Familienbüro zur Vereinbarkeit von Familie und Beruf<br />* Unterstützung in der persönlichen und beruflichen Weiterentwicklung durch individuelle Entwicklungs- und Fortbildungsmöglichkeiten in der eigenen Akademie<br />* Attraktive Angebote im Rahmen des betrieblichen Gesundheitsmanagements, wie Yoga-Kurse, Fitnessangebote und vieles mehr<br />* Mitarbeitervergünstigungen in diversen Unternehmen</p><p>**Kontakt**</p><p>**Frau Mareike Dörfler<br />** Institut für Umweltmedizin und Integrative Gesundheit<br />0821/400-169722</p><p>**Bewerbungsfrist**</p><p>Bitte laden Sie Ihre Unterlagen bis zum **02.12.2026** hoch und schicken Sie die Bewerbung ab.</p><p>Wir freuen uns auf Sie!</p><p>Neben spannenden Aufgaben in den unterschiedlichsten Bereichen erwarten Sie im Universitätsklinikum eine Vielzahl an attraktiven Benefits sowie eine Tätigkeit mit Sinn. Nähere Informationen dazu finden Sie hier.</p><p>Die Stelle ist für die Besetzung mit schwerbehinderten Menschen geeignet. Bewerber (m/w/d) mit Schwerbehinderung werden bei im Wesentlichen gleicher Eignung, Befähigung und fachlicher Leistung bevorzugt. Das Universitätsklinikum Augsburg fördert die berufliche Gleichstellung von Frauen und Männern. Vor Aufnahme einer Tätigkeit am Universitätsklinikum Augsburg muss gemäß §§ 23, 23a IfSG ein ausreichender Impfschutz oder Immunität gegen Masern nachgewiesen werden.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16324-0068676943-S",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12856,6 +12927,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:18024-100PJ000WaO0R-S",
+    "slug": "clemens-august-klinik-oberarzt-oberarztin-m-w-d-fur-fachklinik-psychiatrie-und-psychosomatische-medizi-18024-100pj000wao0r-s",
+    "company": "arbeitsagentur",
+    "employer": "Clemens-August-Klinik",
+    "title": "Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit",
+    "locations": [
+      "Neuenkirchen-Vörden, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychosomatic-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>Die Clemens-August-Klinik als Einrichtung der Clemens-August-Stiftung ist ein Fachkrankenhaus für Psychiatrie, Psychotherapie und Psychosomatik mit 132 stationären und 16 teilstationären Behandlungsplätzen sowie einer angeschlossenen Institutsambulanz. Die Indikationsschwerpunkte liegen in den Bereichen Depressionen, Angst- und Zwangsstörungen, posttraumatische Belastungsstörungen, dissoziative Störungen, somatoforme Störungen, Essstörungen und Persönlichkeitsstörungen. Neben Einzel- und Gruppenpsychotherapien werden vielfältige Behandlungsmethoden angeboten wie Kunst-, Tanz-, Körper-, Musik-, Entspannungs-, Physio- und Ergotherapie.</p><p>Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit<br />Oberarzt / Oberärztin (m/w/d) für Fachklinik Psychiatrie und Psychosomatische Medizin in Teilzeit</p><p>Ihre Aufgaben:</p><ul><li>Oberärztliche Leitung</li><li>Konzeptionelle Weiterentwicklung der Behandlungs- und Therapiekonzepte</li><li>Fachliche Aus- und Weiterbildung sowie Supervision der Assistenzärzte (m/w/d) und Psychologen (m/w/d)</li><li>Zusammenarbeit mit einem multiprofessionellen Team</li><li>Teilnahme am ärztlichen Hintergrunddienst</li></ul><p>Sie bringen mit:</p><ul><li>Facharzt (m/w/d) für Psychiatrie und Psychotherapie oder Psychosomatische Medizin und Psychotherapie</li><li>Erfahrung in psychotherapeutischer Arbeit ist wünschenswert</li><li>Engagierte und aufgeschlossene Persönlichkeit</li><li>Selbstständige und zugleich teamorientierte Arbeitsweise</li><li>Freundlicher und wertschätzender Umgang mit unseren Patientinnen und Patienten</li></ul><p>Wir bieten Ihnen:</p><ul><li>Ein interessantes und abwechslungsreiches Aufgabengebiet mit einem hohen Maß an Selbstständigkeit und Verantwortung</li><li>Gründlich Einarbeitung und kontinuierliche Begleitung</li><li>Zusammenarbeit in einem interdisziplinären Team</li><li>Vergütung nach den Arbeitsvertragsrichtlinien der Caritas (AVR-C)</li><li>Übernahme der betrieblichen Altersvorsorge (KZVK)</li><li>Firmenfitness</li><li>Dienstradleasing</li><li>Berufsunfähigkeitsversicherung</li><li>Mitarbeiterrabatte über corporate benefits Portal</li><li>Vermögenswirksame Leistungen</li><li>Möglichkeit der privaten Entgeltumwandlung zur Altersvorsorge</li><li>31 Urlaubstage (bei einer 5-Tage-Woche)</li><li>Regelmäßige Arbeitszeiten</li></ul><p>Haben wir Ihr Interesse geweckt?</p><p>Dann freuen wir uns auf Ihre aussagekräftige Bewerbung</p>",
+    "applyUrl": "https://helixjobs.com/_/jobad?prj=1569p125264&source=ba",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:18091-JR105237-S",
     "slug": "stadtisches-klinikum-braunschw-eig-ggmbh-oberarzt-m-w-d-fur-frauenheilkunde-und-geburtshilfe-18091-jr105237-s",
     "company": "arbeitsagentur",
@@ -12873,6 +12964,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18091-JR105237-S",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13061,6 +13154,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18127-2078-1790008-0-S",
     "postedAt": "2026-08-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13191,6 +13286,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18127-2208-1802647-0-S",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:18127-2214-1803597-0-S",
+    "slug": "multicareer-gmbh-leitender-oberarzt-psychiatrie-psychosomatik-m-w-d-mecklenburg-vorpommern-18127-2214-1803597-0-s",
+    "company": "arbeitsagentur",
+    "employer": "multicareer GmbH",
+    "title": "Leitender Oberarzt Psychiatrie / Psychosomatik (m/w/d) - Mecklenburg-Vorpommern",
+    "locations": [
+      "Malchin, Mecklenburg-Vorpommern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychosomatic-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>Berufliche Perspektiven im Gesundheitswesen. Und Menschen, die zuhören.<br />Nicht jeder, der offen für etwas Neues ist, sucht gerade aktiv einen Job. Manchmal braucht es einfach eine interessante Möglichkeit und jemanden, der die richtigen Kontakte hat.</p><p>Genau hier kommt multicareer ins Spiel. Wir bringen medizinische Fach- und Führungskräfte mit passenden Arbeitgebern zusammen. Persönlich, diskret und mit einem guten Gespür dafür, was beruflich wirklich zusammenpasst.<br />Für Sie ist unsere Begleitung selbstverständlich kostenfrei. Und ob aus einem ersten Gespräch mehr wird, entscheiden Sie.</p><p>Medizinische Verantwortung übernehmen, therapeutische Konzepte weiterentwickeln und zugleich nah an der Patientenversorgung bleiben: Diese Position verbindet drei wesentliche Aufgaben ärztlicher Führung.<br />Für eine private Akutklinik für Psychiatrie, Psychosomatik und Psychotherapie in Mecklenburg-Vorpommern suchen wir einen Leitenden Oberarzt (m/w/d), der die chefärztliche Leitung vertritt und die medizinische sowie therapeutische Arbeit aktiv mitgestaltet. Im Mittelpunkt stehen die Behandlung psychischer und psychosomatischer Erkrankungen, interdisziplinäre Zusammenarbeit und ein hoher Grad an Eigenverantwortung.</p><p>Ihre Aufgaben<br />Stellvertretende medizinische Leitung der Klinik und Vertretung des Chefarztes<br />Fachliche Führung und Koordination des multidisziplinären Teams aus Ärzten und Therapeuten<br />Durchführung von Einzel- und Gruppentherapien im Rahmen des integrativen Behandlungskonzeptes<br />Mitwirkung an der Weiterentwicklung diagnostischer und therapeutischer Verfahren<br />Eigenverantwortliche Wahrnehmung medizinischer und organisatorischer Führungsaufgaben unter Berücksichtigung der wirtschaftlichen Rahmenbedingungen</p><p>Ihr Profil<br />Anerkennung als Facharzt (m/w/d) für Psychiatrie und Psychotherapie oder Psychosomatische Medizin und Psychotherapie<br />Fundierte klinische Erfahrung in der Behandlung psychiatrischer beziehungsweise psychosomatischer Krankheitsbilder<br />Erste Erfahrung in der fachlichen oder personellen Führung ärztlicher beziehungsweise therapeutischer Teams<br />Ausgeprägte fachliche und soziale Kompetenz sowie ein sicherer, wertschätzender Kommunikationsstil<br />Eigenverantwortliche Arbeitsweise und Verständnis für medizinische, organisatorische und wirtschaftliche Zusammenhänge<br />Interesse an der Weiterentwicklung interdisziplinärer Behandlungskonzepte</p><p>Das erwartet Sie<br />Verantwortungsvolle ärztliche Führungsposition mit stellvertretender Chefarztfunktion<br />Tätigkeit in einer spezialisierten privaten Akutklinik mit interdisziplinärem Behandlungskonzept<br />Möglichkeiten zur fachlichen Fort- und Weiterbildung sowie zur Teilnahme an externer Supervision<br />Attraktive Vergütung nach individueller Vereinbarung<br />Unterstützung bei der Wohnungssuche; gegebenenfalls Möglichkeit zur Anmietung einer Dienstwohnung auf dem Klinikgelände<br />Frisch zubereitetes Mittagsmenü aus der hauseigenen Küche mit regionalen Produkten<br />Corporate Benefits mit Vergünstigungen bei verschiedenen Unternehmen</p><p>Haben wir Ihre Lust auf etwas Neues geweckt? Dann senden Sie einfach Ihren Lebenslauf und die JOB ID 2214 an: recruiting@multicareer.de. Wir freuen uns auf Ihre Nachricht und melden uns innerhalb von einem Tag bei Ihnen.</p><p>PS: Kennen Sie jemanden, der perfekt zu dieser Stelle passen würde? Dann leiten Sie diese Anzeige gerne weiter!</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18127-2214-1803597-0-S",
+    "postedAt": "2026-11-11T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13351,6 +13466,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18736-OWJKsJZH-S",
     "postedAt": "2026-08-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13392,7 +13509,7 @@
     "postedAt": "2026-06-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14142,6 +14259,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20456-2357236-S",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-11T05:03:15.561Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -14244,6 +14363,25 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20798-44563740-119-S",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:20798-44568335-1111-S",
+    "slug": "universitatsklinikum-leipzig-anstalt-offentlichen-rechts-arzt-in-weiterbildung-m-w-d-20798-44568335-1111-s",
+    "company": "arbeitsagentur",
+    "employer": "Universitätsklinikum Leipzig Anstalt öffentlichen Rechts",
+    "title": "Arzt in Weiterbildung (m/w/d)",
+    "locations": [
+      "Leipzig, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "level": "resident",
+    "descriptionHtml": "<p>Rund 8.000 Mitarbeiter:innen kümmern sich täglich mitten in Leipzig um die beste Versorgung unserer Patient:innen. Ob Pflege, Forschung, Technik oder Verwaltung - bei uns gestaltest du den Klinikalltag aktiv mit und bringst deine Expertise genau dort ein, wo sie gebraucht wird.​ Unser Krankenhaus der Maximalversorgung fasst 34 Kliniken, 10 Institute, 35 OP-Säle und 50 Stationen zusammen. Als Leipzigs Klinik Nummer 1 bieten wir dir top fachliche Kompetenz, moderne Ausstattung und ein Umfeld, in dem dein Beitrag richtig zählt.<br />#karriere #wirsindukl #bestemedizinmitdir #jobsinleipzig #teamwork #gesundheitswesen<br />Die Aufgaben<br />*  Betreuung stationärer und ambulanter Patienten<br />*  Unterstützung des Ärzteteams<br />*  aktive Mitarbeit und Gestaltung der Lehre<br />*  Tätigkeit als Prüfarzt innerhalb klinischer Studien<br />*  Teilnahme an Weiterbildungen und externen Fortbildungen<br />*  Teilnahme am Bereitschaftsdienst<br />*  wissenschaftliche Arbeit</p><p>Das bringst du mit<br />*  erfolgreich abgeschlossenes Medizinstudium sowie Approbation als Arzt (m/w/d)<br />*  Bereitschaft zur wissenschaftlichen Arbeit</p><p>Einrichtung: Department für Innere Medizin, Neurologie und Dermatologie, Klinikbereich Gastroenterologie<br />Anstellungsart: befristet bis 31.12.2031, mit Möglichkeit der Verlängerung<br />Arbeitsdauer: Vollzeit (40,00 h)<br />Arbeitsbeginn: 01.01.2027<br />Gehaltsspanne: min. 5.600,00 € - max. 7.200,00 € brutto/Monat (Vollzeit) als Einstiegsgehalt. Die konkrete Vergütung richtet sich nach den Vorgaben des Haustarifvertrag des Universitätsklinikums Leipzig AöR.<br />Darauf kannst du dich freuen:<br />Work-Life-Balance: Zentraler Arbeitsplatz, geregelte Arbeitszeiten, 30 Urlaubstage + Zusatzurlaub im Schichtdienst gem. HTV UKL<br />Vereinbarkeit von Beruf und Familie: Kitas auf dem Klinikcampus, Kindertagespflege, Ferienprogramme und Kindermitbringtage<br />Entwicklung und Karriere: Strukturiertes Onboarding, individuelle Fort- und Weiterbildungen in der Arbeitszeit, Führungskräfteentwicklung &amp; Feedbackgespräche<br />Faire Vergütung und viele Extras: Leistungsgerechte Vergütung nach Haustarifvertrag, Jahressonderzahlung, Urlaubsgeld, betriebliche Altersvorsorge, Corporate Benefits &amp; Deutschland-Ticket-Zuschuss sowie Vergünstigungen in Mensa, Apotheke &amp; Parkhaus<br />Gesundheit und Wohlbefinden: Prämiertes betriebliches Gesundheitsmanagement, Kursangebote wie Yoga, Pilates und Co., vergünstigter Hochschulsport &amp; Firmenlauf<br />Unterstützung und Gemeinschaft: Rund-um-die-Uhr Krisen- und Sozialberatung bei persönlichen und beruflichen Herausforderungen, Coaching, Teamevents &amp; Mitarbeiter:innenfeste<br />Hierfindest Du genauere Informationen und viele weitere exklusive Angebote für unsere Mitarbeiter:innen auf einen Blick<br />Haben wir dein Interesse geweckt?<br />Dann freuen wir uns auf deine Bewerbung über unser Online-Bewerbungsportal.<br />Bewerbungsschluss: 15.11.2026<br />Für fachliche Fragen steht dir Prof. Hoffmeister / Grit Bunsegern zur Verfügung.<br />Bei Fragen zu deiner Bewerbung steht dir auch gern das Recruiting-Team des UKL unter recruiting@medizin.uni-leipzig.de zur Verfügung.<br />Das UKL steht für Chancengleichheit. Das bedeutet die Gleichbehandlung aller Bewerbenden und Mitarbeitenden. Nach dem Sächsischen Gleichstellungsgesetz werden Bewerbungen von Frauen bei gleicher Eignung, Befähigung und fachlicher Qualifikation bevorzugt berücksichtigt. Ebenso werden schwerbehinderte Bewerber:innen bei gleicher Eignung vorrangig berücksichtigt. Bitte füge deiner Bewerbung entsprechende Nachweise bei.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20798-44568335-1111-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "source": "arbeitsagentur"
   },
   {
