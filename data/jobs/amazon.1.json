@@ -49,8 +49,6 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/3112437/principal-corp-bd-corporate-business-development",
     "postedAt": "2025-10-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2767,6 +2765,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10473352/senior-supply-chain-manager-global-logistics-supply-chain",
     "postedAt": "2026-07-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2836,7 +2836,7 @@
     "postedAt": "2026-07-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -3846,7 +3846,7 @@
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -3929,7 +3929,8 @@
     "company": "amazon",
     "title": "Systems Development Engineer - Identity, Identity",
     "locations": [
-      "Bellevue, WA, United States"
+      "Bellevue, WA, United States",
+      "Seattle, WA, United States"
     ],
     "remote": false,
     "department": "Operations, IT, & Support Engineering",
@@ -5112,7 +5113,7 @@
     "postedAt": "2026-09-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -5574,6 +5575,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10530776/process-improvement-manager-sort-center",
     "postedAt": "2026-09-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6100,6 +6103,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10537746/capacity-planner-amzl-amzl",
     "postedAt": "2026-09-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6151,6 +6156,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10538365/prod-compliance-specialist-i-global-product-verification-gpv",
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6203,7 +6210,7 @@
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -6636,6 +6643,7 @@
     "company": "amazon",
     "title": "Sr. Machine Learning Engineer, AGI",
     "locations": [
+      "BELLEVUE, WA, United States",
       "Sunnyvale, CA, United States"
     ],
     "remote": false,
@@ -6888,7 +6896,7 @@
     "postedAt": "2026-09-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -7046,6 +7054,23 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10556277/applied-scientist-ii-partner-science",
     "postedAt": "2026-09-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10556299",
+    "slug": "amazon-supply-chain-manager-driver-and-carrier-experience-ats-relay-supply-and-performa-10556299",
+    "company": "amazon",
+    "title": "Supply Chain Manager - Driver & Carrier Experience, ATS, Relay Supply & Performance",
+    "locations": [
+      "London, United Kingdom"
+    ],
+    "remote": false,
+    "department": "Project/Program/Product Management--Non-Tech",
+    "category": "operations",
+    "descriptionHtml": "<p>Driver &amp; Carrier Experience (DCX) improves how carriers and drivers experience Amazon's EU freight network. We connect customer feedback with the journeys, processes and products behind it. We then help partner teams decide what to change and check whether the change worked.<br /><br />As a Supply Chain Manager, you will own DCX's view of the carrier and driver support journey. This journey starts when someone needs help. It covers self-service, assisted support, resolution, feedback and recovery. You will combine customer feedback with support and freight data. This evidence will show where the journey creates unnecessary effort or fails to resolve the customer's need.<br /><br />You will work with a large operations group, its quality team and its product team. You will turn customer evidence into clear requirements and help partners prioritise improvements. Partner teams will own delivery. You will define how success should be measured and confirm whether the result improved the customer experience.<br /><br />This role requires sound judgement and experience improving supply chain processes. You must also be able to influence teams that you do not manage. You will turn unclear customer problems into clear plans, decisions and measures.<br /><br />Key job responsibilities<br />- Own and improve the carrier and driver support journey across self-service, assisted support, escalation and resolution.<br />- Combine customer feedback with support and freight data to find the highest-impact problems.<br />- Partner with quality teams to connect internal measures with customer effort, resolution and sentiment.<br />- Identify which process, policy, communication or product defects create avoidable support demand.<br />- Work with operations and product teams to define the affected customers, baseline, expected outcome and success measure.<br />- Influence roadmaps and process priorities through clear evidence, recommendations and business cases.<br />- Maintain an improvement portfolio with named owners, decisions, milestones, risks and post-launch measures.<br />- Confirm whether delivered changes improved customer behaviour, resolution quality and sentiment.<br /><br /><br />A day in the life<br />You begin by reviewing support data and notice an increase in repeat contacts after a transportation event. You compare the support records with carrier and driver feedback. This helps you identify whether the problem began in an upstream process, self-service tool or assisted resolution.<br /><br />You meet with the quality team to compare its audit results with the customer evidence. Together, you identify a gap that needs further review. You then work with a product team to define the customer requirement and the post-launch success measure.<br /><br />Later, you update the improvement portfolio and prepare a short leadership narrative. It explains the customer problem, evidence, accountable owner and requested decision. It also explains how DCX will determine whether the change worked.<br /><br />About the team<br />Driver &amp; Carrier Experience improves the experience of the carriers and drivers who move Amazon freight across Europe. We turn customer signals into insight and connect that insight with business outcomes. We work through partner teams to deliver measurable change.<br /><br />We are not a reporting function, and we do not take operational ownership from partner teams. We identify the customer problem, quantify its impact and bring it to the right decision-makers. We then confirm whether the resulting action improved the experience.<br /><br />DCX is a small, senior and delivery-focused team. We value rigorous analysis, clear ownership and practical mechanisms. We choose our work by customer and business impact, not by how easy the fix is.</p><h3>Basic qualifications</h3><p>- Bachelor's degree<br />- Knowledge of Excel (Pivot Tables, VLookUps) at an advanced level and SQL<br />- Experience in program or project management<br />- Experience working cross functionally with tech and non-tech teams<br />- Experience in defining and implementing process improvement initiatives using data and metrics<br />- Experience in supply chain<br />- Experience defining program requirements and using data and metrics to drive improvements</p><h3>Preferred qualifications</h3><p>- Experience in driving end to end delivery, and communicating results to senior leadership<br />- Experience leading process improvements<br />- Experience in stakeholder management, dealing with multiple stakeholders at varied levels of the organization<br />- Experience building processes, project management, and schedules<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10556299/supply-chain-manager-driver-carrier-experience-ats-relay-supply-performance",
+    "postedAt": "2026-09-22T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -7315,7 +7340,7 @@
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -7508,7 +7533,7 @@
     "postedAt": "2026-09-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -7578,7 +7603,7 @@
     "postedAt": "2026-09-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -7790,7 +7815,7 @@
     "remote": false,
     "department": "Software Development",
     "category": "engineering",
-    "descriptionHtml": "<p>This is a 12 month Amazon contract. It's still Day 1 at Amazon IN Payments, and we're at the beginning of building out an entire suite of rendering technologies that can standardize the way UX components interact and their look and feel on Amazon Pay pages. PayUI is a greenfield initiative in Amazon Pay org, offering a rare opportunity to build standardized UX components that have to be reused across all Amazon Pay pages.<br />You will be part of a new team building a large scale tier-1 rendering platform that supports as the skeleton for all the payment pages to depend, host and render on, in Amazon Pay. This new system will be utilized by thousands of customers every day. You and a team of developers will work through all phases of the project life-cycle, including reviewing requirements, designing services that lay the foundation for the new technology platform, building from the basic blocks of the new UX components and their interfaces, developing and testing code, and delivering seamless implementations for our customers. You will help define, design, prototype, and build these experiences. To achieve this, you will collaborate closely with product managers, UX designers, Software developers and multiple client teams.<br />Our team is looking for a seasoned engineer to design and build customer experiences that span multiple customer use cases in Amazon Pay space. The ability to work within a creative and positive team environment are key to the role.</p><h3>Basic qualifications</h3><p>- 1+ years of non-internship professional software development experience<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- Bachelor's degree in computer science or equivalent<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "descriptionHtml": "<p>This is a 12 month Amazon contract. It's still Day 1 at Amazon IN Payments, and we're at the beginning of building out an entire suite of rendering technologies that can standardize the way UX components interact and their look and feel on Amazon Pay pages. PayUI is a greenfield initiative in Amazon Pay org, offering a rare opportunity to build standardized UX components that have to be reused across all Amazon Pay pages.<br />You will be part of a new team building a large scale tier-1 rendering platform that supports as the skeleton for all the payment pages to depend, host and render on, in Amazon Pay. This new system will be utilized by thousands of customers every day. You and a team of developers will work through all phases of the project life-cycle, including reviewing requirements, designing services that lay the foundation for the new technology platform, building from the basic blocks of the new UX components and their interfaces, developing and testing code, and delivering seamless implementations for our customers. You will help define, design, prototype, and build these experiences. To achieve this, you will collaborate closely with product managers, UX designers, Software developers and multiple client teams.<br />Our team is looking for a seasoned engineer to design and build customer experiences that span multiple customer use cases in Amazon Pay space. The ability to work within a creative and positive team environment are key to the role.</p><h3>Basic qualifications</h3><p>- 1+ years of non-internship professional software development experience<br />- Experience programming with at least one software programming language</p><h3>Preferred qualifications</h3><p>- Bachelor's degree in computer science or equivalent<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br />null</p>",
     "applyUrl": "https://www.amazon.jobs/en/jobs/10563602/sde-i-ftc",
     "postedAt": "2026-09-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
@@ -8090,6 +8115,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10565950/software-development-engineer-amazon-leo",
     "postedAt": "2026-09-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -8514,6 +8541,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10568690/finance-manager-12-month-fixed-term-eu-speed-programs",
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -8786,6 +8815,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10571087/process-engineer-robotics-manufacturing-and-technical-operations-rmto-process-engineering",
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -9264,6 +9295,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10575182/onsite-medical-representative",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -10438,6 +10471,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10584186/sr-system-dev-engineer-hardware-compute-group",
     "postedAt": "2026-10-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -10644,7 +10679,7 @@
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -11295,6 +11330,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10588380/remediation-site-manager-whs-due-diligence-and-remediation",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -11504,6 +11541,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10589329/mechatronics-robotics-tech",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -11568,7 +11607,7 @@
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -11697,7 +11736,7 @@
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -11714,6 +11753,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10590024/onsite-medical-representative",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -12203,7 +12244,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -12804,7 +12845,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {
@@ -13013,6 +13054,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10595504/applied-scientist-agi",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13511,6 +13554,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10598778/software-development-engineer-netos-observability",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13977,6 +14022,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10600958",
+    "slug": "amazon-aws-commissioning-acx-amazon-commissioning-10600958",
+    "company": "amazon",
+    "title": "AWS Commissioning, ACx Amazon Commissioning",
+    "locations": [
+      "Dubai, United Arab Emirates"
+    ],
+    "remote": false,
+    "department": "Operations, IT, & Support Engineering",
+    "category": "engineering",
+    "descriptionHtml": "<p>Amazon Web Services (AWS) provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. To meet the growing demand for AWS cloud computing capacity in EMEA (Europe, Middle East and Africa) we are now looking for a Commissioning Engineer to join the team. <br /><br />Are you experienced in Critical Infrastructure Commissioning?<br /><br />As a Data Center Commissioning Engineer (CxE), you will be part of highly creative, efficient team tasked with tackling fascinating and challenging problems building and supporting the operations of AWS owned data centres, Hybrid Colo's, Single Tennent Colo and Multi Tennent Colo builds . The AWS Commissioning team (ACx) understands, evaluates, defines and manages the expectations of construction quality in accordance to engineering designs to meet the customer requirements. <br /><br />Key job responsibilities<br />You will be responsible for supporting vendors, contractors and other teams involved in the construction and commissioning of various systems such as:<br /><br />-Medium and low voltage power systems<br />-Generators<br />-UPS<br />-HVAC<br />-Chilled Water Systems<br />-Building Management systems (BMS)<br />-Electrical Power Monitoring Systems (EPMS)<br />-Testing and balancing<br />-Pumps and Hydronic systems<br /><br />The CxE shall provide multi-discipline input into the scheduling, test script development, designing, and planning of projects. In addition, the CxE will be required to review component submittal packages, lead Factory Witness Testing (FWT), perform system level and integrated system testing. During commissioning, the CxE will continuously audit activities to ensure compliance with environmental, quality, and safety requirements. Additionally, the individual will be responsible for comprehensive weekly reporting of status of all ongoing projects and lessons learned to continually improve the quality of our program. This position will include coverage of multiple inflight projects. <br /><br />A day in the life<br />The CxE's daily focus is to ensure the commissioning quality and progress meet AWS's high standards by:<br />Developing commissioning standards.<br />Reviewing, comment on, and creating commissioning scripts L1-L5.<br />Organize and attend meetings highlighting AWS requirements and tracking overall build and commissioning progress and blockers.<br />Performing site walks to identify installation and testing deficiencies and maintain observation logs.<br />Manage on-site 3rd-party commissioning vendors to ensure coverage of all Cx-activities.<br />Gather, organize, and review design and commissioning documentation.<br />Work with AWS partner teams to resolve coordination and delivery issues and report on project health and completion. <br /><br />About the team<br />The AWS Data Center Commissioning Team (ACx) is a wholly independent business within the DCCD organization. This team of veteran professional Electrical Engineers, Mechanical Engineers, Controls Engineers, Architectural Engineers, Project Managers, Operators and seasoned Amazonians are uniquely positioned to provide deeply detailed engineering and operational review and testing of equipment designs, operational functionality and construction practices. We are focused on ensuring the rapid delivery of a quality product while maintaining full transparency, recording metrics of manufacturer/contractor/equipment issues pre-PFHO, and identifying opportunities for all our peers and customers.</p><h3>Basic qualifications</h3><p>- 4+ years of industrial or commercial engineering in mission critical facilities including but not limited to: data centers, power generation or oil and gas facilities experience<br />- 4+ years of commissioning experience<br />- Experience in industrial or commercial engineering in mission critical facilities including but not limited to: data centers, power generation or oil and gas facilities<br />- Bachelor's degree in Electrical Engineering or a related field<br />- Bachelor's degree or above in civil engineering, structural engineering, or architectural engineering from an ABET accredited program<br />- PE (Professional Engineer) or SE (Structural Engineer) Engineering license<br />- Knowledge of Microsoft Office including Outlook, Word, and Excel<br />- Knowledge of building codes, regulations, and standards including IBC (International Building Code) and ASCE (American Society of Civil Engineers)<br />- Experience researching new designs, technologies, and construction methods of data center equipment and facilities<br />- Experience in commissioning</p><h3>Preferred qualifications</h3><p>- Experience reading, interpreting, and creating construction drawings, specifications, and submittal documents<br />- Experience in data center design, construction, operations, or facility maintenance<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10600958/aws-commissioning-acx-amazon-commissioning",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10601067",
     "slug": "amazon-technical-support-engineer-i-integrations-external-system-integrations-amazon-sh-10601067",
     "company": "amazon",
@@ -14303,6 +14365,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10602633",
+    "slug": "amazon-communications-engineer-production-network-performance-amazon-leo-10602633",
+    "company": "amazon",
+    "title": "Communications Engineer, Production Network Performance, Amazon Leo",
+    "locations": [
+      "Redmond, WA, United States"
+    ],
+    "remote": false,
+    "department": "Research Science",
+    "category": "engineering",
+    "descriptionHtml": "<p>We are looking for an engineer who builds data pipelines and writes code to understand a live satellite network. Amazon Leo is an initiative to launch a constellation of Low Earth Orbit satellites that will provide low-latency, high-speed broadband connectivity to unserved and underserved communities around the world. You will monitor Amazon Leo's live satellite network against what our simulations predict, and use what you find to improve the performance our customers receive. You will help build and run an automated pipeline that compares real-time system and network data with simulation predictions, finds where performance falls short, and helps drive each problem to resolution with the many teams involved. A problem can sit anywhere in the system: satellites and their optical inter-satellite links, gateways, user terminals, the satellite telemetry, tracking and command (TT&amp;C) link, and the software that connects them. The team also supports satellite operations: launch and early orbit, gateway and TT&amp;C station assignments, and the satellite communication links that carry them. The team takes part in an on-call rotation for problems that affect customers or operations.<br /><br />You will join a new, interdisciplinary team that covers software and data pipelines, radio frequency (RF) and satellite communication link performance (user, gateway and TT&amp;C links), software and data pipelines, artificial intelligence and machine learning (AI/ML) automation, networking, systems integration and test, and production operations and troubleshooting, and that works closely with the modeling and simulation, hardware, software and operations teams across Amazon Leo. <br /><br />Export Control Requirement<br />Due to applicable export control laws and regulations, candidates must be a U.S. citizen or national, U.S. permanent resident that is a current Green Card holder, or lawfully admitted into the U.S. as a refugee or granted asylum.<br /><br /><br />Key job responsibilities<br />Data pipeline and performance framework<br />- Build, maintain and use the team's automated pipeline that brings live system and network data, simulation predictions and test measurements together<br />- Design how the data is stored, queried and kept at scale, so that the pipeline runs reliably and unattended across the whole network<br />- Write the code that joins sources logged at different rates and times, and keep each record's context with it so that later analysis can explain it<br />- Integrate simulations and models developed by other teams into the team's framework, and co-develop each tool's automation interface with the team that owns it<br />- Compare live performance with simulation predictions within tolerances that reflect what each prediction means, and report when the model, not the network, looks wrong<br /><br />Rapid detection of changes that affect customers<br />- Build AI, machine learning and automation steps into the pipeline to rapidly detect, group and triage changes that affect customers, and check their conclusions against independent evidence<br />- Develop statistical change-detection methods that flag when performance moves away from the network's own history<br />- Turn large telemetry data sets into trends, visualizations and findings the team and its partners can act on<br /><br />Troubleshooting and resolution<br />- Help trace performance problems to their root causes across RF, software, hardware and networking, by comparing affected and unaffected terminals, satellites and gateways<br />- Confirm a cause with an independent measurement, or reproduce the fault in simulation or test<br />- Hand each cause, with its evidence, to the team that owns the fix, and verify after the fix that customers see the improvement<br /><br />Documentation and collaboration<br />- Build up a database of anomaly signatures, so that each investigation builds on earlier ones and known problems are recognized quickly<br />- Work with the simulation, test, satellite, gateway, terminal and software teams across our organization to get the data and evidence each investigation needs<br /><br />A day in the life<br /><br /><br /><br />About the team<br />We are a new team inside Amazon Leo’s communication systems organization. We turn live network data into clear answers about the performance customers receive, and then work with subject matter experts to improve the customers’ experience. Amazon Leo’s network serves consumers, businesses and government organizations; within Amazon Leo, the team supports the engineering and operations teams that need reliable evidence of how the network performs.</p><h3>Basic qualifications</h3><p>- Bachelor's degree in Electrical Engineering, Computer Engineering, Systems Engineering, or related fields<br />- 5+ years of experience in data engineering, software engineering or data analysis<br />- Experience building automated data pipelines that join and process large data sets, using SQL and Python or similar<br />- Experience analyzing telemetry, log or field data to find the root cause of a problem<br />- Experience writing software, for example in Python, C++ or MATLAB, with version control and testing, to automate analysis or test</p><h3>Preferred qualifications</h3><p>- Master’s degree in electrical engineering, statistics or a related field<br />- Experience operating or supporting a production network or satellite system<br />- Experience with RF, satellite or wireless communication systems: link budgets, link adaptation, or link and network performance<br />- Experience building AI/ML steps into automated data processing flows, with checks on their output<br />- Experience in satellite, wireless or network systems engineering, integration and test, or operations<br />- Experience with data lakes and query engines at scale, for example Athena, Spark or Redshift<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Redmond - 136,000.00 - 184,000.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10602633/communications-engineer-production-network-performance-amazon-leo",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10602691",
     "slug": "amazon-business-intelligence-engineer-ii-compliance-shared-services-coss-10602691",
     "company": "amazon",
@@ -14313,10 +14392,115 @@
     "remote": false,
     "department": "Business & Merchant Development",
     "category": "engineering",
-    "descriptionHtml": "<p>At Amazon, our goal is to be earth’s most customer-centric company and to create a safe environment for both our customers and our associates. To achieve that, we need exceptionally talented, bright, dynamic, and driven people. If you'd like to help us build the place to find and buy anything online, this is your chance to make history. We are looking for a talented business analyst to join the Regulatory Intelligence, Safety &amp; Compliance [RISC] Global Data &amp; Analytics [GDA] team.<br />  <br />This role will be a key member of the Analytics team, responsible for driving analysis and insights to help make meaningful business decisions. As a BIE, you will focus on improving the success within business functions by analyzing data, discovering and solving real world problems, building metrics and business cases to improve customer experience, and providing timely data support for escalations to mitigate risk. We are focused on your success and want to build future leaders within Amazon. A key component of the role is to identify process and system improvement opportunities by developing the right metrics, analyzing data, and partnering with internal teams. In addition, you will design and develop automated reporting solutions to enable stakeholders to manage the business and make effective decisions. Lastly, you will enable effective decision making by retrieving and aggregating data from multiple sources and compiling it into a digestible and actionable format. <br /><br />This role requires an individual with excellent statistical and analytical abilities, deep knowledge of business intelligence solutions and business acumen. The successful candidate will be a self-starter comfortable with ambiguity, with strong attention to detail, an ability to work in a fast-paced and ever-changing environment, and driven by a desire to innovate in this space. <br /><br /><br />Key job responsibilities<br />- Creating automated reports and dashboards with a combination of BI tools such as Tableau, Quicksight etc. <br /> - Partnering with Program team, Legal, and Tech stakeholders to understand challenges and provide /analysis to help drive program success<br /> -   Providing data support for business and cross-functional partners to address escalations and answer questions using PostgreSQL and AWS solutions<br /> -   Uncovering trends and correlations through mining and analysis to develop insights that can help stakeholders to make effective decisions<br /> -   Designing and executing analytical projects using statistical analysis<br />- Build self-service solutions that empower stakeholders to access and analyze data independently.<br /><br /><br />About the team<br />Here at Selling Partner Services, we embrace our differences. We are committed to furthering our culture of inclusion. We have 14 employee-led affinity groups, reaching 10,000+ employees in chapters globally. We have innovative benefit offerings, and we host annual and ongoing learning experiences, including our DEI Ambassador Program. Amazon’s culture of inclusion is reinforced within our 16 Leadership Principles, which remind team members to seek diverse perspectives, learn and be curious, and earn trust.</p><h3>Basic qualifications</h3><p>- 3+ years of analyzing and interpreting data with Redshift, Oracle, NoSQL etc. experience<br />- 2+ years of Tableau Desktop, Quicksight or other relevant data visualization software experience<br />- Bachelor's degree or above in business administration, finance, economics, computer science, data science, engineering, or other related field, or 2+ years of Amazon RME (BB/3P) Full Time Exempt experience<br />- Experience with data modeling, warehousing and building ETL pipelines<br />- Experience in Statistical Analysis packages such as R, SAS and Matlab<br />- Experience using SQL (Structured Query Language) to pull data from a database or data warehouse<br />- Experience using Python scripting to process data for modeling<br />- Experience using coding agents like Claude Code, Codex, Kiro etc</p><h3>Preferred qualifications</h3><p>- Master's degree or above in BI, finance, engineering, statistics, computer science, mathematics or equivalent quantitative field<br />- Knowledge of Microsoft Excel at an advanced level, including: pivot tables, macros, index/match, vlookup, VBA, data links, etc.<br />- Experience with AWS solutions such as EC2, DynamoDB, S3, and Redshift<br />- Experience in data mining, ETL, etc. and using databases in a business environment with large-scale, complex datasets<br />- Experience developing and presenting recommendations of new metrics allowing better understanding of the performance of the business<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "descriptionHtml": "<p>At Amazon, our goal is to be earth’s most customer-centric company and to create a safe environment for both our customers and our associates. To achieve that, we need exceptionally talented, bright, dynamic, and driven people. If you'd like to help us build the place to find and buy anything online, this is your chance to make history. We are looking for a talented business analyst to join the Regulatory Intelligence, Safety &amp; Compliance [RISC] Global Data &amp; Analytics [GDA] team.<br />  <br />This role will be a key member of the Analytics team, responsible for driving analysis and insights to help make meaningful business decisions. As a BIE, you will focus on improving the success within business functions by analyzing data, discovering and solving real world problems, building metrics and business cases to improve customer experience, and providing timely data support for escalations to mitigate risk. We are focused on your success and want to build future leaders within Amazon. A key component of the role is to identify process and system improvement opportunities by developing the right metrics, analyzing data, and partnering with internal teams. In addition, you will design and develop automated reporting solutions to enable stakeholders to manage the business and make effective decisions. Lastly, you will enable effective decision making by retrieving and aggregating data from multiple sources and compiling it into a digestible and actionable format. <br /><br />This role requires an individual with excellent statistical and analytical abilities, deep knowledge of business intelligence solutions and business acumen. The successful candidate will be a self-starter comfortable with ambiguity, with strong attention to detail, an ability to work in a fast-paced and ever-changing environment, and driven by a desire to innovate in this space. <br /><br /><br />Key job responsibilities<br />- Creating automated reports and dashboards with a combination of BI tools such as Tableau, Quicksight etc. <br /> - Partnering with Program team, Legal, and Tech stakeholders to understand challenges and provide /analysis to help drive program success<br /> -   Providing data support for business and cross-functional partners to address escalations and answer questions using PostgreSQL and AWS solutions<br /> -   Uncovering trends and correlations through mining and analysis to develop insights that can help stakeholders to make effective decisions<br /> -   Designing and executing analytical projects using statistical analysis<br />- Build self-service solutions that empower stakeholders to access and analyze data independently.<br /><br /><br />About the team<br />Here at Selling Partner Services, we embrace our differences. We are committed to furthering our culture of inclusion. We have 14 employee-led affinity groups, reaching 10,000+ employees in chapters globally. We have innovative benefit offerings, and we host annual and ongoing learning experiences, including our DEI Ambassador Program. Amazon’s culture of inclusion is reinforced within our 16 Leadership Principles, which remind team members to seek diverse perspectives, learn and be curious, and earn trust.</p><h3>Basic qualifications</h3><p>- 3+ years of analyzing and interpreting data with Redshift, Oracle, NoSQL etc. experience<br />- 2+ years of Tableau Desktop, Quicksight or other relevant data visualization software experience<br />- Bachelor's degree or above in business administration, finance, economics, computer science, data science, engineering, or other related field, or 2+ years of Amazon RME (BB/3P) Full Time Exempt experience<br />- Experience with data modeling, warehousing and building ETL pipelines<br />- Experience in Statistical Analysis packages such as R, SAS and Matlab<br />- Experience using SQL (Structured Query Language) to pull data from a database or data warehouse<br />- Experience using Python scripting to process data for modeling<br />- Experience using coding agents like Claude Code, Codex, Kiro etc</p><h3>Preferred qualifications</h3><p>- Master's degree or above in BI, finance, engineering, statistics, computer science, mathematics or equivalent quantitative field<br />- Knowledge of Microsoft Excel at an advanced level, including: pivot tables, macros, index/match, vlookup, VBA, data links, etc.<br />- Experience with AWS solutions such as EC2, DynamoDB, S3, and Redshift<br />- Experience in data mining, ETL, etc. and using databases in a business environment with large-scale, complex datasets<br />- Experience developing and presenting recommendations of new metrics allowing better understanding of the performance of the business<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br />null</p>",
     "applyUrl": "https://www.amazon.jobs/en/jobs/10602691/business-intelligence-engineer-ii-compliance-shared-services-coss",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603054",
+    "slug": "amazon-manager-ii-in-relay-ops-in-ro-af-10603054",
+    "company": "amazon",
+    "title": "Manager II,IN Relay Ops, IN RO-AF",
+    "locations": [
+      "Hyderabad, TS, India"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>External job description<br />We are looking for a Program Manager at Relay Operations (RO) to work with a team of 30+ Employees who can cuts across operations, program management and tech to manage Amazon Freight. We're looking for a hands-on and motivated self-starter who's passionate about using data to help us make quick decisions and deliver process improvements and automations. The right candidate will exemplify \"bias for action\" and \"are right a lot\".<br /><br />Key job responsibilities<br />In this role, you will work with Amazon Freight's business and operations team to continuously evolve contingency management models, analyze historic results, and make business recommendations to senior management based on those analyses – all in an environment of rapid growth and increasing complexity. You will drive improvements to the reporting and processes utilized by the team to increase the availability and granularity of actionable data to partners teams. This position also manages the planning and execution of operations team’s goals, measurement of goal attainment, evolving and driving various improvements in Business to increase its effectiveness in driving results. The successful candidate must have analytical skills and expertise in excel. Knowledge of SQL and AI Tools would be an added advantage. He/she will be passionate about their work, detail-oriented, analytical, and have excellent problem-solving abilities. He/she will have superb communication and customer-relationship skills, analytic insight, and be a passionate advocate of operations team to other stakeholders. He/she will drive towards simple, scalable solutions to difficult problems, have excellent project-management skills, and be able to communicate complex analytical results, both written and verbally, in a clear and easy-to-understand way.<br /><br />Internal job description<br /><br />Refer to Key Job Responsibilities section<br /><br /><br />Basic qualifications<br /><br />3+ years of program or project management experience<br />3+ years of defining and implementing process improvement initiatives using data and metrics experience<br />3+ years of working cross functionally with tech and non-tech teams experience<br />Experience in defining program requirements and using data and metrics to determine improvements<br /><br /><br />Preferred qualifications<br /><br />3+ years of driving process improvements experience<br />Experience in stakeholder management, dealing with multiple stakeholders at varied levels of the organization<br /><br />Key job responsibilities<br />Key job responsibilities<br />The incumbent will own the following -<br />1) They will be responsible for working with supply chain execution, transportation, QC FC, carriers and other Amazon teams to identify pain points and scope out large high impact projects<br />2) They will be responsible for driving cost benefit analysis and go/no-go decisions on various initiatives<br />3) Once a go decision is made, the program manager will work to evolve a plan and timeline for execution.<br />4) The program manager will develop a roadmap and metrics to measure progress of the initiative they own. They will also own writing reports that detail the progress to leadership on a frequent basis<br />5) They will liaise across functions to drive their project and help clear issues and bottlenecks.<br />6) They will work with technology teams to scope out and drive any tech changes that are needed <br /><br />A day in the life<br />Daily activities include leading team towards betterment of the QC Transportation Supply Chain operations<br /><br />About the team<br />NOC (Network Operation Center) is the central command and control center for ‘Transportation Execution’ across the Amazon Supply Chain network supporting multiple geographies like NA, India and EU. It ensures hassle free, timely pick-up and delivery of freight from vendors to Amazon fulfillment centers (FC) and from Amazon FCs to carrier hubs. In case of any exceptions, NOC steps in to resolve the issue and keeps all the stakeholders informed on the proceedings. Along with this tactical problem-solving NOC is also charged with understanding trends in network exceptions and then automating processes or proposing process changes to streamline operations. This second aspect involves network monitoring and significant analysis of network data. Overall, NOC plays a critical role in ensuring the smooth functioning of Amazon transportation and thereby has a direct impact on Amazon’s ability to serve its customers on time.</p><h3>Basic qualifications</h3><p>- 3+ years of program or project management experience<br />- 3+ years of working cross functionally with tech and non-tech teams experience<br />- 3+ years of defining and implementing process improvement initiatives using data and metrics experience<br />- Bachelor's degree<br />- Knowledge of Excel (Pivot Tables, VLookUps) at an advanced level and SQL<br />- Experience defining program requirements and using data and metrics to determine improvements</p><h3>Preferred qualifications</h3><p>- 3+ years of driving end to end delivery, and communicating results to senior leadership experience<br />- 3+ years of driving process improvements experience<br />- Experience in stakeholder management, dealing with multiple stakeholders at varied levels of the organization<br />- Experience building processes, project management, and schedules<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603054/manager-ii-in-relay-ops-in-ro-af",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603090",
+    "slug": "amazon-hr-associate-partner-pxt-10603090",
+    "company": "amazon",
+    "title": "HR Associate Partner, PXT",
+    "locations": [
+      "Delhi, DL, India"
+    ],
+    "remote": false,
+    "department": "Human Resources",
+    "category": "people",
+    "descriptionHtml": "<p>You will be placed at Amazon Middle Mile operations to provide HR support for ~700 associates. In this role, you will jointly work with HR, Operations, RME and Safety leadership to enhance the associate experience and meet business goals. <br /><br />Key job responsibilities<br />Provide Associate support on HR related topics (documentation of and follow-up on requests, escalation of issues, problem solving, meeting notes), ensuring an engaging workplace environment by staying close to the associates and facilitating engagement activities<br />Time and Attendance: Partner with site teams to ensure employees are on the correct schedule and shift patterns. Compile reports to support sites in identifying time and attendance irregularities, and point out when something doesn’t look right – ensuring our associates are paid correctly and on time.<br />Partners with payroll teams to ensure accurate and timely payroll inputs.<br />Roster Management: Partner with site teams to ensure roster accuracy through audits, reporting, and modifications.<br />Assisting ops Team with Peak related activities and engagements.<br />Leads process improvement initiatives. Develops suggestions for improvements to maximize value of resources.<br />Ability to learn and navigate internal Amazon systems as resources to execute overall job duties. </p><h3>Basic qualifications</h3><p>- 6+ months of human resources experience<br />- 6+ months of Microsoft Office products and applications experience<br />- Experience in confidential environments<br />- Bachelor's degree or equivalent</p><h3>Preferred qualifications</h3><p>- 1+ years of human resources experience<br />- 1+ years of Microsoft Office products and applications experience<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603090/hr-associate-partner-pxt",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603159",
+    "slug": "amazon-data-center-operations-technician-data-center-operations-10603159",
+    "company": "amazon",
+    "title": "Data Center Operations Technician, Data Center Operations",
+    "locations": [
+      "Kuala Lumpur, 14, Malaysia"
+    ],
+    "remote": false,
+    "department": "Operations, IT, & Support Engineering",
+    "category": "data",
+    "descriptionHtml": "<p>AWS Infrastructure Services owns the design, planning, delivery, and operation of all AWS global infrastructure. In other words, we’re the people who keep the cloud running. We support all AWS data centers and all of the servers, storage, networking, power, and cooling equipment that ensure our customers have continual access to the innovation they rely on. We work on the most challenging problems, with thousands of variables impacting the supply chain — and we’re looking for talented people who want to help. <br /> <br />You’ll join a diverse team of software, hardware, and network engineers, supply chain specialists, security experts, operations managers, and other vital roles. You’ll collaborate with people across AWS to help us deliver the highest standards for safety and security while providing seemingly infinite capacity at the lowest possible cost for our customers. And you’ll experience an inclusive culture that welcomes bold ideas and empowers you to own them to completion.<br /> <br />Amazon Web Services (AWS) is growing rapidly, and we are looking for Data Center Technician to join our expanding Infrastructure Operations team.<br /> <br />Data Center Operations designs, installs and maintains the world’s largest Computing Infrastructure. Our scope of work includes systems, repairing, dealing with issues, handling and tracking parts and assisting in Data Center maintenance. Amazon Data Centers are large-scale high-density centers where you will help change the face of Technology in the region.<br /><br /><br />Key job responsibilities<br />In this role as a Data Center Operations Technician, you will be responsible for the on-site management of hardware lifecycle of our IT infrastructure that includes:<br /> <br /><br />- You will work as part of the Operations team; whose primary responsibility is the maintenance and upkeep of the data center infrastructure.<br />- Your role and responsibilities include, but are not limited to, server rack installation, hardware break-fix on various components, troubleshooting network issues also responding to emergent situations that affect operational stability.<br />- You will work and meet SLAs against assigned trouble tickets via a directed workflow, be the first line touch point for hardware troubleshooting and technical issues.<br />- You will perform on-call duties and will participate in Data Center operations, handling scheduled maintenance and change management activities that require monitoring of the data center infrastructure.<br />- You will participate in team meetings for metric analysis and to discuss achieving daily/weekly goals.<br />- You have the knowledge of the policies and procedures, including safety and security, within your department, and understand the appropriate application of such knowledge<br />- You will contribute to documentation on technical issues through root cause analysis for operational issues that occur, and contribute to process improvement initiatives relevant to the data center environment.<br />- More experienced technicians may assist in training less experienced members of the team.<br /><br /><br /><br />A day in the life<br />- You will support DC (Data Center) infrastructure equipment (e.g. racks, servers, networking devices, hardware components, cables, etc.),<br />- You will follow the instructions ticket-based environment and work on systematic problem resolution and perform routine operation activities on hardware, or spare parts, including rack install, server break/fix, rack decom etc.<br />- You will perform on-call duties and will participate in Data Center operations, handling scheduled maintenance and change management activities that require monitoring of the data center infrastructure.<br />- Show a strong aptitude for troubleshooting and problem solving<br />- You will be involved with site management and maintain tidiness in operation areas<br />- Your role involves covering 24x7 shift rotation<br /><br />About the team<br />Diverse Experiences<br />AWS values diverse experiences. Even if you do not meet all of the qualifications and skills listed in the job description, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying. <br /> <br />Why AWS <br />Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform. We pioneered cloud computing and never stopped innovating — that’s why customers from the most successful startups to Global 500 companies trust our robust suite of products and services to power their businesses.<br /><br />Inclusive Team Culture <br />AWS values curiosity and connection. Our employee-led and company-sponsored affinity groups promote inclusion and empower our people to take pride in what makes us unique. Our inclusion events foster stronger, more collaborative teams. Our continual innovation is fueled by the bold ideas, fresh perspectives, and passionate voices our teams bring to everything we do.<br /><br />Mentorship and Career growth<br />We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, mentorship and other career-advancing resources here to help you develop into a better-rounded professional. <br /> <br />Work/Life Balance<br />We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why we strive for flexibility as part of our working culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve in the cloud.</p><h3>Basic qualifications</h3><p>- 2+ years of computer hardware troubleshooting and repair experience<br />- 1+ years of computer networking experience<br />- High school or equivalent diploma</p><h3>Preferred qualifications</h3><p>- Experience dealing effectively with customers during problem resolution and operating efficiently under pressure<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603159/data-center-operations-technician-data-center-operations",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603173",
+    "slug": "amazon-operations-manager-10603173",
+    "company": "amazon",
+    "title": "Operations Manager",
+    "locations": [
+      "Heidenheim an der Brenz, Germany",
+      "Heidenheim An Der Brenz, Germany"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>Operations is the beating heart of Amazon. This key part of our business makes sure we fulfil and dispatch orders efficiently so that our customers get their items on time. It’s driven by Operations Managers who bring the team together to push excellence in safety, quality and productivity across our sites.  At your site, you’ll lead other managers and create the operational plan that helps your teams meet their targets. This role is all about driving operational excellence to create the Amazon of tomorrow.  <br /><br />Key job responsibilities<br />- Manage and develop a team of Area Managers <br />- Lead operational teams on a shift, deal with issues, and positively impact site performance  <br />- Analyse shift performance against relevant business objectives, and put in place actions to improve our operational excellence <br />- Work closely with other support teams, including HR, Finance, Health and Safety, and Security <br />- Design and deliver initiatives across the sites to improve operational performance <br /><br />A day in the life<br />You’ll lead shifts at one of our operational sites. You’ll also be the key link between a number of teams, including finance, safety and operations integration teams. That means you’ll be close to the day-to-day operations at your site but also contribute to new ways to innovate at your site.  <br /><br />A typical day will involve meetings with different areas of the business, deep diving into performance and risk metrics for sites, and looking ahead to prepare for different levels of demand. Every day will also involve mentoring and coaching your team. You’ll be a source of leadership and support your team to be the best managers they can be.  <br /><br />About the team<br />Amazon Extra Large (AMXL) looks after heavy items like furniture and large home appliances. Our team manages the entire service, from supply chain fulfilment to delivery and returns. What sets this service apart from others is the extra level of customer care. Not only do we deliver large items, but we unpack, assemble and install them, and take away old items where needed. With a focus on safety, productivity and innovation, we’re changing the way customers buy and receive large goods for the better.<br /><br />We have ambitious plans to expand our specialist fulfilment centres and delivery stations across the UK and Europe. While those of us who work in delivery stations will do some night shifts, most of us work during the day. Our team is made up of people across operations, supply chain, business intelligence and programme management, and everyone plays a crucial role in growing this part of the business.   </p><h3>Basic qualifications</h3><p>- Bachelor's degree, or Master's degree<br />- Relevant experience in manufacturing, production, distribution logistics environments, retail, or grocery in a management role<br />- Relevant experience of working within a complex stakeholder structure<br />- Advanced proficiency in verbal and written English and upper intermediate proficiency in the local language</p><h3>Preferred qualifications</h3><p>- Preferred qualifications are not required to apply for a position at Amazon. If you have all the basic qualifications above, we’d love to hear from you.<br />- A bachelor’s, advanced or master’s degree in engineering, supply chain, logistics, or manufacturing<br />- Experience in managing third-party relationships<br />- Experience of applying Lean, Six Sigma, and Kaizen methodologies<br /><br />Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (<a href=\"https://www.amazon.jobs/en/privacy_page\">https://www.amazon.jobs/en/privacy_page</a>) to know more about how we collect, use and transfer the personal data of our candidates.<br /><br />m/w/d<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603173/operations-manager",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603313",
+    "slug": "amazon-software-development-manager-observability-and-digital-thread-amazon-leo-d2d-sof-10603313",
+    "company": "amazon",
+    "title": "Software Development Manager, Observability & Digital Thread, Amazon Leo, D2D Software",
+    "locations": [
+      "Redmond, WA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "management",
+    "descriptionHtml": "<p>Amazon Leo is building a low Earth orbit satellite constellation to bring fast, affordable connectivity to customers around the world. Direct to Device (D2D) extends Leo to standard mobile phones and devices: a fully regenerative fifth-generation (5G) mobile base station on each satellite, delivering service to standard handsets through mobile network operators (MNOs). D2D Software builds the embedded software that flies, the cloud and ground software that runs the service, and the platform that connects them. Our target is under a day from a defect being found to the fix deployed across the entire constellation, achieved by automating everything that a person would otherwise do by hand.<br /><br />This role leads observability and digital thread in DevOps &amp; Release, reporting to the Director, DevOps &amp; Release. It owns telemetry ingest, anomaly detection, dashboards, and traceability. Before anything is handed on, the bar is: detect-and-trace time within budget. It hands off to its customers as follows: telemetry, dashboards, and traceability to every team and Software Delivery &amp; Business Ops.<br /><br />What the team needs to achieve<br />•\tDetect-and-trace time within budget.<br />•\tHand-offs that meet their service level: telemetry, dashboards, and traceability to every team and Software Delivery &amp; Business Ops.<br />•\tMeasured, rising capability and efficiency of the team, with manual work falling release over release.<br /><br />How the team is measured<br />•\tDetect-and-trace time.<br />•\tStatus derived from the systems of record.<br /><br />Export Control Requirement:<br />Due to applicable export control laws and regulations, candidates must be a U.S. citizen or national, U.S. permanent resident (i.e., current Green Card holder), or lawfully admitted into the U.S. as a refugee or granted asylum.<br /><br /><br />Key job responsibilities<br />•\tOwn telemetry ingest, anomaly detection, dashboards, and traceability.<br />•\tMeet the bar before every hand-off: detect-and-trace time within budget.<br />•\tWork directly with engineers in the boundary teams as partners, through agreed contracts and service levels.<br />•\tAutomate everything a person would otherwise do twice.<br />•\tHire, coach, and grow the team, with clear expectations and career development for every engineer.<br />•\tDefine the team's metrics and service levels, and improve them release over release.<br />•\tMake the team's decisions data-driven and its quality measurable, and escalate early when risks cross team boundaries.<br />•\tSet the team's roadmap and the structure and mechanisms that deliver it, and negotiate the boundaries of the area with peer teams.<br />•\tBuild the mechanisms and best practices that make the team's work repeatable, measurable, and improving.<br /><br /><br /><br />A day in the life<br />What success looks like in the first twelve months<br />•\tFleet telemetry flowing into one pipeline.<br />•\tTraceability from requirement to release live.<br /><br /><br /><br /><br />About the team<br />D2D Software is an evolving organization of many teams: Software Architecture &amp; Specifications; Software Delivery &amp; Business Ops; Software Integration, Verification &amp; Reliability; DevOps &amp; Release; Satellite Software Development; Ground Software Development; and Customer Software Engineering &amp; Support. Each Director owns business outcomes: delivering the commitments, and the capability and efficiency of their teams. Teams work as internal customers and suppliers with agreed service levels, interfaces are agreed centrally while designs stay local, and engineers are expected to work directly with engineers across every boundary. Milestones are committed deadlines for delivery with quality, not gates to wait on, and every team runs on one toolchain and one system of record. Every measure is derived from the systems of record, never self-reported, and we improve release over release with a target of perfection.</p><h3>Basic qualifications</h3><p>- Bachelor's degree or foreign equivalent in Computer Science, Engineering, Mathematics, or a related field<br />- 5+ years of software development experience<br />- Experience in managing technical teams with significant personnel management experience and examples of developing engineers and building successful teams<br />- Experience establishing workflows, metrics, and service levels for a team, and making data-driven trade-offs between short- and long-term needs<br />- Experience leading a team where the problem and strategy are not yet fully defined, working backwards from the customer<br />- Experience building observability for large fleets or services, including telemetry pipelines and anomaly detection<br />- Experience integrating systems of record for traceability<br />- Experience across the full software development lifecycle, having shipped software and maintained it in production</p><h3>Preferred qualifications</h3><p>- A record of writing clear narratives and running data-driven reviews<br />- Experience with telemetry from embedded devices or satellites<br />- Experience with AI-assisted anomaly triage<br />- Experience managing managers or leading several teams<br />- Experience setting a multi-year direction for an area, designing the team structure and mechanisms to deliver it, and aligning several teams around it<br />- Experience setting strategy where the problem, opportunity, and strategy are not defined, telling one-way from two-way doors, and presenting decisions and strategy narratives to senior leaders across the organization<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Redmond - 184,900.00 - 250,200.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603313/software-development-manager-observability-digital-thread-amazon-leo-d2d-software",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10603810",
+    "slug": "amazon-senior-software-development-engineer-ads-full-funnel-agentic-intelligence-and-mo-10603810",
+    "company": "amazon",
+    "title": "Senior Software Development Engineer, Ads - Full-Funnel Agentic Intelligence & Models (FAIM)",
+    "locations": [
+      "New York, NY, United States",
+      "SEATTLE, WA, United States",
+      "Palo Alto, CA, United States"
+    ],
+    "remote": false,
+    "department": "Software Development",
+    "category": "engineering",
+    "descriptionHtml": "<p>Build intelligent systems that reason, plan and act on behalf of millions of advertisers. This newly formed team is building the next generation of Full Funnel Optimization for Amazon Advertising. It combines large language models, traditional optimization and Amazon's first-party data on shopper behavior and conversion patterns to deliver insights and optimizations that far outperform manual campaign management.<br /><br />The goal is to give millions of sellers and brands the kind of advanced optimization tools that used to be available only through agencies or expensive third-party providers. You'll own the architectural direction for the team's AI systems in an ambiguous space, where both the business problem and the solution approach still need to be defined. The work ranges from guiding less experienced sellers through campaign setup to automatically surfacing optimization opportunities that help advertisers succeed.<br /><br />Key job responsibilities<br />- Own the architectural direction for full funnel optimization systems that combine LLMs, traditional optimization and first-party shopper data, making foundational decisions on how they evolve<br />- Lead the design and delivery of complex end-to-end AI solutions in problem areas where both the business problem and the technical approach need to be defined<br />- Drive the team's engineering strategy and influence the product roadmap, giving context on current and future technology choices<br />- Build agentic capabilities that reason, plan and act for advertisers, from guided campaign setup to automatically surfacing optimization opportunities<br />- Build consensus with stakeholders, scientists and engineering peers across multiple teams, and make strategic recommendations on system architecture and implementation<br />- Mentor engineers and help set the engineering foundations of a newly formed team<br /><br />About the team<br />We're a newly formed team in Amazon Advertising building the next generation of Full Funnel Optimization. We combine large language models, traditional optimization and Amazon's first-party data on shopper behavior and conversion patterns to build intelligent systems that reason, plan and act on behalf of advertisers. Our goal is to give millions of sellers and brands the kind of advanced optimization tools that used to be available only through agencies or expensive third-party providers.</p><h3>Basic qualifications</h3><p>- 5+ years of non-internship professional software development experience<br />- 5+ years of programming with at least one software programming language experience<br />- 5+ years of leading design or architecture (design patterns, reliability and scaling) of new and existing systems experience<br />- Experience as a mentor, tech lead or leading an engineering team</p><h3>Preferred qualifications</h3><p>- 5+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience<br />- Bachelor's degree in computer science or equivalent<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Los Angeles County applicants: Job duties for this position include: work safely and cooperatively with other employees, supervisors, and staff; adhere to standards of excellence despite stressful conditions; communicate effectively and respectfully with employees, supervisors, and staff to ensure exceptional customer service; and follow all federal, state, and local laws and Company policies. Criminal history may have a direct, adverse, and negative relationship with some of the material job duties of this position. These include the duties and responsibilities listed above, as well as the abilities to adhere to company policies, exercise sound judgment, effectively manage stress and work safely and respectfully with others, exhibit trustworthiness and professionalism, and safeguard business operations and the Company’s reputation. Pursuant to the Los Angeles County Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, CA, Palo Alto - 193,300.00 - 261,500.00 USD annually<br />USA, NY, New York - 184,900.00 - 250,200.00 USD annually<br />USA, WA, SEATTLE - 168,100.00 - 227,400.00 USD annually",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10603810/senior-software-development-engineer-ads-full-funnel-agentic-intelligence-models-faim",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "amazon"
   },
   {

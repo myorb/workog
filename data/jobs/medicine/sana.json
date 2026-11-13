@@ -99,7 +99,7 @@
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -1227,7 +1227,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -1511,7 +1511,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T20:08:18.904Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -2054,7 +2054,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T20:08:18.904Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -2076,7 +2076,7 @@
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T20:08:18.904Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -3849,7 +3849,7 @@
     "postedAt": "2026-09-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T20:08:18.904Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "oracle"
   },
   {
@@ -4332,6 +4332,26 @@
     "source": "oracle"
   },
   {
+    "id": "oracle:sana:7265",
+    "slug": "karl-olga-krankenhaus-gmbh-assistenzarzt-m-w-d-fur-die-klinik-fur-innere-medizin-7265",
+    "company": "sana",
+    "employer": "Karl-Olga-Krankenhaus GmbH",
+    "title": "Assistenzarzt (m/w/d) für die Klinik für Innere Medizin",
+    "locations": [
+      "Stuttgart, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Ärztlicher Dienst",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "resident",
+    "descriptionHtml": "<ul>\n <li>medizinisch hochspezialisiertes Arbeitsumfeld mit Weiterentwicklungsmöglichkeiten</li>\n <li>interessanter Arbeitsplatz mit vielseitigen und anspruchsvollen Aufgabengebieten in einem engagierten und motivierten Team</li>\n <li>Vergütung nach TV-Ärzte/VKA, arbeitgeberfinanzierte betriebliche Altersversorgung (ZVK)</li>\n <li>Zusatzleistungen wie Zuschuss zum Deutschlandticket, Corporate Benefits, Firmenradleasing, Angebote des Betrieblichen Gesundheitsmanagements, Fitnessangebote.</li>\n <li>Zugriff auf unsere Online Datenbank „Sana Wissen“  </li>\n <li>Unterstützung in allen Lebenslagen durch den pme Familienservice</li>\n</ul><h3>Ihre Aufgaben</h3><ul>\n <li>Du hast Interesse an einer basisinternistischen Weiterbildung oder hast diese bereits absolviert und strebst die weitere Spezialisierung (Herz-/Gefäßmedizin, Gastroenterologie) an</li>\n <li>Du möchtest dazu beitragen, die Qualität der medizinischen Versorgung unserer Patient:innen gemeinsam in einem dynamischen Team voranzubringen</li>\n <li>Sowohl bei der Diagnostik als auch bei der stationären Versorgung setzen wir auf Dein Können</li>\n <li>Du arbeitest gerne interdisziplinär, bist kollegial und bereit, Wissen zu teilen</li>\n</ul><h3>Ihr Profil</h3><ul><li>Assistenzarzt mit deutscher Approbation und Interesse an einer Ausbildung zum Facharzt für Innere Medizin, Innere Medizin und Kardiologie, Intensivmedizin</li><li>Ausgeprägtes Verantwortungsbewusstsein und Aufgeschlossenheit</li><li>Hoch motivierter Teamplayer, der gerne Neues dazulernt und sein Fachwissen an Lernende weitergibt</li></ul>",
+    "applyUrl": "https://fa-eycl-saasfaeuraprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/de/sites/CX_4025/job/7265",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "oracle"
+  },
+  {
     "id": "oracle:sana:7268",
     "slug": "sana-klinikum-hof-gmbh-facharzt-oberarzt-m-w-d-zentrale-notaufnahme-klinische-akut-und-notfallmedizin-7268",
     "company": "sana",
@@ -4770,6 +4790,8 @@
     "applyUrl": "https://fa-eycl-saasfaeuraprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/de/sites/CX_4025/job/7475",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T20:08:18.904Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "oracle"
   },
   {

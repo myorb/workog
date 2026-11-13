@@ -635,6 +635,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1205658258-S",
     "postedAt": "2026-02-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1910,7 +1912,7 @@
     "postedAt": "2026-09-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2310,6 +2312,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208408322-S",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -2624,6 +2628,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208605424-S",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10000-1208642915-S",
+    "slug": "al-wassiti-gmbh-weiterbildungsassistent-in-arzt-arztin-10000-1208642915-s",
+    "company": "arbeitsagentur",
+    "employer": "Al-Wassiti GmbH",
+    "title": "Weiterbildungsassistent/in (Arzt/Ärztin)",
+    "locations": [
+      "Wittingen, Niedersachsen, Niedersachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Weiterbildungsassistent/in (Arzt/Ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "resident",
+    "descriptionHtml": "<p>Zur Verstärkung unseres Teams in Wittingen suchen wir zum 01.01.2027 eine/n Weiterbildungsassistent/in (m/w/d) für Allgemeinmedizin in Vollzeit oder Teilzeitanstellung. Der genaue Arbeitszeitrahmen kann abgesprochen werden.</p><p>Eine Approbation wird vorausgesetzt.</p><p>Bitte bewerben Sie sich schriftlich oder per E-Mail mit Ihren aussagekräftigen Bewerbungsunterlagen.</p><p>Weitere Informationen finden Sie auf unserer Homepage unter https://al-wassiti.de/zentrum-fuer-allgemeinmedizin.html.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208642915-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3386,7 +3410,7 @@
     "postedAt": "2026-01-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4390,8 +4414,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003230970-S",
     "postedAt": "2026-06-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5677,6 +5699,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003929612-S",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5967,6 +5991,46 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10001-1004001805-S",
+    "slug": "orthopadie-kejo-and-barteczko-berufsausubungsgemeinschaft-facharzt-facharztin-fur-orthopadie-und-unfallchirugie-10001-1004001805-s",
+    "company": "arbeitsagentur",
+    "employer": "Orthopädie Kejo & Barteczko Berufsausübungsgemeinschaft",
+    "title": "Facharzt/Fachärztin für Orthopädie und Unfallchirugie",
+    "locations": [
+      "Münster, Westfalen, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Orthopädie und Unfallchirurgie",
+    "category": "medicine",
+    "specialty": "orthopaedics",
+    "level": "specialist",
+    "descriptionHtml": "<p>**Facharzt für Orthopädie und Unfallchirurgie (m/w/d) in Voll- oder Teilzeit**<br />Wir sind eine etablierte und patientenorientierte Gemeinschaftspraxis für Orthopädie und Unfallchirurgie in Münster. Zur Verstärkung unseres Teams suchen wir zum nächstmöglichen Zeitpunkt eine engagierte fachärztliche Kollegin oder einen Kollegen – gerne auch mit der Perspektive auf eine langfristige Zusammenarbeit.</p><p>**Über uns**<br />Aktuell wird die Praxis von einem erfahrenen Behandler geführt. Unterstützt wird die ärztliche Arbeit von einem eingespielten, herzlichen Praxisteam aus vier Medizinischen Fachangestellten (MFA) und einer Auszubildenden. Wir legen großen Wert auf eine moderne Diagnostik, eine persönliche Atmosphäre und kurzen Entscheidungswegen.</p><p>**Ihre Aufgaben**<br />• Eigenverantwortliche ambulante Betreuung und Behandlung unserer orthopädischen und unfallchirurgischen Patientinnen und Patienten<br />• Durchführung der gängigen konservativen Diagnostik und Therapie (z. B. Sonografie, digitales Röntgen, Infiltrationstherapie, Chirotherapie, Akupunktur)<br />• Enge und kollegiale Zusammenarbeit mit dem Praxisinhaber und dem gesamten Praxisteam<br />• Aktive Mitgestaltung und Weiterentwicklung unseres medizinischen Leistungsspektrums</p><p>**Ihr Profil**<br />• Abgeschlossene Facharztausbildung für Orthopädie und Unfallchirurgie (deutsche Approbation)<br />• Freude an der ambulanten Patientenversorgung sowie eine empathische und kommunikative Art<br />• Wünschenswert sind Zusatzbezeichnungen (z. B. Chirotherapie, Akupunktur) – aber kein Muss<br />• Teamgeist, Zuverlässigkeit und eine strukturierte Arbeitsweise</p><p>**Wir bieten Ihnen**<br />• Geregelte Arbeitszeiten<br />• Eingespieltes Team: Entlastung im Praxisalltag durch vier erfahrene MFAs und eine Auszubildende, die den Rücken freihalten<br />• Attraktive Vergütung: Ein leistungsgerechtes Gehalt plus Umsatzbeteiligung an Privatbehandlungen und Igelleistungen<br />• Moderne Ausstattung: Zeitgemäße Praxisräume und digitale Praxisorganisation</p><p>**Haben wir Ihr Interesse geweckt?**<br />Dann freuen wir uns auf ein unverbindliches Kennenlernen! Senden Sie Ihre Bewerbungsunterlagen (Lebenslauf, Zeugnisse) bitte per E-Mail an om-muenster@gmx.net oder melden Sie sich vorab telefonisch unter 0251 776988.</p><p>Orthopädische Medizin Münster</p><p>Friedrich-Ebert-Straße 181</p><p>48153 Münster</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004001805-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1004002259-S",
+    "slug": "medizinischer-dienst-rlp-facharztinnen-und-facharzte-aller-operativer-fachgebiete-m-w-d-kennziffer-261105-10001-1004002259-s",
+    "company": "arbeitsagentur",
+    "employer": "Medizinischer Dienst RLP",
+    "title": "Fachärztinnen und Fachärzte aller operativer Fachgebiete (m/w/d) | Kennziffer: 261105",
+    "locations": [
+      "Trier, Rheinland-Pfalz, Germany"
+    ],
+    "remote": true,
+    "department": "Facharzt/-ärztin - Allgemeinchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>**Fachärztinnen und Fachärzte aller operativer Fachgebiete (m/w/d) |**</p><p>**Kennziffer: 261105**</p><p>**Beschäftigung:** Teil – oder Vollzeit</p><p>**Mobiles Arbeiten:** möglich</p><p>**Standort:** Region **West** /Trier</p><p>**Eintrittsdatum**: ab 01.04.2027</p><p>Die Stelle ist in **Vollzeit/Teilzeit**, **unbefristet** zu besetzen.</p><p>**Ihr Job bei uns:**</p><ul><li>Ihr Hauptaufgabengebiet wird die sozialmedizinische Beratung und Begutachtung sein</li></ul><p>**Ihr Profil:**</p><ul><li>Eine abgeschlossene Facharztausbildung mit fundierter klinischer Erfahrung und Interesse an aktuellen medizinischen Fach- und Versorgungsthemen</li><li>Gute IT-Kenntnisse und sicherer Umgang mit moderner Bürokommunikation</li><li>Idealerweise Kenntnisse im deutschen Gesundheitswesen</li><li>Teamgeist, Organisationstalent, Sorgfalt, Engagement und soziale Kompetenz</li></ul><p>**Darauf können Sie sich freuen:**</p><ul><li>**Attraktive Vergütung:** Vergütung nach dem Tarifvertrag der Medizinischen Dienste (VG 13 TV MD) nebst den üblichen Sozialleistungen im Öffentlichen Dienst</li></ul><p>inkl. 13. Monatsgehalts, zusätzliche Altersvorsorge (VBL), Kinderzuschlag bei Anspruchsvoraussetzung, Vermögenswirksame Leistungen</p><ul><li>**Work-Life-Balance:**  Freie Wochenenden, Möglichkeit zum mobilen Arbeiten, flexible Arbeitszeiten (Gleitzeitkonto) 30 Tage Urlaub (5-Tage-Woche), freier Tag an Heiligabend und Silvester, zusätzlich ein freier Tag an Fasching</li><li>**Mitarbeitendenvorteile:** Rabatte durch Corporate Benefits, Zuschuss zum Deutschlandticket als Jobticket, Mitarbeitendenveranstaltungen</li><li>**Wissensaufbau:** Persönliche und intensive Einarbeitung in ein interessantes sowie spannendes Aufgabengebiet, mit Angeboten zur beruflichen Fort- und Weiterbildung</li><li>**Teamarbeit:** Zusammenarbeit in einem engagierten und interdisziplinären Team</li></ul><p>**Das sind wir**</p><p>Mit rund 700 Mitarbeitenden sorgen wir durch Beratung und Begutachtung für Qualität und Fairness im Gesundheitswesen und in der Pflege. An mehreren Standorten in Rheinland-Pfalz tragen wir dazu bei dass Menschen die Unterstützung erhalten, die sie brauchen.</p><p>**Werden Sie Teil unseres Teams und bewerben Sie sich jetzt!**</p><p>Lassen Sie uns Ihre Unterlagen über „Onlinebewerbung“ als PDF-Dateien zukommen:</p><ul><li>Anschreiben</li><li>Lebenslauf</li><li>Berufsurkunden</li><li>Prüfungs- und Arbeitszeugnisse</li></ul><p>Spätmöglichster Bewerbungseingang ist der **09.12.2026**</p><p>Bei gleicher Qualifikation und Eignung fördern wir die Beschäftigung schwerbehinderter Menschen.</p><p>Wir weisen darauf hin, dass wir uns übersandte Bewerbungsunterlagen nicht zurücksenden.</p><p>**Haben Sie noch Fragen?**</p><p>Ihre Fragen beantworten Ihnen gerne die Teamleitung Medizin der Region West, Herr Dr. Hahn, unter der Telefon-Nr.: 0651/93831-43.</p><p>*Bitte beachten Sie, dass die Kommunikation per Email in der Regel unverschlüsselt erfolgt. Daher ist nicht auszuschließen, dass an der Übertragung beteiligte Stellen Inhalte einer Email zur Kenntnis nehmen können. Nutzen Sie deshalb zur Übermittlung von vertraulichen Informationen die Möglichkeit der Verschlüsselung. Näheres zu den Verschlüsselungsmöglichkeiten finden Sie unter* [*https://www.md-rlp.de/karriere/stellenangebote/*](https://www.md-rlp.de/karriere/stellenangebote/) *am Ende der Seite.*</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004002259-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11790-1524465-S",
     "slug": "evangelische-stiftung-alsterdorf-evangelisches-krankenhaus-alsterdorf-ggmbh-oberarzt-oberarztin-fur-psychiatrie-und-psychotherapie-11790-1524465-s",
     "company": "arbeitsagentur",
@@ -6164,6 +6228,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/dd813ba4-b56b-3dc9-b1b4-928eb03c96bf",
     "postedAt": "2026-07-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6284,6 +6350,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/df3b39ab-8cc2-3537-b1f6-f5e7f05a98ac",
     "postedAt": "2026-10-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6801,6 +6869,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:11956-3006161794438001-S",
+    "slug": "sachsisches-krankenhaus-altscherbitz-schkeuditz-sachsisches-krankenhaus-altscherbitz-schkeuditz-oberarzt-fur-anasthesiologie-m-w-11956-3006161794438001-s",
+    "company": "arbeitsagentur",
+    "employer": "Sächsisches Krankenhaus Altscherbitz – Schkeuditz",
+    "title": "Sächsisches Krankenhaus Altscherbitz – Schkeuditz: Oberarzt für Anästhesiologie (m/w/d)",
+    "locations": [
+      "Schkeuditz, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Anästhesiologie",
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "level": "senior",
+    "descriptionHtml": "<p>Ihre Rolle – mehr als nur Dienst</p><p>In dieser Position wirken Sie maßgeblich am Aufbau und an der Entwicklung der Intensivstation mit:</p><ul><li>Konzeptionelle Mitgestaltung der intensivmedizinischen Versorgungsstruktur</li><li>Aufbau und Weiterentwicklung von Beatmungsplätzen einschließlich Prozess- und Logistikgestaltung</li><li>Definition medizinischer Standards und qualitätssichernder Abläufe</li><li>Eigenverantwortliche Durchführung komplexer intensivmedizinischer Diagnostik und Therapie</li><li>Mitgestaltung interdisziplinärer Zusammenarbeit</li><li>Medizinische und organisatorische Verantwortung für definierte Funktionsbereiche</li><li>Beteiligung an Hintergrund- und Bereitschaftsdiensten</li><li>Aktive Mitwirkung in der ärztlichen Aus- und Weiterbildung</li></ul><p>Ihr Profil</p><ul><li>Gültige Approbation zur Berufsausübung in Deutschland</li><li>Facharztanerkennung für Anästhesiologie</li><li>Zusatzbezeichnung Intensivmedizin oder fundierte intensivmedizinische Erfahrung</li><li>Idealerweise weitere Zusatzqualifikationen (z. B. Notfallmedizin, Palliativmedizin, Schmerztherapie, Geriatrie)</li><li>Freude an strukturierter Aufbauarbeit</li><li>Verantwortungsbewusstsein, Entscheidungsfähigkeit und Teamorientierung</li></ul><p>Unser Angebot</p><ul><li>Unbefristete Anstellung in Teil- oder Vollzeit (30–40 Wochenstunden)</li><li>Tarifgerechte Vergütung nach dem Tarifvertrag der Ärzte am SKH</li><li>Elektronische Arbeitszeiterfassung und planbare Dienststrukturen</li><li>Flache Hierarchien und direkte Kommunikationswege</li><li>Unterstützung bei internen und externen Fortbildungen</li><li>Möglichkeit zusätzlicher Einnahmen durch Nebentätigkeiten (Gutachten, Lehre)</li><li>Zuschuss zum Deutschlandticket / Jobticket</li><li>Angebote im Rahmen der betrieblichen Gesundheitsförderung</li></ul><p>Ihre Chance</p><p>Sie übernehmen eine Schlüsselrolle im Aufbau einer neuen intensivmedizinischen Einheit und prägen nachhaltig deren Struktur, Qualität und Entwicklung.<br />Wenn Sie medizinische Expertise mit Gestaltungswillen verbinden, freuen wir uns auf Ihre Bewerbung.</p><p>Schlagworte: Krankenhaus, Oberarzt, Anästhesie, Arzt, Klinik, Assistenzarzt, Anästhesiologie, Geriatrie, assistant-doctor, Rettungssanitäter, Notfallsanitäter, Empfehlungsbund<br />Quelle/Bewerbung via: [https://www.empfehlungsbund.de/jobs/300616/oberarzt-fuer-anaesthesiologie-m-strich-w-strich-d](https://www.empfehlungsbund.de/jobs/300616/oberarzt-fuer-anaesthesiologie-m-strich-w-strich-d#apply_form)</p><p>#### Kurzinfo zum Unternehmen</p><p>Das Sächsische Krankenhaus (SKH) Altscherbitz in Trägerschaft des sächsischen Staatsministeriums für Soziales und Gesellschaftlichen Zusammenhalt leistet heute als Fachkrankenhaus eine Patientenversorgung in den Fachbereichen Psychiatrie/Psychotherapie/Psychosomatik, Neurologie und Forensische Psychiatrie.</p><p>Mit einer Gesamtbettenzahl von 343 Betten sowie 80 tagesklinischen Plätzen an drei Standorten, zwei Medizinischen Versorgungszentren, einer Neurologischen Notfallambulanz und einer Psychiatrischen Institutsambulanz mit mehreren Außenstellen sowie verschiedenen Diagnostik- und Funktionsbereichen ist eine wohnortnahe Versorgung von Patienten aus Nordsachsen und Leipzig möglich.</p><p>Im Mittelpunkt der täglichen Arbeit steht die ganzheitliche Betrachtung und Versorgung aller Patienten. Dabei geht es nicht nur um die Behandlung von Diagnosen, sondern um den Patienten als gesamten Menschen und die Berücksichtigung der Individualität jedes Einzelnen, unabhängig von der sozialen Herkunft, der Weltanschauung und der Nationalität. Unser multiprofessionelles Team aus rund&amp;nbsp; 600&amp;nbsp; Mitarbeiterinnen und Mitarbeitern besteht aus&amp;nbsp; Ärzten, Pflegepersonal, Beschäftigten der diagnostisch-therapeutischen und der technischen Dienste sowie der Verwaltung. Unser Personal arbeitet in modern ausgestatteten Funktionsbereichen (Radiologie, Labor, Physiotherapie, Elektrophysiologie). Das SKH Altscherbitz fühlt sich seiner 145-jährigen Tradition ebenso verbunden wie den Aufgaben einer modernen Klinik.</p><p>Mindestsprachanforderung Deutsch ist für alle Stellen fließend bis verhandlungssicher (C1, DSH).</p>",
+    "applyUrl": "https://www.empfehlungsbund.de/job/300616",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11956-3037081789336801-S",
     "slug": "haema-gmbh-haema-gmbh-arzt-m-w-d-in-dresden-11956-3037081789336801-s",
     "company": "arbeitsagentur",
@@ -6944,7 +7032,7 @@
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6966,7 +7054,27 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12288-4996059589-S",
+    "slug": "spz-gemeinnutzige-gmbh-leverkusen-facharzt-in-psychiatrie-und-psychotherapie-12288-4996059589-s",
+    "company": "arbeitsagentur",
+    "employer": "SPZ-gemeinnützige GmbH, Leverkusen",
+    "title": "Fachärzt*in Psychiatrie und Psychotherapie",
+    "locations": [
+      "Leverkusen, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "specialist",
+    "descriptionHtml": "<p>Über uns Sozialpsychiatrisches Zentrum (SPZ) Leverkusen Seit fast 40<br />Jahren bieten wir, die SPZ-gemeinnützige GmbH, mit inzwischen 75<br />Mitarbeitenden an 6 Standorten in Leverkusen kompetente Hilfen für<br />Menschen mit psychischen Problemen. Die Sozialpsychiatrische Ambulanz<br />ist bei psychischen Problemen die erste Anlaufstelle für Leverkusener<br />Bürgerinnen und Bürger. Sie verbindet die Aufgaben des<br />Sozialpsychiatrischen Dienstes der Stadt Leverkusen mit dem Angebot<br />einer Kontakt- und Beratungsstelle. Für unsere Sozialpsychiatrische<br />Ambulanz (Sozialpsychiatrischer Dienst) suchen wir eine*n Fachärzt*in<br />Psychiatrie und Psychotherapie für 28 Std./Woche . Ihre Aufgaben<br />Beratung von Menschen mit psychischen Erkrankungen und Angehörigen im<br />Rahmen von Sprechstunden Hausbesuche zur psychiatrischen Intervention<br />bei akuten Krisensituationen Erstellung von ärztlichen Zeugnissen im<br />Rahmen von Betreuungs- und Unterbringungsverfahren Kooperation im<br />Leverkusener Netzwerk (z.B. PSAG Leverkusen) psychoedukative<br />Veranstaltungen Unsere Anforderungen eine Facharztanerkennung im<br />Fachgebiet Psychiatrie und Psychotherapie oder in einem vergleichbaren<br />Gebiet mit Weiterbildung/Erfahrung im Bereich Psychiatrie Freude an<br />der Arbeit mit Menschen und im multiprofessionellen Team die<br />Fähigkeit, offen, wertschätzend und konstruktiv zu kommunizieren<br />eine strukturierte Arbeitsweise Lust auf vielseitige Herausforderungen<br />Das bieten wir Ihnen die Möglichkeit, unsere sozialpsychiatrischen<br />Angebote an zentraler Stelle mitzugestalten ein engagiertes,<br />erfahrenes und multiprofessionelles Team regelmäßigen kollegialen<br />Austausch, Supervision und Fortbildungen Tarifvertragliche Vergütung<br />mit Jahressonderzuwendung 30 Urlaubstage und Brauchtumstag einen gut<br />ausgestatteten Arbeitsplatz die Nutzung von JobTicket und JobRad<br />Kontakt Weitere Informationen unter www.spzleverkusen.de Bitte richten<br />Sie Ihre Bewerbung bis zum 30.11.2026 an: bewerbungen@spzleverkusen.de<br />oder an SPZ Leverkusen Am Stadtpark 141 51373 Leverkusen</p>",
+    "applyUrl": "https://www.persy.jobs/persy/l/job-jqoef-b",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7227,8 +7335,8 @@
     "employer": "LUP-Klinikum Helene von Bülow gGmbH",
     "title": "Fachärztin / Facharzt für Anästhesie und Intensivmedizin (m/w/d)",
     "locations": [
-      "Hagenow, Mecklenburg-Vorpommern, Germany",
-      "Ludwigslust, Mecklenburg, Mecklenburg-Vorpommern, Germany"
+      "Ludwigslust, Mecklenburg, Mecklenburg-Vorpommern, Germany",
+      "Hagenow, Mecklenburg-Vorpommern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Anästhesiologie",
@@ -7418,6 +7526,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12541-93IRQH1UXPBLK77Y-S",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12541-QGBJS7CL4F1XJDQ3-S",
+    "slug": "maschinenring-personaldienste-gmbh-oberarzt-m-w-d-kinderchirurgie-12541-qgbjs7cl4f1xjdq3-s",
+    "company": "arbeitsagentur",
+    "employer": "Maschinenring Personaldienste GmbH",
+    "title": "Oberarzt (m/w/d) Kinderchirurgie",
+    "locations": [
+      "Landshut, Isar, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "descriptionHtml": "<p>Oberarzt (m/w/d) Kinderchirurgie</p><p>Standort: Landshut</p><p>Oberarzt (m/w/d) Kinderchirurgie - L3<br />Als Mitarbeiter (m/w/d) für unseren Kunden in Landshut (L3)</p><p>Unser Angebot:<br />- Eine attraktive Vergütung<br />- Förderung interner und externer Fort- und Weiterbildungen<br />- Gegebenenfalls Weiterbildung im Bereich der speziellen pädiatrischen Intensivmedizin bzw. Intensivmedizin<br />- Eine eigene Kindertagesstätte</p><p>Unsere Erwartungen:<br />- Umfassende kinderchirurgische Versorgung von Früh- und Neugeborenen sowie Kindern und Jugendlichen bis zum 18. Lebensjahr<br />- Mitwirkung beim Auf- bzw. Ausbau eines eigenständigen kinderchirurgischen Schwerpunktes<br />- Mitarbeit an der Entwicklung neuer Behandlungskonzepte<br />- Enge fachübergreifende Zusammenarbeit mit den Bereichen Pädiatrie und Anästhesie</p><p>Kenntnisse und Fähigkeiten:<br />- Breite Berufserfahrung im Bereich der Kinderchirurgie<br />- Interesse an der fachlichen Weiterentwicklung und am Aufbau eigener Schwerpunkte<br />- Interesse am interdisziplinären fachlichen Austausch<br />- Bereitschaft zur kontinuierlichen Fort- und Weiterbildung</p><p>Hier beginnt Zusammenarbeit!<br />Wir freuen uns auf Ihre Bewerbung und stehen Ihnen für Fragen jederzeit zur Verfügung! Die Position bietet Ihnen ein vielseitiges Aufgabengebiet in einem modernen medizinischen Umfeld mit sehr guten beruflichen Perspektiven!</p><p>Wir von Maschinenring Medical begleiten und unterstützen Sie auf Ihrem beruflichen Weg! Wir nehmen uns Zeit für Ihre Fragen, beraten Sie transparent und unterstützen Sie beim Berufseinstieg, beim beruflichen Wechsel oder beim Wiedereinstieg!<br />Kontaktieren Sie uns - wir begleiten Sie bei Ihrem nächsten beruflichen Schritt!</p><p>Andrea Dittmann-Bienefeld<br />Büro Freising/Erding ● Degernpoint E3 ● 85368 Moosburg<br />eMail: willkommen@maschinenringe.de<br />Telefon: 08431 53 88 – 130</p><p>Angela Jakubetz<br />Büro Massing ● Marktplatz 9 ● 84323 Massing<br />eMail: willkommen@maschinenringe.de<br />Telefon: 08431 53 88 - 130</p><p>www.maschinenring-medical.de<br />Art(en) des Personalbedarfs: Neubesetzung</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12541-QGBJS7CL4F1XJDQ3-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8292,6 +8420,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Vertretungsarzt-Facharzt-D-Fuer-Neurologie-1289883?cp=BA",
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8662,6 +8792,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Arzt-D-In-Der-Klinik-Fuer-Haematolgie-Onkologie-Un-1326217?cp=BA",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9264,6 +9396,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12951-1892efc8-02f5-4a19--S",
+    "slug": "klinikum-ernst-von-bergmann-ggmbh-assistenzarzt-m-w-d-urologie-12951-1892efc8-02f5-4a19-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Ernst Von Bergmann gGmbH",
+    "title": "Assistenzarzt (m/w/d) Urologie",
+    "locations": [
+      "Potsdam, Brandenburg, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "urology",
+    "level": "resident",
+    "descriptionHtml": "<p>Wir überzeugen Sie mit:✓ einem attraktiven Arbeitsplatz mit einem angenehmen und kollegialen Arbeitsklima✓ moderner und innovativer Medizin mit interessanten Aufgaben in einem fachlich gut ausgebildeten Team✓ weitreichenden internen und externen Fortbildungsmöglichkeiten ✓ Raum für Eigenverantwortlichkeit und aktive Mitgestaltung✓ Vergütung gemäß TV-Ärzte/VKA (Entgeltgruppe I), betrieblicher Altersvorsorge sowie Jahressonderzahlungen✓ zentraler Lage und guter Verkehrsanbindung an einem attraktiven Standort✓ Rotation Praxis für Urologie Poliklinik und anästhesiologische Intensivmedizin✓ Sport- und Präventionsangeboten<br />*<br />Deshalb passen Sie zu uns:✓ Sie sind approbierter Arzt (m/w/d) mit Interesse an der Weiterbildung zum Facharzt (m/w/d) für Urologie✓ Sie arbeiten selbständig und strukturiert mit viel Eigeninitiative und einem hohen Verantwortungsbewusstsein✓ Sie bringen eine ausgeprägte Sozialkompetenz sowie eine gute Kommunikations- und Teamfähigkeit mit✓ Sie begegnen unseren Patienten und deren Angehörigen mit Kompetenz und Empathie✓ Verantwortungsbewusstsein und Zuverlässigkeit runden Ihr Profil ab</p><p>Sie verstärken uns hier:✓ umfassende Behandlung und Betreuung von Patienten (w/w/d) unter fachärztlicher Anleitung✓ Teilnahme am Dienstsystem der Klinik✓ Mitarbeit in der studentischen Lehre im Rahmen der Kooperation mit der HMU Health an Medical University Potsdam</p><p>Die Stelle ist zu Zwecken der Facharztweiterbildung befristet.</p>",
+    "applyUrl": "https://www.heyjobs.co/de-de/jobs/1892efc8-02f5-4a19-b0b7-e7f3b2953e3e?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12951-6737b7fa-a355-45c5--S",
     "slug": "bundesagentur-fur-arbeit-leitende-arztin-leitender-arzt-eines-agenturverbundes-w-m-d-vollzeit-teilzeit-im-12951-6737b7fa-a355-45c5-s",
     "company": "arbeitsagentur",
@@ -9354,6 +9506,26 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/ab99e4d8-d101-4824-a59e-b611e2718201?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12951-bf21f0f1-f3f1-466f--S",
+    "slug": "klinikum-kassel-gmbh-oberarzt-m-w-d-fur-frauenheilkunde-und-geburtshilfe-12951-bf21f0f1-f3f1-466f-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Kassel GmbH",
+    "title": "Oberarzt (m/w/d) für Frauenheilkunde und Geburtshilfe",
+    "locations": [
+      "Kassel, Hessen, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Frauenheilkunde und Geburtshilfe",
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "level": "senior",
+    "descriptionHtml": "<p>zum nächstmöglichen Zeitpunkt, in Voll- oder Teilzeit, unbefristet.<br />Unsere Klinik für Frauenheilkunde und Geburtshilfe ist eine hochmoderne Klinik, in der wir jährlich ca. 7.000 Patientinnen stationär behandeln und rund 2.500 Kindern helfen, das Licht der Welt zu erblicken. Die Frauenklinik verfügt über eine Tagesklinik mit 2.000 Chemotherapiezyklen pro Jahr. Zusätzlich bieten wir schwerpunktmäßige Behandlungsmöglichkeiten in unseren vier zertifizierten Zentren: Perinatal-Zentrum als einziges Level I-Zentrum in Nordhessen, Interdisziplinäres Brustzentrum, Interdisziplinäres Beckenbodenzentrum und Onkologisch-gynäkologisches Zentrum.<br />Aufgabenschwerpunkte<br />✓ Verantwortung für 2.500 Geburten jährlich und Leitungsfunktion im Kreißsaal Team sowie der geburtshilflichen Station ✓ Einbringung in die Organisation der Geburtshilfe✓ Leitung der Assistenzärzte in Weiterbildung und Mitwirkung im Studentenunterricht✓ Aktive Teilnahme an der Weiterentwicklung der Klinik✓ Betreuung von Forschungsprojekten✓ Teilnahme am Bereitschaftsdienst der Assistenz- und Fachärzt*innen</p><p>Qualifikationsprofil<br />✓ Facharzt (m/w/d) in Frauenheilkunde und Geburtshilfe✓ Erfahrung in der Geburtshilfe und Pränatalmedizin✓ Interesse an Geburtshilfe und pränataler Diagnostik, DEGUM I/II✓ Führungsstärke und Erfahrung in der Mitarbeiterführung✓ Teamfähigkeit und strukturierte Arbeitsweise</p><p>Benefits<br />✓ Vergütung nach TV-Ärzte/VKA, ergänzt durch eine betriebliche Altersversorgung✓ hervorragende Entwicklungsmöglichkeiten✓ weitere Vorteile wie unseren Zuschuss zum Deutschlandticket, Radleasing, unsere Angebote zur Vereinbarkeit von Beruf und Familie sowie unser betriebliches Gesundheitsmanagement unter Was wir bieten | Gesundheit Nordhessen.</p><p>Ansprechpartner für Rückfragen</p><p>Prof. Dr. Thomas DimpflChefarzt 0561 980 - 3040</p>",
+    "applyUrl": "https://www.heyjobs.co/de-de/jobs/bf21f0f1-f3f1-466f-ad03-7a78d0abc255?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9732,6 +9904,8 @@
     "applyUrl": "https://www.jobexport.de/job/5272236.html?exp=81&cid=00a5de4b-aa60-4577-a67a-26b2dea84060",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9874,6 +10048,8 @@
     "applyUrl": "https://www.jobexport.de/job/5272243.html?exp=81&cid=70386d83-28ce-4405-bc9c-c9952a21f046",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9894,6 +10070,8 @@
     "applyUrl": "https://www.jobexport.de/job/5272242.html?exp=81&cid=af664302-ea5b-49b7-a542-2f33871d7dcd",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10361,7 +10539,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10482,6 +10660,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14246-k24007.8660-5-S",
     "postedAt": "2026-09-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10542,6 +10722,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:14537-00066605c04001-S",
+    "slug": "rkh-regionale-kliniken-holding-und-services-gmbh-assistenzarzt-m-w-d-gynakologie-und-geburtshilfe-14537-00066605c04001-s",
+    "company": "arbeitsagentur",
+    "employer": "RKH Regionale Kliniken Holding und Services GmbH",
+    "title": "Assistenzarzt (m/w/d) Gynäkologie und Geburtshilfe",
+    "locations": [
+      "Bietigheim-Bissingen, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "level": "resident",
+    "descriptionHtml": "<p>Mein Berufsweg. Meine Ziele.</p><p>RKH Gesundheit - größter kommunaler Anbieter von Gesundheitsleistungen in Baden-Württemberg.</p><p>Wir suchen ab sofort für unsere Klinik für Frauenheilkunde und Geburtshilfe der RKH Kliniken Ludwigsburg-Bietigheim gGmbH in Bietigheim-Bissingen</p><p>Assistenzarzt (m/w/d) Gynäkologie und Geburtshilfe</p><p>Vertragslaufzeit: befristet in Vollzeit 100%</p><p>Unser Leistungsspektrum:</p><p>Unsere Kliniken für Frauenheilkunde und Geburtshilfe mit angeschlossenem MVZ-Sitz bieten an den beiden Standorten Ludwigsburg und Bietigheim das gesamte Leistungsspektrum über alle Bereiche der konservativen und operativen Gynäkologie, sowie der gynäkologischen Onkologie an. Das operative Spektrum der Frauenheilkunde erstreckt sich von der allgemeinen Gynäkologie mit Schwerpunkt Myomtherapie über die onkologische Chirurgie, der Beckenbodenchirurgie, dem ambulanten Operieren bis hin zur Senologie. Unter dem Motto: \"Zwei Standorte - eine Mission\", erfolgte eine standortspezifische Schwerpunktbildung, die es uns ermöglicht, unsere Expertise in der Versorgung der Patienten und Patientinnen bestmöglich einzubringen.</p><p>Ihre Aufgaben:</p><ul><li>Patienten­betreuung unter Anleitung in der Gynäkologie und Geburtshilfe</li><li>Assistenz bei operativen Eingriffen</li><li>Duchführung von Operationen unter Anleitung gemäß Ausbildungsstand</li><li>Teilnahme an Ruf- und Bereitschaftsdiensten</li></ul><p>Ihr Profil:</p><ul><li>Deutsche Approbation sowie sehr gute Deutschkenntnisse in Wort und Schrift (mindestens C1-Medizin / Fachsprachenprüfung)</li><li>Großes Interesse an unseren vielseitigen Fachgebieten der Frauenheilkunde und Geburtshilfe</li><li>Sehr gute kommunikative Fähigkeiten und patientenorientiertes Vorgehen</li><li>Teamorientierte Zusammenarbeit mit allen Berufsgruppen</li><li>Kollegialität, hohes Engagement und Verantwortungsbewusstsein runden Ihr Profil ab</li><li>Nachweis der vollständigen Masernimpfung oder der Masernimmunität gemäß Infektionsschutzgesetz</li></ul><p>Unser Angebot:</p><ul><li>Die Eingruppierung erfolgt bei Vorliegen aller persönlichen und tarifrechtlichen Voraussetzungen in die Entgeltgruppe EG I TV-Ärzte VKA</li><li>Hinzu kommen Zulagen bzw. Sozialleistungen des öffentlichen Dienstes, eine betriebliche Altersvorsorge sowie ggf. weitere, unstete Vergütungen</li><li>Eine interessante und abwechslungsreiche Tätigkeit in einem kollegialen Team mit angenehmer Arbeitsatmosphäre</li><li>Sie investieren Ihr Know How in unsere RKH Kliniken, wir investieren in Ihre Karriere</li></ul><p>Ihre Benefits:</p><ul><li>Karriere: zahlreiche Fort- und Weiterbildungsmöglichkeiten und RKH Simulationszentrum</li><li>Familie: individuelle Teilzeitmodelle, flexible Arbeitszeiten, Unterstützung bei der Suche von Wohnraum und Kinderbetreuung</li><li>Gesundheit: vielfältige Sport-, Beratungs- und Gesundheitsangebote, kostengünstige Krankenzusatzversicherung mit Status eines Wahlleistungspatienten</li><li>Vorsorge: betriebliche Altersvorsorge und Zeitwertkonten</li><li>Verpflegung: preisermäßigte Speisemöglichkeit vor Ort</li><li>Mobilität: Jobticket mit Zuschuss, Förderung der Fahrradnutzung, Jobrad-Leasing</li><li>Vergünstigungen: Mitarbeiter-Rabatte bei regionalen Firmen</li></ul><p>Ihre Ansprechpartner:</p><p>Fachspezifische Informationen erhalten Sie telefonisch: Dr. med. Jens-Paul Seldte, Telefon: 07142/79-55201</p><p>Bei Fragen zum Bewerbungsverfahren wenden Sie sich bitte an unser Recruiting-Team: Naomi Üzel, Telefon: 07141-99-81558</p><p>https://www.rkh-karriere.de</p><p>Ihre Bewerbung:</p><p>Wir freuen uns auf Ihre aussagekräftige online‑Bewerbung unter Angabe des möglichen Eintrittstermins.</p><p>Die RKH Gesundheit fördert die Gleichstellung aller Mitarbeitenden und begrüßt deshalb Ihre Bewerbung, unabhängig von Herkunft, Alter, Hautfarbe, Weltanschauung, Religion, Behinderung oder sexueller Identität. Schwerbehinderte Bewerberinnen und Bewerber werden bei gleicher Eignung bevorzugt.</p><p>veröffentlicht am: 12.11.2026</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14537-00066605c04001-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:14537-000666054b1001-S",
     "slug": "rkh-regionale-kliniken-holding-und-services-gmbh-facharzt-m-w-d-fur-anasthesiologie-14537-000666054b1001-s",
     "company": "arbeitsagentur",
@@ -10580,7 +10780,7 @@
     "postedAt": "2026-05-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10601,7 +10801,7 @@
     "postedAt": "2026-05-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11641,7 +11841,7 @@
     "level": "resident",
     "descriptionHtml": "<p>Unser Fliedner Krankenhaus  in Ratingen braucht Sie:</p><p>Assistenzarzt für Psychiatrie und Psychotherapie  (m/w/div)</p><p>in Voll- oder Teilzeit</p><p>Wo wir Ihre Hilfe brauchen:</p><p>Sie sind an modernsten Therapieformen genauso interessiert wie an den unterschiedlichen Menschen und ihren Schicksalen.</p><ul><li>Mit Ihrem ärztlichen Wissen und Können verhelfen Sie Ihren Patient:innen freundlich und respektvoll zu guten Behandlungsverläufen und -ergebnissen. Sie haben Freude an der Behandlung psychisch erkrankter Menschen und eine empathische, patientenorientierte Grundhaltung.</li></ul><ul><li>Sie übernehmen die stationsärztliche Versorgung unserer Patienten und nach entsprechender Qualifizierung können Sie auch in unserer psychiatrischen Institutsambulanz mitarbeiten.</li></ul><ul><li>Dank Ihrer kommunikativen und sozialen Kompetenz fällt Ihne die Arbeit im interdisziplinären Team leicht.</li></ul><ul><li>Sie zeigen Interesse am Aus- und Aufbau innovativer Versorgungsstrukturen und an konzeptionell gestaltender Arbeit sowie eine zielorientierte Arbeitsweise im Hinblick auf eine dynamische Weiterentwicklung der Klinik.</li></ul><p>Worauf Sie sich verlassen können:</p><p>Bei uns stehen Wertschätzung, Offenheit, Fairness und Förderung an erster Stelle. Uns ist wichtig, gemeinsam nach tragfähigen Lösungen für alle zu suchen. Denn das ist unser Ziel!</p><ul><li>Wir bieten neben einer vollumfänglichen Weiterbildung im Bereich Psychiatrie und Psychotherapie eine attraktive Vergütung in Anlehnung an den AVR DD plus großzügige Sonderleistungen wie Jahressonderzahlung, Kinderzuschlag, betriebliche Altersvorsorge und weitere Vorteile wie z. B. Einkaufsrabatte, günstige Veranstaltungstickets und Fahrradleasing.</li></ul><ul><li>Um Ihr Privat- und Familienleben genießen zu können, bieten wir Ihnen Kernarbeitszeiten wochentags von 8:00 -16:30 Uhr und Planungssicherheit bei den Bereitschaftsdiensten.</li></ul><ul><li>Wir unterstützen Sie mit Fort- und Weiterbildungen, damit Sie mit uns wachsen können.</li></ul><ul><li>Wir pflegen ein angenehmes Betriebsklima und familiären Umgang, damit Sie jeden Tag gerne zu uns kommen.</li></ul><ul><li>Wir schätzen Ihre Fähigkeiten und bieten einen sicheren Arbeitsplatz in einem großen Netzwerk.</li></ul><p>Suchen Sie eine neue Herausforderung und haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Ihre Bewerbung! Und auf Sie!</p>",
     "applyUrl": "https://jobs4us.de/jobad/assistenzarzt-psychiatrie-psychotherapie-_dqhhv1",
-    "postedAt": "2026-11-01T00:00:00.000Z",
+    "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "source": "arbeitsagentur"
   },
@@ -12829,7 +13029,7 @@
     "employer": "Verein Oberlinhaus gGmbH",
     "title": "Stationsarzt (gn*) Rehaklinik",
     "locations": [
-      "Potsdam, Brandenburg, Germany"
+      "Bad Belzig, Brandenburg, Germany"
     ],
     "remote": false,
     "department": "Stationsarzt/-ärztin",
@@ -12944,6 +13144,8 @@
     "applyUrl": "https://helixjobs.com/_/jobad?prj=1569p125264&source=ba",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12965,7 +13167,7 @@
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13155,7 +13357,7 @@
     "postedAt": "2026-08-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13467,7 +13669,7 @@
     "postedAt": "2026-08-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14045,6 +14247,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20456-2254861-S",
     "postedAt": "2026-05-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T17:14:19.908Z",
+    "lastSeenAt": "2026-11-12T05:03:02.950Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -14260,7 +14464,7 @@
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14466,6 +14670,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/21205-16720540-S",
     "postedAt": "2026-09-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:21306-1031602-S",
+    "slug": "evangelisches-klinikum-gelsenkirchen-gmbh-leitender-oberarzt-m-w-d-fur-die-klinik-fur-allgemein-und-viszeralchirurgie-21306-1031602-s",
+    "company": "arbeitsagentur",
+    "employer": "Evangelisches Klinikum Gelsenkirchen GmbH",
+    "title": "Leitender Oberarzt (m/w/d) für die Klinik für Allgemein- und Viszeralchirurgie",
+    "locations": [
+      "Gelsenkirchen, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "descriptionHtml": "<p>Chirurgie gestalten. Verantwortung übernehmen. Zukunft entwickeln.</p><p>Die Allgemein- und Viszeralchirurgie bedeutet für Sie mehr als operative Medizin – sie ist Verantwortung, Führung und kontinuierliche Weiterentwicklung? Dann kommen Sie in ein Team, das fachliche Exzellenz, moderne Chirurgie, kollegiale Zusammenarbeit und menschliche Nähe verbindet.</p><p>Sie möchten Ihre operative und fachliche Expertise nicht nur in die Versorgung unserer Patienten einbringen, sondern auch aktiv Strukturen mitgestalten und Verantwortung im ärztlichen Team übernehmen? Sie suchen eine Position mit Gestaltungsspielraum, klaren Strukturen und echten Entwicklungsperspektiven?</p><p>Dann sind Sie bei uns genau richtig.</p><p>Ihre Aufgaben im Überblick</p><ul><li>Leitende oberärztliche Betreuung und Versorgung unserer Patienten im stationären und ambulanten Bereich</li><li>Eigenständige Durchführung sowie Supervision des operativen Spektrums der Allgemein- und Viszeralchirurgie</li><li>Mitverantwortung für die medizinische, organisatorische und strategische Weiterentwicklung der Klinik</li><li>Führung, Anleitung und Förderung der ärztlichen Mitarbeitenden sowie aktive Mitwirkung an deren Aus- und Weiterbildung</li><li>Organisation und Durchführung von Visiten, Fallbesprechungen, interdisziplinären Konferenzen und klinischen Besprechungen</li><li>Sicherstellung und kontinuierliche Weiterentwicklung einer hochwertigen medizinischen und patientenorientierten Versorgung</li><li>Weiterentwicklung und Optimierung klinischer Prozesse und Behandlungsstandards</li><li>Enge interdisziplinäre Zusammenarbeit mit anderen Fachabteilungen sowie den Pflege- und Funktionsdiensten</li><li>Vertretung des Chefarztes im Rahmen der übertragenen Aufgaben und Verantwortlichkeiten</li><li>Teilnahme am Hintergrunddienst</li></ul><p>Darüber würden wir uns freuen</p><ul><li>Abgeschlossene Facharztweiterbildung für Allgemein- und Viszeralchirurgie</li><li>Mehrjährige klinische und operative Erfahrung mit ausgeprägter fachlicher Kompetenz im Spektrum der Allgemein- und Viszeralchirurgie</li><li>Ausgeprägte Expertise in der minimal-invasiven Chirurgie</li><li>mehrjährige Erfahrung in oberärztlicher oder leitender oberärztlicher Position</li><li>Idealerweise abgeschlossene Facharztausbildung für spezielle Viszeralchirurgie</li><li>Interesse und Freude an der aktiven Mitgestaltung und Weiterentwicklung medizinischer und organisatorischer Prozesse</li><li>Ausgeprägte Führungs- und Sozialkompetenz sowie Freude an der Entwicklung und Förderung von Mitarbeitenden</li><li>Verantwortungsbewusstsein, Organisationsstärke und eine selbstständige Arbeitsweise</li><li>Teamfähigkeit und ausgeprägtes interdisziplinäres Denken</li><li>Empathie, Kommunikationsstärke und ein konsequent patientenorientiertes Handeln</li></ul><p>Das bieten wir Ihnen</p><ul><li>Attraktive Vergütung &amp; Sicherheit: Tarifliche Vergütung nach TV-Ärzte mit Zusatzleistungen, betrieblicher Altersvorsorge sowie Zuschlägen und Sonderzahlungen.</li><li>Verantwortung &amp; Gestaltungsspielraum: Eine verantwortungsvolle Position mit der Möglichkeit, medizinische Abläufe, Strukturen und die strategische Weiterentwicklung der Klinik aktiv mitzugestalten.</li><li>Führung &amp; Entwicklung: Übernahme einer zentralen Führungsfunktion sowie die Möglichkeit, Ihre Führungskompetenzen und persönlichen Entwicklungsperspektiven gezielt weiter auszubauen.</li><li>Starke Teams &amp; wertschätzende Kultur: Kollegiale Zusammenarbeit im multiprofessionellen Team und ein unterstützendes Arbeitsumfeld.</li><li>Moderne Arbeitsbedingungen: Digitale Dokumentation, moderne Ausstattung und kontinuierliche Weiterentwicklung der Versorgungsstrukturen.</li><li>Perspektiven &amp; Karriere: Individuelle Fort- und Weiterbildungsmöglichkeiten sowie Entwicklungsperspektiven innerhalb des Verbunds.</li><li>Gesundheit &amp; Zusatzangebote: Angebote zur Gesundheitsförderung und weitere Mitarbeitervorteile.</li></ul><p>Über den Evangelischen Verbund Augusta Ruhr</p><p>Der EVA Ruhr vereint vier starke Träger im Gesundheits- und Sozialwesen: die Diakonie Ruhr, das Diakoniewerk Gelsenkirchen und Wattenscheid, die Evangelische Krankenhausgemeinschaft Herne | Castrop-Rauxel sowie die Evangelische Stiftung Augusta.</p><p>Mit rund 11.500 Mitarbeitenden, sieben Krankenhäusern, stationären Pflegeeinrichtungen, ambulanten Diensten und zahlreichen sozialen Angeboten begleiten wir Menschen im Ruhrgebiet kompetent, empathisch und lebensnah – über alle Lebensphasen hinweg.</p><p>Interesse geweckt?</p><p>Gerne lernen wir Sie persönlich kennen – auch im Rahmen einer Hospitation.</p><p>Bitte senden Sie uns Ihre aussagekräftigen Bewerbungsunterlagen unter Angabe Ihres frühestmöglichen Eintrittstermins über unser Bewerbungsportal.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/21306-1031602-S",
+    "postedAt": "2026-11-12T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   }
 ]
