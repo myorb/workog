@@ -443,7 +443,7 @@
     "postedAt": "2025-02-20T22:36:39.134Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -1569,7 +1569,7 @@
     "postedAt": "2026-11-08T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -1579,16 +1579,14 @@
     "employer": "PSIHIATRIČNA BOLNIŠNICA IDRIJA, Pot Sv. Antona 49 , 5280 IDRIJA",
     "title": "ZDRAVNIK – BREZ SPECIALIZACIJE / Z OSNOVNO LICENCO - M/Ž",
     "locations": [
-      "Goriška, Slovenia"
+      "Idrija, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIKI SPECIALISTI (RAZEN SPLOŠNE MEDICINE), poskusno delo , Določen čas, 6 mesecev, Polni delovni čas, 40, OPRAVLJANJE DEL IN NALOG SOBNEGA ZDRAVNIKA POD MENTORSTVOM ZDRAVNIKA SPECIALISTA., ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzUwMjk5OCAxNA?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2117,6 +2115,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/6664495",
     "postedAt": "2026-09-05T07:00:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3072,7 +3072,7 @@
     "postedAt": "2026-10-15T01:12:21.987Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3303,7 +3303,7 @@
     "postedAt": "2026-10-28T03:13:11.919Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3552,7 +3552,7 @@
     "postedAt": "2026-11-04T03:13:05.087Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3604,7 +3604,7 @@
     "postedAt": "2026-11-04T03:14:14.536Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4748,7 +4748,7 @@
     "postedAt": "2026-10-16T00:31:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5507,7 +5507,7 @@
     "postedAt": "2026-11-12T07:19:48.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5562,6 +5562,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8766834",
     "postedAt": "2026-11-12T12:33:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5897,6 +5899,24 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8777640",
     "postedAt": "2026-11-13T01:31:33.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODc5OTkyMCA5",
+    "slug": "ikiway-psychiatre-pedopsychiatre-h-f-h-f-odc5otkymca5",
+    "company": "eures",
+    "employer": "Ikiway",
+    "title": "Psychiatre / Pédopsychiatre h/F (H/F)",
+    "locations": [
+      "Alpes-Maritimes, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<ul><li>Situé au coeur de l'Ouest des Alpes-Maritimes, cet établissement public de santé figure parmi les structures hospitalières majeures de la région PACA. Avec une activité dense et diversifiée, il joue un rôle central dans l'organisation des soins du territoire et bénéficie d'une implantation géographique privilégiée entre mer et arrière-pays. - Membre actif du GHT, il entretient des liens étroits avec les établissements environnants, permettant une coordination fluide et une continuité de prise en charge optimisée. L'hôpital se distingue particulièrement par son pôle de santé mentale, reconnu pour son expertise en psychiatrie et en pédopsychiatrie, et engagé dans des projets de développement tant en hospitalisation complète qu'en ambulatoire. - L'établissement mène par ailleurs une politique affirmée de fidélisation des praticiens : gouvernance médicale structurée, échanges hebdomadaires avec la direction, soutien aux projets de service, accompagnement vers la titularisation. Les équipes évoluent dans un environnement dynamique et collaboratif, bénéficiant d'un plateau technique complet et d'une organisation tournée vers la fluidité du parcours patient. - Cette structure en pleine évolution souhaite aujourd'hui conforter et renforcer son offre de soins en recrutant de nouveaux praticiens en psychiatrie et en pédopsychiatrie. Le poste : Notre consultant Kévin Snauwaert, spécialisé sur les métiers de la santé, recrute pour le compte de l'un de ses partenaires, un établissement hospitalier public, un Psychiatre / Pédopsychiatre H/F.Selon votre expertise et vos aspirations, vous choisissez votre périmètre d'intervention :- Psychiatrie adulte - Pédopsychiatrie périnatalité - Pédopsychiatrie adolescents Vous pourrez exercer dans un secteur unique ou combiner plusieurs activités selon vos souhaits et votre projet professionnel.Vos missions principales :- Prendre en charge les patients en hospitalisation complète ou en structures ambulatoires - Participer au développement de l'activité extra-hospitalière (CMP, hôpital de jour, consultations) - Travailler en étroite collaboration avec les équipes pluridisciplinaires - Contribuer aux projets de service et à la structuration des filières (périnatalité, adolescents, psychiatrie adulte) - Participer aux réunions médicales et institutionnelles Conditions de travail &amp;amp; avantages- PH / PHC (Accompagnement vers un passage PH) - Temps plein / partiel - Choix libre de l'activité : adulte, périnatalité, adolescents ou mixte - Prime spécifique psychiatrie/pédopsychiatrie - Permanence des soins avec gardes rémunérées - Astreinte téléphonique - Possibilité de mener ou rejoindre des projets de développement de filières Pour postuler :- Via cette annonce - En me contactant directement sur LinkedIn : Kévin Snauwaert Profil recherché : - Vous êtes titulaire d'un DES de Psychiatrie et/ou de Pédopsychiatrie et souhaitez vous inscrire dans un établissement dynamique, structuré et porteur de projets. Vous correspondez au poste si :- Vous aimez travailler en équipe - Vous souhaitez participer à la construction et à la consolidation d'une filière de soins - Vous êtes motivés par un poste évolutif et un environnement collaboratif - Vous recherchez une activité modulable selon vos préférences (adulte, périnatalité, adolescents) - Vous êtes ouverts à collaborer avec différents acteurs du territoire (pédiatrie, établissements voisins) Atouts supplémentaires :- Compétence ou appétence en périnatalité (mère-bébé) - Intérêt pour la clinique adolescente - Double compétence psychiatrie / pédopsychiatrie appréciée</li></ul>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8799920",
+    "postedAt": "2026-11-13T09:21:52.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6542,6 +6562,94 @@
     "source": "eures"
   },
   {
+    "id": "eures:ODgwMjE0NSA5",
+    "slug": "la-solution-medicale-medecin-generaliste-esthetique-avec-du-valide-f-h-le-mans-72000-odgwmje0nsa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Généraliste Esthétique avec DU validé F/H - Le Mans  72000",
+    "locations": [
+      "Sarthe, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Emploi Médecin Esthétique Le Mans 72000 / La Solution MédicaleVous êtes un médecin généraliste déjà formé à la médecine esthétique ou vous souhaitez acquérir de nouvelles compétences et vous former aux actes ?. Un centre de médecine esthétique à Le Mans 72000 , recherche activement un Médecin avec DU validé à temps plein ou en vacations. Missions et avantages du poste :- Planning rempli garanti- Environnement d'excellence- Horaires flexibles à convenance&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - Aucun frais d'intermédiation pour le praticien- Réalisation des devis de médecine esthétique- Secrétaire médicale (aucune tâche administrative)- Formation aux actes esthétiques assurée par le centre- Contrat sous statut libéral - Emplacement à proximité des transports en commun et parking- Excellente rémunération nette en rétrocession sur le CA - Consultation des patients (pour tous les traitements de médecine esthétique)- Réalisations d'actes tels que les injections d'acide hyaluronique, peelings et autres traitements anti-âge.- Réalisation d'actes de médecine esthétique variés, soins anti-âge, traitement amincissement, traitement laser...- Avantages nombreux : Tickets restaurants, Formations régulières, comité d'entreprise... Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Formé à la médecine esthétique ou souhaitant se former aux actes.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802145",
+    "postedAt": "2026-11-13T12:35:37.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjMyMSA5",
+    "slug": "la-solution-medicale-rhumatologue-f-h-lyon-69008-odgwmjmymsa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Rhumatologue F/H - Lyon 69008",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Rhumatologue Lyon 69008 / La Solution MédicaleCentre Médical à Lyon 69008, recherche un Rhumatologue (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Rémunération moyenne de 8500EUR- Horaires flexibles à convenance- Cours de langue si besoin- Planning rempli garantie  Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802321",
+    "postedAt": "2026-02-20T03:57:31.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDMwNSA5",
+    "slug": "winsearch-marseille-medical-medecin-marseille-h-f-odgwndmwnsa5",
+    "company": "eures",
+    "employer": "Winsearch - Marseille Medical",
+    "title": "Médecin - Marseille (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Nous recherchons des médecins motivés et passionnés pour rejoindre nos équipes pluridisciplinaires au sein de plusieurs établissements de santé situés dans le 13. Les missions varieront selon l'établissement, allant de la consultation en cabinet à la prise en charge hospitalière ou en centres de soins spécialisés.&amp;nbsp;&amp;nbsp;Vos missions principales :&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; -&amp;nbsp;&amp;nbsp;Assurer la prise en charge médicale des patients.&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;Participer aux activités de suivi et de coordination avec les équipes paramédicales.&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;Contribuer à la qualité et à la sécurité des soins.&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;Adapter votre pratique selon le type d'établissement (hospitalier, clinique, centre de soins, etc.)&amp;nbsp;&amp;nbsp; - Diplôme d'état de docteur en médecine (toutes spécialités bienvenues)&amp;nbsp;&amp;nbsp;- Inscription à l'ordre des médecinsPour toute question ou pour l'envoi de votre candidature, merci de transmettre votre demande à l'adresse suivante : mathilde.petit(a)&lt;a href=\"http://winsearch.fr\" target=\"_blank\" rel=\"nofollow\"&gt;winsearch.fr&lt;/a&gt;</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804305",
+    "postedAt": "2026-11-13T12:37:22.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDY1NiA5",
+    "slug": "la-solution-medicale-dermatologue-f-h-meaux-77100-odgwndy1nia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue F/H - Meaux 77100",
+    "locations": [
+      "Seine-et-Marne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi dermatologue Meaux 77100/ La Solution MédicaleCentre Médical à Meaux 77100, recherche activement un Dermatologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaires, congés incluses- Assurance professionnelle, formations régulières...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours - Horaires flexibles à convenance- Avantage mutuel - Planning rempli garanti Avantage du centre :- Structure très accueillante- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Médecin Spécialiste et Qualifié en Dermatologie.Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804656",
+    "postedAt": "2026-11-13T12:37:43.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDY4MiA5",
+    "slug": "la-solution-medicale-neurologue-h-f-evry-91000-odgwndy4mia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Neurologue H/F - Évry 91000",
+    "locations": [
+      "Essonne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "neurology",
+    "descriptionHtml": "<p>Emploi Neurologue Évry 91000 / La Solution MédicaleCentre Médical à Évry 91000 , recherche un Neurologue (H/F) pour exercer dans une structure moderne en vacations ou à temps plein.-Statut salarié en CDI-En vacations ou à temps plein ( horaires souples)-Secteur 1 Tiers Payant-Électromyogramme, Electro-encéphalogramme-Matériel à la pointe de la technologie-Secrétaire médicale (aucune tâche administrative)-Les praticiens sont assistés par une équipe paramédicale d'Aides soignantes-Rémunération sous forme de rétribution du chiffre d'affaires sur acte et consultation, CP inclus .-Avantages nombreux : Assurance Professionnelle, Tickets restaurants, Formations régulières, comité d'entreprise ...-Travail au sein d'une équipe pluridisciplinaire-Emplacement exceptionnel à proximité des commodités de transport.-Poste à pourvoir immédiatement N'hésitez pas à nous contacter pour de plus amples informations au *** (voir postuler) ou *** (voir postuler). Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804682",
+    "postedAt": "2026-11-13T12:37:49.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:ODI1MTEyOSA5",
     "slug": "non-renseigne-educateur-specialise-h-f-en-mas-urgent-cdi-odi1mteyosa5",
     "company": "eures",
@@ -7143,8 +7251,6 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8221766",
     "postedAt": "2026-10-23T15:05:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8069,7 +8175,7 @@
     "postedAt": "2026-10-28T02:06:16.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8400,7 +8506,7 @@
     "postedAt": "2026-11-03T01:26:30.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8457,6 +8563,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400066",
     "postedAt": "2026-10-29T12:34:48.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8475,6 +8583,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400020",
     "postedAt": "2026-10-29T12:34:44.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8639,6 +8749,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422899",
     "postedAt": "2026-10-30T12:36:41.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8657,6 +8769,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422971",
     "postedAt": "2026-10-30T12:36:44.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8674,6 +8788,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422917",
     "postedAt": "2026-10-30T12:36:41.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8691,6 +8807,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422502",
     "postedAt": "2026-10-30T12:36:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8709,6 +8827,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422609",
     "postedAt": "2026-10-30T12:36:28.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9214,7 +9334,7 @@
     "postedAt": "2026-11-06T01:30:46.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -10289,7 +10409,7 @@
     "postedAt": "2026-11-09T06:47:56.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -10326,7 +10446,7 @@
     "postedAt": "2026-11-09T06:48:02.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {

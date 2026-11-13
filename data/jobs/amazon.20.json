@@ -1156,7 +1156,7 @@
     "postedAt": "2026-05-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "amazon"
   },
   {
@@ -1652,6 +1652,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10440386/pharmacy-manager-amazon-pharmacy",
     "postedAt": "2026-06-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2026,7 +2028,7 @@
     "postedAt": "2026-06-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "amazon"
   },
   {
@@ -4444,6 +4446,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10507245/programmatic-solutions-consultant-technical-programmatic-solutions-consultants-technical",
     "postedAt": "2026-08-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -6422,6 +6426,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10543937/contract-manager-amazon-ads",
     "postedAt": "2026-09-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -7996,6 +8002,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10565775/gss-tech-sourcing-recruiter-wwas-ta-c-sourcing",
     "postedAt": "2026-09-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -9005,7 +9013,7 @@
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "amazon"
   },
   {
@@ -9382,8 +9390,6 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10576494/sr-product-manager-technical-aws-forward-deployed-engineering-fde",
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -9548,7 +9554,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "amazon"
   },
   {
@@ -10339,7 +10345,7 @@
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "amazon"
   },
   {
@@ -12608,6 +12614,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10595101/sr-associate-quality-analyst-global-solutions-risk-compliance-gsrc",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13601,7 +13609,7 @@
     "remote": false,
     "department": "Operations, IT, & Support Engineering",
     "category": "engineering",
-    "descriptionHtml": "<p>Amazon Shipping delivers packages for businesses of every size across the United States and Europe. Shippers, e-commerce platforms and shipping software partners connect to us through our APIs to get rates, buy labels and track packages from pickup to doorstep. When one of those integrations breaks, a business stops shipping. The External System Integrations team exists to make sure that does not happen, and to fix it fast when it does.<br /><br />Are you curious about why systems fail and motivated to stop them failing again? Do you enjoy explaining technical problems clearly to people who are not engineers? Amazon Shipping is seeking Support Engineers to help shippers and integration partners build and run business-critical integrations on our shipping APIs. You will investigate failing API calls, reproduce issues, resolve what you can and hand off what you cannot with a complete, clear write-up. You will learn our APIs end to end and grow from well-defined issue types into complex investigations.<br /><br />Key job responsibilities<br />- Investigate and resolve support cases covering API errors, failed label creation, authentication problems, rate and coverage questions, and tracking data issues<br />- Analyze request and response payloads, HTTP status codes and service logs to determine whether an issue sits with the customer's request, their configuration, or our platform<br />- Reproduce reported issues in sandbox and test environments<br />- Follow runbooks and escalation paths, and escalate critical, high-impact issues promptly<br />- Hand off issues outside your scope with a clear summary of customer impact, steps taken, evidence gathered and the open question<br />- Help new developers through onboarding, including registration, credential setup and sandbox testing<br />- Track escalated cases to closure and keep customers informed<br />- Participate in an on-call rotation to respond to critical issues for customers in the United States and Europe<br />- Write and update runbooks and knowledge base articles<br />- Script small automations that remove repeated manual steps from your own case work<br /><br />A day in the life<br />You start by picking up overnight cases from shippers in Europe. One partner is getting authentication errors after rotating credentials, so you check their token request, find the missing scope and walk them through the fix. A shipper's labels are failing for a handful of postcodes, so you reproduce the call in sandbox, confirm it is a coverage question, and reply with what is and is not serviceable. You join an office hours session to answer questions from a developer starting a new integration. In the afternoon you notice you have looked up the same field mapping three times this week, so you write a short script and add it to the team runbook.<br /><br />About the team<br />The External System Integrations (ESI) team is part of Amazon Shipping, which delivers packages for businesses of every size across the United States and Europe. We work with enterprise shippers, e-commerce platforms and shipping software partners from their first API call through to live production volume. Our goal is to make integrating with Amazon Shipping fast and reliable, and to fix things quickly when they break. We value ownership, clear writing and automating repeated work. You will work closely with our Solutions Architects and with the Shipper Support team in San Jose.</p><h3>Basic qualifications</h3><p>- 1+ years of software development, or 1+ years of technical support experience<br />- Experience troubleshooting and debugging technical systems<br />- Experience in English-language communication skills, both written and verbal<br />- Experience working with databases and SQL<br />- Experience working with REST API based services, or experience with REST web services, XML, JSON</p><h3>Preferred qualifications</h3><p>- Bachelor's degree in computer science or equivalent<br />- Experience with API testing tools such as Postman or cURL<br />- Experience supporting production or mission critical environments, including ticketing, monitoring and metrics, and troubleshooting technical issues<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.</p>",
+    "descriptionHtml": "<p>Amazon Shipping delivers packages for businesses of every size across the United States and Europe. Shippers, e-commerce platforms and shipping software partners connect to us through our APIs to get rates, buy labels and track packages from pickup to doorstep. When one of those integrations breaks, a business stops shipping. The External System Integrations team exists to make sure that does not happen, and to fix it fast when it does.<br /><br />Are you curious about why systems fail and motivated to stop them failing again? Do you enjoy explaining technical problems clearly to people who are not engineers? Amazon Shipping is seeking Support Engineers to help shippers and integration partners build and run business-critical integrations on our shipping APIs. You will investigate failing API calls, reproduce issues, resolve what you can and hand off what you cannot with a complete, clear write-up. You will learn our APIs end to end and grow from well-defined issue types into complex investigations.<br /><br />Key job responsibilities<br />- Investigate and resolve support cases covering API errors, failed label creation, authentication problems, rate and coverage questions, and tracking data issues<br />- Analyze request and response payloads, HTTP status codes and service logs to determine whether an issue sits with the customer's request, their configuration, or our platform<br />- Reproduce reported issues in sandbox and test environments<br />- Follow runbooks and escalation paths, and escalate critical, high-impact issues promptly<br />- Hand off issues outside your scope with a clear summary of customer impact, steps taken, evidence gathered and the open question<br />- Help new developers through onboarding, including registration, credential setup and sandbox testing<br />- Track escalated cases to closure and keep customers informed<br />- Participate in an on-call rotation to respond to critical issues for customers in the United States and Europe<br />- Write and update runbooks and knowledge base articles<br />- Script small automations that remove repeated manual steps from your own case work<br /><br />A day in the life<br />You start by picking up overnight cases from shippers in Europe. One partner is getting authentication errors after rotating credentials, so you check their token request, find the missing scope and walk them through the fix. A shipper's labels are failing for a handful of postcodes, so you reproduce the call in sandbox, confirm it is a coverage question, and reply with what is and is not serviceable. You join an office hours session to answer questions from a developer starting a new integration. In the afternoon you notice you have looked up the same field mapping three times this week, so you write a short script and add it to the team runbook.<br /><br />About the team<br />The External System Integrations (ESI) team is part of Amazon Shipping, which delivers packages for businesses of every size across the United States and Europe. We work with enterprise shippers, e-commerce platforms and shipping software partners from their first API call through to live production volume. Our goal is to make integrating with Amazon Shipping fast and reliable, and to fix things quickly when they break. We value ownership, clear writing and automating repeated work. You will work closely with our Solutions Architects and with the Shipper Support team in San Jose.</p><h3>Basic qualifications</h3><p>- 1+ years of software development, or 1+ years of technical support experience<br />- Experience troubleshooting and debugging technical systems<br />- Experience in English-language communication skills, both written and verbal<br />- Experience working with databases and SQL<br />- Experience working with REST API based services, or experience with REST web services, XML, JSON</p><h3>Preferred qualifications</h3><p>- Bachelor's degree in computer science or equivalent<br />- Experience with API testing tools such as Postman or cURL<br />- Experience supporting production or mission critical environments, including ticketing, monitoring and metrics, and troubleshooting technical issues<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br />null</p>",
     "applyUrl": "https://www.amazon.jobs/en/jobs/10601066/technical-support-engineer-i-integrations-external-system-integrations-amazon-shipping",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",

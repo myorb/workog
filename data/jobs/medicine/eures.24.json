@@ -159,8 +159,6 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/215LMVJ",
     "postedAt": "2026-10-20T11:08:48.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -372,7 +370,7 @@
     "postedAt": "2026-06-16T02:43:40.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -1370,6 +1368,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ5MDYwNi0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-08T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2298,7 +2298,7 @@
     "postedAt": "2026-09-03T01:13:51.515Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2348,7 +2348,7 @@
     "postedAt": "2026-09-15T01:11:55.111Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2366,7 +2366,7 @@
     "postedAt": "2026-09-15T01:11:55.342Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2827,7 +2827,7 @@
     "postedAt": "2026-10-08T01:14:17.039Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2968,7 +2968,7 @@
     "postedAt": "2026-10-06T01:13:02.937Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3020,7 +3020,7 @@
     "postedAt": "2026-10-13T01:13:22.008Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3512,7 +3512,7 @@
     "postedAt": "2026-11-04T03:13:39.469Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5519,7 +5519,7 @@
     "postedAt": "2026-11-12T07:19:48.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5873,6 +5873,23 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8777426",
     "postedAt": "2026-11-13T01:31:11.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODc5ODQwMiA5",
+    "slug": "physicien-medical-unite-de-radioprotection-medecine-nucleaire-100-h-f-odc5odqwmia5",
+    "company": "eures",
+    "employer": "\"\"",
+    "title": "PHYSICIEN MEDICAL - UNITE DE RADIOPROTECTION - MEDECINE NUCLEAIRE - 100% - H/F",
+    "locations": [
+      "Meurthe-et-Moselle, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Oxilia est un acteur majeur des services à la personne. Notre mission est de mettre en relation les prestataires de services à domicile avec les particuliers qui ont besoin d'assistance, de prise en charge au domicile.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Oxilia vous propose cette offre d'emploi à pourvoir prochainement.Description entreprise : Le Centre hospitalier r eacute gional universitaire de Nancy est l rsquo eacute tablissement public de sant eacute de r eacute f eacute rence pour la population lorraine Class eacute 6 egrave me meilleur h ocirc pital de France Le Point&amp;nbsp;&amp;nbsp;le CHRU de Nancy compte plus de 9 600 professionnels et 1 300 eacute tudiants en sant eacute &amp;lt; p&amp;gt;Les eacute quipes hospitalo universitaires s rsquo impliquent au quotidien dans le soin la formation la recherche et innovation la sant eacute publique et l rsquo eacute ducation agrave la sant eacute&amp;nbsp;&amp;nbsp;nbsp Elles ont collectivement identifi eacute 4 valeurs pour d eacute finir leur fa ccedil on de travailler de collaborer d rsquo accueillir et de soigner : bienveillance respect engagement et faire eacute quipe &amp;lt; p&amp;gt;Pr egrave s de 150 m eacute tiers contribuent au fonctionnement de l rsquo h ocirc pital Aux c ocirc t eacute s des professions m eacute dicales param eacute dicales et m eacute dico techniques on retrouve de nombreux secteurs : administration finances achats qualit eacute&amp;nbsp;&amp;nbsp;ressources humaines transformation num eacute rique biom eacute dical activit eacute s logistiques techniques et s eacute curit eacute &amp;lt; p&amp;gt;Employeur handi accueillant le CHRU de Nancy s rsquo engage en faveur de l rsquo int eacute gration et du maintien dans l rsquo emploi des personnes en situation de handicap &amp;lt; p&amp;gt;Pour am eacute liorer son fonctionnement l rsquo accueil des usagers et les conditions de travail des professionnels le CHRU de Nancy se transforme sur le plan architectural et organisationnel avec la mise en service d rsquo un nouvel ensemble hospitalo universitaire agrave horizon 2032 &amp;lt; p&amp;gt;Choisir le Service Public Choisir le CHRU de Nancy nbsp &amp;lt; p&amp;gt;Description du poste :Le d eacute partement territorial de la qualit eacute et des usagers du CHRU de Nancy recrute un physicien m eacute dical au sein de l rsquo Unit eacute de Radioprotection pour le service de m eacute decine nucl eacute aire et nbsp le secteur RTIV&amp;lt; p&amp;gt;LE D Eacute PARTEMENT&amp;nbsp;&amp;nbsp;SERVICE&amp;lt; p&amp;gt;L rsquo unit eacute de la radioprotection est plac eacute e sous la direction de la cheffe du d eacute partement territorial de la qualit eacute et des usagers Elle g egrave re les probl eacute matiques de radioprotection pour les domaines de l rsquo imagerie radiologique radiologie conventionnelle interventionnelle scanographie blocs op eacute ratoires dentaire et la m eacute decine nucl eacute aire diagnostique et th eacute rapeutique &amp;lt; p&amp;gt;Pour ce faire cette unit eacute est compos eacute e de 2 corps de m eacute tiers :&amp;lt; p&amp;gt;Des conseillers en radioprotection dont la mission principale est la gestion de la radioprotection des travailleurs du public et de l rsquo environnement &amp;lt; li&amp;gt;Des physiciens m eacute dicaux et ing eacute nieurs hospitaliers dont la mission principale est de garantir que chaque examen ou traitement utilisant des rayonnements ionisants apporte le b eacute n eacute fice m eacute dical attendu avec pour le cas de l rsquo imagerie la meilleure qualit eacute d 'image possible pour la dose la plus faible raisonnablement n eacute cessaire au patient &amp;lt; li&amp;gt;&amp;lt; ul&amp;gt;Le physicien m eacute dical participe aux missions de l rsquo Unit eacute de Radioprotection dans le service de m eacute decine nucl eacute aire le secteur RTIV les services d rsquo imagerie et les blocs op eacute ratoires Il contribue agrave la qualit eacute et agrave la s eacute curit eacute des examens diagnostiques et th eacute rapeutiques Il exerce aussi des missions d rsquo enseignement &amp;lt; p&amp;gt;&amp;lt; div&amp;gt; nbsp &amp;lt; p&amp;gt;LE POSTE&amp;lt; p&amp;gt;Service : Unit eacute de Radioprotection ndash Affectation pour le service de m eacute decine nucl eacute aire&amp;lt; li&amp;gt;Horaires : jour&amp;nbsp;&amp;nbsp;forfait jour&amp;lt; li&amp;gt;&amp;lt; ul&amp;gt; nbsp &amp;lt; p&amp;gt;FONCTIONS ET ACTIVIT Eacute S&amp;lt; p&amp;gt;Mission principale :&amp;lt; p&amp;gt;Assurer les missions du physicien m eacute dical en m eacute decine nucl eacute aire et contribuer agrave la qualit eacute et agrave la s eacute curit eacute des examens diagnostiques et th eacute rapeutiques &amp;lt; p&amp;gt;Description des activit eacute s :&amp;lt; p&amp;gt;Superviser et r eacute aliser des contr ocirc les qualit eacute en lien avec l rsquo activit eacute diagnostique et th eacute rapeutique du service de m eacute decine nucl eacute aire&amp;lt; li&amp;gt;Participer agrave l rsquo assurance qualit eacute : gestion des CQI CQE GMAO et logiciels disponibles agrave l rsquo URP notamment le DACS &amp;lt; li&amp;gt;Participer agrave l rsquo eacute volution des protocoles d rsquo examens notamment pour optimiser le compromis entre qualit eacute d rsquo image et dose &amp;lt; li&amp;gt;Participer aux mesures de doses d eacute livr eacute es lors des proc eacute dures diagnostiques et th eacute rapeutiques et eacute valuer le risque eacute v...</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8798402",
+    "postedAt": "2026-11-13T08:01:10.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6638,6 +6655,163 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8139848",
     "postedAt": "2026-10-21T23:30:54.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjA3MSA5",
+    "slug": "la-solution-medicale-rhumatologue-f-h-sarrola-carcopino-20167-odgwmja3msa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Rhumatologue F/H - Sarrola-Carcopino 20167",
+    "locations": [
+      "Corse-du-Sud, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Rhumatologue Sarrola-Carcopino 20167/ La Solution MédicaleCentre Médical à Sarrola-Carcopino 20167 recherche activement un Rhumatologue (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Rémunération attractive- Horaires flexibles à convenance- Cours de langue si besoin- Planning rempli garanti  Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802071",
+    "postedAt": "2026-02-20T04:02:22.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjE5OSA5",
+    "slug": "la-solution-medicale-medecin-generaliste-f-h-35-a-40-brut-du-ca-suresnes-92150-odgwmje5osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Généraliste F/H -  35 à 40% brut du CA Suresnes 92150",
+    "locations": [
+      "Hauts-de-Seine, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Emploi Médecin Généraliste Suresnes 92150 / La Solution MédicaleCentre de santé à Suresnes 92150, recherche activement un Médecin Généraliste (F/H). Avantages du poste :-Rémunération : 35 à 40% brut du CA- Aucun frais d'intermédiation pour le praticien.- Statut salarié en CDI de 2 à 5 jours par semaine, selon vos disponibilités.- Horaires flexibles pour s'adapter à vos contraintes personnelles.- Planning rempli garanti, vous bénéficiez de rendez-vous assurés.- Mutuelle santé avantageuse pour vous et votre famille.- Prise en charge de 50% de la carte Navigo pour vos déplacements.Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Environnement agréable, idéalement situé, proche des commerces et services. Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802199",
+    "postedAt": "2026-11-13T12:35:43.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjI1OSA5",
+    "slug": "la-solution-medicale-gynecologue-f-h-chateauroux-36000-odgwmji1osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Gynécologue F/H - Châteauroux  36000",
+    "locations": [
+      "Indre, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "descriptionHtml": "<p>Emploi Gynécologue Châteauroux 36000 / La Solution MédicaleCentre Médical Polyvalent à Châteauroux 36000, recherche Gynécologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire, congés incluses- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Emplacement à proximité des transports en commun et parking- Matériel haute technologie pour le suivi de grossesse, échographie obstétricale...  Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802259",
+    "postedAt": "2026-02-20T04:12:19.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjM2NCA5",
+    "slug": "la-solution-medicale-orl-mi-temps-ou-temps-plein-f-h-brest-29200-odgwmjm2nca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "ORL Mi-temps ou Temps plein -  F/H Brest 29200",
+    "locations": [
+      "Finistère, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi ORL Brest 29200 / La Solution MédicaleCentre Médical à Brest 29200, recherche activement un ORL Mi-temps ou Temps plein (F/H). Avantages du poste :- Bonne rémunération- Assurance professionnelle, formations régulières, tickets restaurants...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garanti Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; ORL diplômé, inscrit au Conseil National de l'Ordre des Médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802364",
+    "postedAt": "2026-11-13T12:35:51.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjMyMiA5",
+    "slug": "la-solution-medicale-rhumatologue-f-h-saint-mande-94160-odgwmjmymia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Rhumatologue F/H - Saint-Mandé 94160",
+    "locations": [
+      "Val-de-Marne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Rhumatologue Saint-Mandé 94160 / La Solution MédicaleCentre Médical à Saint-Mandé 94160, recherche un Rhumatologue (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Rémunération moyenne de 8500EUR- Horaires flexibles à convenance- Cours de langue si besoin- Planning rempli garantie  Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802322",
+    "postedAt": "2026-11-13T12:35:49.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjUzNCA5",
+    "slug": "la-solution-medicale-phlebologue-f-h-paris-75017-odgwmjuznca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Phlébologue F/H - Paris  75017",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Phlébologue Paris 75017 / La Solution MédicaleCentre Médical à Paris 75017, recherche activement un Phlébologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire et consultation, congés incluses- Assurance professionnelle, formations régulières, tickets restaurants...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802534",
+    "postedAt": "2026-11-13T12:35:55.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMTI3OCA5",
+    "slug": "domino-rh-medicare-saint-etienne-medecin-geriatre-h-f-odgwmti3oca5",
+    "company": "eures",
+    "employer": "Domino RH - Médicare Saint-Etienne",
+    "title": "Médecin Gériatre - H/F",
+    "locations": [
+      "Isère, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>Le descriptif de poste :Nous recrutons, pour l'un de nos clients, un Hôpital accueillant environ 220 lits et places, situé dans le département de l'Isère, à environ 40 minutes de Chambéry, un Médecin en Service de Soins Médicaux et de Réadaptation - H/F, dans le cadre d'un remplacement en interim du 22 décembre 2025 au 02 janvier 2026.-Présentation de l'Etablissement : Situé en Isère, l'établissement comprend plusieurs services de soins SMR, gériatriques, douleur, soins palliatifs, urgences, médecine polyvalente.-Présentation du service : le service dispose de 12 lits en hospitalisation complète et 10 places en HDJ ;-Missions principales :*Assurer la prise en charge médicale des patients en service de jour ;*Participer à l'évaluation, au suivi et à la coordination des soins, en intégrant une approche spécialisée dans la rééducation et réadaptation locomotrice et polyvalente.*Contribuer à la mise en oeuvre du projet médical du service et à l'amélioration continue de la qualité des soins.*Collaborer étroitement avec les autres professionnels de santé (kinésithérapeutes, ergothérapeutes, psychologues, etc.) pour une prise en charge optimale.*Participer aux réunions de synthèse et à la coordination des parcours de soins.-Présentation des caractéristiques du poste :*Poste en interim à temps plein ;*Statut : Salarié.Rattachement hiérarchique : la Direction.Conditions du poste : rémunération selon forfait taux horaire.&amp;nbsp;&amp;nbsp; La qualification requise : *Médecin Gériatre qualifié ; *Inscrit au Conseil National de l'Ordre des Médecins. La formation requise : *Un Médecin diplômé avec expérience en EHPAD ou SMR. L'expérience professionnelle requise : *Une expérience sur un poste similaire ou une expérience au minimum de 5 ans de médecin salarié et/ou libéral est souhaitée. Les qualités professionnelles requises : *-Participation à un projet de soins de qualité ; *Qualité des soins et des services. *Apprécier le travail en équipe.Nous attendons votre candidature.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8801278",
+    "postedAt": "2026-11-13T12:33:40.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMTk5OCA5",
+    "slug": "la-solution-medicale-pediatre-f-h-marseille-13005-odgwmtk5oca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Pédiatre F/H - Marseille 13005",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "descriptionHtml": "<p>Emploi Pédiatre Marseille 13005 / La Solution MédicaleCentre Médical à Marseille 13005, recherche activement un Pédiatre (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Excellente rémunération- Planning rempli garantie- Logement gratuit 3 mois- Secteur 1 Tiers Payant Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8801998",
+    "postedAt": "2026-11-13T12:35:28.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDYzMyA5",
+    "slug": "la-solution-medicale-ophtalmologue-f-h-bastia-20600-odgwndyzmya5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Ophtalmologue F/H - Bastia  20600",
+    "locations": [
+      "Haute-Corse, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi ophtalmologue Bastia 20600 / La Solution MédicaleCentre médical polyvalent à Bastia 20600, recherche un Ophtalmologue (F/H). Avantages du poste :- Équipe paramédicale et d'orthoptistes à disposition- Assurance professionnelle, formations régulières...- Rémunération attractive- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garanti Avantages du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Inscrit à l'Ordre des médecins en France.DES Ophtalmologie obtenu en Union Européenne.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804633",
+    "postedAt": "2026-11-13T12:37:42.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8928,7 +9102,7 @@
     "postedAt": "2024-06-07T09:23:32.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9157,7 +9331,7 @@
     "postedAt": "2026-10-30T01:27:49.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9176,7 +9350,7 @@
     "postedAt": "2026-10-30T01:27:47.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9196,7 +9370,7 @@
     "postedAt": "2026-10-30T01:27:33.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9362,6 +9536,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422884",
     "postedAt": "2026-10-30T12:36:42.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9880,7 +10056,7 @@
     "postedAt": "2026-11-06T01:51:37.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9899,7 +10075,7 @@
     "postedAt": "2026-11-06T01:51:51.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -10921,6 +11097,23 @@
     "source": "eures"
   },
   {
+    "id": "eures:OGFlOGU2OWQtNjRiYS00NDNhLWE3NTUtODIyNmRmYmUzZmVhIDgx",
+    "slug": "terveystalo-yleislaakari-julkiset-palvelut-lohjan-paivystysosasto-ogflogu2owqtnjriys00ndnhlwe3ntutodiynmrmymuzzmvhidgx",
+    "company": "eures",
+    "employer": "Terveystalo",
+    "title": "Yleislääkäri, Julkiset palvelut, Lohjan päivystysosasto",
+    "locations": [
+      "Lohja, Finland"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Me Terveystalossa teemme työksemme tärkeintä, terveyttä. Työllämme on suuri merkitys, ei vain asiakkaillemme, vaan koko yhteiskunnalle. Meitä tärkeimmän tekijöitä on Terveystalossa jo yli 14 000 lähes 400 toimipaikassa eri puolilla Suomea. Siellä, missä ihmiset elävät arkeaan ja missä kotimaista työtämme tarvitaan. Etsimme nyt osaavaan ja motivoituneeseen joukkoomme lääkäreitä Lohjan päivystysosaston viikonloppukierroille. Tutustu tehtävään ja hae!Mitä työ Lohjan päivystysosastolla pitää sisällään?Terveystalo vastaa Lohjan sairaalan päivystysosaston viikonloppukierroista ja geriatrisen osaston toiminnasta. Kyseessä ei ole yksittäinen lääkärivuokraus, vaan Terveystalo vastaa kyseisten osastojen kokonaistoiminnasta toistaiseksi voimassa olevalla sopimuksella.Päivystysosastolla on 18 potilaspaikkaa ja osaston potilasvaihtuvuus on nopeaa. Potilaat tulevat päivystysosastolle HUS-alueen päivystyksistä. Päivystysosaston ydinosaamista on akuuttigeriatria. Keskeisimpiä hoidon syitä päivystysosastolla ovat mm. akuutit infektiot, TULES-vaivat, neurologiset akuuttisairaudet tai äkillinen toimintakyvyn heikentyminen.Terveystalo tuottaa päivystysosastolla viikonloppukierrot. Kierrot toteutetaan joka viikonloppu ja pyhäpäivisin. Osastokierto alkaa klo 10. Päivystyskierto aloitetaan lähityönä päivystysosastolta siirtyen geriatriselle osastolle 5, jonka jälkeen puhelinkierto osastolle 2 ja Villa Auraan. Kotisairaala voi konsultoida päivystävää lääkäriä klo 10–14 välillä. Tarvittaessa päivystävä lääkäri käy toteamassa vainajat Lohjan päivystysosastolla, osastolla 5 sekä Lohjan keskustan terveysasemalla (osasto 2 ja Villa Aura). Vainajien toteamiset voidaan sopia tarvittaessa ennen kierrosta (klo 8-10) tai sen jälkeen (klo 14-16). Potilastietojärjestelmänä toimii Lifecare.Terveystalo tarjoaa monipuolisia Henkilöstöpalveluita hyvinvointialueille ja yksityisille yrityksille lyhytaikaiseen sekä pitkäaikaiseen tarpeeseen. Terveystalon Henkilöstöpalveluissa räätälöimme sinulle sopivan työkokonaisuuden, joka voi sisältää esimerkiksi pidemmän työkokonaisuuden yhdessä toimipaikassa, viikoittaisia vakiovuoroja tietyissä toimipisteissä tai satunnaisia keikkavuoroja silloin, kun sinulle sopii. Kauttamme voit tehdä töitä esimerkiksi terveysasemilla, vuodeosastoilla ja päivystyksissä. Tarjoamme sinulle aina omiin ammatillisiin kiinnostuksenkohteisiisi ja omiin kehitystavoitteisiisi sopivia työkokonaisuuksia. Yhteyshenkilömme ovat ammattilaisten keskuudessa todella pidettyjä (lääkärikollegojesi suositteluindeksi-NPS 4,6/5). Et jää missään vaiheessa yksin, ja yhteyshenkilösi huolehtii kaikista käytännön asioista, jotta sinä voit keskittyä olennaiseen.Lue lisää lääkäreiden kokemuksista Terveystalon Julkisissa palveluissa työskentelystä!Miksi töihin Terveystaloon?Meillä arki rakentuu sujuvuudesta ja toisista välittämisestä, jatkuvasta halusta kehittyä ja ennen kaikkea inhimillisistä kohtaamisista. Vaikka maailmaa muuttuu, meidän tapamme tehdä työtä säilyy: Terveystalossa sinä voit keskittyä tekemään sitä, mikä on tärkeintä – terveyttä. - Arkemme on sujuvaa. Panostamme lähijohtamiseen ja esihenkilötyöhön, jotta jokainen ammattilaisemme saa työssään tarvittavan tuen. Ammattirajat ylittävä tiimityö, joustavuus ja edistykselliset hoitopolkumme tukevat arjen työtä. - Välitämme toisistamme. Meillä jokainen on oma arvostettu itsensä, oman alansa huippuosaaja ja tärkeä osa työyhteisöä. Osaajatutkimuksemme mukaan ammattilaisemme arvostavat muun muassa lämmintä työyhteisöämme, hyvää esihenkilötyötä ja lähijohtamista sekä mahdollisuutta onnistua omassa työssä. - Teemme vaikuttavaa työtä. Terveystalossa on ainutkertaista osaamista aina ennaltaehkäisystä perusterveydenhuoltoon, suunterveyteen ja erikoissairaanhoitoon. Käytössämme ovat ainutlaatuiset oman työn laatumittarit ja digitaaliset hoitopolut kaikkiin yleisimpiin sairauksiin. Panostamme myös ammattilaistemme laadukkaaseen kouluttautumiseen, kehittymiseen ja ammatilliseen kasvuun. - Kilpailukykyinen palkitseminen ja monipuoliset edut. Meillä palkitseminen ja palkkiomallit ovat kilpailukykyiset, ja tarjoamme työsuhteisille ammattilaisillemme monipuoliset työsuhteen edut, kuten lounas- sekä liikunta-, kulttuuri- ja hyvinvointiedun, kumppanialennukset ja kattavan työterveyshuollon, joka sisältää peruspalveluiden lisäksi muun muassa lähetteelliset erikoislääkärikäynnit ja laajasti mielen hyvinvoinnin palveluita, mm. lyhytpsykoterapian. Ammatinharjoittajille tarjoamme vaihtuvat kumppanietumme ja muun muassa mahdollisuuden sopimushintaiseen työterveyshuoltoon. - Kotimainen ja vastuullinen. Vastuullisuus on meille sydämen asia. ISS ESG:n arvioinnissa kuulumme globaalisti oman alamme kärkeen, ja Suomalainen työ ry on myöntänyt meille Avainlippu-tunnuksen osoituksena Suomessa tuotetusta ja työllistävästä palvelusta. Teemme työtä suomalaisten terveyden ja koko yhteiskunnan hyvinvoinnin eteen tinkimättömällä ammattitaidolla. Suomen suurimpana yksityisenä terveydenhuoltoalan toimijana vaalimme kotimaisia juuria ja olemme ylpeitä suomalaisista omistajistamme. - Monimuotoinen ja yhdenvertainen. Terveystalossa olemme kaikki samanarvoisia riippumatta sukupuolesta, iästä, etnisestä tai kansallisesta taustasta, kansalaisuudesta, kielestä, uskonnosta, vakaumuksesta, mielipiteestä, vammasta, terveydentilasta, seksuaalisesta suuntautumisesta tai muusta ominaisuudesta.Mitä toivomme sinulta?Pätevyysvaatimuksena Lohjan sairaalan osastokierroille on lisensiaatin tutkinto ja vähintään yksi vuosi osastokokemusta tai työkokemusta ikääntyneiden parissa.Työn menestyksekäs hoitaminen edellyttää lisäksi hyvää suullista ja kirjallista suomen kielen taitoa. Ruotsin kielen taito katsotaan eduksi.Kiinnostuitko tehtävästä?Jätä yhteystietosi hakulomakkeen kautta tai ota yhteyttä suoraan yhteyspäällikkö Nenna Rissaseen (&lt;a href=\"mailto:nenna.rissanen@terveystalo.com\" rel=\"nofollow\"&gt;nenna.rissanen@terveystalo.com&lt;/a&gt;, 0505304528).Tervetuloa Terveystaloon!</p>",
+    "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/8ae8e69d-64ba-443a-a755-8226dfbe3fea/fi",
+    "postedAt": "2026-11-13T07:56:02.123Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:OWQ2MTc0MTEtN2Y0Mi00OGEwLWIwMjAtMjMwMjhmYzFlZDhmIDgx",
     "slug": "onni-paihdelaakari-etela-karjalaan-owq2mtc0mtetn2y0mi00ogewlwiwmjatmjmwmjhmyzflzdhmidgx",
     "company": "eures",
@@ -11060,6 +11253,23 @@
     "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/f691095c-a290-47e8-a2c6-bf59daf967e4",
     "postedAt": "2026-10-30T12:19:51.713Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ZjYyZGNjNmYtOGM4Mi00NmU1LWIyMGItM2E3ZmY3MGJiZDRjIDI2MQ",
+    "slug": "arendal-kommune-sentraladministrasjon-sommervikar-2027-lege-medisinstudent-med-lisens-zjyyzgnjnmytogm4mi00nmu1lwiymgitm2e3zmy3mgjizdrjidi2mq",
+    "company": "eures",
+    "employer": "Arendal Kommune Sentraladministrasjon",
+    "title": "Sommervikar 2027- Lege/medisinstudent med lisens",
+    "locations": [
+      "Arendal, Norway"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "Er du medisinstudent eller lege og på jakt etter sommerjobb i 2027? Arendal kommune har ti institusjoner av ulik størrelse og med ulike spesialiserte funksjoner, i tillegg til Østre Agder Helsehus med legevakt, Kommunal Øyeblikkelig Hjelp (KØH) og en kommunal avklaringsavdeling. Syv leger i fulle stillinger deler den medisinske oppfølgingen av disse institusjonene i ordinær drift. Stillingene omfatter klinisk oppfølging av pasienter ved både korttids- og langtidsplasser i kommunen. Tidligere sommervikarer trekker frem stort læringsutbytte, varierte og meningsfulle arbeidsoppgaver, trygge rammer og et solid fag- og arbeidsmiljø. Det er også mulig – og ønskelig – med hospitering i vinter- eller vårhalvåret, for å sikre en trygg overgang til selvstendig arbeid i sommerperioden.Ønsker du en variert arbeidsdag med spennende og lærerike oppgaver – men fri på kvelder og i helger? Da er du kanskje den vi ser etter. Vi søker nå tre medisinstudenter eller leger til å dekke behov for medisinsk oppfølging ved ulike institusjoner i perioden juni–august 2027. Du vil få tett samarbeid, faglig støtte og veiledning fra den øvrige legestaben. Ta gjerne kontakt for en uforpliktende samtale. Alle søkere bes legge ved relevante attester og vitnemål til søknaden. Den som ansettes, må kunne fremlegge politiattest. Aktuelle kandidater kontaktes, og ansettelser skjer fortløpende.Velkommen som søker på en spennende sommerjobb i sørlandsbyen Arendal.\nArbeidsoppgaver<ul><li>Undersøkelser, diagnostikk og behandling av pasienter</li><li>Planlegge selvstendig og ta raske avgjørelser</li><li>Tett samarbeid og tverrfaglig oppfølging med aktuelle instanser</li></ul>Kvalifikasjoner<ul><li>Medisinstudent med lisens eller autorisert lege</li><li>Relevant praksis og erfaring vektlegges</li><li>Gode ferdigheter og kunnskaper på IKT-verktøy</li><li>Det kreves gode norskkunnskaper både muntlig og skriftlig (min. B2) </li><li>Søkere bør ha sertifikat, og disponere egen bil, da det må påregnes kjøring mellom institusjonene.</li></ul>Personlige egenskaper<ul><li>Er trygg på egne ferdigheter – både faglig og personlig</li><li>Jobber strukturert, men er samtidig fleksibel og løsningsorientert</li><li>Trives når det er mye som skjer, og håndterer høyt tempo med ro og oversikt</li><li>Arbeider selvstendig, men verdsetter samarbeid og god kommunikasjon</li><li>Møter arbeidshverdagen med positivitet, engasjement og faglig nysgjerrighet</li></ul>Vi tilbyr<ul><li>Spennende og utfordrende arbeidsoppgaver</li><li>En variert og fleksibel arbeidsdag</li><li>Et godt arbeidsmiljø med engasjerte kollegaer</li><li>Arbeidstid 37,5 timer pr.uke dagtid</li><li>Konkurransedyktige vilkår</li></ul>KontaktinformasjonIngrid Hauge, Enhetsleder, +47 90619934\nArbeidsstedKlinkenberg 2\n4838 Arendal\nNøkkelinformasjon:Arbeidsgiver: Arendal kommune\n\nReferansenr.: 5207660651\nStillingsprosent: 100%\nSommerjobb\nStartdato: 21.06.2027\nSluttdato: 15.08.2027\nSøknadsfrist: 30.11.2026\n\n<p><b>Om arbeidsgiveren:</b></p><p><strong>Vil du bli vår nye kollega? </strong></p>\n<p>Arendal ble etablert som kjøbstad i mai 1723. Siden har det skjedd mye. I dag har Arendal kommune over 46 000 innbyggere. Kommunen er en handlekraftig organisasjon og en attraktiv arbeidsgiver for over 3500 medarbeidere. </p>\n<p>Vi løser viktige samfunnsoppgaver, og er en sentral aktør i utviklingen av byen og kommunen. Vi jobber aktivt med FNs bærekraftsmål, og vi er vertskommune for Arendalsuka - Norges største demokratifestival. </p>\n<p>Arbeidet skal preges av mangfold og våre medarbeidere skal gjenspeile Arendals befolkning. Vi ser mangfold som en styrke. Vi vil ha medarbeidere med ulike kompetanser, bakgrunn, erfaring og perspektiver for å bidra til enda bedre oppgaveløsning. </p>\n<p>Arendal kommune er sertifisert som likestilt arbeidsgiver. Vi oppfordrer alle som er kvalifisert; uansett alder, funksjonsevne, kjønn, seksuell orientering, religion og etnisk bakgrunn, til å søke jobb hos oss. Vi jobber for heltidskultur, og ansetter fortrinnsvis i hele stillinger. Se mer om vår <a href=\"http://youtu.be/pfJvVZ3FQkI?si=zP_fksu8UjD63WIS\">arbeidsgiverstrategi</a><a href=\"https://www.arendal.kommune.no/om-arendal-kommune/arbeidsgiverstrategi/\">.</a></p>\n<p>I henhold til offentlighetslovens § 25. gjør vi oppmerksom på at opplysninger om søkeren kan bli gjort offentlig, selv om søkeren har bedt om unntak fra offentlighet.</p>\n<p>For stillinger som arbeider med barn og unge, tjenester innen helse- og omsorg, eller brann- og eksplosjonsvern, må det foreligge tilfredsstillende politiattest før ansettelse.</p>",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/f62dcc6f-8c82-46e5-b20b-3a7ff70bbd4c",
+    "postedAt": "2026-11-13T10:53:47.989Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   }
 ]

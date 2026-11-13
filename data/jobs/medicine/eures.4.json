@@ -1796,7 +1796,7 @@
     "postedAt": "2026-10-30T07:23:02.739Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2575,7 +2575,7 @@
     "postedAt": "2026-09-03T01:14:13.207Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2612,7 +2612,7 @@
     "postedAt": "2026-09-15T01:12:55.569Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2931,7 +2931,7 @@
     "postedAt": "2026-10-01T01:13:06.559Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4467,7 +4467,7 @@
     "postedAt": "2026-11-10T03:13:38.687Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5952,6 +5952,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025240",
     "postedAt": "2026-10-18T10:33:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6221,7 +6223,7 @@
     "postedAt": "2026-11-12T17:10:29.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6365,6 +6367,24 @@
     "source": "eures"
   },
   {
+    "id": "eures:ODc5OTgxNyA5",
+    "slug": "ikiway-medecin-anesthesiste-h-f-odc5otgxnya5",
+    "company": "eures",
+    "employer": "Ikiway",
+    "title": "Médecin Anesthésiste (H/F)",
+    "locations": [
+      "Côte-d’Or, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "descriptionHtml": "<p>Notre client est un établissement public de santé. Il regroupe 4 sites qui oeuvrent ensemble pour une offre de proximité et de qualité à travers différents services (urgences, chirurgie, médecine, SMR, Ehpad, etc.)Le poste : Notre consultante Laura Leroy, spécialisée sur les métiers de la santé en Bourgogne Franche-Comté, recrute pour le compte de l'un de ses partenaires, un(e) Médecin Anesthésiste-Réanimateur H/F en CDI.Vous rejoignez une équipe composée actuellement de 6 médecins anesthésistes et 14 IADE, dont un IADE présent en continu sur place.L'activité s'appuie sur un plateau technique de 6 salles d'intervention et permet une prise en charge diversifiée de nombreuses spécialités chirurgicales et médicales : chirurgie viscérale, orthopédie-traumatologie, urologie, gynécologie-obstétrique, stomatologie-ORL, ophtalmologie, chirurgie plastique, ainsi que différents gestes anesthésiques.La maternité dispose de 3 salles de naissance, situées à proximité immédiate du bloc opératoire, et réalise plus de 600 accouchements par an.L'établissement dispose également de 6 lits polyvalents en unité de soins intensifs, d'un centre de la douleur et d'une équipe mobile de soins palliatifs, offrant un environnement complet pour la prise en charge des patients.IKI-LLEProfil recherché : Vous êtes titulaire d'un Doctorat en médecine, titulaire d'un DES d'Anesthésie-Réanimation et inscrit au Conseil de l'Ordre des Médecins.Vous souhaitez rejoindre une équipe à taille humaine et exercer une activité diversifiée au sein d'un plateau technique complet.Rigoureux(se), réactif(ve) et doté(e) d'un bon relationnel, vous appréciez le travail en équipe et souhaitez vous investir dans un projet médical durable.Poste à pourvoir en CDI. Conditions de travail et rémunération à définir selon profil.Logement possible.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8799817",
+    "postedAt": "2026-11-13T09:21:46.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:ODcwODk4NCA5",
     "slug": "adecco-medical-anesthesiste-reanimateur-h-f-odcwodk4nca5",
     "company": "eures",
@@ -6399,7 +6419,7 @@
     "postedAt": "2026-11-10T09:22:03.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6419,7 +6439,7 @@
     "postedAt": "2026-11-10T09:22:07.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -7086,6 +7106,148 @@
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
     "closedAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjE5MyA5",
+    "slug": "la-solution-medicale-pediatre-f-h-romainville-93230-odgwmje5mya5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Pédiatre F/H - Romainville 93230",
+    "locations": [
+      "Seine-Saint-Denis, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "descriptionHtml": "<p>Emploi Pédiatre Romainville 93230 / La Solution MédicaleCentre Médical à Romainville 93230, recherche activement un Pédiatre (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI - Horaires flexibles à convenance- Excellente rémunération- Planning rempli garantie Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802193",
+    "postedAt": "2026-11-13T12:35:43.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjIzNCA5",
+    "slug": "la-solution-medicale-cardiologue-f-h-port-de-bouc-13110-odgwmjiznca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Cardiologue F/H - Port-de-Bouc 13110",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "cardiology",
+    "descriptionHtml": "<p>Emploi Cardiologue Port-de-Bouc 13110 / La Solution MédicaleCentre Médical à Port-de-Bouc 13110, recherche activement un Cardiologue (F/H). Avantages du poste :- Assistance par une équipe paramédicale d'aides soignant(e)s (Pose ECG et Holter)- Rémunération sous forme de rétribution du chiffre d'affaires (Pourcentage élevé)- Examens complémentaires HOLTER, MAPA, ECG...- Échographie Cardiaque avec manip Radio- Matériel à la pointe de la technologie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802234",
+    "postedAt": "2026-11-13T12:35:46.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjM1OSA5",
+    "slug": "la-solution-medicale-orl-f-h-35-a-40-brut-du-ca-gennevilliers-92230-odgwmjm1osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "ORL F/H - 35 à 40% brut du CA Gennevilliers 92230",
+    "locations": [
+      "Hauts-de-Seine, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi ORL Gennevilliers 92230 / La Solution MédicaleCentre Médical à Gennevilliers 92230, recherche activement un ORL (F/H). Avantages du poste :- Rémunération attractive, de 35% à 45% brut du CA- Assurance professionnelle et accès à des formations régulières- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI, avec une flexibilité de 2 à 5 jours par semaine- Horaires flexibles, vous permettant de mieux concilier vie professionnelle et personnelle- Planning rempli garanti, vous bénéficiez d'une patientèle régulière et fidèle- Un environnement de travail agréable et moderne, adapté aux exigences professionnelles- Prise en charge de 50% de la carte Navigo pour vos déplacements. Avantages du centre :- Patientèle nombreuse et fidèle, assurant une activité continue- Une équipe dynamique, compétente et dévouée à la qualité des soins- Secrétariat pour gérer toutes les tâches administratives et faciliter votre quotidien- Matériel de haute technologie et environnement de travail de qualité- Localisation idéale, proche des transports en commun et avec parking disponible,  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; ORL diplômé, inscrit au Conseil National de l'Ordre des Médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802359",
+    "postedAt": "2026-11-13T12:35:52.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjQ5OSA5",
+    "slug": "la-solution-medicale-reanimateur-f-h-chateauroux-36000-odgwmjq5osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Réanimateur  F/H - Châteauroux 36000",
+    "locations": [
+      "Indre, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Réanimateur Châteauroux 36000. La Solution MédicaleUn centre hospitalier recrute à Châteauroux 36000., un Réanimateur (H/F), pour un poste en CDI à temps plein. 1/ LE SERVICE DE REANIMATION POLYVALENTEA - Les activités du pôle sont :Le service de réanimation polyvalente est doté de 10 lits d'hospitalisation complète etd'une unité de surveillance continue de 6 lits. Il a vocation à accepter des patientsmédicaux et chirurgicaux du centre hospitalier et des établissements publics ouprivés du territoire de santé. B - Composition de l'équipe médicale1 Praticien hospitalier TP1 Praticien clinicien 0,20 ETP2 Praticiens attachés associés TP 2/ PROJET DE SERVICEConsolidation et développement des activités existantes.3/ MODALITES DE FONCTIONNEMENT DU SERVICEService en garde4/ PROFIL DU CANDIDATPraticien inscrit à l'ordre 5/ REMUNERATIONPoste de clinicien possible Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins en France Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802499",
+    "postedAt": "2026-11-13T12:35:55.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjQxNyA5",
+    "slug": "la-solution-medicale-dermatologue-en-centre-esthetique-f-h-compiegne-60200-odgwmjqxnya5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue en Centre Esthétique F/H - Compiègne  60200",
+    "locations": [
+      "Oise, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi dermatologue Compiègne 60200 / La Solution MédicaleCentre Esthétique à Compiègne 60200, recherche activement un Dermatologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire, congés incluses- Assurance professionnelle, formations régulières...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garanti Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Médecin Spécialiste et Qualifié en Dermatologie.Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802417",
+    "postedAt": "2026-11-13T12:35:53.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjQyMiA5",
+    "slug": "la-solution-medicale-dermatologue-f-h-strasbourg-67000-odgwmjqymia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue F/H - Strasbourg  67000",
+    "locations": [
+      "Bas-Rhin, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi dermatologue Strasbourg 67000 / La Solution MédicaleCentre Médical à Strasbourg 67000, recherche activement un Dermatologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire, congés incluses- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Médecin Spécialiste et Qualifié en Dermatologie.Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802422",
+    "postedAt": "2026-11-13T12:35:52.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMTI3MiA5",
+    "slug": "domino-rh-medicare-saint-etienne-medecin-geriatre-h-f-odgwmti3mia5",
+    "company": "eures",
+    "employer": "Domino RH - Médicare Saint-Etienne",
+    "title": "Médecin Gériatre - H/F",
+    "locations": [
+      "Haute-Savoie, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>Nous recrutons pour l'un de nos clients, un acteur important de la filière gériatrique du GHT, un Médecin Gériatre H/F, en CDI, à temps plein ou partiel. -Présentation de l'Etablissement : Situé en Haute-Savoie, l'établissement est spécialisé dans la prise en charge en Ehpad et en USLD. -Présentation du poste : -Présentation des missions principales du poste : *Prendre en charge des Patients admis&amp;nbsp;&amp;nbsp;en Ehpad en respectant les bonnes pratiques professionnelles et le projet médical de l'Etablissement ;*Assurer le bon fonctionnement du service dont vous avez la charge ; *Être l'initiateur de la prise en charge des Patients par la réalisation d'un diagnostic médical et assurer le suivi du projet thérapeutique mis en place avec l'équipe pluridisciplinaire ;*Valider les demandes d'admissions, animer les staffs hebdomadaires et coordonner la prise en charge avec les équipes ainsi que la préparation des sorties ;*Organiser l'admission des Patients ; *Assurer un relationnel avec les patients, recevoir les familles à la demande ;*Garantir la bonne tenue du dossier patient en respectant les bonnes pratiques, les protocoles et procédures en place ; *Participer à la mise en place du projet médical ;*Participer activement à la démarche qualité ; *Contribuer avec les autres Praticiens du site aux réunions d'organisation, de pilotage de l'Etablissement ; *Participer aux instances médicales et représentatives de l'Etablissement.  -Présentation des caractéristiques du poste : *Poste en CDI ; *Poste à temps plein (avec possibilité d'un temps partiel) ;*Cadre de travail agréable ; Rattachement hiérarchique : la Direction. Rémunération indicative : en fonction de la convention collective de FPH, en fonction de vos expériences et de votre profil.&amp;nbsp;&amp;nbsp; La qualification requise : *Médecin Gériatre qualifié ; *Inscrit au Conseil National de l'Ordre des Médecins. La formation requise : *Un Médecin diplômé avec expérience en EHPAD ou USLD. L'expérience professionnelle requise : *Une expérience sur un poste similaire ou une expérience au minimum de 5 ans de médecin salarié et/ou libéral est souhaitée. Les qualités professionnelles requises : *-Participation à un projet de soins de qualité ; *Une réelle vocation pour s'occuper de la personne âgée est demandée *Qualité des soins et des services. *Apprécier le travail en équipe.Nous attendons votre candidature.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8801272",
+    "postedAt": "2026-11-13T12:33:40.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDY2OCA5",
+    "slug": "la-solution-medicale-pneumologue-f-h-saint-quentin-02100-odgwndy2oca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Pneumologue F/H - Saint-Quentin 02100",
+    "locations": [
+      "Aisne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>Emploi Pneumologue Saint-Quentin 02100 / La Solution MédicaleCentre de santé à Saint-Quentin 02100, recherche activement un Pneumologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire et sur acte et consultation, congés incluses- Assurance professionnelle, formations régulières, tickets restaurants...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins Licence de remplacement.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804668",
+    "postedAt": "2026-11-13T12:37:46.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -7973,6 +8135,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8221970",
     "postedAt": "2026-10-23T15:06:14.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8297,6 +8461,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8223498",
     "postedAt": "2026-10-23T15:09:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8367,6 +8533,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8223528",
     "postedAt": "2026-10-23T15:09:13.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8823,6 +8991,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8399884",
     "postedAt": "2026-10-29T12:34:33.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8840,6 +9010,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8399914",
     "postedAt": "2026-10-29T12:34:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9129,6 +9301,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8450185",
     "postedAt": "2026-10-31T12:32:53.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9332,7 +9506,7 @@
     "postedAt": "2026-11-02T17:05:50.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9370,7 +9544,7 @@
     "postedAt": "2026-11-02T17:06:04.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9390,7 +9564,7 @@
     "postedAt": "2026-11-03T01:26:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -9409,6 +9583,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400058",
     "postedAt": "2026-10-29T12:34:49.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9427,6 +9603,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400147",
     "postedAt": "2026-10-29T12:35:11.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9445,6 +9623,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400100",
     "postedAt": "2026-10-29T12:34:55.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9698,6 +9878,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422845",
     "postedAt": "2026-10-30T12:36:39.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9715,6 +9897,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422837",
     "postedAt": "2026-10-30T12:36:40.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9733,6 +9917,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422950",
     "postedAt": "2026-10-30T12:36:44.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9750,6 +9936,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422902",
     "postedAt": "2026-10-30T12:36:41.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10431,7 +10619,7 @@
     "postedAt": "2026-11-06T01:51:31.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -10451,7 +10639,7 @@
     "postedAt": "2026-11-06T01:51:58.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -10984,7 +11172,7 @@
     "postedAt": "2026-11-09T07:32:39.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {

@@ -450,8 +450,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0823",
     "postedAt": "2026-09-03T15:09:18.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -470,6 +468,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0824",
     "postedAt": "2026-09-03T14:26:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -818,8 +818,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9223-26-0927",
     "postedAt": "2026-09-22T08:09:53.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1130,8 +1128,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9331-26-0761",
     "postedAt": "2026-09-30T10:38:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1177,6 +1173,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4429-26-0000",
     "postedAt": "2026-09-30T13:40:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1297,6 +1295,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0314-26-2911",
     "postedAt": "2026-10-02T15:23:01.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -1431,6 +1431,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1386-26-0000",
     "postedAt": "2026-10-05T09:30:18.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -2066,7 +2068,7 @@
     "postedAt": "2026-10-09T09:44:33.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -2609,8 +2611,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9369-26-0818",
     "postedAt": "2026-10-13T09:08:33.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3074,7 +3074,7 @@
     "postedAt": "2026-11-12T13:45:56.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -3323,7 +3323,7 @@
     "postedAt": "2026-10-19T14:02:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -3445,8 +3445,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9351-26-1182",
     "postedAt": "2026-10-21T08:14:07.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3835,6 +3833,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-0994",
     "postedAt": "2026-10-19T16:18:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -3899,7 +3899,7 @@
     "postedAt": "2026-10-19T17:43:30.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -3977,8 +3977,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9395-26-0618",
     "postedAt": "2026-10-19T10:36:30.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4025,7 +4023,7 @@
     "postedAt": "2026-10-19T15:13:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -4078,6 +4076,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9267-26-1240",
     "postedAt": "2026-10-19T14:33:14.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4101,8 +4101,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0270",
     "postedAt": "2026-10-20T09:11:28.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4181,6 +4179,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3627-26-0014",
     "postedAt": "2026-10-20T08:13:06.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4267,6 +4267,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1633-26-0007",
     "postedAt": "2026-10-20T08:45:21.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4291,7 +4293,7 @@
     "postedAt": "2026-10-20T08:52:23.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -4333,8 +4335,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4277-26-0000",
     "postedAt": "2026-10-20T10:23:15.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4389,6 +4389,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0554-26-0112",
     "postedAt": "2026-10-20T11:29:14.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4430,8 +4432,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0085-2991",
     "postedAt": "2026-10-20T13:39:20.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -4534,6 +4534,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0506",
     "postedAt": "2026-10-20T13:08:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4552,6 +4554,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1997-26-0005",
     "postedAt": "2026-10-20T13:35:29.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4626,6 +4630,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9331-26-0828",
     "postedAt": "2026-10-20T15:51:42.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4824,8 +4830,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9284-26-0479",
     "postedAt": "2026-10-21T14:17:09.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -4990,8 +4994,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9382-26-0641",
     "postedAt": "2026-10-26T15:20:36.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5017,8 +5019,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9249-26-0648",
     "postedAt": "2026-10-23T08:10:02.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5135,6 +5135,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9389-26-0577",
     "postedAt": "2026-10-23T08:10:33.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5258,8 +5260,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9190-26-0663",
     "postedAt": "2026-10-23T08:42:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -5332,8 +5332,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1483-26-0008",
     "postedAt": "2026-10-23T09:18:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5792,6 +5790,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9439-2627-1132-1",
     "postedAt": "2026-10-26T10:19:11.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -5905,8 +5905,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0646-26-0034",
     "postedAt": "2026-10-26T17:29:56.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "nhs"
   },
   {
@@ -6031,8 +6029,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0302-26-1285",
     "postedAt": "2026-10-26T12:31:58.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6143,8 +6139,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9216-26-1587",
     "postedAt": "2026-10-26T13:21:23.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -6188,6 +6182,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9367-26-1011",
     "postedAt": "2026-11-10T15:53:26.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6276,6 +6272,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5104-26-0002",
     "postedAt": "2026-11-04T16:05:03.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6338,8 +6336,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0038-26-1002",
     "postedAt": "2026-10-28T16:36:13.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -6474,7 +6470,7 @@
     "postedAt": "2026-10-26T16:42:00.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -6499,7 +6495,7 @@
     "postedAt": "2026-10-26T17:27:55.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -6577,8 +6573,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9246-26-1223",
     "postedAt": "2026-10-27T10:03:07.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6604,6 +6598,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9325-26-0853",
     "postedAt": "2026-10-27T09:58:28.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6642,6 +6638,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0846-26-0002",
     "postedAt": "2026-10-27T12:53:02.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6715,6 +6713,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0421-26-0032",
     "postedAt": "2026-10-27T12:24:58.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -6836,8 +6836,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9351-26-1229",
     "postedAt": "2026-10-27T14:06:36.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -7012,7 +7010,7 @@
     "postedAt": "2026-10-27T15:21:38.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -7030,6 +7028,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5963-26-0003",
     "postedAt": "2026-10-27T15:05:29.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7103,6 +7103,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0236-26-0302",
     "postedAt": "2026-11-03T14:12:49.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7199,6 +7201,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4653-26-0000",
     "postedAt": "2026-10-30T12:05:50.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7328,8 +7332,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9272-26-0594",
     "postedAt": "2026-10-28T10:01:51.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7448,6 +7450,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/H9050-26-2510",
     "postedAt": "2026-10-28T11:14:45.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7543,6 +7547,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9208-26-0635",
     "postedAt": "2026-10-29T10:45:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7591,8 +7597,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/L0087-26-0813",
     "postedAt": "2026-10-28T14:27:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -7738,8 +7742,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9317-26-0893",
     "postedAt": "2026-10-28T16:03:19.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8023,8 +8025,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/Q0004-43137",
     "postedAt": "2026-11-03T11:57:37.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8153,6 +8153,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0158-26-0001",
     "postedAt": "2026-10-29T15:28:36.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8196,8 +8198,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/Q0004-42143-2",
     "postedAt": "2026-11-03T13:36:03.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8224,7 +8224,7 @@
     "postedAt": "2026-10-29T13:22:37.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -8433,6 +8433,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4994-26-0002",
     "postedAt": "2026-11-03T10:11:05.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8606,8 +8608,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2670",
     "postedAt": "2026-10-30T09:26:35.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -8656,8 +8656,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2673",
     "postedAt": "2026-10-30T09:27:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -8732,6 +8730,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C8192-26-0588",
     "postedAt": "2026-10-30T11:08:49.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -8757,8 +8757,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0158-26-0138",
     "postedAt": "2026-10-30T11:22:30.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9073,6 +9071,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/W0038-26-0004",
     "postedAt": "2026-11-02T17:10:14.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9098,8 +9098,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2688",
     "postedAt": "2026-11-02T15:32:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9372,6 +9370,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0325-26-0039",
     "postedAt": "2026-11-02T17:37:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9468,6 +9468,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0103-26-0084",
     "postedAt": "2026-11-02T11:46:52.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9575,8 +9577,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9455-26-0802",
     "postedAt": "2026-11-03T08:22:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -9858,6 +9858,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0505-26-0964",
     "postedAt": "2026-11-02T14:58:10.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10005,6 +10007,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9320-26-1134",
     "postedAt": "2026-11-02T16:03:24.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10071,6 +10075,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A2539-26-0008",
     "postedAt": "2026-11-02T17:36:41.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10109,6 +10115,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5815-26-0014",
     "postedAt": "2026-11-03T07:42:45.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10128,8 +10136,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A5302-26-0003",
     "postedAt": "2026-11-03T08:01:09.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10155,6 +10161,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9246-26-1247",
     "postedAt": "2026-11-03T09:22:10.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10202,6 +10210,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9271-26-0457",
     "postedAt": "2026-11-03T09:31:27.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10226,8 +10236,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C8192-26-0598",
     "postedAt": "2026-11-03T09:36:53.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10253,6 +10261,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9214-26-0959",
     "postedAt": "2026-11-05T14:26:18.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10296,8 +10306,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3904-26-0003",
     "postedAt": "2026-11-03T11:13:07.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10341,6 +10349,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/Q0004-42441-1",
     "postedAt": "2026-11-03T11:10:39.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10366,7 +10376,7 @@
     "postedAt": "2026-11-03T11:14:32.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -10419,8 +10429,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9346-AMH-329M9",
     "postedAt": "2026-11-03T12:24:24.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10446,8 +10454,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1281",
     "postedAt": "2026-11-03T14:05:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10473,8 +10479,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1283",
     "postedAt": "2026-11-03T14:05:46.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10524,8 +10528,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1286",
     "postedAt": "2026-11-03T14:08:22.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10570,6 +10572,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0132-26-2636",
     "postedAt": "2026-11-06T08:58:09.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10595,8 +10599,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9346-AMH-356M",
     "postedAt": "2026-11-03T14:31:46.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10649,6 +10651,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9356-26-0731",
     "postedAt": "2026-11-04T10:53:56.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10673,6 +10677,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9358-26-0749",
     "postedAt": "2026-11-03T15:09:30.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10697,6 +10703,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9362-26-0830",
     "postedAt": "2026-11-03T15:30:31.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10763,6 +10771,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9153-26-0964",
     "postedAt": "2026-11-03T15:16:27.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10788,6 +10798,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9279-26-1111",
     "postedAt": "2026-11-03T15:53:38.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10813,6 +10825,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9234-26-1045",
     "postedAt": "2026-11-03T16:01:32.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10888,8 +10902,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9162-26-0306",
     "postedAt": "2026-11-04T09:25:04.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10936,6 +10948,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9310-26-0680",
     "postedAt": "2026-11-04T09:03:48.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -10961,6 +10975,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9310-26-0681",
     "postedAt": "2026-11-04T09:09:44.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11011,6 +11027,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9321-26-2014",
     "postedAt": "2026-11-04T10:02:58.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11053,6 +11071,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9284-26-0505",
     "postedAt": "2026-11-04T09:50:49.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11111,8 +11131,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9223-26-1048",
     "postedAt": "2026-11-04T10:17:43.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11257,7 +11275,7 @@
     "postedAt": "2026-11-04T12:18:16.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -11458,8 +11476,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0093-26-0070",
     "postedAt": "2026-11-04T17:04:57.000Z",
     "firstSeenAt": "2026-11-04T22:03:18.224Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11527,8 +11543,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9390-26-2719",
     "postedAt": "2026-11-05T15:40:42.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11579,8 +11593,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9354-26-1296",
     "postedAt": "2026-11-06T09:57:10.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11600,8 +11612,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0354-JF000258STAHES",
     "postedAt": "2026-11-05T11:10:27.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11627,8 +11637,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9213-26-0963",
     "postedAt": "2026-11-05T11:19:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11653,6 +11661,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9438-26-0615",
     "postedAt": "2026-11-05T11:22:22.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11721,6 +11731,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9387-26-2282",
     "postedAt": "2026-11-05T11:38:52.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11739,8 +11751,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9267-26-1310",
     "postedAt": "2026-11-05T12:57:28.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -11815,6 +11825,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9438-26-0616",
     "postedAt": "2026-11-05T13:42:35.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11882,6 +11894,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/H9100-26-1247",
     "postedAt": "2026-11-05T14:21:15.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -11993,8 +12007,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0132-26-2671",
     "postedAt": "2026-11-06T08:53:56.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -12059,8 +12071,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9290-26-1316",
     "postedAt": "2026-11-06T14:03:26.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12086,6 +12096,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2383",
     "postedAt": "2026-11-06T08:37:55.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12130,6 +12142,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9151-26-1453",
     "postedAt": "2026-11-06T09:44:09.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12155,6 +12169,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9369-26-0889",
     "postedAt": "2026-11-06T09:37:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12206,6 +12222,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9267-26-1322",
     "postedAt": "2026-11-06T09:50:30.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12279,8 +12297,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2384",
     "postedAt": "2026-11-06T10:15:24.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12305,8 +12321,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9184-26-1616",
     "postedAt": "2026-11-06T11:08:16.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -12357,8 +12371,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9214-26-0981",
     "postedAt": "2026-11-06T13:07:56.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12426,8 +12438,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0143-26-0000",
     "postedAt": "2026-11-06T12:58:02.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12452,8 +12462,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M9990-26-0838",
     "postedAt": "2026-11-06T12:45:52.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12504,8 +12512,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C0020-26-1722",
     "postedAt": "2026-11-06T12:51:40.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12530,8 +12536,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9159-26-0179",
     "postedAt": "2026-11-06T13:28:11.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12710,6 +12714,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C0020-26-1729",
     "postedAt": "2026-11-06T19:22:17.000Z",
     "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12780,6 +12786,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9309-26-1091",
     "postedAt": "2026-11-09T09:59:16.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -12979,6 +12987,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3302-26-0004",
     "postedAt": "2026-11-09T11:13:56.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13004,8 +13014,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9176-26-0659",
     "postedAt": "2026-11-09T11:19:19.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13056,6 +13064,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9190-26-0718",
     "postedAt": "2026-11-09T13:45:08.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13106,6 +13116,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9377-001670",
     "postedAt": "2026-11-09T14:23:21.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13130,6 +13142,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9387-26-2327",
     "postedAt": "2026-11-09T14:57:43.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13293,6 +13307,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0135-26-0185",
     "postedAt": "2026-11-09T16:31:42.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13367,8 +13383,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0348",
     "postedAt": "2026-11-11T08:32:01.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13464,8 +13478,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0366",
     "postedAt": "2026-11-11T08:36:12.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13484,8 +13496,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0369",
     "postedAt": "2026-11-11T08:36:51.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13504,8 +13514,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1797-26-0370",
     "postedAt": "2026-11-11T08:37:08.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13643,8 +13651,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0611-26-0029",
     "postedAt": "2026-11-10T11:13:39.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13669,6 +13675,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E9847-26-0380",
     "postedAt": "2026-11-10T10:36:59.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13687,8 +13695,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/U0011-26-0022-PRMP",
     "postedAt": "2026-11-10T10:53:05.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13712,8 +13718,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9344-26-0616",
     "postedAt": "2026-11-10T12:00:54.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -13739,6 +13743,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9265-26-0760",
     "postedAt": "2026-11-10T10:46:13.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14075,6 +14081,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9162-26-0322",
     "postedAt": "2026-11-10T14:50:39.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14200,8 +14208,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0557",
     "postedAt": "2026-11-10T15:41:27.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14255,6 +14261,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9202-26-0291",
     "postedAt": "2026-11-10T16:29:16.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14297,6 +14305,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/M0035-26-0558",
     "postedAt": "2026-11-10T22:28:09.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14322,8 +14332,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9348-26-2507",
     "postedAt": "2026-11-11T04:12:32.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14421,6 +14429,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A1352-26-0012",
     "postedAt": "2026-11-11T10:17:04.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14496,6 +14506,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9155-FCMD-1126-24",
     "postedAt": "2026-11-11T10:55:36.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14519,8 +14531,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9216-26-1667",
     "postedAt": "2026-11-11T11:18:51.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14544,6 +14554,32 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9216-26-1669",
     "postedAt": "2026-11-11T11:19:30.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5721298",
+    "slug": "healthharmonie-consultant-dermatologist-u0024-26-0112",
+    "company": "nhs",
+    "employer": "HealthHarmonie",
+    "title": "Consultant Dermatologist",
+    "locations": [
+      "Liverpool, United Kingdom",
+      "ST. HELENS, United Kingdom",
+      "PRESCOT, United Kingdom",
+      "WALLASEY, United Kingdom",
+      "LIVERPOOL, United Kingdom",
+      "WIRRAL, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "level": "senior",
+    "descriptionHtml": "<p>HealthHarmonie, part of Medinet Group, is looking to recruit an experienced Consultant Dermatologist to join its growing community healthcare team on a permanent basis.</p><p>This is an exciting opportunity to play a key role in delivering high-quality community dermatology services, working in partnership with the NHS to improve patient access, reduce waiting times and provide timely specialist care.</p><p>The successful candidate will be responsible for delivering dermatology outpatient clinics within a community setting. Key duties will include:</p><ul><li><p>Assessing, diagnosing and managing patients presenting with a range of dermatological conditions.</p></li><li><p>Conducting new and follow-up outpatient consultations.</p></li><li><p>Developing appropriate treatment plans and advising on ongoing patient management.</p></li><li><p>Undertaking dermatological procedures and treatments within their scope of practice, where required.</p></li><li><p>Maintaining accurate clinical records and ensuring appropriate patient documentation.</p></li><li><p>Working collaboratively with the wider multidisciplinary team to deliver safe, effective and patient-centred care.</p></li><li><p>Ensuring compliance with clinical governance, safeguarding and patient safety standards.</p></li></ul><p>Health Harmonie is one of the UK's leading independent healthcare providers, delivering high-quality NHS community services that improve access to specialist care and support the delivery of healthcare closer to patients' homes.</p><p>Working in partnership with NHS Integrated Care Boards, Trusts, Primary Care Networks and GP Practices, we provide consultant-led services across a range of specialties including Dermatology, Ophthalmology, Gastroenterology, ENT and Diagnostic Services.</p><p>Our focus is on delivering safe, effective and patient-centred care through innovative community pathways, reducing waiting times and improving patient outcomes. We combine clinical excellence with strong governance, modern technology and dedicated operational support to ensure the highest standards of care.</p><p>At Health Harmonie, our people are at the heart of everything we do. We are committed to creating a supportive and inclusive working environment where clinicians can thrive, develop professionally and make a meaningful difference to NHS patients. Through collaboration, innovation and a commitment to continuous improvement, we help transform the way healthcare is delivered within local communities.</p><p>Joining Health Harmonie offers the opportunity to be part of an organisation that is passionate about clinical quality, outstanding patient experience and delivering sustainable healthcare solutions across the NHS.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/U0024-26-0112",
+    "postedAt": "2026-11-11T11:39:33.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -14562,6 +14598,31 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A4766-26-0001",
     "postedAt": "2026-11-11T12:28:44.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5721386",
+    "slug": "east-london-nhs-foundation-trust-consultant-psychiatrist-addictions-bedford-c9363-26-1321",
+    "company": "nhs",
+    "employer": "East London NHS Foundation Trust",
+    "title": "Consultant Psychiatrist - Addictions, Bedford",
+    "locations": [
+      "Bedford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 109725,
+      "max": 145478,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The post holder will support the multidisciplinary team in the management of patients with a dual diagnosis. The post-holder will work with an MDT including pharmacy, psychology, social work, CPN colleagues, and trainees. </p> <p>Path to Recovery (P2R) is an innovative community drug and alcohol service offering interventions to residents in Bedford Borough and Central Bedfordshire. P2R is an East London NHS Foundation Trust (ELFT) service and forms part of a network of addictions services within the Trust. </p> <p>There is an opportunity to be the visiting psychiatrist to the Family Drug and Alcohol Court (FDAC) service.</p> <p>Closing date: <strong>29-Apr-2026</strong></p> <p>Interview date (AAC panel): <strong>TBC</strong></p> <ul>  <li>Provide consultant leadership and support continued development of the Addictions services with an opportunity to be a visiting FDAC psychiatrist.</li>  <li>Provide regular clinical input to the service through conducting specialist clinics that offer assessment and evidence-based treatment interventions for dual diagnosis patients (open to both CMHT and addiction services) and patients under addiction services (P2R). </li>  <li>Provide a key role as the senior specialist clinician within the team and will support the wider work of the multi-disciplinary team.</li>  <li>Provide a clinical assessment, including relevant psychiatric and physical investigation.</li>  <li>Take an active part in the implementation, adherence and development of internal and external clinical governance procedures.</li>  <li>Provide clinical advice and guidance to primary care physicians to manage patients in the least restrictive environment.</li>  <li>Work with the Team manager to ensure the KPI targets are met.</li>  <li>Develop the service to achieve HTAS accreditation</li>  <li>Work closely with colleagues from other specialist teams to provide a collaborative approach to the care of patients who are jointly under the care of these services.</li>  <li>Provide appropriate clinical supervision and training for junior medical staff and lead the multidisciplinary team. </li>  <li>Take part in mandatory Trust audit programmes and also develop local relevant audit cycles to improve the function of the team. </li>  <li>Actively participate in the Trust's clinical and strategic development. </li> </ul><p>Our mission is to make a positive difference to people's lives by improving the quality of life for all we serve. Our values are: We Care, We Respect, We are Inclusive - so we are looking for people who live and breathe these qualities when supporting service users and carers, and in their relationships with colleagues in the Trust and our partner organisations.</p>  <p>Please find a YouTube Video: https://youtu.be/UUIY7EQUikY</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9363-26-1321",
+    "postedAt": "2026-11-11T12:37:21.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -14629,8 +14690,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3539-26-0007",
     "postedAt": "2026-11-11T12:07:32.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "nhs"
   },
   {
@@ -14656,6 +14715,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9184-26-1519",
     "postedAt": "2026-11-11T11:57:36.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14674,6 +14735,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3228-26-0011",
     "postedAt": "2026-11-11T12:33:38.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14699,6 +14762,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9184-26-1522",
     "postedAt": "2026-11-11T12:06:43.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14743,7 +14808,7 @@
     "postedAt": "2026-11-11T13:22:27.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -14769,8 +14834,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9289-26-0261",
     "postedAt": "2026-11-11T13:51:50.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -14837,8 +14900,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9028-26-0234",
     "postedAt": "2026-11-11T15:05:16.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -15244,6 +15305,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9407-26-0448",
     "postedAt": "2026-11-12T13:27:37.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -15269,6 +15332,8 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9409-26-1170",
     "postedAt": "2026-11-12T13:35:42.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -15368,8 +15433,6 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9234-26-1055",
     "postedAt": "2026-11-12T15:00:31.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
     "source": "nhs"
   },
   {
@@ -15433,7 +15496,7 @@
     "postedAt": "2026-11-12T15:51:27.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -15501,6 +15564,24 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A3467-26-0010",
     "postedAt": "2026-11-12T17:36:36.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5726152",
+    "slug": "middleway-surgery-salaried-gp-a0702-26-0005",
+    "company": "nhs",
+    "employer": "Middleway Surgery",
+    "title": "Salaried GP",
+    "locations": [
+      "Par, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p> <strong>Exciting GP Opportunity in Beautiful Cornwall!</strong> </p><p>Looking for a\r\nfresh start somewhere vibrant, supportive, and just minutes from the coast? </p><p><strong>Middleway\r\nSurgery</strong> is expanding\r\nand were on the lookout for a motivated GP to join our friendly,\r\nforward-thinking team for <strong>68 sessions per week</strong> (with potential for\r\nfuture partnership ).</p><p> <strong>What we offer:</strong>\r\n\r\nCompetitive salary: £11.5k£12k per session (depending on experience)\r\n\r\nSupportive, dynamic team environment\r\n\r\nAbove-average earnings &amp; high QOF achievement\r\n\r\nStrong focus on training, development &amp; research\r\n\r\nOpportunities to pursue specialist interests</p><p> <strong>Our team includes:</strong>\r\n3 GP partners, 1 salaried GP, Nurse Practitioners, Practice Nurses, HCAs,\r\npharmacists, physios, social prescribers, and a fantastic admin team </p><p> <strong>Location perks:</strong>\r\n\r\n5 minutes from the beach\r\n Close\r\nto the charming harbour town of Fowey\r\n\r\nNear the Eden Project\r\n\r\nEasy access to Truro &amp; Plymouth</p><p> <strong>Practice highlights:</strong>\r\n List\r\nsize ~6,700\r\n EMIS\r\nWeb system\r\n Active\r\nwithin our PCN\r\n Wide\r\nrange of services\r\n Strong\r\ncommunity and collaborative working</p><p> <strong>Start date:</strong> Summer 2026\r\n\r\nWorking Days negotiable</p><p>The following are the core responsibilities of\r\nthe Salaried GP. There may be, on occasion, a requirement to carry out other\r\ntasks; this will be dependent upon factors such as workload and staff levels:a.\r\nThe\r\ndelivery of highly effective medical care to the entitled populationb.\r\nThe\r\nprovision of services GMS contractc.\r\nGeneric\r\nprescribing adhering to guidanced.\r\nEffective\r\nmanagement of long-term conditions</p><p>e.\r\nProcessing\r\nof admin in a timely manner, including referrals,prescription\r\nrequests and associated admin tasksf.\r\nOn\r\na rota basis, undertake tel triage and duty doctor rolesg.\r\nMaintain\r\naccurate clinical records</p><p>h.\r\nWork\r\ncollaboratively, accepting an equal share of the practice workloadi.\r\nAdhere\r\nto best practice recommended through clinical guidelines and the audit processj. .\r\nAccept\r\ndelegated responsibility for a specific area (or areas) or the QOFl.\r\nAttend\r\n&amp; contribute effectively to practice meetings asrequiredm.\r\nContribute\r\neffective to the development and maintenance of the practice including clinical\r\ngovernance and trainingn.\r\nEnsure\r\ncompliance with the appraisal processo. complete the revalidation processp.\r\nCommit\r\nto self-learning.\r\nSupport\r\nthe training of medical studentsr.\r\nSupport\r\nthe partners in achieving the strategic aims of the practice, making\r\nrecommendations to enhance income and reduce expenditures. adhere to practice protocols and policiest.\r\nEncourage\r\ncollaborative working, liaising with staff regularly, always promoting a\r\nculture of continuous improvement</p><p>We are friendly, dynamic, forward\r\nthinking and a supportive GMS practice, with above average earnings and have 3\r\nGP partners, 1 salaried GP, 2 Nurse Practitioners, 2 Practice Nurses, 2 HCAs,\r\npharmacists, physios, social prescribers, womens health nurse and a full\r\ncomprehensive admin team.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0702-26-0005",
+    "postedAt": "2026-11-12T17:17:31.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   },
   {
@@ -15582,6 +15663,31 @@
     "source": "nhs"
   },
   {
+    "id": "nhs:5726361",
+    "slug": "northern-care-alliance-nhs-foundation-trust-consultant-haematologist-c9236-26-1552",
+    "company": "nhs",
+    "employer": "Northern Care Alliance NHS Foundation Trust",
+    "title": "Consultant Haematologist",
+    "locations": [
+      "Salford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are looking to appoint a forward-thinking and collaborative Consultant in Clinical Haematology to complement of a team of 12 consultants at the Northern Care Alliance with base hospital being Salford Royal Hospital where there are currently 4.8 WTE consultant haematologists based.</p><p>This is an exciting opportunity to join an established consultant team providing comprehensive clinical haematology services to the local Salford population whilst also contributing to the management of complex haematological problems arising from the extensive tertiary and regional services.</p><ul> <li>Provide consultant-level inpatient and outpatient clinical Haematology care.</li> <li>Participate in the consultant on-call service and provide specialist haematological advice across Salford Royal, Royal Bolton and Wigan hospitals (WWL).</li> <li>Participate in the management of malignant haematological disorders, including complex systemic anti-cancer therapies.Provide expert advice for complex haematological problems arising within Salford Royal's major trauma, critical care and tertiary services.</li> <li>Participate in North West Sector multidisciplinary team meetings and regional specialist pathways.</li> <li>Contribute to laboratory haematology, including blood-film reporting and clinical liaison with laboratory colleagues.</li> <li>Contribute to the development of advanced treatment pathways, including bispecific antibody therapies and ambulatory treatment models.</li> <li>Participate in clinical governance, audit, quality improvement and patient-safety activity.</li> <li>Contribute to undergraduate and postgraduate education and supervision.</li> <li>Participate in research and support recruitment to clinical trials where appropriate.</li> <li>Work collaboratively across NCA and with tertiary partners including MFT, The Christie and Greater Manchester HODS.</li> <li>Contribute to service redesign, workforce development and the strategic development of Clinical Haematology.</li></ul>The Northern Care Alliance NHS Foundation Trust (NCA) provides hospital and integrated health and social care services to over one million people living across Greater Manchester. Our 20,000 colleagues care for people in hospital and in the community, working across Bury, Rochdale, Oldham, and Salford, to save and improve lives.As a large NHS trust we are committed to enhancing the health of our local population by delivering consistently high standards of care and collaborating closely with local authorities and key partners. We believe in our power and potential to make a difference and we are always looking for people who demonstrate our three core values - care, appreciate and inspire - to join our team.In return, we can offer you a job role with purpose and flexibility. The size and scale of the NCA means we can provide more challenge and opportunities so your career can always be moving in the right direction. By joining us you can also access a competitive benefits package, including, a fantastic annual leave allowance, flexible working opportunities and protected hours for health and wellbeing activities, helping you to achieve more personal downtime and a better work-life balance.",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9236-26-1552",
+    "postedAt": "2026-11-13T12:53:54.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
     "id": "nhs:5726383",
     "slug": "cygnet-health-care-support-worker-males-only-e0233-26-2457",
     "company": "nhs",
@@ -15650,6 +15756,191 @@
     "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0233-26-2461",
     "postedAt": "2026-11-13T10:11:25.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5726831",
+    "slug": "modality-partnership-salaried-gp-kingsway-medical-centre-e0281-26-0211",
+    "company": "nhs",
+    "employer": "Modality Partnership",
+    "title": "Salaried GP - Kingsway Medical Centre",
+    "locations": [
+      "Luton, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p><strong>Ready to make an impact?</strong></p><p>\r\nJoin us as a General Practitioner within Bedford Division, Modality\r\nPartnership, and help shape the future of Primary Care.</p><p>If you are passionate about delivering high-quality,\r\npatient-centred care, value collaboration, and are seeking flexibility within a\r\nforward-thinking organisation, we would love to hear from you.</p><p>We are seeking a\r\ncompassionate and motivated GP to join Kingsway Medical Centre with part-time\r\nopportunities available (6-8 sessions per week). This role offers more than\r\ntraditional General Practice, combining innovation, strong clinical governance,\r\nand modern ways of working. Recent developments include robotic processing of\r\nblood results and prescriptions, alongside early adoption of digital and AI\r\nsolutions that streamline day-to-day practice.</p><p>You will work within a large, supportive multidisciplinary\r\nteam, delivering safe and effective care while maintaining a healthy worklife\r\nbalance. This is an opportunity to influence service delivery, develop\r\nprofessionally, and make a meaningful difference every day.</p><p><strong>Why join us?</strong></p><ul><li>NHS pension scheme</li><li>Minimum 6 weeks annual leave + 8 bank holidays (pro rata)</li><li>Employee discounts and benefits scheme</li><li>24-hour Employee Assistance Programme (EAP)</li><li>Partnership-led wellbeing support</li><li>Individualised development plan with GP Lead</li><li>Mentorship from GP Partners</li><li>Supported pathway to Partnership</li><li>24-hour CPD access</li><li>GPwSI development opportunities</li><li>Teaching and training opportunities</li></ul><p>This is a patient-centred General Practitioner role,\r\ndelivered from your nominated practice site and supported by a\r\nmultidisciplinary team.</p><p>You will deliver comprehensive medical care to patients of\r\nall ages, focusing on prevention, diagnosis, treatment, and long-term condition\r\nmanagement. You will work collaboratively with colleagues, including ARRS\r\nroles, to ensure high-quality, efficient, and safe patient care.</p><p>Key responsibilities include:</p><ul><li>Providing face-to-face, telephone, and digital consultations</li><li>Managing acute and chronic health conditions</li><li>Undertaking home visits where required</li><li>Supporting preventative healthcare and health promotion</li><li>Completing associated clinical administration</li><li>Working collaboratively within the practice and wider partnership</li><li>Empowering patients to manage their own health and wellbeing</li></ul><p>You will need excellent communication skills, strong\r\nclinical judgement, adaptability, and a commitment to continuous improvement.</p><p>Our Bedford practices are part of\r\nModality Partnership, one of the UKs largest GP super-partnerships, serving\r\nover 500,000 patients with a workforce of more than 1,800 staff. We\r\ncontinuously innovate to improve patient care and staff experience, embracing\r\ndigital tools and automation to enhance how services are delivered.</p><p>We are proud to be innovative, forward-thinking, and values\r\ndriven. We continually explore new solutions to improve service delivery,\r\nincluding digital transformation, automation, and redesigned workflows that\r\nreduce administrative burden and improve patient safety.</p><p>You will be part of a resilient national partnership,\r\nsupported by experienced local GP\r\nPartners who work collaboratively to shape the future of General\r\nPractice.Apply now and become part of a partnership that truly lives its values\r\nof Commitment, Accountability, Respect and Excellence (CARE).</p><p>We are an Equal Opportunities Employer and are committed to\r\ndiversity, inclusion, and fair treatment in line with the Equality Act 2010.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/E0281-26-0211",
+    "postedAt": "2026-11-13T14:00:33.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727021",
+    "slug": "hartlepool-and-stockton-health-h-and-sh-salaried-general-practitioner-b0524-26-0046",
+    "company": "nhs",
+    "employer": "Hartlepool & Stockton Health [H&SH]",
+    "title": "Salaried General Practitioner",
+    "locations": [
+      "Teesside, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "salary": {
+      "currency": "GBP",
+      "min": 84000,
+      "max": 96000,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p><strong>McKenzie Group Practice</strong></p><p>We are looking\r\nfor a motivated General Practitioner to join our friendly and supportive team\r\nin a salaried GP position. This is an excellent opportunity to become part of a\r\nwell-organised practice that values teamwork and provides a positive working\r\nenvironment.</p><p>We welcome\r\napplications from all GPs listed on the GMC GP Register, including newly\r\nqualified GPs and those with previous experience in salaried or GP partnership\r\nroles.</p><p>We operate a total triage model,\r\nand undertaking triage can be included as part of your agreed job plan should\r\nyou wish to do so.</p><p>Across our practice sites, we proudly care for a diverse population of approximately 31,000 patients.</p><p>The role may involve working across up to six of our sites throughout Hartlepool. However, wherever possible, we aim to provide a regular base at one or two locations to offer consistency and help you feel part of the team.</p><p>\r\nProvide high-quality clinical care to patients through\r\nface-to-face, telephone and online consultations.</p><p>\r\nManage a caseload of patients, including assessment,\r\ndiagnosis, treatment and referral as appropriate.</p><p>\r\nIf agreed as part of your job plan, carry out triage\r\nwithin our total triage model.</p><p>\r\nManage urgent cases when required.</p><p>\r\nContribute to achieving Quality and Outcomes Framework\r\n(QOF) targets and other enhanced services.</p><p>\r\nTake part in clinical governance activities, including\r\naudits, significant event reviews and quality improvement work.</p><p>\r\nKeep accurate and timely patient records in line with\r\nGMC guidance.</p><p>\r\nWork collaboratively with our wider multidisciplinary\r\nteam to ensure integrated patient care.</p><p>\r\nWork across our practice sites in Hartlepool, as set\r\nout in your job plan.</p><p>\r\nCarry out home visits in exceptional circumstances,\r\nwhen required.</p><p><strong>Salary and Benefits</strong></p><p>\r\n£84,000 to £96,000 per annum for full\r\ntime (37.5 hours per week), pro rata for part time. Your salary within this\r\nrange will depend on the duties agreed in your job plan.</p><p>\r\nSix weeks' annual leave plus bank holidays (pro rata\r\nfor part time).</p><p>\r\nWeekly protected CPD time, plus up to one week of paid\r\nstudy leave per year.</p><p>\r\nNHS Pension Scheme.</p><p>At Hartlepool and Stockton Health GP Federation, our guiding aim is to improve the health and wellbeing of local people.</p><p>Relationships are key to everything we do and by working with our practice members and their Primary Care Networks, as well as other local partners, we strive to provide excellent services that help people to live their best lives.</p><p>As part of this support, we are hosting this job advert on behalf one of our member practices, McKenzie Group Practice.</p><p>McKenzie Group Practice is a friendly,\r\nwell-established and forward-thinking practice based in Hartlepool.</p><p>We are proud\r\nto have a friendly, supportive and experienced multidisciplinary team, made up\r\nof GPs, Advanced Nurse Practitioners, Practice Nurses, GP Assistants, Nursing\r\nAssociates, a Community Psychiatric Nurse, Care Coordinators, Pharmacists,\r\nPharmacy Technicians, our Medication Management Team, Social Prescribers and a\r\ndedicated Administration Team.</p><p>We work\r\nclosely together to provide the best possible care for our patients, while\r\ncreating a positive environment where everyone is encouraged to share ideas,\r\ndevelop their skills and grow professionally. We also have a\r\ndedicated Home Visiting Team who assess and triage requests for home visits, as\r\nwell as carrying out visits to patients who are unable to attend the surgery. Our team\r\napproach means we can offer a wide range of skills, knowledge and support to\r\nmeet the needs of our patients and local community.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/B0524-26-0046",
+    "postedAt": "2026-11-13T14:14:34.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727069",
+    "slug": "university-hospitals-of-derby-and-burton-nhs-foundation-trust-consultant-neurologist-pd-movement-disorders-with-academic-interest-c9320-26-1229",
+    "company": "nhs",
+    "employer": "University Hospitals of Derby and Burton NHS Foundation Trust",
+    "title": "Consultant Neurologist (PD Movement Disorders with academic interest)",
+    "locations": [
+      "Derby, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "neurology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>The Neurology department at the University Hospitals of Derby and Burton (UHDB) wishes to appoint a 7th substantive 1.0 wte Consultant Neurologist Parkinson's Disease/Movement Disorders with an Academic interest.</p>\n<p>The Neurology department based at the Royal Derby Hospital incorporates a busy General Neurology outpatient service, with sub specialism in Epilepsy, Headache, Parkinson's Disease/Movement Disorders including Huntington's Disease, Multiple Sclerosis, Neuro-degeneration (Cognitive Neurology, Motor Neurone Disease), Neuromuscular (Muscle, Neuromuscular junction), Neuro-opthalmology and Botulinum Toxin therapy for Dystonia and Chronic Migraine as well as a Neurology in-patient service, which includes ward consults and a neurology ward (Consultant of the week 1 in 6 with this post) supported by a Neuro-therapy team with Consultant weekend cover 9am-1pm.</p>\n<p>Continuing Medical Education will be through attendance at the educational programme at Nottingham University Hospitals Neuroscience Centre.</p><p>The appointee will be responsible for:</p>\n<ul>\n<li>Provision of the highest clinical standards in the management of Neurology patients.</li>\n<li>To share with colleagues' responsibility for the day-to-day management of the Neurology Service</li>\n<li>Teaching &amp; Training of Neurology Specialist Nurses, Middle grade, Junior staff &amp; Medical students</li>\n<li>To actively participate in both departmental &amp; Trust matters concerning Clinical Governance &amp; audit</li>\n<li>To have responsibility for ensuring active participation in Continuing Medical Education (CME)</li>\n<li>Completion of annual Job planning &amp; Appraisal</li>\n</ul><p>As a trusted organisation at the heart of our communities, we recognise the important role we can play in supporting the public, patients, our own people and local partners in achieving the best of health for the local population and the communities in which they live by providing Exceptional Care Together</p> <p>Our fundamental Values of Compassion, Openness and Excellence underpin how we intend to work as a Trust and the associated behaviours are becoming embedded in all aspects of how we work.</p> <p>In return we will offer:</p> <p>o Development opportunities, including both professional and leadership developmento On-going support through every step of the way from recruitment to when you join our team and beyond.o A variety of other staff benefits including employee assistance programme, discounted gym membership, onsite fitness classes, car schemes</p> <p>Key Facts about our Trust:</p> <p>o We see on average 4810 OP appointments per day.o We are the 4th busiest Trauma &amp; Orthopaedic outpatients department in England - an average of 2077 per week.o An average of 1115 patients are seen in A&amp;Es across our network every day - 3rd largest in the country.o Our hospitals admit an average of 195 emergency patients daily.o Last year we undertook almost 33,700 planned surgical operations in our 57 operating theatres.o We are one of only 7 Trusts nationally with more than 50 operating theatres.o We carry out more than 140 elective procedures each working day.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9320-26-1229",
+    "postedAt": "2026-11-13T14:42:36.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727115",
+    "slug": "ashford-and-st-peter-s-hospitals-nhs-foundation-trust-interventional-consultant-cardiology-c9323-26-0614",
+    "company": "nhs",
+    "employer": "Ashford & St. Peter's Hospitals NHS Foundation Trust",
+    "title": "Interventional Consultant Cardiology",
+    "locations": [
+      "Chertsey, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "cardiology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>We are seeking an enthusiastic, highly skilled and experienced <strong>Consultant Interventional Cardiologist</strong> to join our established Cardiology Department at Ashford and St Peter's Hospitals NHS Foundation Trust.</p> <p>The successful candidate will play a key role in delivering high-quality interventional cardiology services, including diagnostic coronary angiography, percutaneous coronary intervention (PCI) and emergency Primary PCI (PPCI), contributing to our <strong>24/7 PPCI service through a 1:6 on-call rota</strong>.</p> <p>Working alongside a multidisciplinary team of nine substantive and two part-time consultants, the postholder will support inpatient and outpatient cardiology services, clinical governance, service development, and the supervision and training of junior medical staff.</p> <p>Applicants should possess comprehensive training in general and interventional cardiology, with demonstrable expertise in coronary intervention and the management of acute coronary syndromes. Opportunities exist to develop specialist interests that complement the department's existing services, including complex coronary intervention, cardiac imaging and structural heart disease.</p> <p>The post offers an opportunity to contribute to service innovation, improved patient outcomes and the continued development of interventional cardiology across the Trust.</p> <p><strong>There is no General Medicine on-call commitment associated with this post.</strong></p> <p><strong>Clinical Duties</strong></p> <ul>  <li>Deliver high-quality care to cardiology and GIM patients, working collaboratively with Consultants &amp; the multidisciplinary team.</li>  <li>Provide cardiology input to patients on the cardiac ward and to outliers across the Trust.</li>  <li>Demonstrable expertise in coronary angiography, percutaneous coronary intervention (PCI) and emergency Primary PCI (PPCI).</li>  <li>Participate independently in the Trust's 24/7 PPCI on-call rota.</li>  <li>Experience in complex coronary interventions, including left main stem PCI, bifurcation lesions and chronic total occlusion (CTO) interventions.</li>  <li>Undertake general cardiology &amp; stable chest pain clinics.</li>  <li>Provide expert clinical advice &amp; leadership to specialist nurses and the wider clinical team.</li>  <li>Maintain high standards of documentation &amp; accurate patient records.</li>  <li>Supervise &amp; support the training of junior doctors and cardiac physiologists.</li> </ul> <p><strong>Patient Care</strong></p> <ul>  <li>Develop personalised management plans with the multidisciplinary team.</li>  <li>Communicate clearly, compassionately, &amp; professionally with patients and families.</li>  <li>Promote patient safety &amp; contribute to quality-improvement initiatives in cardiology.</li> </ul> <p><strong>Administrative &amp; Leadership Responsibilities</strong></p> <ul>  <li>Organise &amp; lead outpatient clinics across both sites, ensuring alignment with Trust protocols and pathways.</li>  <li>Participate in departmental meetings, service planning, &amp; development of non-interventional cardiology pathways.</li>  <li>Support delivery of Trust strategic goals, operational performance, &amp; quality standards.</li> </ul><p>Ashford and St. Peters Hospitals NHS Foundation Trust serves a population of more than 410,000 people living in North-West Surrey, parts of Hounslow and beyond.</p> <p>Over 3,700 highly trained doctors, nurses, midwives, therapists, healthcare scientists and other support staff make up our workforce, providing a wide range of services across our two hospital sites, Ashford, Surrey and St Peter's, Chertsey, Surrey.</p> <p>We also run many specialist clinics in the community and local community hospitals and other healthcare facilities.</p> <p>Our vision is to be one of the best healthcare Trusts in the country. There has never been a better time to join us in the NHS at ASPH. We are committed to providing continuous professional development and flexibility to shape our workforce around our patient care.</p> <p>We are expanding our theatres at Ashford Hospital and moving towards this becoming our dedicated elective centre. We want to create a state-of-the-art centre for excellence for planned surgical procedures.</p> <p>We can offer you the full range of NHS benefits/discounts and in addition:</p> <ul>  <li>Excellent pension scheme and annual leave entitlement</li>  <li>On-site Nurseries</li>  <li>On-site staff cafes</li>  <li>On-site parking</li>  <li>Support in career development</li>  <li>Salary Sacrifice schemes including wage stream, lease cars, Cycle to Work schemes and home electronics</li> </ul> <p>Adverts may close early, so applicants are encouraged to submit an application as soon as possible.</p> <p>For more information about a career at ASPH please visit:www.asph-careers.org</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9323-26-0614",
+    "postedAt": "2026-11-13T14:03:29.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727159",
+    "slug": "great-western-hospitals-nhs-foundation-trust-consultant-in-geriatric-medicine-c9249-26-0669",
+    "company": "nhs",
+    "employer": "Great Western Hospitals NHS Foundation Trust",
+    "title": "Consultant in Geriatric Medicine",
+    "locations": [
+      "Swindon, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>There has never been a more exciting time to join our pioneering and innovative Department of Older Persons' Services (DOPS). Applications are invited for enthusiastic Consultants in Geriatric Medicine to join our expanding team of senior medical staff, including Consultants and SAS doctors.</p>\n<p>On joining the department, you will become part of a well-established, friendly team and will help us to evolve existing services and develop novel ones. As a senior member of the team, you will play a key part in the delivery of training and supervision to our junior colleagues.</p>\n<p>As a Trust, we put a genuine emphasis on supporting the health and wellbeing of our staff and we have recently won a national award in recognition of the programme. Through this programme, you will be offered a wide variety of support to help you maintain your health and wellbeing and to help colleagues maintain theirs.</p>\n<p>Are you looking to start your career as a Consultant or are you an existing Consultant looking for a new and exciting change where you can really make a difference? Either way, we are a supportive and cohesive team who are focused on providing outstanding care to our older patients, and we would love to welcome on board like-minded physicians.</p><p>The duties outlined below are not definitive and may be changed in accordance with the needs of the service.</p>\n<p><strong>Clinical duties</strong></p>\n<ul>\n<li>Multidisciplinary team working is a key component of working within the Trust and involves regular MDT discussions with colleagues.</li>\n<li>Providing evidence-based care for patients in a multidisciplinary setting.</li>\n<li>Continuing responsibility for the care of patients in your charge, including all administrative duties associated with patient care (with secretarial support). It is anticipated that responsibility for a cohort of circa 20 patients will be shared between two consultants, providing a daily ward/board round input. Each ward is generally supported by a minimum of two doctors in training and a Registrar/Associate Specialist.</li>\n<li>Development of sub-specialty interests that fit in with division needs and the strategic direction of the Trust, including active participation in audit.</li>\n<li>Responsibilities for carrying out teaching, examination, and accreditation duties are required, and for contributing to undergraduate and post-graduate and continuing medical education activity.</li>\n<li>Provision of cover for Consultant colleagues' periods of leave in accordance with arrangements agreed within Trust policy.</li>\n<li>Participation in clinical audit and in continuing medical education.</li>\n<li>Undertaking ward rounds as appropriate.</li>\n<li>The post holder will participate in an out of hours consultant rota, detailed within the job plan section.</li>\n</ul><p>We are proud to be part of BSW Hospitals Group - a formal partnership between Great Western Hospitals NHS Foundation Trust, Royal United Hospitals Bath NHS Foundation Trust and Salisbury NHS Foundation Trust. With a combined workforce of over 17, 600 colleagues, and budget of 1.6 billion the Group is united by a common purpose to deliver the best possible care to over 1 million people. We are creating a heath and care system that works with the people we care for, reducing the differences people currently face in access, experience and outcomes, improving the experience of our colleagues and tackling shared challenges like sustainability and finances. Every improvement we make across our Group will be guided by what creates the greatest benefit for our colleagues, our patients, our communities and our partners.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9249-26-0669",
+    "postedAt": "2026-11-13T14:06:21.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727322",
+    "slug": "oxford-university-hospitals-nhs-foundation-trust-locum-consultant-in-general-internal-medicine-c9321-26-2169",
+    "company": "nhs",
+    "employer": "Oxford University Hospitals NHS Foundation Trust",
+    "title": "Locum Consultant in General Internal Medicine",
+    "locations": [
+      "Oxford, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p>Applications are invited for a consultant post in Acute General Medicine (AGM) and Ambulatory Care Medicine at the Oxford University Hospitals NHS Trust (OUHFT). The OUH NHS Trust comprises four hospitals: the John Radcliffe, Nuffield Orthopaedic Centre, Churchill Hospital and the Horton General Hospital. Applicants will be based mainly at the John Radcliffe Hospital and Horton Hospital.</p> <p>This is an exciting time to join AGM and Ambulatory Care Medicine at OUHFT and become part of a consultant workforce with a reputation for excellence. We are seeking enthusiastic colleagues who are skilled in the delivery of acute medical care and the interface with the Emergency Department and other hospital specialties. </p><p>The post-holder's duties will be delivered across both acute hospital sites, but it is a condition of the appointment that the post-holder will be willing to work in any of the Trust's locations. The post-holder will provide consultant physician services for the Oxford University Hospitals NHS Foundation Trust, including care of acute admissions, care of outpatients, leading ward rounds and other professional activities relating to Acute General Medicine and Ambulatory Care. </p><p><strong>Oxford University Hospitals NHS Foundation Trust</strong> is one of the largest NHS teaching trusts in the country. It provides a wide range of general and specialist clinical services and is a base for medical education, training and research. The Trust comprises four hospitals - the John Radcliffe Hospital, Churchill Hospital and Nuffield Orthopaedic Centre in Headington and the Horton General Hospital in Banbury.</p> <p>Our values, standards and behaviours define the quality of clinical care we offer and the professional relationships we make with our patients, colleagues and the wider community.</p> <p>We call this Delivering Compassionate Excellence, and its focus is on our values of compassion, respect, learning, delivery, improvement and excellence.</p> <p>These values put patients at the heart of what we do and underpin the quality healthcare we would like for ourselves or a member of our family. Watch how we set out to deliver compassionate excellence via the<strong> OUH YouTube channel.</strong></p> <p>In 2023NHS England launched its first sexual safety charter, and our Trust proudly signed it. We pledge zero tolerance for inappropriate sexual behaviour and commit to the ten core principles</p> <p>Oxford University Hospitals promotes a safe, respectful hiring environment.</p> <p>If you want to make a difference with us, come and join our team. Together, we will uphold the highest standards of care and professionalism.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9321-26-2169",
+    "postedAt": "2026-11-13T14:32:54.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727331",
+    "slug": "great-western-hospitals-nhs-foundation-trust-locum-consultant-urologist-c9249-26-0670",
+    "company": "nhs",
+    "employer": "Great Western Hospitals NHS Foundation Trust",
+    "title": "Locum Consultant Urologist",
+    "locations": [
+      "Swindon, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "urology",
+    "level": "senior",
+    "salary": {
+      "currency": "GBP",
+      "min": 113565,
+      "max": 150569,
+      "unit": "YEAR"
+    },
+    "descriptionHtml": "<p><strong>Locum Consultant in Urology - 12 month FTC (10PA)</strong></p>  <p>We are seeking an enthusiastic and motivated Locum Consultant Urologist to join our expanding and forward-thinking Urology Department on a 12-month fixed-term contract. This is an exciting opportunity to become part of a friendly, supportive and ambitious team committed to delivering high-quality patient-centred care across a broad range of urological services.</p> <p>This newly created post reflects ongoing service development and investment within the department. The successful candidate will join an established team of four Consultant Urologists (two full-time and two part-time), alongside a Consultant holding a joint appointment with North Bristol NHS Trust (Southmead Hospital) on a 50/50 basis. The consultant team is further supported by an experienced Associate Specialist.</p> <p>At middle grade level, the department benefits from a team of six Registrars, including two specialist trainees from the South West Deanery, creating a vibrant training environment with strong educational links.</p><p>The Duties outlined below are not definitive and may be changed in accordance with the needs of the service.</p> <p><strong>Clinical Duties:</strong></p> <ul>  <li>Multidisciplinary team working is key component of the working within the Trust and involves regular MDT discussions with colleagues</li>  <li>Providing evidence-based care for patients in a multidisciplinary setting.</li>  <li>Continuing responsibility for the care of patients in your charge, including all administrative duties associated with patient care (with secretarial support)</li>  <li>Development of sub specialty interests that fit in with Division needs and the strategic direction of the Trust.</li>  <li>Responsibilities for carrying out teaching, examination and accreditation duties are required, and for contributing to undergraduate and post-graduate and continuing medical education activity.</li>  <li>Provision of cover for Consultant colleagues' periods of leave in accordance with arrangements agreed within Trust policy.</li>  <li>Participation in clinical audit and in continuing medical education.</li>  <li>Conducting suitable duties in cases of emergencies and unforeseen circumstances.</li>  <li>The post holder will participate in an out of hours consultant rota, detailed within the job plan section</li> </ul><p>We are proud to be part of BSW Hospitals Group - a formal partnership between Great Western Hospitals NHS Foundation Trust, Royal United Hospitals Bath NHS Foundation Trust and Salisbury NHS Foundation Trust. With a combined workforce of over 17, 600 colleagues, and budget of 1.6 billion the Group is united by a common purpose to deliver the best possible care to over 1 million people. </p> <p>We are creating a health and care system that works with the people we care for, reducing the differences people currently face in access, experience and outcomes, improving the experience of our colleagues and tackling shared challenges like sustainability and finances. Every improvement we make across our Group will be guided by what creates the greatest benefit for our colleagues, our patients, our communities and our partners.</p>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/C9249-26-0670",
+    "postedAt": "2026-11-13T14:45:12.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "nhs"
+  },
+  {
+    "id": "nhs:5727379",
+    "slug": "uppingham-surgery-general-practitioner-gp-a0913-26-0004",
+    "company": "nhs",
+    "employer": "Uppingham Surgery",
+    "title": "General Practitioner GP",
+    "locations": [
+      "Oakham, United Kingdom"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p><strong>Join Our Friendly and\r\nForward-Thinking Team at Uppingham Surgery</strong></p><p>Are you a\r\nmotivated and patient-focused GP looking for a role where you can truly make a\r\ndifference while maintaining a healthy work-life balance?</p><p>At\r\nUppingham Surgery, we are seeking a Salaried GP for 4-6 sessions per week to\r\njoin our welcoming and supportive practice team. This is an exciting\r\nopportunity to become part of a progressive, well-established surgery serving\r\napproximately 13,000 patients in the beautiful market town of Uppingham,\r\nRutland. Located just off the A47, we offer the benefits of rural living with\r\nexcellent transport links.</p><p>Uppingham Surgery is seeking a motivated, compassionate and patient-focused Salaried General Practitioner to join our friendly and supportive clinical team.</p><p>The postholder will provide high-quality, evidence-based general medical services to the practice population, delivering comprehensive patient care across a range of clinical presentations. Working as part of a multidisciplinary team, the Salaried GP will contribute to the effective day-to-day delivery of primary care services, supporting continuity of care, patient safety and the ongoing development of the practice.</p><p>The role will involve assessing, diagnosing and managing patients' healthcare needs, including the management of acute and long-term conditions, preventative healthcare, health promotion and the coordination of onward referrals where appropriate.</p><p>The successful candidate will work collaboratively with GP colleagues, nursing staff, clinical pharmacists, administrative teams and wider healthcare professionals to ensure patients receive safe, effective and responsive care.</p><p>In addition to routine clinical responsibilities, the postholder will be expected to contribute to clinical governance, quality improvement, significant event reviews, clinical meetings and the ongoing development of practice policies and procedures.</p><ul>\r\n</ul><p>Why Join Us?</p><p>We understand that great patient care starts with supporting our clinicians. That's why we offer:</p><ul> <li>A realistic and sustainable workload with protected time for administration and medication reviews.</li> <li>A balanced mix of face-to-face and telephone consultations.</li> <li>Modern, purpose-built premises with excellent facilities.</li> <li>Fully integrated digital systems including SystmOne, Accurx, Ardens &amp; Titan.</li> <li>A highly skilled multidisciplinary team committed to collaborative working and innovation.</li> <li>A genuinely supportive culture that prioritises professional development, wellbeing, and job satisfaction.</li> <li>A stable and experienced Partnership and Management Team with strong links to Rutland Health Primary Care Network.</li> <li>Competitive salary, NHS Pension Scheme membership, annual leave, and study leave entitlement.</li></ul>",
+    "applyUrl": "https://beta.jobs.nhs.uk/candidate/jobadvert/A0913-26-0004",
+    "postedAt": "2026-11-13T14:51:19.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "nhs"
   }
 ]

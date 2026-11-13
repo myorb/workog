@@ -1240,6 +1240,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4ODE2NS0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2023,7 +2025,7 @@
     "postedAt": "2026-08-14T01:11:49.414Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3255,7 +3257,7 @@
     "postedAt": "2026-11-05T03:14:55.357Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4151,7 +4153,7 @@
     "postedAt": "2026-10-14T23:22:39.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4308,7 +4310,7 @@
     "postedAt": "2026-10-27T22:00:48.416Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4876,6 +4878,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8011607",
     "postedAt": "2026-10-16T10:33:32.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4913,6 +4917,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025255",
     "postedAt": "2026-10-18T10:33:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4931,6 +4937,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025281",
     "postedAt": "2026-10-18T10:33:25.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4949,6 +4957,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025233",
     "postedAt": "2026-10-18T10:33:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5059,7 +5069,7 @@
     "postedAt": "2026-11-12T07:19:48.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5306,7 +5316,7 @@
     "postedAt": "2026-11-12T17:10:08.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5344,7 +5354,7 @@
     "postedAt": "2026-11-12T17:10:31.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6183,6 +6193,201 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8137273",
     "postedAt": "2026-10-21T23:22:33.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjA1OSA5",
+    "slug": "la-solution-medicale-medecin-urgentiste-f-h-gardes-de-24h-saint-dizier-52100-odgwmja1osa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Urgentiste F/H - Gardes de 24h Saint-Dizier 52100",
+    "locations": [
+      "Haute-Marne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "emergency-medicine",
+    "descriptionHtml": "<p>Emploi Médecin Urgentiste Saint-Dizier 52100 / La Solution MédicaleCentre Hospitalier à Saint-Dizier 52100, recherche activement un Médecin Urgentiste (F/H) pour des gardes de 24h et journées de 10h au sein du service des urgences, dans le cadre d'un remplacement en intérim pur.. Dates à pourvoir :- Gardes de 24h : 11 - 13 - 21 - 28 juin- Journée du 29 juin- Journées de 10h : 20 et 29 juinÀ propos du service :- 110 passages par jour- Travail en binôme avec 1 PH, + 1 interne, + 1 médecin de jour- Activité : SMUR, urgences vitales, UHT, gestion polyvalente- Cadre de travail moderne et bien structuréConditions proposées :- Statut : Intérim pur- Rémunération :? 1 410,69 EUR BRUT / garde de 24h Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Médecin inscrit au Conseil National de l'Ordre des Médecins en France.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802059",
+    "postedAt": "2026-11-13T12:35:31.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjA5MiA5",
+    "slug": "la-solution-medicale-pediatre-f-h-paris-75008-odgwmja5mia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Pédiatre F/H - Paris 75008",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "descriptionHtml": "<p>Emploi Pédiatre Paris 75008 La Solution MédicaleCentre Médical à Paris 75008, recherche activement un Pédiatre (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Excellente rémunération- Planning rempli garantie- Logement gratuit 3 mois- Secteur 1 Tiers Payant Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802092",
+    "postedAt": "2026-11-13T12:35:32.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjE2NCA5",
+    "slug": "la-solution-medicale-medecin-generaliste-f-h-corbeil-essones-91100-odgwmje2nca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Généraliste F/H - Corbeil-Essones  91100",
+    "locations": [
+      "Essonne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Emploi Médecin Généraliste Corbeil-Essones 91100 / La Solution MédicaleCentre Médical à Corbeil-Essones 91100, recherche un Médecin Généraliste (F/H). Avantages du poste :- Assurance professionnelle, formations régulières...- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Excellente rémunération- Planning rempli garantie- Secteur 1 Tiers Payant Avantage du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802164",
+    "postedAt": "2026-11-13T12:35:37.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjIyOSA5",
+    "slug": "la-solution-medicale-dermatologue-en-centre-esthetique-f-h-angouleme-16000-odgwmjiyosa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue en Centre Esthétique F/H - Angoulême  16000",
+    "locations": [
+      "Charente, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi dermatologue Angoulême 16000 / La Solution MédicaleCentre Esthétique à Angoulême 16000, recherche activement un Dermatologue (F/H). Avantages du poste :- Rémunération élevée en % du chiffre d'affaire, congés incluses- Assurance professionnelle, formations régulières...- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garanti Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Médecin Spécialiste et Qualifié en Dermatologie.Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802229",
+    "postedAt": "2026-11-13T12:35:45.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjM0NiA5",
+    "slug": "la-solution-medicale-medecin-generaliste-esthetique-liberal-f-h-strasbourg-67000-odgwmjm0nia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Généraliste Esthétique Libéral F/H - Strasbourg 67000",
+    "locations": [
+      "Bas-Rhin, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Emploi Médecin Esthétique Libéral Strasbourg 67000 / La Solution Médicale Vous êtes un médecin généraliste déjà formé à la médecine esthétique ou vous souhaitez acquérir de nouvelles compétences et vous former aux actes ?Centre de médecine esthétique à Strasbourg 67000 , recherche activement un Médecin Esthétique Libéral avec DU validé (F/H). Missions et avantages du poste :- Planning rempli garantie- Environnement d'excellence- Horaires flexibles à convenance&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - Aucun frais d'intermédiation pour le praticien- Réalisation des devis de médecine esthétique- Secrétaire médicale (aucune tâche administrative) - Emplacement à proximité des transports en commun et parking- Consultation des patients (pour tous les traitements de médecine esthétique)- Réalisations d'actes tels que les injections d'acide hyaluronique, peelings et autres traitements anti-âge.- Réalisation d'actes de médecine esthétique variés, soins anti-âge, traitement amincissement, traitement laser...- Avantages nombreux : Assurance Professionnelle, Tickets restaurants, Formations régulières, comité d'entreprise... Mise en place d'une convention de mise à disposition, avec une redevance qui se calcule en rétrocession du CA reversée par le praticien. Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins et Licence de remplacement.Formé à la médecine esthétique.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802346",
+    "postedAt": "2026-11-13T12:35:52.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjMzNSA5",
+    "slug": "la-solution-medicale-ophtalmologues-h-f-paris-75-cdi-temps-plein-ou-vacations-odgwmjmznsa5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Ophtalmologues (H/F)-Paris 75- CDI-Temps plein ou Vacations",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Centre Médical à Paris 9e , recherche Ophtalmologues (H/F) pour exercer dans une structure moderne-Statut salarié en CDI-En vacations ou à temps plein ( horaires souples)-Matériel à la pointe de la technologie-Les praticiens sont assistés par une équipe paramédicale d'OrthoptistesBilan Orthoptique, Champ visuel, OCT, Topographie, Rétinographie ...-Secteur 1 Tiers Payant-Secrétaire médicale (aucune tâche administrative)-Travail au sein d'une équipe pluridisciplinaire, stable et dévouée.-Forte rémunération sous forme de rétribution du chiffre d'affaires sur acte et consultation, CP inclus ( salaire moyen mensuel 15000 euros)-Avantages nombreux : Assurance Professionnelle, Tickets restaurants, Formations régulières, comité d'entreprise ...-Emplacement exceptionnel à proximité des commodités de transport.-Poste à pourvoir immédiatement&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecinsLicence de remplacement</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802335",
+    "postedAt": "2026-11-13T12:35:49.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMjUxNiA5",
+    "slug": "la-solution-medicale-dermatologue-f-h-fontenay-le-vicomte-91540-odgwmjuxnia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Dermatologue F/H - Fontenay-le-Vicomte 91540",
+    "locations": [
+      "Essonne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "dermatology",
+    "descriptionHtml": "<p>Emploi Dermatologue Fontenay-le-Vicomte 91540 / La Solution MédicaleCentre Médical à Fontenay-le-Vicomte 91540, recherche activement un Dermatologue (F/H). Avantages du poste :- 50% rétrocession- Assurance professionnelle.- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail.&amp;nbsp;&amp;nbsp; - Médecin Dermatologue diplômé(e), inscrit(e) au Conseil de l'Ordre des Médecins en France.- Sens du relationnel et qualité de prise en charge des patientsContactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8802516",
+    "postedAt": "2026-11-13T12:35:55.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwMTI4NSA5",
+    "slug": "domino-rh-medicare-saint-etienne-medecin-generaliste-h-f-odgwmti4nsa5",
+    "company": "eures",
+    "employer": "Domino RH - Médicare Saint-Etienne",
+    "title": "Médecin Généraliste - H/F",
+    "locations": [
+      "Haute-Savoie, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Le descriptif de poste : Le descriptif de poste : Nous recrutons, dans le cadre de notre partenariat avec le Groupement Hospitalier de SAVOIE BELLEY, pour l'un de ses établissements, établissement public accueillant environ 600 lits et places, un Médecin Généraliste H/F. -Présentation de l'Etablissement :*Un Établissement support du territoire, du Groupement Hospitalier SAVOIE BELLEY ;*Un Etablissement qui propose une large offre de soins en médecine, chirurgie et obstétrique, Service des Urgences 24h/24 ;*Il dispose d'un plateau technique moderne et performant.- Présentation de l'équipe : une interniste-infectiologue à 100% (cheffe de service), une infectiologue à 90% (responsable du CEGIDD), deux internistes à temps plein/90%, deux généralistes à 100% (dont une est spécialisée en soins palliatifs), et deux internes en général. Equipe paramédicale très sympathique et très motivée.-Missions principales :* Prise en charge des patients du secteur d'hospitalisation de 8 à 10 lits ;*Ponctuellement, prise en charge en unité de jour de transfusions et perfusions de fer ;*Participation aux réunions et staffs de service.* La présence des samedis matins est de un samedi matin sur 4 par praticien environ. -Présentation des caractéristiques du poste : *Statut : Salarié. *Rattachement hiérarchique : la Direction. *Rémunération : forfait taux horaire.&amp;nbsp;&amp;nbsp; La qualification requise : *Médecin Généraliste qualifié ; *Inscrit au Conseil National de l'Ordre des Médecins. La formation requise : *Un Médecin diplômé avec expérience en médecine polyvalente. L'expérience professionnelle requise : *Une expérience sur un poste similaire ou une expérience au minimum de 5 ans de médecin salarié est souhaitée. Les qualités professionnelles requises : *-Participation à un projet de soins de qualité ; *Qualité des soins et des services. *Apprécier le travail en équipe. Nous attendons votre candidature et restons&amp;nbsp;&amp;nbsp;votre écoute.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8801285",
+    "postedAt": "2026-11-13T12:33:40.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDMzOSA5",
+    "slug": "winsearch-marseille-medical-medecin-du-travail-temps-partiel-spsta-h-f-odgwndmzosa5",
+    "company": "eures",
+    "employer": "Winsearch - Marseille Medical",
+    "title": "Médecin du travail - temps partiel - SPSTA  H/F",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>En lien avec les différents acteurs de l'entreprise, vos principales responsabilités seront les suivantes :1. Assurer le suivi médical des salariésRéaliser les visites médicales : embauche, périodiques, reprise et suivi individuel.Évaluer l'état de santé des salariés et formuler les préconisations nécessaires.Assurer la gestion et le suivi des dossiers médicaux dans le respect du secret médical et de la réglementation en vigueur.2. Participer à la prévention des risques professionnelsIdentifier et analyser les risques professionnels : risques chimiques, troubles musculosquelettiques, bruit, travail en espaces confinés, etc.Participer à l'élaboration et à l'actualisation du Document Unique d'Évaluation des Risques Professionnels (DUERP).Conseiller les équipes sur l'ergonomie et l'aménagement des postes de travail.Proposer et accompagner des actions de prévention adaptées aux différents métiers.3. Collaborer avec les acteurs internesTravailler en étroite collaboration avec les équipes RH, les managers, les représentants du personnel et le service prévention-sécurité.Participer aux démarches liées au handicap, à la qualité de vie et aux conditions de travail (QVCT).Sensibiliser et accompagner les salariés sur les enjeux de santé et de sécurité au travail.Participer aux réunions du CSE et de la CSSCT sur les sujets relevant de votre expertise.4. Assurer une veille réglementaireGarantir le respect des obligations réglementaires en matière de santé au travail.Participer à l'évolution des protocoles médicaux et des actions de prévention.Accompagner l'établissement dans la mise en oeuvre des évolutions législatives et réglementaires.Votre profilFormation et prérequisVous êtes titulaire du Doctorat en médecine.Vous disposez d'un CES, DES en médecine du travail ou d'une qualification reconnue équivalente.Vous êtes inscrit(e) au Conseil de l'Ordre des Médecins.Expérience et compétencesVous justifiez idéalement d'une expérience confirmée en médecine du travail.Une expérience dans un environnement industriel, technique ou à risques constitue un véritable atout.Vous maîtrisez la réglementation relative à la santé et à la sécurité au travail.Vous êtes à l'aise dans l'animation d'actions de prévention et les échanges avec des interlocuteurs variés.&amp;nbsp;&amp;nbsp; Les conditions et avantagesContrat : CDI.Temps de travail : 70 %.Localisation : Marseille Rémunération : entre 70 000 EUR et 80 000 EUR brut annuel (rémunération sur le 70%) selon profil et expérience.Intégration au sein d'une équipe pluridisciplinaire avec l'appui d'une infirmière et d'une assistante sociale.Accès à des formations continues et accompagnement dans le développement des compétences.Mutuelle d'entreprise.Avantages sociaux et prestations du CSE.Un environnement de travail stimulant avec une réelle dimension de prévention et d'accompagnement des salariés.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804339",
+    "postedAt": "2026-11-13T12:37:22.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDY2MiA5",
+    "slug": "la-solution-medicale-anesthesiste-reanimateur-f-h-metz-57000-odgwndy2mia5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Anesthésiste-réanimateur F/H - Metz 57000",
+    "locations": [
+      "Moselle, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "descriptionHtml": "<p>Emploi Anesthésiste-réanimateur Metz 57000 / La Solution MédicaleUn centre hospitalier recrute à Metz 57000, un Anesthésiste-réanimateur&amp;nbsp;&amp;nbsp;(H/F), pour un poste en CDI à temps plein. Vous aurez en charge :- Les consultations externe, consultations inter-service,&amp;nbsp;&amp;nbsp;hospitalisations de jour- L'activité du bloc opératoire et de la maternité- La garde sur place prise en charge des patients USC Beaucoup d'avantages :- Prime- Logement de fonction pour la période d'essai- Aide au logement après période d'essai Rémunération selon profil et expérience du candidat pouvant aller jusqu'à 7000EUR net par mois (participation aux astreintes en sus), Vous êtes reconnus pour votre&amp;nbsp;&amp;nbsp;capacité de communication, vos qualités relationnelles, votre sens aigu de l'organisation, n'hésitez pas à nous contacter rapidement&amp;nbsp;&amp;nbsp;pour un premier entretien téléphonique au *** (voir postuler) ou *** (voir postuler). Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Anesthésiste - réanimateur avec qualification ordinale en FranceQualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804662",
+    "postedAt": "2026-11-13T12:37:46.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDY3NyA5",
+    "slug": "la-solution-medicale-ophtalmologue-f-h-granville-50400-odgwndy3nya5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Ophtalmologue F/H - Granville 50400",
+    "locations": [
+      "Manche, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi ophtalmologue Granville 50400 / La Solution MédicaleCentre médical polyvalent à Granville 50400, recherche un Ophtalmologue (F/H). Avantages du poste :- Équipe paramédicale et d'orthoptistes à disposition- Assurance professionnelle, formations régulières...- Rémunération moyenne de \"1300EUR\" Net par jour- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantages du centre :- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking Ce poste est à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Inscrit à l'Ordre des médecins en France.DES Ophtalmologie obtenu en Union Européenne.Qualités recherchées : Sérieux / Professionnalisme / Engagement / Constance / Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804677",
+    "postedAt": "2026-11-13T12:37:48.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -7522,6 +7727,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8399872",
     "postedAt": "2026-10-29T12:34:31.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7780,7 +7987,7 @@
     "postedAt": "2026-10-28T01:55:09.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -7942,6 +8149,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8473916",
     "postedAt": "2026-11-02T12:32:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8052,7 +8261,7 @@
     "postedAt": "2026-11-02T17:06:05.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8107,6 +8316,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400265",
     "postedAt": "2026-10-29T12:35:27.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8327,6 +8538,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422878",
     "postedAt": "2026-10-30T12:36:42.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8345,6 +8558,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422821",
     "postedAt": "2026-10-30T12:36:39.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8363,6 +8578,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422936",
     "postedAt": "2026-10-30T12:36:44.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8381,6 +8598,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8423071",
     "postedAt": "2026-10-30T12:36:50.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {

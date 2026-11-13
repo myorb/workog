@@ -1162,6 +1162,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4MzAzMi0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-10-25T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1216,6 +1218,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4Nzc5OS0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-03T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1234,6 +1238,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4ODE0MC0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2230,7 +2236,7 @@
     "postedAt": "2026-09-16T01:11:36.658Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -2747,7 +2753,7 @@
     "postedAt": "2026-10-14T01:12:11.493Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3239,7 +3245,7 @@
     "postedAt": "2026-10-29T03:13:54.545Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -3651,7 +3657,7 @@
     "postedAt": "2026-11-01T03:13:01.420Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -4424,7 +4430,7 @@
     "postedAt": "2026-10-15T09:48:22.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -5248,6 +5254,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025273",
     "postedAt": "2026-10-18T10:33:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5266,6 +5274,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8025615",
     "postedAt": "2026-10-18T10:33:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5338,6 +5348,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8766833",
     "postedAt": "2026-11-12T12:32:59.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5356,6 +5368,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8766839",
     "postedAt": "2026-11-12T12:32:59.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5622,6 +5636,24 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8796321",
     "postedAt": "2026-11-13T06:04:52.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODc5OTkxOCA5",
+    "slug": "ikiway-medecin-generaliste-h-f-odc5otkxoca5",
+    "company": "eures",
+    "employer": "Ikiway",
+    "title": "Médecin Généraliste (H/F)",
+    "locations": [
+      "Alpes-Maritimes, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<ul><li>Situé à une trentaine de kilomètres de Nice, dans un cadre naturel préservé des Alpes-Maritimes, cet établissement associatif à but non lucratif regroupe sur un même site un Soins Médicaux et de Réadaptation (SMR) et un EHPAD. - Le SMR dispose d'une capacité d'environ 60 lits et propose une prise en charge polyvalente avec des filières spécifiques en cancérologie (ORL notamment), hépatogastroentérologie, rééducation fonctionnelle, soins palliatifs et infectiologie. L'EHPAD accueille pour sa part environ 65 résidents au sein d'unités spécialisées, dont une unité protégée pour les personnes atteintes de la maladie d'Alzheimer et une unité dédiée aux personnes handicapées vieillissantes. - La structure se distingue par la stabilité et la cohésion de ses équipes : plus de 90 % du personnel est en CDI. Un projet d'Hôpital de Jour est par ailleurs en cours de développement pour 2027. Le poste : Notre consultant Kévin Snauwaert, spécialisé sur les métiers de la santé, recrute pour le compte de l'un de ses partenaires, une structure SMR des Alpes-Maritimes, un Médecin Généraliste H/F.Vous rejoignez une équipe médicale composée de trois médecins et d'un médecin coordonnateur, et vous prenez en charge :- L'assurance de la bonne prise en charge et du suivi médical des patients du SMR (polyvalent avec filières cancérologie, hépatogastroentérologie, soins palliatifs, infectiologie et rééducation fonctionnelle) - La participation à la vie institutionnelle, aux projets de soins et à la démarche qualité - La coordination pluridisciplinaire avec les équipes paramédicales (infirmiers, aides-soignants, psychomotriciens, orthophoniste, sophrologue, assistante sociale, éducateur en activité physique adaptée) - La participation aux astreintes et gardes médicales, en roulement avec les autres médecins de l'établissement - La contribution au futur Hôpital de Jour, dont l'ouverture est prévue en 2027 Conditions de travail et avantages- Contrat : CDI, à pourvoir suite à un départ à la retraite - Lieu de travail : Environ 30 minutes de Nice - Rémunération : entre 107 000 euros et 120 000 euros brut annuel, incluant le SEGUR et la prime annuelle - Astreintes et gardes en roulement avec les autres médecins - Prise en charge des frais de trajet domicile / lieu de travail - Repas gratuit - Financement intégral des DU-DIU en lien avec l'activité de l'établissement - Déploiement de la PhotoBioModulation Pour postuler :- Via cette annonce- En me contactant directement sur LinkedIn : Kévin SnauwaertProfil recherché : - Vous êtes titulaire d'un Doctorat en médecine et inscrit au Conseil National de l'Ordre des Médecins - Un DU en soins palliatifs serait un plus - Une expérience en SMR et/ou en EHPAD est souhaitée - Vous appréciez le travail en équipe pluridisciplinaire et souhaitez vous investir dans un projet médical structuré et en développement - Votre rigueur, votre sens de l'organisation et votre capacité d'adaptation seront des atouts essentiels dans ce poste</li></ul>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8799918",
+    "postedAt": "2026-11-13T09:21:52.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -6492,6 +6524,24 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8139870",
     "postedAt": "2026-10-21T23:30:55.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODgwNDYzNyA5",
+    "slug": "la-solution-medicale-medecin-urologue-f-h-amiens-80000-odgwndyznya5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Médecin Urologue F/H - Amiens  80000",
+    "locations": [
+      "Somme, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "urology",
+    "descriptionHtml": "<p>Emploi Urologue Amiens&amp;nbsp;&amp;nbsp;80000 La Solution MédicaleCentre Médical à Amiens&amp;nbsp;&amp;nbsp;80000, recherche activement un Urologue (F/H). Avantages du poste :- Assurance professionnelle, formations régulières, tickets restaurants...- Rémunération élevée en % du chiffre d'affaire, congés incluses- Assistance par une équipe d'aides soignant(e)s- Aucun frais d'intermédiation pour le praticien- Statut salarié en CDI de 2 à 5 jours- Horaires flexibles à convenance- Planning rempli garantie Avantage du centre :- Structure moderne- Patientèle très nombreuse- Équipe dynamique, compétente et dévouée- Secrétaire pour toutes les tâches administratives- Environnement d'excellence avec matériel haute technologie- Emplacement à proximité des transports en commun et parking  Ce poste est&amp;nbsp;&amp;nbsp;à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou mail. &amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecins.Qualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux; Professionnalisme; Engagement; Constance; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804637",
+    "postedAt": "2026-11-13T12:37:43.000Z",
+    "firstSeenAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -7736,6 +7786,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8362121",
     "postedAt": "2026-10-28T12:33:30.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8522,7 +8574,7 @@
     "postedAt": "2026-11-03T01:26:31.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8612,6 +8664,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400075",
     "postedAt": "2026-10-29T12:34:47.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8630,6 +8684,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400012",
     "postedAt": "2026-10-29T12:34:43.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8667,6 +8723,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400196",
     "postedAt": "2026-10-29T12:35:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8684,6 +8742,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8400249",
     "postedAt": "2026-10-29T12:35:25.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8719,7 +8779,7 @@
     "postedAt": "2026-10-30T01:27:33.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8739,7 +8799,7 @@
     "postedAt": "2026-10-30T01:27:32.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "eures"
   },
   {
@@ -8810,6 +8870,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422174",
     "postedAt": "2026-10-30T12:36:09.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8827,6 +8889,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8422976",
     "postedAt": "2026-10-30T12:36:44.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T10:42:31.851Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
