@@ -150,7 +150,7 @@
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -674,6 +674,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-System-Software-Architect--AI-Networking_JR2007250",
     "postedAt": "2026-07-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4497,7 +4499,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -6442,7 +6444,7 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -7986,7 +7988,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -8240,7 +8242,7 @@
     "postedAt": "2026-09-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -9487,7 +9489,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -10938,6 +10940,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2027946",
+    "slug": "nvidia-senior-test-platform-technical-leader-cpo-jr2027946",
+    "company": "nvidia",
+    "title": "Senior Test Platform Technical Leader, CPO",
+    "locations": [
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Co-packaged optics is how NVIDIA scales networking bandwidth for the next generation of AI infrastructure. Making it manufacturable is a test problem, and there is no off-the-shelf answer: the platforms that test silicon photonics at production volume do not exist until we define them, co-develop them with the world's leading equipment vendors, and qualify them into high-volume manufacturing.</p><p>We are looking for a systems engineer to own one of those platforms end to end. This is a technical leadership role, not a bench role. You will own a die-level electro-optical functional test platform that is in production today and ramping — with a second source in qualification and a device roadmap that doubles its optical channel count and lane rate. You will set its architecture, drive the vendors building it, qualify it at our manufacturing partners, and be the person the organization calls when production is at risk.</p><p>If you have taken a complex piece of capital equipment from a specification through to a production line, and you want to do it on technology that does not exist anywhere else yet, this is that job.</p><p><b>What you'll be doing:</b></p><ul><li> Own an electro-optical test platform end to end — architecture, specification, vendor development, integration, qualification, and deployment into high-volume manufacturing.</li><li> Lead the technical relationship with tier-one test equipment vendors: write the specification, drive design reviews, run factory and site acceptance, and hold them to the result.</li><li>Drive qualification and production ramp at our manufacturing partners in Asia — throughput, uptime, GR&amp;R, calibration stability, and yield.</li><li>Define the optical test architecture: active alignment, optical connector mating and cleaning, polarization control, calibration strategy across a fleet of tools, and laser safety.</li><li>Own the platform roadmap as the devices evolve — more optical channels, higher lane rates, new packaging — and translate that into hardware, software, and test coverage changes.</li><li>Work across device architecture, product and test engineering, operations, and the R&amp;D teams to make sure what we build is testable and what we test is meaningful.</li><li>Mentor engineers working on the platform and act as the technical escalation point for production issues.</li></ul><p><b>What we need to see:</b></p><ul><li>BSc in Electrical Engineering, Physics, or a related field (MSc an advantage).</li><li>7+ years in electro-optical or high-speed test, including at least 2 years owning a platform, program, or major subsystem end to end.</li><li>Demonstrated ownership of a test platform or complex instrument from specification through qualification and into production — not bring-up or characterization alone.</li><li>Hands-on depth in high-speed electro-optical measurement: BERT, high-bandwidth oscilloscope, VNA, OSA, optical power and spectral measurement, and the signal integrity that comes with 100 Gbps and above per lane.</li><li>Experience running a development program with an external equipment vendor or subcontractor — specification, design review, FAT and SAT, acceptance criteria.</li><li>A practical grasp of what separates a lab setup from a production tool: cycle time, repeatability, GR&amp;R, calibration, uptime, maintenance, and operator workflow.</li><li>Strong debugging and root-cause skills on genuinely multidisciplinary problems, where optical, electrical, mechanical, and thermal effects are all in play at once — with examples you can walk us through in detail.</li><li>The ability to align and influence people you do not manage, across sites, vendors, and time zones.</li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li>Experience with automated test equipment, probers, or handlers — wafer-level or die-level.</li><li>Optical active alignment at production cycle times — algorithms, accuracy budgets, or the mechanics of sub-micron alignment in seconds rather than minutes.</li><li>Silicon photonics device knowledge: ring modulators, grating couplers, photodiodes, fiber array units, and laser sources.</li><li>Applied statistics for production test — SPC, DOE, measurement system analysis, and capability studies — using JMP or equivalent to drive GR&amp;R, correlation, and yield decisions.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Test-Platform-Technical-Leader--CPO_JR2027946",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2027982",
     "slug": "nvidia-asic-verification-intern-summer-2027-jr2027982",
     "company": "nvidia",
@@ -11973,7 +11991,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -12345,7 +12363,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {

@@ -460,7 +460,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -1427,6 +1427,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Singapore---Singapore/Cloud-Account-Executive--Indonesia_JR333850",
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -1674,8 +1676,6 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS_JR338172-1",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -2815,7 +2815,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4560,7 +4560,7 @@
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4695,7 +4695,7 @@
     "postedAt": "2026-09-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4801,7 +4801,7 @@
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4960,7 +4960,7 @@
     "postedAt": "2026-08-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5068,6 +5068,22 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Argentina---Buenos-Aires/Territory-Account-Executive----SMB_JR356325",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:salesforce:JR356385",
+    "slug": "salesforce-agentforce-technical-manager-salesforce-experience-mandatory-jr356385",
+    "company": "salesforce",
+    "title": "Agentforce Technical Manager (Salesforce experience mandatory)",
+    "locations": [
+      "India - Hyderabad"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Customer Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>The Experience</b><br /><br />We are seeking an experienced Agentforce Technical Manager to join our Global Delivery Centre (GDC)<br /><br />This role blends people leadership, technical architecture, and delivery ownership to scale Agentforce capabilities across global customer implementations.<br /><br />You will lead teams building intelligent AI agents, copilots, and autonomous workflows while defining architecture standards, reusable frameworks, and enterprise deployment patterns.<br /><br /><b>What You'll Actually Be Doing</b><br /></p><ul><li>Architect scalable, enterprise-grade Agentforce solutions.</li><li>Design intelligent agents leveraging LLMs, prompt engineering, and orchestration frameworks.</li><li>Define reusable patterns for agent skills, guardrails, and multi-agent collaboration.</li><li>Lead integrations across Salesforce Clouds, Data Cloud, MuleSoft, and external systems.</li><li>Establish RAG, knowledge grounding, and document ingestion architectures.</li><li>Drive performance optimization, monitoring, and telemetry frameworks.</li><li>Lead end-to-end lifecycle of Agentforce implementations.</li><li>Drive agent design, prompt strategies, and skill orchestration.</li><li>Build reusable accelerators and deployment frameworks.</li><li>Partner with Product and COE teams on pilots and innovation programs.</li><li>Manage and mentor a team of Agentforce engineers and architects.</li><li>Drive hiring, onboarding, and capability development.</li><li>Conduct performance reviews and career coaching.</li><li>Build high-performing pods aligned to delivery programs.</li><li>Foster a culture of innovation, learning, and technical excellence.</li><li>Own end-to-end delivery for Agentforce initiatives.</li><li>Partner with Product Owners, Architects, and Customer Success teams.</li><li>Manage risks, dependencies, and execution roadmaps.</li><li>Support solutioning, estimations, and POD planning.</li><li>Define AI governance and guardrail frameworks.</li><li>Establish DevOps, CI/CD, and release standards.</li><li>Ensure compliance with Responsible AI and data security policies.</li></ul><p><br /><br /><b>You're Our Person If...</b><br /></p><ul><li>12+ years of enterprise software engineering experience.</li><li>4+ years leading engineering or architecture teams.</li><li>Deep expertise in Salesforce platform architecture.</li><li>Hands-on experience with Agentforce / conversational AI / intelligent agents.</li><li>Experience integrating LLMs and AI services into enterprise applications.</li><li>Strong knowledge of integration architectures and APIs.</li><li>Proven experience delivering large-scale enterprise solutions.</li></ul><p><br /><br /><b>Even Better If...</b><br /></p><ul><li>Salesforce Architect certifications (Application/System/CTA track).</li><li>Experience with Data Cloud and RAG architectures.</li><li>Knowledge of prompt engineering and AI orchestration frameworks.</li><li>Experience in regulated industries (Finance, Healthcare, Insurance).</li><li>Exposure to multi-agent deployments and autonomous workflows.</li></ul><p><br /><br />Agentforce represents the next evolution of Salesforce AI — enabling autonomous agents, intelligent workflows, and conversational experiences that transform how work gets done.<br /><br />Technical Architecture Leadership<br />Agentforce Capability Development<br />People Management &amp; Team Leadership<br />Delivery &amp; Stakeholder Engagement<br />Governance &amp; Best Practices<br /><br />Technical Skills<br /></p><ul><li>Apex, LWC, Flows, OmniStudio</li><li>Agentforce Agent Studio &amp; Skills</li><li>Data Cloud &amp; Vector Search</li><li>MuleSoft / Integration Platforms</li><li>Prompt Engineering &amp; Grounding</li><li>DevOps &amp; CI/CD</li></ul><p><br /><br />Leadership Competencies<br /></p><ul><li>Strategic thinking with strong execution focus</li><li>Ability to lead in fast-paced innovation environments</li><li>Strong stakeholder communication skills</li><li>Talent development and mentoring mindset</li><li>Customer-first advisory approach</li></ul><p><br /><br />Why Join Us<br /><br />At Salesforce, you'll lead the future of AI-powered work. You'll build autonomous agents that transform industries while growing your leadership career in one of the most strategic technology domains.</p><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Agentforce-Technical-Manager--Salesforce-experience-mandatory-_JR356385",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5201,7 +5217,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5353,7 +5369,7 @@
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5872,6 +5888,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Customer-Success-Manager--Marketing-Cloud_JR358525-1",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -6569,7 +6587,7 @@
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -8345,7 +8363,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -10512,7 +10530,7 @@
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -10949,7 +10967,7 @@
     "id": "workday:salesforce:JR363792",
     "slug": "salesforce-remediation-pod-technical-architect-jr363792",
     "company": "salesforce",
-    "title": "Remediation POD - Technical Architect",
+    "title": "Senior Technical Architect - Remediation POD",
     "locations": [
       "United Kingdom - London"
     ],
@@ -10959,8 +10977,6 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/United-Kingdom---London/Remediation-POD---Technical-Architect_JR363792",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-04T05:02:43.218Z",
-    "closedAt": "2026-11-04T16:46:50.666Z",
     "source": "workday"
   },
   {
@@ -11011,6 +11027,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS_JR363864",
     "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11668,7 +11686,7 @@
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -11716,6 +11734,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---Remote/Security-Practices-Director_JR364335",
     "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11958,7 +11978,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -13198,7 +13218,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -13264,7 +13284,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -13351,6 +13371,22 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Singapore---Singapore/Industry-Account-Executive--Manufacturing--Automotive---Energy----ASEAN_JR365655",
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:salesforce:JR365659",
+    "slug": "salesforce-salesforce-technical-architect-philippines-jr365659",
+    "company": "salesforce",
+    "title": "Salesforce Technical Architect, Philippines",
+    "locations": [
+      "Philippines - Metro Manila"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Customer Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>Experience</b></p><p><br />Salesforce is currently seeking a Technical Architect to join our Professional Services team within the Customer Success Group (CSG). The Technical Architects serves as a strategic advisor and Salesforce product and platform expert to the company's largest, most complex enterprise customers.<br /><br />Salesforce Technical Architects collaborate with Customers and Partners during project cycles to share their extensive knowledge of the Salesforce platform and product suite. Combined with their experience in technical architecture, enterprise integration, and business solution implementation, they directly drive toward the best possible solutions. They paint a solution vision, architect the system and provide guidance during the implementation.<br /><br />Technical Architects are highly effective interacting across technical and business resources from the developer level through mid-management and above and are therefore a trusted advisor for business and technology collaborators. Finally, with experience in software delivery cycles based on agile methodologies the architect supports and is in close alignment with project management activities.<br /><br /><b>What you'll actually be doing</b><br /></p><ul><li>Demonstrated ability to rapidly learn new technologies and Salesforce Clouds, and quickly ramp up to lead implementation and advisory engagements with confidence.</li><li>Ensure scalable and standard methodology solutions to meet and exceed customer needs.</li><li>Guide the evaluation of business and technical requirements.</li><li>Build relationships with key collaborators and team members.</li><li>Act as lead architect for the overall engagement by coordinating and aligning work of multiple architects on the team.</li><li>Align with project and engagement managers to support planning and implementation in close collaboration with the customer.</li><li>Review and guide project vision and direction, implementation approach and key artefacts.</li><li>Direct early solution evaluation, including proactive management of issues and effective engagement with executives, the account team, engineering, and product management.</li><li>Where required, hands-on application configuration to meet customer needs.</li><li>Direct and mentor diverse teams, such as customers, partners, and colleagues in technical delivery aspects, as well as non-technical topics such as communication strategies or executive influence.</li><li>Fuel our internal growth by identifying, leading or contributing to internal pivotal initiatives, such as innovations, building up a strategic brand, and nurture teammates' skills by sharing knowledge.</li><li>Where required, support pre-sales activities to position Salesforce Services.</li><li>Contribute to broader goals by becoming a citizen philanthropist and give back to our communities by joining or leading volunteering activities.</li></ul><p><br /><br /><b>You're our person if</b><br /></p><ul><li>Hands-on technical consulting and solution implementation experience in Salesforce platforms, as well as coding experience in object oriented languages.</li><li>Ability to analyze, design, and optimize business processes via technology and integration.</li><li>Experience in guiding customers and project members in rationalising and deploying emerging technology for business use cases.</li><li>Work independently and as part of a distributed team and a willingness to take ownership of problems.</li><li>Rapidly learn new technologies as well as strong presentation, communication and facilitation skills.</li><li>Available to travel regionally depending on customer needs.</li><li>Experience will be evaluated based on alignment to the core competencies for the role (e.g. extracurricular leadership roles, military experience, volunteer work, etc.).</li><li>Role will be based in Manila, Philippines (In Office/On Customer Sites).</li></ul><p><br /><b>Even better if</b><br /></p><ul><li>A detailed understanding of Web Services, Data Modeling, and Enterprise application integration concepts, including experience with enterprise integration tools (ESBs and/or ETL tools), and common integration design patterns with enterprise systems (e.g. CMS, ERP, HRIS, DWH/DM).</li><li>Ability to build and maintain key relationships with C-level / mid level and key decision makers.</li><li>Experience as a Senior Architect and/or CTO in a mid to large sized organisation with leadership driving an organisational transformation in a matrixed organisation.</li><li>Experience of defining and delivering enterprise applications on the Salesforce Platform including coded solutions.</li></ul><br /><br /><p>*LI-Y</p><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Philippines---Metro-Manila/Salesforce-Technical-Architect--Philippines_JR365659",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -14130,18 +14166,16 @@
     "id": "workday:salesforce:JR366245",
     "slug": "salesforce-lead-employee-success-people-consultant-fixed-term-contract-12-months-jr366245",
     "company": "salesforce",
-    "title": "Lead Employee Success People Consultant (Fixed Term Contract - 12 Months)",
+    "title": "Lead Employee Success People Consultant",
     "locations": [
-      "India - Bangalore"
+      "India - Hyderabad"
     ],
     "remote": false,
     "category": "people",
-    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Employee Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>The Experience</b><br /><br />The organisation is seeking an Employee Success Partner Consultant (ESPC) to join the ESBP team in India for Customer Success Group. The ideal candidate will understand the business and talent strategy, building strong connections with stakeholders and people managers. They will coach and support people managers, drive HR programs, and use data analytics to offer insights for talent management. Additionally, they will participate in regional and country-specific initiatives to ensure alignment with global goals. The ideal candidate will possess strong project management skills, data analytics expertise, and the ability to adapt to changing situations, fostering a culture of success.<br /><br /><b>What You'll Actually Be Doing</b><br /></p><ul><li>In partnership with ESBPs, support and lead ES Cyclical programs.</li><li>Analyse and provide insights on all programs (i.e. compensation, merit, promotion, GIS, G4G, etc.), offering support to regional ESBP and supported organisations.</li><li>Process input and design, including running audits to ensure program effectiveness.</li><li>Partnering with One ES (CoEs and other ES stakeholders) to ensure success of ES Programs and garner support on India level projects/initiatives.</li><li>Global ESPC Community Connect, aligning with the Global PC organisation and facilitating two-way best practice sharing.</li><li>Support ESBPs in driving ES programs with data-driven insights/audits: Talent Review, Performance Management, Performance ratings, GIS, G4G, Promotions, Merit cycle, Performance management, Periodic Business Reviews, Ad hoc data requests.</li><li>Preparing content for Business &amp; ES QBRs (Quarterly Business Reviews).</li><li>Establishing and maintaining strong connections with the people manager population.</li><li>Working closely with people managers to understand their needs and provide tailored HR support.</li><li>Proactively understands what analysis needs to be done to provide a narrative to leaders on their overall org health</li><li>Onboards, leads, and coaches fellow ESPCs.</li></ul><p><br /><br /><b>You're Our Person If...</b><br /></p><ul><li>Relevant work experience required: 5-7 years</li><li>Efficiently manage extensive data sets, conduct analyses, derive insights, and create impactful presentations.</li><li>Strong communication skills to effectively present viewpoints.</li><li>Engage and collaborate with stakeholders and the workforce.</li><li>Demonstrate curiosity and a drive to make a meaningful impact.</li><li>Bring a positive attitude and a professional presence to the role.</li><li>Exhibit multitasking abilities and project management expertise.</li><li>Demonstrated ability to be a self-starter and proactive.</li><li>Ability to develop effective relationships across all levels of the organisation.</li><li>Demonstrated ability to maintain confidentiality in all aspects of job responsibilities, including handling highly sensitive data.</li><li>Ability to ramp up quickly, recognise Salesforce's unique culture, and proactively help identify issues/areas of development.</li><li>General knowledge of employment policies and practices.</li><li>Knowledge of staffing, compensation, and talent management best practices</li></ul><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p><h3></h3><h3></h3><h3></h3><h3></h3><h3></h3><h3></h3><h3></h3><h3></h3>",
-    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Bangalore/Employee-Success-Business-Partner-Senior-Associate_JR366245",
-    "postedAt": "2026-11-03T00:00:00.000Z",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Employee Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>The Experience</b><br /><br />The organisation is seeking an Employee Success Partner Consultant (ESPC) to join the ESBP team in India for Customer Success Group. The ideal candidate will understand the business and talent strategy, building strong connections with stakeholders and people managers. They will coach and support people managers, drive HR programs, and use data analytics to offer insights for talent management. Additionally, they will participate in regional and country-specific initiatives to ensure alignment with global goals. The ideal candidate will possess strong project management skills, data analytics expertise, and the ability to adapt to changing situations, fostering a culture of success.<br /><br /><b>What You'll Actually Be Doing</b><br /></p><ul><li>In partnership with ESBPs, support and lead ES Cyclical programs.</li><li>Analyse and provide insights on all programs (i.e. compensation, merit, promotion, GIS, G4G, etc.), offering support to regional ESBP and supported organisations.</li><li>Process input and design, including running audits to ensure program effectiveness.</li><li>Partnering with One ES (CoEs and other ES stakeholders) to ensure success of ES Programs and garner support on India level projects/initiatives.</li><li>Global ESPC Community Connect, aligning with the Global PC organisation and facilitating two-way best practice sharing.</li><li>Support ESBPs in driving ES programs with data-driven insights/audits: Talent Review, Performance Management, Performance ratings, GIS, G4G, Promotions, Merit cycle, Performance management, Periodic Business Reviews, Ad hoc data requests.</li><li>Preparing content for Business &amp; ES QBRs (Quarterly Business Reviews).</li><li>Establishing and maintaining strong connections with the people manager population.</li><li>Working closely with people managers to understand their needs and provide tailored HR support.</li><li>Proactively understands what analysis needs to be done to provide a narrative to leaders on their overall org health</li><li>Onboards, leads, and coaches fellow ESPCs.</li></ul><p><br /><br /><b>You're Our Person If...</b><br /></p><ul><li>Relevant work experience required: 5-7 years</li><li>Efficiently manage extensive data sets, conduct analyses, derive insights, and create impactful presentations.</li><li>Strong communication skills to effectively present viewpoints.</li><li>Engage and collaborate with stakeholders and the workforce.</li><li>Demonstrate curiosity and a drive to make a meaningful impact.</li><li>Bring a positive attitude and a professional presence to the role.</li><li>Exhibit multitasking abilities and project management expertise.</li><li>Demonstrated ability to be a self-starter and proactive.</li><li>Ability to develop effective relationships across all levels of the organisation.</li><li>Demonstrated ability to maintain confidentiality in all aspects of job responsibilities, including handling highly sensitive data.</li><li>Ability to ramp up quickly, recognise Salesforce's unique culture, and proactively help identify issues/areas of development.</li><li>General knowledge of employment policies and practices.</li><li>Knowledge of staffing, compensation, and talent management best practices</li></ul><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Employee-Success-Business-Partner-Senior-Associate_JR366245",
+    "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-03T15:22:33.099Z",
-    "closedAt": "2026-11-04T05:02:43.218Z",
     "source": "workday"
   },
   {
@@ -14191,7 +14225,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -14256,8 +14290,6 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Assurance-Engineering-Platform-Developer-SMTS---LMTS_JR366292",
     "postedAt": "2026-11-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -15270,6 +15302,21 @@
     "source": "workday"
   },
   {
+    "id": "workday:salesforce:JR366791",
+    "slug": "salesforce-lmts-agentic-ap-invoicing-jr366791",
+    "company": "salesforce",
+    "title": "LMTS Agentic AP/Invoicing",
+    "locations": [
+      "India - Hyderabad"
+    ],
+    "remote": false,
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Software Engineering<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p>NA</p><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/LMTS-Agentic-AP-Invoicing_JR366791",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:salesforce:JR366799",
     "slug": "salesforce-rews-customer-engagement-director-jr366799",
     "company": "salesforce",
@@ -15359,7 +15406,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -15526,6 +15573,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:salesforce:JR367013",
+    "slug": "salesforce-technical-architect-slack-exp-mandatory-jr367013",
+    "company": "salesforce",
+    "title": "Technical Architect - Slack Exp mandatory",
+    "locations": [
+      "India - Bangalore"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Customer Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><h2>JD: Technical Architect – Slack Practice</h2><p><b>Job Title:</b> Technical Architect (Slack)<br /><b>Organization:</b> Salesforce Professional Services – Global Delivery Centre (GDC)<br /><b>Employment Type:</b> Full-Time<br /></p><h2>About the Role</h2><p>As a <b>Technical Architect for the Slack Practice</b> within Salesforce Professional Services (GDC), you will be the hands-on technical authority for complex Slack transformations. These range from large-scale Enterprise Grid migrations and custom app development to next-generation Agentforce and Salesforce integrations.<br /><br />You will partner closely with global practice leaders, onshore engagement managers, and enterprise customers. You will design, lead, and deliver architectures that solve critical business challenges. This is an individual contributor role with no people management responsibilities. It is 50% billable.<br /></p><h2>Key Responsibilities</h2><ul><li>Serve as the lead <b>Technical Architect</b> for Slack enterprise implementations, providing architectural oversight across client deliverables.</li><li>Design and own solution architectures for Enterprise Grid, custom apps, integrations, and Slack + Salesforce use cases.</li><li>Establish best practices, reusable code repositories, standard operating frameworks, and review gates for Slack custom apps (Bolt framework, Block Kit, API limits, security).</li><li>Oversee enterprise migration architectures, covering identity mapping, data retention, DLP compliance, and cutover execution.</li><li>Champion architecture reviews and guide delivery teams through complex customer design challenges.</li><li>Lead functional and technical workshops, and demonstrate leadership in designing, building, testing, and deploying solutions.</li><li>Collaborate with onshore delivery teams to scope technical effort, review estimates, and ensure seamless global delivery.</li><li>Lead practice initiatives around <b>Slack + Salesforce</b> convergence (Agentforce for Slack, Salesforce Channels, CRM integrations).</li><li>Drive internal IP development, such as reusable Slack accelerators, migration automation scripts, and workflow templates.</li><li>Mentor and coach consultants and developers on technical topics, and contribute to certification bootcamps (Certified Slack Developer, Certified Slack Admin) and enablement on emerging features (Agentforce in Slack, Slack CLI).</li><li>Support technical interviews to help scale the practice.</li><li>Work with Resource Management and Practice Directors on project readiness and technical staffing needs.</li></ul><h2>Required Technical Skills &amp; Competencies</h2><p><b>Slack Enterprise Grid &amp; Administration</b></p><ul><li>Deep understanding of Enterprise Grid topology, multi-workspace scoping, and enterprise governance.</li><li>Experience with identity lifecycle management: SAML 2.0 SSO (Okta, Azure AD, Ping) and SCIM directory sync.</li><li>Strong foundation in enterprise security, compliance, DLP, eDiscovery, EKM, and the Slack Audit Logs API.</li><li>Governance of Slack Connect, external collaboration policies, and app installation approval pipelines.</li></ul><p><br /><br /><b>Slack App Development &amp; APIs</b></p><ul><li>Proven hands-on experience with the <b>Bolt Framework</b> (Node.js or Python).</li><li>Mastery of <b>Block Kit</b>, interactive components, modals, and App Home architectures.</li><li>Thorough knowledge of the Web API, Events API, Webhooks, Socket Mode vs. HTTP endpoints, and rate-limiting best practices.</li><li>Familiarity with the Slack CLI, modular app architecture, manifest.json, and Workflow Builder custom functions.</li></ul><p><br /><br /><b>Enterprise Migration &amp; Consolidation</b></p><ul><li>Architectural knowledge of migrating from Microsoft Teams, Mattermost, and freemium or standalone Slack workspaces to Enterprise Grid.</li><li>Familiarity with user/channel mapping schemas, export/import APIs, data parity verification, and cutover runbooks.</li></ul><p><br /><br /><b>DevOps &amp; Engineering Standards</b></p><ul><li>Solid understanding of CI/CD pipelines, Git workflows, automated testing, and secure API integration standards.</li><li>Experience hosting Slack apps on Heroku, AWS, GCP, or Azure.</li></ul><h2>Required Qualifications &amp; Experience</h2><ul><li><b>Total Experience:</b> 10-15+ years in software engineering, technical consulting, or enterprise cloud solutions.</li><li><b>Architecture Experience:</b> 5+ years as a technical architect or lead designing and delivering enterprise solutions in a global delivery or consulting model.</li><li><b>Education:</b> Bachelor's or Master's degree in Computer Science, Information Technology, Engineering, or equivalent practical experience.</li></ul><h2>Preferred Qualifications (Nice to Have)</h2><p><b>Salesforce Platform Knowledge</b></p><ul><li>Familiarity with Sales Cloud, Service Cloud, Platform Events, Apex, and Flow.</li><li>Hands-on or architectural experience integrating Salesforce with Slack (Salesforce for Slack apps, CRM record sync, Agentforce).</li></ul><p><br /><br /><b>Certifications</b></p><ul><li>Certified Slack Administrator or Certified Slack Developer (highly preferred).</li><li>Salesforce certifications (Administrator, Platform App Builder, or Platform Developer I).</li></ul><p><br /><br /><b>Experience</b></p><ul><li>Large-scale professional services, SI consultancies, or enterprise SaaS delivery centers.</li></ul><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Bangalore/Technical-Architect---Slack-Exp-mandatory_JR367013",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:salesforce:JR367064",
     "slug": "salesforce-lead-account-solution-engineer-jr367064",
     "company": "salesforce",
@@ -15676,7 +15739,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T22:28:01.524Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -16279,6 +16342,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Associate-Renewals-Manager_JR367653",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -16348,7 +16413,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -16594,7 +16659,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -16759,6 +16824,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:salesforce:JR368090",
+    "slug": "salesforce-talent-advisor-ai-labs-jr368090",
+    "company": "salesforce",
+    "title": "Talent Advisor, AI Labs",
+    "locations": [
+      "Canada - Toronto"
+    ],
+    "remote": false,
+    "category": "people",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Employee Success<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>What You'll Be Doing &amp; Why It Matters</b><br /><br />Salesforce is building the AI-powered future of enterprise software — and we need a world-class recruiter to help us win the most contested talent market in the industry. This isn’t a high-volume, transactional recruiting role. This is a strategic seat at the table for a recruiter who has spent their career deeply embedded in recruiting for one or more of the following areas; Applied Science, Machine Learning, and/or Data Science and hiring at a company where the bar for talent is set at the top of the market for the next generation of innovators and builders.<br /><br />You’ve recruited at scale for research scientists, applied scientists, ML engineers, and data scientists. You understand the difference between a Machine Learning Engineer and an Applied Scientist. You’ve navigated nuanced leveling conversations, complex compensation structures, and competing offers from the best companies in the world — and you’ve won.<br /><br />Now, bring that expertise to Salesforce, where Agentforce and Einstein AI are redefining what enterprise AI looks like. Your pipeline and your craft will directly shape the teams building the most impactful AI products in the world.<br /><br />Agentforce &amp; Einstein AI — You’ll be recruiting for the teams building the AI products deployed by the world’s largest enterprises, at a scale and data advantage no startup can match<br /><br />Real Impact — This is not a support role. You will shape hiring strategy and directly influence how Salesforce’s AI org is built<br /><br />World-Class Colleagues — Work alongside a high-performing recruiting team with deep expertise across the AI/ML talent landscape<br /><br />Scope &amp; Scale — Only a handful of companies in the world operate at Salesforce’s scale with this level of AI investment. The scope of what you’ll recruit for here is unmatched<br /><br /><b>Core Responsibilities &amp; Scope</b><br /></p><ul><li>Own full-cycle recruiting for Applied Scientist, Machine Learning Engineer, and/or Data Scientist roles across Salesforce’s AI and research organizations</li><li>Partner deeply with senior engineering and research leaders to shape hiring strategy, define ideal candidate profiles, and influence how we compete for elite technical talent</li><li>Build and maintain high-quality, research-grade talent pipelines — proactively mapping the market and engaging passive talent before requisitions open</li><li>Lead complex offer negotiations, including sign-on and equity exception packages, with a clear understanding of market compensation benchmarks across FAANG and frontier AI companies</li><li>Serve as a trusted advisor to hiring managers — pushing back, advising on tradeoffs, and bringing market intelligence that sharpens decision-making</li><li>Collaborate with sourcing partners, recruiting coordinators, and peer advisors to run an efficient, high-touch candidate experience</li><li>Contribute to team-level recruiting strategy, pipeline health reviews, and market talent intelligence initiatives</li></ul><p><br /><br /><b>Minimum Requirements</b><br /></p><ul><li>5+ years of full-cycle technical recruiting experience, with a significant and demonstrated focus on Applied Science, Machine Learning, and/or Data Science roles</li><li>Deep experience at a top-tier tech company — Meta, Google, or equivalent — where the talent bar is exceptionally high and the competition is fierce</li><li>Proven ability to recruit across the full Applied Science and ML talent spectrum: ML Engineers, Data Scientists, Research Scientists, Applied Scientists, and MLOps Engineers</li><li>Strong fluency in ML and AI concepts — enough to hold credible conversations with candidates and hiring managers about LLMs, deep learning, NLP, computer vision, and model development pipelines</li><li>Track record of building proactive talent pipelines in highly contested, hard-to-fill research and applied ML talent pools</li><li>Experience navigating complex compensation conversations, including base, equity (RSU), sign-on, and competing offer dynamics in the FAANG+ talent market</li><li>Consultative, data-informed approach to recruiting — you bring market data, benchmarking intelligence, and candidate insights to every hiring manager interaction</li><li>Strong communicator and relationship builder who earns trust quickly with both candidates and senior technical leaders</li></ul><p><br /><br /><b>Preferred Qualifications</b><br /></p><ul><li>Experience recruiting for frontier AI organizations, AI research labs, or applied AI product teams (e.g., FAIR, Google Brain/DeepMind, OpenAI)</li><li>Familiarity with AI/ML academic pipelines and graduate recruiting from top research universities (MIT, Stanford, CMU, Berkeley, UW, etc.)</li><li>Background working within large, matrixed organizations where recruiting requires influencing without authority</li></ul><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>At Salesforce, we believe in equitable compensation practices that reflect the dynamic nature of labor markets across various regions.For Ontario-based roles, the base salary hiring range for this position is CAD 107,200 to CAD 147,400 annually.The range represents base salary only, and does not include company bonus, incentive for sales roles, equity or benefits, as applicable.This posting is to fill a vacancy on our team, unless otherwise noted.",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Canada---Toronto/Talent-Advisor--AI-Labs_JR368090",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:salesforce:JR368119",
     "slug": "salesforce-marketing-cloud-account-executive-smb-jr368119",
     "company": "salesforce",
@@ -16846,6 +16927,8 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS_JR368159",
     "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -16976,6 +17059,24 @@
     "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Australia---Sydney/Consumption-Lead---Agentforce-D360_JR368298",
     "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:salesforce:JR368335",
+    "slug": "salesforce-territory-account-executive-jr368335",
+    "company": "salesforce",
+    "title": "Territory Account Executive",
+    "locations": [
+      "India - Gurgaon",
+      "India - Bangalore",
+      "India - Mumbai"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "<p><i>To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts.</i></p><p>Job Category</p>Sales<p>Job Details</p><p><b><b>About Salesforce</b></b></p><p>Salesforce is the #1 AI CRM, where humans with agents drive customer success together. Here, ambition meets action. Tech meets trust. And innovation isn’t a buzzword — it’s a way of life. The world of work as we know it is changing and we're looking for Trailblazers who are passionate about bettering business and the world through AI, driving innovation, and keeping Salesforce's core values at the heart of it all.</p><p>Ready to level-up your career at the company leading workforce transformation in the agentic era? You’re in the right place! Agentforce is the future of AI, and you are the future of Salesforce.</p><p><b>The Experience</b><br />Salesforce provides a compelling opportunity for Sales Professionals with a proven record exceeding quota in technology sales. Our goal is to build an organization of thoughtful, high-reaching, Account Executives committed to our vision of changing the software landscape. With 95% customer satisfaction, an exclusive CRM/Sales Force Automation tool that Reps love to use, and a fiercely loyal customer base, it's a powerful combination for sales success. Top sales talent across the world join us for our \"change the world\" mentality; the opportunity to excel in a fast-paced, performance-based team environment here.<br /><br />You will be responsible for driving strategic, enterprise-wide sales initiatives into a territory consisting of calling on the largest companies in India. Your accounts will be a blend of clients with additional revenue opportunities and prospects. You should be able to forecast sales activity and revenue achievement while creating satisfied and reference-able customers. Very driven comp plan with tremendous upside earnings potential.<br /><br /><b>What You'll Actually Be Doing</b><br /></p><ul><li>To exceed monthly/quarterly sales targets by selling Salesforce solutions into enterprise accounts and within an assigned geographical or vertical market. You will handle the entire sales process to ensure delivery against key performance metrics, with a strong emphasis on new business sales, while expanding existing accounts. Generate short-term results whilst maintaining a long-term perspective to increase overall revenue generation. Accurate monthly forecasting and revenue delivery.</li><li>Territory identification and research, to formalize a go-to-market territory strategy and create a qualified target account list within 30 days. Pipeline development through a combination of cold calling, email campaigns, and market sector knowledge/resourcefulness. Create and maintain a sales pipeline to ensure over-achievement within the designated market sector(s).</li><li>Engage with prospect organizations to position Salesforce solutions through strategic value-based selling, business-case definition, value analysis, references, and analyst data. Lead the end-to-end sales process through the engagement of appropriate resources such as Sales Engineers, Professional Services, Executives, Partners, etc.</li><li>Daily update of the Salesforce system with accurate customer and pipeline data.</li></ul><p><br /><b>You're Our Person If...</b></p><ul><li>8+ years of enterprise solution sales experience selling CRM, ERP, or similar.</li><li>A proven track record of driving and closing enterprise deals.</li><li>Consistent overachievement of quota and revenue goals.</li></ul><p><br /><br /><b>Even Better If...</b></p><ul><li>Strategic account planning and execution skills. Demonstrated consultative sales solution skills, including the ability to articulate a clear, concise return on investment value statement.</li><li>Experience selling to C-Level and across both IT and business units to customers - Enterprise Customers in India.</li><li>Strong technical competence. Ability to sell both an application and deployment of a platform.</li><li>Passion and commitment to customer success. Strong time management skills. Ability to maintain a high level of productivity, handle multiple contending priorities, and work effectively under the pressure of time constraints in a fast-paced, complex, collaborative, and team-oriented environment.</li></ul><p>Unleash Your Potential</p><p>When you join Salesforce, you’ll be limitless in all areas of your life. Our benefits and resources support you to find balance and <i>be your best</i>, and our AI agents accelerate your impact so you can <i>do your best</i>. Together, we’ll bring the power of Agentforce to organizations of all sizes and deliver amazing experiences that customers love. Apply today to not only shape the future — but to redefine what’s possible — for yourself, for AI, and the world.</p><p>Accommodations</p><p>If you need a reasonable accommodation during the application or the recruiting process, please submit a request via this <a href=\"https://careers.mail.salesforce.com/accommodations-request-form?_ga=2.139086459.912759425.1690463420-976932181.1684251251\"><u>Accommodations Request Form</u></a>.</p><p>Please note that Salesforce uses artificial intelligence (AI) tools to help our recruiters assess and evaluate candidates’ resumes and qualifications throughout the recruiting process. Humans will always make any candidate selection and hiring decisions. Please see our <a href=\"https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/salesforce-candidate-privacy-statement-december-2024.pdf\"><u>Candidate Privacy Statement</u></a> for more information about how we use your personal data and your rights, including with regard to use of AI tools and opt out options.</p><p>Posting Statement</p><p>Salesforce is an equal opportunity employer and maintains a policy of non-discrimination with all employees and applicants for employment. What does that mean exactly? It means that at Salesforce, we believe in equality for all. And we believe we can lead the path to equality in part by creating a workplace that’s inclusive, and free from discrimination. <a href=\"https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal\">Know your rights: workplace discrimination is illegal.</a> Any employee or potential employee will be assessed on the basis of merit, competence and qualifications – without regard to race, religion, color, national origin, sex, sexual orientation, gender expression or identity, transgender status, age, disability, veteran or marital status, political viewpoint, or other classifications protected by law. This policy applies to current and prospective employees, no matter where they are in their Salesforce employment journey. It also applies to recruiting, hiring, job assignment, compensation, promotion, benefits, training, assessment of job performance, discipline, termination, and everything in between. Recruiting, hiring, and promotion decisions at Salesforce are fair and based on merit. The same goes for compensation, benefits, promotions, transfers, reduction in workforce, recall, training, and education.</p>",
+    "applyUrl": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Gurgaon/Territory-Account-Executive_JR368335",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   }
 ]

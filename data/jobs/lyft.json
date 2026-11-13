@@ -573,7 +573,7 @@
     "postedAt": "2026-08-12T21:51:57.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1128,7 +1128,7 @@
     "postedAt": "2026-09-08T16:26:00.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1443,7 +1443,7 @@
     "postedAt": "2026-09-15T08:17:17.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1617,7 +1617,7 @@
     "postedAt": "2026-09-18T16:27:19.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1725,7 +1725,7 @@
     "postedAt": "2026-09-25T16:02:18.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1954,7 +1954,7 @@
     "postedAt": "2026-10-02T14:54:35.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -1973,7 +1973,7 @@
     "postedAt": "2026-10-02T14:54:33.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -2454,7 +2454,7 @@
     "postedAt": "2026-10-21T08:48:13.000Z",
     "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   },
   {
@@ -3450,6 +3450,23 @@
     "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8938627002?gh_jid=8938627002",
     "postedAt": "2026-11-12T19:26:52.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8940409002",
+    "slug": "lyft-data-engineer-marketplace-8940409002",
+    "company": "lyft",
+    "title": "Data Engineer, Marketplace",
+    "locations": [
+      "Ukraine Anywhere"
+    ],
+    "remote": true,
+    "department": "Marketplace",
+    "category": "data",
+    "descriptionHtml": "<p>At Lyft, our purpose is to serve and connect. We aim to achieve this by cultivating a work environment where all team members belong and have the opportunity to thrive.</p>\n<p>Here at Lyft, data is at the core of every decision we make. It powers our business — helping us create great transportation experiences for our customers and providing insights into the effectiveness of our product launches and features.</p>\n<p>As a Data Engineer on Lyft’s Marketplace – Decision Apps team, you will own and evolve the data pipelines that power our top-line financial, pricing, and driver-related metrics. You will collaborate with Analytics, Data Science, and Engineering partners to design data models and architectures — proposing innovative ideas, evaluating multiple approaches, and implementing solutions grounded in fundamental engineering principles and rigorous data analysis. Your work will provide seamless access to the insights that drive Lyft’s success.</p>\n<h2><strong>Responsibilities:</strong></h2>\n<ul>\n<li>Take ownership of core data pipelines, ensuring resilience, optimal performance, timely delivery, data quality, and seamless onboarding of new features</li>\n<li>Continuously evolve data models and schemas to meet business and engineering requirements</li>\n<li>Implement and maintain systems to monitor and enhance data quality and consistency</li>\n<li>Develop tools that support self-service management of data pipelines (ETL) and perform SQL tuning to optimize data processing performance</li>\n<li>Contribute to the Data Engineering team’s technical roadmap, ensuring alignment with team and stakeholder goals</li>\n<li>Write clean, well-tested, and maintainable code, prioritizing scalability and cost efficiency</li>\n<li>Conduct code reviews to uphold code quality standards and facilitate knowledge sharing</li>\n<li>Participate in on-call rotations to maintain high availability and reliability of workflows and data pipelines</li>\n<li>Collaborate with internal and external partners to remove blockers, provide support, and achieve results</li>\n</ul>\n<h2><strong>Experience:</strong></h2>\n<ul>\n<li>5+ years of professional experience in data engineering as a hands-on Individual Contributor delivering features end-to-end</li>\n<li>Proven ability to collaborate with cross-functional stakeholders (analytics, science, product, and engineering) to align data solutions with business objectives</li>\n<li>Proficient in data validation, analysis, and visualization for clear insight presentation</li>\n<li>Skilled in designing complex data models and resilient data pipelines, with solid understanding of analytical data modeling</li>\n<li>Expertise in advanced SQL, capable of understanding intricate business logic and implementing custom solutions</li>\n<li>Strong algorithmic foundation and hands-on coding skills in Python, Java, or similar languages</li>\n<li>Deep understanding of MPP systems and hands-on experience with ETL in Spark or similar technologies</li>\n<li>Familiarity with data system design principles for data-intensive applications</li>\n<li>Practical experience with workflow management tools (e.g., Airflow, Flyte, etc.)</li>\n</ul>\n<h2><strong>Benefits:</strong></h2>\n<ul>\n<li>Professional and stable working environment.</li>\n<li>The latest technology and equipment you need.</li>\n<li>Potential to work remotely, including out of country (dependent on work authorizations).</li>\n<li>28 calendar days for vacation and up to 5 paid sick days.</li>\n<li>18 weeks of paid parental leave. Biological, adoptive and foster parents are all eligible.</li>\n<li>Mental health benefits.</li>\n<li>Family building benefits.</li>\n</ul>\n<p><em><strong>This role is fully remote in Ukraine, however, employees are required to live and work in Ukraine in order to be qualified for this position.</strong> #Remote</em></p>",
+    "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8940409002?gh_jid=8940409002",
+    "postedAt": "2026-11-13T09:17:01.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "greenhouse"
   }
 ]

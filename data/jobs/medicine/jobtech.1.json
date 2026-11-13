@@ -1013,7 +1013,7 @@
     "postedAt": "2026-09-22T16:26:15.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -1340,7 +1340,7 @@
     "postedAt": "2026-09-30T15:52:19.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -3338,6 +3338,8 @@
     "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31596657",
     "postedAt": "2026-10-14T14:45:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "jobtech"
   },
   {
@@ -5671,7 +5673,7 @@
     "postedAt": "2026-10-22T15:00:20.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -7827,7 +7829,7 @@
     "postedAt": "2026-10-28T12:04:33.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -8042,7 +8044,7 @@
     "postedAt": "2026-10-29T09:35:05.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -8138,7 +8140,7 @@
     "postedAt": "2026-10-29T12:55:13.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -9265,7 +9267,7 @@
     "postedAt": "2026-11-03T11:46:39.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -9458,7 +9460,7 @@
     "postedAt": "2026-11-03T15:03:58.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -10865,7 +10867,7 @@
     "postedAt": "2026-11-06T15:05:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -10887,7 +10889,7 @@
     "postedAt": "2026-11-06T15:10:36.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -12327,7 +12329,7 @@
     "postedAt": "2026-11-10T15:43:30.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   },
   {
@@ -14414,6 +14416,101 @@
     "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31724654",
     "postedAt": "2026-11-13T00:01:09.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "jobtech"
+  },
+  {
+    "id": "jobtech:31725138",
+    "slug": "kry-allmanspecialist-till-krys-vardcentral-alta-i-stockholm-31725138",
+    "company": "jobtech",
+    "employer": "Kry",
+    "title": "Allmänspecialist till Krys vårdcentral Älta i Stockholm",
+    "locations": [
+      "Nacka, Sweden"
+    ],
+    "remote": false,
+    "department": "Specialistläkare",
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<strong>Är du redo att utmana hur vården “alltid har sett ut\"?</strong><p>Då vill vi prata med dig!</p><p><strong>Om Kry Älta </strong></p><p>Hej! Jag heter Emelie Eisner och är verksamhetschef här på vårdcentralen. Jag drivs av en enkel idé: att vården blir bättre när vi vågar utveckla hur vi arbetar. Här jobbar vi nära varandra, och det är lika självklart att be om hjälp som att bidra med nya idéer. Vi är ett team på 30 medarbetare och har cirka 13.500 listade patienter. Vårdcentralen ligger i nybyggda lokaler i Älta centrum och det som gör oss unika är vår kombination av hög tillgänglighet, digitalt arbetssätt och ett tydligt fokus på kontinuitet. Vi har också en hemsjukvård med ca 80 inskrivna patienter och en BVC med ca 700 barn. </p><p><strong>Varför Kry?</strong> Vi har förändrat hur vård bedrivs i Sverige i över tio år. Gjort den digital, tillgänglig och mer jämlik. Men vi är inte klara och det är poängen. På Kry tror vi att det modigaste du kan göra i vårdbranschen är att vara snäll. Och att de som kan vården ska styra den. Hos oss får du mandat att göra det - ta det, be inte om det.</p><p><strong>Vad du faktiskt gör </strong> Du påverkar arbetssätt, bidrar till utveckling och är med och formar hur vården bedrivs. Du utreder, bedömer och behandlar patienter i alla åldrar från akuta bedömningar till långsiktig uppföljning, digitalt och fysiskt. Arbetet är brett. </p><p><strong>Kry-modellen </strong> Vi minimerar administration och frigör tid till det som spelar roll: patientmötet. Alla professioner jobbar på toppen av sin kompetens. Hög tillgänglighet utan väntetider. Mer mandat, mer variation, mer påverkan. Läs mer om Kry-modellen HÄR</p><p><strong>Karriär och utvecklingsmöjligheter</strong> Hos oss är karriär inte en separat väg vid sidan av kliniskt arbete det är en integrerad del av vardagen. Vi erbjuder en tydlig karriärstege för läkare med fem nivåer där du stegvis kan ta mer ansvar inom ledarskap och verksamhetsutveckling. Varje steg innebär ökat mandat, starkt lönetillägg och möjlighet till bonus kopplad till enhetens resultat. Du ansöker själv när du är redo att ta nästa steg. Läs mer om arbetet som läkare på Kry och vår karriärstege HÄR</p><p><strong>Förmåner och kompetensutveckling </strong>- läs mer om våra fina förmåner och om hur vi aktivt satsar på att utveckla våra medarbetare HÄR</p><p><strong>Vad vi förväntar oss av dig</strong></p><ul><li><p>Du är specialistläkare inom allmänmedicin.</p></li><li><p>Du tar ansvar och får saker gjorda.</p></li><li><p>Du trivs i förändring och ser det som kul.</p></li><li><p>Du levererar vård med hög kvalitet och sätter patienten först. </p></li></ul><p><strong>Praktiskt</strong></p><p>Start: under 2026 eller 2027, när det passar oss båda.  Omfattning: 60-100%  Arbetstid: dagtid 8–17, distans 1 dag/vecka möjligt.</p><p><strong>Är du redo?</strong></p><p>Skicka din ansökan när du känner dig redo, vi går igenom ansökningarna och håller intervjuer löpande. </p><p>Vi ser fram emot att höra från dig!</p><strong>Ta hand om dig ❤</strong>",
+    "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31725138",
+    "postedAt": "2026-11-13T08:18:55.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "jobtech"
+  },
+  {
+    "id": "jobtech:31725297",
+    "slug": "region-jamtland-harjedalen-hammarstrands-halsocentral-allmanspecialister-till-hammarstrand-31725297",
+    "company": "jobtech",
+    "employer": "Region Jämtland Härjedalen, Hammarstrands hälsocentral",
+    "title": "Allmänspecialister till Hammarstrand",
+    "locations": [
+      "Ragunda, Sweden"
+    ],
+    "remote": false,
+    "department": "Specialistläkare",
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "Vill du ha en tjänst där du har stor möjlighet till kompetensutveckling? Vi erbjuder 25 dagar per år till kurser, konferenser och auskultation utifrån ett personligt upplägg som du är med och påverkar. Vi kan erbjuda denna möjlighet utifrån våra ambitioner om att kunna bedriva vård av högsta kvalité även i glesbygd.\n\nHammarstrands hälsocentral är en välfungerande hälsocentral som har en stabil fast personalgrupp. Vi arbetar med en stark laganda. I vårt team ingår bland annat medicinska sekreterare, läkare, distriktssjuksköterskor, undersköterskor, barnmorska, psykolog, kurator, rehabkoordinator, och fysioterapeuter. Vi har ett nära arbete med ambulanspersonal då vi har en ambulans stationerad i huset, är det riktigt bråttom sker transporten med helikopter till Östersunds sjukhus.\n\nDet som skiljer Hammarstrands hälsocentral från vårdcentralerna i staden är att vi får hantera allt, de personer som normalt skulle ha sökt till akuten om de bodde i en stad kommer till oss. Detta gör arbetet väldigt varierat, det är en bra mix av vanligt traditionellt vårdcentralsarbete och ärenden av mer akut karaktär. Vi bemannar även en filial i Bispgården några dagar varje vecka. Dessutom har vi ett nära samarbete med Stuguns hälsocentral. Där finns det fast personal med två läkare, två distriktssköterskor och en undersköterska. Övriga kompetenser lånas från Hammarstrands hälsocentral.\n\nPersonalen på Hammarstrands hälsocentral är aktiva i nära vård omställningen och provar gärna nya arbetssätt. Vi har ett gott samarbete med kommunen det gör arbetet lätt och roligt.\n\nOm du är rätt person erbjuder vi en förmånlig anställning, vi kan erbjuda:\n\n\t• Under dina första tre år erbjuder vi kompetensutveckling med 25 dagar per år i en individuell plan som du lägger tillsammans med enhetschefen (dagarna räknas utifrån tjänstgöringsgrad, 25 dagar motsvarar heltid).\n\t• Begränsad patientgrupp på max 1250 listade personer.\n\t• Flexibel anställning som du ev. kan kombinera med något annat.\n\t• Visst arbete på distans (om det önskas).\n\t• Kompetent, stabil och mogen arbetsgrupp.\n\t• Variation i arbetet, men även möjlighet att nischa dig inom det specialområde som du brinner för.\n\t• Lönetillägg för glesbygdstjänstgöring.\n\t• Möjlighet att ha viss resependling till arbetet på arbetstid. För den intresserade finns även möjlighet till MLU-uppdrag, detta genererar ytterligare ekonomisk kompensation.\r\n\r\n3 plats(er). \r\n\r\nARBETSUPPGIFTER\r\nDina arbetsuppgifter är att förebygga ohälsa, vårda och behandla patienter på en allmän mottagning i den Jämtländska glesbygden. Du kommer att teamarbeta med kollegor samt att vara med och utveckla effektiva arbetssätt. Vidare kommer du att ansvara för ett särskilt boende och BVC. Viss jour kan ingå i tjänstgöringen.\r\n\r\nKVALIFIKATIONER\r\nSvensk läkarlegitimation, gärna specialist inom allmänmedicin. Erfarenhet av glesbygdsmedicin är meriterande. Vidare är det meriterande med körkort, men inget krav.\r\n\r\nAnställningsform: Tillsvidareanställning.\r\nVaraktighet: Tillsvidare.\r\n\r\nI Region Jämtland Härjedalen genomsyras vårt arbete av våra kärnvärden: vi skapar värde för de vi är till för, agerar med handlingskraft och strävar efter att alltid upplevas som pålitliga. Hos oss får du möjlighet att arbeta i en organisation där dessa värden präglar vardagen och där ditt arbete verkligen gör skillnad. \n\nSom medarbetare får du tillgång till ett brett utbud av förmåner via vår förmånsportal. Vi värnar om din hälsa och erbjuder friskvårdsbidrag eller friskvårdstimme. På Östersunds sjukhus kan du dessutom träna gratis på gymmet Zefyren och delta i ledarledda pass.  \n\nUrval och tillsättning kan ske löpande under annonseringstiden, så vi ser gärna att du skickar in din ansökan så snart som möjligt. \n\nVi har ett etablerat medieval för rekrytering och undanber oss därför vänligt men bestämt kontakt med annonssäljare eller andra säljare av rekryteringstjänster.",
+    "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31725297",
+    "postedAt": "2026-11-13T08:45:06.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "jobtech"
+  },
+  {
+    "id": "jobtech:31725503",
+    "slug": "s-snabbdoktor-ab-vardcentralen-snabbdoktor-soker-allmanspecialist-31725503",
+    "company": "jobtech",
+    "employer": "S Snabbdoktor AB",
+    "title": "Vårdcentralen Snabbdoktor söker allmänspecialist",
+    "locations": [
+      "Eskilstuna, Sweden"
+    ],
+    "remote": false,
+    "department": "Specialistläkare, allmänmedicin",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Vårdcentralen Snabbdoktor Eskilstuna öppnade sin första vårdcentral den 21 november 2022.</p><p>Vi är belägna i nybyggda och moderna lokaler i K43 i Eskilstuna. Snabbdoktor är en privatägd vårdcentral med ett starkt fokus på kvalitet och tillgänglighet.</p><p>Idag har vi närmare 6 000 listade patienter och verksamheten fortsätter att växa i stadig takt.</p><p><strong> Arbetsbeskrivning</strong></p><p>Vi söker nu en specialist i allmänmedicin som vill vara med och utveckla Eskilstunas modernaste vårdcentral tillsammans med oss. Hos oss finns goda möjligheter till professionell utveckling, inflytande över arbetet och eget ansvar.</p><p><strong>Arbetsuppgifter</strong></p><p>Som specialist i allmänmedicin arbetar du med sedvanliga arbetsuppgifter inom primärvård, såsom mottagningsarbete, patientbedömningar, diagnostik och behandling.</p><p>Du följer upp patienter med både akuta och kroniska besvär samt bidrar till en trygg och kvalitativ vård.</p><p>Rollen innebär även samarbete med övriga professioner och möjlighet att vara delaktig i verksamhetens fortsatta utveckling.</p><p><strong>Kvalifikationer</strong></p><ul><li>Legitimerad läkare med specialistkompetens i allmänmedicin</li><li>Erfarenhet av arbete inom primärvård</li><li>Goda kunskaper i journalsystemet Cosmic</li><li>Mycket goda kunskaper i svenska, i tal och skrift</li></ul><p><strong>Meriterande</strong></p><ul><li>Erfarenhet av digital patientkontakt</li><li>Erfarenhet av arbete i multiprofessionella team</li><li>Erfarenhet av handledning av AT- eller ST-läkare</li><li>Intresse för eller erfarenhet av kvalitets- och förbättringsarbete</li><li>Erfarenhet av arbete med kroniska sjukdomar och långsiktig patientuppföljning</li><li>Språkkunskaper utöver svenska och engelska</li></ul><p><strong>Personliga egenskaper</strong></p><p>Vårdcentralen Snabbdoktor Eskilstuna är en verksamhet där olika professioner arbetar nära varandra med en gemensam målbild och ett starkt patientfokus.</p><p>Vi söker dig som är lyhörd, samarbetsorienterad och initiativtagande i ditt arbete.</p><p>Sedan starten har vårdcentralen haft en snabb och stabil utveckling och är idag en växande verksamhet med tydligt fokus på kvalitet, långsiktighet och en god arbetsmiljö.</p><p>Vi värdesätter ditt engagemang och ser gärna att du bidrar med idéer och förbättringsförslag som skapar mervärde för både patienter och kollegor.</p><p><strong>Förmåner</strong></p><ul><li>Vi tar hand om dig genom tjänstepension och trygga försäkringar</li><li>5 000 SEK i friskvårdsbidrag per år – för hälsa, energi och återhämtning</li><li>Möjlighet att växa professionellt genom kompetensutveckling</li><li>Tillgång till vårt nya gym – en möjlighet att prioritera din egen hälsa mitt i arbetsdagen</li></ul><p>Rekrytering sker löpande, vilket innebär att tjänsten kan tillsättas innan sista ansökningsdag.</p><p>Vi undanber oss vänligen men bestämt kontakt från annons- och rekryteringsföretag i denna rekrytering.</p>",
+    "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31725503",
+    "postedAt": "2026-11-13T09:04:45.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "jobtech"
+  },
+  {
+    "id": "jobtech:31726018",
+    "slug": "region-vasterbotten-hsf-overgripande-verksamhet-bt-lakare-region-vasterbotten-31726018",
+    "company": "jobtech",
+    "employer": "Region Västerbotten, HSF övergripande verksamhet",
+    "title": "BT-läkare, Region Västerbotten",
+    "locations": [
+      "Umeå, Sweden"
+    ],
+    "remote": false,
+    "department": "BT-läkare",
+    "category": "medicine",
+    "descriptionHtml": "Region Västerbotten arbetar för att god hälsa och hållbar utveckling ska stärka varandra. Vi tar ansvar för en jämlik välfärd och för att forskning och innovation ger resultat.\r\n\r\n4 plats(er). \r\n\r\nARBETSUPPGIFTER\r\nSom BT-läkare hos oss bidrar du med kunskap och engagemang som får människor att känna sig trygga. Du kommer att delta i vardagssjukvård och arbetet sker under personlig handledning av specialistkompetenta läkare och ST-läkare.\n\nDen fristående tjänstgöringen har en normtid på 12 månader och inleds med 2 veckor introduktion tillsammans med AT-läkare. Under året varvas klinisk tjänstgöring med utbildning där vissa är gemensamma i länet medan andra anordnas lokalt på respektive sjukhus.\n\nAlla som genomgår BT, har utsedd personlig handledare på samtliga tjänstgöringar och en ansvarig huvudhandledare under hela BT.\n\nExamination sker genom kontinuerliga bedömningar med bedömningsverktyg som även används inom specialisttjänstgöring och sammantagna bedömningar som görs vid varje tjänstgöringsavsnitt slut. En slutlig bedömning görs av huvudhandledare och en extern bedömare där de kontinuerliga och sammantagna genomförda bedömningarna samlas in.\r\n\r\nKVALIFIKATIONER\r\nVi söker dig som vill bo och utvecklas i Västerbotten, har svensk läkarlegitimation vid tillträde av BT, och behöver göra BT för att komma vidare i karriären. \n\nSökande ska ha god kunskaper i det svenska språket, motsvarande nivå C1. Den som inte har svenska som förstaspråk kan behöva göra ett språktest innan anställning.\n\n Det är meriterande med klinisk tjänstgöring som läkare i det svenska sjukvårdssystemet. Övriga meriter kan vara andra relevanta utbildningar, tidigare yrkeserfarenhet, specialistintresse samt lokal förankring.  \n\nVi söker dig som är strukturerad, har lätt för att samarbeta med andra och är kommunikativ. Du har även en god motståndskraft samt förmåga att behålla lugnet och agera stabilt även i pressade situationer.\r\n\r\nAnställningsform: Tidsbegränsad anställning.\r\n\r\nTillträde 1 februari i Lycksele och Skellefteå med två introduktionsveckor med övriga utbildningsläkare. Den kliniska tjänstgöringen startar i direkt anslutning till introduktionsveckorna eller senare under våren efter överenskommelse med BT-organisationen. \n\nDialog om eventuella tillgodoräknanden ska föras i samband med rekrytering. \n\nI den här rekryteringen ombeds du önska vilken ort/orter du är mest intresserad av.\n\nOm möjligt, bifoga bevis om svensk läkarlegitimation.\n\nLäs mer om våra förmåner för dig som jobbar med oss på webbsidanhttps://www.regionvasterbotten.se/nar-du-jobbar-hos-oss/formaner\n\nVi strävar efter en jämn könsfördelning och ser mångfald som en styrka och välkomnar därför sökande med olika bakgrund.\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.\n\nOm du har skyddad identitet och vill ansöka så kontaktar du rekryterande chef och skickar sedan in dina ansökningshandlingar via post.",
+    "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31726018",
+    "postedAt": "2026-11-13T10:05:09.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "jobtech"
+  },
+  {
+    "id": "jobtech:31726373",
+    "slug": "halso-och-sjukvardsforvaltningen-orebro-specialistlakare-klinisk-patologi-vo-laboratoriemedicin-uso-31726373",
+    "company": "jobtech",
+    "employer": "Hälso- och sjukvårdsförvaltningen Örebro",
+    "title": "Specialistläkare klinisk patologi, VO Laboratoriemedicin USÖ",
+    "locations": [
+      "Örebro, Sweden"
+    ],
+    "remote": false,
+    "department": "Specialistläkare",
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Enheten för klinisk patologi och genetik vid Universitetssjukhuset Örebro är i ständig utveckling och utökar nu läkargruppen med en specialist inom klinisk patologi. Idag består läkarstaben i inom patologi av nio specialister och fyra ST-läkare.</p><p>I Örebro erbjuder vi en väldigt trevlig och bra arbetsmiljö med ett nära samarbete, både inom vår klinik och med våra kliniker. Till viss del jobbar vi subspecialiserat, men med stor vikt på att upprätthålla den breda grunden i allmänpatologi. Diagnostik sker både via skärm och mikroskop och viss möjlighet till distansdiagnostik finns efter överenskommelse. Forskning och utveckling är en viktig del av vår verksamhet som universitetsklinik och därför är ett dokumenterat forskningsintresse meriterande. Som specialistläkare inom klinisk patologi finns goda möjligheter att utvecklas i sin yrkesroll t ex genom att bedriva undervisning och forskning kombinerat med klinisk tjänstgöring.</p><strong>Arbetsuppgifter</strong><p>Enheten för klinisk patologi och genetik ansvarar för fastställande av diagnos och behandlingsstyrande faktorer inom Region Örebro län. Detta omfattar i stort sett hela det diagnostiska panoramat inklusive provmaterial från sjukhusets högspecialiserade vård. Det är cirka 70st medarbetare på enheten.</p><strong>Kvalifikationer</strong><p>Läkare med specialistutbildning i klinisk patologi, erfarenhet inom hematopatologi är meriterande. Stor vikt kommer att läggas vid personliga egenskaper.</p><strong>Ansökan</strong><p>Ansökan ska innehålla CV och personligt brev. Intyg, betyg, examensbevis med mera ska lämnas vid en eventuell intervju.</p><p>Om du är eller tidigare varit anställd i Region Örebro län kommer vi ta interna referenser från din nuvarande eller tidigare chef, om du blir aktuell för anställning.</p><p>Kontroll av registerutdrag från Polismyndigheten kan komma att ske enligt aktuell lagstiftning.</p><p>Som anställd i Region Örebro län omfattas du av trygga kollektivavtal. Läs mer om villkor och förmåner.</p><p>Vi sätter löner individuellt och differentierat. Läs mer om lön och lönestatistik.</p><p>Vi krigsplacerar våra tillsvidareanställda och i vissa fall även visstidsanställda. Läs mer om vad det innebär.</p><p>Intervjuer sker löpande.</p><strong>Om verksamheten</strong><p>Verksamhetsområde laboratoriemedicin har ett samlat ansvar för den laboratoriemedicinska service som bedrivs vid laboratorierna inom Universitetssjukhuset Örebro, Karlskoga lasarett och Lindesbergs lasarett. Vi driver en bred verksamhet inom områdena klinisk kemi, bakteriologi, virologi, immunologi, transfusionsmedicin inklusive terapeutisk plasmaferesbehandling, patologi, cytologi och molekylärgenetik. Inom verksamhetsområdet ryms även Sterilteknik. Här arbetar närmare 300 personer med rutindiagnostik, forskning och utveckling samt utbildning.</p><p>På Universitetssjukhuset Örebro, ett av landets sju universitetssjukhus, arbetar vi för att ge alla patienter en god, säker och jämlik vård. Vi tillhandahåller allt från bassjukvård till nationell högspecialiserad och tekniskt avancerad vård. Vården finns till för såväl länets egna invånare som för vissa patientgrupper från andra delar av landet när det gäller viss specialiserad vård. Inom området bedrivs även universitetssjukvård med klinisk patientnära forskning och verksamhetsförlagd utbildning inom flertalet vårdprofessioner. Som en av länets största arbetsplatser ger vi dig som medarbetare goda möjligheter till utveckling och karriär samtidigt som du får vara med och göra skillnad för människor varje dag. Tillsammans utvecklar vi framtidens hälso- och sjukvård!</p><p>Region Örebro län är en av länets största arbetsgivare. Tillsammans med 11 000 kollegor kan du skapa ett bättre liv för de vi finns till för. Hos oss finns meningsfulla och samhällsviktiga jobb där du kan göra skillnad i invånarnas vardag, hälsa och livskvalitet. Dygnet runt, året om, ansvarar vi för hälso- och sjukvård, tandvård och länets kollektivtrafik. Vi har också det regionala utvecklingsansvaret i länet och ett uppdrag att bidra till kulturlivet.</p><strong>Övrig information</strong><p>Välkommen med din ansökan!</p><p>Vi har gjort vårt medieval för denna rekrytering och undanber oss därför erbjudanden om annonserings- och rekryteringshjälp i samband med denna annonsering.</p>",
+    "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31726373",
+    "postedAt": "2026-11-13T10:43:49.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "jobtech"
   }
 ]

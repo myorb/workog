@@ -590,7 +590,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -891,7 +891,7 @@
     "postedAt": "2026-09-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -1459,7 +1459,7 @@
     "postedAt": "2026-09-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -2689,7 +2689,7 @@
     "postedAt": "2026-09-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -3334,7 +3334,7 @@
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -3599,7 +3599,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4181,6 +4181,8 @@
     "applyUrl": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Austin/XMLNAME-2027-University-Graduate---Solutions-Consulting-Analyst_R172585",
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4935,7 +4937,7 @@
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4953,7 +4955,7 @@
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5018,6 +5020,22 @@
     "applyUrl": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Paris/XMLNAME-2027-Intern---Solutions-Consulting_R173322",
     "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:adobe:R173345",
+    "slug": "adobe-2027-intern-research-scientist-r173345",
+    "company": "adobe",
+    "title": "2027 Intern - Research Scientist",
+    "locations": [
+      "London"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>Internship Details  </p><p>Location: London  </p><p>Duration: 3 months  </p><p>Starting date: From February 2027 <br />End date: No later than 30 November 2027</p><p>Eligibility: master or Ph.D. student</p><p>Hybrid: 3 days per week in the office, 2 days per week work from home  </p><p> Annual Pay: £75,000  </p><br /><p><b>About the role </b></p><p>Research at the intersection of 3D, Image, Video, and Generative AI</p><p>Can we bridge the compact, physically consistent structure of 3D representations with the rich temporal priors of generative video models?</p><p><br />Join Adobe Research London to tackle core problems in multi-modal generation and controllable editing. We are looking for PhD and MS researchers to explore how unifying image, video, and 3D modalities can yield richer, more controllable generative spaces.</p><br /><p><b>The Research Focus:</b></p><p>• Bridge 3D &amp; Generative Video: Investigate compact 3D representations (e.g., neural fields, Gaussian splatting, explicit geometry) alongside video diffusion/autoregressive models to unlock precise spatial and temporal control.</p><p>• Combine Generative Models &amp; Classical Rendering: Explore hybrid pipelines integrating physically based rendering (PBR) with generative/agentic workflows.</p><p>• Top-Tier Publication: Develop novel methods and target impactful publications at top-tier venues (SIGGRAPH, ACM TOG, CVPR, ICCV, NeurIPS, ICLR).</p><p>• Thesis Alignment: We actively prioritize research problems that can serve as core chapter(s) of your dissertation and establish sustained collaborations well beyond the internship.</p><br /><p><b>Resources &amp; Environment:</b></p><p>• Compute &amp; Infrastructure: Large-scale GPU clusters and specialized datasets to train and evaluate state-of-the-art models.</p><p>• Mentorship &amp; Impact: 1:1 mentorship from senior Adobe research scientists, with a direct pipeline to transfer groundbreaking ideas to creative tools used by millions worldwide.</p><br /><p><b>Qualifications:</b></p><p>• Currently pursuing a PhD or MS in Computer Science, specializing in Computer Vision, Graphics, Machine Learning, or a closely related field. Exceptional senior undergrads with strong research output will be considered. </p><p>• Solid track record or coursework in generative modeling (diffusion / flow matching / autoregressive), computer graphics / vision, and/or 3D scene representation.</p><p>• Proficient in modern deep learning frameworks (PyTorch) with strong experimental rigor.</p><br /><p><b>What to expect from the recruitment process:</b></p><p>Our selection process consists of two stages as follows: </p><ul><li>60 minutes Technical Interview with the team.</li><li>45 minutes Soft-Skills Interview with the Hiring Manager.</li></ul><p><b>About Adobe</b></p><p>Adobe empowers everyone to create through innovative platforms and tools that unleash creativity, productivity and personalized customer experiences. Adobe’s industry-leading offerings including Adobe Acrobat Studio, Adobe Express, Adobe Firefly, Creative Cloud, Adobe Experience Platform, Adobe Experience Manager, and GenStudio enable people and businesses to turn ideas into impact, powered by AI and driven by human ingenuity.</p><br /><p>Our 30,000+ employees worldwide are creating the future and raising the bar as we drive the next decade of growth. We’re on a mission to hire the very best and believe in creating a company culture where all employees are empowered to make an impact. At Adobe, we believe that great ideas can come from anywhere in the organization. The next big idea could be yours. </p><p><b><br />Let’s Adobe together</b></p><p>At Adobe, we believe in creating a company culture where all employees are empowered to make an impact. Learn more about Adobe life, including our <a href=\"https://www.adobe.com/adobe-for-all.html#:~:text=and%20culture.-,Our%20company%20values.,-As%20we%20look\"><u>values and culture</u></a>, <a href=\"https://www.adobe.com/corporate-responsibility.html\"><u>focus on people, purpose and community</u></a>, <a href=\"https://www.adobe.com/diversity.html\"><u>Adobe for All</u></a>, comprehensive <a href=\"https://benefits.adobe.com/\"><u>benefits programs</u></a>, the <a href=\"https://blog.adobe.com/\"><u>stories we tell</u></a>, the <a href=\"https://blog.adobe.com/en/topics/customer-stories\"><u>customers</u></a> we serve, and how you can help us advance our mission of empowering everyone to create.</p><br /><p>Adobe is proud to be an <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\"><u>Equal Employment Opportunity</u></a> employer. We do not discriminate based on gender, race or color, ethnicity or national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, or any other protected characteristic. <a href=\"https://www.adobe.com/content/dam/cc/en/careers/pdfs/executed-eeo.pdf\"><u>Learn more.</u></a></p><br /><p>Adobe aims to make our Careers website and recruiting process accessible to any and all users. If you have a disability or special need that requires accommodation to navigate our website or complete the application process, email <a href=\"mailto:accommodations@adobe.com\"><u>accommodations@adobe.com</u></a>.</p><br /><p><b>AI Use Guidelines for Interviews:</b><br />Our interviews are designed to reflect your own skills and thinking. The use of AI or recording tools during live interviews is not permitted unless explicitly invited by the interviewer or approved in advance as part of a reasonable accommodation. If these tools are used inappropriately or in a way that misrepresents your work, your application may not move forward in the process.</p><br /><p>At Adobe, we empower employees to innovate with AI — and we look for candidates eager to do the same. As part of the hiring experience, we provide clear guidance on where AI is encouraged during the process and where it’s restricted during live interviews. See how we think about <a href=\"https://careers.adobe.com/us/en/ai-and-your-hiring-experience\"><u>AI in the hiring experience</u></a>.</p>",
+    "applyUrl": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/London/XMLNAME-2027-Intern---Research-Scientist_R173345",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5240,7 +5258,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {

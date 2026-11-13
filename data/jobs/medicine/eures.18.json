@@ -174,7 +174,7 @@
     "postedAt": "2026-09-15T05:54:07.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -281,7 +281,7 @@
     "postedAt": "2026-11-04T22:45:38.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -442,6 +442,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTAwMDAtMTIwMTY4MjIzNi1TIDE?lang=en",
     "postedAt": "2025-02-20T22:36:39.134Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -496,7 +498,7 @@
     "postedAt": "2026-06-16T02:17:43.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -600,7 +602,7 @@
     "postedAt": "2026-08-04T01:55:01.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -610,11 +612,11 @@
     "employer": "Detská fakultná nemocnica Košice",
     "title": "Všeobecní lekári",
     "locations": [
-      "Košický kraj, Slovakia"
+      "Košice-Západ, Slovakia"
     ],
     "remote": false,
     "category": "medicine",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>Poskytovanie zdravotnej starostlivosti vykonávané lekárom v uvedenej špecializácii.Výhody:stravovanie, Multisport karta, UpBalansea</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTAwMDAwMDAzMTA2MDE1MiA0MQ?lang=en",
     "postedAt": "2026-11-10T03:55:05.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1328,7 +1330,7 @@
     "postedAt": "2026-09-23T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -1338,12 +1340,12 @@
     "employer": "ZDRAVSTVENI DOM VELENJE, Vodnikova cesta 1 , 3320 VELENJE",
     "title": "ZDRAVNIK SPECIALIST - M/Ž",
     "locations": [
-      "Savinjska, Slovenia"
+      "Velenje, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK SPECIALIST URGENTNE MEDICINE, poskusno delo 4 mesece, Nedoločen čas , Polni delovni čas, 40, OPRAVLJANJE DEL IN NALOG ZDRAVNIKA SPECIALISTA URGENTNE ALI DRUŽINSKE MEDICINE V ENOTI NUJNE MEDICINSKE POMOČI, ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ3NDYyMS0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-10-12T20:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1356,11 +1358,11 @@
     "employer": "ZDRAVSTVENI DOM LJUBLJANA, Metelkova ulica 9 , 1000 LJUBLJANA",
     "title": "E017042 ZDRAVNIK BREZ SPECIALIZACIJE Z OSNOVNO LICENCO - M/Ž",
     "locations": [
-      "Osrednjeslovenska, Slovenia"
+      "Ljubljana, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK, SEKUNDARIJ, poskusno delo 4 mesece, Določen čas, 6 mesecev, Polni delovni čas, 40, Izvajanje zdravniške službe v osnovni zdravstveni dejavnosti v skladu s strokovno usposobljenostjo/samostojno opravljanje dela s področja urgentne medicine, to je nujnih zdravniških ukrepov.&amp;nbsp;&amp;nbsp;, ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ3NTA0NS0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-02T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1373,12 +1375,12 @@
     "employer": "ZDRAVSTVENI DOM LJUBLJANA, Metelkova ulica 9 , 1000 LJUBLJANA",
     "title": "E018025 VIŠJI ZDRAVNIK SPECIALIST PPD3 - M/Ž",
     "locations": [
-      "Osrednjeslovenska, Slovenia"
+      "Ljubljana, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIKI SPECIALISTI (RAZEN SPLOŠNE MEDICINE), poskusno delo 4 mesece, Določen čas&amp;nbsp;&amp;nbsp;oz. do zaključka funkcije predstojnika, Krajši delovni čas, 20,&amp;nbsp;&amp;nbsp;Izvajanje zdravniške službe v zdravstveni dejavnosti v skladu s specialistično strokovno usposobljenostjo, - izvajanje urgentne službe, - doseganje standardov in normativov dela zdravnika,- prenos znanja na druge zdravnike in zdravstvene delavce, - aktivno sodelovanje z zdravniki in drugimi zdravstvenimi delavci različnih specialnosti in različnih ravni zdravstvene dejavnosti, - kreativnost in komunikativnost, - krepitev timskega dela, - sodelovanje pri vpeljavi izboljšav na delovnem mestu, upoštevaje sorazmernost med stroški vpeljave izboljšav in učinkovitostjo., ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ3NTA1MC0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-10-11T20:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1391,12 +1393,12 @@
     "employer": "SPLOŠNA BOLNIŠNICA TRBOVLJE, Rudarska cesta 9 , 1420 TRBOVLJE",
     "title": "ZDRAVNIK SPECIALIST ANESTEZIOLOGIJE, REANIMATOLOGIJE IN PERIOPERATIVNE INTENZIVNE MEDICINE - M/Ž",
     "locations": [
-      "Zasavska, Slovenia"
+      "Trbovlje, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK SPECIALIST ANESTEZIOLOGIJE, REANIMATOLOGIJE IN PERIOPERATIVNE INTENZIVNE MEDICINE, poskusno delo 4 mesece, Nedoločen čas , Polni delovni čas, 40, SPECIALISTIČNO OPERATIVNO IN KONZERVATIVNO AMBULANTNO IN BOLNIŠNIČNO ZDRAVLJENJE BOLNIKOV, ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ3ODI5Ni0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-10-28T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1409,12 +1411,12 @@
     "employer": "ZDRAVSTVENI DOM LOGATEC, Notranjska cesta 2 , 1370 LOGATEC",
     "title": "ZDRAVNIK SPECIALIST PSIHIATRIJE - DELO V CENTRU ZA DUŠEVNO ZDRAVJE ODRASLIH, ŠIFRA DM E0180021 ZDRAVNIK SPECIALIST PPD3, OPCIJSKO DELOVNO MESTO VIŠJI ZDRAVNIK SPECIALIST PPD3 , ŠIFRA E018025 - M/Ž",
     "locations": [
-      "Osrednjeslovenska, Slovenia"
+      "Logatec, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK SPECIALIST PSIHIATRIJE, poskusno delo 4 mesece, Nedoločen čas , Polni delovni čas, 40, -&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Odkrivanje bolezni, zdravljenje in rehabilitacija-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Izvajanje svetovanj in podporne obravnave-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Izvajanje individualne in skupinske strokovne obravnave-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Izvajanje psihodiagnostičnih intervjujev in ponovitev obravnav,-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Aktivno sodelovanje z zunanjimi inštitucijami-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Timska obravnava pacientov-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Timsko delo-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konzultacija z notranjimi in zunanjimi sodelavci ter udeleževanje supervizij za lastno področje, -&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Terenske obravnave pacientov-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Skrb za pretok strokovnih informacij-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Uvajanje novih metod dela-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vodenje medicinske dokumentacije-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Delo z informacijskim zdravstvenim sistemom-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Osveščanje širše družbene skupnosti o duševnih motnjah-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spremljanje okrožnic ZZZS-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nudenje NMP v okviru kompetenc in pristojnosti-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spremljanje in nadziranje ravnanja z osnovnimi sredstvi in materialom v okviru svoje organizacijske enote., , EN KRAT TEDENSKO POPOLDNE.</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4MTM5Mi0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-10-19T20:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1437,7 +1439,7 @@
     "postedAt": "2026-10-01T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -1457,7 +1459,7 @@
     "postedAt": "2026-10-04T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -1467,12 +1469,12 @@
     "employer": "ZDRAVSTVENI DOM ŠMARJE PRI JELŠAH, Celjska cesta 16 , 3240 ŠMARJE PRI JELŠAH",
     "title": "ZDRAVNIK SPECIALIST OFTALMOLOGIJE - M/Ž",
     "locations": [
-      "Savinjska, Slovenia"
+      "Šmarje Pri Jelšah, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK SPECIALIST OFTALMOLOGIJE, poskusno delo 4 mesece, Nedoločen čas , Krajši delovni čas, 8, OPRAVLJANJE DEL IN NALOG ZDRAVNIKA SPECIALISTA OFTALMOLOGIJE. , ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ5MTEzMC0yMDI2NDYgMTQ?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1495,7 +1497,7 @@
     "postedAt": "2026-10-13T20:00:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -1505,12 +1507,12 @@
     "employer": "ZDRAVSTVENI DOM SEVNICA, Trg svobode 14 , 8290 SEVNICA",
     "title": "ZDRAVNIK SPECIALIST OTROŠKE IN MLADOSTNIŠKE PSIHIATRIJE - M/Ž",
     "locations": [
-      "Posavska, Slovenia"
+      "Sevnica, Slovenia"
     ],
     "remote": false,
     "category": "medicine",
     "level": "specialist",
-    "descriptionHtml": "",
+    "descriptionHtml": "<p>ZDRAVNIK SPECIALIST OTROŠKE IN MLADOSTNIŠKE PSIHIATRIJE, poskusno delo 4 mesece, Nedoločen čas , Polni delovni čas, 40, OPRAVLJANJE DEL IN NALOG ZDRAVNIKA SPECIALISTA OTROŠKE IN MLADOSTNIŠKE PSIHIATRIJE., ,</p>",
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ5NjM3NCAxNA?lang=en",
     "postedAt": "2026-10-21T20:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
@@ -1566,6 +1568,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzUwMjcxNiAxNA?lang=en",
     "postedAt": "2026-11-08T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1583,6 +1587,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzUwMjk5OCAxNA?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1692,6 +1698,40 @@
     "source": "eures"
   },
   {
+    "id": "eures:NjAwZDVmOWQtODhmYy0yODg3LWUwNjMtNjg5M2IyMGE3NDAyIDQy",
+    "slug": "eures-seh-arts-internisten-njawzdvmowqtodhmyy0yodg3lwuwnjmtnjg5m2iymge3ndayidqy",
+    "company": "eures",
+    "title": "SEH-Arts Internisten",
+    "locations": [
+      "Uden, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>SEH-arts  Voor leden  SEH-arts  Vacature per: 10-11-2026  Reden vacature: vertrek  Functie: Internist  Differentiatie(s): Acute geneeskunde  Contractvorm: Loondienst  Duur functie: doel is vaste dienst na jaarcontract  FTE: 100  Naam ziekenhuis: Bernhoven  Locatie: Uden  Adres: Nistelrodeseweg 10, 5406 PT Uden  Website: &lt;a href=\"http://www.bernhoven.nl\" target=\"_blank\" rel=\"nofollow\"&gt;www.bernhoven.nl&lt;/a&gt;  Korte omschrijving ziekenhuis: Liefde voor mensen is wat ons drijft in Bernhoven. Dat betekent ook oprechte aandacht voor jou. We geven je alle ruimte en begeleiden je waar je ons nodig hebt. Daarbij dagen we je graag uit, om voortdurend te kijken of de zorg nóg beter kan. Maar ook, voor nu en de toekomst, om te leren en te groeien. In de samenwerking met professionals binnen en buiten onze muren ben jij een onmisbare schakel. Samen vormen we één groot team.  Wij zoeken/ wij bieden: SEH-arts 28/36 uur- wo Kernboodschap Voel jij de uitdaging om anders naar de zorg te kijken omdat de zorg altijd beter, slimmer én zinniger kan? Ben jij een kartrekker als het gaat om vernieuwing en verbetering? Dan maken we graag kennis met je in Bernhoven! Dit ga je betekenen Samen met je collega's geef je je patiënten de zorg en aandacht die ze nodig hebben. Je bent mede verantwoordelijk voor het verlenen van medische zorg op de afdeling Spoedeisende Hulp (SEH) en het coördineren van de patiëntenstroom. Je werkt als supervisor en hoofdbehandelaar. We zien zo'n 23.500 patiënten per jaar. Bij Bernhoven werk je in een level 2 traumacentrum met 22 behandelplaatsen, tevens is de EHH geïntegreerd op de SEH. We verrichten PSA, spoedechografie, perifere blocks en zijn geaccrediteerd voor de opleiding Huisartsgeneeskunde. Acute zorg is een van de belangrijke pijlers van ons ziekenhuis en je gaat dan ook nauw samenwerken met de acute opname afdeling en de intensive care. De vakgroep bestaat uit 11 enthousiaste SEH-artsen waarmee 24/7 beschikbaarheid op de SEH geborgd is. Wat zet je in Je stelt de patiënt ...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjAwZDVmOWQtODhmYy0yODg3LWUwNjMtNjg5M2IyMGE3NDAyIDQy?lang=en",
+    "postedAt": "2026-11-12T03:13:01.050Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjAwZDVmOWQtYTk0MC0yODg3LWUwNjMtNjg5M2IyMGE3NDAyIDQy",
+    "slug": "eures-internist-oncoloog-njawzdvmowqtytk0mc0yodg3lwuwnjmtnjg5m2iymge3ndayidqy",
+    "company": "eures",
+    "title": "Internist-oncoloog",
+    "locations": [
+      "Tiel, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>Chef de Clinique -Internist-oncoloog Als Chef de Clinique internist-oncoloog werk je in een hecht en ambitieus team waar persoonlijke aandacht, hoogwaardige zorg en samenwerking centraal staan. Je combineert poliklinische en klinische werkzaamheden en krijgt volop ruimte om je vak in de volle breedte uit te oefenen.  Over de afdeling Op de polikliniek, kliniek en dagbehandeling wordt gewerkt met een enthousiast, dynamisch en professioneel multidisciplinair team bestaande uit; medisch specialisten, ANIOS, verpleegkundig specialisten, (gespecialiseerd) verpleegkundigen, hemato-en oncologie verpleegkundigen, polikliniek assistenten en medisch secretaresses. Ons gevarieerde team gaat mee met de ontwikkelingen en hecht veel waarde aan een goede sfeer op de afdeling, waarbinnen ook veel ruimte is om te leren. Onze patiëntenpopulatie is gevarieerd en uitdagend. Binnen Ziekenhuis Rivierenland staan onze kernwaarden Persoonlijk, Professioneel en Samen centraal in alles wat we doen. Met persoonlijke aandacht, professionele kwaliteit en een sterke focus op samenwerken, bouwen we iedere dag aan de beste zorg voor onze patiënten en aan een fijne werkomgeving voor collega's.  Jij en Ziekenhuis Rivierenland Heb jij handen met een hart? Ben jij de internist-oncoloog die het vak graag in de volle breedte uitvoert en een warm hart heeft voor de patiënt, die houdt van korte lijntjes en graag werkt in een team van 9 betrokken en ambitieuze collega internisten?  Heb jij handen met een hart? Solliciteer dan snel! Klaar voor de volgende stap in jouw carrière als internist-oncoloog? Kom werken in een hecht team met korte lijnen, een uitdagende patiëntenpopulatie en volop ruimte om je vak uit te oefenen. We ontmoeten je graag! Solliciteer via de sollicitatieknop bovenaan de pagina. Wacht niet met reageren , bij voldoende reacties sluiten wij de vacature soms eerder. Hebben wij onze match nog niet gevonden? Dan zoeken we soms wat langer door. Sollic...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjAwZDVmOWQtYTk0MC0yODg3LWUwNjMtNjg5M2IyMGE3NDAyIDQy?lang=en",
+    "postedAt": "2026-11-12T03:13:37.822Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:NjAxOTQwMyA5",
     "slug": "adecco-medical-medecin-soins-palliatifs-h-f-njaxotqwmya5",
     "company": "eures",
@@ -1706,6 +1746,54 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/6019403",
     "postedAt": "2026-08-15T05:05:22.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjAyMTdkNzUtMzRjZS1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy",
+    "slug": "eures-psychiater-njaymtdknzutmzrjzs1lymzjlwuwnjmtnjg5m2iymgfjzda5idqy",
+    "company": "eures",
+    "title": "Psychiater",
+    "locations": [
+      "Groningen, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Toegankelijkheid  -  8 -  PsyQ -  Vast contract -  € 6.691 - € 11.292  Snel naar - Daarom is Lentis de plek voor jou - Wat ga je doen? - Dit krijg je van ons - Dit zoeken we in jou Voor onze afdeling Angst &amp;amp; Dwang bij PsyQ in Groningen zijn wij op zoek naar een psychiater voor 8 uur per week. We gaan graag in gesprek over jouw beschikbaarheid. Wanneer je meer uren beschikbaar bent, hoort een combinatie met één van de andere behandelprogramma's van PsyQ ook tot de mogelijkheden. Als psychiater: - kom je te werken in een grote organisatie waarin collega's met uiteenlopende expertises voor elkaar klaarstaan; - heb je een essentiële rol bij de uitvoering van complexe poliklinische zorg en houd je je bezig met diagnostiek, behandeling, innovatie en krijg je de ruimte jezelf verder te ontwikkelen.  Daarom is Lentis de plek voor jou Dynamisch, uitdagend, betrokken en samen. Dat is hoe het werken in onze multidisciplinaire teams met psychologen, systeemtherapeuten, vaktherapeuten, verpleegkundigen en een psychiater voelt. We leren van en sparren met elkaar in een toegewijd, gedreven en gedegen behandelteam. Je levert een bijdrage door het meedenken in- en uitvoeren van een specialistisch behandelprogramma die erop is gericht om de cliënten van PsyQ te begeleiden in de weg naar herstel. De leeftijdscategorie waarin zij vallen ligt tussen de 18 en 67 jaar. We bieden behandeltrajecten op maat en behandelen zo nodig ook de co-morbiditeit.  Wat ga je doen? - Je adviseert binnen het multidisciplinaire team over complexe problematiek tijdens de behandelingen. - Je verricht psychiatrisch onderzoek en farmacotherapie ten behoeve van de behandeling. - In samenhang met ketenpartners draag je bij aan ontwikkelingen en innovaties binnen het team en desgewenst draag je bij aan scholing, wetenschappelijk onderzoek en beleid. - Samen met de collega-psychiaters van PsyQ participeer je in onderlinge waarneming, aan intervisie in een prettige sfeer ...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjAyMTdkNzUtMzRjZS1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy?lang=en",
+    "postedAt": "2026-11-13T03:12:58.314Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjAyMTdkNzUtNTFmNC1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy",
+    "slug": "eures-anios-seh-njaymtdknzutntfmnc1lymzjlwuwnjmtnjg5m2iymgfjzda5idqy",
+    "company": "eures",
+    "title": "Anios SEH",
+    "locations": [
+      "Hardenberg, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>ANIOS SEH BKV , Hardenberg  Vakgebied Artsen Functie ANIOS Branche Ziekenhuis Aanstelling Vaste aanstelling Plaatsingsdatum 12 november 2026 Niveau WO Ervaring Niet nader bepaald Dienstverband Niet nader bepaald Op de SEH draai je zelfstandig diensten, verdiep je jouw expertise en leer je als SEH-arts dagelijks van ervaren collega's in een overzichtelijke setting. Jouw nieuwe baan Acute zorg vraagt om snel schakelen en zorgvuldig klinisch redeneren. Als basisarts SEH onderzoek je patiënten met uiteenlopende klachten, van een eenvoudige fractuur tot complexe interne problematiek. Je stelt diagnoses en zet een passende behandeling in. Vanaf je eerste werkdag draag je veel verantwoordelijkheid. Ervaren SEH-artsen blijven beschikbaar om mee te denken, feedback te geven en hun kennis te delen wanneer dat nodig is. Zo vergroot je stap voor stap jouw zelfstandigheid. Tijdens iedere dienst werk je samen met medisch specialisten uit verschillende disciplines. Die brede medische context scherpt jouw klinische blik en geeft je ervaring die goed van pas komt bij een eventuele vervolgopleiding. Jouw nieuwe werkplek Je werkt in een team waar je elkaar makkelijk opzoekt en snel schakelt. Artsen, verpleegkundigen en specialisten staan dicht bij elkaar en overleggen laagdrempelig. De Spoedeisende Hulp is onderdeel van een acuut centrum en beschikt over 8 tot 11 behandelkamers. Door de schaalgrootte blijf je het overzicht houden en zie je een brede mix aan patiënten. Dat maakt je werk afwisselend en leerzaam. Samen met collega's zorg je voor toegankelijke zorg, waarbij samenwerking met andere disciplines vanzelfsprekend is. Je staat er niet alleen voor en krijgt de ruimte om te groeien in je rol als ANIOS SEH. Wat breng je mee? - (Bijna) afgeronde opleiding tot basisarts en BIG-geregistreerd. - Interesse in de spoedeisende geneeskunde. - Rust in acute situaties. - Snel schakelen en prioriteiten stellen. - Bereidheid om onregelmatige diensten t...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjAyMTdkNzUtNTFmNC1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy?lang=en",
+    "postedAt": "2026-11-13T03:13:35.247Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjAyMTdkNzUtNTUyYS1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy",
+    "slug": "eures-psychiater-njaymtdknzutntuyys1lymzjlwuwnjmtnjg5m2iymgfjzda5idqy",
+    "company": "eures",
+    "title": "Psychiater",
+    "locations": [
+      "Amsterdam, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>BuurtzorgT  Wie werken er bij BuurtzorgT?  Werkgebied  Sollicitatieprocedure  Arbeidsvoorwaarden  voor psychiaters &amp;amp; psychologen  voor verpleegkundigen &amp;amp; SPV'ers  voor SPH/GGZ agoog  voor staf en ondersteuning  stageplaatsen  Aantal uur 24 Salaris (per maand) MS Schaal €6691 -€11292 Plaats Amsterdam Team Bos en lommer Sluitingsdatum 31-12-2026Marjan van Herrewaarden (psychiater) 06-12766985, Annemiek Hautvast (SPV) 06-83112711, Huib Tijken (GGZ Agoog) 06-47150175, de teamtelefoon: 085 444 0861 Vacature  Psychiater in loondienst, 24 uur | TeamAmsterdam Bos &amp;amp; Lommer Wil jij werken in een innovatief, zelfsturend team waarin professionaliteit, humor, vertrouwen en gelijkwaardigheid centraal staan? Krijg je energie van veel eigen regie, ruimte voor initiatief en samen met collega's vormgeven van goede, mensgerichte zorg? Dan is deze functie als psychiater bij BuurtzorgT Amsterdam Bos &amp;amp; Lommer iets voor jou. Wie zijn wij? Team Bos &amp;amp; Lommer is een multidisciplinair en zelfsturend team dat outreachend werkt in de multiculturele wijk Bos &amp;amp; Lommer in Amsterdam-West. Ons team bestaat uit een SPV, verpleegkundige, GGZ-agoog, GZ-psycholoog, verpleegkundig specialist/systeemtherapeut en maatschappelijk werker. We behandelen volwassenen met een langdurende psychiatrische kwetsbaarheid die op verschillende levensgebieden vastlopen. We gaan uit van de kracht en mogelijkheden van onze cliënten en zoeken samen naar behandeling en ondersteuning die aansluiten bij hun behoeften en leefwereld. Het vergroten van de zelfredzaamheid staat daarbij centraal. We betrekken het netwerk van de cliënt actief en werken nauw samen met huisartsen en andere betrokken professionals in de wijk. We vinden het belangrijk om van en met elkaar te leren. Daarom hebben we multidisciplinair overleg, intervisie en gezamenlijke scholing. Ook zijn er overlegmomenten met psychiaters en regiebehandelaren uit andere teams. We werken uitsluitend binnen ka...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjAyMTdkNzUtNTUyYS1lYmZjLWUwNjMtNjg5M2IyMGFjZDA5IDQy?lang=en",
+    "postedAt": "2026-11-13T03:13:38.672Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -2385,7 +2473,7 @@
     "postedAt": "2026-09-19T01:12:19.883Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -2983,6 +3071,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWRkOTQ1N2EtODZhOC1mM2VhLWUwNjMtNjg5M2IyMGE2Zjc0IDQy?lang=en",
     "postedAt": "2026-10-15T01:12:21.987Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3212,6 +3302,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWVkZjlmZmYtMGM3OS1iOGJiLWUwNjMtNjg5M2IyMGEwYTczIDQy?lang=en",
     "postedAt": "2026-10-28T03:13:11.919Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3459,6 +3551,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY2YzcwZTMtMTM1Ny1jMzkyLWUwNjMtNjg5M2IyMGFjMDM0IDQy?lang=en",
     "postedAt": "2026-11-04T03:13:05.087Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3509,6 +3603,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY2YzcwZTMtNGMwNi1jMzkyLWUwNjMtNjg5M2IyMGFjMDM0IDQy?lang=en",
     "postedAt": "2026-11-04T03:14:14.536Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3806,7 +3902,7 @@
     "postedAt": "2026-11-08T03:13:51.597Z",
     "firstSeenAt": "2026-11-09T05:03:23.512Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -3956,7 +4052,7 @@
     "postedAt": "2026-10-07T06:45:22.836Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -4415,7 +4511,7 @@
     "postedAt": "2026-10-10T08:11:47.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -4651,6 +4747,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7986205",
     "postedAt": "2026-10-16T00:31:45.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4705,7 +4803,7 @@
     "postedAt": "2026-10-14T10:33:52.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -4725,7 +4823,7 @@
     "postedAt": "2026-10-14T10:33:38.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -4833,7 +4931,7 @@
     "postedAt": "2026-10-07T20:01:44.918Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -5260,7 +5358,7 @@
     "postedAt": "2026-10-19T08:24:15.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -5316,7 +5414,7 @@
     "postedAt": "2026-10-20T03:14:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -5336,7 +5434,7 @@
     "postedAt": "2026-10-20T03:14:27.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -5408,6 +5506,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/ODc1NDAwNyA5?lang=en",
     "postedAt": "2026-11-12T07:19:48.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -5763,6 +5863,40 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8775431",
     "postedAt": "2026-11-13T01:28:37.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODc3NzUzMyA5",
+    "slug": "domino-rh-medecin-coordonnateur-h-f-odc3nzuzmya5",
+    "company": "eures",
+    "employer": "Domino RH",
+    "title": "Médecin coordonnateur (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Description du poste :Nous recrutons, pour l'un de nos clients, un Etablissement d'Hébergement pour Personnes Agées Dépendantes, situé dans le Rhône, à proximité de Bron, un Médecin Coordonnateur - H/F, dans le cadre d'un poste en CDI à temps partiel (60% à 80 Présentation de l'Etablissement : *Une résidence située au centre du village, accès facile et à proximité des commerces. L'établissement comprend 76 places dont des lits en Unité de Vie Protégée (UVP), un PASA de 14 places (Pôle d'Activités et de Sois Adaptés) ainsi que des places en hébergement temporaire. -Présentation des missions principales : *Rattaché au Directeur(trice) de l'Etablissement, vous êtes en charge du projet de soins et participez à l'élaboration du projet d'Etablissement : *Coordination des soins : Organisez la permanence des soins et coordonnez les interventions des professionnels de santé, qu'ils soient salariés ou libéraux, en intervenant pour les soins urgents si nécessaire. *Prise en charge personnalisée : Garantissez une approche adaptée pour chaque résident, avec des évaluations formalisées, des recommandations d'admission et des projets de soins individuels. *Qualité des soins et formation : Assurez la qualité des soins, participez aux démarches d'amélioration continue et à la gestion des risques. -Présentation des caractéristiques du poste : Poste en CDI à temps partiel (60% à 80 Cadre de travail agréable ; *Rémunération indicative : En fonction de la Convention Collective de l'établissement ainsi que de vos expériences et de votre profil. Reprise d'ancienneté ; *Revalorisation du Ségur pour les Médecins Coordonnateurs ; *Une prime métier ; *Mutuelle.Description du profil La qualification et l'expérience requises : *Médecin Généraliste Qualifié - H/F ; *Complété du diplôme de Docteur en Médecine spécialité Gériatrie ou de la Capacité de gériatrie ou du DU de Médecin Coordonnateur ; *Inscrit au Conseil National de l'Ordre des Médecins ; *L'établissement propose un accompagnement au DU de Médecin Coordonnateur ; *Une expérience sur un poste similaire serait appréciée. -Les qualités professionnelles requises : *Connaissance du Code de Déontologie médicale, respect du secret professionnel et de la confidentialité ; *Qualités humaines : rigueur, écoute, esprit d'équipe, dynamisme, implication, motivation, respect de la dignité de chacun, résidents, familles et collaborateurs, force de propositions ; *Participation aux réunions pluridisciplinaires. Possibilité de visiter l'établissement et de rencontrer la Direction et les équipes. Nous attendons votre candidature.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8777533",
+    "postedAt": "2026-11-13T01:31:20.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODc3NzY0MCA5",
+    "slug": "domino-rh-medecin-de-mpr-h-f-odc3nzy0mca5",
+    "company": "eures",
+    "employer": "Domino RH",
+    "title": "Médecin de MPR (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Description du poste :Nous recrutons, pour l'un de nos clients, une Clinique de Soins Médicaux et de Réadaptation (SMR), située dans le Rhône, au sud-est de Lyon, à proximité de Bron, un Médecin MPR - H/F, dans le cadre d'un CDI à temps plein.-Présentation de l'Etablissement : *Clinique spécialisée en rééducation neurologique et en rééducation gériatrique ; *Une clinique qui dispose de 100 lits d'hospitalisation complète et 30 places en hôpital de jour (HDJ) *Une équipe pluridisciplinaire complète ; *La clinique propose également un programme d'éducation thérapeutique pour les patients atteints d'AVC.-Présentation du service : *En Hospitalisation complète ; *La prise en charge en réadaptation gériatrique se réalise essentiellement de façon individuelle mais également collective ; *Le plateau technique dispose de 2 salles de kinésithérapie, 1 plateau d'ergothérapie, 1 bassin de balnéothérapie, 1 banc d'urodynamique. Des outils de rééducation tels qu'un dispositif IVS3 (intensive Visual Simulation) destiné à la rééducation post AVC, le traitement des douleurs chroniques ou de traumatismes orthopédiques.-Présentation des missions principales : *Prise en charge de 23 lits* ; Assurer l'évaluation clinique et le suivi des patients en tenant compte de leur état de santé global ; *Élaborer des projets de soins personnalisés en collaboration avec l'équipe pluridisciplinaire ; *Organiser et coordonner l'admission des patients selon leur état de santé et leurs besoins spécifiques, en veillant à leur sécurité et à leur confort ; *Participer à la mise en oeuvre et au suivi des projets de soins et de réhabilitation au sein de l'Etablissement ; *Garantir la tenue des dossiers médicaux en respectant les normes de documentation et les protocoles en vigueur ; *Entretenir une relation de confiance et de communication avec les patients et leurs familles, en les informant sur leur état de santé et les options de traitement disponibles ; *Contribuer à l'amélioration en continu de la démarche qualité, à la gestion des risques, à la certification de la clinique et à son inscription dans les filières de soins.-Présentation des caractéristiques du poste : *Poste en CDI à temps plein ; *Rattachement hiérarchique : La Direction ; *Cadre professionnel privilégié ; *Permanence médicale assurée par une astreinte médicale ; *Mutuelle Rémunération indicative en fonction de la Convention Collective et selon vos expériences.Description du profil La qualification et l'expérience requises : *Médecin MPR Qualifié - H/F ; *Inscrit au Conseil National de l'Ordre des Médecins ; *1ère expérience souhaitée sur un poste similaire en SMR.-Les compétences et les qualités professionnelles requises : *Connaissance du Code de Déontologie médicale, respect du secret professionnel et de la confidentialité ; *Qualités humaines : rigueur, écoute, dynamisme, implication, sens des responsabilités ; *Vous êtes reconnu(e) pour votre empathie, votre écoute et votre capacité à travailler en équipe. Vous savez faire preuve de patience et de pédagogie avec vos patients. Vous appréciez le travail dans une ambiance de travail sympathique et bienveillante. Nous attendons votre candidature.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8777640",
+    "postedAt": "2026-11-13T01:31:33.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -6366,7 +6500,7 @@
     "postedAt": "2026-10-21T04:05:59.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -6385,7 +6519,7 @@
     "postedAt": "2026-10-21T04:05:55.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -6404,7 +6538,7 @@
     "postedAt": "2026-10-21T04:05:56.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -6716,7 +6850,7 @@
     "postedAt": "2026-10-23T15:06:42.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7009,6 +7143,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8221766",
     "postedAt": "2026-10-23T15:05:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7086,7 +7222,7 @@
     "postedAt": "2026-10-23T15:05:59.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7106,7 +7242,7 @@
     "postedAt": "2026-10-23T15:06:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7125,7 +7261,7 @@
     "postedAt": "2026-10-23T15:06:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7489,7 +7625,7 @@
     "postedAt": "2026-10-28T12:35:30.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7508,7 +7644,7 @@
     "postedAt": "2026-10-28T12:36:59.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -7932,6 +8068,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8317366",
     "postedAt": "2026-10-28T02:06:16.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8024,7 +8162,7 @@
     "postedAt": "2026-10-31T17:06:59.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8044,7 +8182,7 @@
     "postedAt": "2026-10-31T17:06:59.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8169,7 +8307,7 @@
     "postedAt": "2026-11-02T17:05:54.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8189,7 +8327,7 @@
     "postedAt": "2026-11-02T17:05:55.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8261,6 +8399,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8486514",
     "postedAt": "2026-11-03T01:26:30.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8298,7 +8438,7 @@
     "postedAt": "2026-11-03T05:07:29.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8780,7 +8920,7 @@
     "postedAt": "2026-11-05T01:29:42.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -8942,7 +9082,7 @@
     "postedAt": "2026-11-05T10:50:26.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -9073,6 +9213,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8584016",
     "postedAt": "2026-11-06T01:30:46.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9482,7 +9624,7 @@
     "postedAt": "2026-11-09T07:14:32.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -9589,7 +9731,7 @@
     "postedAt": "2026-11-09T17:05:56.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -9609,7 +9751,7 @@
     "postedAt": "2026-11-09T17:05:55.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -10146,6 +10288,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8630819",
     "postedAt": "2026-11-09T06:47:56.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10181,6 +10325,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8631110",
     "postedAt": "2026-11-09T06:48:02.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-13T05:02:55.337Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -10219,6 +10365,23 @@
     "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/cc824122-d03a-44f3-8b38-2ee8ccd4871b/fi",
     "postedAt": "2026-10-29T10:50:27.286Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:YmU0NjY3NjItMWU0Zi00MzI3LWI0MDctNWUzYjMyODU5MDEwIDI2MQ",
+    "slug": "vestre-viken-hf-vopa-sykehus-legevikar-sommeren-2027-ymu0njy3njitmwu0zi00mzi3lwi0mdctnwuzyjmyodu5mdewidi2mq",
+    "company": "eures",
+    "employer": "Vestre Viken Hf Vopa Sykehus",
+    "title": "Legevikar sommeren 2027",
+    "locations": [
+      "Drammen, Norway"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Er du lege uten turnustjeneste eller medisinstudent med lisens, og har interesse for psykiatri som fagfelt?Da ønsker vi at du søker på denne stillingen!</p><p>Voksenpsykiatriske avdelinger (VOPA) i Drammen Sykehus søker etter legevikarer for sommeren 2027 i perioden 21.juni til 15.august. Det kan være mulighet for oppstart tidligere og/eller forlengelse av vikariatet, etter avtale. </p><p>Som ny legevikar hos oss til sommeren tilbyr vi faglig oppstartsuke 21-25. juni (uke 25). Uken inneholder mye nyttig undervisning om fag, det å gå vakt i VOPA m.m. Det er ønskelig at våre ferievikarer kan jobbe i 100 % stilling hele perioden.</p><p>Vi ber om utfyllende CV og søknad inkludert kopi av vitnemål og attester.</p><p>Aktuelle kandidater vil bli kontaktet fortløpende. </p><p><strong>Om oss:</strong> Vestre Viken har nytt sykehus på Brakerøya i Drammen, hvor somatikk, psykisk helsevern og tverrfaglig spesialisert rusbehandling (TSB) er samlokalisertVoksenpsykiatriske avdelinger er en av Norges største sykehusavdelinger for behandling av psykiske lidelser. Befolkningen for vårt opptaksområde er i underkant av 500.000 innbyggere. I alle våre seksjoner samarbeider vi tett med pasienter og pårørende, kommunale helse- og sosialtjenester, samt andre enheter i spesialisthelsetjenesten med utgangspunkt i pasientens behov. </p><p><strong>Hvorfor jobbe i Vestre Viken?</strong></p><p>Gjennom kvalitet, trygghet og respekt jobber vi sammen for å gi gode og likeverdige helsetjenester til de som trenger det! </p><p>Som medarbeider i Vestre Viken blir du del av et solid og ambisiøst faglig miljø med varierte arbeidsdager. Vi vektlegger at fagmiljøene skal samarbeide om pasientbehandlingen, utnytte teknologiske muligheter og dele kunnskap og kompetanse mellom de forskjellige behandlingsstedene. </p><p>Vestre Viken ønsker at våre ansatte skal gjenspeile befolkningens mangfold. Vi oppfordrer derfor alle som er kvalifisert til å søke hos oss, uansett kjønn, alder, etnisitet, religion, livssyn, funksjonsnedsettelse og seksuell orientering. Det samme gjelder dersom du har hatt opphold i arbeidslivet.</p>\nArbeidsoppgaverSom legevikar hos oss i sommermånedene vil du primært jobbe ved en døgnseksjon i VOPA; i avdeling for akuttpsykiatri, alderspsykiatri eller spesialisert psykosebehandling. Der vil du jobbe tett med erfarne LIS, psykologspesialister, psykiatere og miljøpersonale. Arbeidsoppgavene vil bestå i legeoppgaver i seksjonen, bistand til spesialist, dokumentasjon, og selvstendig pasientarbeid. Du vil også delta i døgnkontinuerlig vaktlag sammen med våre LIS og overleger.KvalifikasjonerVi trenger deg som er:<ul><li>Medisinstudent med lisens</li><li>Lege med autorisasjon</li><li>Du må beherske norsk meget godt skriftlig og muntlig</li><li>Det er ønskelig med tidligere erfaring fra hospitering eller jobb som medisinstudent med lisens</li><li>Det er ønskelig med erfaring innen psykiatri, men ikke et krav. Har du f.eks jobbet som miljøassistent tidligere er det en fordel</li></ul>Personlige egenskaper<p>Hos oss er det viktig at du trives med arbeidsoppgaver og miljøet, derfor legger vi vekt på personlig egnethet ved ansettelsen.</p><p>Vi ser etter deg som:</p><ul><li>Har motivasjon og interesse for fagfeltet</li><li>Samarbeider godt med andre, samtidig som du også evner å jobbe selvstendig</li><li>Er initiativrik og oppsøker læringssituasjoner</li><li>Har gode kommunikasjonsferdigheter, både skriftlig og muntlig</li><li>Er strukturert, ansvarsbevisst og trives i en travel hverdag</li><li>Er en aktiv bidragsyter til et godt arbeidsmiljø</li></ul>Vi tilbyr<ul><li>Trygg og sikker opplæring. Som nyansatt legevikar hos oss tilbys du en grundig faglig oppstartsuke med mye nyttig undervisning  </li><li>Utfordrende og varierte arbeidsoppgaver  </li><li>Godt samarbeid mellom de ulike seksjonene i VOPA  </li><li>Godt faglig miljø med nært samarbeid med LIS-leger og overleger  </li><li>Spennende og varierte arbeidsoppgaver, med muligheter for faglig- og personlig utvikling   </li><li>Et innovativt og godt arbeidsmiljø med dyktige og engasjerte kollegaer  </li><li>Ansettelse i et stort helseforetak som ønsker å utvikle og tilby helsetjenester på nye måter  </li><li>Medlemskap i Vestre Vikens Velferdsforening med gode rabattordninger på aktiviteter, kulturarrangement og leie av ferieboliger i inn- og utlan</li><li>Ansettelse i en trygg offentlig virksomhet med gode pensjonsordninger</li></ul><p>Vil du lese mer om vårt arbeid fremover se: <a href=\"https://vestreviken.no/om-oss/utviklingsplan-2035\">https://vestreviken.no/om-oss/utviklingsplan-2035</a> </p>KontaktinformasjonKristin Krantz Westrum, Seksjonsleder, +4792402734, krkwes@vestreviken.no\nElwira Natalia Kawecka-Nygaard, Rådgiver - adm, +4748182654, elwkaw@vestreviken.no\nArbeidsstedJacob Borchs gate 10\n3004 Drammen\nNøkkelinformasjon:Arbeidsgiver: Vestre Viken\n\nReferansenr.: 5204751036\nStillingsprosent: 100%\nFerievikar\nStartdato: 21.06.2027\nSluttdato: 15.08.2027\nSøknadsfrist: 07.02.2027\n\n<p><b>Om arbeidsgiveren:</b></p><p><b><strong>Bli med og forme fremtidens sykehus!</strong></b></p><p>Vestre Viken er et av landets største helseforetak med 11 000 ansatte som gir spesialisthelsetjenester til 500 000 innbyggere. Vi har fem sykehus og behandlingssteder innen somatikk, psykiatri og avhengighetsbehandling spredt over et stort geografisk område; fra Bærum til Drammen, Kongsberg, Ringerike og Ål i Hallingdal. Vi jobber hver dag for kvalitet, trygghet og likeverdige tjenester der folk bor. Hos oss får du bidra i et fagmiljø i utvikling – med sterke satsinger på forskning, utdanning og ny teknologi som kunstig intelligens og digital hjemmebehandling. Vi samarbeider på tvers og jobber kontinuerlig for å bli bedre.</p><p>Vi ønsker et mangfoldig arbeidsmiljø og oppfordrer alle kvalifiserte til å søke, uavhengig av kjønn, etnisitet, funksjonsnedsettelse eller om du har hatt opphold i arbeidslivet.</p>",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/be466762-1e4f-4327-b407-5e3b32859010",
+    "postedAt": "2026-11-13T08:11:13.253Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "eures"
   },
   {
@@ -10264,13 +10427,13 @@
     "employer": "St Olavs Hospital Hf Universitetssykehuset I Trondheim",
     "title": "Lege i spesialisering 2/3 ved Nevrokirurgisk avdeling",
     "locations": [
-      "Trøndelag, Norway"
+      "Trondheim, Norway"
     ],
     "remote": false,
     "category": "medicine",
     "level": "resident",
-    "descriptionHtml": "",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/ZjA3NDVlM2EtM2M2My00ZTNkLTg4YzgtMzZlZDJmNzYxMTQ1IDI2MQ?lang=en",
+    "descriptionHtml": "<p>Nevroklinikken består av Avdeling for nevrokirurgi, Avdeling for nevrologi og klinisk nevrofysiologi, samt Avdeling for sykepleietjenesten Nevrokirurgisk avdeling er lokalisert  med 3 meget godt utstyrte operasjonsstuer, 2 sengetun, nevrointensiv/nevrorecovery avdeling og poliklinikk. Avdelingen betjener Midt-Norge med nærmere 1600 operasjoner pr år.Avdelingen har et aktivt medisinskteknisk forskningsmiljø og godt tilrettelagt infrastruktur for klinisk forskning.Ved Avdeling for nevrokirurgi er det ledig et vikariat i stilling for lege i spesialisering i 6 mnd. med muligheter for forlengelse. Planlagt oppstart er 01.01.27 eller ved nærmere avtale.</p>\nArbeidsoppgaver<ul><li>Det forutsettes deltakelse i alminnelig vaktturnus for LIS-leger</li></ul>Kvalifikasjoner<ul><li>Cand. med </li><li>Gjennomført LIS1-tjeneste</li><li>Må kunne kommunisere godt på norsk, både skriftlig og muntlig</li></ul>Personlige egenskaper<ul><li>Vi søker en motivert og ambisiøs kollega som trives i en utfordrende hverdag. Det legges vekt på høyt faglig nivå og gode samarbeidsevner på alle nivå i organisasjonen.</li><li>Sykehuset forutsetter at den som tilsettes behersker norsk for muntlig og skriftlig kommunikasjon</li></ul>Vi tilbyr<ul><li>Offentlig pensjonsordning og forsikringsordninger i KLP med gunstige lånevilkår og banktjenester</li><li>Et godt og trivelig arbeidsmiljø med høy faglig kompetanse</li><li>Lønn etter gjeldene overenskomst</li></ul>KontaktinformasjonOddrun Anita Fredriksli, Overlege nevrokirurgi, +47 72575194\nTomm Brostrup Müller, Avdelingssjef - lege, +47 72575243\nArbeidsstedHarald Hardrådes gt. 5\n7030 Trondheim\nNøkkelinformasjon:Arbeidsgiver: St. Olavs hospital\n\nReferansenr.: 5209072579\nStillingsprosent: 100%\nVikariat\nSøknadsfrist: 11.12.2026\n\n<p><b>Om arbeidsgiveren:</b></p>\n\n<p><strong>St. Olavs hospital - Universitetssykehuset i Trondheim</strong> - er ett av tre sykehusforetak i Helse Midt-Norge. Hovedtyngden av virksomheten er lokalisert i Trondheim der vi har et av Europas mest moderne sykehusanlegg. Sykehuset er bygd integrert med Fakultet for medisin og helsevitenskap ved NTNU, og her arbeider klinikere, forskere og studenter side om side. St. Olavs hospital har ca. 11 500 ansatte og et brutto budsjett på 14,6 milliarder kroner. Mer informasjon finnes på <a href=\"http://www.stolav.no/\">www.stolav.no</a></p>\n<p><strong>Mangfoldserklæring \n</strong>Vi ønsker at ansatte skal gjenspeile befolkningens mangfold og vi oppfordrer derfor alle som er kvalifiserte til å søke hos oss, uansett kjønn, alder og nasjonal eller etnisk bakgrunn.Det samme gjelder dersom du har en funksjonsnedsettelse eller har hatt et lengre opphold utenfor arbeidslivet.</p>\n<p><strong>St. Olavs hospital – Universitetssykehuset i Trondheim</strong> – lea akte golme skïemtjegåetiegïehtelimmijste Helse Midt-Norgesne. Stööremes bielie gïehtelimmeste lea Tråantesne gusnie mijjen lea akte Europan jeenjemes daajbaaletje skïemtjegåetijste. Skïemtjegåetie lea tseegkesovveme Medisijnen jïh healsoevitenskapten fakulteetine ektine NTNU:sne, jïh daesnie klinihkerh, dotkijh jïh studeenth loevtsæjresne berkieh. St.Olavs hospital medtie 11 500 barkijh åtna jïh brutto budsjedte lea 14,6 millijardh kråvnine. Vielie bïevnesh sijjesne <a href=\"http://www.stolav.no/\">www.stolav.no</a>\n</p>\n<p><strong>Gellievoetebæjhkoehtimmie</strong></p>\n<p>Mijjieh sïjhtebe barkijh edtjieh guvvine årrodh årroji gellievoeteste, jïh dan åvteste haestebe gaajhkesidie gïeh maehteles, barkoem mijjen luvnie ohtsedh, saaht mij tjoelide, aaltere, funksjovneheaptoe, nasjonaale jallh etnihkeles maadtoe. Seammalaakan jis datne guhkebe gaatoem barkoejieleden ålkolen åtneme. </p>",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/f0745e3a-3c63-4e3d-88c8-36ed2f761145",
     "postedAt": "2026-11-11T13:30:08.087Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "eures"
@@ -10323,8 +10486,8 @@
     "remote": false,
     "category": "medicine",
     "level": "resident",
-    "descriptionHtml": "",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/ZTNhNzk2OTktM2JiNy00MDkzLTgwMzEtMGIwYjcxNTUwMzViIDI2MQ?lang=en",
+    "descriptionHtml": "<p><strong>Det er et ledig vikariat  for lege i spesialisering innen maxillofacial kirurgi - Kjeve og ansiktskirugisk avdeling, Klinikk for kirurgi og spesialisert medisin. Vikariatet er ledig fra 21.12.2026 - 28.02.2027 med mulighet for forlengelse.</strong></p><p>Avdelingen er landets største og eldste kjeve-ansiktskirurgiske avdeling. Den ble opprettet i 1932 på Ullevål. Avdelingen deltar i landsfunksjon for kraniofaciale misdannelser og har i tillegg tett samarbeid med okuloplastisk seksjon på øyeavdelingen, nevrokirurgisk avdeling,  øre-nese-hals - og plastikkirurgisk avdeling. Den som ansettes må delta i p.t. 5-delt hjemmevaktsordning og i undervisningsoppgaver.Det blir utført 120-140 ortognat kirurgiske (bittkorrigerende) inngrep per år, og utredning og oppfølging er i tett samarbeid med Det odontologiske fakultet, Kjeveortopedisk avdeling. Det er videre et relativt stort volum innen kjeveleddskirurgi, og i 2017 ble 70 pasienter operert i kjeveledd. Vi utreder og behandler ca. 700 ansiktsskader  i året og ca. 300 pasienter blir operert i narkose per år. Maxillofacial kirurg (kjeve-ansiktskirurg) blir tilkalt traumeteamet ved behov.<em>Oslo universitetssykehus er en arbeidsplass med stort mangfold. Vi mener dette er avgjørende for å løse våre oppgaver på best mulig måte. Vi ønsker at dette mangfoldet skal gjenspeiles blant søkerne til våre stillinger, og oppfordrer alle kvalifiserte kandidater, uavhengig bakgrunn, til å søke!</em></p>\nArbeidsoppgaver<p><strong>Hvordan ser en arbeidshverdag ut? </strong></p><ul><li>Avdelingens arbeidsområder inkluderer ansiktstraumatologi, ortognatisk kirurgi, kjeveleddskirurgi og alle former for rekonstruktiv kirurgi.</li><li>Du vil  p.t. delta i en 5-delt vatordning.</li></ul>Kvalifikasjoner<ul><li>Utdanningsretning: Medisin</li><li>Norsk autorisasjon som lege og godkjente læringsmål i spesialistutdanningens del 1 (turnus)</li><li>LIS som skal tilsettes har begynt på spesialisering i maxillofacialkirurgi. </li><li>Må beherske godt norsk skriftlig og muntlig </li></ul><p>Attester, tjenestebevis og eventuell bekreftelse på doktorgrad må lastes opp i Webcruiter, sammen med søknad og CV, da dette danner grunnlag for beregning av utdanningsansiennitet og fastsettelse av lønn. Arbeidsattester/tjenestebevis fra tidligere arbeidsgivere skal være i pdf-format, dokumentere gjennomført tid i utdanningsstilling og inneholde: Logo eller stempel fra tidligere arbeidsgiver, spesialitet, stillingsprosent og start- og sluttdato.</p>Personlige egenskaper<strong>For at du skal trives hos oss er det noen personlige egenskaper som er sentrale:</strong><ul><li>Viser arbeidsglede og er en lagspiller som bidrar til et godt arbeidsmiljø.</li><li>Har gode kommunikasjonsevner og evner å skape relasjoner og nettverk rundt deg.</li><li>Kan arbeide selvstendig, systematisk, effektivt og nøyaktig.</li><li>Er pålitelig og tar initiativ til å oppsøke oppgaver og påta deg ansvar.</li><li>Er utviklingsorientert og fleksibel, og gir konstruktive tilbakemeldinger.</li><li>Jobber effektivt og trives med et tidvis høyt arbeidstempo.</li><li>Samarbeider godt både innad i seksjonen og tverrfaglig med andre legespesialiteter og faggrupper, og ser deg selv som en del av et team.</li><li>Har arbeidskapasitet, vilje og evne til å stå i krevende situasjoner sammen med kolleger.</li><li>Er en ambassadør for pasientgruppen, og arbeider for å fremme deres interesser og behov.</li><li>Har faglig og personlig trygghet kombinert med innsikt i forhold til egne kvalifikasjoner.                </li></ul>Vi tilbyr<p>Oslo universitetssykehus har et viktig samfunnsoppdrag i det å tilby gode og likeverdige helsetjenester til befolkningen. Som lege ved vårt sykehus vil du ha en sentral rolle i å innfri dette. Du har stor betydning for pasientsikkerhet, trivsel på arbeidsplassen og utvikling av en trygg, åpen og inkluderende kultur.     Vi er opptatt av at du skal trives og utvikle deg, les under hva vi kan tilby deg:</p><ul><li>Du blir en del av en faglig sterk arbeidsplass og stolte fagpersoner. </li><li>Du blir en del av et viktig samfunnsoppdrag, hvor du er tett på pasienter og pårørende.</li><li>Du får en utfordrende, variert og spennende hverdag i en kompleks organisasjon som er i kontinuerlig utvikling.</li><li>Vi tar vare på våre nye medarbeidere og støtter deg gjennom oppstartsfasen med vårt sentrale nyansattprogram, les mer: <a href=\"https://www.oslo-universitetssykehus.no/om-oss/jobb-og-utdanning/arbeidsplassen-var/velkommen-med-pa-laget/\">https://www.oslo-universitetssykehus.no/om-oss/jobb-og-utdanning/arbeidsplassen-var/velkommen-med-pa-laget/</a></li><li>Du får individuell opplæring og oppfølging av kolleger. </li><li>Vi har velferdstilbud for våre medarbeidere, f. eks. teaterbilletter, bedriftskor, bedriftsidrettslag m.m.</li><li>Du blir en del av et tverrfaglig arbeidsmiljø med høy kompetanse, og et utstrakt samarbeid med dedikerte kolleger som er ledende innenfor sine fagområder.</li></ul><p>I Oslo universitetssykehus driver vi med avansert pasientbehandling, forskning, utprøvende behandling, undervisning og innovasjon på et høyt internasjonalt nivå. Vi er derfor hele Norges bakvakt! Vi trenger deg med på laget!  Høres dette ut som en stilling for deg?    </p><p><strong>Vil du vite mer om oss?</strong> Les om Oslo universitetssykehus og vår arbeidsplass på hjemmesiden: <a href=\"https://www.oslo-universitetssykehus.no/om-oss/jobb-og-utdanning/arbeidsplassen-var\">https://www.oslo-universitetssykehus.no/om-oss/jobb-og-utdanning/arbeidsplassen-var</a></p>                 KontaktinformasjonPål Galteland, Avdelingsleder, +4741801931\nArbeidsstedKirkeveien 166\n0450 Oslo\nNøkkelinformasjon:Arbeidsgiver: Oslo universitetssykehus HF\n\nReferansenr.: 5206280951\nStillingsprosent: 100%\nVikariat\nStartdato: 21.12.2026\nSluttdato: 28.02.2027\nSøknadsfrist: 20.11.2026\n\n<p><b>Om arbeidsgiveren:</b></p><p><em><strong>Sammen med pasienten utvikler vi morgendagens behandling</strong>\nOslo universitetssykehus med våre 25 000 medarbeidere skal være en lærende og skapende organisasjon med evne til å tenke nytt. Vi skal ha en ledende rolle i utvikling av forskning og innovasjon, samt utvikling av morgendagens helsetjeneste, medisinsk behandling og presisjonsmedisin. Hos oss finner du noen av landets ledende eksperter innen sine fagfelt, og her blir du en del av Norges største helsefaglige arbeidsplass. Et inkluderende arbeidsmiljø preget av åpenhet og respekt er svært viktig for oss. Uansett hva du jobber med vil du få muligheten til å utvikle deg og benytte din kompetanse på et sted hvor det virkelig teller.\n</em></p>",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/e3a79699-3bb7-4093-8031-0b0b7155035b",
     "postedAt": "2026-11-11T08:51:43.301Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "source": "eures"

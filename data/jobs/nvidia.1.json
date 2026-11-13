@@ -100,7 +100,7 @@
     "postedAt": "2026-05-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -535,7 +535,7 @@
     "postedAt": "2026-06-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -1724,7 +1724,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -2067,7 +2067,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -2461,7 +2461,7 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -3040,7 +3040,7 @@
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4015,7 +4015,7 @@
     "postedAt": "2026-07-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4285,7 +4285,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -4372,7 +4372,7 @@
     "postedAt": "2026-07-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -5299,6 +5299,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Vietnam-Remote/Factory-Planner_JR2021699",
     "postedAt": "2026-08-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2021714",
+    "slug": "nvidia-senior-ai-engineer-palantir-foundry-and-aip-forward-deployed-engineer-jr2021714",
+    "company": "nvidia",
+    "title": "Senior AI Engineer – Palantir Foundry and AIP Forward Deployed Engineer",
+    "locations": [
+      "China, Shenzhen"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Join the AI &amp; Automation Supply Chain Business Transformations team in NVIDIA Operations to build the next generation of decision intelligence for our supply chain on Palantir Foundry and AIP. As a Senior AI Engineer and Forward Deployed Engineer, you will work directly with planners and supply-chain experts to turn their decision logic into production applications: governed data pipelines, Ontology models, analytical functions, operational interfaces and AI agents that are trusted, tested and used every day. This is a rare opportunity to shape how one of the world's most advanced AI companies runs its own supply chain. If you thrive at the intersection of Palantir engineering, applied AI and supply-chain transformation, join us.</p><br /><p><b>What you will be doing:</b></p><ul><li>Build and own production supply-chain applications on Palantir Foundry and AIP, including data pipelines, Ontology models (object, link and action types), analytical functions, operational interfaces (Workshop and OSDK) and controlled actions.</li></ul><ul><li>Work directly with supply-chain planners and experts to convert business rules, constraints and exception procedures into documented, versioned and testable software.</li></ul><ul><li>Combine analytical methods, optimization and language models to support operational decisions, selecting the approach that meets each use case's correctness, reliability and performance requirements.</li></ul><ul><li>Own automated testing and validation across application code, data pipelines, business rules and agent workflows. Establish acceptance criteria with domain experts and enforce checks before release.</li></ul><ul><li>Use AI coding tools effectively while remaining accountable for code quality: review generated code, validate assumptions and verify behavior against independently defined expected results.</li></ul><ul><li>Build evaluation datasets from approved scenarios and historical decisions. Test edge cases, repeatability, permissions, failure recovery and changes to models, prompts, tools and data.</li></ul><ul><li>Define agent autonomy boundaries, human-in-the-loop workflows and escalation strategies for enterprise supply-chain use cases built on AIP.</li></ul><ul><li>Measure operational results, including decision cycle time, manual effort, exception resolution and decision quality. Capture user corrections and outcomes to guide improvements.</li></ul><ul><li>Capture design requirements, translate them into user stories, lead technical design reviews and documentation, drive end-to-end integration testing and support UAT and hyper care.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Demonstrated hands-on production delivery on Palantir Foundry and AIP: Python or Pipeline Builder transforms, Ontology design (object, link and action types), Workshop or OSDK applications, AIP Logic and Functions, and Data Connection sources, with ownership after go-live.</li></ul><ul><li>Working knowledge of Foundry governance and release management: projects and roles, markings, branching, and environment promotion across development, UAT and production.</li></ul><ul><li>Bachelor's degree in Computer Science or a related field (or equivalent experience).</li></ul><ul><li>12+ years of demonstrable experience in software architecture, systems design or enterprise platform engineering.</li></ul><ul><li>Strong Python and SQL development skills, with experience integrating enterprise systems (ERP, planning, ITSM) through APIs, data connectors or custom services.</li></ul><ul><li>Proven ability to implement complex business rules and explain how their correctness was established.</li></ul><ul><li>Strong automated testing, debugging and release practices, including validation of AI-assisted development and LLM-based workflows.</li></ul><ul><li>Practical experience integrating and evaluating language models, including open models such as NVIDIA Nemotron.</li></ul><ul><li>Ability to work directly with operational users, resolve ambiguous requirements and deliver maintainable software.</li></ul><ul><li>Excellent collaboration and communication skills, with the ability to explain complex designs clearly and build trusted partnerships across technical and business audiences.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Supply-chain, manufacturing, planning or operations research experience.</li></ul><ul><li>Experience with constraint optimization, simulation and scenario analysis.</li></ul><ul><li>TypeScript development and advanced Palantir application development.</li></ul><ul><li>Experience with agentic frameworks and patterns (RAG pipelines, multi-agent orchestration, vector search) and with NVIDIA NeMo Guardrails or GPU-optimized inference stacks.</li></ul><ul><li>Hands-on experience with containerized deployments, Kubernetes and hybrid cloud/on-prem environments.Evidence of measurable improvements from systems used in daily operations.</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and creative people in the world working here! If you are driven by impact, passionate about enterprise AI, and inspired to shape decision intelligence for NVIDIA's Supply Chain Operations, we want to hear from you. Apply today!</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shenzhen/Senior-AI-Engineer---Palantir-Foundry-and-AIP-Forward-Deployed-Engineer_JR2021714",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -6271,7 +6287,7 @@
     "postedAt": "2026-08-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -7790,7 +7806,7 @@
     "postedAt": "2026-09-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -10728,7 +10744,7 @@
     "postedAt": "2026-10-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -11168,7 +11184,7 @@
     "postedAt": "2026-10-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
@@ -12400,6 +12416,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029488",
+    "slug": "nvidia-software-engineering-intern-nccl-2027-jr2029488",
+    "company": "nvidia",
+    "title": "Software Engineering Intern, NCCL - 2027",
+    "locations": [
+      "China, Shanghai",
+      "China, Beijing"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is leading the way in groundbreaking developments in Artificial Intelligence, High-Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern computers and is at the heart of our products and services. Our work opens up new universes to explore, enables amazing creativity and discovery, and powers what were once science fiction inventions from artificial intelligence to autonomous cars. NVIDIA is looking for phenomenal people like you to help us accelerate the next wave of artificial intelligence.</p><br /><p>We are looking for a highly motivated software engineer intern for an exciting role in our communication libraries and network software team. The position will be part of a fast-paced crew that develops and maintains software for complex heterogeneous computing systems that power disruptive products in High Performance Computing and Deep Learning.</p><br /><p><b>What you will be doing:</b></p><ul><li>Design, implement and maintain highly-optimized communication runtimes for Deep Learning frameworks (e.g. NCCL for TensorFlow/Pytorch) and HPC programming interfaces (e.g. UCX for MPI/OpenSHMEM) on GPU clusters.</li><li>Participating in and contributing to parallel programming interface specifications like MPI/OpenSHMEM.</li><li>Design, implement and maintain system software that enables interactions among GPUs and interactions between GPUs and other system components.</li><li>Creating proof-of-concepts to evaluate and motivate extensions in programming models, new designs in runtimes and new features in hardware.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>You are pursuing a Ph.D. in CE/CS/EE with a strong background in computer architecture, operating systems, communication library and/or AI/ML.</li><li>Excellent C/C++ programming and debugging skills.</li><li>Strong experience with Linux.</li><li>Experience with parallel programming interfaces and communication runtimes.</li><li>Ability and flexibility to work and communicate effectively in a multi-national, multi-time-zone corporate environment.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Deep knowledge of high-performance networks like InfiniBand, RoCE etc.</li><li>Background with HPC applications. Experience with Deep Learning Frameworks such PyTorch, TensorFlow, JAX/XLA, vLLM/SGLang etc.</li><li>Experience with AI/DL communication patterns such as Expert Parallelism (EP), TP, DP, PP and how these patterns can be implemented with NCCL. Experience with CUDA kernel optimization and profiling.</li><li>Experience with large-scale model training and production inference software stack.</li><li>Strong collaborative and interpersonal skills, specifically a proven ability to effectively guide and influence within a dynamic matrix environment.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Engineering-Intern--NCCL---2027_JR2029488",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029523",
     "slug": "nvidia-financial-analyst-intern-hardware-fp-and-a-summer-2027-jr2029523",
     "company": "nvidia",
@@ -12566,7 +12599,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "workday"
   },
   {
