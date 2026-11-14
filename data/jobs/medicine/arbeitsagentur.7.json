@@ -1927,9 +1927,9 @@
     "employer": "DIE GYN-PRAXIS MVZ GmbH",
     "title": "Facharzt für Frauenheilkunde und Geburtshilfe in Teil- und Vollzeit (m/w/d)",
     "locations": [
-      "Alzey, Rheinland-Pfalz, Germany",
       "Mainz am Rhein, Rheinland-Pfalz, Germany",
-      "Bad Kreuznach, Rheinland-Pfalz, Germany"
+      "Bad Kreuznach, Rheinland-Pfalz, Germany",
+      "Alzey, Rheinland-Pfalz, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Frauenheilkunde und Geburtshilfe",
@@ -2985,8 +2985,8 @@
     "employer": "Kliniken Nordoberpfalz AG",
     "title": "Geriater (m/w/d)",
     "locations": [
-      "Tirschenreuth, Bayern, Germany",
-      "Weiden in der Oberpfalz, Bayern, Germany"
+      "Weiden in der Oberpfalz, Bayern, Germany",
+      "Tirschenreuth, Bayern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
@@ -3495,8 +3495,8 @@
     "employer": "Leben leben Gesundheit gGmbH",
     "title": "Facharzt (m/w/d) für Psychiatrie und Psychotherapie",
     "locations": [
-      "Uelzen, Lüneburger Heide, Niedersachsen, Germany",
-      "Dannenberg (Elbe), Niedersachsen, Germany"
+      "Dannenberg (Elbe), Niedersachsen, Germany",
+      "Uelzen, Lüneburger Heide, Niedersachsen, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
@@ -3724,6 +3724,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002891045-S",
     "postedAt": "2026-04-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-13T15:50:24.900Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3964,15 +3966,15 @@
     "title": "Facharzt (m/w/d) - Innere Medizin mit mit der Zusatzbezeichnung Geriatrie",
     "locations": [
       "Kaiserslautern, Rheinland-Pfalz, Germany",
-      "Freiburg im Breisgau, Baden-Württemberg, Germany",
-      "Regensburg, Bayern, Germany",
       "Nürnberg, Mittelfranken, Bayern, Germany",
+      "Regensburg, Bayern, Germany",
+      "Passau, Bayern, Germany",
       "Saarbrücken, Saarland, Germany",
       "Stuttgart, Baden-Württemberg, Germany",
+      "Freiburg im Breisgau, Baden-Württemberg, Germany",
+      "Würzburg, Bayern, Germany",
       "Frankfurt am Main, Hessen, Germany",
-      "München, Bayern, Germany",
-      "Passau, Bayern, Germany",
-      "Würzburg, Bayern, Germany"
+      "München, Bayern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Innere Medizin",
@@ -5611,8 +5613,8 @@
     "employer": "MVZ Medicus Traunstein GmbH",
     "title": "Facharzt Allgemeinmedizin / Innere Medizin (m/w/d) – Vachendorf",
     "locations": [
-      "Traunstein, Oberbayern, Bayern, Germany",
-      "Vachendorf, Kr. Traunstein, Oberbay., Bayern, Germany"
+      "Vachendorf, Kr. Traunstein, Oberbay., Bayern, Germany",
+      "Traunstein, Oberbayern, Bayern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
@@ -6144,16 +6146,16 @@
     "employer": "DOCWISE - das Medizinernetzwerk",
     "title": "Facharzt (m/w/d) für Nephrologie",
     "locations": [
-      "Hannover, Niedersachsen, Germany",
-      "Hamburg, Hamburg, Germany",
       "Freiburg im Breisgau, Baden-Württemberg, Germany",
-      "Bielefeld, Nordrhein-Westfalen, Germany",
-      "Regensburg, Bayern, Germany",
-      "Saarbrücken, Saarland, Germany",
       "Nürnberg, Mittelfranken, Bayern, Germany",
       "Ingolstadt, Donau, Bayern, Germany",
-      "Kiel, Schleswig-Holstein, Germany",
-      "Kassel, Hessen, Hessen, Germany"
+      "Hamburg, Hamburg, Germany",
+      "Kassel, Hessen, Hessen, Germany",
+      "Saarbrücken, Saarland, Germany",
+      "Bielefeld, Nordrhein-Westfalen, Germany",
+      "Hannover, Niedersachsen, Germany",
+      "Regensburg, Bayern, Germany",
+      "Kiel, Schleswig-Holstein, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Innere Medizin",
@@ -6601,6 +6603,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004009222-S",
     "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1004015061-S",
+    "slug": "medizinischer-dienst-hessen-facharzt-als-gutachter-w-m-d-innere-medizin-kinder-jugendmedizin-allgemeinmedizi-10001-1004015061-s",
+    "company": "arbeitsagentur",
+    "employer": "Medizinischer Dienst Hessen",
+    "title": "Facharzt als Gutachter (w/m/d) Innere Medizin, Kinder-/Jugendmedizin, Allgemeinmedizin, Diabetologie",
+    "locations": [
+      "Oberursel (Taunus), Hessen, Germany"
+    ],
+    "remote": true,
+    "department": "Facharzt/-ärztin - Innere Medizin",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>**Auf der Suche nach einer anspruchsvollen Tätigkeit auf hohem medizinischem Niveau? Nah am Menschen, gepaart mit einer guten Vereinbarkeit von Beruf und Familie? Wir haben den Job dazu!**</p><p>**Zeit für Veränderung:** Für das Team **Allgemeine Hilfsmittel und Medizinprodukte (AHM) des Geschäftsbereichs Ambulante Versorgung** am Standort **Oberursel** suchen wir zum nächstmöglichen Zeitpunkt einen</p><p># **Facharzt als Gutachter (w/m/d) mit Schwerpunkt Innere Medizin, Kinder- &amp; Jugendmedizin, Allgemeinmedizin und Diabetologie**</p><p>## **Ihr neues Team und Tätigkeitsfeld**</p><p>Es erwartet Sie ein motiviertes Team, das gemeinsam an der Zukunft und Verbesserung des Gesundheitswesens aktiv mitwirkt. In dieser verantwortungsvollen Position erstellen Sie Gutachten zu unterschiedlichen Fragestellungen im Bezug zu allgemeinen Hilfsmitteln und Medizinprodukten. Dabei behalten Sie die sozialmedizinischen Vorgaben stets im Blick und sind motiviert, sich auch in fachfremden Themen einzuarbeiten.</p><p>## **Wer zu uns passt**</p><p>Sie verfügen über eine abgeschlossene Facharztweiterbildung in den Bereich Innere Medizin, Kinder- &amp; Jugendmedizin und Allgemeinmedizin, gerne mit Zusatzbezeichnung Diabetologie. Sie interessieren sich für sozialmedizinische Themen, freuen sich auf eine Tätigkeit in einem multidisziplinären Team mit kollegialem Austausch und schauen fachlich gerne über den Tellerrand. Sie sind empathisch, arbeiten strukturiert und eigenverantwortlich. Das Formulieren von medizinischen Sachverhalten fällt Ihnen leicht.</p><p>## **Wir bieten Ihnen**</p><ul><li>Attraktive Vergütung nach Vergütungsgruppe 13 TV MD, zzgl. betrieblicher Altersversorgung, 13. Monatsgehalt, vermögenswirksame Leistungen</li><li>Flexible Arbeitszeiten im Rahmen einer 38,5 Stunden-Woche und die Möglichkeit zum mobilen Arbeiten</li><li>Eine fachlich verantwortungsvolle Tätigkeit und strukturierte Einarbeitung</li><li>Die Möglichkeit zum Erwerb der Zusatzbezeichnung Sozialmedizin</li><li>Umfangreiche Angebote zur Fort- und Weiterbildung sowie zur Gesundheitsförderung</li><li>Mitarbeiterrabatte über Corporate Benefit sowie einen Zuschuss zum Deutschlandticket</li><li>Vereinbarkeit von Beruf, Familie und Pflege</li></ul><p>Der MD Hessen schätzt Vielfalt und fördert bewusst das Miteinander in den Teams. Die Inklusion von Menschen mit Behinderung entspricht unserem Selbstverständnis und wir begrüßen ihre Bewerbung. Die Stelle ist auch für Teilzeitbeschäftigte zugänglich.</p><p>Nähere Auskünfte erteilt Ihnen gerne **Frau Bianca Emundts, Teamleiterin Einzelfallbegutachtung,** unter der Telefonnummer 06171-634-279.</p><p>Wir freuen uns auf Ihre aussagekräftige Bewerbung unter Angabe der **Kennziffer AV-AHM-FA-GA-112026** bis zum **11.12.2026.**</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004015061-S",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-14T05:02:39.889Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8883,6 +8905,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Assistenzarzt-D-Neurologie-1274172?cp=BA",
     "postedAt": "2026-06-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-13T15:50:24.900Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10077,6 +10101,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12811-2377789-S",
+    "slug": "karriere-ze-ropraxen-arzt-in-weiterbildung-fur-allgemeinmedizin-m-w-d-mannheim-vogelstang-hausarztlic-12811-2377789-s",
+    "company": "arbeitsagentur",
+    "employer": "karriere@ze:roPRAXEN",
+    "title": "Arzt in Weiterbildung für Allgemeinmedizin (m/w/d) Mannheim-Vogelstang, Hausärztliches MVZ M…",
+    "locations": [
+      "Mannheim, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Weiterbildungsassistent/in (Arzt/Ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "resident",
+    "descriptionHtml": "<p>Die ze:roPRAXEN sind ein Verbund aus über 30 Medizinischen Versorgungszentren sowie Dialysezentren mit zahlreichen Standorten im Rhein-Neckar-Raum. Werden Sie Teil unseres Teams und erleben Sie Ihre persönlichen ze:roMOMENTE, die den Unterschied machen.   Wir suchen zum 01. Januar 2028 für unser Hausärztliches MVZ in Mannheim-Vogelstang einen Arzt in Weiterbildung Allgemeinmediziner  in Vollzeit.   Unser Team besteht aktuell aus drei Ärzten, einer Physician Assistant, drei MFAs einer Auszubildeneden. Darüberhinaus werden wir von einer Rezeptionistin unterstützt. Wir legen großen Wert darauf, den Menschen ganzheitlich in den Blickpunkt zu nehmen. Dazu bieten wir ein breites Spektrum allgemeinmedizinischer Leistungen - wie Lungenfunktionsanalyse, Ultraschalluntersuchungen und Belastungs-EKG sowie zahlreiche Vorsorgemöglichkeiten an. Seit 2015 gehören wir zum Verbund der ze:roPRAXEN. Dadurch profitieren unsere Patienten von einem starken Netzwerk. Ihre Aufgaben Selbstständige und ganzheitliche Betreuung und Behandlung von Patientinnen und Patienten Koordinierung, Dokumentation, Behandlung und Kontrolle des Therapieverlauf von chronischen Erkrankungen Sie bringen mit Deutsche Approbation Vollendung der klinischen Zeit (stationäre Versorgung Innere Medizin) wünschenswert Organisatorisches Talent Teamfähigkeit und Freude am selbständigen Arbeiten Interesse an der kooperativen Zusammenarbeit mit niedergelassenen Kollegen Wir bieten Ihnen Mitbestimmung: Umsetzung eigener Ideen ausdrücklich erwünscht! Austausch: Erfahrung und Wissen in einem großen Netzwerk an Ärzten teilen Flexibilität: Verschiedene Arbeitszeitmodelle, ohne reguläre Wochenend- und Nachtdienste. Unterstützung: Zentrale Verwaltung übernimmt viele Tätigkeiten (Einkauf, IT, Buchhaltung) etc. Chancen: Individuelle Karrierewege mit aktiver Förderung Benefits: JobRad, Kinderbetreuungszuschuss, betriebliche Altersvorsorge, Fortbildungen, Mitarbeiterevents Bei Fragen wenden Sie sich an Herrn Dr. med. Tim Böhringer Bodelschwinghstraße 10/3 68723 Schwetzingen Telefon: +49 (0) 6202 o 92 80 357 Weitere Informationen zu unserer Praxis finden Sie unter:  https://www.zero-praxen.de/hausarztpraxis-vogelstang Bereit für Ihren ersten ze:roMOMENT? Dann bewerben Sie sich jetzt. Mehr über uns unter www.zero-praxen.de</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Arzt-In-Weiterbildung-Fuer-Allgemeinmedizin-D-Mann-1338148?cp=BA",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-14T05:02:39.889Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12908-060517351-S",
     "slug": "rems-murr-kliniken-ggmbh-facharzt-m-w-d-fur-die-interdisziplinare-notaufnahme-12908-060517351-s",
     "company": "arbeitsagentur",
@@ -10645,11 +10689,11 @@
     "employer": "Bundesamt für das Personalmanagement der Bundeswehr",
     "title": "Weiterbildungsassistent/-in in der Anästhesie als Sanitätsoffizierin /-offizier (m/w/d)",
     "locations": [
-      "Ulm, Donau, Baden-Württemberg, Germany",
-      "Koblenz am Rhein, Rheinland-Pfalz, Germany",
-      "Hamburg, Hamburg, Germany",
       "Berlin, Berlin, Germany",
-      "Westerstede, Niedersachsen, Germany"
+      "Hamburg, Hamburg, Germany",
+      "Westerstede, Niedersachsen, Germany",
+      "Ulm, Donau, Baden-Württemberg, Germany",
+      "Koblenz am Rhein, Rheinland-Pfalz, Germany"
     ],
     "remote": false,
     "department": "Arzt/Ärztin",
@@ -11326,6 +11370,24 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:14089-01512274-S",
+    "slug": "ministerium-fur-soziales-arbeit-und-gesundheit-baden-wurttemberg-arztin-arzt-w-m-d-14089-01512274-s",
+    "company": "arbeitsagentur",
+    "employer": "Ministerium für Soziales, Arbeit und Gesundheit Baden-Württemberg",
+    "title": "Ärztin / Arzt (w/m/d)",
+    "locations": [
+      "Lörrach, Baden-Württemberg, Germany"
+    ],
+    "remote": true,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Im Geschäftsbereich des Ministeriums für Soziales, Arbeit und Gesundheit ist<br />beim Landratsamt Lörrach als untere Verwaltungsbehörde – Gesundheitsamt – zum<br />nächstmöglichenZeitpunkt eine unbefristete Vollzeitstelle zu besetzen:</p><p>Ärztin / Arzt (w/m/d)</p><p>Hier finden Sie Informationen zum Landkreis Lörrach.</p><p>Ihre Aufgaben:</p><p>- Ärztliche Zeugnisse und Begutachtungen für Behörden, Gerichte und<br />Staatsanwaltschaften, u.a. zu Fragen der Unterbringung gemäß PsychKHG<br />einschließlich Inaugenscheinnahmen vor Ort sowie zu Haft- und<br />Verhandlungsfähigkeit<br />- Weitere Aufgaben des amtsärztlichen Dienstes, z.B. Beglaubigungen für<br />Reisen mit Betäubungsmitteln und Stellungnahmen nach dem<br />Asylbewerberleistungsgesetz<br />- Mitarbeit in anderen Bereichen des Gesundheitsamtes (insbesondere<br />Tuberkulosefürsorge, ggf. auch Gesundheitsschutz, Hygiene, Infektionsschutz)<br />und Teilnahme am infektiologischen Bereitschaftsdienst</p><p>Der endgültige Aufgabenzuschnitt erfolgt nach Absprache und in Abhängigkeit<br />vom individuellen Arbeitszeitumfang. Änderungen des Aufgabenzuschnittes bleiben<br />vorbehalten.</p><p>Ihr Profil:</p><p>- Ärztliche Approbation gemäß Bundesärzteordnung<br />- Mindestens 24-monatige ärztliche Tätigkeit nach Erteilung der Approbation<br />in einem Gebiet der unmittelbaren Patientenversorgung<br />- Fähigkeit und Bereitschaft sich in neue Aufgabenfelder einzuarbeiten<br />- Verantwortungsbewusstsein und Entscheidungsfreude, hohe analytische<br />Kompetenz, Einsatzbereitschaft, effiziente Arbeitsweise, souveräne und<br />wertschätzende Kommunikation sowie Teamfähigkeit<br />- Sehr gute Kenntnisse der deutschen Sprache in Wort und Schrift<br />- Führerschein Klasse B</p><p>Von Vorteil ist:</p><p>- Erfahrung in der Erstellung von Gutachten und/oder in der Versorgung von<br />Patientinnen und Patienten mit Erkrankungen aus dem psychiatrischen Formenkreis<br />- Fortgeschrittene oder abgeschlossene klinische Weiterbildung zur Fachärztin<br />/ zum Facharzt für Psychiatrie und Psychotherapie</p><p>Unser Angebot:</p><p>- Eine interessante, vielfältige und verantwortungsvolle Tätigkeit im<br />Öffentlichen Gesundheitsdienst des Landes<br />- Einstellung auf der Grundlage des Tarifvertrages der Länder (TV-L); als<br />Fachärztin oder Facharzt ist nach den persönlichen und tariflichen<br />Voraussetzungen ggf. eine Eingruppierung in die Entgeltgruppe 15 möglich,<br />ansonsten erfolgt die Eingruppierung in die Entgeltgruppe 14<br />- Vereinbarkeit von Familie und Beruf durch individuelle, flexible<br />Arbeitsmodelle und mobiles Arbeiten<br />- Einarbeitung und Mitarbeit in einem hoch motivierten, multiprofessionellen<br />Team<br />- Aktive Unterstützung beim Ausbau Ihrer fachlichen und sozialen Kompetenzen<br />- Ggf. Weiterbildung zur Fachärztin / zum Facharzt für Öffentliches<br />Gesundheitswesen bei entsprechender Eignung (Weiterbildungsbefugnis nach der<br />WBO 2020 ist vorhanden)<br />- Unterstützung Ihrer Mobilität mit dem Job Ticket BW,<br />- Krisensicherer Arbeitsplatz und Betriebliche Altersvorsorge für<br />Tarifbeschäftigte.</p><p>Weitere Informationen:</p><p>Wir schätzen Vielfalt und begrüßen Bewerbungen unabhängig von Alter,<br />Geschlecht, geschlechtlicher und sexueller Identität, ethnischer, kultureller<br />und sozialer Herkunft, Nationalität, Behinderung, Religion und Weltanschauung.<br />Schwerbehinderte Menschen werden bei entsprechender Eignung bevorzugt<br />berücksichtigt. Die Stelle ist grundsätzlich teilbar.</p><p>Wir weisen darauf hin, dass für Personen, die in Einrichtungen des<br />Öffentlichen Gesundheitsdienstes tätig werden sollen, vor Einstellung eine<br />Nachweispflichthinsichtlich einer Immunisierung gegen Masern besteht. Bei<br />Nichtvorlage eines geeigneten Nachweises ist eine Einstellung im Öffentlichen<br />Gesundheitsdienst ausgeschlossen.</p><p>Bei fachlichen Fragen wenden Sie sich bitte an Frau PD Dr. von der Hardt<br />(Tel.: 07621 4102130). Informationen zum Bewerbungsverfahren erhalten Sie von<br />Herrn Pfister (Tel.: 0711 123 39208).</p><p>Bewerbungen mit aussagekräftigen Unterlagen (Anschreiben, tabellarischer<br />Lebenslauf, Approbationsurkunde, ggf. Promotionsurkunde, relevante Zeugnisse,<br />Arbeitszeugnisse, Abiturzeugnis, etc.) senden Sie bitte</p><p>bis zum 02.12.2026 unter Angabe der Kennziffer 308-A05</p><p>per E-Mail an OeGDPersonal@sm.bwl.de. Bewerbungen per Post können leider<br />nicht berücksichtigt werden.</p><p>Mit Ihrer Bewerbung stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten<br />nach den Vorgaben der Datenschutzgrundverordnung und des<br />Landesdatenschutzgesetzes zu.</p>",
+    "applyUrl": "https://www.interamt.de/koop/app/stelle?id=1512274",
+    "postedAt": "2026-11-13T00:00:00.000Z",
+    "firstSeenAt": "2026-11-14T05:02:39.889Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:14177-44488571-107-S",
     "slug": "universitatsklinikum-schleswig-holstein-oberarzt-m-w-d-nuklearmedizin-14177-44488571-107-s",
     "company": "arbeitsagentur",
@@ -11809,8 +11871,6 @@
     "applyUrl": "https://www.valmedi.de/job/facharzt-neurologie-m-w-d-160412/essen?utm_source=arbeitsagentur",
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12680,8 +12740,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14933-a42965347a444ee-S",
     "postedAt": "2026-02-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13409,8 +13467,8 @@
     "employer": "Allianz Deutschland AG",
     "title": "Facharzt für Arbeitsmedizin als Referatsleitung (m/w/d)",
     "locations": [
-      "Berlin, Berlin, Germany",
-      "Hamburg, Hamburg, Germany"
+      "Hamburg, Hamburg, Germany",
+      "Berlin, Berlin, Germany"
     ],
     "remote": false,
     "department": "Arzt/Ärztin",

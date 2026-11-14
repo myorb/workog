@@ -891,7 +891,8 @@
     "company": "perplexity",
     "title": "Lead Product Designer, Growth (Mobile)",
     "locations": [
-      "San Francisco"
+      "San Francisco",
+      "New York City"
     ],
     "remote": false,
     "department": "Design",
@@ -1424,7 +1425,8 @@
     "company": "perplexity",
     "title": "Lead Product Designer, Mobile (Native & Mobile)",
     "locations": [
-      "San Francisco"
+      "San Francisco",
+      "New York City"
     ],
     "remote": false,
     "department": "Design",
@@ -1681,7 +1683,9 @@
     "company": "perplexity",
     "title": "Member of Technical Staff (Site Reliability Engineer, Crawler)",
     "locations": [
-      "London"
+      "London",
+      "Belgrade",
+      "Ireland"
     ],
     "remote": false,
     "department": "Search",
@@ -1715,7 +1719,7 @@
     "id": "ashby:859604e1-9ada-4833-97b3-51fe185b6ff7",
     "slug": "perplexity-engineering-manager-security-859604e1-9ada-4833-97b3-51fe185b6ff7",
     "company": "perplexity",
-    "title": "Engineering Manager, Security",
+    "title": "Engineering Manager (Security)",
     "locations": [
       "San Francisco",
       "London",
@@ -2005,6 +2009,29 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c",
     "postedAt": "2026-09-02T10:35:02.552Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-13T15:50:24.900Z",
+    "missedRuns": 1,
+    "source": "ashby"
+  },
+  {
+    "id": "ashby:b23d83e3-add8-48ea-b16e-65a956d1192c",
+    "slug": "perplexity-member-of-technical-staff-software-engineer-cybersecurity-products-b23d83e3-add8-48ea-b16e-65a956d1192c",
+    "company": "perplexity",
+    "title": "Member of Technical Staff (Software Engineer, Cybersecurity Products)",
+    "locations": [
+      "San Francisco",
+      "Remote (United States)",
+      "London",
+      "Belgrade",
+      "New York City"
+    ],
+    "remote": true,
+    "department": "Security",
+    "category": "engineering",
+    "descriptionHtml": "<p><strong>ABOUT THE ROLE</strong></p><p>Perplexity is building cybersecurity products where agents do the security work, not just assist with it. Our security team already runs agents on our own environment every day, across finding vulnerabilities, testing our defenses, securing our cloud, and responding to threats. Now we're turning that work into products for customers, and we expect those products to span application security, offensive testing, cloud security, detection and response, and areas we haven't picked yet.</p><p>We're looking for a hands-on Software Engineer to build these products end to end, from the security logic and agent workflows to the integrations and product surfaces customers use. You'll ship to design partners and enterprise customers quickly, and you'll work directly with the security engineers who do this work internally, so what we build is grounded in real codebases, real environments, and real attackers.</p><p><strong>RESPONSIBILITIES</strong></p><ul><li><p>Build security products from zero to one across domains such as application security, penetration testing and offensive security, cloud security, and detection and response.</p></li><li><p>Build agents that do real security work: review code and find vulnerabilities, test applications and infrastructure like an attacker, assess cloud configurations, and investigate threats, then validate findings and recommend or apply fixes.</p></li><li><p>Build the systems underneath: multi-tenant services, data pipelines, and secure execution environments that run against customer code, cloud accounts, and telemetry.</p></li><li><p>Build integrations with the tools customers already use: source control and CI/CD, cloud providers, identity providers, security tools, ticketing, and chat.</p></li><li><p>Ship the product surfaces customers use: APIs, dashboards, onboarding, and workflows that fit how security and engineering teams actually work.</p></li><li><p>Hold the product to the same standard we hold ourselves: strong tenant isolation, least privilege, safe handling of customer secrets and data, and tight controls on any agent that acts in a customer environment.</p></li><li><p>Define how we measure quality (finding accuracy, false positive rate, exploitability, time to fix, cost) and use it to drive improvements.</p></li><li><p>Work directly with design partners and customers, and help decide which security problems we should build products for next.</p></li></ul><p><strong>QUALIFICATIONS</strong></p><ul><li><p>4+ years of experience as a software engineer building production systems, with meaningful time spent on security products, security data platforms, or security engineering with heavy software development.</p></li><li><p>Proficiency in at least one major programming language (such as Python, Go, TypeScript, or Rust) and experience owning production services end to end.</p></li><li><p>Hands-on depth in at least one security domain, such as application security, penetration testing or offensive security, cloud security, or detection and response, and curiosity to work across the others.</p></li><li><p>Experience integrating with security- or developer-relevant systems such as source control, CI/CD, cloud provider APIs, identity providers, scanners, or SIEMs.</p></li><li><p>Familiarity with cloud infrastructure (AWS preferred) and building secure, multi-tenant SaaS.</p></li><li><p>Comfortable working directly with customers and shipping pragmatic improvements quickly in an ambiguous, early-stage product area.</p></li><li><p>Bonus: experience building LLM-powered agents, evaluation frameworks, or tool-using automation for security or other high-stakes domains.</p></li><li><p>Bonus: experience at a security product company (AppSec, pentesting, cloud security, detection and response) or on an internal security platform at scale.</p></li></ul>",
+    "applyUrl": "https://jobs.ashbyhq.com/Perplexity/b23d83e3-add8-48ea-b16e-65a956d1192c",
+    "postedAt": "2026-11-13T16:21:54.542Z",
+    "firstSeenAt": "2026-11-14T05:02:39.889Z",
     "source": "ashby"
   },
   {
@@ -2127,6 +2154,8 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/c5dcc0db-7fdc-4e09-86c7-b6618400df16",
     "postedAt": "2026-10-02T23:39:04.097Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-13T15:50:24.900Z",
+    "missedRuns": 1,
     "source": "ashby"
   },
   {
@@ -2597,7 +2626,9 @@
     "company": "perplexity",
     "title": "Member of Technical Staff (Web Access Engineer, Crawler)",
     "locations": [
-      "London"
+      "London",
+      "Belgrade",
+      "Ireland"
     ],
     "remote": false,
     "department": "Search",
@@ -2740,7 +2771,7 @@
     "id": "ashby:fdc2ea75-c198-4a9e-9c0a-df835ed61ed0",
     "slug": "perplexity-scaled-enterprise-customer-success-manager-fdc2ea75-c198-4a9e-9c0a-df835ed61ed0",
     "company": "perplexity",
-    "title": "Scaled Enterprise Customer Success Manager",
+    "title": "Customer Success Manager",
     "locations": [
       "San Francisco",
       "Austin",
@@ -2749,7 +2780,7 @@
     "remote": false,
     "department": "Customer Success & Support",
     "category": "support",
-    "descriptionHtml": "<p>Perplexity is looking for a Scaled Enterprise Customer Success Manager to join our Enterprise team. In this role, you'll be responsible for driving onboarding, adoption, retention, and expansion across a high-volume book of SMB and Mid-Market customers. The ideal candidate has a strong foundation in Customer Success or Account Management within a scaling technology company, with the ability to use data, repeatable programs, and sharp customer judgment to create impact across many accounts.</p><p>You will work closely with members of the Enterprise, Sales, Product, Support, and Marketing teams to help customers realize value from Perplexity at scale. This role requires strong communication, operational discipline, comfort with ambiguity, and a proactive \"can-do\" attitude. Your success will play a crucial role in expanding Perplexity's enterprise customer base, identifying conversion opportunities from self-serve customers, and helping build the next generation of scaled customer success motions.</p><p><strong>Responsibilities</strong></p><ul><li><p>Execute the scaled Enterprise customer success strategy developed by leadership</p></li><li><p>Manage a high-volume portfolio of SMB and Mid-Market customers through a lower-touch, data-informed engagement model</p></li><li><p>Serve as a point of contact for customers across onboarding, adoption, value realization, renewal, and expansion moments</p></li><li><p>Drive initial enablement through repeatable onboarding programs, training sessions, office hours, webinars, and digital content</p></li><li><p>Monitor customer health, usage trends, and engagement signals to prioritize outreach and identify risks or growth opportunities</p></li><li><p>Identify self-serve customers with strong usage, business fit, or expansion potential and support conversion opportunities into Enterprise</p></li><li><p>Partner with Sales and Account Management to surface expansion, upgrade, and renewal opportunities across scaled accounts</p></li><li><p>Help customers quantify value delivered by Perplexity through usage insights, adoption milestones, and business outcomes</p></li><li><p>Advocate for customer needs and collaborate with cross-functional teams to improve product experience, enablement materials, support processes, and scaled CS playbooks</p></li><li><p>Track and report on key performance indicators, analyze data to identify trends, and recommend improvements to scaled engagement programs</p></li></ul><p><strong>Qualifications</strong></p><ul><li><p>3+ years of experience in Customer Success, Account Management, Sales, or related customer-facing roles at scaling technology companies</p></li><li><p>Experience supporting SMB, Mid-Market, or high-volume customer segments, ideally in a SaaS or AI/productivity tooling environment</p></li><li><p>Strong customer judgment with the ability to balance personalized engagement and scalable program execution</p></li><li><p>Proven ability to drive adoption, retention, and growth across a book of business</p></li><li><p>Excellent written and verbal communication skills, with the ability to clearly explain value to business and technical stakeholders</p></li><li><p>Comfortable using data to prioritize outreach, diagnose account health, identify product usage trends, and uncover expansion signals</p></li><li><p>A self-starter by nature, comfortable dealing with ambiguity and juggling multiple initiatives</p></li><li><p>Ability to work under pressure, thriving in demanding environments</p></li><li><p>Ability to work independently and as part of a collaborative team</p></li><li><p>Proficiency in CRM systems, customer success platforms, analytics tools, and customer engagement workflows</p></li></ul>",
+    "descriptionHtml": "<p>Perplexity is looking for a Customer Success Manager to join our Enterprise team. In this role, you'll be responsible for driving onboarding, adoption, retention, and expansion across a book of SMB and Mid-Market customers. The ideal candidate has a strong foundation in Customer Success or Account Management within a scaling technology company, with the ability to use data, repeatable programs, and sharp customer judgment to create impact across many accounts.</p><p>You will work closely with members of the Enterprise, Sales, Product, Support, and Marketing teams to help customers realize value from Perplexity at scale. This role requires strong communication, operational discipline, comfort with ambiguity, and a proactive \"can-do\" attitude. Your success will play a crucial role in expanding Perplexity's enterprise customer base, identifying conversion opportunities from self-serve customers, and helping build the next generation of scaled customer success motions.</p><p><strong>Responsibilities</strong></p><ul><li><p>Execute the scaled Enterprise customer success strategy developed by leadership</p></li><li><p>Manage a portfolio of SMB and Mid-Market customers through a data-informed engagement model</p></li><li><p>Serve as a point of contact for customers across onboarding, adoption, value realization, renewal, and expansion moments</p></li><li><p>Drive initial enablement through repeatable onboarding programs, training sessions, office hours, webinars, and digital content</p></li><li><p>Monitor customer health, usage trends, and engagement signals to prioritize outreach and identify risks or growth opportunities</p></li><li><p>Identify self-serve customers with strong usage, business fit, or expansion potential and support conversion opportunities into Enterprise</p></li><li><p>Partner with Sales and Account Management to surface expansion, upgrade, and renewal opportunities across scaled accounts</p></li><li><p>Help customers quantify value delivered by Perplexity through usage insights, adoption milestones, and business outcomes</p></li><li><p>Advocate for customer needs and collaborate with cross-functional teams to improve product experience, enablement materials, support processes, and scaled CS playbooks</p></li><li><p>Track and report on key performance indicators, analyze data to identify trends, and recommend improvements to scaled engagement programs</p></li></ul><p><strong>Qualifications</strong></p><ul><li><p>3+ years of experience in Customer Success, Account Management, Sales, or related customer-facing roles at scaling technology companies</p></li><li><p>Experience supporting SMB or Mid-Market customer segments, ideally in a SaaS or AI/productivity tooling environment</p></li><li><p>Strong customer judgment with the ability to balance personalized engagement and scalable program execution</p></li><li><p>Proven ability to drive adoption, retention, and growth across a book of business</p></li><li><p>Excellent written and verbal communication skills, with the ability to clearly explain value to business and technical stakeholders</p></li><li><p>Comfortable using data to prioritize outreach, diagnose account health, identify product usage trends, and uncover expansion signals</p></li><li><p>A self-starter by nature, comfortable dealing with ambiguity and juggling multiple initiatives</p></li><li><p>Ability to work under pressure, thriving in demanding environments</p></li><li><p>Ability to work independently and as part of a collaborative team</p></li><li><p>Proficiency in CRM systems, customer success platforms, analytics tools, and customer engagement workflows</p></li></ul>",
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/fdc2ea75-c198-4a9e-9c0a-df835ed61ed0",
     "postedAt": "2026-05-16T00:19:04.959Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
