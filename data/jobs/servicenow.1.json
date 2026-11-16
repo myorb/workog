@@ -1863,6 +1863,8 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000151698319-principal-software-engineer",
     "postedAt": "2026-09-24T20:14:13.296Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-15T05:03:03.938Z",
+    "missedRuns": 1,
     "source": "smartrecruiters"
   },
   {
@@ -1880,6 +1882,8 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000151698539-principal-software-engineer",
     "postedAt": "2026-09-24T20:14:46.889Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-15T05:03:03.938Z",
+    "missedRuns": 1,
     "source": "smartrecruiters"
   },
   {
@@ -2026,6 +2030,8 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000152029219-staff-software-engineer-data-platform-kubernetes-distributed-systems-federal",
     "postedAt": "2026-09-27T15:14:16.829Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-15T05:03:03.938Z",
+    "missedRuns": 1,
     "source": "smartrecruiters"
   },
   {
@@ -8307,6 +8313,8 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000160737829-senior-software-engineer",
     "postedAt": "2026-11-09T22:15:34.591Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-15T05:03:03.938Z",
+    "missedRuns": 1,
     "source": "smartrecruiters"
   },
   {
@@ -9385,7 +9393,7 @@
     "postedAt": "2026-11-12T05:54:14.449Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-14T05:02:39.889Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-16T05:03:35.318Z",
     "source": "smartrecruiters"
   },
   {
@@ -9869,7 +9877,7 @@
     "postedAt": "2026-11-13T07:12:53.400Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-14T05:02:39.889Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-16T05:03:35.318Z",
     "source": "smartrecruiters"
   },
   {
@@ -9991,6 +9999,8 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000161469859-sr-crm-account-executive-enterprise-",
     "postedAt": "2026-11-13T11:57:10.538Z",
     "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "lastSeenAt": "2026-11-15T05:03:03.938Z",
+    "missedRuns": 1,
     "source": "smartrecruiters"
   },
   {
@@ -10313,6 +10323,57 @@
     "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000161596339-senior-software-engineer-compute-engineering",
     "postedAt": "2026-11-14T00:09:37.401Z",
     "firstSeenAt": "2026-11-14T05:02:39.889Z",
+    "source": "smartrecruiters"
+  },
+  {
+    "id": "smartrecruiters:744000161721289",
+    "slug": "servicenow-senior-staff-software-engineer-744000161721289",
+    "company": "servicenow",
+    "title": "Senior Staff Software Engineer",
+    "locations": [
+      "Santa Clara, CALIFORNIA, United States"
+    ],
+    "remote": false,
+    "department": "Engineering, Infrastructure and Operations",
+    "category": "engineering",
+    "descriptionHtml": "<h3>Company Description</h3><p>It all started when engineer Fred Luddy wrote code that automated a tedious task for his coworker, Phyllis. She cried tears of joy. That moment inspired Fred to build a company that could do that for everyone—freeing people from busywork so they could focus on meaningful work. Today, ServiceNow is the AI control tower for business reinvention. Our ServiceNow AI platform brings together any AI, any data, and any workflow— helping 85% of the Fortune 500® work smarter, faster, and better. We're building an AI-native culture where technology and talent are unstoppable together. And we're just getting started.</p><p>Join us to put AI to work for people.</p><h3>Job Description</h3><p>We are the Unified Employee Experience (UEX) team at ServiceNow, also known as EmployeeWorks. We build Employee Slate, our conversation first employee experience, along with Employee Center and Employee Center Pro. Employees at some of the largest enterprises in the world use what we build to find answers and get work done, on web and on mobile. The experience is AI first, so the front end platform has to be fast, consistent, and extensible enough that every team building on it moves quickly.</p><p>This is a front end architecture role. You will own the architecture of the front end platform and the framework that feature teams across the organization build on, and you will own the performance of the experience end to end. We are looking for someone who has built and owned a front end platform at scale, not just features on top of one.</p><p><strong>What you get to do in this role:</strong></p><ul><li>Own the architecture, technical direction, and roadmap of our front end platform and the framework it exposes to other engineering teams</li><li>Architect modular, reusable component systems built for extensibility, versioning, and adoption across many teams at once</li><li>Own front end performance end to end and hold the platform to it as the product and the customer base grow</li><li>Drive complex, multi team technical initiatives and resolve architectural conflicts without management escalation</li><li>Lead architecture and code reviews, mentor senior engineers, and raise the front end bar across the organization</li><li>Act as the technical escalation point for the hardest production problems in the front end</li><li>Bring judgment on where AI belongs in the engineering workflow, and set the guardrails for AI assisted development</li><li>Partner with product and design early enough to shape what gets built, not just how it gets built</li></ul><h3>Qualifications</h3><ul><li>Experience in leveraging or critically thinking about how to integrate AI into work processes, decision-making, or problem-solving. This may include using AI-powered tools, automating workflows, analyzing AI-driven insights, or exploring AI’s potential impact on the function or industry.</li><li>10+ years of professional software engineering experience, with the majority of it building web front ends and front end platforms</li><li>Deep expertise in JavaScript and TypeScript, along with advanced knowledge of data structures, algorithms, object oriented design, and design patterns</li><li>Advanced experience with modern component based UI frameworks and web components, such as Lit, React, Angular, or Vue</li><li>Proven track record designing framework level abstractions that many other engineering teams build on</li><li>Deep front end performance experience, including profiling, diagnosing, and fixing performance problems in production at scale</li><li>Demonstrated experience as a Staff or Principal engineer or equivalent senior individual contributor accountable for architecture and technical direction, with a track record leading months long initiatives across team boundaries</li><li>Working proficiency in a server side language such as Java, Node.js, Python, or Go</li><li>Exposure to building front ends on top of AI or LLM driven capabilities</li><li>Excellent communication skills, including the ability to explain complex architecture clearly to engineers, product managers, and senior leadership</li><li>B.S. or M.S. in Computer Science, Engineering, or an equivalent technical field, or equivalent practical experience</li></ul><p><strong>Preferred</strong></p><ul><li>Experience with design systems or component libraries adopted across multiple organizations</li><li>Experience with front end observability and real user performance monitoring</li><li>Familiarity with large scale, multi tenant SaaS platforms</li></ul><p>For positions in this location, we offer a base pay of <strong>$190,900 - $334,100</strong>, plus equity (when applicable), variable/incentive compensation and benefits. Sales positions generally offer a competitive On Target Earnings (OTE) incentive compensation structure. Please note that the base pay shown is a guideline, and individual total compensation will vary based on factors such as qualifications, skill level, competencies, and work location. We also offer health plans, including flexible spending accounts, a 401(k) Plan with company match, ESPP, matching donations, a flexible time away plan and family leave programs. Compensation is based on the geographic location in which the role is located and is subject to change based on work location.</p><h3>Additional Information</h3><p><strong>Work Personas</strong></p><p>We approach our distributed world of work with flexibility and trust. Work personas (flexible, remote, or required in office) are categories that are assigned to ServiceNow employees depending on the nature of their work and their assigned work location. <a href=\"https://careers.servicenow.com/life-at-servicenow#workpersonas\"><u>Learn more here</u></a>. To determine eligibility for a work persona, ServiceNow may confirm the distance between your primary residence and the closest ServiceNow office using a third-party service.</p><p><strong>Equal Opportunity Employer</strong></p><p>ServiceNow is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, national origin, age, disability, gender identity,  veteran status, or any other category protected by law. In addition, all qualified applicants with arrest or conviction records will be considered for employment in accordance with legal requirements.  </p><p><strong>Accommodations</strong></p><p>We strive to create an accessible and inclusive experience for all candidates. If you require a reasonable accommodation to complete any part of the application process, or are unable to use this online application and need an alternative method to apply, please contact <a href=\"mailto:globaltalentss@servicenow.com\">globaltalentss@servicenow.com </a>for assistance. </p><p><strong>Export Control Regulations</strong></p><p>For positions requiring access to controlled technology subject to export control regulations, including the U.S. Export Administration Regulations (EAR), ServiceNow may be required to obtain export control approval from government authorities for certain individuals. All employment is contingent upon ServiceNow obtaining any export license or other approval that may be required by relevant export control authorities. </p><p>From Fortune. ©2026 Fortune Media IP Limited. All rights reserved. Used under license.</p>",
+    "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000161721289-senior-staff-software-engineer",
+    "postedAt": "2026-11-16T02:35:35.497Z",
+    "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "source": "smartrecruiters"
+  },
+  {
+    "id": "smartrecruiters:744000161723601",
+    "slug": "servicenow-crm-744000161723601",
+    "company": "servicenow",
+    "title": "CRMソリューションコンサルタント",
+    "locations": [
+      "Tokyo, , Japan"
+    ],
+    "remote": false,
+    "department": "Sales",
+    "category": "sales",
+    "descriptionHtml": "<h3>Company Description</h3><p>ServiceNowは「ビジネス変革のためのAIコントロールタワー」として、あらゆるAI、あらゆるデータ、あらゆるワークフローをひとつにつなぐ「ServiceNow AIプラットフォーム」を提供し、Fortune 500企業の85%が、より賢く、より速く、より良く働くことを支援しています。すべては、エンジニアのフレッド・ラディが、同僚の面倒な作業を自動化するコードを書いたことから始まりました。この同僚は感激のあまり涙を流したといいます。この出来事をきっかけに、フレッドは「すべての人を煩雑な業務から解放し、意義のある仕事に集中できるようにする」会社をつくることを決意しました。 </p><p>私たちは、テクノロジーと人の力がともに発揮される「AIネイティブ」なカルチャーを築いており、その挑戦はまだ始まったばかりです。 AIを人のために活かす未来を、私たちと一緒に創りませんか。 </p><h3>Job Description</h3><p>ServiceNowのCRMは、問い合わせを記録するだけのCRMではありません。フロントからバックオフィスまでをひとつのプラットフォームとワークフローでつなぎ、問い合わせを最後まで解決するCRMです。AIが答えるだけでなく、実際に業務を動かして解決する。この点がAI時代のCRMに欠かせない条件だと、私たちは考えています。 </p><p>日本でも、幅広い業界の大企業で、顧客接点を担うミッションクリティカルなDXプロジェクトへの採用が続いています。この成長に合わせて、CRM Japanではソリューションコンサルタントを複数名、純増で採用します。 </p><p>ソリューションコンサルタントは、営業チームの一員としてお客様の課題を深く理解し、ServiceNowだからこそ実現できる価値を、提案とデモで形にする役割です。新しいことを素早く吸収し、自ら考えて動けるスタートアップのようなマインドを持つ方を歓迎します。 </p><p><strong>この役割で担っていただくこと： </strong></p><ul><li>CRMセールスエクゼクティブと一緒に案件の戦略を立て、ServiceNow CRMを選んでいただくための提案とデモをリードします </li><li>お客様の課題に合わせて、ServiceNowならではの価値を、説得力のあるストーリーで伝えます </li><li>CRMセールスエクゼクティブがCRMの価値を提案できるよう、社内のイネーブルメントを企画・支援します </li><li>カスタマーサービス領域とソリューションのエキスパートとして、社内外で専門性を発揮します </li><li>CRMの製品領域の拡大に合わせて、専門性の幅を広げていきます </li><li>プロダクトマネジメントや開発チームと連携し、お客様のニーズを製品の強化につなげます </li><li>提案のノウハウや成功事例をチームで共有し、チーム全体の提案力を高めます </li><li>競合や市場のトレンドを常に把握し、提案に活かします </li><li>事業部門と情報システム部門、両方の意思決定者と対話します </li><li>ユーザーカンファレンス、展示会、アナリスト向けデモ、ウェビナーなどのマーケティング活動を支援します </li></ul><h3>Qualifications</h3><p><strong>この役割で成功するために必要なこと： </strong></p><ul><li>営業部門やカスタマーサービス部門が抱える課題とニーズへの深い理解 </li><li>CRMソリューション（Salesforce、Pega、Zendeskなど）でのソリューションコンサルティング経験が7年以上、またはServiceNowプラットフォームでの同等の経験 </li><li>お客様にとって重要な価値を見極め、印象に残る形で伝えられるプリセールススキル </li><li>自社ソリューションの魅力を、社内にも積極的に発信していく意欲 </li><li>経営層、事業部門、技術部門のキーパーソンから信頼を得られる力 </li><li>細かな指示がなくても、自分で仕事を進めて最後までやり遂げる力 </li><li>ServiceNowプラットフォームの知識、またはWeb技術の専門知識。新しい技術を素早く習得できること </li><li>プロダクトマネジメント、プロダクトマーケティング、開発チームと連携して仕事を進めた経験 </li><li>ServiceNowの価値と競合との違いを、見込み顧客に分かりやすく伝えられること </li><li>高い熱意と行動力。頻繁な出張に対応できること（最大50%の国内出張の可能性があります） </li><li>柔軟な発想で課題を解決できる力 </li></ul><h3>Additional Information</h3><p><strong>Work Personas</strong></p><p>We approach our distributed world of work with flexibility and trust. Work personas (flexible, remote, or required in office) are categories that are assigned to ServiceNow employees depending on the nature of their work and their assigned work location. <a href=\"https://careers.servicenow.com/life-at-servicenow#workpersonas\"><u>Learn more here</u></a>. To determine eligibility for a work persona, ServiceNow may confirm the distance between your primary residence and the closest ServiceNow office using a third-party service.</p><p><strong>Equal Opportunity Employer</strong></p><p>ServiceNow is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, national origin, age, disability, gender identity,  veteran status, or any other category protected by law. In addition, all qualified applicants with arrest or conviction records will be considered for employment in accordance with legal requirements.  </p><p><strong>Accommodations</strong></p><p>We strive to create an accessible and inclusive experience for all candidates. If you require a reasonable accommodation to complete any part of the application process, or are unable to use this online application and need an alternative method to apply, please contact <a href=\"mailto:globaltalentss@servicenow.com\">globaltalentss@servicenow.com </a>for assistance. </p><p><strong>Export Control Regulations</strong></p><p>For positions requiring access to controlled technology subject to export control regulations, including the U.S. Export Administration Regulations (EAR), ServiceNow may be required to obtain export control approval from government authorities for certain individuals. All employment is contingent upon ServiceNow obtaining any export license or other approval that may be required by relevant export control authorities. </p><p>From Fortune. ©2026 Fortune Media IP Limited. All rights reserved. Used under license.</p>",
+    "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000161723601-crm-",
+    "postedAt": "2026-11-16T03:40:22.939Z",
+    "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "source": "smartrecruiters"
+  },
+  {
+    "id": "smartrecruiters:744000161723739",
+    "slug": "servicenow-crm-solution-consultant-744000161723739",
+    "company": "servicenow",
+    "title": "CRM Solution Consultant",
+    "locations": [
+      "Tokyo, , Japan"
+    ],
+    "remote": false,
+    "department": "Sales",
+    "category": "sales",
+    "descriptionHtml": "<h3>Company Description</h3><p>ServiceNowは「ビジネス変革のためのAIコントロールタワー」として、あらゆるAI、あらゆるデータ、あらゆるワークフローをひとつにつなぐ「ServiceNow AIプラットフォーム」を提供し、Fortune 500企業の85%が、より賢く、より速く、より良く働くことを支援しています。すべては、エンジニアのフレッド・ラディが、同僚の面倒な作業を自動化するコードを書いたことから始まりました。この同僚は感激のあまり涙を流したといいます。この出来事をきっかけに、フレッドは「すべての人を煩雑な業務から解放し、意義のある仕事に集中できるようにする」会社をつくることを決意しました。 </p><p>私たちは、テクノロジーと人の力がともに発揮される「AIネイティブ」なカルチャーを築いており、その挑戦はまだ始まったばかりです。 AIを人のために活かす未来を、私たちと一緒に創りませんか。 </p><h3>Job Description</h3><p>ServiceNowのCRMは、問い合わせを記録するだけのCRMではありません。フロントからバックオフィスまでをひとつのプラットフォームとワークフローでつなぎ、問い合わせを最後まで解決するCRMです。AIが答えるだけでなく、実際に業務を動かして解決する。この点がAI時代のCRMに欠かせない条件だと、私たちは考えています。 </p><p>日本でも、幅広い業界の大企業で、顧客接点を担うミッションクリティカルなDXプロジェクトへの採用が続いています。この成長に合わせて、CRM Japanではソリューションコンサルタントを複数名、純増で採用します。 </p><p>ソリューションコンサルタントは、営業チームの一員としてお客様の課題を深く理解し、ServiceNowだからこそ実現できる価値を、提案とデモで形にする役割です。新しいことを素早く吸収し、自ら考えて動けるスタートアップのようなマインドを持つ方を歓迎します。 </p><p><strong>この役割で担っていただくこと： </strong></p><ul><li>CRMセールスエクゼクティブと一緒に案件の戦略を立て、ServiceNow CRMを選んでいただくための提案とデモをリードします </li><li>お客様の課題に合わせて、ServiceNowならではの価値を、説得力のあるストーリーで伝えます </li><li>CRMセールスエクゼクティブがCRMの価値を提案できるよう、社内のイネーブルメントを企画・支援します </li><li>カスタマーサービス領域とソリューションのエキスパートとして、社内外で専門性を発揮します </li><li>CRMの製品領域の拡大に合わせて、専門性の幅を広げていきます </li><li>プロダクトマネジメントや開発チームと連携し、お客様のニーズを製品の強化につなげます </li><li>提案のノウハウや成功事例をチームで共有し、チーム全体の提案力を高めます </li><li>競合や市場のトレンドを常に把握し、提案に活かします </li><li>事業部門と情報システム部門、両方の意思決定者と対話します </li><li>ユーザーカンファレンス、展示会、アナリスト向けデモ、ウェビナーなどのマーケティング活動を支援します </li></ul><h3>Qualifications</h3><p><strong>この役割で成功するために必要なこと： </strong></p><ul><li>営業部門やカスタマーサービス部門が抱える課題とニーズへの深い理解 </li><li>CRMソリューション（Salesforce、Pega、Zendeskなど）でのソリューションコンサルティング経験が7年以上、またはServiceNowプラットフォームでの同等の経験 </li><li>お客様にとって重要な価値を見極め、印象に残る形で伝えられるプリセールススキル </li><li>自社ソリューションの魅力を、社内にも積極的に発信していく意欲 </li><li>経営層、事業部門、技術部門のキーパーソンから信頼を得られる力 </li><li>細かな指示がなくても、自分で仕事を進めて最後までやり遂げる力 </li><li>ServiceNowプラットフォームの知識、またはWeb技術の専門知識。新しい技術を素早く習得できること </li><li>プロダクトマネジメント、プロダクトマーケティング、開発チームと連携して仕事を進めた経験 </li><li>ServiceNowの価値と競合との違いを、見込み顧客に分かりやすく伝えられること </li><li>高い熱意と行動力。頻繁な出張に対応できること（最大50%の国内出張の可能性があります） </li><li>柔軟な発想で課題を解決できる力 </li></ul><h3>Additional Information</h3><p><strong>Work Personas</strong></p><p>We approach our distributed world of work with flexibility and trust. Work personas (flexible, remote, or required in office) are categories that are assigned to ServiceNow employees depending on the nature of their work and their assigned work location. <a href=\"https://careers.servicenow.com/life-at-servicenow#workpersonas\"><u>Learn more here</u></a>. To determine eligibility for a work persona, ServiceNow may confirm the distance between your primary residence and the closest ServiceNow office using a third-party service.</p><p><strong>Equal Opportunity Employer</strong></p><p>ServiceNow is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, national origin, age, disability, gender identity,  veteran status, or any other category protected by law. In addition, all qualified applicants with arrest or conviction records will be considered for employment in accordance with legal requirements.  </p><p><strong>Accommodations</strong></p><p>We strive to create an accessible and inclusive experience for all candidates. If you require a reasonable accommodation to complete any part of the application process, or are unable to use this online application and need an alternative method to apply, please contact <a href=\"mailto:globaltalentss@servicenow.com\">globaltalentss@servicenow.com </a>for assistance. </p><p><strong>Export Control Regulations</strong></p><p>For positions requiring access to controlled technology subject to export control regulations, including the U.S. Export Administration Regulations (EAR), ServiceNow may be required to obtain export control approval from government authorities for certain individuals. All employment is contingent upon ServiceNow obtaining any export license or other approval that may be required by relevant export control authorities. </p><p>From Fortune. ©2026 Fortune Media IP Limited. All rights reserved. Used under license.</p>",
+    "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000161723739-crm-solution-consultant",
+    "postedAt": "2026-11-16T03:42:04.378Z",
+    "firstSeenAt": "2026-11-16T05:03:35.318Z",
     "source": "smartrecruiters"
   }
 ]
