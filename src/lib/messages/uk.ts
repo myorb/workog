@@ -15,6 +15,14 @@ const companies = { one: "компанія", few: "компанії", many: "к�
 const countries = { one: "країна", few: "країни", many: "країн", other: "країни" };
 const cities = { one: "місто", few: "міста", many: "міст", other: "міста" };
 const days = { one: "день", few: "дні", many: "днів", other: "дня" };
+const signed = (x: number) => (x > 0 ? `+${n(x)}` : x < 0 ? `−${n(-x)}` : n(0));
+// after "серед": "серед 74 технологічних компаній"
+const insightPeers = {
+  companies: { one: "технологічної компанії", few: "технологічних компаній", many: "технологічних компаній", other: "технологічної компанії" },
+  countries: { one: "країни", few: "країн", many: "країн", other: "країни" },
+  specialties: { one: "спеціальності", few: "спеціальностей", many: "спеціальностей", other: "спеціальності" },
+  states: { one: "федеральної землі", few: "федеральних земель", many: "федеральних земель", other: "федеральної землі" },
+};
 
 export const uk = {
   nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика", remote: "Віддалено" },
@@ -423,5 +431,43 @@ export const uk = {
       earlier: "← Попередній день",
       later: "Наступний день →",
     },
+  },
+  share: {
+    label: "Поділитися",
+    native: "Поділитися",
+    linkedin: "LinkedIn",
+    x: "X",
+    facebook: "Facebook",
+    copy: "Копіювати посилання",
+    copied: "Скопійовано",
+    onLinkedin: "Поділитися в LinkedIn",
+    onX: "Поділитися в X",
+    onFacebook: "Поділитися у Facebook",
+    job: (title: string, employer: string, where: string) => `${title}, ${employer}${where ? `, ${where}` : ""}`,
+  },
+  insights: {
+    heading: "Огляд ринку",
+    record: [
+      (name: string, high: boolean, d: number) =>
+        `${name}: ${high ? "найбільше" : "найменше"} відкритих вакансій за ${p(d, days)} спостережень Workog.`,
+      (name: string, high: boolean, d: number) =>
+        `${name}: ${high ? "рекорд" : "мінімум"} — жодного дня за останні ${p(d, days)} не було ${high ? "більше" : "менше"} відкритих вакансій.`,
+    ],
+    streak: [
+      (name: string, up: boolean, d: number) => `${name}: кількість відкритих вакансій ${up ? "зростає" : "знижується"} ${p(d, days)} поспіль.`,
+    ],
+    rank: [
+      (name: string, rank: number, of: number, peers: "companies" | "countries" | "specialties" | "states") =>
+        `${name} — №${rank} за кількістю відкритих вакансій серед ${p(of, insightPeers[peers])}.`,
+    ],
+    share: [
+      (name: string, pct: number, section: "tech" | "medicine") =>
+        `${name}: ${n(pct)}% усіх ${section === "tech" ? "відкритих ІТ-вакансій" : "відкритих вакансій для лікарів"} на Workog.`,
+    ],
+    outpaced: [
+      (name: string, pct: number, total: number, d: number, section: "tech" | "medicine") =>
+        `${name}: ${signed(pct)}% за ${p(d, days)} — ${pct > total ? "краще" : "гірше"}, ніж ${section === "tech" ? "ІТ-ринок загалом" : "вакансії для лікарів загалом"} (${signed(total)}%).`,
+    ],
+    top: [(label: string, k: number, pct: number) => `Найбільша частка — ${label}: ${n(k)} (${n(pct)}%).`],
   },
 } satisfies Messages;

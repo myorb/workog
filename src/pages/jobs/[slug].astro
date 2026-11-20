@@ -18,6 +18,9 @@ import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
 import { employmentTypeOf } from "../../lib/employment.ts";
 import { categoryName, countryName, localizePath, locales, t, type Lang } from "../../lib/i18n.ts";
 import { jobLanguage } from "../../lib/language.ts";
+import { shareAlt, shareImagePath } from "../../lib/share-image.ts";
+import { medicineJobShare, pageImage } from "../../lib/share-subjects.ts";
+import ShareButtons from "../../components/ShareButtons.astro";
 
 export const getStaticPaths = (async () => {
   const jobs = await getAllJobs();
@@ -112,6 +115,16 @@ const browse = [
 const asOf = (await getLatestRun())?.finishedAt ?? job.lastSeenAt;
 const hospital = hospitalSlug ? hospitalIndex!.hospitals.find((h) => h.slug === hospitalSlug) : undefined;
 const companyChange = !medicine && !job.employer ? changeOver(await getSnapshots(), (s) => s.companies[job.company], companyJobs) : undefined;
+// a tech job shares its company's image (src/pages/og/companies/), which carries a number the job page itself has none of;
+// a medical job the closest specialty or place image (see medicineJobShare)
+const shareImage = medicine
+  ? pageImage(await medicineJobShare(job.specialty, area))
+  : company
+    ? {
+        path: shareImagePath(`/companies/${job.company}`),
+        alt: shareAlt({ variant: "tech", title: t("en").company.title(company.name), count: companyJobs, trend: companyChange && { pct: companyChange.pct, days: companyChange.days } }),
+      }
+    : undefined;
 const nearby = medicine
   ? job.specialty && area
     ? { open: medCounts!.specialtyAreas.get(`${job.specialty}/${area.slug}`) ?? 0, where: areaLabel!, medical: true, specialty: specialtyName }
@@ -152,6 +165,7 @@ const summary = closed
   lang={lang}
   jsonLd={jsonLd}
   section={medicine ? "medicine" : "tech"}
+  image={shareImage}
 >
   {
     medicine ? (
@@ -191,6 +205,7 @@ const summary = closed
   )}
 
   {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
+  {!closed && <ShareButtons text={m.share.job(job.title, employer, job.locations[0] ?? "")} lang={lang} />}
 
   {summary.length > 0 && <section class="summary"><h2>{j.glanceTitle}</h2><p>{summary.join(" ")}</p></section>}
 

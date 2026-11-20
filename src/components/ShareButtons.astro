@@ -1,0 +1,117 @@
+---
+/**
+ * A quiet row of share controls: LinkedIn, X, Facebook and "Copy link" on desktop; the
+ * system share sheet and "Copy link" on phones. Plain links and a few lines
+ * of inline script, no third-party widgets. The preview the networks show is
+ * the page's own share image (og:image, see src/lib/share-subjects.ts).
+ *
+ * `text` is the sentence that goes with the link: the page's headline number
+ * on hub pages, the job and where it is on job pages.
+ */
+import { getLang, t, type Lang } from "../lib/i18n.ts";
+import { seriesChange, type Series } from "../lib/series.ts";
+import { roundPct } from "../lib/trend.ts";
+
+type Props = {
+  /** for pages without a language in their route, such as job pages */
+  lang?: Lang;
+} & (
+  | { text: string }
+  /** a hub page: "Google jobs: 3,228 open jobs, up 1.9% in 17 days", the same numbers as AsOf.astro */
+  | { title: string; count: number; series?: Series }
+);
+
+const props = Astro.props;
+const lang = props.lang ?? getLang(Astro.params.lang);
+const m = t(lang);
+const s = m.share;
+let text: string;
+if ("text" in props) text = props.text;
+else {
+  const change = props.series && (await seriesChange(props.series, props.count)).change;
+  text = `${props.title}: ${m.openJobs(props.count)}${change ? `, ${m.trend.change(roundPct(change.pct), change.days)}` : ""}`;
+}
+// the page's canonical URL, as Base.astro builds it
+const pathname = Astro.url.pathname.replace(/\.html$/, "").replace(/\/index$/, "") || "/";
+const url = new URL(pathname, Astro.site).href;
+const linkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+const x = `https://x.com/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+// Facebook takes only the link; the post text is the reader's own
+const facebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+---
+
+<div class="share" data-url={url} data-text={text} role="group" aria-label={s.label}>
+  <span class="muted share-label">{s.label}</span>
+  <button type="button" class="share-native" hidden>{s.native}</button>
+  <a class="share-net" href={linkedin} target="_blank" rel="noopener" aria-label={s.onLinkedin} data-method="linkedin">{s.linkedin}</a>
+  <a class="share-net" href={x} target="_blank" rel="noopener" aria-label={s.onX} data-method="x">{s.x}</a>
+  <a class="share-net" href={facebook} target="_blank" rel="noopener" aria-label={s.onFacebook} data-method="facebook">{s.facebook}</a>
+  <button type="button" class="share-copy" data-copied={s.copied}>{s.copy}</button>
+</div>
+
+<script is:inline>
+  (() => {
+    const track = (method) => window.gtag && window.gtag("event", "share", { method, item_id: location.pathname });
+    for (const box of document.querySelectorAll(".share:not([data-ready])")) {
+      box.dataset.ready = "";
+      const { url, text } = box.dataset;
+      const native = box.querySelector(".share-native");
+      // phones get their own share sheet in place of the two networks
+      if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+        native.hidden = false;
+        for (const a of box.querySelectorAll(".share-net")) a.hidden = true;
+        native.addEventListener("click", () => navigator.share({ text, url }).then(() => track("native"), () => {}));
+      }
+      for (const a of box.querySelectorAll(".share-net")) a.addEventListener("click", () => track(a.dataset.method));
+      const copy = box.querySelector(".share-copy");
+      const label = copy.textContent;
+      // the async clipboard API is refused in some embedded and older browsers; a selected textarea still copies there
+      const fallback = (value) => {
+        const area = document.createElement("textarea");
+        area.value = value;
+        area.setAttribute("readonly", "");
+        area.style.cssText = "position:absolute;left:-9999px";
+        document.body.append(area);
+        area.select();
+        const ok = document.execCommand("copy");
+        area.remove();
+        return ok;
+      };
+      copy.addEventListener("click", async () => {
+        const value = `${text} ${url}`;
+        const ok = await navigator.clipboard?.writeText(value).then(() => true, () => false);
+        if (!ok && !fallback(value)) {
+          // nothing could copy: let the reader copy it by hand
+          window.prompt(copy.textContent, value);
+          return;
+        }
+        track("copy");
+        copy.textContent = copy.dataset.copied;
+        copy.classList.add("done");
+        setTimeout(() => {
+          copy.textContent = label;
+          copy.classList.remove("done");
+        }, 1600);
+      });
+    }
+  })();
+</script>
+
+<style>
+  .share { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 4px; }
+  .share-label { font-size: 13px; margin-right: 2px; }
+  .share a,
+  .share button {
+    display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border: 1px solid var(--border); border-radius: 6px;
+    background: transparent; color: var(--text); font: inherit; font-size: 13px; text-decoration: none; cursor: pointer;
+  }
+  .share a:hover,
+  .share button:hover { border-color: var(--muted); }
+  .share [hidden] { display: none; }
+  .share .done { color: #16a34a; border-color: #16a34a; }
+  @media (max-width: 640px) {
+    .share a,
+    .share button { height: 40px; flex: 1; justify-content: center; }
+    .share-label { display: none; }
+  }
+</style>

@@ -1,0 +1,23 @@
+---
+/**
+ * A short "market snapshot" under a hub page's summary line: the two or
+ * three most notable patterns in its subject's numbers, as sentences
+ * (src/lib/insights.ts). Renders nothing when no pattern stands out.
+ */
+import { getLang, t } from "../lib/i18n.ts";
+import { insightSentences, type Insight } from "../lib/insights.ts";
+
+interface Props {
+  insights: Insight[];
+  /** the subject's display name in the page's language */
+  name: string;
+  /** a stable key for the subject, which picks the wording */
+  subjectKey: string;
+}
+
+const { insights, name, subjectKey } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const sentences = insightSentences(insights, name, lang, subjectKey);
+---
+
+{sentences.length > 0 && <p class="insights" aria-label={t(lang).insights.heading}>{sentences.join(" ")}</p>}

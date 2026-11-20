@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import AsOf from "../../components/AsOf.astro";
+import ShareButtons from "../../components/ShareButtons.astro";
 import BarList from "../../components/BarList.astro";
 import ColumnChart from "../../components/ColumnChart.astro";
 import LineChart from "../../components/LineChart.astro";
@@ -26,6 +27,7 @@ import { categoryName, getLang, localizePath, t, withLangs } from "../../lib/i18
 import { formatNumber, intlLocale } from "../../lib/locale.ts";
 import { TREND_MIN_DAYS } from "../../lib/constants.ts";
 import { reportUrl } from "../../lib/reports.ts";
+import { analyticsShare, pageImage } from "../../lib/share-subjects.ts";
 
 const TOP = 10;
 const MOVERS = 5;
@@ -98,9 +100,10 @@ const percent = (v: number) => `${Math.round(v)}%`;
 const pct = (n: number) => `${Math.round((n / Math.max(1, jobs.length)) * 100)}%`;
 ---
 
-<Base title={a.title} description={a.description(jobs.length)}>
+<Base title={a.title} description={a.description(jobs.length)} image={pageImage(await analyticsShare())}>
   <h1>{a.title}</h1>
   <AsOf title={m.sections.tech} count={jobs.length} series={{ section: "tech" }} />
+  <ShareButtons title={m.sections.tech} count={jobs.length} series={{ section: "tech" }} />
   {run && <p class="muted">{m.lastUpdated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></p>}
 
   <dl class="stats">

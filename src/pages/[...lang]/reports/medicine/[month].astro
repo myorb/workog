@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
 import ReportTable from "../../../../components/ReportTable.astro";
+import ShareButtons from "../../../../components/ShareButtons.astro";
 import { getHospitalIndex, getMedicineSnapshots } from "../../../../lib/jobs.ts";
 import { hospitalUrl } from "../../../../lib/hospitals.ts";
 import { GERMANY, getMedicineCountry, getState, levelUrl, medicineLocationUrl, specialtyUrl, stateName } from "../../../../lib/medicine.ts";
@@ -11,6 +12,8 @@ import { roundPct } from "../../../../lib/trend.ts";
 import { formatDate, formatMonth } from "../../../../lib/format.ts";
 import { countryName, getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
 import { report } from "../../../../lib/structured-data.ts";
+import { leaderInsights } from "../../../../lib/page-insights.ts";
+import { pageImage, reportShares } from "../../../../lib/share-subjects.ts";
 
 export const getStaticPaths = (async () => {
   const months = reportMonths(await getMedicineSnapshots(), new Date().toISOString().slice(0, 10));
@@ -73,6 +76,10 @@ if (base) {
   if (down) findings.push(rp.shrank(down.label, down.from! - down.to));
 }
 
+// records and streaks among the month's largest specialties, as of its last day
+const upToEnd = (await getMedicineSnapshots()).filter((s) => s.date <= end.date);
+findings.push(...leaderInsights(upToEnd, "specialties", specialties.slice(0, 10), lang));
+const image = pageImage((await reportShares("medicine")).find((s) => s.path === reportUrl("medicine", r.month)));
 const since = base && date(base.date);
 const url = new URL(localizePath(reportUrl("medicine", r.month), lang), Astro.site);
 const description = rp.medicineDescription(end.open, month);
@@ -81,7 +88,7 @@ const jsonLd = [
 ];
 ---
 
-<Base title={title} description={description} section="medicine" jsonLd={jsonLd}>
+<Base title={title} description={description} section="medicine" jsonLd={jsonLd} image={image}>
   <p class="muted">
     <a href={localizePath(reportsUrl, lang)}>{rp.title}</a> /
   </p>
@@ -90,6 +97,7 @@ const jsonLd = [
     {rp.period(date(r.first.date), date(end.date), r.complete)}
     {r.clipped && base && <> {rp.clipped(date(base.date))}</>}
   </p>
+  <ShareButtons text={findings[0]!.replace(/\.\.$/, ".")} />
 
   <section>
     <h2>{rp.findings}</h2>

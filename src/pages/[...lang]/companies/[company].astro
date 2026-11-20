@@ -3,6 +3,8 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import AsOf from "../../../components/AsOf.astro";
+import Insights from "../../../components/Insights.astro";
+import ShareButtons from "../../../components/ShareButtons.astro";
 import Pager from "../../../components/Pager.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
@@ -10,6 +12,8 @@ import { countTags, getCompanies, getJobsByCompany } from "../../../lib/jobs.ts"
 import { cityLinks, technologyLinks } from "../../../lib/links.ts";
 import { categoryName, getLang, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
+import { hubInsights } from "../../../lib/page-insights.ts";
+import { companyShare, pageImage } from "../../../lib/share-subjects.ts";
 
 export const getStaticPaths = (async () => {
   const companies = await getCompanies();
@@ -23,13 +27,18 @@ const jobs = await getJobsByCompany(company.key);
 const counts = await countTags(jobs);
 const cities = cityLinks(counts.cities).slice(0, 24);
 const techs = technologyLinks(counts.technologies);
+const series = { section: "tech", dim: "companies", key: company.key } as const;
+const insights = await hubInsights({ series, count: jobs.length, parts: new Map(cities.map((c) => [c.label, c.count])) });
+const image = pageImage(await companyShare(company.key));
 const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sort().map((c) => categoryName(c, lang));
 ---
 
-<Base title={m.company.title(company.name)} description={m.company.description(jobs.length, company.name, categories.slice(0, 4))}>
+<Base title={m.company.title(company.name)} description={m.company.description(jobs.length, company.name, categories.slice(0, 4))} image={image}>
   <Breadcrumbs trail={[{ name: m.nav.companies, href: "/companies" }]} current={m.company.title(company.name)} />
   <h1>{m.company.title(company.name)}</h1>
-  <AsOf title={m.company.title(company.name)} count={jobs.length} series={{ section: "tech", dim: "companies", key: company.key }} limit={LIST_PAGE_LIMIT} />
+  <AsOf title={m.company.title(company.name)} count={jobs.length} series={series} limit={LIST_PAGE_LIMIT} />
+  <Insights insights={insights} name={company.name} subjectKey={company.key} />
+  <ShareButtons title={m.company.title(company.name)} count={jobs.length} series={series} />
   {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
   {jobs.length > 0 && <h2>{m.latestJobs}</h2>}

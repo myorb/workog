@@ -3,6 +3,8 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
 import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../../components/AsOf.astro";
+import Insights from "../../../../../components/Insights.astro";
+import ShareButtons from "../../../../../components/ShareButtons.astro";
 import Pager from "../../../../../components/Pager.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
@@ -11,6 +13,8 @@ import { type Area, areaFilter, areaName, GERMANY, getArea, levelUrl, medicineCo
 import { levelLinks, medicineCityLinks, specialtyLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
+import { hubInsights } from "../../../../../lib/page-insights.ts";
+import { medicineAreaShare, pageImage } from "../../../../../lib/share-subjects.ts";
 
 // Every German state and every country, Germany included; empty ones aren't indexed
 export const getStaticPaths = (() =>
@@ -30,12 +34,17 @@ const cities = medicineCityLinks((await getMedicineCounts()).cities, germany ? n
 const byState = germany ? stateLinks(counts.states, lang) : [];
 const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, undefined, area.slug));
 const germanyName = areaName(getArea(GERMANY)!, lang);
+const series = { section: "medicine", dim: area.kind === "state" ? "states" : "countries", key: area.slug } as const;
+const insights = await hubInsights({ series, count: jobs.length, parts: new Map(bySpecialty.map((s) => [s.label, s.count])) });
+const image = pageImage(await medicineAreaShare(area));
 ---
 
-<Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={isThin(jobs.length)}>
+<Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={isThin(jobs.length)} image={image}>
   <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: md.nav.locations, href: "/medicine/locations" }, ...(area.kind === "state" ? [{ name: germanyName, href: medicineLocationUrl(GERMANY) }] : [])]} current={md.placeTitle(place)} />
   <h1>{md.placeTitle(place)}</h1>
-  <AsOf title={md.placeTitle(place)} count={jobs.length} series={{ section: "medicine", dim: area.kind === "state" ? "states" : "countries", key: area.slug }} limit={LIST_PAGE_LIMIT} />
+  <AsOf title={md.placeTitle(place)} count={jobs.length} series={series} limit={LIST_PAGE_LIMIT} />
+  <Insights insights={insights} name={place} subjectKey={area.slug} />
+  <ShareButtons title={md.placeTitle(place)} count={jobs.length} series={series} />
   {byState.length > 0 && <><h2>{md.states}</h2><TagLinks links={byState} /></>}
   {cities.length > 0 && <><h2>{germany ? md.topCities : md.cities}</h2><TagLinks links={cities} /></>}
   {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}

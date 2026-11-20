@@ -20,9 +20,11 @@ interface Props {
   section?: "tech" | "medicine" | "start";
   /** the language of a page that exists in one language only (translated: false), English by default */
   lang?: Lang;
+  /** the page's own share image (see src/lib/share-subjects.ts), in place of its section's */
+  image?: { path: string; alt: string };
 }
 
-const { title, description, noindex = false, translated = true, jsonLd = [], section = "tech" } = Astro.props;
+const { title, description, noindex = false, translated = true, jsonLd = [], section = "tech", image } = Astro.props;
 const lang = translated ? getLang(Astro.params.lang) : (Astro.props.lang ?? "en");
 const m = t(lang);
 const u = (path: string) => localizePath(path, lang);
@@ -41,7 +43,7 @@ const shareImages = {
   medicine: { path: "/og-medicine.png", alt: "Workog — top doctor jobs, every hospital that matters" },
   start: { path: "/og.png", alt: "Workog — top tech jobs, top doctor jobs" },
 };
-const shareImage = shareImages[section];
+const shareImage = image ?? shareImages[section];
 // the favicon takes the section's color, like the logo in the top bar
 const favicon = faviconPaths(section);
 const ogImage = new URL(shareImage.path, Astro.site);

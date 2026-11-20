@@ -3,6 +3,8 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
 import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../../components/AsOf.astro";
+import Insights from "../../../../../components/Insights.astro";
+import ShareButtons from "../../../../../components/ShareButtons.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
@@ -10,6 +12,8 @@ import { levelUrl, specialties, specialtyUrl } from "../../../../../lib/medicine
 import { levelLinks, medicineCountryLinks, specialtyCityLinks, stateLinks } from "../../../../../lib/links.ts";
 import { getLang, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
+import { hubInsights } from "../../../../../lib/page-insights.ts";
+import { pageImage, specialtyShare } from "../../../../../lib/share-subjects.ts";
 
 export const getStaticPaths = (() => withLangs(specialties.map((specialty) => ({ params: { specialty } })))) satisfies GetStaticPaths;
 
@@ -24,12 +28,17 @@ const byCountry = medicineCountryLinks(counts.countries, lang, (country) => spec
 const byState = stateLinks(counts.states, lang, (state) => specialtyUrl(specialty, state));
 const cities = specialtyCityLinks(specialty, counts.cities, (await getMedicineCounts()).cities).slice(0, 24);
 const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty));
+const series = { section: "medicine", dim: "specialties", key: specialty } as const;
+const insights = await hubInsights({ series, count: jobs.length, parts: new Map(byCountry.map((c) => [c.label, c.count])) });
+const image = pageImage(await specialtyShare(specialty));
 ---
 
-<Base title={md.specialtyTitle(name)} description={md.specialtyDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)}>
+<Base title={md.specialtyTitle(name)} description={md.specialtyDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)} image={image}>
   <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: md.nav.specialties, href: "/medicine/specialties" }]} current={md.specialtyTitle(name)} />
   <h1>{md.specialtyTitle(name)}</h1>
-  <AsOf title={md.specialtyTitle(name)} count={jobs.length} series={{ section: "medicine", dim: "specialties", key: specialty }} limit={LIST_PAGE_LIMIT} />
+  <AsOf title={md.specialtyTitle(name)} count={jobs.length} series={series} limit={LIST_PAGE_LIMIT} />
+  <Insights insights={insights} name={name} subjectKey={specialty} />
+  <ShareButtons title={md.specialtyTitle(name)} count={jobs.length} series={series} />
   {byCountry.length > 1 && <><h2>{md.byCountry}</h2><TagLinks links={byCountry} /></>}
   {byState.length > 0 && <><h2>{md.byState}</h2><TagLinks links={byState} /></>}
   {cities.length > 0 && <><h2>{md.topCities}</h2><TagLinks links={cities} /></>}

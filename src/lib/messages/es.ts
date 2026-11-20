@@ -15,6 +15,13 @@ const companies = { one: "empresa", other: "empresas" };
 const countries = { one: "país", other: "países" };
 const cities = { one: "ciudad", other: "ciudades" };
 const days = { one: "día", other: "días" };
+const signed = (x: number) => (x > 0 ? `+${n(x)}` : x < 0 ? `−${n(-x)}` : n(0));
+const insightPeers = {
+  companies: techCompanies,
+  countries,
+  specialties: { one: "especialidad", other: "especialidades" },
+  states: { one: "estado federado alemán", other: "estados federados alemanes" },
+};
 const techJobs = (tech: string) => ({ one: `empleo de ${tech} abierto`, other: `empleos de ${tech} abiertos` });
 
 export const es = {
@@ -429,5 +436,43 @@ export const es = {
       earlier: "← Día anterior",
       later: "Día siguiente →",
     },
+  },
+  share: {
+    label: "Compartir",
+    native: "Compartir",
+    linkedin: "LinkedIn",
+    x: "X",
+    facebook: "Facebook",
+    copy: "Copiar enlace",
+    copied: "Copiado",
+    onLinkedin: "Compartir en LinkedIn",
+    onX: "Compartir en X",
+    onFacebook: "Compartir en Facebook",
+    job: (title: string, employer: string, where: string) => `${title} en ${employer}${where ? `, ${where}` : ""}`,
+  },
+  insights: {
+    heading: "Resumen del mercado",
+    record: [
+      (name: string, high: boolean, d: number) =>
+        `${name} tiene ahora ${high ? "más" : "menos"} ofertas abiertas que cualquier otro día de los ${p(d, days)} que Workog lleva registrando.`,
+      (name: string, high: boolean, d: number) =>
+        `${high ? "Máximo" : "Mínimo"} para ${name}: ningún día de los últimos ${p(d, days)} tuvo ${high ? "más" : "menos"} ofertas abiertas.`,
+    ],
+    streak: [
+      (name: string, up: boolean, d: number) => `Las ofertas abiertas de ${name} llevan ${p(d, days)} seguidos ${up ? "subiendo" : "bajando"}.`,
+    ],
+    rank: [
+      (name: string, rank: number, of: number, peers: "companies" | "countries" | "specialties" | "states") =>
+        `${name} ocupa el puesto n.º ${rank} de ${p(of, insightPeers[peers])} por ofertas abiertas.`,
+    ],
+    share: [
+      (name: string, pct: number, section: "tech" | "medicine") =>
+        `${name} concentra el ${n(pct)}% de todas las ${section === "tech" ? "ofertas tecnológicas abiertas" : "ofertas abiertas para médicos"} en Workog.`,
+    ],
+    outpaced: [
+      (name: string, pct: number, total: number, d: number, section: "tech" | "medicine") =>
+        `${name}: ${signed(pct)}% en ${p(d, days)}, ${pct > total ? "por encima de" : "por debajo de"} ${section === "tech" ? "el mercado tecnológico en conjunto" : "el total de ofertas para médicos"} (${signed(total)}%).`,
+    ],
+    top: [(label: string, k: number, pct: number) => `La mayor cuota es de ${label}: ${p(k, openJobs)} (${n(pct)}%).`],
   },
 } satisfies Messages;

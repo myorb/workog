@@ -16,6 +16,14 @@ const countries = { one: "Land", other: "Ländern" };
 const cities = { one: "Stadt", other: "Städten" };
 const days = { one: "Tag", other: "Tage" };
 const daysDative = { one: "Tag", other: "Tagen" };
+const signed = (x: number) => (x > 0 ? `+${n(x)}` : x < 0 ? `−${n(-x)}` : n(0));
+// after "von": "Platz 2 von 74 Tech-Unternehmen"
+const insightPeers = {
+  companies: techCompanies,
+  countries,
+  specialties: { one: "Fachrichtung", other: "Fachrichtungen" },
+  states: { one: "Bundesland", other: "Bundesländern" },
+};
 const techJobs = (tech: string) => ({ one: `offener ${tech}-Job`, other: `offene ${tech}-Jobs` });
 
 export const de = {
@@ -432,5 +440,43 @@ export const de = {
       earlier: "← Früherer Tag",
       later: "Späterer Tag →",
     },
+  },
+  share: {
+    label: "Teilen",
+    native: "Teilen",
+    linkedin: "LinkedIn",
+    x: "X",
+    facebook: "Facebook",
+    copy: "Link kopieren",
+    copied: "Kopiert",
+    onLinkedin: "Auf LinkedIn teilen",
+    onX: "Auf X teilen",
+    onFacebook: "Auf Facebook teilen",
+    job: (title: string, employer: string, where: string) => `${title} bei ${employer}${where ? `, ${where}` : ""}`,
+  },
+  insights: {
+    heading: "Marktüberblick",
+    record: [
+      (name: string, high: boolean, d: number) =>
+        `${name}: so ${high ? "viele" : "wenige"} offene Stellen wie an keinem anderen Tag in den ${p(d, daysDative)}, die Workog erfasst.`,
+      (name: string, high: boolean, d: number) =>
+        `${high ? "Höchststand" : "Tiefststand"} für ${name}: Kein Tag der letzten ${p(d, days)} hatte ${high ? "mehr" : "weniger"} offene Stellen.`,
+    ],
+    streak: [
+      (name: string, up: boolean, d: number) => `${name}: Die Zahl offener Stellen ist ${p(d, days)} in Folge ${up ? "gestiegen" : "gesunken"}.`,
+    ],
+    rank: [
+      (name: string, rank: number, of: number, peers: "companies" | "countries" | "specialties" | "states") =>
+        `${name} liegt bei den offenen Stellen auf Platz ${rank} von ${p(of, insightPeers[peers])}.`,
+    ],
+    share: [
+      (name: string, pct: number, section: "tech" | "medicine") =>
+        `${name}: ${n(pct)} % ${section === "tech" ? "aller offenen Tech-Jobs" : "aller offenen Arztstellen"} auf Workog.`,
+    ],
+    outpaced: [
+      (name: string, pct: number, total: number, d: number, section: "tech" | "medicine") =>
+        `${name}: ${signed(pct)} % in ${p(d, daysDative)}, ${pct > total ? "stärker als" : "schwächer als"} ${section === "tech" ? "der Tech-Markt insgesamt" : "Arztstellen insgesamt"} (${signed(total)} %).`,
+    ],
+    top: [(label: string, k: number, pct: number) => `Größter Anteil: ${label} mit ${p(k, openJobs)} (${n(pct)} %).`],
   },
 } satisfies Messages;

@@ -15,6 +15,14 @@ const companies = { one: "company", other: "companies" };
 const countries = { one: "country", other: "countries" };
 const cities = { one: "city", other: "cities" };
 const days = { one: "day", other: "days" };
+const signed = (x: number) => (x > 0 ? `+${n(x)}` : x < 0 ? `−${n(-x)}` : n(0));
+type PeerKind = "companies" | "countries" | "specialties" | "states";
+const insightPeers: Record<PeerKind, { one: string; other: string }> = {
+  companies: techCompanies,
+  countries,
+  specialties: { one: "specialty", other: "specialties" },
+  states: { one: "German state", other: "German states" },
+};
 
 export const en = {
   nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics", remote: "Remote" },
@@ -429,6 +437,52 @@ export const en = {
       earlier: "← Earlier day",
       later: "Later day →",
     },
+  },
+  // generated sentences about a page's subject (src/lib/insights.ts); several wordings per pattern, picked per page
+  share: {
+    label: "Share",
+    native: "Share",
+    linkedin: "LinkedIn",
+    x: "X",
+    facebook: "Facebook",
+    copy: "Copy link",
+    copied: "Copied",
+    onLinkedin: "Share on LinkedIn",
+    onX: "Share on X",
+    onFacebook: "Share on Facebook",
+    job: (title: string, employer: string, where: string) => `${title} at ${employer}${where ? `, ${where}` : ""}`,
+  },
+  insights: {
+    heading: "Market snapshot",
+    record: [
+      (name: string, high: boolean, d: number) =>
+        `${name} has ${high ? "more" : "fewer"} open jobs now than on any other day in the ${p(d, days)} Workog has tracked.`,
+      (name: string, high: boolean, d: number) =>
+        `A new ${high ? "high" : "low"} for ${name}: no day in the last ${p(d, days)} had ${high ? "more" : "fewer"} open jobs.`,
+    ],
+    streak: [
+      (name: string, up: boolean, d: number) => `Open jobs at ${name} have ${up ? "risen" : "fallen"} ${p(d, days)} in a row.`,
+      (name: string, up: boolean, d: number) => `${name} has had ${up ? "more" : "fewer"} open jobs each day for ${p(d, days)} straight.`,
+    ],
+    rank: [
+      (name: string, rank: number, of: number, peers: PeerKind) => `${name} ranks #${rank} of ${p(of, insightPeers[peers])} by open jobs.`,
+      (name: string, rank: number, of: number, peers: PeerKind) =>
+        rank === 1
+          ? `${name} has the most open jobs of the ${p(of, insightPeers[peers])} Workog tracks.`
+          : `${name} is #${rank} by open jobs among ${p(of, insightPeers[peers])}.`,
+    ],
+    share: [
+      (name: string, pct: number, section: "tech" | "medicine") =>
+        `${name} accounts for ${n(pct)}% of all ${section === "tech" ? "open tech jobs" : "open doctor jobs"} on Workog.`,
+    ],
+    outpaced: [
+      (name: string, pct: number, total: number, d: number, section: "tech" | "medicine") =>
+        `${name} ${pct >= 0 ? `grew ${n(pct)}%` : `shrank ${n(-pct)}%`} in ${p(d, days)}, ${pct > total ? "ahead of" : "behind"} ${section === "tech" ? "the tech market as a whole" : "doctor jobs overall"} (${signed(total)}%).`,
+    ],
+    top: [
+      (label: string, k: number, pct: number) => `${label} has the largest share: ${p(k, openJobs)} (${n(pct)}%).`,
+      (label: string, k: number, pct: number) => `The biggest part is ${label}, with ${p(k, openJobs)} (${n(pct)}%).`,
+    ],
   },
 };
 
