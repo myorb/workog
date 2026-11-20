@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import JobList from "../../../components/JobList.astro";
 import { countTags, getJobsWhere } from "../../../lib/jobs.ts";
 import { countries } from "../../../lib/places.ts";
@@ -23,7 +24,7 @@ const jobs = await getJobsWhere({ remote: true, country: country.slug });
 ---
 
 <Base title={m.remoteJobs.titleIn(name)} description={m.remoteJobs.countryDescription(jobs.length, name)} noindex={isThin(jobs.length)}>
-  <p class="muted"><a href={localizePath(remoteUrl(), lang)}>{m.remoteJobs.title}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.remoteJobs.title, href: remoteUrl() }]} current={m.remoteJobs.titleIn(name)} />
   <h1>{m.remoteJobs.titleIn(name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

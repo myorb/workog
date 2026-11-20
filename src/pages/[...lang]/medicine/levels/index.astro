@@ -1,10 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { getMedicineCounts } from "../../../../lib/jobs.ts";
 import { levelLinks } from "../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../lib/i18n.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
@@ -15,7 +16,7 @@ const links = levelLinks((await getMedicineCounts()).levels, lang);
 ---
 
 <Base title={md.levelsTitle} description={md.levelsDescription} section="medicine" noindex={!links.length}>
-  <p class="muted"><a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }]} current={md.levelsTitle} />
   <h1>{md.levelsTitle}</h1>
   {links.length ? <TagLinks links={links} /> : <p>{md.none}</p>}
 </Base>

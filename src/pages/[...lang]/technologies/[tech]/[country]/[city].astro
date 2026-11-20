@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../../components/JobList.astro";
 import { countTags, getJobsWhere, matches } from "../../../../../lib/jobs.ts";
 import { cities, getCountry } from "../../../../../lib/places.ts";
@@ -45,10 +46,7 @@ const none = m.tech.noneIn(tech.name, city.name);
   description={m.tech.cityDescription(jobs.length, tech.name, `${city.name}, ${name}`)}
   noindex={isThin(jobs.length)}
 >
-  <p class="muted">
-    <a href={u("/technologies")}>{m.nav.technologies}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
-    <a href={u(technologyUrl(tech.slug, country.slug))}>{name}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.nav.technologies, href: "/technologies" }, { name: tech.name, href: technologyUrl(tech.slug) }, { name, href: technologyUrl(tech.slug, country.slug) }]} current={m.tech.titleIn(tech.name, city.name)} />
   <h1>{m.tech.titleIn(tech.name, city.name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

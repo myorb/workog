@@ -38,6 +38,54 @@ export const de = {
     newestShown: (k: number) => `Die ${n(k)} neuesten werden angezeigt.`,
   },
   latestJobs: "Neueste Stellen",
+  pager: {
+    label: "Seiten",
+    page: (k: number, total: number) => `Seite ${n(k)} von ${n(total)}`,
+    titled: (title: string, k: number) => `${title}, Seite ${n(k)}`,
+    prev: "Zurück",
+    next: "Weiter",
+  },
+  job: {
+    titleAt: (title: string, employer: string) => `${title} bei ${employer}`,
+    description: (title: string, employer: string, where: string, remote: boolean, board?: string) =>
+      `${title} bei ${employer} — ${where}${remote ? " (remote)" : ""}. ${board ? `Bewerbung über ${board}.` : `Bewerbung über die offizielle Karriereseite von ${employer}.`}`,
+    closed: (date: string) => `Diese Stelle wurde am ${date} geschlossen und nimmt keine Bewerbungen mehr an.`,
+    facts: {
+      hospital: "Klinik oder Praxis", location: "Ort", notListed: "Nicht angegeben", specialty: "Fachgebiet", level: "Karrierestufe",
+      salary: "Gehalt", occupation: "Beruf", posted: "Veröffentlicht", listedOn: "Gelistet auf", company: "Unternehmen", employmentType: "Anstellungsart", team: "Team",
+    },
+    applyVia: (board: string) => `Bewerben über ${board}`,
+    applyEmployer: "Auf der Seite des Arbeitgebers bewerben",
+    applyOn: (company: string) => `Auf der Seite von ${company} bewerben`,
+    applyOnBoard: (board: string) => `Auf ${board} bewerben`,
+    noDescription: "Die vollständige Beschreibung steht in der Originalanzeige.",
+    moreSpecialty: (specialty: string) => `Weitere Stellen: ${specialty}`,
+    moreMedicalIn: (area: string) => `Weitere Medizin-Jobs in ${area}`,
+    browseSimilar: "Ähnliche Stellen",
+    moreAt: (category: string | undefined, company: string, board: boolean) => `Weitere ${category ? `Stellen in ${category}` : "Stellen"} ${board ? "auf" : "bei"} ${company}`,
+    allAt: (count: number, company: string, board: boolean) => `Alle ${n(count)} Stellen ${board ? "auf" : "bei"} ${company}`,
+    moreRemote: "Weitere Remote-Stellen",
+    moreIn: (place: string) => `Weitere Stellen in ${place}`,
+    salaryUnits: { HOUR: "pro Stunde", DAY: "pro Tag", WEEK: "pro Woche", MONTH: "pro Monat", YEAR: "pro Jahr" },
+    glanceTitle: "Auf einen Blick",
+    glance: {
+      posted: (employer: string, date: string) => `${employer} hat diese Stelle am ${date} veröffentlicht.`,
+      openToday: "Sie ist seit heute ausgeschrieben.",
+      openFor: (d: number) => `Sie ist seit ${p(d, daysDative)} ausgeschrieben.`,
+      firstFound: (date: string) => `Workog hat diese Stelle am ${date} zuerst gefunden und prüft seitdem jeden Morgen, ob sie noch offen ist.`,
+      names: (items: string[]) => `Die Anzeige nennt ${list(items)}.`,
+      pay: (salary: string) => `Das Gehalt ist angegeben: ${salary}.`,
+      noPay: "Ein Gehalt ist nicht angegeben.",
+      employerJobs: (name: string, count: number, doctors: boolean, change?: { pct: number; days: number }) =>
+        `${name} hat ${p(count, openJobs)}${doctors ? " für Ärztinnen und Ärzte" : ""} auf Workog${
+          change ? (change.pct === 0 ? `, etwa so viele wie vor ${p(change.days, daysDative)}` : `, ${n(Math.abs(change.pct))} % ${change.pct > 0 ? "mehr" : "weniger"} als vor ${p(change.days, daysDative)}`) : ""
+        }.`,
+      nearby: (count: number, kind: { specialty?: string; medical: boolean }, where: string) =>
+        `Workog listet ${kind.specialty ? `${p(count, openJobs)} im Fachgebiet ${kind.specialty}` : kind.medical ? `${p(count, { one: "offenen Medizin-Job", other: "offene Medizin-Jobs" })}` : p(count, openJobs)} ${
+          ({ Schweiz: "in der Schweiz", Niederlande: "in den Niederlanden", "Vereinigtes Königreich": "im Vereinigten Königreich", "Vereinigte Staaten": "in den Vereinigten Staaten", Slowakei: "in der Slowakei", Türkei: "in der Türkei" } as Record<string, string>)[where] ?? `in ${where}`
+        }.`,
+    },
+  },
   companiesHiring: "Unternehmen mit offenen Stellen",
   relatedTechnologies: "Verwandte Technologien",
   allCompanies: "Alle Unternehmen →",

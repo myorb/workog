@@ -37,6 +37,52 @@ export const es = {
     newestShown: (k: number) => `Se muestran los ${n(k)} más recientes.`,
   },
   latestJobs: "Últimos empleos",
+  pager: {
+    label: "Páginas",
+    page: (k: number, total: number) => `Página ${n(k)} de ${n(total)}`,
+    titled: (title: string, k: number) => `${title}, página ${n(k)}`,
+    prev: "Anterior",
+    next: "Siguiente",
+  },
+  job: {
+    titleAt: (title: string, employer: string) => `${title} en ${employer}`,
+    description: (title: string, employer: string, where: string, remote: boolean, board?: string) =>
+      `${title} en ${employer} — ${where}${remote ? " (remoto)" : ""}. ${board ? `Solicítalo a través de ${board}.` : `Solicítalo en la web oficial de empleo de ${employer}.`}`,
+    closed: (date: string) => `Esta oferta se cerró el ${date} y ya no acepta candidaturas.`,
+    facts: {
+      hospital: "Hospital o consulta", location: "Ubicación", notListed: "No indicada", specialty: "Especialidad", level: "Nivel profesional",
+      salary: "Salario", occupation: "Ocupación", posted: "Publicada", listedOn: "Publicada en", company: "Empresa", employmentType: "Tipo de empleo", team: "Equipo",
+    },
+    applyVia: (board: string) => `Solicitar a través de ${board}`,
+    applyEmployer: "Solicitar en la web del empleador",
+    applyOn: (company: string) => `Solicitar en la web de ${company}`,
+    applyOnBoard: (board: string) => `Solicitar en ${board}`,
+    noDescription: "La descripción completa está en la oferta original.",
+    moreSpecialty: (specialty: string) => `Más empleos de ${specialty.toLowerCase()}`,
+    moreMedicalIn: (area: string) => `Más empleos médicos en ${area}`,
+    browseSimilar: "Empleos similares",
+    moreAt: (category: string | undefined, company: string, board: boolean) => `Más empleos${category ? ` de ${category}` : ""} ${board ? "en" : "en"} ${company}`,
+    allAt: (count: number, company: string) => `Los ${n(count)} empleos en ${company}`,
+    moreRemote: "Más empleos remotos",
+    moreIn: (place: string) => `Más empleos en ${place}`,
+    salaryUnits: { HOUR: "por hora", DAY: "por día", WEEK: "por semana", MONTH: "al mes", YEAR: "al año" },
+    glanceTitle: "De un vistazo",
+    glance: {
+      posted: (employer: string, date: string) => `${employer} publicó esta oferta el ${date}.`,
+      openToday: "Se publicó hoy.",
+      openFor: (d: number) => `Lleva abierta ${p(d, { one: "día", other: "días" })}.`,
+      firstFound: (date: string) => `Workog encontró esta oferta el ${date} y comprueba cada mañana que sigue abierta.`,
+      names: (items: string[]) => `La oferta menciona ${list(items)}.`,
+      pay: (salary: string) => `Indica el salario: ${salary}.`,
+      noPay: "No indica el salario.",
+      employerJobs: (name: string, count: number, doctors: boolean, change?: { pct: number; days: number }) =>
+        `${name} tiene ${p(count, openJobs)}${doctors ? " para médicos" : ""} en Workog${
+          change ? (change.pct === 0 ? `, casi las mismas que hace ${p(change.days, { one: "día", other: "días" })}` : `, un ${n(Math.abs(change.pct))} % ${change.pct > 0 ? "más" : "menos"} que hace ${p(change.days, { one: "día", other: "días" })}`) : ""
+        }.`,
+      nearby: (count: number, kind: { specialty?: string; medical: boolean }, where: string) =>
+        `Workog muestra ${p(count, openJobs)}${kind.specialty ? ` de ${kind.specialty.toLowerCase()}` : kind.medical ? " para médicos" : ""} en ${where}.`,
+    },
+  },
   companiesHiring: "Empresas que contratan",
   relatedTechnologies: "Tecnologías relacionadas",
   allCompanies: "Todas las empresas →",

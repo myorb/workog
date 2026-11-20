@@ -1,13 +1,14 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../components/AsOf.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineJobsWhere } from "../../../../lib/jobs.ts";
 import { levels, levelUrl } from "../../../../lib/medicine.ts";
 import { specialtyLinks, medicineCountryLinks, stateLinks } from "../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 export const getStaticPaths = (() => withLangs(levels.map((level) => ({ params: { level } })))) satisfies GetStaticPaths;
@@ -25,10 +26,7 @@ const byState = stateLinks(counts.states, lang, (s) => levelUrl(level, undefined
 ---
 
 <Base title={md.levelTitle(name)} description={md.levelDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
-    <a href={localizePath("/medicine/levels", lang)}>{md.nav.levels}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: md.nav.levels, href: "/medicine/levels" }]} current={md.levelTitle(name)} />
   <h1>{md.levelTitle(name)}</h1>
   <AsOf title={md.levelTitle(name)} count={jobs.length} series={{ section: "medicine", dim: "levels", key: level }} limit={LIST_PAGE_LIMIT} />
   {bySpecialty.length > 0 && <><h2>{md.bySpecialty}</h2><TagLinks links={bySpecialty} /></>}

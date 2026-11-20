@@ -1,12 +1,14 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import AsOf from "../../../components/AsOf.astro";
+import Pager from "../../../components/Pager.astro";
 import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import { countTags, getCompanies, getJobsByCompany } from "../../../lib/jobs.ts";
 import { cityLinks, technologyLinks } from "../../../lib/links.ts";
-import { categoryName, getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+import { categoryName, getLang, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
 
 export const getStaticPaths = (async () => {
@@ -25,11 +27,12 @@ const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sor
 ---
 
 <Base title={m.company.title(company.name)} description={m.company.description(jobs.length, company.name, categories.slice(0, 4))}>
-  <p class="muted"><a href={localizePath("/companies", lang)}>{m.nav.companies}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.nav.companies, href: "/companies" }]} current={m.company.title(company.name)} />
   <h1>{m.company.title(company.name)}</h1>
   <AsOf title={m.company.title(company.name)} count={jobs.length} series={{ section: "tech", dim: "companies", key: company.key }} limit={LIST_PAGE_LIMIT} />
   {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
   {jobs.length > 0 && <h2>{m.latestJobs}</h2>}
   {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} showCompany={false} /> : <p>{m.company.none}</p>}
+  <Pager base={`/companies/${company.key}`} page={1} jobCount={jobs.length} />
 </Base>

@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../components/AsOf.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
@@ -35,11 +36,7 @@ const byLevel = levelLinks(counts.levels, lang);
 ---
 
 <Base title={md.hospitalTitle(name)} description={md.hospitalDescription(jobs.length, name)} section="medicine" noindex={!jobs.length}>
-  <p class="muted">
-    <a href={u("/medicine")}>{m.sections.medicine}</a> /
-    <a href={u(hospitalsUrl)}>{md.nav.hospitals}</a> /
-    {parent && <><a href={u(hospitalUrl(parent.slug))}>{parent.name}</a> /</>}
-  </p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: md.nav.hospitals, href: hospitalsUrl }, ...(parent ? [{ name: parent.name, href: hospitalUrl(parent.slug) }] : [])]} current={md.hospitalTitle(name)} />
   <h1>{md.hospitalTitle(name)}</h1>
   <AsOf title={md.hospitalTitle(name)} count={jobs.length} series={{ section: "medicine", dim: "hospitals", key: hospital }} limit={LIST_PAGE_LIMIT} />
   {parent && <p class="muted">{md.partOf} <a href={u(hospitalUrl(parent.slug))}>{parent.name}</a></p>}

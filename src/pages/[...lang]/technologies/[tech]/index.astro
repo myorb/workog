@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../components/AsOf.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
@@ -27,7 +28,7 @@ const remote = jobs.filter((j) => j.remote).length;
 ---
 
 <Base title={m.tech.title(tech.name)} description={m.tech.description(jobs.length, tech.name, countries.length)} noindex={isThin(jobs.length)}>
-  <p class="muted"><a href={localizePath("/technologies", lang)}>{m.nav.technologies}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.nav.technologies, href: "/technologies" }]} current={m.tech.title(tech.name)} />
   <h1>{m.tech.title(tech.name)}</h1>
   <AsOf title={m.tech.title(tech.name)} count={jobs.length} series={{ section: "tech", dim: "technologies", key: tech.slug }} limit={LIST_PAGE_LIMIT} />
   {remote > 0 && <p><a href={localizePath(remoteTechnologyUrl(tech.slug), lang)}>{m.remoteJobs.tech(tech.name)} ({remote}) →</a></p>}

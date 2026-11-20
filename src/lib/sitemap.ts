@@ -1,7 +1,8 @@
-import { getCompanies, getHospitalIndex, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { getCompanies, getHospitalIndex, getJobsByCompany, getMedicineJobsWhere, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
 import { reportMonths, reportsUrl, reportUrl } from "./reports.ts";
 import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
-import { levelUrl, medicineLocationUrl, specialtyUrl } from "./medicine.ts";
+import { areaFilter, getArea, levelUrl, medicineCountries, medicineLocationUrl, specialtyUrl, states } from "./medicine.ts";
+import { extraPages, pageUrl } from "./pagination.ts";
 import { getMedicineComboCounts, medicineCityLinks, specialtyCityKeys } from "./links.ts";
 import { cityUrl, countryUrl, employmentUrl, remoteTechnologyUrl, remoteUrl, technologyUrl } from "./links.ts";
 import { getCity } from "./places.ts";
@@ -32,7 +33,11 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const jobs = await getOpenJobs();
   const paths = new Set(["/", "/tech", "/companies", "/locations", "/technologies", "/employment", "/analytics"]);
 
-  for (const company of await getCompanies()) paths.add(`/companies/${company.key}`);
+  for (const company of await getCompanies()) {
+    const base = `/companies/${company.key}`;
+    paths.add(base);
+    for (const page of extraPages((await getJobsByCompany(company.key)).length)) paths.add(pageUrl(base, page));
+  }
 
   // Browse pages count their jobs, each job once per page, and only pages that aren't thin are listed
   const hubs = new Map<string, number>();
@@ -77,6 +82,11 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
       if (level && (specialty || area)) paths.add(levelUrl(level, specialty, area, city));
     }
     for (const area of [...listed(med.countries), ...listed(med.states)]) paths.add(medicineLocationUrl(area));
+    // list pages behind each country and state, so every medical job is a few clicks from /medicine
+    for (const { slug } of [...states, ...medicineCountries]) {
+      const jobCount = (await getMedicineJobsWhere(areaFilter(getArea(slug)!))).length;
+      for (const page of extraPages(jobCount)) paths.add(pageUrl(medicineLocationUrl(slug), page));
+    }
     for (const city of medicineCityLinks(med.cities)) paths.add(city.href);
     const hospitals = await getHospitalIndex();
     paths.add(hospitalsUrl);

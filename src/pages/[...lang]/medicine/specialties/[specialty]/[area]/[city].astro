@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../../../components/JobList.astro";
 import TagLinks from "../../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../../lib/jobs.ts";
@@ -34,11 +35,7 @@ const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, specialty, ar
 ---
 
 <Base title={md.specialtyTitleIn(name, cityName)} description={md.specialtyDescriptionIn(jobs.length, name, cityName)} section="medicine" noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
-    <a href={localizePath(specialtyUrl(specialty), lang)}>{name}</a> /
-    <a href={localizePath(specialtyUrl(specialty, areaSlug), lang)}>{areaLabel}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name, href: specialtyUrl(specialty) }, { name: areaLabel, href: specialtyUrl(specialty, areaSlug) }]} current={md.specialtyTitleIn(name, cityName)} />
   <h1>{md.specialtyTitleIn(name, cityName)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

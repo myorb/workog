@@ -1,0 +1,37 @@
+---
+/** Page 2 onwards of a company's open jobs; page 1 is /companies/<key> */
+import type { GetStaticPaths } from "astro";
+import Base from "../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
+import JobList from "../../../../../components/JobList.astro";
+import Pager from "../../../../../components/Pager.astro";
+import { getCompanies, getJobsByCompany } from "../../../../../lib/jobs.ts";
+import { extraPages, pageCount, pageSlice } from "../../../../../lib/pagination.ts";
+import { categoryName, getLang, t, withLangs } from "../../../../../lib/i18n.ts";
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const company of await getCompanies()) {
+    const jobs = await getJobsByCompany(company.key);
+    for (const page of extraPages(jobs.length)) paths.push({ params: { company: company.key, page: String(page) }, props: { company, page } });
+  }
+  return withLangs(paths);
+}) satisfies GetStaticPaths;
+
+const { company, page } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const jobs = await getJobsByCompany(company.key);
+const base = `/companies/${company.key}`;
+const heading = m.company.title(company.name);
+const categories = [...new Set(jobs.map((j) => j.category).filter(Boolean))].sort().map((c) => categoryName(c, lang));
+const pageLabel = m.pager.page(page, pageCount(jobs.length));
+---
+
+<Base title={m.pager.titled(heading, page)} description={`${m.company.description(jobs.length, company.name, categories.slice(0, 4))} ${pageLabel}.`}>
+  <Breadcrumbs trail={[{ name: m.nav.companies, href: "/companies" }, { name: heading, href: base }]} current={m.pager.titled(heading, page)} />
+  <h1>{heading}</h1>
+  <p class="muted">{m.openPositions(jobs.length)} · {pageLabel}</p>
+  <JobList jobs={pageSlice(jobs, page)} showCompany={false} />
+  <Pager base={base} page={page} jobCount={jobs.length} />
+</Base>

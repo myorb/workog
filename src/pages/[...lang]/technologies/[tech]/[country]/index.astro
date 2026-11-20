@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countTags, getJobsWhere } from "../../../../../lib/jobs.ts";
@@ -34,9 +35,7 @@ const none = m.tech.noneIn(tech.name, name);
 ---
 
 <Base title={m.tech.titleIn(tech.name, name)} description={m.tech.countryDescription(jobs.length, tech.name, name)} noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={u("/technologies")}>{m.nav.technologies}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.nav.technologies, href: "/technologies" }, { name: tech.name, href: technologyUrl(tech.slug) }]} current={m.tech.titleIn(tech.name, name)} />
   <h1>{m.tech.titleIn(tech.name, name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

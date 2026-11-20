@@ -1,13 +1,15 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import AsOf from "../../../../../components/AsOf.astro";
+import Pager from "../../../../../components/Pager.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
 import { type Area, areaFilter, areaName, GERMANY, getArea, levelUrl, medicineCountries, medicineLocationUrl, specialtyUrl, states } from "../../../../../lib/medicine.ts";
 import { levelLinks, medicineCityLinks, specialtyLinks, stateLinks } from "../../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 // Every German state and every country, Germany included; empty ones aren't indexed
@@ -31,11 +33,7 @@ const germanyName = areaName(getArea(GERMANY)!, lang);
 ---
 
 <Base title={md.placeTitle(place)} description={md.placeDescription(jobs.length, place)} section="medicine" noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
-    <a href={localizePath("/medicine/locations", lang)}>{md.nav.locations}</a> /
-    {area.kind === "state" && <><a href={localizePath(medicineLocationUrl(GERMANY), lang)}>{germanyName}</a> /</>}
-  </p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: md.nav.locations, href: "/medicine/locations" }, ...(area.kind === "state" ? [{ name: germanyName, href: medicineLocationUrl(GERMANY) }] : [])]} current={md.placeTitle(place)} />
   <h1>{md.placeTitle(place)}</h1>
   <AsOf title={md.placeTitle(place)} count={jobs.length} series={{ section: "medicine", dim: area.kind === "state" ? "states" : "countries", key: area.slug }} limit={LIST_PAGE_LIMIT} />
   {byState.length > 0 && <><h2>{md.states}</h2><TagLinks links={byState} /></>}
@@ -44,4 +42,5 @@ const germanyName = areaName(getArea(GERMANY)!, lang);
   {byLevel.length > 0 && <><h2>{md.byLevel}</h2><TagLinks links={byLevel} /></>}
   <h2>{m.latestJobs}</h2>
   {jobs.length ? <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} /> : <p>{md.none}</p>}
+  <Pager base={medicineLocationUrl(area.slug)} page={1} jobCount={jobs.length} />
 </Base>

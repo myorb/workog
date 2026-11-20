@@ -1,12 +1,13 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
 import { technologies } from "../../../../lib/technologies.ts";
 import { companyCounts, companyLinks, remoteTechnologyUrl, remoteUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
 // Every technology, so each has a stable URL even on days it has no remote jobs
@@ -16,7 +17,6 @@ export const getStaticPaths = (() =>
 const { tech } = Astro.props;
 const lang = getLang(Astro.params.lang);
 const m = t(lang);
-const u = (path: string) => localizePath(path, lang);
 const jobs = await getJobsWhere({ technology: tech.slug, remote: true });
 const counts = await countTags(jobs);
 // other technologies in the same remote jobs
@@ -25,9 +25,7 @@ const companies = companyLinks(companyCounts(jobs), await getCompanies());
 ---
 
 <Base title={m.remoteJobs.tech(tech.name)} description={m.remoteJobs.techDescription(jobs.length, tech.name)} noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={u(remoteUrl())}>{m.remoteJobs.title}</a> / <a href={u(technologyUrl(tech.slug))}>{tech.name}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.remoteJobs.title, href: remoteUrl() }, { name: tech.name, href: technologyUrl(tech.slug) }]} current={m.remoteJobs.tech(tech.name)} />
   <h1>{m.remoteJobs.tech(tech.name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

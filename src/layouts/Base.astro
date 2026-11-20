@@ -2,10 +2,11 @@
 import { getLatestRun, getMedicineSnapshots } from "../lib/jobs.ts";
 import { reportsUrl, reportUrl } from "../lib/reports.ts";
 import { formatDateTime } from "../lib/format.ts";
-import { getLang, languageNames, localizePath, locales, stripLang, t } from "../lib/i18n.ts";
+import { getLang, languageNames, localizePath, locales, stripLang, t, type Lang } from "../lib/i18n.ts";
 import { intlLocale } from "../lib/locale.ts";
 import Logo from "../components/Logo.astro";
 import { faviconPaths } from "../lib/logo.ts";
+import { ldJson } from "../lib/structured-data.ts";
 
 interface Props {
   title: string;
@@ -17,10 +18,12 @@ interface Props {
   jsonLd?: Record<string, unknown>[];
   /** which section's header to show; the start page has the top bar only */
   section?: "tech" | "medicine" | "start";
+  /** the language of a page that exists in one language only (translated: false), English by default */
+  lang?: Lang;
 }
 
 const { title, description, noindex = false, translated = true, jsonLd = [], section = "tech" } = Astro.props;
-const lang = translated ? getLang(Astro.params.lang) : "en";
+const lang = translated ? getLang(Astro.params.lang) : (Astro.props.lang ?? "en");
 const m = t(lang);
 const u = (path: string) => localizePath(path, lang);
 // build.format "file" renders pathnames as "/index.html" or "/uk.html"; links use the extensionless URL
@@ -42,8 +45,6 @@ const shareImage = shareImages[section];
 // the favicon takes the section's color, like the logo in the top bar
 const favicon = faviconPaths(section);
 const ogImage = new URL(shareImage.path, Astro.site);
-// "</" inside JSON would close the script tag early
-const ldJson = (data: Record<string, unknown>) => JSON.stringify({ "@context": "https://schema.org", ...data }).replace(/</g, "\\u003c");
 ---
 
 <!doctype html>

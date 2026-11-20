@@ -1,10 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { getMedicineCounts } from "../../../../lib/jobs.ts";
 import { medicineCityLinks, medicineCountryLinks, stateLinks } from "../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../lib/i18n.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
@@ -19,7 +20,7 @@ const cities = medicineCityLinks(counts.cities).slice(0, 48);
 ---
 
 <Base title={md.locationsTitle} description={md.locationsDescription(byCountry.length)} section="medicine" noindex={!byCountry.length}>
-  <p class="muted"><a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }]} current={md.locationsTitle} />
   <h1>{md.locationsTitle}</h1>
   {byCountry.length ? <><h2>{md.countries}</h2><TagLinks links={byCountry} /></> : <p>{md.none}</p>}
   {byState.length > 0 && <><h2>{md.germanStates}</h2><TagLinks links={byState} /></>}

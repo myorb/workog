@@ -1,12 +1,13 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../../components/JobList.astro";
 import TagLinks from "../../../../../components/TagLinks.astro";
 import { countMedicine, getMedicineCounts, getMedicineJobsWhere } from "../../../../../lib/jobs.ts";
 import { areaFilter, areaName, getArea, levelUrl, specialtyUrl } from "../../../../../lib/medicine.ts";
 import { levelLinks, medicineCityLinks, specialtyLinks } from "../../../../../lib/links.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../../lib/constants.ts";
 
 // Only cities big enough for a page of their own; the rest are browsed by state or country
@@ -29,10 +30,7 @@ const byLevel = levelLinks(counts.levels, lang, (l) => levelUrl(l, undefined, ar
 ---
 
 <Base title={md.placeTitle(name)} description={md.placeDescription(jobs.length, name)} section="medicine" noindex={isThin(jobs.length)}>
-  <p class="muted">
-    <a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /
-    <a href={localizePath(`/medicine/locations/${areaSlug}`, lang)}>{areaLabel}</a> /
-  </p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }, { name: areaLabel, href: `/medicine/locations/${areaSlug}` }]} current={md.placeTitle(name)} />
   <h1>{md.placeTitle(name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}

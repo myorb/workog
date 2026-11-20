@@ -1,0 +1,29 @@
+---
+/**
+ * The "Section / Parent /" trail above a page heading, plus the same trail as
+ * BreadcrumbList markup ending in the page itself, which Google shows in place
+ * of the URL in results.
+ */
+import { getLang, localizePath } from "../lib/i18n.ts";
+import { breadcrumbs, ldJson } from "../lib/structured-data.ts";
+
+interface Props {
+  /** the pages above this one, top first, with English paths */
+  trail: { name: string; href: string }[];
+  /** this page's name, usually its heading */
+  current: string;
+}
+
+const { trail, current } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const pathname = Astro.url.pathname.replace(/\.html$/, "").replace(/\/index$/, "") || "/";
+const items = [
+  ...trail.map((c) => ({ name: c.name, url: new URL(localizePath(c.href, lang), Astro.site) })),
+  { name: current, url: new URL(pathname, Astro.site) },
+];
+---
+
+<p class="muted">
+  {trail.map((c) => <><a href={localizePath(c.href, lang)}>{c.name}</a> / </>)}
+</p>
+<script is:inline type="application/ld+json" set:html={ldJson(breadcrumbs(items))} />

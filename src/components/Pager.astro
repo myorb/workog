@@ -1,0 +1,42 @@
+---
+/** Numbered links between a browse page and its list pages; renders nothing for a single page */
+import { getLang, localizePath, t } from "../lib/i18n.ts";
+import { pageCount, pagerPages, pageUrl } from "../lib/pagination.ts";
+
+interface Props {
+  /** the browse page's English path, which is page 1 */
+  base: string;
+  page: number;
+  jobCount: number;
+}
+
+const { base, page, jobCount } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const total = pageCount(jobCount);
+const href = (p: number) => localizePath(pageUrl(base, p), lang);
+const pages = pagerPages(page, total);
+---
+
+{
+  total > 1 && (
+    <nav class="pager" aria-label={m.pager.label}>
+      {page > 1 && <a href={href(page - 1)} rel="prev">← {m.pager.prev}</a>}
+      {pages.map((p, i) => (
+        <>
+          {i > 0 && p - pages[i - 1]! > 1 && <span class="gap" aria-hidden="true">…</span>}
+          {p === page ? <span aria-current="page">{p}</span> : <a href={href(p)} aria-label={m.pager.page(p, total)}>{p}</a>}
+        </>
+      ))}
+      {page < total && <a href={href(page + 1)} rel="next">{m.pager.next} →</a>}
+    </nav>
+  )
+}
+
+<style>
+  .pager { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 20px; font-size: 15px; }
+  .pager a, .pager [aria-current] { min-width: 36px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; text-align: center; text-decoration: none; }
+  .pager a:hover { background: var(--tag); }
+  .pager [aria-current] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+  .gap { color: var(--muted); }
+</style>

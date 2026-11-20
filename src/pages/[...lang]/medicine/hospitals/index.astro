@@ -1,10 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../../layouts/Base.astro";
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { getHospitalIndex } from "../../../../lib/jobs.ts";
 import { hospitalUrl, MIN_HOSPITAL_JOBS } from "../../../../lib/hospitals.ts";
-import { getLang, localizePath, t, withLangs } from "../../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../../lib/i18n.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
 
@@ -17,7 +18,7 @@ const hospitalLinks = hospitals.map((h) => ({ href: hospitalUrl(h.slug), label: 
 ---
 
 <Base title={md.hospitalsTitle} description={md.hospitalsDescription(hospitals.length)} section="medicine" noindex={!hospitals.length}>
-  <p class="muted"><a href={localizePath("/medicine", lang)}>{m.sections.medicine}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.sections.medicine, href: "/medicine" }]} current={md.hospitalsTitle} />
   <h1>{md.hospitalsTitle}</h1>
   {groupLinks.length > 0 && <><h2>{md.hospitalGroups}</h2><TagLinks links={groupLinks} /></>}
   <h2>{md.hospitalsList}</h2>

@@ -60,12 +60,11 @@ export function plural(n: number, word: string): string {
   return `${n.toLocaleString("en-US")} ${n === 1 ? word : plural}`;
 }
 
-const salaryUnits: Record<Salary["unit"], string> = { HOUR: "an hour", DAY: "a day", WEEK: "a week", MONTH: "a month", YEAR: "a year" };
-
-/** "£113,565–£150,569 a year", in English like the job pages it is shown on */
-export function formatSalary(s: Salary): string {
+/** "£113,565–£150,569 a year", in the page's language */
+export function formatSalary(s: Salary, lang: Lang = defaultLang): string {
   const whole = Number.isInteger(s.min) && Number.isInteger(s.max);
-  const money = new Intl.NumberFormat("en-GB", { style: "currency", currency: s.currency, minimumFractionDigits: whole ? 0 : 2, maximumFractionDigits: whole ? 0 : 2 });
+  const locale = lang === "en" ? "en-GB" : intlLocale(lang);
+  const money = new Intl.NumberFormat(locale, { style: "currency", currency: s.currency, minimumFractionDigits: whole ? 0 : 2, maximumFractionDigits: whole ? 0 : 2 });
   const amount = s.min === s.max ? money.format(s.min) : `${money.format(s.min)}–${money.format(s.max)}`;
-  return `${amount} ${salaryUnits[s.unit]}`;
+  return `${amount} ${t(lang).job.salaryUnits[s.unit]}`;
 }

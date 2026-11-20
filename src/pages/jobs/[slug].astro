@@ -4,7 +4,10 @@ import type { Job } from "../../lib/schema.ts";
 import Base from "../../layouts/Base.astro";
 import JobList from "../../components/JobList.astro";
 import TagLinks from "../../components/TagLinks.astro";
-import { getAllJobs, getCompany, getCompanyCounts, getHospitalIndex, getMedicineCounts, getMedicineJobsWhere, getRemoteCount, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
+import { getAllJobs, getCompany, getCompanyCounts, getHospitalIndex, getLatestRun, getMedicineCounts, getMedicineJobsWhere, getRemoteCount, getSnapshots, getTagCounts, medicinePlace, tagsOf } from "../../lib/jobs.ts";
+import { jobSummary } from "../../lib/job-summary.ts";
+import { getTechnology } from "../../lib/technologies.ts";
+import { changeOver } from "../../lib/trend.ts";
 import { hospitalSlugOf, hospitalUrl } from "../../lib/hospitals.ts";
 import { areaFilter, areaName, GERMANY, getArea, isMedicine, levelUrl, medicineLocationUrl, MIN_CITY_JOBS, specialtyUrl } from "../../lib/medicine.ts";
 import { relatedJobs } from "../../lib/related.ts";
@@ -13,8 +16,7 @@ import { getCity, getCountry } from "../../lib/places.ts";
 import { formatDate, formatLocations, formatSalary } from "../../lib/format.ts";
 import { breadcrumbs, jobPosting } from "../../lib/structured-data.ts";
 import { employmentTypeOf } from "../../lib/employment.ts";
-import { categoryName, t } from "../../lib/i18n.ts";
-import { formatNumber } from "../../lib/locale.ts";
+import { categoryName, countryName, localizePath, locales, t, type Lang } from "../../lib/i18n.ts";
 import { jobLanguage } from "../../lib/language.ts";
 
 export const getStaticPaths = (async () => {
@@ -23,62 +25,70 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { job } = Astro.props;
+// The page speaks the posting's language when the site has it (German and Spanish postings), English otherwise;
+// the URL stays the same, since each job has one page
+const postingLang = jobLanguage(job);
+const lang: Lang = postingLang && (locales as readonly string[]).includes(postingLang) ? (postingLang as Lang) : "en";
+// the title and description say their own language when it differs from the page's
+const contentLang = postingLang && postingLang !== lang ? postingLang : undefined;
+const m = t(lang);
+const j = m.job;
+const md = m.medicine;
+const u = (path: string) => localizePath(path, lang);
+
 const company = await getCompany(job.company);
 const companyName = company?.name ?? job.company;
 // a job board's job is hired for by its employer and applied to on the board
 const employer = job.employer ?? companyName;
-const applyName = job.employer ? companyName : `${companyName}'s site`;
 const closed = Boolean(job.closedAt);
 const medicine = isMedicine(job);
 // pages for the job's hospital and its hospital group, when they have one
 const hospitalIndex = medicine ? await getHospitalIndex() : undefined;
 const hospitalSlug = hospitalIndex && hospitalSlugOf(hospitalIndex, job.employer);
 const groupPage = hospitalIndex?.groups.some((g) => g.slug === job.company);
-const where = formatLocations(job.locations, job.remote, 2);
+const where = formatLocations(job.locations, job.remote, 2, lang);
 const employment = employmentTypeOf(job);
 const url = new URL(`/jobs/${job.slug}`, Astro.site);
-// The page's own labels are English; the posting keeps its language, so its title and text say which
-const postingLang = jobLanguage(job);
-const contentLang = postingLang === "en" ? undefined : postingLang;
+const specialtyName = job.specialty ? md.specialties[job.specialty] : undefined;
+const at = (path: string) => new URL(u(path), Astro.site);
 // closed jobs are noindexed, so they drop the posting markup too
-const en = t("en");
-const specialtyName = job.specialty ? en.medicine.specialties[job.specialty] : undefined;
 const jsonLd = [
   breadcrumbs(
     medicine
       ? [
-          { name: "Medical jobs", url: new URL("/medicine", Astro.site) },
-          ...(job.specialty ? [{ name: specialtyName!, url: new URL(specialtyUrl(job.specialty), Astro.site) }] : []),
+          { name: m.sections.medicine, url: at("/medicine") },
+          ...(job.specialty ? [{ name: specialtyName!, url: at(specialtyUrl(job.specialty)) }] : []),
           { name: job.title, url },
         ]
       : [
-          { name: "Companies", url: new URL("/companies", Astro.site) },
-          { name: companyName, url: new URL(`/companies/${job.company}`, Astro.site) },
+          { name: m.nav.companies, url: at("/companies") },
+          { name: companyName, url: at(`/companies/${job.company}`) },
           { name: job.title, url },
         ],
   ),
-  ...(closed ? [] : [jobPosting(job, employer, url)]),
+  ...(closed ? [] : [jobPosting(job, { name: employer, website: job.employer ? undefined : company?.website }, url)]),
 ];
 
 // Medical jobs link to their own section: the newest jobs in the same specialty and state (or country), and its hubs
 const place = medicine ? medicinePlace(job) : {};
 const area = place.area ? getArea(place.area) : undefined;
-const areaLabel = area ? areaName(area, "en") : undefined;
-const medicineCities = medicine ? (await getMedicineCounts()).cities : new Map();
-const cityPage = area && place.city && place.city.slug !== area.slug && (medicineCities.get(`${area.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
-const sameSpecialty = medicine && job.specialty ? (await getMedicineJobsWhere({ specialty: job.specialty })).filter((j) => j.id !== job.id).slice(0, 5) : [];
-const sameState = medicine && area ? (await getMedicineJobsWhere(areaFilter(area))).filter((j) => j.id !== job.id && !sameSpecialty.includes(j)).slice(0, 5) : [];
+const areaLabel = area ? areaName(area, lang) : undefined;
+const medCounts = medicine ? await getMedicineCounts() : undefined;
+const cityPage = area && place.city && place.city.slug !== area.slug && (medCounts!.cities.get(`${area.slug}/${place.city.slug}`)?.count ?? 0) >= MIN_CITY_JOBS;
+const sameSpecialty = medicine && job.specialty ? (await getMedicineJobsWhere({ specialty: job.specialty })).filter((o) => o.id !== job.id).slice(0, 5) : [];
+const sameState = medicine && area ? (await getMedicineJobsWhere(areaFilter(area))).filter((o) => o.id !== job.id && !sameSpecialty.includes(o)).slice(0, 5) : [];
 const medicineBrowse = [
   ...(job.specialty ? [{ href: specialtyUrl(job.specialty), label: specialtyName! }] : []),
-  ...(job.specialty && area ? [{ href: specialtyUrl(job.specialty, area.slug), label: en.medicine.specialtyTitleIn(specialtyName!, areaLabel!) }] : []),
-  ...(job.specialty && cityPage ? [{ href: specialtyUrl(job.specialty, area!.slug, place.city!.slug), label: en.medicine.specialtyTitleIn(specialtyName!, place.city!.name) }] : []),
-  ...(cityPage ? [{ href: medicineLocationUrl(area!.slug, place.city!.slug), label: en.medicine.placeTitle(place.city!.name) }] : []),
-  ...(area ? [{ href: medicineLocationUrl(area.slug), label: en.medicine.placeTitle(areaLabel!) }] : []),
-  ...(area?.kind === "state" ? [{ href: medicineLocationUrl(GERMANY), label: en.medicine.placeTitle("Germany") }] : []),
-  ...(job.level ? [{ href: levelUrl(job.level), label: en.medicine.levelTitle(en.medicine.levels[job.level]!) }] : []),
+  ...(job.specialty && area ? [{ href: specialtyUrl(job.specialty, area.slug), label: md.specialtyTitleIn(specialtyName!, areaLabel!) }] : []),
+  ...(job.specialty && cityPage ? [{ href: specialtyUrl(job.specialty, area!.slug, place.city!.slug), label: md.specialtyTitleIn(specialtyName!, place.city!.name) }] : []),
+  ...(cityPage ? [{ href: medicineLocationUrl(area!.slug, place.city!.slug), label: md.placeTitle(place.city!.name) }] : []),
+  ...(area ? [{ href: medicineLocationUrl(area.slug), label: md.placeTitle(areaLabel!) }] : []),
+  ...(area?.kind === "state" ? [{ href: medicineLocationUrl(GERMANY), label: md.placeTitle(areaName(getArea(GERMANY)!, lang)) }] : []),
+  ...(job.level ? [{ href: levelUrl(job.level), label: md.levelTitle(md.levels[job.level]!) }] : []),
 ];
 // the posting's own page on the job board, or the employer's when it came in through a partner
 const onBoard = job.applyUrl.includes("arbeitsagentur.de");
+const applyLabel = medicine ? (onBoard ? j.applyVia(companyName) : j.applyEmployer) : job.employer ? j.applyOnBoard(companyName) : j.applyOn(companyName);
 
 // Crosslinks: neighbouring jobs, so every job is linked from other job pages, and the hubs this job belongs to
 const related = medicine ? { team: [] as Job[], place: [] as Job[] } : await relatedJobs(job);
@@ -86,91 +96,130 @@ const companyJobs = (await getCompanyCounts()).get(job.company) ?? 0;
 const tags = tagsOf(job);
 const [city] = tags.cities;
 const [country] = tags.countries;
-const placeName = city ? getCity(city)?.name : country ? getCountry(country)?.name : "remote";
+const countryInfo = country ? getCountry(country) : undefined;
+const placeName = city ? getCity(city)?.name : countryInfo ? countryName(countryInfo, lang) : undefined;
 const counts = await getTagCounts();
 const only = (slugs: Set<string>, all: Map<string, number>) => new Map([...all].filter(([slug]) => slugs.has(slug)));
 const browse = [
   ...technologyLinks(only(tags.technologies, counts.technologies)),
   ...cityLinks(only(tags.cities, counts.cities)),
-  ...countryLinks(only(tags.countries, counts.countries)),
-  ...(job.remote ? [{ href: remoteUrl(), label: "Remote", count: await getRemoteCount() }] : []),
-  ...employmentLinks(only(tags.employment, counts.employment)),
+  ...countryLinks(only(tags.countries, counts.countries), undefined, lang),
+  ...(job.remote ? [{ href: remoteUrl(), label: m.remote, count: await getRemoteCount() }] : []),
+  ...employmentLinks(only(tags.employment, counts.employment), lang),
 ];
+
+// "At a glance": dated facts in Workog's own words, the one part of the page not copied from the posting
+const asOf = (await getLatestRun())?.finishedAt ?? job.lastSeenAt;
+const hospital = hospitalSlug ? hospitalIndex!.hospitals.find((h) => h.slug === hospitalSlug) : undefined;
+const companyChange = !medicine && !job.employer ? changeOver(await getSnapshots(), (s) => s.companies[job.company], companyJobs) : undefined;
+const nearby = medicine
+  ? job.specialty && area
+    ? { open: medCounts!.specialtyAreas.get(`${job.specialty}/${area.slug}`) ?? 0, where: areaLabel!, medical: true, specialty: specialtyName }
+    : area
+      ? { open: (area.kind === "state" ? medCounts!.states : medCounts!.countries).get(area.slug) ?? 0, where: areaLabel!, medical: true }
+      : undefined
+  : city
+    ? { open: counts.cities.get(city) ?? 0, where: placeName!, medical: false }
+    : country
+      ? { open: counts.countries.get(country) ?? 0, where: placeName!, medical: false }
+      : undefined;
+const summary = closed
+  ? []
+  : jobSummary(
+      {
+        employer,
+        postedAt: job.postedAt,
+        firstSeenAt: job.firstSeenAt,
+        asOf,
+        technologies: medicine ? [] : [...tags.technologies].map((slug) => getTechnology(slug)?.name).filter((n) => n !== undefined),
+        salary: job.salary && formatSalary(job.salary, lang),
+        employerJobs: medicine
+          ? hospital && { name: employer, open: hospital.count, doctors: true }
+          : job.employer
+            ? undefined
+            : { name: companyName, open: companyJobs, pct: companyChange?.pct, days: companyChange?.days },
+        nearby,
+      },
+      lang,
+    );
 ---
 
 <Base
-  title={`${job.title} at ${employer}`}
-  description={`${job.title} at ${employer} — ${where}${job.remote ? " (remote)" : ""}. ${job.employer ? `Apply via ${companyName}.` : `Apply on ${companyName}'s official careers site.`}`}
+  title={j.titleAt(job.title, employer)}
+  description={j.description(job.title, employer, where, job.remote, job.employer || company?.board ? companyName : undefined)}
   noindex={closed}
   translated={false}
+  lang={lang}
   jsonLd={jsonLd}
   section={medicine ? "medicine" : "tech"}
 >
   {
     medicine ? (
       <p class="muted">
-        <a href="/medicine">Medical jobs</a> /{job.specialty && <> <a href={specialtyUrl(job.specialty)}>{specialtyName}</a> /</>}
+        <a href={u("/medicine")}>{m.sections.medicine}</a> /{job.specialty && <> <a href={u(specialtyUrl(job.specialty))}>{specialtyName}</a> /</>}
       </p>
     ) : (
-      <p class="muted"><a href={`/companies/${job.company}`}>{companyName}</a> /</p>
+      <p class="muted"><a href={u(`/companies/${job.company}`)}>{companyName}</a> /</p>
     )
   }
 
-  {closed && <p class="closed">This position was closed on {formatDate(job.closedAt!)} and is no longer accepting applications.</p>}
+  {closed && <p class="closed">{j.closed(formatDate(job.closedAt!, lang))}</p>}
 
   <h1 lang={contentLang}>{job.title}</h1>
   {medicine ? (
   <dl class="facts">
-    <dt>Hospital or practice</dt><dd>{hospitalSlug ? <a href={hospitalUrl(hospitalSlug)}>{employer}</a> : employer}</dd>
-    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}</dd>
-    {job.specialty && <><dt>Specialty</dt><dd><a href={specialtyUrl(job.specialty)}>{specialtyName}</a></dd></>}
-    {job.level && <><dt>Career level</dt><dd><a href={levelUrl(job.level)}>{en.medicine.levels[job.level]}</a></dd></>}
-    {job.salary && <><dt>Salary</dt><dd>{formatSalary(job.salary)}</dd></>}
-    {job.department && <><dt>Occupation</dt><dd>{job.department}</dd></>}
-    {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
-    <dt>Listed on</dt><dd>{groupPage ? <a href={hospitalUrl(job.company)}>{companyName}</a> : companyName}</dd>
+    <dt>{j.facts.hospital}</dt><dd>{hospitalSlug ? <a href={u(hospitalUrl(hospitalSlug))}>{employer}</a> : employer}</dd>
+    <dt>{j.facts.location}</dt><dd>{job.locations.join(" · ") || j.facts.notListed}</dd>
+    {job.specialty && <><dt>{j.facts.specialty}</dt><dd><a href={u(specialtyUrl(job.specialty))}>{specialtyName}</a></dd></>}
+    {job.level && <><dt>{j.facts.level}</dt><dd><a href={u(levelUrl(job.level))}>{md.levels[job.level]}</a></dd></>}
+    {job.salary && <><dt>{j.facts.salary}</dt><dd>{formatSalary(job.salary, lang)}</dd></>}
+    {job.department && <><dt>{j.facts.occupation}</dt><dd>{job.department}</dd></>}
+    {job.postedAt && <><dt>{j.facts.posted}</dt><dd>{formatDate(job.postedAt, lang)}</dd></>}
+    <dt>{j.facts.listedOn}</dt><dd>{groupPage ? <a href={u(hospitalUrl(job.company))}>{companyName}</a> : companyName}</dd>
   </dl>
   ) : (
   <dl class="facts">
     {job.employer
-      ? <><dt>Company</dt><dd>{job.employer}</dd><dt>Listed on</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>
-      : <><dt>Company</dt><dd><a href={`/companies/${job.company}`}>{companyName}</a></dd></>}
-    <dt>Location</dt><dd>{job.locations.join(" · ") || "Not listed"}{job.remote && <> <a class="tag" href="/remote">Remote</a></>}</dd>
-    <dt>Employment type</dt><dd><a href={`/employment/${employment}`}>{t("en").employment.types[employment]}</a></dd>
-    {job.salary && <><dt>Salary</dt><dd>{formatSalary(job.salary)}</dd></>}
-    {job.department && <><dt>Team</dt><dd>{job.department}</dd></>}
-    {job.postedAt && <><dt>Posted</dt><dd>{formatDate(job.postedAt)}</dd></>}
+      ? <><dt>{j.facts.company}</dt><dd>{job.employer}</dd><dt>{j.facts.listedOn}</dt><dd><a href={u(`/companies/${job.company}`)}>{companyName}</a></dd></>
+      : <><dt>{j.facts.company}</dt><dd><a href={u(`/companies/${job.company}`)}>{companyName}</a></dd></>}
+    <dt>{j.facts.location}</dt><dd>{job.locations.join(" · ") || j.facts.notListed}{job.remote && <> <a class="tag" href={u("/remote")}>{m.remote}</a></>}</dd>
+    <dt>{j.facts.employmentType}</dt><dd><a href={u(`/employment/${employment}`)}>{m.employment.types[employment]}</a></dd>
+    {job.salary && <><dt>{j.facts.salary}</dt><dd>{formatSalary(job.salary, lang)}</dd></>}
+    {job.department && <><dt>{j.facts.team}</dt><dd>{job.department}</dd></>}
+    {job.postedAt && <><dt>{j.facts.posted}</dt><dd>{formatDate(job.postedAt, lang)}</dd></>}
   </dl>
   )}
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
 
-  {job.descriptionHtml ? <article class="description" lang={contentLang} set:html={job.descriptionHtml} /> : <p class="muted">The full description is on the original posting.</p>}
+  {summary.length > 0 && <section class="summary"><h2>{j.glanceTitle}</h2><p>{summary.join(" ")}</p></section>}
 
-  {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{medicine ? (onBoard ? `Apply via ${companyName}` : "Apply on the employer's site") : `Apply on ${applyName}`} →</a></p>}
+  {job.descriptionHtml ? <article class="description" lang={contentLang} set:html={job.descriptionHtml} /> : <p class="muted">{j.noDescription}</p>}
 
-  {sameSpecialty.length > 0 && <section><h2>More {specialtyName!.toLowerCase()} jobs</h2><JobList jobs={sameSpecialty} /></section>}
-  {sameState.length > 0 && <section><h2>More medical jobs in {areaLabel}</h2><JobList jobs={sameState} /></section>}
-  {medicineBrowse.length > 0 && <section><h2>Browse similar jobs</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul></section>}
+  {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
+
+  {sameSpecialty.length > 0 && <section><h2>{j.moreSpecialty(specialtyName!)}</h2><JobList jobs={sameSpecialty} lang={lang} /></section>}
+  {sameState.length > 0 && <section><h2>{j.moreMedicalIn(areaLabel!)}</h2><JobList jobs={sameState} lang={lang} /></section>}
+  {medicineBrowse.length > 0 && <section><h2>{j.browseSimilar}</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={u(l.href)}>{l.label}</a></li>)}</ul></section>}
 
   {
     related.team.length > 0 && (
       <section>
-        <h2>More {job.category ? `${categoryName(job.category, "en")} jobs` : "jobs"} {job.employer ? "on" : "at"} {companyName}</h2>
-        <JobList jobs={related.team} showCompany={false} />
-        {companyJobs > related.team.length + 1 && <p><a href={`/companies/${job.company}`}>All {formatNumber(companyJobs)} jobs {job.employer ? "on" : "at"} {companyName} →</a></p>}
+        <h2>{j.moreAt(job.category ? categoryName(job.category, lang) : undefined, companyName, Boolean(job.employer))}</h2>
+        <JobList jobs={related.team} showCompany={false} lang={lang} />
+        {companyJobs > related.team.length + 1 && <p><a href={u(`/companies/${job.company}`)}>{j.allAt(companyJobs, companyName, Boolean(job.employer))} →</a></p>}
       </section>
     )
   }
   {
     related.place.length > 0 && (
       <section>
-        <h2>{placeName === "remote" ? "More remote jobs" : `More jobs in ${placeName}`}</h2>
-        <JobList jobs={related.place} />
+        <h2>{placeName ? j.moreIn(placeName) : j.moreRemote}</h2>
+        <JobList jobs={related.place} lang={lang} />
       </section>
     )
   }
-  {!medicine && browse.length > 0 && <section><h2>Browse similar jobs</h2><TagLinks links={browse} /></section>}
+  {!medicine && browse.length > 0 && <section><h2>{j.browseSimilar}</h2><TagLinks links={browse} lang={lang} /></section>}
 </Base>
 
 <style>
@@ -179,6 +228,9 @@ const browse = [
   .facts dd { margin: 0; }
   .apply { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; }
   .closed { background: var(--tag); border-left: 4px solid var(--muted); padding: 12px 16px; }
+  .summary { max-width: 760px; margin: 24px 0; padding: 12px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+  .summary h2 { font-size: 1rem; margin: 0 0 4px; }
+  .summary p { margin: 0; }
   .description { max-width: 760px; margin: 24px 0; overflow-wrap: anywhere; }
   .browse { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px 16px; }
   @media (max-width: 640px) {

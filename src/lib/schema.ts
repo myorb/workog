@@ -79,6 +79,8 @@ export const CompanyConfigSchema = z.object({
   key: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),
   logo: z.string().optional(),
+  /** The company's own homepage, given as the hiring organization's sameAs in JobPosting markup; not for boards, whose jobs name another employer */
+  website: z.url().optional(),
   source: z.string().min(1),
   /** Board name for Greenhouse, Ashby and Lever, company identifier for SmartRecruiters */
   boardToken: z.string().optional(),

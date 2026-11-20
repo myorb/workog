@@ -1,5 +1,7 @@
 import { employmentTypeOf, type EmploymentType } from "./employment.ts";
 import { countryCode } from "./i18n.ts";
+import { medicineCountries } from "./medicine.ts";
+import { nutsNames } from "./nuts-names.ts";
 import { getCity, placesOf } from "./places.ts";
 import type { Job, Salary } from "./schema.ts";
 
@@ -19,6 +21,9 @@ export const website = (site: URL, description: string): Thing => ({
   description,
   publisher: { "@type": "Organization", name: "Workog", url: site.href, logo: new URL("/icon-512.png", site).href },
 });
+
+/** A schema.org object as JSON-LD script text; "</" inside JSON would close the script tag early */
+export const ldJson = (data: Thing): string => JSON.stringify({ "@context": "https://schema.org", ...data }).replace(/</g, "\\u003c");
 
 export const breadcrumbs = (items: { name: string; url: URL }[]): Thing => ({
   "@type": "BreadcrumbList",
@@ -44,20 +49,81 @@ export const baseSalary = (s: Salary): Thing => ({
   value: { "@type": "QuantitativeValue", ...(s.min === s.max ? { value: s.min } : { minValue: s.min, maxValue: s.max }), unitText: s.unit },
 });
 
-/** Google for Jobs markup: https://developers.google.com/search/docs/appearance/structured-data/job-posting */
-export function jobPosting(job: Job, companyName: string, url: URL): Thing {
-  const places = placesOf(job.locations);
-  const address = (country: string, locality?: string) => ({
-    "@type": "Place",
-    address: { "@type": "PostalAddress", ...(locality && { addressLocality: locality }), addressCountry: countryCode(country) ?? country },
-  });
-  // A city covers its country; countries without a matched city get a country-only address
+export interface Address {
+  locality?: string;
+  region?: string;
+  /** ISO 3166-1 alpha-2 */
+  country: string;
+}
+
+const medicineCountryByName = new Map(medicineCountries.map((c) => [c.name.toLowerCase(), c.slug]));
+/** EU region names, which EURES gives in place of a city when a posting names none ("Nord, France") */
+const regionNames = new Set(Object.values(nutsNames).map((n) => n.toLowerCase()));
+const notAPlace = /\b(remote|anywhere|multiple|various|hybrid)\b/i;
+
+/**
+ * A "City, Region, Country" or "City, Country" label as a postal address, when
+ * its last part names exactly one known country ("Seattle, WA, United States",
+ * "Bad Füssing, Bayern, Germany"). Other shapes ("London", "US-New York") give undefined.
+ */
+export function parseLocation(label: string): Address | undefined {
+  const parts = label.split(",").map((p) => p.trim()).filter(Boolean);
+  if (parts.length < 2) return undefined;
+  const last = parts.at(-1)!;
+  const found = placesOf([last]).countries;
+  const slug = medicineCountryByName.get(last.toLowerCase()) ?? (found.size === 1 ? [...found][0]! : undefined);
+  const country = slug && countryCode(slug);
+  if (!country || notAPlace.test(parts[0]!)) return undefined;
+  // labels repeat a place in different case ("SEATTLE, WA"); keep the first part's own case unless it is all caps
+  const locality = parts[0] === parts[0]!.toUpperCase() ? parts[0]!.toLowerCase().replace(/(^|[\s-])\p{L}/gu, (c) => c.toUpperCase()) : parts[0]!;
+  // "Nord, France" names a region; "London, United Kingdom" is a region too, but also a city we know
+  if (parts.length === 2 && regionNames.has(locality.toLowerCase()) && placesOf([locality]).cities.size === 0) return { region: locality, country };
+  return { locality, ...(parts.length > 2 && { region: parts.at(-2)! }), country };
+}
+
+/**
+ * Every place a job names, as precise as its labels allow: the label's own
+ * city and region when it parses, else a known city matched in it, else the
+ * country alone. Duplicates (same city and country) are dropped.
+ */
+export function addressesOf(locations: string[]): Address[] {
+  const parsed: Address[] = [];
+  const rest: string[] = [];
+  for (const label of locations) {
+    const address = parseLocation(label);
+    if (address) parsed.push(address);
+    else rest.push(label);
+  }
+  const places = placesOf(rest);
   const cityPlaces = [...places.cities].map(getCity).filter((c) => c !== undefined);
-  const coveredCountries = new Set(cityPlaces.map((c) => c.country));
-  const jobLocation = [
-    ...cityPlaces.map((c) => address(c.country, c.name)),
-    ...[...places.countries].filter((c) => !coveredCountries.has(c)).map((c) => address(c)),
+  const code = (slug: string) => countryCode(slug) ?? slug;
+  const covered = new Set([...parsed.map((a) => a.country), ...cityPlaces.map((c) => code(c.country))]);
+  const all: Address[] = [
+    ...parsed,
+    ...cityPlaces.map((c) => ({ locality: c.name, country: code(c.country) })),
+    ...[...places.countries].map(code).filter((c) => !covered.has(c)).map((country) => ({ country })),
   ];
+  const seen = new Set<string>();
+  return all.filter((a) => {
+    const key = `${a.locality?.toLowerCase()}|${a.country}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** Google for Jobs markup: https://developers.google.com/search/docs/appearance/structured-data/job-posting */
+export function jobPosting(job: Job, employer: { name: string; website?: string }, url: URL): Thing {
+  const places = placesOf(job.locations);
+  const jobLocation = addressesOf(job.locations).map((a) => ({
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      ...(a.locality && { addressLocality: a.locality }),
+      ...(a.region && { addressRegion: a.region }),
+      addressCountry: a.country,
+    },
+  }));
 
   return {
     "@type": "JobPosting",
@@ -66,8 +132,8 @@ export function jobPosting(job: Job, companyName: string, url: URL): Thing {
     datePosted: job.postedAt ?? job.firstSeenAt,
     validThrough: validThrough(job),
     employmentType: employmentTypes[employmentTypeOf(job)],
-    hiringOrganization: { "@type": "Organization", name: companyName },
-    identifier: { "@type": "PropertyValue", name: companyName, value: job.id },
+    hiringOrganization: { "@type": "Organization", name: employer.name, ...(employer.website && { sameAs: employer.website }) },
+    identifier: { "@type": "PropertyValue", name: employer.name, value: job.id },
     url: url.href,
     directApply: false,
     ...(job.department && { occupationalCategory: job.department }),

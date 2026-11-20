@@ -1,10 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Base from "../../../layouts/Base.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import JobList from "../../../components/JobList.astro";
 import { getJobsWhere, tagsOf } from "../../../lib/jobs.ts";
 import { employmentTypes } from "../../../lib/employment.ts";
-import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
+import { getLang, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../lib/constants.ts";
 
 export const getStaticPaths = (() =>
@@ -20,7 +21,7 @@ const remote = jobs.filter((j) => j.remote).length;
 ---
 
 <Base title={m.employment.typeTitle(name)} description={m.employment.typeDescription(jobs.length, name, countries)} noindex={isThin(jobs.length)}>
-  <p class="muted"><a href={localizePath("/employment", lang)}>{m.employment.label}</a> /</p>
+  <Breadcrumbs trail={[{ name: m.employment.label, href: "/employment" }]} current={m.employment.typeTitle(name)} />
   <h1>{m.employment.typeTitle(name)}</h1>
   <p class="muted">
     {m.openPositions(jobs.length)}
