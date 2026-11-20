@@ -124,6 +124,11 @@ export const en = {
   },
   sections: { label: "Sections", tech: "Tech jobs", medicine: "Medical jobs", techShort: "Tech", medicineShort: "Medical" },
   start: {
+    heroHeading: "Only jobs that are still open",
+    heroLead: "Checked every morning on employers' own careers sites. Closed jobs are marked closed, so you never apply to a dead listing.",
+    heroProof: (time: string, sources: number, added: number, closed: number) =>
+      `Last check ${time}: ${p(sources, { one: "source", other: "sources" })}, ${n(added)} new, ${n(closed)} closed.`,
+    heroAi: "Search with Claude or ChatGPT →",
     description: (t: number, d: number) => `${p(t, openJobs)} at top tech companies and ${p(d, { one: "job", other: "jobs" })} for doctors, refreshed daily from the employers.`,
     tech: "Tech",
     techHeading: "Work at top tech companies",

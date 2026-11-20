@@ -123,6 +123,11 @@ export const es = {
   },
   sections: { label: "Secciones", tech: "Empleos tech", medicine: "Empleos en medicina", techShort: "Tech", medicineShort: "Medicina" },
   start: {
+    heroHeading: "Solo empleos que siguen abiertos",
+    heroLead: "Revisados cada mañana en las webs de empleo de cada empresa. Los empleos cerrados se marcan como cerrados, así nunca te postulas a una oferta muerta.",
+    heroProof: (time: string, sources: number, added: number, closed: number) =>
+      `Última revisión ${time}: ${p(sources, { one: "fuente", other: "fuentes" })}, ${n(added)} nuevos, ${n(closed)} cerrados.`,
+    heroAi: "Busca con Claude o ChatGPT →",
     description: (t: number, d: number) => `${p(t, openJobs)} en grandes empresas tecnológicas y ${p(d, positions)} para médicos, actualizados a diario desde los empleadores.`,
     tech: "Tech",
     techHeading: "Trabaja en grandes empresas tecnológicas",

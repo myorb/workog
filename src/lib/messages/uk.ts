@@ -119,6 +119,11 @@ export const uk = {
   },
   sections: { label: "Розділи", tech: "ІТ-вакансії", medicine: "Медичні вакансії", techShort: "ІТ", medicineShort: "Медицина" },
   start: {
+    heroHeading: "Лише вакансії, які ще відкриті",
+    heroLead: "Щоранку перевіряємо на кар'єрних сайтах роботодавців. Закриті вакансії позначено як закриті, тож ви не відгукнетеся на неактуальне оголошення.",
+    heroProof: (time: string, sources: number, added: number, closed: number) =>
+      `Остання перевірка ${time}: джерел — ${n(sources)}, нових — ${n(added)}, закритих — ${n(closed)}.`,
+    heroAi: "Шукайте через Claude або ChatGPT →",
     description: (t: number, d: number) => `ІТ: ${p(t, openJobs)}; для лікарів: ${p(d, vacancies)}. Щодня напряму від роботодавців.`,
     tech: "ІТ",
     techHeading: "Робота в топових технологічних компаніях",

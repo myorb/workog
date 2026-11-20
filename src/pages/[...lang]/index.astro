@@ -5,10 +5,11 @@
  */
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
-import { getCompanies, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
+import { getCompanies, getLatestRun, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
 import { cityLinks, remoteUrl, medicineCountryLinks, specialtyLinks, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { formatNumber } from "../../lib/locale.ts";
+import { formatDateTime } from "../../lib/format.ts";
 import { website } from "../../lib/structured-data.ts";
 
 export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
@@ -38,16 +39,35 @@ const medicine = [
   { href: "/medicine/locations", label: s.allLocations },
 ];
 const description = s.description(techJobs.length, medicalJobs.length);
+
+// The proof under the promise: what this morning's check actually did
+const run = await getLatestRun();
+const ok = run?.sources.filter((r) => r.status === "ok") ?? [];
+const proof = run && ok.length > 0
+  ? s.heroProof(
+      formatDateTime(run.finishedAt, lang),
+      ok.length,
+      ok.reduce((sum, r) => sum + r.new, 0),
+      ok.reduce((sum, r) => sum + r.closed, 0),
+    )
+  : undefined;
+const aiUrl = "https://github.com/myorb/workog#search-workog-from-your-ai-assistant";
 ---
 
 <Base title="Workog" description={description} section="start" jsonLd={[website(Astro.site!, description)]}>
+  <section class="hero">
+    <h1>{s.heroHeading}</h1>
+    <p class="lead">{s.heroLead}</p>
+    {proof && <p class="proof"><span class="dot" aria-hidden="true"></span>{proof}</p>}
+    <a class="ai" href={aiUrl}>{s.heroAi}</a>
+  </section>
   <div class="panels">
     <section class="panel tech">
       <p class="label">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
         {s.tech}
       </p>
-      <h1>{s.techHeading}</h1>
+      <h2>{s.techHeading}</h2>
       <p class="summary">{s.techSummary(techJobs.length, companies)}</p>
       <nav aria-label={s.techHeading} class="chips">
         {tech.map((l) => <a href={u(l.href)}>{l.label}{"count" in l && <span>{formatNumber(l.count, lang)}</span>}</a>)}
@@ -74,14 +94,21 @@ const description = s.description(techJobs.length, medicalJobs.length);
 </Base>
 
 <style>
-  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); min-height: calc(100vh - 160px); }
+  .hero { padding: 48px max(24px, 5vw) 40px; background: #0b1730; color: #c9d6ee; display: flex; flex-direction: column; gap: 14px; }
+  .hero h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.05; color: #ffffff; max-width: 22ch; text-wrap: balance; }
+  .lead { margin: 0; font-size: 19px; max-width: 60ch; }
+  .proof { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 15px; color: #a9c1f2; }
+  .dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 4px rgb(74 222 128 / 0.18); }
+  .ai { align-self: flex-start; color: #ffffff; font-weight: 600; text-decoration: none; border-bottom: 1px solid #4a6aa8; padding-bottom: 2px; }
+  .ai:hover { border-color: #ffffff; }
+  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); min-height: calc(100vh - 420px); }
   .panel { display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 64px max(24px, 5vw); color: #e6edfb; }
   .panel.tech { background: #13233f; }
   .panel.medicine { background: #0f2e2a; color: #e6f2ef; }
   .label { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
   .tech .label { color: #a9c1f2; }
   .medicine .label { color: #99d5ca; }
-  h1, h2 { margin: 0; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.12; color: #ffffff; }
+  .panel h2 { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.12; color: #ffffff; }
   .summary { margin: 0; font-size: 18px; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; max-width: 560px; }
   .chips a {
@@ -98,5 +125,7 @@ const description = s.description(techJobs.length, medicalJobs.length);
   @media (max-width: 640px) {
     .panels { min-height: 0; }
     .panel { padding: 32px 20px; gap: 14px; }
+    .hero { padding: 32px 20px 28px; }
+    .lead { font-size: 17px; }
   }
 </style>

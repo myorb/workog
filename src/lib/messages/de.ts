@@ -126,6 +126,11 @@ export const de = {
   },
   sections: { label: "Bereiche", tech: "Tech-Jobs", medicine: "Medizin-Jobs", techShort: "Tech", medicineShort: "Medizin" },
   start: {
+    heroHeading: "Nur Stellen, die noch offen sind",
+    heroLead: "Jeden Morgen direkt auf den Karriereseiten der Arbeitgeber geprüft. Besetzte Stellen werden als geschlossen markiert, damit du dich nie auf eine tote Anzeige bewirbst.",
+    heroProof: (time: string, sources: number, added: number, closed: number) =>
+      `Letzte Prüfung ${time}: ${p(sources, { one: "Quelle", other: "Quellen" })}, ${n(added)} neu, ${n(closed)} geschlossen.`,
+    heroAi: "Mit Claude oder ChatGPT suchen →",
     description: (t: number, d: number) => `${p(t, openJobs)} bei Tech-Unternehmen und ${p(d, positions)} für Ärztinnen und Ärzte, täglich direkt von den Arbeitgebern.`,
     tech: "Tech",
     techHeading: "Arbeite bei Top-Tech-Unternehmen",
