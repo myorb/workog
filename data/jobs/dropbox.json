@@ -15,7 +15,7 @@
     "postedAt": "2025-10-22T19:14:52.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -173,7 +173,7 @@
     "postedAt": "2026-07-27T11:07:44.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -192,7 +192,7 @@
     "postedAt": "2026-09-01T13:20:17.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -230,7 +230,7 @@
     "postedAt": "2026-10-12T15:43:18.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -321,7 +321,7 @@
     "postedAt": "2026-09-17T14:06:54.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -340,7 +340,7 @@
     "postedAt": "2026-10-01T14:15:45.000Z",
     "firstSeenAt": "2026-11-03T05:02:35.566Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -359,7 +359,7 @@
     "postedAt": "2026-10-01T14:15:47.000Z",
     "firstSeenAt": "2026-11-03T05:02:35.566Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -378,7 +378,7 @@
     "postedAt": "2026-10-05T14:19:34.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -570,6 +570,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8328421",
+    "slug": "dropbox-senior-infrastructure-software-engineer-build-and-test-toolchains-8328421",
+    "company": "dropbox",
+    "title": "Senior Infrastructure Software Engineer, Build & Test Toolchains",
+    "locations": [
+      "Remote - Poland"
+    ],
+    "remote": true,
+    "department": "Engineering Productivity & Efficiency (Sub Team)",
+    "category": "engineering",
+    "descriptionHtml": "<h2>Role Description</h2>\n<p>As a Senior Infrastructure Software Engineer on Dropbox’s CI Automation team, you will build the platform that helps engineers and coding agents turn code changes into trustworthy software. Our CI systems run hundreds of thousands of builds and hundreds of millions of tests each day across Dropbox products and services.</p>\n<p>You will own a core part of the platform from strategy and design through implementation, rollout, measurement, and operation. The work spans distributed scheduling and execution, caching, test intelligence, workload isolation, observability, reliability, and cost optimization. You will collaborate with teams across Dropbox to make feedback faster and more actionable while treating quality, security, provenance, and safety as core design requirements.</p>\n<p>This role is well suited to an engineer who enjoys deep systems work and close partnership with developer customers. Your work will directly influence how quickly and confidently Dropbox can build, validate, and ship software in an agentic SDLC.</p>\n<p>Join us in redefining the future, where your passion for building scalable, reliable systems will drive meaningful change on a global scale.</p>\n\n<p>Our Engineering Career Framework is <a href=\"https://dropbox.github.io/dbx-career-framework/\"><u>viewable by anyone outside the company</u></a> and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more <a href=\"https://dropbox.tech/culture/sharing-our-engineering-career-framework-with-the-world\">here</a>.</p>\n\n<h2>Responsibilities</h2>\n<ul>\n<li>Design, build, and operate distributed CI infrastructure supporting large-scale build and test workloads.</li>\n<li>Own a core platform capability from an ambiguous developer need through measurable production impact.</li>\n<li>Improve feedback latency, reliability, debuggability, and infrastructure efficiency across developer and agent-driven workflows.</li>\n<li>Make data-informed architecture and prioritization decisions that balance performance, scalability, security, quality, and cost.</li>\n<li>Drive technical alignment and adoption across developer productivity, product, platform, and infrastructure teams.</li>\n<li>Raise the engineering bar through design reviews, operational learning, documentation, and mentorship.</li>\n</ul>\n<p>On-call work may be necessary occasionally to help address bugs, outages, or other operational issues, with the goal of maintaining a stable and high-quality experience for our customers.</p>\n<h2>Requirements</h2>\n<ul>\n<li>BS, MS, or PhD in Computer Science or related technical field involving coding (e.g., physics or mathematics), or equivalent technical experience.</li>\n<li>9+ years of professional software development experience building and operating production backend or infrastructure systems.</li>\n<li>Proven track record constructing, managing, and owning complex, large-scale distributed backend systems with cross-team dependencies and measurable outcomes.</li>\n<li>Proficient in programming and debugging across a range of languages such as Python, Go, C/C++, Java, or Rust.</li>\n<li>Strong understanding of distributed systems concepts, including concurrency, failure handling, availability, performance, and safe rollouts.</li>\n<li>Extensive experience working with operating system internals, filesystems, databases, networks, and compilers considered advantageous.</li>\n<li>Experience leveraging metrics and production signals to improve system reliability, latency, throughput, and cost.</li>\n<li>Ability to navigate and thrive in ambiguous situations, create clarity, communicate technical decisions, and influence across teams.</li>\n<li>Ability to set medium-to-long-term strategy for business-impacting projects, take ownership of long-term projects and see them through to completion.</li>\n</ul>\n<h2>Preferred Qualifications</h2>\n<ul>\n<li>Experience with CI/CD, build systems, test infrastructure, developer platforms, or internal tooling at scale.</li>\n<li>Experience with Bazel, remote execution, caching, build graphs, monorepos, or test selection.</li>\n<li>Experience with multi-tenant compute, workflow orchestration, scheduling, isolation, or capacity management.</li>\n<li>Experience designing safety, provenance, or policy mechanisms for automated software workflows.</li>\n<li>Experience measuring and improving developer feedback loops, platform adoption, or cost per validated change.</li>\n</ul>\n\n<h2>Durable Skills</h2>\n\n<p>AI fluency means using these tools to <em>amplify</em> human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:</p>\n<ul>\n<li><strong>Awareness:</strong> Understand yourself and others.</li>\n<li><strong>Judgment:</strong> Evaluate information and make decisions in complex situations.</li>\n<li><strong>Adaptability:</strong> Learn, adjust, and stay effective through change.</li>\n<li><strong>Connection:</strong> Communicate, collaborate, and build trust.</li>\n</ul>\n<p>To learn more about why these skills matter and what the data shows about thriving through change, read this <a href=\"https://www.dropbox.jobs/en/our-blog/employee-stories/the-era-of-durable-skills-what-the-data-tells-us-about-thriving-in-change/\">blog post</a> from our Chief People Officer, Melanie Rosenwasser.</p>\n<h2>Compensation</h2>Poland Pay Range333 200 zł—450 800 zł PLN",
+    "applyUrl": "https://jobs.dropbox.com/listing/8328421?gh_jid=8328421",
+    "postedAt": "2026-11-19T13:18:58.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8328469",
     "slug": "dropbox-legal-operations-associate-8328469",
     "company": "dropbox",
@@ -657,12 +674,13 @@
     "id": "greenhouse:8328519",
     "slug": "dropbox-senior-atlassian-cloud-admininstrator-8328519",
     "company": "dropbox",
-    "title": "Senior Atlassian Cloud Admininstrator",
+    "title": "Senior Atlassian Cloud Engineer",
     "locations": [
       "Remote - Mexico"
     ],
     "remote": true,
     "department": "CorpEng (Sub Team)",
+    "category": "engineering",
     "descriptionHtml": "<h2>Role Description</h2>\n<p>As a Senior Atlassian Cloud Engineer at Dropbox, you will design, build, and evolve the platforms that help our employees collaborate and get support. With a focus on Jira Service Management (JSM), you will own solutions that simplify service delivery, automate manual processes, and improve the employee experience.</p>\n<p>You will lead the design and implementation of service workflows, portals, integrations, asset management, and AI-powered support experiences. Your work will also strengthen the security, reliability, and governance of our broader Atlassian ecosystem, including Jira Cloud and Confluence.</p>\n<p>Partnering with Engineering, Corporate IT, Security, and other stakeholders, you will translate complex needs into scalable, maintainable solutions. You will take projects from discovery through delivery and ongoing operations, making technical decisions that balance immediate needs with long-term platform health.</p>\n<p>Our Engineering Career Framework is <a href=\"https://dropbox.github.io/dbx-career-framework/\">viewable by anyone outside the company</a> and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more <a href=\"https://dropbox.tech/culture/sharing-our-engineering-career-framework-with-the-world\">here</a>.</p>\n<h2>Responsibilities</h2>\n<ul>\n<li>Own the design, implementation, and ongoing improvement of Jira Service Management capabilities that make employee support simpler, faster, and more effective.</li>\n<li>Build scalable workflows, service portals, queues, service-level agreements (SLAs), and automation across incident, request, problem, and change management.</li>\n<li>Develop secure, maintainable integrations between Atlassian Cloud and enterprise systems using APIs, webhooks, and scripting.</li>\n<li>Improve employee self-service through Confluence knowledge bases, Rovo, and AI-powered support experiences.</li>\n<li>Develop JSM Assets and configuration management capabilities that improve data quality, asset visibility, and service delivery.</li>\n<li>Strengthen governance, access controls, security, and operational reliability across Jira Cloud, JSM, and Confluence while reducing configuration complexity and technical debt.</li>\n<li>Partner with stakeholders across teams to define requirements, evaluate technical tradeoffs, and deliver projects from discovery through rollout and ongoing support.</li>\n<li>Create reusable configuration patterns, documentation, and runbooks, and use operational metrics and employee feedback to guide improvements.</li>\n</ul>\n<p>On-call work may be necessary occasionally to help address bugs, outages, or other operational issues, with the goal of maintaining a stable and high-quality experience for our customers.</p>\n<h2>Requirements</h2>\n<ul>\n<li>9+ years of relevant experience in enterprise Atlassian platform administration, engineering, or equivalent technical work.</li>\n<li>Deep expertise in Jira Cloud and Jira Service Management, including configuration, permissions, governance, and troubleshooting.</li>\n<li>Demonstrated experience designing and implementing JSM workflows, service portals, queues, SLAs, and automation.</li>\n<li>Experience building and maintaining integrations using REST APIs, webhooks, and scripting.</li>\n<li>Strong understanding of SaaS security, access management, and operational reliability.</li>\n<li>Proven ability to solve ambiguous technical problems, make sound design decisions, and independently own complex projects through delivery.</li>\n<li>Strong written and verbal communication skills, including the ability to document technical solutions and collaborate with technical and non-technical stakeholders.</li>\n</ul>\n<h2>Preferred Qualifications</h2>\n<ul>\n<li>Experience leading enterprise JSM implementations or service management transformation initiatives.</li>\n<li>Experience with JSM Assets and configuration management databases (CMDBs).</li>\n<li>Familiarity with ServiceNow or similar enterprise IT service management platforms.</li>\n<li>Experience with Rovo, AI agents, or AI-powered service workflows.</li>\n<li>Experience with Python, Groovy, JavaScript, or ScriptRunner.</li>\n<li>Experience integrating Atlassian products with Slack, identity providers, endpoint management tools, or monitoring platforms.</li>\n<li>Experience building Confluence knowledge bases and integrating them into employee self-service experiences.</li>\n</ul>\n\n\n<h2>Durable Skills</h2>\n\n\n<p>AI fluency means using these tools to <em>amplify</em> human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:</p>\n<ul>\n<li><strong>Awareness:</strong> Understand yourself and others.</li>\n<li><strong>Judgment:</strong> Evaluate information and make decisions in complex situations.</li>\n<li><strong>Adaptability:</strong> Learn, adjust, and stay effective through change.</li>\n<li><strong>Connection:</strong> Communicate, collaborate, and build trust.</li>\n</ul>\n<p>To learn more about why these skills matter and what the data shows about thriving through change, read this <a href=\"https://www.dropbox.jobs/en/our-blog/employee-stories/the-era-of-durable-skills-what-the-data-tells-us-about-thriving-in-change/\">blog post</a> from our Chief People Officer, Melanie Rosenwasser.</p>",
     "applyUrl": "https://jobs.dropbox.com/listing/8328519?gh_jid=8328519",
     "postedAt": "2026-11-18T15:52:21.000Z",
@@ -673,12 +691,13 @@
     "id": "greenhouse:8328520",
     "slug": "dropbox-senior-atlassian-cloud-administrator-8328520",
     "company": "dropbox",
-    "title": "Senior Atlassian Cloud Administrator",
+    "title": "Senior Atlassian Cloud Engineer",
     "locations": [
       "Remote - Poland"
     ],
     "remote": true,
     "department": "CorpEng (Sub Team)",
+    "category": "engineering",
     "descriptionHtml": "<h2>Role Description</h2>\n<p>As a Senior Atlassian Cloud Engineer at Dropbox, you will design, build, and evolve the platforms that help our employees collaborate and get support. With a focus on Jira Service Management (JSM), you will own solutions that simplify service delivery, automate manual processes, and improve the employee experience.</p>\n<p>You will lead the design and implementation of service workflows, portals, integrations, asset management, and AI-powered support experiences. Your work will also strengthen the security, reliability, and governance of our broader Atlassian ecosystem, including Jira Cloud and Confluence.</p>\n<p>Partnering with Engineering, Corporate IT, Security, and other stakeholders, you will translate complex needs into scalable, maintainable solutions. You will take projects from discovery through delivery and ongoing operations, making technical decisions that balance immediate needs with long-term platform health.</p>\n<p>Our Engineering Career Framework is <a href=\"https://dropbox.github.io/dbx-career-framework/\">viewable by anyone outside the company</a> and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more <a href=\"https://dropbox.tech/culture/sharing-our-engineering-career-framework-with-the-world\">here</a>.</p>\n<h2>Responsibilities</h2>\n<ul>\n<li>Own the design, implementation, and ongoing improvement of Jira Service Management capabilities that make employee support simpler, faster, and more effective.</li>\n<li>Build scalable workflows, service portals, queues, service-level agreements (SLAs), and automation across incident, request, problem, and change management.</li>\n<li>Develop secure, maintainable integrations between Atlassian Cloud and enterprise systems using APIs, webhooks, and scripting.</li>\n<li>Improve employee self-service through Confluence knowledge bases, Rovo, and AI-powered support experiences.</li>\n<li>Develop JSM Assets and configuration management capabilities that improve data quality, asset visibility, and service delivery.</li>\n<li>Strengthen governance, access controls, security, and operational reliability across Jira Cloud, JSM, and Confluence while reducing configuration complexity and technical debt.</li>\n<li>Partner with stakeholders across teams to define requirements, evaluate technical tradeoffs, and deliver projects from discovery through rollout and ongoing support.</li>\n<li>Create reusable configuration patterns, documentation, and runbooks, and use operational metrics and employee feedback to guide improvements.</li>\n</ul>\n<p>On-call work may be necessary occasionally to help address bugs, outages, or other operational issues, with the goal of maintaining a stable and high-quality experience for our customers.</p>\n<h2>Requirements</h2>\n<ul>\n<li>9+ years of relevant experience in enterprise Atlassian platform administration, engineering, or equivalent technical work.</li>\n<li>Deep expertise in Jira Cloud and Jira Service Management, including configuration, permissions, governance, and troubleshooting.</li>\n<li>Demonstrated experience designing and implementing JSM workflows, service portals, queues, SLAs, and automation.</li>\n<li>Experience building and maintaining integrations using REST APIs, webhooks, and scripting.</li>\n<li>Strong understanding of SaaS security, access management, and operational reliability.</li>\n<li>Proven ability to solve ambiguous technical problems, make sound design decisions, and independently own complex projects through delivery.</li>\n<li>Strong written and verbal communication skills, including the ability to document technical solutions and collaborate with technical and non-technical stakeholders.</li>\n</ul>\n<h2>Preferred Qualifications</h2>\n<ul>\n<li>Experience leading enterprise JSM implementations or service management transformation initiatives.</li>\n<li>Experience with JSM Assets and configuration management databases (CMDBs).</li>\n<li>Familiarity with ServiceNow or similar enterprise IT service management platforms.</li>\n<li>Experience with Rovo, AI agents, or AI-powered service workflows.</li>\n<li>Experience with Python, Groovy, JavaScript, or ScriptRunner.</li>\n<li>Experience integrating Atlassian products with Slack, identity providers, endpoint management tools, or monitoring platforms.</li>\n<li>Experience building Confluence knowledge bases and integrating them into employee self-service experiences.</li>\n</ul>\n\n\n<h2>Durable Skills</h2>\n\n\n<p>AI fluency means using these tools to <em>amplify</em> human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:</p>\n<ul>\n<li><strong>Awareness:</strong> Understand yourself and others.</li>\n<li><strong>Judgment:</strong> Evaluate information and make decisions in complex situations.</li>\n<li><strong>Adaptability:</strong> Learn, adjust, and stay effective through change.</li>\n<li><strong>Connection:</strong> Communicate, collaborate, and build trust.</li>\n</ul>\n<p>To learn more about why these skills matter and what the data shows about thriving through change, read this <a href=\"https://www.dropbox.jobs/en/our-blog/employee-stories/the-era-of-durable-skills-what-the-data-tells-us-about-thriving-in-change/\">blog post</a> from our Chief People Officer, Melanie Rosenwasser.</p>\n<h2>Compensation</h2>Poland Pay Range255 000 zł—345 000 zł PLN",
     "applyUrl": "https://jobs.dropbox.com/listing/8328520?gh_jid=8328520",
     "postedAt": "2026-11-18T15:52:18.000Z",
@@ -907,6 +926,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8371054",
+    "slug": "dropbox-senior-full-stack-product-software-engineer-application-platform-8371054",
+    "company": "dropbox",
+    "title": "Senior Full Stack Product Software Engineer, Application Platform",
+    "locations": [
+      "Remote - Poland"
+    ],
+    "remote": true,
+    "department": "Engineering Productivity & Efficiency (Sub Team)",
+    "category": "engineering",
+    "descriptionHtml": "<h2>Role Description</h2>\n<p>As a Senior Full Stack Product Software Engineer on Dropbox’s Web Developer Experience (Web DX) team, you will help design and develop the application platform, developer tooling, and shared foundations that enable engineers to build reliable web experiences. You will take ownership of key technical systems, designing scalable architectures and delivering improvements that make software easier to develop, test, and ship.</p>\n<p>You will work closely with product and infrastructure engineering teams to improve build systems, language tooling, and development workflows. Your work will include accelerating TypeScript feedback, automating migrations, simplifying development environments, and evolving shared application foundations. As AI changes how software is built, you will help create the reliable builds, fast tests, and repeatable workflows that support engineers and coding agents.</p>\n<p>Our Engineering Career Framework is <a href=\"https://dropbox.github.io/dbx-career-framework/\"><u>viewable by anyone outside the company</u></a> and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more <a href=\"https://dropbox.tech/culture/sharing-our-engineering-career-framework-with-the-world\">here</a>.</p>\n\n<h2>Responsibilities</h2>\n\n<ul>\n<li>Deliver ongoing engineering impact through ownership of developer tooling, application foundations, and web-platform systemsImprove typechecking, builds, tests, and local development to shorten feedback loops and increase reliability</li>\n<li>Build automation for upgrades, code transformations, and migrations using repeatable validation and gradual rollout</li>\n<li>Collaborate with product and infrastructure teams to balance technical requirements, developer needs, and business goals</li>\n<li>Lead technical initiatives from architecture and planning through rollout and adoption, measuring their impact on developer experience</li>\n<li>Mentor engineers and contribute to team development through technical guidance, code reviews, and shared engineering standards</li>\n<li>Support the quality and operability of the systems you deliver through diagnostics, failure investigation, and agreed support arrangements</li>\n</ul>\n\n<h2>Requirements</h2>\n\n<ul>\n<li>9+ years of professional experience in full-stack development</li>\n<li>BS degree or higher in Computer Science, a related field, or equivalent experience</li>\n<li>Strong experience designing, developing, and scaling web applications or the platforms that support them</li>\n<li>Strong programming and debugging skills in JavaScript, TypeScript, or another language, with experience working across front-end and back-end systems</li>\n<li>Experience designing maintainable software, including component interfaces, dependencies, testing, and failure modes</li>\n<li>Experience delivering software to production, including validation, rollout, and ongoing improvements</li>\n<li>Demonstrated technical leadership, including architecture, prioritization, cross-team collaboration, and mentoring</li>\n<li>Ability to investigate developer and system problems using measurements, profiling, logs, tests, and user feedback</li>\n</ul>\n\n<h2>Preferred Qualifications</h2>\n\n<ul>\n<li>Experience with JavaScript/TypeScript tooling, compilers, bundlers such as Rspack, or build systems such as Bazel</li>\n<li>Experience with CI, test infrastructure, dependency graphs, or developer environments</li>\n<li>Experience with web infrastructure, application performance, service integration, or platform adoption</li>\n<li>Experience with codemods, framework upgrades, legacy-system migrations, or AI-assisted automation supported by reliable validation</li>\n</ul>\n\n<h2>Durable Skills</h2>\n\n<p>AI fluency means using these tools to <em>amplify</em> human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:</p>\n<ul>\n<li><strong>Awareness:</strong> Understand yourself and others.</li>\n<li><strong>Judgment:</strong> Evaluate information and make decisions in complex situations.</li>\n<li><strong>Adaptability:</strong> Learn, adjust, and stay effective through change.</li>\n<li><strong>Connection:</strong> Communicate, collaborate, and build trust.</li>\n</ul>\n<p>To learn more about why these skills matter and what the data shows about thriving through change, read this <a href=\"https://www.dropbox.jobs/en/our-blog/employee-stories/the-era-of-durable-skills-what-the-data-tells-us-about-thriving-in-change/\">blog post</a> from our Chief People Officer, Melanie Rosenwasser.</p>\n<h2>Compensation</h2>Poland Pay Range333 200 zł—450 800 zł PLN",
+    "applyUrl": "https://jobs.dropbox.com/listing/8371054?gh_jid=8371054",
+    "postedAt": "2026-11-19T13:19:18.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8374438",
     "slug": "dropbox-implementation-architect-8374438",
     "company": "dropbox",
@@ -970,6 +1006,23 @@
     "applyUrl": "https://jobs.dropbox.com/listing/8381086?gh_jid=8381086",
     "postedAt": "2026-11-18T19:36:55.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8393442",
+    "slug": "dropbox-apj-communications-lead-8393442",
+    "company": "dropbox",
+    "title": "APJ Communications Lead",
+    "locations": [
+      "Remote - Australia: Select locations"
+    ],
+    "remote": true,
+    "department": "Communications (Sub Team)",
+    "category": "marketing",
+    "descriptionHtml": "<h2>Role Description</h2>\n<ul>\n<li>\nDropbox is looking for an Australia-based APJ Communications Lead to build our reputation and support our business priorities across Asia Pacific and Japan, with a focus on Australia, Japan, South Korea, Singapore, and India. You’ll help shape how customers, media, and industry leaders understand Dropbox as we expand beyond file storage into AI-powered work.\n</li>\n<li>\nWorking closely with regional leadership and global communications, marketing, and product teams, you’ll develop a regional communications strategy that connects Dropbox’s global story to local customer needs and market priorities. Your work will span product and customer storytelling, media relations, executive visibility, and reputation management.\n</li>\n<li>\nWe’re looking for someone who can set a clear direction and deliver the work themselves, from advising executives and developing campaigns to writing briefing materials and pitching journalists. You’ll bring strong editorial judgment, a deep understanding of the region, and the ability to turn complex ideas into clear, relevant stories. \n</li>\n</ul>\n<h2>Responsibilities</h2>\n<ul>\n<li>\nOwn and execute Dropbox’s APJ communications strategy, aligning regional programmes with business priorities and global communications objectives.\n</li>\n<li>\nLead regional product announcements and launches, adapting global narratives to reflect local customer needs, market conditions, and cultural context.\n</li>\n<li>\nBuild and maintain relationships with business and technology journalists, influential voices, and relevant industry stakeholders across priority markets.\n</li>\n<li>\nPartner with customer, sales, and marketing teams to identify compelling customer stories and bring their perspectives into communications programmes.\n</li>\n<li>\nAdvise regional leaders on external communications, prepare them for media and speaking engagements, and partner with global communications on issues that could affect Dropbox’s reputation.\n</li>\n<li>\nLead agency partners across APJ, setting clear priorities, managing budgets, and ensuring consistent, high-quality execution.\n</li>\n<li>\nBring regional insights into global planning, measure results against communications objectives, and use those findings to refine priorities and resource allocation.\n</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>\n10+ years of relevant communications experience, including responsibility for programmes across multiple APJ markets including Australia, Japan, South Korea, Singapore and India.\n</li>\n<li>\nExcellent writing and editing skills with the ability to make complex business and technology topics accessible and engaging.\n</li>\n<li>\nA track record of developing communications strategies and delivering measurable results.\n</li>\n<li>\nStrong understanding of the region’s media landscape, business environment and cultural differences, with established relationships in key markets.\n</li>\n<li>\nExperience advising senior executives and preparing them for external engagements.\n</li>\n<li>\nSound judgement and experience managing corporate issues and reputational risk.\n</li>\n<li>\nAbility to influence and collaborate across functions, markets and time zones.\n</li>\n<li>\nExperience managing agencies, budgets and competing priorities.\n</li>\n</ul>\n<h2>Preferred Qualifications</h2>\n<ul>\n<li>\nProficiency in an additional language relevant to the region, particularly Japanese or Korean highly regarded.\n</li>\n<li>\nExperience developing earned and owned content, with a strong understanding of how they work together within the broader communications mix.\n</li>\n</ul>\n\n\n<h2>Durable Skills</h2>\n\n\nAI fluency means using these tools to <em>amplify</em> human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:\n\n<ul>\n<li><strong>Awareness:</strong> Understand yourself and others.</li>\n<li><strong>Judgment:</strong> Evaluate information and make decisions in complex situations.</li>\n<li><strong>Adaptability:</strong> Learn, adjust, and stay effective through change.</li>\n<li><strong>Connection:</strong> Communicate, collaborate, and build trust.</li>\n</ul>\n\nTo learn more about why these skills matter and what the data shows about thriving through change, read this <a href=\"https://www.dropbox.jobs/en/our-blog/employee-stories/the-era-of-durable-skills-what-the-data-tells-us-about-thriving-in-change/\">blog post</a> from our Chief People Officer, Melanie Rosenwasser.",
+    "applyUrl": "https://jobs.dropbox.com/listing/8393442?gh_jid=8393442",
+    "postedAt": "2026-11-19T22:56:26.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {

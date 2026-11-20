@@ -33,7 +33,7 @@
     "postedAt": "2026-10-23T09:03:08.634Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -175,7 +175,7 @@
     "postedAt": "2026-10-28T09:34:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -429,6 +429,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MjkzMzkxMyAxOQ?lang=en",
     "postedAt": "2026-11-10T22:45:14.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -499,25 +501,6 @@
     "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/106f4491-a108-4df5-931e-9073e6632160/fi",
     "postedAt": "2026-11-10T05:19:19.322Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:MTAwMDAwMDAyOTgwNDA2NiA0MQ",
-    "slug": "zachranna-zdravotna-sluzba-bratislava-vseobecni-lekari-mtawmdawmdayotgwnda2nia0mq",
-    "company": "eures",
-    "employer": "Záchranná zdravotná služba Bratislava",
-    "title": "Všeobecní lekári",
-    "locations": [
-      "Bratislava-Dúbravka, Slovakia"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Neodkladná lekárska prednemocničná starostlivosť poskytovaná v terénnych podmienkach pri stavoch ohrozujúcich zdravie a život občanov.Výhody:výška mzdy od 3100,- eur do 4862,- eur mesiac. Mzdové podmienky v zmysle zákona č. 578 2004 Z. z. a na základe individuálnej dohody s organizáciou. Ďalšie príplatky v zmysle Kolektívnej zmluvy a Zákonníka práce.<br />5 dní voľna na zotavenie nad rámec bežnej dovolenky,<br />príspevok na stravné lístky nad rámec zákona,<br />príspevok na III. pilier dôchodkového sporenia,<br />finančná odmena pri osobných a pracovných výročiach</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTAwMDAwMDAyOTgwNDA2NiA0MQ?lang=en",
-    "postedAt": "2026-06-16T02:14:02.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "eures"
   },
   {
@@ -753,6 +736,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTcwOTk3NzAgNDM?lang=en",
     "postedAt": "2026-01-30T21:45:03.425Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -828,7 +813,7 @@
     "postedAt": "2026-07-07T19:45:03.031Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -886,7 +871,7 @@
     "postedAt": "2026-07-02T19:45:02.805Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -907,7 +892,7 @@
     "postedAt": "2026-07-03T19:45:02.696Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1132,6 +1117,23 @@
     "source": "eures"
   },
   {
+    "id": "eures:MTIxNTU2MzUgNDQx",
+    "slug": "eures-a09-26-medecin-ou-pharmacien-biologiste-m-au-sein-du-secteur-d-immunohematologie-mtixntu2mzugndqx",
+    "company": "eures",
+    "title": "A09/26 : Médecin ou Pharmacien Biologiste (M/) au sein du Secteur d’Immunohématologie Transfusionnelle/ Banque de Sang",
+    "locations": [
+      "Anderlecht, Belgium"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "descriptionHtml": "<p>Le <strong>LHUB-ULB </strong>est un laboratoire de biologie clinique multi-site assurant des activités analytiques tant pour la médecine hospitalière qu’ambulatoire. Il est le laboratoire commun de quatre hôpitaux partenaires : l’Institut Jules Bordet, l’Hôpital Erasme, l’Hôpital Universitaire des Enfants Reine Fabiola regroupés au sein de l’Hopital Universitaire de Bruxelles, et le CHU Saint-Pierre. Il constitue un des plus grands laboratoires de biologie clinique de Belgique, avec plus de 500 collaborateurs et 18 millions d’analyses réalisées par an.</p><p> Au sein du réseau des hôpitaux bruxellois associés à l’Université Libre de Bruxelles (ULB), le LHUB-ULB exerce la triple mission d’un service universitaire : garantir la performance des soins, l'excellence de la recherche et la qualité de l’enseignement. Les hôpitaux partenaires représentent des centres de référence en transplantation d’organes solides et hématologiques mais également dans la prise en charge des pathologies du globule rouge telle que la drépanocytose. Le LHUB-ULB constitue également un environnement académique dynamique, étroitement intégré à la Faculté de Médecine et à l’École de Santé Publique de l’Université Libre de Bruxelles. Les biologistes du LHUB-ULB participent activement à l’enseignement pré- et post-gradué en médecine et en pharmacie, ainsi qu’à la formation des médecins et pharmaciens spécialistes en biologie clinique.</p><p> Le secteur d’immuno--hémato transfusion travaille sur deux sites principaux, localisés à Anderlecht et à la Porte de Hal. Il réalise plus de 120.000 analyses par an et délivre plus de 23.000 produits sanguins labiles par an. </p><p>Nous recherchons un(e) <strong>médecin ou pharmacien biologiste</strong> pour rejoindre notre équipe dynamique au sein du <strong>secteur d’immunohématologie transfusionnelle/ banque de sang. </strong>Ce poste offre une opportunité unique de travailler dans un environnement multidisciplinaire au cœur des activités de transfusion et d'immunohématologie avec des interactions privilégiées avec des domaines en pleine évolution tels que la coagulation spéciale, la cytométrie en flux et la biologie moléculaire au sein du service d’hématologie LHUB-ULB.</p><p>Le biologiste recruté aura pour objectif de renforcer les synergies entre les deux sites analytiques et de délivrance du LHUB-ULB. Il assura la coordination des équipes techniques et médicales situées sur ces deux sites. Il veillera au développement du secteur au sein du service d’hématologie en collaboration avec d’autres secteurs tels que le HLA et la coagulation spéciale. Le biologiste participera également à l’encadrement et la formation des pharmaciens et médecins biologises en formation en biologie clinique. Enfin, il contribuera au développement et à la recherche au sein de son secteur.</p><p> Le candidat aura l’opportunité de développer des projets de recherche translationnelle en collaboration avec les équipes cliniques et les plateformes technologiques du LHUB-ULB et de l’ULB. Les axes de recherche pourront notamment concerner l’immunohématologie, la médecine transfusionnelle, la biologie moléculaire appliquée aux groupes sanguins ou les complications immunologiques de la transfusion.</p><p>Le CHU Saint-Pierre est un hôpital public et universitaire de référence, offrant des soins de grande qualité accessibles à tous.</p><p>Dans ce cadre, il relève quotidiennement les défis de la santé publique tout en déclinant son caractère universitaire via une implication active dans l’enseignement et la recherche.</p><p>Les chiffres clés qui caractérisent l’hôpital sont les suivants :</p><ul><li>450.000 consultations/an</li><li>45.000 admissions/an</li><li>23.000 opérations chirurgicales/an</li><li>85.000 passages aux urgences/an</li><li>2900 accouchements/an</li><li>3200 collaborateurs dont 400 médecins</li></ul><p>Le respect, l’innovation, l’engagement, la qualité et la solidarité sont les valeurs clés de l’hôpital. Toutes et tous s’attèlent à placer le patient au centre de leur action. Les réponses aux réalités sociales, la tolérance, le libre-examen et la capacité à se mobiliser au quotidien pour les patients, bruxellois et non-bruxellois, sont les moteurs de ses actions.</p><p>La quête de l’excellence en médecine de pointe et l’approche multidisciplinaire, font de l’hôpital une référence sur le plan national.</p><p>Le CHU St Pierre travaille également en étroite collaboration avec de nombreux partenaires comme les médecins généralistes, médecins spécialistes référents, les CPAS et les autres institutions d’aides et de soins en Région bruxelloise.</p><p>Travailler au CHU Saint-Pierre, c’est à la fois faire partie d’un hôpital ancré dans la Ville depuis plusieurs siècles et d’un réseau hospitalier moderne en développement rapide, CHORUS, plus grand réseau hospitalier en Belgique. Travailler au CHU Saint-Pierre, c’est faire partie d’un groupe soudé, soutenant, au sein duquel chaque personne a sa place, afin d’offrir un service optimal. La satisfaction de nos patients et notre bien-être au travail sont nos priorités.</p><p>Les Hôpitaux Iris Sud et le CHU Saint-Pierre entreprennent un projet de groupement stratégique visant à consolider leur stabilité et à dynamiser leurs partenariats médicaux. Ce projet a pour ambition de préserver et renforcer la qualité des soins en offrant un environnement encore plus stimulant pour les professionnels de santé. Cette collaboration représente une belle opportunité de renforcer l’excellence de deux hôpitaux publics engagés, soutenus par des valeurs éthiques fortes et un attachement constant envers la santé publique.</p> <p>Offre: </p><p><strong><u>Profil recherché</u></strong></p><p>Médecin ou Pharmacien(ne) spécialiste en Biologie Clinique, Directeur/trice de clinique, responsable de l’’immuno-hématologie transfusionnelle et responsable des banques de sang de l’Hôpital Universitaire de Bruxelles et du CHU Saint-Pierre.</p><strong><u>Profil : </u></strong><ul><li>Diplôme de Médecin ou Pharmacien(ne) spécialiste en Biologie Clinique;</li><li>Titulaire d’un Master complémentaire en médecine transfusionnelle;</li><li>Minimum 5 années d’expérience en immuno-hématologie/banque de sang;</li><li>Expérience en gestion d’équipe et coordination de structures hospitalières constitue un atout.</li></ul><strong><u>Fonction :</u></strong><p><u>¿</u>En tant que directeur/trice. de clinique et responsable du secteur immunohématologie transfusionnelle/banque de sang, la personne engagée sera responsable de la coordination et de l’intégration progressive des activités des deux sites actuels (Anderlecht et Porte de Hal) au sein d’un secteur unique d’immunohématologie transfusionnelle.</p><p><strong><u>Ses principales missions seront de :</u></strong>.</p><ul><li>Assurer une <strong>gestion organisationnelle et administrative</strong> coordonnée entre les deux sites.</li><li>Harmoniser les procédures et les pratiques analytiques en s’appuyant sur des équipements similaires afin de mettre en place un système de qualité unique.</li><li>Veiller et promouvoir les bonnes pratiques transfusionnelles en collaboration avec les médecins prescripteurs des deux sites.</li><li>Assurer la supervision des activités analytiques d’immuno-hématologie et de la gestion des produits sanguins labiles, y compris les aspects liés à la tarification, à la facturation et au remboursement des analyses et des dérivés sanguins conformément aux réglementations en vigueur.</li><li>Participer aux réunions et activités du comité de transfusion des deux sites hospitaliers et assurer, en coordination avec les responsables concernés, le bon fonctionnement des activités d’hémovigilance. </li><li>Assurer le rôle d’interlocuteur de référence vis à vis du Service Francophone du Sang de la Croix-Rouge de Belgique.</li><li>Organiser une garde médicale commune aux deux sites et veiller l’organisation de la permanence médicale.</li><li>Assurer l’encadrement et la formation continue des médecins et pharmaciens spécialistes en formation en biologie clinique.</li><li>Participer aux activités de recherche, de développement et d’enseignement en lien avec la médecine transfusionnelle.</li><li>Encadrer, diriger et évaluer les collaborateurs du secteur, en veillant au développement des compétences et de la dynamique de son équipe.</li></ul><strong><u>Compétences :</u></strong><ul><li>Esprit de décision et sens des responsabilités;</li><li>Capacité à fédérer et coordonner des équipes multi-sites;</li><li>Sens de la collaboration et du travail en réseau;</li><li>Promotion d’un climat de travail fondé sur l’écoute, l’équité et la bienveillance;</li><li>Capacité à accompagner et gérer le changement;</li><li>Flexibilité et sens de l’organisation.</li></ul><strong><u>Conditions du poste :</u></strong><p><em><u>Nous vous offrons</u></em><u> :</u></p><ul><li>Contrat CDI médecin hospitalier, statut salarié;</li><li>Temps plein ou minimum 8/10ème;</li><li>Travail au sein d’une équipe multidisciplinaire constituée de spécialistes en hématologie, biologie moléculaire et transplantation;</li><li>Date d’entrée en fonction dès que possible;</li><li>Une fonction enrichissante et variée dans un environnement de travail universitaire et à visage humain;</li><li>Un statut financier intéressant avec prise en charge de la RC professionnelle par le CHU;</li><li>Une prime linguistique dès la réussite de l’examen Selor;</li><li>Des chèques-repas, des congés scientifiques, des soins à tarif préférentiel dans tous les hôpitaux du réseau Iris;</li><li>Un environnement technique performant.</li></ul>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTIxNTU2MzUgNDQx?lang=en",
+    "postedAt": "2026-11-19T06:00:24.397Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:MTQ4MjA0ODUgMTI",
     "slug": "rybka-s-c-lekarz-lekarka-psychiatrii-mtq4mja0odugmti",
     "company": "eures",
@@ -1182,7 +1184,7 @@
     "postedAt": "2026-10-26T12:30:00.536Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1200,6 +1202,23 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTQ5MTkxNzUgMTI?lang=en",
     "postedAt": "2026-10-08T07:00:00.178Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:MTU2NTkzNjU1NjggMTY",
+    "slug": "bajai-szent-rokus-korhaz-altalanos-orvos-mtu2ntkznju1njggmty",
+    "company": "eures",
+    "employer": "Bajai Szent Rókus Kórház",
+    "title": "Általános orvos",
+    "locations": [
+      "Hungary"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>A(z) BAJAI SZENT RÓKUS KÓRHÁZ&amp;nbsp;&amp;nbsp;Általános orvos munkatársat keres bajai munkavégzésre egészségügyi szolgálati jogviszony keretében határozatlan időtartamra. . Munkarend, munkaidő beosztás: munkaidőkeret, foglalkoztatás kezdete, vége: 2026.11.19 - , állásegyeztetés helye és módja: Foglalkoztatónál: 6500 Baja, RÓKUS utca 10..</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MTU2NTkzNjU1NjggMTY?lang=en",
+    "postedAt": "2026-11-20T03:30:00.262Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1641,7 +1660,7 @@
     "postedAt": "2026-10-22T20:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1678,7 +1697,7 @@
     "postedAt": "2026-10-26T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1697,7 +1716,7 @@
     "postedAt": "2026-11-08T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1736,7 +1755,7 @@
     "postedAt": "2026-10-25T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1774,7 +1793,7 @@
     "postedAt": "2026-11-03T22:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -1927,7 +1946,7 @@
     "postedAt": "2026-09-25T06:15:10.470Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -2093,6 +2112,120 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA3MWY0ZDItNzg1Yy1mZTM5LWUwNjMtNjg5M2IyMGFlZjJkIDQy?lang=en",
     "postedAt": "2026-11-17T03:13:29.970Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA4NjEyYTktNzIyMi1mN2I3LWUwNjMtNjg5M2IyMGExNmUwIDQy",
+    "slug": "eures-interventieradioloog-nja4njeyytktnziymi1mn2i3lwuwnjmtnjg5m2iymgexnmuwidqy",
+    "company": "eures",
+    "title": "Interventieradioloog",
+    "locations": [
+      "Venlo, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>VieCuri , Venlo  Vakgebied Artsen Functie Radioloog Branche Ziekenhuis Aanstelling Niet nader bepaald Plaatsingsdatum 12 oktober 2026 Niveau WO Ervaring Ervaren Dienstverband Niet nader bepaald  Dit wordt je nieuwe baan In 2025 is ons nieuwe interventiecentrum opgeleverd met state-of-art angio-interventiekamer, anesthesie ondersteuning en mogelijkheden voor een eigen vervoer. Daarnaast beschikken we over dedicated interventietijd op de hybride OK voor o.a. cryo-ablaties en meer complexe interventies. Verder heeft de afdeling Medische Beeldvorming (Radiologie - Nucleaire Geneeskunde) een centrale en een decentrale (Centrum voor Diagnostiek) locatie in Venlo en een locatie in Venray. Daarnaast is er een decentrale locatie in Helden-Panningen. De huidige afdeling heeft naast een angio-interventie complex, drie multislice CT- en drie MRI-scanners. De afdeling beschikt ook over een dubbelkops gammacamera, een SPECT-CT, een PET-CT. Wij bieden een uitdagende werkomgeving met een breed aanbod aan radiologische én nucleair geneeskundige technieken. De ambitie is om topklinische zorg te leveren en ons zorgaanbod continu te verbeteren. Dit alles in nauwe en goede samenwerking met onze collegae poortspecialisten. Het VieCuri biedt medisch specialisten een dynamische en persoonlijke werkomgeving met korte communicatie lijnen tussen medisch specialisten in een regio met een groot en gevarieerd patiënten aanbod.  De afdeling en je collega's Binnen het Collectief Medische Staf (CMS) zijn ruim 170 medisch specialisten actief, waarvan ca. 120 medisch specialisten in vrije vestiging (stafmaatschap MSB VieCuri) en ca. 50 in dienstverband bij VieCuri. Het CMS hecht veel waarde aan het verlenen van hoogwaardige medisch specialistische patiëntenzorg, onderzoek &amp;amp; innovatie, kwaliteit en regionale samenwerking. Toetreding tot de stafmaatschap MSB, vakgroep Medische Beeldvorming, vindt plaats conform reglement benoemingsprocedure van MSB VieCuri.  D...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA4NjEyYTktNzIyMi1mN2I3LWUwNjMtNjg5M2IyMGExNmUwIDQy?lang=en",
+    "postedAt": "2026-11-18T03:12:57.062Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA4NjEyYTktNzJlYy1mN2I3LWUwNjMtNjg5M2IyMGExNmUwIDQy",
+    "slug": "eures-psychiater-volwassenen-apeldoorn-nja4njeyytktnzjlyy1mn2i3lwuwnjmtnjg5m2iymgexnmuwidqy",
+    "company": "eures",
+    "title": "Psychiater Volwassenen Apeldoorn",
+    "locations": [
+      "Apeldoorn, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Voor onze nieuw te openen vestiging in Apeldoorn zoeken wij een psychiater die graag werkt met volwassenen met complexe psychische en psychiatrische problematiek. Wil je daarnaast zelf psychotherapie?&amp;nbsp;&amp;nbsp;Daar is bij ons ruimte voor.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Over het bedrijfOver ons Werken bij PsyMens ZorgGroep betekent werken binnen een organisatie die rijk is aan uitdagingen en mogelijkheden. In onze organisatie staat de cliënt centraal. Tegelijkertijd vinden we ook dat tevreden medewerkers de sleutel zijn tot de beste zorg. Goede zorg is wat ons bindt. Ons team Volwassenen bestaat uit GZ-psychologen, klinisch psychologen, psychotherapeuten, verpleegkundig specialisten en psychiaters. PsyMens biedt een hooggekwalificeerd, gevarieerd en multidisciplinair behandelaanbod voor mensen die op verandering en verbetering gerichte (psycho-)therapie nodig hebben. De behandeling begint bij goede diagnostiek en advies. Er wordt gewerkt met effectief bewezen behandelmethoden. Alle belangrijke vormen van (psycho-)therapie zijn bij ons vertegenwoordigd. Het uitgangspunt daarbij is dat PsyMens kortdurend behandelt als het kan en langer durend als het nodig is. Over de functie -&amp;nbsp;&amp;nbsp;Je behandelt en begeleidt patiënten met vaak meervoudige en complexe problematiek, waaronder persoonlijkheidsproblematiek; -&amp;nbsp;&amp;nbsp;Je kunt, passend bij je deskundigheid, zelf psychotherapie geven. Zo kun je je psychotherapeutische vakmanschap blijven ontwikkelen, bijvoorbeeld met cognitieve gedragstherapie (CGT) of mentaliseren bevorderende therapie (MBT); -&amp;nbsp;&amp;nbsp;Je bent bereid spoedeisende zorg en crisisinterventies toe te passen (binnen kantooruren) in nauwe samenwerking met de crisisdienst en collega-instellingen. -&amp;nbsp;&amp;nbsp;Je werkt nauw samen met de collega psychiaters, klinisch psychologen, psychotherapeuten en GZ-psychologen. - Je draagt als sparringpartner voor de manager behandelzaken Utrecht regelmatig bij aan de inhoudelijke ontwikkelingen binnen het team volwassenzorg. -&amp;nbsp;&amp;nbsp;Je bent bereid om in samenwerking met collega'</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA4NjEyYTktNzJlYy1mN2I3LWUwNjMtNjg5M2IyMGExNmUwIDQy?lang=en",
+    "postedAt": "2026-11-18T03:12:58.017Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA5YTMwODItMzEzZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy",
+    "slug": "eures-coordinerend-bedrijfsarts-nja5ytmwoditmzezzs0wodzilwuwnjmtnjg5m2iymgfiy2u3idqy",
+    "company": "eures",
+    "title": "Coördinerend Bedrijfsarts",
+    "locations": [
+      "Haarlem, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Coördinerend bedrijfsarts Haarlem/Amsterdam- 865 Serieuze impact maken met jouw bijdrage aan gezonde medewerkers. Serieuze impact maken met jouw bijdrage aan preventie van (beroeps)uitval. Het kan in jouw rol als coördinerend bedrijfsarts bij mkbasics, een dochtermaatschappij van Arbo Unie, waarbij je werkzaam bent in de bedrijfsgezondheidszorg. Je snapt dat vitaliteit een van de belangrijkste factoren is waardoor mensen lekker in hun vel zitten en dat daarmee uitval wordt voorkomen. De vrijheid om jouw werk zelf in te delen is daarvan het beste voorbeeld. Dit ga je doen Als coördinerend bedrijfsarts is het jouw missie om met je eigenzinnige kijk op verzuim, vitaliteit &amp;amp; arbeidsomstandigheden, via bewustwording gedragsverandering bij onze klanten en cliënten te creëren. In deze veelzijdige functie werk je drie dagen in de week als ervaren bedrijfsarts voor opdrachtgevers, ondernemende organisaties die variëren in grootte van 2 tot 2800 medewerkers. Deze opdrachtgevers bestaan uit lokale ondernemingen tot grote decentrale landelijk opererende organisaties. De twee overige dagen stap je in je rol van inspirator en supervisor voor 6 tot 8 collega's die je in taakdelegatie aanstuurt. Hier kan je jouw drive en opgebouwde kunde kwijt om artsen, arts trainees, bedrijfsartsen in opleiding, verpleegkundigen en/of adviseurs arbeid &amp;amp; gezondheid en casemanagers te laten excelleren. Je neemt ze mee in het klantgericht denken en handelen en je leert hun omgaan met gestelde organisatiedoelen. Jouw opdracht ligt deels bij de optimalisatie van de vakinhoudelijke kwaliteit van dienstverlening. Je deelt jouw visie over ontwikkelingen en trends en hoe onze klanten dit kunnen inzetten om hun organisatie vitaler te krijgen en verzuim te beperken. Daarnaast ben je business partner voor klanten waarbij je andere diensten van het Arbo Unie concern, zoals de inzet van fysiotherapeuten, psychologen en jobcoaches onder de aandacht weet te brengen. Je ben...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA5YTMwODItMzEzZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy?lang=en",
+    "postedAt": "2026-11-19T03:13:44.517Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA5YTMwODItNGYzZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy",
+    "slug": "eures-anios-nja5ytmwoditngyzzs0wodzilwuwnjmtnjg5m2iymgfiy2u3idqy",
+    "company": "eures",
+    "title": "Anios",
+    "locations": [
+      "Zoetermeer, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>ANIOS IHT Leidschendam/Zoetermeer  GGZ Rivierduinen , Leidschendam  Vakgebied Artsen Functie ANIOS Branche GGZ Aanstelling Tijdelijk met uitzicht op vast Plaatsingsdatum 18 november 2026 Niveau WO Ervaring Ervaren Dienstverband Fulltime Welke uitdaging ga je aan? Wil jij als ANIOS werken in de acute psychiatrie én vanaf de start meebouwen aan een nieuw team? Dan is dit jouw kans. Als ANIOS bij het IHT bied je kortdurende, intensieve crisisbehandeling (tot 6 weken), zoveel mogelijk in de thuissituatie. Samen met cliënten, hun netwerk en ketenpartners stabiliseer je crisissen en voorkom je waar mogelijk opnames, terwijl je ook meedenkt over de ontwikkeling van IHT. Wat ga je doen? - Je voert intakegesprekken, stelt diagnoses en start behandelingen; - Je indiceert en voert medicamenteuze behandeling uit; - Je stelt herstelplannen op en bewaakt de voortgang; - Je monitort het effect van behandelingen en stuurt waar nodig direct bij; - Je bezoekt cliënten in hun thuissituatie; - Je werkt intensief samen met psychiaters, psychologen, SPV'ers en verpleegkundigen; - Je neemt deel aan de crisisdienst; - Je draagt actief bij aan de opbouw en doorontwikkeling van het nieuwe team . Binnen onze Intensive Home Treatment (IHT)-zorg zijn we volop in beweging. IHT is al gevestigd in Leiden en Gouda, en we breiden nu uit met een nieuwe uitvalsbasis in Leidschendam. Vanuit deze drie locaties werken we als één team en bedienen we gezamenlijk de regio. Dit betekent dat je breed inzetbaar bent en samenwerkt met collega's over de verschillende locaties heen. De nieuwe locatie in Leidschendam richt zich op de regio Leidschendam-Zoetermeer (inclusief Rijswijk, Leidschenveen, Voorburg en Voorschoten). Jij speelt een belangrijke rol in zowel de verdere opbouw van het team als in de zorg voor cliënten in crisissituaties. Wie ben jij? Om de functie van ANIOS goed uit te kunnen voeren heb je affiniteit met de acute psychiatrie, kun je goed samenwe...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA5YTMwODItNGYzZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy?lang=en",
+    "postedAt": "2026-11-19T03:14:20.444Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA5YTMwODItNTAyZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy",
+    "slug": "eures-specialist-ouderengeneeskunde-nja5ytmwoditntayzs0wodzilwuwnjmtnjg5m2iymgfiy2u3idqy",
+    "company": "eures",
+    "title": "Specialist Ouderengeneeskunde",
+    "locations": [
+      "Leiden, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Specialist ouderengeneeskunde Topaz , Leiden  Vakgebied Artsen Functie Specialist ouderengeneeskunde Branche VVT Aanstelling Tijdelijk met uitzicht op vast Plaatsingsdatum 8 oktober 2026 Niveau WO Ervaring Medior Dienstverband Fulltime Zet jouw expertise in op een plek waar het hele leven telt! Als specialist ouderengeneeskunde draag je bij aan zorg die verder kijkt dan behandelen alleen. Je hebt oog voor kwaliteit van leven, zelfredzaamheid en wat voor iemand belangrijk is in het dagelijks leven. Je komt te werken in een betrokken Behandeldienst waar samenwerken vanzelfsprekend is. Met verpleegkundig specialisten, physician assistants, psychologen, paramedici en zorgteams werk je aan passende zorg en behandeling voor ouderen met complexe zorgvragen. De lijnen zijn kort, collega's weten elkaar makkelijk te vinden en er is volop ruimte om kennis uit te wisselen en van elkaar te leren. Topaz biedt mogelijkheden op meerdere locaties. Tijdens de kennismaking verkennen we graag welke locatie(s) een goede match kunnen zijn. Je krijgt de ruimte om naast het inzetten van jouw expertise, je verder te ontwikkelen. Of je nu aan het begin van je carrière staat of al veel ervaring meebrengt: jouw kennis, betrokkenheid en ideeën zijn van grote waarde voor ons. Je communiceert helder, werkt graag samen en voelt je prettig in een zelfstandige functie. Wat neem je mee? - Je bent BIG-geregistreerd als Specialist Ouderengeneeskunde, of je bevindt je in de afrondende fase van je opleiding - Je bent ingeschreven in het register van de KNMG - Je hebt affiniteit met de ouderenzorg en voelt je thuis in een omgeving waarin complexe zorgvragen, multidisciplinaire samenwerking en persoonsgerichte zorg samenkomen. Wat bieden wij? - Salaris volgens FWG 75 van de cao VVT - Je werkt doordeweeks overdag en hebt dus géén avond-, nacht- of weekenddiensten - Een contract voor de duur van een jaar, met uitzicht op een vast contract - Een vakantietoeslag van 8% e...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA5YTMwODItNTAyZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy?lang=en",
+    "postedAt": "2026-11-19T03:14:21.590Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA5YTMwODItNWJlMi0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy",
+    "slug": "eures-arts-vg-nja5ytmwoditnwjlmi0wodzilwuwnjmtnjg5m2iymgfiy2u3idqy",
+    "company": "eures",
+    "title": "Arts VG",
+    "locations": [
+      "Bedum, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Het vraagt vakmanschap én betrokkenheid om medische zorg te bieden aan mensen met een verstandelijke beperking. Als jij graag multidisciplinair samenwerkt, energie krijgt van complexe zorgvragen en cliëntgerichtheid net zo belangrijk vindt als wij, dan ontmoeten we je graag. Waar ga je werken? Als arts VG ben je onderdeel van het medisch team van expertisecentrum Advisium binnen 's Heeren Loo en specifiek voor de regio Noord-Oost Nederland (Groningen en Friesland). Jouw vaste standplaats is Bedum. Binnen deze regio werk je nauw en fijn samen met gedragswetenschappers, sociaalpsychiatrisch verpleegkundigen, wijkverpleegkundigen, bewegingsagogen, fysiotherapeuten, logopedisten, een diëtiste, een ergotherapeut en verpleegkundig specialisten. Ondersteund door een praktijkmanager en medisch secretaresses. Expertisecentrum Advisium levert, binnen en buiten 's Heeren Loo, expertise door middel van specialistisch advies en behandeling ten behoeve van de ondersteuning van mensen met een verstandelijke beperking in hun kwaliteit van bestaan. Advisium wil vanuit een maatschappelijke verantwoordelijkheid een bijdrage leveren op het gebied van expertise en kwaliteit van zorg. Lees hier meer over Advisium en kennis en wetenschap. Hoe ga je helpen? Als arts VG zet je jouw specialistische kennis in voor cliënten met uiteenlopende en vaak complexe zorgvragen. Jij: Onderzoekt, diagnosticeert, behandelt en begeleidt mensen met een verstandelijke beperking, vaak op verwijzing van de huisarts. Werkt met een zeer diverse doelgroep: van kinderen tot ouderen, van lichte verstandelijke beperking tot ernstige meervoudige beperkingen. Biedt zorg aan cliënten die intramuraal wonen op kleinschalige locaties, maar ook ambulant in de regio. Past jouw werkzaamheden aan op jouw specifieke expertise en interesses. Levert een bijdrage aan medisch beleid binnen de locatie en/of organisatie. Geeft supervisie en coaching aan basisartsen en artsen in opleiding. Werkt intensief samen binnen eenmultidisciplinair team waarin gedragsdeskundigen en paramedici een belangrijke rol spelen. Je werkt in een regio waar de zorgvraag complex en divers is, en waar jouw expertise direct bijdraagt aan de kwaliteit van leven van cliënten. Wat heb je nodig? Je bent BIG geregistreerd arts VG. Daarnaast: Draag je graag bij aan de verdere professionalisering van de zorg voor mensen met een verstandelijke beperking. Vind je het een uitdaging om ambulant te werken in plaats van uitsluitend op een instellingsterrein. Ben je communicatief vaardig, zelfstandig en professioneel. Ben je betrokken bij cliënten en hun netwerk en weet je verbindingen te leggen tussen disciplines. Ben je toegankelijk, laagdrempelig en goed benaderbaar voor collega’s en cliënten. Je bent een arts die graag breed kijkt, verantwoordelijkheid neemt en met overtuiging werkt aan hoogwaardige medische zorg. Wat krijg je ervoor terug? Een vast contract voor 24 tot 36 uur per week (minder uren bespreekbaar). Een brutosalaris conform de CAO Gehandicaptenzorg van minimaal € 6764,- en maximaal € 10399,- (FWG 75) bij een fulltime dienstverband, gebaseerd op je ervaring en opleiding. Een vaste eindejaarsuitkering van 8,33% van je jaarsalaris en een vakantietoeslag van 8%. Doorgroeimogelijkheden op al onze locaties. Persoonlijke groei, inzicht en regie over je eigen ontwikkeling via 'Mijn Leeromgeving' en e-learning via GoodHabitz. Solliciteer zonder drempels! We nodigen je graag uit om in gesprek te gaan over de invulling van deze vacature. Wil je een werkdag bij ons meemaken? Dan behoort dit zeker tot de mogelijkheden. We nodigen je graag uit om in gesprek te gaan over de invulling van deze vacature. Heb je vragen over de vacature? Neem dan gerust contact op met de doktersassistente via telefoonnummer 088 - 0372901. Zij zal vervolgens een teams afspraak met artsen VG Titia Visser of Margreet Walinga inplannen. Voor overige vragen kun je contact opnemen met de afdeling recruitment door even te bellen of een Wha</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA5YTMwODItNWJlMi0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy?lang=en",
+    "postedAt": "2026-11-19T03:14:37.178Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:NjA5YTMwODItNWQ2ZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy",
+    "slug": "eures-basisarts-nja5ytmwoditnwq2zs0wodzilwuwnjmtnjg5m2iymgfiy2u3idqy",
+    "company": "eures",
+    "title": "Basisarts",
+    "locations": [
+      "Groningen, Netherlands"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "level": "resident",
+    "descriptionHtml": "<p>Parttime basisarts in Groningen bij ICON Geneeskunde afgerond en op zoek naar werkervaring in een klinische omgeving? Start als parttime keuringsarts in Groningen! Wat ga je doen? Als parttime basisarts in Groningen bij ICON ben jij de medische poortwachter van klinisch onderzoek. Met jouw scherpe blik zorg je ervoor dat alleen deelnemers starten die medisch volledig geschikt zijn. Jouw taken op een rij: - Uitvoeren van uitgebreide medische keuringen bij gezonde vrijwilligers en specifieke patiëntgroepen; - Beoordelen van de medische geschiktheid op basis van grondige anamneses, de medische voorgeschiedenis en lichamelijk onderzoek; - Analyseren en interpreteren van aanvullende diagnostiek, zoals ECG's, laboratoriumuitslagen en vitale functies; - Nauw samenwerken en sparren met onderzoekers, artsen, verpleegkundigen en andere disciplines binnen het onderzoekscentrum; - Proactief meedenken over de opzet, haalbaarheid en praktische uitvoering van innovatieve geneesmiddelenstudies. Waar ga je werken? Als parttime basisarts in Groningen ga je aan de slag bij ICON. ICON voert wereldwijd wetenschappelijke onderzoeken uit in opdracht van farmaceuten. Het gezamenlijke doel? Nieuwe geneesmiddelen ontwikkelen en zorgen voor een beter leven voor patiënten. Naast een professionele omgeving hangt er een hele fijne, informele werksfeer waarin je nauw samenwerkt met je collega's. Je gaat minimaal 24 uur per week aan de slag en kan tot maximaal 40 uur per week werken. De werkdagen zijn van maandag tot en met vrijdag en de tijden zijn tussen 08.00 uur en 17.00 uur. Je kan per direct starten! Wat wij bieden - Een aantrekkelijk brutosalaris tussen € 5.400,- en € 6.400,- per maand (o.b.v. 40 uur en ervaring); - Een flexibele werkweek van 24 tot 40 uur, helemaal afgestemd op jouw wensen; - Een uitdagende en zelfstandige functie bij ICON in Groningen; - Werken in een hecht en gezellig multidisciplinair team; - De kans om direct bij te dragen aan baa...</p>",
+    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NjA5YTMwODItNWQ2ZS0wODZiLWUwNjMtNjg5M2IyMGFiY2U3IDQy?lang=en",
+    "postedAt": "2026-11-19T03:14:38.630Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -2508,6 +2641,23 @@
     "source": "eures"
   },
   {
+    "id": "eures:NTc2MzdjZTItYTA4ZC00ZDZmLThlODctODVkYjU0ZGNkZDAyIDgx",
+    "slug": "etela-savon-hyvinvointialue-osastonylilaakari-syopataudit-ntc2mzdjztityta4zc00zdzmlthlodctodvkyju0zgnkzdayidgx",
+    "company": "eures",
+    "employer": "Etelä-Savon hyvinvointialue",
+    "title": "Osastonylilääkäri, syöpätaudit",
+    "locations": [
+      "Finland"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Etelä-Savon hyvinvointialue Eloisa hakee onkologian osastonylilääkäriä toistaiseksi voimassa olevaan virkasuhteeseen 7.12.2026 alkaen tai sopimuksen mukaan.Haemme nyt kliiniseen urapolkuun sitoutuvia lääkäreitä. Kokeilukäytäntömme mukaisesti - mikäli sitoudut vähintään 80 % työaikaan, voit halutessasi saada 2 pv kuukaudessa käytettäväksi väitöskirja- tai dosenttitasoiseen tutkimustyöhön.Eloisassa onkologian toimipisteet ovat Mikkelissä ja Savonlinnassa. Eloisan väestöpohja on noin 133 000, uusia syöpätapauksia todetaan hieman yli 1000 vuodessa. Hoidamme kaikkia syöpätyyppejä hyvässä yhteistyössä yliopistosairaalan kanssa. Sairaalan sisäiset konsultaatiot toimivat erittäin hyvin. Jonottaminen onkologiseen hoitoon on meillä tuntematon käsite. Sädehoitokonsultaatiot ohjautuvat Kuopioon, Jyväskylään ja Lappeenrantaan, Savonlinnasta myös Joensuuhun.Suunnittelemme ja toteutamme laajasti onkologisia lääkehoitoja. Suurimmat syöpäryhmät ovat rintasyöpä, suolistosyöpä, keuhkosyöpä, imusolmukesyövät ja melanooma. Pääosa lääkehoidoista toteutetaan polikliinisesti. Syöpäpotilaiden hoidossa teemme tiivistä moniammatillista yhteistyötä sairaalamme muiden erikoisalojen ja perusterveydenhuollon kanssa aina diagnostiikasta elämän loppuvaiheen hoitoon saakka. Sairaalassamme toimii palliatiivinen yksikkö ja kotisairaala. Onkologian tiimiin kuuluu myös geriatri, ja teemme kokonaisvaltaisen onko-geriatrisen arvioinnin kaikille yli 70-vuotiaille uusille potilaille, joille G8-seulan perusteella se on tarpeellinen.Haemme ennen kaikkea innovatiivista ja kehittämismyönteistä persoonaa parantamaan keskussairaalan onkologian palveluita. Panostamme vahvasti räätälöityihin digitaalisiin palveluihin. Työolosuhteet ovat hyvät, tehtävänkuva muokataan toiveitten mukaiseksi, myös osittainen etätyö on mahdollista ja tutkimustyöhön kannustetaan. Ensisijainen työpiste on Mikkeli, mutta toivomme polikliinista työskentelyä myös Savonlinnassa. Tehtävään ei kuulu päivystysvelvoitteita. Valtteinamme ovat myös pienen sairaalan mukava ilmapiiri, joustavat työskentelytavat ja nopea päätöksenteko. Työnantaja tukee hyvin osaamisen ylläpitoa ja lisäkouluttautumista.Onkologian osastonylilääkärit: alle 10-vuotta erikoislääkärin tutkinnon suorittamisesta 8656,78 €/kk (porras 2A) ja 10-vuotta erikoislääkärintutkinnon suorittamisesta 9068,41-9480,05 €/kk (portaat 2B tai 2C). Tehtäväkohtaisen palkan päälle tulevat henkilökohtaiset ja paikallisen sopimuksen lisät. Arvostamme henkilökuntaamme ja tarjoamme työntekijöillemme kattavat henkilöstöedut, kuten 200 euron arvoisen rahan käytettäväksi liikuntaan, kulttuuriin tai hyvinvointipalveluihin. Haluamme, että viihdyt ja voit meillä hyvin.Autamme mielellämme käytännön asioiden järjestelyissä, kuten asunnon järjestämisessä. Mikäli haluat tulla tutustumaan tulevaan työpaikkaasi ja -yhteisöösi ennen päätöstäsi, sekin onnistuu.Kelpoisuusvaatimuksena on terveydenhuollon ammattihenkilöistä annetussa laissa 559/94 säädetty laillistus tai lupa toimia lääkärin tehtävissä itsenäisesti sekä syöpätautien erikoislääkärin pätevyys. Lisäksi edellytetään tehtävän hoitamisen kannalta riittävää suomen kielen suullista ja kirjallista taitoa.Tehtävässä edellytetään tartuntatautilain 48 §:n edellyttämää rokotussuojaa sekä 55 §:n mukaista terveydentilan selvitystä hengityselinten tuberkuloosista. Ennen valinnan vahvistamista valitun tulee esittää terveydentilaa koskeva selvitys. Palvelussuhteessa noudatetaan kuuden (6) kuukauden koeaikaa.Hakemuksen tulee olla perillä hakuajan päättymiseen mennessä. Hakemus tulee jättää Kuntarekry-järjestelmän kautta. Jos et pysty tekemään sähköistä hakemusta, voi paperihakemuksen toimittaa postitse: Etelä-Savon hyvinvointialue / Kirjaamo, Porrassalmenkatu 35-37, 50100 Mikkeli. Ilmoita hakemuksellasi selkeästi mihin tehtävään haet, käytä viitekoodia/työavainta.</p>",
+    "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/57637ce2-a08d-4d6f-8e87-85db54dcdd02/fi",
+    "postedAt": "2026-11-19T08:11:54.940Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:NTcxNDA2NCA5",
     "slug": "adecco-medical-medecin-generaliste-h-f-h-f-ntcxnda2nca5",
     "company": "eures",
@@ -2820,6 +2970,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWMwYTk3MjEtMzMzMy04ZWY0LWUwNjMtNjg5M2IyMGFlOWY4IDQy?lang=en",
     "postedAt": "2026-09-22T01:12:41.649Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2836,6 +2988,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWMwYTk3MjEtMzQ3Ny04ZWY0LWUwNjMtNjg5M2IyMGFlOWY4IDQy?lang=en",
     "postedAt": "2026-09-22T01:12:43.254Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2852,6 +3006,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWMwYTk3MjEtNDUxNi04ZWY0LWUwNjMtNjg5M2IyMGFlOWY4IDQy?lang=en",
     "postedAt": "2026-09-22T01:13:02.878Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3272,6 +3428,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWU1MWY4ODktNmJhNS1jZjk3LWUwNjMtNjg5M2IyMGExZTZmIDQy?lang=en",
     "postedAt": "2026-10-21T01:13:47.076Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3342,7 +3500,7 @@
     "postedAt": "2026-10-22T01:13:06.318Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -3456,6 +3614,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWUxNTlmMDEtNTJjMy1kYTg1LWUwNjMtNjg5M2IyMGEzZGVmIDQy?lang=en",
     "postedAt": "2026-10-18T01:11:50.875Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3521,6 +3681,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWViNzY0NGYtYzIyYS04MTFjLWUwNjMtNjg5M2IyMGFlOGU5IDQy?lang=en",
     "postedAt": "2026-10-26T03:12:24.054Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -3602,24 +3764,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWVkZjlmZmUtZThmYS1iOGJiLWUwNjMtNjg5M2IyMGEwYTczIDQy?lang=en",
     "postedAt": "2026-10-28T03:12:28.885Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWVkZjlmZmYtMDAyMi1iOGJiLWUwNjMtNjg5M2IyMGEwYTczIDQy",
-    "slug": "eures-kno-artsen-epidemiologen-nwvkzjlmzmytmdaymi1iogjilwuwnjmtnjg5m2iymgewytczidqy",
-    "company": "eures",
-    "title": "KNO-Artsen/Epidemiologen",
-    "locations": [
-      "Utrecht, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Lid commissie Wetenschap en Maatschappijhttps://&lt;a href=\"www.kno.nl/vacature-intern/lid-commissie-wetenschap-en-maatschappij/Gegenereerd\" target=\"_blank\" rel=\"nofollow\"&gt;www.kno.nl/vacature-intern/lid-commissie-wetenschap-en-maatschappij/Gegenereerd&lt;/a&gt; op: 27-10-2026 Achtergrond De nieuwe commissie Wetenschap en Maatschappij, door het bestuur van de NVKNOingesteld, krijgt een verbindende en coördinerende rol op het gebied van wetenschap enmaatschappij. De NVKNO wordt geconfronteerd met kansen en mogelijkheden voor wetenschappelijkonderzoek en subsidies buiten hetgeen al plaatsvindt in de academische centra. Dit betreftvoornamelijk onderwerpen als zorgevaluatie en vakoverstijgende thema's zoals de 'groeneKNO' en ergonomie. Voor de uitvoering dit type wetenschappelijk onderzoek ontbreekt een duidelijkeinfrastructuur. De NVKNO ziet zichzelf in de toekomst een coördinerende rol vervullenbinnen en wenst daarvoor een commissie Wetenschap en Maatschappij op te richten. DeNVKNO wil graag de samenwerking opzoeken met academische ziekenhuizen omzorgevaluatie studies op te kunnen zetten en uit te voeren, bij voorkeur in een onderzoeknetwerkstructuur. De Commissie houdt zich bezig met drie onderdelen van wetenschappelijk onderzoek: 1)zorgevaluatie onderzoek 2) sociaal-maatschappelijke en KNO-brede vraagstukken 3)onderzoek netwerkvorming Samenstelling De commissie zal bestaan uit minimaal 4 leden van de NVKNO, waarvan één AIOS en bijvoorkeur minimaal één zeer ervaren academisch KNO-arts en één epidemioloog. Bij de samenstelling wordt gestreefd naar voldoende spreiding over de verschillendeaandachtsgebieden (aangezichtschirurgie, hoofd-halschirurgie en oncologie, laryngologie, Pagina 1 van 3 otologie, pediatrie, rhinologie, slaapgeneeskunde en vestibulologie) evenals een gespreidevertegenwoordiging vanuit verschillende academische centra en (topklinische)ziekenhuizen in verschillende delen van het land. De Commissie heeft een vast aanspreekpunt binnen het Bestuur en wordt ondersteunddoor het bureau van de NVKNO. Taken De commissie is het aanspreekpunt voor ...</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWVkZjlmZmYtMDAyMi1iOGJiLWUwNjMtNjg5M2IyMGEwYTczIDQy?lang=en",
-    "postedAt": "2026-10-28T03:12:56.909Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "eures"
   },
   {
@@ -4058,7 +4202,7 @@
     "postedAt": "2026-10-30T03:13:21.277Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -4507,45 +4651,6 @@
     "source": "eures"
   },
   {
-    "id": "eures:Nzc1NTAzOSA5",
-    "slug": "manpower-medecin-du-travail-h-f-nzc1ntazosa5",
-    "company": "eures",
-    "employer": "Manpower",
-    "title": "Médecin du travail (H/F)",
-    "locations": [
-      "Nièvre, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Manpower Life Science recherche pour son client, acteur du secteur de la santé, un Médecin du travail (H/F) en CDI pour différents postes en Bourgogne .Postes possibles en temps plein ou partiel avec minimum 2,5 jours par semaine.Possibilité de téléconsultation à temps partiel Grande flexibilité d'organisationPlusieurs poste à pourvoir en Saône et Loire, Yonne, Nièvre et Côte d'Or. - Service interentreprise- Vous devrez assurer le suivi de la santé au travail, conduire des actions; rédiger les rapports et mettre en place des actions correctives- Equipe de plusieurs médecins selon le site- Autonomie de votre planning - Divers avantages supplémentaires: véhicule de service, RTT, mutuelle, diverses primes (délégation, sujétion, contribution, expérience...) DU Médecine Santé au Travail ou DU Médecine générale (possibilité de formation sur un an proposée)RPPS obligatoireVous avez envie d'intégrer une entreprise où la qualité de vie est précieuse et où vous aurez une flexibilité de travail, n'hésitez pas à postuler pour que l'on puisse étudier ensemble ce qui est possible en fonction de votre projet professionnel.Possibilité de cumul emploi/retraiteDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : CDIExpérience : &amp;lt; 1 anSalaire : 70 000 à 80 000 € par anDate de début : Dès que possible</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7755039",
-    "postedAt": "2026-10-08T03:16:15.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:Nzc2ODk5NiA5",
-    "slug": "les-colettes-sourcing-chirurgien-orthopediste-membre-superieur-h-f-nzc2odk5nia5",
-    "company": "eures",
-    "employer": "Les Colettes Sourcing",
-    "title": "Chirurgien orthopédiste - Membre supérieur (H/F)",
-    "locations": [
-      "Pas-de-Calais, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "surgery",
-    "descriptionHtml": "<p>Acteur privé de la santé implanté en Hauts-de-France, ce groupe réunit des établissements sanitaires et médico-sociaux et propose une offre de soins complète : médecine, chirurgie, soins médicaux et de réadaptation, hospitalisation à domicile. Rejoindre ces équipes, c'est intégrer un collectif médical soudé, au service d'une médecine de proximité et de qualité.Le poste : Un établissement de santé privé à but non lucratif, doté d'un service de chirurgie de près de 100 lits dont 32 places d'ambulatoire, recrute un chirurgien orthopédiste spécialisé dans la chirurgie du membre supérieur (épaule, coude, main). Vos missions :&amp;nbsp;&amp;nbsp;- Activité chirurgicale programmée du membre supérieur, - Consultations pré et post-opératoires, - Participation aux urgences et à la permanence des soins.Pourquoi ce poste va vous plaire :&amp;nbsp;&amp;nbsp;- Une activité chirurgicale à développer sur un territoire à forte demande, sans concurrence interne sur votre sur-spécialité - Un bloc opératoire moderne et une équipe soignante dédiée - Une chirurgie programmée majoritaire, avec une organisation qui respecte votre équilibre de vie - Un établissement à taille humaine où votre expertise est attendue et valorisée - Un cadre d'exercice stable, en salariat - Une rémunération attractive, à la hauteur de votre engagement.Profil recherché : - Docteur en médecine, DES de chirurgie orthopédique et traumatologique, avec spécialisation membre supérieur - Inscrit(e) ou en capacité de vous inscrire à l'Ordre des médecins - Rigueur, sens de l'équipe et goût du travail bien fait.</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7768996",
-    "postedAt": "2026-10-08T07:22:05.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "eures"
-  },
-  {
     "id": "eures:Nzc3MzUwOCA5",
     "slug": "non-renseigne-medecin-neurologue-h-f-nzc3mzuwoca5",
     "company": "eures",
@@ -4862,26 +4967,6 @@
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
     "closedAt": "2026-11-13T05:02:55.337Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:Nzk3MDMzNCA5",
-    "slug": "adecco-medical-psychiatre-h-f-nzk3mdmznca5",
-    "company": "eures",
-    "employer": "Adecco Medical",
-    "title": "PSYCHIATRE (H/F)",
-    "locations": [
-      "Pas-de-Calais, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "psychiatry",
-    "descriptionHtml": "<p>Nous recherchons pour l un de nos clients situe dans le departement PAS DE CALAIS (62), un(e) Medecin Psychiatre (H/F), pour intervenir sur la periode suivante : Remplacement en psychiatrie le 31 octobre et le 1er novembre 2026Le samedi :- une présence sur place de 8h30 à 13h30- à partir de 13 h 30 astreinteLe dimanche : - 24 heures en astreinteServices : PSYCHIATRIESi cette offre vous interesse, n attendez plus et postulez au sein de l agence Adecco Medical Medecins !</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7970334",
-    "postedAt": "2026-10-15T09:51:09.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "eures"
   },
   {
@@ -5259,7 +5344,7 @@
     "postedAt": "2026-10-01T23:32:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -5279,7 +5364,7 @@
     "postedAt": "2026-10-01T23:34:07.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -5448,25 +5533,6 @@
     "source": "eures"
   },
   {
-    "id": "eures:NzY4NTEwMCA5",
-    "slug": "fhf-psychologue-emapsy-50-h-f-nzy4ntewmca5",
-    "company": "eures",
-    "employer": "Fhf",
-    "title": "PSYCHOLOGUE EMAPSY 50% (H/F)",
-    "locations": [
-      "Jura, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>IDENTIFICATION DU POSTE Grade :Psychologue Relation hiérarchique :Directeur de l'Établissement, par délégation :le médecin chef de Pôle Relations fonctionnelles :Le cadre supérieur de santé, l'équipe médicale et pluridisciplinaire, le cadre de santé, les établissements médicosociaux partenaires.Présentation de l'Unité d'affectation :Équipe mobile et d'appui en psychiatrie (EMAPSY) composée de médecin psychiatre, psychologue, cadre de santé, infirmier en pratique avancée et infirmier.Cette équipe intervient en soutien et conseil aux professionnels des structures médicosociales adultes du département du Jura.Le cas échéant, l'équipe peut évaluer les situations cliniques, faire des préconisations de prise en charge et réaliser des actions de formation auprès des professionnels des EMS MISSIONS DU POSTE Mission générale :Concevoir, élaborer et mettre en uvre des actions préventives, curatives et de formation afin de promouvoir l'autonomie et le bien-être de la personne souffrant de troubles psychiques lui permettant de rester dans le parcours de soins et sur son lieu de vie (structures médicosociales) Missions principales :Travailler avec les partenaires du champ médicosocial.Réaliser de l'information et de la formation auprès des partenaires médicosociaux sur la santé mentale et la psychiatrie Mener des entretiens de soutien et des entretiens psychothérapeutiques individuels Mener des groupes d'analyse des pratiques auprès des partenaires sociaux.Missions spécifiques :Participer aux interventions et à la réunion pluridisciplinaire de l'EMAPSY.Contribuer à l'évaluation globale, pluridisciplinaire.Contribuer à la mise en uvre des actions à visée préventive ou curative auprès des usagers ou des partenaires médicosociaux.Accompagner l'équipe dans l'évolution des actions proposées.Faire le lien entre les équipes du médicosocial et les équipes sanitaires du CHS Participer à la réunion « gestion des lits » du CHS en lien avec les demandes d'admission du MS en hospitalisation complète Participer à la gestion du lit séquentiel de répit aux Acanthes COMPÉTENCES REQUISES Aptitudes requises :Travail en équipe pluridisciplinaire Capacité à travailler en partenariat dans le respect du secret professionnel Être force de proposition -avoir l'esprit d'initiative.Formaliser et transmettre son savoir professionnel.Effectuer des comptes rendus et renseigner le DPI Réalisation de bilans Connaissances particulières :Esprit d'initiative, autonomie d'exercice, esprit d'équipe Connaissance ou intérêt pour le domaine de la réhabilitation psychosociale.QUALIFICATION Master II en psychologie clinique CONDITIONS D'EXERCICE Temps de travail :poste à 50 % Base horaire temps plein de 38 heures 30 par semaine avec RTT.Repos fixes :les samedis, dimanches et jours fériés.Résidence administrative :Dole.Madame DIAS CARDOSO CandiceContrat :CDI</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7685100",
-    "postedAt": "2026-10-06T03:13:18.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "eures"
-  },
-  {
     "id": "eures:NzYwMDkwMSA5",
     "slug": "lumeni-medecin-generaliste-f-h-nzywmdkwmsa5",
     "company": "eures",
@@ -5579,26 +5645,6 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8062914",
     "postedAt": "2026-10-19T05:04:54.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:ODA3Mjc2OCA5",
-    "slug": "storme-rh-medecin-generaliste-h-f-oda3mjc2oca5",
-    "company": "eures",
-    "employer": "Storme RH",
-    "title": "Médecin généraliste (H/F)",
-    "locations": [
-      "Vaucluse, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "general-practice",
-    "descriptionHtml": "<p>Description du poste :Storme RH , recherche pour l'un de ses partenaires, un établissement de santé du secteur privé spécialisé en cancérologie,un Médecin Généraliste H/F, CDI3 services d'hospitalisation complète de 22 lits pour 6 médecins, vous serez en binôme médical dans l'une de ces unités de soins.Vos missions Assurer et partager avec un(e) deuxième consœur ou confrère les soins rattachés à 22 lits d'hospitalisation (prescription, continuité et permanence des soins sur la journée de 9h à 18h)***Animer le travail et l'accompagnement de l'équipe IDE en hospitalisation, en binôme avec la cadre de service.***Participer à la mise en place des soins de support en cancérologie.***Participer activement à la recherche en soins de support et à l'évaluation de la qualité des soins.***Participer aux astreintes mutualisées entre médecin soins de support, médecins d'hospitalisation, médecins de soins palliatifs, oncologues médicaux.Description du profil DES Médecine Générale ou Médecine Interne Expérience souhaitée en cancérologie, soins palliatifs et/ou algologie et/ou gériatrie, ou autres soins de support en cancérologie Expérience de travail en équipe dans la prise en charge des patients en service d'hospitalisation complète Volonté de développer des projets en interne (formation équipe, recherche, évaluation des soins etc.)</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8072768",
-    "postedAt": "2026-10-19T23:24:10.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "eures"
   },
   {
@@ -5803,6 +5849,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8765005",
     "postedAt": "2026-11-12T11:43:04.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6220,7 +6268,7 @@
     "postedAt": "2026-11-11T01:25:10.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -6619,25 +6667,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8176487",
     "postedAt": "2026-10-23T03:17:40.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:ODE3OTM0OCA5",
-    "slug": "groupe-jti-medecin-du-travail-f-h-ode3otm0oca5",
-    "company": "eures",
-    "employer": "Groupe JTI",
-    "title": "Médecin du travail F/H",
-    "locations": [
-      "Haute-Savoie, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>HELLO MEDICAL est à la recherche d'un(e) Médecin du travail (H/F) pour assurer une mission de remplacement au sein d'un établissement situé dans le département 74 - Haute-Savoie région Auvergne-Rhône-Alpes situé à 40 min d'Annemasse, durant la période suivante : Amplitude horaire : - du lundi au vendredi - de 8h30 à 18h30 - astreintes à définir Période : - A partir de maintenant Les missions : - Réaliser des consultations non obligatoires en lien avec la médecine du travail - Effectuer des travaux sur la médecine du travail Rémunération à définir Logement pris en charge 1 A/R pris en charge en frais de déplacement Inscription à l'ordre des médecins en France obligatoire Si vous avez d'autres disponibilités, n'hésitez pas à nous les communiquer. Nous travaillons avec de nombreux établissements partenaires sur l'ensemble du territoire National. Nous sommes joignables au n'hésitez pas à nous contacter, ou sur le mail suivant - Titulaire du DE de docteur en medecine - Inscription au tableau de l'Ordre des Médecins</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8179348",
-    "postedAt": "2026-10-23T03:26:47.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6694,6 +6725,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8113952",
     "postedAt": "2026-10-21T03:04:32.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7106,7 +7139,7 @@
     "postedAt": "2026-11-15T17:06:01.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -7429,6 +7462,23 @@
     "source": "eures"
   },
   {
+    "id": "eures:ODg5NjkxNSA5",
+    "slug": "manpower-monteur-electricien-aeriens-et-souterrains-h-f-odg5njkxnsa5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Monteur électricien aériens et souterrains (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower LYON BATIMENT SECOND OEUVRE recherche pour son client, un acteur du secteur du BTP, un Monteur électricien aériens et souterrains (H/F) Vos missionsSous la responsabilité du Chef de chantier ou du Responsable d'équipe, vous participez aux travaux de construction, de maintenance et de dépannage des réseaux électriques.À ce titre, vous êtes chargé(e) de :- Analyser les plans techniques et vérifier leur adéquation avec les contraintes du terrain.- Réaliser la pose de câbles sur les réseaux aériens et souterrains.- Installer et raccorder les équipements électriques dans le respect des normes en vigueur.- Rechercher les dysfonctionnements et effectuer les interventions de dépannage nécessaires.- Contrôler la conformité et la sécurité des installations réalisées.- Collaborer avec les différents intervenants afin d'assurer le bon déroulement des chantiers.- Renseigner les documents de suivi et rédiger les comptes rendus d'intervention.Vous veillez en permanence au respect des règles de sécurité, de qualité et des procédures applicables sur les chantiers. Le profilVous avez une bonne connaissance des réseaux électriques et appréciez le travail en extérieur ? Voici les éléments qui feront la différence :- Habilitations électriques à jour- Expérience significative sur un poste similaire- Intérêt pour les interventions en plein air- Le CACES PEMP est un plus appréciéDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : Mission en intérimExpérience : 3 ansSalaire : 12 à 14 € par heureDate de début : 18/01/2027Durée : 8 moisInformation complémentaire : aériens et souterrains</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8896915",
+    "postedAt": "2026-11-17T05:11:13.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:ODgwMjM2OSA5",
     "slug": "la-solution-medicale-medecin-generaliste-f-h-jossigny-77600-odgwmjm2osa5",
     "company": "eures",
@@ -7565,6 +7615,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8804253",
     "postedAt": "2026-11-13T12:37:13.000Z",
     "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7619,6 +7671,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8821176",
     "postedAt": "2026-11-13T17:06:58.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7637,7 +7691,7 @@
     "postedAt": "2026-11-13T17:06:19.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -7655,6 +7709,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8821207",
     "postedAt": "2026-11-13T17:07:13.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7709,6 +7765,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8828682",
     "postedAt": "2026-11-14T05:04:07.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7727,6 +7785,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8828631",
     "postedAt": "2026-11-14T05:04:04.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7961,7 +8021,7 @@
     "postedAt": "2026-10-27T10:57:04.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8036,7 +8096,7 @@
     "postedAt": "2026-10-23T09:45:55.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8575,6 +8635,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8223077",
     "postedAt": "2026-10-23T15:08:23.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8737,7 +8799,7 @@
     "postedAt": "2026-10-23T15:08:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8757,7 +8819,7 @@
     "postedAt": "2026-10-23T15:09:07.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8813,7 +8875,7 @@
     "postedAt": "2026-10-23T15:09:19.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8832,7 +8894,7 @@
     "postedAt": "2026-10-23T15:09:22.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8851,7 +8913,7 @@
     "postedAt": "2026-10-23T15:09:14.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -8870,7 +8932,7 @@
     "postedAt": "2026-10-23T15:09:14.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9035,6 +9097,271 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8961617",
     "postedAt": "2026-11-18T17:06:34.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk2NjU3NiA5",
+    "slug": "elsan-medecin-specialiste-en-chirurgie-h-f-odk2nju3nia5",
+    "company": "eures",
+    "employer": "Elsan",
+    "title": "Médecin spécialiste en chirurgie (H/F)",
+    "locations": [
+      "Bas-Rhin, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>Description du poste :Nous recherchons un Chirurgien sénologue h/f pour un contrat d'exercice libéral, à la Clinique de l'Orangerie à Strasbourg (67)L'établissement assoie sa réputation sur 3 instituts en cancérologie : le digestif, la sénologie et l'oncologie médicale,* Autorisations en cancérologie digestive, mammaire et urologie* La chirurgie orthopédique, la neuro chirurgie, la chirurgie générale et digestive, la chirurgie sénologique, la chirurgie esthétique et la chirurgie ophtalmologiqueEn quelques chiffres, l'Orangerie c'est 61 lits et 98 places en chirurgie, ambulatoire, médecine et MPR- 1 Communauté médicale de 80 médecins spécialistes (dont 30 chirurgiens et 11 anesthésistes 1 Bloc opératoire composé de 8 salles opératoires et 1 bloc endoscopique composé de 2 salles équipées d'une colonne d'anesthésie complète, de plusieurs postes SSPI, de 3 amplificateurs de brillance mobiles, Aspirateur de fumée, Faxitron, d'un Fluoroscan et de colonnes de coelioscopie- 1 Stérilisation centrale (3 autoclaves et 3 laveurs désinfecteurs 1 Unité de Surveillance Continue (10 lits 1 Service de médecine en Oncologie Médicale- 1 Centre de MPR à orientation cardiologique en HDJ (30 places 1 Unité de chimiothérapie Adultes en Ambulatoire (29 places et 4 boxes Un site d'accueil des RCP spécialisées sur les pathologies du sein, du digestif et en oncohématologieDe plus, la clinique dispose D'un service de radiologie- D'un accès à Strasbourg Imagerie Moléculaire avec TEP-scan et scintigraphieL'activité de sénologie Développée par 1 praticien réputé sur le territoire strasbourgeois de 500 interventions par an* Une prise en charge globale gérée intégralement par le praticien, exérèse et reconstruction selon différentes techniques, en radiologie expert en sénologie et l'équipe paramédicale de la clinique* Possibilité de réaliser des études cliniques pour tester de nouveaux dispositifs innovants* Intégrée dans le réseau local de cancérologie - CAROL - depuis sa création en 2004, membre du réseau 3C - ONCOLIA - et du réseau oncologique d'Alsace - RODALes conditions d'installation Un contrat d'exercice libéral avec la clinique* La location d'un cabinet de consultation à proximité de la clinique* Des facilités d'installation pour les premiers mois d'activité (ex : Exonération de redevances et de charges les 6 premiers mois)Strasbourg Accessible par les airs depuis et vers 37 destinations dont Porto, Madrid, Londres, Dubrovnik, Prague A 1h40 de Paris et du Luxembourg en train* A 1h30 de Nancy et Metz en voiture* Un territoire où apprécier les vins et la gastronomie alsaciennes* Un patrimoine et un dynamisme avec du charme : la cathédrale millénaire, le marché de noël, le centre-ville classé patrimoine mondial de l'UNESCO Description du profil :Profil Spécialisation en chirurgie du sein (Formation possible avec le praticien en place)* Inscription au tableau de l'Ordre des Médecins Français* Secteur 2</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8966576",
+    "postedAt": "2026-11-19T01:24:58.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk2NjUxMSA5",
+    "slug": "phi-sante-chirurgien-gynecologue-h-f-odk2njuxmsa5",
+    "company": "eures",
+    "employer": "Phi Sante",
+    "title": "Chirurgien gynécologue (H/F)",
+    "locations": [
+      "Lot-et-Garonne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "descriptionHtml": "<p>Description du poste :Le poste : Chirurgien gynécologue - Lot-et-Garonne (47) - LibéralLe cadre d'exercice de Chirurgien gynécologue L'établissement recherche un Chirurgien gynécologue h/f en contrat d'exercice libéral, secteur 1 ou 2* Activités : Assurer les consultations, le suivi de grossesse et prendre en charge les accouchements. Activité chirurgicale est possible au sein de la clinique. Activité d'Assistance Médicale à la Procréation possible* Avantages : Aides au démarrage - Remplacement en amont possible - Autorisation en cancérologie.Votre profil de Chirurgien gynécologue Chirurgien gynécologue titulaire du doctorat en Médecine.* DIU ou De chirurgie gynécologique* Compétences souhaitées : Gynéco-Obstétrique - Chirurgie Gynécologique - Sénologie* Inscription à l'Ordre des Médecins obligatoire.* Idéalement, vous disposez d'une première expérience dans un poste/activité similaireÉtablissement :Clinique dotée de 350 lits et places, réunit plus de 100 médecins et chirurgiens et couvre la totalité du champ médical et chirurgical de l'adulte et accueille chaque année 55 000 patients.Elle réalise une mission de service public de proximité par l'ensemble de ses services pluridisciplinaires, sa permanence et continuité des soins, son service de cardiologie qui est pôle de référence dans le département, son service d'urgences, son centre de plaies et cicatrisation et sa prise en charge cancérologique.Notre accompagnement : votre réussite, notre prioritéChez PHI Santé, nous avons la conviction que chaque professionnel mérite un accompagnement personnalisé pour maximiser ses chances de réussite et s'épanouir dans son nouveau poste.C'est pourquoi nous vous soutenons à chaque étape de votre parcours Clarification de votre projet professionnel : Nous vous assistons dans la définition de vos objectifs et dans la recherche d'opportunités correspondant parfaitement à vos aspirations et à votre vision de carrière.* Préparation aux entretiens : Nous vous apportons des conseils sur mesure, basés sur notre connaissance approfondie du secteur, pour vous permettre de réussir chaque entretien avec confiance et de mettre en avant vos compétences distinctives.* Accompagnement à l'intégration : Nous restons à vos côtés après votre prise de poste afin de faciliter votre adaptation, de résoudre d'éventuels défis, et de garantir une intégration réussie au sein de votre nouvelle équipe.* Aide à l'installation : mise en contact avec un avocat, assureur, expert- comptable afin de vous permettre de préparer au mieux votre exercice en libéralCe poste vous intéresse ? Contactez notre consultant au***ou postulez directement sur notre site***</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8966511",
+    "postedAt": "2026-11-19T01:22:51.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk2NjUyNCA5",
+    "slug": "elsan-gynecologue-obstetricien-gynecologue-obstetricienne-h-f-odk2njuynca5",
+    "company": "eures",
+    "employer": "Elsan",
+    "title": "Gynécologue-obstétricien / Gynécologue-obstétricienne (H/F)",
+    "locations": [
+      "Pyrénées-Orientales, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "gynaecology",
+    "descriptionHtml": "<p>Description du poste :La Polyclinique Méditerranée, dans le cadre de prochains départs, recherche des Gynécologues Obstétriciens , en contrat d'exercice libéral L'équipe actuelle est structurée en société pour les honoraires des gardes (pot commun Pas de service d'urgences- Cabinet possibleVous voulez tester avant de vous engager C'est possible en venant remplacer l'un des gynéco-obstétriciens pendant une garde de 24h Assurance RCP prise en charge par le médecin que vous remplacerezLa Polyclinique MéditerranéeElle dispose d'une maternité de niveau 1 située à Perpignan qui réalise 1900 accouchements par an . Il existe 2 maternités sur Perpignan : la polyclinique Méditerranée de niveau 1 et l'hôpital de niveau 3 (2100 accouchements par an).Les autres activités de la Polyclinique sont la chirurgie viscérale, esthétique, maxillo-faciale et chirurgie du rachis : une activité chirurgicale est donc tout à fait possible en sus de la maternité.Site web consultable ici : &lt;a href=\"https://www.elsan.care/fr/polyclinique-mediterranee\" target=\"_blank\" rel=\"nofollow\"&gt;https://www.elsan.care/fr/polyclinique-mediterranee&lt;/a&gt;La maternitéLe plateau technique est composée de 8 salles de naissances dont 2 salles natures .L'équipe actuelle se compose de 8 gynécologues (1 garde sur place de 24 h doublé d'une astreinte de 24h 5 Anesthésistes (1 garde sur place de 24 h 4 pédiatres (Astreinte de 24 h)Le service de suite de couche comprend 45 lits . Il existe également un service d'orthogénie (500 patientes par an).Projet d'ouverture d'un service de néonatologie en cours.Conditions d'installation Activité d'obstétrique et de chirurgie gynéco (vous pourrez effectuer la prise en charge en cancérologie dans un autre établissement Elsan de Perpignan)Description du profil Diplôme français/européen ou équivalences en Gynécologie Obstétrique* Inscription au tableau de l'Ordre des Médecins Français* Secteur 1 ou 2Pour en savoir plus, vous pouvez nous contacter par mail ou par téléphone au***.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8966524",
+    "postedAt": "2026-11-19T01:23:36.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk2ODE5MSA5",
+    "slug": "le-mercato-de-l-emploi-medecin-coordonnateur-h-f-odk2ode5msa5",
+    "company": "eures",
+    "employer": "Le Mercato de l'Emploi",
+    "title": "Médecin coordonnateur (H/F)",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Description du poste :Rattaché(e) à la direction, vous serez responsable de la mise en œuvre du projet général de soins en collaboration avec le cadre infirmier, en accord avec le projet d'établissement.Vos missions incluent L'évaluation et l'accompagnement des nouveaux résidents (visites de préadmission, bilan gérontologique, élaboration et suivi du projet personnalisé La prévention, la surveillance et la gestion des risques pour la santé publique au sein de l'établissement La coordination des interventions médicales et paramédicales, ainsi que la formation et l'accompagnement des équipes soignantes Le maintien des relations avec les partenaires institutionnels et les réseaux de soins.Ce poste offre une autonomie dans votre pratique tout en bénéficiant du soutien dune direction médicale expérimentée.Description du profil :Vous êtes médecin spécialisé(e) en gériatrie (DESC, capacité, DU de médecin coordonnateur en EHPAD) ou médecin généraliste désireux(se) de se former et de se spécialiser dans ce domaine avec un accompagnement dédié ?Ce poste est fait pour vous ! Ne perdez pas de temps, postulez dès maintenant.Je suis Nadia AHDICH, mandatée par mon client pour garantir la réussite de ce recrutement.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8968191",
+    "postedAt": "2026-11-19T01:39:19.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk3MTMwNSA5",
+    "slug": "manpower-chef-d-equipe-electricite-courant-fort-faible-h-f-odk3mtmwnsa5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Chef d'équipe électricité courant fort/faible (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower CABINET EXPERTS CONSTRUCTION LYON recherche pour son client, un acteur du secteur du BTP, un Chef d'équipe (H/F) à Dardilly 69570. Dans le cadre de notre développement, nous recherchons un Chef d'Équipe Électricité Itinérant (H/F) spécialisé dans les environnements tertiaires exigeants, et notamment les établissements hospitaliers.Vous interviendrez sur des installations en CFO / CFA, systèmes de détection incendie (DI) et appels malades, en assurant le bon déroulement des chantiers ainsi que l'encadrement d'une petite équipe.Ce poste s'adresse à un professionnel autonome, rigoureux et habitué aux environnements sensibles où la continuité de service est essentielle.Pilotage opérationnel- Préparer, organiser et suivre les interventions électriques en milieu tertiaire et hospitalier- Réaliser et superviser les travaux en courants forts et courants faibles- Assurer la mise en service, les contrôles et les essais des installations- Garantir le respect des normes, procédures internes et règles de sécuritéEncadrement &amp;amp; coordination- Manager un salarié en poste et coordonner les intérimaires selon les besoins- Répartir les tâches, accompagner, former et vérifier la qualité des travaux réalisés- Faire le lien avec les conducteurs de travaux et les partenaires externesRelation client &amp;amp; reporting- Être l'interlocuteur technique privilégié des responsables de site (hôpitaux, cliniques, bâtiments tertiaires)- Assurer un reporting clair et précis des interventions- Contribuer à la satisfaction client grâce à une communication professionnelle et proactive- Expérience confirmée en installation et maintenance électrique tertiaire, idéalement en environnements hospitaliers- Maîtrise des installations CFO, CFA, DI, appels malade- Capacité à gérer une petite équipe (salarié + intérim)- Autonomie, sens des responsabilités, adaptabilité en milieu sensible- Bon relationnel, sens du service et capacité à représenter l'entreprise auprès des clients Conditions- CDI- Véhicule de service mis à disposition- Rémunération selon profil et expérience- Déplacements régionaux / itinérance selon les chantiersDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : CDIExpérience : 3 ansSalaire : 30 000 à 32 000 € par anDate de début : Dès que possibleInformation complémentaire : électricité courant fort/faible</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8971305",
+    "postedAt": "2026-11-19T05:03:49.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk3NjM0NCA5",
+    "slug": "mindrh-recrutement-medecin-mpr-remplacant-pres-de-chartres-28-h-f-odk3njm0nca5",
+    "company": "eures",
+    "employer": "MindRH Recrutement",
+    "title": "Médecin MPR remplaçant près de Chartres (28) (H/F)",
+    "locations": [
+      "Eure-et-Loir, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Dans le cadre d'un remplacement, un établissement de Soins Médicaux et de Réadaptation (SMR) situé à proximité de Chartres recherche un Médecin MPR remplaçant (H/F).L'établissement s'inscrit au sein d'un réseau médico-social national reconnu, intervenant dans les domaines :des Soins Médicaux et de Réadaptation,du handicap neurologique et psychique,de l'autisme,de la réadaptation professionnelle,et de la prise en charge des personnes âgées.Il accueille chaque année un volume important de patients dans un environnement structuré, doté de moyens humains et techniques de haut niveau.L'activité médicaleVous interviendrez au sein d'un service SMR spécialisé dans la prise en charge :des affections neurologiques,des affections de l'appareil locomoteur,des polypathologies de la personne âgée. Capacité :Environ 97 lits d'hospitalisation complète15 places en hospitalisation de jourL'établissement dispose d'un plateau technique moderne et innovant, incluant notamment :Thérapie miroir membre supérieur et inférieur (IVS 3 &amp;amp; IVS 4)Appareils robotisés de rééducation du membre supérieur (Réaplan, Arméo Spring, Arméo Senso)Portique robotisé de marche (Andago)Tapis d'équilibre avec harnais et nappe de pression (EMA)Installation prochaine d'un exosquelette Atalante (Wandercraft) en HDJÉquipe pluridisciplinaireVous intégrerez une équipe dynamique et complète, composée notamment de :Masseurs-kinésithérapeutesErgothérapeutesProfesseur en Activité Physique AdaptéeOrthophonisteNeuropsychologueAssistantes socialesÉquipe infirmière et aides-soignantsDiététicienne L'établissement dispose également d'une Pharmacie à Usage Interne.Le poste :  Organisation médicale :Prise en charge d'environ 20 litsTravail en binôme avec un autre médecin MPRCollaboration étroite avec une équipe paramédicale expertePlateau technique (haut niveau)Profil recherché : Médecin MPR inscrit à l'Ordre en FranceDiplôme MPR obtenuGoût pour le travail en équipe et les prises en charge globalesDisponibilité pour un remplacement Dates fractionnables: =&amp;gt;&amp;nbsp;&amp;nbsp;du lundi 30 novembre au vendredi 04 janvier 2027 et +?=&amp;gt; du mercredi 23 décembre au vendredi 15 janvier 2027 (possibilité de fractionner les dates)</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8976344",
+    "postedAt": "2026-11-19T09:22:03.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk3ODQ2MiA5",
+    "slug": "harry-hope-medecin-generaliste-geriatre-h-f-odk3odq2mia5",
+    "company": "eures",
+    "employer": "Harry Hope",
+    "title": "Médecin Généraliste - Gériatre (H/F)",
+    "locations": [
+      "Saône-et-Loire, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Nous recrutons pour le compte d'un établissement hospitalier public situé en Saône-et-Loire, un Médecin Généraliste ou Gériatre H/F afin de renforcer son équipe médicale.Le poste offre une activité diversifiée, avec une répartition de 80 % en EHPAD et 20 % dans le secteur sanitaire.VOS MISSIONS80 % - Activité EHPADVous assurez le suivi médical des résidents et participez à leur prise en charge globale, en collaboration avec les équipes soignantes et paramédicales.Vos principales missions :- Assurer le suivi médical des résidents- Évaluer et prendre en charge les situations cliniques- Participer à la prévention et au maintien de l'autonomie- Travailler en lien avec les équipes pluridisciplinaires et les familles- Participer aux réunions et à la coordination des prises en charge- Contribuer à la qualité et à la continuité des soins20 % - Secteur sanitaireVous intervenez également auprès des patients pris en charge dans les activités sanitaires de l'établissement, en lien avec l'équipe médicale et paramédicale.Cette organisation permet de conserver une activité clinique diversifiée, entre suivi gériatrique et prise en charge sanitaire.LES CONDITIONS- CDI à 80 %- Activité répartie entre 80 % EHPAD / 20 % secteur sanitaire- Établissement public hospitalier- Travail en équipe pluridisciplinaire- Rémunération selon profil et expérience- Poste situé en Saône-et-Loire, secteur de Louhans&amp;nbsp;&amp;nbsp; Vous êtes Médecin Généraliste ou Médecin Gériatre, inscrit(e) à l'Ordre des Médecins en France.Une expérience en gériatrie, EHPAD, médecine polyvalente ou secteur hospitalier est appréciée.Vous souhaitez exercer dans un environnement à taille humaine et appréciez le travail en équipe pluridisciplinaire.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8978462",
+    "postedAt": "2026-11-19T12:33:22.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk3OTYzOCA5",
+    "slug": "groupe-sos-seniors-medecin-coordonnateur-h-f-odk3otyzoca5",
+    "company": "eures",
+    "employer": "GROUPE SOS Seniors",
+    "title": "MEDECIN COORDONNATEUR H/F",
+    "locations": [
+      "Moselle, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>L'Association Groupe SOS Seniors recrute pour son EHPAD Le Hêtre Pourpre de HOMBOURG-HAUT (57), un MEDECIN COORDONNATEUR HF en temps partiel à 0.5 etp.&amp;nbsp;&amp;nbsp;L'EHPAD a une capacité de 64 hébergements permanents.L'ambiance y est chaleureuse et familiale, car nous personnalisons les accompagnements des résidents dans une philosophie domiciliaire.Votre futur posteVous exercez un rôle central dans le pilotage médical et la qualité des accompagnements.Sous la responsabilité du Directeur d'établissement et membre du comité de direction, vous travaillez en étroite collaboration avec l'Encadrant.e d'Unité de Soins, les équipes soignantes et les partenaires médicaux du territoire.Votre mission consiste à garantir la cohérence et la qualité du projet de soins, tout en contribuant activement à la dynamique institutionnelle et à l'accompagnement des équipes.Vous participez pleinement aux réflexions stratégiques de l'établissement et contribuez à inscrire la résidence dans les filières gériatriques et les réseaux de santé du territoire.Vos missionsVous élaborez, coordonnez et faites vivre le projet général de soins en lien avec les équipes soignantes et les professionnels intervenant auprès des résidents.Vous veillez à la qualité, à la sécurité et à la continuité des accompagnements, dans le respect des bonnes pratiques gériatriques et des besoins spécifiques des résidents.Vous participez à l'évaluation des admissions et à l'analyse des situations médicales complexes, en lien avec l'Encadrant.e d'Unité de Soins et le psychologue.Vous contribuez à la coordination des professionnels libéraux intervenant au sein de l'établissement et développez les coopérations avec les établissements sanitaires et médico-sociaux du territoire.Vous accompagnez la montée en compétences des équipes à travers des actions de sensibilisation, de formation et d'appui médical.Vous participez enfin aux évaluations GIR et PATHOS ainsi qu'aux démarches qualité et aux projets d'amélioration continue de l'établissement.&amp;nbsp;&amp;nbsp; Votre profil Docteur en médecine, vous êtes titulaire d'une capacité en gériatrie, d'un DU de Médecin Coordonnateur ou d'une qualification équivalente vous permettant d'exercer les fonctions de médecin coordonnateur en EHPAD.Vous appréciez le travail en équipe et souhaitez exercer dans une logique de coopération étroite avec la direction, l'encadrement soignant et les équipes de terrain.Reconnu(e) pour vos qualités relationnelles, votre capacité d'écoute et votre pédagogie, vous savez accompagner les équipes dans des environnements parfois complexes tout en conservant une approche pragmatique et constructive.Votre intérêt pour les problématiques liées au vieillissement, à l'éthique du soin et à la qualité des accompagnements constitue un atout essentiel pour réussir dans ce poste.Inscription au Conseil National de l'Ordre des Médecins obligatoire.Pourquoi nous rejoindre ?Parce qu'aujourd'hui, un médecin coordonnateur choisit aussi un environnement de travail, une qualité de coopération et une organisation qui lui permettent d'exercer pleinement son rôle.Rejoindre le Groupe SOS Seniors, c'est bénéficier :D'une place reconnue au sein du comité de direction,D'un travail étroit avec les équipes soignantes et la direction,D'une autonomie réelle dans l'exercice de vos missions,D'un groupe structuré et engagé dans les enjeux du vieillissement,De projets médicaux et organisationnels à construire,D'un accompagnement à la prise de poste et dans la durée.Nous sommes particulièrement attentifs à favoriser une coopération de qualité entre les équipes médicales, soignantes et de direction afin de garantir un accompagnement cohérent, humain et durable des résidents.Au sein du Groupe SOS Seniors, nous valorisons la place des personnes âgées et préservons leur autonomie grâce à des services adaptés à leurs besoins et à leurs envies.Le rapprochement avec ARPAVIE renforce cette ambition : un réseau élargi, c'est plus de liens, de compétences et d'énergie pour porter nos projets associatifs et garantir à chacun.e un accompagnement digne, humain et accessible.Alors, si vous souhaitez donner une signification profonde à votre travail et être impliqué(e) dans un projet qui transforme positivement la vie des seniors, ne ratez pas cette opportunité.Adressez-nous votre candidature et rencontrons-nous !</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8979638",
+    "postedAt": "2026-11-19T12:34:57.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4MTEyMSA5",
+    "slug": "non-renseigne-infirmier-urgentiste-de-chantier-h-f-h-f-odk4mteymsa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Infirmier Urgentiste De Chantier H/f (H/F)",
+    "locations": [
+      "Calvados, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "emergency-medicine",
+    "descriptionHtml": "<p>Nous recrutons pour le compte d'un de nos client, un infirmier urgentiste de chantier pour une mission d'intérim.Dates : 1er Septembre Horaires : 06H00/13H00 OU 12h30/20h00 OU 08H00/15H00Profil :. expérience significative des soins d'Urgence et à l'aise dans le domaine du secourisme.Missions :- Assurer les soins courants et les Urgences,- Dès que nécessaire, décider des transferts hospitaliers, les organiser et les suivre- Gérer les stocks (pharmacie, matériel, dispositifs médicaux, .), en contrôler la conformité- Veiller à la traçabilité des actes- Contribuer à la surveillance sanitaire et à la prévention des risques professionnels- Travailler en collaboration avec l'équipe Prévention Sécurité \\QHSE (Qualité hygiène santé environnement) afin d'assurer un travail de prévention sur le chantier ; participer au CISSCT (Collège interentreprises de sécurité, de santé et des conditions de travail)- Participer aux animations sécurité avec le Responsable prévention du site- Analyser les accidents du travailProfil du candidat :A l'écoute des salariésSens du relationnel et de la communicationOptimisteOuvertSociableSérieux et rigoureuxRéactivitéDiscrétion, sens de la confidentialitéOrganisé et méthodiqueSens du travail en équipeForce de propositionDiplôme Interuniversitaire Santé au Travail (DIUST) ou Licence Santé Travail ou Formation en Santé au Travail sont très appréciésL'entreprise :TAGA MEDICALContact : Sandra FERNANDESConsultante en Santé au TravailTél. : 64Salaire :18 euros</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8981121",
+    "postedAt": "2026-11-19T13:40:49.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTc1NiA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-odk4ntc1nia5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Hauts-de-Seine, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Nous recrutons un médecin généraliste H/F en PH pour intégrer une structure hospitalière située à Rueil Malmaison, dans les Hauts-de-Seine.  Les conditions - PH ou praticien contractuel (motif 2 ou motif 3 selon expérience) - Temps plein - Du lundi au vendredi - 08h30 à 18h30  La structure Vous rejoindrez une structure hospitalière disposant d'un établissement médico-social et d'un EHPAD de 84 résidents. Elle propose une offre de soins de courte durée et des activités de soins médicaux et de réadaptation, en plus des consultations multidisciplinaires. En outre, un service d'imagerie équipé d'un scanner et d'une IRM est accessible sur site et un IFSI est rattaché à l'établissement. Situés à Rueil Malmaison, dans le département des Hauts-de-Seine, les locaux sont facilement en RER A et en bus depuis Rueil Malmaison ou La Défense.  La rémunération - Selon grille hospitalière  Les missions - Assurer le suivi médical des patients hospitalisés en médecine polyvalente - Prendre en charge les pathologies courantes telles que insuffisance cardiaque, décompensation de BPCO, bilans d'AVC, sclérose en plaques, maladie d'Alzheimer et sevrage éthylique - Réaliser les prescriptions médicales - Effectuer des ponctions lombaires et suivre des bilans biologiques spécialisés - Assurer la traçabilité dans le dossier patient informatisé - Tenir à jour le dossier médical - Collaborer avec l'équipe paramédicale et la filière interne incluant le SSR  Les avantages - Plateau technique avec scanner et IRM - Équipe paramédicale complète et bon taux d'encadrement - Période d'intégration et formation continue - Absence de garde et d'astreinte obligatoires, gardes possibles sur volontariat - Présence dominicale limitée, environ une fois par mois - Accessibilité facilitée en RER A et en bus, proximité de La Défense  Le matériel - Scanner - IRM - Dossier patient informatisé - Matériel de ponctions lombaires - Plateforme de biologie pour bilans spécialisés  Le petit truc en plus Le Château de Malmaison, ancienne résidence de l'Impératrice Joséphine, constitue un site historique et culturel remarquable à proximité, et la desserte par le RER A facilite l'accès rapide à Paris.  Le profil recherché Médecin diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.  Contactez-nous au : 06 ** ** ** ** ou par mail via   Référence de l'annonce : 12575  Candidats provenant de l'Union européenne : Jober Group, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité : - Mise en relation avec nos professeurs partenaires - Suivi pour l'Inscription à l'ordre des médecins - Consultant(e) dédié(e) à votre accompagnement  Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Le profil recherché Médecin diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985756",
+    "postedAt": "2026-11-19T17:06:51.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTczMSA5",
+    "slug": "non-renseigne-ophtalmologue-h-f-odk4ntczmsa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Ophtalmologue (H/F)",
+    "locations": [
+      "Nord, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Emploi Ophtalmologue H/F - Valenciennes 59  Nous recrutons un ophtalmologue H/F pour intégrer une structure spécialisée en ophtalmologie et optométrie située à Valenciennes, dans le Nord, dans le cadre d'un contrat salarié en CDI ou d'une collaboration libérale.  Description et missions Vous exercerez au sein d'un centre moderne dédié à l'ophtalmologie, bénéficiant d'un flux important de patients et d'un plateau technique complet. Vous assurerez les consultations en ophtalmologie médicale, sans obligation de pratiquer la chirurgie. La pratique des IVT est assurée sur place, avec le soutien d'une équipe paramédicale formée. Une orientation vers la chirurgie de la cataracte ou réfractive est possible via des partenaires locaux. Les journées les plus demandées sont les vendredis et samedis, avec une activité modulable selon vos disponibilités. Le rythme de travail est optimisé pour garantir une prise en charge fluide et qualitative, avec un flux de patients maîtrisé (50 à 60 patients par jour).  ADN de la structure Vous intégrerez un établissement bien structuré, pensé pour garantir aux médecins un exercice serein et efficace. Vous disposerez d'un plateau technique haut de gamme, de salles dédiées aux IVT et d'un accompagnement constant par des infirmiers, orthoptistes et secrétaires médicaux. L'organisation interne permet aux praticiens de se concentrer pleinement sur leur activité clinique, sans contrainte administrative. La structure est située à proximité de toutes commodités et facilement accessible depuis les environs de Valenciennes.  Rémunération - Pour les médecins salariés : 650 euros par vacation, avec un complément variable de 12 à 15% selon l'activité - Pour les médecins en collaboration libérale : rémunération personnalisée à discuter, avec possibilité de participation aux charges et d'investissement dans la structure  Avantages - Statut salarié en CDI ou collaboration libérale selon votre projet - Accès aux IVT sur place, chirurgie possible via partenaires - Équipe pluridisciplinaire avec accompagnement infirmier et orthoptique - Locaux modernes, bien équipés et organisés - Logiciel Ophtix avec formation interne prévue - Flux de patients maîtrisé, sans contrainte administrative - Amplitude horaire compatible avec un bon équilibre vie pro/perso - Aide au logement et au transport  Profil recherché Ophtalmologue H/F inscrit(e) ou inscriptible à l'Ordre des Médecins en France, titulaire d'un diplôme français ou européen avec niveau de langue B2 validé. Secteurs 1 ou Secteur 2 et 2 OPTAM acceptés. Priorité donnée aux praticiens non encore installés.  Contactez-nous au O7 44 71 65 O8 ou par mail via  Référence de l'annonce : 10936  Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.  Candidats provenant de l'Union européenne : JoberGroup, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité - Apprentissage de la langue (Niveau B2) - Mise en relation avec nos professeurs partenaires - Suivi pour l'Inscription à l'ordre des médecins - Consultant(e) dédié(e) à votre accompagnementProfil recherché Ophtalmologue H/F inscrit(e) ou inscriptible à l'Ordre des Médecins en France, titulaire d'un diplôme français ou européen avec niveau de langue B2 validé. Secteurs 1 ou Secteur 2 et 2 OPTAM acceptés. Priorité donnée aux praticiens non encore installés.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985731",
+    "postedAt": "2026-11-19T17:06:45.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTY4MSA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-odk4nty4msa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Emploi Médecin généraliste H/F - Paris 75  Nous recrutons un médecin généraliste H/F pour un centre pluridisciplinaire dans le 18e arrondissement de Paris. Ce centre fait partie d'un réseau implanté dans plusieurs grandes villes de France et œuvre en faveur de l'accessibilité des soins spécialisés pour tous et du bien-être de ses patients.  Vous rejoindrez une belle équipe de professionnels impliqués et dévoués, et aurez à votre disposition tout le matériel nécessaire pour une prise en charge optimale de vos patients ! Dans ce centre qui allie excellence et confort de travail, vous serez assuré(e) d'exercer votre métier dans les meilleures conditions possibles.  Vous percevrez une rémunération attractive au pourcentage et bénéficierez, également, des avantages de la structure : beau flux de patients, matériel de dernière génération, secrétariat.  Les avantages du poste : - Statut salarié (1 à 5 jours/semaine) - Rémunération attractive 40% brut/mois - Matériel de dernière génération - Collaboration avec les praticiens - Ambiance conviviale et dynamique - Beau flux de patients - Équipement moderne  Profil recherché : Médecin généraliste H/F titulaire d'un Doctorat de médecine générale en France ou obtenu en Union européenne, Inscrit(e) ou inscriptible au Conseil national de l'ordre des médecins en France  Candidats provenant de l'Union Européenne : Jober Group, vous accompagne gratuitement jusqu'au démarrage de votre activité : - Apprentissage de la langue (Niveau B2) / Mise en relation avec nos professeurs partenaires - Suivi pour l'Inscription à l'ordre des médecins - Consultant(e) dédié(e) à votre accompagnement  Contactez-nous au : 06 ** ** ** **  Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Profil recherché : Médecin généraliste H/F titulaire d'un Doctorat de médecine générale en France ou obtenu en Union européenne, Inscrit(e) ou inscriptible au Conseil national de l'ordre des médecins en France</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985681",
+    "postedAt": "2026-11-19T17:06:36.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTY5NCA5",
+    "slug": "non-renseigne-endocrinologue-h-f-odk4nty5nca5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Endocrinologue (H/F)",
+    "locations": [
+      "Haute-Garonne, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "descriptionHtml": "<p>Un centre médical de Toulouse, en Haute-Garonne, cherche son nouvel endocrinologue H/F pour un CDI.  Les conditions - CDI - Temps plein ou temps partiel - Horaires adaptables  La structure Il s'agit d'un centre médical pluridisciplinaire implanté à Toulouse, disposant de quatre cabinets médicaux aménageables selon la spécialité du praticien. Le centre bénéficie de locaux modernes, d'une patientèle existante et d'un secrétariat sur place assurant la gestion administrative et la prise de rendez-vous. Par ailleurs, l'organisation est pensée pour libérer le praticien de toute tâche administrative, afin qu'il se concentre pleinement sur son activité médicale.  La rémunération Pour ce poste, vous aurez une rétrocession de 42 à 45% brut du chiffre d'affaires, à discuter en fonction de votre temps de travail et votre expérience.  Les missions - Consultations d'endocrinologie - Diagnostic et prise en charge des pathologies endocriniennes et métaboliques - Suivi des patients atteints de pathologies chroniques, notamment le diabète - Établissement des diagnostics et des plans de traitement - Collaboration avec l'équipe pluridisciplinaire du centre  Les avantages - Centre médical pluridisciplinaire aux locaux modernes - Cabinets aménageables selon la spécialité - Patientèle existante - Secrétariat dédié et gestion administrative assurée - Aucune tâche administrative pour le praticien - Horaires adaptables  Le petit truc en plus Toulouse, la Ville rose, doit son surnom à ses édifices de brique de terre cuite qui rougeoient au soleil couchant. La cité abrite la basilique Saint-Sernin, plus grande église romane conservée d'Europe, ainsi que la Cité de l'espace, vitrine de la conquête spatiale européenne. Enfin, les berges du Canal du Midi, classé au patrimoine mondial de l'UNESCO, offrent de belles échappées à pied ou à vélo au cœur de la métropole.  Le profil recherché Endocrinologue diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.  Contactez-nous au 06 ** ** ** ** ou par mail via   Référence de l'annonce : 13195  Candidats provenant de l'Union européenne : Jober Group, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité : - Mise en relation avec nos professeurs partenaires - Suivi pour l'Inscription à l'ordre des médecins - Consultant(e) dédié(e) à votre accompagnement  Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Le profil recherché Endocrinologue diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985694",
+    "postedAt": "2026-11-19T17:06:36.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTYzMiA5",
+    "slug": "non-renseigne-medecin-coordonnateur-h-f-odk4ntyzmia5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin coordonnateur (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Le Centre Communal d'Action Sociale (CCAS), établissement public administratif rattaché à la Ville de Lyon, emploie des agents permanents et des agents non-permanents (besoins occasionnels, remplaçants, saisonniers, vacataires, apprentis, services civiques.).Il met en œuvre la politique sociale municipale. Il développe ainsi différentes activités d'aide et d'accompagnement des personnes âgées, des familles en difficulté et aussi de lutte contre les exclusions.De multiples projets sont portés par le CCAS dans le champ de la gérontologie, et notamment : des extensions/relocalisation d'EHPAD concernant 3 des 4 établissements, l'impulsion d'une démarche qualité renouvelée et la renégociation du CPOM présentant des enjeux financiers importants, la conception d'une politique affirmée de lutte contre l'isolement des seniors à domicile, la réalisation d'un réel maillage territorial en rendant perméables au quartier les résidences autonomie séniors.Ainsi, il gère 4 EHPAD d'environ 90 résidents.Au sein de l'EHPAD Marius Bertrand dans une équipe pluridisciplinaire composée de soignants et para médicaux, vos missions seront les suivantes :- Vous assurez l'organisation générale des soins au sein de l'EHPAD- Vous évaluez et validez l'état de dépendance des résidents- Vous assurez la coordination des acteurs de soins salariés et libéraux- Vous veillez à l'existence d'un dispositif de permanence des soins- Vous êtes en charge de l'évaluation gérontologique et vous réalisez les visites d'admission- Vous êtes un soutien pour l'équipe soignante Médecin diplômé , vous êtes titulaire de la capacité de gérontologie (application des Décrets de 2005, 2007 et 2011) et inscrit au Conseil de l'Ordre des médecins.Vous êtes formé aux soins palliatifs, à la psycho gériartrie.Vous connaissez les outils d'évaluation ( grille pathos et AGIR )</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985632",
+    "postedAt": "2026-11-19T17:06:27.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODk4NTYzOCA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-odk4ntyzoca5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Dans le cadre du développement de son activité, un centre de soins non programmés situé à Paris, dans le 12e arrondissement, recherche un nouveau médecin généraliste H/F en CDI.  Les conditions - CDI - Temps plein ou temps partiel, à partir d'1 jour fixe par semaine - Lundi au samedi - De 8h00 à 20h00 ou de 9h00 à 19h00 selon le site  La structure Il s'agit d'un centre spécialisé dans la petite urgence du quotidien. Il est implanté dans le 12e arrondissement de Paris, un quartier vivant, résidentiel et très bien desservi. Le centre est porté par des médecins associés. Une équipe support dédiée prend entièrement en charge les ressources humaines, le recrutement, la comptabilité ainsi que l'organisation matérielle et logistique. Le fonctionnement repose sur un parcours de soins optimisé et sur une véritable délégation des tâches. Les secrétaires gèrent l'accueil, la constitution du dossier, les ordonnances et les encaissements. Les infirmières réalisent la pré-consultation, les constantes, l'ECG, les prises de sang, les sutures et les pansements. Deux médecins sont présents en permanence au centre. De plus, la structure fait partie d'un réseau parisien en plein essor, avec l'ouverture d'un nouveau centre en projet. Elle s'adresse à des médecins dynamiques qui aiment l'activité soutenue, et un esprit entrepreneurial y est particulièrement apprécié.  La rémunération Pour ce poste, vous bénéficierez d'une rémunération de 40% brut du chiffre d'affaires.  Les missions - Consultations de petite urgence et de soins non programmés - Analyse des éléments recueillis en pré-consultation et des examens réalisés sur place - Établissement du diagnostic et prescription - Suivi des patients dans le cadre du parcours de soins du centre - Collaboration avec l'équipe pluridisciplinaire  Les avantages - Plateau technique complet avec radiologie et échographie sur place - Secrétariat et infirmières dédiés grâce à une délégation des tâches poussée - Gestion administrative, RH, comptable et logistique entièrement prise en charge - Exercice centré exclusivement sur le cœur de métier médical - Flux de patients important - Organisation souple, à partir d'1 jour fixe par semaine - Engagement flexible, avec possibilité de quitter la structure moyennant un préavis de 6 mois  Le matériel - Radiologie - Échographie - ECG - Prélèvements et bilans biologiques réalisés sur place  Le petit truc en plus Le 12e arrondissement abrite la Coulée verte René-Dumont, la toute première promenade plantée au monde aménagée sur un ancien viaduc ferroviaire. Elle a même inspiré la célèbre High Line de New York ! Sous ses arches, le Viaduc des Arts accueille des ateliers d'artisans d'art. Enfin, l'arrondissement englobe le bois de Vincennes, le plus grand espace vert de Paris, idéal pour décompresser après une journée bien remplie.  Le profil recherché Médecin généraliste diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.  Contactez-nous au 06 ** ** ** ** ou par mail via   Référence de l'annonce : 13702  Candidats provenant de l'Union européenne : Jober Group, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité : - Mise en relation avec nos professeurs partenaires - Suivi pour l'Inscription à l'ordre des médecins - Consultant(e) dédié(e) à votre accompagnement  Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Le profil recherché Médecin généraliste diplômé(e) en France ou en Union européenne, inscrit(e) ou inscriptible à l'Ordre.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985638",
+    "postedAt": "2026-11-19T17:06:28.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9269,7 +9596,7 @@
     "postedAt": "2026-10-28T17:06:14.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9289,7 +9616,7 @@
     "postedAt": "2026-10-28T17:06:18.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9309,7 +9636,7 @@
     "postedAt": "2026-10-28T17:06:48.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9346,6 +9673,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8366413",
     "postedAt": "2026-10-28T17:09:02.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9652,7 +9981,7 @@
     "postedAt": "2026-10-28T01:43:42.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9726,7 +10055,7 @@
     "postedAt": "2026-10-28T02:04:41.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9746,7 +10075,7 @@
     "postedAt": "2026-10-28T02:05:20.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9835,6 +10164,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8334354",
     "postedAt": "2026-10-28T05:18:06.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -9871,7 +10202,7 @@
     "postedAt": "2026-10-31T12:33:36.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -9910,7 +10241,7 @@
     "postedAt": "2026-10-31T12:33:39.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -10179,6 +10510,23 @@
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-06T10:50:31.526Z",
     "closedAt": "2026-11-09T05:03:23.512Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODQ4OTA3MiA5",
+    "slug": "manpower-electricien-h-f-odq4ota3mia5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Electricien (H/F)",
+    "locations": [
+      "Vendée, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower LES SABLES D OLONNE recherche pour son client, un acteur du secteur des Industries manufacturières et production, un Electricien (H/F) Au sein d'une industrie de fabrication dans le secteur du loisirs, votre mission consistera à effectuer des travaux d'électricité divers pour la réalisation et la finition de mobil home. Doté d'un diplome en electricité ou d'une formation, ou encore d'une experience significative dans ce domaine, vous aimez le travail d'équipe,acceptez le 2x8 - longue mission à la clef, taux + primes- Dans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : Mission en intérimExpérience : &amp;lt; 1 anSalaire : 1 912 à 2 100 € par moisDate de début : Dès que possibleDurée : 3 mois renouvelable</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8489072",
+    "postedAt": "2026-11-03T05:03:42.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -10626,7 +10974,7 @@
     "postedAt": "2026-10-31T01:23:12.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -10646,7 +10994,7 @@
     "postedAt": "2026-10-31T01:24:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -10966,7 +11314,7 @@
     "postedAt": "2026-11-05T09:22:15.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -11112,7 +11460,7 @@
     "postedAt": "2026-11-05T17:06:21.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -11206,6 +11554,57 @@
     "source": "eures"
   },
   {
+    "id": "eures:ODU5MDczMyA5",
+    "slug": "manpower-electricien-batiment-tp-vrd-h-f-odu5mdczmya5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Electricien bâtiment/TP/VRD (H/F)",
+    "locations": [
+      "Haut-Rhin, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower MULHOUSE BTP recherche pour son client, un acteur du secteur du BTP, un Electricien bâtiment/TP/VRD (H/F) Travaux de signalisation avec tirage de câbles, branchements et raccordements.- Travaux d'éclairage public, pose de lampadaires.- Réaliser des travaux d'installation des équipements électriques sur réseaux éclairage public.- Réaliser la maintenance préventive et curative en éclairage public. Diplômé(e) d'un CAP/BEP en électricité ou expérience équivalente. Vous devez être capable de travailler en équipe et de résoudre des problèmes de manière autonome. Dans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : Mission en intérimExpérience : 2 ansSalaire : 12,5 à 14 € par heureDate de début : Dès que possibleDurée : 18 mois</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8590733",
+    "postedAt": "2026-11-06T05:13:21.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODU5MDY4MyA5",
+    "slug": "manpower-electricien-cdi-interimaire-h-f-odu5mdy4mya5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Electricien CDI-INTERIMAIRE (H/F)",
+    "locations": [
+      "Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower LYON BATIMENT SECOND OEUVRE recherche pour son client, un acteur du secteur du BTP, un Electricien (H/F) Les missionsVous intervenez sur des installations électriques en environnements tertiaires et résidentiels.À ce titre, vous êtes amené(e) à :- Installer et raccorder des armoires électriques de distribution ;- Poser des équipements basse tension (prises, interrupteurs et appareillages électriques) ;- Mettre en place des goulottes et cheminements de câbles, en apparent ou en encastré ;- Réaliser des travaux de courant faible (interphonie, baies informatiques, alarmes incendie) ;- Effectuer le tirage et le câblage de réseaux informatiques RJ45 ;- Participer aux travaux de rénovation électrique et au tirage de câbles sur chantier.Le profil- Formation : Diplôme de type CAP ou BEP en électricité.- Expérience : Une pratique confirmée dans le domaine de la rénovation électrique, notamment en milieu tertiaire, est appréciée.- Compétences techniques : Lecture de plans électriques, maîtrise des normes de sécurité.- Qualités personnelles : Autonomie, précision, sens de l'organisation.- Habilitations : Habilitation électrique à jour requise.- Mobilité : Un moyen de transport personnel est souhaité pour faciliter les déplacements sur les chantiers.Dans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : CDI IntérimaireExpérience : 3 ansSalaire : 13 à 14 € par heureDate de début : 16/11/2026Durée : moisInformation complémentaire : CDI-INTERIMAIRE</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8590683",
+    "postedAt": "2026-11-06T05:13:19.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:ODU5MDY4OSA5",
+    "slug": "manpower-electricien-tertiaire-cdi-h-f-odu5mdy4osa5",
+    "company": "eures",
+    "employer": "Manpower",
+    "title": "Electricien tertiaire cdi (H/F)",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Manpower GD PARIS ELECTRICITE recherche pour son client, un acteur du secteur de l'Electricité et du Gaz, un Electricien tertiaire cdi (H/F) - Préparation du chantier- Cheminements : montage de chemins de câbles, de tubes IRL, travaux d'incorporations- Distribution secondaire : tirage de câbles- Raccordement : pose et raccordement de tableaux électriques BT- Pose et Raccordement d'appareillage- Contrôles : réalisation des autocontrôles- Essais : participer aux essais et réglages jusqu'à la mise en service des installations- Qualité : respecter les normes et les règles de l'art- Appliquer les règles et les normes d'hygiène, de sécurité et d'environnement- Travailler dans le respect des exigences réglementaires et environnementales - Vous êtes titulaire d'un CAP / BEP en électricité, électrotechnique ou équivalent- Vous possédez les habilitations électriques à jourDans le cadre de sa politique diversité, Manpower étudie, à compétences égales, toutes candidatures dont celles de personnes en situation de handicapContrat : CDIExpérience : 2 ansSalaire : 15 à 16 € par heureDate de début : Dès que possibleInformation complémentaire : cdi</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8590689",
+    "postedAt": "2026-11-06T05:13:19.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:ODU5MTExMyA5",
     "slug": "groupe-jti-medecin-generaliste-f-h-odu5mtexmya5",
     "company": "eures",
@@ -11277,7 +11676,7 @@
     "postedAt": "2026-11-03T09:21:48.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -11335,7 +11734,7 @@
     "postedAt": "2026-11-03T12:34:47.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -11854,7 +12253,7 @@
     "postedAt": "2026-11-10T01:22:41.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -12118,7 +12517,7 @@
     "postedAt": "2026-11-09T06:47:56.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -12271,6 +12670,25 @@
     "source": "eures"
   },
   {
+    "id": "eures:Y2U4ZDg2ZDEtYTdjMS00NTZiLTkxY2QtZDFmOWFiYjA4YTExIDI2MQ",
+    "slug": "helse-fonna-hf-haugesund-sjukehus-ferievikar-2027-for-lis1-y2u4zdg2zdetytdjms00ntziltkxy2qtzdfmowfiyja4ytexidi2mq",
+    "company": "eures",
+    "employer": "Helse Fonna Hf Haugesund Sjukehus",
+    "title": "Ferievikar 2027 for LIS1",
+    "locations": [
+      "Haugesund, Norway",
+      "Odda, Norway",
+      "Stord, Norway"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p><strong>Helse Fonna søkjer dyktige LIS1-vikarar til sjukehusa i Haugesund, Stord og Odda i ferieperioden 2027 (veke 25–33).</strong></p><p>I søknaden ber vi deg opplyse om kva sjukehus du ønskjer å prioritere. Du kan også oppgi kva klinikk og/eller avdeling du helst vil arbeide ved.Dersom du ikkje har høve til å arbeide heile perioden, ber vi deg oppgi kva tidsrom du kan arbeide. Vi vil prioritere søkjarar som kan arbeide i minst seks veker.</p><p>Velkomen som søkjar!</p>\nKva går jobben ut på?\n<ul><li>Tenesteplikt og ansvar som for LIS1, inkludert vaktteneste.</li></ul>Kva kompetanse er viktig i denne rolla?\n<ul><li>Det er eit krav at du kan framlegge norsk lisens som medisinerstudent eller som LIS1 innan oppstart, evt. norsk autorisasjon som lege.</li><li>Gode norskkunnskapar, både munnleg og skriftleg. </li></ul>Kva ser vi etter hos deg?<ul></ul><p>Hos oss er det viktig at du: </p><ul><li>har eit sterkt pasientfokus</li><li>tek ansvar og arbeider sjølvstendig</li><li>arbeider nøyaktig og strukturert</li><li>kommuniserer tydeleg og godt med pasientar og kollegaer</li></ul>Vi tilbyr<ul><li>Introduksjon og opplæring.</li><li>Triveleg arbeidsmiljø.</li><li>Høgt fagleg nivå.</li></ul>KontaktinformasjonOlav Bøe Hunnes, Rådgiver, 52732156, olav.boe.hunnes@helse-fonna.no\nArbeidsstadKarmsundgata 77\n5531 HAUGESUND\nNøkkelinformasjon:Arbeidsgivar: Helse Fonna HF\n\nReferansenr.: 5211066273\nStillingsprosent: 100%\nVikariat\nSøknadsfrist: 08.12.2026\n\n<p><b>Om arbeidsgiveren:</b></p><p>Helse Fonna har rundt 4200 medarbeidarar som jobbar for å gi best mogleg behandling og pleie til pasientane. Vår oppgåve er å gi spesialiserte helsetenester til dei over 180 000 innbyggarane i Sunnhordland, Indre Hardanger og Nord-Rogaland.</p>\n<p>Helse Fonna ønsker så langt som råd å avspegle mangfaldet i befolkninga.  Vi ønsker å rekruttere medarbeidarar uavhengig av kjønn med ulik kompetanse, fagkombinasjonar, livserfaring og perspektiv for å bidra i spesialisthelsetenesta. </p>\n<p>For å bli betre kjend med oss, kan du sjå her <a href=\"http://www.helse-fonna.no/\">www.helse-fonna.no</a>.</p>",
+    "applyUrl": "https://arbeidsplassen.nav.no/stillinger/stilling/ce8d86d1-a7c1-456b-91cd-d1f9abb08a11",
+    "postedAt": "2026-11-19T10:09:39.111Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:YjVhODhmMjMtNTg5Zi00Nzk2LWJjNjYtNzE0YTZiZTVhY2ZlIDI2MQ",
     "slug": "stavanger-universitetssjukehus-ullandhaug-vikariat-overlege-yjvhodhmmjmtntg5zi00nzk2lwjjnjytnze0ytziztvhy2zlidi2mq",
     "company": "eures",
@@ -12304,7 +12722,7 @@
     "postedAt": "2026-10-27T10:37:23.208Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {
@@ -12322,26 +12740,6 @@
     "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/bd733bc9-48c6-4485-903e-11533c832403/fi",
     "postedAt": "2026-11-11T11:59:23.429Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:YmYyZmNiN2MtNzI3NS00ZjhiLWJjZGQtODlhNjRjNmRjMDcwIDgx",
-    "slug": "terveystalo-rintaradiologian-erikoislaakari-julkiset-palvelut-helsinki-lohja-ja-lappeenranta-ymyyzmnin2mtnzi3ns00zjhilwjjzgqtodlhnjrjnmrjmdcwidgx",
-    "company": "eures",
-    "employer": "Terveystalo",
-    "title": "Rintaradiologian erikoislääkäri, Julkiset palvelut, Helsinki, Lohja ja Lappeenranta",
-    "locations": [
-      "Helsinki, Finland"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "radiology",
-    "descriptionHtml": "<p>Me Terveystalossa rakennamme sujuvaa, välittävää ja vaikuttavaa tulevaisuuden terveydenhuoltoa. Joka päivä yli 14 000 osaajaamme työskentelee tärkeimmän, terveyden, eteen.Etsimme nyt tärkeimmän tekijöiden osaavaan ja motivoituneeseen joukkoomme Rintaradiologian erikoislääkäriä Helsinkiin, Lohjalle ja Lappeenrantaan. Tutustu tehtävään ja hae!Mitä työ pitää sisällään?Oletko kiinnostunut työskentelemään joustavasti omien aikataulujen ja toiveiden mukaan? Haluatko kehittää osaamistasi julkisen puolen työtehtävissä ja päästä mukaan erilaisiin työympäristöihin? Terveystalon Julkiset palvelut hakee Rintaradiologian erikoislääkäreitä työskentelemään mielenkiintoisiin työtehtäviin eri puolille Suomea. Liity joukkoomme jo tänään!Kokonaistyönkuvan ja työpäivän voimme räätälöidä osaamisesi ja toiveittesi mukaan. Työpäivään voi sisältyä esimerkiksi ultraäänitutkimuksia, toimenpiteitä, röntgenlausuntoja tai kliinistä mammografiaa. Töitä voit tehdä yhden päivän kuussa tai vaikka useamman päivän viikossa, mikä vain sopii parhaiten sinun arkeesi. Kauttamme saat perehdytyksen käytettäviin järjestelmiin sekä tarvittavan asiantuntijaradiologin ja hallinnollisen tuen. Lisäksi saat oman nimetyn yhteyshenkilön, jonka kanssa voit suunnitella oman työviikkosi.Autamme mielellämme suunnittelemaan sinulle mielekkään ja joustavan työkokonaisuuden kattavalta toiminta-alueeltamme, joten soitathan meille jo tänään!Terveystalo tarjoaa monipuolisia Henkilöstöpalveluita hyvinvointialueille ja yksityisille yrityksille lyhytaikaiseen sekä pitkäaikaiseen tarpeeseen. Terveystalon Henkilöstöpalveluissa räätälöimme sinulle sopivan työkokonaisuuden, joka voi sisältää esimerkiksi pidemmän työkokonaisuuden yhdessä toimipaikassa, viikoittaisia vakiovuoroja tietyissä toimipisteissä tai satunnaisia keikkavuoroja silloin, kun sinulle sopii. Kauttamme voit tehdä töitä esimerkiksi terveysasemilla, vuodeosastoilla ja päivystyksissä. Tarjoamme sinulle aina omiin ammatillisiin kiinnostuksenkohteisiisi ja omiin kehitystavoitteisiisi sopivia työkokonaisuuksia. Yhteyshenkilömme ovat ammattilaisten keskuudessa todella pidettyjä (lääkärikollegojesi suositteluindeksi-NPS 4,6/5). Et jää missään vaiheessa yksin, ja yhteyshenkilösi huolehtii kaikista käytännön asioista, jotta sinä voit keskittyä olennaiseen. Lue lisää lääkäreiden kokemuksista Terveystalon Julkisissa palveluissa työskentelystä!Miksi töihin Terveystaloon?Me teemme työksemme tärkeintä, terveyttä. Tavoitteenamme on olla inhimillinen työntekopaikka, jossa ammattilainen voi keskittyä olennaiseen. Meillä arki on sujuvaa, välitämme toinen toisistamme ja teemme vaikuttavaa työtä. - Arkemme on sujuvaa. Panostamme lähijohtamiseen ja esihenkilötyöhön, jotta jokainen ammattilaisemme saa työssään tarvittavan tuen. Ammattirajat ylittävä tiimityö, joustavuus ja edistykselliset hoitopolkumme tukevat arjen työtä. - Välitämme toisistamme. Meillä jokainen on oma arvostettu itsensä, oman alansa huippuosaaja ja tärkeä osa työyhteisöä. Osaajatutkimuksemme mukaan ammattilaisemme arvostavat muun muassa lämmintä työyhteisöämme, hyvää esihenkilötyötä ja lähijohtamista sekä mahdollisuutta onnistua omassa työssä. - Teemme vaikuttavaa työtä. Terveystalossa on ainutkertaista osaamista aina ennaltaehkäisystä perusterveydenhuoltoon, suunterveyteen ja erikoissairaanhoitoon. Käytössämme ovat ainutlaatuiset oman työn laatumittarit ja digitaaliset hoitopolut kaikkiin yleisimpiin sairauksiin. Panostamme myös ammattilaistemme laadukkaaseen kouluttautumiseen, kehittymiseen ja ammatilliseen kasvuun. - Kilpailukykyinen palkitseminen ja monipuoliset edut. Meillä palkitseminen ja palkkiomallit ovat kilpailukykyiset, ja tarjoamme työsuhteisille ammattilaisillemme monipuoliset työsuhteen edut, kuten lounas- sekä liikunta-, kulttuuri- ja hyvinvointiedun, kumppanialennukset ja kattavan työterveyshuollon, joka sisältää peruspalveluiden lisäksi muun muassa lähetteelliset erikoislääkärikäynnit ja laajasti mielen hyvinvoinnin palveluita, mm. lyhytpsykoterapian. Ammatinharjoittajille tarjoamme vaihtuvat kumppanietumme ja muun muassa mahdollisuuden sopimushintaiseen työterveyshuoltoon. - Vastuullisuus on keskeisin arvo toiminnassamme. Terveystalossa olemme kaikki samanarvoisia riippumatta sukupuolesta, iästä, etnisestä tai kansallisesta taustasta, kansalaisuudesta, kielestä, uskonnosta, vakaumuksesta, mielipiteestä, vammasta, terveydentilasta, seksuaalisesta suuntautumisesta tai muusta ominaisuudesta. Pohjoismaisten pörssiyritysten ylimmän johdon monimuotoisuutta tarkastelevan Nordic Business Diversity Index 2025 -tutkimusraportin mukaan Terveystalo on Suomen kolmanneksi monimuotoisin organisaatio keskisuurten yritysten sarjassa.Mitä toivomme sinulta?Olet rintaradiologian erikoislääkäri. Pätevyysvaatimuksena on sujuva suullinen ja kirjallinen suomen kielen taito.Kiinnostuitko tehtävästä?Lisätietoja meillä työskentelystä antaa  - Yhteyspäällikkö Jenna Alatalo puhelimitse 050 592 8713, &lt;a href=\"mailto:jenna.alatalo@terveystalo.com\" rel=\"nofollow\"&gt;jenna.alatalo@terveystalo.com&lt;/a&gt; - Palvelupäällikkö Noora Hiltunen p. 050 4017659, &lt;a href=\"mailto:noora.hiltunen@terveystalo.com\" rel=\"nofollow\"&gt;noora.hiltunen@terveystalo.com&lt;/a&gt; - Yhteyspäällikkö Nina Mannstén p. 050 5305297, &lt;a href=\"mailto:nina.mannsten@terveystalo.com\" rel=\"nofollow\"&gt;nina.mannsten@terveystalo.com&lt;/a&gt; - Yhteyspäällikkö Julia Nordström-Norja p. 050 3101598, &lt;a href=\"mailto:julia.nordstrom-norja@terveystalo.com\" rel=\"nofollow\"&gt;julia.nordstrom-norja@terveystalo.com&lt;/a&gt;Voit myös täyttää sähköisen hakemuksen oheisen hakupainikkeen kautta.Tervetuloa Terveystaloon!</p>",
-    "applyUrl": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat/bf2fcb7c-7275-4f8b-bcdd-89a64c6dc070/fi",
-    "postedAt": "2026-10-26T05:36:48.204Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "eures"
   },
   {
@@ -12399,7 +12797,7 @@
     "postedAt": "2026-10-30T09:37:04.138Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "eures"
   },
   {

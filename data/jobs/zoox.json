@@ -134,7 +134,7 @@
     "postedAt": "2026-03-30T20:21:29.821Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -322,6 +322,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/2b4b5430-927c-429b-9ac3-b06bf33b7302",
     "postedAt": "2026-07-22T15:43:21.847Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -550,7 +552,7 @@
     "postedAt": "2025-08-12T20:15:16.530Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -1043,8 +1045,23 @@
     "applyUrl": "https://jobs.lever.co/zoox/07f0834f-06ec-44c7-a24b-3efa08589d38",
     "postedAt": "2026-04-15T20:18:14.993Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "source": "lever"
+  },
+  {
+    "id": "lever:7ff6f68a-52bd-48ab-87d4-029bcc43fa9f",
+    "slug": "zoox-process-improvement-intern-summer-2027-7ff6f68a-52bd-48ab-87d4-029bcc43fa9f",
+    "company": "zoox",
+    "title": "Process Improvement Intern [Summer 2027]",
+    "locations": [
+      "Foster City, CA"
+    ],
+    "remote": false,
+    "department": "Fleet Operations",
+    "category": "operations",
+    "descriptionHtml": "<strong>About Our Internship Program</strong>\n \nZoox's internship program offers hands-on experience with cutting-edge technology, mentorship from some of the industry's brightest minds, and the opportunity to make meaningful contributions to real projects. We seek interns who demonstrate strong academic performance, engagement beyond the classroom, intellectual curiosity, and a genuine interest in Zoox's mission.\n \n<strong>Job Description</strong>\n \nThis intern would focus on automating our complex troubleshooting workflows. Currently, troubleshooting is a very technical process, and we need to define the requirements for automation as well as the opportunity in order to have Product, Engineering, and Design create a feature that simplifies troubleshooting (e.g., automating several manual steps) to reduce overall workload and make it safe to migrate this work away from Mission Control, which supports the broader strategy of removing MC from vehicle-level issues as we march toward a 1:250+ ratio.\n \n<h3>Internship Requirements</h3><ul>\n\n<li>Currently working towards a B.S., M.S., Ph.D., or advanced degree in a relevant engineering program</li>\n<li>Good academic standing</li>\n<li>Expected to graduate between Fall 2027 and Summer 2028, and enrolled at an accredited college or university throughout the internship</li>\n<li>Able to commit to a full-time, 12-week internship beginning in May/June 2027</li>\n<li>Ability to relocate to the Bay Area, California, for the duration of the internship</li>\n<li>Interns at Zoox may not use any proprietary information they are working on as part of their thesis, any published work with their university, or to be distributed to anyone outside of Zoox</li>\n\n</ul><h3>Qualifications</h3><ul>\n\n<li>Project and time management</li>\n<li>Strong written and verbal communication</li>\n<li>Comfortable using data to make decisions</li>\n<li>Ability to write step-by-step processes and translate complex technical SOPs into language that operators can easily understand</li>\n<li>Strong cross-functional partnership</li>\n<li>Ability to identify process gaps or inefficiencies</li>\n\n</ul><h3>Bonus Qualifications</h3><ul>\n\n<li>Experience with SQL is a plus</li>\n<li>Prior customer service experience is a plus</li>\n<li>Familiarity with Salesforce is a plus</li>\n<li>Prior experience with Strategy &amp; Operations is a plus</li>\n<li>Previous experience working with Product &amp; Engineering</li>\n\n</ul><strong>Compensation</strong>\n \nThe monthly salary range for this position is $5,500 to $9,500. Compensation will vary based on geographic location and level of education. Additional benefits may include medical insurance, and a housing stipend (relocation assistance will be offered based on eligibility).\n \n<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "applyUrl": "https://jobs.lever.co/zoox/7ff6f68a-52bd-48ab-87d4-029bcc43fa9f",
+    "postedAt": "2026-11-18T22:27:14.579Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -1749,6 +1766,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/79cd1de5-c540-4917-8820-960f65fb8f9e",
     "postedAt": "2026-11-12T00:07:08.573Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -1883,7 +1902,7 @@
     "remote": false,
     "department": "Data Science",
     "category": "data",
-    "descriptionHtml": "<p><strong>About Our Internship Program<br /></strong>Zoox's internship program offers hands-on experience with cutting-edge technology, mentorship from some of the industry's brightest minds, and the opportunity to make meaningful contributions to real projects. We seek interns who demonstrate strong academic performance, engagement beyond the classroom, intellectual curiosity, and a genuine interest in Zoox's mission.</p>\n\n<p><strong>Job Description<br /></strong>Data Science turns Zoox's driving, fleet and business data into decisions and automation. As a Data Scientist Intern, you may be assigned to one of the following teams:</p>\n<ul>\n<li>Autonomy Software V&amp;V: You will work on fleet metrics, behavior analysis, and performance evaluation of our autonomous vehicles. Analyze real-world driving data to identify patterns, measure autonomy performance, and inform stack improvements. Contribute to metrics platforms that track miles-per-disengagement, driving behavior clusters (PUDO, lane changes, pullovers), and safety-critical events across our L3 development and production service fleets.</li>\n<li>Core/Domain Data Science: You will provide data solutions to deliver domain-specific analytical insights. In this role, you will have the opportunity to perform data analysis to develop and validate the simulation framework evaluating Zoox’s autonomous driving software. You collaborate with key stakeholders in the Simulation team to gain insight into the safety and comfort performance of our robotaxi. This internship will provide you with hands-on experience in building performance metrics and conducting in-depth data analyses, contributing to data-driven decision-making within the cutting-edge field of autonomous vehicles.</li>\n</ul><h3>In this Role, You Will...</h3><ul>\n<li>Use coding and analytical skills to derive insights that inform decisions and automation</li>\n<li>Test new frameworks and algorithms to improve model performance</li>\n<li>Work on a project such as drift monitoring, automated model retraining, predictive modeling, similarity search or statistical testing</li>\n</ul><h3>Internship Requirements</h3><ul>\n<li>Currently working towards a B.S., M.S., Ph.D., or advanced degree in data science, statistics, computer science, or a related engineering program</li>\n<li>Good academic standing</li>\n<li>Expected to graduate between Fall 2027 and Summer 2028, and enrolled at an accredited college or university throughout the internship</li>\n<li>Able to commit to a full-time, 12-week internship beginning in May/June 2027</li>\n<li>Ability to relocate to the Bay Area, California, for the duration of the internship</li>\n<li>Interns at Zoox may not use any proprietary information they are working on as part of their thesis, any published work with their university, or to be distributed to anyone outside of Zoox</li>\n</ul><h3>Qualifications</h3><ul>\n<li>Proficiency in Python and SQL</li>\n<li>Coursework in machine learning, computer vision, or NLP</li>\n<li>Familiarity with software-engineering practices such as Git, unit testing, debugging, and code reviews</li>\n<li>Understanding of supervised learning, model evaluation, and common sources of dataset bias and label noise.</li>\n<li>Experience with data analysis and visualization</li>\n<li>Ability to communicate data clearly to different audiences</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>Experience with Databricks, Spark or cloud data tools</li>\n<li>Experience with dashboarding or experiment design</li>\n<li>Experience working with LLMs</li>\n</ul>\n\n<strong>Compensation</strong>\nThe monthly salary range for this position is $6,500 to $9,500. Compensation will vary based on geographic location and level of education. Additional benefits may include medical insurance and a relocation stipend. \n\n<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
+    "descriptionHtml": "<p><strong>About Our Internship Program<br /></strong>Zoox's internship program offers hands-on experience with cutting-edge technology, mentorship from some of the industry's brightest minds, and the opportunity to make meaningful contributions to real projects. We seek interns who demonstrate strong academic performance, engagement beyond the classroom, intellectual curiosity, and a genuine interest in Zoox's mission.</p>\n\n<p><strong>Job Description<br /></strong>Data Science turns Zoox's driving, fleet and business data into decisions and automation. As a Data Scientist Intern, you may be assigned to one of the following teams:</p>\n<ul>\n<li>Autonomy Software V&amp;V: You will work on fleet metrics, behavior analysis, and performance evaluation of our autonomous vehicles. Analyze real-world driving data to identify patterns, measure autonomy performance, and inform stack improvements. Contribute to metrics platforms that track miles-per-disengagement, driving behavior clusters (PUDO, lane changes, pullovers), and safety-critical events across our L3 development and production service fleets.</li>\n<li>Core/Domain Data Science: You will provide data solutions to deliver domain-specific analytical insights. In this role, you will have the opportunity to perform data analysis to develop and validate the simulation framework evaluating Zoox’s autonomous driving software. You collaborate with key stakeholders in the Simulation team to gain insight into the safety and comfort performance of our robotaxi. This internship will provide you with hands-on experience in building performance metrics and conducting in-depth data analyses, contributing to data-driven decision-making within the cutting-edge field of autonomous vehicles.</li>\n</ul><h3>In this Role, You Will...</h3><ul>\n<li>Use coding and analytical skills to derive insights that inform decisions and automation</li>\n<li>Test new frameworks and algorithms to improve model performance</li>\n<li>Work on a project such as drift monitoring, automated model retraining, predictive modeling, similarity search or statistical testing</li>\n</ul><h3>Internship Requirements</h3><ul>\n<li>Currently working towards a B.S., M.S., Ph.D., or advanced degree in data science, statistics, computer science, or a related engineering program</li>\n<li>Good academic standing</li>\n<li>Expected to graduate between Fall 2027 and Summer 2028, and enrolled at an accredited college or university throughout the internship</li>\n<li>Able to commit to a full-time, 12-week internship beginning in May/June 2027</li>\n<li>Ability to relocate to the Bay Area, California or Boston, Massachusetts, for the duration of the internship</li>\n<li>Interns at Zoox may not use any proprietary information they are working on as part of their thesis, any published work with their university, or to be distributed to anyone outside of Zoox</li>\n</ul><h3>Qualifications</h3><ul>\n<li>Proficiency in Python and SQL</li>\n<li>Coursework in machine learning, computer vision, or NLP</li>\n<li>Familiarity with software-engineering practices such as Git, unit testing, debugging, and code reviews</li>\n<li>Understanding of supervised learning, model evaluation, and common sources of dataset bias and label noise.</li>\n<li>Experience with data analysis and visualization</li>\n<li>Ability to communicate data clearly to different audiences</li>\n</ul><h3>Bonus Qualifications</h3><ul>\n<li>Experience with Databricks, Spark or cloud data tools</li>\n<li>Experience with dashboarding or experiment design</li>\n<li>Experience working with LLMs</li>\n</ul>\n\n<strong>Compensation</strong>\nThe monthly salary range for this position is $6,500 to $9,500. Compensation will vary based on geographic location and level of education. Additional benefits may include medical insurance and a relocation stipend. \n\n<br /><b>About Zoox</b>Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.<br /><a href=\"https://www.linkedin.com/company/zoox-inc\">Follow us on LinkedIn</a><br /><b>Accommodations</b>If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.<br /><i><b>A Final Note:</b></i><i>You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.</i>",
     "applyUrl": "https://jobs.lever.co/zoox/85c6aec7-8da2-445d-9c4d-812365dbce97",
     "postedAt": "2026-11-06T23:14:17.184Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
@@ -2045,7 +2064,7 @@
     "postedAt": "2026-11-07T00:27:55.431Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -2304,7 +2323,7 @@
     "postedAt": "2025-10-27T17:47:04.348Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -3071,6 +3090,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/737259b5-4258-4557-b7e0-0627b3d870a5",
     "postedAt": "2026-08-04T19:28:23.203Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -3906,7 +3927,7 @@
     "id": "lever:c84c90b4-22f2-4d2e-9034-afee385dd0d2",
     "slug": "zoox-test-automation-engineer-robot-platform-c84c90b4-22f2-4d2e-9034-afee385dd0d2",
     "company": "zoox",
-    "title": "Test Automation Engineer, Robot Platform",
+    "title": "Senior / Staff Test Automation Engineer, Robot Platform",
     "locations": [
       "Foster City, CA"
     ],
@@ -3968,7 +3989,7 @@
     "postedAt": "2026-10-01T19:39:53.311Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -4160,6 +4181,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/d5d0608a-aa33-43c3-abe2-5ff8b40028d5",
     "postedAt": "2026-09-03T22:05:27.942Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {
@@ -4374,7 +4397,7 @@
     "postedAt": "2026-06-29T17:54:54.091Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -4533,7 +4556,7 @@
     "postedAt": "2026-07-20T19:44:52.129Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "lever"
   },
   {
@@ -4568,6 +4591,8 @@
     "applyUrl": "https://jobs.lever.co/zoox/f1f1e6ec-6167-4369-a788-89f5d009368a",
     "postedAt": "2026-02-03T16:04:15.953Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "lever"
   },
   {

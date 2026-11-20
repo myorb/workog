@@ -193,6 +193,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1203026524-S",
     "postedAt": "2025-07-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -337,7 +339,7 @@
     "id": "arbeitsagentur:10000-1204559764-S",
     "slug": "landratsamt-nordhausen-arzt-arztin-m-w-d-10000-1204559764-s",
     "company": "arbeitsagentur",
-    "employer": "Landratsamt Nordhausen",
+    "employer": "Landkreis Nordhausen",
     "title": "Arzt/Ärztin (m/w/d)",
     "locations": [
       "Nordhausen, Thüringen, Thüringen, Germany"
@@ -1347,6 +1349,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208142258-S",
     "postedAt": "2026-10-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1409,28 +1413,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208204132-S",
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "source": "arbeitsagentur"
-  },
-  {
-    "id": "arbeitsagentur:10000-1208209948-S",
-    "slug": "dr-sabine-omankowsky-facharzt-facharztin-fur-allgemeinmedizin-m-w-d-in-vollzeit-10000-1208209948-s",
-    "company": "arbeitsagentur",
-    "employer": "Dr. Sabine Omankowsky",
-    "title": "Facharzt/Fachärztin für Allgemeinmedizin (m/w/d) in Vollzeit",
-    "locations": [
-      "Berlin, Berlin, Germany"
-    ],
-    "remote": true,
-    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
-    "category": "medicine",
-    "specialty": "general-practice",
-    "level": "specialist",
-    "descriptionHtml": "<p>Wir suchen eine/n Facharzt/Fachärztin für Allgemeinmedizin (m/w/d) für unsere Praxis in Vollzeit, beginnend ab dem 01.01.2027.</p><p>Das Einstiegsgehalt beträgt 7.000 € und richtet sich nach Ihrer Berufserfahrung.</p><p>**Aufgaben:**</p><ul><li>Sprechstundentätigkeit</li><li>Hausbesuche im Bezirk</li><li>EKG</li><li>ERGO (Ergometrie)</li><li>Lungenfunktion</li><li>RR Langzeitmessung (Blutdrucklangzeitmessung)</li><li>Ausbildung von Weiterbildungsassistenten (wir freuen uns auf Ihre Erfahrung und Freude an der Ausbildung junger Kollegen)</li></ul><p>**Anforderungen:**</p><ul><li>Abgeschlossene Facharztausbildung in Allgemeinmedizin</li><li>Eintragung in das Arztregister</li><li>Deutschkenntnisse auf C2-Niveau (verhandlungssicher)</li><li>Berufserfahrung wünschenswert</li></ul><p>Arbeitszeit:</p><p>Unsere Praxis ist wie folgt geöffnet:</p><ul><li>Montag: 8-18 Uhr</li><li>Dienstag: 8-18 Uhr</li><li>Mittwoch: 8-14 Uhr</li><li>Donnerstag: 8-18 Uhr</li><li>Freitag: geschlossen</li><li>Samstag: 2x im Monat, 9-12 Uhr</li></ul><p>Wir freuen uns auf Ihre Bewerbung per E-Mail.</p>",
-    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208209948-S",
-    "postedAt": "2026-10-08T00:00:00.000Z",
-    "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "arbeitsagentur"
   },
   {
@@ -1511,7 +1493,7 @@
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -1533,7 +1515,7 @@
     "postedAt": "2026-10-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -1895,6 +1877,46 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:10000-1208728847-S",
+    "slug": "klinikum-dahme-spreewald-gmbh-oberarzt-m-w-d-chirurgie-10000-1208728847-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Dahme-Spreewald GmbH",
+    "title": "Oberarzt (m/w/d) Chirurgie",
+    "locations": [
+      "Lübben (Spreewald), Brandenburg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "descriptionHtml": "<p># Oberarzt (m/w/d) Chirurgie</p><p>Unter dem Dach der Klinikum Dahme-Spreewald GmbH vereinen sich die beiden Krankenhausstandorte Spreewaldklinik Lübben und Achenbach-Krankenhaus Königs Wusterhausen. In den beiden Krankenhäusern versorgen engagierte Teams interdisziplinär jährlich mehr als 25.000 stationäre und mehr als 50.000 ambulante Patientinnen und Patienten. Dafür stehen insgesamt 433 Betten in den Fachbereichen Innere Medizin, Allgemein- Viszeral- und Gefäßchirurgie, Unfallchirurgie und Orthopädie, Gynäkologie und Geburtshilfe, Kinder- und Jugendmedizin, Anästhesiologie und Intensivmedizin, Palliativmedizin sowie Radiologie sowie zur Verfügung.</p><p>Innovative Angebote tragen dazu bei, die medizinische Versorgung in der Region und über den Landkreis hinaus auf hohem Niveau sicherzustellen. Eine Gesundheitsakademie mit mehr als 130 Ausbildungsplätzen sichert den Nachwuchs in der Gesundheits- und Krankenpflege und eine Apotheke die regionale Versorgung für weitere Krankenhäuser und Rettungsdienste in Südbrandenburg. Das Klinikum ist seit 2014 nach DIN EN ISO 9001 und einzelne Fachabteilungen sind für besondere Spezialisierungen zertifiziert.</p><p>### Deine Vorteile</p><ul><li>ein attraktives und modernes Arbeitsumfeld</li><li>eine gezielte Einarbeitung</li><li>30 Tage Urlaub/Jahr bei einer 5 Tage/Woche</li><li>Fort- und Weiterbildungsmöglichkeiten</li><li>Im Rahmen von familienfreundlichen Arbeitsplätzen unterstützen wir u.a. die Vereinbarkeit von Beruf und Familie</li><li>Vergütung nach dem TV Sana Ärzte (9.317,00 € - 10.708,00 € brutto in Vollzeit)</li><li>Deutschlandticket-Zuschuss</li><li>Attraktive Mitarbeiterangebote bei bekannten Marken (Corporate Benefits, JobRad)</li></ul><p>### Deine Aufgaben</p><ul><li>Du baust eine wertschätzende und respektvolle Beziehung zu den uns anvertrauten Patienten und deren Angehörigen auf und verfügst über ein hohes Maß an Verantwortungsbewusstsein und Einfühlungsvermögen</li><li>Du arbeitest eng mit dem leitenden Oberarzt und der pflegerischen Teamleitung zusammen</li><li>Du hast Interesse an der Mitgestaltung des Fachbereichs und nimmst am Dienstsystem teil</li><li>Du bist ein Teamplayer und das Miteinander auf Augenhöhe ist für dich selbstverständlich</li><li>Du lernst selbst gern Neues dazu, gibst aber auch gern Fachwissen an Lernende weiter</li></ul><p>### Dein Profil</p><ul><li>Du bist anerkannter Facharzt (m/w/d) für Allgemeinchirurgie und besitzt eine die deutsche Approbation</li><li>Du bringst idealerweise Berufserfahrung im Bereich der Proktologie mit</li><li>Du zeichnest dich durch hohe Sozialkompetenz, Kommunikationsstärke und Teamgeist aus</li><li>Du arbeitest zuverlässig, flexibel und behältst auch in anspruchsvollen Situationen den Überblick</li><li>Du begeisterst dich für eine patientenorientierte Versorgung und bringst Eigeninitiative sowie Verantwortungsbewusstsein mit</li><li>Du hast Interesse an kontinuierlicher Fort- und Weiterbildung und möchtest dich fachlich stetig weiterentwickeln</li></ul><p>#### Tätigkeitsinfo / Ansprechpartner</p><ul><li>Tätigkeits-ID                                                    7574</li><li>Tätigkeitskategorie                                          Ärztlicher Dienst</li><li>Unbefristet oder befristet                                 Unbefristet</li><li>Veröffentlicht am                                              17.11.2026</li><li>Erfahrungsniveau                                            Berufserfahrene</li><li>Beschäftigungsverhältnis                                Festanstellung</li><li>Ansprechpartner                                              CA Ronny Hendrischke -  [ronny.hendrischke@sana.de](mailto:ronny.hendrischke@sana.de)</li><li>Zeitmodell                                                        Vollzeit</li><li>Arbeitgeber                                                      Klinikum Dahme-Spreewald GmbH</li><li>Standort                                                           Lübben (Spreewald), Schillerstraße 29</li></ul><p>### #AberBitteMitSana</p><p>Die Sana Kliniken AG ist eine der größten Klinikgruppen in Deutschland. Das Unternehmen zählt zu den bedeutendsten Anbietern im Bereich integrierter Gesundheitsdienstleistungen. Von der Prävention über die ambulante und stationäre Versorgung bis hin zu Reha, Nachsorge, Heil- und Hilfsmitteln in unseren Sanitätshäusern sowie B2B-Services (Einkauf, Logistik, MedTech und Management-Services) versorgen wir Patienten, Unternehmen und externe Gesundheitseinrichtungen seit Jahrzehnten mit Qualitätsmedizin und exzellenten Dienstleistungen.</p><p>Finde bei uns den richtigen Platz für deine Karriere und bewirb dich direkt über unser Bewerberportal! Bewerbungen per E-Mail können leider nicht berücksichtigt werden.</p><p>Wir wertschätzen Vielfalt und begrüßen daher alle Bewerbungen – unabhängig von Geschlecht, Nationalität, ethnischer und sozialer Herkunft, Religion / Weltanschauung, Behinderung, Alter sowie sexueller Orientierung und Identität.</p><p>Wir bieten jedem Kandidaten / Mitarbeiter gerne das Du an und haben unser digitales HR-System auch darauf ausgerichtet. Möchtest du lieber gesiezt werden, teile uns dies gerne mit und wir werden es im persönlichen, nicht systemischen Kontakt, berücksichtigen.</p><p>Bitte beachte unsere Datenschutzhinweise unter [www.sana.de/datenschutz](https://www.sana.de/datenschutz)</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208728847-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10000-1208732138-S",
+    "slug": "vivantes-netzwerk-fur-gesundheit-gmbh-assistenzarzt-assistenzarztin-in-weiterbildung-psychiatrie-und-psychotherapie-m-10000-1208732138-s",
+    "company": "arbeitsagentur",
+    "employer": "Vivantes Netzwerk für Gesundheit GmbH",
+    "title": "Assistenzarzt / Assistenzärztin in Weiterbildung – Psychiatrie und Psychotherapie (m/w/d)",
+    "locations": [
+      "Berlin, Berlin, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "resident",
+    "descriptionHtml": "<p>## Auf einen Blick</p><p>Start: sofort<br />Arbeitszeit: 40 Wochenstunden<br />Vertragsart: befristet, Dauer der Weiterbildung<br />[Entgelt](https://karriere.vivantes.de/gehalt): EG I TV Ärzte VKA<br />Einsatzort: Vivantes Humboldt-Klinikum<br />Bereich: Department für seelische Gesundheit</p><p>## Arbeiten bei Vivantes: Unser Job ist das Leben!</p><p>Vivantes ist Berlins größtes Gesundheitsnetzwerk – gemeinsam verbunden in der Arbeit mit und an den Menschen. In über 100 Fachkliniken, Instituten und Pflegeeinrichtungen stellen wir die erstklassige medizinische und pflegerische Versorgung für einen großen Teil der Berliner\\*innen sicher. Wie Berlin sind wir in jedem Kiez ein wenig anders, aber eben immer auch ganz klar Vivantes.</p><p>## Assistenzarzt / Assistenzärztin in Weiterbildung – Psychiatrie und Psychotherapie (m/w/d)</p><p>Referenz-Nr.: HUK0516D</p><p>Sie möchten Menschen in seelischen Krisen professionell begleiten und die Vielfalt der modernen Psychiatrie in einem starken Team kennenlernen? Dann sind Sie bei uns genau richtig.</p><p>Das Department für seelische Gesundheit führt auf neun störungsspezifischen Stationen 109 Betten und in den störungsspezifischen Tageskliniken mit den Schwerpunkten Angst- und Stresserkrankungen, akute und chronische Depression, Bipolare Störungen, Psychosomatik, Sucht plus Komorbidität und ‚50 plus‘ 104 Behandlungsplätze. Jährlich werden in der Klinik mehr als 3.000 Patient\\*innen stationär und 800 tagesklinisch behandelt. Ergänzt wird das Angebot durch Psychiatrische Institutsambulanzen und das Ambulatorium Waldstraße, in dem ambulante und stationsersetzende Behandlungen gebündelt sind. Jährlich werden hier mehrere tausend Patient\\*innen betreut. Sie erwartet ein dynamisch wachsender Bereich mit innovativen Versorgungsstrukturen und enger multiprofessioneller Zusammenarbeit. Ein wachsendes, engagiertes therapeutisches Team arbeitet interdisziplinär und patient\\*innenzentriert an modernen Behandlungskonzepten für unterschiedliche psychische Erkrankungen. [Mehr zum Einsatzort](https://karriere.vivantes.de/arbeiten-bei-vivantes/unser-netzwerk/humboldt-klinikum/)</p><p>## Ihre Aufgaben</p><ul><li>Versorgung und ärztliche Behandlung von Patient\\*innen unter fachärztlicher Supervision in der Tagesklinik und Ambulanz</li><li>Kontakt zu Kooperationspartner\\*innen innerhalb des Bezirks und überregional</li><li>Mitgestaltung des internen Fortbildungsprogramms</li><li>Teilnahme am Spät- und Bereitschaftsdienstsystem der Klinik</li><li>Mitwirkung im Konsil- und Rettungsstellen-Einsatzbereich</li></ul><p>## Das bringen Sie mit</p><ul><li>Approbation als Arzt / Ärztin sowie fortgeschrittene Weiterbildung in Psychiatrie und Psychotherapie</li><li>Fundierte Kenntnisse und Erfahrung in Diagnostik und Therapie psychischer Erkrankungen sowie Erfahrung in der teilstationären, tagesklinischen und ambulanten Arbeit mit Patient\\*innen</li><li>Ggf. Fremdsprachenkenntnisse</li><li>Interesse an Zusammenarbeit mit Kooperationspartner\\*innen sowie regionalen Versorgungseinrichtungen</li><li>Teamorientierte, empathische Persönlichkeit mit interdisziplinärer Arbeitsweise</li><li>Gesetzlich notwendiger Nachweis über Immunisierung gegen Masern</li></ul><p>## Benefits – weil Sie es uns wert sind</p><ul><li>Strukturierte Einarbeitung</li><li>Betriebliche Altersversorgung (VBL)</li><li>Möglichkeit der bezuschussten Altersvorsorge</li><li>Kostenlose Kinderbetreuung bei kurzfristigem Bedarf</li><li>Fahrradleasing möglich</li></ul><p>[Attraktive Vergütung und Zusatzleistungen](https://karriere.vivantes.de/arbeiten-bei-vivantes/gehalt/ \"Attraktive Vergütung und Zusatzleistungen\")</p><p>[Digitale Arbeitsplätze und Tools](https://karriere.vivantes.de/arbeiten-bei-vivantes/deine-vorteile/ \"Digitale Arbeitsplätze und Tools\")</p><p>[Weiterentwicklung und Karriereperspektiven](https://karriere.vivantes.de/fort-und-weiterbildung/ \"Weiterentwicklung und Karriereperspektiven\")</p><p>[Gesundheitsförderung](https://karriere.vivantes.de/arbeiten-bei-vivantes/deine-vorteile/gesundheitsfoerderung/ \"Gesundheitsförderung\")</p><p>[Vereinbarkeit von Familie und Beruf](https://karriere.vivantes.de/arbeiten-bei-vivantes/deine-vorteile/vereinbarkeit-von-familie-beruf/ \"Vereinbarkeit von Familie und Beruf\")</p><p>[Berlinweites Netzwerk und Sicherheit](https://karriere.vivantes.de/arbeiten-bei-vivantes/unser-netzwerk/ \"Berlinweites Netzwerk und Sicherheit\")</p><p>[Diversity, Inklusion und Frauenförderung](https://karriere.vivantes.de/arbeiten-bei-vivantes/kultur-werte/ \"Diversity, Inklusion und Frauenförderung\")</p><p>[Sinn und Teamspirit](https://karriere.vivantes.de/arbeiten-bei-vivantes/ \"Sinn und Teamspirit\")</p><p>## Unser Job ist das Leben</p><p>## Chancengleichheit bei Vivantes</p><p>Bei Vivantes leben wir Chancengleichheit sowie Diversity und Inklusion. Wir freuen uns daher über jede Bewerbung – denn bei Vivantes sind alle willkommen.</p><p>## Noch Fragen?</p><p>Prof. Dr. Stephanie Krüger<br />Departmentleiterin<br />Tel.: 030 130 12 2101</p><p>Dr. Ramona Pietsch, MBA<br />Chefärztin<br />Tel.: 030 130 14 1925</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208732138-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:10001-1000014017-S",
     "slug": "medizinisches-versorgungszentrum-mittweida-g-facharzt-arztin-psychiatrie-und-psychotherapie-m-w-d-10001-1000014017-s",
     "company": "arbeitsagentur",
@@ -2011,7 +2033,7 @@
     "postedAt": "2025-02-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2089,7 +2111,7 @@
     "postedAt": "2025-02-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -2451,6 +2473,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002514324-S",
     "postedAt": "2026-01-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -2471,6 +2495,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002551428-S",
     "postedAt": "2026-02-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -3460,7 +3486,7 @@
     "postedAt": "2026-07-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3925,7 +3951,7 @@
     "postedAt": "2026-08-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4251,8 +4277,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003749350-S",
     "postedAt": "2026-09-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -4370,7 +4394,7 @@
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5116,26 +5140,6 @@
     "source": "arbeitsagentur"
   },
   {
-    "id": "arbeitsagentur:11858-SDE-130519-STA-S",
-    "slug": "arztekammer-westfalen-lippe-akwl-arzt-arztin-w-m-d-als-leitung-der-arztlichen-stelle-nach-strahlenschutzverordnun-11858-sde-130519-sta-s",
-    "company": "arbeitsagentur",
-    "employer": "Ärztekammer Westfalen-Lippe (ÄKWL)",
-    "title": "Arzt/Ärztin (w/m/d) als Leitung der Ärztlichen Stelle nach Strahlenschutzverordnung",
-    "locations": [
-      "Münster, Westfalen, Nordrhein-Westfalen, Germany"
-    ],
-    "remote": true,
-    "department": "Arzt/Ärztin",
-    "category": "medicine",
-    "descriptionHtml": "<p>Die Ärztekammer Westfalen-Lippe ist als Körperschaft des öffentlichen Rechts die berufliche Interessenvertretung der 53.000 Ärztinnen und Ärzte in Westfalen-Lippe. Als berufsständische Selbstverwaltung in Münster nimmt die ÄKWL mit ihren rund 340 Beschäftigten vielfältige Aufgaben wahr.</p><p>Die Ärztliche Stelle ist eine Einrichtung nach Strahlenschutzverordnung zur Prüfung der Einhaltung von Strahlenschutz- und Qualitätsstandards in der radiologischen Diagnostik, Strahlentherapie und Nuklearmedizin. Sie ist Teil des Ressorts Qualitätssicherung, in dem gesetzlich geregelte, vertragliche und eigene qualitätssichernde Aufgaben gebündelt sind.</p><p>Um diese vielfältigen Aufgaben weiterhin kompetent zu bearbeiten, suchen wir zum nächstmöglichen Termin einen/eine</p><p>Arzt/Ärztin (w/m/d) als Leitung der Ärztlichen Stelle nach Strahlenschutzverordnung</p><p>Die Position ist im Rahmen einer Nachfolgeplanung neu zu besetzen. Eine strukturierte Einarbeitung und eine persönliche Übergabe durch die aktuelle Stelleninhaberin sind vorgesehen.</p><p>Die Stelle ist grundsätzlich in Vollzeit zu besetzen; eine Beschäftigung in Teilzeit ist möglich. Bitte geben Sie bei einem Teilzeitwunsch den von Ihnen gewünschten Stundenumfang in Ihrer Bewerbung an.</p><p>Das sind Ihre künftigen Arbeitsbereiche:</p><ul><li>Steuerung und Durchführung der Prüfverfahren: Sie steuern und organisieren die Prüfverfahren der Ärztlichen Stelle für radiologische Diagnostik, Strahlentherapie und Nuklearmedizin auf Grundlage des Strahlenschutzgesetzes und der Strahlenschutzverordnung. Sie prüfen und bewerten Unterlagen, erstellen Prüfberichte und leiten Vor-Ort-Überprüfungen. Dabei arbeiten Sie eng mit der physikalisch-technischen Leitung (MPE) und der Ressortleitung zusammen.</li><li>Personalführung und Teamentwicklung: Sie leiten und entwickeln das interdisziplinäre Team aus MTR und Mitarbeitenden der Sachbearbeitung und übernehmen die fachliche Führung ehrenamtlicher Sachverständiger.</li><li>Beratung zu Strahlenschutz und Qualität: Sie beraten Betreibende und Anwendende zu strahlenschutzrechtlichen Vorgaben, relevanten Richtlinien und Normen sowie zu Möglichkeiten der Qualitätsverbesserung.</li><li>Bundesweite Zusammenarbeit und Erfahrungsaustausch: Sie arbeiten mit dem zuständigen Aufsichtsministerium und den Bezirksregierungen zusammen und wirken am Zentralen Erfahrungsaustausch der Ärztlichen Stellen auf Bundesebene mit. Die gewonnenen Erkenntnisse bringen Sie in die Arbeit der Ärztlichen Stelle ein.</li><li>Qualitätssicherung und Prozessentwicklung: Sie sichern die Umsetzung der Vorgaben des Qualitätsmanagementsystems nach ISO 9001, entwickeln die Arbeits- und Prüfprozesse weiter und gestalten die Digitalisierung der Prüf- und Verwaltungsprozesse mit.</li></ul><p>Das bringen Sie mit:<br />* Ärztliche Qualifikation und Berufserfahrung: Sie verfügen über eine ärztliche Approbation, eine Facharztanerkennung für Radiologie und mehrjährige einschlägige Berufserfahrung.<br />* Fachkunde im Strahlenschutz: Sie besitzen die für Ihre Tätigkeit erforderliche, aktuell gehaltene Fachkunde im Strahlenschutz. Zusätzliche Fachkunde in Nuklearmedizin und/oder Strahlentherapie ist wünschenswert.<br />* Führung und Zusammenarbeit: Sie übernehmen gerne fachliche Führungsverantwortung, kommunizieren klar und wertschätzend und treffen nachvollziehbare Entscheidungen. Sie arbeiten kooperativ mit Mitarbeitenden verschiedener Berufsgruppen, ehrenamtlichen Sachverständigen und Behörden zusammen und gehen konstruktiv mit unterschiedlichen fachlichen Standpunkten um.<br />* IT-Kompetenz und Digitalisierung: Sie nutzen gängige IT-Anwendungen sicher, arbeiten sich in neue Fachanwendungen ein und gestalten digitale Veränderungen aktiv mit.</p><p>Das können Sie von uns erwarten:<br />* Ein motiviertes Team: Eine angenehme Arbeitsatmosphäre, die durch regelmäßige Teamveranstaltungen und betriebliche Gesundheitsförderung (z. B. Epassi, ehem. Hansefit) unterstützt wird.<br />* Sicherheit und Vielfalt: Ein krisensicherer Arbeitsplatz mit abwechslungsreichen Aufgaben.<br />* Attraktive Vergütung: Leistungsgerechte Bezahlung nach TV-Ä/VKA sowie betriebliche Altersvorsorge. Wir bitten um Angabe Ihrer Gehaltsvorstellungen.<br />* Strukturiertes Onboarding: Ein professionelles Einarbeitungsprogramm und eine ausgeprägte Willkommenskultur.<br />* Work-Life-Balance: Gleitende Arbeitszeiten und mobiles Arbeiten an bis zu 2 Tagen pro Woche (nach erfolgreicher Einarbeitung), 30 Tage Urlaub im Jahr sowie eine Kinderbetreuung in Teilen der Schulferien.<br />* Zusätzliche Vorteile: Ergonomische Arbeitsplätze, eine ausgezeichnete Kantine, Jobrad-Leasing, kostenlose Parkplätze und eine gute ÖPNV-Anbindung.</p><p>Wenn Sie sich in dieser Ausschreibung wiedererkennen, bewerben Sie sich bis zum 29.11.2026. Wir freuen uns darauf, Sie kennenzulernen!</p><p>Bewerbungsmöglichkeiten</p><p>Wir setzen auf Vielfalt und freuen uns über Bewerbungen aller Menschen ungeachtet ihres Geschlechts, Alters, einer Behinderung, der ethnischen oder sozialen Herkunft, Nationalität, religiösen oder n Orientierung.</p><p>Bei Fragen können Sie sich gerne an unsere Personalabteilung wenden.<br />Barbara Isa, Tel. 0251 929-2017, E-Mail: bewerbung@aekwl.de</p><p>Für fachliche Auskünfte zur Stelle erreichen Sie die Leitung des Ressorts Qualitätssicherung unter 0251 929-2600.</p>",
-    "applyUrl": "https://www.stellenanzeigen.de/job/detail/SDE-130519/?utm_source=bundesagentur&utm_medium=unpaid-partner&utm_campaign=000",
-    "postedAt": "2026-11-02T00:00:00.000Z",
-    "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "arbeitsagentur"
-  },
-  {
     "id": "arbeitsagentur:11858-SDE-132445-STA-S",
     "slug": "hochtaunuskreis-der-kreisausschuss-der-landrat-arzt-m-w-d-im-bereich-kinder-und-jugendgesundheitsdienst-11858-sde-132445-sta-s",
     "company": "arbeitsagentur",
@@ -5167,6 +5171,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/fb597f55-39cd-3488-9beb-485e5df3beb8",
     "postedAt": "2026-09-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5182,10 +5188,8 @@
     "level": "resident",
     "descriptionHtml": "<p>Wir investieren in hochmoderne Ausstattung und fördern die fachlichen Interessen unserer Ärzt_innen. Aufgrund unserer überschaubaren Größe nehmen wir die Fähigkeiten unseres gesamten medizinischen Personals wahr und sorgen für größtmögliche individuelle Entwicklung. Das Gehaltsniveau und die Lebensqualität machen die Gesundheit Burgenland über Grenzen hinaus besonders attraktiv.</p><p>Die Gesundheit Burgenland ist bestrebt, aufgrund ihrer Größe und der überschaubaren Strukturen, die Ausbildung für Ärzte und Ärztinnen möglichst individuell zu gestalten. Im Rahmen der Ausbildung werden Verträge für die Dauer der Basisausbildung bzw. der gesamten Ausbildung vergeben und der entsprechende Ausbildungsplan organisiert.</p><p>Ihr Wirkungsbereich<br />* Abwechslungsreiche und anspruchsvolle eigenständige Tätigkeiten von Anfang an mit Verantwortung und Lernfokus<br />* Selbstständige Durchführung diagnostischer Maßnahmen sowie Mitwirkung bei therapeutischen Interventionen unter fachärztlicher Anleitung<br />* Rotation durch verschiedene Fachabteilungen zur Erweiterung medizinischer Kenntnisse, praktischer Kompetenzen und interdisziplinärer Erfahrung<br />* Teilnahme an Visiten und interdisziplinären Besprechungen etc. zur Förderung eines ganzheitlichen Behandlungsverständnisses</p><p>Ihr Fachgebiet<br />* Abgeschlossenes Studium der Humanmedizin bei Dienstantritt<br />* Promotionsbescheid (sobald vorhanden)<br />* Bei ausländischen Bewerber*innen: Anerkennung des abgeschlossenen Studiums (Nostrifikationsurkunde) und erfolgreich absolvierte Sprachprüfung (ÖÄK)</p><p>Ihr Spielraum<br />* Einführungsveranstaltung inklusive Tour durch die Klinik<br />* Aktive Begleitung durch erfahrene Kolleg_innen<br />* Rotation auf persönliche Bedürfnisse abgestimmt<br />* Selbstständiges Arbeiten (Diagnostik und Therapie)<br />* Neue Organisationsstrukturen und Entlastung bei administrativen Tätigkeiten<br />* Unmittelbare Unterstützung durch Vorgesetzte und familiäre Strukturen<br />* Bezahlte Sonderurlaubstage für Fort- und Weiterbildung<br />* Kostenlose Dienstkleidung inkl. Reinigung<br />* Günstiges Mittagessen<br />* Günstige Park- und Wohnmöglichkeiten je nach Verfügbarkeit</p><p>Ihre Aufnahme ist in einem Beschäftigungsausmaß von 100% vorgesehen. Das Bruttojahresgehalt beträgt, bei entsprechender Qualifikation, auf Basis einer 40h-Woche mind. € 67.834,- (B2/13, inklusive Marktzulage). Facheinschlägige Vordienstzeiten werden angerechnet.</p><p>Sollten Sie sich von dieser Herausforderung angesprochen fühlen, bewerben Sie sich online über unsere Jobbörse oder per Post an die Gesundheit Burgenland , Josef Hyrtl-Platz 4, 7000 Eisenstadt .</p><p>Werden Sie Teil der Gesundheit Burgenland - https://ams.at/su/SJrjn</p><p>https://www.gesundheit-burgenland.at/oberpullendorf/ - Wo Spitzenmedizin auf burgenländische Herzlichkeit trifft.</p><p>https://www.gesundheit-burgenland.at</p>",
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/8739cccc-b75a-333d-a18d-762122c381be",
-    "postedAt": "2026-05-13T00:00:00.000Z",
+    "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5220,6 +5224,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/8f050589-60e5-37b8-abc8-1cdbf1b0d796",
     "postedAt": "2026-07-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5292,6 +5298,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/ef4c003e-dbc4-361d-8e76-3460ecb11bc6",
     "postedAt": "2026-07-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5310,6 +5318,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/b95c3d9d-0883-3985-b207-32511f4e1a2c",
     "postedAt": "2026-07-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5346,6 +5356,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/e78226d7-d058-3736-91cc-c8fba739343d",
     "postedAt": "2026-07-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5470,10 +5482,26 @@
     "level": "specialist",
     "descriptionHtml": "<p>Was gibt es zu tun?<br />* Ganzheitliche Patientenbetreuung<br />* Anwendung moderner, diagnostischer und therapeutischer Verfahren mit dem Fokus Regeneration (Fastenmedizin) und Prävention<br />* Integration komplementärer Heilverfahren<br />* Sie sind im stetigen Austausch mit dem interdisziplinären Team, bestehend aus Allgemeinmediziner:innen, Kardiolog:innen, Therapeut:innen sowie unseren Medical- und Guest Assistants</p><p>Was wir suchen<br />* Ganzheitliches Denken, ein hohes Verantwortungsbewusstsein und eine vertretbare Belastbarkeit zeichnen Sie aus<br />* Eine offene Kommunikation und integres Verhalten sind für Sie selbstverständlich<br />* Sie sind begeisterungsfähig und haben eine positive Ausstrahlung<br />* Sie arbeiten selbstständig, strukturiert und mit hoher Eigenmotivation<br />* Sie haben eine gewissenhafte und lösungsorientierte Arbeitsweise sowie eine ausgeprägte Lernbereitschaft<br />* Sie besitzen eine hohe Kooperations- und Teamfähigkeit<br />* Sie verfügen über sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</p><p>Was uns besonders macht<br />* Eine interessante, vielseitige und verantwortungsvolle Aufgabe in einem erfolgreichen, innovativen Unternehmen<br />* Die Unterstützung von einem kollegialen Team mit vielfältigen Entwicklungs- und Gestaltungsmöglichkeiten<br />* Eine attraktive, leistungsgerechte Vergütung<br />* Förderung und finanzielle Beteiligung an Fort- und Weiterbildungen<br />* Kostenlose Parkplätze oder ein Jobticket bei Inanspruchnahme der guten öffentlichen Verkehrsanbindung<br />* Kostenlose Verpflegung<br />* TEAMSPIRIT wird bei uns großgeschrieben - Sommerfeste und Weihnachtsfeiern</p><p>Die Entlohnung liegt bei mind. € 7.800,-€ brutto / Monat auf Vollzeitbasis. Je nach Qualifikation, Erfahrung und Facharztausbildung besteht die Bereitschaft zur Überzahlung.</p><p>Wenn Sie den vielseitigen, fachlichen Austausch schätzen und sich mit Ihrer Qualifikation und charismatischen Persönlichkeit engagiert in das Lanserhof-Team einbringen möchten, dann freuen wir uns auf Ihre Bewerbung mittels Online-Formular auf jobs.lanserhof.com Lanserhof - Mag. Raimund Raggl, Kochholzweg 153, 6072 Lans, academy.lans@lanserhof.com</p><p>Die Lanserhof Gruppe steht für Vielfalt und Chancengleichheit. Einstellungsentscheidungen basieren ausschließlich auf der Qualifikation für die jeweilige Position, unabhängig von Geschlecht, Herkunft, Religionszugehörigkeit, Alter, sexueller Orientierung oder Behinderung.</p>",
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/3071db82-d491-329b-95e4-69ff98f3da2b",
-    "postedAt": "2026-07-29T00:00:00.000Z",
+    "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17304373-S",
+    "slug": "lkh-rottenmann-bad-aussee-standort-rottenmann-facharzt-arztin-anasthesiologie-11949-17304373-s",
+    "company": "arbeitsagentur",
+    "employer": "LKH Rottenmann-Bad Aussee Standort Rottenmann",
+    "title": "Facharzt/-ärztin - Anästhesiologie",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Anästhesiologie",
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Ihre Arbeitswelt<br />Die https://www.lkh-rottenmann.at/abteilungen/standort-rottenmann/standard-titel deckt die anästhesiologische, intensivmedizinische, notfallmedizinische und schmerztherapeutische Versorgung am LKH Rottenmann-Bad Aussee, Standort Rottenmann ab. An der Abteilung werden Anästhesien in den operativen Bereichen Allgemeinchirurgie, Unfallchirurgie, Gynäkologie und Geburtshilfe durchgeführt.</p><p>Wir betreuen insgesamt sieben perioperative Intensivbetten an unseren interdisziplinären Intensivstationen und eine Aufwachstation mit vier Betten. Wir führen eine Schmerzambulanz. Bei Interesse und entsprechender Eignung kann eine Teilausbildung über 42 Monate im klinischen Sonderfach Anästhesiologie und Intensivmedizin angeboten werden.</p><p>Nutzen Sie die Chance, von Anfang an dabei zu sein - im Rahmen von RSG 2030 entwickelt sich der Standort Rottenmann weiter zu einem zentralen Schwerpunkt der anästhesiologischen Versorgung im Bezirk Liezen.</p><p>Jetzt Teil eines engagierten Teams werden und die Zukunft aktiv mitgestalten.</p><p>Ihr Profil<br />Fachlich:</p><ul><li>Facharztdiplom für Anästhesiologie und Intensivmedizin</li><li>Gültiges Notarztdiplom von Vorteil</li></ul><p>Persönlich:</p><ul><li>Temfähigkeit und Einsatzfreude</li><li>Gute kommunikative Fähigkeiten</li><li>IT-Kenntnisse</li></ul><p>UNSER VERSPRECHEN AN SIE</p><ul><li>Um Ihnen Ihren Start so einfach wie möglich zu gestalten, bieten wir Ihnen eine Einschulung mit professioneller Begleitung</li><li>Ein kollegiales und wertschätzendes Arbeitsklima</li><li>Bezahlte Mittagspause (bei einer Tagesarbeitszeit von mehr als 6,5 Stunden)</li><li>Sollten Sie eine Wohnmöglichkeit vor Ort benötigen, so ist die Bereitstellung einer kostengünstigen Garconniere vor Ort möglich - je nach Verfügbarkeit</li><li>Alle zwei Jahre automatische Vorrückung im Gehaltsschema</li><li>Ab dem vollendeten 43. Lebensjahr eine weitere Urlaubswoche</li><li>Ein vielfältiges Angebot in der betrieblichen Gesundheitsförderung sowie umfassende Sozialleistungen</li><li>Langfristige Perspektive und Jobgarantie in einem krisensicheren Unternehmen</li><li>Aus- und Weiterbildungsmöglichkeiten, um Ihr Fachwissen auszubauen, werden bei uns großgeschrieben</li><li>ganzjährige Kinderbetreuungsangebote und diverse Ferienbetreuungsangebote</li></ul><p>Wir sind uns als Gesundheitsunternehmen unserer Vorbildwirkung und unserer Verantwortung sehr bewusst. Bei Antritt Ihrer Tätigkeit sind folgende Immunitäten Voraussetzung:</p><p>Masern, Mumps, Röteln, Varicellen, Hepatitis B</p><p>JOBDETAILS</p><p>* Einsatzort: https://www.lkh-rottenmann.at/<br />* Beschäftigungsausmaß: Teil- oder Vollzeit nach Vereinbarung bzw. ab 20h/Woche<br />* Dienstantritt: ab sofort bzw. nach Vereinbarung, laufende Auswahl und Stellenvergabe!<br />*<br />Gehaltsschema<br />SI/N4 (mind. € 8.752,40 monatlich bzw. € 122.533,60 Jahresbrutto auf Basis Vollzeit)Erfahrung im Beruf wird ggf. durch die Anrechnung von Vordienstzeiten und einer damit verbundenen höheren Einstufung im Schema berücksichtigt.</p><p>Bewerbungslink: https://karriere.kages.at/Job/536/Fachaerztin-fuer-Anaesthesiologie-und-Intensivmedizin</p><p>Wir freuen uns auf Sie!</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/e374bf23-99cb-3e2c-9c20-a1427df515ae",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5490,6 +5518,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/733a5188-022c-3e32-927e-768cd585d752",
     "postedAt": "2026-08-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5506,6 +5536,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/3164d6b2-c75c-3af9-aa5c-9c66ce96997e",
     "postedAt": "2026-08-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5522,6 +5554,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/187ed1c2-bbdd-3ce1-97c3-9805129c316f",
     "postedAt": "2026-08-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5558,6 +5592,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/4b73e46a-1241-3d96-8d56-5d5373e1020c",
     "postedAt": "2026-08-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5665,10 +5701,8 @@
     "level": "specialist",
     "descriptionHtml": "<p>15 Wochenstunden bis Vollzeit (37 Wochenstunden), ab sofort</p><p>Deine Aufgaben:<br />* Ganzheitliche arbeitsmedizinische Betreuung und Beratung von Mitarbeiter*innen und Führungskräften gemäß ASchG - in unseren Einrichtungen in Wien und Niederösterreich<br />* Durchführung arbeitsmedizinischer Untersuchungen sowie Erstellung fundierter medizinischer Stellungnahmen<br />* Medizinische Begleitung und Beratung im Rahmen des Betrieblichen Eingliederungsmanagements<br />* Regelmäßige Begehungen unterschiedlicher Organisationsstandorte mit Fokus auf Prävention und nachhaltige Gesundheitsförderung<br />* Übernahme präventivmedizinischer Aufgaben mit echtem Einfluss auf Arbeitsbedingungen und Wohlbefinden<br />* Aktive Mitgestaltung und Weiterentwicklung von Projekten in betrieblichem Gesundheitsmanagement und Prävention<br />* Vertrauensvolle Ansprechperson für alle Fragen rund um Gesundheit, Arbeitsfähigkeit und Arbeitsplatzgestaltung</p><p>Dein Profil:<br />* Abgeschlossenes Studium der Humanmedizin mit jus practicandi<br />* Abgeschlossene Ausbildung zur*zum Arbeitsmediziner*in (Diplom) - wünschenswert<br />* Bereitschaft zur Absolvierung der Ausbildung<br />* Mehrjährige, einschlägige Berufserfahrung im arbeitsmedizinischen Kontext - wünschenswert<br />* Teamorientierte Persönlichkeit mit ausgeprägter Hands-on-Mentalität<br />* Freude an interdisziplinärer Zusammenarbeit - insbesondere mit Sicherheitsfachkräften und dem Team Gesundheitsmanagement<br />* Hohe soziale Kompetenz, Kommunikationsstärke und ein wertschätzender Umgang mit Menschen<br />* Strukturierte, präzise Arbeitsweise und ein hoher Qualitätsanspruch</p><p>Unser Angebot:<br />* Arbeiten unter Bedingungen, die Wirkung ermöglichen<br />* Eine Aufgabe mit echtem gesellschaftlichem Impact - bei einer der größten und relevantesten Non-Profit-Organisationen Österreichs<br />* State-of-the-Art-Arbeitsausstattung: Dienstauto, Laptop und Smartphone - inklusive Option zur privaten Nutzung<br />* Zusammenarbeit in einem interdisziplinären Team, das Expertise, Perspektivenvielfalt und gegenseitige Wertschätzung vereint<br />* Eine Arbeitskultur, die auf Vertrauen, Offenheit und professionellem Miteinander basiert<br />* Gestaltungsfreiheit und Verantwortung: Raum, um Projekte eigenständig zu entwickeln und umzusetzen<br />* Mehr Freizeit: Zwei zusätzliche Urlaubstage nach dem vollendeten ersten Arbeitsjahr und drei dienstfreie Tage pro Jahr (Karfreitag, 24.12., 31.12. bzw. Ersatz)<br />* Jobticket: Zuschuss bis zu € 506,40 pro Jahr für eine Öffi-Jahreskarte oder ein Klimaticket nach dem vollendeten ersten Arbeitsjahr<br />* Weiterbildung und Entwicklung: Unterstützung bei der beruflichen und persönlichen Weiterentwicklung<br />* Vergünstigungen und Gutscheine: Ermäßigungen in Shops, Apotheken, Hotels und mehr sowie steuerbegünstigte Lebensmittelgutscheine und spezielle Gutscheine für Mitarbeiter*innen mit Kindern</p><p>Gehalt: inkl. Zulagen je nach Berufserfahrung und gewähltem Vollzeitmodell (37 oder 38 Wochenstunden) ab € 6.000 mit der Bereitschaft zur Überzahlung je nach Ausbildung und Berufserfahrung</p><p>#jobsmitsinn<br />Wir freuen uns besonders über Bewerbungen, die zur Vielfalt unserer Organisation beitragen. Dies umfasst für uns insbesondere die Dimensionen Behinderungen, Herkunft, ethnische Zugehörigkeit, Nationalität, Alter, Religion und Weltanschauung, sexuelle Orientierung und geschlechtliche Identität. Mitarbeiter*innen mit Behinderung werden bei uns durch unsere Behindertenvertrauenspersonen und das Ability Management begleitet und unterstützt. Klick einfach auf \"Jetzt bewerben!\" und übermittle uns deine Unterlagen.</p><p>Jetzt bewerben unter: https://karriere.caritas-wien.at/job/13128?referrer=AMS</p>",
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/6c844e63-5d95-316a-9922-f28fcd33532e",
-    "postedAt": "2026-10-14T00:00:00.000Z",
+    "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-14T05:02:39.889Z",
-    "closedAt": "2026-11-16T05:03:35.318Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5721,6 +5755,192 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/c527715b-6d49-3e3e-9641-7046f387e6e6",
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17405652-S",
+    "slug": "klinikum-bad-gleichenberg-fur-lungen-und-stoffwechselerkrankungen-arzt-arztin-11949-17405652-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Bad Gleichenberg für Lungen- und Stoffwechselerkrankungen",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Sie sind Mediziner:in geworden, um Menschen zu helfen und das aus Überzeugung? Sie besitzen Einfühlungsvermögen, kommunizieren auf Augenhöhe und können komplexe Inhalte simpel erklären? Sie lieben, was Sie tun, aber nach Jahren mit unregelmäßigen Dienstzeiten wünschen Sie sich endlich eine bessere Work-Life-Balance? Dann werden Sie Teil unseres Teams!</p><p>Wir sind das Klinikum Bad Gleichenberg, ein modernes Kompetenzzentrum für stationäre medizinische Rehabilitation für Lungen-, Stoffwechsel- und onkologische Erkrankungen. Im multiprofessionellen Team setzen wir gemeinsam mit unseren Patient:innen entscheidende Schritte, um sie in ein freies, selbstbestimmtes und vor allem selbstständiges Leben zu begleiten.</p><p>Für unser Ärzt:innen-Team suchen wir nach einem/einer Ärzt:in für Allgemeinmedizin mit Ausbildung bzw. Interesse an pneumologischer Rehabilitation und dem Wunsch nach abwechslungsreicher Arbeit. In Ihrem neuen Job geben wir Ihnen den Raum, um sich so intensiv und ganzheitlich mit Ihren Patient:innen auseinanderzusetzen, wie Sie es für richtig empfinden.</p><p>Werden Sie jetzt Teil unseres Teams!</p><p>https://www.klinikum-austria.at/reha-kliniken/klinikum-bad-gleichenberg/</p><p>Standort: Klinikum Bad Gleichenberg<br />Start: ab sofort<br />Arbeitszeit: Voll- oder Teilzeit<br />Erfahrung: mehrjährige Berufserfahrung<br />Gehalt: rund € 129.000,- brutto/Jahr, VZ-Basis mit Ø 4 ND/Monat</p><p>Was ist Ihre Aufgabe?<br />* Selbstständige und eigenverantwortliche Betreuung der Patient:innen<br />* Mitarbeit in der Diagnostik: Spirometrie, Ergometrie, Spiroergometrie, Schlaflabor, Sonographie etc.<br />* Durchführung von Begutachtungen<br />* Erstellung und Anpassung des Therapie- und Rehabilitationsplans<br />* Regelmäßiges Absolvieren von Nacht-, Wochenend- und Feiertagsdiensten</p><p>Was wünschen wir uns von Ihnen?<br />* Abgeschlossene Ausbildung der Allgemeinmedizin<br />* Interesse an internistischer Rehabilitation<br />* Gültiges Notärzt:innen-Diplom<br />* Teamfähigkeit in der Zusammenarbeit mit verschiedenen Berufsgruppen<br />* Wertschätzende Kommunikation mit Kolleg:innen und Patient:innen<br />* Freude an der Mitarbeit bei Qualitätsprojekten<br />* Soziale Kompetenz, Innovationsfreude, umfassendes Qualitätsverständnis sowie Einsatzbereitschaft</p><p>Worauf können Sie sich bei uns verlassen?<br />* Abwechslungsreicher Arbeitsalltag in einem motivierten, interdisziplinären Team<br />* Möglichkeit, sich Expert:innenwissen in unterschiedlichen Bereichen anzueignen<br />* Viel Gestaltungsspielraum in einem kollegialen, offenen Umfeld, in dem eigene Ideen ausdrücklich erwünscht sind und großen Anklang finden<br />* Interne und externe Fort- und Weiterbildungsmöglichkeiten<br />* Kostenloses Essen während der Dienstzeit<br />* Fahrtkosten-Zuschuss für Pendler:innen<br />* Bei 5 Jahren Berufserfahrung bieten wir Ihnen ein Jahresbruttogehalt von rund € 129.000,- auf Basis einer 39-stündigen Vollzeit-Woche inklusive durchschnittlich 4 Nachtdiensten pro Monat. Ihr tatsächliches Gehalt orientiert sich selbstverständlich an Ihrer Qualifikation und Erfahrung.</p><p>Ihre Ansprechperson</p><p>Prim. Priv.-Doz. Dr. Karl Horvath<br />Ärztlicher Direktor<br />Klinikum Bad Gleichenberg<br />Schweizereiweg 4<br />8344 Bad Gleichenberg<br />T: 0043315923400<br />E: bewerbung@klinikum-badgleichenberg.at</p><p>bewerbung@klinikum-badgleichenberg.at?subject=Bewerbung%20f%C3%BCr%20%C3%84rzt%3Ain%20f%C3%BCr%20Allgemeinmedizin</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/a6738e74-c8f6-33f6-9a2b-0e74b3695dd6",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17407610-S",
+    "slug": "medicare-personaldienst-leistungen-gmbh-facharzt-arztin-innere-medizin-11949-17407610-s",
+    "company": "arbeitsagentur",
+    "employer": "MediCare Personaldienst leistungen GmbH",
+    "title": "Facharzt/-ärztin - Innere Medizin",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Ihre Aufgaben<br />* Internistische Betreuung von Patient:innen im stationären Rehabilitationsverlauf<br />* Medizinische Aufnahme-, Verlaufs- und Abschlussuntersuchungen<br />* eurteilung und Mitbehandlung internistischer Begleiterkrankungen<br />* Zusammenarbeit mit Pflege, Therapie und weiteren Fachdisziplinen<br />* Teilnahme an Bereitschafts- und Nachtdiensten in überschaubarem Ausmaß (durchschnittlich ca. 4 Dienste pro Monat bei Vollzeit)</p><p>Ihr Profil<br />* Abgeschlossene Facharztausbildung für Innere Medizin<br />* Klinische Berufserfahrung erwünscht<br />* Strukturierte, verantwortungsvolle Arbeitsweise<br />* Interesse an einer langfristigen Tätigkeit im rehabilitativen Setting</p><p>Wir bieten<br />* Anstellung in Voll- oder Teilzeit<br />* Geregelte Arbeitszeiten und planbare Dienste<br />* Kollegiales, fachlich stabiles Arbeitsumfeld<br />* Unterstützung bei Einarbeitung und gegebenenfalls bei einer Übersiedlung</p><ul><li>Arbeitszeit: Teilzeit- oder Vollzeitbeschäftigung - nach Absprache mit Dienstgeber innerhalb der Rahmenarbeitszeit</li><li>Arbeitsort: Salzburg</li><li>Arbeitsbeginn: ab sofort</li><li>Entlohnung: Jahresbruttogehalt ab rund € 150.000 brutto auf Vollzeitbasis (inkl. durchschnittlich vier Nachtdiensten pro Monat)</li></ul><p>Bewerbung per Mail oder direkt über unsere Website: https://www.medicare.at/jobangebot/fachaerztin-fuer-innere-medizin/</p><p>Mag.a Nadine Neumayer<br />HR Consultant<br />E nadine.neumayer@medicare.at<br />T +43 (0)1 713 07 77 70<br />W https://www.medicare.at/jobangebote/</p><p>MediCare Personaldienstleistungen GmbH<br />Franz-Josefs-Kai 5/11<br />1010 Wien</p><p>Im Sinne der Gleichbehandlung - unberücksichtigt von Herkunft, Alter, Religion, Geschlecht, Behinderung, sexueller Orientierung oder Identität - wenden wir uns gleichermaßen an alle Personen!</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/a1dbfc9e-fbfb-3ff9-a0e1-1fcf9b02b81f",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17408659-S",
+    "slug": "ma-15-gesundheitsdienst-der-stadt-wien-arzt-arztin-11949-17408659-s",
+    "company": "arbeitsagentur",
+    "employer": "MA 15 Gesundheitsdienst der Stadt Wien",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Beschäftigungsausmaß<br />Vollzeit und Teilzeit möglich<br />Arbeitsmodus<br />Hybrid<br />Bewerbungsfrist<br />30.11.2026<br />Dienstort<br />1030 Wien, Thomas-Klestil-Platz / Erdbergstraße</p><p>Ihr Aufgabengebiet<br />* Sie führen die Vollziehung des Epidemie-Gesetzes durch, indem sie Erhebungen vornehmen und Maßnahmen festlegen und umsetzen<br />* Sie übernehmen Gutachtertätigkeiten im Behördenverfahren, beispielsweise bei Gewerbeverfahren, Strahlenschutz oder Bäderhygiene<br />* Sie vidieren Suchtgiftrezepte für Substitutionspatientinnen und -patienten.<br />* Sie führen amtsärztliche Untersuchungen bei Personen durch, die diversen Vorschriften wie dem Mutterschutzgesetz unterliegen<br />* Sie führen allgemein empfohlene Schutzimpfungen durch<br />* Sie überprüfen Verdachtsfälle unbefugter Berufsausübung<br />* Sie koordinieren und verfassen Stellungnahmen, beantworten Anfragen, erstellen fachliche Analysen und Abteilungsberichte. Sie halten eigene Vorträge und Präsentationen<br />* Sie wirken bei Krisen- und Katastropheneinsätzen gemäß der abteilungsinternen Einsatzplanung und Zuständigkeit gemeinsam mit der Fachbereichsleitung unter Koordination des Medizinischen Krisenmanagements der MA 15 mit</p><p>Ihr Profil<br />* Sie verfügen über ein abgeschlossenes Medizinstudium sowie über ein Diplom bzw. die Anerkennung für Allgemeinmedizin (ius practicandi) oder über ein Diplom bzw. die Anerkennung als Fachärztin für Allgemein- und Familienmedizin<br />* Die Physikatsprüfung haben Sie bereits erfolgreich absolviert bzw. sind bereit, diese innerhalb einer vorgeschriebenen Frist abzulegen<br />* Sie weisen ein fundiertes medizinisches Allgemeinwissen auf und besitzen idealerweise allgemeine Kenntnisse des behördlichen Verfahrens<br />* Sie haben ein sicheres und freundliches Auftreten sowie eine hohe Kundenorientierung und serviceorientiertes Verhalten<br />* Sie verfügen über gute Deutschkenntnisse und gute Fremdsprachenkenntnisse (mindestens Englisch) sowie ein ausgezeichnetes Ausdrucksvermögen in Wort und Schrift<br />* Abgerundet wir Ihr Profil durch sehr gute EDV-Kenntnisse</p><p>Unser Angebot<br />* Anstellung in Vollzeit oder Teilzeit ab 8 Wochenstunden - flexible Arbeitsmodelle zur optimalen Vereinbarkeit von Beruf und Privatleben<br />* Gleitende Arbeitszeiten mit Kernzeit von 09:00 bis 13:00 Uhr<br />* Fort- und Weiterbildungsmöglichkeiten zur fachlichen und persönlichen Förderung<br />* Sie arbeiten in einem engagierten, motivierten und kollegialen interdisziplinären Team, fördern den Wissensaustausch und unterstützen Ihre Kolleg*innen fachlich gegenseitig<br />* Sehr gute Anbindung an öffentliche Verkehrsmittel<br />* Krankenversicherung über die Krankenfürsorgeanstalt der Bediensteten der Stadt Wien (KFA)</p><ul><li>Das monatliche Einstiegsgehalt bei Vollzeit (40 Wochenstunden) beträgt € 6.684,-brutto (14x jährlich).</li></ul><p>Bei Teilzeit erfolgt eine aliquote Anpassung des Gehalts, beispielhaft:</p><p>** 8 Wochenstunden: € 1.336 brutto/Monat</p><p>** 16 Wochenstunden: € 2.673 brutto/Monat</p><p>** 24 Wochenstunden: € 4.010 brutto/Monat</p><p>** 32 Wochenstunden: € 5.347 brutto/MonatDurch die Anrechnung einschlägiger oder gleichwertiger Vordienstzeiten ist eine höhere Einstufung und damit ein entsprechend höheres Gehalt möglich.</p><p>Bei Interesse bewerben Sie sich gleich hier und fügen bitte folgende Unterlagen bei:</p><ul><li>Diplom bzw. Anerkennung für Allgemeinmedizin (ius practicandi) oder Diplom bzw. Anerkennung als \"Fachärztin für Allgemein- und Familienmedizin</li></ul><ul><li>aktuellen Auszug aus der Standesliste der Ärztekammer</li></ul><p>Wir möchten den Anteil an Frauen in diesem Berufsfeld erhöhen und laden daher besonders Frauen zur Bewerbung ein. Es gelten die Bestimmungen des Wiener Gleichbehandlungsgesetzes.</p><p>Kontakt<br />Magistratsabteilung 15 - Gesundheitsdienst</p><p>1030 Wien, Thomas-Klestil-Platz 8/2</p><p>Tel.: +43 1 4000 87607 oder 01 4000 87529</p><p>https://jobs.wien.gv.at/stellenangebote/details.html?jobId=59491</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/cf6ba0f5-f5b9-3941-bf72-bf4195cd1eed",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17409779-S",
+    "slug": "pflege-liesing-arzt-arztin-11949-17409779-s",
+    "company": "arbeitsagentur",
+    "employer": "Pflege Liesing",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Ihr Aufgabengebiet<br />* Sie behandeln eigenverantwortlich pflegebedürftige bzw. hochbetagte Menschen im Rahmen einer krankenhausanalog geführten stationären Einheit unter Wahrung der Würde und des Selbstbestimmungsrechts der Bewohner*innen/Patient*innen<br />* Sie übernehmen Verantwortung und Mitsprache in allen dem medizinischen Bereich zuzuordnenden organisatorischen Belangen<br />* Sie arbeiten mit den in der Einrichtung tätigen multiprofessionellen Berufsgruppen zusammen und tauschen laufend Informationen aus<br />* Sie führen Gespräche mit Bewohner*innen/Patient*innen und deren Angehörigen</p><p>Ihr Profil<br />* Sie haben eine abgeschlossene Ausbildung zur*m Ärzt*in für Allgemeinmedizin oder eine abgeschlossene Ausbildung zur*zum Fachärzt*in für Innere Medizin<br />* Sie besitzen die Fähigkeit und den Willen zum selbstständigen ärztlichen Handeln<br />* Sie haben Empathie für die Betreuung geriatrischer Patient*innen<br />* Sie sind teamfähig und haben die Bereitschaft zur multiprofessionellen Zusammenarbeit<br />* Sie besitzen sehr gute Deutschkenntnisse (Wort und Schrift).<br />* Sie haben die Fähigkeit, auch in herausfordernden Situationen einen guten Überblick zu bewahren, und verfügen über sehr gute organisatorische Fähigkeiten.</p><p>Im Zuge einer Aufnahme in diese Berufsgruppe ist die Vorlage eines Immunitätsnachweises (Impfstatus) für verschiedene Impfungen erforderlich. Für eventuell anfallende Kosten durch die Erbringung des Immunitätsnachweises ist kein Ersatz durch den Wiener Gesundheitsverbund vorgesehen.</p><p>Unser Angebot<br />* Beschäftigung in Vollzeit bzw. Teilzeit (40, 30, 25 bzw. 20 Wochenstunden)<br />* Flexible Arbeitszeiten bzw. Dienstplangestaltung<br />* Krisensicherer Arbeitsplatz<br />* Ein vielfältiges und interessantes Aufgabengebiet mit Gestaltungsmöglichkeiten<br />* Zusammenarbeit mit unterschiedlichen Berufsgruppen<br />* Eine abwechslungsreiche Tätigkeit in einer zukunftssicheren Unternehmung<br />* Große Auswahl an Fort- &amp; Weiterbildungen<br />* Kostenübernahme von diversen Fort- &amp; Weiterbildungen<br />* Ausgezeichnete Karrierechancen<br />* Pensionskassenmodell der Gemeinde Wien<br />* Umfangreiche Angebote zur Gesundheitsförderung am Arbeitsplatz<br />* Prämiensysteme für besondere Leistungen<br />* Wohnmöglichkeit in einem unserer Personalwohnhäuser<br />* Verbilligter Mittagstisch für eine ausgewogene Ernährung während der Dienstzeit<br />* Gute Verkehrsanbindungen</p><p>Für Mitarbeiter*innen, die bereits bei der Stadt Wien beschäftigt sind, ergibt sich die Entlohnung für die ausgeschriebene Stelle durch die Dienstposten- bzw. Funktionsbewertung und die entsprechende Einreihung im jeweiligen Gehaltssystem.<br />Für neue Mitarbeiter*innen beträgt das Einstiegsgehalt laut Wiener Bedienstetengesetz für €7374 als Ärzt*in für Allgemeinmedizin und €7782 als Fachärzt*in für Innere Medizin (bei 40 Wochenstunden, 14x jährlich) zuzüglich €150 Erschwernisabgeltung 14x jährlich. Durch die Anrechnung von berufseinschlägigen bzw. gleichwertigen Tätigkeiten als Vordienstzeiten ergibt sich ein höheres Gehalt.</p><p>Bitte beachten Sie: Die Stadt Wien leistet keinen Ersatz für Kosten, die Ihnen aufgrund der Bewerbung entstehen.</p><p>Verfügbare Dokumente<br />* https://emea3.recruitmentplatform.com/tlk/pages/fo/download_job_file.jsp?ID=QYOFK026203F3VBQBLO8MV7XN&amp;nDocumentID=6559033&amp;ptId=55626<br />* https://emea3.recruitmentplatform.com/tlk/pages/fo/download_job_file.jsp?ID=QYOFK026203F3VBQBLO8MV7XN&amp;nDocumentID=6559034&amp;ptId=55626</p><p>Haben wir Ihr Interesse geweckt?<br />Wir freuen uns auf Ihre Bewerbung!</p><p>https://jobs.wien.gv.at/stellenangebote/details.html?jobId=59479</p><p>Kontakt<br />Für Fragen zur Stelle kontaktieren Sie bitte:</p><p>Teilunternehmung Geriatriezentren und Pflegewohnhäuser<br />der Stadt Wien mit sozialmedizinischer Betreuung - Direktion<br />Dr.in Astrid Horak, MBA<br />Leitung Medizinischer Bereich<br />1140 Wien, Hütteldorfer Straße 188, Pavillon 1,<br />2.Stock<br />Telefon: +43 1 40409 60812</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/54a4dbb1-a36c-3f64-8c90-73ae0aa134ef",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17410430-S",
+    "slug": "medizinische-universitat-wien-arzt-arztin-11949-17410430-s",
+    "company": "arbeitsagentur",
+    "employer": "Medizinische Universität Wien",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Ihre Aufgaben<br />º Die Aufgaben richten sich nach den ärzte- und krankenanstaltenrechtlichen Vorschriften<br />º Die Erfüllung der Aufgaben erfolgt in engem Kontakt mit wissenschaftlicher Forschung und<br />Lehre<br />Ihr Profil<br />º Abgeschlossenes Medizinstudium<br />º Bereitschaft zur Mitwirkung in Forschung und Lehre<br />º Sehr gute Deutschkenntnisse (C1)<br />Die Basisausbildung gemäß § 6a Ärztegesetz 1998 und § 6 der Ärztinnen-/Ärzte-Ausbildungsordnung 2015 (ÄAO 2015) ist, soweit erforderlich, in der Fachärzt:innenausbildung integriert. Als eines<br />der führenden universitären Zentren in Europa bieten wir spezielle Nachwuchsförderung in<br />wissenschaftlicher Forschung und Lehre im Fach Herz- und Thorakale Aortenchirurgie an.<br />Das monatliche Mindestentgelt für diese Verwendung (Uni-KV, VerwGr. B1) beträgt derzeit<br />Euro 6.009,-- brutto (14x jährlich) auf Vollzeitbasis und kann sich eventuell durch die Anrechnung von<br />entsprechenden, einschlägigen Vorerfahrungen und um sonstige mit den Besonderheiten des<br />Arbeitsplatzes verbundene Entgeltsbestandteile erhöhen.<br />Die Medizinische Universität Wien strebt eine Erhöhung des Frauenanteils insbesondere in Leitungsfunktionen und beim wissenschaftlichen Personal an und fordert deshalb qualifizierte Frauen<br />ausdrücklich zur Bewerbung auf. Frauen werden bei gleicher Qualifikation vorrangig aufgenommen.</p><p>Wir freuen uns über Bewerbungen von Menschen mit Behinderungen und/oder chronischen<br />Erkrankungen und laden daher besonders dazu ein. Bei Rückfragen wenden Sie sich bitte an die<br />Behindertenvertrauensperson der MedUni Wien.<br />Die Informationen gemäß Datenschutz-Grundverordnung finden Sie unter<br />www.meduniwien.ac.at/datenschutz/bewerbungen<br />Bitte senden Sie uns Ihre vollständigen Bewerbungsunterlagen, bestehend aus Lebenslauf, Anschreiben<br />und gegebenenfalls Zeugnisse und Zertifikate als Nachweis der gewünschten Qualifikationen. Bei<br />reglementierten Berufen legen Sie bitte auch einen Nachweis der Berufsberechtigung bei.<br />Bewerben Sie sich bis zum 25. November 2026 über unsere Homepage:https://www.meduniwien.ac.at/web/karriere/offene-stellen/personalmitteilungsblatt-nr45/26/nr45-herz-und-thorakale-aortenchirurgie-kennzahl-650/26/?ADMCMD_simTime=1793746860<br />Kennzahl: 650/26</p><p>Es wird darauf hingewiesen, dass Bewerber:innen keinen Anspruch auf Abgeltung von Reisekosten in<br />Zusammenhang mit dem Bewerbungsgespräch haben.</p><p>Wir weisen darauf hin, dass für die Aufnahme als Mitarbeiter:in eines Gesundheitsberufs an der<br />Medizinischen Universität Wien im gesamten klinischen Bereich ein Impf- und Immunitätsnachweis<br />Voraussetzung ist. Der medizinische Impf- oder Immunitätsnachweis erfolgt ausschließlich durch die<br />Verwendung des folgenden Formulars:<br />https://www.meduniwien.ac.at/web/fileadmin/content/serviceeinrichtungen/personalabteilung/stellenausschreibungen/bewerbungsformulare/Impf-_und_Immunitaetsnachweis.pdf Wir weisen darauf hin,<br />dass anfallende Kosten vom:von der Bewerber:in selbst zu tragen sind.</p><p>Im Einzelfall können weitere Nachweise, wie z.B. ein Lungenröntgen oder ein medizinisches<br />Eignungsschreiben, zusätzlich zum Impf- und Immunitätsnachweis eingefordert werden.</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/4a2a9a50-429f-3200-915c-0d7355a322aa",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17412065-S",
+    "slug": "klinik-favoriten-facharzt-arztin-innere-medizin-11949-17412065-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinik Favoriten",
+    "title": "Facharzt/-ärztin - Innere Medizin",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Ihr Aufgabengebiet<br />* Verantwortlichkeit für die medizinische Betreuung der PatientInnen (Anordnung, Kontrolle, Durchführung) Visite, Organisation (Koordination) des interdisziplinären Teams<br />* Organisatorische Aufgaben im medizinischen und interdisziplinären Bereich<br />* Fachliche und disziplinäre Aufsicht der nachgeordneten MitarbeiterInnen<br />* Fortbildung der MitarbeiterInnen sowie Förderung und Motivation derselben<br />* Revision administrativer Vorgänge<br />* Beratungstätigkeit für ZuweiserInnen</p><p>Nähere Details entnehmen Sie bitte der beigefügten Stellenbeschreibung (inkl. Anforderungsprofil).</p><p>Ihr Profil<br />* Fachärzt*in für Innere Medizin mit Zusatzfach Hämatologie und Onkologie<br />* mehrjährige klinische Erfahrung<br />* Team-, Kommunikations- und Organisationsfähigkeit<br />* Eigenständigkeit und Verantwortungsbewusstsein (inkl. Nachtdienste)<br />* Interesse an fachlicher und organisatorischer Weiterentwicklung</p><p>Wir bieten Ihnen die Möglichkeit, sich fachlich zu profilieren, Verantwortung zu übernehmen und aktiv an der Weiterentwicklung der größten hämato-onkologischen Abteilung des WIGEV mitzuwirken.</p><p>Unser Angebot<br />* Beschäftigung in Vollzeit (40 Wochenstunden)<br />* Krisensicherer Arbeitsplatz<br />* Ein vielfältiges und interessantes Aufgabengebiet mit Gestaltungsmöglichkeiten<br />* Zusammenarbeit mit unterschiedlichen Berufsgruppen<br />* Eine abwechslungsreiche Tätigkeit in einer zukunftssicheren Unternehmung<br />* Große Auswahl an Fort- &amp; Weiterbildungen<br />* Ausgezeichnete Karrierechancen<br />* Umfangreiche Angebote zur Gesundheitsförderung am Arbeitsplatz<br />* Betriebskindergarten<br />* Verbilligter Mittagstisch für eine ausgewogene Ernährung während der Dienstzeit<br />* Gute Verkehrsanbindungen (guter Anschluss an öffentliche Verkehrsmittel - Bushaltestelle der Linie 7a gleich vorm Haupt- und Mitarbeitereingang).<br />* Parkgarage und E-Bike-Ladestation</p><p>Für Mitarbeiter*innen, die bereits bei der Stadt Wien beschäftigt sind, ergibt sich die Entlohnung für die ausgeschriebene Stelle durch die Dienstposten- bzw. Funktionsbewertung und die entsprechende Einreihung im jeweiligen Gehaltssystem.<br />Für neue Mitarbeiter*innen beträgt das Einstiegsgehalt laut Wiener Bedienstetengesetz für diese Stelle € 7.782.- (40 Wochenstunden, 14x jährlich) zuzüglich 150 Euro Erschwernisabgeltung 14X mal jährlich. Durch die Anrechnung von berufseinschlägigen bzw. gleichwertigen Tätigkeiten als Vordienstzeiten kann sich ein höheres Gehalt ergeben.</p><p>Beschäftigungsausmaß: Vollzeit</p><p>Ablaufdatum: 06.12.2026</p><p>Kontakt<br />Für Fragen zur Stelle kontaktieren Sie bitte:</p><p>Klinik Favoriten - Ärztliche Direktion<br />Prim. Doz. Dr. Hannes Kaufmann<br />1100 Wien, Kundratstraße 3<br />Telefon: +43 1 60191 - 72308</p><p>Haben wir Ihr Interesse geweckt?<br />Wir freuen uns auf Ihre Bewerbung!</p><p>Jetzt bewerben: https://karriere.gesundheitsverbund.at/jobportal/59566/</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/87963d3b-5eb7-3df9-8cab-cb315b7db4e0",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17415248-S",
+    "slug": "pensionsversicherungs-anstalt-facharzt-arztin-psychiatrie-und-psychotherapie-11949-17415248-s",
+    "company": "arbeitsagentur",
+    "employer": "PENSIONSVERSICHERUNGS- ANSTALT",
+    "title": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "specialist",
+    "descriptionHtml": "<p>St. Pölten ab sofort Vollzeit, Teilzeit<br />ab 16 Wochenstunden</p><p>Als medizinische_r Gutachter_in leisten Ärztinnen*Ärzte für die PV in einer äußerst verantwortungsvollen Tätigkeit einen wertvollen Beitrag für die Gesellschaft. Eine Aufgabe, für die neben einer mehrjährigen fundierten Berufspraxis ein umfangreiches Fachwissen und sehr hohe Qualifikation Voraussetzung sind. Sie stellen durch Ihre persönliche Expertise, Ihre hohe ärztliche Kompetenz und langjährige Erfahrung in den unterschiedlichsten Bereichen der Medizin das Vorliegen der Anspruchsvoraussetzungen für Leistungen aus der gesetzlichen Sozialversicherung fest, erstellen selbstständig medizinische Gutachten und sichern österreichweit einheitliche Standards. Die Bandbreite reicht hier von Berufs-, Invaliditäts- und Erwerbsunfähigkeitsgutachten bis hin zu Gutachten in den Bereichen Pflegegeld, Kur und Rehabilitation.</p><p>Was ist das Besondere an der Tätigkeit als Gutachter*in in der Pensionsversicherung?<br />Die Arbeit als medizinischer Gutachterin ist der perfekte Job für alle ÄrztinnenÄrzte, die eine fixe Anstellung und ein geregeltes Einkommen suchen, sich eine Tätigkeit als ÄrztinArzt ohne Nacht-, Wochenend- und Feiertagsdienste wünschen, dem Stress der Akutmedizin entfliehen möchten oder aus persönlichen Gründen kürzer treten wollen.</p><p>Was macht eine medizinischer Gutachter*in in der Pensionsversicherung?</p><p>Das erwartet Sie<br />* Wir übertragen Ihnen die Begutachtung von Antragsteller*innen auf Gewährung einer Invaliditäts-/Berufsunfähigkeitspension oder eines Pflegegeldes in einem multiprofessionellen Team mit vielen interessanten Aspekten<br />* Darüber hinaus umfasst Ihr Aufgabengebiet die Erhebung von Anamnesen und die Erstellung von Gutachten (mit Diagnosen und Leistungskalkül bzw. Pflegegeldbedarf nach dem BPGG)<br />* Dabei arbeiten Sie intensiv mit Kolleg*innen der Oberbegutachtung und mit der chefärztlichen Leitung der Landesstelle zusammen und fordern selbständig notwendige Befunde und Hilfsbefunde an, die Sie für die Erstellung Ihrer Gutachten benötigen</p><p>Das zeichnet Sie aus<br />* Sie verfügen über ein Diplom Arzt*Ärztin für Allgemeinmedizin oder über ein Facharztdiplom für Innere Medizin, Orthopädie, Neurologie oder Psychiatrie mit gültiger Eintragung in die Österreichische Ärzteliste der ÖÄK<br />* Berufserfahrung in der Erstellung von ärztlichen Gutachten sowie der Besitz einer gültigen ÖBAK-Zertifizierung (diese kann auch zeitnah erworben werden) sind von Vorteil<br />* Freude an der Arbeit mit Menschen und ein hohes Maß an Flexibilität, Einsatzbereitschaft, Belastbarkeit und Verantwortungsbewusstsein sowie ausgeprägte Eigeninitiative und Teamfähigkeit sind für Sie selbstverständlich</p><p>12 weitere Gründe, unser Team zu verstärken:<br />* Abwechslungsreiches Aufgabengebiet<br />* Angenehmes Betriebsklima<br />* Berufsvielfalt<br />* Betrieblicher Gesundheitsschutz<br />* Biennalsprünge<br />* Fachexpertise vertiefen und erweitern<br />* Firmenvergünstigungen<br />* Interdisziplinäre Teams<br />* Keine All-in-Verträge<br />* Variable Arbeitszeiten<br />* Weiterbildung<br />* Work-Life-Balance</p><p>Wir bieten<br />Wir bieten ein Bruttomindestjahresgehalt laut Dienstordnung B für Ärztinnen*Ärzte bei den Sozialversicherungsträgern Österreichs auf Vollzeitbasis (36 Wochenstunden) ab EUR 94.222,80 (AfA, keine All-in-Verträge) und EUR 98.179,20 (FA, keine All-in-Verträge); je nach beruflicher Qualifikation und Erfahrung sind Vordienstzeiten anrechenbar und erhöhen Ihr tatsächliches Gehalt deutlich. Und das Beste: Es steigt weiter!</p><p>Bewerben Sie sich jetzt!<br />https://karriere.pv.at/Vacancies/892/Description/1</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/10a51ffb-746a-382d-9669-347b155493f9",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17416872-S",
+    "slug": "klinik-donaustadt-facharzt-arztin-kinder-und-jugendchirurgie-11949-17416872-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinik Donaustadt",
+    "title": "Facharzt/-ärztin - Kinder- und Jugendchirurgie",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>Ihr Aufgabengebiet<br />* Sie führen kinderchirurgische Eingriffe entsprechend Ihrer Erfahrung und Kompetenz durch.<br />* Sie betreuen Kinder und Jugendliche auf den Stationen, in der Ambulanz und in den Spezialambulanzen.<br />* Sie wirken an der Ausbildung von Assistenz- und Turnusärzt*innen sowie von Studierenden der Humanmedizin mit.<br />* Sie nehmen an 25-Stunden-Diensten teil.</p><p>Ihr Profil<br />* Sie sind Fachärzt*in für Kinder- und Jugendchirurgie.<br />* Sie haben uneingeschränkten Zugang zum österreichischen Arbeitsmarkt und verfügen über fließende Deutschkenntnisse.<br />* Sie möchten Ihr operatives Spektrum erweitern und fachliche Verantwortung übernehmen. Interesse an der Kinderurologie ist besonders willkommen.<br />* Sie kommunizieren mit Kindern, Jugendlichen und ihren Angehörigen verständlich und zugewandt.<br />* Sie begegnen allen Menschen wertschätzend, unabhängig von ihrer Herkunft und sozialen Stellung.<br />* Sie bringen Lernbereitschaft und sehr gute organisatorische Fähigkeiten mit und behalten auch in herausfordernden Situationen den Überblick.</p><p>Im Zuge einer Aufnahme in diese Berufsgruppe ist die Vorlage eines Immunitätsnachweises (Impfstatus) für verschiedene Impfungen erforderlich. Für eventuell anfallende Kosten durch die Erbringung des Immunitätsnachweises ist kein Ersatz durch den Wiener Gesundheitsverbund vorgesehen.</p><p>Unser Angebot<br />* Beschäftigung in Vollzeit (40 Wochenstunden)<br />* Flexible Arbeitszeiten<br />* Krisensicherer Arbeitsplatz<br />* Ein vielfältiges und interessantes Aufgabengebiet mit Gestaltungsmöglichkeiten<br />* Zusammenarbeit mit unterschiedlichen Berufsgruppen<br />* Eine abwechslungsreiche Tätigkeit in einer zukunftssicheren Unternehmung<br />* Große Auswahl an Fort- &amp; Weiterbildungen<br />* Ausgezeichnete Karrierechancen<br />* Pensionskassenmodell der Gemeinde Wien (Zusatz zur gesetzlichen Pension)<br />* Umfangreiche Angebote zur Gesundheitsförderung am Arbeitsplatz<br />* Vertrauliche psychologische Beratung<br />* Prämiensysteme für besondere Leistungen<br />* Wohnmöglichkeit in einem unserer Personalwohnhäuser<br />* Betriebskindergarten (Tag)<br />* Verbilligter Mittagstisch für eine ausgewogene Ernährung während der Dienstzeit</p><p>Für Mitarbeiter*innen, die bereits bei der Stadt Wien beschäftigt sind, ergibt sich die Entlohnung für die ausgeschriebene Stelle durch die Dienstposten- bzw. Funktionsbewertung und die entsprechende Einreihung im jeweiligen Gehaltssystem.</p><p>Für neue Mitarbeiter*innen beträgt das Einstiegsgehalt laut Wiener Bedienstetengesetz für diese Stelle € 7.782 (40 Wochenstunden, 14x jährlich) zuzüglich 150 Euro Erschwernisabgeltung 14 mal jährlich. Durch die Anrechnung von berufseinschlägigen bzw. gleichwertigen Tätigkeiten als Vordienstzeiten ergibt sich ein höheres Gehalt.</p><p>Unser Ziel ist es, eine Arbeitsumgebung zu schaffen, die die Vielfalt der Menschen widerspiegelt und in der alle entsprechend ihrer individuellen Kompetenzen und Perspektiven einen Beitrag leisten können. Der Wiener Gesundheitsverbund als Teil der Stadt Wien setzt sich für ein inklusives Arbeitsumfeld ein, das gleiche Chancen für alle bietet. Wir ermutigen ausdrücklich Menschen mit verschiedenen Hintergründen, sich bei uns zu bewerben.</p><p>Verfügbare Dokumente<br />* https://emea3.recruitmentplatform.com/tlk/pages/fo/download_job_file.jsp?ID=QYOFK026203F3VBQBLO8MV7XN&amp;nDocumentID=9296398&amp;ptId=59661<br />* https://emea3.recruitmentplatform.com/tlk/pages/fo/download_job_file.jsp?ID=QYOFK026203F3VBQBLO8MV7XN&amp;nDocumentID=9296402&amp;ptId=59661</p><p>Wir freuen uns auf Ihre Bewerbung!</p><p>https://jobs.wien.gv.at/stellenangebote/details.html?jobId=59661</p><p>Kontakt<br />Für ein persönliches Gespräch steht Ihnen Prim. Priv.-Doz. Dr. Thomas Benkö, Abteilungsvorstand der Kinder- und Jugendchirurgie, gerne zur Verfügung.</p><p>Klinik Donaustadt<br />1220 Wien, Langobardenstraße 122<br />Telefon: +43 1 28802 4403<br />E-Mail: thomas.benkoe@gesundheitsverbund.at</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/76684599-a1b4-3fdf-bc0d-60cd01a912cd",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17423537-S",
+    "slug": "vivea-gesundheitshotel-arzt-arztin-11949-17423537-s",
+    "company": "arbeitsagentur",
+    "employer": "Vivea Gesundheitshotel",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Wir bieten:<br />* Individuelle Arbeitszeitmodelle in Voll- oder Teilzeit möglich<br />* Keine Bereitschafts- und Nachtdienste<br />* Eigenständiges und eigenverantwortliches Arbeiten bei flachen Hierarchien<br />* Freistellung bzw. Bezahlung von Fort- und Weiterbildungen nach Absprache<br />* Möglichkeit zur Forschung<br />* Täglich freie Verpflegung<br />* Unterkunft nach Verfügbarkeit in unserem Mitarbeitenden-Haus<br />* Urlaubsrabatte in unseren Vivea Hotels auch für Familie und Freunde<br />* Einkaufsplattform mit Rabatten in über 80 Marken-Onlineshops<br />* Bike-Leasing für die Finanzierung des persönlichen Fahrrads oder E-Bikes<br />* Team-Events, Gewinnspiele und Mitarbeitenden-Veranstaltungen<br />* Möglichkeit eines individuellen Benefit-Pakets nach Absprache</p><p>Für die Position bieten wir ein kollektivvertragliches Bruttogehalt von EUR 6.029,- auf Basis einer Vollzeitbeschäftigung, sowie die Bereitschaft zur Überzahlung, abhängig von Qualifikation, Ausbildung und Erfahrung.</p><p>Ihre Tätigkeit:<br />* Durchführen von Erst-, Folge- und Abschlussuntersuchungen<br />* Erstellen von Anamnesen und medizinischen Diagnosen sowie erarbeiten des Therapieplans<br />* Überwachen des Therapieerfolges gemäß dem Leistungsprofil der Pensionsversicherungsanstalt (GVA) sowie der Privatpatient:innen<br />* Behandeln von Erkrankungen des Stütz- und Bewegungsapparates, Stoffwechselerkrankungen und peripheren arteriellen Verschlusskrankheiten<br />* Vortragstätigkeiten zur Primär- und Sekundärprävention<br />* Interdisziplinäre Zusammenarbeit mit unserer medizinisch-therapeutischen Abteilung<br />* Behandeln von medizinischen Notfällen im Haus<br />* Einhalten und Gewährleistung der medizinischen Standards und Hygienerichtlinien<br />* Möglichkeit zur Einbringung Ihrer fachlichen Spezialgebiete</p><p>Ihr Profil:<br />* Abgeschlossene Ausbildung in der Allgemeinmedizin und/oder fachärztliche Ausbildung für Innere Medizin, Orthopädie oder Physikalische Medizin<br />* \"Ius practicandi\" in der Allgemeinmedizin<br />* ÖAK-Diplom Kur-, Präventivmedizin und Wellness von Vorteil<br />* Interesse für Präventivmedizin und Longevity<br />* EDV-Kenntnisse<br />* Deutschkenntnisse B2 - C1</p><p>Sie sind für uns die:der Richtige?</p><p>Dann senden Sie uns Ihre Bewerbung und Sie erhalten in wenigen Tagen verlässlich eine Rückmeldung von uns!</p><p>Bewerbungslink:<br />https://karriere.vivea-hotels.com/bewerbung/?job=%C3%84rztin%3AArzt%20f%C3%BCr%20Longevity%20bzw.%20Fach%C3%A4rztin%3AFacharzt%20m%2Fw%2Fd%20-%20Bad%20Goisern&amp;mail=n.albazirgan@vivea-hotels.com&amp;anr=</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/92d3b399-a1bd-3854-bf6c-fd5cd1c23334",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17424305-S",
+    "slug": "ma-15-gesundheitsdienst-der-stadt-wien-arzt-arztin-11949-17424305-s",
+    "company": "arbeitsagentur",
+    "employer": "MA 15 Gesundheitsdienst der Stadt Wien",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Ihr Aufgabengebiet<br />* Sie leisten Amtssachverständigentätigkeit im Bereich Medizin im öffentlichen Gesundheitsdienst:<br />** Sie führen ärztliche Begutachtungen gemäß gesetzlicher Grundlagen durch.<br />** Sie erstellen medizinische Sachverständigengutachten gemäß gesetzlicher Grundlagen.<br />** Bei Bedarf werden Sie als medizinische Amtssachverständige bzw. als medizinischer Amtssachverständiger beim Verwaltungsgericht in zweiter Instanz beigezogen.</p><p>Ihr Profil<br />* Sie verfügen über ein abgeschlossenes Medizinstudium sowie über ein Diplom bzw. die Anerkennung für Allgemeinmedizin (ius practicandi) oder über ein Diplom bzw. die Anerkennung als Fachärztin für Allgemein- und Familienmedizin<br />* Die Physikatsprüfung haben Sie bereits erfolgreich absolviert bzw. sind bereit, diese innerhalb einer vorgeschriebenen Frist abzulegen<br />* Sie weisen ein fundiertes medizinisches Allgemeinwissen auf und besitzen idealerweise allgemeine Kenntnisse des behördlichen Verfahrens<br />* Sie haben ein sicheres und freundliches Auftreten sowie eine hohe Kundenorientierung und serviceorientiertes Verhalten<br />* Sie verfügen über ausgezeichnete Deutschkenntnisse und gute Fremdsprachenkenntnisse (mindestens Englisch) sowie ein ausgezeichnetes Ausdrucksvermögen in Wort und Schrift<br />* Abgerundet wir Ihr Profil durch sehr gute EDV-Kenntnisse</p><p>Unser Angebot<br />* Anstellung in Vollzeit oder Teilzeit ab 8 Wochenstunden - flexible Arbeitsmodelle zur optimalen Vereinbarkeit von Beruf und Privatleben</p><ul><li>Gleitende Arbeitszeiten mit Kernzeit von 09:00 bis 13:00 Uhr</li></ul><ul><li>Fort- und Weiterbildungsmöglichkeiten zur fachlichen und persönlichen Förderung</li></ul><ul><li>Sie arbeiten in einem engagierten, motivierten und kollegialen interdisziplinären Team, fördern den Wissensaustausch und unterstützen Ihre Kolleg*innen fachlich gegenseitig</li><li>Sehr gute Anbindung an öffentliche Verkehrsmittel</li></ul><ul><li>Krankenversicherung über die Krankenfürsorgeanstalt der Bediensteten der Stadt Wien (KFA)</li></ul><ul><li>Das monatliche Einstiegsgehalt bei Vollzeit (40 Wochenstunden) beträgt € 6.684,-brutto (14x jährlich).</li></ul><p>Bei Teilzeit erfolgt eine aliquote Anpassung des Gehalts, beispielhaft:</p><p>** 8 Wochenstunden: € 1.336 brutto/Monat</p><p>** 16 Wochenstunden: € 2.673 brutto/Monat</p><p>** 24 Wochenstunden: € 4.010 brutto/Monat</p><p>** 32 Wochenstunden: € 5.347 brutto/MonatDurch die Anrechnung einschlägiger oder gleichwertiger Vordienstzeiten ist eine höhere Einstufung und damit ein entsprechend höheres Gehalt möglich.</p><p>Bei Interesse bewerben Sie sich gleich hier und fügen bitte folgende Unterlagen bei:</p><ul><li>Diplom bzw. Anerkennung für Allgemeinmedizin (ius practicandi) oder Diplom bzw. Anerkennung als \"Fachärztin für Allgemein- und Familienmedizin</li><li>Nachweis über die erfolgreich absolvierte Physikatsprüfung (falls vorhanden)</li><li>aktuellen Auszug aus der Standesliste der Ärztekammer</li></ul><p>Wir möchten den Anteil an Frauen in diesem Berufsfeld erhöhen und laden daher besonders Frauen zur Bewerbung ein. Es gelten die Bestimmungen des Wiener Gleichbehandlungsgesetzes.</p><p>Kontakt<br />Magistratsabteilung 15 - Gesundheitsdienst</p><p>1030 Wien, Thomas-Klestil-Platz 8/2</p><p>Tel.: +43 1 4000 - 87607 oder 87529</p><p>Sie möchten gerne für die Stadt Wien arbeiten?</p><p>Dann bewerben Sie sich gleich hier online!</p><p>https://jobs.wien.gv.at/bewerben/?jobId=QYOFK026203F3VBQBLO8MV7XN-59826&amp;langCode=de_DE</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/30ea54ff-4aff-353c-aedd-231152392170",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17426268-S",
+    "slug": "ma-15-gesundheitsdienst-der-stadt-wien-arzt-arztin-11949-17426268-s",
+    "company": "arbeitsagentur",
+    "employer": "MA 15 Gesundheitsdienst der Stadt Wien",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Ihr Aufgabengebiet<br />* Sie erstellen Amtssachverständigengutachten zu u.a. dem Wiener Krankenanstaltengesetz, dem Strahlenschutzgesetz, dem Wiener Heilvorkommen- und Kurortegesetz, dem Wiener Rettungs- und Krankentransportgesetz etc.<br />* Sie haben die behördliche fachliche Aufsicht (Amtssachverständigentätigkeit) in Gesundheitseinrichtungen in Wien im Rahmen von Verfahren u.a. der sanitären Überwachung der Krankenanstalten, Heilquellen und Kuranstalten, von Kollaudierungen und Visitationen von Apotheken und Anstaltsapotheken nach der Apothekenbetriebsordnung und dem Apothekengesetz, bei Überprüfungen nach dem Blutsicherheitsgesetz, bei Angelegenheiten des Arzneimittelwesens und Suchtmittelangelegenheiten etc.<br />* Ihre Mitarbeit im Arbeitskreis für Hygiene in Gesundheitseinrichtungen gehört ebenso zu Ihrer Tätigkeit wie die Mitarbeit als Expert*in in internen und externen Arbeitskreisen und Projekten<br />* Sie wirken auch als externe und interne Expert*in in diversen Arbeitskreisen und Projekten mit<br />* Sie werden als medizinischer Amtssachverständiger beim Verwaltungsgericht in zweiter Instanz herangezogen</p><p>Ihr Profil<br />* Sie verfügen über ein abgeschlossenes Medizinstudium sowie über ein Diplom bzw. die Anerkennung für Allgemeinmedizin (ius practicandi) oder über ein Diplom bzw. die Anerkennung als Fachärztin für Allgemein- und Familienmedizin<br />* Sie haben die Physikatsprüfung bereits positiv abgelegt bzw. sind bereit, diese innerhalb der vorgeschriebenen Frist abzulegen<br />* Sie weisen ein fundiertes medizinisches Allgemeinwissen auf und besitzen idealerweise allgemeine Kenntnisse des behördlichen Verfahrens<br />* Sie haben ein sicheres und freundliches Auftreten sowie eine hohe Kundenorientierung und serviceorientiertes Verhalten<br />* Sie verfügen über Kenntnisse der Strukturen und Aufgaben des Gesundheitswesens auf regionaler und nationaler Ebene<br />* Ein sehr gutes mündliches und schriftliches Ausdrucksvermögen runden Ihr Profil ab</p><p>Unser Angebot<br />* Anstellung in Vollzeit oder Teilzeit ab 8 Wochenstunden - flexible Arbeitsmodelle zur optimalen Vereinbarkeit von Beruf und Privatleben</p><ul><li>Gleitende Arbeitszeiten mit Kernzeit von 09:00 bis 13:00 Uhr</li></ul><ul><li>Fort- und Weiterbildungsmöglichkeiten zur fachlichen und persönlichen Förderung</li></ul><ul><li>Sie arbeiten in einem engagierten, motivierten und kollegialen interdisziplinären Team, fördern den Wissensaustausch und unterstützen Ihre Kolleg*innen fachlich gegenseitig</li><li>Sehr gute Anbindung an öffentliche Verkehrsmittel</li></ul><ul><li>Krankenversicherung über die Krankenfürsorgeanstalt der Bediensteten der Stadt Wien (KFA)</li></ul><ul><li>Das monatliche Einstiegsgehalt bei Vollzeit (40 Wochenstunden) beträgt € 6.684,-brutto (14x jährlich).</li></ul><p>Bei Teilzeit erfolgt eine aliquote Anpassung des Gehalts, beispielhaft:</p><p>** 8 Wochenstunden: € 1.336 brutto/Monat</p><p>** 16 Wochenstunden: € 2.673 brutto/Monat</p><p>** 24 Wochenstunden: € 4.010 brutto/Monat</p><p>** 32 Wochenstunden: € 5.347 brutto/MonatDurch die Anrechnung einschlägiger oder gleichwertiger Vordienstzeiten ist eine höhere Einstufung und damit ein entsprechend höheres Gehalt möglich.</p><p>Bei Interesse bewerben Sie sich gleich hier und fügen bitte folgende Unterlagen bei:</p><ul><li>Diplom bzw. Anerkennung für Allgemeinmedizin (ius practicandi) oder Diplom bzw. Anerkennung als \"Fachärztin für Allgemein- und Familienmedizin</li><li>aktuellen Auszug aus der Standesliste der Ärztekammer</li></ul><p>Wir möchten den Anteil an Frauen in diesem Berufsfeld erhöhen und laden daher besonders Frauen zur Bewerbung ein. Es gelten die Bestimmungen des Wiener Gleichbehandlungsgesetzes.</p><p>Kontakt<br />Magistratsabteilung 15 - Gesundheitsdienst</p><p>1030 Wien, Thomas-Klestil-Platz 8/2</p><p>Tel.: +43 1 4000 87607 oder 01 4000 87529</p><p>Sie möchten gerne für die Stadt Wien arbeiten?</p><p>Dann bewerben Sie sich gleich hier online!<br />https://jobs.wien.gv.at/bewerben/?jobId=QYOFK026203F3VBQBLO8MV7XN-59867&amp;langCode=de_DE</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/08445db5-7671-3586-a704-f8bfc4e4bd29",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5976,28 +6196,6 @@
     "source": "arbeitsagentur"
   },
   {
-    "id": "arbeitsagentur:12287-JOB-760346-S",
-    "slug": "krankenhaus-maria-hilf-gmbh-facharzt-fur-anasthesiologie-und-intensivmedizin-m-w-d-12287-job-760346-s",
-    "company": "arbeitsagentur",
-    "employer": "Krankenhaus Maria Hilf GmbH",
-    "title": "Facharzt für Anästhesiologie und Intensivmedizin (m/w/d…",
-    "locations": [
-      "Warstein, Nordrhein-Westfalen, Germany"
-    ],
-    "remote": false,
-    "department": "Facharzt/-ärztin - Anästhesiologie",
-    "category": "medicine",
-    "specialty": "anaesthesiology",
-    "level": "specialist",
-    "descriptionHtml": "<p>Das Krankenhaus Maria Hilf Warstein ist eine Fachklinik für Geriatrie und Innere Medizin mit 85 Planbetten und sichert die medizinische Versorgung der Patientinnen und Patienten in Warstein und der umliegenden Region.</p><p>Unser Haus gliedert sich in die Hauptfachabteilungen Innere Medizin mit den Schwerpunkten Kardiologie und Gastroenterologie sowie Geriatrie. Ergänzt wird das medizinische Angebot durch die Funktionsabteilungen Anästhesie und Radiologie, die eine moderne Diagnostik und Behandlung unterstützen. Zudem verfügt unser Haus über eine Zentrale Notaufnahme (ZNA) zur Akutversorgung sowie eine Abteilung für Intensivmedizin zur umfassenden Betreuung kritisch erkrankter Patientinnen und Patienten.</p><p>An das Krankenhaus angeschlossen ist zudem das Medizinische Versorgungszentrum (MVZ) Warstein, das eine ambulante medizinische Betreuung gewährleistet und die sektorenübergreifende Versorgung unserer Patientinnen und Patienten stärkt.</p><p>Als Arbeitgeber stehen wir für eine patientenorientierte Medizin, interdisziplinäre Zusammenarbeit und ein respektvolles Miteinander. Werden Sie Teil unseres Teams und gestalten Sie mit uns eine moderne und menschliche Gesundheitsversorgung.</p><ul><li>Anästhesiologische Betreuung unserer Patientinnen und Patienten</li><li>Durchführung und Überwachung von Allgemein- und Regionalanästhesien nach aktuellen Standards</li><li>Mitwirkung in der intensivmedizinischen Versorgung einschließlich Diagnostik und Therapie kritisch kranker Patientinnen und Patienten</li><li>Enge interdisziplinäre Zusammenarbeit mit den anderen Fachabteilungen, dem Pflegepersonal sowie weiteren Berufsgruppen</li><li>Fachliche Anleitung und Supervision von Assistenzärztinnen und -ärzten</li><li>Teilnahme am Bereitschafts- und Rufdienst</li></ul><ul><li>Facharzt (m/w/d) für Anästhesiologie</li><li>Fundierte Kenntnisse und praktische Erfahrung in der Regionalanästhesie und Intensivmedizin</li><li>Idealerweise Zusatzqualifikationen wie Fachkunde im Strahlenschutz sowie Erfahrung im Rettungsdienst und/oder die Zusatzbezeichnung Notfallmedizin</li><li>Zusatzbezeichnung Intensivmedizin wünschenswert</li><li>Ausgeprägte Teamfähigkeit sowie hohe soziale und kommunikative Kompetenz</li><li>Engagement und Interesse an interdisziplinärer Zusammenarbeit</li><li>Hohe Patientenorientierung und Verantwortungsbewusstsein</li></ul><ul><li>Eine abwechslungsreiche und verantwortungsvolle Tätigkeit</li><li>Ein kollegiales und wertschätzendes Arbeitsklima in einem engagierten Team</li><li>Eine attraktive Vergütung in Anlehnung an den TV-Ärzte/VKA</li><li>Individuelle Fort- und Weiterbildungsmöglichkeiten</li></ul><p>Zeit für ein Kennenlernen? Dann vereinbaren Sie gern mit uns einen Hospitationstermin!</p><p>[Krankenhaus Maria Hilf GmbH](//karriere-suedwestfalen.de/krankenhaus-maria-hilf-warstein)Frau Nadja Perschke<br />E-Mail. personal@krankenhaus-warstein.de</p><p>...</p>",
-    "applyUrl": "https://www.karriere-suedwestfalen.de/stellenangebot/facharzt-fuer-anaesthesiologie-und-intensivmedizin-760346",
-    "postedAt": "2026-05-27T00:00:00.000Z",
-    "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "arbeitsagentur"
-  },
-  {
     "id": "arbeitsagentur:12287-JOB-817697-S",
     "slug": "prange-gruppe-facharzt-fur-chirurgie-und-orthopadie-m-w-d-12287-job-817697-s",
     "company": "arbeitsagentur",
@@ -6056,7 +6254,7 @@
     "postedAt": "2026-04-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6118,7 +6316,7 @@
     "postedAt": "2026-11-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6304,6 +6502,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12336-a26f1105j0457968-S",
+    "slug": "friedrich-alexander-universitat-erlangen-nurnberg-arzt-fur-arbeitsmedizin-und-betriebsarztliche-betreuung-m-w-d-12336-a26f1105j0457968-s",
+    "company": "arbeitsagentur",
+    "employer": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+    "title": "Arzt für Arbeitsmedizin und betriebsärztliche Betreuung (m/w/d)",
+    "locations": [
+      "Erlangen, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Arbeitsmedizin",
+    "category": "medicine",
+    "specialty": "occupational-medicine",
+    "level": "specialist",
+    "descriptionHtml": "<p>Eigenständige **arbeitsmedizinische Vorsorge**, Impfberatung und Beratung von Beschäftigten sowie Betriebsbegehungen und Mitwirkung im **Gesundheitsmanagement**. Gesucht wird ein approbierter Arzt bzw. eine approbierte Ärztin mit C2-Deutsch und Teamfähigkeit.</p>",
+    "applyUrl": "https://gute-jobs.de/viewjob-tvsd6?utm_source=jsba-premium&utm_medium=n-a&utm_campaign=jsba-premium&utm_term=arzt-fur-arbeitsmedizin-und-betriebsarztliche-betreuung-m-w-d",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12336-a26f1333j0454436-S",
     "slug": "st-augustinus-kliniken-ggmbh-leitung-geriatrische-reha-m-w-d-12336-a26f1333j0454436-s",
     "company": "arbeitsagentur",
@@ -6413,7 +6631,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6435,7 +6653,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6932,7 +7150,7 @@
     "postedAt": "2025-07-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7615,7 +7833,7 @@
     "postedAt": "2026-09-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8279,6 +8497,46 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12811-2381807-S",
+    "slug": "klinikum-bad-hersfeld-gmbh-assistenzarzt-neurochirurgie-m-w-d-klinikum-bad-hersfeld-12811-2381807-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Bad Hersfeld GmbH",
+    "title": "Assistenzarzt Neurochirurgie (m/w/d), Klinikum Bad Hersfeld",
+    "locations": [
+      "Bad Hersfeld, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "resident",
+    "descriptionHtml": "<p>Gemeinsam Zukunft gestalten - im Klinikum Hersfeld-Rotenburg Bei uns finden Sie mehr als nur einen sicheren Arbeitsplatz: Sie werden Teil eines starken Teams, das mit Herz und Kompetenz wichtige und zentrale Aufgaben für die Menschen in unserer Region übernimmt! Als zukunftsgerichtetes, kommunales Unternehmen investieren wir in moderne Medizin, innovative Technik und vor allem in unsere Mitarbeiterinnen und Mitarbeiter. Mit unserem Neubau am Standort Bad Hersfeld (ab 2027) schaffen wir ein hochmodernes Arbeitsumfeld im gesamten Spektrum der medizinischen Versorgung. Über 650 Betten, 28 medizinische Abteilungen, ein großes Notfallzentrum mit Stroke-Unit, TAVI-Zentrum, Chest-Pain-Unit, modernste OP-Säle inklusive Hybrid-OP, eine interdisziplinäre Intensivstation bieten Ihnen die besten Voraussetzungen, um Ihr Fachwissen in allen Bereichen des Unternehmens einzubringen, und sich weiterzuentwickeln. Werden Sie Teil unserer Zukunft!   Zur Verstärkung unseres Teams suchen wir zum nächstmöglichen Zeitpunkt einen Assistenzarzt Neurochirurgie (m/w/d)   Die Sektion Neurochirurgie am Klinikum Bad Hersfeld wird von Herrn Mohamed geleitet und nachhaltig modernisiert. Ein Navigationssystem gestattet uns, Eingriffe der akuten kranialen und interkraniellen Neurochirurgie durchzuführen sowie das gesamte Spektrum der Wirbelsäulenchirurgie und der Chirurgie peripherer Nerven anzubieten. Ihre Aufgaben Ärztliche Betreuung unserer neurochirurgischen Patient auf Station unter fachärztlicher Anleitung Mitarbeit bei der Diagnostik sowie der operativen und konservativen Behandlung neurochirurgischer Erkrankungen Assistenz bei neurochirurgischen Eingriffen und schrittweise Übernahme operativer Aufgaben entsprechend Ihrem Weiterbildungsstand Mitwirkung bei der Versorgung neurochirurgischer Notfälle und Teilnahme am ärztlichen Bereitschaftsdienst entsprechend Ihrem Ausbildungsstand Enge Zusammenarbeit mit den beteiligten Fachabteilungen und Berufsgruppen Was wir erwarten: Deutsche Approbation und Interesse an der Weiterbildung zum Facharzt für Neurochirurgie Begeisterung für die Neurochirurgie und die Bereitschaft, sich in diagnostische und operative Verfahren einzuarbeiten Erste klinische Erfahrungen sind willkommen - auch Berufseinsteiger sind herzlich eingeladen, sich zu bewerben Teamgeist, Verantwortungsbewusstsein und Freude an interdisziplinärer Zusammenarbeit Empathie im Umgang mit unseren Patienten sowie gute Deutschkenntnisse für eine sichere Patientenversorgung Was wir bieten: Fachliche Entwicklung: Praxisnahe Einarbeitung und fachärztliche Anleitung beim Aufbau Ihrer neurochirurgischen Kenntnisse und Fertigkeiten Breites Behandlungsspektrum: Einblicke in die akute kraniale und interkranielle Neurochirurgie, die Wirbelsäulenchirurgie und die Chirurgie peripherer Nerven Operative Ausbildung: Schrittweise Einbindung in operative Eingriffe entsprechend Ihrem Kenntnis- und Weiterbildungsstand  Wissenschaft &amp; Fortbildung: Gelegenheit zur wissenschaftlichen Arbeit und zur Teilnahme an zertifizierten Fortbildungen Team &amp; Kultur: Kollegiale, offene Arbeitsatmosphäre mit kurzen Abstimmungswegen in einem modernen Umfeld Aktive Mitgestaltung: Die Möglichkeit, aktiv an unserer modernen neurochirurgischen Sektion mitzugestalten Zusatzleistungen: Tarifliche Vergütung nach TV-Ärzte/VKA Vergütung der Bereitschaftsdienste nach den tariflichen Regelungen Zugang zum Mitarbeiter-Einkaufsportal Beginn zum nächstmöglichen Termin Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Ihre vollständige Online-Bewerbung! Für weitere Informationen steht Ihnen der Sektionsleiter der Neurochirurgie gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Assistenzarzt-Neurochirurgie-D-1329856?cp=BA",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12811-2381810-S",
+    "slug": "klinikum-bad-hersfeld-gmbh-assistenzarzt-radiologie-und-neuroradiologie-m-w-d-klinikum-bad-hersfeld-12811-2381810-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Bad Hersfeld GmbH",
+    "title": "Assistenzarzt Radiologie und Neuroradiologie (m/w/d), Klinikum Bad Hersfeld",
+    "locations": [
+      "Bad Hersfeld, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Assistenzarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "radiology",
+    "level": "resident",
+    "descriptionHtml": "<p>Gemeinsam Zukunft gestalten - im Klinikum Hersfeld-Rotenburg                                       Zur Verstärkung der Klinik für Radiologie und Neuroradiologie suchen                                                             wir zum nächstmöglichen Zeitpunkt einen                            Assistenzarzt (m/w/d) für                       Radiologie und Neuroradiologie Bei uns finden Sie mehr als nur einen sicheren Arbeitsplatz: Sie werden Teil eines starken Teams, das mit Herz und Kompetenz wichtige und zentrale Aufgaben für die Menschen in unserer Region übernimmt! Als zukunftsgerichtetes, kommunales Unternehmen investieren wir in moderne Medizin, innovative Technik und vor allem in unsere Mitarbeiterinnen und Mitarbeiter. Mit unserem Neubau am Standort Bad Hersfeld (ab 2027) schaffen wir ein hochmodernes Arbeitsumfeld im gesamten Spektrum der medizinischen Versorgung. Über 650 Betten, 28 medizinische Abteilungen, ein großes Notfallzentrum mit Stroke-Unit, TAVI-Zentrum, Chest-Pain-Unit, modernste OP-Säle inklusive Hybrid-OP, eine interdisziplinäre Intensivstation bieten Ihnen die besten Voraussetzungen, um Ihr Fachwissen in allen Bereichen des Unternehmens einzubringen, und sich weiterzuentwickeln. Werden Sie Teil unserer Zukunft!   Ihre Aufgaben Diagnostik und Therapie nach den neuesten radiologischen Verfahren Teilnahme an Bereitschaftsdiensten Ihr Profil Sie verfügen über folgende Qualifikationen: Approbation Erste Erfahrungen in der Radiologie von Vorteil Gute Deutschkenntnisse Ihre Persönlichkeit zeichnet sich aus durch: Teamfähigkeit und Kommunikationsfähigkeit Hohe Motivation und die Begeisterung an der Diagnostik aller Erkrankungen Unser Angebot Ein umfassendes Diagnostik- und Behandlungsspektrum mit moderner gerätetechnischer Ausstattung Vielseitiges und gut vernetztes modernes Arbeitsumfeld Ein sympathisches, vielseitiges und kollegiales Team Möglichkeit zur vollständigen Weiterbildung zum Facharzt für Radiologie Vielfältige Fort- und Weiterbildungsmöglichkeiten Eigenes Einkaufsportal \"Corporate Benefits\" (Mitarbeiterrabatte) VERTRAGSBEDINGUNGEN Vollzeit/Teilzeit Befristeter Arbeitsvertrag im Rahmen der Ausbildung Vergütung nach TV-Ärzte Beginn zum: Nächstmöglichen Zeitpunkt Haben wir Ihr Interesse geweckt? Dann freuen wir uns auf Ihre vollständige Online-Bewerbung! Für weitere Informationen steht Ihnen unser Chefarzt der Radiologie und Neuroradiologie gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Assistenzarzt-Radiologie-Und-Neuroradiologie-D-1172025?cp=BA",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12814-13609968-S",
     "slug": "stadt-heilbronn-kdor-arzt-m-w-d-fur-das-stadtische-gesundheitsamt-12814-13609968-s",
     "company": "arbeitsagentur",
@@ -8356,7 +8614,7 @@
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8746,6 +9004,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/11661e7d-a8a1-4d45-91b0-5ed7aa27e183?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8982,6 +9242,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12951-fc9d0fbf-0058-404f--S",
+    "slug": "marienhausklinik-st-josef-kohlhof-facharzt-anasthesie-m-w-d-12951-fc9d0fbf-0058-404f-s",
+    "company": "arbeitsagentur",
+    "employer": "Marienhausklinik St. Josef Kohlhof",
+    "title": "Facharzt Anästhesie (m/w/d)",
+    "locations": [
+      "Neunkirchen, Saar, Saarland, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Anästhesiologie",
+    "category": "medicine",
+    "specialty": "anaesthesiology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Facharzt Anästhesie (m/w/d)<br />✓ ab sofort<br />✓ unbefristet<br />✓ Teilzeit / Vollzeit<br />✓ Neunkirchen</p><p>Wir bei Marienhaus verstehen uns als zukunftsorientiertes Unternehmen im Gesundheits- und Sozialwesen. In einer starken werteorientierten Gemeinschaft begegnen sich tagtäglich rund 14.000 Mitarbeitende für den ganzheitlichen Dienst am Menschen.</p><p>Unser Team ist auf der Suche nach engagierten Mitarbeitenden, die unsere Vision teilen und gemeinsam mit uns einen Unterschied machen!<br />✓ ab sofort<br />✓ unbefristet<br />✓ Teilzeit / Vollzeit<br />✓ Neunkirchen</p><p>Wir bei Marienhaus verstehen uns als zukunftsorientiertes Unternehmen im Gesundheits- und Sozialwesen. In einer starken werteorientierten Gemeinschaft begegnen sich tagtäglich rund 14.000 Mitarbeitende für den ganzheitlichen Dienst am Menschen.</p><p>Unser Team ist auf der Suche nach engagierten Mitarbeitenden, die unsere Vision teilen und gemeinsam mit uns einen Unterschied machen!</p><p>Das Marienhaus Klinikum Neunkirchen liegt 20 km nordöstlich von Saarbrücken und wird zum 1. Januar als spezialisierte Fachklinik für Frauenheilkunde, Geburtshilfe sowie Kinder- und Jugendmedizin inklusive Sozialpädiatrie ausgerichtet. Die medizinische Versorgung konzentriert sich künftig auf diese Fachbereiche. Für die Pädiatrie hat das Haus einen Lehrauftrag und ist in diesem Bereich akademisches Lehrkrankenhaus des Universitätsklinikums des Saarlandes.</p><p>Die Abteilung für Anästhesie und Intensivmedizin übernimmt eine wichtige Rolle in der operativen Versorgung am Standort Neunkirchen. Das operative Spektrum umfasst insbesondere gynäkologische und geburtshilfliche Eingriffe sowie kinderunfallchirurgische Operationen. Ergänzt wird dieses durch ambulante unfallchirurgische und allgemeinchirurgische Eingriffe.</p><p>Als Facharzt (m/w/d) für Anästhesiologie erwartet Sie ein abwechslungsreiches medizinisches Tätigkeitsfeld in einem spezialisierten Klinikstandort. Sie bringen Ihre fachliche Expertise in die anästhesiologische Versorgung ein und arbeiten eng mit den operativen Fachdisziplinen sowie den weiteren Berufsgruppen zusammen.<br />JETZT BEWERBEN!<br />Ihre Vorteile<br />✓ Entwicklung: Möglichkeit zur fachlichen und persönlichen Weiterentwicklung bis hin zur Übernahme einer Oberarztfunktion<br />✓ Vergütung: Leistungsgerechte Vergütung nach AVR Caritas, inklusive aller Sozialleistungen sowie zusätzlicher betrieblicher Altersversorgung (KZVK) und finanzieller Unterstützung für die Berufsunfähigkeitsversicherung (BVUK)<br />✓ Mobilität: Kostenfreie Parkmöglichkeiten direkt am Standort<br />✓ Familie: Unterstützung durch den pme Familienservice bei Fragen rund um Familie und Beruf sowie Coaching in verschiedenen Lebenslagen<br />✓ Wissen: Kostenfreier Zugang zur Wissensplattform AMBOSS<br />✓ Zusatzangebote: Exklusive Mitarbeiterrabatte bei Top-Markenanbietern aus Bereichen wie Reisen, Mode, Technik und Mobilfunk sowie ein persönliches Dienstrad auch zur privaten Nutzung</p><p>Ihr Arbeitsumfeld<br />✓ Eigenständige anästhesiologische Versorgung von Patienten bei operativen Eingriffen<br />✓ Präoperative Beurteilung und Einschätzung individueller Risikofaktoren sowie Festlegung geeigneter Anästhesieverfahren<br />✓ Planung, Vorbereitung und Durchführung verschiedener Allgemein- und Regionalanästhesieverfahren<br />✓ Fachärztliche Überwachung und Betreuung während der gesamten perioperativen Versorgung<br />✓ Postoperative Betreuung sowie Mitwirkung an einer bedarfsgerechten Schmerztherapie<br />✓ Anästhesiologische Versorgung bei gynäkologischen, geburtshilflichen und kinderunfallchirurgischen Eingriffen<br />✓ Interdisziplinäre Zusammenarbeit mit den operativen Fachdisziplinen und den weiteren an der Patientenversorgung beteiligten Berufsgruppen<br />✓ Teilnahme an Bereitschaftsdiensten im Rahmen der anästhesiologischen Versorgung<br />✓ Möglichkeit zur Übernahme von Notarztdiensten</p><p>Ihre Expertise<br />✓ Anerkennung als Facharzt (m/w/d) für Anästhesiolog...(Lesen Sie die vollständige Jobbeschreibung auf der Seite des Partners)</p>",
+    "applyUrl": "https://www.heyjobs.co/de-de/jobs/fc9d0fbf-0058-404f-b920-d6c6eb8d8c98?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12951-ffaaba0b-eba2-420b--S",
     "slug": "thoraxklinik-heidelberg-ggmbh-initiativbewerbungen-im-bereich-pflege-12951-ffaaba0b-eba2-420b-s",
     "company": "arbeitsagentur",
@@ -8998,7 +9278,7 @@
     "postedAt": "2026-08-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9080,7 +9360,7 @@
     "postedAt": "2026-10-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9228,6 +9508,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:13270-P00547279-6-S",
+    "slug": "bundesamt-fur-das-personalmanagement-der-bundeswehr-facharztin-facharzt-m-w-d-zivil-fur-augenheilkunde-in-augustdorf-13270-p00547279-6-s",
+    "company": "arbeitsagentur",
+    "employer": "Bundesamt für das Personalmanagement der Bundeswehr",
+    "title": "Fachärztin / Facharzt (m/w/d) - zivil - für Augenheilkunde in Augustdorf",
+    "locations": [
+      "Augustdorf, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Augenheilkunde",
+    "category": "medicine",
+    "specialty": "ophthalmology",
+    "level": "specialist",
+    "descriptionHtml": "<p>**Bundeswehr - Mach, was wirklich zählt.**</p><p>BESCHÄFTIGUNGSDIENSTSTELLE<br />Das Sanitätsunterstützungszentrum Augustdorf stellt mit seinen Sanitätseinrichtungen die truppenärztliche, truppenzahnärztliche und die ambulant fachärztliche Versorgung im nördlichen und östlichen Westfalen und im nördlichen Hessen sicher.</p><p>BESCHÄFTIGUNGSORT:<br />Augustdorf</p><p>**Stellenbeschreibung:**</p><ul><li>Sie leiten die fachärztliche Untersuchungsstelle Augenheilkunde mit Verantwortung für zugewiesenes Personal, Material und Infrastruktur.</li><li>Sie führen ambulante konservative augenärztliche Diagnostik, Behandlung und Begutachtung von Soldatinnen und Soldaten durch.</li></ul><p>**WAS FÜR SIE ZÄHLT**</p><ul><li>Sie werden als Beamtin oder Beamter oder mit dem Ziel der Verbeamtung in ein unbefristetes Arbeitsverhältnis eingestellt. Alternativ ist auch die Einstellung in ein unbefristetes Arbeitsverhältnis möglich.</li><li>Sie erwartet ein attraktives Gehalt. Die ausgeschriebene Stelle ist mit der Besoldungsgruppe A 15 Bundesbesoldungsgesetz (BBesG) bewertet.</li><li>Im Falle einer Einstellung als Arbeitnehmer/in erfolgt eine Eingruppierung in die Entgeltgruppe II des Tarifvertrags für den öffentlichen Dienst (TVöD BT-K).</li><li>Für die Besetzung der ausgeschriebenen Stelle kann bei Vorliegen der übrigen Voraussetzungen eine Personalgewinnungsprämie nach Maßgabe des § 43 BBesG bzw. eine Personalgewinnungszulage gemäß § 16 Absatz 6 TVöD gezahlt werden.</li><li>Bei Einstellung in ein Beamtenverhältnis beträgt die Personalgewinnungsprämie maximal bis zu 95.850 Euro und wird als Einmalzahlung ausgezahlt.</li><li>Bei Einstellung in ein Arbeitsverhältnis beträgt die Personalgewinnungszulage maximal bis zu 1.562,56 Euro und erfolgt als monatliche Zahlung über einen maximalen Zeitraum von 60 Monaten.</li><li>Sie arbeiten in Vollzeit oder Teilzeit. Homeoffice ist möglich.</li><li>Die Bereitschaft zu gelegentlichen Dienstreisen und Vortragstätigkeiten wird vorausgesetzt.</li><li>Die Teilnahme an regelmäßigen und weiterführenden Aus- und Fortbildungen wird vorausgesetzt.</li><li>Sie haben die Möglichkeit, in einem festgelegten Rahmen an Sport- und Gesundheitsprogrammen während der Arbeitszeit teilzunehmen.</li></ul><p>Qualifikationserfordernisse:</p><p>**WAS FÜR UNS ZÄHLT**</p><ul><li>Sie verfügen über ein abgeschlossenes Hochschulstudium der Studienfachrichtung Humanmedizin mit Approbation als Ärztin / Arzt.</li><li>Sie sind Fachärztin bzw. Facharzt für Augenheilkunde.</li><li>Sie verfügen über ein aktuelles Fortbildungszertifikat (sofern der Erwerb der Facharztqualifikation länger als 5 Jahre zurück liegt).</li><li>Sie erfüllen die Vorgaben des Gesetzes für den Schutz vor Masern und zur Stärkung der Impfprävention (Masernschutzgesetz).</li><li>Sie bekennen sich durch Ihr gesamtes Verhalten zur freiheitlichen demokratischen Grundordnung im Sinne des Grundgesetzes und treten für deren Einhaltung ein.</li></ul><p>**Ergänzende Informationen:**</p><p>Bitte bewerben Sie sich bevorzugt ONLINE über unser Bewerbungsportal. Die vollständige Stellenbeschreibung inkl. Bewerbungsprozess finden Sie am Ende dieser Seite unter \"Informationen zur Bewerbung\" bzw. \"Weitere Informationen\".</p><p>Alle Karrieremöglichkeiten bei der Bundeswehr finden Sie unter: https://bewerbung.bundeswehr-karriere.de/</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13270-P00547279-6-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:13319-895175/1_623850LS-S",
     "slug": "hays-professional-solutions-gmbh-assistenzarzt-fur-gastroenterologie-m-w-d-13319-895175-1-623850ls-s",
     "company": "arbeitsagentur",
@@ -9288,6 +9588,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:13319-900438/1_7063CS-S",
+    "slug": "hays-professional-solutions-gmbh-facharzt-oder-oberarzt-kinder-und-jugendpsychiatrie-m-w-d-13319-900438-1-7063cs-s",
+    "company": "arbeitsagentur",
+    "employer": "Hays Professional Solutions GmbH",
+    "title": "Facharzt oder Oberarzt Kinder- und Jugendpsychiatrie (m/w/d)",
+    "locations": [
+      "Augsburg, Bayern, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendpsychiatrie und -psychotherapie",
+    "category": "medicine",
+    "specialty": "child-psychiatry",
+    "level": "senior",
+    "descriptionHtml": "<ul><li>Der Einsatzort befindet sich im Großraum Augsburg</li><li>Nicht die passende Stelle, aber Sie sind an einer Zusammenarbeit interessiert? Dann melden Sie sich gerne über unsere Website: https://www.hays.de/en/lp/stellenangebote-aerzte</li></ul><p>### Ihre Vorteile:</p><ul><li>Sie arbeiten als Vertretungsarzt in der Vertragsart Arbeitnehmerüberlassung</li><li>Sie erhalten ab dem ersten Tag einen Betreuer sowie feste Ansprechpartner für alle Abrechnungs- und Reisekostenthemen</li><li>Anstellung im Einzugsgebiet Ihres Versorgungswerks</li><li>Individueller Stundensatz</li><li>Übernahme der Unterkunft</li><li>Übernahme der Berufshaftpflichtversicherung</li></ul><p>### Ihre Aufgaben:</p><ul><li>Oberärztliche Versorgung von Kindern und Jugendlichen mit psychosomatischen Erkrankungen inklusive fachärztlicher Behandlungssteuerung</li><li>Supervision und fachliche Begleitung des multiprofessionellen Teams sowie enge interdisziplinäre Zusammenarbeit mit Pädiatrie und Kinder- und Jugendpsychiatrie</li><li>Mitgestaltung und Weiterentwicklung psychosomatischer Behandlungskonzepte mit der Möglichkeit, eigene fachliche Schwerpunkte einzubringen</li></ul><p>### Ihre Qualifikationen:</p><ul><li>Facharztanerkennung für Kinder- und Jugendpsychiatrie und -psychotherapie</li><li>Fundierte psychotherapeutische Kenntnisse und praktische Erfahrung, idealerweise in der Behandlung psychosomatischer Krankheitsbilder im Kindes- und Jugendalter</li><li>Freude an interdisziplinärer und multiprofessioneller Zusammenarbeit sowie Interesse an der Weiterentwicklung pädiatrisch-psychosomatischer Versorgung</li></ul><p>### Über Hays:</p><p>Hays Healthcare besetzt deutschlandweit Vakanzen in Krankenhäusern, Kliniken und medizinischen Versorgungszentren. Im ärztlichen Bereich, in der Pflege wie auch in der Verwaltung vermitteln wir Kandidatinnen und Kandidaten temporär in befristete Festanstellung oder in Arbeitnehmerüberlassung sowie dauerhaft in unbefristete Festanstellung. Sie profitieren dabei von einer professionellen Betreuung – von der ersten Ansprache bis zum Antritt Ihres neuen Einsatzes bzw. Ihrer neuen Position. Wir sind vor Ort, agieren unabhängig und handeln stets mit der gebotenen Diskretion. Mit uns finden Sie das optimale Umfeld – und das völlig kostenfrei. Registrieren Sie sich jetzt und profitieren Sie von interessanten und passenden Einsätzen und Positionen.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13319-900438%2F1_7063CS-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:13319-900562/1_6855CS-S",
     "slug": "hays-professional-solutions-gmbh-facharzt-fur-pathologie-m-w-d-13319-900562-1-6855cs-s",
     "company": "arbeitsagentur",
@@ -9305,6 +9625,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13319-900562%2F1_6855CS-S",
     "postedAt": "2026-11-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:13319-900939/1_7052CS-S",
+    "slug": "hays-professional-solutions-gmbh-facharzt-fur-neurologie-fur-phase-b-m-w-d-13319-900939-1-7052cs-s",
+    "company": "arbeitsagentur",
+    "employer": "Hays Professional Solutions GmbH",
+    "title": "Facharzt für Neurologie für Phase B (m/w/d)",
+    "locations": [
+      "Aalen, Württemberg, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Neurologie",
+    "category": "medicine",
+    "specialty": "neurology",
+    "level": "specialist",
+    "descriptionHtml": "<ul><li>Der Einsatzort befindet sich im Großraum Aalen</li><li>Nicht die passende Stelle, aber Sie sind an einer Zusammenarbeit interessiert? Dann melden Sie sich gerne über unsere Website: https://www.hays.de/en/lp/stellenangebote-aerzte</li></ul><p>### Ihre Vorteile:</p><ul><li>Sie arbeiten als Vertretungsarzt in der Vertragsart Arbeitnehmerüberlassung</li><li>Sie erhalten ab dem ersten Tag einen Betreuer sowie feste Ansprechpartner für alle Abrechnungs- und Reisekostenthemen</li><li>Anstellung im Einzugsgebiet Ihres Versorgungswerks</li><li>Individueller Stundensatz</li><li>Übernahme der Unterkunft</li><li>Übernahme der Berufshaftpflichtversicherung</li></ul><p>### Ihre Aufgaben:</p><ul><li>Neurologische Versorgung und frührehabilitative Behandlung von schwer betroffenen erwachsenen Patienten in der Phase B, u. a. nach Schlaganfall, Hirnblutung, Schädel-Hirn-Trauma oder hypoxischer Hirnschädigung</li><li>Ärztliche Betreuung von intensivpflichtigen, tracheotomierten und kontrolliert bzw. unterstützend beatmeten Patienten, einschließlich Begleitung des Weaning-Prozesses</li><li>Zusammenarbeit im interdisziplinären Behandlungsteam aus ärztlichem Dienst, Pflege, Physio- und Ergotherapie, Neuropsychologie und Logopädie sowie Übernahme von Tag- und Hintergrunddiensten</li></ul><p>### Ihre Qualifikationen:</p><ul><li>Facharztanerkennung für Neurologie mit fundierter klinischer Erfahrung in der Versorgung schwer neurologisch erkrankter Patienten</li><li>Sicherer Umgang mit Intensiv- und Beatmungspatienten; entsprechende intensivmedizinische Erfahrung ist für den Einsatz erforderlich</li><li>Erfahrung in der neurologischen Frührehabilitation Phase B wünschenswert</li><li>Erfahrung aus der Akutneurologie bzw. Stroke Unit (Phase A) ist insbesondere im Hinblick auf die Versorgung komplexer und beatmeter Patienten von Vorteil</li></ul><p>### Über Hays:</p><p>Hays Healthcare besetzt deutschlandweit Vakanzen in Krankenhäusern, Kliniken und medizinischen Versorgungszentren. Im ärztlichen Bereich, in der Pflege wie auch in der Verwaltung vermitteln wir Kandidatinnen und Kandidaten temporär in befristete Festanstellung oder in Arbeitnehmerüberlassung sowie dauerhaft in unbefristete Festanstellung. Sie profitieren dabei von einer professionellen Betreuung – von der ersten Ansprache bis zum Antritt Ihres neuen Einsatzes bzw. Ihrer neuen Position. Wir sind vor Ort, agieren unabhängig und handeln stets mit der gebotenen Diskretion. Mit uns finden Sie das optimale Umfeld – und das völlig kostenfrei. Registrieren Sie sich jetzt und profitieren Sie von interessanten und passenden Einsätzen und Positionen.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13319-900939%2F1_7052CS-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9652,7 +9992,7 @@
     "postedAt": "2026-10-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9735,6 +10075,26 @@
     "applyUrl": "https://www.jobexport.de/job/5293240.html?exp=81&cid=e7952985-adea-4f6d-ac3a-07281bd71f29",
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:13635-f18f779f_JB5301633-S",
+    "slug": "medermis-clinics-gmbh-facharzt-facharztin-fur-haut-und-geschlechtskrankheiten-m-w-d-13635-f18f779f-jb5301633-s",
+    "company": "arbeitsagentur",
+    "employer": "medermis clinics GmbH",
+    "title": "Facharzt / Fachärztin für Haut- und Geschlechtskrankheiten (m/w/d)",
+    "locations": [
+      "Landshut, Isar, Bayern, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Haut- und Geschlechtskrankheiten",
+    "category": "medicine",
+    "specialty": "dermatology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Aufgaben<br />• Durchführung dermatologischer Untersuchungen und Behandlungen<br />• Betreuung und Beratung unserer Patienten in allen Bereichen der Dermatologie<br />• Hautkrebsscreenings und Nachsorgeuntersuchungen<br />• Lasergestützte Behandlungen<br />• Behandlung chronischer Hauterkrankungen<br />• Ausführung ästhetischer dermatologischer Eingriffe</p><p>Profilanforderungen<br />• Abgeschlossene Ausbildung als Facharzt / Fachärztin für Haut- und Geschlechtskrankheiten (m/w/d)<br />• Abgeschlossene Zusatzbezeichnung Allergologie von Vorteil<br />• Erfahrung im Bereich Ästhetische Dermatologie wünschenswert<br />• Empathischer Umgang mit Patienten und Mitarbeitenden<br />• Hohe fachliche Kompetenz und Engagement<br />• Bereitschaft zur Weiterbildung<br />• Sorgfältige und zielorientierte Arbeitsweise, Belastbarkeit und Flexibilität</p><p>Warum wir?Als qualifiziertes Team von Fachärztinnen und Fachärzten für die Haut verfügen wir über eine langjährige Berufsausbildung an Hautkliniken verschiedener Universitäten. In einer zwischenzeitlich mehr als 20 jährigen Erfahrung in unserer Praxis können wir durch Spezialisierung in verschiedenen Bereichen das gesamte Spektrum aller Hauterkrankungen abdecken. Wir arbeiten als Praxisteam sorgfältig, gewissenhaft und stets Hand in Hand, um Ihnen alle erforderlichen Untersuchungen und Behandlungen zu gewährleisten.<br />• Eine attraktive, unbefristete Vollzeit- oder Teilzeitstelle in einer modernen Hautarztpraxis<br />• Regelmäßige praxisinterne Fortbildungen<br />• Vielfältige Aufgabenbereiche und die Möglichkeit zur fachlichen Weiterentwicklung<br />• Ein angenehmes Arbeitsklima in einem motivierten und kollegialen Team<br />• Geregelte Arbeitszeiten, 4-Tage-Woche möglich<br />• Eine leistungsgerechte Vergütung und attraktive Sozialleistungen<br />• Steueroptimierte Leistungen wie monatlicher Tankgutschein und digitale Essensgutscheine</p><p>Einsatzort Haut MVZ Dr. Huber GmbH<br />Dreifaltigkeitsplatz 175<br />84028 Landshut</p><p>Über unsDie medermis clinics Gruppe ist ein Verbund aus dermatologischen Arztpraxen und Kliniken. Wir legen großen Wert darauf, unseren Mitarbeitenden ein sicheres und gleichzeitig spannendes Arbeitsumfeld zu bieten. Denn nur ein motiviertes Team kann erstklassige medizinische Leistungen erbringen.</p><p>Unsere Patientinnen und Patienten profitieren von modernsten Technologien und hochqualifizierten Mitarbeitenden, die ihnen jederzeit die bestmögliche Behandlung garantieren.</p><p>Unsere Auszeichnung als attraktiver Arbeitgeber von Great Place to Work® bestätigt unser kontinuierliches Engagement, eine wertschätzende Unternehmenskultur zu fördern, in der sich unsere Mitarbeitenden wohlfühlen und ihr volles Potenzial entfalten können.</p>",
+    "applyUrl": "https://www.jobexport.de/job/5301633.html?exp=81&cid=f18f779f-a485-4d06-9947-870e2d21ff9c",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9865,7 +10225,7 @@
     "id": "arbeitsagentur:13916-44535934-1027-S",
     "slug": "v-bodelschwinghsche-stiftungen-bethel-assistenzarzt-m-w-d-kinder-und-jugendmedizin-13916-44535934-1027-s",
     "company": "arbeitsagentur",
-    "employer": "v. Bodelschwinghsche Stiftungen Bethel",
+    "employer": "Stiftung Bethel",
     "title": "Assistenzarzt (m/w/d) - Kinder- und Jugendmedizin",
     "locations": [
       "Bielefeld, Nordrhein-Westfalen, Germany"
@@ -9885,7 +10245,7 @@
     "id": "arbeitsagentur:13916-44547014-112-S",
     "slug": "v-bodelschwinghsche-stiftungen-bethel-facharzt-m-w-d-sozialpadiatrisches-zentrum-13916-44547014-112-s",
     "company": "arbeitsagentur",
-    "employer": "v. Bodelschwinghsche Stiftungen Bethel",
+    "employer": "Stiftung Bethel",
     "title": "Facharzt (m/w/d) - Sozialpädiatrisches Zentrum",
     "locations": [
       "Bielefeld, Nordrhein-Westfalen, Germany"
@@ -10117,7 +10477,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10137,6 +10497,26 @@
     "applyUrl": "https://www.jobvector.de/job/facharzt-fuer-palliativmedizin-ca9b07f519b75d18/?utm_source=arbeitsagentur&utm_medium=partner&utm_campaign=tmcfdae_job_jid275409&utm_content=b2c&utm_term=tmf8eca_uic4805850",
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14225-e00dcaf7a99766df-S",
+    "slug": "universitatsmedizin-der-johannes-gutenberg-universitat-mainz-facharzt-fur-kinder-und-jugendmedizin-m-w-d-14225-e00dcaf7a99766df-s",
+    "company": "arbeitsagentur",
+    "employer": "Universitätsmedizin der Johannes Gutenberg-Universität Mainz",
+    "title": "Facharzt für Kinder- und Jugendmedizin (m/w/d)",
+    "locations": [
+      "Mainz am Rhein, Rheinland-Pfalz, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendmedizin",
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "level": "specialist",
+    "descriptionHtml": "<p>Das Kinderonkologische Zentrum der Klinik für Kinder- und Jugendmedizin sucht zum 01.12.2026:<br />Oberarzt*ärztin (m/w/d) pädiatrische Onkologie/Hämatologie<br />Klinische Versorgung von pädiatrischen, onkologischen, hämatologischen und hämostaseologischen Patienten (stationär, tagesstationär und ambulant)<br />Teilnahme am Dienst der Klinik sowie am Rufbereitschaftsdienst für die Bereiche Pädiatrische Hämatologie, Hämostaseologie und Onkologie<br />Mitwirkung an nationalen und internationalen klinischen Studien<br />Anleitung und Supervision von Assistenzärzten und Studierenden<br />Projekt- und Arbeitsgruppenleitung zur Weiterentwicklung des Funktionsbereichs</p><p>Facharzt*ärztin (m/w/d) in der Kinder- und Jugendmedizin mit Schwerpunkt Hämatologie/Hämostaseologie/Onkologie<br />Hohe soziale Kompetenz, Team- und Kommunikationsfähigkeit sowie Belastbarkeit<br />Interesse an Forschung und Lehre<br />Fundierte Kenntnisse und klinische Erfahrung in einem oder mehreren der folgenden Bereiche sind wünschenswert: pädiatrische Palliativversorgung, pädiatrische Hämostaseologie sowie Diagnostik und Betreuung von Kindern und Jugendlichen mit Tumorprädispositi</p><p>Umfangreiches Fort- und Weiterbildungsangebot (interne Akademie, externe Kurse)<br />Unterstützung bei der Karriereentwicklung inkl. der Möglichkeit zur Habilitation<br />Vergütung gemäß Haustarifvertrag bei Vorliegen der Eignungsvoraussetzung nach Ä3 sowie zusätzliche Altersversorgung und Sozialleistungen<br />Attraktive 40-Stunden-Woche ab 01.01.2027 (bei Vollzeitbeschäftigung)<br />Zahlreiche Mitarbeiter-Angebote wie z.B. Deutschland-Jobticket, Fahrradleasing und Teilnahme an Vorteilsprogrammen<br />Kinderbetreuungsmöglichkeit, sofern Plätze verfügbar<br />Sehr gute Verkehrsanbindung</p>",
+    "applyUrl": "https://www.jobvector.de/job/facharzt-fuer-kinder-und-jugendmedizin-e00dcaf7a99766df/?utm_source=arbeitsagentur&utm_medium=partner&utm_campaign=tmcfdae_job_jid277796&utm_content=b2c&utm_term=tmf8eca_uic5c8fcac",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10178,7 +10558,7 @@
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10802,28 +11182,6 @@
     "source": "arbeitsagentur"
   },
   {
-    "id": "arbeitsagentur:14837-FBC3094B8A69AD17359-S",
-    "slug": "ilm-kreis-kliniken-arnstadt-ilmenau-ggmbh-klinik-arnstadt-arzt-in-weiterbildung-anasthesie-und-intensivmedizin-m-w-d-14837-fbc3094b8a69ad17359-s",
-    "company": "arbeitsagentur",
-    "employer": "Ilm-Kreis-Kliniken Arnstadt-Ilmenau gGmbH Klinik Arnstadt",
-    "title": "Arzt in Weiterbildung Anästhesie und Intensivmedizin (m/w/d)",
-    "locations": [
-      "Arnstadt, Thüringen, Germany"
-    ],
-    "remote": false,
-    "department": "Assistenzarzt/-ärztin",
-    "category": "medicine",
-    "specialty": "anaesthesiology",
-    "level": "resident",
-    "descriptionHtml": "<p>Für die **Klinik für Anästhesie, Intensivmedizin, Palliativmedizin und Schmerztherapie** suchen wir zum **nächstmöglichen Zeitpunkt** eine/n</p><p>### Arzt in Weiterbildung (m/w/d) Anästhesie und Intensivmedizin</p><p>**Unser Angebot**</p><ul><li>Weiterbildung zum Facharzt für Anästhesie- und Intensivmedizin (Weiterbildungsermächtigung für 48 Monate und 12 Monate spezielle Schmerztherapie)</li><li>vielseitiges, interessantes und verantwortungsvolles Aufgabenspektrum in einem kooperativen engagiertem Team mit hohem Facharztanteil</li><li>innerbetriebliche und externe Weiterbildungsmöglichkeiten (eigener TV-Ärzte/ Qualifizierung IKK)</li><li>Auf Wunsch die Möglichkeit zur Mitarbeit auf der Palliativstation sowie bei der Versorgung von chronischen Schmerzpatienten im Rahmen der multimodalen Schmerztherapie</li><li>Teilnahme an der notärztlichen Versorgung im Rahmen einer Nebentätigkeit</li><li>Vergütung erfolgt nach TV-Ärzte-IKK (Entgelt analog der Entgelttabellen Marburger Bund)</li></ul><p>**Qualifikation**</p><ul><li>erfolgreich abgeschlossenes Studium der Humanmedizin sowie fortgeschrittene fachärztliche Weiterbildung der Anästhesie und Intensivmedizin (mindestens 3. Ausbildungsjahr wünschenswert)</li><li>Fachkompetenz und gute kommunikative Fähigkeiten gegenüber Patienten Angehörigen und Kollegen</li><li>Fähigkeit zur selbstständigen, organisierten und wirtschaftlichen Arbeitsweise</li><li>Bereitschaft zur Teilnahme an Ruf-/Bereitschaftsdiensten</li><li>Gute Kenntnisse der deutschen Sprache (mindestens C 1-Niveau)</li></ul><p>Für telefonische Auskünfte steht Ihnen gerne unsere Chefärztin Frau Dr. med. Heike Schlegel-Höfner, unter der Telefonnummer 03628/919-242 zur Verfügung.</p><p>Ihre Bewerbungsunterlagen senden Sie bitte vorzugsweise über unser Bewerberportal unter https://www.ilm-kreis-kliniken.de/karriere/stellenangebote. Alternativ per Email an Ilm-Kreis-Kliniken Arnstadt-Ilmenau gGmbH, Ärztliche Direktorin Frau MUDr. Sylvia Tresselt, Bärwinkelstraße 33 in 99310 Arnstadt, E-Mail: aed@ilm-kreis-kliniken.de</p><p>Wir freuen uns auf Ihre Bewerbung.</p>",
-    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14837-FBC3094B8A69AD17359-S",
-    "postedAt": "2026-05-12T00:00:00.000Z",
-    "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "arbeitsagentur"
-  },
-  {
     "id": "arbeitsagentur:14893-0064597448-S",
     "slug": "msg-management-und-servicegesellschaft-fur-soziale-einrichtungen-mbh-fortgeschrittener-assistenzarzt-m-w-d-fur-die-interdisziplinare-notaufnahme-im-k-14893-0064597448-s",
     "company": "arbeitsagentur",
@@ -10862,7 +11220,7 @@
     "postedAt": "2026-06-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10943,6 +11301,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14893-0068766330-S",
     "postedAt": "2026-11-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -11588,6 +11948,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:15039-44584578-1119-S",
+    "slug": "stiftungsmanagement-stiftung-kreuznacher-diakonie-facharzt-w-m-d-allgemeinmedizin-fur-mvz-15039-44584578-1119-s",
+    "company": "arbeitsagentur",
+    "employer": "Stiftungsmanagement Stiftung kreuznacher diakonie",
+    "title": "Facharzt (w/m/d) Allgemeinmedizin für MVZ",
+    "locations": [
+      "Neunkirchen, Saar, Saarland, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Positives bewirken, als Team - mit Dir.<br />Dich erwartet:<br />* einer der größten Gesundheits- und Sozialanbieter - bei rund 7600 Mitarbeitenden<br />* ein außergewöhnlicher Teamgeist - bei einem multiprofessionellen Mitarbeiterteam<br />* ein lukratives Gehalt - mit vielen Zusatzleistungen<br />* Freiräume für eigene Ideen - in einem inspirierenden Umfeld<br />* eine anerkennende Unternehmenskultur - mit über 135 Jahren Tradition</p><p>Sie suchen ein Arbeitsumfeld, das modern, vernetzt und zukunftsorientiert ist? Willkommen im MVZ Diakonie Klinikums Neunkirchen gGmbH!<br />Wir bieten unseren Patientinnen und Patienten hochwertige medizinische Versorgung in modernen Räumlichkeiten und profitieren dank der direkten Anbindung an das Krankenhaus von kurzen Wegen, enger Zusammenarbeit und optimaler Vernetzung.<br />Aktuell umfasst unser MVZ sechs Fachbereiche: Allgemeinmedizin, Diabetologie, Kardiologie, Angiologie, Viszeralchirurgie und Orthopädie - mit einer klaren Perspektive auf Ausbau und Weiterentwicklung.In unserem Team erwartet Sie ein vielseitiger Arbeitsalltag, geprägt von Innovation, interdisziplinärer Zusammenarbeit und spannenden Aufgaben. Gemeinsam mit Ihnen möchten wir die medizinische Grundversorgung in der Region sichern und kontinuierlich weiterentwickeln. Gestalten Sie mit uns die medizinische Versorgung der Zukunft. Werden Sie Teil unseres Teams!</p><p>Ihr Aufgabenbereich<br />*  Eigenverantwortliche Durchführung allgemeinmedizinischer Diagnostik und Therapie<br />*  Langfristige Betreuung unserer Patienten im hausärztlichen Versorgungsspektrum<br />*  Zusammenarbeit im interdisziplinären Team</p><p>Ihre Qualifikation<br />*  Facharztanerkennung für Allgemeinmedizin (w/m/d) und idealerweise mit Zusatzbezeichnung Palliativmedizin<br />*  Kenntnisse in der Abrechnung von Behandlungsleistungen nach EBM und GOÄ von Vorteil<br />*  Hohes Maß an Verantwortungsbewusstsein und Empathie<br />*  Freude an der Arbeit im Team und mit Patienten<br />*  Bereitschaft zur Weiterbildung<br />*  Erfahrung in der ambulaten Versorgung von Vorteil</p><p>Wir bieten<br />*  Eine verantwortungsvolle und vielseitige Tätigkeit<br />*  Unterstützung bei Fort- und Weiterbildungen<br />*  Ein kollegiales, interdisziplinäres Team und ein modernes Arbeitsumfeld<br />*  31 Tage Urlaub<br />*  Entgeld gemäß AVR DD Ärzte<br />*  Die Möglichkeit das Deutschland-Ticket-Job vergünstigt zu erwerben<br />*  Unterstützen Sie mit zahlreichen Benefits wie einer betrieblichen Altersvorsorge, BusinessBike, Prämien für unser Mitarbeiterempfehlungsprogramm</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15039-44584578-1119-S",
+    "postedAt": "2026-11-20T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:15054-0012740:03-S",
     "slug": "malteser-waldkrankenhaus-erlangen-ggmbh-malteser-waldkrankenhaus-erlangen-assistenzarzt-fur-die-innere-medizin-m-w-d-15054-0012740-03-s",
     "company": "arbeitsagentur",
@@ -11604,6 +11984,46 @@
     "descriptionHtml": "<p>Das Malteser Waldkrankenhaus St. Marien in Erlangen ist ein Krankenhaus der ersten Versorgungsstufe. In unserem Musculoskelettalen Zentrum mit den Kliniken für Orthopädie und Wirbelsäulenchirurgie entspricht das Leistungsspektrum dem eines Maximalversorgers. Gleiches gilt für unsere Klinik für Urologie, die den Status einer Universitätsklinik hat. Ein weiterer Schwerpunkt liegt auf unserem Internistischen Zentrum mit den Kliniken für Geriatrie, Kardiologie und Gastroenterologie.<br />In neun Hauptfachabteilungen und einer Belegabteilung sowie mit der Klinik für Geriatrische Rehabilitation werden jährlich rund 35.000 Patienten in vielfach ausgezeichneter medizinischer und pflegerischer Qualität versorgt.<br />Das dazugehörige Malteser Bildungsinstitut für Gesundheitsberufe bietet 180 Ausbildungsplätze in der Pflege an. Hinzu kommen Ausbildungsgänge für weitere medizinische Fachberufe wie z.B. Medizinische Fachangestellte und Operationstechnische Assistenzen.<br />Werden Sie Teil unseres Teams und gestalten Sie die Zukunft der medizinischen Versorgung – mit einer ausgewogenen Work-Life-Balance, vielfältigen Weiterbildungsmöglichkeiten und einem modernen Arbeitsumfeld!<br />Wir bieten Ihnen:</p><ul><li>Attraktive Vergütung nach AVR-Caritas mit Sozialleistungen</li><li>Volle Weiterbildungsbefugnis für den Facharzt</li><li>Geplante Rotationen und enge Zusammenarbeit</li><li>Möglichkeit zur Promotion und aktiver Weiterbildung</li><li>Strukturierte Einarbeitung und individuelle Entwicklungsperspektiven</li><li>Betriebliche Altersvorsorge für Ihre finazielle Sicherheit im Alter</li><li>Beihilfeversicherung: In den ersten sechs Monaten der Beschäftigung habe Sie die Möglichkeit, ohne Gesundheitsprüfung eine zusätzliche Krankenversicherung mit erweiterten Leistungen abzuschließen</li><li>30 Tage Urlaub plus Zusatzurlaub für Schichtarbeit</li><li>Mitarbeiterrabatte bei vielen Partnerunternehmen und vergünstigte Einkaufsmöglichkeiten</li><li>Mitarbeiterermäßigung in der Cafeteria und im Parkhaus vor Ort</li></ul><p>Ihre Tätigkeiten:</p><ul><li>Tätigkeiten als Arzt im Stationsalltag sowie ärztliche Verantwortung und Tätigkeiten in Diagnostik und Therapie für Patienten mit allgemeininternistischen und geriatrischen Krankheitsbildern im Rahmen der fachärztlichen Weiterbildung</li><li>Mitarbeit in der Sonographie und Funktionsdiagnostik</li><li>Mitarbeit im multiprofessionellen Team und bei interdisziplinären Konferenzen (Röntgen, Fallbesprechungen)</li><li>Teilnahme am Bereitschaftsdienst</li></ul><p>Unser Wunsch:</p><ul><li>Sie sind begeisterter Arzt in Weiterbildung für Innere Medizin</li><li>Sie haben eine deutsche Approbation als Arzt oder eine uneingeschränkte Berufserlaubnis nach §10</li><li>Sie zeichnen sich durch eine selbstständige, verantwortungsvolle und zuverlässige Arbeitsweise aus</li><li>Sie interessieren sich für internistische Krankheitsbilder und streben die Facharztbezeichnung Innere Medizin, Allgemeinmedizin oder Geriatrie an</li><li>Die Identifikation mit unseren Zielen als katholische Einrichtung setzen wir voraus</li></ul><p>Haben wir Ihr Interesse geweckt?<br />Senden Sie uns Ihre Bewerbung über das Online-Formular!</p>",
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15054-0012740%3A03-S",
     "postedAt": "2026-08-20T00:00:00.000Z",
+    "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:15062-44584530-1119-S",
+    "slug": "zf-friedrichshafen-ag-werksarzt-in-weiterbildung-m-w-d-15062-44584530-1119-s",
+    "company": "arbeitsagentur",
+    "employer": "ZF Friedrichshafen AG",
+    "title": "Werksarzt in Weiterbildung (m/w/d)",
+    "locations": [
+      "Friedrichshafen, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Arbeitsmedizin",
+    "category": "medicine",
+    "specialty": "occupational-medicine",
+    "level": "resident",
+    "descriptionHtml": "<p>ZF is a global technology company supplying advanced mobility products and systems for passenger cars, commercial vehicles and industrial technology. Its comprehensive product range is primarily aimed at vehicle manufacturers, mobility providers and start-up companies in the fields of transportation and mobility. ZF electrifies a wide range of vehicle types. With its products, the company contributes to reducing emissions, protecting the climate as well as enhancing safe mobility.</p><p>Alongside the automotive sector - passenger cars and commercial vehicles - ZF also serves market segments such as construction and agricultural machinery, wind power, marine propulsion, rail drives and test systems.<br />With some 168,700 employees worldwide, ZF reported sales of €46.6 billion in fiscal year 2023. The company operates 162 production locations in 31 countries.<br />What's next? Join ZF!</p><p>Wir verstärken unser Team im Bereich des Werksärztlichen Dienstes am Standort Friedrichshafen.</p><p>Der Werksärztliche Dienst leistet einen wichtigen Beitrag zur Gesundheit, Sicherheit und Leistungsfähigkeit unserer Mitarbeitenden. In dieser vielseitigen Position begleiten Sie Beschäftigte in allen arbeitsmedizinischen Fragestellungen und gestalten aktiv die Gesundheitsförderung und Prävention im Unternehmen mit. Gleichzeitig erhalten Sie die Möglichkeit, sich gezielt im Bereich Arbeitsmedizin weiterzuentwickeln.</p><p>Die Stelle ist für die Dauer der Weiterbildung auf drei Jahre befristet. Für die Weiterbildung zum Facharzt für Arbeitsmedizin liegt die volle Weiterbildungsermächtigung für den gesamten Weiterbildungszeitraum vor.</p><p>Was Sie erwarten können als Werksarzt in Weiterbildung (m/w/d):<br />*  Werksärztliche Betreuung der Mitarbeitenden am Standort Friedrichshafen<br />*  Arbeitsmedizinische Betreuung gemäß Arbeitssicherheitsgesetz (ASiG)<br />*  Durchführung der akutmedizinischen Versorgung und notfallmedizinischen Erstversorgung<br />*  Durchführung arbeitsmedizinischer Vorsorgen gemäß ArbMedVV sowie weiterer gesetzlich vorgeschriebener Untersuchungen<br />*  Durchführung von Einstellungsuntersuchungen<br />*  Mitwirkung im Betrieblichen Eingliederungsmanagement (BEM) nach SGB IX<br />*  Unterstützung und Weiterentwicklung des betrieblichen Gesundheitsmanagements</p><p>Was wir von Ihnen erwarten als Werksarzt in Weiterbildung:<br />*  Approbation als Arzt (m/w/d) sowie mindestens vier Jahre Berufserfahrung<br />*  Nachweis der gemäß Weiterbildungsordnung erforderlichen Weiterbildungszeiten in der unmittelbaren Patientenversorgung<br />*  Idealerweise Fachkunde im Rettungsdienst oder Zusatzbezeichnung Notfallmedizin beziehungsweise die Bereitschaft, diese kurzfristig zu erwerben<br />*  Fundierte allgemeinmedizinische und notfallmedizinische Kenntnisse und Erfahrungen<br />*  Erfahrung im Umgang mit psychischen Erkrankungen sowie psychosomatische Kenntnisse sind von Vorteil<br />*  Ausgeprägte Kommunikationsfähigkeit und sicheres Auftreten im Umgang mit unterschiedlichen Zielgruppen<br />*  Interesse an psychosozialen, präventiven und arbeitsergonomischen Fragestellungen<br />*  Begeisterung für die Arbeitsmedizin und die Mitarbeit in einem engagierten werksärztlichen Team</p><p>Warum sollten Sie sich für ZF in Friedrichshafen entscheiden?<br />*  Tarifvertrag<br />*  30 Tage Urlaub<br />*  EGYM Wellpass, JobRad und weitere Corporate Benefits<br />*  Weiterbildungsmöglichkeiten mit ZF@Learning<br />*  Betriebsrente</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15062-44584530-1119-S",
+    "postedAt": "2026-11-20T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:15245-2026j3pzphve-000-S",
+    "slug": "evang-diakonissenhaus-berlin-teltow-lehnin-stiftung-burgerlichen-rechts-fa-m-w-d-fur-plast-und-asth-chir-o-allg-chirurgie-15245-2026j3pzphve-000-s",
+    "company": "arbeitsagentur",
+    "employer": "Evang. Diakonissenhaus Berlin Teltow Lehnin Stiftung bürgerlichen Rechts",
+    "title": "Facharzt für Plastische und Ästhetische Chirurgie/ Allgemeine Chirurgie (w/m/d)",
+    "locations": [
+      "Forst (Lausitz), Brandenburg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Plastische, Rekonstruktive und Ästhetische Chirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>Die Lausitz Klinik Forst ist ein Krankenhaus der Grundversorgung mit regelversorgungsähnlichen Strukturen. Es stehen knapp 207 Betten, 40 Tagesklinische Plätze sowie eine Zentrale Notaufnahme für die wohnortnahe Versorgung von Patienten und Patientinnen im Spree-Neiße-Kreis zur Verfügung.</p><p>Die Lausitz Klinik Forst verfügt über einen hochmodernen Zentral-OP mit 4 OP-Sälen, einen ambulanten OP mit 2 Sälen, eine Abteilung für Anästhesie und eine Intensivabteilung mit 8 Betten.<br />Gesellschafter der Lausitz Klinik Forst sind das Diakonissenhaus Teltow und die Stadt Forst.</p><p>Die Lausitz Klinik Forst gehört zum Unternehmensverbund Diakonissenhaus Teltow mit mehr als 4.500 Mitarbeitenden.</p><p>Zur Verstärkung unseres Teams suchen wir Sie zum nächstmöglichen Zeitpunkt als</p><p># Facharzt für Plastische und Ästhetische Chirurgie/ Allgemeine Chirurgie (w/m/d)</p><p>## Unser Angebot</p><ul><li>ein umfassendes Einarbeitungskonzept</li><li>ein strukturiertes Weiterbildungscurriculum sowie eine intensive Unterstützung für die Weiterbildung oder Facharztweiterbildung Plastische Chirurgie (aktuell 3 Jahre WB)</li><li>weitreichende interne und externe Fortbildungsmöglichkeiten</li><li>Vergütung gemäß TV-Ärzte/LKF und betriebliche Altersvorsorge</li><li>zeitnahe Aufstiegsmöglichkeiten</li></ul><p>## Ihre Aufgaben</p><p>Sie verstärken uns:</p><ul><li>in der ambulanten (Kassensitz im MVZ) und stationären Patientenversorgung</li><li>bei der engen interdisziplinären Zusammenarbeit mit den anderen diagnostischen, konservativen und operativen Abteilungen</li><li>beim Aufbau des gesamten Departments Plastische und Ästhetische Chirurgie</li><li>eigenständige Durchführung von plastisch chirurgischen Eingriffen,</li><li>Patientenakquise und Patientenbetreuung</li><li>selbstständige Planung und Koordination sowie Organisation der operativen Eingriffe in Abstimmung mit dem Team</li></ul><p>## Ihr Profil</p><ul><li>Sie verfügen über eine abgeschlossene Facharztweiterbildung für Allgemeine Chirurgie oder Plastische Chirurgie</li><li>Sie verfügen über eine deutsche Approbation und sehr gute Deutschkenntnisse (C1 Niveau Medizin)</li><li>Sie haben Freude an der ärztlichen Tätigkeit</li><li>Sie denken und handeln patientenorientiert</li><li>Sie arbeiten selbstständig und strukturiert</li><li>Ihre Stärken sind neben einer fachlichen Kompetenz, eine ausgeprägte Sozialkompetenz sowie eine gute Kommunikations- und Teamfähigkeit</li></ul><p>Wir erwarten, dass Sie die diakonische Ausrichtung unseres Unternehmensverbundes unterstützen und mittragen. Die Mitgliedschaft in einer christlichen Kirche ist erwünscht, jedoch keine Voraussetzung.</p><p>Für Rückfragen steht Ihnen Frau Dr. med. Jana Reinwart - Departmentleiterin - E-Mail [jana.reinwart@lausitzklinik.de](https://mailto:jana.reinwart@lausitzklinik.de) gern zur Verfügung.</p><p>Wir freuen uns auf Ihre Bewerbung über unser Bewerbungsformular und darauf, Sie kennenzulernen!</p><p>Unsere Hinweise zum Datenschutz im Rahmen Ihrer Bewerbung finden Sie unter karriere.diakonissenhaus.de/bewerberdatenschutz.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15245-2026j3pzphve-000-S",
+    "postedAt": "2026-06-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "source": "arbeitsagentur"
   },
@@ -11784,6 +12204,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15556-CGUS8G634obquw-S",
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12088,7 +12510,7 @@
     "postedAt": "2025-01-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12295,6 +12717,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:16938-4177_JB5302212-S",
+    "slug": "klinikum-der-landeshauptstadt-stuttgart-gkaor-oberarzt-m-w-d-institut-fur-krankenhaushygiene-16938-4177-jb5302212-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum der Landeshauptstadt Stuttgart gKAöR",
+    "title": "Oberarzt (m/w/d)  Institut für Krankenhaushygiene",
+    "locations": [
+      "Stuttgart, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "laboratory-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>Klinikum Stuttgart - Entscheiden Sie sich für etwas Großes.<br />Wir sind mit unseren drei Häusern „Katharinenhospital“, „Olgahospital“ und „Krankenhaus Bad Cannstatt“ das größte Klinikum in Baden-Württemberg. Über 9500 Mitarbeitende versorgen auf den Stationen, in Operationssälen, Funktionsbereichen die Patient:innen oder sind in Verwaltung, Technik oder IT für den reibungslosen Klinikbetrieb verantwortlich. An zwei attraktiv gelegenen Standorten in Stuttgart bieten wir Ihnen in über 55 Kliniken und Instituten als Maximalversorger und akademisches Lehrkrankenhaus der Universität Tübingen einen sinnstiftenden und zukunftsorientierten Arbeitsplatz. Dabei gilt immer: “Starkes Team. Starkes Klinikum. “</p><p>Oberarzt (m/w/d) Institut für Krankenhaushygiene</p><p>Ihre Aufgaben:</p><p>Ansprechpartner für telefonische Rückfragen:<br />Herr Dr. med. Andreas Lienig (Ärztlicher Leiter Institut für Krankenhaushygiene)<br />Tel.: 0711/278-32800</p><p>Ihre Qualifikationen:</p><p>Sie verfügen über eine der folgenden Qualifikationen:<br />Voraussetzung ist entweder<br />• Facharzt (m/w/d) für Hygiene und Umweltmedizin</p><p>oder<br />• Facharzt (m/w/d) für Innere Medizin und Infektiologie mit Interesse des Erwerbs der Zusatz-Weiterbildung Medizinhygiene</p><p>oder<br />• Facharzt (m/w/d) für Innere Medizin mit Zusatz-Weiterbildung Medizinhygiene und Zusatz-Weiterbildung Infektiologie</p><p>Darüber hinaus wünschen wir uns:<br />• fundierte praktische Erfahrung in der Krankenhaushygiene und/oder klinischen Infektiologie<br />• ausgeprägtes Interesse an Fragen der Infektionsprävention und Patientensicherheit<br />• Freude an interdisziplinärer Zusammenarbeit und an der Beratung klinischer Teams<br />• ein hohes Maß an Eigenverantwortung, Kommunikationsfähigkeit und organisatorischem Geschick<br />• Bereitschaft, die Weiterentwicklung der Krankenhaushygiene am Klinikum aktiv mitzugestalten<br />• idealerweise Erfahrung in Ausbruchmanagement, Surveillance, Antibiotic Stewardship und Qualitätsmanagement</p><p>Was Sie erwartet:</p><p>Unser Institut verantwortet die integrierte Krankenhaushygiene und Infektiologie und ist zentraler Ansprechpartner für alle Fragen der Infektionsprävention, des Infektionsmanagements und der rationalen Antiinfektivatherapie im Klinikum. Neben der klinischen Beratung und infektiologischen Mitbetreuung liegt ein besonderer Schwerpunkt auf der kontinuierlichen Weiterentwicklung der hygienischen Strukturen und Prozesse sowie der interdisziplinären Zusammenarbeit mit den klinischen und diagnostischen Bereichen.<br />Ihre Aufgaben<br />• Ärztliche Mitwirkung und Mitverantwortung bei der Krankenhaushygiene und Infektionsprävention<br />• Beratung der klinischen Fachabteilungen bei komplexen infektiologischen Fragestellungen<br />• Mitwirkung bei der Erkennung, Bewertung und Kontrolle nosokomialer Infektionen und Ausbruchsgeschehen<br />• Durchführung und Weiterentwicklung von hygienisch-mikrobiologischen Visiten und Begehungen<br />• Beratung zu multiresistenten Erregern, Isolierungs- und Präventionsmaßnahmen<br />• Mitwirkung bei der Erstellung, Aktualisierung und Implementierung von Hygieneplänen, Standards und Verfahrensanweisungen<br />• Zusammenarbeit mit Mikrobiologie, Pflegedienst, Qualitätsmanagement, Arbeitssicherheit, Medizintechnik und weiteren relevanten Berufsgruppen<br />• Fachliche Beratung bei Bau-, Umbau- und Sanierungsmaßnahmen aus hygienischer und infektiologischer Sicht<br />• Mitwirkung bei der Entwicklung und Umsetzung von Strategien zur Infektionsprävention und Antibiotic Stewardship<br />• Beteiligung an Fort- und Weiterbildungsveranstaltungen für ärztliches und pflegerisches Personal<br />• Mitwirkung bei der Qualitätssicherung sowie bei der Weiterentwicklung der Strukturen des Instituts<br />• Teilnahme an den oberärztlichen Aufgaben und der organisatorischen Weiterentwicklung des Bereichs</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16938-4177_JB5302212-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:16947-979977241-S",
     "slug": "airbus-operations-gmbh-werk-bremen-facharzt-d-m-w-fur-arbeitsmedizin-weiterbildung-zum-facharzt-d-m-w-fur-arbeitsme-16947-979977241-s",
     "company": "arbeitsagentur",
@@ -12313,7 +12755,7 @@
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12516,6 +12958,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17149-2026hkriczmk-000-S",
     "postedAt": "2026-10-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12555,6 +12999,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17386-00009103ee9001-S",
     "postedAt": "2024-11-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:17426-0068850795-S",
+    "slug": "grn-gesundheitszentren-rhein-neckar-ggmbh-zentrale-geschaftsfuhrung-assistenzarzt-innere-medizin-m-w-d-17426-0068850795-s",
+    "company": "arbeitsagentur",
+    "employer": "GRN Gesundheitszentren Rhein-Neckar gGmbH Zentrale Geschäftsführung",
+    "title": "Assistenzarzt Innere Medizin (m/w/d)",
+    "locations": [
+      "Weinheim, Bergstraße, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "resident",
+    "descriptionHtml": "<p>**Worauf Sie sich freuen können**<br />* **Unterstützung durch Teamassistent:innen**  und Kodierfachkräfte bei administrativen Tätigkeiten<br />* Es ist uns ein besonderes Anliegen auch Berufseinsteiger:innen in sicherer Umgebung auf Ihrem Weg **zum Facharzt zu begleiten**<br />* Attraktive und faire** Vergütung nach TV-Ärzte VKA**<br />* Zusätzliche** betriebliche Altersvorsorge**<br />* Möglichkeit zur** Teilnahme am Notarztdienst** indem Haus angegliederten notärztlichen Einsatzfahrzeug (NEF)<br />* Zuschuss zur **Kleinkinder- und Ferienbetreuung**<br />* **31 Tage Urlaub**  sowie Zusatzurlaub nach tariflicher Regelung<br />* Anspruch auf **Fortbildungs-/Weiterbildungsurlaub**  von 5 Arbeitstagen im Kalenderjahr<br />* Regelmäßige zertifizierte** interne und externe Fortbildungsangebote**  mit beruflichen und persönlichen Entwicklungsmöglichkeiten<br />* **Betriebliches Gesundheitsmanagement**<br />* Company Bike – **Fahrradleasing**<br />* Zuschuss zum **Deutschlandticket-Job**<br />* **Mitarbeiterrabatte**  bei zahlreichen Shops und Marken</p><p>**Einblick in Ihre Aufgaben**<br />* Unterstützung der Abteilung in allen Belangen inklusive eigenverantwortlicher ärztlicher Betreuung unserer Patient:innen<br />* Kommunikation mit unseren Patient:innen und deren Angehörigen<br />* Begleitung und Mitgestaltung desAusbaus unserer Inneren Medizin<br />* Für Assistent:innen in Weiterbildung gibt es die Möglichkeit des Einsatzes schwerpunktmäßig oder ausschließlich in unserer zentralen Notaufnahme</p><p>**Darauf freuen wir uns**<br />* Deutsche Approbation<br />* Fließend Deutsch in Wort und Schrift (mind. Niveau C1)<br />* Interesse an einer breit angelegten Inneren Medizin oder Allgemeinmedizin</p><p>**Kontakt**</p><p>Herr Prof. Dr. med. Grigorios Korosoglou<br />Chefarzt<br />Tel.: 06201 89-2502</p><p>Herr Prof. Dr. med. Christoph Eisenbach<br />Chefarzt<br />Tel.: 06201 89-2500</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17426-0068850795-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12664,7 +13128,7 @@
     "postedAt": "2026-11-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12724,6 +13188,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18091-JR105274-S",
     "postedAt": "2026-10-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13263,6 +13729,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:19213-0068847755-S",
+    "slug": "universitatsklinikum-frankfurt-oberarztin-oberarzt-fur-pathologie-19213-0068847755-s",
+    "company": "arbeitsagentur",
+    "employer": "Universitätsklinikum Frankfurt",
+    "title": "Oberärztin / Oberarzt für Pathologie",
+    "locations": [
+      "Frankfurt am Main, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "specialty": "laboratory-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>**...sind Sie mittendrin**</p><p>Die **Dr. Senckenbergischen Institute für Pathologie &amp; Humangenetik (SPH)**  sind führende Einrichtungen auf den Gebieten der pathologischen und genetischen Diagnostik, Forschung und Lehre. Ein engagiertes Team aus erfahrenen Fachärztinnen und Fachärzten sowie Wissenschaftlerinnen und Wissenschaftlern setzt sich dafür ein, durch präzise Diagnosen und innovative Forschungsergebnisse zur Verbesserung der Patientenversorgung beizutragen. Seien Sie ein Teil davon!</p><p>Die Stelle ist zunächst befristet auf 2 Jahre.</p><p>**Ihre Aufgaben:**</p><ul><li>Selbstständige fachärztliche Diagnostik im gesamten Spektrum der allgemeinen Pathologie</li><li>Befundung histologischer und zytologischer Präparate sowie Beurteilung immunhistochemischer Zusatzuntersuchungen</li><li>Supervision von Assistenzärzten im Rahmen der Weiterbildung</li><li>Teilnahme an Tumorkonferenzen, interdisziplinären Besprechungen und klinisch-pathologischen Demonstrationen</li><li>Mitwirkung an der Organisation und Weiterentwicklung diagnostischer Prozesse</li><li>Beteiligung an Qualitätssicherung, Standardisierung und ggf. Akkreditierungsverfahren</li><li>Übernahme oberärztlicher Leitungsaufgaben, Personalführung und Verantwortlichkeit für definierte Fachbereiche</li><li>Mitwirkung an wissenschaftlichen Projekten, Lehre und Fortbildung</li></ul><p>**... ist Ihr Profil gefragt**<br />* Sie verfügen über ein abgeschlossenes Studium der Humanmedizin mit Approbation.<br />* Sie sind Fachärztin/ Facharzt für Pathologie und haben Erfahrungen als Oberärztin/ Oberarzt.<br />* Sie bringen eine hohe Motivation und Leistungsbereitschaft mit.<br />* Sie haben Interesse an der Ausbildung von Assistenzärztinnen und Assistenzärzten.<br />* Sie verfügen über eine hohe Sozialkompetenz und haben Freude an der Arbeit im Team.<br />* Sie haben Interesse an der aktiven Mitarbeit an wissenschaftlichen Fragestellungen der Klinik sowie Freude an der Lehrtätigkeit.<br />* Aufgrund gesetzlicher Bestimmungen ist ein gültiger Nachweis der Masernimmunität / Masernschutzimpfung.</p><p>**... wird Ihnen viel geboten**<br />* attraktiver Tarifvertrag (TV GU §41/ TV Ärzte)<br />* Kostenloses Landesticket Hessen<br />* Work-Life-Balance, Teilzeitmöglichkeiten<br />* Gesundheitsförderung<br />* Corporate Benefits: Rabatte &amp; Vergünstigungen bei beliebten Marken für unsere Mitarbeitenden<br />* Neubau: neueste Räume, neueste Technik, neueste Ausstattung und räumliche Zusammenfassung der Disziplinen rund um \"Kopf und Herz\"<br />* Uniklinik-Campus, Mensa, Cafés<br />* Kitaplätze, Ferienbetreuung (Infos beim Familienservice)<br />* Einblicke: Instagram, YouTube, LinkedIn<br />* FAQ´s für neue Beschäftigte</p><p>**Werden Sie jetzt Teil unseres Teams!**</p><p>Kontakt: **Prof. Dr. Peter J. Wild, Direktor Dr. Senckenbergisches Institut für Pathologie**<br />Telefon:**069 / 6301-5364<br />** Bewerbungsfrist: **03.12.2026**</p><p>Wir freuen uns auf Ihre vollständigen Bewerbungsunterlagen, inklusive Anschreiben, Lebenslauf und Ihren relevanten Zeugnissen.</p><p>Wir richten uns mit dieser Ausschreibung an Bewerbende jeden Geschlechts. Frauen sind in diesen Positionen am Universitätsklinikum Frankfurt unterrepräsentiert. Daher sind Bewerbungen von Frauen besonders willkommen. Schwerbehinderte Bewerbende werden bei gleicher persönlicher und fachlicher Eignung bevorzugt berücksichtigt.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19213-0068847755-S",
+    "postedAt": "2026-11-19T00:00:00.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:19418-k61275.1066-S",
     "slug": "antonius-gemeinsam-leben-ggmbh-facharzt-fur-neurologie-psychiatrie-m-w-d-19418-k61275-1066-s",
     "company": "arbeitsagentur",
@@ -13422,7 +13908,7 @@
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13604,6 +14090,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20263-2339387-S",
     "postedAt": "2026-09-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {

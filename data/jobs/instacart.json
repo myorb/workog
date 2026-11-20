@@ -951,7 +951,7 @@
     "postedAt": "2026-09-28T16:40:24.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -971,7 +971,7 @@
     "postedAt": "2026-09-28T16:40:26.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1502,6 +1502,8 @@
     "applyUrl": "https://instacart.careers/job/?gh_jid=8304832",
     "postedAt": "2026-10-21T20:38:36.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -1574,7 +1576,7 @@
     "postedAt": "2026-11-02T15:14:05.000Z",
     "firstSeenAt": "2026-11-02T15:49:53.212Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1645,7 +1647,7 @@
     "postedAt": "2026-11-05T17:17:42.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1665,7 +1667,7 @@
     "postedAt": "2026-11-05T17:17:44.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1934,7 +1936,7 @@
     "postedAt": "2026-11-11T16:45:25.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -2126,6 +2128,24 @@
     "applyUrl": "https://instacart.careers/job/?gh_jid=8400957",
     "postedAt": "2026-11-18T23:04:45.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8403432",
+    "slug": "instacart-applied-scientist-ii-advertiser-optimization-8403432",
+    "company": "instacart",
+    "title": "Applied Scientist II - Advertiser Optimization",
+    "locations": [
+      "Canada - Remote (ON, AB, BC",
+      "NS Only)"
+    ],
+    "remote": true,
+    "department": "Machine Learning",
+    "category": "data",
+    "descriptionHtml": "<p><strong>We're transforming the grocery industry</strong></p>\n<p>At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers.</p>\n<p>Instacart has become a lifeline for millions of people, and we’re building the team to help push our shopping cart forward. If you’re ready to do the best work of your life, come join our table.</p>\n<p><strong>Instacart is a Flex First team </strong></p>\n<p>There’s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work—whether it’s from home, an office, or your favorite coffee shop—while staying connected and building community through regular in-person events. <a href=\"https://www.instacart.careers/flex-first\">Learn more about our flexible approach to where we work.</a></p><h2><strong>Overview</strong></h2>\n<p>The Advertiser Optimization team is the decision-making engine of Instacart's $1B+ ads business. We own the systems responsible for Bidding, Pacing, Budgeting, Targeting and advertiser-facing recommendations - converting stated advertiser goals into real-time auction actions. Our mission is to maximize realized Advertiser Value by deciding when to participate, how much to bid, and how fast to spend, all while carefully balancing User Experience and Platform Revenue.</p>\n\n<p>We are looking for an Applied Research Scientist II with a strong quantitative background to join our team. In this role, you will apply your expertise in operational research, mathematics, statistics, economics, or a related field to help build and refine the algorithmic systems that power how Instacart's advertising marketplace operates. You'll work alongside a talented team of scientists and engineers, contributing to production systems that have real, measurable impact on a scaled ads platform. If you're excited by the intersection of rigorous quantitative thinking and large-scale engineering, this is the role for you.</p>\n\n<h2><strong>About the Job</strong></h2>\n<ul>\n<li>Develop and evaluate models and algorithms for ads bidding, pacing, and budgeting, applying your training in operational research, mathematics, statistics, economics, or a related quantitative discipline to solve complex marketplace problems at scale.</li>\n<li>Collaborate closely with senior scientists, engineers and product managers to translate well-defined marketplace questions into mathematical formulations, implement analyses and prototypes, design experiments, and interpret results using large-scale data.</li>\n<li>Contribute to production systems through algorithm implementation, validation, and monitoring, progressively taking ownership of well-scoped projects from initial hypothesis through measurable impact.</li>\n<li>Operate in a fast-paced, constantly evolving environment where the ads marketplace shifts quickly — you'll need to balance rigor with speed, and thrive when priorities change and new challenges emerge.</li>\n<li>Communicate assumptions, findings, and limitations clearly to both technical and cross-functional partners, helping the team make better decisions through transparency and analytical clarity.</li>\n</ul>\n\n<h2><strong>About You</strong></h2>\n<p>Minimum Qualifications</p>\n<ul>\n<li>PhD in operations research, mathematics, statistics, economics, or a related quantitative discipline, with a strong foundation in at least one of the following areas: optimization, probability, statistical modeling, econometrics, or control theory.</li>\n<li>Proficiency in Python and SQL, with demonstrated ability to translate quantitative concepts into analyses, algorithm implementations, and experiments.</li>\n<li>Strong analytical and communication skills, including the ability to explain assumptions, methodologies, results, and limitations to both technical and cross-functional audiences.</li>\n</ul>\n\n<p>Preferred Qualifications</p>\n<ul>\n<li>2+ years of software engineering experience, particularly in applying quantitative methods to production systems.</li>\n<li>Familiarity with ads systems, auction theory, or related marketplace optimization problems.</li>\n<li>Experience working with large-scale data pipelines and real-time decision systems.</li>\n<li>Familiarity with machine learning techniques and applying machine learning in production systems.</li>\n</ul>\n\n<p>#LI-Remote</p><p>Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy <a href=\"https://instacart.careers/flex-first/\">here</a>. Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia.</p>\n<p>Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings <a href=\"https://instacart.careers/taste-of-instacart/\">here</a>.</p>\n<p>For Canadian based candidates, the base pay ranges for a successful candidate are listed below.</p>CAN$154,000—$162,500 CAD",
+    "applyUrl": "https://instacart.careers/job/?gh_jid=8403432",
+    "postedAt": "2026-11-19T20:24:42.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   }
 ]

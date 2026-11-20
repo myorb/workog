@@ -117,7 +117,7 @@
     "postedAt": "2026-02-06T17:11:15.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -567,7 +567,7 @@
     "postedAt": "2026-06-18T18:27:27.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -602,6 +602,8 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8017607?gh_jid=8017607",
     "postedAt": "2026-06-19T19:25:19.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -1289,7 +1291,7 @@
     "postedAt": "2026-08-14T00:32:31.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1667,7 +1669,7 @@
     "postedAt": "2026-08-28T00:06:32.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1737,7 +1739,7 @@
     "postedAt": "2026-08-28T23:32:47.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -1892,7 +1894,7 @@
     "postedAt": "2026-10-08T23:50:37.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -2191,7 +2193,7 @@
     "postedAt": "2026-09-08T22:54:09.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -2380,7 +2382,7 @@
     "postedAt": "2026-09-15T15:27:26.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -2968,14 +2970,14 @@
     "id": "greenhouse:8243517",
     "slug": "coinbase-senior-software-engineer-backend-retail-dex-8243517",
     "company": "coinbase",
-    "title": "Senior Software Engineer, Backend (Retail DEX)",
+    "title": "Senior Software Engineer, Backend (Retail Spot)",
     "locations": [
       "Remote - Canada"
     ],
     "remote": true,
     "department": "Engineering - Backend",
     "category": "engineering",
-    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n<h2>Senior Software Engineer, Backend (Retail DEX)</h2>\n<p>We're hiring a Senior Software Engineer to join the Retail DEX team within the<a href=\"https://www.coinbase.com/careers/product-groups\"> Consumer &amp; Business</a> group. This team runs all the data and trading systems that power onchain (\"DEX\") trading within the main Coinbase app, enabling millions of traders to buy and sell 70M+ tokens on major blockchains including Base and Solana. You'll build software systems that straddle the off-chain and onchain worlds to deliver a seamless, unified trading experience regardless of where an asset settles.</p>\n<p><strong>What you'll do:</strong></p>\n<ul>\n<li>Integrate new blockchains, decentralized exchanges, and launchpads into the main Coinbase app to unlock more onchain assets for millions of traders</li>\n<li>Design and implement first-party smart contracts for onchain trading primitives such as DEX aggregation and advanced order types to improve execution quality and capability</li>\n<li>Scale real-time data pipelines to handle 100K+ messages per second, enabling millisecond-latency processing of blockchain market data</li>\n<li>Optimize the trading stack end-to-end to deliver the fastest execution, most optimal fills, and most comprehensive asset coverage for DEX traders</li>\n<li>Drive iteration on agentic-first development patterns, building self-improving software systems and tooling that accelerate team velocity</li>\n</ul>\n<p><strong>Required Skills and Experience:</strong></p>\n<ul>\n<li>5+ years of experience in backend software engineering with demonstrated success building and operating data systems or data pipelines in production</li>\n<li>Hands-on experience designing data-intensive systems and integrating with large-scale data infrastructure such as Kafka, Clickhouse, Starrocks, Temporal, and Redis</li>\n<li>Proven experience designing and integrating with onchain smart contracts on EVM (Ethereum, Base) or Solana, with deep understanding of the programming models of one or more of these virtual machines</li>\n<li>Demonstrated ability to build, iterate on, and improve agentic-first code repositories and software systems in production environments</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.</li>\n</ul>\n<p><strong>Pay Transparency Notice:</strong> The target annual <strong>base</strong> salary for this position can range as detailed below. Total compensation mayalso include equity and bonus eligibility and benefits (including medical, dental, and vision).</p>Annual base salary range (excluding equity and bonus):$191,100—$191,100 CAD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
+    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n\n\n<p>We're hiring a Senior Software Engineer to join the retail spot trading engineering team within the <a href=\"https://www.coinbase.com/careers/product-groups\">Consumer &amp; Business </a>group. This team owns the systems that power spot trading in the main Coinbase app, executing orders across centralized exchange (CEX) venues and onchain (DEX) venues so customers get one experience regardless of where an asset settles. You'll own retail spot order flow end to end and set the bar for execution speed, fill quality, and asset coverage. Prior blockchain or smart contract experience is welcome but not required.</p>\n\n\n<p><strong>What you'll do:</strong></p>\n\n\n<ul>\n<li>Own retail spot order flow on Aeron, the in-memory high throughput (2M+ TPS) sequencer behind CEX and DEX trading, from market data intake through order placement, execution, and settlement.</li>\n<li>Integrate new blockchains, decentralized exchanges, and launchpads into the main Coinbase app, expanding the assets and trading capabilities retail customers can reach.</li>\n<li>Scale real-time market data pipelines to 100K+ messages per second at millisecond latency across centralized and onchain venues.</li>\n<li>Ship end-to-end retail spot trading features alongside product, design, and client engineering, from technical design through production rollout.</li>\n<li>Improve execution quality and reliability, holding the stack to explicit targets for fill quality, latency, and asset coverage.</li>\n<li>Advance agentic-first development practices, building tooling and self-improving systems that raise team velocity.</li>\n</ul>\n\n\n<p><strong>Required Skills and Experience:</strong></p>\n\n\n<ul>\n<li>5+ years of software engineering experience in backend or full stack roles, with at least half of your work focused on backend systems.</li>\n<li>Demonstrated success building and operating production data systems or pipelines, including ownership of their reliability and on-call response.</li>\n<li>Hands-on experience designing data-intensive systems on infrastructure such as Kafka, ClickHouse, StarRocks, Temporal, or Redis.</li>\n<li>Experience integrating external venues or onchain systems, such as DEX aggregation, smart contract interfaces, or EVM and Solana tooling.</li>\n<li>Demonstrated ability to build, iterate on, and improve agentic-first repositories and software systems in production environments.</li>\n<li>Track record of improving latency, throughput, or reliability in a high-volume production system, measured against targets you helped set.</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.</li>\n</ul>\n\n\n<p>JD# 78194</p><p><strong>Pay Transparency Notice:</strong> The target annual <strong>base</strong> salary for this position can range as detailed below. Total compensation mayalso include equity and bonus eligibility and benefits (including medical, dental, and vision).</p>Annual base salary range (excluding equity and bonus):$191,100—$191,100 CAD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
     "applyUrl": "https://www.coinbase.com/careers/positions/8243517?gh_jid=8243517",
     "postedAt": "2026-09-30T16:46:01.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
@@ -2996,6 +2998,8 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8243520?gh_jid=8243520",
     "postedAt": "2026-10-13T15:12:12.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -3031,7 +3035,7 @@
     "postedAt": "2026-10-01T19:16:52.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -3650,25 +3654,6 @@
     "source": "greenhouse"
   },
   {
-    "id": "greenhouse:8304052",
-    "slug": "coinbase-senior-data-scientist-platform-8304052",
-    "company": "coinbase",
-    "title": "Senior Data Scientist, Platform",
-    "locations": [
-      "Remote - USA"
-    ],
-    "remote": true,
-    "department": "Data Science",
-    "category": "data",
-    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">learn more about working at Coinbase</a>.</p><p>Data Science is an integral component of Coinbase’s product and decision making process: we work in partnership with Product, Engineering and Design to influence the roadmap and better understand our users. With a deep expertise in experimentation, analytics and advanced modeling, we produce insights which directly move the company’s bottom line.</p>\n<p><strong><em>What you'll be doing:</em></strong></p>\n<ul>\n<li>Conduct analysis and deep dives on ambiguous problems for our business. Your work will result in insights and recommendations that guide the team’s decision making.</li>\n<li>Build, tune, or measure the performance of online and offline ML models and AI systems used across Coinbase.</li>\n<li>Act as owner for a broad scope of data and metrics, from definitions and core logging to presentation of data visualizations. </li>\n<li>Guide code reviews, provide SQL and Python expertise, and create well-maintained ETL jobs. </li>\n<li>Maintain a high bar for statistical rigor on your team. Design, execute, and uplevel  experimentation and causal analyses that build confidence with your stakeholders.</li>\n</ul>\n<p><strong><em>What we look for in you:</em></strong></p>\n<ul>\n<li>A BA/BS in a quantitative field (ex Math, Stats, Physics, or Computer Science) with ≥5+ years of relevant experience or a PhD in a quantitative field with with ≥3+ years of relevant experience</li>\n<li>Demonstrated experience in driving impactful data science projects that tackle ambiguous problem spaces. </li>\n<li>Ability to influence external stakeholders by synthesizing data learnings into compelling stories.</li>\n<li>Practical expertise in applying complex modeling frameworks to practical business problems. </li>\n<li>Professional experience using SQL and Python.</li>\n<li>Experience working with digital products in an iterative development cycle.</li>\n<li>Demonstration of our core cultural values: clear communication, positive energy, continuous learning, and efficient execution.</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready analytical outputs and models.</li>\n</ul>\n<p><strong>Pay Transparency Notice:</strong>Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)). </p>\nAnnual base salary range (excluding equity and bonus):$180,370—$212,200 USD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
-    "applyUrl": "https://www.coinbase.com/careers/positions/8304052?gh_jid=8304052",
-    "postedAt": "2026-11-02T23:22:19.000Z",
-    "firstSeenAt": "2026-11-03T05:02:35.566Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
-    "source": "greenhouse"
-  },
-  {
     "id": "greenhouse:8311332",
     "slug": "coinbase-institutional-sales-manager-hedge-funds-8311332",
     "company": "coinbase",
@@ -3757,7 +3742,7 @@
     "id": "greenhouse:8318555",
     "slug": "coinbase-staff-user-researcher-8318555",
     "company": "coinbase",
-    "title": "Staff User Researcher",
+    "title": "Staff Design Researcher",
     "locations": [
       "Remote - USA"
     ],
@@ -3803,7 +3788,7 @@
     "postedAt": "2026-10-23T16:45:38.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -3943,7 +3928,7 @@
     "postedAt": "2026-10-30T11:08:06.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -3962,7 +3947,7 @@
     "postedAt": "2026-10-29T18:31:15.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -3981,7 +3966,7 @@
     "postedAt": "2026-10-30T11:19:12.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4112,7 +4097,7 @@
     "postedAt": "2026-10-29T22:43:45.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4482,7 +4467,7 @@
     "postedAt": "2026-10-30T18:50:36.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4520,7 +4505,7 @@
     "postedAt": "2026-11-04T12:28:12.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4577,7 +4562,7 @@
     "postedAt": "2026-10-30T19:03:20.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4646,6 +4631,8 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8337782?gh_jid=8337782",
     "postedAt": "2026-10-30T20:03:24.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -4698,7 +4685,7 @@
     "postedAt": "2026-11-02T15:04:13.000Z",
     "firstSeenAt": "2026-11-02T15:49:53.212Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4806,6 +4793,23 @@
     "source": "greenhouse"
   },
   {
+    "id": "greenhouse:8349028",
+    "slug": "coinbase-senior-software-engineer-native-mobile-international-8349028",
+    "company": "coinbase",
+    "title": "Senior Software Engineer, Native Mobile - International",
+    "locations": [
+      "Remote - Singapore"
+    ],
+    "remote": true,
+    "department": "Engineering - Frontend",
+    "category": "engineering",
+    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n<p>We're hiring a Senior Software Engineer, Native Mobile to join the International team within the<a href=\"https://www.coinbase.com/careers/product-groups\"> Consumer &amp; Business</a> group. This team is executing a greenfield rewrite of Coinbase's retail mobile app from React Native to native Swift and Kotlin, using AI-assisted code generation to deliver a dramatically faster, higher-quality experience for millions of customers. You'll bring deep iOS or Android expertise to build core app surfaces, contribute to the design of Coinbase’s native mobile agentic workflow, and contribute to the foundation of Coinbase’s future mobile platform as product teams onboard to the native codebase.</p>\n<p><strong><br />What you'll do:</strong></p>\n<ul>\n<li>Accelerate every other Frontend engineer at Coinbase by defining architectural patterns, improving build speeds, and defining optimal development workflows.</li>\n<li>Own the development of core app surfaces in Swift and Kotlin, translating existing React Native flows into performant native implementations that meet strict performance budgets, and setting the project-level quality bar through code and design reviews.</li>\n<li>Build within the AI-assisted code generation loop, orchestrating AI as a force multiplier by leveraging LLM-driven translation while applying native mobile expertise to validate architecture, catch edge cases, and ensure production-quality outputs.</li>\n<li>Partner with product teams during onboarding to review native PRs, challenge suboptimal patterns, and attack slow paths the team has accepted, such as flaky tests, painful deploys, or ambiguous handoffs between native and React Native codebases.</li>\n<li>Drive performance optimization across device tiers, architecting robust solutions through trade-off analysis to eliminate loading indicators, scroll jank, and stall counts, with particular attention to low-end Android devices.</li>\n<li>Contribute to the dual-app parity strategy during the transition period, identifying and killing technical debt that matters while ensuring feature and bug fix synchronization between codebases.</li>\n</ul>\n<p><strong>Required Skills and Experience:</strong></p>\n<ul>\n<li>5+ years of iOS or Android mobile software engineering experience (Swift/iOS or Kotlin/Android).</li>\n<li>Demonstrated ability to build and ship performant mobile applications with a focus on frame stability, cold start optimization, and responsive UI across diverse device populations.</li>\n<li>Proficiency in Swift or Kotlin with working knowledge of the other, and willingness to develop cross-platform fluency, as engineers on this team own both iOS and Android.</li>\n<li>Experience with mobile CI/CD pipelines, build systems, and release processes, with a track record of delivering project-level outcomes that compound beyond the immediate cycle.</li>\n<li>Uses generative AI responsibly, maintaining human oversight to deliver business-ready outputs and measurable gains in workflow efficiency, cost, and quality.</li>\n</ul>\n\n<p>P78973</p><p><strong>Pay Transparency Notice:</strong> The target annual <strong>base</strong> salary for this position can range as detailed below. Total compensation mayalso include equity and bonus eligibility and benefits (including medical, dental, and vision).</p>Annual base salary range (excluding equity and bonus):$191,100—$191,100 SGD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
+    "applyUrl": "https://www.coinbase.com/careers/positions/8349028?gh_jid=8349028",
+    "postedAt": "2026-11-19T07:45:42.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "greenhouse"
+  },
+  {
     "id": "greenhouse:8350017",
     "slug": "coinbase-it-support-engineer-8350017",
     "company": "coinbase",
@@ -4837,6 +4841,8 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8350050?gh_jid=8350050",
     "postedAt": "2026-11-04T02:24:02.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -4855,7 +4861,7 @@
     "postedAt": "2026-11-03T20:38:43.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4874,7 +4880,7 @@
     "postedAt": "2026-11-04T03:46:12.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4893,7 +4899,7 @@
     "postedAt": "2026-11-04T03:59:07.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -4912,7 +4918,7 @@
     "postedAt": "2026-11-04T04:08:55.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -5136,6 +5142,8 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8357227?gh_jid=8357227",
     "postedAt": "2026-11-13T20:20:38.000Z",
     "firstSeenAt": "2026-11-14T05:02:39.889Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -5204,6 +5212,23 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8360386?gh_jid=8360386",
     "postedAt": "2026-11-06T22:01:40.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8360760",
+    "slug": "coinbase-director-credit-risk-8360760",
+    "company": "coinbase",
+    "title": "Director, Credit Risk",
+    "locations": [
+      "Remote - USA"
+    ],
+    "remote": true,
+    "department": "Risk & Fraud",
+    "category": "management",
+    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n<p>Coinbase Credit Risk is hiring a Director to lead credit risk for our institutional financing and lending business. Reporting to the Head of Credit Risk, you will own counterparty underwriting for funds and the risk frameworks behind cross margin, portfolio margin, exchange lending, and extended settlement products. Our product surface is expanding fast and you will build the risk frameworks that govern it.</p>\n<p><strong>What you’ll do:</strong></p>\n<ul>\n<li>Own the credit risk framework across institutional financing products: cross margin, portfolio margin, exchange lending, trade finance, and OTC extended settlement.</li>\n<li>Shape rating methodology, underwriting standards, and risk appetite for funds; set and defend counterparty limits.</li>\n<li>Build risk frameworks for new products from first principles, embedding margin, collateral, and liquidation logic at the design stage rather than after launch.</li>\n<li>Partner with Engineering to productionize those frameworks across the credit risk platform — counterparty data, ratings, limits, exposure monitoring, and automated controls.</li>\n<li>Own risk-relevant contractual terms with Legal across master loan agreements, security interest and pledge structures, derivatives documentation, and prime brokerage agreements.</li>\n<li>Drive stress testing and potential exposure analysis, and actively manage single-name, sector, and collateral concentrations across the portfolio.</li>\n<li>Influence executives across Institutional Financing, Product, Legal, and Finance, making final risk decisions on complex exposures and developing the leaders on your team.</li>\n</ul>\n<p><strong>Required Skills and Experience:</strong></p>\n<ul>\n<li>12+ years in credit risk, counterparty risk, or securities financing at a global financial institution, with depth in secured lending, prime brokerage, and/or derivatives.</li>\n<li>Demonstrated ownership of a credit underwriting framework — rating methodology, limit setting, and surveillance — for funds and corporate counterparties.</li>\n<li>Track record of building risk frameworks from scratch for structurally complex products, not only operating established ones.</li>\n<li>Fluency in collateral mechanics, LTV structuring, margin methodology, potential future exposure, and wrong-way risk.</li>\n<li>Experience negotiating risk terms with Legal and counterparties, and partnering with Engineering to productionize risk systems.</li>\n<li>Able to negotiate with and influence senior leaders, and to make and defend final decisions under ambiguity.</li>\n<li>Strong interest in crypto and digital asset markets.</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.</li>\n</ul>\n<p>#LI-Remote</p>\n<p>REQ ID: P79005</p><p><strong>Pay Transparency Notice:</strong>Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)). </p>\nAnnual base salary range (excluding equity and bonus):$273,980—$288,400 USD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
+    "applyUrl": "https://www.coinbase.com/careers/positions/8360760?gh_jid=8360760",
+    "postedAt": "2026-11-19T21:26:24.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -5358,7 +5383,7 @@
     "postedAt": "2026-11-13T06:47:58.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   },
   {
@@ -5564,6 +5589,42 @@
     "applyUrl": "https://www.coinbase.com/careers/positions/8400323?gh_jid=8400323",
     "postedAt": "2026-11-19T00:09:56.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8402367",
+    "slug": "coinbase-international-expansion-operations-associate-8402367",
+    "company": "coinbase",
+    "title": "International Expansion Operations Associate",
+    "locations": [
+      "Remote - UK"
+    ],
+    "remote": true,
+    "department": "Business Operations & Strategy",
+    "category": "operations",
+    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n<p>The Listings Operations team owns the operational playbooks and cross-functional rhythms that let Coinbase launch new assets cleanly across the EU, LATAM, APAC, and beyond. As an International Expansion Operations Associate, you'll partner with Legal, Compliance, Product, Engineering, and regional teams to standardize launch workflows across jurisdictions and keep requirements clear and documented as we scale into new markets.</p>\n<p><strong>What you'll do:</strong></p>\n<ul>\n<li>Own end-to-end operational planning for asset listings in new market entries, ensuring compliance, liquidity, and support workflows are aligned for a high-trust launch day experience</li>\n<li>Translate regulatory, product, and compliance requirements into scalable, documented processes that support growth across multiple jurisdictions</li>\n<li>Drive resolution of cross-regional bottlenecks by analyzing workflow data, identifying root causes, and implementing scalable solutions</li>\n<li>Partner with Product, Engineering, Legal, Compliance, and regional teams to align on SLAs, escalation paths, and launch readiness criteria</li>\n<li>Build and maintain internal playbooks for region-specific approval workflows, launch checklists, and operational requirements</li>\n<li>Establish feedback loops with regional stakeholders and leadership to surface risks, share status, and capture learnings that improve future launches</li>\n</ul>\n<p><strong>Required Skills and Experience:</strong></p>\n<ul>\n<li>3+ years in international operations, global program management, or a similar cross-functional operations role in fintech, crypto, payments, or a regulated industry</li>\n<li>Proven success leading complex, multi-stakeholder initiatives across at least two geographic regions (EMEA, APAC, or LATAM) with regulatory and operational complexity</li>\n<li>Demonstrated ability to design and document scalable operational processes, including familiarity with Lean Six Sigma or similar process optimization methodologies</li>\n<li>Proficiency in AI tools and Google Sheets (or Excel), with working knowledge of SQL or data analysis tools such as Snowflake considered a plus</li>\n<li>Effective cross-functional communicator who has influenced alignment across Legal, Compliance, Product, and Engineering teams on competing priorities</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.</li>\n</ul>\n\n<p>Req ID: P79077</p><p><strong>Pay Transparency Notice:</strong> The target annual <strong>base</strong> salary for this position can range as detailed below. Total compensation mayalso include equity and bonus eligibility and benefits (including medical, dental, and vision).</p>Annual base salary range (excluding equity and bonus):£73,435—£77,300 GBP<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
+    "applyUrl": "https://www.coinbase.com/careers/positions/8402367?gh_jid=8402367",
+    "postedAt": "2026-11-19T16:21:12.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8402798",
+    "slug": "coinbase-senior-product-creative-designer-8402798",
+    "company": "coinbase",
+    "title": "Senior Product Creative Designer",
+    "locations": [
+      "Remote - USA"
+    ],
+    "remote": true,
+    "department": "Design",
+    "category": "design",
+    "descriptionHtml": "<p>Ready to do the most impactful work of your career? At <a href=\"https://www.coinbase.com/?utm_campaign=mt_o_m_w_m_m__coi_0_jd-onchain&amp;utm_source=coinbase\">Coinbase</a>, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it’s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” <a href=\"https://www.coinbase.com/careers\">Learn more about working at Coinbase</a>.</p>\n\n<p>We're hiring a Senior Product Creative Designer to join the Product Creative team within the <a href=\"https://www.coinbase.com/careers/product-groups\">Consumer &amp; Business</a> design organization. Product Creative brings visual design, motion, and illustration together so Coinbase's brand language holds from the first marketing touchpoint to the deepest in-app experience. You'll drive creative work inside the Coinbase app, balancing ambition with feasibility, and turn big ideas into shipped experiences millions of customers see and feel.</p>\n\n\n<p><strong>What you'll do:</strong></p>\n\n\n<ul>\n<li>Own visual design and storytelling across the Coinbase consumer product, from concept through final craft</li>\n<li>Partner with Product Designers to build delight and emotional connection into core product surfaces</li>\n<li>Shape creative direction for high-impact product launches, holding the bar on visual craft and narrative</li>\n<li>Evolve the Coinbase design language, covering icons, color, and UI components with Product Design</li>\n<li>Direct motion design and illustration work with internal and external creative partners</li>\n<li>Champion design excellence across teams, raising the quality bar through critique and shared standards</li>\n</ul>\n\n\n<p><strong>Required Skills and Experience:</strong></p>\n\n\n<ul>\n<li>5+ years of visual design experience shipping consumer product work, with a portfolio spanning multiple product surfaces</li>\n<li>Deep command of typography, layout, color, and composition, evidenced by shipped work at scale</li>\n<li>Track record of directing motion design or illustration work from concept to delivery</li>\n<li>Demonstrated success aligning Product, Engineering, and Marketing stakeholders on creative direction</li>\n<li>Fluency in Figma, Adobe Creative Suite, and prototyping tools</li>\n<li>Experience presenting creative strategy to senior leaders and building support across functions</li>\n<li>Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.</li>\n</ul>\n<p>Job ID: P79277</p>\n<p><strong>Pay Transparency Notice:</strong>Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)). </p>\nAnnual base salary range (excluding equity and bonus):$180,370—$212,200 USD<ul>\n<li><strong><em>Application Limit: </em></strong>Candidates may submit a maximum of 3 applications within a 6-month period.</li>\n<li><em><strong>Equal Opportunity Employer: </strong>Coinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws.</em></li>\n<li><em><strong>US Applicants: </strong>View<a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf\"> Employee Rights</a>,<a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\"> Know Your Rights</a>, and<a href=\"https://static-assets.coinbase.com/e-verify.pdf\"> E-Verify</a> Notice of Participation.</em></li>\n<li><em><strong>Accommodations: </strong>If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology?<a href=\"https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn\"> Click here</a> to download a free compatible screen reader and view the<a href=\"http://www.chromevox.com/tutorial/\">tutorial</a>.</em></li>\n<li><em><strong>Data Privacy &amp; Arbitration: </strong>By submitting your application, you agree to our<a href=\"https://www.coinbase.com/legal/applicant_privacy_notice\"> Candidate Privacy Notice</a>. US applicants: By submitting your application, you agree to<a href=\"https://www.coinbase.com/legal/application-arbitration-agreement\"> Arbitration of Disputes</a>.<br /></em></li>\n</ul>",
+    "applyUrl": "https://www.coinbase.com/careers/positions/8402798?gh_jid=8402798",
+    "postedAt": "2026-11-19T17:14:03.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "greenhouse"
   }
 ]

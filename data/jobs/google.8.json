@@ -89,6 +89,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/73048562769765062-data-center-energy-strategic-negotiator-lease-structuring",
     "postedAt": "2026-10-20T09:07:03.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -197,6 +199,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/73379279982731974-silicon-engineer-platform-and-devices-university-graduate-2026",
     "postedAt": "2026-08-20T14:11:16.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -230,6 +234,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/73475435274347206-senior-pcb-layout-engineer-google-cloud",
     "postedAt": "2026-10-05T08:10:47.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -267,7 +273,7 @@
     "postedAt": "2026-10-16T07:38:40.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -542,6 +548,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/75492331247018694-software-engineer-iii-information-security",
     "postedAt": "2026-10-23T12:37:20.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -558,6 +566,23 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/75501855336997574-community-development-manager-strategic-partnerships-office",
     "postedAt": "2026-11-16T14:37:33.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "google"
+  },
+  {
+    "id": "google:75727547278467782",
+    "slug": "google-imaging-and-vision-algorithm-engineer-google-cloud-silicon-75727547278467782",
+    "company": "google",
+    "title": "Imaging and Vision Algorithm Engineer, Google Cloud, Silicon",
+    "locations": [
+      "Tel Aviv, Israel",
+      "Haifa, Israel"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>In this role, you’ll work to shape the future of AI/ML hardware acceleration. You will have an opportunity to drive cutting-edge TPU (Tensor Processing Unit) technology that powers Google's most demanding AI/ML applications. You’ll be part of a team that pushes boundaries, developing custom silicon solutions that power the future of  Google's TPU. You'll contribute to the innovation behind products loved by millions worldwide, and leverage your design and verification expertise to verify complex digital designs, with a specific focus on TPU architecture and its integration within AI/ML-driven systems.</p>\n<p>As an Imaging and Vision Algorithm Engineer, you will be at the heart of defining the hardware and software algorithms that power the next generation of Google’s products. You will lead the definition of a groundbreaking, first-generation product family, bridging the gap between system requirements, AI research, and physical implementation. You will participate in the entire lifecycle of this new product, contributing to its concept, architecture, documentation, implementation, and validation.<br /><br />In this role, you will work to shape the future of an edge-AI product, bringing high-performance intelligence to the edge. You will have an opportunity to drive distributed inference technology that powers real-time systems where latency and reliability are mission-critical.</p><p>You will be part of a team that pushes boundaries, developing autonomous solutions that define the next generation of intelligent infrastructure and hardware for the edge. You will contribute to the innovation behind products that transform industries, leveraging your expertise in system-level integration and localized processing to deploy complex AI models across sophisticated hardware platforms, ensuring intelligence is embedded exactly where the action happens.</p><p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p><h3>Responsibilities</h3><ul>\n<li>Partner with Google Research to transform advanced computational imaging algorithms into high-efficiency hardware logic.</li>\n<li>Create and maintain comprehensive algorithm specifications.</li>\n<li>Design, model, and evaluate next-generation ISP and vision algorithms, pushing performance and image processing capabilities beyond baseline standards.</li>\n<li>Specify and optimize pipeline blocks. Own the testing, tuning, and confirmation of end-to-end Image Quality (IQ) across all operating conditions and product environments.</li>\n<li>Define 3A and post-processing pipelines for the goal use cases.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Electrical Engineering, Computer Engineering, or equivalent practical experience.</li>\n<li>10 years of experience in CMOS image sensor architecture, imaging algorithms, ISP implementation, and algorithm specification ownership.</li>\n<li>Experience managing technical initiatives across hardware, firmware, and system software boundaries.</li>\n<li>Experience in C++, Python, and MATLAB for algorithm development, system-level modeling, and automated testing.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Electrical Engineering or Computer Engineering, or a related field.</li>\n<li>Knowledge of vision hardware/software interfaces and experience working with various software driver teams.</li>\n<li>Familiarity with deploying neural networks for imaging tasks.</li>\n<li>Ability to scale and optimize high-performance AI accelerators.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/75727547278467782-imaging-and-vision-algorithm-engineer-google-cloud-silicon",
+    "postedAt": "2026-11-19T10:39:29.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -607,7 +632,7 @@
     "postedAt": "2026-11-05T12:09:43.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -694,6 +719,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/76482805734744774-senior-product-manager-geo-local-data-next-billion-users",
     "postedAt": "2026-10-05T16:39:59.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -846,7 +873,7 @@
     "postedAt": "2026-11-10T08:40:06.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -880,7 +907,7 @@
     "postedAt": "2026-11-12T08:08:07.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1027,7 +1054,7 @@
     "postedAt": "2026-11-05T09:09:01.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1182,7 +1209,7 @@
     "postedAt": "2026-10-16T14:37:49.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1202,6 +1229,22 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/79441272355332806-sales-incentive-strategy-manager-google-cloud",
     "postedAt": "2026-11-12T16:38:54.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "source": "google"
+  },
+  {
+    "id": "google:79849616371000006",
+    "slug": "google-youtube-industry-manager-large-customer-sales-english-mandarin-79849616371000006",
+    "company": "google",
+    "title": "YouTube Industry Manager, Large Customer Sales (English, Mandarin)",
+    "locations": [
+      "Taipei, Taiwan"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals. <br /><br />As an Industry Manager, you will be an architect of strategic growth, forging trusted alliances with C-level stakeholders to align on ambitious business goals. You will harness the power of generative AI and predictive analytics to navigate profound industry shifts, winning with unique value and maximizing impact to prove the long-term success of our partners. In this role, you will leverage your business judgement to identify, educate, and engage customers with YouTube's latest advertising products and technologies. You will utilize influencing and relationship-building skills, provide Google-caliber client service, research, and market analysis, anticipating how decisions are made, understanding the details of individual campaigns, and persistently exploring, and uncovering the business needs of key business lines. Alongside our customers, you will set the vision and strategy for how their advertising can reach users.Google's Large Customer Sales (LCS) teams are strategic partners and industry thought leaders to the world's leading brands and agencies. We continuously challenge how customers think about their business and how Google can support growth. We focus on helping these players navigate profound industry shifts and drive outsized business performance by competitively selling Google's full suite of advertising solutions across Search, YouTube, Measurement, and more. As a member of our LCS team, you'll have the unique opportunity to sell at the forefront of technology, collaborating with executives, influencing market-shaping strategies, and delivering tangible results that significantly impact major global businesses and drive the growth of Google.<h3>Responsibilities</h3><ul>\n<li>Maintain strong relationships with clients, agencies, and other key stakeholders to ensure alignment with business objectives and successful collaboration.</li>\n<li>Lead the execution of strategies to drive adoption, revenue, and strategy for YouTube, leveraging digital marketing tools and platforms to optimize client advertising efforts.</li>\n<li>Guide clients in leveraging their Intellectual Property (IP) to secure Global Branding on YouTube, accelerating their transition from traditional media to digital, and driving bottom-line growth globally.</li>\n<li>Analyze and optimize marketing Return on Investment (ROI) by monitoring and assessing the performance of digital campaigns for YouTube, making data-driven recommendations for continuous improvement.</li>\n<li>Oversee and coordinate with agency partners, ensuring effective communication, collaboration, and utilization of resources to drive successful marketing initiatives.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>8 years of industry experience in digital advertising, consultative sales, business development, or digital marketing, or 6 years of experience with an advanced degree.</li>\n<li>Ability to communicate in English and Mandarin fluently to support regional business.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience in developing relationships with executive-level stakeholders.</li>\n<li>Understanding of cross-functional media businesses and operations.</li>\n<li>Understanding of video/YouTube advertising. </li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/79849616371000006-youtube-industry-manager-large-customer-sales-english-mandarin",
+    "postedAt": "2026-11-19T10:10:33.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1255,6 +1298,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/80499403315389126-ux-program-manager",
     "postedAt": "2026-10-20T11:11:29.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -1362,7 +1407,7 @@
     "postedAt": "2026-10-16T10:08:19.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1381,6 +1426,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81410328029471430-emea-apac-director-economic-community-and-workforce",
     "postedAt": "2026-11-10T10:08:04.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -1447,6 +1494,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/82288171294827206-ads-measurement-special-projects-lead-agencies-and-partners-apac-product-gtm",
     "postedAt": "2026-10-20T12:41:28.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -1595,7 +1644,7 @@
     "postedAt": "2026-11-04T14:11:19.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1630,7 +1679,7 @@
     "postedAt": "2026-10-23T21:36:56.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1689,7 +1738,7 @@
     "postedAt": "2026-10-05T13:09:59.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1707,7 +1756,7 @@
     "postedAt": "2026-10-20T13:42:02.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1790,7 +1839,7 @@
     "postedAt": "2026-10-15T21:42:54.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -1892,7 +1941,7 @@
     "postedAt": "2026-10-15T08:11:16.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -2286,7 +2335,7 @@
     "postedAt": "2026-10-19T07:38:13.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -2375,7 +2424,7 @@
     "postedAt": "2026-10-19T13:08:04.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -2684,7 +2733,7 @@
     "postedAt": "2026-10-16T13:10:03.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -2753,7 +2802,7 @@
     "postedAt": "2026-10-27T14:41:31.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -3664,7 +3713,7 @@
     "postedAt": "2026-10-16T16:41:24.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -3733,7 +3782,7 @@
     "postedAt": "2026-10-16T14:08:49.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -3767,7 +3816,7 @@
     "postedAt": "2026-10-05T13:09:51.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -3851,6 +3900,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/99946031684166342-mission-manager-national-security-mandiant",
     "postedAt": "2026-10-12T14:40:12.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -3883,6 +3934,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/100216581069382342-senior-software-engineer-ai-ml-ml-training",
     "postedAt": "2026-11-11T22:37:45.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -4130,7 +4183,7 @@
     "postedAt": "2026-09-30T10:38:12.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4147,23 +4200,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/102779740242223814-technical-program-manager-product-ops-digitization",
     "postedAt": "2026-11-02T14:09:07.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "source": "google"
-  },
-  {
-    "id": "google:103344867744064198",
-    "slug": "google-global-partner-incentives-manager-google-cloud-103344867744064198",
-    "company": "google",
-    "title": "Global Partner Incentives Manager, Google Cloud",
-    "locations": [
-      "Buenos Aires, Argentina"
-    ],
-    "remote": false,
-    "descriptionHtml": "<p>Google's line of products and services to our clients never stops growing. The Partnerships Development team is responsible for seeking and exploring new opportunities with Google's partners. Equipped with your business acumen and extensive product knowledge, you are right on the front line of interacting with our partners, and helping them find ways to grow using Google's newest product offerings. Your knowledge of relevant verticals and relationships with key industry players will help shape our great applications and content for products such as YouTube, Google TV and Commerce.</p>\n<p>As a member of the Google Cloud Partner Funds Operations team, you will step into an Individual Contributor (IC) leadership role responsible for the operational execution and compliance oversight of Google Cloud's partner investment fund programs. This includes critical growth engines such as Deal Acceleration Funds (DAF), Partner Services Funds (PSF), Rapid Migration and Modernization Program (RaMP), and the Gemini Enterprise Transformation Fund (GET).</p><p>In this role, you will utilize your execution background and ability to maintain financial integrity and compliance. You will participate in the global implementation of these partner fund programs, serving as a key authority on compliance and high-value fund deployment. Your mission is to build and scale a growing partner ecosystem while ensuring every dollar of the investment is anchored in a high return on investment (ROI) and strict regulatory governance.</p><h3>Responsibilities</h3><ul>\n<li>Contribute to the development of a scalable, global review framework to maintain policy compliance and consistent financial oversight across all operating regions.</li>\n<li>Serve as the initial point of contact for regional investment requests, ensuring that requests are within the terms of the programs and meeting compliance and value delivery standards. </li>\n<li>Provide programs oversight against the misappropriation of funds, collaborating extensively with cross-functional stakeholders to mitigate risk in the Region.</li>\n<li>Support the evolution of program policies and long-term strategic direction in alignment with senior leadership objectives, by providing timely feedback from regional partners and field.</li>\n<li>Drive readiness for key strategic programs to regional partner and partner-facing roles, partnering with the global team to provide feedback on existing content. </li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Computer Science, Information Technology, or a related technical discipline or equivalent practical experience.</li>\n<li>5 years of experience in a professional services capacity or related.</li>\n<li>5 years of experience within the technology sector.</li>\n<li>1 year of experience with partner funding programs.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Advanced degree in a relevant technical field.</li>\n<li>Expertise in authoring and negotiating complex professional services Statements of Work (SOWs)</li>\n<li>Experience with contract negotiations.</li>\n<li>Experience interpreting and influencing global program policies, with an ability to drive strategic evolution and policy enhancements.</li>\n<li>Comprehensive subject matter expertise in Google partner funding frameworks, specifically DAF, GET, PSF, and RaMP</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/103344867744064198-global-partner-incentives-manager-google-cloud",
-    "postedAt": "2026-10-27T19:08:53.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "google"
   },
   {
@@ -4285,7 +4321,7 @@
     "postedAt": "2026-09-30T09:08:59.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4406,7 +4442,7 @@
     "postedAt": "2026-10-16T12:39:27.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4495,7 +4531,7 @@
     "postedAt": "2026-10-16T12:39:30.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4545,7 +4581,7 @@
     "postedAt": "2026-11-12T11:10:37.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4599,7 +4635,7 @@
     "postedAt": "2026-10-05T13:09:49.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4664,7 +4700,7 @@
     "postedAt": "2026-10-23T07:40:16.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4769,7 +4805,7 @@
     "postedAt": "2026-10-19T14:41:15.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4837,6 +4873,22 @@
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-13T15:50:24.900Z",
     "closedAt": "2026-11-15T05:03:03.938Z",
+    "source": "google"
+  },
+  {
+    "id": "google:107644583126409926",
+    "slug": "google-staff-software-engineer-infrastructure-netinfra-drain-107644583126409926",
+    "company": "google",
+    "title": "Staff Software Engineer, Infrastructure, NetInfra Drain",
+    "locations": [
+      "Sunnyvale, CA, USA"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p><p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $207000 - $300000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Provide technical leadership on projects.<br /></li>\n<li>Influence and coach a distributed team of engineers.<br /></li>\n<li>Facilitate alignment and clarity across teams on goals, outcomes, and timelines.<br /></li>\n<li>Manage project priorities, deadlines, and deliverables.<br /></li>\n<li>Design, develop, test, deploy, maintain, and enhance large-scale software solutions.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>8 years of experience building and developing large-scale infrastructure, distributed systems or networks, or experience with compute technologies, storage, or hardware architecture.</li>\n<li>8 years of experience programming in C++ or Go.</li>\n<li>5 years of experience testing, and launching software products.<br /></li>\n<li>3 years of experience with software design and architecture.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Engineering, Computer Science, or a related technical field.<br /></li>\n<li>8 years of experience with data structures and algorithms.</li>\n<li>3 years of experience in a technical leadership role leading project teams and setting technical direction.<br /></li>\n<li>3 years of experience working in a complex, matrixed organization involving cross-functional, or cross-business projects.</li>\n<li>Experience with C++, networking, network infrastructure, data center networking and system architecture.</li>\n<li>Experience in network management systems.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/107644583126409926-staff-software-engineer-infrastructure-netinfra-drain",
+    "postedAt": "2026-11-19T21:09:48.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4953,7 +5005,7 @@
     "postedAt": "2026-09-30T11:39:30.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -4986,6 +5038,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/109051796143383238-senior-software-engineer-site-reliability-engineering",
     "postedAt": "2026-10-20T05:38:10.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -5100,7 +5154,7 @@
     "postedAt": "2026-10-01T08:39:53.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5168,7 +5222,7 @@
     "postedAt": "2026-11-03T07:09:50.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5461,6 +5515,22 @@
     "source": "google"
   },
   {
+    "id": "google:112609565320585926",
+    "slug": "google-senior-account-executive-mid-market-sales-google-customer-solutions-112609565320585926",
+    "company": "google",
+    "title": "Senior Account Executive, Mid-Market Sales, Google Customer Solutions",
+    "locations": [
+      "Bangkok, Thailand"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "<p>Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and your customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals.</p>\n<p>As an Senior Account Executive, you will be an architect of strategic growth, forging trusted alliances with C-level stakeholders to align on ambitious business goals. You will harness the power of generative AI and predictive analytics to navigate profound industry shifts, winning with unique value and maximizing impact to prove the long-term success of the partners.</p><p>Google Customer Solutions (GCS) sales teams are trusted advisors and competitive sellers who maintain a relentless focus on customer success by bringing the best Google has to offer to small- and medium-sized businesses (SMBs), which are the backbone of our communities. As a member of our team, you’ll have the opportunity to work with company owners and make a real difference in their businesses by helping them grow.  Together, we help shape the future of innovation for customers, partners, and sellers...and we have fun doing it.</p><h3>Responsibilities</h3><ul>\n<li>Build and manage relationships with C-level clients and executive partner stakeholders. Develop a comprehensive understanding of their business issues, marketing objectives, and success metrics.<br /></li>\n<li>Structure a clear, long-term joint strategy between Google and clients, and lead a cross-functional team within Google to collaborate on projects and drive client success.<br /></li>\n<li>Plan for, and achieve, growth goals, through the presentation of Google advertising products/solutions that will help clients to meet their marketing objectives.<br /></li>\n<li>Develop forward thinking, data-driven analyses and consultative recommendations that align with customer goals, and quantify opportunities with clear recommendations to present to customers.<br /></li>\n<li>Build an in-depth knowledge of how Google advertising products work and can be used to help meet a wide range of marketing objectives.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>8 years of experience in digital advertising, consultative sales, business development, or digital marketing role, or 6 years of experience with an advanced degree.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>2 years of experience working in a complex, matrixed organization.</li>\n<li>Experience presenting recommendations to internal/external stakeholders at executive level, and leading implementation across cross-functional teams.</li>\n<li>Experience in digital advertising sales, brand management, account management, or in a similar role.</li>\n<li>Experience planning, and executing projects at scale, and orchestrating cross-functional teams.</li>\n<li>Experience in building relationships with C-level stakeholders in an advertising or marketing context.</li>\n<li>Ability to prioritize and actively work on a high volume of accounts.<br /></li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/112609565320585926-senior-account-executive-mid-market-sales-google-customer-solutions",
+    "postedAt": "2026-11-19T09:40:36.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "google"
+  },
+  {
     "id": "google:112627947780612806",
     "slug": "google-business-data-scientist-gup-analytics-112627947780612806",
     "company": "google",
@@ -5491,7 +5561,7 @@
     "postedAt": "2026-11-04T21:09:34.000Z",
     "firstSeenAt": "2026-11-04T21:49:43.736Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5680,25 +5750,7 @@
     "postedAt": "2026-10-06T17:38:36.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
-    "source": "google"
-  },
-  {
-    "id": "google:114378114741478086",
-    "slug": "google-ai-ml-staff-software-engineer-ai-data-114378114741478086",
-    "company": "google",
-    "title": "AI/ML Staff Software Engineer, AI Data",
-    "locations": [
-      "London, UK"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>Frontier model progress across Gemini relies on evaluation quality, velocity, and trustworthiness. As a Staff Software Engineer, you will manage, discover, and implement techniques that accelerate evaluation and training data development. Sitting at the intersection of DeepMind and AI Data, you will build systems that mine execution logs, agent trajectories, and production artifacts into benchmarks and training data that self-improve over time. You will turn ad-hoc evaluations into automated data flywheels—combining programmatic verifiers, difficulty modeling, and hermetic sandboxes to measure and unlock complex reasoning.</p>\n<p>Our mission is to improve the time to model quality for our users. We do so by bringing Data Optimization techniques to a broad audience through integrated tools and platforms. Our tooling applies data optimization techniques, and runs structured ablations to demonstrate to our users which ones work best for their use case, and deliver insights on how to improve further.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p><h3>Responsibilities</h3><ul>\n<li>Research and implement novel techniques for accelerated evaluation creation, including automated task synthesis, programmatic verifiers, and model-assisted rubric induction.</li>\n<li>Architect pipelines to mine execution logs, agent traces, and runtime artifacts into high-fidelity, future-proof evals and training data that continuously self-improve.</li>\n<li>Design and build robust benchmarks evaluating complex, long-horizon agentic reasoning across code, math, and specialized domains; optimize for climbability, discriminability, and zero contamination.</li>\n<li>Build and scale platform software that automates quality gates—such as AutoRaters and automated loss-pattern root-cause analyzers.</li>\n<li>Provide technical direction and architecture across AI Data and partners such as GDM and Cloud AI. Align distributed engineering teams and establish flexible approaches reusable across all types of benchmarks.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>8 years of experience programming in C++, Java, Python, Kotlin or Go.</li>\n<li>5 years of experience testing, and launching software products.<br /></li>\n<li>3 years of experience with software design and architecture.</li>\n<li>Experience integrating generative AI tools or LLM interfaces into workflows.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Engineering, Computer Science, or a related technical field.<br /></li>\n<li>8 years of experience with data structures/algorithms.</li>\n<li>3 years of experience in a technical leadership role leading project teams and setting technical direction.<br /></li>\n<li>3 years of experience working in a complex, matrixed organization involving cross-functional, or cross-business projects.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/114378114741478086-ai-ml-staff-software-engineer-ai-data",
-    "postedAt": "2026-10-29T15:38:44.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5769,7 +5821,7 @@
     "postedAt": "2026-11-12T08:08:04.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5803,7 +5855,7 @@
     "postedAt": "2026-10-16T14:37:50.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5837,7 +5889,7 @@
     "postedAt": "2026-10-13T09:08:18.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5873,7 +5925,7 @@
     "postedAt": "2026-09-22T20:38:51.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -5890,6 +5942,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/115963887534121670-industry-manager-travel-large-customer-sales-english-spanish",
     "postedAt": "2026-11-12T09:06:40.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -6027,6 +6081,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/117224053755781830-ai-data-developer-ii-professional-services-google-cloud",
     "postedAt": "2026-10-20T13:42:03.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -6160,7 +6216,7 @@
     "postedAt": "2026-10-30T14:41:31.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6197,7 +6253,7 @@
     "postedAt": "2026-10-28T15:37:59.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6278,7 +6334,7 @@
     "postedAt": "2026-10-01T16:11:05.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6366,7 +6422,7 @@
     "postedAt": "2026-10-15T12:12:15.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6401,7 +6457,7 @@
     "postedAt": "2026-10-15T13:37:15.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6502,6 +6558,22 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/120406190730420934-staff-software-engineer-authorization-search-infrastructure",
     "postedAt": "2026-10-09T15:40:43.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "google"
+  },
+  {
+    "id": "google:120655791412650694",
+    "slug": "google-accelerated-growth-consultant-google-customer-solutions-english-chinese-120655791412650694",
+    "company": "google",
+    "title": "Accelerated Growth Consultant, Google Customer Solutions (English, Chinese)",
+    "locations": [
+      "Taipei, Taiwan"
+    ],
+    "remote": false,
+    "category": "marketing",
+    "descriptionHtml": "<p>Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and your customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals.</p>\nThe Global Business Organization (GBO) is the engine that powers Google’s full ecosystem of products and services to help customers and partners succeed and grow. GBO includes the commercial arms of Ads sellers, business development teams, and customer services and support, as well as overlay programs that enable coordinated engagement with Google's most complex and important customers and partners.<h3>Responsibilities</h3><ul>\n<li>Manage business growth by building a pipeline of key client prospects within the Google Customer Solutions ecosystem and developing a strategy for short to long-term sustained success.</li>\n<li>Deliver against assigned goals, while prioritizing and delivering outstanding customer experience to Google's advertisers. Support, and communicate effectively with English and Cantonese speaking clients.</li>\n<li>Propose ambitious investment and deliver transformational marketing solutions to accelerate client's growth according to client's business and marketing objectives.</li>\n<li>Collaborate with Account Management teams at Google Customer Solutions to deliver customer success.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>2 years of experience in sales, business development, advertising, account management, marketing, or consulting.</li>\n<li>Ability to communicate in English and Chinese fluently to engage with clients in the region. </li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree in a business related field.<br /></li>\n<li>5 years of experience in digital marketing, advertising, consultative sales, or business development.</li>\n<li>2 years of experience working in a complex, matrixed organization.<br /></li>\n<li>Experience utilizing AI productivity tools to solve complex, multi-layered problems and streamline business or development workflows.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/120655791412650694-accelerated-growth-consultant-google-customer-solutions-english-chinese",
+    "postedAt": "2026-11-19T13:10:16.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6638,7 +6710,7 @@
     "postedAt": "2026-10-05T13:09:45.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6673,7 +6745,24 @@
     "postedAt": "2026-10-30T16:11:02.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
+    "source": "google"
+  },
+  {
+    "id": "google:122148241008403142",
+    "slug": "google-accountant-spend-controllership-122148241008403142",
+    "company": "google",
+    "title": "Accountant, Spend Controllership",
+    "locations": [
+      "Chicago, IL, USA",
+      "Sunnyvale, CA, USA"
+    ],
+    "remote": false,
+    "category": "finance",
+    "descriptionHtml": "<p>The name Google came from \"googol,\" a mathematical term for the number 1 followed by 100 zeros. And nobody at Google loves big numbers like the Finance team when providing in depth analysis on all manner of strategic decisions across Google products. From developing forward-thinking analysis to generating management reports to scaling our automated financial processes, the Finance organization is an important partner and advisor to the business.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $105000 - $151000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Identify and mitigate financial risks associated with new changes to existing processes.</li>\n<li>Provide financial records and supporting documentation to auditors, and assist with the development of process cycle memorandums and procedural walk-throughs.</li>\n<li>Use data to extract meaningful insights and monitor the performance of different areas of a business.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Accounting or Finance, or equivalent practical experience.</li>\n<li>Certified Public Accountant (CPA) or Chartered Accountant (CA).</li>\n<li>4 years of experience in accounting or a related function, or 1 year with an advanced degree in accounting, business, or finance.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience managing project planning, status reporting, timeline estimation, issue tracking, meeting facilitation, and project documentation. </li>\n<li>Ability to propose next steps and roadblock solutions and anticipate questions and challenges early, manage time, and follow work plans.</li>\n<li>Ability to have a collaborative style and work with cross-functional and international teams.<br /></li>\n<li>Ability to have strong attention to detail and focus on continuous improvement.</li>\n<li>Ability to communicate effectively with executive management.</li>\n<li>Excellent investigative and organizational skills.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/122148241008403142-accountant-spend-controllership",
+    "postedAt": "2026-11-19T22:38:42.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6727,7 +6816,7 @@
     "postedAt": "2026-11-04T08:10:29.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6745,7 +6834,7 @@
     "postedAt": "2026-11-10T08:09:52.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6816,6 +6905,23 @@
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
     "closedAt": "2026-11-13T10:42:31.851Z",
+    "source": "google"
+  },
+  {
+    "id": "google:123500640310567622",
+    "slug": "google-software-engineering-manager-user-protection-platform-and-services-core-123500640310567622",
+    "company": "google",
+    "title": "Software Engineering Manager, User Protection Platform and Services, Core",
+    "locations": [
+      "Belo Horizonte, Minas Gerais, Brazil",
+      "São Paulo, Brazil"
+    ],
+    "remote": false,
+    "category": "management",
+    "descriptionHtml": "<p>Like Google's own ambitions, the work of a Software Engineer goes beyond just Search. Software Engineering Managers have not only the technical expertise to take on and provide technical leadership to major projects, but also manage a team of Engineers. You not only optimize your own code but make sure Engineers are able to optimize theirs. As a Software Engineering Manager you manage your project goals, contribute to product strategy and help develop your team. Teams work all across the company, in areas such as information retrieval, artificial intelligence, natural language processing, distributed computing, large-scale system design, networking, security, data compression, user interface design; the list goes on and is growing every day. Operating with scale and speed, our exceptional software engineers are just getting started -- and as a manager, you guide the way.<br /><br />With technical and leadership expertise, you manage engineers across multiple teams and locations, a large product budget and oversee the deployment of large-scale projects across multiple sites internationally.</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p><h3>Responsibilities</h3><ul>\n<li>Lead, coach, and grow a team of software engineers, driving technical execution, career development, and a high-performing, inclusive team culture.</li>\n<li>Define and execute the technical strategy and multi-quarter roadmap for large-scale backend platforms and safety infrastructure within Core User Protection.</li>\n<li>Oversee system design, code quality, and operational health for high-throughput, low-latency distributed services.</li>\n<li>Partner cross-functionally with Product Management, SRE, Research, and engineering leaders across Google Product Areas to align on priorities, architecture, and service reliability.</li>\n<li>Advocate for engineering productivity and modern AI-assisted development workflows to accelerate delivery and reduce operational toil.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.</li>\n<li>8 years of experience in software development.</li>\n<li>3 years of experience in a technical leadership role; overseeing projects.</li>\n<li>Experience in designing, building, and operating large-scale distributed systems, with a focus on scalability, fault tolerance, and reliability.</li>\n<li>Experience with systems architecture and design.</li>\n<li>Experience managing or developing managers.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Engineering, Computer Science, or a related technical field.</li>\n<li>5 years of experience in a technical leadership role overseeing strategic projects.</li>\n<li>3 years of experience in a people management, supervision, or team leadership role.</li>\n<li>3 years of experience working in a complex, matrixed organization.</li>\n<li>Experience designing, building, and operating large-scale distributed systems, with a focus on scalability, fault tolerance, and reliability.</li>\n<li>Experience with Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and Kubernetes.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/123500640310567622-software-engineering-manager-user-protection-platform-and-services-core",
+    "postedAt": "2026-11-20T00:08:29.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -6900,6 +7006,22 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/124373843669066438-product-enablement-developer-billing-google-cloud",
     "postedAt": "2026-10-30T10:38:33.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "source": "google"
+  },
+  {
+    "id": "google:124382586074997446",
+    "slug": "google-technical-solutions-consulting-google-cloud-billing-support-124382586074997446",
+    "company": "google",
+    "title": "Technical Solutions Consulting, Google Cloud, Billing Support",
+    "locations": [
+      "Waterloo, ON, Canada"
+    ],
+    "remote": false,
+    "category": "support",
+    "descriptionHtml": "<p>As a Technical Solutions Consultant, you will be responsible for the technical relationship of our largest advertising clients and/or product partners. You will lead cross-functional teams in Engineering, Sales and Product Management to leverage emerging technologies for our external clients/partners. From concept design and testing to data analysis and support, you will oversee the technical execution and business operations of Google's online advertising platforms and/or product partnerships.<br /><br />You will be able to balance business and partner needs with technical constraints, develop innovative, cutting edge solutions and act as a partner and consultant to those you are working with. You will also be able to build tools and automate products, oversee the technical execution and business operations of Google's partnerships, as well as develop product strategy and prioritize projects and resources.</p><p>Google is a software development company at heart. We hire people with a broad set of technical skills who are ready to take on some of technology's greatest challenges and make an impact on users around the world. At Google, software developers not only revolutionize search, they routinely work on scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. From Google Ads to Chrome, Android to YouTube, social to local, Google software developers are changing the world one technological achievement after another.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />Canada: $166000 - $170000 (CAD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Own the global support strategy for one or more Cloud Billing support areas.</li>\n<li>Partner with Product Management to translate customer needs into a better overall product; recognize trends in customer feedback and escalate issues within Google.</li>\n<li>Partner with Software developers and Site Reliability developers to manage production incidents in real time, with an emphasis on timely and thorough issue identification and customer communication.</li>\n<li>Resolve high-profile escalations and issues, improve the customer experience and drive initiatives that increase their likelihood of success on our platform.</li>\n<li>Design and implement internal tools and automated scripts to mitigate process errors and improve self-service capabilities.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.</li>\n<li>5 years of experience troubleshooting technical issues for internal/external partners or customers.</li>\n<li>Experience supporting customers in cloud operations (e.g., launch or capacity planning, product release management, technical support, escalation management, IT consulting).</li>\n<li>Experience in billing with enterprise software.</li>\n<li>Experience in cloud cost optimization.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience in a cloud computing, technical support, incident management, or site reliability environment.</li>\n<li>Experience using data analysis tools such as SQL and Looker.</li>\n<li>Knowledge of Google Cloud products, services, and support structures.</li>\n<li>Ability to manage high-pressure, time-sensitive events with high executive visibility.</li>\n<li>Ability to influence without authority and build relationships across a global, matrixed organization.</li>\n<li>Excellent problem-solving skills, with an ability to have an operational mindset with a talent for process improvement, and navigate unclear situations.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/124382586074997446-technical-solutions-consulting-google-cloud-billing-support",
+    "postedAt": "2026-11-19T07:11:49.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7050,7 +7172,7 @@
     "postedAt": "2026-10-16T16:09:43.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7099,6 +7221,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/125853295888474822-customer-engineer-iv-platform-finserv-google-cloud",
     "postedAt": "2026-10-20T19:14:52.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -7137,7 +7261,7 @@
     "postedAt": "2026-11-03T10:40:23.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7576,7 +7700,7 @@
     "postedAt": "2026-10-15T11:07:52.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7611,7 +7735,7 @@
     "postedAt": "2026-10-15T10:08:07.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7704,7 +7828,7 @@
     "postedAt": "2026-11-10T12:09:46.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7722,7 +7846,7 @@
     "postedAt": "2026-11-12T10:06:19.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7773,7 +7897,7 @@
     "postedAt": "2026-10-08T13:43:58.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7866,7 +7990,7 @@
     "postedAt": "2026-10-28T12:40:20.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -7915,6 +8039,22 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/130941961061180102-hardware-electrical-engineer-pixel-watch",
     "postedAt": "2026-11-04T11:10:12.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "google"
+  },
+  {
+    "id": "google:130975807550956230",
+    "slug": "google-senior-technical-program-manager-deepmind-130975807550956230",
+    "company": "google",
+    "title": "Senior Technical Program Manager, DeepMind",
+    "locations": [
+      "Mountain View, CA, USA"
+    ],
+    "remote": false,
+    "category": "product",
+    "descriptionHtml": "<p>Google's projects, like our users, span the globe and require managers to keep the big picture in focus while being able to dive into the unique engineering challenges we face daily. As a Technical Program Manager at Google, you lead complex, multi-disciplinary engineering projects using your engineering expertise. You plan requirements with internal customers and usher projects through the entire project lifecycle. This includes managing project schedules, identifying risks and clearly communicating them to project stakeholders. You're equally at home explaining your team's analyses and recommendations to executives as you are discussing the technical trade-offs in product development with engineers.<br /><br />Using your extensive technical and leadership expertise, you manage projects of various size and scope, identifying future opportunities, improving processes and driving the technical directions of your programs.</p>\n<p>In this role, you will lead large, cross-organizational programs in our highest-priority areas, such as building new agentic Gemini capabilities on Google platforms or leading a large-scale platform transition that brings Gemini to additional device surfaces.</p><p>Artificial intelligence will be one of humanity’s most transformative inventions. At DeepMind, we are a pioneering AI lab with exceptional interdisciplinary teams focused on advancing AI development to solve complex global challenges and accelerate high-quality product innovation for billions of users. We use our technologies for widespread public benefit and scientific discovery, ensuring safety and ethics are always our highest priority.</p>We are pushing the boundaries across multiple domains. Our global teams offer diverse learning opportunities and varied career pathways for those driven to achieve exceptional results through collective effort.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $192000 - $278000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Define and own the program strategy, roadmap, and execution model for a large, ambiguous, multi-team effort spanning DeepMind and partner organizations across Google.</li>\n<li>Shape program direction in partnership with engineering, product, UX, and research leadership, drive clarity where scope and ownership are undefined.</li>\n<li>Lead complex technical programs involving platform integrations, architecture changes, or migrations, including sequencing, rollout planning, and deprecation of legacy systems.<br /></li>\n<li>Establish governance, decision-making frameworks, and success metrics, hold teams accountable to outcomes.<br /></li>\n<li>Anticipate systemic risks and cross-organization dependencies (e.g., model readiness, platform release cycles, quality, safety, and privacy) and drive resolution at the leadership level.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in a technical field, or equivalent practical experience.</li>\n<li>8 years of experience in technical program management, leading cross-functional programs from inception to launch.</li>\n<li>8 years of experience with platform or systems-level software (e.g., mobile OS, device platforms, distributed systems).</li>\n<li>8 years of experience using AI tools (e.g., LLM assistants, agents, AI-powered workflows).</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>8 years of experience managing cross-functional or cross-team projects.</li>\n<li>8 years of experience with Android platform development and its release/OEM ecosystem.<br /></li>\n<li>Experience using AI tools (e.g., Large Language Model (LLM) assistants, agents, AI-powered workflows).</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/130975807550956230-senior-technical-program-manager-deepmind",
+    "postedAt": "2026-11-19T10:10:37.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8118,6 +8258,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/131929524366385862-administrative-business-partner-google-global-fleet",
     "postedAt": "2026-10-30T09:08:51.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -8153,7 +8295,7 @@
     "postedAt": "2026-10-27T12:38:26.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8187,6 +8329,22 @@
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-09T11:42:23.458Z",
     "closedAt": "2026-11-11T05:03:15.561Z",
+    "source": "google"
+  },
+  {
+    "id": "google:132507977004262086",
+    "slug": "google-silicon-platform-design-lead-132507977004262086",
+    "company": "google",
+    "title": "Silicon Platform Design Lead",
+    "locations": [
+      "Bengaluru, Karnataka, India"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "Be part of a team that pushes boundaries, developing custom silicon solutions that power the future of Google's direct-to-consumer products. You'll contribute to the innovation behind products loved by millions worldwide. Your expertise will shape the next generation of hardware experiences, delivering unparalleled performance, efficiency, and integration.Be part of a team that pushes boundaries, developing custom silicon solutions that power the future of Google's direct-to-consumer products. You'll contribute to the innovation behind products loved by millions worldwide. Your expertise will shape the next generation of hardware experiences, delivering unparalleled performance, efficiency, and integration.<h3>Responsibilities</h3><ul>\n<li>Drive the multi-year execution of the Silicon Platform IP and Subsystem roadmap across concurrent SoC generations, ensuring technical milestones, resource planning, and silicon schedules align with long-term platform goals.</li>\n<li>Lead and manage the engineering teams responsible for the design and delivery of critical platform-level chassis blocks and subsystems.</li>\n<li>Partner closely with SoC, Memory, and Fabric Architects to co-define next-generation microarchitectures—providing design-led trade-off analysis on PPA and features.</li>\n<li>Lead the delivery of Power, Performance, and Area (PPA) across all platform subsystems; drive dynamic/leakage power optimizations and high-frequency pipeline closure in partnership with Physical Design.</li>\n<li>Oversee the complete front-end design lifecycle from microarchitectural specification to RTL, UPF and Constraints handoff. Lead the team in supporting the post-silicon verification, debug and software development. </li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field, or equivalent practical experience.\n\n<br /></li>\n<li>15 years of industry experience in ASIC/SoC digital RTL design, microarchitecture, and technical leadership or engineering management.<br /></li>\n<li>Experience in SystemVerilog RTL design and front-end implementation sign-off flows (e.g., lint, CDC, UPF/power, synthesis).</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Electrical Engineering, Computer Engineering, or Computer Science.</li>\n<li>Experience driving cross-functional PPA task forces to achieve power, frequency, and area closure at the subsystem and chip level.<br /></li>\n<li>Proven ability to influence, communicate, and align global cross-functional partners across Architecture, DV, Physical Design, and Software/Firmware.</li>\n<li>Demonstrated track record of building, scaling, and managing large, high-performing silicon design organizations across multiple platform domains (memory path, system cache, interconnect). <br /></li>\n<li>Strong  technical foundation in computer architecture, memory hierarchies, cache coherence protocols, and AMBA interconnects.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/132507977004262086-silicon-platform-design-lead",
+    "postedAt": "2026-11-19T08:08:34.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8360,6 +8518,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/133505459536437958-video-lead-retail-large-customer-sales",
     "postedAt": "2026-10-28T12:08:35.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -8393,7 +8553,7 @@
     "postedAt": "2026-08-27T22:38:45.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8427,6 +8587,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/134063074335171270-data-cloud-sales-specialist-iii-google-cloud-commercial-spanish-english",
     "postedAt": "2026-10-29T10:41:24.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -8564,7 +8726,7 @@
     "postedAt": "2026-11-04T08:40:49.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8597,6 +8759,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/134781880061829830-account-manager-large-customer-sales-fixed-term-contract",
     "postedAt": "2026-10-21T07:09:22.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -8618,6 +8782,22 @@
     "source": "google"
   },
   {
+    "id": "google:135054995690005190",
+    "slug": "google-software-engineer-manager-ii-embedded-systems-firmware-135054995690005190",
+    "company": "google",
+    "title": "Software Engineer Manager II, Embedded Systems/Firmware",
+    "locations": [
+      "Sunnyvale, CA, USA"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Like Google's own ambitions, the work of a Software Engineer goes beyond just Search. Software Engineering Managers have not only the technical expertise to take on and provide technical leadership to major projects, but also manage a team of Engineers. You not only optimize your own code but make sure Engineers are able to optimize theirs. As a Software Engineering Manager you manage your project goals, contribute to product strategy and help develop your team. Teams work all across the company, in areas such as information retrieval, artificial intelligence, natural language processing, distributed computing, large-scale system design, networking, security, data compression, user interface design; the list goes on and is growing every day. Operating with scale and speed, our exceptional software engineers are just getting started -- and as a manager, you guide the way.<br /><br />With technical and leadership expertise, you manage engineers across multiple teams and locations, a large product budget and oversee the deployment of large-scale projects across multiple sites internationally.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $207000 - $300000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Set and communicate team priorities that support the broader organization's goals. Align strategy, processes, and decision-making across teams. Set expectations with individuals based on their level and role and aligned to the broader organization's goals. Meet regularly with individuals to discuss performance and development.<br /></li>\n<li>Design, guide and vet systems designs within the scope of the broader area, and write product or system development code to solve ambiguous problems.<br /></li>\n<li>Review code developed by other engineers and provide feedback to ensure best practices (e.g., style guidelines, checking code in, accuracy, testability, and efficiency).<br /></li>\n<li>Align roadmaps with internal operating system, firmware, and infrastructure teams as well as external hardware partners to ensure our platforms meet security, reliability, and performance standards.</li>\n<li>Lead the design, development, and upstream/production integration of Linux kernel, I/O virtualization, and confidential computing capabilities.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degreeor equivalent practical experience.<br /></li>\n<li>8 years of experience in software development.<br /></li>\n<li>3 years of engineering management experience mentoring engineers, managing roadmaps, and driving execution across platform programs.</li>\n<li>Experience developing Linux kernel internals, hypervisors, or I/O virtualization capabilities.</li>\n<li>Experience with platform security architectures, including confidential computing, secure device attestation, and firmware verification.</li>\n<li>Experience diagnosing system bugs, security vulnerabilities, and performance bottlenecks across the hardware and software boundary.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical field.<br /></li>\n<li>3 years of experience working in a complex, matrixed organization.<br /></li>\n<li>Experience with hardware based system security, confidential computing and hardware security standards including end-to-end security bring-up and validation across custom or accelerator hardware platforms</li>\n<li>Expertise in I/O virtualization subsystems and high-speed interconnects </li>\n<li>Track record of managing multi-branch kernel releases, upstreaming kernel changes, resolving low-level security/performance issues at scale, and collaborating with external silicon partners.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/135054995690005190-software-engineer-manager-ii-embedded-systems-firmware",
+    "postedAt": "2026-11-19T13:39:35.000Z",
+    "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "google"
+  },
+  {
     "id": "google:135156989620560582",
     "slug": "google-forward-deployed-engineering-intern-bs-ms-2027-135156989620560582",
     "company": "google",
@@ -8632,7 +8812,7 @@
     "postedAt": "2026-10-05T13:09:57.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -8733,6 +8913,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/135520004551385798-salesforce-application-engineer-youtube",
     "postedAt": "2026-10-16T09:09:58.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-19T05:03:26.756Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -8967,7 +9149,7 @@
     "postedAt": "2026-10-19T08:11:21.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -9209,7 +9391,7 @@
     "postedAt": "2026-10-23T08:38:54.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -9688,7 +9870,7 @@
     "postedAt": "2026-11-10T05:07:52.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -9739,7 +9921,7 @@
     "postedAt": "2026-10-16T07:38:26.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -9757,7 +9939,7 @@
     "postedAt": "2026-10-15T07:42:30.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "google"
   },
   {
@@ -9776,24 +9958,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/142366002468790982-software-engineer-iii-infrastructure-google-ads",
     "postedAt": "2026-11-12T09:37:05.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "source": "google"
-  },
-  {
-    "id": "google:142401891584615110",
-    "slug": "google-program-manager-ii-network-infrastructure-google-cloud-142401891584615110",
-    "company": "google",
-    "title": "Program Manager II, Network Infrastructure, Google Cloud",
-    "locations": [
-      "Reston, VA, USA"
-    ],
-    "remote": false,
-    "category": "product",
-    "descriptionHtml": "<p>A problem isn’t truly solved until it’s solved for all. That’s why Googlers build products that help create opportunities for everyone, whether down the street or across the globe. As a Technical Program Manager at Google, you’ll use your technical expertise to lead complex, multi-disciplinary projects from start to finish. You’ll work with stakeholders to plan requirements, identify risks, manage project schedules, and communicate clearly with cross-functional partners across the company. You're equally comfortable explaining your team's analyses and recommendations to executives as you are discussing the technical tradeoffs in product development with engineers. </p>\n<p>Network Infrastructure Engineering (NIE) is responsible for the planning, evaluation, design, and construction of Google's space in data center facilities across the globe. We're looking for Technical Program Managers (TPMs) and engineers who can help us to evaluate, plan, design, cost, and build new and enhanced space in data center facilities. We are constantly in a state of evaluations, design, and construction across the globe we need team members who can help us execute on our vision to design and build spaces that last us multiple years.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $138000 - $197000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Partner with stakeholders to translate physical infrastructure demands (space, power, cooling, fiber) to requirements of building designs.</li>\n<li>Work closely with design engineering firms, construction contractors, DC providers, and other partner teams to develop solutions.</li>\n<li>Provide reporting and project tracking of data center design and construction projects.</li>\n<li>Coordinate necessary financial/technical approvals and manage budget/schedule for multiple concurrent projects.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in a technical field, or equivalent practical experience. <br /></li>\n<li>2 years of experience in program management.<br /></li>\n<li>Experience creating infrastructure designs (e.g., telecom, electrical, mechanical), drawing sets for builds, and remodels of data center networking spaces.</li>\n<li>Experience designing, constructing, or managing infrastructure projects.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>2 years of experience managing cross-functional or cross-team projects.</li>\n<li>Experience with engineering or program management role involving multi-disciplinary fields such as network, fiber, electrical, or mechanical (cooling).</li>\n<li>Excellent written and verbal communication skills, and a data-driven analytical approach to solving complex challenges.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/142401891584615110-program-manager-ii-network-infrastructure-google-cloud",
-    "postedAt": "2026-10-26T07:40:30.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-05T05:03:16.544Z",
-    "closedAt": "2026-11-06T05:03:01.973Z",
     "source": "google"
   },
   {
