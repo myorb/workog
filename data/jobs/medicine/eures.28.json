@@ -1640,6 +1640,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ4OTQ0NC0yMDI2NDcgMTQ?lang=en",
     "postedAt": "2026-11-12T22:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -1698,6 +1700,8 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/MzQ5MTE0Mi0yMDI2NDcgMTQ?lang=en",
     "postedAt": "2026-11-09T22:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2170,6 +2174,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/6764742",
     "postedAt": "2026-09-09T05:12:10.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -2189,7 +2195,7 @@
     "postedAt": "2026-09-09T05:04:49.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -2788,24 +2794,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWI5MWU0MTYtZTNjOS1kYzM3LWUwNjMtNjg5M2IyMGFkZTUwIDQy?lang=en",
     "postedAt": "2026-09-16T01:11:52.249Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWIwNTEzMzItOGZlNS1kZmZiLWUwNjMtNjg5M2IyMGFmODZkIDQy",
-    "slug": "eures-anios-nwiwntezmzitogzlns1kzmzilwuwnjmtnjg5m2iymgfmodzkidqy",
-    "company": "eures",
-    "title": "Anios",
-    "locations": [
-      "'S-Hertogenbosch, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>ANIOS HIC  BKV , Den Bosch  Vakgebied Artsen Functie ANIOS Branche GGZ Aanstelling Vaste aanstelling Plaatsingsdatum 8 september 2026 Niveau WO Ervaring Niet nader bepaald Dienstverband Niet nader bepaald Op een HIC draait iedere dienst om scherpte, samenwerking en menselijk contact. Verdiep je in acute psychiatrie en groei verder als arts binnen een ervaren team. Jouw nieuwe baan Acute psychiatrie vraagt om medische scherpte en rust wanneer situaties snel veranderen. Zet jouw kennis in op de HIC en ontwikkel je verder binnen de ggz. Als basisarts werk je op een High &amp;amp; Intensive-afdeling Care in Vught. Hier worden cliënten opgenomen die door een psychiatrische crisis tijdelijk intensieve zorg nodig hebben. Rust, structuur en veiligheid staan tijdens zo'n opname centraal. Binnen jouw functie doe je in korte tijd brede psychiatrische ervaring op. Onder supervisie van de afdelingspsychiater verricht je psychiatrisch onderzoek en diagnostiek. Ook ontwikkel je jouw gespreksvaardigheden en leer je steeds beter contextueel kijken naar cliënten en hun omgeving. Tijdens crisissituaties spelen regelmatig verschillende belangen tegelijk. Juist dan oefen je met zorgvuldig afwegen, communiceren en medisch handelen. Daarnaast groei je in een aansturende rol binnen het multidisciplinaire team, steeds met passende supervisie. Diensten maken eveneens deel uit van jouw werk. Hierdoor doe je ervaring op binnen zowel klinische afdelingen als de SEH van een nabijgelegen ziekenhuis. Voor deze diensten geldt een compensatieregeling. Deze functie past goed wanneer je de psychiatrie verder wilt verkennen. Een toekomstige opleiding tot psychiater mag daarbij in beeld zijn, maar vormt geen eis. Basisartsen worden binnen deze organisatie nadrukkelijk gezien als potentiële kandidaten voor een opleidingsplaats. Jouw nieuwe werkplek Je werkt op een gesloten HIC-afdeling met 2 units en in totaal 13 bedden. Cliënten verblijven hier tijdens een ernstige psy...</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWIwNTEzMzItOGZlNS1kZmZiLWUwNjMtNjg5M2IyMGFmODZkIDQy?lang=en",
-    "postedAt": "2026-09-09T01:12:52.523Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -3731,63 +3719,6 @@
     "source": "eures"
   },
   {
-    "id": "eures:NWY4MDhlYmEtM2VkNS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-basisarts-spoedeisende-psychiatrie-nwy4mdhlymetm2vkns02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "Basisarts spoedeisende psychiatrie",
-    "locations": [
-      "Sliedrecht, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "psychiatry",
-    "level": "resident",
-    "descriptionHtml": "<p>Als ANIOS Spoedeisende Psychiatrie in Rotterdam werk je in een dynamische omgeving waar snel schakelen, klinisch inzicht en samenwerking centraal staan. Je voert medische en psychiatrische intakes uit, beoordeelt crisissituaties en stelt samen met de psychiater behandelplannen op. Daarnaast bewaak je de somatische gezondheid van cliënten en neem je actief deel aan multidisciplinaire overleggen. Deze functie biedt veel ruimte om te leren. Je werkt nauw samen met ervaren psychiaters en behandelaren, ontvangt goede supervisie en kunt je verder oriënteren op een vervolgopleiding binnen de psychiatrie of bijvoorbeeld de bedrijfsgeneeskunde.&amp;nbsp;&amp;nbsp;Waar ga je werken? Je komt terecht in een betrokken en professioneel team op de afdeling Spoedeisende Psychiatrie, waar cliënten met een acute psychiatrische crisis worden opgevangen en behandeld. Het team bestaat uit psychiaters, verpleegkundigen, psychologen en maatschappelijk werkers. Er wordt intensief samengewerkt, met oog voor veiligheid, herstel en eigen regie van de cliënt. De sfeer is open, collegiaal en ondersteunend, met ruimte voor humor, reflectie en persoonlijke ontwikkeling.&amp;nbsp;&amp;nbsp;Wie zoeken wij?&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;Afgeronde opleiding Geneeskunde en geldige BIG-registratie -&amp;nbsp;&amp;nbsp;Affiniteit met acute psychiatrie en crisisinterventie -&amp;nbsp;&amp;nbsp;Sterke communicatieve en klinische vaardigheden -&amp;nbsp;&amp;nbsp;Teamgericht, stressbestendig en leergierig -&amp;nbsp;&amp;nbsp;Bereidheid om deel te nemen aan bereikbaarheidsdiensten &amp;nbsp;&amp;nbsp;Wat bieden wij?&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;Salaris volgens cao GGZ, FWG 65 (max. €6.716,- o.b.v. 36 uur) -&amp;nbsp;&amp;nbsp;Een volwaardige rol met veel ruimte voor groei en ontwikkeling -&amp;nbsp;&amp;nbsp;Professionele begeleiding en regelmatige supervisie -&amp;nbsp;&amp;nbsp;166 verlofuren + 35 extra verlofuren per jaar (bij fulltime dienstverband) -&amp;nbsp;&amp;nbsp;Levensfasebudget en goede pensioenregeling -&amp;nbsp;&amp;nbsp;Mogelijkheden voor opleiding of specialisatie  Een betrokken, veilige en stimulerende werkomgeving  Ben jij de ANIOS / Basisarts die wij zoeken? Stuur je CV &amp;amp; motivatie naar Li Jochems via li@p</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtM2VkNS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:14:30.543Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtMjEwMS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-bedrijfsarts-nwy4mdhlymetmjewms02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "Bedrijfsarts",
-    "locations": [
-      "Haarlem, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Locatie: Haarlem / hybride werken mogelijkDienstverband: Vast dienstverbandSector: ArboSalaris: Marktconform, passend bij kennis en ervaringWil jij als bedrijfsarts bijdragen aan de gezondheid, inzetbaarheid en duurzame inzet van medewerkers in de regio Haarlem? Werk je graag in een multidisciplinair team waar jouw medische expertise direct impact maakt? Dan is deze functie iets voor jou.Wat ga je doenAls bedrijfsarts in Haarlem ben je een belangrijke schakel in het bevorderen van welzijn en inzetbaarheid van werknemers binnen verschillende organisaties. Je werkt nauw samen met casemanagers en andere collega’s, en biedt medische expertise op het gebied van verzuim, re-integratie en preventie.Je werkzaamheden omvatten onder andere:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Het uitvoeren van medische consulten en adviseren over re-integratie;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Coachen en samenwerken met casemanagers en andere teamleden;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Bewaken van medische standaarden en toepassen van best practices;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Organiseren van kennissessies en bijdragen aan professionele ontwikkeling binnen het team;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Signaleren van trends en meedenken over verbeteringen in dienstverlening en processen.Wie ben jijJe bent een proactieve professional die zowel zelfstandig als in teamverband effectief functioneert. Daarnaast herken je jezelf in het volgende:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Je bent BIG-geregistreerd bedrijfsarts of verzekeringsarts, of je hebt ervaring als basisarts met ervaring in ziektewet- en re-integratiebegeleiding;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Je hebt affiniteit met verzuimbegeleiding en advies aan werknemers en werkgevers;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Je bent minimaal 3 dagen per week beschikbaar, met flexibiliteit voor hybride werken;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Je brengt energie mee om bij te dragen aan een dynamische en veranderende omgeving.Wat bieden wijJe krijgt een positie binnen een professioneel team, met ruimte voor professionele groei en ontwikkeling. Verder bieden wij:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Flexibele werkvormen met de mogelijkheid</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtMjEwMS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:13:54.883Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtMTc1Yy02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-basisarts-ouderengeneeskunde-vvt-heemskerk-nwy4mdhlymetmtc1yy02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "Basisarts Ouderengeneeskunde – VVT – Heemskerk",
-    "locations": [
-      "Heemskerk, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "level": "resident",
-    "descriptionHtml": "<p>Basisarts Ouderengeneeskunde – VVT – Heemskerk&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Wil jij ervaring opdoen binnen het specialisme van de toekomst: ouderengeneeskunde? Voor een zorgorganisatie in de regio Heemskerk zoeken wij een gedreven basisarts (ANIOS) die wil werken met ouderen die veelal complexe en langdurige zorg nodig hebben, zodat cliënten op de psychogeriatrische en somatische afdelingen kunnen rekenen op deskundige medische zorg.&amp;nbsp;&amp;nbsp; Wat ga je doen als Basisarts Ouderengeneeskunde?&amp;nbsp;&amp;nbsp;Binnen deze functie doe je ervaring op binnen een zeer uitdagend en groeiend specialisme: het aantal ouderen neemt toe en de te leveren zorg wordt steeds complexer. Je komt te werken op de PG- en somatische afdelingen, gericht op langdurig verblijf wanneer thuis wonen niet langer mogelijk is, en er zijn ook mogelijkheden binnen de geriatrische revalidatiezorg. Je bent verantwoordelijk voor het verlenen van medische zorg aan cliënten, het opstellen en uitvoeren van zorgplannen en het voeren van de regie hierover. Je komt te werken in een medische vakgroep bestaande uit specialisten ouderengeneeskunde, verpleegkundig specialisten, basisartsen, doktersassistentes en secretarieel medewerkers, waarbinnen ook AIOS, VIOS, HAIO en coassistenten worden opgeleid. De sfeer is informeel, collegiaal en gericht op samenwerking, en je werkt daarnaast nauw samen met zorgteams en behandelaren van de psychosociale en paramedische vakgroepen. De supervisie is uitstekend geborgd, dankzij de ruime ervaring van de specialisten ouderengeneeskunde in de begeleiding van basisartsen.&amp;nbsp;&amp;nbsp; Wat wordt jou geboden?&amp;nbsp;&amp;nbsp; Een salaris conform cao VVT, FWG 65 (tussen €4.659,42 en €7.018,30 bruto op basis van 36 uur)&amp;nbsp;&amp;nbsp;Direct een contract voor onbepaalde tijd, voor 24 tot 36 uur per week&amp;nbsp;&amp;nbsp;Een eindejaarsuitkering van 8,33% en vakantiegeld van 8%&amp;nbsp;&amp;nbsp;Een pensioenregeling via Pensioenfonds Zorg en Welzijn&amp;nbsp;&amp;nbsp;Aanvullende arbeidsvoorwaarden, zoals korting op een fiets of e-bike, korting op een fitnessabonnement of sportvereniging, een aanbren</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtMTc1Yy02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:13:44.054Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
     "id": "eures:NWY4MDhlYmEtMTQ1MS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
     "slug": "eures-anios-nwy4mdhlymetmtq1ms02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
     "company": "eures",
@@ -3801,61 +3732,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtMTQ1MS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
     "postedAt": "2026-11-05T03:13:41.395Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtMWExOC02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-anios-bedrijfsgeneeskunde-nwy4mdhlymetmwexoc02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "ANIOS bedrijfsgeneeskunde",
-    "locations": [
-      "Haarlem, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Wil jij als ANIOS méér betekenen dan alleen behandelen?Voor een goede klant, een arbodienst zijn wij op zoek naar een ANIOS Bedrijfsgeneeskunde die toe is aan een nieuwe uitdaging. Wil jij jouw medische kennis inzetten om mensen duurzaam inzetbaar te houden én bijdragen aan een gezonde werkomgeving? Dan is dit een mooie kans.In deze functie kijk je verder dan de medische klacht alleen. Je adviseert werknemers én werkgevers, begeleidt verzuimtrajecten en denkt actief mee over preventie. Je hebt veel persoonlijk contact, bouwt langdurige relaties op en krijgt de ruimte om jezelf verder te ontwikkelen binnen de bedrijfsgeneeskunde.Wat ga je doen?Als ANIOS begeleid je werknemers tijdens hun re-integratie en ondersteun je werkgevers bij vraagstukken rondom gezondheid en werk. Je voert spreekuren, stelt medische adviezen op en werkt nauw samen met een multidisciplinair team van onder andere casemanagers, arboverpleegkundigen en arbeidsdeskundigen.Je houdt je onder andere bezig met:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Het voeren van spreekuren en beoordelen van belastbaarheid.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Adviseren over verzuim, re-integratie en duurzame inzetbaarheid.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Signaleren van preventieve mogelijkheden om uitval te voorkomen.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Intensief samenwerken met collega's uit verschillende disciplines.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Meedenken over complexe casussen waarbij zowel medische als organisatorische belangen spelen.Geen dag is hetzelfde. Juist de afwisseling tussen medische inhoud, coaching en advisering maakt deze functie uitdagend.Wat kun je verwachten?Je komt terecht in een professionele organisatie waar samenwerken, ontwikkeling en kwaliteit centraal staan. Er is veel aandacht voor begeleiding, waardoor deze functie ook uitstekend past bij artsen die de overstap naar de bedrijfsgeneeskunde willen maken.Daarnaast kun je rekenen op:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Een salaris tussen €5.500 en €7.000 bruto per maand (o.b.v. fulltime), afhankelijk van ervaring.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Direct een vast dienstve</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtMWExOC02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:13:46.787Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtN2M4Yy02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-basisarts-bedrijfsgeneeskunde-ontwikkel-je-tot-bedrijfsarts-nwy4mdhlymetn2m4yy02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "Basisarts bedrijfsgeneeskunde - Ontwikkel je tot Bedrijfsarts",
-    "locations": [
-      "Leiden, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "level": "resident",
-    "descriptionHtml": "<p>Een specialisme waarin je verder kijkt dan de patiënt alleenWil je als basisarts een volgende stap zetten en spreekt de bedrijfsgeneeskunde je inhoudelijk aan? Voor een groeiende arbodienst in regio Leiden zoeken wij een basisarts die bewust kiest voor een toekomst binnen de bedrijfsgeneeskunde.Ervaring binnen een arbodienst is niet nodig. Veel belangrijker is dat je nieuwsgierig bent naar het vak, jezelf wilt ontwikkelen en wilt leren hoe gezondheid, werk en organisatie elkaar beïnvloeden. Je krijgt de begeleiding om het vak goed te leren kennen en kunt je op termijn verder ontwikkelen richting de opleiding tot bedrijfsarts.Wat bieden wij jou?&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Salaris tussen €5.000 en €6.000 bruto per maand op basis van fulltime&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Een functie waarin je zonder eerdere ervaring kunt starten binnen de bedrijfsgeneeskunde&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Goede begeleiding door ervaren professionals&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Mogelijkheid om je op termijn te ontwikkelen tot bedrijfsarts&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Hybride werken en flexibiliteit in je werkweek&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Reguliere werktijden zonder avond-, nacht- en weekenddiensten&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Goed pensioen&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Vergoeding van treinkosten&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Mogelijkheid tot een leasebudget&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Veel ruimte om inhoudelijk te leren en jezelf verder te ontwikkelenWat ga je doen?Als basisarts leer je de bedrijfsgeneeskunde in de praktijk kennen. Je begeleidt medewerkers rondom gezondheid, verzuim en werk en leert daarbij verder te kijken dan alleen de medische klacht.Je houdt je onder andere bezig met:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Voeren van spreekuren met medewerkers&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Begeleiden van medewerkers tijdens verzuim en re-integratie&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Onderzoeken welke factoren herstel en werkhervatting beïnvloeden&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Adviseren over belastbaarheid en mogelijkheden richting werk&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Overleggen en sparren met ervaren bedrijfsartsen&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Leren werken binnen de Wet verbetering poortwachter&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Steeds zelfstandiger oppakken van je eigen casuïstiekWie zoek</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtN2M4Yy02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:15:47.161Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtNjJkYS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-anios-bedrijfsgeneeskunde-nwy4mdhlymetnjjkys02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "ANIOS Bedrijfsgeneeskunde",
-    "locations": [
-      "Eindhoven, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>ANIOS Bedrijfsgeneeskunde24-40 uur per weekWil jij als arts verder kijken dan alleen de medische klacht en bijdragen aan duurzaam herstel en gezond werken? Voor een moderne arbodienstverlener in de regio Eindhoven zoeken wij een ANIOS met interesse in bedrijfsgeneeskunde.Je werkt binnen een professionele omgeving waarin innovatie, persoonlijke aandacht en multidisciplinaire samenwerking samenkomen. Je krijgt goede begeleiding, maar ook de vrijheid om steeds zelfstandiger te werken.Wat ga je doen?&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Begeleiden van werknemers bij verzuim en re-integratie;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Voeren van spreekuren en beoordelen van de belastbaarheid;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Adviseren over herstel, werkhervatting en duurzame inzetbaarheid;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Signaleren van kansen op het gebied van preventie;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Samenwerken met bedrijfsartsen, casemanagers en andere professionals;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Meedenken over passende oplossingen voor werknemer en werkgever.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Wie zoeken wij?&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je hebt Geneeskunde afgerond en beschikt over een geldige BIG-registratie;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je hebt interesse in arbeid, gezondheid en preventie;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je bent communicatief sterk, zorgvuldig en besluitvaardig;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je werkt zelfstandig en vindt het prettig om multidisciplinair samen te werken;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Ervaring binnen de bedrijfsgeneeskunde is welkom, maar niet noodzakelijk.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Wat kun je verwachten?&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Een functie van 24 tot 40 uur per week;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Goede begeleiding en een uitgebreid inwerktraject;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hybride werken en flexibiliteit in je werkweek;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Veel ruimte voor ontwikkeling en verdieping;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Een passend salaris en aantrekkelijke secundaire arbeidsvoorwaarden;</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtNjJkYS02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:15:13.819Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -3892,24 +3768,6 @@
     "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtNmI3OC02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
     "postedAt": "2026-11-05T03:15:24.412Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:NWY4MDhlYmEtNTJhNC02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy",
-    "slug": "eures-anios-bedrijfsgeneeskunde-werken-midden-in-de-organisatie-nwy4mdhlymetntjhnc02ndyylwuwnjmtnjg5m2iymgewnwi3idqy",
-    "company": "eures",
-    "title": "ANIOS Bedrijfsgeneeskunde - Werken midden in de organisatie",
-    "locations": [
-      "Rotterdam, Netherlands"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "descriptionHtml": "<p>Werken midden in verschillende organisaties Voor een groeiende arbodienst in regio Rotterdam zoeken wij een ANIOS Bedrijfsgeneeskunde. Je werkt vanuit één vast team, maar bent regelmatig op locatie bij verschillende klantorganisaties. Hierdoor krijg je een afwisselende werkomgeving en leer je verschillende bedrijven, medewerkers en vraagstukken kennen. De organisatie combineert veel zelfstandigheid met goede inhoudelijke begeleiding. Ervaren bedrijfsartsen en praktijkopleiders zijn beschikbaar voor supervisie en casuïstiek en er is ruimte voor intervisie en inhoudelijke afstemming. Ervaring binnen de bedrijfsgeneeskunde is een pré, maar geen vereiste; motivatie, initiatief en de wil om jezelf binnen het vak te ontwikkelen zijn minstens zo belangrijk.  Wat bieden wij jou?&amp;nbsp;&amp;nbsp;- Salaris tussen €5.500 en €7.000 bruto per maand op basis van fulltime - Begeleiding door ervaren bedrijfsartsen en praktijkopleiders - Mogelijkheid om jezelf verder te ontwikkelen richting bedrijfsarts - Reguliere werktijden zonder avond-, nacht- en weekenddiensten - Mobiliteitsbudget of mogelijkheid tot een leaseauto - Een goed pensioen - Individueel opleidingsbudget - Regelmatig intervisie en inhoudelijk overleg - Veel zelfstandigheid en verantwoordelijkheid - Een afwisselende werkomgeving bij verschillende klantorganisaties  Wat ga je doen? Als ANIOS Bedrijfsgeneeskunde begeleid je medewerkers rondom gezondheid, werk en verzuim. Je kijkt daarbij niet alleen naar de medische situatie, maar ook naar de mogelijkheden om iemand duurzaam en verantwoord aan het werk te houden of terug te laten keren. Je houdt je onder andere bezig met:&amp;nbsp;&amp;nbsp;- Voeren van bedrijfsgeneeskundige spreekuren - Begeleiden van medewerkers tijdens verzuim en re-integratie - Adviseren over belastbaarheid en mogelijkheden richting werk - Signaleren van factoren die herstel en duurzame inzetbaarheid beïnvloeden - Bespreken van casuïstiek met ervaren bedrijfsartsen - Adviseren van medewerkers en werkgevers - Steeds zelfst</p>",
-    "applyUrl": "https://europa.eu/eures/portal/jv-se/jv-details/NWY4MDhlYmEtNTJhNC02NDYyLWUwNjMtNjg5M2IyMGEwNWI3IDQy?lang=en",
-    "postedAt": "2026-11-05T03:14:52.006Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -4182,7 +4040,7 @@
     "postedAt": "2026-09-21T07:27:21.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -4293,6 +4151,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7158683",
     "postedAt": "2026-09-24T03:07:24.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4311,6 +4171,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7116074",
     "postedAt": "2026-09-23T00:40:16.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -4511,26 +4373,6 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7969186",
     "postedAt": "2026-10-15T09:49:38.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "source": "eures"
-  },
-  {
-    "id": "eures:Nzk2OTM1OSA5",
-    "slug": "adecco-medical-chirurgien-orthopedique-h-f-fevrier-nzk2otm1osa5",
-    "company": "eures",
-    "employer": "Adecco Medical",
-    "title": "Chirurgien orthopédique H/F février",
-    "locations": [
-      "Guadeloupe, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "surgery",
-    "descriptionHtml": "<p>Offre d'emploi : Chirurgien Orthopédique H/F, Guadeloupe - DOM/TOM (remplacement)Contexte du recrutementType de poste : CDD Période : mois de février (avec la possibilité de prolonger)Type de profil : Chirurgien Orthopédique H/FRémunération : à partir de 8302.32€ incluant les 40% d'indemnité de vie chère (sans indemnité de permanence de soins et hors prélèvement à la source)Conditions de prise en charge pour médecins hors GuadeloupeBillet d'avion aller-retour depuis la métropole (classe économique)Hébergement et/ou location de voiture remboursés sur présentation de facturesMerci de postuler à cette offre et de nous transmettre vos disponibilités pour ce remplacement.</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/7969359",
-    "postedAt": "2026-10-15T09:49:49.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
     "source": "eures"
   },
   {
@@ -5242,7 +5084,7 @@
     "postedAt": "2026-10-19T23:24:00.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -5723,7 +5565,7 @@
     "postedAt": "2026-11-13T01:28:40.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -5742,7 +5584,7 @@
     "postedAt": "2026-11-13T01:31:19.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -6190,6 +6032,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8141469",
     "postedAt": "2026-10-22T00:31:46.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6469,7 +6313,7 @@
     "postedAt": "2026-10-21T23:26:54.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -6525,6 +6369,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8856931",
     "postedAt": "2026-11-14T12:33:34.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -6754,7 +6600,7 @@
     "postedAt": "2026-11-14T17:06:14.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -7332,6 +7178,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8824824",
     "postedAt": "2026-11-14T01:27:42.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7350,6 +7198,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8824941",
     "postedAt": "2026-11-14T01:28:04.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7368,6 +7218,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8824939",
     "postedAt": "2026-11-14T01:28:03.000Z",
     "firstSeenAt": "2026-11-16T05:03:35.318Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -7860,6 +7712,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8222264",
     "postedAt": "2026-10-23T15:07:08.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8309,6 +8163,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8223222",
     "postedAt": "2026-10-23T15:08:34.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8622,7 +8478,7 @@
     "postedAt": "2026-11-18T17:06:35.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -8676,6 +8532,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8967693",
     "postedAt": "2026-11-19T01:38:15.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8801,7 +8659,7 @@
     "postedAt": "2026-11-19T12:35:52.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -8856,7 +8714,7 @@
     "postedAt": "2026-11-19T13:57:42.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -8876,7 +8734,7 @@
     "postedAt": "2026-11-19T17:06:40.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -8895,6 +8753,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8985598",
     "postedAt": "2026-11-19T17:06:03.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -8914,7 +8774,7 @@
     "postedAt": "2026-11-19T17:06:31.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -9788,26 +9648,6 @@
     "source": "eures"
   },
   {
-    "id": "eures:ODMxOTY4MyA5",
-    "slug": "app-ines-medecin-pediatre-en-service-de-neonatalogie-h-f-odmxoty4mya5",
-    "company": "eures",
-    "employer": "App'Ines",
-    "title": "Médecin pédiatre en service de néonatalogie (H/F)",
-    "locations": [
-      "La Réunion, France"
-    ],
-    "remote": false,
-    "category": "medicine",
-    "specialty": "paediatrics",
-    "descriptionHtml": "<p>Description du poste :L'un de nos établissements partenaires basé à proximité de Saint-Denis (La Réunion), est à la recherche d'un(e) Pédiatre, en libéral.Poste à pourvoir avant février 2027.Présentation de la structureTu rejoindras une clinique privée de type MCO de 330 lits et places, rattachée à un groupe de santé. Tu intégreras le pôle mère-enfant, au sein d'une maternité de niveau 2A comprenant notamment un service de néonatologie de 12 berceaux. Le pôle réalise environ 1 500 accouchements par an.MissionsAu sein d'une équipe de 3 autres pédiatres, tu interviendras notamment sur La prise en charge des nouveau-nés après accouchement ou transfert***L'animation du service de néonatologie et de la nurserie***La prise en charge des urgences pédiatriques dès la salle d'accouchement si nécessaire***La visite des patients***La gestion de la filière avec les correspondants***La validation des admissions, sorties et comptes rendus***La collaboration avec les équipes de gynécologie-obstétrique et l'encadrement du pôleOrganisationTu assureras environ une semaine par mois (1 semaine sur 4), avec une présence sur site en journée et une astreinte la nuit et le week-end.Conditions / modalités administratives***Statut : libéral***Secteur : privé***Démarrage : avant février 2027***Convention d'exercice disponible immédiatement***Période probatoire de 6 mois***Honoraires estimés : 9 000 à 10 000 EUR par mois, incluant la permanence des soins (PDSES)Avantages***Organisation d'astreinte déjà mise en place***Secrétariat dédié***Bureau au sein du service***Accès aux logiciels de la clinique***Appui du service communication***Restauration et lingerie***Chambre de garde si nécessaire***Travail en collaboration avec une équipe de 3 pédiatresDescription du profil :Profil recherchéTu es titulaire du diplôme requis pour exercer en tant que pédiatre. Une expérience en néonatologie est nécessaire pour assurer les missions confiées.</p>",
-    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8319683",
-    "postedAt": "2026-10-28T02:14:56.000Z",
-    "firstSeenAt": "2026-11-04T21:58:24.246Z",
-    "lastSeenAt": "2026-11-06T05:03:01.973Z",
-    "closedAt": "2026-11-08T05:02:55.071Z",
-    "source": "eures"
-  },
-  {
     "id": "eures:ODMyMTc0NiA5",
     "slug": "adecco-medical-medecin-generaliste-h-f-odmymtc0nia5",
     "company": "eures",
@@ -10642,7 +10482,7 @@
     "postedAt": "2026-11-04T09:06:43.000Z",
     "firstSeenAt": "2026-11-04T21:58:24.246Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -11055,7 +10895,7 @@
     "postedAt": "2026-11-06T01:54:10.000Z",
     "firstSeenAt": "2026-11-06T10:50:31.526Z",
     "lastSeenAt": "2026-11-20T05:03:19.201Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
@@ -11375,6 +11215,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8650267",
     "postedAt": "2026-11-09T07:04:50.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -11802,6 +11644,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8620786",
     "postedAt": "2026-11-06T12:34:29.000Z",
     "firstSeenAt": "2026-11-08T05:02:55.071Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -11987,6 +11831,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/8631330",
     "postedAt": "2026-11-09T06:47:45.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -12097,6 +11943,221 @@
     "source": "eures"
   },
   {
+    "id": "eures:OTA0Mjc2MiA5",
+    "slug": "groupe-jti-psychiatre-f-h-ota0mjc2mia5",
+    "company": "eures",
+    "employer": "Groupe JTI",
+    "title": "Psychiatre F/H",
+    "locations": [
+      "Meuse, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>HELLO MEDICAL est à la recherche d'un(e) Psychiatrique (H/F) pour assurer une mission de remplacement au sein d'un établissement situé dans le département 55 - Meuse région Grand Est situé à 50 min min de Bar-le-Duc, durant la période suivante : Amplitude horaire :&amp;nbsp;&amp;nbsp;- de 8h30 à 18h30 - astreintes à définir Période : - À compter du 26 octobre 2026 - Recherche prioritaire pour une mission à temps plein sur le long terme - Possibilité également de proposer des disponibilités pour une courte période Le service : - Équipe composée d'un chef de service et d'un médecin intérimaire - Unité d'hospitalisation fermée - Hôpital de jour Rémunération à définir Logement pris en charge 1 A/R pris en charge en frais de déplacement Inscription à l'ordre des médecins en France obligatoire Si vous avez d'autres disponibilités, n'hésitez pas à nous les communiquer. Nous travaillons avec de nombreux établissements partenaires sur l'ensemble du territoire National. Nous sommes joignables au*n'hésitez pas à nous contacter, ou sur le mail suivant - Titulaire du DES de Médecine en Psychiatrie - Inscription au tableau de l'Ordre des Médecins</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9042762",
+    "postedAt": "2026-11-21T05:14:43.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA0Mjc3NyA5",
+    "slug": "groupe-jti-medecin-generaliste-geriatre-f-h-ota0mjc3nya5",
+    "company": "eures",
+    "employer": "Groupe JTI",
+    "title": "Médecin Généraliste / Gériatre F/H",
+    "locations": [
+      "Aube, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>HELLO MEDICAL est à la recherche d'un(e) Médecin Généraliste / Gériatre (H/F) pour assurer une mission de remplacement au sein d'un établissement situé dans le département 10 - Aube région Grand Est situé à 50 min de Troyes, durant les périodes suivantes : Amplitude horaire :&amp;nbsp;&amp;nbsp;- de 8h30 à 18h30 - astreintes à définir Périodes : - Du 21 au 24/12/2026 : SMR1 1er étage (15 lits) / EHPAD Secteur (36 lits) - Du 28 au 31/12/2026 : EHPAD (94 lits) + UVP (14 lits) - Du 4 au 8/01/2027 : SMR1 1er étage (15 lits) / EHPAD Secteur (36 lits) L'organisation : Notre Centre Hospitalier est composé de : - Service de médecine / SMR : 45 lits - EHPAD : 130 lits dont une unité de vie protégée de 14 lits L'établissement en quelques chiffres : 175 lits au total répartis de la manière suivante : - 130 lits d'EHPAD : 80 lits d'EHPAD classique + 36 lits en EHPAD Secteur (plus médicalisé que l'EHPAD classique + 14 lits d'unité de vie protégée) - 45 lits de médecine/SMR : 30 lits au 2ème étage (médecine/SMR2) + 15 lits au 1er étage (SMR1) Rémunération à définir Les repas peuvent être pris directement au réfectoire de l'établissement (offerts) Logement pris en charge 1 A/R pris en charge en frais de déplacement Inscription à l'ordre des médecins en France obligatoire Si vous avez d'autres disponibilités, n'hésitez pas à nous les communiquer. Nous travaillons avec de nombreux établissements partenaires sur l'ensemble du territoire National. Nous sommes joignables au* n'hésitez pas à nous contacter, ou sur le mail suivant - Titulaire du DE de docteur en medecine - Inscription au tableau de l'Ordre des Médecins</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9042777",
+    "postedAt": "2026-11-21T05:14:45.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA0Mjc4MSA5",
+    "slug": "groupe-jti-oncologue-f-h-ota0mjc4msa5",
+    "company": "eures",
+    "employer": "Groupe JTI",
+    "title": "Oncologue F/H",
+    "locations": [
+      "Haute-Savoie, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "oncology",
+    "descriptionHtml": "<p>HELLO MEDICAL est à la recherche d'un(e) Oncologue (H/F) pour assurer une mission de remplacement au sein d'un établissement situé dans le département 74 - Haute-Savoie région Auvergne-Rhône-Alpes situé à 40 min au nord d'Annemasse, durant la période suivante : Amplitude horaire :&amp;nbsp;&amp;nbsp;- de 8h30 à 18h30 - Astreinte de nuit Période : - Du 21/12 au 02/01/2027 Le praticien remplaçant aura notamment pour missions : - d'assurer l'unité de jour - d'assurer une partie des CS et les avis interservices - de participer aux RCP - Logiciels : EASILY + TIMEWISE - Utilisation de SISRA Rémunération à définir Logement pris en charge 1 A/R pris en charge en frais de déplacement Inscription à l'ordre des médecins en France obligatoire Si vous avez d'autres disponibilités, n'hésitez pas à nous les communiquer. Nous travaillons avec de nombreux établissements partenaires sur l'ensemble du territoire National.&amp;nbsp;&amp;nbsp;Nous sommes joignables au*n'hésitez pas à nous contacter, ou sur le mail suivant - Titulaire du DE de docteur en medecine - Inscription au tableau de l'Ordre des Médecins 2025 - DIU Oncologie pulmonaire - DU en soin palliatif</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9042781",
+    "postedAt": "2026-11-21T05:14:46.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA0MjgxMSA5",
+    "slug": "groupe-jti-pediatre-f-h-ota0mjgxmsa5",
+    "company": "eures",
+    "employer": "Groupe JTI",
+    "title": "Pédiatre F/H",
+    "locations": [
+      "Gironde, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "descriptionHtml": "<p>HELLO MEDICAL est à la recherche d'un(e) Pédiatre (H/F) pour assurer un poste fixe au sein d'un établissement situé dans le département 33 - Gironde région NOUVELLE-AQUITAINE à 13 min au nord de Roaillan : Amplitude horaire :&amp;nbsp;&amp;nbsp;- de 8h30 à 18h30 - Astreintes à définir Période : - CDI - Offre à pourvoir dès maintenant, selon vos disponibilités Missions : - Pédiatrie en maternité - Salle de naissance - Médecine foetale - Aspects organisationnels, psychosociaux et éthiques - Participation à la permanence des soins - Participation aux consultations externes 14h - 17h Rémunération à définir selon le profil du praticien Inscription à l'ordre des médecins en France obligatoire Si vous avez d'autres disponibilités, n'hésitez pas à nous les communiquer. Nous travaillons avec de nombreux établissements partenaires sur l'ensemble du territoire National. Nous sommes joignables au * n'hésitez pas à nous contacter, ou sur le mail suivant - Titulaire du DES en Pédiatrie - Inscription au tableau de l'Ordre des Médecins</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9042811",
+    "postedAt": "2026-11-21T05:14:48.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA1NTIwNyA5",
+    "slug": "adecco-medical-psychiatre-h-f-ota1ntiwnya5",
+    "company": "eures",
+    "employer": "Adecco Medical",
+    "title": "Psychiatre (H/F)",
+    "locations": [
+      "Indre-et-Loire, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>Recrutement Psychiatre (H/F) - La Roche-sur-Yon (85)L'établissement :Cette structure spécialisée en addictologie accompagne des patients adultes engagés dans une démarche de soins liée aux addictions avec ou sans produit. Elle propose une prise en charge globale intégrant les dimensions médicales, psychologiques, familiales et sociales du parcours de soins.L'ensemble des activités est désormais regroupé à La Roche-sur-Yon au sein d'un nouveau bâtiment, moderne et pensé pour favoriser le travail pluridisciplinaire. Et proposer un accompagnement individualisé et de qualité à des patients souvent confrontés à des problématiques complexes de santé mentale et d'addiction.Contexte du recrutement :Dans le cadre du départ récent du psychiatre de la structure, l'établissement recherche son futur psychiatre afin de poursuivre le développement du projet médical.Ce recrutement représente une opportunité rare de rejoindre une équipe déjà structurée tout en occupant une place centrale dans l'organisation des soins psychiatriques. Vous interviendrez auprès de patients présentant des troubles addictifs fréquemment associés à des problématiques psychiatriques, de psychotraumatisme ou de vulnérabilité psychique. Votre rôle consistera à assurer les évaluations spécialisées, participer à l'élaboration des projets de soins et accompagner les équipes dans les situations complexes.L'organisation favorise les échanges cliniques réguliers et la construction de prises en charge concertées avec les différents professionnels de la structure. Astreintes :Selon l'organisation de l'établissement. En roulement avec les praticiens du CSAPARémunération et avantages :Temps plein ou temps partiel selon le projet du candidat ;Rémunération selon expérience Exercice au sein d'un bâtiment neuf et d'un environnement de travail moderne ;Équipe pluridisciplinaire expérimentée et investie ;Participation active à la construction et à l'évolution du projet médical.Projets futurs de la structure :L'établissement poursuit le développement de son activité en addictologie et renforce progressivement ses prises en charge en santé mentale. Le regroupement récent des activités sur un site unique ouvre de nouvelles perspectives de collaboration entre les professionnels et permet d'envisager de nouveaux projets autour des troubles psychiques associés aux addictions, du psychotraumatisme et des parcours complexes.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9055207",
+    "postedAt": "2026-11-21T06:05:17.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA2MDc4MSA5",
+    "slug": "non-renseigne-psychiatre-h-f-ota2mdc4msa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Psychiatre H/F",
+    "locations": [
+      "Bouches-du-Rhône, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "descriptionHtml": "<p>Le posteDans le cadre du renforcement des équipes médicales, vous rejoignez un service de psychiatrie adulte et participez à la prise en charge de patients présentant des pathologies psychiatriques variées.Vos principales missions seront les suivantes :- Assurer le suivi et la prise en charge des patients en psychiatrie générale adulte- Participer aux activités d'hospitalisation complète et aux consultations ambulatoires- Travailler en étroite collaboration avec les équipes paramédicales, psychologues et autres professionnels de santé- Contribuer à la continuité et à la qualité des parcours de soins- Participer aux réflexions et projets médicaux du serviceCe poste offre un exercice complet permettant d'associer activité clinique, travail institutionnel et collaboration pluridisciplinaire.Les avantages- Rémunération attractive selon profil et statut- Parking sur site- Restauration d'entreprise- Solutions facilitant l'installation des praticiens- Qualité de vie offerte par la région marseillaiseConditions d'exercice- Temps plein- Prise de poste dès que possible- Organisation favorisant l'équilibre entre activité clinique et travail institutionnel- Astreintes limitées et organisées au sein de l'équipe médicale- Accompagnement à l'intégration lors de l'arrivée</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9060781",
+    "postedAt": "2026-11-21T10:16:02.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA2NjQxNSA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-ota2njqxnsa5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste H/F",
+    "locations": [
+      "Pyrénées-Orientales, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Besoin de changement ? Et si votre prochaine mission vous emmenait au cœur des Pyrénées ?Entre montagnes, grands espaces et proximité humaine, la Cerdagne offre un cadre particulier pour découvrir une nouvelle expérience professionnelle.Vitalis Médical Perpignan &amp;amp; Narbonne recherche un(e) Médecin Généraliste H/F pour intervenir dans un établissement médico-social du secteur.Que vous souhaitiez diversifier votre parcours, découvrir un nouveau public ou exercer dans un environnement différent, cette opportunité pourrait vous correspondre.Votre mission sera de contribuer à la santé et au bien-être des personnes accueillies, en tenant compte de leurs besoins et de leur parcours de vie.Vos missionsAssurer une prise en charge médicale adaptée aux personnes accueillies.Identifier les besoins de santé et proposer des actions de prévention.Accompagner les personnes présentant des pathologies chroniques ou des situations médicales complexes.Favoriser la continuité des soins avec les professionnels et partenaires de santé.Participer aux projets institutionnels liés à la santé et à la qualité de vie.Apporter votre expertise médicale dans l'accompagnement quotidien des bénéficiairesPré-requisDiplôme de médecine autorisant l'exercice en France.Inscription obligatoire à l'Ordre des médecins.Intérêt pour l'accompagnement des personnes en situation de handicap, de dépendance ou de vulnérabilité.Disponibilité et mobilité sur le secteur de la Cerdagne.Profil recherchéVous souhaitez découvrir ou approfondir votre expérience dans le médico-social.Vous êtes capable de vous adapter à différents publics et situations.Vous faites preuve d'initiative et d'un bon sens des responsabilités.Vous êtes motivé(e) par une expérience professionnelle en territoire montagnard.Informations complémentairesType de contrat : IntérimTemps de travail : Temps pleinSalaire : € - € par an</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9066415",
+    "postedAt": "2026-11-21T10:25:44.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA2OTEwNyA5",
+    "slug": "domino-rh-medicare-paris-medecin-polyvalent-h-f-ota2otewnya5",
+    "company": "eures",
+    "employer": "Domino RH - Médicare Paris",
+    "title": "Médecin polyvalent (H/F)",
+    "locations": [
+      "Oise, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>DOMINO MEDICARE, cabinet spécialisé dans le recrutement médical, accompagne son partenaire, un établissement de santé privé situé à proximité de Chantilly, dans le recrutement d'un Médecin Polyvalent H/F en CDI.Vous souhaitez rejoindre une structure à taille humaine, bénéficier d'un environnement médical diversifié et travailler au sein d'une équipe aux compétences complémentaires ? Cette opportunité peut vous correspondre.Notre partenaire est un groupement hospitalier unique, associant les atouts du secteur privé à but non lucratif et du secteur privé à but lucratif.Implanté dans un environnement privilégié à proximité de Chantilly, (accessibilité très facile à 20 minutes de la Gare du Nord), l'établissement propose une offre médico-chirurgicale complète et s'appuie sur une communauté médicale de près de 70 praticiens, intervenant dans plus de 30 spécialités.Il dispose notamment de :135 lits et places ;un bloc opératoire de 6 salles ;un service de radiologie et d'imagerie en coupe avec scanner et IRM ;un service d'endoscopie ;un service de soins externes ;un environnement médico-chirurgical permettant une prise en charge pluridisciplinaire des patients.Votre futur serviceVous intégrerez le service de médecine, composé de 30 lits d'hospitalisation conventionnelle, dont :4 lits dédiés aux soins palliatifs ;4 lits de soins continus.L'activité est particulièrement diversifiée, avec la prise en charge de patients relevant de la médecine polyvalente, mais également de situations d'oncologie médicale.Vous rejoindrez une équipe actuellement composée de 3 médecins polyvalents, aux parcours complémentaires, notamment en urgences, douleur et soins palliatifs.L'objectif : renforcer cette équipe et poursuivre le développement d'une prise en charge médicale de qualité, dans un cadre organisé et collaboratif.Vos missionsEn tant que Médecin Polyvalent H/F, vous assurez notamment :La prise en charge médicale globale des patients hospitalisés ;Le diagnostic, le suivi et l'adaptation des traitements ;La prise en charge de situations de médecine polyvalente et d'oncologie médicale ;Le suivi des patients accueillis en soins palliatifs et en soins continus ;La coordination du parcours de soins avec les équipes médicales et paramédicales ;La collaboration avec les différents spécialistes de l'établissement ;La participation aux staffs médicaux et aux réunions pluridisciplinaires ;&amp;nbsp;&amp;nbsp; Vous êtes :Titulaire du Diplôme d'État de Docteur en Médecine ;Inscrit(e) au Conseil de l'Ordre des Médecins en France ;Médecin généraliste ou médecin polyvalent souhaitant développer une activité hospitalière diversifiée.Une expérience ou une compétence en médecine interne, gériatrie, oncologie, douleur ou soins palliatifs constitue un atout, mais l'établissement reste ouvert à des profils différents.Au-delà du parcours, nous recherchons un médecin souhaitant s'inscrire dans un véritable travail d'équipe, avec une approche globale et coordonnée du patient.Les conditionsContrat : CDIStatut : CadreTemps de travail : Temps pleinPrise de poste : Dès que possiblePourquoi rejoindre cette opportunité ?Un poste médical polyvalent et stimulantUne activité diversifiée permettant d'exercer une médecine globale, avec une exposition à la médecine polyvalente, à l'oncologie, aux soins palliatifs et aux soins continus.Une équipe à taille humaineVous rejoindrez une équipe de 3 médecins polyvalents aux profils complémentaires, dans un environnement favorisant les échanges et le travail en équipe.Un environnement médical completL'établissement regroupe plus de 30 spécialités et dispose d'un plateau technique comprenant notamment bloc opératoire, scanner et IRM.Un cadre de travail structuréL'organisation permet une collaboration étroite avec les équipes médicales et paramédicales, ainsi qu'une mutualisation des gardes et astreintes.Une localisation privilégiéeÀ proximité immédiate de Chantilly, dans un environnement particulièrement agréable, avec Paris accessible en seulement une vingtaine de minutes depuis la Gare du Nord.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9069107",
+    "postedAt": "2026-11-21T12:33:13.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA2OTgzMCA5",
+    "slug": "la-solution-medicale-chirurgien-esthetique-f-h-caen-14000-ota2otgzmca5",
+    "company": "eures",
+    "employer": "La Solution Médicale",
+    "title": "Chirurgien Esthétique  F/H - Caen (14000)",
+    "locations": [
+      "Calvados, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "surgery",
+    "descriptionHtml": "<p>Emploi Chirurgien Esthétique Caen (14000) / La Solution MédicaleCentre Médical à Caen (14000), recherche activement un Chirurgien Esthétique (F/H).Avantages du poste :- Rémunération attractive en % du chiffre d'affaires- Assurance professionnelle, accompagnement administratif- Plateau technique moderne et entièrement équipé- Aucun frais d'intermédiation pour le praticien- Horaires flexibles selon disponibilités- Planning rempli garantiAvantages du centre :- Structure moderne aux normes- Patientèle fidèle et très nombreuse- Équipe paramédicale qualifiée et dédiée- Secrétaire pour la gestion complète des tâches administratives- Environnement d'excellence avec équipements de dernière génération- Emplacement stratégique, proche transports en commun et parkingPoste à pourvoir immédiatement.Contactez-nous directement pour de plus amples informations par téléphone ou par mail.&amp;nbsp;&amp;nbsp; Diplômé, Inscrit à l'Ordre des médecinsQualités recherchées :&amp;nbsp;&amp;nbsp;Sérieux?; Professionnalisme?; Engagement?; Constance?; Souplesse et à l'écoute du patient. Contactez-nous directement pour de plus amples informations par téléphone ou mail.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9069830",
+    "postedAt": "2026-11-21T12:34:01.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA3MTM3MCA5",
+    "slug": "non-renseigne-medecin-generaliste-h-f-ota3mtm3mca5",
+    "company": "eures",
+    "employer": "Non renseigné",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Saône-et-Loire, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Rejoignez la structure dans le cadre d'un CDI ou d'un CDD longue duréeDans le service de médecine polyvalent&amp;nbsp;&amp;nbsp;de 30 lits, vous travaillez avec 2 médecins déjà en poste qui sauront vous accompagner dans vos fonctions. Avantages du poste:Pas d'astreintes209 jours de travail et 8 à 9 semaines de CongésPossibilité de logement temporaireSalaire:de 90 à 120 K€ brut/an, négociable selon profil et expérienceVous êtes médecin généraliste inscrit à l'ordre des médecins en France.Vous souhaitez rejoindre un établissement à taille humaine,au sein d'une équipe dynamiqueVous appréciez le travail en équipe et vous souhaitez participer à l'offre des soinsVous pouvez postuler directement à cette annonce en cliquant sur le lien ou auprès de Régine Banza, consultante en recrutement:06 ** ** ** ** ou Nous recherchons un médecin généraliste f/h pour notre client, un établissement de santé privé pluridisciplinaire qui se distingue par son plateau technique complet, son engagement dans la qualité des soins, ainsi que son rôle de proximité et de service public&amp;nbsp;&amp;nbsp;pour la population territoriale.Logé au sein d'une belle battisse, l'établissement est facilement accessible depuis les grandes métropoles telles que Lyon et Paris à notamment grâce à la gare TGV situé</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9071370",
+    "postedAt": "2026-11-21T17:06:14.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA3NTM0OSA5",
+    "slug": "jobergroup-radiologue-h-f-ota3ntm0osa5",
+    "company": "eures",
+    "employer": "JoberGroup",
+    "title": "Radiologue (H/F)",
+    "locations": [
+      "Eure-et-Loir, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "radiology",
+    "descriptionHtml": "<p>Description du poste :Emploi Radiologue H/F - Châteaudun 28Nous recrutons un radiologue H/F pour intégrer une structure d'imagerie médicale située Châteaudun (28), dans le cadre d'une activité libérale.Description et missionsEn tant que radiologue, vous intégrez un groupe au rayonnement national, tout en conservant de l'autonomie dans votre exercice. Vous bénéficierez d'un accès complet à l'imagerie lourde, au sein d'un plateau technique de qualité, permettant d'exercer une activité diversifiée.Votre mission principale consistera à assurer La réalisation des examens d'imagerie (radiographie, échographie, scanner, IRM)- L'interprétation des actes dans le respect des protocoles diagnostiques- L'intégration dans un réseau national d'expertise et de collaboration- La participation éventuelle à la téléimagerie, réservée aux associés, en complément d'une activité sur siteADN de la structureVous rejoindrez un groupe leader en imagerie médicale, fondé par des radiologues pour des radiologues, fort de plus de 60 implantations sur le territoire national, y compris en Outre-mer. Le groupe repose sur une culture centrée sur le bien-être au travail, l'innovation et la collaboration entre confrères. Chaque centre fonctionne de manière indépendante tout en bénéficiant de la force d'un réseau structuré.La structure de Châteaudun, actuellement en recherche active, offre un environnement dynamique, ouvert aux évolutions professionnelles et à la mobilité interne.RémunérationVous exercerez en secteur 1 ou 2, dans le cadre d'une activité 100 % libérale. La rémunération est fixée localement selon les standards du secteur et les modalités propres à la structure.Avantages- Statut libéral en temps plein ou partiel, dès 10 % d'activité- Accès à un plateau technique complet incluant toute l'imagerie lourde- Structure moderne et bien équipée- Autonomie locale avec participation à un réseau national- Mobilité interne facilitée entre les différents sites du groupe- Intégration à un groupe structuré, soutenu par des acteurs publicsProfil recherchéRadiologue H/F titulaire du diplôme d'État de docteur en médecine, spécialité radiologie, inscrit(e) au Conseil national de l'Ordre des médecins. Les candidatures de médecins en PAE sont également acceptées.Contactez-nous au : O7 44 71 65 O8Référence de l'annonce : 10080Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Candidats provenant de l'Union européenne : JoberGroup, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité Apprentissage de la langue (Niveau B2)- Mise en relation avec nos professeurs partenaires- Suivi pour l'inscription à l'Ordre des médecins- Consultant(e) dédié(e) à votre accompagnementDescription du profil :Profil recherchéRadiologue H/F titulaire du diplôme d'État de docteur en médecine, spécialité radiologie, inscrit(e) au Conseil national de l'Ordre des médecins. Les candidatures de médecins en PAE sont également acceptées.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9075349",
+    "postedAt": "2026-11-22T01:28:22.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTA3NTQyNyA5",
+    "slug": "jobergroup-medecin-generaliste-h-f-ota3ntqynya5",
+    "company": "eures",
+    "employer": "JoberGroup",
+    "title": "Médecin généraliste (H/F)",
+    "locations": [
+      "Hérault, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "specialty": "general-practice",
+    "descriptionHtml": "<p>Description du poste :Emploi Médecin généraliste H/F - Montbazin 34Nous recrutons un médecin généraliste H/F pour intégrer une maison de santé pluridisciplinaire située à Montbazin, dans l'Hérault, dans le cadre d'une installation libérale.Description et missionsVous exercerez en tant que médecin généraliste libéral, au sein d'un pôle médical dynamique et pluridisciplinaire. Vous disposerez d'un ou deux box privatifs de consultation, modulables selon vos besoins (13 à 14 m², avec possibilité de fusion des deux box).Vos missions incluent Assurer les consultations de médecine générale pour une patientèle variée- Collaborer avec les autres professionnels de santé présents sur place (pédiatre, dermatologue, orthopédiste, sage-femme, kinésithérapeute)- Participer à la coordination des soins au sein du pôleADN de la structureLa maison de santé est composée de professionnels de santé complémentaires, favorisant une prise en charge globale du patient. Modernes et fonctionnels, les locaux sont spacieux et adaptés à une activité libérale. L'ambiance interprofessionnelle est stimulante et collaborative. Le médecin bénéficiera d'un environnement porteur pour développer son activité dans des conditions optimales.Rémunération- Vous percevrez 100% de votre chiffre d'affaires, sans rétrocession- Loyer de 500€ par mois pour un box de 13-14 m²- Possibilité de fusion des deux box avec loyer ajusté (environ 800 Les premiers mois de loyer peuvent être offerts pour accompagner le démarrage de l'activitéAvantages- Collaboration libérale avec liberté d'organisation- Loyer attractif avec exonération possible en début d'activité- 100% du chiffre d'affaires conservé, sans rétrocession- Locaux modernes avec 1 à 2 box privatifs- Équipe pluridisciplinaire déjà en place- Environnement professionnel stimulant- Possibilité d'expansion du box selon l'évolution de l'activité- Cadre de vie agréable dans le sud de la FranceProfil recherchéMédecin généraliste H/F titulaire d'un diplôme obtenu en Union européenne ou reconnu en France, inscrit(e) ou inscriptible au Conseil national de l'Ordre des médecins.Contactez-nous au : O7 44 71 65 O8Référence de l'annonce : 10017Retrouvez plus de 4000 offres d'emploi santé sur notre site et application mobile Jober Group. Profitez d'un réseau de 1000 partenaires sur toute la France, d'une équipe d'experts du recrutement à votre écoute et d'un service totalement gratuit dont 99% de nos candidats sont satisfaits.Candidats provenant de l'Union européenne : JoberGroup, leader de l'intégration des professionnels de santé en France, vous accompagne gratuitement jusqu'au démarrage de votre activité- Apprentissage de la langue (Niveau B2)- Mise en relation avec nos professeurs partenaires- Suivi pour l'inscription à l'Ordre des médecins- Consultant(e) dédié(e) à votre accompagnementDescription du profil :Profil recherchéMédecin généraliste H/F titulaire d'un diplôme obtenu en Union européenne ou reconnu en France, inscrit(e) ou inscriptible au Conseil national de l'Ordre des médecins.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9075427",
+    "postedAt": "2026-11-22T01:28:28.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
     "id": "eures:OTAyNjU3NSA5",
     "slug": "ikiway-medecin-coordonnateur-prescripteur-h-f-otaynju3nsa5",
     "company": "eures",
@@ -12146,6 +12207,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9030755",
     "postedAt": "2026-11-20T17:06:30.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -12216,6 +12279,8 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9030838",
     "postedAt": "2026-11-20T17:06:46.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "lastSeenAt": "2026-11-21T05:03:24.558Z",
+    "missedRuns": 1,
     "source": "eures"
   },
   {
@@ -12269,6 +12334,40 @@
     "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9035358",
     "postedAt": "2026-11-21T01:26:49.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTAzNzM1MCA5",
+    "slug": "elsan-gastro-enterologue-h-f-otaznzm1mca5",
+    "company": "eures",
+    "employer": "Elsan",
+    "title": "Gastro-entérologue (H/F)",
+    "locations": [
+      "Var, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>Description du poste :La Clinique Notre-Dame, située à Draguignan dans le Var (83), recherche un Gastro-entérologue H/F avec une orientation en gastro-entérologie interventionnelle, notamment en écho-endoscopie.Dans le cadre d'un prochain départ à la retraite, la Clinique Notre-Dame souhaite accueillir un nouveau gastro-entérologue afin de renforcer son équipe et d'assurer la continuité et le développement de son activité.L'établissementLa Clinique Notre-Dame est un établissement médico-chirurgical privé de 160 lits et places, disposant d'un plateau technique complet et d'une offre de soins multidisciplinaire.Le plateau technique comprend notamment 2 blocs opératoires comprenant 8 salles d'intervention* 1 pôle de chirurgie de 33 lits et 9 chambres d'USC chirurgie* 1 service ambulatoire 33 lits* 1 services de médecine de 18 lits* 1 centre de radiologie, échographie, scanner, IRM* 1 laboratoire d'analyses médicales* 1 cabinet d'anatomo-cytopathologieL'établissement développe notamment les filières digestive, vasculaire, uro-néphrologique, orthopédique, oncologique, ophtalmologique et ORL/stomatologique.Contexte du recrutementVous rejoindrez une équipe composée de 5 gastro-entérologues et 2 chirurgiens digestifs, permettant une prise en charge coordonnée des pathologies digestives.L'activité comprend une gastro-entérologie générale, avec la volonté de renforcer et développer l'axe interventionnel.Les atouts de cette opportunité Équipe de gastro-entérologie déjà structurée* Collaboration étroite avec les chirurgiens digestifs* Développement d'une activité de gastro-entérologie interventionnelle et d'écho-endoscopie* Plateau technique complet* Environnement médico-chirurgical pluridisciplinaire* Installation dans le cadre d'un départ à la retraite, avec une activité existanteLe territoireSituée au cœur du Var, Draguignan bénéficie d'un cadre de vie privilégié entre Méditerranée et Provence, à proximité du golfe de Saint-Tropez et des gorges du Verdon.La ville se situe à environ 1h de Toulon, 1h de Cannes et 1h15 de Nice, offrant un environnement attractif pour conjuguer projet professionnel et qualité de vie.Pour plus d'informations, contactez le Pôle Recrutement Médical ELSAN ou***Description du profil Médecin gastro-entérologue H/F* Intérêt et/ou compétence en gastro-entérologie interventionnelle, notamment en écho-endoscopie* Diplôme français/européen ou équivalences reconnues* DES de gastro-entérologie et hépatologie* Inscription ou possibilité d'inscription au tableau de l'Ordre des Médecins en France</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9037350",
+    "postedAt": "2026-11-21T01:28:43.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "eures"
+  },
+  {
+    "id": "eures:OTAzOTM0MCA5",
+    "slug": "mercato-de-l-emploi-medecin-gastro-enterologue-h-f-otazotm0mca5",
+    "company": "eures",
+    "employer": "Mercato de l'emploi",
+    "title": "Médecin Gastro-entérologue (H/F)",
+    "locations": [
+      "Paris, France"
+    ],
+    "remote": false,
+    "category": "medicine",
+    "descriptionHtml": "<p>RESPONSABILITÉS : Votre missionEn tant que Médecin gastro-entérologue, vous aurez pour rôle : - D'assurer des soins de qualité à votre patientèle - De travailler en synergie avec une équipe pluridisciplinaire dynamique - D'être force de proposition pour faire progresser les pratiques médicalesRémunération- Rémunération attractive composée d'un fixe et d'un variable- Selon les modalités d'exercice : de 6 000 à 9 000 bruts par moisAutres avantages - CDI avec un statut de cadre et un salaire fixe garanti, - Aucun investissement personnel requis - Équilibre vie professionnelle / vie personnelle optimisé - Travail en équipe avec d'autres professionnels de santé. - Organisation quotidienne assurée par un(e) Directeur(trice) de centre, pour vous permettre de vous concentrer pleinement sur vos consultations - Liberté de prescription et d'organisation des soins (durée des consultations, téléconsultations possibles, orientation médicale libre) - Travail en journée du lundi au vendredi - Possibilité de temps plein ou temps partiel (activité mixte ville-hôpital, ou cumul emploi-retraite possibles ) - Gestion de votre agenda et de la facturation par un secrétariat médical dédié - Environnement de travail moderne avec des équipements médicaux de dernière génération - Logiciels médicaux fournis (Dr Santé, Doctolib ou Maiia) - Patientèle assurée - Possibilité d'heures supplémentaires majorées - Tickets restaurant, contrat de prévoyance, prise en charge à 50 % de la mutuelle et de l'abonnement transport - Accès à un large choix de formations prises en charge (y compris au-delà du DPC)PROFIL RECHERCHÉ : Votre profil - Vous avez obtenu le diplôme d'état de docteur en médecine, spécialité gastro-entérologie, en France (ou en UE ou EEE ou Suisse) ou vous avez obtenu une autorisation d'exercice en France. - Vous êtes inscrit.e à l'Ordre des Médecins en France (ou en cours d'inscription). - Vous êtes engagé.e pour une pratique médicale centrée sur la qualité et le bien-être du patient. - Vous avez l'esprit d'équipe et appréciez la collaboration pluridisciplinaire.Comment postuler ?Ce poste attise votre intérêt ? Vous vous reconnaissez dans la vision et les valeurs du réseau?Alors, postulez sans tarder !Bonne nouvelle : aucune lettre de motivation n'est demandée.Toutes nos offres sont ouvertes aux personnes en situation de handicap.Et ensuite ?Après un premier échange téléphonique, vous serez mis.e en relation avec un représentant du réseau des centres de santé.</p>",
+    "applyUrl": "https://candidat.pole-emploi.fr/offres/recherche/detail/9039340",
+    "postedAt": "2026-11-21T01:31:54.000Z",
+    "firstSeenAt": "2026-11-22T05:03:35.399Z",
     "source": "eures"
   },
   {
