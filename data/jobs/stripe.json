@@ -9049,6 +9049,8 @@
     "applyUrl": "https://stripe.com/jobs/search?gh_jid=8230296",
     "postedAt": "2026-09-25T09:09:47.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-22T05:03:35.399Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {
@@ -13257,7 +13259,7 @@
     "postedAt": "2026-10-28T20:19:38.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "greenhouse"
   },
   {
@@ -15928,6 +15930,23 @@
     "applyUrl": "https://stripe.com/jobs/search?gh_jid=8406995",
     "postedAt": "2026-11-20T19:53:56.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "greenhouse"
+  },
+  {
+    "id": "greenhouse:8407180",
+    "slug": "stripe-engineering-manager-developer-tooling-8407180",
+    "company": "stripe",
+    "title": "Engineering Manager - Developer Tooling",
+    "locations": [
+      "Dublin"
+    ],
+    "remote": false,
+    "department": "8126 Developer Infrastructure",
+    "category": "management",
+    "descriptionHtml": "<h2><strong>Who we are</strong></h2>\n<h3><strong>About Stripe</strong></h3>\n<p>Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.</p>\n<h3><strong>About the team</strong></h3>\n<p>The Developer Productivity group is responsible for making Stripe’s developers happy and productive. We work on tools, processes, and code refactoring to accelerate Stripe engineering as Stripe scales.</p>\n<p>We’re looking for people with an interest in building the tools to improve the day to day experience of Engineers in Stripe. The ideal candidate will have a mix of technical expertise in either language processing tools, version control systems, contract testing, build systems, but most importantly a passion for solving developer experience problems, and a pragmatic ability to ship results iteratively. You’ll be working on a mix of fault tolerant distributed systems and also software which runs on individual developer machines.</p>\n<h2><strong>What you’ll do</strong></h2>\n<p>We work with a code base of several million lines of code (and counting), used by hundreds of engineers across the globe, who initiate dozens of build jobs per minute. What we do is key to allowing Stripe engineers working in our main business logic layer to have the most productive time of their careers while building and running the features that Stripe and its customers need in order to thrive.</p>\n<h3><strong>Responsibilities</strong></h3>\n<ul>\n<li>Efficiently scaling a fleet of 10,000s of CI workers, balancing the competing priorities of minimising user-facing queuing while also minimising cost and increasing reliability.</li>\n<li>Contribute to engineering-wide initiatives as a member of Stripe’s engineering management team</li>\n<li>Owning the end-to-end experience of how our users engage with CI. This includes working with our users to understand pain points, and deliver incremental, or step-change improvements to their day-to-day workflows across multiple languages, with a higher focus on Java and Ruby.</li>\n<li>Developing &amp; maintaining state-of-the-art developer tooling and increasing tooling reliability.</li>\n<li>Work with other Stripe leaders to design and lead developer productivity best practice</li>\n<li>Empower the engineering team to achieve a high level of technical productivity, reliability, and simplicity</li>\n<li>Recruit great engineers, in collaboration with Stripe’s recruiting team</li>\n<li>Help engineers advance in their careers and develop new skills</li>\n<li>Work with your users to ensure the capabilities they need to safely, and reliably, deploy to production are available.</li>\n</ul>\n<ul>\n<li>Supporting efficient inter-service testing to support teams developing new services, or migrating existing services, to Stripe’s modern service oriented architecture.</li>\n</ul>\n<h2><strong>Who you are</strong></h2>\n<p>We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</p>\n<h3><strong>Minimum requirements</strong></h3>\n<ul>\n<li>4+ years of people management experience</li>\n<li>Hands-on experience building tools that are used daily by other developers (e.g. CI, build support, devboxes)</li>\n<li>A passion for supporting developer productivity </li>\n<li>Successfully recruited and built great teams</li>\n<li>The ability to thrive on a high level of autonomy and responsibility</li>\n<li>Clear and persuasive writing and in-person communication</li>\n</ul>\n<h3><strong>Preferred qualifications</strong></h3>\n<ul>\n<li>You have managed teams that designed and operated critical infrastructure, particularly with a broad remit across core capabilities, builds, and quality</li>\n<li>You are empathetic to customer needs but visionary enough to not just deliver a faster horse</li>\n<li>You are comfortable planning in quarters, and can set a vision for several years</li>\n<li>You are excited about collaborating with teammates across Stripe’s organization, to provide a wonderful user experience for key developer workflows</li>\n<li>You are comfortable working with geographically distributed teams</li>\n</ul>",
+    "applyUrl": "https://stripe.com/jobs/search?gh_jid=8407180",
+    "postedAt": "2026-11-22T20:55:37.000Z",
+    "firstSeenAt": "2026-11-23T05:03:52.511Z",
     "source": "greenhouse"
   }
 ]

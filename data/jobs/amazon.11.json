@@ -1124,6 +1124,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10440033/software-development-engineer-elasticache",
     "postedAt": "2026-06-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-22T05:03:35.399Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -2228,7 +2230,7 @@
     "postedAt": "2026-07-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
@@ -2415,7 +2417,7 @@
     "postedAt": "2026-07-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
@@ -4963,25 +4965,6 @@
     "source": "amazon"
   },
   {
-    "id": "amazon:10536804",
-    "slug": "amazon-application-security-engineer-proactive-security-10536804",
-    "company": "amazon",
-    "title": "Application Security Engineer, Proactive Security",
-    "locations": [
-      "Seattle, WA, United States"
-    ],
-    "remote": false,
-    "department": "Systems, Quality, & Security Engineering",
-    "category": "engineering",
-    "descriptionHtml": "<p>The Application Security (AppSec) Security Engineer is responsible for conducting security assessments and reviews of applications and services to identify vulnerabilities and ensure adherence to security standards. This role works under the guidance of senior engineers to evaluate system designs, perform threat modeling, and validate that services meet the organization's security bar before launch.<br /><br />Key job responsibilities<br />Security Reviews: Conduct security design reviews for new and existing services, evaluating architecture documents, threat models, and system designs for potential security risks<br />Threat Modeling: Perform threat modeling exercises to identify attack vectors, security weaknesses, and areas of concern in application architectures<br />Penetration Testing: Execute or coordinate penetration testing activities to validate security controls and identify exploitable vulnerabilities<br />Finding Management: Document, track, and communicate security findings to service teams, providing clear remediation guidance and verifying fixes<br />Security Guidance: Provide security consultation to development teams on secure coding practices, authentication/authorization mechanisms, cryptographic implementations, and data protection strategies<br />Escalation Support: Identify and escalate high-severity security issues through appropriate channels, ensuring timely remediation aligned with launch timelines<br />Documentation: Maintain clear and thorough documentation of review outcomes, security decisions, and risk assessments<br />Tool Utilization: Leverage automated security scanning tools and internal security platforms to support review activities and improve efficiency<br /><br />About the team<br />Diverse Experiences<br />Amazon Security values diverse experiences. Even if you do not meet all of the qualifications and skills listed in the job description, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying.<br /><br />Why Amazon Security?<br />At Amazon, security is central to maintaining customer trust and delivering delightful customer experiences. Our organization is responsible for creating and maintaining a high bar for security across all of Amazon’s products and services. We offer talented security professionals the chance to accelerate their careers with opportunities to build experience in a wide variety of areas including cloud, devices, retail, entertainment, healthcare, operations, and physical stores.<br /><br />Inclusive Team Culture<br />In Amazon Security, it’s in our nature to learn and be curious. Ongoing DEI events and learning experiences inspire us to continue learning and to embrace our uniqueness. Addressing the toughest security challenges requires that we seek out and celebrate a diversity of ideas, perspectives, and voices.<br /><br />Training &amp; Career Growth<br />We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, training, and other career-advancing resources here to help you develop into a better-rounded professional.<br /><br />Work/Life Balance<br />We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why flexible work hours and arrangements are part of our culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve.</p><h3>Basic qualifications</h3><p>- 2+ years of web protocols, common security attacks, and remediation (non-internship) experience<br />- Bachelor's degree in Engineering, Computer Science, or a related field<br />- Knowledge of system security vulnerabilities and remediation techniques, including penetration testing and the development of exploits or equivalent<br />- Experience with web protocols, common security attacks, and remediation (non-internship)<br />- Experience in application security architecture, security code reviews, security testing, incident response, or security infrastructure<br />- Experience with coding/scripting in one or more languages (e.g., Python, C, C++, Java, Ruby, or PowerShell)</p><h3>Preferred qualifications</h3><p>- Experience with AWS services or other cloud offerings<br />- Experience in one or more of the following: application security frameworks, security code reviews, incident response, security infrastructure, penetration testing, mobile security, cloud security, AI security, identity and access controls<br />- Knowledge of one or more of the following domains: web application development, penetration testing, mobile security, cryptography, public key infrastructure, forensic security, IP security, SSL/TLS, computer viruses and malware, network security, trusted security, trusted execution, threat intelligence, IoT security implications, or authentication<br />- Experience scripting with Python, Perl, Bash or PowerShell<br />- Experience triaging and developing security alerts and response automation, conducting front-line analysis, and providing escalation support<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, WA, Seattle - 136,000.00 - 184,000.00 USD annually",
-    "applyUrl": "https://www.amazon.jobs/en/jobs/10536804/application-security-engineer-proactive-security",
-    "postedAt": "2026-09-10T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "closedAt": "2026-11-09T05:03:23.512Z",
-    "source": "amazon"
-  },
-  {
     "id": "amazon:10537212",
     "slug": "amazon-proserve-area-delivery-leader-professional-services-10537212",
     "company": "amazon",
@@ -5233,7 +5216,7 @@
     "postedAt": "2026-09-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
@@ -5858,24 +5841,6 @@
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
     "closedAt": "2026-11-12T05:03:02.950Z",
-    "source": "amazon"
-  },
-  {
-    "id": "amazon:10554295",
-    "slug": "amazon-risk-specialist-inventory-trust-10554295",
-    "company": "amazon",
-    "title": "Risk Specialist, Inventory Trust",
-    "locations": [
-      "Hyderabad, TS, India"
-    ],
-    "remote": false,
-    "department": "Investigation & Loss Prevention",
-    "descriptionHtml": "<p>Amazon's Inventory Trust team works to ensure that bad actors cannot profit from using our services to abuse Customers, Selling Partners or our Store. The team works to ensure that illegal inventory within our network is identified and destroyed rather than being returned to the stream of commerce, and to deny our fulfillment network as a means for bad actors to scale their abuse. If we successfully achieve our vision, then Bad Actors will stop committing misconduct on Amazon.<br /><br />We are looking for an experienced Risk Specialist to own complex investigations, high judgement decisions and escalations associated with our programs. In this role you will work on investigations , manage escalations and communication with external teams to ensure that the Inventory Evaluation team (formerly IDAP) is accurately communicating its decisions to these key stakeholders, and that we are capturing and incorporating feedback related to Seller experience. <br />In addition to making the right inventory decisions, the candidate will need to be able to use basic SQL knowledge and use data as evidence to convince/influence key stakeholders.<br /><br /><br />Key job responsibilities<br />1. Performs investigation based on high judgement to identify bad actors with unsuitable inventory in Fulfillment Centre.<br />2. Risk mitigation by continuously giving process improvement, enforcement review, risk mining, queueing improvement etc. ideas.<br />3. Creates, updates learning modules and support the program in driving improvements to ensure the best customer experience.<br />4. Identifies &amp; manages small to mid-scale process improvement opportunities at process or team level.<br />5. Communicates to business leaders on pre-defined guidelines with data and resolves issues with reduced guidance.<br />6. Work in sync with Program Managers, Risk Managers/Business Analyst and create mechanisms, strategies to achieve the program goals.<br />7. Tracks and reports progress on key goals specific to the program.<br />8. Adheres to set targets on productivity and quality.<br />9. Manages escalations on routine and predefined tasks with minimal supervision.<br />10. Learns new tools / SOPs / processes with minimal supervision.<br />11. Effective write up skills and stakeholder management.</p><h3>Basic qualifications</h3><p>- Bachelor's degree<br />- 18 months of investigations experience as Sr. Investigator, or 12 months experience in bad actor investigations/POE/CDT/Risk mining as Sr. Investigator.<br />- 6months of experience working with SQL and Advanced Excel.</p><h3>Preferred qualifications</h3><p>- Document vetting experience related to supply chain verification is preferred.<br />- Proven ability to work with upstream teams to fix process gaps is preferred.<br />- Ability to support business owners in creating detailed investigation summary related to escalations is preferred.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br />null</p>",
-    "applyUrl": "https://www.amazon.jobs/en/jobs/10554295/risk-specialist-inventory-trust",
-    "postedAt": "2026-09-21T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-07T05:03:05.315Z",
-    "closedAt": "2026-11-09T05:03:23.512Z",
     "source": "amazon"
   },
   {
@@ -10601,6 +10566,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10591924/program-manager-iii-3pl-transportation",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-22T05:03:35.399Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -10907,6 +10874,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10593690/software-dev-engineer",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-22T05:03:35.399Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -11351,7 +11320,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
@@ -12521,7 +12490,7 @@
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-21T05:03:24.558Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
@@ -12539,6 +12508,8 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10602028/hw-validation-engineer-amazon-leo-hardware-development-amazon-leo-hardware-development",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-22T05:03:35.399Z",
+    "missedRuns": 1,
     "source": "amazon"
   },
   {
@@ -13953,6 +13924,23 @@
     "source": "amazon"
   },
   {
+    "id": "amazon:10610566",
+    "slug": "amazon-data-center-technician-night-shift-10610566",
+    "company": "amazon",
+    "title": "Data Center Technician - Night Shift",
+    "locations": [
+      "Andrews, TX, United States"
+    ],
+    "remote": false,
+    "department": "Operations, IT, & Support Engineering",
+    "category": "data",
+    "descriptionHtml": "<p>Join our dynamic AWS team and become a critical guardian of global cloud infrastructure! You'll play a pivotal role in maintaining the heartbeat of the world's most innovative technology platform, ensuring seamless data center operations that power millions of businesses and services worldwide. <br />Data Center Technician position involves in-depth hardware and network diagnostics followed by physical repair as well as participating in an on-call rotation. <br /><br />AWS Infrastructure Services owns the design, planning, delivery, and operation of all AWS global infrastructure. In other words, we’re the people who keep the cloud running. We support all AWS data centers and all of the servers, storage, networking, power, and cooling equipment that ensure our customers have continual access to the innovation they rely on. We work on the most challenging problems, with thousands of variables impacting the supply chain — and we’re looking for talented people who want to help. <br /><br />You’ll join a diverse team of software, hardware, and network engineers, supply chain specialists, security experts, operations managers, and other vital roles. You’ll collaborate with people across AWS to help us deliver the highest standards for safety and security while providing seemingly infinite capacity at the lowest possible cost for our customers. And you’ll experience an inclusive culture that welcomes bold ideas and empowers you to own them to completion. <br /><br />NOTE: Amazon does not sponsor for immigration, including for H-1B, TN, and other non-immigrant visas, for this role. <br /><br />NOTE: Lump sum stipend will be provided to eligible candidates who relocate for this position. <br /><br />Key job responsibilities<br />- Performing server rack installations, hardware break-fix on various components, troubleshooting network issues, responding to operational incidents that impact service availability, and carrying out routine network, server hardware, and operating system repairs to contribute to the overall availability of AWS services <br />- Serving as a primary contact point for both internal and external stakeholders, including engineers, software developers, vendors, and contractors <br />- Performing on-call duties and participating in scheduled maintenance and change management activities <br />- Contributing to documentation and process improvement initiatives based on your analysis of operational issues <br />- Helping to interview, train and onboard new team members <br /><br />Physical Requirements: <br />- Lifting and moving material up to 40 pounds each <br />- Working in cramped and/or elevated locations <br />- Bending, lifting, stretching, and reaching <br />- Standing and walking for up to 8+ hours a day <br />- Ascending and descending ladders, stairs, and gangways safely and without limitation <br />- Work in an industrial environment <br />- Work shifts longer than 8 hours to support 24/7 operations (covering both night and day shifts). <br />- This role supports data centers in various o perational stages. The position may be assigned to a facility still under development, which could require travel to established locations for training until your designated site becomes fully operational. <br /><br />Essential Requirements:  <br />- Ability to travel to or commute between data center locations as needed  <br />- Willingness to temporarily work at alternative sites during training periods or until assigned facility is operational  <br />- Travel frequency will vary based on business needs and operational status of assigned facility <br /><br />Candidates must be able to travel (over 50 miles) or commute (less than 50 miles) to active data center sites as required by business needs. <br /><br />A day in the life<br />Our Data Center Technician professionals, who have industry-leading technical abilities and demonstrate a breadth of knowledge while they: <br /><br />- Take ownership of technical issues brought by their customer base, engaging other teams when needed to drive resolution <br />- Show a strong aptitude for troubleshooting and problem solving <br />- Solve problems at their root and step back to understand the broader context <br />- Maintain service level agreements through the implementation of proactive issue detection and reporting <br />- Are biased to act in the absence of direction or support <br />- Improve effectiveness through process innovation <br /> You will be required to work shift work that will include days/nights/weekends/holidays. </p><h3>Basic qualifications</h3><p>- 2+ years of computer/server hardware troubleshooting experience, or experience related IT<br />- 2+ years of computer layer 1/2 networking (including troubleshooting and repair) experience<br />- Work flexible schedule including weekends, nights, and holidays</p><h3>Preferred qualifications</h3><p>- Knowledge of network design, protocols and troubleshooting<br />- Knowledge of Linux/Unix Administration<br />- Bachelor's degree in an IT-related field (e.g., Computer Science, Network Engineering), or experience in professional or military IT-related roles<br />- Experience in a data center or other critical environment<br />- Experience training and onboarding of new team members<br /><br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br /></p><p>The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life &amp; AD&amp;D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at <a href=\"https://amazon.jobs/en/benefits\">https://amazon.jobs/en/benefits</a>.</p><br /><br />USA, TX, Andrews - 30.91 - 54.18 USD hourly",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10610566/data-center-technician-night-shift",
+    "postedAt": "2026-11-22T00:00:00.000Z",
+    "firstSeenAt": "2026-11-23T05:03:52.511Z",
+    "source": "amazon"
+  },
+  {
     "id": "amazon:10610625",
     "slug": "amazon-data-engineer-central-infraops-analytics-team-10610625",
     "company": "amazon",
@@ -14017,6 +14005,23 @@
     "applyUrl": "https://www.amazon.jobs/en/jobs/10610980/site-ehs-manager-ii",
     "postedAt": "2026-11-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-22T05:03:35.399Z",
+    "source": "amazon"
+  },
+  {
+    "id": "amazon:10611011",
+    "slug": "amazon-operations-area-manager-10611011",
+    "company": "amazon",
+    "title": "Operations Area Manager",
+    "locations": [
+      "Jandakot, Australia"
+    ],
+    "remote": false,
+    "department": "Fulfillment & Operations Management",
+    "category": "operations",
+    "descriptionHtml": "<p>Here at Amazon we're currently hiring for experienced Operations Area Managers to join our Customer Fulfillment team at our site in Jandakot.<br /><br />As an Operations Area Manager, you'll be directly responsible for leading and developing a team of Section Managers and their direct reports in one of the following areas within the Fulfillment Center Operations: receive, stow, pick, pack or ship, where you will work to continuously improve the efficiency of delivery processes, ensuring that customer orders are delivered as quickly, accurately, and cost-effectively as possible. Along with your peers, you’ll ensure that all workflows run smoothly and that customer expectations are met, if not exceeded.<br /><br />Please note the shift pattern is based on 4 days on and 3 days off, working at least one weekend day.<br /><br />Key Job Responsibilities:<br />- Leading and developing a team of Operations Section Managers and their direct reports,<br />- Maintaining Health and Safety standards within your remit area, while promoting an inspiring Health and Safety culture on-site,<br />- Developing performance goals and objectives to achieve customer promise expectations and ensure accuracy and quality,<br />- Collaborate with all support teams including Safety, Engineering, Loss Prevention, Quality Assurance, Human Resources to develop plans to meet business objectives,<br />- Partnering with the management team to establish and maintain quality control standards,<br />- Review the work forecasts and determine your requirements to produce during the day to meet the overall building objectives.</p><h3>Basic qualifications</h3><p>- Working experience in Operations, Supply Chain, Logistics, or large-scale retail store management environment,<br />- Direct management experience for employees and their performance,<br />- Experience as a manager, involving sizable teams; you’re a natural at motivating others around you and building strong relationships,<br />- Demonstrate ability in problem-solving and analytical capabilities: conducting and driving Dive Deep analysis on complex processes,<br />- Excellent communication skills, both verbal and written,<br />- Experience troubleshooting problems and offering solutions to streamline complex challenges, or experience in creating process improvements with automation and analysis.</p><h3>Preferred qualifications</h3><p>- Experience with performance metrics and process improvement,<br />- Experience in Microsoft Office applications including but not limited to MS Word, Excel, Power Point and Outlook,<br />- Bachelor’s Degree from an accredited university or equivalent qualification.<br /><br />Acknowledgement of country:<br />In the spirit of reconciliation Amazon acknowledges the Traditional Custodians of country throughout Australia and their connections to land, sea and community. We pay our respect to their elders past and present and extend that respect to all Aboriginal and Torres Strait Islander peoples today.<br /><br />IDE statement:<br />Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.<br /><br />Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit <a href=\"https://amazon.jobs/content/en/how-we-hire/accommodations\">https://amazon.jobs/content/en/how-we-hire/accommodations</a> for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.<br /><br />null</p>",
+    "applyUrl": "https://www.amazon.jobs/en/jobs/10611011/operations-area-manager",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-23T05:03:52.511Z",
     "source": "amazon"
   },
   {
