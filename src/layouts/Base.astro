@@ -34,6 +34,16 @@ const canonical = new URL(pathname, Astro.site);
 const basePath = stripLang(pathname);
 const alternates = translated ? locales.map((l) => ({ lang: l, href: new URL(localizePath(basePath, l), Astro.site) })) : [];
 const run = await getLatestRun();
+// what the latest check actually did, shown in the footer
+const ok = run?.sources.filter((r) => r.status === "ok") ?? [];
+const lastCheck = run && ok.length > 0
+  ? m.lastCheck(
+      formatDateTime(run.finishedAt, lang),
+      ok.length,
+      ok.reduce((sum, r) => sum + r.new, 0),
+      ok.reduce((sum, r) => sum + r.closed, 0),
+    )
+  : run && `${m.lastUpdated} ${formatDateTime(run.finishedAt, lang)}`;
 const medicineMonth = (await getMedicineSnapshots()).at(-1)?.date.slice(0, 7);
 const fullTitle = title === "Workog" ? title : `${title} · Workog`;
 const ogLocale = (l: string) => intlLocale(l as typeof lang).replace("-", "_");
@@ -175,7 +185,7 @@ const ogImage = new URL(shareImage.path, Astro.site);
       <slot />
     </main>
     <footer class="wrap site-footer">
-      {run && <p>{m.lastUpdated} <time datetime={run.finishedAt}>{formatDateTime(run.finishedAt, lang)}</time></p>}
+      {lastCheck && <p>{lastCheck}</p>}
       <p>{m.footerNote}</p>
       <p><a href={u(reportsUrl)}>{m.reports.title}</a> · <a href="/llms.txt">llms.txt</a></p>
     </footer>
