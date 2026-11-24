@@ -181,6 +181,8 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/2cfb391c-eaa4-4a97-83da-18ca275d50a5",
     "postedAt": "2026-11-17T01:05:08.501Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "ashby"
   },
   {
@@ -900,6 +902,24 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/9e3a4516-b893-4579-9a6a-3720658e4b6d",
     "postedAt": "2026-08-11T23:52:58.934Z",
     "firstSeenAt": "2026-11-03T15:13:06.901Z",
+    "source": "ashby"
+  },
+  {
+    "id": "ashby:9e738c21-f2ab-49d7-b545-b519bb2cf8ae",
+    "slug": "perplexity-member-of-technical-staff-software-engineer-space-sandbox-platform-9e738c21-f2ab-49d7-b545-b519bb2cf8ae",
+    "company": "perplexity",
+    "title": "Member of Technical Staff (Software Engineer, SPACE - Sandbox Platform)",
+    "locations": [
+      "San Francisco",
+      "New York City"
+    ],
+    "remote": false,
+    "department": "Platform & Infrastructure",
+    "category": "engineering",
+    "descriptionHtml": "<h2><strong>About the role</strong></h2><p>SPACE is Perplexity's sandbox platform. It's the isolated execution layer behind Perplexity Computer, the public Sandbox API, and a growing set of agent products. Every time an agent writes code, runs a tool, opens a browser, builds an app, or works on a user's files, it runs inside a SPACE sandbox.</p><p>We built our own sandbox platform that lets us build the exact platform our products need: real pause and resume, forking, rolling snapshots, credential isolation, fine-grained network policy, and enterprise-grade encryption. The work spans low-level virtualization and networking, distributed state machines, petabyte storage, and careful API design. Reliability, security, and cold-start latency are all things our customers feel directly.</p><h2><strong>Key responsibilities</strong></h2><ul><li><p>Design and build core sandbox infrastructure for running untrusted, agent-generated code safely, quickly, and at scale.</p></li><li><p>Own sandbox isolation and security end to end, working with Security Engineering on defense in depth for compute, networking, storage, and sensitive information.</p></li><li><p>Build stateful systems that manage long-lived execution environments and keep user data durable and correct through failures.</p></li><li><p>Drive performance and efficiency across the stack, from startup latency and resource density to cost.</p></li><li><p>Run sandbox infrastructure as an always-on production service, setting the bar for reliability, observability, capacity planning, and incident response.</p></li><li><p>Define clear platform interfaces and APIs so internal teams and external developers can build on sandboxes with confidence.</p></li><li><p>Provide technical leadership: mentor engineers, write clear design docs, and make long-term architectural decisions that keep the platform simple, secure, and able to evolve.</p></li></ul><h2><strong>Qualifications</strong></h2><ul><li><p>Experience designing and running production backend or infrastructure systems</p></li><li><p>Strong distributed systems experience: you've built and operated systems that coordinate state across many nodes, and you're fluent in consistency, consensus or leader election, idempotency, retries, and failure handling at scale.</p></li><li><p>Strong system design skills for stateful systems where correctness under failure matters.</p></li><li><p>Hands-on experience with Linux systems and modern infrastructure (for example AWS, Kubernetes, and container or VM runtimes).</p></li><li><p>Comfortable with security-sensitive systems and making pragmatic trade-offs between isolation, performance, and velocity.</p></li><li><p>Collaborative mindset and eagerness to work on hard problems with other experienced engineers.</p></li></ul><h2><strong>Nice to have</strong></h2><ul><li><p>Experience with Firecracker, Cloud Hypervisor, KVM, gVisor, Kata, or other virtualization and sandboxing technology.</p></li><li><p>Experience with snapshotting, copy-on-write filesystems, or block storage.</p></li><li><p>Experience with Linux networking (namespaces, eBPF, egress filtering) or secrets and key management.</p></li><li><p>Experience with custom scheduling, multi-cluster orchestration, or distributed state machines.</p></li><li><p>Experience building developer-facing APIs and SDKs, or code execution and agent infrastructure.</p></li></ul><p>If you're excited about this role, we encourage you to apply even if your experience doesn't match every qualification listed above.</p>",
+    "applyUrl": "https://jobs.ashbyhq.com/Perplexity/9e738c21-f2ab-49d7-b545-b519bb2cf8ae",
+    "postedAt": "2026-11-23T20:54:59.960Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "source": "ashby"
   },
   {
@@ -2015,6 +2035,23 @@
     "source": "ashby"
   },
   {
+    "id": "ashby:a2c00e70-8d38-441a-8633-ff1dbfbc94ee",
+    "slug": "perplexity-engineering-manager-agent-verticals-a2c00e70-8d38-441a-8633-ff1dbfbc94ee",
+    "company": "perplexity",
+    "title": "Engineering Manager (Agent Verticals)",
+    "locations": [
+      "San Francisco"
+    ],
+    "remote": false,
+    "department": "AI Products",
+    "category": "management",
+    "descriptionHtml": "<p>We are hiring a hands-on engineering leader to lead and grow Perplexity's Agent Verticals team.</p><p>In 2026, we launched Computer, the defining product for the new era of agentic AI. We've scaled beyond the millions of people using Perplexity every day for research, shopping, investing and curiosity into a new paradigm of using AI to transform knowledge into action.</p><p>Agent Verticals builds the systems and products that connect Computer to the data and workflows people rely on in specific domains, starting with Finance, GTM, and Coding. We work close to the customer and the domain: build capabilities, bundle them into a domain offering, and expand. The best of what we build gets generalized into capabilities for every Computer user, and each vertical could grow into a separate team.</p><p>As the Engineering Manager for Agent Verticals, you'll lead a small, fast-growing team of full-stack engineers building things like:</p><ul><li><p>Personal CFO, an always-on financial agent built on user-connected financial data</p></li><li><p>An agentic sales engineer that supports GTM teams end to end</p></li><li><p>1st Party Agent Messaging</p></li></ul><p><strong>What you'll do:</strong></p><ul><li><p>Set technical and product direction across multiple verticals, and help the team make sharp tradeoffs on what to build, bundle, and generalize.</p></li><li><p>Work across the stack (backend, frontend, agentic engineering, data) and with nearly every team at Perplexity.</p></li><li><p>Stay hands-on: write code, review PRs, and own system design for critical parts of the stack.</p></li><li><p>Drive reliability, quality, and evaluation standards for products that customers depend on for real work.</p></li><li><p>Lead, hire, and grow a team of engineers, partnering closely with recruiting to build a high-caliber pipeline.</p></li><li><p>Ship fast: we build and dogfood quickly, and ramp to all users within weeks.</p></li></ul><p><strong>Qualifications:</strong></p><ul><li><p>8+ years of engineering experience, including 3+ years as an engineering manager.</p></li><li><p>Strong hands-on engineering skills. You still enjoy coding and system design discussions.</p></li><li><p>Full-stack experience. Our work is roughly 70% backend and 30% frontend.</p></li><li><p>Strong product sense and a real interest in the user experience and customer feedback.</p></li><li><p>Comfort with ambiguity and the ability to set direction in a fast-moving environment.</p></li></ul><p><strong>Nice to have:</strong></p><ul><li><p>Experience building 0 to 1 products or teams, taking something from idea to launch.</p></li><li><p>Experience shipping LLM-powered or agentic products to users.</p></li></ul>",
+    "applyUrl": "https://jobs.ashbyhq.com/Perplexity/a2c00e70-8d38-441a-8633-ff1dbfbc94ee",
+    "postedAt": "2026-11-23T23:46:42.354Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "ashby"
+  },
+  {
     "id": "ashby:a5b97109-222d-49e1-b2ac-e101487a5ddd",
     "slug": "perplexity-business-development-representative-a5b97109-222d-49e1-b2ac-e101487a5ddd",
     "company": "perplexity",
@@ -2433,6 +2470,8 @@
     "applyUrl": "https://jobs.ashbyhq.com/Perplexity/d291c382-7252-45e5-8b47-ecec5d6be157",
     "postedAt": "2026-11-20T19:04:54.041Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "ashby"
   },
   {

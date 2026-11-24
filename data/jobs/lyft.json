@@ -780,7 +780,7 @@
     "postedAt": "2026-09-02T07:14:00.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-24T05:03:30.764Z",
     "source": "greenhouse"
   },
   {
@@ -799,7 +799,7 @@
     "postedAt": "2026-09-02T07:13:55.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-24T05:03:30.764Z",
     "source": "greenhouse"
   },
   {
@@ -837,7 +837,7 @@
     "postedAt": "2026-09-02T07:12:29.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-24T05:03:30.764Z",
     "source": "greenhouse"
   },
   {
@@ -1004,25 +1004,6 @@
     "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8790623002?gh_jid=8790623002",
     "postedAt": "2026-09-11T16:00:17.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
-    "source": "greenhouse"
-  },
-  {
-    "id": "greenhouse:8790686002",
-    "slug": "lyft-software-engineer-telematics-8790686002",
-    "company": "lyft",
-    "title": "Software Engineer, Telematics",
-    "locations": [
-      "Toronto, Canada"
-    ],
-    "remote": false,
-    "department": "Risk Solutions",
-    "category": "engineering",
-    "descriptionHtml": "<p>At Lyft, our purpose is to serve and connect. We aim to achieve this by cultivating a work environment where all team members belong and have the opportunity to thrive.</p>\n<p>We are looking for an experienced backend software engineer to join our Road Safety &amp; Telematics team. At Lyft, Telematics data is used to make Lyft safer by reducing the frequency and severity of accidents, which in turn also makes Lyft more affordable for riders and a better way to earn a living for drivers. The Telematics team acts as a platform team that processes petabytes of mobile sensor data — millisecond-level IMU, gyroscope, and GPS signals — through a series of DAG-based transformations and ML model inferences to detect harsh driving events and convert them into normalized risk features that other Lyft services consume.</p>\n<p>Our technology stack runs on AWS, Kubernetes, Spark, and Apache Airflow. In this role, you'll work closely with data scientists, actuarial teams, other backend and data engineers, and product management — partnering across geos to build risk-aware products that rank and reward safe drivers, help off-board unsafe ones, notify drivers in real time, and give claims agents the tools to understand exactly what happened in a ride. You'll also be a key technical partner to our insurance team as they optimize coverage costs and provider relationships.</p>\n<p>If you are a seasoned engineer with a passion for innovation, high-volume data pipelines, microservices, working in cross-disciplinary environments and possess the skills to ensure the ongoing maintenance and improvement of services, you will thrive on our team!</p>\n<p>You can read about some of the products that Telematics powers in this blog post: <a href=\"https://www.lyft.com/blog/posts/lyfts-impact-on-road-safety\">https://www.lyft.com/blog/posts/lyfts-impact-on-road-safety</a></p>\n<h2><strong>Responsibilities:</strong></h2>\n<ul>\n<li>Be a champion of the team's safety and affordability mission, serving as a reliable source of risk insights for teams across Lyft — from driver ranking and safety rewards to accident claims resolution and insurance strategy.</li>\n<li>Lead medium to large projects, ensuring end-to-end execution with a focus on high quality and reliability.</li>\n<li>Work cross-functionally with Data Scientists to productionize models that turn raw sensor signals into harsh-event detection and risk features, driving the team's industry-leading innovation in this space.</li>\n<li>Drive future work to reduce latency, simplify, and improve the accuracy of both our back-end and on-device models that predict accidents before they happen.</li>\n<li>Actively unblock and support team members, fostering a collaborative and efficient work environment.</li>\n<li>Take a lead role in the ongoing maintenance of our Telematics systems, reducing tech debt and operating costs through sensible, data-driven design decisions.</li>\n<li>Collaborate with product management and leadership across geos to define and execute ambitious roadmaps for Telematics.</li>\n<li>Apply the latest AI tools to boost engineering and business productivity, sharing what you learn with the team.</li>\n<li>Utilize your expertise in Python, AWS, Spark, SQL (Databricks/Presto), etc. to deliver robust and scalable solutions.</li>\n<li>Participate in our team's on-call rotations, respond to incidents, and support other teams in mitigating customer-impacting events.</li>\n</ul>\n<h2><strong>Experience:</strong></h2>\n<ul>\n<li>4+ years of software engineering industry experience</li>\n<li>Experience in backend software development of large-scale distributed systems</li>\n<li>Experience and/or interest in running large batch processing jobs with Spark or other large scale compute architectures</li>\n<li>Experience and/or interest in Library development</li>\n<li>Experience and/or interest in serving, versioning, monitoring ML models in production environments</li>\n<li>Experience defining API schemas and developing backend services in a microservices environment</li>\n<li>Experience with S3, Spark, Presto, Parquet, Databricks</li>\n<li>You're a great communicator, and can advocate for your proposals while also empathizing with your cross-functional teammates' goals and priorities</li>\n<li>You collaborate well with a geographically distributed team</li>\n</ul>\n<h2><strong>Benefits:</strong></h2>\n<ul>\n<li>Extended health and dental coverage options, along with life insurance and disability benefits</li>\n<li>Mental health benefits</li>\n<li>Family building benefits</li>\n<li>Child care and pet benefits</li>\n<li>Access to a Lyft funded Health Care Savings Account</li>\n<li>RRSP plan with company match to help save for your future</li>\n<li>In addition to provincial observed holidays, salaried team members are covered under Lyft's flexible paid time off policy. The policy allows team members to take off as much time as they need (with manager approval). Hourly team members get 15 days paid time off, with an additional day for each year of service </li>\n<li>Lyft is proud to support new parents with 18 weeks of paid time off, designed as a top-up plan to complement provincial programs. Biological, adoptive, and foster parents are all eligible.</li>\n<li>Subsidized commuter benefits and Lyft ride credits</li>\n</ul>\n<p>Lyft is committed to creating an inclusive workforce that fosters belonging. Lyft believes that every person has a right to equal employment opportunities without discrimination because of race, ancestry, place of origin, colour, ethnic origin, citizenship, creed, sex, sexual orientation, gender identity, gender expression, age, marital status, family status, disability, pardoned record of offences, or any other basis protected by applicable law or by Company policy. Lyft also strives for a healthy and safe workplace and strictly prohibits harassment of any kind.  Accommodation for persons with disabilities will be provided upon request in accordance with applicable law during the application and hiring process. Please contact your recruiter if you wish to make such a request.</p>\n<p>Lyft highly values having employees working in-office to foster a collaborative work environment and company culture. This role will be in-office on a hybrid schedule — Team Members will be expected to work in the office at least 3 days per week, including on Mondays, Wednesdays, and Thursdays. Lyft considers working in the office at least 3 days per week to be an essential function of this hybrid role. Your recruiter can share more information about the various in-office perks Lyft offers. Additionally, hybrid roles have the flexibility to work from anywhere for up to 4 weeks per year. #Hybrid</p>\n<p>The expected base pay range for this position in the Toronto area is CAD $108,000 - CAD $135,000, not inclusive of potential equity offering, bonus or benefits. Salary ranges are dependent on a variety of factors, including qualifications, experience and geographic location. Your recruiter can share more information about the salary range specific to your working location and other factors during the hiring process.</p>\n<p>Lyft may use artificial intelligence to screen applicants, however, Lyft employees make the ultimate selection and hiring decisions.</p>\n<p>This job fills an existing vacancy.</p>",
-    "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8790686002?gh_jid=8790686002",
-    "postedAt": "2026-09-10T09:39:51.000Z",
-    "firstSeenAt": "2026-11-02T12:53:10.345Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "greenhouse"
   },
   {
@@ -1781,25 +1762,6 @@
     "source": "greenhouse"
   },
   {
-    "id": "greenhouse:8863960002",
-    "slug": "lyft-procurement-coe-manager-8863960002",
-    "company": "lyft",
-    "title": "Procurement COE manager",
-    "locations": [
-      "San Francisco, CA"
-    ],
-    "remote": false,
-    "department": "Global Supply Chain",
-    "category": "operations",
-    "descriptionHtml": "<p>At Lyft, our purpose is to serve and connect. We aim to achieve this by cultivating a work environment where all team members belong and have the opportunity to thrive.</p>\n<p>Lyft is seeking an experienced Procurement Center of Excellence Manager to join our Global Supply Chain Team.  In this role, you will enable Procurement best practices through process standardization and continuous improvement initiatives. You will develop strategic business partnership relationships and execute comprehensive strategies to support business growth and deliver operational excellence. </p>\n<h2><strong>Responsibilities:</strong> </h2>\n<ul>\n<li>Partner with Global Supply Management (GSM) and cross-functional stakeholders to embed procurement standards into tooling and operational workflows</li>\n<li>Drive continuous improvement initiatives leveraging technology, insights, and leading best practices to enhance procurement effectiveness and user experience</li>\n<li>Operationalize policies through smart automation; designing intuitive workflows that reduce friction and maintain compliance</li>\n<li>Lead training and change management efforts for cross functional stakeholders; using customer insights to drive change management </li>\n<li>Maintain documentation for procurement workflows and best practices across the organization</li>\n<li>Serve as an advisor and partner to the business, providing subject matter expertise on procurement policies, training, and compliance requirements</li>\n<li>Implement supplier relationship management (SRM) programs and KPIs to drive optimal performance and risk mitigation</li>\n<li>Lead the end-to-end development and enhancement of procurement workflows; leveraging AI and automation to guide end users through intuitiveness design  </li>\n<li>Excellent communication and interpersonal skills, with the ability to influence at all levels of the organization</li>\n<li>Strong analytical and ability to interpret data, identify trends, and make data-driven decisions</li>\n<li>Strong project management skills, with the ability to lead multiple projects simultaneously</li>\n<li>Support mergers, acquisitions, and business expansion activities through Sourcing Expertise </li>\n</ul>\n<h2><strong>Experience:</strong></h2>\n<ul>\n<li>A bachelor's degree in Supply Chain Management, Business Administration, Engineering, or a related field is typically required.\n<ul>\n<li>Relevant certifications (e.g., CSCP, CPM) may be advantageous.</li>\n</ul>\n</li>\n<li>Experience with procurement technology platforms (e.g., Oracle, Zip), advanced analytics tools, and Google Workspace</li>\n<li>3 to 5+ years of experience in procurement or strategic sourcing, preferred </li>\n</ul>\n<h2><strong>Benefits:</strong></h2>\n<ul>\n<li>Great medical, dental, and vision insurance options with additional programs available when enrolled</li>\n<li>Mental health benefits</li>\n<li>Family building benefits</li>\n<li>Child care and pet benefits</li>\n<li>401(k) plan with company match to help save for your future</li>\n<li>In addition to 12 observed holidays, salaried team members have discretionary paid time off, hourly team members have 15 days paid time off</li>\n<li>18 weeks of paid parental leave. Biological, adoptive, and foster parents are all eligible</li>\n<li>Subsidized commuter benefits</li>\n<li>Monthly Lyft credits and complimentary Lyft Pink membership</li>\n</ul>\n<p>Lyft is an equal opportunity employer committed to an inclusive workplace that fosters belonging. All qualified applicants will receive consideration for employment without regards to race, color, religion, sex, sexual orientation, gender identity, national origin, disability status, protected veteran status, age, genetic information, or any other basis prohibited by law. We also consider qualified applicants with criminal histories consistent with applicable federal, state and local law.</p>\n<p>Lyft highly values having employees working in-office to foster a collaborative work environment and company culture. This role will be in-office on a hybrid schedule — Team Members will be expected to work in the office 3 days per week on Mondays, Wednesdays, and Thursdays. Lyft considers working in the office at least 3 days per week to be an essential function of this hybrid role. Your recruiter can share more information about the various in-office perks Lyft offers. Additionally, hybrid roles have the flexibility to work from anywhere for up to 4 weeks per year. #Hybrid</p>\n<p>The expected base pay range for this position in the San Francisco area is $98,000 - $122,500, not inclusive of potential equity offering, bonus or benefits. Salary ranges are dependent on a variety of factors, including qualifications, experience and geographic location. Your recruiter can share more information about the salary range specific to your working location and other factors during the hiring process.</p>",
-    "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8863960002?gh_jid=8863960002",
-    "postedAt": "2026-10-05T05:23:04.000Z",
-    "firstSeenAt": "2026-11-02T12:53:10.345Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
-    "source": "greenhouse"
-  },
-  {
     "id": "greenhouse:8872142002",
     "slug": "lyft-people-business-partner-lyft-urban-solutions-8872142002",
     "company": "lyft",
@@ -2539,6 +2501,8 @@
     "applyUrl": "https://app.careerpuck.com/job-board/lyft/job/8919442002?gh_jid=8919442002",
     "postedAt": "2026-10-27T18:50:20.000Z",
     "firstSeenAt": "2026-11-02T12:53:10.345Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "greenhouse"
   },
   {

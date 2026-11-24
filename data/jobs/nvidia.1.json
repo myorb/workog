@@ -1148,7 +1148,7 @@
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   },
   {
@@ -2196,25 +2196,6 @@
     "source": "workday"
   },
   {
-    "id": "workday:nvidia:JR2015072",
-    "slug": "nvidia-senior-software-verification-engineer-jr2015072",
-    "company": "nvidia",
-    "title": "Senior Software Verification Engineer",
-    "locations": [
-      "Israel, Raanana",
-      "Israel, Tel Aviv"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>We are seeking a talented and driven Senior Software Verification Engineer to join our innovative team and tackle SW verification challenges in the domains of high-speed networking, virtualization, and security. You will play a key role in validating and testing complex software products that support Ethernet and InfiniBand protocols, delivering advanced networking, storage, and security services for cloud, compute, and AI workloads.</p><p><b>What You’ll Be Doing:</b></p><ul><li><p>Develop and Automate Testing: Design, implement, and maintain automated test scripts and frameworks (primarily in Python) to verify the correct functionality of our software products.</p></li><li><p>End-to-End Feature Ownership: Deep dive into feature sets, taking responsibility from test planning through to final implementation and full automation.</p></li><li><p>System &amp; Integration Validation: Validate software functionality and performance through system-level and integration testing, utilizing Linux-based environments and virtualization tools.</p></li><li><p>Test Environment Management: Set up, maintain, and optimize test environments using Linux, Docker, virtual machines, and other modern tools.</p></li><li><p>Collaboration &amp; Communication: Work closely with software, DevOps, architecture, and product teams to define test requirements, coordinate releases, and ensure high-quality product delivery.</p></li><li><p>Continuous Improvement: Drive design verification flows, contribute to methodology improvements, and leverage planning/tracking systems to manage release progress and build release indicators.</p></li><li><p>Defect Analysis: Analyze test results, file defects, and track issues to closure, ensuring robust and scalable solutions.</p></li></ul><p><b>What We Need to See:</b></p><ul><li><p>Bachelors/master’s degree in computer science or computer engineering, or equivalent experience</p></li><li><p>5+ years of experience in software testing, QA automation, or software engineering.</p></li><li><p>Strong proficiency in Python and scripting for automation.</p></li><li><p>Solid experience with Linux-based environments, including system tools and command-line utilities.</p></li><li><p>Proven understanding of computer networking and modern Linux operating systems.</p></li><li><p>Familiarity with software testing, integration, and system validation practices.</p></li><li><p>Excellent problem-solving, critical thinking, and communication skills.</p></li><li><p>Ability to work independently, manage multiple tasks, and drive technical initiatives.</p></li><li><p>Great interpersonal skills, agility, and determination for success.</p></li><li><p>Fluent English; strong presentation and public speaking abilities.</p></li></ul><p><b>Ways to Stand Out from the Crowd:</b></p><ul><li><p>Deep technical know-how and familiarity with networking protocols or low-level system tools.</p></li><li><p>Experience with Docker, KVM, or other virtualization technologies.</p></li><li><p>Knowledge of CI/CD tools (e.g., Jenkins, GitLab CI) and test reporting tools (e.g., Allure, Grafana, Kibana).</p></li><li><p>Experience with large HW+SW systems and advanced Linux OS technologies.</p></li><li><p>Proficiency with GIT, Bash, and other scripting languages.</p></li></ul><p>If you are creative, autonomous, and passionate about delivering world-class software solutions, we want to hear from you! Join us and work alongside some of the most forward-thinking and dedicated professionals in the industry.</p><p>NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-Software-Verification-Engineer_JR2015072",
-    "postedAt": "2026-10-21T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
-    "source": "workday"
-  },
-  {
     "id": "workday:nvidia:JR2015083",
     "slug": "nvidia-senior-gpu-networking-architect-jr2015083",
     "company": "nvidia",
@@ -2361,26 +2342,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Japan-Tokyo/Principal-Engineer--Autonomous-Vehicles-and-Physical-AI-Solutions_JR2015317",
     "postedAt": "2026-04-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2015559",
-    "slug": "nvidia-senior-software-developer-jr2015559",
-    "company": "nvidia",
-    "title": "Senior Software Developer",
-    "locations": [
-      "Israel, Raanana",
-      "Israel, Tel Aviv",
-      "Israel, Yokneam"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>We are looking for an enthusiastic software engineer to join our AI networking acceleration team, to work on a groundbreaking open-source library, using hardware offloads, GPU Kernels and RDMA network cards. Our product is a performance-oriented low-level infrastructure, crafted to change the way inference works.</p><p>We thrive as a team in a deeply strong environment, and we're passionate about innovation. The rewards are sweet and include working with some of the brightest people in the industry, an aggressive compensation plan that rewards top performers, and the opportunity to collaborate on products that transform daily the way people work and play.</p><p><b>What you'll be doing:</b></p><ul><li><p>Developing a highly optimized inference framework</p></li><li><p>Running on the world’s largest supercomputers and data centers.</p></li><li><p>The work environment is dynamic and challenging as our employees work on innovative, next-generation products at the forefront of technology in terms of performance, scalability, and features.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>B.Sc. or equivalent experience in Computer Science or Software Engineering</p></li><li><p>At least 5 years of experience in modern C++ / C / Python development</p></li><li><p>At least 3 years of experience in Linux environment and familiarity with development tools</p></li><li><p>Deep knowledge of the TCP/IP network stack</p></li><li><p>Understanding of computer architecture and operating systems concepts</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Background in Linux internals and low-level software optimizations (benchmarking, bottleneck research, performance tuning)</p></li><li><p>Experience in programming CUDA kernels is an advantage</p></li><li><p>Familiarity with ML frameworks and LLMs</p></li><li><p>Background in parallel programming / high-performance computing / RDMA technology</p></li></ul><p>At NVIDIA, we are passionate about supercomputing and powerful ground-breaking technologies. Our products span many areas, such as: high-performance computing (HPC), Machine Learning, cloud services, storage and more - and we've only scratched the surface of what can be accomplished. We need hardworking and creative people to help us seek some of these outstanding opportunities. With highly competitive salaries and a comprehensive benefits package, NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the smartest engineers in the world working for us and, due to extraordinary growth, our elite engineering teams are fast-growing fast. If you're a creative and autonomous manager with a sincere passion for technology, we want to hear from you.</p><p>NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-Software-Developer_JR2015559",
-    "postedAt": "2026-10-08T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -2531,6 +2492,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Package-Modeling-Engineer_JR2015858",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -3335,6 +3298,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---Simulation_JR2018093",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -3472,6 +3437,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer---Datacenter-Boards_JR2018422",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4197,7 +4164,7 @@
     "postedAt": "2026-09-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   },
   {
@@ -4734,6 +4701,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Platform-Software-Engineer--DriveAV---Autonomous-Vehicles_JR2021048-1",
     "postedAt": "2026-07-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5468,24 +5437,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/System-Design-Intern--LDE---2027_JR2021952",
     "postedAt": "2026-07-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2021967",
-    "slug": "nvidia-design-automation-engineer-jr2021967",
-    "company": "nvidia",
-    "title": "Design Automation Engineer",
-    "locations": [
-      "Israel, Yokneam"
-    ],
-    "remote": false,
-    "category": "design",
-    "descriptionHtml": "<p>Our System Design Automation team is looking for an experienced Software Engineer with a passion for UX/UI and AI integration to join our engineering group. We are seeking a versatile developer who excels at building intuitive, user-centric software platforms and has a proven ability to seamlessly embed AI/ML solutions into production-ready tools.</p><p> The team develops and sustains a range of capabilities for NVIDIA's next-generation hardware platforms—bridging traditional software engineering with with AI-based automation and intelligent debugging solutions. Your role will be to ensure these advanced technologies are delivered through a cohesive system architecture and a superior user experience, accelerating issue resolution and improving product reliability for the world's most advanced GPU and data center technologies</p><p><b>What will you be doing:</b></p><ul><li><p>Develop and maintain automation tools to build efficiency and accuracy.</p></li><li><p>Collaborate with cross-functional teams to determine requirements and successfully implement solutions.</p></li><li><p>Provide support and training to team members on guidelines and tool usage.</p></li></ul><p><b>What We Need To See:</b></p><ul><li><p>Bachelor’s degree in Computer engineer/Computer Science</p></li><li><p>2+ years Experience</p></li><li><p>Fast learner , ambition and self learner</p></li><li><p>Proficiency in programming languages , AI tools</p></li><li><p>Strong problem-solving skills and the ability to work effectively in a team environment.</p></li><li><p>Excellent communication skills and a positive, proactive attitude.</p></li></ul><p><b>Ways to Stand Out From The Crowd:</b></p><ul><li><p>Board design experience</p></li><li><p>Prior experience working with CAD tools</p></li><li><p>Knowledge of AI and machine learning algorithms.</p></li><li><p>Prior experience in a high-performance computing environment.</p></li></ul><p>Join us at NVIDIA and contribute to our mission of transforming the world through groundbreaking technology. Your innovative ideas and dedication can make a significant impact as we continue to build the future of computing. We can’t wait to see what you’ll bring to our team!</p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Design-Automation-Engineer_JR2021967",
-    "postedAt": "2026-11-05T00:00:00.000Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
     "source": "workday"
   },
   {
@@ -6390,25 +6341,6 @@
     "source": "workday"
   },
   {
-    "id": "workday:nvidia:JR2023091",
-    "slug": "nvidia-software-solution-architect-nvis-jr2023091",
-    "company": "nvidia",
-    "title": "Software Solution Architect, NVIS",
-    "locations": [
-      "Israel, Tel Aviv",
-      "Israel, Raanana"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>As a Software Solution Architect, NVIS at NVIDIA, you will lead the transformation of AI infrastructure. Our NVIS team focuses on developing the next generation of NVIS Central, an agentic software platform with tools, services, and AI agents that automate, simplify, and speed up the work of our delivery organization. This role offers an outstanding chance to create and build LLM-powered agents that improve execution visibility, cut down manual tasks, and standardize workflows. These efforts allow NVIS to grow quickly and with high quality. Join us to bring up, validate, optimize, and upgrade large-scale AI Factory infrastructure for some of the world’s most advanced accelerated computing environments!</p><p><b>What you'll be doing:</b></p><ul><li><p>Compose, build, and productionize agentic AI solutions, tools, and applications for the NVIS delivery organization.</p></li><li><p>Develop LLM-based agents, skills, tool-calling workflows, orchestration logic, backend services, APIs, data pipelines, and automation features as part of NVIS Central.</p></li><li><p>Translate field, delivery, operations, and product needs into clear technical builds, agent workflows, and working software.</p></li><li><p>Develop agents that can reason across project data, knowledge bases, operational systems, logs, reports, and delivery workflows.</p></li><li><p>Build workflows that help NVIS teams identify risks, summarize project status, automate repetitive tasks, improve readiness visibility, and simplify handoffs.</p></li><li><p>Work with timely engineering, retrieval-augmented generation, context management, agent memory, function calling, evaluations, and guardrails to build reliable AI systems.</p></li><li><p>Integrate LLMs and agents with internal systems, project data sources, knowledge repositories, reporting tools, and operational workflows.</p></li><li><p>Collaborate closely with software developers, architects, product managers, DevOps/SRE, and NVIS field teams to successfully implement reliable and scalable solutions.</p></li><li><p>Contribute to engineering guidelines, including code quality, testing, CI/CD, observability, documentation, security, and production support.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>B.Sc. degree or equivalent experience in Computer Science, Computer Engineering, or a related technical field.</p></li><li><p>2+ years of hands-on software development experience building production applications, platforms, automation tools, or AI-based systems.</p></li><li><p>Strong programming experience with Python and modern backend development.</p></li><li><p>Hands-on experience working with LLMs, agentic workflows, timely composition, tool/function calling, RAG, and AI application development.</p></li><li><p>Experience crafting and implementing RESTful APIs, data services, workflow automation, and integrations with enterprise systems.</p></li><li><p>Experience building reliable software around non-deterministic AI systems, including testing, evaluation, monitoring, and failure handling.</p></li><li><p>Experience with Docker, Kubernetes, CI/CD, Git, observability, and cloud-native development practices.</p></li><li><p>Background with SQL and NoSQL databases, data modeling, querying, indexing, and data integration.</p></li><li><p>Excellent problem-solving skills, ownership attitude, and ability to operate in a fast paced, cross-functional environment.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Experience building agent platforms, copilots, multi-agent systems, tool-calling workflows, evaluation frameworks, or MCP-style integrations.</p></li><li><p>Deep understanding of LLM application patterns such as context engineering, retrieval quality, timely/version management, agent planning, human-in-the-loop workflows, and AI safety guardrails.</p></li><li><p>Experience with AI infrastructure, HPC clusters, NVIDIA DGX systems, SuperPOD, Spectrum-X, Ethernet, InfiniBand, Kubernetes, or SLURM.</p></li><li><p>Experience in automating workflows related to field, delivery, operations, or professional services.</p></li><li><p>Strong Linux, networking, security, SRE, or distributed systems background.</p></li></ul>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Software-Solution-Architect--NVIS_JR2023091",
-    "postedAt": "2026-09-23T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
-    "source": "workday"
-  },
-  {
     "id": "workday:nvidia:JR2023110",
     "slug": "nvidia-performance-engineer-jr2023110",
     "company": "nvidia",
@@ -7080,24 +7012,6 @@
     "source": "workday"
   },
   {
-    "id": "workday:nvidia:JR2023987",
-    "slug": "nvidia-software-manager-robotics-platform-engineering-jr2023987",
-    "company": "nvidia",
-    "title": "Software Manager, Robotics Platform Engineering",
-    "locations": [
-      "China, Shanghai"
-    ],
-    "remote": false,
-    "category": "management",
-    "descriptionHtml": "<p>NVIDIA has transformed computer graphics, PC gaming, and accelerated computing for more than 25 years through groundbreaking technology and exceptional people. Today, we are harnessing the potential of AI to define the next era of computing, where GPUs power computers, robots, and autonomous vehicles that can understand and interact with the world. We are seeking a Software Manager to lead NVIDIA’s Robotics Platform Engineering team in China, based in Shanghai, with a focus on humanoid robotics and embodied AI. We are building the software and systems infrastructure for robotics reference platforms that bridge innovative AI research with real world deployment. NVIDIA Isaac combines high fidelity simulation, scalable system software, advanced robotics and AI algorithms, and powerful edge computing platforms to enable the development and deployment of intelligent machines.</p><p>In this role, you will lead teams responsible for robotics platform software, system integration, reference platform development, platform bring up, validation, and deployment. You will work closely with NVIDIA’s global robotics teams to develop and deliver reference platforms that enable embodied AI systems to be deployed at scale. This position will lead Robotics Platform Engineering efforts across China and help shape the future of embodied AI.</p><p><b><b>What you’ll be doing:</b></b></p><ul><li><p>Build and lead NVIDIA’s Robotics Platform Engineering team in China, based in Shanghai.</p></li><li><p>Recruit, mentor, and develop outstanding engineering talent, including technical leads and senior engineers.</p></li><li><p>Define the technical strategy, organizational priorities, and execution roadmap for next generation robotics reference platforms.</p></li><li><p>Drive end to end system integration across robotics software stacks, including perception, control, foundation models, learning based policies, runtime systems, and cloud connected services.</p></li><li><p>Lead platform bring up and validation across compute modules, cameras, sensors, networking, safety systems, and robotic subsystems.</p></li><li><p>Define scalable reference platform architectures that can be adopted across multiple robot vendors, form factors, and deployment scenarios.</p></li><li><p>Partner closely with AI, simulation, hardware, product, platform, and ecosystem teams to align roadmaps and execution.</p></li><li><p>Work directly with strategic robotics partners and customers to accelerate platform adoption and real world deployment.</p></li></ul><p><b><b>What we need to see:</b></b></p><ul><li><p>MS or PhD degree in Computer Science, Electrical Engineering, Computer Engineering, Robotics, or a related field, or equivalent experience.</p></li><li><p>8+ overall years of experience developing robotics, embedded, platform, distributed, or systems software.</p></li><li><p>3+ years of engineering management experience leading software or systems engineering teams and running complex programs across multiple functions.</p></li><li><p>Strong understanding of robotics system architecture, platform software, and hardware and software integration.</p></li><li><p>Experience bringing up and deploying complex robotic systems on physical hardware.</p></li><li><p>Strong understanding of Linux systems, embedded software, distributed computing, and real time systems.</p></li><li><p>Strong communication, leadership, and organizational skills.</p></li><li><p>Ability to influence decisions and align collaborators across global organizations.</p></li></ul><p><b><b>Ways to stand out from your crowd:</b></b></p><ul><li><p>Experience building and shipping humanoid robotic systems and reference platforms adopted by customers, partners, or ecosystem developers.</p></li><li><p>Experience deploying foundation models, embodied AI models, or reinforcement learning policies on physical robots.</p></li><li><p>Experience leading globally distributed engineering teams across multiple sites and regions.</p></li><li><p>Strong background in perception, sensor integration, performance optimization, and system validation.</p></li><li><p>Experience defining platform strategy across multiple hardware generations and product roadmaps.</p></li></ul><p>Widely recognized as one of the technology industry’s most desirable employers, NVIDIA offers competitive salaries and comprehensive benefits for you and your family. Learn more at<a href=\"https://www.nvidiabenefits.com/\"> <u>NVIDIA Benefits</u></a>. </p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Manager--Robotics-Platform-Engineering_JR2023987",
-    "postedAt": "2026-09-11T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-08T05:02:55.071Z",
-    "closedAt": "2026-11-09T11:42:23.458Z",
-    "source": "workday"
-  },
-  {
     "id": "workday:nvidia:JR2024018",
     "slug": "nvidia-deep-learning-solution-architect-agentic-performance-jr2024018",
     "company": "nvidia",
@@ -7371,6 +7285,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Mask-Layout-Design-Engineer_JR2024209",
     "postedAt": "2026-09-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -7644,8 +7560,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Data-Application-Engineer--Enterprise-Data-Management_JR2024551",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "workday"
   },
   {
@@ -7787,23 +7701,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Design-Verification-Engineer--RDSS-Intern-_JR2024681",
     "postedAt": "2026-09-01T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2024692",
-    "slug": "nvidia-custom-soc-intern-2027-jr2024692",
-    "company": "nvidia",
-    "title": "Custom SOC Intern - 2027",
-    "locations": [
-      "China, Shanghai"
-    ],
-    "remote": false,
-    "descriptionHtml": "<p>NVIDIA NVLink™ Fusion delivers industry-leading AI scale-up and scale-out performance with NVIDIA technology plus semi-custom ASICs or CPUs. These custom ASICs are tailored to meet unique performance, power, and feature requirements, allowing for deeper customization of elements like I/O capabilities, memory interfaces, and workload-specific accelerators. NVIDIA custom SOC team (Nvlink Fusion team) aims to create the best solutions for customers based on NVIDIA Industry-leading technologies. We are looking to grow our team with the smartest people in the world, join us if you want to learn about the world’s leading custom SOC solutions.</p><p><b>What you’ll be doing:</b></p><ul><li><p>Functional and IO IP development</p></li><li><p>Different IPs integration and release for custom silicon</p></li><li><p>Build SOC or sub-system, signoff function/performance and QoR</p></li><li><p>Methodology improvement for high-efficiency custom silicon development</p></li></ul><p><b>What we need to see: </b></p><ul><li><p>Pursuing Master candidate in EE/CS or related field</p></li><li><p>Basic C/C++ knowledge is a must</p></li><li><p>Scripting knowledge (Perl/Python/Shell)</p></li><li><p>Basic digital circuit/verilog knowledge is a must</p></li><li><p>Basic verification knowledge is a must</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Quick learner, willing to take challenges in a new field</p></li><li><p>Fluent English and good communication skills</p></li><li><p>Familiar with VCS, system Verilog and UVM</p></li><li><p>Background with ASIC design flow, like synthesis</p></li><li><p>Familiar with AMBA protocols such as AXI, ACE, CHI, ATB, etc.</p></li></ul>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692",
-    "postedAt": "2026-09-16T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-09T05:03:23.512Z",
-    "closedAt": "2026-11-10T05:03:14.257Z",
     "source": "workday"
   },
   {
@@ -8630,8 +8527,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Software-Engineer-Tech-Lead--Network-System-Validation_JR2025581",
     "postedAt": "2026-09-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "workday"
   },
   {
@@ -8721,6 +8616,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Pre-Production-Engineer_JR2025707",
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2025736",
+    "slug": "nvidia-senior-solutions-architect-networking-solutions-jr2025736",
+    "company": "nvidia",
+    "title": "Senior Solutions Architect, Networking Solutions",
+    "locations": [
+      "Finland, Remote",
+      "Sweden, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative, hard-working, and self-motivated, we want to hear from you! We are looking for an experienced Solutions Architect based in the Nordics who will be part of our Networking Solution Architect team. This team supports technical aspects of sales engagements for NCPs, AI Factories and Enterprise customers. You will be responsible for driving our end-to-end technology solutions with a specific focus on networking portfolio. Work with some of our most strategic cloud, HPC, telco and enterprise customers, as well as providing field feedback to our marketing and engineering teams on our product strategy. If you have a real passion for technology, and you are interested in a role that you can make a difference in and contribute at all different levels, this may be a phenomenal position for you.</p><p><b>What you’ll be doing: </b> </p><ul><li><p>Define reference architectures - blueprint for end-to-end solutions integrating GPU and networking into a data-center solution</p></li><li><p>Supporting account teams identifying new business opportunities for Nvidia Networking products and technology solutions in cloud, telco, enterprises, artificial intelligence, and Large-Language-Models (LLM) applications</p></li><li><p>Works closely with the Sales teams and Product Marketing to make our customers dreams a reality</p></li><li><p>Technical account management for Nvidia Networking product key accounts</p></li><li><p>Conducting regular customer meetings for product updates and introductions to new technology solutions and delivering product roadmap presentations to customers and technology partners</p></li><li><p>Responding to RFP/RFI proposals for AI factories, HPC clusters, Cloud, Enterprise and more, covering network designs</p></li><li><p>Building and delivering custom-tailored product demonstrations and POCs for solutions that address critical business needs for our customers</p></li><li><p>Technical project management of complex networking deployments and design-in opportunities</p></li><li><p>Analyzing and troubleshooting performance issues with new technology at the customer site and preparing and delivering technical training presentations</p></li><li><p>Provide constructive feedback to engineering regarding product requirements, evolution, including submitting Requests for Enhancements supported with business evidence</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>This role is for an individual with the motivation and skills to drive the technical pre-sales process. The ideal candidate has 3+ years of experience as a Solution Architect (or similar Sales Engineering roles)</p></li><li><p>A bachelor’s degree or equivalent experience in computer science, electrical engineering, computer engineering</p></li><li><p>Datacenter engineering, networking, or cloud application knowledge. Deep networking expertise, including network topologies considerations, solid knowledge of L2/L3 Ethernet or other networking protocols</p></li><li><p>Understanding of system-level issues, including Operating Systems, Linux kernel drivers, PCIe devices, NICs, and hardware architecture</p></li><li><p>Technical presentation skills and confidence in developing Proofs-of-Concept</p></li><li><p>Must have strong sense of achievement and customer focused attitude</p></li><li><p>Effective time management and capable of balancing multiple demands with deadlines</p></li><li><p>Travel required as needed, mainly in EMEA (20% working time)</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Low latency / high BW interconnect such as InfiniBand / Ethernet AI previous knowledge</p></li><li><p>Ability to handle and resolve critical customer issues/problems resulting in a high level of customer satisfaction</p></li><li><p>Expertise in DC physical infrastructure design: power, cooling &amp; space planning</p></li><li><p>Practical use of AI tools</p></li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />Finland: 69,000 EUR – 119,600 EUR for Level 3; and 82,500 EUR – 143,000 EUR for Level 4.<br />Sweden: 720,000 SEK – 1,248,000 SEK for Level 3; and 900,000 SEK – 1,560,000 SEK for Level 4.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Finland-Remote/Senior-Solutions-Architect--Networking-Solutions_JR2025736",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   },
   {
@@ -10210,6 +10122,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Hardware-Validation-Engineer_JR2027271",
     "postedAt": "2026-11-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T05:03:23.512Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11081,6 +10995,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Sweden-Gothenburg/Senior-System-Software-Engineer_JR2028128",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-23T05:03:52.511Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11722,6 +11638,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Germany-Remote/Senior-Applied-Research-Scientist---Computational-Geometry-and-Meshingmill_JR2028591",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028595",
+    "slug": "nvidia-product-test-engineer-rdss-intern-jr2028595",
+    "company": "nvidia",
+    "title": "Product Test Engineer (RDSS Intern)",
+    "locations": [
+      "Taiwan, Hsinchu"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p><b>By submitting your resume, you’re expressing interest in our 2027 RDSS ( Research and Development Substitute Services) program. Please confirm your eligibility with the local district office before applying for the role.</b></p><br /><p>NVIDIA is looking for a Product Test Engineer (RDSS Intern) located in Hsinchu City. This role offers an outstanding opportunity to work with modern Silicon Photonics products in an exceptionally dynamic engineering environment. You will be part of a team that thrives on solving complex, ambitious challenges and aims to successfully implement innovative solutions.</p><br /><h2>What You'll Be Doing</h2><br /><ul><li>Process material through various equipment including testers, handlers, and probers.</li><li>Apply technical and troubleshooting skills to debug both hardware and software issues.</li><li>Monitor pre-test preparation of material and hardware, ensuring the test environment is set up as per requirements.</li><li>Ensure flawless execution and functionality throughout the testing process.</li><li>Debug and resolve equipment and test-related issues.</li><li>Maintain attention to detail, organization, and strong written &amp; verbal communication skills.</li><li>Collaborate with local and remote planning, engineering, and management teams using various communication methods.</li><li>Work independently and in a team environment as task types change.</li></ul><br /><h2>What We Need To See</h2><br /><ul><li>Bachelor's degree in Electrical Engineering, Physics, or Computer Science (or equivalent experience).</li><li>Good verbal and written communication skills in English.</li><li>Computer literacy and basic data analysis skills.</li><li>Strong presentation and interpersonal skills.</li><li>Flexibility and capability in handling multi-task operations.</li><li>High or equivalent experience in problem-solving ability.</li><li>Self-starter with the ability to lead own activities and support team activities.</li></ul><br /><h2>Ways To Stand Out From The Crowd</h2><br /><ul><li>Knowledge in software programming (C++, Perl, Linux, Python).</li><li>Experience in data analysis (JMP).</li><li>Understanding of electronic circuits, Automated Test Equipment, test wafer sort, and reliability equipment.</li></ul><br /><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We have some of the most brilliant and talented people in the world working for us. If you are creative, autonomous and love a challenge, we want to hear from you. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Product-Test-Engineer--RDSS-Intern-_JR2028595",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   },
   {
@@ -13461,6 +13393,39 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2030213",
+    "slug": "nvidia-director-dsx-and-dgx-cloud-business-development-jr2030213",
+    "company": "nvidia",
+    "title": "Director, DSX and DGX Cloud Business Development",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "management",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re harnessing the boundless possibilities of AI to build the future landscape of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Join our team and discover how you can build a lasting impact on the world.</p><br /><p>Join NVIDIA, a leader in computer graphics, AI, and accelerated computing, and become a key leader for our DGX Cloud and DSX OS teams as Director, DSX and DGX Cloud Business Development. This role offers an outstanding opportunity to set the strategic direction for our partner ecosystem, develop new strategic partnerships, and drive the technical and commercial integrations that deliver world-class solutions. If you are passionate about innovation and eager to build a significant difference, this position is for you!</p><br /><p><b>What you’ll be doing:</b></p><ul><li>Owning and driving the NCP and ISV business-development strategy for DGX Cloud and DSX OS across a balanced portfolio of cloud and software partners, setting priorities and resource allocation across the function.</li><li>Researching, identifying, qualifying, and prioritizing prospective partners based on strategic fit, customer demand, technical value, and business potential, and shaping the long-term portfolio strategy.</li><li>Developing and owning senior partner relationships with business, product, engineering, and executive collaborators, including C-level and VP-level partners.</li><li>Driving the agreement lifecycle from initial opportunity definition through negotiation, internal approval, signature, launch, and ongoing governance, with accountability for outcomes across the full portfolio.</li><li>Directing the development of program and commercial agreements for onboarding, integration, validation, certification, and joint solutions.</li><li>Leading cross-functional alignment and executive reviews with Legal, Finance, Product, Engineering, Sales, Developer Relations, Security, Marketing, and Operations.</li><li>Setting the framework for partner deliverables, achievements, success measures, and partner concern paths for critical issues.</li><li>Partnering with senior technical leaders to translate integration requirements into executable partner commitments and scalable processes.</li><li>Building and maintaining the joint business planning framework to move signed partners into active integrations, validated offerings, and customer deployments.</li><li>Owning executive-level partner operating reviews, tracking commitments at a portfolio level, identifying risks, and driving follow-through and accountability across the team.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Bachelor’s degree or equivalent experience in Computer Science, Electrical Engineering, or related technical field; MBA or advanced business degree a plus.</li><li>Over 15 years involved in business development, strategic partnerships, alliances, cloud platforms, enterprise software, AI infrastructure, or a related field. Must include 8+ years of leadership experience, including direct management of teams.</li><li>Executive-level partner leadership experience, including demonstrated success structuring foundational partnerships with frontier AI model providers, cloud platforms, or OS/software ecosystem partners — designing and negotiating deals end-to-end, from formation and incentive structure through contract terms, post-deal execution, compliance, and a feedback loop that refines future partnership incentives, at billion-dollar scale.</li><li>Familiarity with cloud and AI business models, partner economics, platform adoption, and collaborative go-to-market strategies.</li><li>Technical proficiency in AI infrastructure, cloud platforms, distributed systems, Kubernetes, orchestration, training, inference, observability, and resiliency.</li><li>Proven ability to build consensus and influence at the executive level with product managers, engineers, solution architects, sales teams, finance professionals, attorneys, and partner executives.</li><li>Strong organizational leadership and attention to detail across multiple agreements, partner workstreams, and direct reports. Excellent written and verbal communication, relationship-development, analytical, and negotiation skills.</li><li>Demonstrated ability to set strategic direction, influence senior partners without direct authority, and drive ambiguous, organization-wide initiatives toward clear decisions and measurable outcomes.</li><li>Experience operating as an accountable leader in a fast-paced, cross-functional environment, with a track record of building and scaling teams or functions.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Experience working with OEMs, AI Natives, NCPs, cloud infrastructure providers, enterprise ISVs, AI-native companies, or developer-platform partners.</li><li>Experience with Operating Systems, AI factories, infrastructure software, developer platforms, or production AI workloads.</li><li>Familiarity with NVIDIA technologies and ecosystem programs, including DGX, CUDA, Kubernetes-based AI infrastructure, inference and training software, or partner-validation programs.</li><li>Experience establishing a new partnership motion, agreement framework, or partner operating process at an organizational level — including zero-to-one ecosystem formation for an operating system or software platform (e.g., app catalog, developer ecosystem, platform distribution), product platform development, open source, certification, and validation programs.</li><li>Career progression through increasing business development leadership, with direct ownership of partnership P&amp;L and experience driving first-of-kind, billion-dollar-scale partnership deals.<br /></li></ul><p>NVIDIA is broadly recognized as one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and self-motivated, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary range for this position is 247,500 USD – 455,000 USD.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 27, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--DSX-and-DGX-Cloud-Business-Development_JR2030213",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030226",
+    "slug": "nvidia-software-engineering-intern-jr2030226",
+    "company": "nvidia",
+    "title": "Software Engineering Intern",
+    "locations": [
+      "Armenia, Yerevan",
+      "Armenia, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA's technology is at the heart of AI revolution, touching people across the planet by powering everything from self-driving cars, robotics, and voice-powered intelligent assistants! Join a diverse applied research team that is building a next generation of AI systems! We work on new reasoning  models for code, science and math . Our team crafted the math reasoning model which won IMO and IOI competition. . We also develop algorithms to accelerate training large models on our GPU cloud. We develop new models using NeMo - PyTorch based open-source AI toolkit . We collaborate with research and product teams, as well as researchers from top academic AI labs.</p><p>We are looking for MSc and PhD students in Computer Science or Electrical Engineering with specialization in  Deep Learning / AI</p><br /><p><b>What you'll be doing:</b></p><ul><li>Develop new AI systems for code, science, and mathematics, </li><li>Design new language models and training algorithms</li><li>Develop new benchmarks and datasets </li><li>Open-source developed models on HuggingFace  </li></ul><br /><p><b>What we need to see:</b></p><ul><li>Solid Deep Learning foundations </li><li>Excellent Python programming skills</li><li>Experience with PyTorch</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Contribution to open-source projects</li><li>Publications record for one of the top AI conferences</li></ul><br /><p>NVIDIA is at the forefront of breakthroughs in Artificial Intelligence, High-Performance Computing, and Visualization. Our teams are composed of driven, innovative professionals dedicated to pushing the boundaries of technology. We offer highly competitive salaries, an extensive benefits package, and a work environment that promotes diversity, inclusion, and flexibility. As an equal opportunity employer, we are committed to fostering a supportive and empowering workplace for all.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Armenia-Yerevan/Software-Engineering-Intern_JR2030226",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2030235",
     "slug": "nvidia-developer-relations-manager-higher-education-and-research-france-jr2030235",
     "company": "nvidia",
@@ -13495,6 +13460,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2030271",
+    "slug": "nvidia-senior-systems-software-engineer-chromium-engineering-for-geforce-now-jr2030271",
+    "company": "nvidia",
+    "title": "Senior Systems Software Engineer - Chromium Engineering For GeForce Now",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, CA, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are NVIDIA's GeForce Now, the next-generation gaming service powered by Nvidia GPUs in the cloud, transforms a Mac, any PC or just a mobile device into a high-performance gaming rig. GeForce NOW automatically keeps games up-to-date and users around the globe can instantly stream the latest games in high-definition resolution at the lowest latency for smoothest of gameplay. Just click and play! Visit us at <a href=\"https://www.nvidia.com/en-us/geforce-now\">https://www.nvidia.com/en-us/geforce-now</a></p><br /><p>We are seeking a Senior Systems Software Engineer to join a team of exceptionally skilled and motivated engineers. Together, we develop the GeForce Now client on browsers for a diverse array of devices. Do you want to take on this challenge of reimagining browsers for the next generation ultra-low latency interactive applications? Then, this team is the place to be.</p><br /><h2><b>What you will be doing:</b></h2><ul><li>Drive new browser and WebRTC features with a focus on reliability, cross platform compatibility, performance and security</li><li>Optimize performance of GeForce Now clients for target browsers and client platforms to achieve top streaming performance</li><li>Build new browser features such as new audio/ video/ image pipelines, media post processing support, newer QoS features in packet loss recovery, jitter handling, optimizations in rendering/ compositing video and input event handling</li><li>Propose, advocate and build community support for updates and new features for interactive ultra-low latency applications</li><li>Drive design and implementation of internal cross platform testing infrastructure</li><li>Improve Chromium tests to increase coverage of APIs and features used by GFN Clients</li><li>Define and develop performance indicators, analyze and improve product perf</li><li>Review code and design across the team and contribute actively to evolve team methodologies</li></ul><br /><h2><b>What we need to see:</b></h2><ul><li>BS or MS in Computer Science or related areas or equivalent experience with 8+ years of experience in above areas</li><li>Proficient in C++, JavaScript, web technologies</li><li>Excellent system software programming, testing and debugging skills</li><li>Expertise in WebRTC and input handling, video and graphics pipelines in Chromium and other browsers</li><li>Consistent history of change and feature contributions to Chromium repositories in relevant areas, Chromium committer status</li><li>Expert level knowledge in usage of browser performance analyzer tools, experience in performance and footprint optimization for different browsers and devices</li></ul><br /><h2><b>Ways to stand out from the crowd:</b></h2><ul><li>Expertise in multiple browser engines</li><li>Background in porting and / or optimizing browsers on multiple platforms such as desktops, mobiles, TVs</li><li>Expertise in developing real time, latency-sensitive, interactive video streaming applications on browsers</li><li>Experience with developing and supporting live consumer product/ service on Windows, macOS, Android, iOS</li><li>Familiarity with game rendering technology</li></ul><br /><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family <a href=\"http://www.nvidiabenefits.com/\"><u>www.nvidiabenefits.com/</u></a></p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />187,500 USD – 364,000 USD for Level 4; and 232,500 USD – 442,000 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 27, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer---Chromium-Engineering-For-GeForce-Now_JR2030271",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2030275",
     "slug": "nvidia-senior-automation-and-tools-development-engineer-jr2030275",
     "company": "nvidia",
@@ -13508,6 +13490,40 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Automation-and-Tools-Development-Engineer_JR2030275-1",
     "postedAt": "2026-11-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030279",
+    "slug": "nvidia-senior-asic-verification-engineer-coherent-high-speed-interconnect-jr2030279",
+    "company": "nvidia",
+    "title": "Senior ASIC Verification Engineer, Coherent High Speed Interconnect",
+    "locations": [
+      "Taiwan, Hsinchu",
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are now looking for a ASIC Verification Engineer - Coherent High Speed Interconnect! For two decades, we have pioneered visual computing, the art and science of computer graphics. With our invention of the GPU - the engine of modern visual computing - the field has grown to encompass video games, movie production, product design, medical diagnosis, and scientific research.</p><p>Today, we stand at the beginning of the next era, the AI computing era, ignited by a new computing model, GPU deep learning. This new model - where deep neural networks are trained to recognize patterns from massive amounts of data - has shown to be deeply effective at solving the most complex problems in everyday life. As a ASIC Verification Engineer at NVIDIA, you will verify the design and implementation of our innovative high speed coherent interconnects for our mobile SoCs and GPUs. This position offers the opportunity to have real impact in a multifaceted, technology-focused company impacting product lines ranging from consumer graphics to self-driving cars and the growing field of artificial intelligence. We have crafted a team of outstanding people stretching around the globe, whose mission is to push the frontiers of what is possible today and define the platform for the future of computing. Relocation and immigration support is provided for this role.</p><p><br /><b>What you'll be doing:</b></p><ul><li><p>Responsible for verification of high-speed coherent interconnect design, architecture, golden models, and micro-architecture using sophisticated verification methodologies.</p></li><li><p>You'll understand the design &amp; implementation, define the verification scope, develop the verification infrastructure (Testbenches, BFMs, Checkers, Monitors), complete test/coverage plans, and verify the correctness of the design.</p></li><li><p>Collaborate with architects, designers, emulation, and silicon verification teams to accomplish your tasks.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>Bachelors or Master’s Degree (or equivalent experience).</p></li><li><p>5+ years of relevant verification experience.</p></li><li><p>Experience in architecting test bench environments for unit level verification.</p></li><li><p>Background in verification using random stimulus along with functional coverage and assertion-based verification methodologies. Prior Design or Verification experience of Coherent high-speed interconnects.</p></li><li><p>Knowledge of industry standard interconnect protocols like PCIE, CXL, CHI will be useful.</p></li><li><p>Strong background developing TB's from scratch using SV and UVM methodology is desired.</p></li><li><p>C++ programming language experience, scripting ability and an expertise in System Verilog.</p></li><li><p>Exposure to design and verification tools (VCS or equivalent simulation tools, debug tools like Debussy, GDB).</p></li><li><p>Strong debugging and analytical skills. Experienced communication and interpersonal skills are required. A history of mentoring junior engineers and interns a huge plus.</p></li></ul><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We have some of the most brilliant and talented people in the world working for us. If you are creative, autonomous and love a challenge, we want to hear from you. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.</p><p>#LI-Hybrid</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-ASIC-Verification-Engineer--Coherent-High-Speed-Interconnect_JR2030279",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030301",
+    "slug": "nvidia-senior-mask-layout-design-engineer-jr2030301",
+    "company": "nvidia",
+    "title": "Senior Mask Layout Design Engineer",
+    "locations": [
+      "Taiwan, Hsinchu",
+      "Taiwan, Taipei"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to take on, that only we can pursue, and that matter to the world. This is our life’s work, to amplify human creativity and intelligence. We are looking for a Senior Mask Layout Design Engineer, someone who is excited to join a growing and dynamic group of diverse individuals responsible for handling meaningful high-speed mixed-signal circuit designs.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Performing physical layout for mixed-signal functions like PLL's, high speed SerDes, Analog to Digital converters, ESD structures designs in groundbreaking sub-micron CMOS technologies using Cadence tools.</li><li>You'll work multi-functional with ASIC and mixed-signal engineers to customize designs for integration in VLSI products.</li><li>Take part in floor planning, custom layout and verifying against design rules and schematics.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>Have a BSEE or equivalent experience. Minimum of 5+ years validated experience in Mask and Layout Design.</li><li>Deep understanding of analog circuit layout concepts in submicron CMOS technologies.</li><li>You are an authority with Cadence custom circuit design tools - particularly virtuoso.</li><li>Experience running and debugging with verification tools such as Dracula, Hercules, Calibre, and Primeyield.</li><li>You are able to work successfully in a team, good interpersonal skills, passion and positive energy.</li><li>Proficient in scripting languages like perl, python, skill etc.</li><li>Should have knowledge of DRC and LVS checking flows, ability to customize decks.</li></ul><br /><p>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disab</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Mask-Layout-Design-Engineer_JR2030301",
+    "postedAt": "2026-11-23T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   },
   {
@@ -13525,6 +13541,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Support-Engineer---Slurm_JR2030323",
     "postedAt": "2026-11-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030486",
+    "slug": "nvidia-physical-design-engineer-jr2030486",
+    "company": "nvidia",
+    "title": "Physical Design Engineer",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself. Our invention of the GPU sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. Today, research in artificial intelligence is booming worldwide, which calls for highly scalable and massively parallel computation horsepower that NVIDIA GPUs excel. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can address, and that matter to the world. This is our life’s work , to amplify human creativity and intelligence. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join our diverse team and see how you can make a lasting impact on the world!</p><p>NVIDIA is seeking passionate, highly motivated, and creative design engineers to be part of a team working on industry-leading GPUs and SOCs. This position offers the opportunity to have real impact in a dynamic, technology-focused company impacting product lines ranging from consumer graphics to self-driving cars and the growing field of artificial intelligence. We have crafted a team of exceptional people stretching around the globe, whose mission is to push the frontiers of what is possible today and define the platform for the future of computing.</p><p><b>What you'll be doing:</b></p><ul><li>In this position, you will expected to lead all block/chip level PD activities.</li><li>PD activities includes floor plans, abstract view generation, RC extraction, PNR, STA, EM,IR DROP, DRCs &amp; schematic to layout verification. Work in collaboration with design team for addressing design challenges.</li><li>Help team members in debugging tool/design related issues.</li><li>Constantly look for improvement in RTL2GDS flow to improve PPA. Troubleshoots a wide variety up to and including difficult design issues and applied proactive intervention.</li><li>Responsible for all aspects of physical design and implementation of GPU and other ASICs targeted at the desktop, laptop, workstation, and mobile markets.</li></ul><p><b>What we need to see:</b></p><ul><li>BE/BTECH/MTECH, or equivalent experience.</li><li>3+ years of experience in Physical Design.</li><li>Strong understanding in the RTL2GDSII flow or design implementation in leading process technologies. Good understanding of the RTL2GDSII concepts related to synthesis, place &amp; route, CTS, timing convergence, layout closure.</li><li>Expertise on high frequency design methodologies. Good knowledge and experience in Block-level and Full-chip Floor-planning and Physical verification. Working experience with tools like ICC2/Innovus, Primetime/Tempus etc used in the RTL2GDSII implementation.</li><li>Strong knowledge and experience in standard place and route flows ICC2/Synopsys and Innovus/Cadence flows preferred. Well versed with timing constraints, STA and timing closure.</li><li>Good automation skills in PERL, TCL, tool specific scripting on one of the industry leading Place &amp; Route tools.</li><li>Ability to multi-task and flexibility to work in global environment.</li><li>Good communication skills and strong motivation, Strong analytical &amp; Problem solving skills. Proficiency using Perl, Tcl, Make scripting is preferred.</li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Physical-Design-Engineer_JR2030486",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "source": "workday"
   }
 ]
