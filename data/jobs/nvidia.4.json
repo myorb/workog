@@ -236,7 +236,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -610,7 +610,7 @@
     "postedAt": "2026-10-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -1243,7 +1243,7 @@
     "postedAt": "2026-01-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -1412,6 +1412,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Denmark-Roskilde/Test-Engineer---Photonic_JR2012829",
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -2096,6 +2098,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Hardware-Validation-Engineer_JR2015554-1",
     "postedAt": "2026-04-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -2680,8 +2684,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-MEP-Engineer---Datacenter-Lab-Infrastructure_JR2016959",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-19T05:03:26.756Z",
-    "closedAt": "2026-11-21T05:03:24.558Z",
     "source": "workday"
   },
   {
@@ -2735,6 +2737,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-AI-and-ML-Infra-Software-Engineer--GPU-Clusters_JR2017185",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2017219",
+    "slug": "nvidia-software-verification-engineer-jr2017219",
+    "company": "nvidia",
+    "title": "Software Verification Engineer",
+    "locations": [
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are looking for a hardworking Software Verification Engineer to join our Switch SAI team. You will join the SAI switching verification team in the effort to take our product to next level, working closely with design teams and gain deep understanding of NVIDIA’s products and technologies. Become a part of the SAI large worldwide community, contributing new features and defining new tests. Your code will go to NVIDIA Switch products running with SAI+SONIC NOS in production in the biggest clusters over the world and the world fastest HPCs.</p><h2><b>What you'll be doing:</b></h2><ul><li>Be part of NVIDIA SAI multi-national R&amp;D team, contribute code to SAI worldwide community.</li><li>Design and implement robust, maintainable, and efficient automation test suite, on top of NVIDIA Switch products.</li><li>Work with continuous integration systems, regression tools, automate builds, run test suites, generate test reports, isolate and classify failures and review new degradation.</li><li>Work with expert teams which are well known in the SAI community.</li></ul><h2><b>What we need to see:</b></h2><ul><li>B.Sc. degree in Computer Science or equivalent experience.</li><li>0-2 years of programming experience</li><li>Strong programming skills in Python.</li><li>High technical understanding and learning skills – specification, design, programming, integration, debugging and problem solving abilities, system wide perspective.</li><li>Ability to lead feature / test development, take full ownership and deliver independently. Excellent communication and leading skills.</li><li>Creative, motivated and value driven person.</li></ul><h2><b>Ways to stand out from the crowd:</b></h2><ul><li>Knowledge of networking and communication protocols.</li><li>Prior software testing experience, with an understanding of Software Testing Tools and Methodologies.</li></ul><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you.</p><p>NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, disability status or any other characteristic protected by law.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Verification-Engineer_JR2017219",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -4743,7 +4761,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -5820,7 +5838,7 @@
     "postedAt": "2026-08-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -6517,7 +6535,7 @@
     "postedAt": "2026-08-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -6623,7 +6641,7 @@
     "postedAt": "2026-08-21T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -8189,7 +8207,7 @@
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -8369,7 +8387,7 @@
     "postedAt": "2026-09-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -8690,7 +8708,7 @@
     "postedAt": "2026-09-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -9687,7 +9705,7 @@
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -12034,7 +12052,7 @@
     "postedAt": "2026-11-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -12269,6 +12287,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-DevOps-Engineer_JR2029070",
     "postedAt": "2026-11-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -12296,13 +12316,14 @@
     "company": "nvidia",
     "title": "Enterprise Partner Marketing Manager, OEM and Channel",
     "locations": [
+      "US, NC, Durham",
       "US, CA, Santa Clara"
     ],
     "remote": false,
     "category": "marketing",
-    "descriptionHtml": "<p>NVIDIA is driving the enterprise AI transformation, and our Enterprise Partner Marketing team takes it to market through our OEM partners. This role sits at the intersection of OEM and Channel. You will lead a portfolio of 30+ executive events across multiple industry verticals, enable channel partners, and make sure co-marketing investment delivers measurable pipeline. It carries significant budget ownership and visibility across sales, product, marketing and partner teams.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Lead NVIDIA/partner marketing strategy for North America and channel programming worldwide, from planning and budgeting through execution and measurement.</li><li>Manage a collection of over 30 VP and C-suite events across verticals, including speaker coordination, evaluating return on investment, and post-event pipeline tracking.  </li><li>Lead MDF planning and execution: evaluate partner proposals, approve activity, and verify proof of execution.</li><li>Review partner activity for brand and product compliance, ensuring NVIDIA solutions are positioned accurately.</li><li>Build co-branded content and integrated campaigns with campaign marketing, product marketing, and business unit teams.</li><li>Drive breadth-channel campaigns — internal enablement, partner-facing, and end-customer — reaching VARs at scale beyond the named Strategic Partner list.</li><li>Partner with sales, creative, and third-party vendors to launch and drive demand for joint solutions<br />.</li></ul><p><b>What we need to see:</b></p><ul><li>Bachelor’s degree in Marketing, Business, or a related field, or equivalent experience.</li><li>8+ years in channel, partner, or technology go-to-market marketing, including co-marketing programs and MDF.</li><li>Experience running executive-audience events and measuring their return on investment and pipeline impact.</li><li>Solid understanding of NVIDIA’s GPU, networking, and software portfolio, enough to assess partner proposals.  </li><li>A track record of building credibility with partners, field teams, and cross-functional stakeholders in a matrixed organization.<br /></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li>Knowledge of enterprise AI use cases and buying patterns in Healthcare, FSI, Manufacturing, SLED, Oil &amp; Gas, and Retail.</li><li>Experience with lead nurture workflows, campaign integration, and metrics tracking.</li><li>Experience with event marketing at industry tradeshows and regional events, virtual and in person.</li><li>Familiarity with MDF eligibility, pre-approval, proof-of-execution, and reimbursement processes.</li><li>Experience with distributor marketing and breadth-channel activation, reaching non-named VARs through partner portals and co-branded field assets.</li></ul><br /><p>With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking people in the world working for us and, due to unprecedented growth, our teams are rapidly growing. If you're creative and autonomous with a real passion for your work, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />136,000 USD – 224,250 USD for Level 4; and 184,000 USD – 287,500 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 6, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.#deeplearning",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Enterprise-Partner-Marketing-Manager--OEM-and-Channel_JR2029089-1",
-    "postedAt": "2026-11-02T00:00:00.000Z",
+    "descriptionHtml": "<p>NVIDIA is driving the enterprise AI transformation, and our Enterprise Partner Marketing team takes it to market through our OEM partners. This role sits at the intersection of OEM and Channel. You will lead a portfolio of 30+ executive events across multiple industry verticals, enable channel partners, and make sure co-marketing investment delivers measurable pipeline. It carries significant budget ownership and visibility across sales, product, marketing and partner teams.</p><br /><p><b>What you'll be doing:</b></p><ul><li>Lead NVIDIA/partner marketing strategy for North America and channel programming worldwide, from planning and budgeting through execution and measurement.</li><li>Manage a collection of over 30 VP and C-suite events across verticals, including speaker coordination, evaluating return on investment, and post-event pipeline tracking.  </li><li>Lead MDF planning and execution: evaluate partner proposals, approve activity, and verify proof of execution.</li><li>Review partner activity for brand and product compliance, ensuring NVIDIA solutions are positioned accurately.</li><li>Build co-branded content and integrated campaigns with campaign marketing, product marketing, and business unit teams.</li><li>Drive breadth-channel campaigns — internal enablement, partner-facing, and end-customer — reaching VARs at scale beyond the named Strategic Partner list.</li><li>Partner with sales, creative, and third-party vendors to launch and drive demand for joint solutions<br />.</li></ul><p><b>What we need to see:</b></p><ul><li>Bachelor’s degree in Marketing, Business, or a related field, or equivalent experience.</li><li>8+ years in channel, partner, or technology go-to-market marketing, including co-marketing programs and MDF.</li><li>Experience running executive-audience events and measuring their return on investment and pipeline impact.</li><li>Solid understanding of NVIDIA’s GPU, networking, and software portfolio, enough to assess partner proposals.  </li><li>A track record of building credibility with partners, field teams, and cross-functional stakeholders in a matrixed organization.<br /></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li>Knowledge of enterprise AI use cases and buying patterns in Healthcare, FSI, Manufacturing, SLED, Oil &amp; Gas, and Retail.</li><li>Experience with lead nurture workflows, campaign integration, and metrics tracking.</li><li>Experience with event marketing at industry tradeshows and regional events, virtual and in person.</li><li>Familiarity with MDF eligibility, pre-approval, proof-of-execution, and reimbursement processes.</li><li>Experience with distributor marketing and breadth-channel activation, reaching non-named VARs through partner portals and co-branded field assets.</li></ul><br /><p>With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking people in the world working for us and, due to unprecedented growth, our teams are rapidly growing. If you're creative and autonomous with a real passion for your work, we want to hear from you!</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />135,000 USD – 260,000 USD for Level 4; and 172,500 USD – 338,000 USD for Level 5.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 28, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.#deeplearning",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-NC-Durham/Enterprise-Partner-Marketing-Manager--OEM-and-Channel_JR2029089-1",
+    "postedAt": "2026-11-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "source": "workday"
   },
@@ -12752,8 +12773,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--AI-Safety-Evaluations_JR2029416",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "workday"
   },
   {
@@ -12891,6 +12910,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Chip-Design-HW-Emulation-Engineer_JR2029504-1",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -12907,6 +12928,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Software-Tools-Development_JR2029508",
     "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-15T05:03:03.938Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2029531",
+    "slug": "nvidia-software-engineering-intern-simulation-technology-summer-2027-jr2029531",
+    "company": "nvidia",
+    "title": "Software Engineering Intern, Simulation Technology - Summer 2027",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Our work at NVIDIA is dedicated towards a computing model focused on visual and AI computing. For two decades, NVIDIA has pioneered visual computing, the art and science of computer graphics, with our invention of the GPU. The GPU has also shown to be spectacularly effective at solving some of the most complex problems in computer science. Today, NVIDIA’s GPU simulates human intelligence, running deep learning algorithms and acting as the brain of computers, robots and self-driving cars that can perceive and understand the world. We are looking to grow our company and teams with the smartest people in the world and there has never been a more exciting time to join our team!</p><br /><p>NVIDIA’s Simulation Technology team is seeking a Software Engineering intern to develop physics simulation software and tools for robotics and industrial applications. You will work with engineers and researchers to improve the accuracy, robustness, and performance of technologies such as Warp and Newton, helping connect simulation with real-world physical systems.</p><br /><h2><b>What you’ll be doing:</b></h2><ul><li>Develop and implement physical models, numerical algorithms, and software tools for simulation and robotics.</li><li>Improve simulation accuracy and performance through testing, profiling, and optimization.</li><li>Build workflows for simulation calibration, parameter estimation, and robot learning and control.</li><li>Develop tests and benchmarks to validate simulation behavior against reference solutions and real-world measurements.</li><li>Contribute maintainable, documented code and collaborate with teams adopting our simulation technologies.</li></ul><br /><h2><b>What we need to see:</b></h2><ul><li>Currently pursuing a BS, MS, or PhD in Computer Science, Robotics, Applied Mathematics, Physics, Mechanical or Electrical Engineering, or equivalent program area.</li><li>A strong foundation in mechanics, physical modeling, or robot dynamics, demonstrated through coursework or projects.</li><li>Knowledge of numerical methods, linear algebra, and optimization.</li><li>Strong Python and C++ programming skills, with experience implementing simulation or robotics algorithms.</li><li>Ability to debug complex problems, evaluate results carefully, and communicate technical ideas clearly.</li></ul><br /><h2><b>Ways to stand out from the crowd:</b></h2><ul><li>Experience developing physics simulation software, including dynamics, contact, deformable materials, or numerical solvers.</li><li>Experience with differentiable simulation, system identification, robot learning, or control.</li><li>Experience with CUDA, GPU programming, profiling, and parallel algorithm development.</li><li>Experience validating simulations against physical systems or working with robot hardware.</li><li>Familiarity with Warp, Newton, Isaac Lab, PyTorch, or JAX, and contributions to open-source software or substantial engineering projects.</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!</p>Our internship hourly rates are a standard pay based on the position, your location, year in school, degree, and experience. The expected hourly rate for this position is 20 USD – 86 USD.<p>You will also be eligible for Intern <a href=\"https://www.nvidia.com/en-us/benefits/interns/\">benefits</a>. ​</p>Applications for this job will be accepted at least until November 28, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineering-Intern--Simulation-Technology---Summer-2027_JR2029531",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -13411,6 +13448,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2029939",
+    "slug": "nvidia-networking-sw-qa-engineer-jr2029939",
+    "company": "nvidia",
+    "title": "Networking SW QA Engineer",
+    "locations": [
+      "Israel, Tel Hai"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>We are looking for a Software QA Engineer to join our team.</p><p>This position will be part of the QA team with the main goal is testing the Network virtualization features for DPU and ConnectX, which enables NVIDIA products to meet the industry-leading benchmarks of efficiency and quality.</p><p>The ideal candidate will engage in the testing of SW industry-leading features, be able to learn new features, and develop and implement manual and automated tests.</p><br /><h2><b>What you'll be doing:</b></h2><ul><li>Review the architecture design and requirements for new features introduced by virtualization R&amp;D and the software team.</li><li>Design, develop, and implement tests for the new features, as part of software GA releases or update releases</li><li>Report bugs found during execution, assist with reproduction and debugging to understand the root cause, verify bug fixes provided by the R&amp;D team, and raise if not fixed</li><li>Implement tests in different scopes: regression, performance, functional, and security, and report the progress of testing and provide summary reports of testing activity</li><li>Write automation code to increase efficiency, flexibility, and scalability in Python.</li></ul><br /><h2><b>What we need to see:</b></h2><ul><li>Practical Engineer Or B.Sc. in Computer Science or Electrical Engineering</li><li>2 years of proven experience as a Software QA Engineer</li><li>Knowledge of Networking and system administration experience</li><li>Hands-on experience with Linux</li><li>Independent, responsible worker, able to plan and complete</li><li>Great teammate with good communication and interpersonal skills.</li></ul><br /><h2><b>Ways to stand out from the crowd:</b></h2><ul><li>Professional knowledge in virtualization environments</li><li>Experience in Networking test design and automation</li><li>Proven programming experience in Python</li><li>Experience working with SoC</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!</p><p>NVIDIA is committed to fostering a diverse work environment and is proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) based on race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Hai/Networking-SW-QA-Engineer_JR2029939",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2029944",
     "slug": "nvidia-dft-atpg-engineer-jr2029944",
     "company": "nvidia",
@@ -13492,6 +13545,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Verification-Engineer---HSIO-Unit-Level_JR2029997",
     "postedAt": "2026-11-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-15T05:03:03.938Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -13672,6 +13727,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2030205",
+    "slug": "nvidia-senior-system-software-architect-automotive-applications-jr2030205",
+    "company": "nvidia",
+    "title": "Senior System Software Architect - Automotive Applications",
+    "locations": [
+      "US, CA, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>Our ADAS Platform team is responsible for building a scalable and modular software stack that powers advanced driver-assistance systems across a diverse range of product lines and OEMs. We are looking for a highly motivated Senior Systems Software Engineer with a strong foundation in software architecture. This role is ideal for someone who thrives on working across multiple layers of the software stack to analyze performance, inter-operation and deterministic execution flows. You will play a key role in evolving the platform to support efficient integration and scalability in a complex multi-OEM environment.</p><br /><p><b>What you will be doing:</b></p><ul><li>Driving architectural improvements that simplify and modularize the software stack.</li><li>Designing and developing clean boundaries between components with performance-first approach to software modules.</li><li>Refactoring ADAS components to support reuse, extensibility, and long-term maintainability.</li><li>Partnering with teams across software, systems, and hardware to define clear interfaces and improve integration velocity.</li><li>Establishing test coverage, design reviews, and architectural documentation that scales with the platform.</li><li>Profiling and tuning system performance — optimizing for modern multi-core and real-time environments.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>BS or MS in Computer Engineering, Computer Science, or a related field (or equivalent experience).</li><li>12+ years of professional software development experience.</li><li>Solid background in C++ programming.</li><li>Strong understanding of modular software architecture, clean code design, and separation of concerns.</li><li>Hands-on experience building and debugging multithreaded, real-time, or performance-critical systems.</li><li>Familiarity with parallel/distributed systems and low-level system profiling.</li><li>Comfortable working in Linux, QNX, or other embedded RTOS environments.</li><li>Exceptional communication skills and a collaborative, hard-working attitude.</li></ul><br /><p><b>Ways to Stand Out From The Crowd:</b></p><ul><li>Experience developing ADAS software — especially in components like Planning, Sensor Fusion, Mapping, or Localization.</li><li>Deep understanding of real-time operating systems, particularly QNX.</li><li>Familiarity with the automotive software lifecycle and integration across safety-critical systems.</li><li>Experience with memory management, DMA engines, and hardware abstraction layers (HAL).</li><li>Experience using Git and Bazel in large-scale software environments.</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />232,500 USD – 442,000 USD for Level 5; and 285,000 USD – 546,000 USD for Level 6.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 28, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Architect---Automotive-Applications_JR2030205",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2030227",
     "slug": "nvidia-gpu-architect-jr2030227",
     "company": "nvidia",
@@ -13758,6 +13829,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2030353",
+    "slug": "nvidia-senior-software-developer-autonomous-vehicles-jr2030353",
+    "company": "nvidia",
+    "title": "Senior Software Developer - Autonomous Vehicles",
+    "locations": [
+      "US, CA, Santa Clara",
+      "US, CA, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in an inclusive, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.</p><br /><p>NVIDIA is at the center of the autonomous vehicle revolution, building the AI computing, software, and simulation platforms that leading automakers and mobility providers rely on to deliver safe, scalable self-driving. Working within the planning and control organization, the Active Safety team builds software to warn and assist a driver in dangerous situations. This team collaborates closely with our perception, safety, and systems engineering team to guide the end-to-end functionality of these products. The successful candidate will Initially focus on longitudinal safety systems, which includes software that activates the brakes to avoid collisions (Automatic Emergency Braking), In this capacity, said candidate will help extend the current system into the next generation of products, ensuring that existing systems continue to exceed industry standards.</p><br /><p><b>What you'll be doing:</b></p><p>Maturing and productizing features within this team entails a diversity of activities, including:</p><ul><li>Developing safety critical algorithms using fundamental physics, control systems, planning algorithms, and/or vehicle dynamics</li><li>Defining and verifying product requirements through detailed analysis, simulation, in-car testing, and benchmarking existing products</li><li>Collaborating with our internal safety teams to perform safety analysis using classical HARA and DFMEA processes</li><li>Debugging and isolating performance issues and limitations based on real-world testing</li><li>Collaborating with multiple customers. and manufacturers directly and supporting a variety of carlines and platforms</li></ul><br /><p><b>What we need to see:</b></p><ul><li>BS or higher in an engineering or technical field (Mechanical, Electrical, Computer Science, Physics, etc.) or equivalent experience</li><li>5+ years of practical experience</li><li>Proven ability writing C++ in a production environment</li><li>Comfort with an Agile/Scrum software development environment using Gerrit (or similar)</li><li>Comfort developing software with GIT in a Linux environment</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><p>We definitely appreciate candidates with any of the following experience ...</p><ul><li>A background in automotive systems and familiarity with Euro NCAP, KNCAP, and UNECE certification. Previous experience shipping real-world control systems</li><li>Experience with regulatory standards such as ISO 26262 or equivalent</li><li>Experience in the physics and kinematics of wheeled vehicles. Theoretical expertise in control systems, filter design, and/or state estimation</li><li>Experience with perceptions systems, especially the fusion of radar and camera systems</li><li>Practical vehicle testing experience on test tracks</li></ul>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br />157,500 USD – 299,000 USD for Level 3; and 187,500 USD – 364,000 USD for Level 4.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 28, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Developer---Autonomous-Vehicles_JR2030353",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2030397",
     "slug": "nvidia-senior-chip-architect-jr2030397",
     "company": "nvidia",
@@ -13792,6 +13880,23 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-HPC-Architect--Identity-and-Security-at-Scale_JR2030465",
     "postedAt": "2026-11-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030483",
+    "slug": "nvidia-senior-physical-design-engineer-jr2030483",
+    "company": "nvidia",
+    "title": "Senior Physical Design Engineer",
+    "locations": [
+      "India, Hyderabad",
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself. Our invention of the GPU sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. Today, research in artificial intelligence is booming worldwide, which calls for highly scalable and massively parallel computation horsepower that NVIDIA GPUs excel. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can address, and that matter to the world. This is our life’s work , to amplify human creativity and intelligence. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join our diverse team and see how you can make a lasting impact on the world!</p><p>NVIDIA is seeking passionate, highly motivated, and creative design engineers to be part of a team working on industry-leading GPUs and SOCs. This position offers the opportunity to have real impact in a dynamic, technology-focused company impacting product lines ranging from consumer graphics to self-driving cars and the growing field of artificial intelligence. We have crafted a team of exceptional people stretching around the globe, whose mission is to push the frontiers of what is possible today and define the platform for the future of computing.</p><p><b>What you'll be doing:</b></p><ul><li><p>In this position, you will expected to lead all block/chip level PD activities.</p></li><li><p>PD activities includes floor plans, abstract view generation, RC extraction, PNR, STA, EM,IR DROP, DRCs &amp; schematic to layout verification. Work in collaboration with design team for addressing design challenges.</p></li><li><p>Help team members in debugging tool/design related issues.</p></li><li><p>Constantly look for improvement in RTL2GDS flow to improve PPA. Troubleshoots a wide variety up to and including difficult design issues and applied proactive intervention.</p></li><li><p>Responsible for all aspects of physical design and implementation of GPU and other ASICs targeted at the desktop, laptop, workstation, and mobile markets.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>BE/BTECH/MTECH, or equivalent experience.</p></li><li><p>5+ years of experience in Physical Design.</p></li><li><p>Strong understanding in the RTL2GDSII flow or design implementation in leading process technologies. Good understanding of the RTL2GDSII concepts related to synthesis, place &amp; route, CTS, timing convergence, layout closure.</p></li><li><p>Expertise on high frequency design methodologies. Good knowledge and experience in Block-level and Full-chip Floor-planning and Physical verification. Working experience with tools like ICC2/Innovus, Primetime/Tempus etc used in the RTL2GDSII implementation.</p></li><li><p>Strong knowledge and experience in standard place and route flows ICC2/Synopsys and Innovus/Cadence flows preferred. Well versed with timing constraints, STA and timing closure.</p></li><li><p>Good automation skills in PERL, TCL, tool specific scripting on one of the industry leading Place &amp; Route tools.</p></li><li><p>Ability to multi-task and flexibility to work in global environment.</p></li><li><p>Good communication skills and strong motivation, Strong analytical &amp; Problem solving skills. Proficiency using Perl, Tcl, Make scripting is preferred.</p></li></ul><p>Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family <a href=\"http://www.nvidiabenefits.com/\">www.nvidiabenefits.com/</a>NVIDIA is committed to encouraging a diverse work environment and proud to be an equal opportunity employer.</p><p>As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law. We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.</p><p>#LI-Hybrid </p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Hyderabad/Senior-Physical-Design-Engineer_JR2030483",
+    "postedAt": "2026-11-25T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {

@@ -77,7 +77,7 @@
     "postedAt": "2026-06-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -384,7 +384,7 @@
     "postedAt": "2026-08-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -472,7 +472,7 @@
     "postedAt": "2026-10-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -741,8 +741,6 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Folsom/Payroll-Business-Analyst---Intel-Contract-Employee_JR0285691",
     "postedAt": "2026-10-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
-    "lastSeenAt": "2026-11-10T05:03:14.257Z",
-    "closedAt": "2026-11-12T05:03:02.950Z",
     "source": "workday"
   },
   {
@@ -1379,8 +1377,6 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Facilities-Instrumentation-and-Controls-Engineer_JR0286623",
     "postedAt": "2026-09-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
-    "lastSeenAt": "2026-11-15T05:03:03.938Z",
-    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "workday"
   },
   {
@@ -1885,6 +1881,23 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0286869",
+    "slug": "intel-senior-static-timing-analysis-sta-engineer-jr0286869",
+    "company": "intel",
+    "title": "Senior Static Timing Analysis (STA) Engineer",
+    "locations": [
+      "US, Arizona, Phoenix",
+      "US, California, Santa Clara"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p><b>Shape the Future of Computing at Intel</b></p><p>Intel is seeking an experienced <b>Senior Static Timing Analysis (STA) Engineer</b> to help drive the development of next-generation semiconductor products. In this role, you will play a critical part in delivering high-performance, power-efficient System-on-Chip (SoC) designs that power industry-leading technologies.</p><p>You will work across architecture, logic design, clocking, DFT, and physical design teams to ensure successful timing convergence, signal integrity, performance optimization, and product readiness. This position offers an exciting opportunity to solve complex engineering challenges while influencing methodologies and best practices used across advanced SoC programs.</p><p><b>Key Responsibilities but not limited to:</b></p><ul><li>Perform SOC level timing analysis and optimization, ensuring designs meet functional and performance requirements.</li><li>Generate and verify timing constraints while addressing timing violations at the chip or block level for SoCs.</li><li>Conduct timing rollups and develop optimized clock networks for functionality, performance, and power efficiency.</li><li>Define methodologies to produce high-quality timing models and enable efficient physical design execution.</li><li> Establish the appropriate process, voltage, and temperature (PVT) conditions for timing analysis, aligning with product plans, and binning strategies.</li><li>Work closely with the clocking team and full-chip designers to balance timing fixes, power delivery, clocking, and partitioning.</li><li>Collaborate with architecture, clocking design, DFT and logic design teams to develop flows for chip integration and validate clock network performance guidelines.</li><li>Contribute to the development of tools, flows, and methodologies that enhance SoC physical design and timing processes.</li></ul><p><b>Behavioral Traits We Are Looking For</b></p><ul><li><b>Technical Leadership:</b> Demonstrates strong engineering judgment and influences technical direction across complex projects.</li><li><b>Ownership and Accountability:</b> Takes responsibility for challenging technical problems and drives them to closure.</li><li><b>Strategic Problem Solving:</b> Applies analytical thinking and data-driven decision-making to solve highly complex design challenges.</li><li><b>Cross-Functional Collaboration:</b> Builds trusted partnerships across architecture, design, validation, DFT, clocking, and physical design teams.</li><li><b>Communication Excellence:</b> Communicates complex technical concepts effectively to technical and non-technical audiences.</li><li><b>Continuous Improvement Mindset:</b> Identifies opportunities to improve methodologies, tools, and engineering efficiency.</li><li><b>Mentorship:</b> Shares knowledge, coaches peers, and contributes to the development of engineering talent.</li><li><b>Adaptability:</b> Thrives in fast-paced environments with evolving priorities and technical challenges.</li></ul><p>Intel invests in our people and offers a complete and competitive package of benefits employees and their families through every stage of life. </p><ul><li>See  <a href=\"https://www.intel.com/content/www/us/en/jobs/benefits.html\">Intel Benefits</a> for more details. </li></ul><h2><b>Qualifications:</b></h2><p>You must possess the below minimum qualifications to be initially considered for this position. Preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates.</p><p><b>Note: </b></p><p><b>For information on Intel’s immigration sponsorship guidelines, please see </b></p><p><a href=\"https://www.intel.com/content/www/us/en/jobs/hiring.html\"><b>Intel U.S. Immigration Sponsorship Information</b></a></p><p><b>Minimum Qualifications and Experience:</b></p><p>Bachelor's degree in Computer Engineering, Computer Science, or related STEM discipline and 6+ years of industry experience; OR a Master's degree in the same fields and 4+ years of experience.</p><p>5+ years of experience the following:</p><ul><li>SOC level static timing analysis, clock network design, and timing closure methodologies.</li><li>Timing constraint adaptation, physical design knowledge, and optimization techniques.</li><li>Industry-standard tools for timing analysis, extraction, and physical design.</li><li>TCL scripting and timing budgeting processes.</li></ul><p><b>Preferred Skills/Experience:</b> </p><ul><li>A PhD in the same filed and 2+ years of experience.</li><li>Demonstrated ability to collaborate across diverse teams and drive innovative solutions for SoC designs.</li><li>Knowledge of tools, flows, and methodologies for high-performance physical design.</li><li>Experience with SoC clocking methodologies, disciplined execution, and problem-solving in digital design.</li><li>DFT architecture knowledge is a strong plus.</li></ul><p><b>Why Join Intel</b></p><p>Join Intel and play a key role in delivering next-generation SoC products that power future computing innovations. You will work across global teams, influence high-impact design decisions, collaborate with leading engineers, and help drive technologies from development through product delivery. This is an opportunity to solve complex technical challenges while contributing to Intel's expanding product roadmap and future growth.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Arizona, Phoenix<h2>Additional Locations:</h2>US, California, Santa Clara<h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $164,470.00-269,100.00 USDThe range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific compensation range for your preferred location during the hiring process.<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Arizona-Phoenix/Senior-Static-Timing-Analysis--STA--Engineer_JR0286869-1",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0286872",
     "slug": "intel-semiconductor-packaging-integration-research-manager-jr0286872",
     "company": "intel",
@@ -1915,6 +1928,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-2027_JR0286876",
     "postedAt": "2026-10-08T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -1997,7 +2012,7 @@
     "postedAt": "2026-09-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -2103,7 +2118,7 @@
     "postedAt": "2026-09-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -2256,7 +2271,7 @@
     "postedAt": "2026-09-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -2524,6 +2539,26 @@
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-19T05:03:26.756Z",
     "closedAt": "2026-11-21T05:03:24.558Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0287222",
+    "slug": "intel-senior-product-manager-data-center-jr0287222",
+    "company": "intel",
+    "title": "Senior Product Manager, Data Center",
+    "locations": [
+      "US, Oregon, Hillsboro",
+      "US, California, Folsom",
+      "US, California, Santa Clara",
+      "US, Texas, Austin",
+      "US, Arizona, Phoenix"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p>Intel is shaping the future of data center computing through technologies powering critical cloud, AI, enterprise, and high-performance computing workloads.</p><p>We are seeking a <b>Senior Product Manager, Data Center </b>to drive the strategy, execution, and lifecycle of next-generation Intel® Xeon® products. This highly visible role operates at the intersection of <b>technology, customers, and business strategy</b>, translating market insights, customer needs, and technical trade-offs into product decisions that strengthen competitive positioning and deliver meaningful business outcomes.</p><p>The ideal candidate combines deep technical acumen, strategic thinking, customer focus, and the ability to influence senior stakeholders across a highly matrixed organization.</p><p><b>What You'll Do</b></p><p><b>Responsibilities will include but are not limited to: </b></p><p><b>Product Ownership &amp; Lifecycle Leadership</b></p><ul><li>Own a Xeon product through its full lifecycle: product definition, planning, development, production, launch, and end‑of‑life.</li><li>Serve as the central point of coordination across design, architecture, process technology, manufacturing, test, quality, and marketing.</li><li>Maintain lifecycle accountability, including upgrades, feature changes, and product sustaining decisions.</li></ul><p><b>Product Strategy &amp; Roadmap Influence</b></p><ul><li>Apply competitive intelligence, customer insights, and workload analysis to influence product priorities within the broader Xeon portfolio framework.</li><li>Partner with platform and system architects to assess emerging technologies and provide informed recommendations for future product investments.</li><li>Translate customer and ecosystem feedback into actionable inputs for roadmap and feature decisions.</li></ul><p><b>Competitive Positioning &amp; Product Messaging</b></p><ul><li>Analyze the competitive landscape and define product positioning that clearly communicates customer value.</li><li>Develop performance leadership narratives grounded in real workload KPIs, not just specifications.</li><li>Support go‑to‑market planning and engage with customers and ecosystem partners to validate workloads, use cases, and performance targets.</li></ul><p><b>Technology Readiness &amp; Launch Execution</b></p><ul><li>Own workload and KPI readiness gates, driving execution across validation, debug, and performance optimization teams.</li><li>Represent product readiness, risks, and mitigation plans in executive and cross‑organizational reviews.</li><li>Support global product launches in partnership with marketing, communications, PR, and sales enablement teams.</li></ul><p><b>Cross‑Functional Leadership</b></p><ul><li>Align engineering, marketing, manufacturing, and business stakeholders on priorities, tradeoffs, and definitions of success.</li><li>Drive convergence across validation, debug, and performance teams to ensure outcomes reflect real customer requirements.</li><li>Operate effectively in a highly matrixed environment, influencing without direct authority.</li></ul><p><b>Behavioral traits that we are looking for: </b></p><ul><li>Strategic thinker with strong business judgment.</li><li>Customer-focused and data-driven.</li><li>Strong executive communication and influence.</li><li>Comfortable making decisions in ambiguous environments.</li><li>Proven ability to align senior stakeholders without direct authority.</li><li>Strong ownership and results orientation.</li></ul><p>Intel invests in our people and offers a complete and competitive package of benefits employees and their families through every stage of life. </p><ul><li>See  <a href=\"https://www.intel.com/content/www/us/en/jobs/benefits.html\">Intel Benefits</a> for more details. </li></ul><h2><b>Qualifications:</b></h2><p>You must possess the below minimum qualifications to be initially considered for this position. Preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates.</p><p><b>Minimum Qualifications:</b></p><ul><li>Bachelor's in Electrical /Computer Engineering, Computer Science, or STEM related field with 7+ year of experience.  </li><li>7+ years of experience in semiconductor product management, technical marketing, or product architecture.</li><li>7+ years of experience owning end‑to‑end hardware or platform products, including launch and lifecycle.</li></ul><p><b>Preferred Qualifications:</b></p><ul><li>Demonstrated depth operating at the system or platform level.</li><li>Proven track record owning product decisions under ambiguity — including setting success criteria, driving tradeoffs, and carrying consequences.</li><li>Demonstrated ability to lead senior engineering stakeholders without direct authority.</li><li>Ability to articulate a coherent product narrative that connects architecture intent, workload performance, competitive positioning, and customer value.</li><li>MBA or equivalent experience translating technical tradeoffs into business, portfolio, and market implications.</li><li>Direct experience with server or datacenter platform business involving CPU, memory, and I/O.</li><li>Demonstrated exposure to hyperscale, CSP, or OEM/ODM customers or ecosystems.</li><li>Hands‑on involvement with workload‑based performance or benchmarking frameworks (e.g., MLPerf, SPEC, TPC, or equivalent internal systems).</li></ul><p><b>Why Join Intel?</b><br />Help shape the future of data center computing by driving Intel® Xeon® products that power critical cloud, AI, and enterprise workloads worldwide. Collaborate with leading technologists and customers to turn breakthrough innovation into meaningful business and customer impact. Apply today and help define what’s next in data center computing.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Oregon, Hillsboro<h2>Additional Locations:</h2>US, Arizona, Phoenix, US, California, Folsom, US, California, Santa Clara, US, Texas, Austin<h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $160,980.00-311,040.00 USDThe range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific compensation range for your preferred location during the hiring process.<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Senior-Product-Manager--Data-Center_JR0287222",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -2831,7 +2866,7 @@
     "postedAt": "2026-09-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -2980,6 +3015,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/OEM-Partner-GTM-Enabling_JR0287448",
     "postedAt": "2026-09-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -3098,6 +3135,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/India-Bangalore/SoC-Design-Verification-Engineer_JR0287499",
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -3396,6 +3435,44 @@
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-10T05:03:14.257Z",
     "closedAt": "2026-11-12T05:03:02.950Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0287637",
+    "slug": "intel-design-verification-intern-2027-jr0287637",
+    "company": "intel",
+    "title": "Design Verification Intern 2027",
+    "locations": [
+      "US, Colorado, Fort Collins",
+      "US, Oregon, Hillsboro",
+      "US, California, Santa Clara",
+      "US, Texas, Austin"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>The Role and Impact <br />As a Design Verification Engineering Undergraduate Intern, you will contribute to the functional logic verification of silicon designs, ensuring they meet specifications. Your day-to-day tasks will include supporting the development of verification plans, creating test benches, and assisting in building the verification environment to validate design coverage. This role is vital to uncovering and resolving design bugs, ensuring implementation efficiency, and collaborating with architecture and design teams to achieve functional correctness. <br /><br />Business group <br />The Data Center Group (DCG) is at the forefront of driving innovation and delivering advanced solutions for data-centric computing. Focused on enabling the next generation of technology, DCG supports Intel's mission to power the infrastructure of tomorrow through cutting-edge design and development. This group provides a dynamic, collaborative environment where team members contribute to meaningful projects with a global impact. <br /><br />Key Responsibilities <br />- Support the development of verification plans, test benches, and verification environments to ensure design coverage. <br />- Assist in emulation and simulation efforts to verify designs and analyze power and performance metrics. <br />- Collaborate with architecture and design teams to ensure functional correctness and efficiency. <br />- Contribute to debugging issues, performing root cause analysis, and proposing corrective measures to resolve design challenges. <br />- Participate in hands-on projects and gain exposure to industry-leading tools and processes.<h2><b>Qualifications:</b></h2><p>You must possess the below minimum qualifications to be initially considered for this position. Preferred qualifications are in addition to the minimum qualifications and are considered a plus factor in identifying top candidates. Experience listed below would be obtained through a combination of your schoolwork, classes, research, relevant previous job, and/or internship experiences.</p><br /><p>Minimum Qualifications <br />- Must be pursuing a Bachelors degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field <br />- Proficiency in programming languages such as SystemVerilog or Python. <br />- Familiarity with simulation tools and/or verification methodologies. <br />- Understanding of basic concepts in logic design and verification processes. <br /><br />Preferred Qualifications </p><p>-GPA 3.0<br />- Strong problem-solving skills and a proactive approach to learning and development. <br />- Effective communication and collaboration skills, contributing to teamwork in a dynamic environment. <br />- Enthusiasm for exploring the latest technology trends in silicon design and verification. <br />- Passion for innovation and commitment to delivering high-quality solutions. <br /><br />Explore this exciting opportunity to grow your skills, work on impactful projects, and contribute to Intel's cutting-edge technology development. Join us to shape the future of data-centric computing-apply today.</p><h2>Job Type:</h2>Student / Intern<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Colorado, Fort Collins<h2>Additional Locations:</h2>US, California, Santa Clara, US, Oregon, Hillsboro, US, Texas, Austin<h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $91,198.00-91,202.00 USD (Hourly Role)The range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Our standard internship rates are based on your degree, location, and the job role. Your recruiter can share more about the specific compensation range for your preferred location and job role during the hiring process.<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.The application window for this job posting is expected to end by 01/22/2027<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Colorado-Fort-Collins/Design-Verification-Intern-2027_JR0287637",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0287646",
+    "slug": "intel-design-verification-intern-2027-jr0287646",
+    "company": "intel",
+    "title": "Design Verification Intern 2027",
+    "locations": [
+      "US, Colorado, Fort Collins",
+      "US, Oregon, Hillsboro",
+      "US, California, Santa Clara",
+      "US, Texas, Austin"
+    ],
+    "remote": false,
+    "category": "design",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>The Role and Impact <br />As a Design Verification Engineering Undergraduate Intern, you will contribute to the functional logic verification of silicon designs, ensuring they meet specifications. Your day-to-day tasks will include supporting the development of verification plans, creating test benches, and assisting in building the verification environment to validate design coverage. This role is vital to uncovering and resolving design bugs, ensuring implementation efficiency, and collaborating with architecture and design teams to achieve functional correctness. <br /><br />Business group <br />The Data Center Group (DCG) is at the forefront of driving innovation and delivering advanced solutions for data-centric computing. Focused on enabling the next generation of technology, DCG supports Intel's mission to power the infrastructure of tomorrow through cutting-edge design and development. This group provides a dynamic, collaborative environment where team members contribute to meaningful projects with a global impact. <br /><br />Key Responsibilities <br />- Support the development of verification plans, test benches, and verification environments to ensure design coverage. <br />- Assist in emulation and simulation efforts to verify designs and analyze power and performance metrics. <br />- Collaborate with architecture and design teams to ensure functional correctness and efficiency. <br />- Contribute to debugging issues, performing root cause analysis, and proposing corrective measures to resolve design challenges. <br />- Participate in hands-on projects and gain exposure to industry-leading tools and processes.<h2><b>Qualifications:</b></h2><p>You must possess the below minimum qualifications to be initially considered for this position. Preferred qualifications are in addition to the minimum qualifications and are considered a plus factor in identifying top candidates. Experience listed below would be obtained through a combination of your schoolwork, classes, research, relevant previous job, and/or internship experiences.<br /><br /></p><p>Minimum Qualifications <br />- Must be pursuing a Bachelors degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field <br />- Proficiency in programming languages such as SystemVerilog or Python. <br />- Familiarity with simulation tools and/or verification methodologies. <br />- Understanding of basic concepts in logic design and verification processes. <br /><br />Preferred Qualifications </p><p>-GPA 3.0<br />- Strong problem-solving skills and a proactive approach to learning and development. <br />- Effective communication and collaboration skills, contributing to teamwork in a dynamic environment. <br />- Enthusiasm for exploring the latest technology trends in silicon design and verification. <br />- Passion for innovation and commitment to delivering high-quality solutions. <br /><br />Explore this exciting opportunity to grow your skills, work on impactful projects, and contribute to Intel's cutting-edge technology development. Join us to shape the future of data-centric computing-apply today.</p><h2>Job Type:</h2>Student / Intern<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Colorado, Fort Collins<h2>Additional Locations:</h2>US, California, Santa Clara, US, Oregon, Hillsboro, US, Texas, Austin<h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $91,198.00-91,202.00 USD (Hourly Role)The range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Our standard internship rates are based on your degree, location, and the job role. Your recruiter can share more about the specific compensation range for your preferred location and job role during the hiring process.<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.The application window for this job posting is expected to end by 01/22/2027<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Colorado-Fort-Collins/Design-Verification-Intern-2027_JR0287646",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -4221,6 +4298,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/E-core-Senior-CPU-Physical-Design-Engineer_JR0287925",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4339,7 +4418,7 @@
     "postedAt": "2026-10-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -4373,6 +4452,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Poland-Gdansk/AI-Frameworks-Engineer_JR0287954",
     "postedAt": "2026-10-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4572,6 +4653,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Arizona-Phoenix/Construction-Project-Manager_JR0288014",
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4587,6 +4670,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Ireland-Leixlip/AMHS-Module-Equipment-Technician_JR0288016",
     "postedAt": "2026-10-28T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4658,7 +4743,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T22:47:21.746Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -4756,6 +4841,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/AI-Model-Optimization-Engineer_JR0288106",
     "postedAt": "2026-10-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -4888,6 +4975,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/India-Bangalore/CPU-Performance-Architect_JR0288151",
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5527,7 +5616,7 @@
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -6330,6 +6419,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0288531",
+    "slug": "intel-haifa-lab-support-student-jr0288531",
+    "company": "intel",
+    "title": "Haifa Lab support student",
+    "locations": [
+      "Israel, Haifa"
+    ],
+    "remote": false,
+    "category": "support",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>The Role and Impact \nAs a Lab Engineering Intern, you will play a key role in enhancing Intel's Validation Solutions Labs by contributing to post-silicon validation workflows. From setting up and calibrating hardware to analyzing data and documenting procedures, you'll gain hands-on experience in ensuring lab readiness and adherence to quality and safety standards. This role offers the opportunity to develop technical expertise while making meaningful contributions to Intel's business goals. \n\nBusiness group \nIntel Corporation's Validation Solutions Labs focus on advancing lab systems and infrastructure to support post-silicon validation activities. The team collaborates across functions to improve lab engineering, compliance, and throughput, ensuring the readiness of cutting-edge technologies. By joining this group, you'll be part of an environment dedicated to innovation and excellence in engineering. \n\nKey Responsibilities \n- Support lab infrastructure development and continuous improvement to enable post-silicon validation workflows. \n- Set up, configure, and calibrate hardware, instrumentation, and test benches to meet engineering requirements. \n- Perform data collection, analysis, and summarization to drive insights into lab quality and throughput. \n- Author and maintain clear operating procedures, work instructions, and checklists for lab activities. \n- Collaborate with cross-functional teams to ensure lab readiness, compliance, and adherence to safety standards.<h2><b>Qualifications:</b></h2><p>Minimum Qualifications <br />- Registered B.Sc. student in Software Engineering, Electrical Engineering, or Electronics with 4 semesters remaining until graduation. <br />- Proficiency in English (reading, writing, speaking). <br />- Demonstrated logical problem-solving abilities. <br />- Availability to work 3.5-4 days per week. <br /><br />Preferred Qualifications <br />- Compute, IT, or EC capabilities or experience. <br />- Relevant prior experience, including a Practical Engineering degree in Software or Electronics. <br /><br />Take the first step toward shaping your career and making an impact. Join us in creating innovative solutions and delivering excellence within Intel's collaborative and forward-thinking environment.</p><h2>Job Type:</h2>Student / Intern<h2>Shift:</h2>Shift 1 (Israel)<h2>Primary Location: </h2>Israel, Haifa<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0288533",
     "slug": "intel-client-electrical-validation-engineer-jr0288533",
     "company": "intel",
@@ -6693,7 +6798,7 @@
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -6795,6 +6900,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/PRC-Shanghai/Linux-Kernel-Development-and-Validation-Engineer_JR0288634",
     "postedAt": "2026-10-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:13:33.563Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -6827,6 +6934,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/IT-LTG-Student-Systems-Analyst_JR0288638",
     "postedAt": "2026-11-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -7770,6 +7879,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Power-Integrity-Engineer_JR0288885",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T05:02:43.218Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8176,6 +8287,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/PRC-Shanghai/Robotics-Solution-Manager--Humanoid-Robotics-_JR0288984",
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8245,6 +8358,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/Senior-Sales-Operations-Analyst_JR0288997",
     "postedAt": "2026-11-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8373,7 +8488,7 @@
     "postedAt": "2026-11-15T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -8421,6 +8536,8 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Analytical-Chemistry-Lab-Technician_JR0289037",
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -8505,7 +8622,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-10T05:03:14.257Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -9222,6 +9339,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0289262",
+    "slug": "intel-intel-foundry-module-equipment-engineer-dielectrics-jr0289262",
+    "company": "intel",
+    "title": "Intel Foundry Module Equipment Engineer - Dielectrics",
+    "locations": [
+      "US, Oregon, Hillsboro"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p>The Role and Impact:<br />As a Module Equipment Engineer, you will play a critical role in enabling advanced manufacturing processes for integrated circuits. Your day-to-day responsibilities will focus on owning high-volume manufacturing equipment and processes, conducting rigorous tests and measurements, and ensuring alignment with critical safety, quality, and cost indicators. You will actively contribute to optimizing production efficiencies, supporting technology development, and driving innovation in process line operations, ensuring Intel remains at the forefront of semiconductor manufacturing. <br /><br />Business Group:<br />Intel Foundry Technology and Development (TD) is dedicated to advancing cutting-edge semiconductor technology and manufacturing capabilities. The team focuses on delivering innovative solutions for device miniaturization and high-volume production while supporting Intel's broader mission to create world-changing technology. As a Module Engineer, you will be part of a collaborative environment committed to excellence, innovation, and empowering teams to shape the future of the industry. <br /><br />Key Responsibilities:</p><ul><li>Utilize mechanical and chemical systems knowledge to develop new stable processes in Dielectrics.</li><li>Collaborate with equipment and material suppliers to evaluate, qualify, and implement novel technologies into manufacturing processes</li><li>Support technology transfer to high-volume manufacturing through training, audits, and maintaining process consistency across sites</li><li>Design, execute, and analyze experiments to optimize advanced manufacturing processes, including material selection, equipment metrology, and parameter tuning</li><li>Utilize advanced data analysis methods, including Statistical Process Control (SPC) and Design of Experiments (DOE), to guide process improvements and enhance yield</li></ul><h2><b>Qualifications:</b></h2><p>Minimum qualifications are required to be initially considered for this position. Preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates. Requirements listed would be obtained through a combination of industry relevant job experience, internship experiences and or schoolwork/classes/research.</p><p><b>Minimum Qualifications:</b></p><ul><li>Master's degree in Chemical Engineering or Mechanical Engineering</li><li>Graduate-level knowledge of heat and mass transfer, mechanical systems, radio-frequency (RF) systems, and control systems</li></ul><p><b>Preferred Qualifications:</b></p><ul><li>Academic or practical experience in equipment troubleshooting, development, and maintenance</li><li>Exposure to advanced semiconductor device structures and fabrication processes (e.g., lithography, etch, deposition, planarization)</li><li>Knowledge of process control systems, sources of variability, and statistical methodologies</li></ul><p>For information on Intel’s immigration sponsorship guidelines, please see <a href=\"https://www.intel.com/content/www/us/en/jobs/hiring.html\"><u>Intel U.S. Immigration Sponsorship Information</u></a></p><br /><h2>Job Type:</h2>College Grad<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Oregon, Hillsboro<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $89,010.00-125,660.00 USDThe range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific compensation range for your preferred location during the hiring process.<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Intel-Foundry-Module-Equipment-Engineer---Dielectrics_JR0289262",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0289264",
     "slug": "intel-automation-developer-graphics-software-internship-jr0289264",
     "company": "intel",
@@ -9443,6 +9576,21 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/NPI-Engineer_JR0289321",
     "postedAt": "2026-11-17T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0289323",
+    "slug": "intel-manufacturing-technical-supervisor-jr0289323",
+    "company": "intel",
+    "title": "Manufacturing Technical Supervisor",
+    "locations": [
+      "Malaysia, Penang"
+    ],
+    "remote": false,
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p>The Role and Impact <br />As a Manufacturing Operations Manager, you will play a pivotal role in ensuring the smooth operation of Intel's manufacturing facilities, leading a team of technicians responsible for maintaining equipment, resolving operational issues, and sustaining production schedules. Your daily responsibilities will include overseeing safety, quality, and cost objectives while empowering your team through training and development. By driving operational excellence, you will directly contribute to Intel's production success and long-term manufacturing strategies. <br /><br />Business group <br />You will be joining Intel Foundry, a business group dedicated to delivering advanced manufacturing solutions and enabling cutting-edge technologies. Intel Foundry focuses on optimizing processes and ensuring high-quality production standards to meet customer demands and support Intel's vision of advancing innovation worldwide. <br /><br />Key Responsibilities </p><br /><ul><li>Manage and lead a team responsible for equipment maintenance, repair, and factory operations to ensure smooth production schedules. </li><li>Oversee safety protocols, quality standards, and cost management to meet operational objectives. </li><li>Streamline operational processes across groups and divisions to enhance factory performance. </li><li>Establish and monitor tactical plans to achieve production goals and maximize area performance, including safety, output, and cost efficiency. </li><li>Develop and implement training plans to ensure team members have the skills required for production ramp-up and sustained operations. </li><li>Own shift scheduling, including workstation assignments, shift rotations, employee breaks, and managing overtime and leave requests. </li><li>Monitor and address equipment maintenance, recovery, troubleshooting, and tool performance issues to maintain production flow. </li><li>Collaborate with engineering teams to identify and resolve factory health and operational challenges. </li><li>Lead efforts to develop long-term strategies for manufacturing capabilities and resource planning to meet future production demands. </li><li>Foster an inclusive and productive work environment, set clear team goals, apply performance management strategies, and inspire team results.</li></ul><h2><b>Qualifications:</b></h2><p>Minimum Qualifications </p><ul><li>Bachelor's degree in a relevant field and/or prolonged course of study in a specialized area. </li><li>0-1 years of hands-on experience in manufacturing operations, demonstrating skills gained through internships, academic projects, coursework, or hands-on training OR a Master's degree in a relevant field with no prior professional experience. </li><li>Basic understanding of equipment maintenance, repair, troubleshooting, and manufacturing workflows. </li><li>Familiarity with safety, quality, and cost management processes within a manufacturing environment. <br /></li></ul><p>Preferred Qualifications </p><ul><li>Strong communication skills and ability to foster collaboration across diverse teams and stakeholders. </li><li>Proven leadership abilities, with experience in team development and performance management. </li><li>Ability to adapt to dynamic environments and drive continuous improvement in manufacturing operations. </li><li>Interest in advancing innovative manufacturing processes and supporting long-term strategic goals. </li></ul><br /><p>We're looking for passionate leaders who are eager to make a difference in Intel's manufacturing success. If you're ready to help shape the future of technology through operational excellence, we encourage you to apply today.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (Malaysia)<h2>Primary Location: </h2>Malaysia, Penang<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Manufacturing-Technical-Supervisor_JR0289323",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -9783,6 +9931,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0289402",
+    "slug": "intel-soc-functional-validation-engineer-content-capabilities-and-methodologies-ccm-jr0289402",
+    "company": "intel",
+    "title": "SoC Functional Validation Engineer – Content, Capabilities and Methodologies (CCM)",
+    "locations": [
+      "Malaysia, Penang"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p><b>The Role</b><br />As a SoC Functional Validation Engineer within the Content, Capabilities and Methodologies (CCM) team, you will develop scalable validation content, automation, and AI-enabled capabilities for Intel's next-generation Client AI PC SoCs.<br />You will create synthetic and system-level validation workloads, improve validation coverage and efficiency, and enable earlier bug discovery across pre-silicon and post-silicon environments. This is a cross-site role, requiring close collaboration with global engineering teams across architecture, design, firmware, software, tools, and validation.<br />You will also leverage AI and develop AI agents to automate validation, debugging, analysis, and engineering workflows.</p><p><br /><b>Key Responsibilities</b></p><ul><li>Develop scalable synthetic, stress, and system-level validation content for CPU and SoC functional validation.</li><li>Develop constraint-driven and model-based test content to generate diverse workloads, configurations, and complex validation scenarios.</li><li>Build automation, validation frameworks, and reusable test capabilities using Python, C/C++, Shell, and Linux-based environments.</li><li>Enable pre-silicon and post-silicon validation, including shift-left and virtual-platform validation.</li><li>Analyze coverage gaps and validation failures, developing solutions to improve coverage, regression efficiency, triage, and debug.</li><li>Use AI and develop AI agents to automate validation workflows, failure analysis, data analysis, content development, and engineering productivity.</li><li>Collaborate with cross-site and cross-functional engineering teams to deliver reusable validation capabilities and readiness for key silicon milestones.</li></ul><h2><b>Qualifications:</b></h2><p><b>Minimum Qualifications</b></p><ul><li>BS/MS in Computer Engineering, Electronic or Electrical Engineering, Computer Science, or related field.</li><li>Strong programming skills in Python, C/C++, Shell, or similar languages, with hands-on Linux experience.</li><li>Knowledge using AI development tools and developing AI agents, agentic workflows, or AI-assisted automation solutions is desirable.</li></ul><p><b>Preferred Qualifications</b></p><ul><li>Strong understanding of SoC/computer architecture, hardware-software interactions, and functional validation.</li><li>Experience with synthetic/stress validation content, test automation, or validation frameworks.</li><li>Experience with Perspec or similar constraint-driven/model-based test generation technologies are highly desirable.</li><li>Experience with debugging, failure triage, log analysis, regression, source control, and CI/CD workflows.</li><li>Familiarity with pre-silicon/virtual-platform and post-silicon validation.</li><li>Strong communication and collaboration skills to work effectively across global, cross-site engineering teams.</li></ul><p><b>Desired Technical Areas</b></p><ul><li>Functional Validation and Synthetic Test Content</li><li>System-Level, Stress and Cross-Domain Validation</li><li>Perspec and Constraint-Driven Test Generation</li><li>Linux-Based Validation and Automation</li><li>Python, C/C++ and Shell Development</li><li>Pre-Silicon, Post-Silicon and Shift-Left Validation</li><li>Validation Frameworks, Regression and CI/CD</li><li>Failure Analysis, Debug and Automated Triage</li><li>AI-Assisted Validation and Agent Development</li><li>Agentic Workflows and AI-Driven Engineering Automation</li></ul><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (Malaysia)<h2>Primary Location: </h2>Malaysia, Penang<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/SoC-Functional-Validation-Engineer---Content--Capabilities-and-Methodologies--CCM-_JR0289402",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0289404",
     "slug": "intel-lab-engineer-jr0289404",
     "company": "intel",
@@ -9862,6 +10026,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0289426",
+    "slug": "intel-practical-engineering-student-working-in-shifts-kiryat-gat-jr0289426",
+    "company": "intel",
+    "title": "Practical Engineering Student Working in Shifts - Kiryat Gat",
+    "locations": [
+      "Israel, Kiryat-Gat"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>As part of your role you will be working in the gas and chemicals operation area, requested to verify systems are functioning well, perform all maintenance activities on the equipment and monitoring the equipment constantly.\n\nYou will be working in shifts schedule. Systems activities on the shift includes: Read and Rounds, coordination and management of activities, performance of repairs and advanced trouble shooting of equipment (which includes mechanical and electronic systems) and management of excursions based on RFC'S.<h2><b>Qualifications:</b></h2><p>Minimum requirements<br />•\tYou should be studying/registered for a Practical Engineering diploma studies (and not Bsc in Engineering) in Electrical/Electronics/ Mechanical/ Mechantronics/ Water/Chemical/ Gaz.<br />•\tMinimum 3 full semesters to graduation<br />•\tAbility to work 3 shifts a week or more.<br />•\tWork in shifts (08:00-20:00/20:00-08:00) including during the nights' holidays and weekends.<br /><br />Additional qualifications include:<br />•\tHigh Technical skills - previous technical experience is an advantage<br />•\tHigh level and experience with EXCEL and Microsoft Office<br />•\tMultitasking and ability to set priorities indepentally<br />•\tGreat team relations<br />•\tHigh customer orientation<br />•\tGood communication skills both in Hebrew and in English (writen and spoken)<br />•\tSelf-learning ability</p><h2>Job Type:</h2>Student / Intern<h2>Shift:</h2>Shift 15 E (Israel)<h2>Primary Location: </h2>Israel, Kiryat-Gat<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Practical-Engineering-Student-Working-in-Shifts---Kiryat-Gat_JR0289426",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0289466",
     "slug": "intel-tem-technician-jr0289466",
     "company": "intel",
@@ -9874,6 +10054,37 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/TEM-Technician_JR0289466",
     "postedAt": "2026-11-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0289468",
+    "slug": "intel-orap-metro-module-equipment-technician-jr0289468",
+    "company": "intel",
+    "title": "ORAP Metro Module Equipment Technician",
+    "locations": [
+      "US, Oregon, Hillsboro"
+    ],
+    "remote": false,
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>The Role and Impact \nAs a Module Equipment Technician, you will play a vital role in ensuring the reliability and efficiency of semiconductor manufacturing equipment. Your day-to-day activities will include electrical and mechanical troubleshooting, repair, preventative maintenance, and calibration of critical tools that drive Intel's production operations. Your contributions will directly support Intel's ability to achieve production targets and deliver high-quality components to customers worldwide.\n\nBusiness group \nThis position is part of Intel's Wafer Packaging Manufacturing (WPM) organization, which focuses on advancing semiconductor packaging technologies to enable groundbreaking product innovation. The group is dedicated to ensuring high-quality manufacturing processes and supports Intel's broader mission to deliver cutting-edge technology solutions that enrich lives and connect the world.\n\nKey Responsibilities \n- Perform electrical or mechanical troubleshooting to diagnose and resolve issues in manufacturing equipment. \n- Dismantle, adjust, repair, and reassemble equipment using layout plans, blueprints, repair manuals, and technical drawings. \n- Conduct equipment setup, calibration, and preventative maintenance to maintain optimal tool performance. \n- Coordinate with suppliers for service and repairs as necessary. \n- Monitor and analyze equipment performance data to implement improvements and address tool-related issues. \n- Create detailed reports on system failures, update existing specifications, and develop new documentation to support equipment maintenance and reliability goals. \n- Collaborate with Module Engineering to execute experiments, implement equipment configuration changes, and support data collection activities. \n- Assist in factory ramp efforts by ensuring tools are installed or converted per design specifications.<h2><b>Qualifications:</b></h2><p>Candidates must meet at least one of the following educational or experience requirements. </p><br /><p>Minimum Qualifications:</p><p>- High School diploma with 1+ years of experience in semiconductor manufacturing / equipment maintenance or a related field.</p><p>- Associate of Science degree in a STEM-related field with no prior professional experience.</p><p>- High School diploma with 1.5+ years of hands-on experience in a military technical role.</p><p>This position is not eligible for Intel immigration sponsorship.</p><p>Preferred Qualifications:</p><p>- Knowledge of electromechanical systems, including robotic drives, actuators, and microcontrollers.</p><p>- Ability to read and interpret mechanical drawings and electrical schematics.</p><p>- Strong communication skills and ability to collaborate effectively within a team environment.</p><p>- Proficiency in electrical or mechanical troubleshooting and repair.</p><p>- Experience with equipment calibration and preventative maintenance.</p><p>- Familiarity with data analysis tools, defect review and classification for monitoring and improving tool performance.</p><p>Your expertise will be instrumental in driving innovation and excellence in Intel's manufacturing operations. Join us to contribute to transformative technology and advance your career alongside industry leaders.</p><h2>Job Type:</h2>Tech Grad<h2>Shift:</h2>Shift 7 (United States of America)<h2>Primary Location: </h2>US, Oregon, Hillsboro<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $44,230.00-85,340.00 USD (Hourly Role)The range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Our standard technician starting rates are based on your location and shift schedule. Your recruiter can share more about the specific compensation range for your preferred location during the hiring process.<p><b>Work Model for this Role</b></p>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/ORAP-Metro-Module-Equipment-Technician_JR0289468",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0289475",
+    "slug": "intel-staff-thin-films-engineer-jr0289475",
+    "company": "intel",
+    "title": "Staff Thin Films Engineer",
+    "locations": [
+      "US, Oregon, Hillsboro"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p><b><u>Organization Overview:</u></b><br />Manufacturing Development Customer Engineering (MDCE) is Intel's newest organization within Intel Foundry Technology Manufacturing (FTM). We bridge the critical gap between Technology Development (TD) and High-Volume Manufacturing (HVM), advancing technology nodes and process capability from initial product qualification to high-yield production across multiple products while enhancing technologies for our foundry customers.<br /><br /><b><u>About This Role:</u></b><br />Join Intel's Manufacturing Development and Customer Engineering (MDCE) team as a Staff Engineer driving process innovation across Intel's most advanced semiconductor technologies in volume manufacturing. You will spearhead the development, optimization, and manufacturability of critical thin film deposition processes, ensuring seamless transitions from early development to high-volume production while meeting Intel foundry customer requirements.<br /><br /><b><u>Your Mission:</u></b><br />Lead thin film process excellence across epitaxy, anneal, implant, CVD, ALD, thermal/plasma deposition, and/or treatment technologies. Operating at the nexus of Technology Development and High-Volume Manufacturing, you will drive breakthrough solutions for Intel 18A, Intel 3, 12nm, and next-generation technology nodes.<br /><br /><i><b>Key Responsibilities</b></i><b>:</b><br /><br /><b><u>Process Innovation and Excellence</u></b></p><ul><li>Champion safety, quality, yield, throughput, and cost optimization across thin film deposition modules.</li><li>Drive defectivity reduction and uniformity improvements through systematic process enhancement.</li><li>Lead technical problem resolution and deliver solutions that meet aggressive technology node targets.</li><li>Optimize equipment performance working with internal teams and key suppliers.<br /></li></ul><p><b><u>Strategic Technical Leadership</u></b></p><ul><li>Align technical vision with customer requirements and business objectives.</li><li>Synthesize complex technical data to formulate and execute strategic responses.</li><li>Own end-to-end resolution of manufacturing challenges spanning multiple engineering disciplines.</li><li>Deliver rapid execution of innovative solutions to meet challenging development timelines.<br /></li></ul><p><b><u>Cross-Functional Partnership</u></b></p><ul><li>Collaborate closely with Technology Development, High Volume Manufacturing, and Business Groups.</li><li>Build strong relationships with Integration, Device, Yield, Quality, Reliability teams, and external suppliers.</li><li>Present technical findings effectively to diverse audiences from engineering teams to executive leadership.</li><li>Foster in-person collaboration to accelerate decision-making and problem resolution.<br /></li></ul><p><b><u>Industry Leadership</u></b></p><ul><li>Stay current with semiconductor industry trends and emerging process technologies.</li><li>Drive strategic initiatives that position Intel at the forefront of manufacturing innovation.</li><li>Contribute to technology roadmaps through hands-on technical expertise and market insight.<br /></li></ul><p><i><b>What We're Looking For:</b></i><br /><br /><b><u>Technical Excellence</u></b></p><ul><li>Results-driven professional with exceptional technical problem-solving abilities.</li><li>Proven track record of significant accomplishments across multiple technology nodes.</li><li>Strong analytical skills with expertise in yield improvement, performance enhancement, and variation reduction.</li><li>Deep understanding of semiconductor processes, equipment, manufacturing strategies, fab operations, and technology transfer.<br /></li></ul><p><b><u>Leadership Capabilities</u></b></p><ul><li>Outstanding communication skills for presenting complex technical information to varied audiences.</li><li>Self-motivated with strong initiative and ability to navigate ambiguous technical challenges.</li><li>Demonstrated ability to manage multiple high-priority projects under pressure while maintaining quality focus.</li><li>Experience driving clarity in complex technical situations and leading cross-functional initiatives.<br /></li></ul><p><b><u>Industry Expertise</u></b></p><ul><li>Comprehensive knowledge of process development, materials science, and device physics.</li><li>Ability to interpret industry trends and translate market dynamics into actionable technical strategies.</li><li>Experience with foundry business models and customer engagement requirements.</li><li>Proven capability to work independently while managing diverse technical assignments.</li></ul><h2><b>Qualifications:</b></h2><p>The Minimum qualifications are required to be initially considered for this position.  Minimum qualifications listed below would be obtained through a combination of industry relevant job experience, internship experience and / or schoolwork/classes/research. The preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates.</p><br /><p><b><u>Minimum Qualifications</u></b></p><ul><li>Master's degree in Electrical, Mechanical, Chemical Engineering, Materials Science, or in a STEM related field.</li><li>3+ years semiconductor industry experience with strong focus on epitaxy, implant, anneal, CVD or ALD processes.</li><li>Proven experience in process development, technical leadership, and manufacturing engineering.</li><li>Experience working with equipment suppliers (AMAT, LAM, ASM, TEL) on process optimization.</li><li>Comprehensive fab startup experience across manufacturing, quality, random defect reduction, and supply chain functions.</li><li>Proficiency with Statistical Process Control (SPC), Design of Experiments (DOE), and factory automation systems.</li></ul><p><b><u>Preferred Qualifications</u></b></p><ul><li>Doctoral degree in Electrical, Mechanical, Chemical Engineering, Materials Science, or in a STEM related field with research publications and patent portfolio in on epitaxy, implant, anneal, CVD or ALD technologies.</li><li>Expertise in FinFET and Gate All Around (GAA) logic technologies within semiconductor foundry environments.</li><li>Experience in delivering customized solutions across Technology Development and HVM organizations.</li><li>Cross-functional leadership experience managing diverse stakeholder groups.</li><li>Semiconductor foundry experience.</li></ul><p><b><u>Ready to Shape the Future?</u></b> </p><p>Join Intel's mission to push the boundaries of semiconductor manufacturing technology. Your expertise will directly influence the next generation of computing innovations and manufacturing excellence.</p><p>Apply today to become part of our world-class MDCE team and help define the future of semiconductor technology.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (United States of America)<h2>Primary Location: </h2>US, Oregon, Hillsboro<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2>Benefits</h2><p>We offer a total compensation package that ranks among the best in the industry. It consists of competitive pay, stock bonuses, and benefit programs which include health, retirement, and vacation. Find out more about the <a href=\"https://intel.wd1.myworkdayjobs.com/External/page/1025c144664a100150b4b1665c750003\"><u>benefits of working at Intel</u></a>. </p>Annual Salary Range for jobs which could be performed in the US: $133,800.00-255,200.00 USDThe range displayed on this job posting reflects the minimum and maximum target compensation for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific compensation range for your preferred location during the hiring process.<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Staff-Thin-Films-Engineer_JR0289475",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   },
   {
@@ -9893,6 +10104,38 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0289486",
+    "slug": "intel-server-test-quality-and-reliability-engineer-jr0289486",
+    "company": "intel",
+    "title": "Server Test Quality and Reliability Engineer",
+    "locations": [
+      "Costa Rica, San Jose"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p>Join Intel as a Product Quality and Reliability Engineer, where you'll ensure the quality and reliability of cutting-edge components and systems. In this role, you will drive the development and execution of product qualification strategies, analyze specifications, and optimize production processes to meet quality standards. Your work will be instrumental in supporting manufacturing readiness and enabling the delivery of high-quality products to Intel's global customers.</p><p>Intel Corporation is a global leader in designing and manufacturing semiconductor technologies. This role is part of the Product Quality Engineering organization, which focuses on ensuring product quality and reliability across Intel's diverse portfolio of innovative technologies. Collaborating across teams, this group contributes to Intel's goal of delivering world-class solutions that empower businesses and consumers worldwide.</p><p><b>The primary responsibilities for this role will include, but are not limited to:</b></p><ul><li>Develop and execute product qualification strategies and plans to ensure adherence to release criteria and quality goals.</li><li>Perform risk assessments and define quality and reliability objectives while enabling key decisions on product quality.</li><li>Contribute to the validation and testing of components, boards, and systems, including manufacturing test process development and implementation.</li><li>Support testability circuits, test flows, and methodologies through evaluation, development, and debugging of complex test methods.</li><li>Collaborate with process development, fab, factory, assembly, manufacturing groups, and outsource partners to enhance product quality and reliability.</li><li>Analyze and assess component and system specifications for optimal alignment with requirements and test capabilities.</li><li>Conduct manufacturability analyses and collaborate with design and manufacturing teams to resolve quality issues prior to production ramp-up.</li><li>Monitor post-silicon quality results and identify opportunities for continuous improvement in product designs and manufacturing processes.</li><li>Implement design and manufacturing learnings to drive next-generation product and process enhancements.</li></ul><h2><b>Qualifications:</b></h2><p><b>Minimum Qualifications</b>:</p><p>Minimum qualifications are required to be initially considered for this position.</p><ul><li>Bachelor's degree in Electrical Engineering, Electronic Engineering, Mechatronic Engineering, Computer Engineering, or a related field.</li><li>0-1 years of hands-on experience in quality and reliability engineering, with skills gained through internships, academic projects, coursework, or training.</li><li>Experience in programming languages such as Python or C/C++, demonstrated through documented experience in courses or projects.</li><li>Advanced English proficiency for business conversations and technical communication.</li><li>Experience on data analysis and basic statistics demonstrated through courses, projects or on the job.</li><li>Must have unrestricted - permanent right to work in Costa Rica.</li></ul><p><b>Preferred Qualifications:</b></p><p>Preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates.</p><ul><li>Familiarity with statistical concepts, tools, and CMOS reliability principles.</li><li>Proven problem-solving skills and ability to work collaboratively in cross-functional teams.</li><li>Experience with reliability modeling, design of experiment execution and microprocessor failure isolation and analysis.</li><li>Experience with silicon manufacturing, advanced packaging, assembly, and test processes.</li><li>Ability to work independently, take ownership of assigned tasks, proactively communicate progress and seek help when needed.</li></ul><p>We invite you to bring your passion for engineering, innovation, and quality excellence to Intel, where you can grow your career while making an impact on developing technologies that shape the future. Apply today.</p><h2>Job Type:</h2>College Grad<h2>Shift:</h2>Shift 1 (Costa Rica)<h2>Primary Location: </h2>Costa Rica, San Jose<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Server-Test-Quality-and-Reliability-Engineer_JR0289486",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0289530",
+    "slug": "intel-senior-legal-counsel-china-jr0289530",
+    "company": "intel",
+    "title": "Senior Legal Counsel, China",
+    "locations": [
+      "PRC, Beijing"
+    ],
+    "remote": false,
+    "category": "legal",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>Intel is looking for an experienced legal counsel to support its operation in China. This position reports to the Head of Legal, China, within the Intel Commercial Legal team, and will be based in Intel's Beijing office. This role is well-suited to a candidate with a structured and analytical mindset, strong adaptability, and a collaborative approach. The ideal candidate will partner closely with legal team members and business stakeholders across China and globally to deliver high-quality, practical legal support.\nKey Responsibilities\n•\tCommercial Support: Partner with China sales and marketing teams on sales contract negotiation, transaction structuring, strategic advice and other sales activity-related legal work.\n•\tManufacturing Operations: Advise on legal matters for Intel's Chengdu manufacturing site, including government incentives, construction and real estate lease arrangements, regulatory compliance, audits and investigations, facilities and utilities, and environmental, health and safety, by partnering with global legal team from time to time. \n•\tProcurement and Supply Chain: Support procurement and supply chain transactions and related legal matters across China.\n•\tRegulatory Compliance: Advise on China regulatory requirements and work with global legal and policy teams to shape Intel's compliance approach in China.\n•\tBusiness Partnership: Serve as a trusted legal advisor to one or two cross-functional teams in China (e.g. government affairs, finance), building strong relationships with functional leaders.\n•\tTraining and Awareness: Design and deliver customized, role-specific training on legal and compliance topics.\n•\tStrategic Initiatives: Contribute to team- and department-wide projects and priorities.<h2><b>Qualifications:</b></h2><p>Minimum Qualifications: <br />•\tLicensed to practice law in China.<br />•\t8+ years of post-qualification experience (PQE), with demonstrated legal drafting and project management skills.<br />•\tPrior in-house legal experience at a multinational company.<br />•\tDemonstrated experience supporting sales or commercial teams, with the ability to build credibility with business leaders.<br />•\tStrong commercial judgment and comfort with financial and business metrics.<br />•\tStrong communication and stakeholder management skills.<br />•\tAbility to work independently in a fast-paced, dynamic environment.<br />•\tFull professional fluency in English. <br />Preferred:<br />•\tLicensed to practice law in the United States.•\t</p><p>•\tPrior experience in the technology industry.<br />•\tDepth in one or more of the following: China cybersecurity and data privacy, China trade compliance regimes, or antitrust and competition law.<br />•\tWorking knowledge of U.S. export control and sanctions laws.<br />•\tPrior in-house experience supporting manufacturing or factory operations.<br />•\tProficiency with AI tools in a legal work context.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (China)<h2>Primary Location: </h2>PRC, Beijing<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/PRC-Beijing/Senior-Legal-Counsel--China_JR0289530-1",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0289541",
     "slug": "intel-logic-design-team-lead-manager-jr0289541",
     "company": "intel",
@@ -9909,6 +10152,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:intel:JR0289543",
+    "slug": "intel-senior-timing-signoff-engineer-sta-lead-jr0289543",
+    "company": "intel",
+    "title": "Senior Timing Signoff Engineer (STA Lead)",
+    "locations": [
+      "India, Bangalore"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2><p><b>The Role and Impact </b><br />As a Senior STA Signoff Engineer, you will play a critical role in delivering high-performance, low-power custom IP and SoC designs, enabling Intel's cutting-edge technological advancements. Your responsibilities will include but not limited to leading and executing Fullchip/subsystem Static Timing analysis and Signoff, Design convergence to meet the PPA targets, Tape-out audits, Constraints development and management, timing correlation against silicon learnings . By applying your expertise in advanced methodologies during execution, you will contribute directly to the success of Intel's products, driving innovation in the semiconductor industry.<br /><b><br />Business group </b><br />You will be joining Intel's Central Engineering Group (CEG), which focuses on the development and implementation of silicon design solutions for Intel products and custom ASIC customers. This group plays a pivotal role in enabling Intel's technological leadership by delivering scalable, energy-efficient designs and fostering innovation across domains. With a collaborative and forward-thinking culture, the team is integral to Intel's mission of creating world-class semiconductor solutions.<br /><b><br />Key Responsibilities </b><br />- Perform STA analysis and timing/leakage ECO Convergence cycles for subsystem/Fullchip for the SOC designs. <br />- Execute timing analysis, power distribution optimization, and noise glitch/signal integrity analysis to meet design specifications. <br />- Analyze design results, identify violations, and recommend fixes to improve physical design convergence. <br />- Optimize timing, clock tree, and other design aspects to enhance power, frequency, and area parameters. <br />- Collaborate with PD teams to drive signoff closure for tapeout and meet IP technical and delivery requirements. <br />- Innovate and develop integration methodologies and flows to address challenges in timing, signal integrity, power performance, and noise reduction. <br />- Partner with cross-functional teams and external vendors to continuously improve timing signoff methodologies and tools.</p><h2><b>Qualifications:</b></h2><p><b>Minimum Qualifications </b><br />- Bachelor's degree in Electronics and Communication, Electrical and Electronics, or a related field with 10+ years OR Master's degree in VLSI with 8+ years of relevant experience in timing signoff domain.<br />- Deep expertise in static timing analysis (STA) setup, convergence methodology, and sign-off for multi-mode, multi-corner, multi-voltage domain designs at Subsystem and Fullchip level.<br />- Strong experience in timing ECO implementation strategy to converge the Fullchip timing.<br />- Advanced knowledge of clock tree synthesis, DCD analysis and multi-power domain timing analysis. <br />- Familiarity with constraint development, LVF/POCV/moment variation formats, and deep sub-micron technologies (28nm and below). <br />- Hands-on experience with industry-standard EDA tools such as Primetime, Tempus, PrimeClosure, Certus, PrimeYield etc. <br /><br /><b>Preferred Qualifications </b><br />- Proficiency in RTL-to-GDS workflows, including synthesis, placement, routing, static timing analysis, and verification methodologies. <br />- Hands-on experience with scripting languages like TCL, Shell, Perl, and Python. <br />- Analytical mindset with excellent interpersonal and stakeholder management skills. <br />- Demonstrated ability to work independently and at various levels of abstraction. <br />- Expertise in design optimization techniques for power, performance, and area (PPA). <br />- Collaborative mindset and ability to thrive in a dynamic, fast-paced environment. <br /><br />We invite you to bring your expertise and passion for innovation to Intel, where you can make a meaningful impact in advancing semiconductor technology through cutting-edge design methodologies.</p><h2>Job Type:</h2>Experienced Hire<h2>Shift:</h2>Shift 1 (India)<h2>Primary Location: </h2>India, Bangalore<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<p><b>Work Model for this Role</b></p>This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site. * Job posting details (such as work model, location or time type) are subject to change.<p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/India-Bangalore/Senior-Timing-Signoff-Engineer--STA-Lead-_JR0289543",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:intel:JR0289549",
     "slug": "intel-logic-design-engineering-graduate-intern-spe-iscp-sfd-domain42-jr0289549",
     "company": "intel",
@@ -9922,6 +10181,24 @@
     "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Logic-Design-Engineering-Graduate-Intern---SPE-ISCP-SFD-Domain42_JR0289549",
     "postedAt": "2026-11-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
+    "source": "workday"
+  },
+  {
+    "id": "workday:intel:JR0289668",
+    "slug": "intel-module-engineer-within-test-engineering-department-jr0289668",
+    "company": "intel",
+    "title": "Module Engineer within Test Engineering Department",
+    "locations": [
+      "Vietnam, Ho_Chi_Minh_City"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<h2><b>Job Details:</b></h2><h2>Job Description: </h2>The Role and Impact \nAs a Module Engineer, you will play a pivotal role in managing and optimizing high-volume manufacturing equipment and processes that enable the production of advanced integrated circuits. You will conduct thorough tests, recommend and implement improvements, and support technology transfers to ensure manufacturing excellence. Your contributions will drive device miniaturization, enhance product quality, and boost the production efficiency of Intel's cutting-edge technologies.\n\nBusiness Group \nIntel Corporation's Assembly Engineering group is dedicated to enabling world-class semiconductor manufacturing through innovative technology development and high-volume production. The team focuses on advancing manufacturing processes, supporting technology transfers, and contributing to Intel's mission of creating world-changing technology that improves lives globally.\n\nKey Responsibilities \n- Manage critical high-volume manufacturing equipment and processes to support device miniaturization and integrated circuit production. \n- Conduct tests and measurements to ensure control over critical dimensions and defectivity within the production line. \n- Implement modifications to optimize production techniques and improve manufacturing efficiencies. \n- Execute maintenance and repair activities for equipment and relevant module components. \n- Drive continuous improvement initiatives focusing on safety, quality, cost, productivity, and yield metrics. \n- Collaborate with equipment suppliers to resolve technical issues and implement improvements. \n- Develop and optimize systems to prevent excursions and detect discrepancies in materials and equipment processes. \n- Participate in technology transfer activities to ensure consistent processing standards across global manufacturing sites. \n- Lead equipment installation, conversion, and qualification during factory ramps, ensuring safety, quality, and schedule adherence.<h2><b>Qualifications:</b></h2>Minimum Qualifications \n- Bachelor's degree in Electronics, Electrical, Automation Control, or other relevant engineering fields, with 0-1 years of hands-on experience in domain gained through internships, academic projects, coursework, or hands-on training; OR a Master's degree in relevant fields with no prior professional experience. \n- Knowledge of schematic/electronic circuitry interpretation. \n- Proficiency in using MS Office applications, including Outlook, Excel, Word, and PowerPoint. \n- Willingness to work onsite in a 12-hour rotational shift pattern, 4 days per week, as required by business needs. \n\nPreferred Qualifications \n- Experience with data analysis using programming languages such as SQL, Python, or R. \n- Familiarity with industry-standard Tester and Handler Equipment (ATE) and Test Programs. \n- Strong problem-solving skills and attention to detail. \n- Ability to work collaboratively within team-oriented environments. \n- Prior experience in the semiconductor industry or high-volume manufacturing settings is an advantage. \n\nJoin our team to contribute to groundbreaking innovations, collaborate globally, and grow personally and professionally. Your role will be integral to advancing Intel's manufacturing capabilities and shaping the future of technology.<h2>Job Type:</h2>College Grad<h2><b>Shift:</b></h2>Shift 1 (Vietnam)<h2>Primary Location: </h2>Vietnam, Ho_Chi_Minh_City<h2>Additional Locations:</h2><h2>Posting Statement:</h2>All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.<h2>Position of Trust</h2>N/A<h2><b>Work Model for this Role</b></h2>This role will require an on-site presence. * Job posting details (such as work model, location or time type) are subject to change.<h2><b>Privacy Statement:</b></h2><p>Your privacy matters to Intel and we comply with applicable data protection laws. We collect and maintain personal information for recruitment related activities and your data will not be used for any other purpose. We retain personal information for the periods and purposes set forth in <a href=\"https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html\">Intel Privacy Notice</a>. Retention periods can vary significantly based on the type of information and how it is used. We do not share your personal information with third parties. </p><p>In order for Intel to communicate with you on your application results, by submitting your information and proceeding with this application, you agree and consent that we can collect your personal information. You will have the ability to opt-out by informing <a href=\"https://intel.smashfly.com/Admin/Contacts/vietnamjobs@intel.com\">vietnamjobs@intel.com</a>  or at any time selecting unsubscribe found at the bottom of our future marketing communications. You have rights to correct, update, request access to or deletion of your personal information as described in <a href=\"https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html\">Intel Privacy Notice. </a> In addition, if you wish to update or otherwise make changes to your resume, use <a href=\"https://intel.wd1.myworkdayjobs.com/External\">Intel online application tool</a> to resubmit a new resume. </p><p>*</p>ADDITIONAL INFORMATION:  Intel is committed to Responsible Business Alliance (RBA) compliance and ethical hiring practices. We do not charge any fees during our hiring process. Candidates should never be required to pay recruitment fees, medical examination fees, or any other charges as a condition of employment. If you are asked to pay any fees during our hiring process, please report this immediately to your recruiter.",
+    "applyUrl": "https://intel.wd1.myworkdayjobs.com/External/job/Vietnam-Ho_Chi_Minh_City/Module-Engineer-within-Test-Engineering-Department_JR0289668",
+    "postedAt": "2026-11-25T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "workday"
   }
 ]

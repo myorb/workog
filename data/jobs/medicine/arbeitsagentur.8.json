@@ -1037,8 +1037,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1207143914-S",
     "postedAt": "2026-07-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1846,7 +1844,7 @@
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3172,7 +3170,7 @@
     "postedAt": "2026-04-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -3281,15 +3279,15 @@
     "title": "Facharzt (m/w/d) für Psychiatrie und Psychotherapie",
     "locations": [
       "Leipzig, Sachsen, Germany",
-      "Hannover, Niedersachsen, Germany",
       "Bielefeld, Nordrhein-Westfalen, Germany",
-      "Berlin, Berlin, Germany",
+      "Köln, Nordrhein-Westfalen, Germany",
       "Göttingen, Niedersachsen, Germany",
+      "Bremen, Bremen, Germany",
+      "Rostock, Mecklenburg-Vorpommern, Germany",
+      "Berlin, Berlin, Germany",
       "Hamburg, Hamburg, Germany",
       "Erfurt, Thüringen, Germany",
-      "Rostock, Mecklenburg-Vorpommern, Germany",
-      "Köln, Nordrhein-Westfalen, Germany",
-      "Bremen, Bremen, Germany"
+      "Hannover, Niedersachsen, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
@@ -4982,7 +4980,7 @@
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -5318,6 +5316,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004046426-S",
     "postedAt": "2026-11-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1004060048-S",
+    "slug": "hygieia-net-leipzig-gmbh-facharzt-arztin-psychiatrie-und-psychotherapie-m-w-d-10001-1004060048-s",
+    "company": "arbeitsagentur",
+    "employer": "hygieia.net LEIPZIG GmbH",
+    "title": "Facharzt/-ärztin - Psychiatrie und Psychotherapie (m/w/d)",
+    "locations": [
+      "Leipzig, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Psychiatrie und Psychotherapie",
+    "category": "medicine",
+    "specialty": "psychiatry",
+    "level": "specialist",
+    "descriptionHtml": "<p>Die HYGIEIA-Gruppe ist ein überregionales Gesundheitsnetz für Neurologie, Psychiatrie, Psychotherapie und angrenzende Fachbereiche mit Standorten in Leipzig, Chemnitz und der Region Mittelsachsen. Wir versorgen an allen Standorten und in über 60 Pflegeheimen mehr als 13.500 Patienten. Ergänzt wird unser Leistungsspektrum durch interdisziplinäre psychiatrische Versorgungsangebote sowie neue und alternative Behandlungsverfahren.</p><p>Dein Aufgabengebiet umfasst die Diagnose, Behandlung und Erforschung von psychischen Erkrankungen unserer Patienten.</p><p>Gewünscht wird eine menschlich aufgeschlossene, patientenorientierte Persönlichkeit mit Freude an selbständiger Arbeit und der Bereitschaft, Innovationen einzubringen und an der Weiterentwicklung des Versorgungszentrums mitzuwirken.</p><p>Geboten werden Motivation und Perspektiven durch ein sehr angenehmes Betriebsklima und gute Arbeitsatmosphäre mit Umsetzung des Arbeitszeitgesetzes (das Arbeitsverhältnis ist auch in Teilzeit möglich) sowie selbständiges Arbeiten in einem harmonischen Team.</p><p>Folgende Voraussetzungen solltest du mitbringen:</p><ul><li>erfolgreich abgeschlossenes Studium der Medizin</li><li>Approbation als Arzt</li><li>erfolgreiche Ausbildung zum Facharzt für Psychiatrie und Psychotherapie</li></ul><p>Das bieten wir:</p><ul><li>Möglichkeit zur Teilzeitbeschäftigung mit 30 Std./Woche (ideal zum Wiedereinstieg nach der Elternzeit)</li><li>attraktive Vergütungsmodelle</li><li>Umsatzbeteiligung</li><li>30 Tage Urlaub im Jahr</li><li>5 Weiterbildungstage zum Nachkommen der Weiterbildungsverpflichtung</li><li>zusätzliche Betriebsruhe zwischen Weihnachten und Neujahr</li><li>keine Teilnahme am organisierten Notdienst und/oder Wochenenddiensten</li></ul><p>Beginn der Tätigkeit: nach Absprache</p><p>Haben wir dein Interesse geweckt? Dann freuen wir uns auf deine Bewerbung.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004060048-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6306,6 +6324,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/30205b8c-fa43-3b0e-b587-d1067260664f",
     "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6324,6 +6344,8 @@
     "applyUrl": "https://jobs.ams.at/public/emps/jobs/8a16522a-5d8a-35e5-8a55-1788681bf974",
     "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6549,6 +6571,40 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:11949-17429734-S",
+    "slug": "a-o-krankenhaus-st-josef-braunau-gmbh-arzt-arztin-11949-17429734-s",
+    "company": "arbeitsagentur",
+    "employer": "A. ö. Krankenhaus St. Josef Braunau GmbH",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Abteilung:</p><p>Unsere Klinik für Psychische Gesundheit:</p><ul><li>ist eine Abteilung für Psychiatrie und Psychotherapie an einem allgemeinen öffentlichen Krankenhaus</li><li>verfügt über 60 Betten, zwei Tageskliniken (eine am Standort Braunau und eine am Standort Schärding) und eine Ambulanz</li><li>psychiatrische Vollversorgung für die gesamte Region des Innviertels</li><li>sozialpsychiatrische und psychotherapeutische Ausrichtung</li><li>Substitutionsambulanz für drogenabhängige Patient:innen</li><li>enge Zusammenarbeit mit den Fachabteilungen des Krankenhauses und Vernetzung mit den komplementären Einrichtungen der Region</li></ul><p>Das bringen Sie mit:</p><ul><li>abgeschlossene Ausbildung in der Allgemeinmedizin in Österreich oder anerkannte Nostrifizierung (bei ausländischem Abschluss aus nicht EU-Land) bzw. EU-Konformitätsbescheinigung</li></ul><p>Ergänzend wünschen wir uns:<br />* eine innovative und engagierte Persönlichkeit, die eigene Ideen und Vorstellungen mit viel Teamgeist bei uns einbringt<br />* Interesse an weitgefächerten medizinischen Fragestellungen</p><p>Wir bieten</p><ul><li>Teilzeit</li><li>ab sofort</li><li>ein vielfältiges, anspruchsvolles Aufgabengebiet</li><li>bezahlte Fortbildungstage, finanzielle Unterstützung bei Fortbildungen und vielfältige Entwicklungsmöglichkeiten</li><li>umfangreiche Sozialleistungen (z.B. ganzjährige Kinderbetreuung \"rund um die Uhr\", Kantine, etc.)</li><li>eine wertschätzende Kommunikations- und Informationskultur zwischen Mitarbeiter:innen und Führungskräfte</li><li>Jahresbruttogehalt nach ÄrzteKV der OÖ Ordensspitäler - jährlich bei Vollzeit mind. € 114.900 Bruttobezug (in diesem Betrag sind Dienstabgeltungen inkludiert; je nach anrechenbaren Vordienstzeiten ist ein höheres Einstiegsgehalt möglich)</li></ul><p>Unser Angebot an Sie:<br />* Kinderbetreuung<br />* Flexible Arbeitszeiten<br />* Verpflegung<br />* Betriebsärztlicher Dienst<br />* Jägerstätterpark<br />* Arbeitspsychologische Betreuung<br />* Dienstkleidung und Dienstzimmer<br />* gut versichert<br />* Fitnessangebote<br />* Supervision und Coaching<br />* Fort- und Weiterbildung<br />* rund herum<br />* Zukunftsideen<br />* Einkaufsrabatte</p><p>Weitere Informationen durch Frau Prim. Dr. Doris Kogler - Leitung der Klinik für Psychische Gesundheit,<br />Tel. +43 7722 804-7750</p><p>Etwaige anfallende Kosten, welche im Zuge der Einladung des persönlichen Bewerbungsgespräches im Krankenhaus St. Josef Braunau entstehen, werden nicht übernommen.</p><p>https://karriere.khbr.at/jobposting/7233a6260d8ab00b4c9b269ed03c4f0e0edc766c0?ref=krankenhaus-homepage</p><p>Kontakt<br />A.ö. Krankenhaus St. Josef Braunau GmbH<br />Ringstraße 60<br />5280 Braunau am Inn<br />+43 7722 / 804 8064</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/25dd0b39-3843-317d-a441-d24d1e95e194",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:11949-17430718-S",
+    "slug": "klinikum-wels-grieskirchen-gmbh-facharzt-arztin-kinder-und-jugendmedizin-11949-17430718-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Wels-Grieskirchen GmbH",
+    "title": "Facharzt/-ärztin - Kinder- und Jugendmedizin",
+    "locations": [],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendmedizin",
+    "category": "medicine",
+    "specialty": "paediatrics",
+    "level": "specialist",
+    "descriptionHtml": "<p>Standort: Wels | Arbeitszeit: Vollzeit oder Teilzeit | Dienstbeginn: nach Vereinbarung</p><p>Bei uns übernehmen Sie:<br />* Betreuung von Früh- und Neugeborenen im Kreißsaal, auf der Neonatologie sowie ggf. auf der neonatologischen Intensivstation<br />* Versorgung von Risikoneugeborenen inkl. Erstversorgung und Stabilisierung<br />* Durchführung und Interpretation diagnostischer Maßnahmen im neonatologischen Setting<br />* Enge Zusammenarbeit mit der Geburtshilfe (Perinatalzentrum) sowie mit Anästhesie, Intensivmedizin und weiteren Fachabteilungen<br />* Teilnahme am neonatologischen Dienstrad<br />* Anleitung und Supervision von Ärzt:innen in Ausbildung sowie Mitwirkung an Fortbildungen<br />* Weiterentwicklung von Behandlungsstandards und Qualitätsprozessen in der Neonatologie</p><p>Was Sie mitbringen:<br />* Abgeschlossene Facharztausbildung für Kinder- und Jugendheilkunde<br />* Idealerweise Zusatzqualifikation oder fundierte Erfahrung in der Neonatologie<br />* Erfahrung in der Versorgung von Frühgeborenen und kritisch kranken Neugeborenen von Vorteil<br />* Hohe soziale Kompetenz und Einfühlungsvermögen im Umgang mit Eltern und Angehörigen<br />* Teamfähigkeit sowie Freude an interdisziplinärer Zusammenarbeit<br />* Engagement, Verantwortungsbewusstsein und Bereitschaft zur kontinuierlichen Weiterbildung</p><p>Für fachliche Fragen steht Ihnen Herr Prim. Prof. Dr. Walter Bonfig Tel.: 07242/415 - 2377, walter.bonfig@klinikum-wegr.at gerne zur Verfügung.</p><p>Gehalt &amp; Benefits<br />€ 100.337.-<br />Gemäß den gesetzlichen Bestimmungen weisen wir darauf hin, dass das kollektivvertragliche Mindestgehalt für diese Position - unter der Annahme, dass kein Turnus absolviert wurde - € 100.337,00 brutto pro Jahr auf Vollzeitbasis beträgt. Die tatsächliche Vergütung wird entsprechend Ihrer Qualifikation und Berufserfahrung individuell festgelegt und kann sich durch variable Nebengebühren, Dienste, Überstunden sowie Sonderklassegebühren erhöhen.</p><p>Ihre Ansprechperson:<br />Mag. Julia Richler<br />+43 7242 415 - 94001<br />julia.richler@klinikum-wegr.at</p><p>Jetzt bewerben:<br />https://karriere.klinikum-wegr.at/Job/3021</p><p>Alle freien Stellen für Ärztinnen und Ärzte finden Sie unter:<br />https://karriere.klinikum-wegr.at/jobs?jobProfiles=%C3%84rzte</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/91363777-5eed-3c47-93db-dc3f2b22b642",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11956-2537881793919601-S",
     "slug": "sachsisches-krankenhaus-altscherbitz-schkeuditz-sachsisches-krankenhaus-altscherbitz-schkeuditz-facharzt-m-w-d-psychiatrie-und-p-11956-2537881793919601-s",
     "company": "arbeitsagentur",
@@ -6753,7 +6809,7 @@
     "postedAt": "2026-11-03T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -6935,8 +6991,6 @@
     "applyUrl": "https://gute-jobs.de/viewjob-8da7d?utm_source=jsba-premium&utm_medium=n-a&utm_campaign=jsba-premium&utm_term=famulatur-orthopadie-traumatologie-m-w-d",
     "postedAt": "2026-06-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -7037,6 +7091,26 @@
     "applyUrl": "https://gute-jobs.de/viewjob-f79w9?utm_source=jsba-premium&utm_medium=n-a&utm_campaign=jsba-premium&utm_term=facharzt-augenheilkunde-praxis-w-m-d-region-sudthuringen",
     "postedAt": "2026-07-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:12336-a26f930j0455311-S",
+    "slug": "srh-oberarzt-fur-innere-medizin-angiologie-w-m-d-12336-a26f930j0455311-s",
+    "company": "arbeitsagentur",
+    "employer": "SRH",
+    "title": "Oberarzt für Innere Medizin / Angiologie w|m|d",
+    "locations": [
+      "Gera, Thüringen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin und Angiologie",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>Gesucht wird ein **Oberarzt** für **Innere Medizin / Angiologie** zur selbständigen Durchführung diagnostischer und therapeutischer Maßnahmen sowie interdisziplinären Zusammenarbeit mit Gefäßchirurgie und Radiologie. Voraussetzung: **Facharztanerkennung** mit Schwerpunkt **Angiologie** und fundierte klinische Erfahrung.</p>",
+    "applyUrl": "https://gute-jobs.de/viewjob-xhs3p?utm_source=jsba-premium&utm_medium=n-a&utm_campaign=jsba-premium&utm_term=oberarzt-fur-innere-medizin-angiologie-w-m-d",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -8461,6 +8535,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Assistenzarzt-D-Psychiatrie-Und-Psychotherapie-1197292?cp=BA",
     "postedAt": "2026-09-02T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -8912,7 +8988,7 @@
     "postedAt": "2026-10-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9278,6 +9354,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12811-2384766-S",
+    "slug": "universitatsklinikum-gie-en-zahnmedizinische-fachangestellte-mund-kiefer-und-gesichtschirurgie-universitatsk-12811-2384766-s",
+    "company": "arbeitsagentur",
+    "employer": "Universitätsklinikum Gießen",
+    "title": "Zahnmedizinische Fachangestellte Mund-, Kiefer- und Gesichtschirurgie - ..., Universitätsklinikum…",
+    "locations": [
+      "Gießen, Lahn, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Mund-Kiefer-Gesichtschirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>INNOVATIV, FAMILIENFREUNDLICH, NAH AM PATIENTEN Das Universitätsklinikum Gießen und Marburg (UKGM) stellt mit rund 10.000 Mitarbeiter:innen an beiden Standorten die Versorgung unserer jährlich 500.000 Patient:innen auf höchstem medizinischen und pflegerischen Niveau sicher.   Am Standort Gießen suchen wir ab sofort   für die Mund-, Kiefer- und Gesichtschirurgie einen   Zahnmedizinischen Fachangestellten - ZFA (m/w/d)   für eine befristete Einstellung in Vollzeit. (Schwangerschaftsvertretung + Erziehungsurlaub)   Das Tätigkeitsfeld umfasst: Anmeldung Behandlungsassistenz Allgemeine Patientenverwaltung Terminvergabe Vorbereitung und Organisation von Anästhesie- und OP-Terminen Instrumenten- und Gerätepflege sowie dazugehörige Materialverwaltung patientenbezogene Labortätigkeit wie z. B. digitale Abformung Dein Profil: Abgeschlossene Ausbildung zur Zahnmedizinischen Fachangestellten Sehr gute Deutschkenntnisse Gute Kenntnisse und Erfahrungen im Umgang mit den gängigen Computerprogrammen und den üblichen Kommunikationsmitteln Organisatorische Fähigkeiten Bereitschaft zur Arbeit im Team Wir bieten Dir: Eine vielseitige Aufgabe an einem zukunftssicheren Arbeitsplatz bei einem zertifiziert familienfreundlichen Arbeitgeber 38,5 Stunden in einer 5-Tage-Woche Umfangreiches Weiterbildungsangebot in unserem Bildungszentrum Eine strukturierte und individuell angepasste Einarbeitung im Team Arbeiten in einem sympathischen Team mit moderner Führungsstruktur Jährliche Ergebnisbeteiligung RMV-Jobticket 30 Tage Urlaub Möglichkeit zur Anschaffung eines Jobbikes über Entgeltumwandlung Betriebliches Gesundheitsmanagement Kindertagesstätte am Klinikum   Die Vergütung erfolgt nach den Tarifverträgen für das UKGM. Vergütungsgruppe: 5 - 9 Informationen zur Vergütung und Zulagen sind zu finden unter: https://www.ukgm.de/ugm_2/deu/ugm_ugi/64410.html     Gerne steht Ihnen Frau Braun unter der Telefonnummer 0641/985-46275 für weitere Auskünfte zur Verfügung.                               WIR FREUEN UNS AUF IHRE BEWERBUNG!   Für Ihre Bewerbung sollten Sie ausschließlich unser digitales Bewerberportal nutzen. Bewerbungen, die uns per Email oder per Post erreichen, werden von uns in die mit dem Bewerberportal verbundene Bewerbermanagementseite überführt (gehostet bei rexx systems GmbH). Falls Sie damit nicht einverstanden sind, sollten Sie von einer Bewerbung absehen. Die zugesandten Unterlagen werden nach Überführung ins Bewerberportal unverzüglich datenschutzgerecht entsorgt. Nach Ablauf der vorgesehenen Fristen (siehe Datenschutz) werden auch die Daten im Bewerberportal gelöscht.</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Zahnmedizinische-Fachangestellte-Mund-Kiefer-Und-G-1341945?cp=BA",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12908-064686449-S",
     "slug": "kirinus-health-gmbh-facharzt-m-w-d-fur-innere-medizin-klinik-am-wendelstein-12908-064686449-s",
     "company": "arbeitsagentur",
@@ -9585,6 +9681,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/57ab4580-c702-4eba-96a8-acf9f32e4f2b?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9605,6 +9703,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/081fb278-4351-4904-82be-504db0e35aff?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9625,6 +9725,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/82ebc623-c412-4db5-b7bd-6a303b03f871?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-08-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9814,7 +9916,7 @@
     "title": "Assistenzarzt (m/w/d) Allgemein-, Viszeral-, und Tumorchirurgie",
     "locations": [],
     "remote": false,
-    "department": "Arzt/Ärztin",
+    "department": "Assistenzarzt/-ärztin",
     "category": "medicine",
     "specialty": "surgery",
     "level": "resident",
@@ -9964,6 +10066,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/df4df135-f507-4fab-8382-90bb4e69872d?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10821,6 +10925,8 @@
     "applyUrl": "https://www.jobexport.de/job/5282682.html?exp=81&cid=473756b9-d64e-4d41-a8c3-7bb3e5c3f3cb",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10924,6 +11030,8 @@
     "applyUrl": "https://www.jobexport.de/job/5282686.html?exp=81&cid=f440ebdd-c075-4280-8e8c-6aa00a04ac83",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -11420,7 +11528,7 @@
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11778,6 +11886,8 @@
     "applyUrl": "https://www.valmedi.de/job/oberarzt-pneumologie-m-w-d-147508/itzehoe?utm_source=arbeitsagentur",
     "postedAt": "2026-08-11T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12491,6 +12601,26 @@
     "applyUrl": "https://www.job.fish/heyrecruit/148482_2395_6aff67cdce206?utm_campaign=heyrecruit-multiposting&utm_source=bundesagentur&utm_medium=kostenloses-multiposting",
     "postedAt": "2026-11-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14922-148594-S",
+    "slug": "hb-pro-oberarzt-palliativmedizin-m-w-d-14922-148594-s",
+    "company": "arbeitsagentur",
+    "employer": "HB-Pro",
+    "title": "Oberarzt Palliativmedizin (m/w/d)",
+    "locations": [
+      "Bad Hersfeld, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "senior",
+    "descriptionHtml": "<p>Healthbridge GmbH Professional Recruiting</p><p>Für eine Klinik mit einem breiten medizinischen Leistungsspektrum im Raum Bad Hersfeld suchen wir zum nächstmöglichen Zeitpunkt einen Oberarzt (m/w/d) für die Palliativmedizin.</p><p>Unser Auftraggeber bietet eine etablierte palliativmedizinische Versorgung mit einem anspruchsvollen Spektrum komplexer Krankheitsbilder. Im Mittelpunkt stehen die differenzierte Symptomtherapie, die individuelle Festlegung von Behandlungszielen und die enge Zusammenarbeit mit den beteiligten Fachdisziplinen.</p><p>Die Position bietet die Möglichkeit, palliativmedizinische Expertise auf oberärztlicher Ebene einzubringen und Patienten in einem erfahrenen multiprofessionellen Team medizinisch umfassend zu betreuen.</p><p>Ihre Aufgaben:</p><ul><li>Oberärztliche Verantwortung in der palliativmedizinischen Versorgung von Patienten mit komplexen Krankheitsverläufen</li><li>Beurteilung und Behandlung belastender Symptome unter Berücksichtigung individueller Therapieziele</li><li>Entwicklung und Anpassung patientenorientierter Behandlungskonzepte</li><li>Fachliche Begleitung des ärztlichen Teams bei anspruchsvollen palliativmedizinischen Fragestellungen</li><li>Interdisziplinäre Abstimmung bei komplexen Behandlungsentscheidungen</li><li>Ärztliche Begleitung von Patienten und Angehörigen in herausfordernden Krankheitssituationen</li></ul><p>Ihr Profil:</p><ul><li>Abgeschlossene Facharztausbildung in einem Fachgebiet mit unmittelbarer Patientenversorgung</li><li>Zusatzweiterbildung Palliativmedizin</li><li>Mehrjährige klinische Erfahrung in der stationären Palliativmedizin, idealerweise mit oberärztlicher Verantwortung</li><li>Fundierte Kenntnisse in der differenzierten Symptomtherapie und Behandlungsplanung</li><li>Sicherheit in der Kommunikation mit Patienten, Angehörigen und medizinischen Kollegen</li><li>Empathie, fachliche Souveränität und Freude an der multiprofessionellen Zusammenarbeit</li></ul><p>Ihre Perspektive:</p><ul><li>Verantwortungsvolle Oberarztposition mit einem anspruchsvollen palliativmedizinischen Behandlungsspektrum</li><li>Attraktive Arbeitszeitmodelle für eine gute Vereinbarkeit von Beruf und Privatleben</li><li>Eigenständiges ärztliches Arbeiten mit Raum für individuelle Behandlungsentscheidungen</li><li>Kollegiale Zusammenarbeit mit erfahrenen Ärzten und weiteren therapeutischen Berufsgruppen</li><li>Individuelle Fort- und Weiterbildungsmöglichkeiten mit finanzieller Unterstützung</li><li>Langfristige berufliche Perspektive in einem etablierten klinischen Umfeld</li><li>Unterstützung bei einem möglichen Wohnortwechsel</li></ul><p>Interessiert?</p><p>Sprechen Sie uns an: Frau Christiane Boissieres steht Ihnen unter der Telefonnummer 0611-69 669 522 oder per E-Mail unter cb@healthbridge.de zur Verfügung.<br />Weitere interessante Stellenangebote finden Sie auf unserer Webseite www.healthbridge.de.</p><p>Für Sie als Interessent (m/w/d) sind alle unsere Leistungen kostenfrei. Seit 14 Jahren gehören wir zu den führenden Unternehmen im Bereich der medizinischen Personalberatung. Wir sind national und international tätig und unser Team besteht aus erfahrenen medizinischen Personalberatern mit einem ausgezeichneten Netzwerk. Healthbridge arbeitet ausschließlich im verbindlichen Auftrag ihrer Kunden. (s)</p>",
+    "applyUrl": "https://www.job.fish/heyrecruit/148594_2310_6b04417326738?utm_campaign=heyrecruit-multiposting&utm_source=bundesagentur&utm_medium=kostenloses-multiposting",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13256,7 +13386,7 @@
     "postedAt": "2026-10-22T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13618,8 +13748,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16707-0066724168-S",
     "postedAt": "2026-08-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14110,6 +14238,26 @@
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-12T05:03:02.950Z",
     "closedAt": "2026-11-13T10:42:31.851Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:18024-100aR0001T205-S",
+    "slug": "klinikum-esslingen-gmbh-facharzt-m-w-d-fur-kinderchirurgie-mit-der-option-auf-eine-leitende-funktion-18024-100ar0001t205-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Esslingen GmbH",
+    "title": "Facharzt (m/w/d) für Kinderchirurgie, mit der Option auf eine leitende Funktion",
+    "locations": [
+      "Esslingen am Neckar, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Kinder- und Jugendchirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "specialist",
+    "descriptionHtml": "<p>Das Klinikum Esslingen am Neckar bietet ab Juli 2027 eine verantwortungsvolle Position (wünschenswert in Vollzeit) als Facharzt (m/w/d) für Kinderchirurgie, mit der Option auf eine leitende Funktion, je nach Eignung und Erfahrung.</p><p>Das Einbringen breit gefächerter Expertise – insbesondere die Neugeborenen-, Viszeral-, urologische und traumatologische Kinder- und Jugendchirurgie betreffend - ist im kollegial und interdisziplinär agierenden Umfeld ebenso willkommen, wie Eigeninitiative und Engagement für eine PatientInnen-Versorgung auf höchstem Niveau und die kontinuierliche Weiterentwicklung unseres Fachbereichs. Der Arbeitsalltag wie auch die Rufbereitschaft bieten vielfältige und abwechslungsreiche Anforderungen und Betätigungsfelder, wobei eine empathische Führungs- oder Kooperations- und Kommunikationsfähigkeit begrüßt werden.</p><p>Das Klinikum Esslingen am Neckar verfügt als Zentralversorger über 700 PatientInnenbetten sowie 2000 Mitarbeiter und verzeichnete im Jahr 2025 1750 Geburten. Ihm zugehörig ist die Klinik für Kinder und Jugendliche, welche sich als Perinatalzentrum I aus diversen pädiatrischen Fachrichtungen, einer Normalbettenstation, der Neonatologie, dem SPZ (SozPädiatrZentrum) und der Kinder- und Jugendchirurgie zusammensetzt. Bei einer Kapazität von 48 Stationsbetten (hiervon 16 kinder- und jugendchirurgisch) sowie 17 Neo-Betten und 10 Neo-Intensiv Betten, werden derzeit jährlich 1200 der insgesamt 3500 PatientInnen durch die Kinder- und Jugendchirurgie betreut. Deren 6 FachärztInnen verzeichnen zudem 10.000 Patientenkontakte in der Notaufnahme sowie 700 Operationen und versorgen 3400 Sprechstundenpatienten. Zusätzlich existiert mit dem Alb-Fils Klinikum Göppingen eine Kooperation in Form einer eben dort gehaltenen, wöchentlichen Sprechstunde, sowie eines wöchentlichen operativen Angebotes, um dem Einzugsgebiet des Landkreises von ungefähr 500.000 Einwohnern zu entsprechen.</p><p>Facharzt (m/w/d) für Kinderchirurgie, mit der Option auf eine leitende Funktion<br />Facharzt (m/w/d) für Kinderchirurgie, mit der Option auf eine leitende Funktion</p><p>Das ist Ihr Arbeitstag</p><ul><li>Interdisziplinäre und Kinder- und Jugendchirurgische Morgenbesprechung</li><li>Patient:innenversorgung auf Station, Notaufnahme, im Rahmen der Sprechstunden und im OP sowie Konsile an der Pädiatrie, Neonatologie und Gynäkologie, administrative Tätigkeiten</li><li>Rufbereitschaftsdienst und im Falle einer leitenden Position auch zusätzlich Hintergrunddienste („back up“)</li><li>Entwicklung und Fortführung eigener Schwerpunkte</li></ul><p>Das bringen Sie mit</p><ul><li>Abgeschlossene Facharztausbildung im Bereich für Kinderchirurgie</li><li>Fundierte operative Kenntnisse sowie breite klinische Erfahrung in der Akut- und Notfallversorgung</li><li>Einfühlsamer, altersgerechter Umgang mit Kindern und Jugendlichen sowie eine transparente, wertschätzende Kommunikation mit den Eltern und Angehörigen</li><li>Verantwortungsbewusstsein, Belastbarkeit und Freude an der interdisziplinären Teamarbeit</li><li>Idealerweise ausgeprägte organisatorische Fähigkeiten, Durchsetzungsvermögen und die Motivation, zeitnah eine leitende Position zu übernehmen</li></ul><p>Das bieten wir</p><ul><li>Arbeiten in einem hochmotivierten Team mit enger kollegialer Zusammenarbeit</li><li>Interdisziplinäre Versorgung von Kindern und Jugendlichen mit einem breiten Spektrum der Pädiatrie und Kinder- und Jugendchirurgie</li><li>Aufgeschlossenheit gegenüber eigenen und innovativen Ideen</li></ul><p>Chancengleichheit</p><p>Wir stehen für Chancengleichheit. Schwerbehinderte werden bei gleicher Eignung vorrangig eingestellt.</p><p>Ihre Benefits</p><ul><li>Zuschuss Bus und Bahn</li><li>Zahlreiche Mitarbeiterrabatte bei verschiedenen Unternehmen</li><li>Jobrad</li><li>Fitnessangebote für Mitarbeitende (z.B. Gerätetraining)</li><li>Familienunterstützung (Zertifikat Beruf und Familie)</li><li>Attraktives Ideenmanagement</li></ul><p>Kontakt für fachliche Fragen</p><p>Dr. med. univ. Stefan Ladstätter<br />Leitender Arzt der Kinder- und Jugendchirurgie<br />Tel.: 0711 3103 83600</p>",
+    "applyUrl": "https://helixjobs.com/_/jobad?prj=2259p5644&source=ba",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14947,6 +15095,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:20250-16982156-S",
+    "slug": "davita-deutschland-ag-weiterbildungsassistent-nephrologie-m-w-d-iserlohn-20250-16982156-s",
+    "company": "arbeitsagentur",
+    "employer": "DaVita Deutschland AG",
+    "title": "Weiterbildungsassistent Nephrologie (m/w/d) – Iserlohn",
+    "locations": [
+      "Iserlohn, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Weiterbildungsassistent/in (Arzt/Ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "resident",
+    "descriptionHtml": "<p>Das klingt nach dir und du bist bereit durchzustarten? Komm ins #TeamDaVita</p><p>Bewirb dich direkt hier mit nur wenigen Klicks.</p><p>Wir freuen uns Dich kennen zu lernen!</p><p>07451 - Iserlohn</p><p>als</p><p>Weiterbildungsassistent Nephrologie (m/w/d) – Iserlohn</p><p>Du suchst ein Umfeld, in dem deine Persönlichkeit, deine Ideen und dein Engagement wirklich zählen? Dann werde Teil von DaVita.</p><p>**Bei DaVita lernst du die ambulante Nephrologie in ihrer fachlichen Breite kennen und legst den Grundstein für deine weitere berufliche Entwicklung.**</p><p>Du begleitest Patientinnen mit chronischen Nierenerkrankungen langfristig über verschiedene Krankheits- und Therapiephasen hinweg und erhältst Einblicke in das gesamte ambulante nephrologische Spektrum. Dabei arbeitest du eng mit erfahrenen Fachärztinnen und einem interdisziplinären Team zusammen und wirst schrittweise an eigenverantwortliches ärztliches Arbeiten herangeführt.</p><p>## #Arbeiten bei DaVita: Das erwartet dich</p><ul><li>Du arbeitest in der ambulanten nephrologischen Sprechstunde mit und lernst, Patient\\*innen mit chronischen Nierenerkrankungen über verschiedene Krankheits- und Therapiephasen hinweg zu betreuen.</li></ul><ul><li>Schritt für Schritt entwickelst du deine fachliche Kompetenz in der Diagnostik, Therapieplanung und ambulanten Versorgung weiter. Dabei wächst deine Eigenverantwortung entsprechend deinem Weiterbildungsstand und stets unter fachärztlicher Supervision.</li></ul><ul><li>Du begleitest Dialysevisiten und lernst die gängigen nephrologischen Therapieverfahren sowie die konservative Nephrologie in der täglichen Praxis kennen.</li></ul><ul><li>Im Austausch mit deinem ärztlichen, pflegerischen und administrativen Team erlebst du, wie interdisziplinäre Zusammenarbeit zu einer hochwertigen ambulanten Patientenversorgung beiträgt.</li></ul><ul><li>Erfahrene Fachärzt\\*innen begleiten dich persönlich auf deinem Weiterbildungsweg und unterstützen dich dabei, deine fachlichen und persönlichen Kompetenzen kontinuierlich weiterzuentwickeln.</li></ul><ul><li>Als Teil unseres deutschlandweiten ärztlichen Netzwerks profitierst du zusätzlich vom fachlichen Austausch und den Erfahrungen erfahrener Kolleg\\*innen aus unseren Zentren.</li></ul><p>## #TeamDaVita: Das bringst du mit</p><ul><li>Du verfügst über eine deutsche Approbation und möchtest deine Weiterbildung im Bereich Innere Medizin und Nephrologie fortsetzen.</li></ul><ul><li>Idealerweise hast du bereits erste Erfahrungen im stationären Bereich gesammelt und möchtest deine Weiterbildung im ambulanten Bereich ergänzen. Bewerbungen von Ärzt\\*innen in unterschiedlichen Phasen ihrer Weiterbildung sind bei uns ebenfalls willkommen. Gemeinsam schauen wir, welcher Einstieg zu deinem Weiterbildungsstand passt.</li></ul><ul><li>Du arbeitest strukturiert, lernbereit und verantwortungsbewusst.</li></ul><ul><li>Du schätzt den interdisziplinären und kollegialen Austausch und hast Freude daran, dich fachlich und persönlich weiterzuentwickeln.</li></ul><ul><li>Du verfügst über Deutschkenntnisse auf mindestens B2-Niveau sowie über einen Wohnsitz oder eine gültige Arbeitserlaubnis in Deutschland.</li></ul><p>## #Warum DaVita?</p><p>**Medizin mit Rückhalt**</p><p>Du bist nicht allein. Unsere zentralen Fachbereiche unterstützen dich bei medizinischen, organisatorischen, wirtschaftlichen und qualitätsrelevanten Fragestellungen. Gleichzeitig arbeitest du in einem ärztlich geführten sowie hersteller- und produktunabhängigen Umfeld, in dem medizinische Entscheidungen am Bedarf deiner Patient\\*innen ausgerichtet sind. So kannst du dich auf das konzentrieren, was zählt: eine hochwertige ambulante Versorgung.</p><p>**Ambulante Weiterbildung &amp; Iserlohn**</p><p>Unsere Zentrum Iserlohn verbindet konservative Nephrologie, ambulante Facharztversorgung, Hämodialyse, Peritonealdialyse, Heimdialyseverfahren und weitere spezialisierte Angebote. Dadurch begleitest du Patient\\*innen über längere Zeiträume, lernst unterschiedliche Krankheitsbilder und Therapieverläufe kennen und entwickelst ein umfassendes Verständnis der ambulanten nephrologischen Versorgung.</p><p>**Starkes medizinisches Netzwerk**</p><p>Mit über 140 Nephrolog\\*innen in Deutschland bist du Teil eines starken fachlichen Netzwerks. Zusätzlich profitierst du vom internationalen Austausch innerhalb der DaVita Gruppe in 14 Ländern. Gemeinsam lernen wir voneinander, teilen Erfahrungen aus der täglichen Praxis und entwickeln die ambulante nephrologische Versorgung kontinuierlich weiter.</p><p>**Fortbildung &amp; Entwicklung**</p><p>Deine Weiterbildung steht bei uns im Mittelpunkt. Erfahrene Fachärzt\\*innen begleiten dich auf deinem Weg und unterstützen dich dabei, deine fachlichen und persönlichen Kompetenzen kontinuierlich auszubauen. Über unser DaVita Bildungszentrum profitierst du zusätzlich von praxisnahen Fortbildungen und ergänzenden Lernangeboten.</p><p>Nach Abschluss deiner Weiterbildung eröffnen sich dir vielfältige Perspektiven – von der fachlichen Spezialisierung über neue Behandlungsschwerpunkte bis hin zur Übernahme zusätzlicher Verantwortung oder einer späteren Führungsrolle.</p><p>**Planbarkeit &amp; Benefits**</p><p>Ein unbefristeter Arbeitsvertrag, planbare Arbeitszeiten und verlässliche Strukturen schaffen langfristige Perspektiven. Ergänzt wird dies durch Fortbildungsurlaub, eine Dienstwagenoption (je nach Position), einen Zuschuss zur betrieblichen Altersvorsorge, Mitarbeiterrabatte sowie weitere attraktive Benefits.</p><p>Das klingt nach dir? Dann freuen wir uns darauf, dich kennenzulernen und dich auf deinem Weiterbildungsweg in der ambulanten Nephrologie zu begleiten. #TeamMedizin</p><p>## Startdatum:</p><p>01.12.2026</p><p>****Umfang:**</p><p>Teilzeit</p><p>## **Stunden/Woche:**</p><p>31</p><p>## Bring Dich bei uns mit Deinem Können ein</p><p>Sende ganz einfach Deine Bewerbungsunterlagen mit Angabe Deiner frühesten Verfügbarkeit direkt hier über das nachfolgende Formular. Solltest Du im Vorfeld Fragen haben, steht Dir unsere Zentrumsleitung telefonisch unter</p><p>+49 (2371) 149111</p><p>gern zur Verfügung.</p><p>Bei Fragen kannst du uns auch unkompliziert über WhatsApp erreichen: 0170 - 8516 707.</p><p>Wir freuen uns darauf, dich kennen zu lernen!</p><p>07451 - Iserlohn: Reiterweg 38, 58638 Iserlohn</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20250-16982156-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:20263-2311225-S",
     "slug": "median-klinik-berlin-kladow-gmbh-and-co-kg-assistenzarzt-m-w-d-neurologie-20263-2311225-s",
     "company": "arbeitsagentur",
@@ -15207,7 +15375,7 @@
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-09T11:42:23.458Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -15230,6 +15398,26 @@
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-22T05:03:35.399Z",
     "closedAt": "2026-11-24T05:03:30.764Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:21171-2384604-S",
+    "slug": "klinikum-magdeburg-ggmbh-geschaftsfuhrender-oberarzt-m-w-d-fur-plastische-asthetische-und-handchirurgie-21171-2384604-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Magdeburg gGmbH",
+    "title": "Geschäftsführender Oberarzt (m/w/d) für Plastische, Ästhetische und Handchirurgie",
+    "locations": [
+      "Magdeburg, Sachsen-Anhalt, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Neurochirurgie",
+    "category": "medicine",
+    "specialty": "surgery",
+    "level": "senior",
+    "descriptionHtml": "<p>Stellen-ID:    3953<br />Eintritt:         ab sofort<br />Umfang:       Vollzeit<br />Vertragsart:  unbefristet</p><p>Die Klinikum Magdeburg gGmbH versorgt als Maximalversorger seit nahezu 200 Jahren Patienten in und um Magdeburg. Sie verfügt über 756 Betten in 23 Fachkliniken und ist akademisches Lehrkrankenhaus der Otto-von-Guericke-Universität Magdeburg. 1.900 Mitarbeiter*innen versorgen rund 30.000 stationäre und 42.000 ambulante Patienten.</p><p>Mit unserem Team in der Klinik decken wir ein äußerst breites Spektrum der Plastischen Chirurgie, bestehend aus der rekonstruktiven, Brust-, Hand-, Verbrennungs\\- und Ästhetischen Chirurgie, ab. Somit ist die Behandlung von Folgeschäden nach Unfällen, Tumorerkrankungen oder ausgedehnten Operationen ein ebenso fest etablierter Bestandteil unserer Arbeit wie die Behandlung von Patienten mit dem Wunsch einer Formkorrektur des Körpers.</p><p>### Ihre Aufgaben</p><ul><li>**Medizinische Leitung und hochspezialisierte Patientenversorgung:** Leitung und Durchführung komplexer plastischchirurgischer Operationen inklusive Therapieplanung, interdisziplinärer Zusammenarbeit, Supervision von Kollegen sowie der Gesamtverantwortung für die Patientensicherheit</li><li>**Ärztliche Führungs\\- und Personalverantwortung:** Führung und Entwicklung des ärztlichen Personals inklusive Dienst-, Urlaubs\\- und OP-Einsatzplanung sowie die ständige medizinische, organisatorische und strategische Vertretung des Chefarztes</li><li>**Organisation und Steuerung der klinischen Prozesse:** Bereichsübergreifende Prozessoptimierung und Schnittstellenkoordination (Station, OP, Ambulanz) inklusive Kapazitätsplanung, SOP-Implementierung sowie der Funktion als Medizinproduktebeauftragter</li><li>**Weiterentwicklung des Handchirurgischen Zentrums sowie Qualitätsmanagement:** Planung des Handchirurgischen Zentrums und der Tumorkonferenzen inklusive Zertifizierungs\\- und Qualitätsmanagement, klinischem Risikomanagement sowie der Implementierung innovativer OP\\- und Therapiekonzepte</li><li>**Strategische, wirtschaftliche und strukturelle Klinikentwicklung:** Strategische Unterstützung der Klinikleitung und Chefarztvertretung bei Budget-, Investitions\\- und Ressourcenplanung sowie beim Ausbau medizinischer Leistungsangebote und der externen Netzwerkrepräsentation</li><li>**Lehre, Weiterbildung und Wissenschaft:** Verantwortung für die akademische und praktische Ausbildung von Studierenden und Assistenzärzten sowie die Organisation interner Fortbildungen und die Mitwirkung an wissenschaftlichen Projekten und Studien</li></ul><p>### Das bringen Sie mit</p><ul><li>Facharzt (w/m/d) für Plastische Chirurgie mit der Zusatzbezeichnung Handchirurgie (eine Promotion ist erwünscht)</li><li>Mehrjährige Berufs\\- und Führungserfahrung in einer leitenden Position sowie ausgeprägte Organisations\\- und Führungskompetenz</li><li>Fundierte Kenntnisse im Krankenhaus\\- und Prozessmanagement, der Gesundheitsökonomie sowie im Umgang mit den einschlägigen gesetzlichen und tariflichen Regelungen des Krankenhauswesens</li><li>Strategisches Denken, ausgeprägtes wirtschaftliches Verständnis sowie eine hohe Belastbarkeit und fundierte Entscheidungsfähigkeit</li></ul><p>### Wir bieten Ihnen<br />Neben internen und externen Fort\\- u. Weiterbildungsmöglichkeiten, einer leistungsgerechten Vergütung gemäß Haustarifvertrag in der EG IV (je nach Qualifikation und entsprechender Berufserfahrung zwischen 10.218,09 EUR und 10.920,53 EUR brutto monatlich) und einer attraktiven Altersversorgung bieten wir vor allem ein sehr interessantes und verantwortungsvolles Aufgabengebiet in einem Team, das Sie gern bei Ihrer Einarbeitung unterstützt. Ihr Arbeitsort Magdeburg ist eine lebens\\- und liebenswerte Großstadt an der Elbe für alle Generationen mit vielfältigen Kultur-, Freizeitangeboten, hervorragenden Wohnmöglichkeiten und einer sehr hohen Lebensqualität.</p><p>### Kontakt<br />Rufen Sie gern direkt beim Chefarzt, Herr Dr. med. Ibrahim an: 0391 791\\- 4901.</p><p>Sie wollen uns erstmal kennenlernen? Kommen Sie vorbei! Wir freuen uns auf Ihre Bewerbung bis zum **16.12.2026**.</p><p>Schwerbehinderte Menschen und ihnen Gleichgestellte werden bei gleicher Eignung, Befähigung und fachlicher Leistung bevorzugt berücksichtigt.</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/21171-2384604-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {

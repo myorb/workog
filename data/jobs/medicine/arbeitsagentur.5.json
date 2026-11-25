@@ -452,8 +452,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1204304685-S",
     "postedAt": "2025-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -1215,7 +1213,7 @@
     "postedAt": "2026-06-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -4039,15 +4037,15 @@
     "title": "Facharzt (m/w/d) - Innere Medizin mit mit der Zusatzbezeichnung Geriatrie",
     "locations": [
       "Göttingen, Niedersachsen, Niedersachsen, Germany",
-      "Hannover, Niedersachsen, Germany",
-      "Bielefeld, Nordrhein-Westfalen, Germany",
-      "Bremen, Bremen, Germany",
       "Dortmund, Nordrhein-Westfalen, Germany",
+      "Bremen, Bremen, Germany",
+      "Bielefeld, Nordrhein-Westfalen, Germany",
+      "Leipzig, Sachsen, Germany",
+      "Hannover, Niedersachsen, Germany",
       "Berlin, Berlin, Germany",
       "Hamburg, Hamburg, Germany",
-      "Erfurt, Thüringen, Germany",
       "Köln, Nordrhein-Westfalen, Germany",
-      "Leipzig, Sachsen, Germany"
+      "Erfurt, Thüringen, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Innere Medizin",
@@ -4714,8 +4712,6 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003510114-S",
     "postedAt": "2026-08-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5695,6 +5691,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003917245-S",
     "postedAt": "2026-10-27T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -5745,15 +5743,15 @@
     "title": "Facharzt (m/w/d) für Pneumologie",
     "locations": [
       "Hamburg, Hamburg, Germany",
-      "Kiel, Schleswig-Holstein, Germany",
-      "Bielefeld, Nordrhein-Westfalen, Germany",
-      "Kassel, Hessen, Hessen, Germany",
-      "Freiburg im Breisgau, Baden-Württemberg, Germany",
-      "Saarbrücken, Saarland, Germany",
-      "Ingolstadt, Donau, Bayern, Germany",
       "Nürnberg, Mittelfranken, Bayern, Germany",
+      "Saarbrücken, Saarland, Germany",
+      "Kassel, Hessen, Hessen, Germany",
+      "Kiel, Schleswig-Holstein, Germany",
+      "Freiburg im Breisgau, Baden-Württemberg, Germany",
+      "Bielefeld, Nordrhein-Westfalen, Germany",
       "Hannover, Niedersachsen, Germany",
-      "Regensburg, Bayern, Germany"
+      "Regensburg, Bayern, Germany",
+      "Ingolstadt, Donau, Bayern, Germany"
     ],
     "remote": false,
     "department": "Facharzt/-ärztin - Innere Medizin und Pneumologie",
@@ -6159,6 +6157,8 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004012585-S",
     "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -6406,6 +6406,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004050275-S",
     "postedAt": "2026-11-20T00:00:00.000Z",
     "firstSeenAt": "2026-11-21T05:03:24.558Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:10001-1004064539-S",
+    "slug": "amd-der-bg-bau-gmbh-facharzt-m-w-d-fur-arbeitsmedizin-oder-arzt-m-w-d-in-weiterbildung-arbeitsmedizi-10001-1004064539-s",
+    "company": "arbeitsagentur",
+    "employer": "AMD der BG BAU GmbH",
+    "title": "Facharzt (m/w/d) für Arbeitsmedizin oder Arzt (m/w/d) in Weiterbildung Arbeitsmedizin",
+    "locations": [
+      "Frankfurt am Main, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Arbeitsmedizin",
+    "category": "medicine",
+    "specialty": "occupational-medicine",
+    "level": "resident",
+    "descriptionHtml": "<p>Legen Sie Wert auf eine gute Vereinbarkeit von Familie und Beruf?<br />Wünschen Sie sich wieder mehr Zeit für ärztliche Tätigkeiten - ohne Akquise?</p><p>**Kommen Sie zu uns ins Team!**</p><p>Der AMD der BG BAU betreut bundesweit in seinen über 60 Zentren und im Außendienst die Versicherten des Bauhaupt- und Baunebengewerbes sowie große Reinigungs- und Serviceunternehmen.<br />Wir bieten unseren Beschäftigten einen sicheren Arbeitsplatz mit Zukunftsperspektiven und Weiterbildungsmöglichkeiten sowie flexible Arbeitszeiten durch unser Gleitzeitmodell und eine attraktive betriebliche Altersvorsorge (VBL).<br />Setzen Sie sich gemeinsam mit uns ein – für Sicherheit, Gesundheit und Prävention in einer spannenden Branche!</p><p>Für unseren Standort **Frankfurt/Main** suchen wir einen</p><p>Facharzt (m/w/d) für Arbeitsmedizin oder Arzt (m/w/d) in Weiterbildung Arbeitsmedizin</p><ul><li>sind präventiv tätig, betreuen und beraten unsere Mitgliedsbetriebe zum Arbeits- und Gesundheitsschutz</li><li>arbeiten in einem kollegialen Team in unserem arbeitsmedizinischen Zentrum und im Außendienst mit qualifiziertem Assistenzpersonal</li><li>erkennen arbeitsbedingte Erkrankungen frühzeitig und helfen diese zu verhindern</li><li>sind Berater (m/w/d) beim betrieblichen Gesundheitsmanagement in Unternehmen</li><li>wirken bei der individuellen beruflichen und medizinischen Rehabilitation mit</li><li>Ausbildung zum Facharzt (m/w/d) für Arbeitsmedizin oder Arzt (m/w/d) in Weiterbildung Arbeitsmedizin mit mind. 24 Monaten Weiterbildungszeit in der patientennahen Versorgung</li><li>Sicheres und positives Auftreten</li><li>Kontaktfreudigkeit, Teamfähigkeit und Engagement</li><li>Pkw-Führerschein</li></ul><p>Die Stelle ist ab sofort unbefristet in Vollzeit zu besetzen. Grundsätzlich ist die Stelle teilzeitgeeignet.</p><p>Schwerbehinderte Bewerbende werden bei gleicher Eignung und Qualifikation besonders berücksichtigt.</p><p>**Das klingt nach einer interessanten Aufgabe für Sie? Dann freuen wir uns über Ihre Bewerbung auf unserer Karriereseite www.amd.bgbau.de/karriere unter Angabe Ihrer Gehaltsvorstellung.**</p><p>**Vereinbarkeit von Familie und Beruf**<br />Flexible Arbeitszeit ohne Nacht-, Bereitschafts- und Wochenenddienst</p><p>6 Wochen Jahresurlaub,<br />4 Flextage pro Jahr<br />und bis zu 16 Gleittage</p><p>**Fester Kundenstamm**<br />mehr Zeit für ärztliche Tätigkeiten - ohne Akquise</p><p>**Attraktive Vergütung**<br />Dienstfahrzeug - auch zur privaten Nutzung, Möglichkeit zur Teilnahme am Bonussystem, Vermögenswirksame Leistungen (VWL)</p><p>**Gesundheitsförderung**<br />mit Angeboten wie einer kostenfreien Mitgliedschaft im Urban Sports Club und jährlichen Gesundheitstagen</p><p>**Sicherheit des öffentlichen Dienstes**<br />mit einer zusätzlichen Altersversorgung (VBL)<br />(Tochter der BG BAU)</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004064539-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7126,7 +7146,7 @@
     "postedAt": "2026-10-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -7537,6 +7557,22 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:11949-17429757-S",
+    "slug": "oberosterreichische-gesundheitsholding-gmbh-arzt-arztin-11949-17429757-s",
+    "company": "arbeitsagentur",
+    "employer": "Oberösterreichische Gesundheitsholding GmbH",
+    "title": "Arzt/Ärztin",
+    "locations": [],
+    "remote": false,
+    "department": "Arzt/Ärztin",
+    "category": "medicine",
+    "descriptionHtml": "<p>Beschäftigungsausmaß: Vollzeit<br />Bewerbungsfrist: 20.12.2026<br />Befristung: befristet für jeweils 5 Jahre gemäß Oö. Zuweisungsgesetz<br />Einstufung: PA 8 gemäß § 48a. Oö. GG 2001 (sondervertragliche Vereinbarung)<br />Eintrittsdatum: nach Vereinbarung</p><p>Unser Angebot an Sie</p><ul><li>Attraktiver, modern ausgestatteter Arbeitsplatz im Salzkammergut</li><li>Führung eines hochmotivierten, fachlich hochkompetenten interdisziplinären Teams</li><li>Kollegiales und wertschätzendes Miteinander</li><li>Attraktives, aktiv gestaltbares und verantwortungsvolles Aufgabengebiet</li><li>Werteorientiertes Arbeitsklima, betriebliche Gesundheitsvorsorge (\"geh mit\" Programm) und \"LOA\" Lebensphasenorientiertes Arbeiten</li></ul><p>Ihre Aufgaben<br />* Leiten der Palliativstation am Salzkammergut Klinikum am Standort Vöcklabruck mit 12 Betten und des Palliativ-Konsiliardienstes am Salzkammergut Klinikum an den Standorten Gmunden und Bad Ischl mit sämtlichen medizinischen Aufgaben und Tätigkeiten nach den relevanten gesetzlichen und innerbetrieblichen Regelungen<br />* Führung, Förderung, Entwicklung und Ausbildung der verantworteten Mitarbeiterinnen und Mitarbeiter<br />* Umsetzung der mit der Kollegialen Führung und dem Träger vereinbarten Zielsetzungen<br />* Wirtschaftliche Verantwortung für den übertragenen Bereich<br />* Bereitschaft zur Übernahme von hausübergreifenden und konzernweiten Aufgaben. Konstruktive Mitarbeit in der Entwicklung und Gestaltung standortübergreifender Kooperationen, digitalen Lösungen und Bereitschaft zu Kooperationen mit dem extramuralen Bereich<br />* Mitwirken an der Vertretung des Salzkammergut Klinikums innerhalb des Trägers, der Kollegenschaft und der Öffentlichkeit</p><p>Unsere Anforderungen an Sie<br />* Abgeschlossene Ausbildung zur/zum Ärztin/Arzt für Allgemeinmedizin bzw. abgeschlossene fachärztliche Ausbildung in den Quellfächern zu Palliative Care<br />* Spezialisierung in Palliativmedizin der ÖÄK nach der Ärzte-Ausbildungsordnung<br />* Master in Palliative Care wünschenswert<br />* Ausbildung zum Ethikberater (K1) wünschenswert<br />* Führungs- und Managementerfahrung<br />* Umfassende und fachlich fundierte Kenntnisse und mehrjährige Erfahrung in der Palliativmedizin<br />* Managementausbildung (muss, wenn nicht vorhanden, innerhalb von 3 Jahren absolviert werden)<br />* Führungsqualifikation/Führungsqualitäten<br />* Begeisterung zur Ausbildung von Medizinern<br />* Erfahrung im Arbeiten mit Struktur-, Prozess- und Ergebniskennzahlen (im Sinne des Qualitätsmanagements)<br />* Fähigkeit zur interdisziplinären Zusammenarbeit mit allen Bereichen des Hauses; Prozessdenken<br />* Wille zur Qualitätssteigerung und -sicherung<br />* Bereitschaft für das Ableisten von Rufbereitschaften<br />* Bereitschaft zur Lehrtätigkeit in der Gesundheits- und Krankenpflegeschule bzw. FH Gesundheitsberufe OÖ GmbH<br />* Ethisches Denken und Menschlichkeit<br />* Ausgeprägte PatientInnen/Kundenorientierung<br />* Gute Umgangsformen<br />* Initiative und Engagement</p><p>Weitere Informationen<br />Der Bewerbung legen Sie bitte in deutscher Sprache (ggf. in beglaubigter Übersetzung) bei (max. 3MB je Upload):<br />Lebenslauf, aktuelles Portraitfoto (jpg-Format), Geburts- und Staatsbürgerschaftsurkunde, Bescheinigung der österreichischen Ärztekammer über die Berechtigung zur Ausübung des ärztlichen Berufes, eine Bestätigung über die Erreichung der obengenannten Kriterien und Kenntnisse (Ausführungen zum Tätigkeitsspektrum und -ausmaß der letzten 5 Jahre), ein Verzeichnis allfällig selbstverfasster wissenschaftlicher Arbeiten in chronologischer Reihung, sämtliche Ausbildungs- und Verwendungszeugnisse ab der Promotion, OP-Katalog<br />Eine Strafregisterbescheinigung (bei Bewerber/innen aus dem nicht-öffentlichen Dienst) muss zum Bewerbungsgespräch beigebracht werden.</p><p>Ihr Kontakt</p><p>Frau Prim. Dr. Christina Grebe, MSc,<br />designierte Ärztliche Direktorin,<br />Tel. 05 0554 71-28700</p><p>JOB-Kennzahl<br />SK_VB-2026-006643</p><p>Jetzt bewerben<br />https://karriere.ooeg.at/engage/jobexchange/showJobOfferDetail.do?jobOfferId=413aafaca0c474de01a115aadcf8001e&amp;j=jobexchange&amp;organizationUnitId=</p>",
+    "applyUrl": "https://jobs.ams.at/public/emps/jobs/e7428d29-f8a2-3ee7-b139-6b3e86fed5fa",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:11956-1774771794438001-S",
     "slug": "stadtisches-klinikum-dresden-stadtisches-klinikum-dresden-arzt-in-weiterbildung-zum-facharzt-fur-psychiatrie-11956-1774771794438001-s",
     "company": "arbeitsagentur",
@@ -7718,6 +7754,8 @@
     "applyUrl": "https://www.empfehlungsbund.de/job/307866",
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9186,6 +9224,8 @@
     "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Facharzt-Fachaerztin-Fuer-Orthopaedie-Und-Unfallch-1097147?cp=BA",
     "postedAt": "2026-10-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -9425,7 +9465,7 @@
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-07T05:03:05.315Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -9585,6 +9625,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:12811-2385122-S",
+    "slug": "klinikum-bad-hersfeld-gmbh-oberarzt-unfallchirurgie-und-orthopadie-m-w-d-klinikum-bad-hersfeld-12811-2385122-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Bad Hersfeld GmbH",
+    "title": "Oberarzt Unfallchirurgie und Orthopädie (m/w/d), Klinikum Bad Hersfeld",
+    "locations": [
+      "Bad Hersfeld, Hessen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Orthopädie und Unfallchirurgie",
+    "category": "medicine",
+    "specialty": "orthopaedics",
+    "level": "senior",
+    "descriptionHtml": "<p>Gemeinsam Zukunft gestalten - im Klinikum Hersfeld-Rotenburg Als Verstärkung suchen wir zum nächstmöglichen in Voll-/Teilzeit einen Oberarzt (m/w/d) Unfallchirurgie und Orthopädie mit der Zusatzbezeichnung spezielle Unfallchirurgie (oder in Weiterbildung hierzu)   Bei uns finden Sie mehr als nur einen sicheren Arbeitsplatz: Sie werden Teil eines starken Teams, das mit Herz und Kompetenz wichtige und zentrale Aufgaben für die Menschen in unserer Region übernimmt! Als zukunftsgerichtetes, kommunales Unternehmen investieren wir in moderne Medizin, innovative Technik und vor allem in unsere Mitarbeiterinnen und Mitarbeiter. Mit unserem Neubau am Standort Bad Hersfeld (ab 2027) schaffen wir ein hochmodernes Arbeitsumfeld im gesamten Spektrum der medizinischen Versorgung. Über 650 Betten, 28 medizinische Abteilungen, ein großes Notfallzentrum mit Stroke-Unit, TAVI-Zentrum, Chest-Pain-Unit, modernste OP-Säle inklusive Hybrid-OP, eine interdisziplinäre Intensivstation bieten Ihnen die besten Voraussetzungen, um Ihr Fachwissen in allen Bereichen des Unternehmens einzubringen, und sich weiterzuentwickeln. Werden Sie Teil unserer Zukunft! Unsere Abteilung für Unfallchirurgie und Orthopädie bietet umfassende Versorgung auf höchstem Niveau und ist auf die operative und konservative Behandlung von Verletzungen sowie Erkrankungen des gesamten Bewegungsapparats spezialisiert. Neben der Zulassung zur Behandlung durchgangsärztlicher Patienten inclusive einer VAV Zulassung sowie einer umfassenden BG Sprechstunde wird ein breites Spektrum an kinder- als auch alterstraumatologischen Behandlungen abgedeckt inclusive der Wirbelsäulen- und Beckenchirurgie sowie der arthroskopischen Gelenkeingriffe. Als regionales Traumazentrum nehmen wir an der entsprechenden Akut- und Notfallversorgung teil.  Eine volle Weiterbildungsermächtigung für 72 Monate für den FA für Orthopädie und Unfallchirurgie sowie 18 Monate für spezielle Unfallchirurgie und 18 Monate für die spezielle Orthopädie liegt gemeinsam mit der Fachabteilung für Orthopädie vor.  Aufgaben klinische Betreuung der unfallchirurgischen Patienten im stationären und ambulanten Bereich Durchführung und Supervision von operativen Eingriffen im Bereich der Unfallchirurgie und Orthopädie auch höheren Schwierigkeitsgrades, gerne auch Einbringen eigener Schwerpunkte  Anleitung und Ausbildung von Assistenzärzten (m/w/d) sowie die aktive konstruktive Mitarbeit in der Weiterentwicklung der Abteilung Interdisziplinäre Zusammenarbeit mit anderen Fachbereichen und Therapieeinrichtungen insbesondere mit der neurochirurgischen und orthopädischen Abteilung mit Rotationsoptionen Mitwirkung bei der Optimierung von Behandlungsprozessen und der Weiterentwicklung innovativer Behandlungsmethoden, gerne Implementierung innovativer Behandlungskonzepte Teilnahme am Rufbereitschaftsdienst der Klinik Anforderungen Facharztanerkennung für Orthopädie und Unfallchirurgie Mehrjährige Berufserfahrung in der unfallchirurgischen und orthopädischen Versorgung, idealerweise mit Erfahrung als Oberarzt oder Funktionsoberarzt (m/w/d) Fundierte Kenntnisse in der operativen Unfallchirurgie sowie in minimal-invasiven Verfahren und der Endoprothetik Hohe Sozialkompetenz und Kommunikationsfähigkeit im Umgang mit Patienten, Angehörigen und dem medizinischen Team Teamgeist und Engagement für eine qualitativ hochwertige Patientenversorgung Führungskompetenz und Freude an der Ausbildung und Anleitung von Nachwuchsmedizinern Eine strukturierte, eigenverantwortliche und zielorientierte Arbeitsweise Wir bieten Eine anspruchsvolle und abwechslungsreiche Tätigkeit in einem kollegialen und dynamischen Team Ein modernes Arbeitsumfeld mit neuester technischer Ausstattung Attraktive Vergütung nach Tarifvertrag  Vielfältige Möglichkeiten zur beruflichen und persönlichen Weiterentwicklung, Erlangung der Zusatzqualifikation spezielle Unfallchirurgie, Unterstützung einer Promotion Unterstützung bei der Vereinbarkeit von Beruf und Familie Ein umfangreiches Fort- und Weiterbildungsangebot Betriebliche Gesundheitsförderung und Mitarbeiterangebote VERTRAGSBEDINGUNGEN Leistungsgerechte Vergütung: TV-Ärzte/ VKA inkl. Zusatzversorgung, Rufbereitschaftsdienstvergütung sowie Poolbeteiligung Vollzeit/Teilzeit Beginn zum 01.10.2026 oder später Wir freuen uns darauf, Sie kennenzulernen! Wenn Sie Interesse an dieser Position haben und die Anforderungen erfüllen, übersenden Sie uns bitte Ihre vollständigen Bewerbungsunterlagen einschließlich Lebenslauf, Zeugnissen und relevanten Zertifikaten per Online-Bewerbung auf unserer Karriereseite. Für weitere Informationen steht Ihnen unsere Chefärztin gerne zur Verfügung.</p>",
+    "applyUrl": "https://www.finest-jobs.com/stellenanzeige/Oberarzt-Unfallchirurgie-Und-Orthopaedie-D-1331298?cp=BA",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:12814-13617653-S",
     "slug": "stadt-kronberg-im-taunus-leitung-m-w-d-fur-das-fachreferat-kinder-and-jugend-12814-13617653-s",
     "company": "arbeitsagentur",
@@ -9603,7 +9663,7 @@
     "postedAt": "2026-11-07T00:00:00.000Z",
     "firstSeenAt": "2026-11-08T05:02:55.071Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -10025,6 +10085,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/526eb513-755b-4555-b2eb-6af9f3d503f0?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-10-14T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10065,6 +10127,8 @@
     "applyUrl": "https://www.heyjobs.co/de-de/jobs/6370d51c-78ea-4add-888e-e83df310ab5e?utm_content=ad_link&utm_medium=sjm-pr&utm_source=jobboerse",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -10254,7 +10318,7 @@
       "Neuruppin, Brandenburg, Germany"
     ],
     "remote": false,
-    "department": "Facharzt/-ärztin - Herzchirurgie",
+    "department": "Facharzt/-ärztin - Orthopädie und Unfallchirurgie",
     "category": "medicine",
     "specialty": "orthopaedics",
     "level": "specialist",
@@ -10291,7 +10355,7 @@
       "Neuruppin, Brandenburg, Germany"
     ],
     "remote": false,
-    "department": "Facharzt/-ärztin - Innere Medizin",
+    "department": "Facharzt/-ärztin - Innere Medizin und Kardiologie",
     "category": "medicine",
     "specialty": "cardiology",
     "level": "specialist",
@@ -11121,7 +11185,7 @@
     "postedAt": "2026-11-10T00:00:00.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11342,7 +11406,7 @@
     "postedAt": "2026-10-26T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11383,6 +11447,26 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14340-497827122-S",
     "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14356-96a486a9dea3415-S",
+    "slug": "diakonie-bethanien-ggmbh-facharzt-fur-onkologie-w-m-d-14356-96a486a9dea3415-s",
+    "company": "arbeitsagentur",
+    "employer": "Diakonie Bethanien gGmbH",
+    "title": "Facharzt für Onkologie (w/m/d)",
+    "locations": [
+      "Solingen, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Innere Medizin und Hämatologie und Onkologie",
+    "category": "medicine",
+    "specialty": "oncology",
+    "level": "specialist",
+    "descriptionHtml": "<p>Zur Verstärkung unseres Teams in der onkologischen Ambulanz im Krankenhaus Bethanien suchen wir zum nächstmöglichen Zeitpunkt in Voll- oder Teilzeit einen</p><p>Facharzt für Onkologie</p><p>(m/w/d)</p><p>Über uns</p><p>Unsere Lungenfachklinik in Solingen verfügt über 138 Betten. Das Spektrum der Tätigkeiten umfasst sämtliche Bereiche der Pneumologie mit besonderem Schwerpunkt in den Bereichen thorakale Onkologie, Endoskopie, Infektiologie, Schlaf- und Beatmungsmedizin, sowie obstruktive und interstitielle Lungenerkrankungen. Das zertifizierte Weaningzentrum verfügt über eine Intensivstation mit 24 Betten und eine Intermediate Care Station mit acht Betten.</p><p>Gemeinsam mit der Uniklinik Köln sind wir seit 2016 durch die Deutsche Krebsgesellschaft als Lungenkrebszentrum Uniklinik Köln Solingen (LuKS) zertifiziert. In unserer Klinik bilden wir das gesamte Spektrum der onkologischen Diagnostik und Therapie ab, inklusive aller endoskopischen interventionellen Techniken. Eine stationäre Palliativeinheit steht zur Verfügung. In der onkologischen Ambulanz werden sämtliche modernen Therapieverfahren und die Teilnahme an Therapiestudien angeboten.</p><p>Wir sind Akademisches Lehrkrankenhaus der Universität zu Köln, an die auch unser wissenschaftliches Institut für Pneumologie angebunden ist.</p><p>Qualifiziert und motiviert – Ihr Profil als Facharzt für Onkologie</p><ul><li>Interesse am gesamten Spektrum der onkologischen Behandlungsverfahren</li><li>Empathie und Feingefühl im Umgang mit Patientinnen und Patienten und deren Angehörigen</li><li>Kollegiale und aufgeschlossene Persönlichkeit mit Bereitschaft zur interdisziplinären Zusammenarbeit</li><li>Freude am onkologischen Themenfeld sowie Kommunikationsstärke und Flexibilität</li></ul><p>Verantwortungsvoll und vielseitig – Ihr Aufgabenfeld als Facharzt für Onkologie</p><ul><li>Ärztliche Versorgung der ambulanten onkologischen Patientinnen und Patienten in der Diagnostik und Therapie</li><li>Teilnahme an interdisziplinären Tumorkonferenzen</li><li>Erstellung von Therapieplänen und Anwendung unserer modernen Therapieverfahren</li><li>Auswertung von Untersuchungsergebnissen</li></ul><p>Attraktiv und sicher – unser Angebot an den Facharzt für Onkologie</p><ul><li>Ein vielseitiger und sicherer Arbeitsplatz bei einem zuverlässigen diakonischen Träger, der als einer der größten Arbeitgeber der Region interessante berufliche Perspektiven bietet</li><li>Familienfreundliche Arbeitsbedingungen: Ihre Arbeitszeiten werden auf Ihre individuellen Bedürfnisse abgestimmt (inklusive möglicher 4-Tage-Woche und verschiedener Teilzeitmodelle)</li><li>31 Tage Urlaub/Jahr</li><li>Eine attraktive Vergütung nach AVR DD-Tarifvertrag mit Sozialleistungen wie Jahressonderzahlung, Kinderzuschlägen sowie eine kirchliche Altersvorsorge</li><li>Verschiedene Weiterbildungsermächtigungen, inklusive Palliativmedizin</li><li>Ein Arbeitsumfeld, das von Wertschätzung geprägt ist</li><li>Ein Platz in einem aufgeschlossenen, engagierten und kollegialen Team</li><li>Gute Möglichkeiten zur individuellen fachlichen Weiterentwicklung</li><li>Eine Gemeinschaft, deren Werte auf dem christlichen Menschenbild basieren</li><li>Eine verkehrsgünstige Lage mit guter Anbindung an den öffentlichen Personennahverkehr</li><li>Corporate Benefits</li><li>Zahlreiche Maßnahmen zum Betrieblichen Gesundheitsmanagement</li></ul><p>Unsere Kernkompetenz</p><p>Die Diakonie Bethanien bietet an 31 Standorten in Nordrhein-Westfalen, Rheinland-Pfalz und Hessen qualitativ hochwertige Angebote in den Bereichen Alten- und Familienhilfe sowie in der Lungenheilkunde und Schlafmedizin.</p><p>Wir sind dankbar für 2.200 Mitarbeitende aus mehr als 60 Nationen, die in unseren 56 Einrichtungen arbeiten. Dazu gehören unter anderem ein angesehenes Lungenfachkrankenhaus sowie mehrere Seniorenzentren, ambulante Pflegedienste, Alltagsbegleiter, Tagespflegen und Senioren-Wohngemeinschaften.</p><p>Ihre Ansprechpartnerin</p><p>Victoria Durmaz</p><p>Recruiting</p><p>Mail: victoria.durmaz@diakonie-bethanien.de</p><p>Diakonie Bethanien gGmbH</p><p>Aufderhöher Str. 169</p><p>42699 Solingen</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/14356-96a486a9dea3415-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -11646,6 +11730,8 @@
     "applyUrl": "https://www.valmedi.de/job/oberarzt-oberaerztin-kardiologie-m-w-d-161985/itzehoe?utm_source=arbeitsagentur",
     "postedAt": "2026-08-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -12267,7 +12353,7 @@
     "postedAt": "2026-10-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -12368,6 +12454,46 @@
     "applyUrl": "https://www.job.fish/heyrecruit/148586_4245_6b040795d8f4f?utm_campaign=heyrecruit-multiposting&utm_source=bundesagentur&utm_medium=kostenloses-multiposting",
     "postedAt": "2026-11-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14922-148591-S",
+    "slug": "hb-pro-chefarzt-geriatrie-fur-akutklinik-m-w-d-14922-148591-s",
+    "company": "arbeitsagentur",
+    "employer": "HB-Pro",
+    "title": "Chefarzt Geriatrie für Akutklinik (m/w/d)",
+    "locations": [
+      "Chemnitz, Sachsen, Sachsen, Germany"
+    ],
+    "remote": false,
+    "department": "Chefarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "internal-medicine",
+    "level": "head",
+    "descriptionHtml": "<p>Healthbridge GmbH</p><p>Wir suchen für unseren Auftraggeber eine emphatische und kompetente Persönlichkeit als Chefarzt/Chefärztin der Geriatrie (m/w/d).</p><p>Möchten Sie die Zukunft einer modernen Akutgeriatrie im Raum Chemnitz aktiv mitgestalten? Wir bieten Ihnen eine verantwortungsvolle Führungsposition, in der Sie Raum für Ihre eigenen Ideen und Visionen haben. Als Chefarzt bzw. Chefärztin übernehmen Sie die organisatorische und fachliche Gesamtverantwortung für die geriatrische Fachabteilung.</p><p>Haben wir Ihr Interesse geweckt? Wir freuen uns sehr darauf, Sie in einem persönlichen Gespräch kennenzulernen und Ihnen alle weiteren Details zu dieser Aufgabe vorzustellen.</p><p>Ihre Aufgaben:</p><ul><li>Organisatorische und inhaltliche Gesamtverantwortung für die Fachabteilung als Chefarzt</li><li>Aktive Weiterentwicklung der Abteilung und Mitgestaltung zukünftiger Strukturen</li><li>Führung, Förderung und Weiterbildung des ärztlichen Teams</li><li>Sicherstellung einer hochwertigen und patientenorientierten Versorgung geriatrischer Patienten</li><li>Enge interdisziplinäre Zusammenarbeit mit den angrenzenden Fachabteilungen</li><li>Pflege und Ausbau der Zusammenarbeit mit niedergelassenen Ärzten und Kooperationspartnern</li><li>Repräsentation der Klinik nach innen und außen sowie Mitwirkung an Fortbildungsveranstaltungen</li></ul><p>Ihr Profil:</p><ul><li>Anerkennung als Facharzt (m/w/d) für Innere Medizin, Neurologie oder Allgemeinmedizin mit Zusatzbezeichnung bzw. Zusatzweiterbildung Geriatrie</li><li>Mehrjährige Erfahrung in einer leitenden ärztlichen Position, idealerweise als Chefarzt, Leitender Oberarzt oder Oberarzt (m/w/d) in der Geriatrie</li><li>Fundierte Kenntnisse in der geriatrischen Versorgung, Altersmedizin und interdisziplinären Behandlung älterer Patienten</li><li>Ausgeprägte Führungskompetenz sowie Freude an der Leitung, Motivation und Weiterentwicklung eines multiprofessionellen Teams</li><li>Erfahrung und Interesse an der medizinischen, organisatorischen und konzeptionellen Weiterentwicklung geriatrischer Strukturen und Behandlungsangebote</li><li>Ausgeprägte Patientenorientierung, Verantwortungsbewusstsein und Engagement für eine qualitativ hochwertige medizinische Versorgung</li><li>Interesse an einer langfristigen ärztlichen Führungsaufgabe mit Gestaltungsspielraum und Entwicklungsperspektive</li></ul><p>Ihre Perspektive:</p><ul><li>Verantwortungsvolle Führungsaufgabe in der Geriatrie mit großem medizinischem, organisatorischem und konzeptionellem Gestaltungsspielraum</li><li>Modern ausgestattete Akutklinik mit innovativen Behandlungsmöglichkeiten und kurzen Entscheidungswegen</li><li>Engagiertes, multiprofessionelles und interdisziplinäres Team mit kollegialer Zusammenarbeit</li><li>Individuelle Fort- und Weiterbildungsmöglichkeiten</li><li>Unterstützung bei der Wohnungssuche sowie beim beruflichen und privaten Neustart</li><li>Attraktive, leistungsgerechte Vergütung und langfristige berufliche Perspektive</li><li>Langfristige Möglichkeit, die medizinische Weiterentwicklung und strategische Ausrichtung der geriatrischen Versorgung aktiv mitzugestalten</li></ul><p>Interesse?</p><p>Sprechen Sie uns an: Frau Karin Meyer, Tel. 040-34 107 7121, Mail: km@healthbridge.de<br />Mehr Informationen, auch zu weiteren interessanten Stellen für Sie, finden Sie unter www.healthbridge.de<br />Für Sie als Interessent (m/w/d) sind jegliche unserer Leistungen kostenlos.</p><p>Seit 14 Jahren gehören wir zu den führenden Unternehmen im Bereich der medizinischen Personalberatung. Wir sind national und international tätig. Unser Team besteht aus erfahrenen medizinischen Personalberatern, die über ein ausgezeichnetes Netzwerk verfügen. Healthbridge arbeitet ausschließlich im verbindlichen Auftrag ihrer Kunden (s).</p>",
+    "applyUrl": "https://www.job.fish/heyrecruit/148591_2347_6b043516a1075?utm_campaign=heyrecruit-multiposting&utm_source=bundesagentur&utm_medium=kostenloses-multiposting",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:14922-148612-S",
+    "slug": "hb-pro-chefarzt-fur-psychosomatische-medizin-und-psychotherapie-akutklinik-m-w-d-14922-148612-s",
+    "company": "arbeitsagentur",
+    "employer": "HB-Pro",
+    "title": "Chefarzt für Psychosomatische Medizin und Psychotherapie Akutklinik (m/w/d)",
+    "locations": [
+      "Donaueschingen, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Chefarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "psychosomatic-medicine",
+    "level": "head",
+    "descriptionHtml": "<p>Healthbridge GmbH</p><p>Gesucht: Chefarzt (m/w/d) Psychosomatik u. Psychotherapie für eine Akutklinik</p><p>Im verbindlichen Auftrag unseres Kunden, einer renommierten Akutklinik für Psychosomatik und Psychotherapie im Raum Donaueschingen, suchen wir zum nächstmöglichen Zeitpunkt einen engagierten Facharzt für Psychosomatische Medizin und Psychotherapie (m/w/d) zur Übernahme der Position als Chefarzt (m/w/d).</p><p>Ihre Aufgaben:</p><ul><li>Gesamtverantwortliche fachliche, organisatorische und strategische Leitung der Klinik für Psychosomatik und Psychotherapie</li><li>Sicherstellung einer qualitativ hochwertigen psychosomatischen und psychotherapeutischen Patientenversorgung</li><li>Durchführung fachärztlicher Diagnostik sowie leitliniengerechter therapeutischer Behandlungen</li><li>Führung, Förderung und fachliche Weiterentwicklung des ärztlichen Teams</li><li>Verantwortung für die Weiterbildung der Assistenzärzte (m/w/d)</li><li>Vertrauensvolle und enge Zusammenarbeit mit allen Fachabteilungen sowie dem interdisziplinären Behandlungsteam</li><li>Innovative Weiterentwicklung der Klinikstrukturen, Behandlungsangebote und internen Prozesse</li></ul><p>Ihr Profil:</p><ul><li>Anerkennung als Facharzt für Psychosomatische Medizin und Psychotherapie (m/w/d) – zwingende Voraussetzung</li><li>Umfassende klinische Erfahrung in der psychosomatischen und psychotherapeutischen Patientenversorgung</li><li>Mehrjährige Führungserfahrung, idealerweise in leitender Position</li><li>Ausgeprägte Sozial- und Führungskompetenz sowie ein wertschätzender Führungsstil</li><li>Freude an interdisziplinärer Zusammenarbeit und der Weiterentwicklung moderner Behandlungskonzepte</li><li>Hohes Maß an Verantwortungsbewusstsein, Engagement und Organisationsstärke</li><li>Exzellente Kommunikationsfähigkeit sowie ein sicheres und verbindliches Auftreten</li></ul><p>Ihre Perspektive:</p><ul><li>Eine verantwortungsvolle Leitungsposition mit großem Gestaltungsspielraum</li><li>Ein anspruchsvolles und abwechslungsreiches Aufgabengebiet in einer modern ausgestatteten Klinik</li><li>Ein hochmotiviertes, multiprofessionelles Team und ein wertschätzendes Arbeitsumfeld</li><li>Geregelte und familienfreundliche Arbeitszeiten</li><li>Ein sehr angenehmes Betriebsklima bei hoher Patientenzufriedenheit</li><li>Attraktive Vergütung mit zusätzlichen Benefits</li><li>Unterstützung bei der Wohnungssuche und beim Standortwechsel</li></ul><p>Sie möchten Ihre Erfahrung in der psychosomatischen Medizin in einer verantwortungsvollen Führungsposition einbringen und die Zukunft einer erfolgreichen Fachklinik aktiv mitgestalten? Dann freuen wir uns darauf, Sie kennenzulernen.</p><p>Sprechen Sie uns an: Frau Karin Meyer, Tel. 040-34 107 7121, Mail: km@healthbridge.de<br />Mehr Informationen, auch zu weiteren interessanten Stellen für Sie, finden Sie unter www.healthbridge.de<br />Für Sie als Interessent (m/w/d) ist jegliche unserer Leistungen kostenlos.</p><p>Seit 14 Jahren gehören wir zu den führenden Unternehmen im Bereich der medizinischen Personalberatung. Unser Team besteht aus erfahrenen medizinischen Personalberatern, die über ein ausgezeichnetes Netzwerk verfügen. Healthbridge arbeitet ausschließlich im verbindlichen Auftrag ihrer Kunden (s).</p>",
+    "applyUrl": "https://www.job.fish/heyrecruit/148612_19867_6b044b0035b03?utm_campaign=heyrecruit-multiposting&utm_source=bundesagentur&utm_medium=kostenloses-multiposting",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13017,6 +13143,25 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:15699-1657511-1-S",
+    "slug": "landschaftsverband-rheinland-chefarztin-chefarzt-m-w-d-forensik-iii-15699-1657511-1-s",
+    "company": "arbeitsagentur",
+    "employer": "Landschaftsverband Rheinland",
+    "title": "Chefärztin / Chefarzt (m/w/d) Forensik III",
+    "locations": [
+      "Bedburg-Hau, Nordrhein-Westfalen, Germany"
+    ],
+    "remote": false,
+    "department": "Chefarzt/-ärztin",
+    "category": "medicine",
+    "level": "head",
+    "descriptionHtml": "<p>### Chefärztin / Chefarzt (m/w/d) Forensik III</p><p>**Standort:** Bedburg-Hau<br />**Einsatzstelle:** LVR-Klinik Bedburg-Hau<br />**Vergütung:** außertariflicher Vertrag (mit einer der Bedeutung der Stelle angemessenen Vergütung)<br />**Arbeitszeit:** Voll-/ oder Teilzeit<br />unbefristet<br />**Bewerbungsfrist:** 03.01.2027</p><p>### Das sind Ihre Aufgaben</p><ul><li>Ärztliche Leitung der Abteilung Forensik III unter Wahrung des zur Verfügung stehenden Budgets</li><li>Entlassungsorientierte Arbeit mit frühzeitigem Fokus auf die Veränderung risikorelevanter Faktoren</li><li>Individuelle Berücksichtigung des Erklärungsmodells der Delinquenz und der fortbestehenden Gefährlichkeit</li><li>Durchführung der Substitutionsbehandlung für den Fachbereich</li><li>Enge und frühzeitige Zusammenarbeit mit außerstationären Versorgungsangeboten</li><li>Mitwirkung bei der Weiterbildung der Ärztinnen und Ärzte sowie Unterstützung in der Erarbeitung von modernen Weiterbildungskonzepten</li><li>Mitarbeit bei der Weiterentwicklung der operativen und strategischen Ziele der Klinik hinsichtlich Angebotsstruktur, medizinischer Konzepte und neuer Behandlungsmethoden</li><li>Engagement in der Öffentlichkeitsarbeit</li><li>Konstruktive Zusammenarbeit mit den kooperativen forensischen Abteilungen sowie den übrigen Fachabteilungen der LVR-Klinik Bedburg-Hau</li><li>Teamorientierte Führung der Mitarbeitenden in Zusammenarbeit mit der Pflegedienstleitung als sogenanntes \"Tandem-Team\"</li><li>Es besteht die Möglichkeit zur Nebentätigkeit als Gutachterin/Gutachter</li></ul><p>### Das bieten wir Ihnen</p><p>**Spezifische ärztliche Weiterbildungen**<br />Bei uns können Sie aus zahlreichen ärztlichen Weiterbildungen wählen und sich so Stück für Stück fachlich weiterentwickeln und spezialisieren.</p><p>**Kantine**<br />Sie können täglich aus mehreren Gerichten und Speisen zu vergünstigten Preisen in unserer Cafeteria wählen.</p><p>**Arbeit mit Sinn**<br />Bei uns gehen Sie jeden Tag mit einem guten Gefühl zur Arbeit, die Zukunft im Gesundheitswesen zu gestalten und einen wertvollen Beitrag für die Menschen im Rheinland zu leisten.</p><p>**Corporate Benefits**<br />Stöbern Sie durch unsere exklusiven Partner-Angebote und sichern Sie sich Rabatte auf Produkte und Dienstleistungen von Top-Marken aus Sport, Mode, Freizeit und Technik.</p><p>**Aktionen für Mitarbeiter\\*innen**<br />Unser Sommerfest und unsere Betriebsausflüge sind ideale Gelegenheiten für Begegnungen mit Kolleg*innen und Spaß abseits der Arbeit.</p><p>### Das bringen Sie mit<br />**Erforderlich**</p><ul><li>Abgeschlossene Facharztweiterbildung für Psychiatrie und Psychotherapie</li><li>Mindestens zweijährige Berufserfahrung in oberärztlicher oder chefärztlicher Position</li></ul><p>**Wünschenswert**</p><ul><li>Hohe fachliche Kompetenz und mehrjährige Erfahrung in der Behandlung von Maßregelvollzugspatient*innen</li><li>Schwerpunkt forensische Psychiatrie (Ärztekammer oder DGPPN)</li><li>Weiterbildung im Krankenhausmanagement und in der Personalführung</li><li>Engagement für die ärztliche und psychotherapeutische Weiterbildung</li><li>Bereitschaft zur Übernahme von Aufgaben im Klinikvorstand</li></ul><p>### Wer wir sind<br />In der Abteilung **Forensische Psychiatrie III** gibt es 66 Betten in vier geschlossenen bzw. gesicherten Stationen für Patient*innen gem. § 64 StGB, davon auch auf der Station 27.2 Patientinnen gem. § 63 StGB. Eine Geländewohngruppe ergänzt das Angebot. Diese Abteilung behandelt Frauen und Männer, welche u. a. an einer Abhängigkeit von illegalen Drogen leiden. Dem gesetzlichen Auftrag entsprechend ist diese Behandlung dem Einzelfall anzupassen, unter Berücksichtigung von Sicherungsaspekten und vor allem moderner forensischpsychiatrischer Aspekte.</p><p>**Menschen aus Überzeugung helfen und dabei mit starkem Rückhalt über sich hinauswachsen – wo, wenn nicht bei uns?**</p><p>Die LVR-Klinik Bedburg-Hau stellt heute eine der größten Einrichtungen in Nordrhein-Westfalen zur Behandlung, Betreuung und Pflege psychisch erkrankter Menschen dar und beschäftigt rund 2.000 Mitarbeiter*innen.</p><p>Bei uns erwartet Sie ein fachliches Spektrum, das Ihnen außergewöhnliche Entwicklungsmöglichkeiten eröffnet. Sie können die Facharztweiterbildungen Kinder- und<br />Jugendpsychiatrie und -psychotherapie sowie Psychiatrie und Psychotherapie absolvieren und letztere durch die Schwerpunktweiterbildung Forensische Psychiatrie ergänzen. Dank der Vielfalt psychiatrischer Krankheitsbilder sammeln Sie wertvolle Praxiserfahrungen, die weit über den üblichen Standard hinausgehen. Gleichzeitig haben Sie die Möglichkeit, Behandlungskonzepte aktiv mitzugestalten und Ihre Ideen einzubringen. Ob im ärztlich-therapeutischen Bereich, im Pflege- und Erziehungsdienst oder in einem unserer weiteren Fachbereiche – bei uns werden Sie Teil eines Teams, das Zusammenhalt lebt. Wenn Sie fachliche Neugier mit Empathie verbinden, Verantwortung übernehmen und gerne neue Perspektiven einnehmen, finden Sie bei uns beste Voraussetzungen, um sich fachlich und persönlich weiterzuentwickeln.</p><p>Der Landschaftsverband Rheinland (LVR) arbeitet als Kommunalverband mit rund 22.000 Beschäftigten für die 9,8 Millionen Menschen im Rheinland. Mit seinen 41 Schulen, zehn Kliniken, 20 Museen und Kultureinrichtungen, vier Jugendhilfeeinrichtungen, dem Landesjugendamt sowie dem Verbund für WohnenPlusLeben erfüllt er Aufgaben, die rheinlandweit wahrgenommen werden. Der LVR ist Deutschlands größter Leistungsträger für Menschen mit Behinderungen und engagiert sich für Inklusion in allen Lebensbereichen. „Qualität für Menschen“ ist sein Leitgedanke.</p><p>Die 13 kreisfreien Städte und die zwölf Kreise im Rheinland sowie die StädteRegion Aachen sind die Mitgliedskörperschaften des LVR. In der Landschaftsversammlung Rheinland gestalten gewählte Mitglieder aus den rheinischen Kommunen die Arbeit des Verbandes.</p><p>**Der LVR steht für Vielfalt. Unser Ziel ist es, dies auch in unserer Beschäftigtenstruktur abzubilden.**</p><p>Allgemeine Informationen über die LVR-Klinik Bedburg-Hau und über den Landschaftsverband Rheinland finden Sie unter [www.klinik-bedburg-hau.lvr.de](http://www.klinik-bedburg-hau.lvr.de) beziehungsweise [www.lvr.de](http://www.lvr.de).</p><p>Wissen was los ist: Folgen Sie uns auf [LinkedIn](https://www.linkedin.com/company/lvr-klinikbedburg-%20hau/posts/?feedView=all), [Instagram](https://www.instagram.com/lvrklinikbedburghau/?hl=de) und [Facebook.](https://www.facebook.com/LVRKLINIKBEDBURGHAU/?locale=de_DE)</p><p>### Wir haben Ihr Interesse geweckt?</p><p>Herr Manfred Adomat<br />Ärztlicher Direktor Forensik<br />02821/81-2015<br />**Das benötigen wir von Ihnen in deutscher Sprache**</p><ul><li>Anschreiben</li><li>Lebenslauf</li><li>ein aktuelles Arbeitszeugnis bzw. eine aktuelle dienstliche Beurteilung</li><li>Approbationsurkunde</li><li>Nachweise über die abgeschlossene Facharztweiterbildung für Psychiatrie und Psychotherapie</li></ul><p>Falls Sie Ihren **Studienabschluss im Ausland** erlangt haben, fügen Sie bitte einen Nachweis über die Gleichwertigkeitsfeststellung/Anerkennung der für Ihren Berufsabschluss **zuständigen Stelle** bei. Für Studiengänge ist dies die Zentralstelle für ausländisches Bildungswesen ([ZAB](https://zab.kmk.org/de/zeugnisbewertung)), für reglementierte Ausbildungs- und Studienberufe die jeweilige Bezirksregierung. Weitere Informationen hierzu entnehmen Sie bitte dem [Wirtschafts-Service-Portal.NRW](https://service.wirtschaft.nrw/internationales-arbeiten/berufsanerkennung/berufe/).</p><p>### So geht es nach der Bewerbung weiter</p><ul><li>Direkt nach Ihrer Bewerbung erhalten Sie eine Eingangsbestätigung per E-Mail.</li><li>Wir schauen uns Ihre Bewerbung genau an und melden uns schnellstmöglich zurück. Wenn Sie mit Ihren Qualifikationen und Erfahrungen bei uns punkten, erhalten Sie eine Einladung zu einem persönlichen Gespräch.</li><li>Im Vorstellungsgespräch lernen wir uns gegenseitig kennen und finden heraus, ob wir zueinander passen.</li><li>Nach dem Vorstellungsgespräch erhalten Sie auf Wunsch bereits ein erstes Feedback zum Gespräch.</li><li>Haben wir uns für Sie entschieden, werden unsere Gremien (z.B. Personalrat) beteiligt. Im Anschluss erhalten Sie die Zusage und können bei uns starten.</li><li>Wir möchten, dass Sie sich vom ersten Tag an bei uns im Team wohlfühlen und gut zurechtfinden. In der ersten Zeit machen wir Sie daher Stück für Stück mit Ihren neuen Aufgaben vertraut.</li></ul><p>### Qualität ist unser Maßstab<br />Bei der respektvollen Begleitung, Betreuung und Behandlung von Menschen ist die Qualität unserer Leistungen unser Maßstab für unser Handeln. Für unsere Kund*innen wollen wir immer besser werden.</p><p>### Chancengleichheit beim LVR<br />Der LVR setzt sich für eine Organisationskultur ein, die von gegenseitigem Respekt geprägt ist. Jede*r Einzelne soll Wertschätzung erfahren, und zwar unabhängig von Geschlecht und geschlechtlicher Identität, sexueller Orientierung und Identität, Alter, Behinderung, ethnischer Herkunft und Nationalität, Religion und Weltanschauung oder anderen Merkmalen, die gesellschaftliche Vielfalt ausmachen.</p><p>Als öffentlicher Arbeitgeber fördert der LVR die(...)</p><p>Die Stellenbeschreibung kann nicht vollständig angezeigt werden. Bitte folgen Sie dem u.a. Link 'Weitere Informationen zum Stellenangebot im Internet'</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15699-1657511-1-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:15718-k43631.10959-S",
     "slug": "sachsenklinik-gmbh-bad-lausick-assistenzarzt-fur-neurologie-m-w-d-15718-k43631-10959-s",
     "company": "arbeitsagentur",
@@ -13212,10 +13357,8 @@
     "category": "medicine",
     "descriptionHtml": "<p>Stellenausschreibung Ärztliche Stelle (m/w/d)</p><p>Du möchtest Menschen eine medizinische Behandlung ermöglichen, die sonst nicht zu Ärzt:innen oder in Krankenhäuser gehen können? Du interessierst dich für eine Arbeit an der Schnittstelle zwischen Gesundheitsversorgung und Sozialberatung? Du hast Lust, unser multidisziplinäres Team bei der Weiterentwicklung unseres landesweiten Angebots zu unterstützen? Dann bist du bei uns richtig!</p><p>Der Anonyme Krankenschein Thüringen sucht eine Ärzt:in in unserem Projekt für Menschen ohne oder nur unzureichender Krankenversicherung.</p><p>Die Teilzeitstelle soll zum 01.04.2027 besetzt werden und ist vorerst bis zum 31.12.2027 befristet. Eine Weiterbeschäftigung ist ausdrücklich angestrebt. Arbeitsort der Stelle ist Jena.</p><p>Der AKST hat sich zum Ziel gesetzt, gemäß der UN-Menschenrechtscharta die gesundheitliche Versorgung von Menschen ohne oder nur unzureichender Krankenversicherung in Thüringen zu gewährleisten. Wir übernehmen die Kosten für medizinische Versorgung der Hilfesuchenden und unterstützen ihre (Wieder-)Aufnahme in Krankenversicherung bzw. die Ermittlung von zuständigen Kostenträgern. So weisen wir niedrigschwellig den Weg in das medizinische und soziale Regelversorgungssystem – vorbei an bürokratischen, sprachlichen, finanziellen und anderen Hürden.</p><p>Zu deinen Aufgaben gehören:</p><ul><li>Abdeckung der AKST-Sprechstunden mit Basisdiagnostik und bei Bedarf Durchführung allgemeinmedizinischer Aufgaben sowie der Ausgabe von Anonymen Krankenscheinen;</li><li>Überweisung und Vermittlung an fachärztliche Kolleg:innen in Thüringen;</li><li>Aufsuchende Arbeit zur Überprüfung des medizinischen und sozialen Unterstützungsbedarfs – insbesondere bei stationären Fällen;</li><li>Unterstützung bei der Identifikation von zuständigen Kostenträgern sowie des Clearings und der Sozialberatung des AKST;</li><li>medizinische Kontrolle von eingehenden Krankenscheinen und Rücksprache mit behandelnden Ärzt:innen;</li><li>Dokumentation und Mitarbeit an Berichten.</li></ul><p>Wir freuen uns auf dich als Kolleg:in mit:</p><ul><li>einer in Deutschland gültige Approbation oder Erlaubnis zur Ausübung des ärztlichen Berufs;</li><li>Empathiefähigkeit und interkultureller Kompetenz, ausgeprägter Sozialkompetenz und Teamfähigkeit;</li><li>hoher Kommunikationsfähigkeit;</li><li>sicheren mündlichen und schriftlichen Deutschkenntnissen (fließend) sowie guten Englischkenntnissen (fortgeschritten) in Wort und Schrift sowie Bereitschaft zum Arbeiten mit Dolmetschsystemen. Kenntnisse weiterer Sprachen sind willkommen;</li><li>Bereitschaft zu eigenverantwortlichem Arbeiten, ausgeprägter Organisationsfähigkeit, Bereitschaft zu flexiblen Arbeitszeiten;</li><li>Bereitschaft, innerhalb Thüringens zu Patient:innen zu reisen.</li></ul><p>Wir bieten dir:</p><ul><li>abwechslungsreiche Tätigkeit mit anspruchsvollen Fragestellungen;</li><li>intensive Einarbeitung, auch durch engagierte Fachkolleg:innen der Anlaufstellen in anderen Bundesländern;</li><li>regelmäßige Fallbesprechungen, kollegiale Beratung und Supervision sowie individuell abgestimmte Fort- und Weiterbildungen;</li><li>diverse Möglichkeiten der Vernetzung;</li><li>Mitarbeit in einem motivierten, solidarischen, kultur- und diskriminierungssensiblen, wertschätzenden Team;</li><li>gute Vereinbarkeit von Beruf und Privatleben;</li><li>50-%-Stelle mit fairer, leistungsgerechter Bezahlung in Anlehnung an TV-Ärzte Ä1 und 30 Urlaubstagen.</li></ul><p>… und vieles mehr… wir reden gerne beim Vorstellungsgespräch darüber!</p><p>Wir freuen uns über deine Bewerbung – unabhängig von deiner kulturellen und sozialen Herkunft, deiner Religion oder Weltanschauung oder deinem Geschlecht und Alter. Bei gleicher Eignung werden Bewerber:innen mit Schwerbehinderung bevorzugt.</p><p>Deine aussagekräftigen Bewerbungsunterlagen schickst du bitte bis zum 20.11.2026 in einer .pdf-Datei (max. 5 MB) an: [bewerbung@aks-thueringen.de](mailto:bewerbung@aks-thueringen.de?subject=Bewerbung%20AKST%20-%20Sozialarbeiter:in) mit dem Stichwort „Bewerbung AKST – Ärztliche Stelle“. Wir planen Bewerbungsgespräche in der Zeit vom 30.11. - 11.12.2026.</p>",
     "applyUrl": "https://thaff-thueringen.de/Stellenangebote/aerztliche-stelle-m-w-d-beim-anonymen-krankenschein-thueringen",
-    "postedAt": "2026-11-02T00:00:00.000Z",
+    "postedAt": "2026-11-24T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
-    "lastSeenAt": "2026-11-19T05:03:26.756Z",
-    "closedAt": "2026-11-21T05:03:24.558Z",
     "source": "arbeitsagentur"
   },
   {
@@ -13234,6 +13377,8 @@
     "applyUrl": "https://thaff-thueringen.de/Stellenangebote/arzt-apotheker-m-w-d-im-beratungsdienst-2",
     "postedAt": "2026-11-13T00:00:00.000Z",
     "firstSeenAt": "2026-11-13T15:50:24.900Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -13900,6 +14045,26 @@
     "source": "arbeitsagentur"
   },
   {
+    "id": "arbeitsagentur:18024-100aR0001Rv0f-S",
+    "slug": "klinikum-esslingen-gmbh-oberarzt-m-w-d-fur-die-klinik-fur-akut-und-notfallmedizin-18024-100ar0001rv0f-s",
+    "company": "arbeitsagentur",
+    "employer": "Klinikum Esslingen GmbH",
+    "title": "Oberarzt (m/w/d) für die Klinik für Akut- und Notfallmedizin",
+    "locations": [
+      "Esslingen am Neckar, Baden-Württemberg, Germany"
+    ],
+    "remote": false,
+    "department": "Oberarzt/-ärztin",
+    "category": "medicine",
+    "specialty": "emergency-medicine",
+    "level": "senior",
+    "descriptionHtml": "<p>\"Hier ist anders“ ist Motto und gleichzeitig Anspruch unseres Klinikums. Das Klinikum Esslingen ist ein Krankenhaus der Zentralversorgung, das von und durch die Vielfalt seiner Mitarbeitenden lebt, auf moderne Medizin und kollegiale Atmosphäre besonderen Wert legt und tief mit der Stadt Esslingen am Neckar und seinen Menschen verwurzelt ist.</p><p>Die Klinik für Akut- und Notfallmedizin verfügt über 19 reguläre Monitorplätze, sowie spezialisierte Behandlungsräume (Schockraum, Isolation, Wundversorgung, Endoskopie und Gynäkologie). Versorgt werden Notfallpatienten aus allen Fachbereichen. Ihr ist eine interdisziplinäre Aufnahmestation mit 8 Betten angeschlossen.</p><p>Im Haus vorhanden sind die Fachabteilungen Kardiologie, Gastroenterologie, Unfall-/Allgemein-/Gefäß- und Thoraxchirurgie, Neurologie mit Stroke Unit und interventioneller Radiologie (24/7 Thrombektomie), Gynäkologie, sowie Pädiatrie und Kinderchirurgie. Das Klinikum Esslingen ist regionales Traumazentrum und nimmt am Verletztenartenverfahren teil. Dem Klinikum angeschlossen ist ein Notarztstandort des DRK Kreisverbandes.</p><p>Oberarzt (m/w/d) für die Klinik für Akut- und Notfallmedizin<br />Oberarzt (m/w/d) für die Klinik für Akut- und Notfallmedizin</p><p>Das ist Ihr Arbeitstag</p><ul><li>Interdisziplinäre Notfallversorgung inkl. Konservativer und chirurgischer Schockraumversorgung</li><li>Interdisziplinäre Versorgung der Patienten auf der Aufnahmestation (IMC Standard)</li><li>Auf Wunsch Beteiligung am Notarztdienst</li><li>Aus- und Weiterbildung von Assistenzärzten in der klinischen Akut- und Notfallmedizin</li><li>Teilnahme am Rufbereitschaftsdienst KLINAM</li></ul><p>Das bringen Sie mit</p><ul><li>Abgeschlossenes Studium der Humanmedizin mit deutscher Approbation und abgeschlossene Facharztweiterbildung Innere Medizin</li><li>Idealerweise die Zusatzbezeichnung Klinische Akut- und Notfallmedizin. Diese kann ebenfalls im Klinikum Esslingen erworben werden</li><li>Freude an der interdisziplinären Zusammenarbeit</li><li>Freude an der Weiterentwicklung der Abteilung</li></ul><p>Chancengleichheit</p><p>Wir stehen für Chancengleichheit. Wir begrüßen Bewerbungen aller Geschlechter und Identitäten sowie unabhängig von ethnischer Herkunft, Religion oder Weltanschauung, Behinderung, Alter oder sexueller Identität. Schwerbehinderte Menschen werden bei gleicher Eignung vorrangig eingestellt.</p><p>Ihre Benefits</p><ul><li>Zuschuss Bus und Bahn</li><li>Zahlreiche Mitarbeiterrabatte bei verschiedenen Unternehmen</li><li>Jobrad</li><li>Fitnessangebote für Mitarbeitende (z.B. Gerätetraining)</li><li>Familienunterstützung (Zertifikat Beruf und Familie)</li><li>Attraktives Ideenmanagement</li></ul><p>Kontakt für fachliche Fragen</p><p>Dr. Johannes Wagner<br />Klinik für Notfall- und Akutmedizin<br />Tel.: 0711 3103 2872</p>",
+    "applyUrl": "https://helixjobs.com/_/jobad?prj=2259p5575&source=ba",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "arbeitsagentur"
+  },
+  {
     "id": "arbeitsagentur:18024-100aR0001Rv0V-S",
     "slug": "klinikum-esslingen-gmbh-oberarzt-m-w-d-fur-die-klinik-fur-akut-und-notfallmedizin-18024-100ar0001rv0v-s",
     "company": "arbeitsagentur",
@@ -13983,6 +14148,8 @@
     "applyUrl": "https://helixjobs.com/_/jobad?prj=1569p125264&source=ba",
     "postedAt": "2026-11-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
     "source": "arbeitsagentur"
   },
   {
@@ -14026,7 +14193,7 @@
     "postedAt": "2026-10-23T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14048,7 +14215,7 @@
     "postedAt": "2026-11-04T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
     "lastSeenAt": "2026-11-23T05:03:52.511Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
@@ -14990,6 +15157,28 @@
     "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20250-16818672-S",
     "postedAt": "2026-10-12T00:00:00.000Z",
     "firstSeenAt": "2026-11-04T16:46:50.666Z",
+    "lastSeenAt": "2026-11-24T05:03:30.764Z",
+    "missedRuns": 1,
+    "source": "arbeitsagentur"
+  },
+  {
+    "id": "arbeitsagentur:20250-16982500-S",
+    "slug": "davita-deutschland-ag-facharzt-allgemeinmedizin-hausarztliche-versorgung-m-w-d-standort-templin-20250-16982500-s",
+    "company": "arbeitsagentur",
+    "employer": "DaVita Deutschland AG",
+    "title": "Facharzt Allgemeinmedizin – Hausärztliche Versorgung (m/w/d) – Standort Templin",
+    "locations": [
+      "Templin, Brandenburg, Germany"
+    ],
+    "remote": false,
+    "department": "Facharzt/-ärztin - Allgemeinmedizin (Hausarzt/-ärztin)",
+    "category": "medicine",
+    "specialty": "general-practice",
+    "level": "specialist",
+    "descriptionHtml": "<p>Das klingt nach dir und du bist bereit durchzustarten? Komm ins #TeamDaVita</p><p>Bewirb dich direkt hier mit nur wenigen Klicks.</p><p>Wir freuen uns Dich kennen zu lernen!</p><p>07487 - Templin</p><p>als</p><p>Facharzt Allgemeinmedizin – Hausärztliche Versorgung (m/w/d) – Standort Templin</p><p>Du suchst ein Umfeld, in dem deine Persönlichkeit, deine Ideen und dein Engagement wirklich zählen? Dann werde Teil von DaVita.</p><p>**Hausärztliche Medizin mit eigener Sprechstunde in einem spezialisierten medizinischen Umfeld – und mit einem Arbeitsalltag, der planbar bleibt.**</p><p>**Als Fachärzt\\*in für Allgemeinmedizin gestaltest du bei uns deine hausärztliche Tätigkeit eigenverantwortlich und begleitest deine Patient\\*innen langfristig. Dabei erwartet dich ein vielfältiges Patientenkollektiv mit akuten und chronischen Erkrankungen sowie komplexeren medizinischen Fragestellungen.**</p><p>Bei komplexen **internistischen oder nephrologischen** Fragestellungen profitierst du von kurzen Abstimmungswegen zu unseren Nephrolog\\*innen und der Expertise eines erfahrenen interdisziplinären Teams. Gleichzeitig bietet dir die ambulante Tätigkeit verlässliche und familienfreundliche Arbeitszeiten ohne Schicht-, Nacht- oder Rufdienste.</p><p>So verbindest du eigenverantwortliches hausärztliches Arbeiten, langfristige Patient\\*innenbeziehungen und medizinischen Gestaltungsspielraum mit der Sicherheit eines erfahrenen interdisziplinären Teams im Hintergrund.</p><p>So verbindest du eigenverantwortliches hausärztliches Arbeiten, langfristige Patient\\*innenbeziehungen und medizinischen Gestaltungsspielraum mit der Sicherheit eines erfahrenen interdisziplinären Teams im Hintergrund.</p><p>## #Arbeiten bei DaVita: Das erwartet dich</p><ul><li>Du führst deine eigene hausärztliche Sprechstunde und versorgst Patient\\*innen im gesamten allgemeinmedizinischen Spektrum.</li><li>Du diagnostizierst und behandelst akute sowie chronische Erkrankungen, übernimmst Vorsorge- und Früherkennungsuntersuchungen und koordinierst bei Bedarf die weitere fachärztliche Versorgung.</li><li>Du begleitest Patient\\*innen mit chronischen Erkrankungen langfristig und unterstützt sie bei der Koordination ihrer individuellen Behandlung.</li><li>Bei komplexen internistischen oder nephrologischen Fragestellungen stimmst du dich direkt mit unseren spezialisierten Kolleg\\*innen im MVZ ab und profitierst von kurzen fachlichen Abstimmungswegen.</li><li>Ein erfahrenes Praxisteam unterstützt dich im Arbeitsalltag und übernimmt viele organisatorische Aufgaben, sodass du dich auf deine Patient\\*innen und die medizinische Versorgung konzentrieren kannst.</li><li>Du bringst deine medizinische Erfahrung in die Weiterentwicklung der hausärztlichen Versorgung und sinnvoller Versorgungsabläufe am Standort ein.</li></ul><p>## #TeamDaVita: Das bringst du mit</p><ul><li>Du verfügst über eine abgeschlossene Facharztweiterbildung und Anerkennung als Fachärzt\\*in für Allgemeinmedizin.Du arbeitest patientenorientiert und schätzt langfristige Arzt-Patient\\*innen-Beziehungen.</li><li>Du hast Interesse an einer interdisziplinären Zusammenarbeit und bist offen dafür, Einblicke in die Nephrologie zu gewinnen.</li><li>Du arbeitest strukturiert, verantwortungsbewusst und bringst deine fachliche Expertise gerne in ein kollegiales Team ein.</li><li>Du verfügst über Deutschkenntnisse auf mindestens B2-Niveau sowie über einen Wohnsitz oder eine gültige Arbeitserlaubnis</li></ul><p>## #Warum DaVita?</p><p>**Interdisziplinäres Umfeld &amp; am Standort Templin**</p><p>Bei DaVita arbeitest du in einem Umfeld, in dem hausärztliche und nephrologische Versorgung eng miteinander verbunden sind. Kurze Abstimmungswege und der direkte Austausch mit spezialisierten Kolleginnen ermöglichen eine ganzheitliche Betreuung unserer Patientinnen und eröffnen dir neue fachliche Perspektiven.</p><p>In Templin erwartet dich ein hausärztliches Tätigkeitsfeld mit einem hohen internistischen Versorgungsbedarf und einem vielfältigen, chronisch erkrankten Patientenkollektiv. Hier kannst du langfristige Arzt-Patient\\*innen-Beziehungen aufbauen und einen wichtigen Beitrag zur ambulanten Versorgung in der Region leisten.</p><p>**Starkes medizinisches Netzwerk**</p><p>Mit über 140 Nephrolog\\*innen in Deutschland sowie zahlreichen ärztlichen Kolleg\\*innen aus der Allgemeinmedizin und Inneren Medizin bist du Teil eines starken fachlichen Netzwerks. Zusätzlich profitierst du vom internationalen Austausch innerhalb der DaVita Gruppe in 14 Ländern. Gemeinsam lernen wir voneinander, teilen Erfahrungen aus der täglichen Praxis und entwickeln die ambulante Versorgung kontinuierlich weiter.</p><p>**Fortbildung &amp; Entwicklung**</p><p>Medizin entwickelt sich kontinuierlich weiter – und du dich mit ihr. Über unser DaVita Bildungszentrum stehen dir ärztliche Fachfortbildungen, Programme zu Führung und ambulanten Versorgungsstrukturen sowie weitere praxisnahe Schulungen zur Verfügung. Darüber hinaus unterstützen wir deine externen Fort- und Weiterbildungen.</p><p>Ob fachliche Spezialisierung oder neue Behandlungsschwerpunkte– du entscheidest, welchen Weg du gehen möchtest. Dank unseres deutschlandweiten Zentrumsnetzwerks eröffnen sich dir dabei vielfältige Entwicklungsmöglichkeiten – auch über den eigenen Standort hinaus.</p><p>**Planbarkeit &amp; Benefits**</p><p>Ein unbefristeter Arbeitsvertrag, familienfreundliche und planbare Arbeitszeiten sowie verlässliche Strukturen schaffen langfristige Perspektiven. Die ambulante Versorgung ermöglicht dir einen geregelten Arbeitsalltag ohne Schicht-, Nacht- oder Rufdienste. Je nach Standort und persönlicher Lebenssituation sind unterschiedliche Arbeitszeitmodelle möglich. So lassen sich Beruf und Privatleben verlässlich miteinander verbinden. Ergänzt wird dies durch Fortbildungsurlaub, einen Zuschuss zur betrieblichen Altersvorsorge, attraktive Mitarbeiterrabatte sowie weitere Benefits.</p><p>**Das klingt nach dir?**</p><p>Dann freuen wir uns darauf, dich kennenzulernen und gemeinsam mit dir die hausärztliche Versorgung bei DaVita weiterzuentwickeln. #TeamMedizin</p><p>## Startdatum:</p><p>01.01.2026</p><p>****Umfang:**</p><p>Teilzeit</p><p>## **Stunden/Woche:**</p><p>31</p><p>## Bring Dich bei uns mit Deinem Können ein</p><p>Sende ganz einfach Deine Bewerbungsunterlagen mit Angabe Deiner frühesten Verfügbarkeit direkt hier über das nachfolgende Formular. Solltest Du im Vorfeld Fragen haben, steht Dir unsere Zentrumsleitung telefonisch unter</p><p>+49 (3987) 20700</p><p>gern zur Verfügung.</p><p>Bei Fragen kannst du uns auch unkompliziert über WhatsApp erreichen: 0170 - 8516 707.</p><p>Wir freuen uns darauf, dich kennen zu lernen!</p><p>07487 - Templin: Friedrich-Engels-Straße 15, 17268 Templin</p>",
+    "applyUrl": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20250-16982500-S",
+    "postedAt": "2026-11-24T00:00:00.000Z",
+    "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "arbeitsagentur"
   },
   {
