@@ -213,15 +213,15 @@ const summary = closed
 
   {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
 
-  {sameSpecialty.length > 0 && <section><h2>{j.moreSpecialty(specialtyName!)}</h2><JobList jobs={sameSpecialty} lang={lang} /></section>}
-  {sameState.length > 0 && <section><h2>{j.moreMedicalIn(areaLabel!)}</h2><JobList jobs={sameState} lang={lang} /></section>}
+  {sameSpecialty.length > 0 && <section><h2>{j.moreSpecialty(specialtyName!)}</h2><JobList jobs={sameSpecialty} lang={lang} newSummary={false} /></section>}
+  {sameState.length > 0 && <section><h2>{j.moreMedicalIn(areaLabel!)}</h2><JobList jobs={sameState} lang={lang} newSummary={false} /></section>}
   {medicineBrowse.length > 0 && <section><h2>{j.browseSimilar}</h2><ul class="browse">{medicineBrowse.map((l) => <li><a href={u(l.href)}>{l.label}</a></li>)}</ul></section>}
 
   {
     related.team.length > 0 && (
       <section>
         <h2>{j.moreAt(job.category ? categoryName(job.category, lang) : undefined, companyName, Boolean(job.employer))}</h2>
-        <JobList jobs={related.team} showCompany={false} lang={lang} />
+        <JobList jobs={related.team} showCompany={false} lang={lang} newSummary={false} />
         {companyJobs > related.team.length + 1 && <p><a href={u(`/companies/${job.company}`)}>{j.allAt(companyJobs, companyName, Boolean(job.employer))} →</a></p>}
       </section>
     )
@@ -230,7 +230,7 @@ const summary = closed
     related.place.length > 0 && (
       <section>
         <h2>{placeName ? j.moreIn(placeName) : j.moreRemote}</h2>
-        <JobList jobs={related.place} lang={lang} />
+        <JobList jobs={related.place} lang={lang} newSummary={false} />
       </section>
     )
   }

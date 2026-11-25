@@ -313,11 +313,22 @@ export async function getJobsByCategory(category: string): Promise<Job[]> {
   return (await getOpenJobs()).filter((j) => j.category === category);
 }
 
+/** Jobs first seen after this moment (24 hours before the latest run) count as new today */
+export async function getNewCutoff(): Promise<number> {
+  const run = await getLatestRun();
+  return (run ? Date.parse(run.startedAt) : Date.now()) - DAY_MS;
+}
+
 /** Open jobs first seen within 24 hours of the latest run. */
 export async function getNewJobs(): Promise<Job[]> {
-  const run = await getLatestRun();
-  const ref = run ? Date.parse(run.startedAt) : Date.now();
-  return (await getOpenJobs()).filter((j) => ref - Date.parse(j.firstSeenAt) < DAY_MS);
+  const cutoff = await getNewCutoff();
+  return (await getOpenJobs()).filter((j) => Date.parse(j.firstSeenAt) > cutoff);
+}
+
+/** Open medical jobs first seen within 24 hours of the latest run. */
+export async function getNewMedicineJobs(): Promise<Job[]> {
+  const cutoff = await getNewCutoff();
+  return (await getOpenMedicineJobs()).filter((j) => Date.parse(j.firstSeenAt) > cutoff);
 }
 
 /** Every source in data/companies.json, medical ones included */

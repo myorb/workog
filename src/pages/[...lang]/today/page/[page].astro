@@ -1,0 +1,15 @@
+---
+/** Page 2 onwards of today's new jobs; page 1 is the index */
+import type { GetStaticPaths } from "astro";
+import NewJobs from "../../../../components/NewJobs.astro";
+import { getNewJobs } from "../../../../lib/jobs.ts";
+import { extraPages } from "../../../../lib/pagination.ts";
+import { withLangs } from "../../../../lib/i18n.ts";
+
+export const getStaticPaths = (async () =>
+  withLangs(extraPages((await getNewJobs()).length).map((page) => ({ params: { page: String(page) }, props: { page } })))) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<NewJobs kind="tech" page={page} />

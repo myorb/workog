@@ -61,5 +61,5 @@ const none = m.tech.noneIn(tech.name, city.name);
       </p>
     )
   }
-  {elsewhere.length > 0 && <><h2>{m.tech.elsewhere(tech.name, name)}</h2><JobList jobs={elsewhere} /></>}
+  {elsewhere.length > 0 && <><h2>{m.tech.elsewhere(tech.name, name)}</h2><JobList jobs={elsewhere} newSummary={false} /></>}
 </Base>

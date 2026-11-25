@@ -1,0 +1,40 @@
+---
+/**
+ * Today's new jobs, tech (/today) or medical (/medicine/today): every open job
+ * first seen within 24 hours of the latest run, newest first, paginated like
+ * the browse pages. Rebuilt with each daily update. They're noindex and kept
+ * out of the sitemap, since the whole list turns over every day.
+ */
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "./Breadcrumbs.astro";
+import JobList from "./JobList.astro";
+import Pager from "./Pager.astro";
+import { getNewJobs, getNewMedicineJobs } from "../lib/jobs.ts";
+import { pageCount, pageSlice } from "../lib/pagination.ts";
+import { getLang, t } from "../lib/i18n.ts";
+
+interface Props {
+  kind: "tech" | "medicine";
+  page?: number;
+}
+
+const { kind, page = 1 } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const td = m.today;
+const medicine = kind === "medicine";
+const jobs = medicine ? await getNewMedicineJobs() : await getNewJobs();
+const base = medicine ? "/medicine/today" : "/today";
+const heading = medicine ? td.medicineTitle : td.title;
+const title = page > 1 ? m.pager.titled(heading, page) : heading;
+const description = medicine ? td.medicineDescription(jobs.length) : td.description(jobs.length);
+const section = medicine ? { name: m.start.medicine, href: "/medicine" } : { name: m.start.tech, href: "/tech" };
+---
+
+<Base title={title} description={description} section={kind} noindex>
+  <Breadcrumbs trail={page > 1 ? [section, { name: heading, href: base }] : [section]} current={title} />
+  <h1>{heading}</h1>
+  <p class="muted">{td.count(jobs.length)}{pageCount(jobs.length) > 1 && ` · ${m.pager.page(page, pageCount(jobs.length))}`}</p>
+  {jobs.length ? <JobList jobs={pageSlice(jobs, page)} showNew={false} /> : <p>{td.none}</p>}
+  <Pager base={base} page={page} jobCount={jobs.length} />
+</Base>

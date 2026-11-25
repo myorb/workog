@@ -1,0 +1,9 @@
+---
+import type { GetStaticPaths } from "astro";
+import NewJobs from "../../../../components/NewJobs.astro";
+import { withLangs } from "../../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+---
+
+<NewJobs kind="medicine" />

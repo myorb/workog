@@ -1,28 +1,40 @@
 ---
 import type { Job } from "../lib/schema.ts";
-import { getCompanies, tagsOf } from "../lib/jobs.ts";
+import { getCompanies, getNewCutoff, tagsOf } from "../lib/jobs.ts";
 import { isMedicine } from "../lib/medicine.ts";
 import { formatDate, formatLocations } from "../lib/format.ts";
 import { getLang, t, type Lang } from "../lib/i18n.ts";
+import { LIST_PAGE_LIMIT } from "../lib/constants.ts";
 
 interface Props {
   jobs: Job[];
   showCompany?: boolean;
   /** for pages without a language in their route, such as job pages */
   lang?: Lang;
+  /** "New" badges on jobs first seen in the last 24 hours; off where every job is new */
+  showNew?: boolean;
+  /** the "N new today" line above the list; off for short side lists */
+  newSummary?: boolean;
 }
 
-const { jobs, showCompany = true } = Astro.props;
+const { jobs, showCompany = true, showNew = true, newSummary = true } = Astro.props;
 const lang = Astro.props.lang ?? getLang(Astro.params.lang);
 const m = t(lang);
 const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]));
+const cutoff = await getNewCutoff();
+const isNew = (job: Job) => showNew && Date.parse(job.firstSeenAt) > cutoff;
+const newCount = jobs.filter(isNew).length;
+// pages pass at most LIST_PAGE_LIMIT jobs, newest first, so a full list of new ones may have more behind it
+const more = newCount === jobs.length && jobs.length >= LIST_PAGE_LIMIT;
 ---
 
+{newSummary && newCount > 0 && <p class="new-count"><span class="dot" aria-hidden="true" />{m.today.newCount(newCount, more)}</p>}
 <ul class="job-list">
   {
     jobs.map((job) => (
       <li>
-        <a class="title" href={`/jobs/${job.slug}`}>{job.title}</a>
+        <a class="title" href={`/jobs/${job.slug}`} target="_blank" rel="noopener">{job.title}</a>
+        {isNew(job) && <span class="new"><span aria-hidden="true">🔥 </span>{m.today.badge}</span>}
         <div class="meta">
           {/* a job board's jobs name their employer even on the board's own page */}
           {(showCompany || job.employer) && <span class="company">{job.employer ?? companyNames.get(job.company) ?? job.company}</span>}
@@ -48,4 +60,15 @@ const companyNames = new Map((await getCompanies()).map((c) => [c.key, c.name]))
   .title:visited { color: var(--visited); }
   .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 14px; color: var(--muted); margin-top: 2px; }
   .company { color: var(--text); font-weight: 500; }
+  /* gray, darker on light backgrounds so the text stays readable */
+  .new, .new-count { --new: #57534e; }
+  @media (prefers-color-scheme: dark) {
+    .new, .new-count { --new: #d6d3d1; }
+  }
+  .new {
+    display: inline-block; margin-left: 8px; padding: 1px 7px; vertical-align: 0.1em; border-radius: 999px;
+    font-size: 12px; font-weight: 600; color: var(--new); background: color-mix(in srgb, var(--new) 15%, transparent);
+  }
+  .new-count { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-size: 14px; color: var(--muted); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--new); }
 </style>

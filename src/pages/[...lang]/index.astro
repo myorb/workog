@@ -6,7 +6,7 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import LineChart from "../../components/LineChart.astro";
-import { getCompanies, getHistory, getMedicineSnapshots, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
+import { getCompanies, getHistory, getNewJobs, getNewMedicineJobs, getMedicineSnapshots, getMedicineCounts, getOpenJobs, getOpenMedicineJobs, getRemoteCount, getTagCounts } from "../../lib/jobs.ts";
 import { cityLinks, remoteUrl, medicineCountryLinks, specialtyLinks, technologyLinks } from "../../lib/links.ts";
 import { getLang, localizePath, t, withLangs } from "../../lib/i18n.ts";
 import { formatNumber } from "../../lib/locale.ts";
@@ -26,6 +26,7 @@ const techJobs = await getOpenJobs();
 const companies = (await getCompanies()).length;
 const tags = await getTagCounts();
 const tech = [
+  { href: "/today", label: m.today.link, count: (await getNewJobs()).length },
   ...technologyLinks(tags.technologies).slice(0, 3),
   { href: remoteUrl(), label: m.remote, count: await getRemoteCount() },
   ...cityLinks(tags.cities).slice(0, 2),
@@ -36,6 +37,7 @@ const tech = [
 const medicalJobs = await getOpenMedicineJobs();
 const med = await getMedicineCounts();
 const medicine = [
+  { href: "/medicine/today", label: m.today.link, count: (await getNewMedicineJobs()).length },
   ...specialtyLinks(med.specialties, lang).slice(0, 4),
   ...medicineCountryLinks(med.countries, lang).slice(0, 2),
   { href: "/medicine/specialties", label: s.allSpecialties },
