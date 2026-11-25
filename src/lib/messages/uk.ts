@@ -27,6 +27,7 @@ const insightPeers = {
 export const uk = {
   nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика", remote: "Віддалено" },
   language: "Мова",
+  newTab: "(відкривається в новій вкладці)",
   lastUpdated: "Оновлено",
   lastCheck: (time: string, sources: number, added: number, closed: number) =>
     `Остання перевірка ${time}: джерел — ${n(sources)}, нових — ${n(added)}, закритих — ${n(closed)}.`,

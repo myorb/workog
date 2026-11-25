@@ -101,7 +101,7 @@ const jsonLd = [
     <p class="cite">{rp.citeAs(title, url.href, date(end.date))}</p>
   </section>
 
-  <nav class="pager">
+  <nav class="pager" aria-label={m.pager.label}>
     {prev ? <a href={localizePath(reportUrl("tech", prev), lang)}>{rp.earlier}</a> : <span />}
     {next && <a href={localizePath(reportUrl("tech", next), lang)}>{rp.later}</a>}
   </nav>

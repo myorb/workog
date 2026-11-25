@@ -27,6 +27,7 @@ const techJobs = (tech: string) => ({ one: `empleo de ${tech} abierto`, other: `
 export const es = {
   nav: { locations: "Ubicaciones", technologies: "Tecnologías", companies: "Empresas", analytics: "Analítica", remote: "Remoto" },
   language: "Idioma",
+  newTab: "(se abre en una pestaña nueva)",
   lastUpdated: "Última actualización",
   lastCheck: (time: string, sources: number, added: number, closed: number) =>
     `Última revisión ${time}: ${p(sources, { one: "fuente", other: "fuentes" })}, ${n(added)} nuevos, ${n(closed)} cerrados.`,

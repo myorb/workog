@@ -121,13 +121,17 @@ const ogImage = new URL(shareImage.path, Astro.site);
           translated && (
             <details class="langs">
               <summary aria-label={m.language} title={languageNames[lang]}>{lang.toUpperCase()}</summary>
-              <div class="lang-menu" role="list">
-                {locales.map((l) => (
-                  <a role="listitem" href={localizePath(basePath, l)} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>
-                    <span>{l.toUpperCase()}</span> {languageNames[l]}
-                  </a>
-                ))}
-              </div>
+              <nav class="lang-menu" aria-label={m.language}>
+                <ul>
+                  {locales.map((l) => (
+                    <li>
+                      <a href={localizePath(basePath, l)} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>
+                        <span>{l.toUpperCase()}</span> {languageNames[l]}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </details>
             <script is:inline>
               // close the language menu on outside click or Escape
@@ -154,7 +158,7 @@ const ogImage = new URL(shareImage.path, Astro.site);
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
                   {m.sections.medicine}
                 </a>
-                <nav>
+                <nav aria-label={m.sections.medicine}>
                   <a href={u("/medicine/specialties")}>{m.medicine.nav.specialties}</a>
                   <a href={u("/medicine/locations")}>{m.medicine.nav.locations}</a>
                   <a href={u("/medicine/levels")}>{m.medicine.nav.levels}</a>
@@ -168,7 +172,7 @@ const ogImage = new URL(shareImage.path, Astro.site);
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg>
                   {m.sections.tech}
                 </a>
-                <nav>
+                <nav aria-label={m.sections.tech}>
                   <a href={u("/remote")}>{m.nav.remote}</a>
                   <a href={u("/locations")}>{m.nav.locations}</a>
                   <a href={u("/technologies")}>{m.nav.technologies}</a>
@@ -219,7 +223,11 @@ const ogImage = new URL(shareImage.path, Astro.site);
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  /* colors on the root too, so the canvas behind the page matches the theme */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background: var(--bg); color: var(--text); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .top-bar :focus-visible, .site-header :focus-visible { outline-color: currentColor; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   body {
     margin: 0;
     background: var(--bg);
@@ -238,7 +246,7 @@ const ogImage = new URL(shareImage.path, Astro.site);
   .top-bar.tech { background: #070d19; border-color: #22345a; }
   .top-bar.medicine { background: #061412; border-color: #1d4640; }
   .top-bar .wrap { display: flex; align-items: stretch; justify-content: space-between; gap: 12px; min-height: 44px; }
-  .top-bar nav { display: flex; align-items: stretch; gap: 4px; }
+  .top-bar .wrap > nav { display: flex; align-items: stretch; gap: 4px; }
   .top-bar a { color: inherit; text-decoration: none; }
   .brand { display: flex; align-items: center; gap: 8px; padding-right: 10px; font-weight: 700; white-space: nowrap; }
   .brand svg { flex: none; }
@@ -281,6 +289,7 @@ const ogImage = new URL(shareImage.path, Astro.site);
     position: absolute; right: 0; top: calc(100% + 6px); z-index: 10; min-width: 150px; padding: 4px;
     background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 6px 20px rgb(0 0 0 / 0.12);
   }
+  .lang-menu ul { margin: 0; padding: 0; list-style: none; }
   .top-bar .lang-menu a { display: flex; gap: 10px; padding: 6px 10px; border-radius: 4px; font-size: 14px; color: var(--text); }
   .lang-menu a span { width: 22px; color: var(--muted); font-size: 12px; font-weight: 600; line-height: 21px; }
   .lang-menu a:hover { background: var(--tag); }

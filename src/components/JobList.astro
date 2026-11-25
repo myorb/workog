@@ -33,7 +33,7 @@ const more = newCount === jobs.length && jobs.length >= LIST_PAGE_LIMIT;
   {
     jobs.map((job) => (
       <li>
-        <a class="title" href={`/jobs/${job.slug}`} target="_blank" rel="noopener">{job.title}</a>
+        <a class="title" href={`/jobs/${job.slug}`} target="_blank" rel="noopener">{job.title}<span class="sr-only"> {m.newTab}</span></a>
         {isNew(job) && <span class="new"><span aria-hidden="true">🔥 </span>{m.today.badge}</span>}
         <div class="meta">
           {/* a job board's jobs name their employer even on the board's own page */}

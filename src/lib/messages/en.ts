@@ -27,6 +27,7 @@ const insightPeers: Record<PeerKind, { one: string; other: string }> = {
 export const en = {
   nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics", remote: "Remote" },
   language: "Language",
+  newTab: "(opens in a new tab)",
   lastUpdated: "Last updated",
   lastCheck: (time: string, sources: number, added: number, closed: number) =>
     `Last check ${time}: ${p(sources, { one: "source", other: "sources" })}, ${n(added)} new, ${n(closed)} closed.`,

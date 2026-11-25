@@ -204,14 +204,14 @@ const summary = closed
   </dl>
   )}
 
-  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
+  {!closed && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →<span class="sr-only"> {m.newTab}</span></a></p>}
   {!closed && <ShareButtons text={m.share.job(job.title, employer, job.locations[0] ?? "")} lang={lang} />}
 
   {summary.length > 0 && <section class="summary"><h2>{j.glanceTitle}</h2><p>{summary.join(" ")}</p></section>}
 
   {job.descriptionHtml ? <article class="description" lang={contentLang} set:html={job.descriptionHtml} /> : <p class="muted">{j.noDescription}</p>}
 
-  {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →</a></p>}
+  {!closed && job.descriptionHtml && <p><a class="apply" href={job.applyUrl} rel="nofollow noopener" target="_blank">{applyLabel} →<span class="sr-only"> {m.newTab}</span></a></p>}
 
   {sameSpecialty.length > 0 && <section><h2>{j.moreSpecialty(specialtyName!)}</h2><JobList jobs={sameSpecialty} lang={lang} newSummary={false} /></section>}
   {sameState.length > 0 && <section><h2>{j.moreMedicalIn(areaLabel!)}</h2><JobList jobs={sameState} lang={lang} newSummary={false} /></section>}

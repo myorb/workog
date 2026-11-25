@@ -43,9 +43,9 @@ const facebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURICompon
 <div class="share" data-url={url} data-text={text} role="group" aria-label={s.label}>
   <span class="muted share-label">{s.label}</span>
   <button type="button" class="share-native" hidden>{s.native}</button>
-  <a class="share-net" href={linkedin} target="_blank" rel="noopener" aria-label={s.onLinkedin} data-method="linkedin">{s.linkedin}</a>
-  <a class="share-net" href={x} target="_blank" rel="noopener" aria-label={s.onX} data-method="x">{s.x}</a>
-  <a class="share-net" href={facebook} target="_blank" rel="noopener" aria-label={s.onFacebook} data-method="facebook">{s.facebook}</a>
+  <a class="share-net" href={linkedin} target="_blank" rel="noopener" aria-label={`${s.onLinkedin} ${m.newTab}`} data-method="linkedin">{s.linkedin}</a>
+  <a class="share-net" href={x} target="_blank" rel="noopener" aria-label={`${s.onX} ${m.newTab}`} data-method="x">{s.x}</a>
+  <a class="share-net" href={facebook} target="_blank" rel="noopener" aria-label={`${s.onFacebook} ${m.newTab}`} data-method="facebook">{s.facebook}</a>
   <button type="button" class="share-copy" data-copied={s.copied}>{s.copy}</button>
 </div>
 

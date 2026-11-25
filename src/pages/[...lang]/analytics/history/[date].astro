@@ -140,7 +140,7 @@ const remoteShare = (s: typeof snapshot) => Math.round((s.remote / Math.max(1, s
     </section>
   </div>
 
-  <nav class="pager">
+  <nav class="pager" aria-label={m.pager.label}>
     {prev ? <a href={localizePath(`/analytics/history/${prev.date}`, lang)}>{d.earlier}</a> : <span />}
     {next && <a href={localizePath(`/analytics/history/${next.date}`, lang)}>{d.later}</a>}
   </nav>

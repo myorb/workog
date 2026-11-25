@@ -36,7 +36,7 @@ const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
   <AsOf title={md.title} count={jobs.length} series={{ section: "medicine" }} />
 
   <div class="home-grid">
-    <aside class="sidebar">
+    <aside class="sidebar" aria-label={m.filters.title}>
       <JobFilters kind="medicine" />
       {
         popular.length > 0 && (
@@ -70,7 +70,10 @@ const popular = [...bySpecialty.slice(0, 4), ...cities.slice(0, 2)];
 
 <style>
   .home-grid { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; align-items: start; margin-top: 24px; }
-  .sidebar { position: sticky; top: 16px; }
+  /* sticky only when the whole sidebar fits on screen, so no filter ends up out of reach */
+  @media (min-height: 760px) {
+    .sidebar { position: sticky; top: 16px; }
+  }
   .latest { margin-top: 0; }
   .popular-title { margin: 20px 0 4px; font-size: 13px; }
   .popular { list-style: none; padding: 0; margin: 0; font-size: 15px; }
