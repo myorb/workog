@@ -27,7 +27,7 @@ const insightPeers = {
 const techJobs = (tech: string) => ({ one: `offener ${tech}-Job`, other: `offene ${tech}-Jobs` });
 
 export const de = {
-  nav: { locations: "Standorte", technologies: "Technologien", companies: "Unternehmen", analytics: "Analysen", remote: "Remote" },
+  nav: { locations: "Standorte", technologies: "Technologien", companies: "Unternehmen", analytics: "Analysen", remote: "Remote", management: "Management" },
   language: "Sprache",
   newTab: "(öffnet in neuem Tab)",
   lastUpdated: "Zuletzt aktualisiert",
@@ -272,6 +272,13 @@ export const de = {
     remoteTechLocation: "Remote lässt sich noch nicht mit Technologie und Standort kombinieren.",
     remoteCity: "Remote-Jobs lassen sich nach Land filtern, nicht nach Stadt.",
     remoteNone: "Derzeit keine Remote-Jobs in diesem Land.",
+    role: "Rolle",
+    management: "Management",
+    marketing: "Marketing",
+    roleAlone: "Eine Rolle lässt sich noch nicht mit Technologie oder Anstellungsart kombinieren.",
+    roleCity: "Diese Suche lässt sich nach Land filtern, nicht nach Stadt.",
+    roleNone: "Derzeit keine Jobs für diese Rolle an diesem Standort.",
+    executiveRemote: "C-Level lässt sich noch nicht mit Remote kombinieren.",
   },
   companies: {
     title: "Unternehmen",
@@ -290,6 +297,7 @@ export const de = {
     topCities: "Top-Städte",
   },
   place: {
+    roles: "Nach Rolle",
     title: (place: string) => `Jobs in ${place}`,
     countryDescription: (k: number, country: string) =>
       `${p(k, openTechJobs)} in ${country}, inklusive Remote-Stellen. Täglich aktualisiert.`,
@@ -306,6 +314,33 @@ export const de = {
     typeDescription: (k: number, type: string, co: number) =>
       `${type}: ${p(k, openJobs)} bei führenden Tech-Unternehmen in ${p(co, countries)}. Täglich aktualisiert.`,
     none: (type: string) => `${type}: derzeit keine offenen Stellen.`,
+  },
+  marketingJobs: {
+    title: "Marketing-Jobs",
+    titleIn: (place: string) => `Marketing-Jobs in ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "offener Marketing-Job", other: "offene Marketing-Jobs" })} bei ${p(c, techCompanies)}: Brand, Growth, Content, Performance Marketing und Kommunikation, täglich aktualisiert.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "offener Marketing-Job", other: "offene Marketing-Jobs" })} in ${place} bei führenden Tech-Unternehmen: Online-Marketing, Brand, Content und Kommunikation. Täglich aktualisiert.`,
+    byCountry: "Nach Land",
+    byCity: "Nach Stadt",
+    more: "Weitere Marketing-Jobs",
+    remoteTitle: "Remote-Marketing-Jobs",
+    remoteTitleIn: (place: string) => `Remote-Marketing-Jobs in ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "offener Remote-Marketing-Job", other: "offene Remote-Marketing-Jobs" })}${place ? ` in ${place}` : ""} bei führenden Tech-Unternehmen. Täglich aktualisiert.`,
+  },
+  managementJobs: {
+    title: "Management-Jobs & Führungspositionen",
+    titleIn: (place: string) => `Management-Jobs & Führungspositionen in ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "offene Führungsposition", other: "offene Führungspositionen" })} im Management und auf C-Level bei ${p(c, techCompanies)}, täglich aktualisiert.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "offene Führungsposition", other: "offene Führungspositionen" })} in ${place}: Management-Jobs als Teamleiter, Head of, Director und C-Level bei führenden Tech-Unternehmen. Täglich aktualisiert.`,
+    byCountry: "Nach Land",
+    byCity: "Nach Stadt",
+    more: "Weitere Management-Jobs",
+    remoteTitle: "Remote-Führungspositionen",
+    remoteTitleIn: (place: string) => `Remote-Führungspositionen in ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "offene Remote-Führungsposition", other: "offene Remote-Führungspositionen" })}${place ? ` in ${place}` : ""} bei führenden Tech-Unternehmen. Täglich aktualisiert.`,
+    executiveTitle: "C-Level- & Geschäftsführer-Jobs",
+    executiveTitleIn: (place: string) => `C-Level- & Geschäftsführer-Jobs in ${place}`,
+    executiveDescription: (k: number, place?: string) => `${p(k, { one: "offene C-Level-Stelle", other: "offene C-Level-Stellen" })}${place ? ` in ${place}` : ""} bei führenden Tech-Unternehmen: Vorstände, Geschäftsführer und Gründer. Täglich aktualisiert.`,
   },
   remoteJobs: {
     title: "Remote-Jobs",

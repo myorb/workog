@@ -25,7 +25,7 @@ const insightPeers = {
 };
 
 export const uk = {
-  nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика", remote: "Віддалено" },
+  nav: { locations: "Локації", technologies: "Технології", companies: "Компанії", analytics: "Аналітика", remote: "Віддалено", management: "Менеджмент" },
   language: "Мова",
   newTab: "(відкривається в новій вкладці)",
   lastUpdated: "Оновлено",
@@ -265,6 +265,13 @@ export const uk = {
     remoteTechLocation: "Віддалену роботу поки не можна поєднувати з технологією та локацією.",
     remoteCity: "Віддалені вакансії фільтруються за країною, а не за містом.",
     remoteNone: "Зараз у цій країні немає віддалених вакансій.",
+    role: "Роль",
+    management: "Менеджмент",
+    marketing: "Маркетинг",
+    roleAlone: "Роль поки не можна поєднувати з технологією чи типом зайнятості.",
+    roleCity: "Цей пошук фільтрується за країною, а не за містом.",
+    roleNone: "Зараз у цій локації немає вакансій для цієї ролі.",
+    executiveRemote: "C-level поки не можна поєднувати з віддаленою роботою.",
   },
   companies: {
     title: "Компанії",
@@ -283,6 +290,7 @@ export const uk = {
     topCities: "Популярні міста",
   },
   place: {
+    roles: "За роллю",
     title: (place: string) => `Вакансії: ${place}`,
     countryDescription: (k: number, country: string) => `${country}: ${p(k, techJobs)}, зокрема віддалені. Щоденне оновлення.`,
     cityDescription: (k: number, place: string) => `${place}: ${p(k, techJobs)}. Щоденне оновлення.`,
@@ -298,6 +306,33 @@ export const uk = {
     typeDescription: (k: number, type: string, co: number) =>
       `${type}: ${p(k, openJobs)} у провідних технологічних компаніях · ${p(co, countries)}. Щоденне оновлення.`,
     none: (type: string) => `${type}: зараз немає відкритих вакансій.`,
+  },
+  marketingJobs: {
+    title: "Вакансії в маркетингу",
+    titleIn: (place: string) => `Вакансії в маркетингу: ${place}`,
+    description: (k: number, c: number) => `Маркетинг: ${p(k, openJobs)} · ${p(c, techCompanies)} — бренд, growth, контент, performance і комунікації. Щоденне оновлення.`,
+    countryDescription: (k: number, place: string) => `Маркетинг, ${place}: ${p(k, openJobs)} у провідних технологічних компаніях — бренд, growth, контент і комунікації. Щоденне оновлення.`,
+    byCountry: "За країною",
+    byCity: "За містом",
+    more: "Інші вакансії в маркетингу",
+    remoteTitle: "Віддалені вакансії в маркетингу",
+    remoteTitleIn: (place: string) => `Віддалені вакансії в маркетингу: ${place}`,
+    remoteDescription: (k: number, place?: string) => `Віддалений маркетинг${place ? `, ${place}` : ""}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
+  },
+  managementJobs: {
+    title: "Вакансії менеджменту",
+    titleIn: (place: string) => `Вакансії менеджменту: ${place}`,
+    description: (k: number, c: number) => `Менеджмент і C-level: ${p(k, openJobs)} · ${p(c, techCompanies)}. Щоденне оновлення.`,
+    countryDescription: (k: number, place: string) => `Менеджмент, ${place}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
+    byCountry: "За країною",
+    byCity: "За містом",
+    more: "Інші вакансії менеджменту",
+    remoteTitle: "Віддалені вакансії менеджменту",
+    remoteTitleIn: (place: string) => `Віддалені вакансії менеджменту: ${place}`,
+    remoteDescription: (k: number, place?: string) => `Віддалений менеджмент${place ? `, ${place}` : ""}: ${p(k, openJobs)} у провідних технологічних компаніях. Щоденне оновлення.`,
+    executiveTitle: "Вакансії C-level",
+    executiveTitleIn: (place: string) => `Вакансії C-level: ${place}`,
+    executiveDescription: (k: number, place?: string) => `C-level${place ? `, ${place}` : ""}: ${p(k, openJobs)} у провідних технологічних компаніях — керівники, президенти, директори та засновники. Щоденне оновлення.`,
   },
   remoteJobs: {
     title: "Віддалена робота",

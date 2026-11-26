@@ -6,7 +6,8 @@ import JobList from "../../../components/JobList.astro";
 import TagLinks from "../../../components/TagLinks.astro";
 import JobFilters from "../../../components/JobFilters.astro";
 import { countTags, getCompanies, getOpenJobs } from "../../../lib/jobs.ts";
-import { cityLinks, countryLinks, employmentLinks, remoteUrl, technologyLinks } from "../../../lib/links.ts";
+import { cityLinks, countryLinks, employmentLinks, remoteUrl, roleUrl, technologyLinks } from "../../../lib/links.ts";
+import { getRolePageCounts } from "../../../lib/role-pages.ts";
 import { getLang, localizePath, t, withLangs } from "../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT } from "../../../lib/constants.ts";
 
@@ -29,6 +30,11 @@ const topTechnologies = technologyLinks(tagCounts.technologies).slice(0, 12);
 const topCountries = countryLinks(tagCounts.countries, undefined, lang).slice(0, 12);
 const types = employmentLinks(tagCounts.employment, lang);
 const remoteCount = jobs.filter((j) => j.remote).length;
+const rolePages = await getRolePageCounts();
+const roleLinks = [
+  { href: roleUrl("management"), label: m.managementJobs.title, count: rolePages.get(roleUrl("management")) ?? 0 },
+  { href: roleUrl("marketing"), label: m.marketingJobs.title, count: rolePages.get(roleUrl("marketing")) ?? 0 },
+].filter((l) => l.count);
 // Shortcuts under the filters: the biggest technologies, remote, and the biggest cities
 const popular = [
   ...topTechnologies.slice(0, 3),
@@ -82,7 +88,7 @@ const popular = [
   <p><a href={u("/locations")}>{m.allLocations}</a></p>
 
   <h2>{m.home.employment}</h2>
-  <TagLinks links={[{ href: remoteUrl(), label: m.home.remote, count: remoteCount }, ...types]} />
+  <TagLinks links={[{ href: remoteUrl(), label: m.home.remote, count: remoteCount }, ...types, ...roleLinks]} />
 </Base>
 
 <style>

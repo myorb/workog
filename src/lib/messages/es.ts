@@ -25,7 +25,7 @@ const insightPeers = {
 const techJobs = (tech: string) => ({ one: `empleo de ${tech} abierto`, other: `empleos de ${tech} abiertos` });
 
 export const es = {
-  nav: { locations: "Ubicaciones", technologies: "Tecnologías", companies: "Empresas", analytics: "Analítica", remote: "Remoto" },
+  nav: { locations: "Ubicaciones", technologies: "Tecnologías", companies: "Empresas", analytics: "Analítica", remote: "Remoto", management: "Dirección" },
   language: "Idioma",
   newTab: "(se abre en una pestaña nueva)",
   lastUpdated: "Última actualización",
@@ -268,6 +268,13 @@ export const es = {
     remoteTechLocation: "El trabajo remoto aún no se puede combinar con tecnología y ubicación.",
     remoteCity: "Los empleos remotos se filtran por país, no por ciudad.",
     remoteNone: "Ahora mismo no hay empleos remotos en este país.",
+    role: "Puesto",
+    management: "Dirección",
+    marketing: "Marketing",
+    roleAlone: "Un puesto aún no se puede combinar con tecnología ni tipo de empleo.",
+    roleCity: "Esta búsqueda se filtra por país, no por ciudad.",
+    roleNone: "Ahora mismo no hay empleos de este puesto en esta ubicación.",
+    executiveRemote: "C-level aún no se puede combinar con remoto.",
   },
   companies: {
     title: "Empresas",
@@ -286,6 +293,7 @@ export const es = {
     topCities: "Ciudades principales",
   },
   place: {
+    roles: "Por puesto",
     title: (place: string) => `Empleos en ${place}`,
     countryDescription: (k: number, country: string) =>
       `${p(k, openTechJobs)} en ${country}, incluidos puestos remotos. Actualizado a diario.`,
@@ -302,6 +310,33 @@ export const es = {
     typeDescription: (k: number, type: string, co: number) =>
       `${type}: ${p(k, openJobs)} en las principales empresas tecnológicas, en ${p(co, countries)}. Actualizados a diario.`,
     none: (type: string) => `${type}: no hay puestos abiertos ahora mismo.`,
+  },
+  marketingJobs: {
+    title: "Empleos de marketing",
+    titleIn: (place: string) => `Empleos de marketing en ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "empleo de marketing abierto", other: "empleos de marketing abiertos" })} en ${p(c, techCompanies)}: marca, growth, contenido, performance y comunicación, actualizados a diario.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "empleo de marketing abierto", other: "empleos de marketing abiertos" })} en ${place} en las principales empresas tecnológicas: marca, growth, contenido y comunicación. Actualizados a diario.`,
+    byCountry: "Por país",
+    byCity: "Por ciudad",
+    more: "Más empleos de marketing",
+    remoteTitle: "Empleos de marketing remotos",
+    remoteTitleIn: (place: string) => `Empleos de marketing remotos en ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "empleo de marketing remoto abierto", other: "empleos de marketing remotos abiertos" })}${place ? ` en ${place}` : ""} en las principales empresas tecnológicas. Actualizados a diario.`,
+  },
+  managementJobs: {
+    title: "Empleos de dirección",
+    titleIn: (place: string) => `Empleos de dirección en ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "empleo de dirección o C-level abierto", other: "empleos de dirección y C-level abiertos" })} en ${p(c, techCompanies)}, actualizados a diario.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "empleo de dirección abierto", other: "empleos de dirección abiertos" })} en ${place} en las principales empresas tecnológicas. Actualizados a diario.`,
+    byCountry: "Por país",
+    byCity: "Por ciudad",
+    more: "Más empleos de dirección",
+    remoteTitle: "Empleos de dirección remotos",
+    remoteTitleIn: (place: string) => `Empleos de dirección remotos en ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "empleo de dirección remoto abierto", other: "empleos de dirección remotos abiertos" })}${place ? ` en ${place}` : ""} en las principales empresas tecnológicas. Actualizados a diario.`,
+    executiveTitle: "Empleos C-level",
+    executiveTitleIn: (place: string) => `Empleos C-level en ${place}`,
+    executiveDescription: (k: number, place?: string) => `${p(k, { one: "empleo C-level abierto", other: "empleos C-level abiertos" })}${place ? ` en ${place}` : ""} en las principales empresas tecnológicas: directivos, presidentes, directores generales y fundadores. Actualizados a diario.`,
   },
   remoteJobs: {
     title: "Empleos remotos",

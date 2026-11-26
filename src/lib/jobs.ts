@@ -7,11 +7,12 @@ import { join } from "node:path";
 import { z } from "zod";
 import { type EmploymentType, employmentTypeOf } from "./employment.ts";
 import { readAllJobs } from "./job-files.ts";
-import { slugify } from "./normalize.ts";
+import { LEADERSHIP_CATEGORIES, slugify } from "./normalize.ts";
 import { placesOf } from "./places.ts";
 import { isMedicine, type MedicinePlace, medicinePlaceOf } from "./medicine.ts";
 import { type HospitalIndex, hospitalSlugOf, indexHospitals } from "./hospitals.ts";
 import { technologiesOf } from "./technologies.ts";
+import { isMarketing } from "./marketing.ts";
 import { type CompanyConfig, CompanyConfigSchema, type HistoryDay, HistoryDaySchema, type Job, type MedicineSnapshot, MedicineSnapshotSchema, type Run, RunSchema, type Snapshot, SnapshotSchema } from "./schema.ts";
 
 const DATA_DIR = join(process.cwd(), "data");
@@ -216,7 +217,19 @@ export interface JobFilter {
   technology?: string;
   employment?: EmploymentType;
   remote?: boolean;
+  /** management and C-level roles */
+  management?: boolean;
+  /** C-level roles only, a subset of management */
+  executive?: boolean;
+  /** marketing and communications roles, leaders included */
+  marketing?: boolean;
 }
+
+/** Management and C-level roles, as categorize() files them from the title. */
+export const isManagement = (job: Pick<Job, "category">) => LEADERSHIP_CATEGORIES.has(job.category ?? "");
+
+/** C-level roles: chief officers, presidents, managing directors and founders. */
+export const isExecutive = (job: Pick<Job, "category">) => job.category === "executive";
 
 interface JobTags {
   countries: Set<string>;
@@ -245,7 +258,10 @@ export function matches(job: Job, filter: JobFilter): boolean {
     (!filter.city || tags.cities.has(filter.city)) &&
     (!filter.technology || tags.technologies.has(filter.technology)) &&
     (!filter.employment || tags.employment.has(filter.employment)) &&
-    (filter.remote === undefined || job.remote === filter.remote)
+    (filter.remote === undefined || job.remote === filter.remote) &&
+    (filter.management === undefined || isManagement(job) === filter.management) &&
+    (filter.executive === undefined || isExecutive(job) === filter.executive) &&
+    (filter.marketing === undefined || isMarketing(job) === filter.marketing)
   );
 }
 
@@ -261,6 +277,9 @@ const getTagIndex = () =>
         ...[...tags.technologies].map((s) => `technology:${s}`),
         ...[...tags.employment].map((s) => `employment:${s}`),
         `remote:${job.remote}`,
+        `management:${isManagement(job)}`,
+        `executive:${isExecutive(job)}`,
+        `marketing:${isMarketing(job)}`,
       ];
     }),
   ));
@@ -274,6 +293,9 @@ export async function getJobsWhere(filter: JobFilter): Promise<Job[]> {
       key("technology", filter.technology),
       key("employment", filter.employment),
       key("remote", filter.remote),
+      key("management", filter.management),
+      key("executive", filter.executive),
+      key("marketing", filter.marketing),
     ]) ?? (await getOpenJobs());
   return pool.filter((j) => matches(j, filter));
 }

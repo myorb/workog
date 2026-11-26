@@ -5,8 +5,9 @@ import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countTags, getCompanies, getJobsWhere, getTagCounts } from "../../../../lib/jobs.ts";
+import { getRolePageCounts } from "../../../../lib/role-pages.ts";
 import { cities, getCountry } from "../../../../lib/places.ts";
-import { cityLinks, cityUrl, companyCounts, companyLinks, countryUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { cityLinks, cityUrl, companyCounts, companyLinks, countryUrl, roleUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 
@@ -31,6 +32,14 @@ const companies = companyLinks(companyCounts(jobs), await getCompanies());
 const nearby = cityLinks((await getTagCounts()).cities, undefined, country.slug)
   .filter((l) => l.href !== cityUrl(country.slug, city.slug))
   .slice(0, 12);
+// Role pages for this city, linked only once they're big enough to be indexed
+const rolePages = await getRolePageCounts();
+const roles = [
+  { href: roleUrl("management", country.slug, city.slug), label: m.managementJobs.title },
+  { href: roleUrl("marketing", country.slug, city.slug), label: m.marketingJobs.title },
+]
+  .map((l) => ({ ...l, count: rolePages.get(l.href) ?? 0 }))
+  .filter((l) => !isThin(l.count));
 ---
 
 <Base title={m.place.title(`${city.name}, ${name}`)} description={m.place.cityDescription(jobs.length, `${city.name}, ${name}`)} noindex={isThin(jobs.length)}>
@@ -41,6 +50,7 @@ const nearby = cityLinks((await getTagCounts()).cities, undefined, country.slug)
     {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
   </p>
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  {roles.length > 0 && <><h2>{m.place.roles}</h2><TagLinks links={roles} /></>}
   {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />

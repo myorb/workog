@@ -1,6 +1,8 @@
 import { describe, expect, test } from "bun:test";
 import type { Job } from "./schema.ts";
 import { categorize } from "./normalize.ts";
+import { isExecutive, isManagement, matches } from "./jobs.ts";
+import { isMarketing } from "./marketing.ts";
 import { employmentTypeOf } from "./employment.ts";
 import { placesOf } from "./places.ts";
 import { technologiesOf } from "./technologies.ts";
@@ -167,6 +169,85 @@ describe("categorize", () => {
     expect(categorize("Key Account Director - CRM - TMT")).toBe("sales");
     expect(categorize("Art Director")).toBe("design");
     expect(categorize("Slack VP, Product Design (Individual Contributor; Principal Architect)")).toBe("design");
+  });
+});
+
+describe("isManagement", () => {
+  const managed = (title: string) => isManagement({ category: categorize(title) });
+
+  test("management and C-level titles count", () => {
+    expect(managed("Engineering Manager, Payments")).toBe(true);
+    expect(managed("Head of Sales, EMEA")).toBe(true);
+    expect(managed("Chief Technology Officer")).toBe(true);
+  });
+
+  test("individual contributors and managers of work don't", () => {
+    expect(managed("Senior Software Engineer")).toBe(false);
+    expect(managed("Product Manager")).toBe(false);
+    expect(managed("Executive Assistant to the CEO")).toBe(false);
+  });
+
+  test("the management filter picks them out", () => {
+    const lead = job({ id: "test:lead", title: "Director of Engineering", category: "management", locations: ["Berlin, Germany"] });
+    const ic = job({ id: "test:ic", title: "Backend Engineer", category: "engineering", locations: ["Berlin, Germany"] });
+    expect(matches(lead, { management: true, country: "germany" })).toBe(true);
+    expect(matches(ic, { management: true })).toBe(false);
+    expect(matches(ic, { management: false })).toBe(true);
+  });
+
+  test("C-level is the executive part of management", () => {
+    const coo = job({ id: "test:coo", title: "COO (Chief Operating Officer)", category: categorize("COO (Chief Operating Officer)"), locations: ["München"] });
+    const director = job({ id: "test:director", title: "Director (m/w/d) Maschinenbau", category: categorize("Director (m/w/d) Maschinenbau"), locations: ["München"], remote: true });
+    expect(isExecutive(coo)).toBe(true);
+    expect(isExecutive(director)).toBe(false);
+    expect(matches(coo, { management: true, executive: true, city: "munich" })).toBe(true);
+    expect(matches(director, { management: true, executive: true })).toBe(false);
+    expect(matches(director, { management: true, remote: true, city: "munich" })).toBe(true);
+  });
+});
+
+describe("isMarketing", () => {
+  const marketing = (title: string) => isMarketing({ title });
+
+  test("marketing and communications roles count, leaders included", () => {
+    for (const title of [
+      "Senior Growth Marketing Manager, Paid Social",
+      "Head of Marketing",
+      "VP, Product Marketing",
+      "Junior Marketingmanager:in (40-80%)",
+      "Kommunikation & Content Spezialist:in (40%)",
+      "Senior Manager, Internal Comms",
+      "Senior Media Relations Manager (m/f/d)",
+      "(Senior) Copywriter",
+      "Demand Generation Manager, Auto",
+      "Praktikum Online Marketing (m/w/d)",
+    ]) expect(marketing(title)).toBe(true);
+  });
+
+  test("words the broad category counts alone don't", () => {
+    for (const title of [
+      "Management Graduate Program Intake (French speaker) SetSales",
+      "Sr. Deployment Strategist, FDE - Communications, Media, Entertainment & Gaming",
+      "Content Security Specialist",
+      "Growth Associate",
+      "Sr. Product Lifecycle Mechanical Engineer",
+    ]) expect(marketing(title)).toBe(false);
+  });
+
+  test("roles that only serve marketing don't", () => {
+    for (const title of [
+      "Marketing Cloud Account Executive - SMB",
+      "Technical Marketing Engineer Intern",
+      "Business Intelligence Engineer, Marketing Finance",
+      "Go-to-Market Recruiter",
+    ]) expect(marketing(title)).toBe(false);
+  });
+
+  test("the marketing filter picks them out", () => {
+    const lead = job({ id: "test:mkt-lead", title: "Head of Marketing", category: "management", locations: ["München"], remote: true });
+    expect(matches(lead, { marketing: true, city: "munich" })).toBe(true);
+    expect(matches(lead, { marketing: true, management: true, remote: true })).toBe(true);
+    expect(matches(job({ id: "test:mkt-ic", title: "Backend Engineer" }), { marketing: true })).toBe(false);
   });
 });
 

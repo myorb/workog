@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { countTags, getCompanies, getHospitalIndex, getLatestRun, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots } from "../lib/jobs.ts";
 import { reportMonths, reportsUrl, reportUrl } from "../lib/reports.ts";
 import { formatMonth } from "../lib/format.ts";
-import { countryLinks, employmentLinks, levelLinks, medicineCountryLinks, remoteUrl, specialtyLinks, stateLinks, technologyLinks } from "../lib/links.ts";
+import { countryLinks, employmentLinks, levelLinks, managementUrl, medicineCountryLinks, roleUrl, remoteUrl, specialtyLinks, stateLinks, technologyLinks } from "../lib/links.ts";
 import { hospitalsUrl, hospitalUrl } from "../lib/hospitals.ts";
 import { plural } from "../lib/format.ts";
 
@@ -100,6 +100,8 @@ ${list(topHospitals)}
 - [Locations](${url("/locations")}): jobs by country and city
 - [Remote jobs](${url(remoteUrl())}): remote jobs, also by country (\`/remote/<country>\`)
 - [Employment types](${url("/employment")}): full time, part time, contract and internship jobs
+- [Management jobs](${url(managementUrl())}): management and C-level roles, also by country and city (\`/management/<country>/<city>\`), remote (\`/management/remote/<country>\`) and C-level only (\`/management/c-level/<country>\`)
+- [Marketing jobs](${url(roleUrl("marketing"))}): marketing and communications roles, leaders included, also by country and city (\`/marketing/<country>/<city>\`) and remote (\`/marketing/remote/<country>\`)
 
 ### Companies
 

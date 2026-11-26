@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from "astro";
+import RoleHub from "../../../components/RoleHub.astro";
+import { indexPage } from "../../../lib/role-pages.ts";
+import { getLang, withLangs } from "../../../lib/i18n.ts";
+
+export const getStaticPaths = (() => withLangs([{ params: {} }])) satisfies GetStaticPaths;
+
+const props = await indexPage("marketing", getLang(Astro.params.lang));
+---
+
+<RoleHub {...props} />

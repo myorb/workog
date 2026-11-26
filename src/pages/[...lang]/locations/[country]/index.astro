@@ -8,8 +8,9 @@ import ShareButtons from "../../../../components/ShareButtons.astro";
 import JobList from "../../../../components/JobList.astro";
 import TagLinks from "../../../../components/TagLinks.astro";
 import { countTags, getCompanies, getJobsWhere } from "../../../../lib/jobs.ts";
+import { getRolePageCounts } from "../../../../lib/role-pages.ts";
 import { countries } from "../../../../lib/places.ts";
-import { cityLinks, companyCounts, companyLinks, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
+import { cityLinks, companyCounts, companyLinks, executiveUrl, roleRemoteUrl, roleUrl, technologyLinks, technologyUrl } from "../../../../lib/links.ts";
 import { countryName, getLang, t, withLangs } from "../../../../lib/i18n.ts";
 import { LIST_PAGE_LIMIT, isThin } from "../../../../lib/constants.ts";
 import { hubInsights } from "../../../../lib/page-insights.ts";
@@ -34,6 +35,17 @@ const companies = companyLinks(companyCounts(jobs), await getCompanies());
 const series = { section: "tech", dim: "countries", key: country.slug } as const;
 const insights = await hubInsights({ series, count: jobs.length, parts: new Map(cities.map((c) => [c.label, c.count])) });
 const image = pageImage(await countryShare(country));
+// Role pages for this country, linked only once they're big enough to be indexed
+const rolePages = await getRolePageCounts();
+const roles = [
+  { href: roleUrl("management", country.slug), label: m.managementJobs.title },
+  { href: roleRemoteUrl("management", country.slug), label: m.managementJobs.remoteTitle },
+  { href: executiveUrl(country.slug), label: m.managementJobs.executiveTitle },
+  { href: roleUrl("marketing", country.slug), label: m.marketingJobs.title },
+  { href: roleRemoteUrl("marketing", country.slug), label: m.marketingJobs.remoteTitle },
+]
+  .map((l) => ({ ...l, count: rolePages.get(l.href) ?? 0 }))
+  .filter((l) => !isThin(l.count));
 ---
 
 <Base title={m.place.title(name)} description={m.place.countryDescription(jobs.length, name)} noindex={isThin(jobs.length)} image={image}>
@@ -44,6 +56,7 @@ const image = pageImage(await countryShare(country));
   <ShareButtons title={m.place.title(name)} count={jobs.length} series={series} />
   {cities.length > 0 && <><h2>{m.place.cities}</h2><TagLinks links={cities} /></>}
   {techs.length > 0 && <><h2>{m.place.technologies}</h2><TagLinks links={techs} /></>}
+  {roles.length > 0 && <><h2>{m.place.roles}</h2><TagLinks links={roles} /></>}
   {companies.length > 0 && <><h2>{m.companiesHiring}</h2><TagLinks links={companies} /></>}
   <h2>{m.latestJobs}</h2>
   <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />

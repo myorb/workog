@@ -25,7 +25,7 @@ const insightPeers: Record<PeerKind, { one: string; other: string }> = {
 };
 
 export const en = {
-  nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics", remote: "Remote" },
+  nav: { locations: "Locations", technologies: "Technologies", companies: "Companies", analytics: "Analytics", remote: "Remote", management: "Management" },
   language: "Language",
   newTab: "(opens in a new tab)",
   lastUpdated: "Last updated",
@@ -270,6 +270,13 @@ export const en = {
     remoteTechLocation: "Remote can't be combined with technology and location yet.",
     remoteCity: "Remote jobs can be filtered by country, not city.",
     remoteNone: "No remote jobs in this country right now.",
+    role: "Role",
+    management: "Management",
+    marketing: "Marketing",
+    roleAlone: "A role can't be combined with technology or employment type yet.",
+    roleCity: "This search can be filtered by country, not city.",
+    roleNone: "No jobs for this role in this location right now.",
+    executiveRemote: "C-level can't be combined with remote yet.",
   },
   companies: {
     title: "Companies",
@@ -288,6 +295,7 @@ export const en = {
     topCities: "Top cities",
   },
   place: {
+    roles: "By role",
     title: (place: string) => `Jobs in ${place}`,
     countryDescription: (k: number, country: string) => `${p(k, openTechJobs)} in ${country}, including remote roles. Updated daily.`,
     cityDescription: (k: number, place: string) => `${p(k, openTechJobs)} in ${place}. Updated daily.`,
@@ -303,6 +311,33 @@ export const en = {
     typeDescription: (k: number, type: string, co: number) =>
       `${p(k, { one: `open ${type.toLowerCase()} job`, other: `open ${type.toLowerCase()} jobs` })} at top tech companies, in ${p(co, countries)}. Updated daily.`,
     none: (type: string) => `No open ${type.toLowerCase()} positions right now.`,
+  },
+  marketingJobs: {
+    title: "Marketing jobs",
+    titleIn: (place: string) => `Marketing jobs in ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "open marketing job", other: "open marketing jobs" })} at ${p(c, techCompanies)}: brand, growth, content, performance and communications roles, refreshed daily.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "open marketing job", other: "open marketing jobs" })} in ${place} at top tech companies: brand, growth, content and communications. Updated daily.`,
+    byCountry: "By country",
+    byCity: "By city",
+    more: "More marketing jobs",
+    remoteTitle: "Remote marketing jobs",
+    remoteTitleIn: (place: string) => `Remote marketing jobs in ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "open remote marketing job", other: "open remote marketing jobs" })}${place ? ` in ${place}` : ""} at top tech companies. Updated daily.`,
+  },
+  managementJobs: {
+    title: "Management jobs",
+    titleIn: (place: string) => `Management jobs in ${place}`,
+    description: (k: number, c: number) => `${p(k, { one: "open management or C-level job", other: "open management and C-level jobs" })} at ${p(c, techCompanies)}, refreshed daily.`,
+    countryDescription: (k: number, place: string) => `${p(k, { one: "open management job", other: "open management jobs" })} in ${place} at top tech companies. Updated daily.`,
+    byCountry: "By country",
+    byCity: "By city",
+    more: "More management jobs",
+    remoteTitle: "Remote management jobs",
+    remoteTitleIn: (place: string) => `Remote management jobs in ${place}`,
+    remoteDescription: (k: number, place?: string) => `${p(k, { one: "open remote management job", other: "open remote management jobs" })}${place ? ` in ${place}` : ""} at top tech companies. Updated daily.`,
+    executiveTitle: "C-level jobs",
+    executiveTitleIn: (place: string) => `C-level jobs in ${place}`,
+    executiveDescription: (k: number, place?: string) => `${p(k, { one: "open C-level job", other: "open C-level jobs" })}${place ? ` in ${place}` : ""} at top tech companies: chief officers, presidents, managing directors and founders. Updated daily.`,
   },
   remoteJobs: {
     title: "Remote jobs",

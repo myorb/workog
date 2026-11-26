@@ -1,4 +1,5 @@
 import { getCompanies, getHospitalIndex, getJobsByCompany, getMedicineJobsWhere, getMedicineCounts, getMedicineSnapshots, getOpenJobs, getOpenMedicineJobs, getSnapshots, tagsOf } from "./jobs.ts";
+import { getRolePageCounts } from "./role-pages.ts";
 import { reportMonths, reportsUrl, reportUrl } from "./reports.ts";
 import { hospitalsUrl, hospitalUrl } from "./hospitals.ts";
 import { areaFilter, getArea, levelUrl, medicineCountries, medicineLocationUrl, specialtyUrl, states } from "./medicine.ts";
@@ -66,6 +67,7 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     for (const path of own) hubs.set(path, (hubs.get(path) ?? 0) + 1);
   }
   for (const [path, count] of hubs) if (!isThin(count)) paths.add(path);
+  for (const [path, count] of await getRolePageCounts()) if (!isThin(count)) paths.add(path);
 
   // Medical jobs: section pages always, browse pages only when they are not thin
   const medicalJobs = await getOpenMedicineJobs();

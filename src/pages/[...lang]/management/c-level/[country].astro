@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from "astro";
+import RoleHub from "../../../../components/RoleHub.astro";
+import { executiveCountryPage, countryPaths } from "../../../../lib/role-pages.ts";
+import { getLang, withLangs } from "../../../../lib/i18n.ts";
+
+export const getStaticPaths = (async () => withLangs(await countryPaths("management", { executive: true }))) satisfies GetStaticPaths;
+
+const props = await executiveCountryPage(Astro.props.country, getLang(Astro.params.lang));
+---
+
+<RoleHub {...props} />

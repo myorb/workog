@@ -13,6 +13,13 @@ export const technologyUrl = (tech: string, country?: string, city?: string) =>
   ["/technologies", tech, country, city].filter(Boolean).join("/");
 export const employmentUrl = (type: string) => `/employment/${type}`;
 export const remoteUrl = (country?: string) => ["/remote", country].filter(Boolean).join("/");
+/** Sections of jobs picked by the kind of role rather than a tag: /management, /marketing */
+export type RoleSlug = "management" | "marketing";
+export const roleUrl = (role: RoleSlug, country?: string, city?: string) => [`/${role}`, country, city].filter(Boolean).join("/");
+export const roleRemoteUrl = (role: RoleSlug, country?: string) => [`/${role}/remote`, country].filter(Boolean).join("/");
+export const managementUrl = (country?: string, city?: string) => roleUrl("management", country, city);
+export const managementRemoteUrl = (country?: string) => roleRemoteUrl("management", country);
+export const executiveUrl = (country?: string) => ["/management/c-level", country].filter(Boolean).join("/");
 export const remoteTechnologyUrl = (tech: string) => `/technologies/${tech}/remote`;
 
 type Link = { href: string; label: string; count: number };

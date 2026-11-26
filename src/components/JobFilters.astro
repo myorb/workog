@@ -9,6 +9,8 @@
  * once the form is used, since there are too many to inline.
  */
 import { countTags, getJobsWhere, getMedicineCounts, getTagCounts } from "../lib/jobs.ts";
+import { executiveUrl, roleUrl } from "../lib/links.ts";
+import { getRolePageCounts } from "../lib/role-pages.ts";
 import { GERMANY, levels, medicineCountries, specialties, stateName, states } from "../lib/medicine.ts";
 import { medicineCityLinks } from "../lib/links.ts";
 import { cities, countries } from "../lib/places.ts";
@@ -41,6 +43,13 @@ const locationGroups = countries
 const employmentOptions = employmentTypes.filter((type) => counts.employment.has(type));
 // /remote/<country> exists only for countries with remote jobs
 const remoteCountries = [...(await countTags(await getJobsWhere({ remote: true }))).countries.keys()];
+// Every /management and /marketing page that exists, so the form only ever goes to one of them
+const rolePages = [...(await getRolePageCounts()).keys()];
+const roleOptions = [
+  { value: "management", label: f.management, page: roleUrl("management") },
+  { value: "executive", label: m.categories.executive, page: executiveUrl() },
+  { value: "marketing", label: f.marketing, page: roleUrl("marketing") },
+].filter((o) => rolePages.includes(o.page));
 // "" for English, "/de" etc. otherwise
 const base = localizePath("/", lang).replace(/\/$/, "");
 
@@ -71,6 +80,11 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
     data-kind={kind}
     data-base={base}
     data-remote-countries={remoteCountries.join(" ")}
+    data-role-pages={rolePages.join(" ")}
+    data-executive-remote={f.executiveRemote}
+    data-role-alone={f.roleAlone}
+    data-role-city={f.roleCity}
+    data-role-none={f.roleNone}
     data-employment-alone={f.employmentAlone}
     data-remote-tech-location={f.remoteTechLocation}
     data-remote-city={f.remoteCity}
@@ -152,6 +166,16 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
             </div>
           </fieldset>
 
+          {roleOptions.length > 0 && (
+            <fieldset>
+              <legend class="field-label">{f.role}</legend>
+              <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
+              <div class="chips">
+                {roleOptions.map((o) => <label><input type="radio" name="role" value={o.value} /><span>{o.label}</span></label>)}
+              </div>
+            </fieldset>
+          )}
+
           <fieldset>
             <legend class="field-label">{f.employment}</legend>
             <!-- no "Any" option: nothing picked means any, and clicking the picked one again clears it -->
@@ -178,6 +202,7 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
     const details = form.parentElement;
     const d = form.dataset;
     const remoteCountries = new Set(d.remoteCountries.split(" "));
+    const rolePages = new Set((d.rolePages ?? "").split(" "));
     // a group of one radio comes back as the input itself, whose value counts even when unchecked
     const field = (name) => {
       const el = form.elements.namedItem(name);
@@ -197,8 +222,9 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
         .then((keys) => (combos = new Set(keys)))
         .catch(() => (combos = null))
         .then(update));
-    // the chip group that clears when its picked chip is clicked again
-    const chipName = medicine ? "level" : "employment";
+    // the chip groups that clear when their picked chip is clicked again
+    const chipNames = medicine ? ["level"] : ["employment", "role"];
+    const pickedNow = () => Object.fromEntries(chipNames.map((name) => [name, field(name)]));
 
     // The page for the chosen values, and a note when some of them had to be dropped
     function routeTech() {
@@ -206,9 +232,35 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
       const place = field("place"); // "country" or "country/city"
       const remote = field("mode") === "remote";
       const employment = field("employment");
+      const role = field("role"); // "", "management", "executive" or "marketing"
       const [country, city] = place.split("/");
-      const others = tech || place || remote;
+      const others = tech || place || remote || role;
       const remoteCountry = country && remoteCountries.has(country);
+
+      // Roles have pages of their own (by place, remote by country, C-level by country),
+      // so a role wins over the fields it can't be combined with
+      if (role) {
+        const executive = role === "executive";
+        const section = executive ? "management" : role;
+        const base = executive ? "/management/c-level" : remote ? `/${section}/remote` : `/${section}`;
+        // the most specific page that exists: city (plain role pages only), then country, then none
+        const cityPath = base === `/${section}` && city ? `${base}/${country}/${city}` : "";
+        const countryPath = country ? `${base}/${country}` : "";
+        let path = `/${section}`;
+        let note = "";
+        if (cityPath && rolePages.has(cityPath)) path = cityPath;
+        else if (countryPath && rolePages.has(countryPath)) {
+          path = countryPath;
+          // a plain role search has city pages, so a missing one means no jobs there
+          if (city) note = cityPath ? d.roleNone : d.roleCity;
+        } else {
+          if (rolePages.has(base)) path = base;
+          if (country) note = d.roleNone;
+        }
+        if (tech || employment) note = d.roleAlone;
+        else if (executive && remote) note = d.executiveRemote;
+        return { path, note, empty: false };
+      }
 
       let path = "";
       if (employment && !others) path = `/employment/${employment}`;
@@ -263,18 +315,18 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
 
     form.addEventListener("change", update);
     // Radios can't be unchecked by clicking, so do it by hand for the chips
-    let picked = field(chipName);
+    let picked = pickedNow();
     form.addEventListener("click", (e) => {
       const input = e.target;
-      if (!(input instanceof HTMLInputElement) || input.name !== chipName) return;
-      if (input.value === picked) input.checked = false;
-      picked = field(chipName);
+      if (!(input instanceof HTMLInputElement) || !chipNames.includes(input.name)) return;
+      if (input.value === picked[input.name]) input.checked = false;
+      picked = pickedNow();
       update();
     });
     // reset fires before the fields change back
     form.addEventListener("reset", () =>
       setTimeout(() => {
-        picked = "";
+        picked = pickedNow();
         update();
       }),
     );
@@ -286,7 +338,7 @@ const levelOptions = levels.filter((slug) => med.levels.has(slug));
     });
     // the browser may restore earlier choices on back navigation
     addEventListener("pageshow", () => {
-      picked = field(chipName);
+      picked = pickedNow();
       update();
     });
     update();

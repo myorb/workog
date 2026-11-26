@@ -1,0 +1,34 @@
+---
+/**
+ * The body every /management and /marketing page shares: heading, counts, link groups to the
+ * narrower pages, and the newest jobs. lib/role-pages.ts builds the props for each route.
+ */
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "./Breadcrumbs.astro";
+import JobList from "./JobList.astro";
+import TagLinks from "./TagLinks.astro";
+import type { HubProps } from "../lib/role-pages.ts";
+import { getLang, localizePath, t } from "../lib/i18n.ts";
+import { LIST_PAGE_LIMIT, isThin } from "../lib/constants.ts";
+
+type Props = HubProps;
+
+const { title, description, jobs, trail, sections = [], see } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const m = t(lang);
+const remote = jobs.filter((j) => j.remote).length;
+---
+
+<Base title={title} description={description} noindex={isThin(jobs.length)}>
+  {trail && <Breadcrumbs trail={trail} current={title} />}
+  <h1>{title}</h1>
+  <p class="muted">
+    {m.openPositions(jobs.length)}
+    {jobs.length > LIST_PAGE_LIMIT && m.showingNewest(LIST_PAGE_LIMIT)}
+    {remote > 0 && remote < jobs.length && <> · {m.remote}: {remote}</>}
+  </p>
+  {see && <p><a href={localizePath(see.href, lang)}>{see.label} →</a></p>}
+  {sections.filter((s) => s.links.length).map((s) => <><h2>{s.heading}</h2><TagLinks links={s.links} /></>)}
+  <h2>{m.latestJobs}</h2>
+  <JobList jobs={jobs.slice(0, LIST_PAGE_LIMIT)} />
+</Base>
