@@ -852,7 +852,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -990,6 +990,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Germany-Remote/EMEA-Sales-Senior-Account-Manager--Smart-Spaces-and-Local-Government_JR2009774",
     "postedAt": "2026-11-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2010141",
+    "slug": "nvidia-power-architecture-engineer-jr2010141",
+    "company": "nvidia",
+    "title": "Power Architecture Engineer",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself. Our invention of the GPU sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. Today, research in artificial intelligence is booming worldwide, which calls for highly scalable and massively parallel computation horsepower that NVIDIA GPUs excel. </p><p>NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can address, and that matter to the world. This is our life’s work , to amplify human creativity and intelligence. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join our diverse team and see how you can make a lasting impact on the world! </p><p><b>What you’ll be doing:</b>  </p><ul><li><p>Be part of NVIDIA Power Architecture Group that owns end-to-end power aspects such as - ASIC power analysis, power architecture, low power design, power-aware verification, advanced power methodologies, UPF methodologies, power feature bring-up on silicon, and post-Si power correlation for NVIDIA's family of products. </p></li><li><p>Contributing to power analysis by helping to architect, develop, verify &amp; correlate power estimation models/tools for NVIDIA's products </p></li><li><p>Be part of the team that architects &amp; designs system-level power features for optimizing the dynamic and leakage power dissipation for different usecases.  </p></li><li><p>Work on power verification which includes structural, functional &amp; power aware verification of power features of NVIDIA products by coming up with test plans, write testcases, build test bench components like Monitors, assertions and coverage points &amp; own verification convergence across RTL, Gates and Silicon.  </p></li><li><p>Validate the effectiveness of the power features on silicon, conduct studies and contribute to the Performance/Watt improvement ideas.  </p></li><li><p>Help build power management solutions and drive innovation in energy efficiency across NVIDIA’s product portfolio.  </p></li></ul><p><b>What we need to see: </b> </p><ul><li><p>B.Tech./M.Tech with 1+ years of experience related to Power such as Power analysis, Power Design, Power Aware Verification, UPF methodologies and Power Correlation </p></li><li><p>Strong fundamentals in power including transistor-level leakage/dynamic characteristics of VLSI circuits  </p></li><li><p>Strong fundamentals in digital design and verilog </p></li><li><p>Familiarity with low power design techniques such as multi-VT, Clock gating, Power gating, Voltage Islands and Dynamic Voltage-Frequency Scaling (DVFS)  </p></li><li><p>Good background in power estimation techniques, flows and algorithms  </p></li><li><p>Knowledge of power intent formats - UPF/CPF or similar </p></li><li><p>Experience in Static Power check tools like VCLP/CLP or similar &amp; Dynamic Power verification tools like VCS-NLP or equivalent </p></li></ul><p><b>Ways to stand out from the crowd: </b> </p><ul><li><p>Good debugging and problem-solving skills </p></li><li><p>Strong communication skills and ability &amp; desire to work as a great teammate </p></li><li><p>Good programming skills - Python preferred (Good skills with object-oriented programming &amp; design) preferred.  </p></li><li><p>Exposure to Power analysis tools (such as PTPX, EPS) or exposure to lab setups for power measurements like scope/DAQ with ability to analyze board level power issues is a plus  </p></li></ul><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.  </p><p>#LI-Hybrid</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Power-Architecture-Engineer_JR2010141-1",
+    "postedAt": "2026-11-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -2007,24 +2023,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-R-D-Engineer--VLSI-Physical-Design_JR2015155",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2015168",
-    "slug": "nvidia-senior-manager-machine-learning-ops-engineering-automotive-jr2015168",
-    "company": "nvidia",
-    "title": "Senior Manager, Machine Learning Ops Engineering - Automotive",
-    "locations": [
-      "US, CA, Santa Clara"
-    ],
-    "remote": false,
-    "category": "management",
-    "descriptionHtml": "<p>NVIDIA is seeking a Senior MLOps Engineering Manager to join our Autonomous Driving organization in Santa Clara, CA. This role offers an outstanding opportunity to lead the build, development, and operation of large‑scale, end‑to‑end data and ML pipelines that power NVIDIA’s autonomous driving products. You will lead a highly technical engineering team responsible for building and operating cloud‑scale pipelines that ingest, validate, process, and transform extensive volumes of multimodal sensor data—including camera, lidar, and radar—into high‑quality training, evaluation, and validation datasets. These pipelines are foundational to NVIDIA’s AV program and directly enable customer‑facing autonomy features. We want a seasoned engineering leader with strong ownership and passion for customer‑focused development. This person will scale systems and teams in a fast paced, multi‑functional environment.</p><br /><p><b>What You Will Be Doing:</b></p><ul><li>Lead and grow a high‑performing MLOps engineering group tasked with managing end‑to‑end data pipelines supporting NVIDIA’s autonomous driving technology from levels L2 through L4.</li><li>Own the architecture, execution, and operational excellence of large‑scale, cloud‑native pipelines for multimodal sensor data ingestion, processing, labeling, and validation.</li><li>Drive the development of robust, scalable, and observable MLOps systems that support model training, ground truth generation, and continuous evaluation at AV scale.</li><li>Partner closely with perception, ML, data labeling, infrastructure, and product teams to translate customer and program requirements into reliable production systems.</li><li>Define technical vision, roadmap, success metrics, and operational benchmarks, and ensure consistent execution against program achievements.</li><li>Champion customer‑first thinking and ownership, ensuring the systems your team builds directly deliver measurable value to internal and external AV customers.</li><li>Balance hands‑on technical depth with people leadership, providing technical guidance, mentorship, and career development for senior engineers and managers.</li><li>Operate across multiple layers of the stack, including Python, C++, distributed systems, cloud infrastructure, CI/CD, and data platforms.</li></ul><br /><p><b>What We Need to See:</b></p><ul><li>Bachelor’s or equivalent experience, Master’s, or PhD in Computer Science, Electrical Engineering, or a closely related field (or equivalent experience).</li><li>10+ overall years of overall engineering experience, including crafting and coordinating production‑grade distributed systems.</li><li>5+ years of engineering management experience, with a proven history of guiding teams delivering sophisticated, large‑scale systems.</li><li>Strong background in MLOps, data pipelines, and cloud‑based distributed systems.</li><li>Proficiency in Python and C++, with the ability to guide system‑level and performance‑critical build decisions.</li><li>Experience crafting and operating end‑to‑end data or ML pipelines with high reliability, scale, and observability.</li><li>Prior experience in one or more of the following domains: Autonomous Vehicles, Robotics, Computer Vision, Deep Learning, or GPU‑accelerated computing.</li><li>Excellent communication and leadership skills, capable of aligning collaborators and driving execution in a multi-functional organization.</li><li>Demonstrated passion for ownership, accountability, and engineering that prioritizes customers.</li></ul><br /><p><b>Ways to Stand Out from the Crowd:</b></p><ul><li>Experience developing and leading AV‑scale data platforms handling petabyte‑scale sensor data.</li><li>Strong background of leading teams responsible for production MLOps or data infrastructure.</li><li>Experience with automotive or robotic systems, including real‑world sensor data pipelines.</li><li>Background in distributed cloud systems, workflow orchestration, and large‑scale CI/CD.</li><li>Familiarity with 3D geometry, perception pipelines, or data generation based on simulated environments.</li></ul><br /><p>NVIDIA is widely considered one of the most sought-after employers in the technology industry. We offer highly competitive compensation along with an extensive benefits plan. Our work enables new universes of discovery—from artificial intelligence to autonomous vehicles—and brings once‑science‑fiction technologies into reality. If you are passionate about autonomous driving, scaling complex systems, and leading teams that deliver real customer impact, we would love to hear from you.</p><br /><p>#AutonomousVehicles</p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary range for this position is 272,000 USD – 431,250 USD.<p>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\">benefits</a>.</p>Applications for this job will be accepted at least until November 3, 2026.<p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/SeniorManager--Machine-Learning-Ops-Engineering---Automotive_JR2015168",
-    "postedAt": "2026-10-30T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "workday"
   },
   {
@@ -4350,7 +4348,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -4383,25 +4381,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-ASIC-Design-Engineer---DFX_JR2020883",
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2020902",
-    "slug": "nvidia-senior-firmware-engineer-jr2020902",
-    "company": "nvidia",
-    "title": "Senior Firmware Engineer",
-    "locations": [
-      "Israel, Tel Aviv",
-      "Israel, Yokneam"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>We are looking for an experienced Firmware Engineerto join the QoS NIC Firmware team at the Yokneam or Tel-Aviv site. You will take part in leading a major development team in our Firmware group while taking part hands-on with development activities. The Firmware team develops cutting edge networking features. We drive the data growth of the world’s biggest companies. With talented engineers around the globe, the work environment is dynamic, meaningful, and fast-paced.</p><p><b>What you will be doing:</b></p><ul><li><p>Take part in research, design, and development of QoS and FW algorithms, enhancing performance, reliability, and scalability.</p></li><li><p>Work closely with the architecture and different software design teams.</p></li><li><p>Implement new features in the core of NVIDIA NIC Firmware in pre and post silicon environment.</p></li><li><p>Develop verification tests for advanced features in a highly complex and sophisticated Firmware testing environment.</p></li><li><p>Gain a deep understanding of system debug, networking technology and stacks, as well as the HW/FW/SW relationship.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>Bachelor's or Master's degree in Electrical Engineering or Computer Science fields from a known institute.</p></li><li><p>5+ years of professional experience</p></li><li><p>Proven experience in technical leadership and making key decisions for complex firmware projects.</p></li><li><p>Proficiency in C and embedded systems programming.</p></li><li><p>Strong problem-solving skills with a hands-on approach, able to dive deep into and solve complex issues.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>Knowledge of network protocols.</p></li><li><p>Real time programming.</p></li><li><p>Ability to build effective working relationships across multiple org. functions, engineers and managers.</p></li><li><p>Strong multi-tasking and real-time crisis management skills.</p></li><li><p>Ability to understand and extract action plans from complicated technical discussions and translate to clear messaging for multifunctional and executive status reporting.</p></li></ul><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people on the planet working for us. If you're creative and autonomous, we want to hear from you! NVIDIA is committed to fostering a diverse work environment and is proud to be an equal opportunity employer.</p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Firmware-Engineer_JR2020902-1",
-    "postedAt": "2026-07-22T00:00:00.000Z",
-    "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "workday"
   },
   {
@@ -5286,7 +5265,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -5920,6 +5899,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Senior-System-Software-Engineer--Software-Defined-Networking_JR2023002",
     "postedAt": "2026-08-19T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-26T05:03:42.870Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -5956,7 +5937,7 @@
     "postedAt": "2026-10-30T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -7092,7 +7073,7 @@
     "postedAt": "2026-10-31T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -7160,7 +7141,7 @@
     "postedAt": "2026-09-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -7177,25 +7158,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/UK-Remote/ISV-GTM-Sales-Strategist--DACH_JR2024511",
     "postedAt": "2026-11-09T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
-    "source": "workday"
-  },
-  {
-    "id": "workday:nvidia:JR2024519",
-    "slug": "nvidia-chip-design-engineer-jr2024519",
-    "company": "nvidia",
-    "title": "Chip Design Engineer",
-    "locations": [
-      "Israel, Tel Aviv",
-      "Israel, Yokneam"
-    ],
-    "remote": false,
-    "category": "design",
-    "descriptionHtml": "<p>The Chip Design Methodologies team is responsible for establishing ASIC design methodologies, developing shared code, providing design guidance, and driving the adoption of new technologies. The team plays a key role in ensuring chip design teams operate efficiently and adhere to best practices. This role offers an exciting opportunity to learn from experienced engineers, think innovatively, and make a real impact within a dynamic, technology-focused organization.<br /> </p><p><b>What You'll Be Doing:</b></p><ul><li>Develop generic modules embedding cutting edge ASIC methodologies</li><li>Collaborate with chip design peers across frontend and physical design teams to understand existing challenges and help form practical solutions</li><li>Utilize, develop, and assimilate AI-based tools and flows into the chip design process, with guidance from senior engineers</li><li>Support training sessions and help designers adopt best design practices, including AI-assisted workflows</li></ul><br /><p><b>What We Need To See:</b></p><ul><li>B.Sc. degree in Electrical Engineering, Computer Engineering, or equivalent (recent high-profile graduates are welcome)</li><li>0–4 years of hands-on pre-silicon design experience</li><li>Strong interpersonal skills, a passion for innovation, and eagerness to learn from others</li><li>A natural drive to systematize, automate, and improve how things are done</li></ul><br /><p><b>Ways To Stand Out From The Crowd:</b></p><ul><li>Strong interpersonal skills and the ability to work well in a cross-functional team</li><li>Passion for innovation, quality, efficiency, and flows automation</li><li>Chip design proven experience, ASIC coursework or project experience</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers and has been ranked Israel’s most desirable employer for two consecutive years (2024–2025), reflecting our culture of innovation and excellence, and people-first values. Are you a creative and motivated engineer who loves a challenge? Come join our networking chip design team and help us develop great products by bringing innovation and raising the efficiency and the quality standard in the team.</p>",
-    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Chip-Design-Engineer_JR2024519",
-    "postedAt": "2026-11-10T00:00:00.000Z",
-    "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-11T05:03:15.561Z",
-    "closedAt": "2026-11-13T05:02:55.337Z",
     "source": "workday"
   },
   {
@@ -8880,6 +8842,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/AI-Computing-Software-Development-Intern---2027_JR2026298",
     "postedAt": "2026-09-29T00:00:00.000Z",
     "firstSeenAt": "2026-11-03T15:22:33.099Z",
+    "lastSeenAt": "2026-11-26T05:03:42.870Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -10685,6 +10649,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028300",
+    "slug": "nvidia-senior-test-engineer-jr2028300",
+    "company": "nvidia",
+    "title": "Senior Test Engineer",
+    "locations": [
+      "Vietnam, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>Our Networking System Product Engineering team is looking for an excellent Test Design and Validation Engineer. The position requires an understanding of HW and SW to provide stable, efficient, smoothly running production tests, to enable high availability, while ensuring the quality of the products being shipped to customers. The position combines design and hands-on infrastructure development, implementing and maintenance of sophisticated tools that improves development workflow and overall productivity.</p><p><b>What you’ll be doing:</b> </p><ul><li><p>Design and develop automated tests for networking Switches and Adapters while working closely with the HW, ASIC, and SW Engineering teams to achieve a reliable test with high coverage.Exposed to various aspects of design, DFT, and test of NVIDIA's next-generation network products</p></li><li><p>Take a significant part in the definition and development of tests from the development level to the final test of Network-Systems.</p></li><li><p>Utilize test suites to find, debug and resolve problems with production process</p></li><li><p>Ability to drive projects to full execution in time and working under pressure of schedule and multi project environment</p></li><li><p>Work in multi discipline environment to provide robust solutions and drive defects to resolution</p></li><li><p>Generate statistics about code quality, complexity, and coverage</p></li><li><p>Working with overseas engineering and manufacturing teams to increase yields, test coverage, and capacity, and reduce production costs</p></li><li><p>Supporting and fix bugs of existing code. Supporting production lines for: deployments, patches, maintenance</p></li><li><p>Test Verification and Validation (both HW and SW). Troubleshooting and streamlining/optimizing our testing procedures</p></li><li><p>Execute tests in different scopes such: regression, performance degradation, functional, and security; report the progress of testing and provide summary reports of the activity</p></li></ul><p><b>What we need to see:</b> </p><ul><li><p>BSc/MSc or equivalent engineering degree in Computer Science, Electrical Engineering, or a related field</p></li><li><p>5+ years of related experience in software development and design </p></li><li><p>3+ years of proven experience in Python development </p></li><li><p>Excellent knowledge of a version control system (preferably GIT)  </p></li><li><p>Linux based development</p></li><li><p>Experience with Software/Hardware products integration and HW lab measurement equipment</p></li><li><p>Experience with bringing up of large-scale automation solutions to large software teams</p></li><li><p>Excellent communication skills with hands-on experience collaborating with global teams</p></li><li><p>Excellent verbal and written communication in English</p></li><li><p>Self-motivation and a great teammate </p></li></ul><p><b>Ways to stand out from the crowd:</b> </p><ul><li><p>Excellent programming, debugging, performance analysis, and test design skills</p></li><li><p>A highly motivated teammate who always stays up-to-date with new technologies and test methodologies</p></li><li><p>Exposure and knowledge around application development, rest API development, configuration management and automation</p></li><li><p>Experience in tools/services development. Creativity – find solutions for challenging requirements</p></li><li><p>Orientation to Hardware and Experience in mechanics and automated JIGs</p></li></ul>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Vietnam-Remote/Senior-Test-Engineer_JR2028300",
+    "postedAt": "2026-11-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028304",
     "slug": "nvidia-senior-software-system-architect-ai-factory-management-jr2028304",
     "company": "nvidia",
@@ -10786,6 +10766,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Senior-System-Software-Engineer---Integration-and-Analytics_JR2028379",
     "postedAt": "2026-11-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-25T05:03:13.456Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2028380",
+    "slug": "nvidia-local-product-engineer-jr2028380",
+    "company": "nvidia",
+    "title": "Local Product Engineer",
+    "locations": [
+      "Vietnam, Remote"
+    ],
+    "remote": true,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA’s Networking Silicon Engineering group is looking for a Local Product Engineer.</p><p>NVIDIA's GPUs，DPUs and SOCs are the world leaders in performance and efficiency, and we are continually innovating in creative and outstanding ways to improve our ability to deliver outstanding solutions in a wide range of sectors. At NVIDIA, we are building the system, hardware, and software technology which enables the highest data transition performance. Our Production Support team is currently searching for an Engineer to help us Monitor the production status at CM and that will be focal point for all production testing issues:</p><p><b>What you'll be doing:</b></p><ul><li><p>The working place base at factory at Bac Ninh Vietnam.</p></li><li><p>Provide onsite tier 1 support for tests validation, test infrastructures, tests setup and station troubleshooting.</p></li><li><p>Introduction and training of new tests to CM engineering team.</p></li><li><p>Conduct test debugging and failure analysis whenever needed.</p></li><li><p>Monitor the NPI project yields and give the analysis of the top failures.</p></li></ul><p><b>What we need to see:</b></p><ul><li><p>B.S. Electrical Engineering, or equivalent experience in factory Failure analysis or Electrical Engineering roles.</p></li><li><p>Familiar with the manufacture processes of electric product.</p></li><li><p>Minimum 5 years of experience in failure analysis by multiple tools such as DVM, TDR, oscilloscope, etc.</p></li><li><p>Experience in HW problems diagnostic, repairing or in board design.</p></li><li><p>Proficient English speaking and writing.</p></li></ul><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>With ICT / JTAG skills.</p></li><li><p>Familiar with Functional Tests.</p></li><li><p>Background with Linux OS, perl and Python.</p></li><li><p>Experience on reliability test like Burn In, HASS.</p></li></ul><p>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, sex, gender, gender expression, sexual orientation, age, marital status, veteran status, or disability status. We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Vietnam-Remote/Local-Product-Engineer_JR2028380-1",
+    "postedAt": "2026-11-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -11550,6 +11546,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2028991",
+    "slug": "nvidia-power-architecture-engineer-jr2028991",
+    "company": "nvidia",
+    "title": "Power Architecture Engineer",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself. Our invention of the GPU sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. Today, research in artificial intelligence is booming worldwide, which calls for highly scalable and massively parallel computation horsepower that NVIDIA GPUs excel. </p><p>NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can address, and that matter to the world. This is our life’s work , to amplify human creativity and intelligence. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join our diverse team and see how you can make a lasting impact on the world! </p><p><b>What you’ll be doing:</b>  </p><ul><li><p>Be part of NVIDIA Power Architecture Group that owns end-to-end power aspects such as - ASIC power analysis, power architecture, low power design, power-aware verification, advanced power methodologies, UPF methodologies, power feature bring-up on silicon, and post-Si power correlation for NVIDIA's family of products. </p></li><li><p>Contributing to power analysis by helping to architect, develop, verify &amp; correlate power estimation models/tools for NVIDIA's products </p></li><li><p>Be part of the team that architects &amp; designs system-level power features for optimizing the dynamic and leakage power dissipation for different usecases.  </p></li><li><p>Work on power verification which includes structural, functional &amp; power aware verification of power features of NVIDIA products by coming up with test plans, write testcases, build test bench components like Monitors, assertions and coverage points &amp; own verification convergence across RTL, Gates and Silicon.  </p></li><li><p>Validate the effectiveness of the power features on silicon, conduct studies and contribute to the Performance/Watt improvement ideas.  </p></li><li><p>Help build power management solutions and drive innovation in energy efficiency across NVIDIA’s product portfolio.  </p></li></ul><p><b>What we need to see: </b> </p><ul><li><p>B.Tech./M.Tech with 1+ years of experience related to Power such as Power analysis, Power Design, Power Aware Verification, UPF methodologies and Power Correlation </p></li><li><p>Strong fundamentals in power including transistor-level leakage/dynamic characteristics of VLSI circuits  </p></li><li><p>Strong fundamentals in digital design and verilog </p></li><li><p>Familiarity with low power design techniques such as multi-VT, Clock gating, Power gating, Voltage Islands and Dynamic Voltage-Frequency Scaling (DVFS)  </p></li><li><p>Good background in power estimation techniques, flows and algorithms  </p></li><li><p>Knowledge of power intent formats - UPF/CPF or similar </p></li><li><p>Experience in Static Power check tools like VCLP/CLP or similar &amp; Dynamic Power verification tools like VCS-NLP or equivalent </p></li></ul><p><b>Ways to stand out from the crowd: </b> </p><ul><li><p>Good debugging and problem-solving skills </p></li><li><p>Strong communication skills and ability &amp; desire to work as a great teammate </p></li><li><p>Good programming skills - Python preferred (Good skills with object-oriented programming &amp; design) preferred.  </p></li><li><p>Exposure to Power analysis tools (such as PTPX, EPS) or exposure to lab setups for power measurements like scope/DAQ with ability to analyze board level power issues is a plus  </p></li></ul><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.  </p><p>#LI-Hybrid</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Power-Architecture-Engineer_JR2028991",
+    "postedAt": "2026-11-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2028995",
     "slug": "nvidia-technical-product-marketing-mba-intern-ai-infrastructure-summer-2027-jr2028995",
     "company": "nvidia",
@@ -11629,6 +11641,8 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Software-Engineering-Intern--Physics-Simulation---2027_JR2029066",
     "postedAt": "2026-11-05T00:00:00.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
+    "lastSeenAt": "2026-11-26T05:03:42.870Z",
+    "missedRuns": 1,
     "source": "workday"
   },
   {
@@ -11663,8 +11677,6 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-SRE-Engineer_JR2029097",
     "postedAt": "2026-11-06T00:00:00.000Z",
     "firstSeenAt": "2026-11-06T05:03:01.973Z",
-    "lastSeenAt": "2026-11-16T05:03:35.318Z",
-    "closedAt": "2026-11-20T05:03:19.201Z",
     "source": "workday"
   },
   {
@@ -12271,7 +12283,7 @@
     "postedAt": "2026-11-18T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -12634,7 +12646,7 @@
     "postedAt": "2026-11-16T00:00:00.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-25T05:03:13.456Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
@@ -13031,6 +13043,22 @@
     "source": "workday"
   },
   {
+    "id": "workday:nvidia:JR2030392",
+    "slug": "nvidia-senior-global-procurement-manager-jr2030392",
+    "company": "nvidia",
+    "title": "Senior Global Procurement Manager",
+    "locations": [
+      "Israel, Yokneam"
+    ],
+    "remote": false,
+    "category": "operations",
+    "descriptionHtml": "<p>NVIDIA has an outstanding opportunity for a Materials Planning Management to join our Procurement Management team in Yokneam, IL. This role offers an exceptional chance to be at the forefront of transforming our supply chain into a digitally optimized operation. You will drive cross-functional initiatives that improve execution and strengthen coordination across the materials supply chain</p><br /><p><b>What You Will Be Doing:</b></p><ul><li>Own the end-to-end supply chain and procurement readiness for the NPI phase, ensuring a smooth transition from NPI to full-scale Mass Production (MP).</li><li>Ensure material readiness to support program achievements, including production ramp-up, and full-scale manufacturing.</li><li>Proactively identify and resolve supply constraints, lead-time risks, and BOM gaps that could jeopardize a successful MP ramp.</li><li>Lead cross-functional readiness reviews, driving alignment between Engineering, Operations, CM, and procurement stakeholders.</li><li>Monitor and track Single-source parts, proactively identifying supply chain risks and escalating the need for dual/multi-manufacturer strategies to ensure supply continuity.</li><li>Collaborate cross-functionally with Planning and Business Units to drive demand analysis across NPI and high-volume production portfolios</li><li>Drive innovation in supply chain analytics by deploying BI and AI solutions to improve CM reporting accuracy, strengthen supply–demand alignment, and enable predictive, insight-based decision-making</li></ul><br /><p><b>What We Need To See:</b></p><ul><li>B.Sc. in Industrial Engineering, related field or equivalent experience</li><li>Minimum of 5+ overall years of experience in materials management, procurement, or supply chain management within a semiconductor OEM environment.</li><li>Strong understanding of supply chain processes, NPI cycles, and material planning systems.</li><li>Strong technical knowledge of semiconductor materials and contract manufacturing processes.</li><li>Excellent communication, negotiation, and leadership skills.</li><li>Strong understanding of ERP/MRP systems, tools driven by artificial intelligence, and platforms for analyzing supply chain data.</li><li>Ability to thrive in a fast-paced, dynamic environment and effectively prioritize tasks.</li></ul><br /><p><b>Ways to stand out from the crowd:</b></p><ul><li>Master’s degree</li><li>Experience with agentic AI systems in supply chain applications</li></ul><br /><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!</p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Global-Procurement-Manager_JR2030392",
+    "postedAt": "2026-11-26T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
+    "source": "workday"
+  },
+  {
     "id": "workday:nvidia:JR2030406",
     "slug": "nvidia-senior-program-manager-networking-clusters-jr2030406",
     "company": "nvidia",
@@ -13175,6 +13203,22 @@
     "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Development-Engineer-in-Test---SDET_JR2030644",
     "postedAt": "2026-11-25T00:00:00.000Z",
     "firstSeenAt": "2026-11-26T05:03:42.870Z",
+    "source": "workday"
+  },
+  {
+    "id": "workday:nvidia:JR2030662",
+    "slug": "nvidia-power-architecture-engineer-jr2030662",
+    "company": "nvidia",
+    "title": "Power Architecture Engineer",
+    "locations": [
+      "India, Bengaluru"
+    ],
+    "remote": false,
+    "category": "engineering",
+    "descriptionHtml": "<p>NVIDIA has continuously reinvented itself. Our invention of the GPU sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. Today, research in artificial intelligence is booming worldwide, which calls for highly scalable and massively parallel computation horsepower that NVIDIA GPUs excel. </p><br /><p>NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can address, and that matter to the world. This is our life’s work , to amplify human creativity and intelligence. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join our diverse team and see how you can make a lasting impact on the world! </p><br /><p><b>What you’ll be doing:</b>  </p><ul><li>Be part of NVIDIA Power Architecture Group that owns end-to-end power aspects such as - ASIC power analysis, power architecture, low power design, power-aware verification, advanced power methodologies, UPF methodologies, power feature bring-up on silicon, and post-Si power correlation for NVIDIA's family of products. </li><li>Contributing to power analysis by helping to architect, develop, verify &amp; correlate power estimation models/tools for NVIDIA's products </li><li>Be part of the team that architects &amp; designs system-level power features for optimizing the dynamic and leakage power dissipation for different usecases.  </li><li>Work on power verification which includes structural, functional &amp; power aware verification of power features of NVIDIA products by coming up with test plans, write testcases, build test bench components like Monitors, assertions and coverage points &amp; own verification convergence across RTL, Gates and Silicon.  </li><li>Validate the effectiveness of the power features on silicon, conduct studies and contribute to the Performance/Watt improvement ideas.  </li><li>Help build power management solutions and drive innovation in energy efficiency across NVIDIA’s product portfolio.  </li></ul><br /><p><b>What we need to see: </b> </p><ul><li>B.Tech./M.Tech with 1+ years of experience related to Power such as Power analysis, Power Design, Power Aware Verification, UPF methodologies and Power Correlation </li><li>Strong fundamentals in power including transistor-level leakage/dynamic characteristics of VLSI circuits  </li><li>Strong fundamentals in digital design and verilog </li><li>Familiarity with low power design techniques such as multi-VT, Clock gating, Power gating, Voltage Islands and Dynamic Voltage-Frequency Scaling (DVFS)  </li><li>Good background in power estimation techniques, flows and algorithms  </li><li>Knowledge of power intent formats - UPF/CPF or similar </li><li>Experience in Static Power check tools like VCLP/CLP or similar &amp; Dynamic Power verification tools like VCS-NLP or equivalent </li></ul><br /><p><b>Ways to stand out from the crowd: </b> </p><ul><li>Good debugging and problem-solving skills </li><li>Strong communication skills and ability &amp; desire to work as a great teammate </li><li>Good programming skills - Python preferred (Good skills with object-oriented programming &amp; design) preferred.  </li><li>Exposure to Power analysis tools (such as PTPX, EPS) or exposure to lab setups for power measurements like scope/DAQ with ability to analyze board level power issues is a plus  </li></ul><br /><p>With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the most desirable employers in the world. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.  </p>",
+    "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Power-Architecture-Engineer_JR2030662",
+    "postedAt": "2026-11-27T00:00:00.000Z",
+    "firstSeenAt": "2026-11-27T05:03:25.571Z",
     "source": "workday"
   },
   {
