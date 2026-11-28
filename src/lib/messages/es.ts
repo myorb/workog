@@ -32,6 +32,8 @@ export const es = {
   lastCheck: (time: string, sources: number, added: number, closed: number) =>
     `Última revisión ${time}: ${p(sources, { one: "fuente", other: "fuentes" })}, ${n(added)} nuevos, ${n(closed)} cerrados.`,
   footerNote: "Los anuncios enlazan a la oferta oficial de cada empresa o al portal de empleo que la publica. Postúlate allí.",
+  cookieNotice: "Usamos Google Analytics.",
+  cookieOk: "OK",
   remote: "Remoto",
   seen: (date: string) => `Visto el ${date}`,
   today: {

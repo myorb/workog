@@ -32,6 +32,8 @@ export const uk = {
   lastCheck: (time: string, sources: number, added: number, closed: number) =>
     `Остання перевірка ${time}: джерел — ${n(sources)}, нових — ${n(added)}, закритих — ${n(closed)}.`,
   footerNote: "Оголошення ведуть на офіційні сторінки вакансій компаній або на сайт пошуку роботи, де їх опубліковано. Подавайте заявку там.",
+  cookieNotice: "Ми використовуємо Google Analytics.",
+  cookieOk: "OK",
   remote: "Віддалено",
   seen: (date: string) => `Знайдено ${date}`,
   today: {

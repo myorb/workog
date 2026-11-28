@@ -194,6 +194,29 @@ const ogImage = new URL(shareImage.path, Astro.site);
       <p>{m.footerNote}</p>
       <p><a href={u(reportsUrl)}>{m.reports.title}</a> · <a href="/llms.txt">llms.txt</a></p>
     </footer>
+    <div class="cookie-notice" role="region" aria-label="Cookies" hidden>
+      <span>
+        {m.cookieNotice.split("Google Analytics").map((part, i) => (
+          <>
+            {i > 0 && <a href={`https://policies.google.com/technologies/cookies?hl=${lang}`} target="_blank" rel="noopener noreferrer">Google Analytics</a>}
+            {part}
+          </>
+        ))}
+      </span>
+      <button type="button">{m.cookieOk}</button>
+    </div>
+    <script is:inline>
+      // one-line analytics notice, shown until dismissed
+      (() => {
+        const el = document.querySelector(".cookie-notice");
+        try { if (localStorage.getItem("cookie-ok")) return; } catch {}
+        el.hidden = false;
+        el.querySelector("button").addEventListener("click", () => {
+          el.hidden = true;
+          try { localStorage.setItem("cookie-ok", "1"); } catch {}
+        });
+      })();
+    </script>
   </body>
 </html>
 
@@ -315,6 +338,18 @@ const ogImage = new URL(shareImage.path, Astro.site);
   }
   .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; padding-top: 16px; padding-bottom: 32px; }
   .site-footer p { margin: 4px 0; }
+  .cookie-notice {
+    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 20;
+    width: max-content; max-width: calc(100% - 32px);
+    display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 14px;
+    background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.12); font-size: 13px; line-height: 1.4;
+  }
+  .cookie-notice[hidden] { display: none; }
+  .cookie-notice button {
+    flex: none; padding: 4px 12px; border: 0; border-radius: 6px; cursor: pointer;
+    background: var(--accent); color: var(--accent-text); font: inherit; font-weight: 600;
+  }
   .muted { color: var(--muted); }
   .tag { display: inline-block; background: var(--tag); border-radius: 4px; padding: 0 8px; font-size: 13px; }
 </style>
