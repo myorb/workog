@@ -32,24 +32,6 @@
     "source": "google"
   },
   {
-    "id": "google:72674703851823814",
-    "slug": "google-software-engineer-google-payments-growth-72674703851823814",
-    "company": "google",
-    "title": "Software Engineer, Google Payments, Growth",
-    "locations": [
-      "Singapore"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Software Engineer on the Consumer Payments Growth team in Singapore, you will participate in the design, development, and operation of distributed backend service, platform, and application capabilities that drive user engagement across Google's global consumer payments ecosystem. You will work on the engineering workstreams for global growth initiatives, from real-time decisioning pipelines and financial rewards settlement to stateful quest engines and low-latency signal aggregation and build features on Payment surfaces to enable growth constructs. You will work closely with local and global cross-functional teams (e.g., Product Manager (PM), User Experience (UX), Data Science, Risk/Security, and engineering teams across Singapore and the US) to build resilient, highly scalable production systems.</p><p>Users come first at Google. Nowhere is this more important than on our Advertising and Commerce team: we believe that ads and commercial information can be highly useful to our users if that information is relevant to what our users wish to find or do. Advertisers worldwide use Google Ads to promote their products; publishers use AdSense to serve relevant ads on their website; and business around the world use our products (like Google Shopping, and Google Wallet) to support their online businesses and bring users into their offline stores. We are constantly innovating to deliver the most effective advertising and commerce opportunities of tomorrow.</p><h3>Responsibilities</h3><ul>\n<li>Design, implementation, and deployment of scalable back-end services, platform components, and Application Programming Interfaces (APIs) in Java/C++ supporting real-time event streaming and growth campaigns.</li>\n<li>Build high-performance communications infrastructure that delivers personalized, contextual in-app messages and lifecycle notifications across mobile, web, and checkout surfaces.</li>\n<li>Architect resilient, idempotent financial settlement workflows and digital voucher vaulting systems with strict transactional consistency and anti-abuse controls.</li>\n<li>Design low-latency feature stores and telemetry pipelines to support high-velocity A/B testing, counterfactual logging, and causal attribution in close partnership with data science. Implement stateful milestone quest engines and gamified reward mechanics that drive sustainable user engagement and positive unit economics.</li>\n<li>Leverage modern Artificial Intelligence (AI)-assisted development tools and best practices to accelerate team-wide development velocity, test coverage, and code maintainability.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Computer Science, or a related technical field, or equivalent practical experience.</li>\n<li>2 years of experience in software engineering with programming in Java, C++, Go, or Python.</li>\n<li>2 years of experience designing, building, and operating scalable back-end distributed systems, microservices architectures, or high-throughput APIs.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience with event-motivated architectures, pub/sub messaging queues, and real-time stream processing pipelines.</li>\n<li>Experience with distributed relational databases (e.g., Spanner, SQL), schema lifecycle management, transaction isolation, and idempotency patterns.</li>\n<li>Experience in Consumer Payments, loyalty/reward platforms, promotional voucher systems, or large-scale growth/conversion funnel optimization.</li>\n<li>Demonstrated interest and practical experience in utilizing modern AI-powered development tools to enhance software engineering workflows.</li>\n<li>Familiarity with large-scale experimentation platforms, counterfactual evaluation, and collaborating with Data Scientists to measure incremental user behavior.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/72674703851823814-software-engineer-google-payments-growth",
-    "postedAt": "2026-10-28T14:40:34.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:72865893515698886",
     "slug": "google-senior-counsel-and-manager-content-advisory-72865893515698886",
     "company": "google",
@@ -219,6 +201,22 @@
     "source": "google"
   },
   {
+    "id": "google:73859623051764422",
+    "slug": "google-software-engineer-iii-xla-gpu-ai-ml-73859623051764422",
+    "company": "google",
+    "title": "Software Engineer III, XLA GPU, AI/ML",
+    "locations": [
+      "Zürich, Switzerland"
+    ],
+    "remote": false,
+    "category": "data",
+    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>A machine learning compiler transforms a graph of calculations and other operations representing a machine learning model into an optimized sequence of instructions tailored to the processor it will run on. Producing an optimized program is very challenging but results in a many-fold speedup and can make or break an ML application or its business-model.</p><p>Our organization consists of teams in Zurich, Munich, London, New York and Sunnyvale in addition to partners and customers in many locations.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p><h3>Responsibilities</h3><ul>\n<li>Write product or system development code. <br /></li>\n<li>Collaborate with peers and stakeholders through design and code reviews to ensure best practices amongst available technologies  (e.g., style guidelines, checking code in, accuracy, testability, and efficiency).<br /></li>\n<li>Enhance the GPU software stack so that it performs faster and more efficiently on ML workloads.<br /></li>\n<li>Launch new GPU optimizations end-to-end, including performance and correctness testing.<br /></li>\n<li>Foster deep collaboration between customers, partners (e.g., GPU manufacturers) and the GPU compiler team.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br /></li>\n<li>2 years of experience with software development in C++ programming language, or 1 year of experience with an advanced degree.</li>\n<li>1 year of experience with one or more of the following: Speech/audio (e.g., technology duplicating and responding to the human voice), reinforcement learning (e.g., sequential decision making), ML infrastructure, or specialization in another ML field.<br /></li>\n<li>1 year of experience with end-to-end Machine Learning (e.g., model deployment, model evaluation, data processing, debugging).</li>\n<li>Experience with Machine Learning Compilers. </li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical fields.<br /></li>\n<li>2 years of experience with data structures and algorithms.</li>\n<li>Experience developing accessible technologies.<br /></li>\n<li>Experience with System design and architecture.</li>\n<li>Experience with contributions to open source XLA. </li>\n<li>Experience with Machine Learning programming on Google Cloud Platform. </li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/73859623051764422-software-engineer-iii-xla-gpu-ai-ml",
+    "postedAt": "2026-11-27T11:08:41.000Z",
+    "firstSeenAt": "2026-11-28T05:03:12.153Z",
+    "source": "google"
+  },
+  {
     "id": "google:73965804575433414",
     "slug": "google-research-engineer-chemical-biological-and-nuclear-ai-safety-deepmind-73965804575433414",
     "company": "google",
@@ -240,14 +238,13 @@
     "company": "google",
     "title": "Technical Solutions Consultant, Google Home",
     "locations": [
-      "Mountain View, CA, USA",
-      "New York, NY, USA"
+      "Mountain View, CA, USA"
     ],
     "remote": false,
     "category": "sales",
     "descriptionHtml": "In this role, you will serves as a primary technical point of contact and account manager for Home Hardware and Software partnerships, empowering partners to successfully integrate with Google Home platform services and devices. It is necessary to leverage deep understanding of product functionality and integration acumen to provide expert guidance on design, development, and integration of Google's Home products to impact millions of end users - translating partner use cases into actionable recommendations. You will create comprehensive resources, including partner onboarding and integration processes and materials, program roadmaps, and reports, and contribute to product planning where appropriate. You will work closely with our Product and Engineering teams to ensure partner needs are heard/actioned.The Google Home team focuses on hardware, software and services offerings  for the home, ranging from thermostats to smart displays. The Home team researches, designs, and develops new technologies and hardware to make users’ homes more helpful. Our mission is the helpful home: to create a home that cares for the people inside it and the world around it.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $126000 - $180000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Understand partner use cases and offer insights and recommendations on development integration, acting as a subject matter expert.</li>\n<li>Drive partners and internal teams toward successful, on-time launches.<br /></li>\n<li>Manage program launch timelines, mitigate risks, and communicate with cross-functional teams and partners.</li>\n<li>Communicate technical feedback from partners to the Product and Software Engineering teams.<br /></li>\n<li>Travel domestically and internationally as needed.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br /></li>\n<li>3 years of experience troubleshooting technical issues for internal/external partners or customers.</li>\n<li>Experience with Debugging and Troubleshooting.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree in Business, Statistics, Mathematics, Economics, Engineering or Applied Science, or a related field.<br /></li>\n<li>Experience with stakeholder management.</li>\n<li>Experience with Product Roadmaps.</li>\n<li>Experience with managing product timelines.</li>\n</ul>",
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/74017454509957830-technical-solutions-consultant-google-home",
-    "postedAt": "2026-11-24T15:36:28.000Z",
+    "postedAt": "2026-11-27T07:06:32.000Z",
     "firstSeenAt": "2026-11-25T05:03:13.456Z",
     "source": "google"
   },
@@ -569,24 +566,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/76024615133946566-key-account-executive-google-cloud",
     "postedAt": "2026-10-28T09:11:28.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "source": "google"
-  },
-  {
-    "id": "google:76030761232147142",
-    "slug": "google-data-center-technician-ii-76030761232147142",
-    "company": "google",
-    "title": "Data Center Technician II",
-    "locations": [
-      "Saint George, SC, USA"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "Google isn't just a software company. The Hardware Operations team is responsible for monitoring the state-of-the-art physical infrastructure behind Google's powerful search technology. As an Operations Technician, you'll install, configure, test, troubleshoot and maintain hardware (like servers and its components) and server software (like Google's Linux cluster). You'll also take on the configuration of more complex components such as networks, routers, hubs, bridges, switches and networking protocols. You'll participate in or lead small project teams on larger installations and develop project contingency plans. A typical day involves manual movement and installation of racks, and while it can sometimes be physically demanding, you are excited to work with infrastructure that is at the cutting-edge of computer technology.<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide.</p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $86000 - $118000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Deploy and operate new data center infrastructure across projects or functions.<br /></li>\n<li>Report issues and follow data center procedures to troubleshoot and diagnose straightforward issues with equipment or infrastructure as they arise, and applying the resources needed to resolve identified issues.<br /></li>\n<li>Maintain the security and integrity of data, track various forms of media to check for standard data security issues (e.g., data was not properly erased) handled in accordance with Google security standards.<br /></li>\n<li>Disassemble specific equipment that has reached its end of life via part replacement or maintenance, in a team setting.</li>\n<li>Repair, fix, and perform preventative maintenance on equipment, servers, machines, or infrastructure based on identified issues with defined solutions and limited guidance.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Experience with performing component-level repairs and troubleshooting on technical equipment.</li>\n<li>Experience diagnosing and troubleshooting one of the following: operating systems, computer/server hardware, or networking protocols.</li>\n<li>Ability to lift/move 50lb (23kg) of equipment and ability to exert yourself physically over extended periods of time, including frequent bending, kneeling, climbing, pushing/pulling and lifting.<br /></li>\n<li>Must have the ability to work non-standard hours, including working weekends, night shifts, holidays and on shift-based schedules as required.</li>\n<li>Must be available to travel to support business priorities as operationally required.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>Completion of the online Google IT Support Professional Certificate program.<br /></li>\n<li>2 years of experience diagnosing and troubleshooting one of the following: operating systems and computer/server hardware or networking protocols.<br /></li>\n<li>Experience with performing component-level repairs and troubleshooting on IT equipment or in a similar role (e.g., Systems Administration, Network Deployment Engineer, Help Desk Technician, etc.).</li>\n<li>Experience working within a data center or network operation center environment.<br /></li>\n<li>Ability to collaborate and partner with teams to overcome issues, and to adapt to changes in a dynamic work environment.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/76030761232147142-data-center-technician-ii",
-    "postedAt": "2026-11-06T10:42:48.000Z",
-    "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -1027,14 +1006,13 @@
     "company": "google",
     "title": "Senior Software Engineer, Infrastructure, AI and Infrastructure",
     "locations": [
-      "Sunnyvale, CA, USA",
-      "Kirkland, WA, USA"
+      "Sunnyvale, CA, USA"
     ],
     "remote": false,
     "category": "engineering",
     "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.\n</p>\n<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide.</p>\n<p>We're the driving team behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>\nIndividual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $174000 - $252000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Write and test product or system development code.</li>\n<li>Participate in, or lead design reviews with peers and stakeholders to decide amongst available technologies.\n</li>\n<li>Review code developed by other developers and provide feedback to ensure best practices (e.g., style guidelines, checking code in, accuracy, testability, and efficiency).</li>\n<li>Contribute to existing documentation or educational content and adapt content based on product/program updates and user feedback.\n</li>\n<li>Triage product or system issues and debug/track/resolve by analyzing the sources of issues and the impact on hardware, network, or service operations and quality.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.\n</li>\n<li>5 years of experience programming in C++, Python or Go.</li>\n<li>3 years of experience testing, maintaining, or launching software products, and 1 year of experience with software design and architecture.\n</li>\n<li>3 years of experience developing large-scale infrastructure, distributed systems or networks, or experience with compute technologies, storage or hardware architecture.<br /></li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical field.\n</li>\n<li>5 years of experience with data structures/algorithms.</li>\n<li>1 year of experience in a technical leadership role.\n</li>\n<li>Experience developing accessible technologies.\n</li><li>Experience utilizing AI productivity tools to streamline individual, business or development workflows.</li>\n</ul>",
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/78607292685001414-senior-software-engineer-infrastructure-ai-and-infrastructure",
-    "postedAt": "2026-11-11T22:09:14.000Z",
+    "postedAt": "2026-11-27T08:37:33.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "source": "google"
   },
@@ -1310,7 +1288,7 @@
     "postedAt": "2026-11-16T13:40:37.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -1335,14 +1313,13 @@
     "company": "google",
     "title": "Software Engineer III, Google Cloud Compute Infrastructure",
     "locations": [
-      "Kirkland, WA, USA",
-      "Sunnyvale, CA, USA"
+      "Kirkland, WA, USA"
     ],
     "remote": false,
     "category": "engineering",
     "descriptionHtml": "Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.<br /><br />Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.<br /><br />With your technical expertise you will manage project priorities, deadlines, and deliverables. You will design, develop, test, deploy, maintain, and enhance software solutions.<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $147000 - $210000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Write product or system development code.</li>\n<li>Participate in, or lead design reviews with peers and stakeholders to decide amongst available technologies.</li>\n<li>Review code developed by other developers and provide feedback to ensure best practices (e.g., style guidelines, checking code in, accuracy, testability, and efficiency).</li>\n<li>Contribute to existing documentation or educational content and adapt content based on product/program updates and user feedback.</li>\n<li>Triage product or system issues and debug/track/resolve by analyzing the sources of issues and the impact on hardware, network, or service operations and quality.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.</li>\n<li>2 years of experience programming in C++, Java or Python.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical fields.</li>\n<li>2 years of experience with performance, large scale systems data analysis, visualization tools, or debugging.<br /></li>\n<li>2 years of experience with data structures or algorithms in either an academic or industry setting.</li>\n<li>Experience developing accessible technologies. </li>\n<li>Proficiency in code and system health, diagnosis and resolution, and software test engineering. </li>\n</ul>",
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81250748788024006-software-engineer-iii-google-cloud-compute-infrastructure",
-    "postedAt": "2026-11-02T11:07:46.000Z",
+    "postedAt": "2026-11-27T08:37:32.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
     "source": "google"
   },
@@ -1382,24 +1359,6 @@
     "source": "google"
   },
   {
-    "id": "google:81503437820175046",
-    "slug": "google-strategy-and-operations-manager-global-ads-and-commerce-marketing-81503437820175046",
-    "company": "google",
-    "title": "Strategy and Operations Manager, Global Ads and Commerce Marketing",
-    "locations": [
-      "New York, NY, USA"
-    ],
-    "remote": false,
-    "category": "marketing",
-    "descriptionHtml": "<p>In this role, you will be working alongside to the team that leads Ads Product Marketing (APM), and will act as a key strategic thought partner to the Ads Product Marketing and the overall Ads and Commerce organization.</p><p>This role sits at the center of Google’s Ads Product Marketing organization—spanning Search and Agentic AI, GenMedia/Creative, Measurement, GMP and Sellside managing high-impact strategic and operational initiatives that bridge upstream product strategy with downstream commercial execution. You will orchestrate strategic business planning (including product strategy synthesis, headcount/resource alignment, and C-suite-ready executive narratives and reviews) and help drive product readiness for flagship global tentpoles (such as Google Marketing Live and Rethink Week).</p><p>You will define and operationalize cross-functional operating models and governance frameworks across Product Marketing (PMM), Product Management (PM), GBO, and GTM teams and help streamline workflows. You will be at the forefront of Marketing’s AI transformation and develop plans to drive business impact with the latest Google technology and innovations. </p><p>Leveraging strong strategic acumen, operational excellence, and executive presence, you will solve complex, ambiguous challenges and align senior stakeholders across PAs. In return, the role provides exceptional visibility, direct partnership with Google’s senior leadership, and high impact potential.</p>Know the user. Know the magic. Connect the two. At its core, marketing at Google starts with technology and ends with the user, bringing both together in unconventional ways. Our job is to demonstrate how Google's products solve the world's problems--from the everyday to the epic, from the mundane to the monumental. And we approach marketing in a way that only Google can--changing the game, redefining the medium, making the user the priority, and ultimately, letting the technology speak for itself.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $116000 - $166000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Manage the rhythm of the business for Ads product marketing leadership, including executive reviews, cross-product area alignment forums, leadership offsites, performance/OKR tracking, and organization-wide communications.</li>\n<li>Orchestrate annual and multi-year strategic planning cycles, synthesizing product priorities across Ads pillars into cohesive executive narratives, leadership review materials, and organizational resource plans.</li>\n<li>Partner with teams to pilot, operationalize, and support AI-driven tools and workflows across marketing.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>4 years of experience in management consulting, sales strategy and operations, go-to-market strategy, business operations, product marketing strategy, or corporate strategy.</li>\n<li>2 years of experience managing cross-functional initiatives across Product, Marketing, or Sales/Go-To-Market stakeholders.</li>\n<li>2 years of experience working with executive stakeholders.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience utilizing AI productivity tools to solve complex, multi-layered problems and streamline business or development workflows.</li>\n<li>Understanding of B2B product marketing work, commercial go-to-market (GTM) motions, and sales enablement workflows within a technology or digital advertising organization.</li>\n<li>Ability to navigate ambiguity, structuring new processes, and running the operational cadence for senior leadership.</li>\n<li>Ability to synthesize complex product strategies and quantitative analyses into compelling, C-suite-ready presentations and executive briefings.</li>\n<li>Excellent problem-solving, analytical, and organizational skills, with strong business judgment and executive presence.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81503437820175046-strategy-and-operations-manager-global-ads-and-commerce-marketing",
-    "postedAt": "2026-10-14T10:36:33.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "closedAt": "2026-11-13T15:50:24.900Z",
-    "source": "google"
-  },
-  {
     "id": "google:81598080377332422",
     "slug": "google-software-engineer-iii-ai-agent-architecture-81598080377332422",
     "company": "google",
@@ -1430,6 +1389,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81725239326581446-data-center-maintenance-planner",
     "postedAt": "2026-10-27T08:12:05.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -1446,24 +1407,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81788587946713798-senior-silicon-design-verification-engineer",
     "postedAt": "2026-11-16T17:06:43.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
-    "source": "google"
-  },
-  {
-    "id": "google:81884075001815750",
-    "slug": "google-senior-software-engineer-generative-ai-research-81884075001815750",
-    "company": "google",
-    "title": "Senior Software Engineer, Generative AI, Research",
-    "locations": [
-      "Sunnyvale, CA, USA"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Senior Software Engineer, you will design the next generation of AI accelerator instruction set architectures (ISAs) to power frontier ML models at scale. You will architect novel instruction primitives and addressing modes purpose-built for model dynamics—including MLA, speculative decoding, and dynamic sparsity. By pioneering AI-driven exploration pipelines, you will leverage LLMs and autonomous agents to explore vast architectural design spaces, prototype simulator features, and validate hardware-software trade-offs across compiler backends and RTL pipelines.</p><p>Google Research is building the next generation of intelligent systems for all Google products. To achieve this, we’re working on projects that utilize the latest computer science techniques developed by skilled software developers and research scientists. Google Research teams collaborate closely with other teams across Google, maintaining the flexibility and versatility required to adapt new projects and foci that meet the demands of the world's fast-paced business needs.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $174000 - $252000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Design custom instruction sets, addressing modes, and hardware features targeting emerging frontier model operations (e.g., MLA, speculative verification, dynamic sparsity, multi-precision numerical formats).<br /></li>\n<li>Deploy agentic orchestration and automated exploration pipelines to synthesize ISA configurations, generate test kernels, and discover architectural bottlenecks autonomously.<br /></li>\n<li>Collaborate across ML research, XLA compiler, and RTL teams to ensure new instructions are seamlessly targetable, efficient to lower, and verify cleanly across simulation environments.<br /></li>\n<li>Implement instruction-level simulators, golden reference models, and trace analyzers to measure performance, silicon area, and compiler efficiency.<br /></li>\n<li>Provide rigorous, data-driven architecture proposals to guide multi-generational silicon roadmaps.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br /></li>\n<li>5 years of experience with software development in C++ and Python.<br /></li>\n<li>Experience with functional/architectural simulators, emulator development, or compiler backends.<br /></li>\n<li>Experience with computer architecture, instruction set architectures (ISAs), and hardware-software interaction.<br /></li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical field.<br /></li>\n<li>5 years of experience with data structures/algorithms.</li>\n<li>1 year of experience in a technical leadership role.<br /></li>\n<li>Experience developing accessible technologies.<br /></li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/81884075001815750-senior-software-engineer-generative-ai-research",
-    "postedAt": "2026-10-13T13:40:46.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -1935,7 +1878,7 @@
     "postedAt": "2026-11-13T09:38:59.000Z",
     "firstSeenAt": "2026-11-13T10:42:31.851Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -2273,6 +2216,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/88158756738605766-ai-outcome-customer-engineer-google-cloud",
     "postedAt": "2026-10-27T13:11:45.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -2994,7 +2939,7 @@
     "postedAt": "2026-11-25T14:09:43.000Z",
     "firstSeenAt": "2026-11-26T05:03:42.870Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -3275,6 +3220,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/95568090720281286-applied-solutions-architect-data-and-ai",
     "postedAt": "2026-10-30T07:12:49.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -3312,24 +3259,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/95845328711754438-group-product-manager-finance-engineering-and-ai-transformation",
     "postedAt": "2026-11-16T10:07:14.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
-    "source": "google"
-  },
-  {
-    "id": "google:95883185895678662",
-    "slug": "google-youtube-industry-manager-alibaba-english-mandarin-95883185895678662",
-    "company": "google",
-    "title": "YouTube Industry Manager, Alibaba (English, Mandarin)",
-    "locations": [
-      "Shanghai, China",
-      "Beijing, China"
-    ],
-    "remote": false,
-    "descriptionHtml": "<p>Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and your customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals.</p>\nAs an Industry Manager, you will be an architect of strategic growth, forging trusted alliances with C-level stakeholders to align on ambitious business goals. You will harness the power of predictive analytics to navigate profound industry shifts, winning with unique value and maximizing impact to prove the long-term success of our partners. In this role, you will leverage your business judgement to identify, educate, and engage customers with YouTube's latest advertising products and technologies. Utilizing influencing and relationship-building skills, you will provide Google-caliber client service, research, and market analysis, anticipating how decisions are made, understanding the details of individual campaigns, and persistently exploring, and uncovering the business needs of key business lines. Alongside our customers, you will set the goal and strategy for how their advertising can reach users.<p>Google's Large Customer Sales (LCS) teams are strategic partners and industry thought leaders to the world's leading brands and agencies. We continuously challenge how customers think about their business and how Google can support growth. We focus on helping these players navigate profound industry shifts and drive outsized business performance by competitively selling Google's full suite of advertising solutions across Search, YouTube, Measurement, and more. As a member of our LCS team, you'll have the unique opportunity to sell at the forefront of technology, collaborating with executives, influencing market-shaping strategies, and delivering tangible results that significantly impact major global businesses and drive the growth of Google.</p><h3>Responsibilities</h3><ul>\n<li>Maintain strong relationships with clients, agencies, and other key stakeholders to ensure alignment with business objectives and successful collaboration.</li>\n<li>Lead the execution of strategies to drive adoption, revenue, and strategy for YouTube leveraging digital marketing tools and platforms to optimize client advertising efforts.</li>\n<li>Guide clients in leveraging their Intellectual Property (IP) to secure global branding significance on YouTube, accelerating their transition from traditional media to digital, and driving bottom-line growth globally.</li>\n<li>Analyze and optimize marketing Return on Investment (ROI) by monitoring and assessing the performance of digital campaigns for YouTube, making data-driven recommendations for continuous improvement.</li>\n<li>Oversee and coordinate with agency partners, ensuring effective communication, collaboration, and utilization of resources to drive successful marketing initiatives.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>8 years of industry experience in digital advertising, consultative sales, business development, or digital marketing, or 6 years of experience with an advanced degree.</li>\n<li>Ability to communicate in English and Mandarin fluently to support regional business and clients.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience in developing relationships with executive-level stakeholders.</li>\n<li>Understanding of video/YouTube advertising.</li>\n<li>Understanding of cross-functional media businesses and operations.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/95883185895678662-youtube-industry-manager-alibaba-english-mandarin",
-    "postedAt": "2026-10-22T12:09:29.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "closedAt": "2026-11-14T05:02:39.889Z",
     "source": "google"
   },
   {
@@ -3419,24 +3348,6 @@
     "source": "google"
   },
   {
-    "id": "google:96445910363316934",
-    "slug": "google-staff-software-engineer-youtube-ads-experiences-96445910363316934",
-    "company": "google",
-    "title": "Staff Software Engineer, YouTube Ads Experiences",
-    "locations": [
-      "Mountain View, CA, USA"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward. <br /><br />As a part of the YouTube Ads Experiences (YTAX) team, you will join a core, horizontal engineering group responsible for the DNA of the YouTube user experience. You will build the experiences and interactions that power YouTube’s ecosystem across major surfaces and interfaces.<br /><br />In this role, your mission is to balance user experience with high-value advertiser outcomes. You will build patterns that scale globally, ensure the financial health of the YouTube creator community and advertiser values by delivering long-term business annually.<br />Google Ads is at the forefront of AI innovation, applying machine learning and Generative AI models like Gemini to power a multi-billion dollar global business.<br /><br />Our work directly impacts billions of users by protecting users from harm, improving ad quality, and optimizing campaigns for advertiser return-on-investment. We foster a culture of deep collaboration, partnering closely with teams like Google Research and DeepMind to solve complex challenges. Join us to work on state-of-the-art AI, take on problems at an unparalleled scale, and build the next generation of advertising technology.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $207000 - $300000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Facilitate alignment and clarity across teams on goals, outcomes, and timelines, and influence and coach a distributed team of engineers.</li>\n<li>Leverage AI strategically to solve complex layout and interaction problems, using it or not for its own sake but to build smarter, more adaptive products.</li>\n<li>Partner directly with YouTube’s \"Organic\" product teams to re-envision the app experience, going beyond simply adding ads by helping build step-function changes to how users interact with the YouTube App.</li>\n<li>Lead the effort to reduce friction between an ad and its destination, owning the full-stack, from deep infrastructure and foundation layers to the application-level UI.</li>\n<li>Drive the next-generation of ad experiences, especially on Consumption Surfaces (Watch, and Shorts surfaces, account for 87% YT ads revenue), by optimizing existing inventory and innovating new experiences to meet evolving user and advertiser needs.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br /></li>\n<li>8 years of experience in software development.<br /></li>\n<li>5 years of experience with ML design and ML infrastructure (e.g., model deployment, model evaluation, data processing, debugging, fine tuning).</li>\n<li>5 years of experience testing, and launching software products, and 3 years of experience with software design and architecture.</li>\n<li>Experience integrating generative AI tools or Large Language Model (LLM) interfaces into workflows.</li>\n<li>Experience applying AI (Gemini, GenAI, LLM) towards solving real-world technical problems.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Engineering, Computer Science, or a related technical field.</li>\n<li>8 years of experience with data structures and algorithms.</li>\n<li>3 years of experience in a technical leadership role leading project teams and setting technical direction.</li>\n<li>3 years of experience working in a complex, matrixed organization involving cross-functional, or cross-business projects.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/96445910363316934-staff-software-engineer-youtube-ads-experiences",
-    "postedAt": "2026-09-28T10:39:23.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:96475915810153158",
     "slug": "google-data-engineer-96475915810153158",
     "company": "google",
@@ -3470,23 +3381,6 @@
     "source": "google"
   },
   {
-    "id": "google:96800885920670406",
-    "slug": "google-top-partner-manager-retail-96800885920670406",
-    "company": "google",
-    "title": "Top Partner Manager, Retail",
-    "locations": [
-      "London, UK"
-    ],
-    "remote": false,
-    "descriptionHtml": "<p>Google's line of products and services to our clients never stops growing. The Partnerships Development team is responsible for seeking and exploring new opportunities with Google's partners. Equipped with your business acumen and extensive product knowledge, you are right on the front line of interacting with our partners, and helping them find ways to grow using Google's newest product offerings. Your knowledge of relevant verticals and relationships with key industry players will help shape our great applications and content for products such as YouTube, Google TV and Commerce.</p>\n<p>As a Top Partner Manager, you will be a highly strategic, forward-thinking, and problem-solving leader helping us unlock the massive growth opportunity for Retail in the UK.</p><p>Operating within the EMEA Top Partners Retail &amp; Travel Team, you will lead our work with key UK Retail Partners to enable T2T relationships, deliver commercial impact, advance AI, and drive industry allyships. Spanning cross-functional teams across Partnerships, Cloud, Product, and global/regional business leads, you will partner collaboratively to:</p><ul><li>Provide dedicated “One Google” support to the relevant Top Partners, part of a named list of 250+ partners of significant strategic/financial importance to Google</li><li>Incubate transformative/innovative big ideas and rally cross functional teams towards new opportunities, centered around key themes such as AI and Cloud</li><li>Accelerate agreements and drive strategic initiatives, e.g. industry strategy alignment, cross functional joint business plans, Agentic AI, key industry initiatives/programs</li><li>Enable front line teams via cross functional industry narratives, best practice sharing communities</li><li>Engage with ecosystems to assess needs and bring the best of Google to solve industry challenges</li></ul>Google’s Global Partnerships team powers extraordinary user experiences through partnerships that solve users’ needs, advance our partners’ goals, and further Google’s mission. Our team provides meaningful solutions — from helping publishers and developers grow their businesses through monetization solutions, to helping our long-term partners anticipate and navigate change in a way that delivers economic and reputational value. We build and distribute products through partnerships across a multitude of product areas, including Ads, Search &amp; Assistant, Geo, Platforms &amp; Ecosystems, Devices &amp; Services, Health, Retail, Payments, Next Billion Users, and more. We collaborate across Google, ensuring a coordinated approach when engaging with our most complex and strategic partners.<h3>Responsibilities</h3><ul>\n<li>Identify, lead and execute holistic cross-functional initiatives across Google’s teams and products in Retail, including executive engagements, joint business plans and transformational agreements covering multiple opportunities.</li>\n<li>Collaborate with senior Retail and Regional decision-makers (Executive Sponsors, Senior Stakeholders, cross-product area leads and teams, Cloud executives, etc) to remove roadblocks for Top Partners and the industry, resulting in commercial/relationship outcomes.</li>\n<li>Deliver thought leadership and drive specific partner initiatives based on your holistic industry expertise. Enable teams to develop tailored vertical solutions across the Retail value chain</li>\n<li>Facilitate and coordinate communities of LCS, Cloud, business development and other product area teams working with your partners, creating internal transparency and clear objectives.</li>\n<li>Support Google’s velocity efforts in the UK  and connect with key stakeholders with a structured and targeted approach through industry events, panels and policy campaigns.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>7 years of experience in business development, partnerships, management consulting, strategy consulting, or corporate strategy in the Retail industry.</li>\n<li>Experience working with C-level executives and cross-functionally across all levels of management.</li>\n<li>Experience managing multiple projects or workstreams with a focus on structured execution.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Knowledge of the Retail industry.</li>\n<li>Ability to navigate ambiguity, to solve complex problems and to scale effectively across a large and highly distributed organization.</li>\n<li>Proven ability to influence others for driving progress and commitment with internal and external stakeholders.</li>\n<li>Demonstrated program and partner management skills, with experience in executing complex strategic and operational initiatives.</li>\n<li>Excellent problem-solving and analysis skills, combined with impeccable business judgment.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/96800885920670406-top-partner-manager-retail",
-    "postedAt": "2026-11-11T09:40:28.000Z",
-    "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:96841881383510726",
     "slug": "google-software-engineer-iii-infrastructure-search-96841881383510726",
     "company": "google",
@@ -3517,24 +3411,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/96880477301809862-research-scientist-robotics-pre-training-and-data-quality-deepmind",
     "postedAt": "2026-10-20T08:09:16.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "source": "google"
-  },
-  {
-    "id": "google:96880806672114374",
-    "slug": "google-data-center-operations-manager-global-server-operations-96880806672114374",
-    "company": "google",
-    "title": "Data Center Operations Manager, Global Server Operations",
-    "locations": [
-      "Lincoln, NE, USA"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>Google isn't just a software company. The Hardware Operations team is responsible for monitoring the state-of-the-art physical infrastructure behind Google's powerful search technology. As a Hardware Operations Manager, you will manage a team of Data Center Technicians. You will oversee the quality installation of server hardware and components and take charge of complicated installations/troubleshooting.<br /><br />Your team will install, configure, test, troubleshoot and maintain hardware (like servers and its components) and server software (like Google's Linux cluster). They will also take on the configuration of more complex components such as networks, routers, hubs, bridges, switches and networking protocols. They may lead small project teams on larger installations and develop project contingency plans.</p><p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving team behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $122000 - $173000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Lead a team of individuals; set and communicate individual and team priorities that support organizational goals. Meet regularly with individuals to discuss performance and development, and provide feedback and coaching.<br /></li>\n<li>Partner with teams to meet goals and stakeholders to manage facility activities and set/implement short- and long-term strategies.<br /></li>\n<li>Maintain, monitor, and execute security and operational procedures and track/analyze trends to identify opportunities for improvements ensuring alignment with organizational policies.<br /></li>\n<li>Repair, fix, and perform preventative maintenance on equipment, servers, machines, or infrastructure based on identified issues.<br /></li>\n<li>Support and contribute to the implementation of Environmental Health and Safety (EHS) and other compliance programs and initiatives in collaboration with other teams to ensure environmental and safety incidents are investigated, resolved, and reported.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>5 years of experience in computing infrastructure, networking, operating systems, or hardware. <br /></li>\n<li>2 years of experience managing technical teams, vendor or contract management and delivery. <br /></li>\n<li>Experience in people management.</li>\n<li>Ability to work non-standard hours, including working weekends, night shifts, holidays and on shift-based schedules as required.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Bachelor's degree in a technical field or equivalent practical experience.</li>\n<li>Experience with initiating and executing strategic initiatives in a global environment.</li>\n<li>Experience installing, configuring, testing, troubleshooting, and maintaining hardware servers and their components.</li>\n<li>Experience working in data center environments, including building and operating large-scale infrastructure, network and compute architecture and lifecycle, Linux/Unix system administration, Google Workspace, AI Platform, SQL, Scripting, Data Analytics, and Project Management.</li>\n<li>Track record of leading and improving Environmental Health and Safety (EHS) initiatives.</li>\n<li>Demonstrated strong performance and experience with data gathering, analysis, and presentation skills.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/96880806672114374-data-center-operations-manager-global-server-operations",
-    "postedAt": "2026-11-11T12:10:05.000Z",
-    "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "closedAt": "2026-11-13T15:50:24.900Z",
     "source": "google"
   },
   {
@@ -3843,6 +3719,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/99124667238752966-senior-product-manager-youtube-shorts-growth-and-ui-acceleration",
     "postedAt": "2026-10-27T21:09:46.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -3895,6 +3773,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/99615121633878726-research-engineer-biosecurity-deepmind",
     "postedAt": "2026-10-06T17:07:48.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -4017,23 +3897,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/100557335184712390-software-engineer-manager-admin-access-platform-dynamic-policy-engine",
     "postedAt": "2026-11-05T13:09:55.000Z",
     "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "source": "google"
-  },
-  {
-    "id": "google:100672929129210566",
-    "slug": "google-market-consultant-aunz-fixed-term-contract-100672929129210566",
-    "company": "google",
-    "title": "Market Consultant, AUNZ (Fixed-Term Contract)",
-    "locations": [
-      "Sydney NSW, Australia"
-    ],
-    "remote": false,
-    "descriptionHtml": "People Operations strives to revolutionize human resources the same way that Google has revolutionized search. We are helping to find, grow and keep the remarkable assemblage of talent who are our Googlers. You'll be an advocate of Google's culture and values, partnering with our business leaders to help them build their organizations and make sure all people decisions are based on data. Whether coaching our clients on how to lead their teams, navigating and resolving employee relations issues or managing programs that help develop our Googlers, you are exceptionally focused on putting them first, and being as clear and transparent as possible to help Googlers understand how people decisions get made.\n<p>Our Market Consultant role is known for deep subject matter expertise in HR programs, processes, and execution in their particular market. They work closely with the Head of HR, who sets the strategy via the Market HR Plan, to execute on and operationalize Google’s geographic priorities. Market consultants have sound knowledge of company and local programs, policies, and compliance procedures, and offer a compelling voice around HR matters internally and externally. They use their influencing skills to represent the needs of Google, facilitate partner discussions, and drive decisions that bring stakeholders along using change management skills.</p><h3>Responsibilities</h3><ul>\n<li>Work with the relevant teams to ensure end-to-end delivery for our HR processes in country, in particular with a focus on minimizing HR compliance risks and managing labor relations risks and related work.</li>\n<li>Contribute to the deployment of high-priority country-focused HR programs and initiatives aligned to the country People plan (e.g., flexible work, psychosocial frameworks, new entity setup, onboarding, RTW providers).</li>\n<li>Manage local employment policies and practices to ensure legal and regulatory compliance (e.g., LSL).</li>\n<li>Work with the HR compliance team, process ownership team, user support team, and the relevant COE teams on prioritizing and mitigating market-related risks.</li>\n<li>Drive recommendations and prioritization to ensure work is in service of the end-to-end delivery of our Googler experience in the country.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Human Resources, Labor Relations, or equivalent practical experience.</li>\n<li>7 years of HR Business Partner or HR Generalist experience.<br /><br /></li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience implementing HR projects including risk management/mitigation, new entity set up, change management, business readiness, communications, and training activities.</li>\n<li>Experience Managing HR risks and compliance including identifying risks and need and developing a mitigation plan.</li>\n<li>Experience leading businesses and HR strategies across both Australia and New Zealand.</li>\n<li>Demonstrated experience with cross-functional collaboration and drive decisions with multiple stakeholder groups.<br /></li>\n<li>Broad range of HR knowledge, with experience with consultation processes and Labour Relations exposure to CoE disciplines  and local employment law.</li>\n<li>Strong project management skills and delivery, able to manage multiple simultaneous priorities.<br /><br /></li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/100672929129210566-market-consultant-aunz-fixed-term-contract",
-    "postedAt": "2026-10-13T06:07:40.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -4294,6 +4157,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/102414199870628550-administrative-business-partner-ai2-strategic-operations-and-programs",
     "postedAt": "2026-10-27T07:09:59.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -4712,7 +4577,7 @@
     "postedAt": "2026-11-16T07:37:00.000Z",
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -4856,25 +4721,6 @@
     "source": "google"
   },
   {
-    "id": "google:106568047426183878",
-    "slug": "google-staff-ux-quantitative-researcher-ai-enablement-106568047426183878",
-    "company": "google",
-    "title": "Staff UX Quantitative Researcher, AI Enablement",
-    "locations": [
-      "Sunnyvale, CA, USA",
-      "Seattle, WA, USA"
-    ],
-    "remote": false,
-    "category": "design",
-    "descriptionHtml": "<p>At Google, we \"Focus on the user and all else will follow.\" As a Quantitative User Experience Researcher (Quant UXR), you make this possible. You will join a multi-disciplinary team, collaborating closely with Engineering and Product Management to create industry-leading, innovative products.<br /><br />You will drive impact at all stages of development by investigating user behavior through empirical methods like logs analysis, survey research, and regression. We value diverse educational experiences—from Computer Science to Psychology—and require a blend of behavioral research design, statistical proficiency, and programming skills to uncover actionable insights. Beyond the work, you will grow within a supportive Quant UXR community offering mentorship, regular meetups, and exclusive internal tools to help you thrive.</p>\n<p>As a Staff Quantitative UX Researcher, you will drive and deliver the telemetry strategy for AI Data. You will work collaboratively with cross-functional engineering and product partners to inform our instrumentation strategy for tracking strategic impact across several company-wide workstreams. You will define and execute the measurement strategy to help define new product opportunities, identify key optimization vectors across our training pipelines and scaled work streams, and to monitor how changes affect critical outcome metrics.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $188000 - $274000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Design and implement agent-assisted pipelines to parse, audit, and analyze massive-scale system logs.</li>\n<li>Define, instrument, and track system-level key performance indicators (KPIs), backend performance metrics, and product health indicators.</li>\n<li>Develop custom scripts, prompts, or agentic wrappers (e.g., in Python or R) to parse complex, messy infrastructure logs and transform them into digestible, statistically validated behavioral patterns.</li>\n<li>Partner deeply with Infrastructure Engineers, Applied Data Scientists, and Machine Learning researchers to ensure our backend pipelines are correctly instrumented for downstream agentic analysis.</li>\n<li>Translate abstract system performance data (e.g., latency, GPU/TPU utilization, noise, storage toil) into quantifiable measures of user friction, efficiency losses, and \"cognitive load\".</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.</li>\n<li>8 years of experience in an applied research setting, or similar.</li>\n<li>Experience in programming languages used for data manipulation and computational statistics (e.g., Python, R, MATLAB, C++, Java, or Go).</li>\n<li>Experience in quantitative research, logs analysis, measurement and attribution, data analysis, and metrics analysis.</li>\n<li>Experience researching AI/ML products, Developer APIs, or technical infrastructure.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Human-Computer Interaction, Cognitive Science, Statistics, Psychology, Anthropology, or related field.<br /></li>\n<li>8 years of experience conducting UX research on products. <br /></li>\n<li>7 years of experience working with executive leadership (e.g., Director level and above).<br /></li>\n<li>5 years of experience managing projects, and working in a large, matrixed organization.<br /></li>\n<li>Experience with software development.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/106568047426183878-staff-ux-quantitative-researcher-ai-enablement",
-    "postedAt": "2026-11-06T08:39:35.000Z",
-    "firstSeenAt": "2026-11-06T10:50:31.526Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:106643268678099654",
     "slug": "google-key-account-executive-public-sector-google-cloud-106643268678099654",
     "company": "google",
@@ -4926,6 +4772,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/106698996684071622-ai-sales-specialist-iii-financial-services-google-cloud",
     "postedAt": "2026-10-27T07:10:03.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -4979,7 +4827,7 @@
     "postedAt": "2026-11-23T08:09:56.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -5070,24 +4918,6 @@
     "source": "google"
   },
   {
-    "id": "google:108078525147161286",
-    "slug": "google-data-center-services-manager-108078525147161286",
-    "company": "google",
-    "title": "Data Center Services Manager",
-    "locations": [
-      "Mumbai, Maharashtra, India"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>Google's projects, like our users, span the globe and require managers to keep the big picture in focus while being able to dive into the unique engineering challenges we face daily. As a Technical Program Manager at Google, you lead complex, multi-disciplinary engineering projects using your engineering expertise. You plan requirements with internal customers and usher projects through the entire project lifecycle. This includes managing project schedules, identifying risks and clearly communicating them to project stakeholders. You're equally at home explaining your team's analyses and recommendations to executives as you are discussing the technical trade-offs in product development with engineers.<br /><br />Using your extensive technical and leadership expertise, you manage various Engineering-specific programs and teams.</p>\n<p>As the Data Center Services Manager, you will be fully involved in nearly every aspect of the design development and localisation, procurement, schedule and cost management, delivery, commissioning, handover and close-out of the data center projects, including facility upgrades within operational data centres. You will partner with our local/regional facility managers, plant engineers, our design, project controls, delivery and commissioning teams, to develop scalable solutions at pace.</p>This role requires you to manage complex schedules, budgets and broad inter-dependencies, all while maintaining industry leading EHS and Quality standards.The role of the Data Center Services (DCS) manager requires strong communication, collaborative and organisational skills, with the ability to self-direct. You will manage a team and therefore strong leadership skills are required.The Data Center team designs and operates some of the most sophisticated electrical and HVAC systems in the world. We are an upbeat, creative, team-oriented group of engineers committed to building and operating powerful data centers.<h3>Responsibilities</h3><ul>\n<li>Manage a large, campus-wide data center construction and delivery organization with the DCS Manager as the single point of accountability and oversight for major projects utilizing internal and outsourced resources.</li>\n<li>Support the development of detailed, localized designs, leveraging the programmatic design plan of record, while driving procurement, construction, commissioning, close out, and hand-off to the Operations team to meet safety, cost, schedule, quality, and customer requirements.</li>\n<li>Lead problem-solving engagement with partners to overcome issues that affect the delivery of projects.</li>\n<li>Establish and maintain delivery models and global relationships with multiple vendors, measuring Key Performance Indicators (KPIs) and metrics.</li>\n<li>Drive the proactive identification, selection, and onboarding of new regional contractors and vendors to increase the current bench.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in a technical field, or equivalent practical experience.</li>\n<li>10 years of experience in program management.</li>\n<li>7 years of experience in leadership role(s) with/without direct reports.</li>\n<li>Experience managing machine learning or artificial intelligence programs.</li>\n<li>Experience with AI, Generative AI, data processing technologies, performance, or scalability optimizations.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience managing multi-group, or multi-disciplinary projects.</li>\n<li>Experience in people management and leadership.</li>\n<li>Experience managing construction projects within an international working environment.</li>\n<li>Experience with commercial contract management and procurement.</li>\n<li>Experience working within the mission critical facilities.</li>\n<li>Experience managing vendor relationships and understanding standard practices in the design and construction industry.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/108078525147161286-data-center-services-manager",
-    "postedAt": "2026-11-10T08:39:58.000Z",
-    "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:108339974033547974",
     "slug": "google-people-analyst-scaled-analytics-108339974033547974",
     "company": "google",
@@ -5119,6 +4949,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/108354792476025542-finance-manager-data-center-equipment-procurement-and-supply-chain",
     "postedAt": "2026-10-27T14:41:33.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -5390,6 +5222,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/110448881090601670-technical-account-manager-google-cloud",
     "postedAt": "2026-10-27T08:38:59.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -5444,24 +5278,6 @@
     "source": "google"
   },
   {
-    "id": "google:111079629518709446",
-    "slug": "google-data-center-facilities-technician-mechanical-111079629518709446",
-    "company": "google",
-    "title": "Data Center Facilities Technician, Mechanical",
-    "locations": [
-      "Horndal, Sweden"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>The Data Center team designs and operates some of the most sophisticated electrical engineering, mechanical engineering and HVAC systems in the world. Facilities Technicians at Google data centers operate, monitor and support physical facilities conditions. Some of these duties will include heating and cooling of air and water, power supply, generators, UPS systems, electrical distribution and control and monitoring systems. You regularly help inspect, maintain and repair various data center systems such as piping and non-critical electrical or mechanical system components).<br /><br />As an advocate for best practices, you develop creative approaches to reducing operational costs while improving overall data center efficiency. You ensure that environmental and safety standards are consistently met, identifying problems and making repairs quickly. In emergency situations or abnormal conditions, you manage data center performance issues and outages to minimize the recovery time from failures.<br /></p>\n<p>As a Mechanical Technician, you'll ensure 24/7 reliability of our physical infrastructure. Your core duties involve operating, monitoring, and supporting mechanical systems critical to data center performance, including: water pumps and treatment systems, chillers, HVAC and advanced control and monitoring systems. You'll regularly inspect, maintain, and repair these systems. Google commits to your professional growth, offering access to certifications and limitless opportunities to realize your full potential in this rapidly evolving field.</p><p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />Sweden: kr680000 - kr695000 (SEK) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Inspect, maintain, and repair various data center systems such as piping and mechanical system components.<br /></li>\n<li>Provide daily assistance to technicians as you read blueprints/schematics/sequence of operations, conduct tours of systems, and assess their working order.<br /></li>\n<li>Manage the uptime and maintenance of water pumps and treatment systems, HVAC and control and monitoring systems.<br /></li>\n<li>Operate, monitor, maintain, and respond to abnormal conditions in the data center facilities systems and equipment.<br /></li>\n<li>Support startup, commissioning, and integration of new mechanical equipment and systems into facilities infrastructure.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Associate's degree, trade school certification, or other certified training in a related technical field, or equivalent practical experience.</li>\n<li>5 years of Mechanical/HVAC experience in an industrial or commercial environment.</li>\n<li>Ability to participate in material handling tasks such as lifting, carrying or moving up to 50 lbs (23 kg) of equipment, the required use of safety equipment such as limited weight bearing work platforms, ladders, step stools and personal protective equipment (PPE) like safety harnesses in accordance with safety and ergonomic guidelines and assessments.</li>\n<li>Ability to work non-standard hours and differing work rotations/shifts.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>5 years of experience in maintenance of mechanical/cooling distribution systems or construction/technical environment or a related field.<br /></li>\n<li>Experience in data centers, hospitals, or power plants.<br /></li>\n<li>Knowledge of mechanical systems used in a data center environment (e.g., Chillers, Air handling units, pumps and CRAC/CRAH units).</li>\n<li>Knowledge of meters, devices, sensors, and troubleshooting utilizing standard hand tools, digital metering, or calibration/diagnostic equipment.<br /></li>\n<li>Ability to communicate with contractors who perform maintenance or upgrade work on the data center systems.<br /></li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/111079629518709446-data-center-facilities-technician-mechanical",
-    "postedAt": "2026-09-08T14:09:15.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-13T05:02:55.337Z",
-    "closedAt": "2026-11-13T15:50:24.900Z",
-    "source": "google"
-  },
-  {
     "id": "google:111090828377498310",
     "slug": "google-program-manager-data-center-construction-marcus-111090828377498310",
     "company": "google",
@@ -5509,24 +5325,6 @@
     "firstSeenAt": "2026-11-12T05:03:02.950Z",
     "lastSeenAt": "2026-11-16T05:03:35.318Z",
     "closedAt": "2026-11-20T05:03:19.201Z",
-    "source": "google"
-  },
-  {
-    "id": "google:111523584181969606",
-    "slug": "google-software-engineer-manager-search-platforms-search-111523584181969606",
-    "company": "google",
-    "title": "Software Engineer Manager, Search Platforms, Search",
-    "locations": [
-      "Bengaluru, Karnataka, India"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>Like Google's own ambitions, the work of a Software Engineer goes beyond just Search. Software Engineering Managers have not only the technical expertise to take on and provide technical leadership to major projects, but also manage a team of Engineers. You not only optimize your own code but make sure Engineers are able to optimize theirs. As a Software Engineering Manager you manage your project goals, contribute to product strategy and help develop your team. Teams work all across the company, in areas such as information retrieval, artificial intelligence, natural language processing, distributed computing, large-scale system design, networking, security, data compression, user interface design; the list goes on and is growing every day. Operating with scale and speed, our exceptional software engineers are just getting started -- and as a manager, you guide the way.<br /><br />With technical and leadership expertise, you manage engineers across multiple teams and locations, a large product budget and oversee the deployment of large-scale projects across multiple sites internationally.</p><p>In Google Search, we're reimagining what it means to search for information – any way and anywhere. To do that, we need to solve complex engineering challenges and expand our infrastructure, while maintaining a universally accessible and useful experience that people around the world rely on. In joining the Search team, you'll have an opportunity to make an impact on billions of people globally.</p><h3>Responsibilities</h3><ul>\n<li>Set and communicate team priorities that support the broader organization's goals, aligning strategy, processes, and decision-making across teams.</li>\n<li>Establish clear expectations with individuals based on their level and role and aligned to the broader organization's goals.</li>\n<li>Develop the mid-term technical goal and roadmap within the scope of your often multiple teams, evolving it to meet anticipated future requirements and infrastructure needs.</li>\n<li>Design, guide and vet systems designs within the scope of the broader area, and write product or system development code to solve ambiguous problems.</li>\n<li>Demonstrate AI fluency, and be prepared to discuss your knowledge and use of AI tools during the hiring process.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree, or equivalent practical experience.</li>\n<li>8 years of experience in software development.</li>\n<li>3 years of experience with developing large-scale infrastructure, distributed systems.</li>\n<li>3 years of experience in a people management and 2 years of experience in a technical leadership role.</li>\n<li>Experience with Java, C++, or both.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or a related technical field.</li>\n<li>3 years of experience working in a complex, matrixed organization.</li>\n<li>Passion for technology, collaboration, and solving challenging problems.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/111523584181969606-software-engineer-manager-search-platforms-search",
-    "postedAt": "2026-10-19T14:08:17.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "closedAt": "2026-11-14T05:02:39.889Z",
     "source": "google"
   },
   {
@@ -5998,7 +5796,7 @@
     "postedAt": "2026-11-17T21:40:32.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -6015,6 +5813,8 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/115396331228275398-country-operations-manager-english-chinese-mandarin",
     "postedAt": "2026-10-30T07:39:41.000Z",
     "firstSeenAt": "2026-11-02T18:51:23.567Z",
+    "lastSeenAt": "2026-11-27T05:03:25.571Z",
+    "missedRuns": 1,
     "source": "google"
   },
   {
@@ -6051,24 +5851,6 @@
     "source": "google"
   },
   {
-    "id": "google:115885850125836998",
-    "slug": "google-k12-sales-representative-google-for-education-115885850125836998",
-    "company": "google",
-    "title": "K12 Sales Representative, Google for Education",
-    "locations": [
-      "London, UK"
-    ],
-    "remote": false,
-    "category": "sales",
-    "descriptionHtml": "<p>As a K12 Sales Representative, you will be a key player in developing and executing the go-to-market strategy to drive the adoption of Gemini, Workspace and Chrome. You will manage a defined portfolio of institutions and MATs within your territory, acting as their primary point of contact and trusted advisor. You will build ecosystem partnerships in the sector that will aid the Gemini expansion.</p><p>Your primary objective will be to foster meaningful adoption that demonstrates the transformative value of Gemini for teaching, learning, and research within your accounts. You will act as a converter for Gemini, building strong relationships with key stakeholders including school and college leadership, faculty, department heads, and IT leaders. In addition, you will be a critical contributor to our internal teams, providing customer feedback to help shape the product roadmap and refine the playbook for scaling adoption.</p><p>Google plays an important role in education around the world – with hundreds of millions of students using Google Classroom, Google Workspace, Chromebooks, YouTube, and more. In addition to powering these core products, we’re experimenting with new tools to advance the boundaries of how education leaders understand and guide their schools, staff, and students.<br /><br />For more information, see the <a href=\"https://edu.google.com/\">Google for Education site</a>.</p><h3>Responsibilities</h3><ul>\n<li>Develop and execute the GTM strategy for Workspace, Chrome and Gemini in K12 in a specific market, owning key results for strategic adoption and delivering training to support Gemini adoption across users.</li>\n<li>Identify and engage directly with key stakeholders at the academic institutions in your territory, helping faculty build roadmaps for integrating AI, and managing records of customer interactions.</li>\n<li>Identify sector stakeholders that could be enablers to Gemini, Workspace and Chrome adoption in the K12 sector to act as a thought leader.</li>\n<li>Synthesize and relay feedback from customers to help influence the future roadmap for Workspace in Education.</li>\n<li>Collaborate closely with teams across Google to ensure you have an aligned One-Google strategy to support universities.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>3 years of experience in technology sales or working with customers in a sales role.</li>\n<li>Experience with conflict resolution and managing client and stakeholder relationships.</li>\n<li>Experience in technology-related sales, account management, or customer-facing role at an enterprise business-to-business software company.</li>\n<li>Experience selling educational technology solutions to schools or universities.</li>\n<li>Experience managing sales pipelines within the United Kingdom public sector.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience executing go-to-market strategies and meeting or exceeding targets.</li>\n<li>Experience with artificial intelligence, machine learning, or other transformative technologies.</li>\n<li>Experience supporting technology adoption and change-management initiatives with customers.</li>\n<li>Experience in negotiation, communication, and stakeholder collaboration.</li>\n<li>Experience building and cultivating lasting relationships with accounts.</li>\n<li>Knowledge of the UKI education sector, especially for K12, including challenges and decision-making processes.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/115885850125836998-k12-sales-representative-google-for-education",
-    "postedAt": "2026-11-02T22:08:11.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:115891461500609222",
     "slug": "google-field-sales-representative-financial-services-115891461500609222",
     "company": "google",
@@ -6082,24 +5864,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/115891461500609222-field-sales-representative-financial-services",
     "postedAt": "2026-11-23T14:38:39.000Z",
     "firstSeenAt": "2026-11-24T05:03:30.764Z",
-    "source": "google"
-  },
-  {
-    "id": "google:116119766929679046",
-    "slug": "google-enterprise-account-manager-life-sciences-google-cloud-uki-116119766929679046",
-    "company": "google",
-    "title": "Enterprise Account Manager, Life Sciences, Google Cloud UKI",
-    "locations": [
-      "London, UK"
-    ],
-    "remote": false,
-    "category": "sales",
-    "descriptionHtml": "<p>The Google Cloud Life Sciences &amp; Industrials team is where a unique convergence of strategic investment, technological differentiation and proven market success combine to serve our growing diversified customers.</p><p>As part of an entrepreneurial team in this rapidly growing business, you will help build the next generation of strategic Life Sciences customers for Google Cloud UKI. This is a new-business role focused on identifying, developing, and winning organizations where Google Cloud has limited or no established commercial relationship today.</p><p>You will work across a rapidly evolving Life Sciences ecosystem spanning biotechnology, pharmaceuticals, MedTech, diagnostics, clinical research, consumer health, animal health and Life Sciences manufacturing.</p><p>You will combine disciplined enterprise selling with curiosity for the industry, identifying high-potential organizations early, developing senior relationships from the ground up and helping customers understand how Google Cloud’s AI, data, infrastructure, security and productivity capabilities can address their most important business and scientific challenges.</p><p>This is an opportunity to help shape and grow a strategic market for Google Cloud rather than simply inherit an established portfolio.</p><p>Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.</p><h3>Responsibilities</h3><ul>\n<li>Identify and prioritize high-potential new Life Sciences customers across UKI, developing and executing account strategies to establish Google Cloud relationships where limited or no significant relationship exists today.</li>\n<li>Generate and develop new business opportunities by building relationships with senior business, technology and scientific stakeholders and connecting their strategic priorities to Google Cloud capabilities.</li>\n<li>Manage complex enterprise business cycles from initial engagement and opportunity creation through technical validation, commercial negotiation and customer acquisition.</li>\n<li>Develop a detailed understanding of customers’ business strategies, growth priorities, technology environments, scientific and operational challenges, and competitive landscapes.</li>\n<li>Build a qualified pipeline through proactive account development, executive engagement, industry relationships, partners and the wider Life Sciences ecosystem rather than relying primarily on inbound demand.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor' s degree or equivalent practical experience.</li>\n<li>7 years of experience in a sales role in the enterprise software or cloud space.</li>\n<li>Experience in sales in the healthcare and life sciences industry.</li>\n<li>Experience driving new business opportunities in greenfield territories.  </li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience working with customers across one or more areas of Life Sciences, including biotechnology, pharmaceuticals, MedTech, diagnostics, clinical research, Life Sciences manufacturing, consumer health or animal health.</li>\n<li>Understanding of how technology and data are used across areas such as research and development, drug discovery, clinical operations, manufacturing, supply chain or commercial functions within Life Sciences.</li>\n<li>Ability to work with technical specialists and customer technology leaders to understand existing environments, define transformation opportunities and build compelling business cases.</li>\n<li>Demonstrated track record of acquiring new enterprise customers and generating pipeline rather than primarily managing an established account portfolio.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/116119766929679046-enterprise-account-manager-life-sciences-google-cloud-uki",
-    "postedAt": "2026-10-23T19:09:51.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -6369,24 +6133,6 @@
     "source": "google"
   },
   {
-    "id": "google:118078995718644422",
-    "slug": "google-product-manager-payments-platform-billing-118078995718644422",
-    "company": "google",
-    "title": "Product Manager, Payments Platform Billing",
-    "locations": [
-      "Mountain View, CA, USA"
-    ],
-    "remote": false,
-    "category": "product",
-    "descriptionHtml": "<p>At Google, we put our users first. The world is always changing, so we need Product Managers who are continuously adapting and excited to work on products that affect millions of people every day. <br /><br />In this role, you will work cross-functionally to guide products from conception to launch by connecting the technical and business worlds. You can break down complex problems into steps that drive product development.<br /><br />One of the many reasons Google consistently brings innovative, world-changing products to market is because of the collaborative work we do in Product Management. Our team works closely with creative engineers, designers, marketers, etc. to help design and develop technologies that improve access to the world's information.  We're responsible for guiding products throughout the execution cycle, focusing specifically on analyzing, positioning, packaging, promoting, and tailoring our solutions to our users.<br /></p>\n<p>As a Core Billing Product Manager, you'll play a pivotal role in building the foundation for Google's global commerce ecosystem. You'll have the unique opportunity to collaborate with teams across the company, shaping how businesses and consumers interact with our products and services on a massive scale. Your work will directly impact the seamlessness, security, and compliance of Google's financial transactions worldwide.</p><p>Whether it is paying online with Autofill, using tap and pay in stores, or using the Google Pay app, the Payments team at Google is focused on making payments simple, seamless, and secure. In addition to consumer payment technologies, the Payments team also powers the money movement between Google and its consumers and businesses.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $138000 - $197000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Support PRDs by collaborating with partner teams (e.g., engineers, PgMs, UX) during product design and development to implement the requirements. <br /></li>\n<li>Define the product vision, strategy, and roadmap for Google's core billing infrastructure, ensuring it scales to support our growing global business and product offerings.</li>\n<li>Articulate defined product vision in a way that captures attention and compels others to drive action despite obstacles and competing priorities. <br /></li>\n<li>Validate the market size and opportunity (e.g., user-based, strategic opportunity, revenue). Identify opportunities in the market landscape. <br /></li>\n<li>Facilitate launches, maintenance, and retirement in collaboration with other cross-functional teams and stakeholders.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>3 years of experience in product management or related technical role.<br /></li>\n<li>1 year of experience taking technical products from conception to launch (e.g., ideation to execution, end-to-end, 0 to 1, etc.).</li>\n<li>1 year of experience working in Fintech or on payments products.</li>\n<li>Experience integrating generative AI tools or LLM interfaces into workflows.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree in a technology or business related field.<br /></li>\n<li>2 years of experience in a business function or role (e.g., strategic marketing, business operations, consulting).<br /></li>\n<li>2 years of experience in a role preparing and delivering technical presentations to senior leadership.<br /></li>\n<li>2 years of experience working cross-functionally with engineering, UX/UI, sales finance, and other stakeholders.<br /></li>\n<li>1 year of experience in software development or engineering.<br /></li>\n<li>Knowledge of, or continued interest in building accessibility best practices, and experience/curiosity for incorporating accessibility into product development methodologies.<br /></li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/118078995718644422-product-manager-payments-platform-billing",
-    "postedAt": "2026-11-10T11:09:44.000Z",
-    "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:118211972201095878",
     "slug": "google-engineering-manager-applied-ai-cloud-support-intelligence-118211972201095878",
     "company": "google",
@@ -6487,7 +6233,7 @@
     "postedAt": "2026-11-19T08:39:29.000Z",
     "firstSeenAt": "2026-11-20T05:03:19.201Z",
     "lastSeenAt": "2026-11-26T05:03:42.870Z",
-    "missedRuns": 1,
+    "closedAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -7313,24 +7059,6 @@
     "source": "google"
   },
   {
-    "id": "google:126468252258706118",
-    "slug": "google-technical-operations-manager-facilities-maintenance-third-party-data-center-faci-126468252258706118",
-    "company": "google",
-    "title": "Technical Operations Manager, Facilities/Maintenance, Third Party Data Center Facilities",
-    "locations": [
-      "Paris, France"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>The Data Center team designs and operates some of the most sophisticated electrical engineering, mechanical engineering and HVAC systems in the world. Facility Technicians at Google data centers operate, monitor and support physical facilities conditions. Some duties will include heating and cooling of air and water, power supply, generators, UPS systems, electrical distribution and control and monitoring systems. You regularly help inspect, maintain and repair various data center systems such as piping and non-critical electrical or mechanical system components). You'll provide daily assistance to senior technicians as you read blueprints/schematics, conduct tours of systems and assess their working order.<br /><br />You will develop creative approaches to reducing operational costs while improving overall data center efficiency. You ensure that environmental and safety standards are consistently met, identifying problems and making repairs quickly In emergency situations or abnormal conditions, you manage data center performance issues and outages to minimize the recovery time from failures.</p>\n<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving team behind Google's groundbreaking innovations, empowering the development of our AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />France: €80000 - €82000 (EUR) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Own third-party data center operations within the region along with the accountability for this area. Support site selection process through operational and technical knowledge.<br /></li>\n<li>Perform operational assessment and risk analysis of third-party data center sites.</li>\n<li>Keep main stakeholders informed about current work and discuss decisions and directions with them.</li>\n<li>Drive efforts to monitor data center systems operations, control site activities to minimize risk, and to ensure effective response to any excursions.</li>\n<li>Drive efforts to ensure sites are following facility, maintenance, and standard programs globally while exhibiting strength in improvement to said policies and programs.<br /></li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Associate's degree, trade school certification, or other certified training in a related technical field, or equivalent practical experience.</li>\n<li>7 years of experience in electrical, mechanical/HVAC, or controls/automation experience in an industrial/commercial environment.</li>\n<li>Ability to participate in material handling tasks such as lifting, carrying or moving up to 50 lbs (23 kg) of equipment, the required use of safety equipment such as limited weight bearing work platforms, ladders, step stools and personal protective equipment (PPE) like safety harnesses in accordance with safety and ergonomic guidelines and assessments.</li>\n<li>Ability to work non-standard hours and differing work rotations/shifts.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>7 years of experience in controls/automation, or construction/technical environment or a related field. </li>\n<li>Experience in data centers, hospitals, or power plants.</li>\n<li>Knowledge of electrical and mechanical systems used in a data center environment (e.g., Feeders, Transformers, Generators, Switchgear, UPS systems, ATS/STS units, PDU/PMM units, Chillers, Air handling units, and CRAC units).</li>\n<li>Knowledge of meters, devices, sensors, and troubleshooting utilizing standard hand tools, digital metering, or calibration/diagnostic equipment.</li>\n<li>Ability to communicate with contractors who perform maintenance or upgrade work on the data center systems.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/126468252258706118-technical-operations-manager-facilities-maintenance-third-party-data-center-faci",
-    "postedAt": "2026-11-11T16:08:38.000Z",
-    "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "closedAt": "2026-11-14T05:02:39.889Z",
-    "source": "google"
-  },
-  {
     "id": "google:126488999098229446",
     "slug": "google-technical-program-manager-iii-software-integration-and-fiber-infrastructure-clou-126488999098229446",
     "company": "google",
@@ -7405,6 +7133,22 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/126738155687551686-business-development-manager-new-business-sales-gaming-chinese-english",
     "postedAt": "2026-11-20T14:36:28.000Z",
     "firstSeenAt": "2026-11-03T09:27:31.661Z",
+    "source": "google"
+  },
+  {
+    "id": "google:127023209277989574",
+    "slug": "google-account-manager-lcs-enterprise-german-market-english-german-127023209277989574",
+    "company": "google",
+    "title": "Account Manager, LCS, Enterprise, German Market (English, German)",
+    "locations": [
+      "Dublin, Ireland"
+    ],
+    "remote": false,
+    "category": "sales",
+    "descriptionHtml": "<p>Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and your customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals.</p>\n<p>Google's Large Customer Sales (LCS) teams are strategic partners and industry thought leaders to the world's leading brands and agencies. We continuously challenge how customers think about their business and how Google can support growth. We focus on helping these players navigate profound industry shifts and drive outsized business performance by competitively selling Google's full suite of advertising solutions across Search, YouTube, Measurement, and more. As a member of our LCS team, you'll have the unique opportunity to sell at the forefront of technology, collaborating with executives, influencing market-shaping strategies, and delivering tangible results that significantly impact major global businesses and drive the growth of Google.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />Ireland: €76000 - €77500 (EUR) + 35% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Drive extraordinary customer growth by thinking bigger in every engagement — always looking for ways to increase pitch size while being anchored in customer value.</li>\n<li>Deliver exceptional customer proximity with customers and their agencies with the goal of extending relationships, growing the customer and optimizing their advertising with exceptional product expertise.</li>\n<li>Monitor performance data to extract key insights, identifying and cultivating qualified promote opportunities to drive future customer growth and build pipeline.</li>\n<li>Build and pitch data-driven solutions to maximize customer value through Google’s advertising solutions, handle objections, and ultimately achieve business growth goals.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>2 years of experience in sales, business development, advertising, account management, marketing, or consulting.</li>\n<li>Ability to communicate in English and German fluently to engage with clients in the region.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree in a business related field.<br /></li>\n<li>2 years of experience working in a complex, matrixed organization.<br /></li>\n<li>1 year of experience managing digital marketing and advertising campaigns, projects, and relationships with customers or agencies.<br /></li>\n<li>Experience utilizing AI productivity tools to solve complex, multi-layered problems and streamline business or development workflows.</li>\n</ul>",
+    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/127023209277989574-account-manager-lcs-enterprise-german-market-english-german",
+    "postedAt": "2026-11-27T11:37:38.000Z",
+    "firstSeenAt": "2026-11-28T05:03:12.153Z",
     "source": "google"
   },
   {
@@ -7657,25 +7401,6 @@
     "source": "google"
   },
   {
-    "id": "google:129120125323223750",
-    "slug": "google-ux-writer-and-content-designer-google-ads-129120125323223750",
-    "company": "google",
-    "title": "UX Writer and Content Designer, Google Ads",
-    "locations": [
-      "Mountain View, CA, USA",
-      "San Francisco, CA, USA"
-    ],
-    "remote": false,
-    "category": "design",
-    "descriptionHtml": "<p>As a UX writer, you are an advocate for Google design, shaping product experiences by creating useful, meaningful text that helps users complete tasks. You help set the vision for content and drive cohesive product narratives across multiple platforms and touch points. As a stellar writer, your portfolio of work demonstrates content that simplifies and beautifies the overall user experience. You work with people in a variety of UX design-related jobs including researchers, product managers, engineers, marketing and customer operations. Collaborating with each, you strive to establish cohesive language and a unified voice across products and platforms. You regularly use empathy, logic and data to inform content choices and recommendations that include the right words and sometimes complementary data and images.</p>\n<p>Buying, Analytics and Measurement (BAM) UX is a group of impassioned designers, researchers and writers, defining the user experience of the Google Marketing Platform and critical pieces of the broader Google advertising ecosystem. We are looking for an enthusiastic UX writer and content designer, who is both a strategic product thinker and a strong writer, to work on advertiser safety within the Google Ads product. This is a unique team that solves deep product and business problems within Google Ads.</p><p>Google Ads is at the forefront of AI innovation, applying cutting-edge machine learning and Generative AI models like Gemini to power a multi-billion dollar global business.</p><p>Our work directly impacts billions of users by protecting users from harm, improving ad quality, and optimizing campaigns for advertiser return-on-investment. We foster a culture of deep collaboration, partnering closely with teams like Google Research and DeepMind to solve complex challenges. Join us to work on state-of-the-art AI, take on problems at an unparalleled scale, and build the next generation of advertising technology.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $120000 - $172000 (USD) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Understand and advocate for all UX functions as essential to the product life-cycle. </li>\n<li>Drive the development of innovative UX writing and content design solutions to complex user, product, and business problems.</li>\n<li>Build alignment by collaborating with product managers, team members, and other cross-functional stakeholders (e.g., marketing, legal, engineering) to develop a product narrative, mission, or principles.</li>\n<li>Lead the establishment and improvement of holistic UX writing and content design processes, systems, frameworks or patterns across multiple teams or products.</li>\n<li>Influence the development of priorities across projects to balance tactical and strategic efforts in alignment with larger project goals.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>4 years of experience in UX writing, content design, technical writing, writing, editorial, marketing, or related, as well as leading content strategy projects.</li>\n<li>Experience on UX-focused product writing and shaping content for multi-disciplinary projects.</li>\n<li>Include a portfolio, website, or any other relevant link to your work in your resume (providing a viewable link or access instructions).</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>3 years of experience interacting with executive leadership.</li>\n<li>2 years of writing, editorial, marketing, or UX writing experience in an agency setting.</li>\n<li>2 years of experience working in a complex, cross-functional technology organization.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/129120125323223750-ux-writer-and-content-designer-google-ads",
-    "postedAt": "2026-10-16T11:39:15.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:129129141264884422",
     "slug": "google-post-doctoral-researcher-phd-deepmind-2026-start-fixed-term-contract-129129141264884422",
     "company": "google",
@@ -7893,25 +7618,6 @@
     "source": "google"
   },
   {
-    "id": "google:132191416439710406",
-    "slug": "google-senior-test-generator-technical-lead-hardware-google-cloud-132191416439710406",
-    "company": "google",
-    "title": "Senior Test Generator Technical Lead, Hardware, Google Cloud",
-    "locations": [
-      "Tel Aviv, Israel",
-      "Haifa, Israel"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "Be part of a team that pushes boundaries, developing custom silicon solutions that power the future of Google's direct-to-consumer products. You'll contribute to the innovation behind products loved by millions worldwide. Your expertise will shape the next generation of hardware experiences, delivering unparalleled performance, efficiency, and integration.<br /><br />At Google, you will have the opportunity to find the perfect blend of software design practices and hardware development complexity. As a Test Generator Technical Leader, you will lead the technical development and methodology of advanced pseudo-random test generators and verification tools for Google's custom silicon (ASIC/SoC). You will work at the intersection of hardware and software, driving the strategy for stimuli generation, constraint-solving, and test automation to ensure the functional correctness of next-generation chips. Your strength is primarily in software coding with a good understanding of hardware, or if you are a hardware engineer with software proficiency, this balanced role will let you shine in both disciplines at the same time.Google's mission is to organize the world's information and make it universally accessible and useful. Our team combines the best of Google AI, Software, and Hardware to create radically helpful experiences. We research, design, and develop new technologies and hardware to make computing faster, seamless, and more powerful. We aim to make people's lives better through technology.<h3>Responsibilities</h3><ul>\n<li>Lead the technical design, architecture, and implementation of high-performance test generators and verification frameworks (e.g., using C++, Python, SystemVerilog, or Universal Verification Methodology (UVM).</li>\n<li>Propose, design and implement software automation that directly addresses bottlenecks in today's ASIC and SoC Electronic Design Automation (EDA) flow, specifically targeting pseudo-random stimuli generation and constraint-solving methodology.</li>\n<li>Collaborate directly with the hardware team on projects to prototype and then deploy scalable test generator tools to make a positive impact on Google's chip hardware development process.</li>\n<li>Participate in, or lead design reviews with peers and stakeholders to decide amongst available technologies for advanced verification.</li>\n<li>Triage product or system issues and debug/track/resolve by analyzing the sources of issues and the impact on hardware, simulation performance, or service operations and quality.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field, or equivalent practical experience.</li>\n<li>10 years of experience with software development in one or more programming languages with experience in data structures and algorithms.</li>\n<li>Experience in hardware verification, building developer tools, or developing test generators/exercisers for ASICs and SoCs.</li>\n<li>Experience testing, maintaining, or launching software/hardware products.</li>\n<li>Experience with software design and architecture, including leading technical projects.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Electrical Engineering, Computer Engineering, or Computer Science, with an emphasis on computer architecture.</li>\n<li>Experience with high-performance, systems, and debugging.</li>\n<li>Experience with Hardware Verification languages and methodologies (e.g., SystemVerilog, UVM).</li>\n<li>Experience in chip design and related EDA tools and flows (e.g., VCS, Xcelium, debugging complex hardware-software interactions).</li>\n<li>Deep understanding of object-oriented programming, constraint solvers, and software design architecture.</li>\n<li>Software skills and design practices, with the ability to bridge the gap between software engineering and hardware verification disciplines.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/132191416439710406-senior-test-generator-technical-lead-hardware-google-cloud",
-    "postedAt": "2026-11-11T08:07:48.000Z",
-    "firstSeenAt": "2026-11-12T05:03:02.950Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:132274184754471622",
     "slug": "google-solutions-engineer-high-touch-support-networking-google-cloud-132274184754471622",
     "company": "google",
@@ -8002,32 +7708,15 @@
     "locations": [
       "Kirkland, WA, USA",
       "San Francisco, CA, USA",
-      "Sunnyvale, CA, USA"
+      "Sunnyvale, CA, USA",
+      "Reston, VA, USA"
     ],
     "remote": false,
     "category": "data",
     "descriptionHtml": "A problem isn’t truly solved until it’s solved for all. That’s why Googlers build products that help create opportunities for everyone, whether down the street or across the globe. As a Program Manager at Google, you’ll lead complex, multi-disciplinary projects from start to finish — working with stakeholders to plan requirements, manage project schedules, identify risks, and communicate clearly with cross-functional partners across the company. Your projects will often span offices, time zones, and hemispheres. It's your job to coordinate the players and keep them up to date on progress and deadlines.\n<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $236000 - $329000 (USD) + 25% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Lead data center supply strategy and portfolio planning operations across the organization.</li>\n<li>Drive business operations and program management initiatives within a technical infrastructure environment.</li>\n<li>Develop and implement data visualization frameworks to support strategic portfolio decisions.</li>\n<li>Partner with cross-functional groups to manage stakeholder relationships and influence strategic business outcomes.</li>\n<li>Prepare and deliver executive-ready communications, business memos, and presentations for senior leadership.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.<br /></li>\n<li>10 years of experience in management consulting, business operations, corporate strategy, or program management.</li>\n<li>10 years of experience in infrastructure.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>15 years of experience working within a technology or technical infrastructure environment.</li><li>10 years of experience managing cross-functional or cross-team projects.</li>\n<li>Experience in data visualization, stakeholder management, and cross-functional influencing.</li>\n<li>Experience developing business memos and presentations for executive audiences.</li>\n</ul>",
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/132616588137243334-data-center-supply-portfolio-planning-strategic-operations-and-communications",
-    "postedAt": "2026-11-26T10:07:49.000Z",
+    "postedAt": "2026-11-27T07:36:35.000Z",
     "firstSeenAt": "2026-11-19T05:03:26.756Z",
-    "source": "google"
-  },
-  {
-    "id": "google:132665307293459142",
-    "slug": "google-tech-lead-manager-display-and-video-360-inventory-and-deals-132665307293459142",
-    "company": "google",
-    "title": "Tech Lead Manager, Display and Video 360, Inventory and Deals",
-    "locations": [
-      "Kirkland, WA, USA"
-    ],
-    "remote": false,
-    "category": "management",
-    "descriptionHtml": "<p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a part of the Display and Video 360 (DV360), Google's cross-exchange real-time bidding buying platform, you will help remake the way advertising is done on the internet, making it more targeted and more valuable. You will give customers access to 100 billion ad impressions per day as it is one of the fastest growing products at Google. <br /><br />As a part of the DV360 Inventory and Deals Team, you will be responsible for building intelligent features that support enterprise customers (agencies and large advertisers) to efficiently discover inventory, negotiate deals, execute campaigns and maximize performance across the real-time bidding ads ecosystem.<br /></p><p>Google Ads is at the forefront of AI innovation, applying cutting-edge machine learning and Generative AI models like Gemini to power a multi-billion dollar global business.</p><p>Our work directly impacts billions of users by protecting users from harm, improving ad quality, and optimizing campaigns for advertiser return-on-investment. We foster a culture of deep collaboration, partnering closely with teams like Google Research and DeepMind to solve complex challenges. Join us to work on state-of-the-art AI, take on problems at an unparalleled scale, and build the next generation of advertising technology.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $207000 - $300000 (USD) + 20% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Manage and mentor a sub-team within the DV360 Inventory and Deals organization, fostering technical excellence, leadership, and strong engineering velocity.</li>\n<li>Lead the end-to-end system architecture and implementation of user-facing products and partner-facing APIs across Java, Spanner, and Angular/Dart.</li>\n<li>Guide technical strategy across our AI-powered natural language discovery roadmap, collaborate directly with engineers at external exchanges on API specifications, and ensure our 24/7 infrastructure scales reliably.</li>\n<li>Balance people leadership with  technical contribution, spending approximately half of the time designing, coding, and landing critical features.</li>\n<li>Drive architectural modernization across our data and serving layers, deprecating legacy synchronous dependencies in favor of event-driven, push-down query architectures.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>8 years of experience in software development.</li>\n<li>5 years of experience testing, and launching software products.</li>\n<li>5 years of experience with full stack development, across back-end such as Java, Python, Golang, or C++ codebases, and front-end experience including JavaScript or TypeScript, HTML, CSS or equivalent.</li>\n<li>3 years of experience with software design and architecture.<br /></li>\n<li>Experience integrating generative AI tools or Large Language Model (LLM) interfaces into workflows.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master’s degree or PhD in Engineering, Computer Science, or a related technical field.</li>\n<li>8 years of experience with data structures and algorithms.</li>\n<li>3 years of experience in a technical leadership role leading project teams and setting technical direction.</li>\n<li>3 years of experience working in a complex, matrixed organization involving cross-functional, or cross-business projects.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/132665307293459142-tech-lead-manager-display-and-video-360-inventory-and-deals",
-    "postedAt": "2026-10-05T09:37:55.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -8220,24 +7909,6 @@
     "source": "google"
   },
   {
-    "id": "google:135999267872350918",
-    "slug": "google-regional-program-manager-strategy-and-operations-135999267872350918",
-    "company": "google",
-    "title": "Regional Program Manager, Strategy and Operations",
-    "locations": [
-      "Dublin, Ireland"
-    ],
-    "remote": false,
-    "category": "product",
-    "descriptionHtml": "<p>When our millions of advertisers and publishers are happy, so are we! Our Google Customer Solutions (GCS) team of entrepreneurial, enthusiastic and client-focused members are the \"human face\" of Google, helping entrepreneurs both individually and broadly build their online presence and grow their businesses. We are dedicated to growing the unique needs of advertising companies. Our teams of strategists, analysts, advisers and support specialists collaborate closely to spot and analyze customer needs and trends. In collaboration, we create and implement business plans broadly for all types of businesses.</p><p>The Revenue Strategy and Operations (RSO) organization provides business critical insights using analytics, ensures cross functional alignment of goals and execution, and helps teams drive strategic partnerships and new initiatives forward. We stay focused on aligning the highest-level company priorities with effective day-to-day operations, and help evolve early stage ideas into future-growth initiatives.</p><p>As a central team with regional presence, we provide business critical insights to shape the engagement strategy with the EMEA Customer Onboarding team and ensure alignment of goals and execution as we grow the business. Team members are experts in business strategy and operations, analytical and strategic, yet highly pragmatic and results-oriented.</p><p>The Go-to-Market Operations (GtM) team ensures Google's complex and ever-evolving Ads business runs smoothly. We are instrumental in setting go-to-market strategy, and ensuring flawless execution and operations against the strategy. We have teams embedded in each of the major Ads business areas as well as global teams that work across the business areas. Team members are analytical and strategic, with a pragmatic sense of how to get things done.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />Ireland: €118000 - €120000 (EUR) + 15% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Develop and execute holistic, long-term growth strategies that prioritize customer and partner success for the EMEA region.</li>\n<li>Work with EMEA executive leadership to identify high-impact strategic opportunities through data analytics and insights, and develop actionable plans to accelerate growth for EMEA markets.</li>\n<li>Define project scope, key focus areas, and analysis needed to uncover opportunities and drive stakeholder alignment. Work with cross-functional stakeholders across sales, finance, marketing, and product to deliver on project priorities, drive alignment, and enable decision making.</li>\n<li>Communicate findings to executive leadership in the shape of executive-ready presentations and thoughtful facilitation of strategy topics across functional teams.</li>\n<li>Build a network with sales teams members across all levels to capture seller and customer feedback and understand the opportunities and challenges. </li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>6 years of experience in management consulting, corporate strategy, sales operations or equivalent strategy, and project management experience.</li>\n<li>3 years of experience working with executive stakeholders.<br /></li>\n<li>2 years of experience developing business strategies or managing cross-functional initiatives.<br /></li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>MBA or Master's degree.</li>\n<li>Experience in engaging across EMEA markets and cultures.</li>\n<li>Deep knowledge of Google’s Ads products, sales teams, or service operations as well as the customer and competitive contexts in which they operate.</li>\n<li>Ability to effectively influence, communicate and drive change (often cross-functionally) with multiple stakeholders at all levels of management.</li>\n<li>Demonstrated problem-solving and investigative skills and experience with SQL.</li>\n<li>Excellent communication and presentation development skills with the ability to take complex, ambiguous topics and turn them into stories that spark an audience.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/135999267872350918-regional-program-manager-strategy-and-operations",
-    "postedAt": "2026-11-05T11:39:12.000Z",
-    "firstSeenAt": "2026-11-05T14:04:53.510Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:136046637066658502",
     "slug": "google-data-cloud-sales-specialist-iii-google-cloud-136046637066658502",
     "company": "google",
@@ -8333,27 +8004,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/136732760239678150-senior-incident-response-consultant-mandiant-weekend-team",
     "postedAt": "2026-11-10T13:09:41.000Z",
     "firstSeenAt": "2026-11-11T05:03:15.561Z",
-    "source": "google"
-  },
-  {
-    "id": "google:136749602953929414",
-    "slug": "google-senior-datacenter-engineer-136749602953929414",
-    "company": "google",
-    "title": "Senior Datacenter Engineer",
-    "locations": [
-      "Singapore",
-      "Sungai Buloh, Selangor, Malaysia",
-      "Nong Yai, Nong Yai District, Chon Buri, Thailand",
-      "Changhua, Dazhu Village, Xihu Township, Changhua County, Taiwan"
-    ],
-    "remote": false,
-    "category": "data",
-    "descriptionHtml": "<p>Our thirst for technology is a part of everything we do. The Data Center Engineering team takes the physical design of our data centers into the future. Our lab mirrors a research and development department -- cutting-edge strategies are born, tested and tested again. Along with a team of great minds, you take on complex topics like how we use power or how to run state-of-the-art, environmentally-friendly facilities. You're a visionary who optimizes for efficiencies and never stops seeking improvements -- even small changes that can make a huge impact. You generate ideas, communicate recommendations to senior-level executives and drive implementation alongside facilities technicians.<br /><br />With your technical expertise, you ensure compliance with codes and standards, develop infrastructure improvements and serve as an expert in your specialty (e.g., cooling, electrical).</p>\n<p>In this role, you will apply your deep technical expertise to oversee data center infrastructure projects from initial site due diligence through design, construction, and operational support. You will drive the technical design and review of mission-critical facilities—including HVAC, heat rejection, water supply and drainage, fire protection, and utility interfacing—while partnering closely with external Architects and Engineers. Leveraging advanced methodologies such as computational fluid dynamics, pipe stress analysis, and AI-driven insights, you will ensure all designs meet Google's stringent requirements and scalable programmatic principles. </p>By providing strategic guidance, facilitating cross-discipline coordination, and successfully integrating cutting-edge technologies, you will enable fast, safe, and efficient construction that pushes the boundaries of our next-generation data centers.<p>The AI and Infrastructure team is redefining what’s possible. We empower Google customers with breakthrough capabilities and insights by delivering AI and Infrastructure at unparalleled scale, efficiency, reliability and velocity. Our customers include Googlers, Google Cloud customers, and billions of Google users worldwide. </p><p>We're the driving force behind Google's groundbreaking innovations, empowering the development of our cutting-edge AI models, delivering unparalleled computing power to global services, and providing the essential platforms that enable developers to build the future. From software to hardware our teams are shaping the future of world-leading hyperscale computing, with key teams working on the development of our TPUs, Vertex AI for Google Cloud, Google Global Networking, Data Center operations, systems research, and much more.</p><h3>Responsibilities</h3><ul>\n<li>Lead the end-to-end design and review of critical mechanical systems (HVAC, fire protection, plumbing) for data center projects and infrastructure upgrades.</li>\n<li>Resolve complex, program-level mechanical issues through close collaboration with cross-functional teams, internal product groups, and external vendors.</li>\n<li>Localize global designs to satisfy regional regulations, driving optimal engineering execution across safety, quality, schedule, and cost for APAC facilities.</li>\n<li>Drive innovation by proposing sustainable mechanical designs and overseeing factory witness testing for crucial equipment.<br /></li>\n<li>Update and maintain internal design specifications and standards, seamlessly integrating continuous improvements and lessons learned into future builds.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Mechanical or Industrial Engineering, a related technical field, or equivalent practical experience.<br /></li>\n<li>5 years of experience in mission critical facility design and construction environments.<br /></li>\n<li>Ability to travel up to 25% of the time as required.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree in an Engineering or Business field, or equivalent practical experience.</li>\n<li>Professional Engineer (PE) license.</li>\n<li>8 years of experience designing, constructing, commissioning, or operating large-scale mission-critical facilities and data center systems (e.g., cooling plants, fire suppression, water/sewer).</li>\n<li>Experience with sustainable mechanical systems design, water treatment, and recycling.</li>\n<li>Experience in mechanical design principles for medium-scale production, complex modular building assemblies, structural elements, and tolerance analysis.</li>\n<li>Knowledge of international building codes and operational construction safety procedures.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/136749602953929414-senior-datacenter-engineer",
-    "postedAt": "2026-10-29T13:40:11.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-13T10:42:31.851Z",
-    "closedAt": "2026-11-14T05:02:39.889Z",
     "source": "google"
   },
   {
@@ -8502,24 +8152,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/137743563612922566-associate-principal-analyst-trust-and-safety-shopping",
     "postedAt": "2026-11-12T07:37:03.000Z",
     "firstSeenAt": "2026-11-13T05:02:55.337Z",
-    "source": "google"
-  },
-  {
-    "id": "google:137746824835277510",
-    "slug": "google-ai-infrastructure-gtm-lead-google-cloud-137746824835277510",
-    "company": "google",
-    "title": "AI Infrastructure GTM, Lead, Google Cloud",
-    "locations": [
-      "Singapore"
-    ],
-    "remote": false,
-    "category": "engineering",
-    "descriptionHtml": "<p>Google Cloud is the undisputed and recognized (The Forrester Wave™ Q1 2024) market leader in AI Infrastructure which is a result of GCP’s goal and strong track record of delivering continuous innovation and leading AI infrastructure products for our customers. Around the world, industry leading enterprises, startups, governments and the fastest growing AI Natives are scaling, building and innovating on GCP’s AI-First infrastructure. </p>As and AI Infrastructure GTM Lead you will be responsible to drive exponential business growth for Google Cloud with AI Infrastructure (GPU and TPUs) partnerships and strategic customer engagements across GCP’s GTM segments and verticals. This leadership role will collaborate across field sales, AI Infra tech specialists, capacity, product, engineering and finance to develop and grow long-term AI Infra partnerships and operate at the C-Level internally and externally. Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.<h3>Responsibilities</h3><ul>\n<li>Drive and grow AI Infrastructure business for Google Cloud through new, expanded or accelerated AI infra partnerships and strategic customer engagements across GCP’s GTM segments.</li>\n<li>Lead Google Cloud’s most strategic and complex AI Infrastructure agreement cycles with a customer-first mindset, strong sense of ownership and accountability for the success of the partnership.</li>\n<li>Drive commercial best-practices and profitability for GCP’s AI Infrastructure in close collaboration with the finance, product, capacity and our leadership teams.</li>\n<li>Develop and implement regional/industry specific Go-to-Market strategies jointly with the broader AI Infrastructure team and a cross-functional collaboration.</li>\n<li>Build and deepen trusted relationships with the C-Suite of GCP’s most strategic AI Infrastructure customers, influence long-term strategic direction, and serve as a business partner.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Business Administration, Economics or Computer Science or equivalent practical experience.</li>\n<li>10 years of experience in enterprise technology/cloud sales, management consulting, or partner management, and with business development and strategy.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>\n\nMBA or Master's degree.</li>\n<li>Experience in business development, consulting or strategic sales in the technology industry, promoting Platform-as-a-Service (PaaS), or Infrastructure-as-a-Service (IaaS).<br /></li>\n<li>Experience working across multiple organizations to drive complex initiatives to resolution.<br /></li>\n<li>Understanding of GCP’s AI Infrastructure and strategic agreement cycles. </li>\n<li>Knowledge about AI Startups and Natives and an understanding of the emerging Gen-AI industry tech stack.<br /></li>\n<li>Excellent communications skills and experience successfully operating in a fast-paced, high-impact work environment.<br /></li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/137746824835277510-ai-infrastructure-gtm-lead-google-cloud",
-    "postedAt": "2026-10-13T07:09:08.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
@@ -8979,24 +8611,6 @@
     "source": "google"
   },
   {
-    "id": "google:140323306996671174",
-    "slug": "google-accelerated-growth-consultant-google-customer-solutions-english-french-140323306996671174",
-    "company": "google",
-    "title": "Accelerated Growth Consultant, Google Customer Solutions (English, French)",
-    "locations": [
-      "Dublin, Ireland"
-    ],
-    "remote": false,
-    "category": "marketing",
-    "descriptionHtml": "Businesses of all shapes and sizes rely on Google’s unparalleled advertising solutions to help them grow in today's dynamic marketing environment. You bring a passion for sales, knowledge of online media, and commitment to maximize customer success. You act like an owner, move with velocity through change, finding innovative and strategic ways to consistently deliver extraordinary and incremental outcomes for both Google and your customers. You build trusted relationships with customers, uncovering their business needs and translating them into powerful solutions to achieve their most ambitious goals. You achieve as a team with sellers, shape the future of advertising in the AI-era, and make a real impact on the millions of companies and billions of users that trust Google with their most important goals. <br /><br />As an Accelerated Growth Consultant, you will be establishing key strategic relationships and consulting to accelerate any type of business, including startups and known brands. Your knowledge of online media combined with your communication skills and investigative abilities will shape the next wave of growth for these companies. Using your influencing and relationship-building skills, you will provide Google-caliber client service, research and market analysis which enable these companies to become market leaders. You will strive to persistently explore and uncover the business needs of Google's highest-potential clients, developing an understanding of how our range of solutions can grow their business. <br /><br />Working with them, you will define their goal, broadening the scope of what they can achieve, alongside developing and implementing transformational digital growth strategies to take their business to the next level.Google Customer Solutions (GCS) sales teams are trusted advisors and competitive sellers who maintain a relentless focus on customer success by bringing the best Google has to offer to small- and medium-sized businesses (SMBs), which are the backbone of our communities. As a member of our team, you’ll have the opportunity to work with company owners and make a real difference in their businesses by helping them grow.  Together, we help shape the future of innovation for customers, partners, and sellers...and we have fun doing it.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />Ireland: €76000 - €77500 (EUR) + 35% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Deliver against ambitious quarterly business and product growth goals, while prioritizing and delivering an outstanding experience to Google's advertisers within EMEA.</li>\n<li>Build and manage a pipeline through proactive identification of high-potential business in addition to close partnership with our marketing teams.</li>\n<li>Establish relationships via phone calls or e-mail marketing and design effective marketing strategies using expert product knowledge and deliver outstanding customer sales experience to drive long-term success for our customers.</li>\n<li>Build and manage a pipeline through proactive identification of high-potential business in addition to close partnership with our marketing teams.</li>\n<li>Consult with C-level clients to achieve national and international online marketing and business goals through utilizing the full suite of Google’s marketing solutions (e.g., YouTube, Google Search and Display Network platforms).</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree or equivalent practical experience.</li>\n<li>2 years of experience in sales, business development, advertising, account management, marketing, or consulting.</li>\n<li>Ability to communicate in English and French fluently to engage with clients in this region.</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>Experience in hunting, acquisition, and within a start-up environment.</li>\n<li>Experience in planning, delivering and executing marketing campaigns, measurement and creative strategy.</li>\n<li>Ability to own a portfolio in an advertising or media sales context, and consistently overachieve quotas to drive growth.</li>\n<li>Ability to move fast, be bold, and grow in a dynamic, fast changing environment.</li>\n<li>Excellent investigative skills with the ability to think strategically about complex issues and develop recommendations and action plans.</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/140323306996671174-accelerated-growth-consultant-google-customer-solutions-english-french",
-    "postedAt": "2026-10-20T10:38:53.000Z",
-    "firstSeenAt": "2026-11-03T09:27:31.661Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
-    "source": "google"
-  },
-  {
     "id": "google:140330257059062470",
     "slug": "google-community-development-manager-strategic-partnership-office-140330257059062470",
     "company": "google",
@@ -9221,25 +8835,6 @@
     "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/141675067154014918-senior-ip-design-verification-engineer-google-cloud",
     "postedAt": "2026-11-04T07:40:14.000Z",
     "firstSeenAt": "2026-11-04T08:38:28.126Z",
-    "source": "google"
-  },
-  {
-    "id": "google:142285540920566470",
-    "slug": "google-director-security-defense-platforms-142285540920566470",
-    "company": "google",
-    "title": "Director, Security Defense Platforms",
-    "locations": [
-      "San Francisco, CA, USA",
-      "New York, NY, USA"
-    ],
-    "remote": false,
-    "category": "management",
-    "descriptionHtml": "<p>As the Director of Security Defense Platforms, you will lead the global software engineering organization responsible for the foundational software, streaming pipelines, telemetry architectures, and AI-driven automated containment infrastructure that powers all of Alphabet’s detection and response operations.<br /><br />In this role, you will be an executive engineering leader with experience building massive-scale distributed data systems, driving high-reliability platform engineering, and advocating advanced security automation and agentic defense. You will bridge software engineering with cyber defense partnering closely with Detection and Response domain leads, and enterprise platform teams to transform Google’s security posture from reactive \"Detect and Respond\" to proactive \"Infer and Interrupt\".</p>Additionally, you will manage, grow, and mentor a globally distributed organization of Software Engineering Managers, Tech Leads, and Software Engineers across multiple global sites. You will own the long-term architectural road map for the Detection and Response teams core infrastructure. You will lead the engineering and deployment of automated threat containment (e.g., automated mitigation pipelines, and dynamic endpoint mitigation) to disrupt high-risk access abuse, workspace DLP, and intrusion attempts in real-time. You will drive the integration of AI models and agentic reasoning into operational workflows, automating alert triage, incident summaries, and investigative workflows. You will ensure platform reliability, multi-region resilience, and SLO compliance, reducing operational toil and on-call burden to established target of engineering bandwidth.<p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p>Individual pay is determined by factors including job-related skills, experience, and relevant education or training.  <br /><br />US: $307000 - $427000 (USD) + 30% bonus target + equity + benefits<br /><br />Learn more about <a href=\"https://www.google.com/about/careers/applications/benefits/\">benefits at Google</a>.<h3>Responsibilities</h3><ul>\n<li>Foster a high-performance engineering culture emphasizing technical aptitude, operational excellence, and continuous architectural innovation.</li>\n<li>Deliver large-scale resource optimization initiatives, drastically reducing global data storage and compute footprints while maintaining strict end-to-end detection latencies.</li>\n<li>Institutionalize configuration-based detection frameworks that cut authoring and productionization cycles down to industry-leading velocity.</li>\n<li>Advocate for novel defense mechanisms for autonomous third-party agent security, data leakage mitigation, and federated access auditing.</li>\n<li>Deliver against executive and board-level cyber security risk reduction commitments.</li>\n</ul><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree in Computer Science, Computer Engineering, Cyber security, or equivalent practical experience</li>\n<li>15 years of software engineering and technical leadership experience, including 6 years of experience managing managers and leading multi-site engineering organizations<br /></li>\n<li>Experience partnering with security operations, threat intelligence, or incident response teams to build developer and detection platforms</li>\n<li>Experience using modern AI/ML applications in cyber security including automated reasoning, LLM-based agent evaluation, anomaly detection, and synthetic threat injection/watermarking</li>\n</ul><br /><h3>Preferred qualifications:</h3><ul>\n<li>20 years of experience in software engineering, distributed systems, or enterprise platform infrastructure, with experience in cyber security or threat defense domains</li>\n<li>Experience architecting Security Orchestration, Automation, and Response (SOAR), SIEM, EDR data fabrics, or real-time event correlation engines</li>\n<li>Experience designing, building, and operating distributed streaming pipelines, query engines, and high-throughput data processing systems operating at enterprise/hyper-scale</li>\n<li>Experience with cross-functional leadership and executive presence to translate deep architectural challenges into clear business and security risk decisions for VP/SVP stakeholders</li>\n<li>Expertise in infrastructure cost optimization, data lifecycle/retention governance, and high-availability streaming SLO management</li>\n</ul>",
-    "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/142285540920566470-director-security-defense-platforms",
-    "postedAt": "2026-10-29T13:11:11.000Z",
-    "firstSeenAt": "2026-11-02T18:51:23.567Z",
-    "lastSeenAt": "2026-11-12T05:03:02.950Z",
-    "closedAt": "2026-11-13T10:42:31.851Z",
     "source": "google"
   },
   {
